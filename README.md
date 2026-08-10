@@ -7,7 +7,8 @@
 - 8 × 9 atlas
 - 单格 192 × 208
 - 9 个 Codex 状态
-- 每个状态使用完整 8 帧，共 72 帧
+- 按 Codex 当前官方行帧数：6 / 8 / 8 / 4 / 5 / 8 / 6 / 6 / 6，共 57 个有效帧
+- 未使用格子保持完全透明，透明像素 hidden RGB 清零
 - 透明背景、lossless WebP
 - Q 版识别点：黑色长直发、灰白研究服、黑色内搭、紫色点缀、胸牌、手持终端
 
@@ -40,6 +41,8 @@ dist/priestess-chibi/
   manifest.json
   frames/
 ```
+
+`build.mjs` 先生成完整动作素材，`finalize-codex.py` 再按 Codex 当前实际播放帧数裁掉尾部格子并规范透明像素，最后由 `validate.mjs` 检查尺寸、alpha、hidden RGB 和每一行的有效/空白格。
 
 ## 安装到 Codex
 
