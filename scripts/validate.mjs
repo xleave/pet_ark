@@ -33,4 +33,21 @@ for (let i = 3; i < data.length; i += info.channels) {
 }
 if (!transparent || !visible) throw new Error('Expected both transparent and visible pixels');
 if (dirtyTransparentRgb) throw new Error(`Found ${dirtyTransparentRgb} transparent pixels with non-zero hidden RGB`);
-console.log(`OK: ${meta.width}x${meta.height}, alpha=yes, transparent=${transparent}, visible=${visible}, hidden-rgb=clean`);
+
+const rowFrameCounts = [6, 8, 8, 4, 5, 8, 6, 6, 6];
+for (let row = 0; row < rowFrameCounts.length; row++) {
+  const active = rowFrameCounts[row];
+  for (let col = 0; col < 8; col++) {
+    let nonzeroAlpha = 0;
+    for (let y = row * 208; y < (row + 1) * 208; y++) {
+      for (let x = col * 192; x < (col + 1) * 192; x++) {
+        const a = data[(y * info.width + x) * info.channels + 3];
+        if (a) nonzeroAlpha++;
+      }
+    }
+    if (col < active && nonzeroAlpha === 0) throw new Error(`Row ${row} active cell ${col} is empty`);
+    if (col >= active && nonzeroAlpha !== 0) throw new Error(`Row ${row} unused cell ${col} must be transparent`);
+  }
+}
+
+console.log(`OK: ${meta.width}x${meta.height}, alpha=yes, transparent=${transparent}, visible=${visible}, hidden-rgb=clean, row-layout=official`);
