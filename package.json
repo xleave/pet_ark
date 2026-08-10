@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Chibi Priestess (Arknights) Codex pet generator and package.",
   "scripts": {
-    "build": "node scripts/build.mjs",
+    "build": "node scripts/build.mjs && python3 scripts/finalize-codex.py",
     "validate": "node scripts/validate.mjs",
     "rebuild": "npm run build && npm run validate"
   },
