@@ -1,0 +1,15 @@
+{
+  "name": "pet-ark-priestess",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Chibi Priestess (Arknights) Codex pet generator and package.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "rebuild": "npm run build && npm run validate"
+  },
+  "dependencies": {
+    "sharp": "^0.34.3"
+  }
+}
