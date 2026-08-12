@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "dur-nar-chibi",
+    "display_name": "Dur-nar",
+    "localized_name": "坚雷",
+    "source_name": "Dur-nar",
+    "source_id": "R124",
+    "game_key": "char_260_durnar",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "驭法铁卫",
+    "rarity": 4,
+    "race": "沃尔珀",
+    "visual_signature": [
+      "long layered #352b34 hair silhouette",
+      "armor outfit with #b8aaba and #705766 blocks",
+      "animal ears: 沃尔珀",
+      "signature shield: shield",
+      "glasses",
+      "asymmetric profile 0:180 with accent #5a3f4f"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "long layered #352b34 hair silhouette; armor outfit with #b8aaba and #705766 blocks; animal ears: 沃尔珀; signature shield: shield; glasses"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#352b34",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 32,
+      "height": 31,
+      "eye_gap": 17,
+      "eye_width": 6.199999999999999,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "armor outfit with #b8aaba and #705766 blocks"
+    },
+    "palette": {
+      "primary": "#b8aaba",
+      "secondary": "#705766",
+      "accent": "#5a3f4f",
+      "hair": "#352b34",
+      "hair_highlight": "#6e666d",
+      "eye": "#402e3a",
+      "line": "#1f1c23",
+      "mouth": "#804d5b",
+      "skin": "#b1939e",
+      "skin_line": "#83656c",
+      "boot": "#5c5660",
+      "leg": "#443944",
+      "metal": "#98909a",
+      "horn": "#796c69",
+      "halo": "#a48657",
+      "weapon": "#8b8390"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "fox",
+      "horns": "none",
+      "halo": "none",
+      "tail": "fluffy",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "left",
+      "angle": -8,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.38,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 7,
+      "highlight_width": 0,
+      "body_width": 51,
+      "coat_width": 9,
+      "leg_spacing": 4,
+      "ornament_code": 12,
+      "signature_code": 18
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

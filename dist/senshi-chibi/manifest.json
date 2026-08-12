@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "senshi-chibi",
+    "display_name": "Senshi",
+    "localized_name": "森西",
+    "source_name": "Senshi",
+    "source_id": "DD04",
+    "game_key": "char_4143_sensi",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "守护者",
+    "rarity": 5,
+    "race": "矮人（自称）",
+    "visual_signature": [
+      "long layered #4e4e50 hair silhouette",
+      "armor outfit with #2d201f and #675350 blocks",
+      "矮人（自称）: 矮人（自称）",
+      "signature shield: shield",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #695139"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "long layered #4e4e50 hair silhouette; armor outfit with #2d201f and #675350 blocks; 矮人（自称）: 矮人（自称）; signature shield: shield; single eyepatch"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#4e4e50",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 32,
+      "height": 31,
+      "eye_gap": 17,
+      "eye_width": 5.85,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "armor outfit with #2d201f and #675350 blocks"
+    },
+    "palette": {
+      "primary": "#2d201f",
+      "secondary": "#675350",
+      "accent": "#695139",
+      "hair": "#4e4e50",
+      "hair_highlight": "#808081",
+      "eye": "#2d201f",
+      "line": "#29292d",
+      "mouth": "#804d5b",
+      "skin": "#d1b392",
+      "skin_line": "#957666",
+      "boot": "#211c1f",
+      "leg": "#40373a",
+      "metal": "#948e90",
+      "horn": "#878078",
+      "halo": "#ac904b",
+      "weapon": "#30292b"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "left",
+      "angle": -9,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 3,
+      "ornament_code": 4,
+      "signature_code": 13
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

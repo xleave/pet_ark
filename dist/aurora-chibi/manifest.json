@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "aurora-chibi",
+    "display_name": "Aurora",
+    "localized_name": "极光",
+    "source_name": "Aurora",
+    "source_id": "JC09",
+    "game_key": "char_422_aurora",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "决战者",
+    "rarity": 5,
+    "race": "乌萨斯",
+    "visual_signature": [
+      "long layered #b3b1b1 hair silhouette",
+      "armor outfit with #d5d2d2 and #8e939b blocks",
+      "animal ears: 乌萨斯",
+      "signature shield: shield",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #d7b692"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "long layered #b3b1b1 hair silhouette; armor outfit with #d5d2d2 and #8e939b blocks; animal ears: 乌萨斯; signature shield: shield; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#b3b1b1",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 5.5,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "armor outfit with #d5d2d2 and #8e939b blocks"
+    },
+    "palette": {
+      "primary": "#d5d2d2",
+      "secondary": "#8e939b",
+      "accent": "#d7b692",
+      "hair": "#b3b1b1",
+      "hair_highlight": "#c8c7c7",
+      "eye": "#d8a66e",
+      "line": "#4f4f52",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#68676a",
+      "leg": "#52545c",
+      "metal": "#a6abb2",
+      "horn": "#bfb6ae",
+      "halo": "#e9c77c",
+      "weapon": "#9e9da0"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "bear",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "right",
+      "angle": 10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.97,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 0,
+      "body_width": 50,
+      "coat_width": 14,
+      "leg_spacing": 2,
+      "ornament_code": 0,
+      "signature_code": 28
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

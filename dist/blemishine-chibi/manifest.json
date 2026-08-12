@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "blemishine-chibi",
+    "display_name": "Blemishine",
+    "localized_name": "瑕光",
+    "source_name": "Blemishine",
+    "source_id": "KZ09",
+    "game_key": "char_423_blemsh",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "守护者",
+    "rarity": 6,
+    "race": "库兰塔",
+    "visual_signature": [
+      "long layered #fcf6df hair silhouette",
+      "armor outfit with #8a7b7e and #281d1b blocks",
+      "animal ears: 库兰塔",
+      "signature shield: shield",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #45241f"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "long layered #fcf6df hair silhouette; armor outfit with #8a7b7e and #281d1b blocks; animal ears: 库兰塔; signature shield: shield; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#fcf6df",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 5.5,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "armor outfit with #8a7b7e and #281d1b blocks"
+    },
+    "palette": {
+      "primary": "#8a7b7e",
+      "secondary": "#281d1b",
+      "accent": "#45241f",
+      "hair": "#fcf6df",
+      "hair_highlight": "#fdf9e8",
+      "eye": "#5b423b",
+      "line": "#403b3f",
+      "mouth": "#804d5b",
+      "skin": "#cca68a",
+      "skin_line": "#926f62",
+      "boot": "#484247",
+      "leg": "#231e21",
+      "metal": "#787678",
+      "horn": "#e7dcc7",
+      "halo": "#99773c",
+      "weapon": "#6d6569"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "left",
+      "angle": 5,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 8,
+      "highlight_width": 3,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 2,
+      "ornament_code": 15,
+      "signature_code": 7
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

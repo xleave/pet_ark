@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "penance-chibi",
+    "display_name": "Penance",
+    "localized_name": "斥罪",
+    "source_name": "Penance",
+    "source_id": "SR35",
+    "game_key": "char_4065_judge",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "不屈者",
+    "rarity": 6,
+    "race": "鲁珀",
+    "visual_signature": [
+      "long layered #5e5553 hair silhouette",
+      "armor outfit with #484342 and #eee4e0 blocks",
+      "animal ears: 鲁珀",
+      "signature shield: shield",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #896742"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "long layered #5e5553 hair silhouette; armor outfit with #484342 and #eee4e0 blocks; animal ears: 鲁珀; signature shield: shield; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#5e5553",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 34,
+      "height": 32,
+      "eye_gap": 18,
+      "eye_width": 4.8,
+      "eye_height": 6.5,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "armor outfit with #484342 and #eee4e0 blocks"
+    },
+    "palette": {
+      "primary": "#484342",
+      "secondary": "#eee4e0",
+      "accent": "#896742",
+      "hair": "#5e5553",
+      "hair_highlight": "#8b8583",
+      "eye": "#ad7b42",
+      "line": "#2f2c2e",
+      "mouth": "#804d5b",
+      "skin": "#c8b3ac",
+      "skin_line": "#907674",
+      "boot": "#2d2b2e",
+      "leg": "#7e7a7c",
+      "metal": "#d1cfd1",
+      "horn": "#90837a",
+      "halo": "#be9c50",
+      "weapon": "#424042"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "wolf",
+      "horns": "none",
+      "halo": "none",
+      "tail": "fluffy",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "left",
+      "angle": -12,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.42,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 2,
+      "body_width": 53,
+      "coat_width": 10,
+      "leg_spacing": 0,
+      "ornament_code": 14,
+      "signature_code": 19
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

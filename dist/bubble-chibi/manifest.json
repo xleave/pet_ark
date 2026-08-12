@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "bubble-chibi",
+    "display_name": "Bubble",
+    "localized_name": "泡泡",
+    "source_name": "Bubble",
+    "source_id": "R146",
+    "game_key": "char_381_bubble",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "铁卫",
+    "rarity": 4,
+    "race": "塞拉托",
+    "visual_signature": [
+      "long layered #2c2d2e hair silhouette",
+      "armor outfit with #554842 and #202122 blocks",
+      "塞拉托: 塞拉托",
+      "signature shield: shield",
+      "face mask",
+      "asymmetric profile 0:180 with accent #906a42"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "long layered #2c2d2e hair silhouette; armor outfit with #554842 and #202122 blocks; 塞拉托: 塞拉托; signature shield: shield; face mask"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#2c2d2e",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "armor outfit with #554842 and #202122 blocks"
+    },
+    "palette": {
+      "primary": "#554842",
+      "secondary": "#202122",
+      "accent": "#906a42",
+      "hair": "#2c2d2e",
+      "hair_highlight": "#676869",
+      "eye": "#664c46",
+      "line": "#1c1d20",
+      "mouth": "#804d5b",
+      "skin": "#8e6960",
+      "skin_line": "#714e4b",
+      "boot": "#322d2e",
+      "leg": "#1f2025",
+      "metal": "#74777c",
+      "horn": "#746d66",
+      "halo": "#c29d50",
+      "weapon": "#4a4342"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "right",
+      "angle": -11,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "mask",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.1,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 2,
+      "body_width": 46,
+      "coat_width": 4,
+      "leg_spacing": 1,
+      "ornament_code": 2,
+      "signature_code": 11
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

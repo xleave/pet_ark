@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "cuora-chibi",
+    "display_name": "Cuora",
+    "localized_name": "蛇屠箱",
+    "source_name": "Cuora",
+    "source_id": "IU05",
+    "game_key": "char_150_snakek",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "铁卫",
+    "rarity": 4,
+    "race": "匹特拉姆",
+    "visual_signature": [
+      "long layered #281f29 hair silhouette",
+      "armor outfit with #1d1a22 and #473a3c blocks",
+      "匹特拉姆: 匹特拉姆",
+      "signature shield: shield",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #643c39"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "long layered #281f29 hair silhouette; armor outfit with #1d1a22 and #473a3c blocks; 匹特拉姆: 匹特拉姆; signature shield: shield; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#281f29",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 33,
+      "height": 29,
+      "eye_gap": 17.5,
+      "eye_width": 5.5,
+      "eye_height": 6.1000000000000005,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "wide",
+      "boot_style": "tall",
+      "signature": "armor outfit with #1d1a22 and #473a3c blocks"
+    },
+    "palette": {
+      "primary": "#1d1a22",
+      "secondary": "#473a3c",
+      "accent": "#643c39",
+      "hair": "#281f29",
+      "hair_highlight": "#645e65",
+      "eye": "#3f2a2f",
+      "line": "#1a181e",
+      "mouth": "#804d5b",
+      "skin": "#a88a7c",
+      "skin_line": "#7f605a",
+      "boot": "#1b1920",
+      "leg": "#312b31",
+      "metal": "#868387",
+      "horn": "#726663",
+      "halo": "#aa844b",
+      "weapon": "#26262d"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "right",
+      "angle": 5,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.17,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 1,
+      "body_width": 50,
+      "coat_width": 5,
+      "leg_spacing": 2,
+      "ornament_code": 13,
+      "signature_code": 15
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

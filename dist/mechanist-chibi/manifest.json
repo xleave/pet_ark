@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "mechanist-chibi",
+    "display_name": "Mechanist",
+    "localized_name": "机械师",
+    "source_name": "Mechanist",
+    "source_id": "RE21",
+    "game_key": "char_4230_mcnist",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "哨戒铁卫",
+    "rarity": 6,
+    "race": "埃拉菲亚",
+    "visual_signature": [
+      "side braid #11141b hair silhouette",
+      "armor outfit with #202327 and #565131 blocks",
+      "animal ears: 埃拉菲亚",
+      "signature shield: shield",
+      "face mask",
+      "asymmetric profile 10:180 with accent #565131"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "side braid #11141b hair silhouette; armor outfit with #202327 and #565131 blocks; animal ears: 埃拉菲亚; signature shield: shield; face mask"
+    },
+    "hair": {
+      "shape": "braid",
+      "color": "#11141b",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 34,
+      "height": 32,
+      "eye_gap": 18,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.5,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "armor outfit with #202327 and #565131 blocks"
+    },
+    "palette": {
+      "primary": "#202327",
+      "secondary": "#565131",
+      "accent": "#565131",
+      "hair": "#11141b",
+      "hair_highlight": "#54565b",
+      "eye": "#111226",
+      "line": "#121319",
+      "mouth": "#804d5b",
+      "skin": "#fcefb8",
+      "skin_line": "#ac977a",
+      "boot": "#1c1d22",
+      "leg": "#38362c",
+      "metal": "#8c8d82",
+      "horn": "#66605b",
+      "halo": "#a29046",
+      "weapon": "#282b30"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "branch",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "left",
+      "angle": 4,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "mask",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.2,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 2,
+      "body_width": 52,
+      "coat_width": 6,
+      "leg_spacing": 1,
+      "ornament_code": 10,
+      "signature_code": 22
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

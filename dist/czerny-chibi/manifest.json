@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "czerny-chibi",
+    "display_name": "Czerny",
+    "localized_name": "车尔尼",
+    "source_name": "Czerny",
+    "source_id": "LN06",
+    "game_key": "char_4047_pianst",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "驭法铁卫",
+    "rarity": 5,
+    "race": "埃拉菲亚",
+    "visual_signature": [
+      "long layered #754239 hair silhouette",
+      "armor outfit with #602c24 and #56524f blocks",
+      "animal ears: 埃拉菲亚",
+      "signature shield: shield",
+      "glasses",
+      "asymmetric profile 0:180 with accent #754239"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "long layered #754239 hair silhouette; armor outfit with #602c24 and #56524f blocks; animal ears: 埃拉菲亚; signature shield: shield; glasses"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#754239",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 6.199999999999999,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "armor outfit with #602c24 and #56524f blocks"
+    },
+    "palette": {
+      "primary": "#602c24",
+      "secondary": "#56524f",
+      "accent": "#754239",
+      "hair": "#754239",
+      "hair_highlight": "#9c7770",
+      "eye": "#602c24",
+      "line": "#382525",
+      "mouth": "#804d5b",
+      "skin": "#88483c",
+      "skin_line": "#6d3c37",
+      "boot": "#372121",
+      "leg": "#383639",
+      "metal": "#8c8d90",
+      "horn": "#9d796c",
+      "halo": "#b3874b",
+      "weapon": "#52312e"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "branch",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "right",
+      "angle": -8,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 8,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 4,
+      "ornament_code": 0,
+      "signature_code": 2
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "hoshiguma-the-breacher-chibi",
+    "display_name": "Hoshiguma the Breacher",
+    "localized_name": "斩业星熊",
+    "source_name": "Hoshiguma the Breacher",
+    "source_id": "LM23",
+    "game_key": "char_1044_hsgma2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "驭法铁卫",
+    "rarity": 6,
+    "race": "鬼",
+    "visual_signature": [
+      "asymmetric ponytail #4c9f8f hair silhouette",
+      "armor outfit with #385657 and #4f8c86 blocks",
+      "horns: 鬼",
+      "signature shield: shield",
+      "head-mounted goggles",
+      "asymmetric profile 5:180 with accent #4abfa6"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "asymmetric ponytail #4c9f8f hair silhouette; armor outfit with #385657 and #4f8c86 blocks; horns: 鬼; signature shield: shield; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "ponytail",
+      "color": "#4c9f8f",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 5.5,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "armor outfit with #385657 and #4f8c86 blocks"
+    },
+    "palette": {
+      "primary": "#385657",
+      "secondary": "#4f8c86",
+      "accent": "#4abfa6",
+      "hair": "#4c9f8f",
+      "hair_highlight": "#7ebaae",
+      "eye": "#2a6265",
+      "line": "#284845",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#263337",
+      "leg": "#355153",
+      "metal": "#89a8a9",
+      "horn": "#86ac9b",
+      "halo": "#9bcc86",
+      "weapon": "#384d50"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "right",
+      "angle": 5,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.03,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 36,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 0,
+      "body_width": 54,
+      "coat_width": 15,
+      "leg_spacing": 2,
+      "ornament_code": 4,
+      "signature_code": 19
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "saria-chibi",
+    "display_name": "Saria",
+    "localized_name": "塞雷娅",
+    "source_name": "Saria",
+    "source_id": "RL02",
+    "game_key": "char_202_demkni",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "守护者",
+    "rarity": 6,
+    "race": "瓦伊凡",
+    "visual_signature": [
+      "compact cropped #e6e4dc hair silhouette",
+      "armor outfit with #696a72 and #302827 blocks",
+      "horns: 瓦伊凡",
+      "signature shield: shield",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #e58637"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "compact cropped #e6e4dc hair silhouette; armor outfit with #696a72 and #302827 blocks; horns: 瓦伊凡; signature shield: shield; distinctive hat"
+    },
+    "hair": {
+      "shape": "short",
+      "color": "#e6e4dc",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 34,
+      "height": 32,
+      "eye_gap": 18,
+      "eye_width": 4.8,
+      "eye_height": 6.5,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "armor outfit with #696a72 and #302827 blocks"
+    },
+    "palette": {
+      "primary": "#696a72",
+      "secondary": "#302827",
+      "accent": "#e58637",
+      "hair": "#e6e4dc",
+      "hair_highlight": "#edece6",
+      "eye": "#e08c3c",
+      "line": "#33343a",
+      "mouth": "#804d5b",
+      "skin": "#ebddd2",
+      "skin_line": "#a38d88",
+      "boot": "#3b3b42",
+      "leg": "#272327",
+      "metal": "#7b7b7e",
+      "horn": "#dbd2c6",
+      "halo": "#f1ad49",
+      "weapon": "#585a61"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "left",
+      "angle": 3,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 2,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 0,
+      "ornament_code": 2,
+      "signature_code": 17
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

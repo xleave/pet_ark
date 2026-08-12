@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "vulcan-chibi",
+    "display_name": "Vulcan",
+    "localized_name": "火神",
+    "source_name": "Vulcan",
+    "source_id": "MN02",
+    "game_key": "char_163_hpsts",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "不屈者",
+    "rarity": 5,
+    "race": "丰蹄",
+    "visual_signature": [
+      "long layered #ededec hair silhouette",
+      "armor outfit with #bbb5b5 and #3d2c2c blocks",
+      "animal ears: 丰蹄",
+      "signature shield: shield",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #342222"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "long layered #ededec hair silhouette; armor outfit with #bbb5b5 and #3d2c2c blocks; animal ears: 丰蹄; signature shield: shield; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#ededec",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 5.85,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "armor outfit with #bbb5b5 and #3d2c2c blocks"
+    },
+    "palette": {
+      "primary": "#bbb5b5",
+      "secondary": "#3d2c2c",
+      "accent": "#342222",
+      "hair": "#ededec",
+      "hair_highlight": "#f2f2f1",
+      "eye": "#7e5531",
+      "line": "#525154",
+      "mouth": "#804d5b",
+      "skin": "#a99994",
+      "skin_line": "#7f6867",
+      "boot": "#5d5b5e",
+      "leg": "#2d2529",
+      "metal": "#817c80",
+      "horn": "#dfd7ce",
+      "halo": "#8f763e",
+      "weapon": "#8d8a8d"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "right",
+      "angle": -4,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.9,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 3,
+      "body_width": 46,
+      "coat_width": 13,
+      "leg_spacing": 3,
+      "ornament_code": 11,
+      "signature_code": 10
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

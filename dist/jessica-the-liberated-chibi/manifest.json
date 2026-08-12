@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "jessica-the-liberated-chibi",
+    "display_name": "Jessica the Liberated",
+    "localized_name": "涤火杰西卡",
+    "source_name": "Jessica the Liberated",
+    "source_id": "BS30",
+    "game_key": "char_1034_jesca2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "哨戒铁卫",
+    "rarity": 6,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #858395 hair silhouette",
+      "armor outfit with #f9eee9 and #1d181a blocks",
+      "animal ears: 菲林",
+      "signature shield: shield",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #ebc59e"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "long layered #858395 hair silhouette; armor outfit with #f9eee9 and #1d181a blocks; animal ears: 菲林; signature shield: shield; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#858395",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 33,
+      "height": 30,
+      "eye_gap": 17.5,
+      "eye_width": 5.85,
+      "eye_height": 6.1000000000000005,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "wide",
+      "boot_style": "heeled",
+      "signature": "armor outfit with #f9eee9 and #1d181a blocks"
+    },
+    "palette": {
+      "primary": "#f9eee9",
+      "secondary": "#1d181a",
+      "accent": "#ebc59e",
+      "hair": "#858395",
+      "hair_highlight": "#a7a6b3",
+      "eye": "#e3ae75",
+      "line": "#3e3e48",
+      "mouth": "#804d5b",
+      "skin": "#eddeda",
+      "skin_line": "#a48e8d",
+      "boot": "#777274",
+      "leg": "#1e1c21",
+      "metal": "#737378",
+      "horn": "#a59d9e",
+      "halo": "#f4cf82",
+      "weapon": "#b5afaf"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "right",
+      "angle": 11,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 3,
+      "ornament_code": 1,
+      "signature_code": 0
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

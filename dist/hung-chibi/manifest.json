@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "hung-chibi",
+    "display_name": "Hung",
+    "localized_name": "吽",
+    "source_name": "Hung",
+    "source_id": "LM19",
+    "game_key": "char_226_hmau",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "守护者",
+    "rarity": 5,
+    "race": "佩洛",
+    "visual_signature": [
+      "long layered #faf3e9 hair silhouette",
+      "armor outfit with #212120 and #fbf4e9 blocks",
+      "佩洛: 佩洛",
+      "signature shield: shield",
+      "one-sided hair ornament",
+      "asymmetric profile 5:180 with accent #551f17"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "long layered #faf3e9 hair silhouette; armor outfit with #212120 and #fbf4e9 blocks; 佩洛: 佩洛; signature shield: shield; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#faf3e9",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 35,
+      "height": 31,
+      "eye_gap": 18.5,
+      "eye_width": 5.85,
+      "eye_height": 6.9,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "bare",
+      "boot_style": "tall",
+      "signature": "armor outfit with #212120 and #fbf4e9 blocks"
+    },
+    "palette": {
+      "primary": "#212120",
+      "secondary": "#fbf4e9",
+      "accent": "#551f17",
+      "hair": "#faf3e9",
+      "hair_highlight": "#fbf6ef",
+      "eye": "#90532b",
+      "line": "#18181b",
+      "mouth": "#804d5b",
+      "skin": "#ebc19d",
+      "skin_line": "#a37e6c",
+      "boot": "#1c1c1f",
+      "leg": "#848180",
+      "metal": "#d7d6d5",
+      "horn": "#e6dacd",
+      "halo": "#a27438",
+      "weapon": "#292a2c"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "right",
+      "angle": 11,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.37,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 36,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 3,
+      "body_width": 50,
+      "coat_width": 9,
+      "leg_spacing": 3,
+      "ornament_code": 3,
+      "signature_code": 21
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}
