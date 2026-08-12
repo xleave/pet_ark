@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "coldshot-chibi",
+    "display_name": "Coldshot",
+    "localized_name": "冰酿",
+    "source_name": "Coldshot",
+    "source_id": "CB28",
+    "game_key": "char_4104_coldst",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "猎手",
+    "rarity": 5,
+    "race": "埃拉菲亚",
+    "visual_signature": [
+      "long layered #241e24 hair silhouette",
+      "coat outfit with #44333d and #635761 blocks",
+      "animal ears: 埃拉菲亚",
+      "longbow: bow",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #684846"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #241e24 hair silhouette; coat outfit with #44333d and #635761 blocks; animal ears: 埃拉菲亚; longbow: bow; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#241e24",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 35,
+      "height": 31,
+      "eye_gap": 18.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.9,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "bare",
+      "boot_style": "tall",
+      "signature": "coat outfit with #44333d and #635761 blocks"
+    },
+    "palette": {
+      "primary": "#44333d",
+      "secondary": "#635761",
+      "accent": "#684846",
+      "hair": "#241e24",
+      "hair_highlight": "#615d61",
+      "eye": "#422e32",
+      "line": "#19171d",
+      "mouth": "#804d5b",
+      "skin": "#be95a1",
+      "skin_line": "#8a666e",
+      "boot": "#2b242c",
+      "leg": "#3e3942",
+      "metal": "#929098",
+      "horn": "#706560",
+      "halo": "#ac8b52",
+      "weapon": "#3f363f"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "branch",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "bow",
+      "label": "longbow",
+      "side": "right",
+      "angle": -11,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 3,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 1,
+      "ornament_code": 11,
+      "signature_code": 7
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "fartooth-chibi",
+    "display_name": "Fartooth",
+    "localized_name": "远牙",
+    "source_name": "Fartooth",
+    "source_id": "KZ13",
+    "game_key": "char_430_fartth",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "神射手",
+    "rarity": 6,
+    "race": "黎博利",
+    "visual_signature": [
+      "long layered #b6b5b0 hair silhouette",
+      "coat outfit with #403e3c and #686058 blocks",
+      "wings: 黎博利",
+      "ranged weapon: gun",
+      "face mask",
+      "asymmetric profile 0:180 with accent #85643f"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #b6b5b0 hair silhouette; coat outfit with #403e3c and #686058 blocks; wings: 黎博利; ranged weapon: gun; face mask"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#b6b5b0",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 32,
+      "height": 31,
+      "eye_gap": 17,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "coat outfit with #403e3c and #686058 blocks"
+    },
+    "palette": {
+      "primary": "#403e3c",
+      "secondary": "#686058",
+      "accent": "#85643f",
+      "hair": "#b6b5b0",
+      "hair_highlight": "#cacac6",
+      "eye": "#ab7941",
+      "line": "#505152",
+      "mouth": "#804d5b",
+      "skin": "#aea599",
+      "skin_line": "#826f6a",
+      "boot": "#29292b",
+      "leg": "#413d3e",
+      "metal": "#959494",
+      "horn": "#c0b8ad",
+      "halo": "#bc9a4e",
+      "weapon": "#3d3d3e"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": -1,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "mask",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.17,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 0,
+      "body_width": 50,
+      "coat_width": 5,
+      "leg_spacing": 1,
+      "ornament_code": 0,
+      "signature_code": 5
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "melanite-chibi",
+    "display_name": "Melanite",
+    "localized_name": "玫拉",
+    "source_name": "Melanite",
+    "source_id": "CB22",
+    "game_key": "char_4006_melnte",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "重射手",
+    "rarity": 5,
+    "race": "斐迪亚",
+    "visual_signature": [
+      "long layered #cccad6 hair silhouette",
+      "coat outfit with #364054 and #1b1c25 blocks",
+      "斐迪亚: 斐迪亚",
+      "ranged weapon: gun",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #5e61a1"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #cccad6 hair silhouette; coat outfit with #364054 and #1b1c25 blocks; 斐迪亚: 斐迪亚; ranged weapon: gun; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#cccad6",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 35,
+      "height": 31,
+      "eye_gap": 18.5,
+      "eye_width": 4.8,
+      "eye_height": 6.9,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "bare",
+      "boot_style": "tall",
+      "signature": "coat outfit with #364054 and #1b1c25 blocks"
+    },
+    "palette": {
+      "primary": "#364054",
+      "secondary": "#1b1c25",
+      "accent": "#5e61a1",
+      "hair": "#cccad6",
+      "hair_highlight": "#dad9e1",
+      "eye": "#364054",
+      "line": "#20242f",
+      "mouth": "#804d5b",
+      "skin": "#e19e91",
+      "skin_line": "#9d6b65",
+      "boot": "#252935",
+      "leg": "#1d1e26",
+      "metal": "#72757d",
+      "horn": "#ccc4c2",
+      "halo": "#a69884",
+      "weapon": "#363e4e"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": 3,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.27,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 2,
+      "side_lock": 9,
+      "highlight_width": 3,
+      "body_width": 44,
+      "coat_width": 7,
+      "leg_spacing": 0,
+      "ornament_code": 7,
+      "signature_code": 0
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

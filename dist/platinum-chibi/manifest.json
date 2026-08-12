@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "platinum-chibi",
+    "display_name": "Platinum",
+    "localized_name": "白金",
+    "source_name": "Platinum",
+    "source_id": "KZ03",
+    "game_key": "char_204_platnm",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "速射手",
+    "rarity": 5,
+    "race": "库兰塔",
+    "visual_signature": [
+      "side braid #fffff2 hair silhouette",
+      "coat outfit with #30282c and #bcb7b7 blocks",
+      "animal ears: 库兰塔",
+      "ranged weapon: gun",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #7c5836"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "side braid #fffff2 hair silhouette; coat outfit with #30282c and #bcb7b7 blocks; animal ears: 库兰塔; ranged weapon: gun; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "braid",
+      "color": "#fffff2",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "coat outfit with #30282c and #bcb7b7 blocks"
+    },
+    "palette": {
+      "primary": "#30282c",
+      "secondary": "#bcb7b7",
+      "accent": "#7c5836",
+      "hair": "#fffff2",
+      "hair_highlight": "#fffff6",
+      "eye": "#a6733c",
+      "line": "#1d1b20",
+      "mouth": "#804d5b",
+      "skin": "#d7c5b8",
+      "skin_line": "#98807a",
+      "boot": "#231f24",
+      "leg": "#676569",
+      "metal": "#babbbf",
+      "horn": "#e8e1d2",
+      "halo": "#b79349",
+      "weapon": "#322f34"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "left",
+      "angle": -6,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 8,
+      "highlight_width": 3,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 1,
+      "ornament_code": 11,
+      "signature_code": 0
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

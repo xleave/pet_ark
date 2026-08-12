@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "toddifons-chibi",
+    "display_name": "Toddifons",
+    "localized_name": "熔泉",
+    "source_name": "Toddifons",
+    "source_id": "VC11",
+    "game_key": "char_363_toddi",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "攻城手",
+    "rarity": 5,
+    "race": "瓦伊凡",
+    "visual_signature": [
+      "long layered #5d302a hair silhouette",
+      "coat outfit with #4d2622 and #6a5853 blocks",
+      "horns: 瓦伊凡",
+      "longbow: bow",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #703830"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #5d302a hair silhouette; coat outfit with #4d2622 and #6a5853 blocks; horns: 瓦伊凡; longbow: bow; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#5d302a",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 33,
+      "height": 32,
+      "eye_gap": 17.5,
+      "eye_width": 4.8,
+      "eye_height": 6.1000000000000005,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "wide",
+      "boot_style": "flat",
+      "signature": "coat outfit with #4d2622 and #6a5853 blocks"
+    },
+    "palette": {
+      "primary": "#4d2622",
+      "secondary": "#6a5853",
+      "accent": "#703830",
+      "hair": "#5d302a",
+      "hair_highlight": "#8a6a66",
+      "eye": "#48221e",
+      "line": "#2e1e1f",
+      "mouth": "#804d5b",
+      "skin": "#c43a27",
+      "skin_line": "#8e352c",
+      "boot": "#2f1e20",
+      "leg": "#42393b",
+      "metal": "#959092",
+      "horn": "#8f6f64",
+      "halo": "#b08246",
+      "weapon": "#452d2d"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "bow",
+      "label": "longbow",
+      "side": "left",
+      "angle": 3,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 0,
+      "ornament_code": 9,
+      "signature_code": 21
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

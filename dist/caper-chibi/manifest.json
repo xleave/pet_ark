@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "caper-chibi",
+    "display_name": "Caper",
+    "localized_name": "跃跃",
+    "source_name": "Caper",
+    "source_id": "BV32",
+    "game_key": "char_4100_caper",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "回环射手",
+    "rarity": 4,
+    "race": "卡特斯",
+    "visual_signature": [
+      "long layered #5b504c hair silhouette",
+      "coat outfit with #1d1c1b and #3f3c3b blocks",
+      "animal ears: 卡特斯",
+      "ranged weapon: gun",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #412a27"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #5b504c hair silhouette; coat outfit with #1d1c1b and #3f3c3b blocks; animal ears: 卡特斯; ranged weapon: gun; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#5b504c",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 33,
+      "height": 30,
+      "eye_gap": 17.5,
+      "eye_width": 5.5,
+      "eye_height": 6.1000000000000005,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "wide",
+      "boot_style": "heeled",
+      "signature": "coat outfit with #1d1c1b and #3f3c3b blocks"
+    },
+    "palette": {
+      "primary": "#1d1c1b",
+      "secondary": "#3f3c3b",
+      "accent": "#412a27",
+      "hair": "#5b504c",
+      "hair_highlight": "#89817e",
+      "eye": "#60403a",
+      "line": "#2e2a2c",
+      "mouth": "#804d5b",
+      "skin": "#ae998c",
+      "skin_line": "#826863",
+      "boot": "#1b1a1d",
+      "leg": "#2e2c30",
+      "metal": "#828487",
+      "horn": "#8e8176",
+      "halo": "#967a41",
+      "weapon": "#262729"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "rabbit",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": 10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 10,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 2,
+      "ornament_code": 9,
+      "signature_code": 24
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

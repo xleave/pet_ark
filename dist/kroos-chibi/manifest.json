@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "kroos-chibi",
+    "display_name": "Kroos",
+    "localized_name": "克洛丝",
+    "source_name": "Kroos",
+    "source_id": "PA12",
+    "game_key": "char_124_kroos",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "速射手",
+    "rarity": 3,
+    "race": "卡特斯",
+    "visual_signature": [
+      "paired twin-tail #773733 hair silhouette",
+      "coat outfit with #423536 and #725253 blocks",
+      "animal ears: 卡特斯",
+      "ranged weapon: gun",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #4c130f"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "paired twin-tail #773733 hair silhouette; coat outfit with #423536 and #725253 blocks; animal ears: 卡特斯; ranged weapon: gun; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "twin-tails",
+      "color": "#773733",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 33,
+      "height": 29,
+      "eye_gap": 17.5,
+      "eye_width": 4.8,
+      "eye_height": 6.1000000000000005,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "wide",
+      "boot_style": "tall",
+      "signature": "coat outfit with #423536 and #725253 blocks"
+    },
+    "palette": {
+      "primary": "#423536",
+      "secondary": "#725253",
+      "accent": "#4c130f",
+      "hair": "#773733",
+      "hair_highlight": "#9d6f6c",
+      "eye": "#682923",
+      "line": "#382122",
+      "mouth": "#804d5b",
+      "skin": "#efc094",
+      "skin_line": "#a57d67",
+      "boot": "#2a2529",
+      "leg": "#45363b",
+      "metal": "#998d92",
+      "horn": "#9e7369",
+      "halo": "#9d6d33",
+      "weapon": "#3e373a"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "rabbit",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": 8,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.3,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 1,
+      "body_width": 46,
+      "coat_width": 8,
+      "leg_spacing": 0,
+      "ornament_code": 5,
+      "signature_code": 1
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

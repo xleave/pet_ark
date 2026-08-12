@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "ash-chibi",
+    "display_name": "Ash",
+    "localized_name": "灰烬",
+    "source_name": "Ash",
+    "source_id": "RS01",
+    "game_key": "char_456_ash",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "速射手",
+    "rarity": 6,
+    "race": "未知",
+    "visual_signature": [
+      "long layered #76767a hair silhouette",
+      "coat outfit with #2f2324 and #5f4a49 blocks",
+      "未知: 未知",
+      "ranged weapon: gun",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #5b3831"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #76767a hair silhouette; coat outfit with #2f2324 and #5f4a49 blocks; 未知: 未知; ranged weapon: gun; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#76767a",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 32,
+      "height": 31,
+      "eye_gap": 17,
+      "eye_width": 5.5,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "coat outfit with #2f2324 and #5f4a49 blocks"
+    },
+    "palette": {
+      "primary": "#2f2324",
+      "secondary": "#5f4a49",
+      "accent": "#5b3831",
+      "hair": "#76767a",
+      "hair_highlight": "#9c9c9f",
+      "eye": "#946139",
+      "line": "#38393d",
+      "mouth": "#804d5b",
+      "skin": "#90655a",
+      "skin_line": "#724c48",
+      "boot": "#221d21",
+      "leg": "#3c3337",
+      "metal": "#908a8d",
+      "horn": "#9d9690",
+      "halo": "#a58246",
+      "weapon": "#322b2e"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": 0,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.87,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 7,
+      "highlight_width": 0,
+      "body_width": 44,
+      "coat_width": 12,
+      "leg_spacing": 2,
+      "ornament_code": 8,
+      "signature_code": 10
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

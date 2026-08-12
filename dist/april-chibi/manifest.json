@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "april-chibi",
+    "display_name": "April",
+    "localized_name": "四月",
+    "source_name": "April",
+    "source_id": "RB07",
+    "game_key": "char_365_aprl",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "速射手",
+    "rarity": 5,
+    "race": "卡特斯",
+    "visual_signature": [
+      "long layered #3f3735 hair silhouette",
+      "coat outfit with #f4e7e9 and #4a4544 blocks",
+      "animal ears: 卡特斯",
+      "ranged weapon: gun",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #e8c19e"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #3f3735 hair silhouette; coat outfit with #f4e7e9 and #4a4544 blocks; animal ears: 卡特斯; ranged weapon: gun; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#3f3735",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 4.8,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "coat outfit with #f4e7e9 and #4a4544 blocks"
+    },
+    "palette": {
+      "primary": "#f4e7e9",
+      "secondary": "#4a4544",
+      "accent": "#e8c19e",
+      "hair": "#3f3735",
+      "hair_highlight": "#756f6e",
+      "eye": "#e1ac75",
+      "line": "#232123",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#757074",
+      "leg": "#333034",
+      "metal": "#87888b",
+      "horn": "#7f736a",
+      "halo": "#f2cd82",
+      "weapon": "#b2abaf"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "rabbit",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "left",
+      "angle": -7,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 0,
+      "ornament_code": 8,
+      "signature_code": 7
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

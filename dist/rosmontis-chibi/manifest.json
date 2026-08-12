@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "rosmontis-chibi",
+    "display_name": "Rosmontis",
+    "localized_name": "迷迭香",
+    "source_name": "Rosmontis",
+    "source_id": "RE45",
+    "game_key": "char_391_rosmon",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "投掷手",
+    "rarity": 6,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #dad5cb hair silhouette",
+      "dress outfit with #353e52 and #717b8d blocks",
+      "animal ears: 菲林",
+      "ranged weapon: drone",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #4ec3c0"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #dad5cb hair silhouette; dress outfit with #353e52 and #717b8d blocks; animal ears: 菲林; ranged weapon: drone; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#dad5cb",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 32,
+      "height": 31,
+      "eye_gap": 17,
+      "eye_width": 4.8,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "dress outfit with #353e52 and #717b8d blocks"
+    },
+    "palette": {
+      "primary": "#353e52",
+      "secondary": "#717b8d",
+      "accent": "#4ec3c0",
+      "hair": "#dad5cb",
+      "hair_highlight": "#e4e1da",
+      "eye": "#1a1d30",
+      "line": "#1f232e",
+      "mouth": "#804d5b",
+      "skin": "#f4eadf",
+      "skin_line": "#a8948f",
+      "boot": "#252934",
+      "leg": "#454956",
+      "metal": "#99a0ac",
+      "horn": "#d4cabc",
+      "halo": "#9ece95",
+      "weapon": "#363d4c"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "drone",
+      "label": "ranged weapon",
+      "side": "left",
+      "angle": -12,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "left",
+      "companion": "device",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 0,
+      "ornament_code": 12,
+      "signature_code": 27
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

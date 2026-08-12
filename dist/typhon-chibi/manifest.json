@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "typhon-chibi",
+    "display_name": "Typhon",
+    "localized_name": "提丰",
+    "source_name": "Typhon",
+    "source_id": "SI07",
+    "game_key": "char_2012_typhon",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "攻城手",
+    "rarity": 6,
+    "race": "萨卡兹",
+    "visual_signature": [
+      "paired twin-tail #baa4ba hair silhouette",
+      "coat outfit with #6f5363 and #bea8bc blocks",
+      "horns: 萨卡兹",
+      "longbow: bow",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #9f7055"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "paired twin-tail #baa4ba hair silhouette; coat outfit with #6f5363 and #bea8bc blocks; horns: 萨卡兹; longbow: bow; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "twin-tails",
+      "color": "#baa4ba",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 35,
+      "height": 31,
+      "eye_gap": 18.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.9,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "bare",
+      "boot_style": "tall",
+      "signature": "coat outfit with #6f5363 and #bea8bc blocks"
+    },
+    "palette": {
+      "primary": "#6f5363",
+      "secondary": "#bea8bc",
+      "accent": "#9f7055",
+      "hair": "#baa4ba",
+      "hair_highlight": "#cdbdcd",
+      "eye": "#b9804d",
+      "line": "#524a56",
+      "mouth": "#804d5b",
+      "skin": "#a27a8d",
+      "skin_line": "#7b5863",
+      "boot": "#3d313c",
+      "leg": "#685e6c",
+      "metal": "#bbb4c1",
+      "horn": "#c3afb3",
+      "halo": "#caa15a",
+      "weapon": "#5b4b57"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "bow",
+      "label": "longbow",
+      "side": "left",
+      "angle": -1,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 3,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 1,
+      "ornament_code": 7,
+      "signature_code": 9
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

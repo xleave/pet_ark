@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "jieyun-chibi",
+    "display_name": "Jieyun",
+    "localized_name": "截云",
+    "source_name": "Jieyun",
+    "source_id": "YD15",
+    "game_key": "char_4078_bdhkgt",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "炮手",
+    "rarity": 5,
+    "race": "阿纳萨",
+    "visual_signature": [
+      "long layered #1c1818 hair silhouette",
+      "coat outfit with #423b3c and #6e6569 blocks",
+      "阿纳萨: 阿纳萨",
+      "ranged weapon: gun",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #171011"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #1c1818 hair silhouette; coat outfit with #423b3c and #6e6569 blocks; 阿纳萨: 阿纳萨; ranged weapon: gun; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#1c1818",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 34,
+      "height": 32,
+      "eye_gap": 18,
+      "eye_width": 5.5,
+      "eye_height": 6.5,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "coat outfit with #423b3c and #6e6569 blocks"
+    },
+    "palette": {
+      "primary": "#423b3c",
+      "secondary": "#6e6569",
+      "accent": "#171011",
+      "hair": "#1c1818",
+      "hair_highlight": "#5c5959",
+      "eye": "#594140",
+      "line": "#161518",
+      "mouth": "#804d5b",
+      "skin": "#846d68",
+      "skin_line": "#6b504f",
+      "boot": "#2a272b",
+      "leg": "#433f45",
+      "metal": "#97969c",
+      "horn": "#6c625a",
+      "halo": "#7f6c35",
+      "weapon": "#3e3b3e"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": -10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.18,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 2,
+      "body_width": 51,
+      "coat_width": 5,
+      "leg_spacing": 2,
+      "ornament_code": 14,
+      "signature_code": 0
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}
