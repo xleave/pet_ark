@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "sequences": [
+    {
+      "character": "amiya",
+      "animation": "idle-to-rest",
+      "source_frame_a": "standalone/assets/cleaned/amiya/relax/000.png",
+      "source_frame_b": "standalone/assets/cleaned/amiya/sit/005.png",
+      "generated_frames": [
+        "standalone/assets/generated/amiya/idle-to-rest/001-rejected.png"
+      ],
+      "accepted": false,
+      "review": "Rejected: the image2 result changed line weight and proportions, synthesized lettering, returned an opaque checkerboard, and did not preserve the 384x448 ground registration. The original Spine Sit transition is continuous and remains the runtime source.",
+      "generator": "built-in image2 image-to-image",
+      "generated_on": "2026-08-12"
+    }
+  ]
+}

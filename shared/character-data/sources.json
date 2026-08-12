@@ -1,0 +1,29 @@
+{
+  "retrieval_date": "2026-08-12",
+  "codex_roster": {
+    "manifest": "shared/character-data/codex-sources.json",
+    "registry": "shared/character-data/operators.json"
+  },
+  "standalone_assets": [
+    {
+      "character_id": "amiya",
+      "character_name": "阿米娅",
+      "source_page": "https://prts.wiki/w/%E9%98%BF%E7%B1%B3%E5%A8%85",
+      "source_asset": [
+        "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/meta.json",
+        "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/defaultskin/build/build_char_002_amiya.skel",
+        "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/defaultskin/build/build_char_002_amiya.atlas",
+        "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/defaultskin/build/build_char_002_amiya.png"
+      ],
+      "retrieval_date": "2026-08-12",
+      "original_animation_states": ["Default", "Interact", "Move", "Relax", "Sit", "Sleep"],
+      "processed_states": [
+        "idle", "walk-left", "walk-right", "run-left", "run-right", "clicked",
+        "picked-up", "dragging", "dropped", "rest", "sleep", "wake", "special"
+      ],
+      "generated_interpolated_states": [],
+      "rejected_generated_candidates": ["idle-to-rest/001-rejected.png"],
+      "runtime_note": "No generated frame was accepted; the source Spine Sit sequence already provides the transition."
+    }
+  ]
+}

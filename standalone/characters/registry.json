@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "characters": [
+    {
+      "id": "amiya",
+      "name": "Amiya",
+      "localized_name": "阿米娅",
+      "assets": "standalone/assets/runtime/amiya",
+      "source": {
+        "page": "https://prts.wiki/w/%E9%98%BF%E7%B1%B3%E5%A8%85",
+        "meta": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/meta.json",
+        "model": "defaultskin/build/build_char_002_amiya"
+      },
+      "animations": {
+        "idle": { "source": "relax", "fps": 12, "loop": true },
+        "walk-left": { "source": "move", "fps": 12, "loop": true, "mirror": true },
+        "walk-right": { "source": "move", "fps": 12, "loop": true },
+        "run-left": { "source": "move", "fps": 18, "loop": true, "mirror": true },
+        "run-right": { "source": "move", "fps": 18, "loop": true },
+        "clicked": { "source": "interact", "fps": 12, "loop": false, "next": "idle" },
+        "picked-up": { "source": "sit", "fps": 12, "loop": false, "range": [0, 5], "next": "dragging" },
+        "dragging": { "source": "sit", "fps": 6, "loop": true, "range": [5, 10] },
+        "dropped": { "source": "sit", "fps": 12, "loop": false, "range": [5, 0], "next": "idle" },
+        "rest": { "source": "sit", "fps": 8, "loop": false, "holdLast": true, "next": "sleep" },
+        "sleep": { "source": "sleep", "fps": 10, "loop": true },
+        "wake": { "source": "sleep", "fps": 12, "loop": false, "reverse": true, "next": "idle" },
+        "special": { "source": "interact", "fps": 12, "loop": false, "next": "idle" }
+      },
+      "defaultScale": 1.0,
+      "availableStates": [
+        "idle",
+        "walk-left",
+        "walk-right",
+        "run-left",
+        "run-right",
+        "clicked",
+        "picked-up",
+        "dragging",
+        "dropped",
+        "rest",
+        "sleep",
+        "wake",
+        "special"
+      ],
+      "specialStates": ["special"],
+      "movement": {
+        "walkPixelsPerSecond": 68,
+        "runPixelsPerSecond": 116,
+        "idleMinSeconds": 4,
+        "idleMaxSeconds": 11,
+        "restAfterSeconds": 75
+      },
+      "mirrorRules": {
+        "canMirror": true,
+        "fixedElements": [],
+        "notes": "Default base chibi has no readable text; direction is reviewed after frame export."
+      }
+    }
+  ]
+}
