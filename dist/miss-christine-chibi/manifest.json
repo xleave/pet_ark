@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "miss-christine-chibi",
+    "display_name": "Miss.Christine",
+    "localized_name": "Miss.Christine",
+    "source_name": "Miss.Christine",
+    "source_id": "MEOW",
+    "game_key": "char_4198_christ",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "本源术师",
+    "rarity": 5,
+    "race": "未公开",
+    "visual_signature": [
+      "long layered #011314 hair silhouette",
+      "robe outfit with #46504a and #021413 blocks",
+      "未公开: 未公开",
+      "arts staff: staff",
+      "glasses",
+      "asymmetric profile 22:180 with accent #011314"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #011314 hair silhouette; robe outfit with #46504a and #021413 blocks; 未公开: 未公开; arts staff: staff; glasses"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#011314",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 32,
+      "height": 31,
+      "eye_gap": 17,
+      "eye_width": 6.199999999999999,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "robe outfit with #46504a and #021413 blocks"
+    },
+    "palette": {
+      "primary": "#46504a",
+      "secondary": "#021413",
+      "accent": "#011314",
+      "hair": "#011314",
+      "hair_highlight": "#485556",
+      "eye": "#8d191a",
+      "line": "#0c1316",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#2c3031",
+      "leg": "#121a1e",
+      "metal": "#677275",
+      "horn": "#5d5f58",
+      "halo": "#736d36",
+      "weapon": "#414947"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "left",
+      "angle": 12,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.4,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 39,
+      "top_height": 2,
+      "side_lock": 4,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 8,
+      "leg_spacing": 4,
+      "ornament_code": 0,
+      "signature_code": 3
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

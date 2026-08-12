@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "varkaris-chibi",
+    "display_name": "Varkáris",
+    "localized_name": "摆渡人",
+    "source_name": "Varkáris",
+    "source_id": "MN08",
+    "game_key": "char_4166_varkis",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "强攻手",
+    "rarity": 5,
+    "race": "丰蹄",
+    "visual_signature": [
+      "long layered #2a3e48 hair silhouette",
+      "uniform outfit with #40625f and #151c1d blocks",
+      "animal ears: 丰蹄",
+      "blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #2a3e48"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #2a3e48 hair silhouette; uniform outfit with #40625f and #151c1d blocks; animal ears: 丰蹄; blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#2a3e48",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #40625f and #151c1d blocks"
+    },
+    "palette": {
+      "primary": "#40625f",
+      "secondary": "#151c1d",
+      "accent": "#2a3e48",
+      "hair": "#2a3e48",
+      "hair_highlight": "#66747b",
+      "eye": "#151d22",
+      "line": "#1b232a",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#29383a",
+      "leg": "#1a1e22",
+      "metal": "#6f7579",
+      "horn": "#737774",
+      "halo": "#8a8553",
+      "weapon": "#3d5455"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "right",
+      "angle": 7,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 3,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 4,
+      "ornament_code": 15,
+      "signature_code": 17
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "lutonada-chibi",
+    "display_name": "Lutonada",
+    "localized_name": "露托",
+    "source_name": "Lutonada",
+    "source_id": "BV33",
+    "game_key": "char_4130_luton",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "不屈者",
+    "rarity": 4,
+    "race": "札拉克",
+    "visual_signature": [
+      "long layered #9c8d92 hair silhouette",
+      "armor outfit with #3c3a3b and #bdb7b9 blocks",
+      "札拉克: 札拉克",
+      "signature shield: shield",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #83623f"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "long layered #9c8d92 hair silhouette; armor outfit with #3c3a3b and #bdb7b9 blocks; 札拉克: 札拉克; signature shield: shield; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#9c8d92",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 35,
+      "height": 32,
+      "eye_gap": 18.5,
+      "eye_width": 5.85,
+      "eye_height": 6.9,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "bare",
+      "boot_style": "heeled",
+      "signature": "armor outfit with #3c3a3b and #bdb7b9 blocks"
+    },
+    "palette": {
+      "primary": "#3c3a3b",
+      "secondary": "#bdb7b9",
+      "accent": "#83623f",
+      "hair": "#9c8d92",
+      "hair_highlight": "#b8adb1",
+      "eye": "#aa7841",
+      "line": "#464146",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#28272b",
+      "leg": "#68656a",
+      "metal": "#bbbbc0",
+      "horn": "#b2a29d",
+      "halo": "#bb994e",
+      "weapon": "#3a3a3d"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "right",
+      "angle": -9,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 7,
+      "highlight_width": 3,
+      "body_width": 52,
+      "coat_width": 15,
+      "leg_spacing": 3,
+      "ornament_code": 15,
+      "signature_code": 1
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

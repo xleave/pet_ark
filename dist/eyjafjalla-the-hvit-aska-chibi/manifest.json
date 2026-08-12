@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "eyjafjalla-the-hvit-aska-chibi",
+    "display_name": "Eyjafjalla the Hvít Aska",
+    "localized_name": "纯烬艾雅法拉",
+    "source_name": "Eyjafjalla the Hvít Aska",
+    "source_id": "LN10",
+    "game_key": "char_1016_agoat2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "行医",
+    "rarity": 6,
+    "race": "卡普里尼",
+    "visual_signature": [
+      "long layered #775652 hair silhouette",
+      "coat outfit with #4a3130 and #71544f blocks",
+      "horns: 卡普里尼",
+      "medical device: medical",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #934048"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "long layered #775652 hair silhouette; coat outfit with #4a3130 and #71544f blocks; horns: 卡普里尼; medical device: medical; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#775652",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 33,
+      "height": 30,
+      "eye_gap": 17.5,
+      "eye_width": 5.85,
+      "eye_height": 6.1000000000000005,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "wide",
+      "boot_style": "heeled",
+      "signature": "coat outfit with #4a3130 and #71544f blocks"
+    },
+    "palette": {
+      "primary": "#4a3130",
+      "secondary": "#71544f",
+      "accent": "#934048",
+      "hair": "#775652",
+      "hair_highlight": "#9d8582",
+      "eye": "#6b453d",
+      "line": "#382c2e",
+      "mouth": "#804d5b",
+      "skin": "#a27a6e",
+      "skin_line": "#7b5852",
+      "boot": "#2e2326",
+      "leg": "#453739",
+      "metal": "#998e90",
+      "horn": "#9e847a",
+      "halo": "#c48653",
+      "weapon": "#433436"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "ram",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "left",
+      "angle": 11,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 3,
+      "ornament_code": 1,
+      "signature_code": 0
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

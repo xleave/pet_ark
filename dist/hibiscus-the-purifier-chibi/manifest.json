@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "hibiscus-the-purifier-chibi",
+    "display_name": "Hibiscus the Purifier",
+    "localized_name": "濯尘芙蓉",
+    "source_name": "Hibiscus the Purifier",
+    "source_id": "RF03",
+    "game_key": "char_1024_hbisc2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "咒愈师",
+    "rarity": 5,
+    "race": "萨卡兹",
+    "visual_signature": [
+      "long layered #37304d hair silhouette",
+      "coat outfit with #453e63 and #2a2539 blocks",
+      "horns: 萨卡兹",
+      "medical device: medical",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #2d2846"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "long layered #37304d hair silhouette; coat outfit with #453e63 and #2a2539 blocks; horns: 萨卡兹; medical device: medical; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#37304d",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 5.5,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "coat outfit with #453e63 and #2a2539 blocks"
+    },
+    "palette": {
+      "primary": "#453e63",
+      "secondary": "#2a2539",
+      "accent": "#2d2846",
+      "hair": "#37304d",
+      "hair_highlight": "#6f6a7f",
+      "eye": "#483f6b",
+      "line": "#201e2c",
+      "mouth": "#804d5b",
+      "skin": "#f0d6dd",
+      "skin_line": "#a5898e",
+      "boot": "#2b293c",
+      "leg": "#24222f",
+      "metal": "#797986",
+      "horn": "#7a6f77",
+      "halo": "#8c7952",
+      "weapon": "#403d57"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "left",
+      "angle": 10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.98,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 0,
+      "body_width": 51,
+      "coat_width": 14,
+      "leg_spacing": 2,
+      "ornament_code": 0,
+      "signature_code": 28
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

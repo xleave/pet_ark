@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "lin-chibi",
+    "display_name": "Lin",
+    "localized_name": "林",
+    "source_name": "Lin",
+    "source_id": "LM21",
+    "game_key": "char_4080_lin",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "阵法术师",
+    "rarity": 6,
+    "race": "札拉克",
+    "visual_signature": [
+      "long layered #eddcdf hair silhouette",
+      "robe outfit with #1a161c and #513d42 blocks",
+      "札拉克: 札拉克",
+      "arts staff: staff",
+      "distinctive hat",
+      "asymmetric profile 0:166 with accent #704e2e"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #eddcdf hair silhouette; robe outfit with #1a161c and #513d42 blocks; 札拉克: 札拉克; arts staff: staff; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#eddcdf",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 4.8,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "robe outfit with #1a161c and #513d42 blocks"
+    },
+    "palette": {
+      "primary": "#1a161c",
+      "secondary": "#513d42",
+      "accent": "#704e2e",
+      "hair": "#eddcdf",
+      "hair_highlight": "#f2e6e8",
+      "eye": "#9f6d37",
+      "line": "#15141a",
+      "mouth": "#804d5b",
+      "skin": "#b799a0",
+      "skin_line": "#87686d",
+      "boot": "#19181e",
+      "leg": "#362d33",
+      "metal": "#8a848a",
+      "horn": "#dfcec7",
+      "halo": "#b08e44",
+      "weapon": "#242329"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "left",
+      "angle": -7,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.42,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 37,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 0,
+      "body_width": 44,
+      "coat_width": 8,
+      "leg_spacing": 0,
+      "ornament_code": 8,
+      "signature_code": 7
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

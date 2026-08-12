@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "waai-fu-chibi",
+    "display_name": "Waai Fu",
+    "localized_name": "槐琥",
+    "source_name": "Waai Fu",
+    "source_id": "LM12",
+    "game_key": "char_243_waaifu",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "specialist",
+    "subprofession": "处决者",
+    "rarity": 5,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #51251b hair silhouette",
+      "uniform outfit with #f1e6e1 and #1a0909 blocks",
+      "animal ears: 菲林",
+      "specialist tool: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #47170d"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #51251b hair silhouette; uniform outfit with #f1e6e1 and #1a0909 blocks; animal ears: 菲林; specialist tool: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#51251b",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 33,
+      "height": 29,
+      "eye_gap": 17.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.1000000000000005,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "wide",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #f1e6e1 and #1a0909 blocks"
+    },
+    "palette": {
+      "primary": "#f1e6e1",
+      "secondary": "#1a0909",
+      "accent": "#47170d",
+      "hair": "#51251b",
+      "hair_highlight": "#82625b",
+      "eye": "#69341d",
+      "line": "#2a1a19",
+      "mouth": "#804d5b",
+      "skin": "#f1e2d9",
+      "skin_line": "#a6908c",
+      "boot": "#746f70",
+      "leg": "#1d1519",
+      "metal": "#716d70",
+      "horn": "#89695b",
+      "halo": "#9a7032",
+      "weapon": "#b0aaa9"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "specialist tool",
+      "side": "right",
+      "angle": -6,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.37,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 1,
+      "body_width": 53,
+      "coat_width": 7,
+      "leg_spacing": 1,
+      "ornament_code": 9,
+      "signature_code": 8
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

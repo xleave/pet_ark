@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "zinogre-s-catapult-chibi",
+    "display_name": "Zinogre S Catapult",
+    "localized_name": "雷狼龙S空爆",
+    "source_name": "Zinogre S Catapult",
+    "source_id": "MH06",
+    "game_key": "char_1049_catap2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "佣兵",
+    "rarity": 5,
+    "race": "库兰塔",
+    "visual_signature": [
+      "long layered #4c3e3d hair silhouette",
+      "uniform outfit with #3b2b2b and #6a5851 blocks",
+      "animal ears: 库兰塔",
+      "blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #8c2937"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #4c3e3d hair silhouette; uniform outfit with #3b2b2b and #6a5851 blocks; animal ears: 库兰塔; blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#4c3e3d",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 5.85,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #3b2b2b and #6a5851 blocks"
+    },
+    "palette": {
+      "primary": "#3b2b2b",
+      "secondary": "#6a5851",
+      "accent": "#8c2937",
+      "hair": "#4c3e3d",
+      "hair_highlight": "#7e7473",
+      "eye": "#5e3a3a",
+      "line": "#282326",
+      "mouth": "#804d5b",
+      "skin": "#8e6f67",
+      "skin_line": "#71524f",
+      "boot": "#272124",
+      "leg": "#42393a",
+      "metal": "#959091",
+      "horn": "#86776e",
+      "halo": "#c07a49",
+      "weapon": "#3a3133"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "right",
+      "angle": -4,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 3,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 3,
+      "ornament_code": 11,
+      "signature_code": 10
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

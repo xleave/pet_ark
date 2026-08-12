@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "beeswax-chibi",
+    "display_name": "Beeswax",
+    "localized_name": "蜜蜡",
+    "source_name": "Beeswax",
+    "source_id": "R147",
+    "game_key": "char_344_beewax",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "阵法术师",
+    "rarity": 5,
+    "race": "卡普里尼",
+    "visual_signature": [
+      "long layered #55361a hair silhouette",
+      "robe outfit with #1c191e and #3c4146 blocks",
+      "horns: 卡普里尼",
+      "arts staff: staff",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #55361a"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #55361a hair silhouette; robe outfit with #1c191e and #3c4146 blocks; horns: 卡普里尼; arts staff: staff; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#55361a",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 5.5,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "robe outfit with #1c191e and #3c4146 blocks"
+    },
+    "palette": {
+      "primary": "#1c191e",
+      "secondary": "#3c4146",
+      "accent": "#55361a",
+      "hair": "#55361a",
+      "hair_highlight": "#856e5a",
+      "eye": "#644b44",
+      "line": "#2b2019",
+      "mouth": "#804d5b",
+      "skin": "#c7b09b",
+      "skin_line": "#8f756b",
+      "boot": "#1a191f",
+      "leg": "#2c2f35",
+      "metal": "#81868c",
+      "horn": "#8b725b",
+      "halo": "#a2813a",
+      "weapon": "#25252b"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "ram",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "right",
+      "angle": -5,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.97,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 8,
+      "highlight_width": 0,
+      "body_width": 50,
+      "coat_width": 14,
+      "leg_spacing": 2,
+      "ornament_code": 8,
+      "signature_code": 17
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

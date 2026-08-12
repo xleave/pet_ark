@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "brigid-chibi",
+    "display_name": "Brigid",
+    "localized_name": "水灯心",
+    "source_name": "Brigid",
+    "source_id": "DB04",
+    "game_key": "char_4177_brigid",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "回环射手",
+    "rarity": 5,
+    "race": "佩洛",
+    "visual_signature": [
+      "long layered #c3c1c0 hair silhouette",
+      "coat outfit with #fefacf and #776860 blocks",
+      "佩洛: 佩洛",
+      "ranged weapon: gun",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #453329"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #c3c1c0 hair silhouette; coat outfit with #fefacf and #776860 blocks; 佩洛: 佩洛; ranged weapon: gun; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#c3c1c0",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 4.8,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "coat outfit with #fefacf and #776860 blocks"
+    },
+    "palette": {
+      "primary": "#fefacf",
+      "secondary": "#776860",
+      "accent": "#453329",
+      "hair": "#c3c1c0",
+      "hair_highlight": "#d4d2d2",
+      "eye": "#6a5244",
+      "line": "#555558",
+      "mouth": "#804d5b",
+      "skin": "#d3a674",
+      "skin_line": "#966f56",
+      "boot": "#797869",
+      "leg": "#474141",
+      "metal": "#9b9798",
+      "horn": "#c8bfb6",
+      "halo": "#997f42",
+      "weapon": "#b8b79e"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "left",
+      "angle": 8,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "distinctive hat"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 0,
+      "ornament_code": 12,
+      "signature_code": 5
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

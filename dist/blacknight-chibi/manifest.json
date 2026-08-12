@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "blacknight-chibi",
+    "display_name": "Blacknight",
+    "localized_name": "夜半",
+    "source_name": "Blacknight",
+    "source_id": "RB12",
+    "game_key": "char_476_blkngt",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "vanguard",
+    "subprofession": "战术家",
+    "rarity": 5,
+    "race": "萨弗拉",
+    "visual_signature": [
+      "long layered #291e23 hair silhouette",
+      "uniform outfit with #a0a3ab and #655f62 blocks",
+      "萨弗拉: 萨弗拉",
+      "vanguard polearm: spear",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #ba9c7c"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #291e23 hair silhouette; uniform outfit with #a0a3ab and #655f62 blocks; 萨弗拉: 萨弗拉; vanguard polearm: spear; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#291e23",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 35,
+      "height": 32,
+      "eye_gap": 18.5,
+      "eye_width": 4.8,
+      "eye_height": 6.9,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "heeled",
+      "signature": "uniform outfit with #a0a3ab and #655f62 blocks"
+    },
+    "palette": {
+      "primary": "#a0a3ab",
+      "secondary": "#655f62",
+      "accent": "#ba9c7c",
+      "hair": "#291e23",
+      "hair_highlight": "#655d61",
+      "eye": "#c89862",
+      "line": "#1b171c",
+      "mouth": "#804d5b",
+      "skin": "#efe3d6",
+      "skin_line": "#a5908b",
+      "boot": "#52535a",
+      "leg": "#3f3c42",
+      "metal": "#939398",
+      "horn": "#736560",
+      "halo": "#d9b96f",
+      "weapon": "#7b7f86"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "spear",
+      "label": "vanguard polearm",
+      "side": "left",
+      "angle": -7,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "beast",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.42,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 3,
+      "body_width": 53,
+      "coat_width": 10,
+      "leg_spacing": 0,
+      "ornament_code": 15,
+      "signature_code": 11
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

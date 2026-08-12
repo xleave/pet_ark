@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "lemuen-chibi",
+    "display_name": "Lemuen",
+    "localized_name": "蕾缪安",
+    "source_name": "Lemuen",
+    "source_id": "LT17",
+    "game_key": "char_4193_lemuen",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "神射手",
+    "rarity": 6,
+    "race": "萨科塔",
+    "visual_signature": [
+      "long layered #ffffff hair silhouette",
+      "coat outfit with #191b1e and #76656e blocks",
+      "halo: 萨科塔",
+      "ranged weapon: gun",
+      "one-sided hair ornament",
+      "asymmetric profile 5:180 with accent #6f512f"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "arts",
+      "summary": "long layered #ffffff hair silhouette; coat outfit with #191b1e and #76656e blocks; halo: 萨科塔; ranged weapon: gun; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#ffffff",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 35,
+      "height": 32,
+      "eye_gap": 18.5,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.9,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "bare",
+      "boot_style": "heeled",
+      "signature": "coat outfit with #191b1e and #76656e blocks"
+    },
+    "palette": {
+      "primary": "#191b1e",
+      "secondary": "#76656e",
+      "accent": "#6f512f",
+      "hair": "#ffffff",
+      "hair_highlight": "#ffffff",
+      "eye": "#9f6f38",
+      "line": "#15161a",
+      "mouth": "#804d5b",
+      "skin": "#987781",
+      "skin_line": "#76565d",
+      "boot": "#191a1f",
+      "leg": "#473f48",
+      "metal": "#9b969e",
+      "horn": "#e8e1d9",
+      "halo": "#b09045",
+      "weapon": "#24262b"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "ring",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": 2,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.3,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "one-sided hair ornament"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 36,
+      "top_height": 7,
+      "side_lock": 7,
+      "highlight_width": 3,
+      "body_width": 46,
+      "coat_width": 8,
+      "leg_spacing": 4,
+      "ornament_code": 3,
+      "signature_code": 8
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

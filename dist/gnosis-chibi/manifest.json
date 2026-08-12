@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "gnosis-chibi",
+    "display_name": "Gnosis",
+    "localized_name": "灵知",
+    "source_name": "Gnosis",
+    "source_id": "JC02",
+    "game_key": "char_206_gnosis",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "削弱者",
+    "rarity": 6,
+    "race": "黎博利",
+    "visual_signature": [
+      "long layered #312924 hair silhouette",
+      "dress outfit with #5f5248 and #2e2723 blocks",
+      "wings: 黎博利",
+      "arts device: book",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #4c2416"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #312924 hair silhouette; dress outfit with #5f5248 and #2e2723 blocks; wings: 黎博利; arts device: book; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#312924",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 34,
+      "height": 32,
+      "eye_gap": 18,
+      "eye_width": 4.8,
+      "eye_height": 6.5,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "dress outfit with #5f5248 and #2e2723 blocks"
+    },
+    "palette": {
+      "primary": "#5f5248",
+      "secondary": "#2e2723",
+      "accent": "#4c2416",
+      "hair": "#312924",
+      "hair_highlight": "#6b6561",
+      "eye": "#573e32",
+      "line": "#1e1b1d",
+      "mouth": "#804d5b",
+      "skin": "#f6e8dc",
+      "skin_line": "#a9938e",
+      "boot": "#363130",
+      "leg": "#262325",
+      "metal": "#7a7a7c",
+      "horn": "#776b60",
+      "halo": "#9d7737",
+      "weapon": "#514a46"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "left",
+      "angle": -7,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.43,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 2,
+      "body_width": 54,
+      "coat_width": 10,
+      "leg_spacing": 0,
+      "ornament_code": 6,
+      "signature_code": 15
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

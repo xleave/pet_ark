@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "cairn-chibi",
+    "display_name": "Cairn",
+    "localized_name": "响石",
+    "source_name": "Cairn",
+    "source_id": "CB31",
+    "game_key": "char_4214_cairn",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "本源铁卫",
+    "rarity": 5,
+    "race": "菲林",
+    "visual_signature": [
+      "side braid #4b2a20 hair silhouette",
+      "armor outfit with #715646 and #422d23 blocks",
+      "animal ears: 菲林",
+      "signature shield: shield",
+      "glasses",
+      "asymmetric profile 5:180 with accent #9baf45"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "side braid #4b2a20 hair silhouette; armor outfit with #715646 and #422d23 blocks; animal ears: 菲林; signature shield: shield; glasses"
+    },
+    "hair": {
+      "shape": "braid",
+      "color": "#4b2a20",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "armor outfit with #715646 and #422d23 blocks"
+    },
+    "palette": {
+      "primary": "#715646",
+      "secondary": "#422d23",
+      "accent": "#9baf45",
+      "hair": "#4b2a20",
+      "hair_highlight": "#7d665e",
+      "eye": "#4b2a20",
+      "line": "#281c1b",
+      "mouth": "#804d5b",
+      "skin": "#8e7c70",
+      "skin_line": "#715953",
+      "boot": "#3e332f",
+      "leg": "#2f2525",
+      "metal": "#837d7c",
+      "horn": "#866c5e",
+      "halo": "#c8c351",
+      "weapon": "#5d4d45"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "right",
+      "angle": 2,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.98,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 36,
+      "top_height": 6,
+      "side_lock": 8,
+      "highlight_width": 2,
+      "body_width": 51,
+      "coat_width": 14,
+      "leg_spacing": 4,
+      "ornament_code": 6,
+      "signature_code": 28
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

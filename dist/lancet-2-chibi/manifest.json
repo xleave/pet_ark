@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "lancet-2-chibi",
+    "display_name": "Lancet-2",
+    "localized_name": "Lancet-2",
+    "source_name": "Lancet-2",
+    "source_id": "RCX2",
+    "game_key": "char_285_medic2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "医师",
+    "rarity": 1,
+    "race": "",
+    "visual_signature": [
+      "compact cropped #504d47 hair silhouette",
+      "mechanical outfit with #151412 and #4a463f blocks",
+      "human silhouette: mechanical unit",
+      "medical device: medical",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #6d4d28"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "compact cropped #504d47 hair silhouette; mechanical outfit with #151412 and #4a463f blocks; human silhouette: mechanical unit; medical device: medical; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "short",
+      "color": "#504d47",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "mechanical",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "mechanical outfit with #151412 and #4a463f blocks"
+    },
+    "palette": {
+      "primary": "#151412",
+      "secondary": "#4a463f",
+      "accent": "#6d4d28",
+      "hair": "#504d47",
+      "hair_highlight": "#817f7b",
+      "eye": "#9e6c34",
+      "line": "#2a292a",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#17171a",
+      "leg": "#333132",
+      "metal": "#878889",
+      "horn": "#887f74",
+      "halo": "#af8d41",
+      "weapon": "#212223"
+    },
+    "species_features": {
+      "body_kind": "robot",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "right",
+      "angle": -8,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.42,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 2,
+      "body_width": 53,
+      "coat_width": 10,
+      "leg_spacing": 4,
+      "ornament_code": 6,
+      "signature_code": 7
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

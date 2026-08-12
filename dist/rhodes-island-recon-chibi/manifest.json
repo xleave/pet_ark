@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "rhodes-island-recon-chibi",
+    "display_name": "Rhodes Island Recon",
+    "localized_name": "罗德岛隐秘队",
+    "source_name": "Rhodes Island Recon",
+    "source_id": "MH04",
+    "game_key": "char_4215_buddy",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "vanguard",
+    "subprofession": "战术家",
+    "rarity": 1,
+    "race": "未公开",
+    "visual_signature": [
+      "long layered #334969 hair silhouette",
+      "uniform outfit with #1a2537 and #5a6e84 blocks",
+      "未公开: 未公开",
+      "tactical blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #345d8f"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #334969 hair silhouette; uniform outfit with #1a2537 and #5a6e84 blocks; 未公开: 未公开; tactical blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#334969",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #1a2537 and #5a6e84 blocks"
+    },
+    "palette": {
+      "primary": "#1a2537",
+      "secondary": "#5a6e84",
+      "accent": "#345d8f",
+      "hair": "#334969",
+      "hair_highlight": "#6c7c93",
+      "eye": "#487cb6",
+      "line": "#1f2837",
+      "mouth": "#804d5b",
+      "skin": "#e0c599",
+      "skin_line": "#9d806a",
+      "boot": "#191e29",
+      "leg": "#3a4352",
+      "metal": "#8e9aa8",
+      "horn": "#787d86",
+      "halo": "#8f967a",
+      "weapon": "#242d3b"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "tactical blade",
+      "side": "right",
+      "angle": 9,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "beast",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.07,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "one-sided hair ornament"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 3,
+      "body_width": 44,
+      "coat_width": 3,
+      "leg_spacing": 1,
+      "ornament_code": 15,
+      "signature_code": 27
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

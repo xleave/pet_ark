@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "terra-research-commission-chibi",
+    "display_name": "Terra Research Commission",
+    "localized_name": "泰拉大陆调查团",
+    "source_name": "Terra Research Commission",
+    "source_id": "MH01",
+    "game_key": "char_4077_palico",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "投掷手",
+    "rarity": 1,
+    "race": "未公开",
+    "visual_signature": [
+      "side braid #2a2f41 hair silhouette",
+      "coat outfit with #a29991 and #524749 blocks",
+      "未公开: 未公开",
+      "ranged weapon: gun",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #54ede3"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "side braid #2a2f41 hair silhouette; coat outfit with #a29991 and #524749 blocks; 未公开: 未公开; ranged weapon: gun; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "braid",
+      "color": "#2a2f41",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 33,
+      "height": 32,
+      "eye_gap": 17.5,
+      "eye_width": 5.85,
+      "eye_height": 6.1000000000000005,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "wide",
+      "boot_style": "flat",
+      "signature": "coat outfit with #a29991 and #524749 blocks"
+    },
+    "palette": {
+      "primary": "#a29991",
+      "secondary": "#524749",
+      "accent": "#54ede3",
+      "hair": "#2a2f41",
+      "hair_highlight": "#666976",
+      "eye": "#4cbab6",
+      "line": "#1b1e28",
+      "mouth": "#804d5b",
+      "skin": "#fbeddc",
+      "skin_line": "#ab968e",
+      "boot": "#534f4f",
+      "leg": "#363137",
+      "metal": "#8b888d",
+      "horn": "#736e70",
+      "halo": "#a1e5a8",
+      "weapon": "#7d7875"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": -9,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 3,
+      "ornament_code": 13,
+      "signature_code": 9
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

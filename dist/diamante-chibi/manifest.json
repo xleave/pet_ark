@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "diamante-chibi",
+    "display_name": "Diamante",
+    "localized_name": "折光",
+    "source_name": "Diamante",
+    "source_id": "LN21",
+    "game_key": "char_499_kaitou",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "本源术师",
+    "rarity": 5,
+    "race": "卡普里尼",
+    "visual_signature": [
+      "long layered #202121 hair silhouette",
+      "robe outfit with #312a26 and #5b554d blocks",
+      "horns: 卡普里尼",
+      "arts staff: staff",
+      "glasses",
+      "asymmetric profile 0:180 with accent #582523"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #202121 hair silhouette; robe outfit with #312a26 and #5b554d blocks; horns: 卡普里尼; arts staff: staff; glasses"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#202121",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 6.199999999999999,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "robe outfit with #312a26 and #5b554d blocks"
+    },
+    "palette": {
+      "primary": "#312a26",
+      "secondary": "#5b554d",
+      "accent": "#582523",
+      "hair": "#202121",
+      "hair_highlight": "#5e5f5f",
+      "eye": "#925631",
+      "line": "#17181b",
+      "mouth": "#804d5b",
+      "skin": "#c0b696",
+      "skin_line": "#8c7868",
+      "boot": "#232022",
+      "leg": "#3b3838",
+      "metal": "#8f8f8f",
+      "horn": "#6e675f",
+      "halo": "#a3773e",
+      "weapon": "#333030"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "ram",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "left",
+      "angle": -3,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.22,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 0,
+      "body_width": 53,
+      "coat_width": 6,
+      "leg_spacing": 4,
+      "ornament_code": 12,
+      "signature_code": 11
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

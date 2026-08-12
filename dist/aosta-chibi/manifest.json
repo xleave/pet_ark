@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "aosta-chibi",
+    "display_name": "Aosta",
+    "localized_name": "奥斯塔",
+    "source_name": "Aosta",
+    "source_id": "SR28",
+    "game_key": "char_346_aosta",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "散射手",
+    "rarity": 5,
+    "race": "鲁珀",
+    "visual_signature": [
+      "long layered #b9beb4 hair silhouette",
+      "coat outfit with #abada5 and #1b1e1f blocks",
+      "animal ears: 鲁珀",
+      "ranged weapon: gun",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #c0a179"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #b9beb4 hair silhouette; coat outfit with #abada5 and #1b1e1f blocks; animal ears: 鲁珀; ranged weapon: gun; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#b9beb4",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 35,
+      "height": 32,
+      "eye_gap": 18.5,
+      "eye_width": 5.85,
+      "eye_height": 6.9,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "bare",
+      "boot_style": "heeled",
+      "signature": "coat outfit with #abada5 and #1b1e1f blocks"
+    },
+    "palette": {
+      "primary": "#abada5",
+      "secondary": "#1b1e1f",
+      "accent": "#c0a179",
+      "hair": "#b9beb4",
+      "hair_highlight": "#cdd0c9",
+      "eye": "#cb9b61",
+      "line": "#515453",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#565757",
+      "leg": "#1d1f23",
+      "metal": "#72767a",
+      "horn": "#c2bdb0",
+      "halo": "#dcbc6e",
+      "weapon": "#828582"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "wolf",
+      "horns": "none",
+      "halo": "none",
+      "tail": "fluffy",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": 1,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 3,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 3,
+      "ornament_code": 11,
+      "signature_code": 3
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

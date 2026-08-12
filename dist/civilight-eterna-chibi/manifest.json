@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "civilight-eterna-chibi",
+    "display_name": "Civilight Eterna",
+    "localized_name": "魔王",
+    "source_name": "Civilight Eterna",
+    "source_id": "DWDB",
+    "game_key": "char_4134_cetsyr",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "吟游者",
+    "rarity": 6,
+    "race": "未公开",
+    "visual_signature": [
+      "long layered #ece2de hair silhouette",
+      "dress outfit with #241e24 and #f8eeeb blocks",
+      "未公开: 未公开",
+      "instrument: instrument",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #755332"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #ece2de hair silhouette; dress outfit with #241e24 and #f8eeeb blocks; 未公开: 未公开; instrument: instrument; single eyepatch"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#ece2de",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 5.85,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "dress outfit with #241e24 and #f8eeeb blocks"
+    },
+    "palette": {
+      "primary": "#241e24",
+      "secondary": "#f8eeeb",
+      "accent": "#755332",
+      "hair": "#ece2de",
+      "hair_highlight": "#f1eae7",
+      "eye": "#a2703a",
+      "line": "#19171d",
+      "mouth": "#804d5b",
+      "skin": "#d3beb9",
+      "skin_line": "#967c7b",
+      "boot": "#1e1b21",
+      "leg": "#837e81",
+      "metal": "#d5d4d6",
+      "horn": "#ded1c7",
+      "halo": "#b39147",
+      "weapon": "#2b282e"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "instrument",
+      "label": "instrument",
+      "side": "right",
+      "angle": 1,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.27,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 0,
+      "body_width": 44,
+      "coat_width": 7,
+      "leg_spacing": 3,
+      "ornament_code": 8,
+      "signature_code": 12
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

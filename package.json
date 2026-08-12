@@ -1,12 +1,15 @@
 {
-  "name": "pet-ark-priestess",
-  "version": "0.1.0",
+  "name": "pet-ark-all-characters",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Chibi Priestess (Arknights) Codex pet generator and package.",
+  "description": "Auditable, code-drawn Arknights character collection for the Codex pet atlas format.",
   "scripts": {
-    "build": "node scripts/build.mjs && python3 scripts/finalize-codex.py",
+    "build": "node scripts/build.mjs",
+    "build:all": "node scripts/build.mjs --all",
     "validate": "node scripts/validate.mjs",
+    "validate:all": "node scripts/validate.mjs --all",
+    "test": "node scripts/test-registry.mjs",
     "rebuild": "npm run build && npm run validate"
   },
   "dependencies": {

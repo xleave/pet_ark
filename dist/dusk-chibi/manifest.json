@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "dusk-chibi",
+    "display_name": "Dusk",
+    "localized_name": "夕",
+    "source_name": "Dusk",
+    "source_id": "NM02",
+    "game_key": "char_2015_dusk",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "扩散术师",
+    "rarity": 6,
+    "race": "未公开",
+    "visual_signature": [
+      "long layered #b8bed1 hair silhouette",
+      "robe outfit with #404652 and #1c1a25 blocks",
+      "horns: 未公开",
+      "arts staff: book",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #476ea9"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #b8bed1 hair silhouette; robe outfit with #404652 and #1c1a25 blocks; horns: 未公开; arts staff: book; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#b8bed1",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 34,
+      "height": 29,
+      "eye_gap": 18,
+      "eye_width": 5.5,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "robe outfit with #404652 and #1c1a25 blocks"
+    },
+    "palette": {
+      "primary": "#404652",
+      "secondary": "#1c1a25",
+      "accent": "#476ea9",
+      "hair": "#b8bed1",
+      "hair_highlight": "#ccd0de",
+      "eye": "#44a5a5",
+      "line": "#51545e",
+      "mouth": "#804d5b",
+      "skin": "#eddbd0",
+      "skin_line": "#a48c87",
+      "boot": "#292c34",
+      "leg": "#1e1d26",
+      "metal": "#72747d",
+      "horn": "#c1bdbf",
+      "halo": "#9aa088",
+      "weapon": "#3d424c"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts staff",
+      "side": "right",
+      "angle": -5,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.43,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 2,
+      "body_width": 54,
+      "coat_width": 10,
+      "leg_spacing": 2,
+      "ornament_code": 10,
+      "signature_code": 9
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

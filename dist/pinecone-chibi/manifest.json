@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "pinecone-chibi",
+    "display_name": "Pinecone",
+    "localized_name": "松果",
+    "source_name": "Pinecone",
+    "source_id": "CB09",
+    "game_key": "char_440_pinecn",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "散射手",
+    "rarity": 4,
+    "race": "黎博利",
+    "visual_signature": [
+      "long layered #6e6267 hair silhouette",
+      "coat outfit with #8e8b91 and #fff8ec blocks",
+      "wings: 黎博利",
+      "ranged weapon: gun",
+      "one-sided hair ornament",
+      "asymmetric profile 7:180 with accent #562927"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #6e6267 hair silhouette; coat outfit with #8e8b91 and #fff8ec blocks; wings: 黎博利; ranged weapon: gun; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#6e6267",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 5.5,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "coat outfit with #8e8b91 and #fff8ec blocks"
+    },
+    "palette": {
+      "primary": "#8e8b91",
+      "secondary": "#fff8ec",
+      "accent": "#562927",
+      "hair": "#6e6267",
+      "hair_highlight": "#978e92",
+      "eye": "#6d4d4c",
+      "line": "#353136",
+      "mouth": "#804d5b",
+      "skin": "#b07265",
+      "skin_line": "#83534e",
+      "boot": "#4a494f",
+      "leg": "#868382",
+      "metal": "#d8d8d7",
+      "horn": "#998a85",
+      "halo": "#a27a41",
+      "weapon": "#706f75"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": 10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.32,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 34,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 3,
+      "body_width": 47,
+      "coat_width": 8,
+      "leg_spacing": 2,
+      "ornament_code": 7,
+      "signature_code": 3
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

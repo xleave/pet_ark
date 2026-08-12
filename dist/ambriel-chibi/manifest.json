@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "ambriel-chibi",
+    "display_name": "Ambriel",
+    "localized_name": "安比尔",
+    "source_name": "Ambriel",
+    "source_id": "LT02",
+    "game_key": "char_302_glaze",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "神射手",
+    "rarity": 4,
+    "race": "萨科塔",
+    "visual_signature": [
+      "long layered #fdedef hair silhouette",
+      "coat outfit with #1b1719 and #713e44 blocks",
+      "halo: 萨科塔",
+      "ranged weapon: gun",
+      "glasses",
+      "asymmetric profile 0:180 with accent #492226"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "arts",
+      "summary": "long layered #fdedef hair silhouette; coat outfit with #1b1719 and #713e44 blocks; halo: 萨科塔; ranged weapon: gun; glasses"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#fdedef",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 6.199999999999999,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "coat outfit with #1b1719 and #713e44 blocks"
+    },
+    "palette": {
+      "primary": "#1b1719",
+      "secondary": "#713e44",
+      "accent": "#492226",
+      "hair": "#fdedef",
+      "hair_highlight": "#fef2f3",
+      "eye": "#72383c",
+      "line": "#151518",
+      "mouth": "#804d5b",
+      "skin": "#a0676d",
+      "skin_line": "#7a4d52",
+      "boot": "#1a181c",
+      "leg": "#452d34",
+      "metal": "#99848b",
+      "horn": "#e7d7d0",
+      "halo": "#9b7640",
+      "weapon": "#252427"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "ring",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "left",
+      "angle": -8,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 8,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 4,
+      "ornament_code": 0,
+      "signature_code": 2
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

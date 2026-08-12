@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "castle-3-chibi",
+    "display_name": "Castle-3",
+    "localized_name": "Castle-3",
+    "source_name": "Castle-3",
+    "source_id": "RCX3",
+    "game_key": "char_286_cast3",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "无畏者",
+    "rarity": 1,
+    "race": "",
+    "visual_signature": [
+      "compact cropped #796f60 hair silhouette",
+      "mechanical outfit with #776e5e and #141311 blocks",
+      "human silhouette: mechanical unit",
+      "blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #372f27"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "compact cropped #796f60 hair silhouette; mechanical outfit with #776e5e and #141311 blocks; human silhouette: mechanical unit; blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "short",
+      "color": "#796f60",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 4.8,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "mechanical",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "mechanical outfit with #776e5e and #141311 blocks"
+    },
+    "palette": {
+      "primary": "#776e5e",
+      "secondary": "#141311",
+      "accent": "#372f27",
+      "hair": "#796f60",
+      "hair_highlight": "#9f978d",
+      "eye": "#805c34",
+      "line": "#393633",
+      "mouth": "#804d5b",
+      "skin": "#7e7668",
+      "skin_line": "#68554f",
+      "boot": "#403d39",
+      "leg": "#1a191d",
+      "metal": "#6f7174",
+      "horn": "#9f9281",
+      "halo": "#917d41",
+      "weapon": "#615c54"
+    },
+    "species_features": {
+      "body_kind": "robot",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "left",
+      "angle": -2,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 0,
+      "ornament_code": 12,
+      "signature_code": 13
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "croissant-chibi",
+    "display_name": "Croissant",
+    "localized_name": "可颂",
+    "source_name": "Croissant",
+    "source_id": "PL04",
+    "game_key": "char_201_moeshd",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "铁卫",
+    "rarity": 5,
+    "race": "丰蹄",
+    "visual_signature": [
+      "long layered #554f56 hair silhouette",
+      "armor outfit with #655257 and #462f32 blocks",
+      "animal ears: 丰蹄",
+      "signature shield: shield",
+      "face mask",
+      "asymmetric profile 0:180 with accent #673d3b"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "long layered #554f56 hair silhouette; armor outfit with #655257 and #462f32 blocks; animal ears: 丰蹄; signature shield: shield; face mask"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#554f56",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "armor outfit with #655257 and #462f32 blocks"
+    },
+    "palette": {
+      "primary": "#655257",
+      "secondary": "#462f32",
+      "accent": "#673d3b",
+      "hair": "#554f56",
+      "hair_highlight": "#858085",
+      "eye": "#3f2a2f",
+      "line": "#2b2a30",
+      "mouth": "#804d5b",
+      "skin": "#f6d3ba",
+      "skin_line": "#a9887b",
+      "boot": "#393137",
+      "leg": "#31262c",
+      "metal": "#857e83",
+      "horn": "#8b807c",
+      "halo": "#ab854c",
+      "weapon": "#554a50"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "left",
+      "angle": 9,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "mask",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.42,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 0,
+      "body_width": 53,
+      "coat_width": 10,
+      "leg_spacing": 1,
+      "ornament_code": 8,
+      "signature_code": 23
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

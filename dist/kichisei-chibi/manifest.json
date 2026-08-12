@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "kichisei-chibi",
+    "display_name": "Kichisei",
+    "localized_name": "吉星",
+    "source_name": "Kichisei",
+    "source_id": "HK16",
+    "game_key": "char_4203_kichi",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "散射手",
+    "rarity": 5,
+    "race": "佩洛",
+    "visual_signature": [
+      "long layered #6a5340 hair silhouette",
+      "coat outfit with #281113 and #f1e7df blocks",
+      "佩洛: 佩洛",
+      "ranged weapon: gun",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #701e1d"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #6a5340 hair silhouette; coat outfit with #281113 and #f1e7df blocks; 佩洛: 佩洛; ranged weapon: gun; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#6a5340",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 33,
+      "height": 30,
+      "eye_gap": 17.5,
+      "eye_width": 4.8,
+      "eye_height": 6.1000000000000005,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "wide",
+      "boot_style": "heeled",
+      "signature": "coat outfit with #281113 and #f1e7df blocks"
+    },
+    "palette": {
+      "primary": "#281113",
+      "secondary": "#f1e7df",
+      "accent": "#701e1d",
+      "hair": "#6a5340",
+      "hair_highlight": "#948375",
+      "eye": "#281113",
+      "line": "#332b27",
+      "mouth": "#804d5b",
+      "skin": "#a02b2b",
+      "skin_line": "#7a2d2e",
+      "boot": "#1f161a",
+      "leg": "#807b7c",
+      "metal": "#d2d0d1",
+      "horn": "#978270",
+      "halo": "#b0743b",
+      "weapon": "#2d2023"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "left",
+      "angle": -2,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.08,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 7,
+      "highlight_width": 1,
+      "body_width": 45,
+      "coat_width": 3,
+      "leg_spacing": 0,
+      "ornament_code": 13,
+      "signature_code": 12
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

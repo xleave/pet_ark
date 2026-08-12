@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "shining-chibi",
+    "display_name": "Shining",
+    "localized_name": "闪灵",
+    "source_name": "Shining",
+    "source_id": "FO01",
+    "game_key": "char_147_shining",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "医师",
+    "rarity": 6,
+    "race": "萨卡兹",
+    "visual_signature": [
+      "long layered #7c7875 hair silhouette",
+      "coat outfit with #373534 and #d8d2cd blocks",
+      "horns: 萨卡兹",
+      "medical device: medical",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #805f3b"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "long layered #7c7875 hair silhouette; coat outfit with #373534 and #d8d2cd blocks; horns: 萨卡兹; medical device: medical; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#7c7875",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 4.8,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "coat outfit with #373534 and #d8d2cd blocks"
+    },
+    "palette": {
+      "primary": "#373534",
+      "secondary": "#d8d2cd",
+      "accent": "#805f3b",
+      "hair": "#7c7875",
+      "hair_highlight": "#a19e9c",
+      "eye": "#a8763f",
+      "line": "#3a393b",
+      "mouth": "#804d5b",
+      "skin": "#a09088",
+      "skin_line": "#7a6360",
+      "boot": "#262528",
+      "leg": "#747173",
+      "metal": "#c7c7c9",
+      "horn": "#a0978d",
+      "halo": "#b9974c",
+      "weapon": "#373739"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "right",
+      "angle": -2,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 0,
+      "ornament_code": 4,
+      "signature_code": 16
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

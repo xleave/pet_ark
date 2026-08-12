@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "nightmare-chibi",
+    "display_name": "Nightmare",
+    "localized_name": "夜魔",
+    "source_name": "Nightmare",
+    "source_id": "VC03",
+    "game_key": "char_164_nightm",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "中坚术师",
+    "rarity": 5,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #f7f5f3 hair silhouette",
+      "robe outfit with #e9e4d7 and #c7c4b8 blocks",
+      "animal ears: 菲林",
+      "arts staff: staff",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #e2c094"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #f7f5f3 hair silhouette; robe outfit with #e9e4d7 and #c7c4b8 blocks; animal ears: 菲林; arts staff: staff; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#f7f5f3",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 5.5,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "robe outfit with #e9e4d7 and #c7c4b8 blocks"
+    },
+    "palette": {
+      "primary": "#e9e4d7",
+      "secondary": "#c7c4b8",
+      "accent": "#e2c094",
+      "hair": "#f7f5f3",
+      "hair_highlight": "#f9f8f6",
+      "eye": "#deac70",
+      "line": "#646261",
+      "mouth": "#804d5b",
+      "skin": "#d8cec3",
+      "skin_line": "#998580",
+      "boot": "#706e6c",
+      "leg": "#6c6b6a",
+      "metal": "#bfc1bf",
+      "horn": "#e4dbd2",
+      "halo": "#efcd7d",
+      "weapon": "#aba9a3"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "right",
+      "angle": 10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 0,
+      "body_width": 52,
+      "coat_width": 15,
+      "leg_spacing": 2,
+      "ornament_code": 0,
+      "signature_code": 28
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

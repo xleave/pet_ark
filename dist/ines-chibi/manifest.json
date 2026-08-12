@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "ines-chibi",
+    "display_name": "Ines",
+    "localized_name": "伊内丝",
+    "source_name": "Ines",
+    "source_id": "B215",
+    "game_key": "char_4087_ines",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "vanguard",
+    "subprofession": "情报官",
+    "rarity": 6,
+    "race": "未公开",
+    "visual_signature": [
+      "long layered #292525 hair silhouette",
+      "uniform outfit with #7c7f81 and #383738 blocks",
+      "未公开: 未公开",
+      "vanguard polearm: spear",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #412926"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #292525 hair silhouette; uniform outfit with #7c7f81 and #383738 blocks; 未公开: 未公开; vanguard polearm: spear; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#292525",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 33,
+      "height": 29,
+      "eye_gap": 17.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.1000000000000005,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "wide",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #7c7f81 and #383738 blocks"
+    },
+    "palette": {
+      "primary": "#7c7f81",
+      "secondary": "#383738",
+      "accent": "#412926",
+      "hair": "#292525",
+      "hair_highlight": "#656262",
+      "eye": "#855933",
+      "line": "#1b1a1d",
+      "mouth": "#804d5b",
+      "skin": "#e2d6ca",
+      "skin_line": "#9e8984",
+      "boot": "#434448",
+      "leg": "#2a2a2f",
+      "metal": "#7f8186",
+      "horn": "#736961",
+      "halo": "#967a40",
+      "weapon": "#64676b"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "spear",
+      "label": "vanguard polearm",
+      "side": "left",
+      "angle": -1,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.32,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 1,
+      "body_width": 47,
+      "coat_width": 8,
+      "leg_spacing": 1,
+      "ornament_code": 1,
+      "signature_code": 4
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

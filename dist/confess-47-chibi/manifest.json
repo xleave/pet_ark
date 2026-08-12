@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "confess-47-chibi",
+    "display_name": "CONFESS-47",
+    "localized_name": "CONFESS-47",
+    "source_name": "CONFESS-47",
+    "source_id": "LT47",
+    "game_key": "char_4188_confes",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "vanguard",
+    "subprofession": "尖兵",
+    "rarity": 1,
+    "race": "",
+    "visual_signature": [
+      "compact cropped #473a30 hair silhouette",
+      "mechanical outfit with #28221e and #4e4b45 blocks",
+      "human silhouette: mechanical unit",
+      "vanguard polearm: spear",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #46372d"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "compact cropped #473a30 hair silhouette; mechanical outfit with #28221e and #4e4b45 blocks; human silhouette: mechanical unit; vanguard polearm: spear; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "short",
+      "color": "#473a30",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 34,
+      "height": 29,
+      "eye_gap": 18,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "mechanical",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "mechanical outfit with #28221e and #4e4b45 blocks"
+    },
+    "palette": {
+      "primary": "#28221e",
+      "secondary": "#4e4b45",
+      "accent": "#46372d",
+      "hair": "#473a30",
+      "hair_highlight": "#7b716a",
+      "eye": "#886037",
+      "line": "#262221",
+      "mouth": "#804d5b",
+      "skin": "#daccb8",
+      "skin_line": "#9a847a",
+      "boot": "#1f1d1f",
+      "leg": "#353335",
+      "metal": "#898a8b",
+      "horn": "#837567",
+      "halo": "#998144",
+      "weapon": "#2d2b2b"
+    },
+    "species_features": {
+      "body_kind": "robot",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "spear",
+      "label": "vanguard polearm",
+      "side": "right",
+      "angle": -8,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 2,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 4,
+      "ornament_code": 2,
+      "signature_code": 23
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

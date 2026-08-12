@@ -1,0 +1,3038 @@
+{
+  "sources": {
+    "scope": "Arknights mainland-CN playable operators published and indexable on the retrieval date; class conversions are one character, formally separate playable alters are separate entries. Priestess is retained as the repository regression baseline.",
+    "retrieved_at": "2026-08-12",
+    "sources": [
+      {
+        "id": "official-operator-archive",
+        "title": "明日方舟：干员动态集录",
+        "url": "https://ak.hypergryph.com/archive/dynamicCompile",
+        "authority": "official",
+        "use": "official public operator identity and visual-design verification"
+      },
+      {
+        "id": "prts-playable-operator-index",
+        "title": "PRTS 干员一览",
+        "url": "https://prts.wiki/w/干员一览",
+        "authority": "community index",
+        "use": "machine-readable playable roster, localized names, display numbers, class, rarity and race"
+      },
+      {
+        "id": "arknights-game-data",
+        "title": "Kengxxiao/ArknightsGameData character_table",
+        "url": "https://github.com/Kengxxiao/ArknightsGameData/blob/master/zh_CN/gamedata/excel/character_table.json",
+        "authority": "public game-data mirror",
+        "use": "display-number to current internal character-key reconciliation"
+      },
+      {
+        "id": "aceship-avatar-reference",
+        "title": "Aceship/Arknight-Images avatar index",
+        "url": "https://github.com/Aceship/Arknight-Images/tree/master/avatars",
+        "authority": "community visual index",
+        "use": "temporary, non-redistributed palette and silhouette analysis where official material is not machine-indexable"
+      }
+    ],
+    "normalization": {
+      "raw_index_entries": 427,
+      "duplicate_class_forms_removed": 2,
+      "playable_character_entries": 425,
+      "regression_baselines": 1,
+      "expected_total": 426
+    }
+  },
+  "characters": [
+    {
+      "id": "priestess-chibi",
+      "display_name": "Priestess",
+      "localized_name": "普瑞赛斯",
+      "output_path": "priestess-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "durin-chibi",
+      "display_name": "Durin",
+      "localized_name": "杜林",
+      "output_path": "durin-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "tecno-chibi",
+      "display_name": "Tecno",
+      "localized_name": "特克诺",
+      "output_path": "tecno-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "pudding-chibi",
+      "display_name": "Pudding",
+      "localized_name": "布丁",
+      "output_path": "pudding-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "corroserum-chibi",
+      "display_name": "Corroserum",
+      "localized_name": "蚀清",
+      "output_path": "corroserum-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "aphrissa-chibi",
+      "display_name": "Aphrissa",
+      "localized_name": "谬因",
+      "output_path": "aphrissa-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ho-olheyak-chibi",
+      "display_name": "Ho'olheyak",
+      "localized_name": "霍尔海雅",
+      "output_path": "ho-olheyak-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "necrass-chibi",
+      "display_name": "Necrass",
+      "localized_name": "死芒",
+      "output_path": "necrass-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "harmonie-chibi",
+      "display_name": "Harmonie",
+      "localized_name": "和弦",
+      "output_path": "harmonie-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "marcille-chibi",
+      "display_name": "Marcille",
+      "localized_name": "玛露西尔",
+      "output_path": "marcille-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "indigo-chibi",
+      "display_name": "Indigo",
+      "localized_name": "深靛",
+      "output_path": "indigo-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "kjera-chibi",
+      "display_name": "Kjera",
+      "localized_name": "耶拉",
+      "output_path": "kjera-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "pramanix-the-prerita-chibi",
+      "display_name": "Pramanix the Prerita",
+      "localized_name": "圣聆初雪",
+      "output_path": "pramanix-the-prerita-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "lin-chibi",
+      "display_name": "Lin",
+      "localized_name": "林",
+      "output_path": "lin-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "eyjafjalla-chibi",
+      "display_name": "Eyjafjalla",
+      "localized_name": "艾雅法拉",
+      "output_path": "eyjafjalla-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "carnelian-chibi",
+      "display_name": "Carnelian",
+      "localized_name": "卡涅利安",
+      "output_path": "carnelian-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ebenholz-chibi",
+      "display_name": "Ebenholz",
+      "localized_name": "黑键",
+      "output_path": "ebenholz-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "diamante-chibi",
+      "display_name": "Diamante",
+      "localized_name": "折光",
+      "output_path": "diamante-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "akkord-chibi",
+      "display_name": "Akkord",
+      "localized_name": "协律",
+      "output_path": "akkord-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "mostima-chibi",
+      "display_name": "Mostima",
+      "localized_name": "莫斯提马",
+      "output_path": "mostima-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "miss-christine-chibi",
+      "display_name": "Miss.Christine",
+      "localized_name": "Miss.Christine",
+      "output_path": "miss-christine-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "dusk-chibi",
+      "display_name": "Dusk",
+      "localized_name": "夕",
+      "output_path": "dusk-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "lava-chibi",
+      "display_name": "Lava",
+      "localized_name": "炎熔",
+      "output_path": "lava-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "steward-chibi",
+      "display_name": "Steward",
+      "localized_name": "史都华德",
+      "output_path": "steward-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "amiya-chibi",
+      "display_name": "Amiya",
+      "localized_name": "阿米娅",
+      "output_path": "amiya-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "greyy-chibi",
+      "display_name": "Greyy",
+      "localized_name": "格雷伊",
+      "output_path": "greyy-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "click-chibi",
+      "display_name": "Click",
+      "localized_name": "卡达",
+      "output_path": "click-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "beeswax-chibi",
+      "display_name": "Beeswax",
+      "localized_name": "蜜蜡",
+      "output_path": "beeswax-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ceobe-chibi",
+      "display_name": "Ceobe",
+      "localized_name": "刻俄柏",
+      "output_path": "ceobe-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "nymph-chibi",
+      "display_name": "Nymph",
+      "localized_name": "妮芙",
+      "output_path": "nymph-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "12f-chibi",
+      "display_name": "12F",
+      "localized_name": "12F",
+      "output_path": "12f-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "leonhardt-chibi",
+      "display_name": "Leonhardt",
+      "localized_name": "莱恩哈特",
+      "output_path": "leonhardt-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "warmy-chibi",
+      "display_name": "Warmy",
+      "localized_name": "温米",
+      "output_path": "warmy-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "timeslot-chibi",
+      "display_name": "Timeslot",
+      "localized_name": "时隙",
+      "output_path": "timeslot-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "gallus2-chibi",
+      "display_name": "GALLUS²",
+      "localized_name": "GALLUS²",
+      "output_path": "gallus2-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "logos-chibi",
+      "display_name": "Logos",
+      "localized_name": "逻各斯",
+      "output_path": "logos-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "mantra-chibi",
+      "display_name": "Mantra",
+      "localized_name": "真言",
+      "output_path": "mantra-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "blaze-the-igniting-spark-chibi",
+      "display_name": "Blaze the Igniting Spark",
+      "localized_name": "烛煌",
+      "output_path": "blaze-the-igniting-spark-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "lava-the-purgatory-chibi",
+      "display_name": "Lava the Purgatory",
+      "localized_name": "炎狱炎熔",
+      "output_path": "lava-the-purgatory-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ifrit-chibi",
+      "display_name": "Ifrit",
+      "localized_name": "伊芙利特",
+      "output_path": "ifrit-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "astgenne-chibi",
+      "display_name": "Astgenne",
+      "localized_name": "星源",
+      "output_path": "astgenne-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "tomimi-chibi",
+      "display_name": "Tomimi",
+      "localized_name": "特米米",
+      "output_path": "tomimi-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "passenger-chibi",
+      "display_name": "Passenger",
+      "localized_name": "异客",
+      "output_path": "passenger-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "minimalist-chibi",
+      "display_name": "Minimalist",
+      "localized_name": "至简",
+      "output_path": "minimalist-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "gitano-chibi",
+      "display_name": "Gitano",
+      "localized_name": "远山",
+      "output_path": "gitano-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "santalla-chibi",
+      "display_name": "Santalla",
+      "localized_name": "寒檀",
+      "output_path": "santalla-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "qanipalaat-chibi",
+      "display_name": "Qanipalaat",
+      "localized_name": "雪绒",
+      "output_path": "qanipalaat-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "skyfire-chibi",
+      "display_name": "Skyfire",
+      "localized_name": "天火",
+      "output_path": "skyfire-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "lappland-the-decadenza-chibi",
+      "display_name": "Lappland the Decadenza",
+      "localized_name": "荒芜拉普兰德",
+      "output_path": "lappland-the-decadenza-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "aroma-chibi",
+      "display_name": "Aroma",
+      "localized_name": "阿罗玛",
+      "output_path": "aroma-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ripresa-chibi",
+      "display_name": "Ripresa",
+      "localized_name": "复奏",
+      "output_path": "ripresa-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "absinthe-chibi",
+      "display_name": "Absinthe",
+      "localized_name": "苦艾",
+      "output_path": "absinthe-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "4226-veen-chibi",
+      "display_name": "Вий",
+      "localized_name": "维伊",
+      "output_path": "4226-veen-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "haze-chibi",
+      "display_name": "Haze",
+      "localized_name": "夜烟",
+      "output_path": "haze-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "nightmare-chibi",
+      "display_name": "Nightmare",
+      "localized_name": "夜魔",
+      "output_path": "nightmare-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "mint-chibi",
+      "display_name": "Mint",
+      "localized_name": "薄绿",
+      "output_path": "mint-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "goldenglow-chibi",
+      "display_name": "Goldenglow",
+      "localized_name": "澄闪",
+      "output_path": "goldenglow-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "iris-chibi",
+      "display_name": "Iris",
+      "localized_name": "爱丽丝",
+      "output_path": "iris-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "rockrock-chibi",
+      "display_name": "Rockrock",
+      "localized_name": "洛洛",
+      "output_path": "rockrock-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "delphine-chibi",
+      "display_name": "Delphine",
+      "localized_name": "戴菲恩",
+      "output_path": "delphine-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "leizi-chibi",
+      "display_name": "Leizi",
+      "localized_name": "惊蛰",
+      "output_path": "leizi-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "noir-corne-chibi",
+      "display_name": "Noir Corne",
+      "localized_name": "黑角",
+      "output_path": "noir-corne-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "underflow-chibi",
+      "display_name": "Underflow",
+      "localized_name": "深巡",
+      "output_path": "underflow-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "liskarm-chibi",
+      "display_name": "Liskarm",
+      "localized_name": "雷蛇",
+      "output_path": "liskarm-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "jessica-the-liberated-chibi",
+      "display_name": "Jessica the Liberated",
+      "localized_name": "涤火杰西卡",
+      "output_path": "jessica-the-liberated-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "lutonada-chibi",
+      "display_name": "Lutonada",
+      "localized_name": "露托",
+      "output_path": "lutonada-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "cairn-chibi",
+      "display_name": "Cairn",
+      "localized_name": "响石",
+      "output_path": "cairn-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "senshi-chibi",
+      "display_name": "Senshi",
+      "localized_name": "森西",
+      "output_path": "senshi-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "nearl-chibi",
+      "display_name": "Nearl",
+      "localized_name": "临光",
+      "output_path": "nearl-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "cuora-chibi",
+      "display_name": "Cuora",
+      "localized_name": "蛇屠箱",
+      "output_path": "cuora-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "matterhorn-chibi",
+      "display_name": "Matterhorn",
+      "localized_name": "角峰",
+      "output_path": "matterhorn-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "aurora-chibi",
+      "display_name": "Aurora",
+      "localized_name": "极光",
+      "output_path": "aurora-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "blemishine-chibi",
+      "display_name": "Blemishine",
+      "localized_name": "瑕光",
+      "output_path": "blemishine-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ashlock-chibi",
+      "display_name": "Ashlock",
+      "localized_name": "灰毫",
+      "output_path": "ashlock-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "hoshiguma-chibi",
+      "display_name": "Hoshiguma",
+      "localized_name": "星熊",
+      "output_path": "hoshiguma-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "bison-chibi",
+      "display_name": "Bison",
+      "localized_name": "拜松",
+      "output_path": "bison-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "hung-chibi",
+      "display_name": "Hung",
+      "localized_name": "吽",
+      "output_path": "hung-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "hoshiguma-the-breacher-chibi",
+      "display_name": "Hoshiguma the Breacher",
+      "localized_name": "斩业星熊",
+      "output_path": "hoshiguma-the-breacher-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "czerny-chibi",
+      "display_name": "Czerny",
+      "localized_name": "车尔尼",
+      "output_path": "czerny-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "bassline-chibi",
+      "display_name": "Bassline",
+      "localized_name": "深律",
+      "output_path": "bassline-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "sankta-miksaparato-chibi",
+      "display_name": "Sankta Miksaparato",
+      "localized_name": "信仰搅拌机",
+      "output_path": "sankta-miksaparato-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "vulcan-chibi",
+      "display_name": "Vulcan",
+      "localized_name": "火神",
+      "output_path": "vulcan-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "nian-chibi",
+      "display_name": "Nian",
+      "localized_name": "年",
+      "output_path": "nian-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "shu-chibi",
+      "display_name": "Shu",
+      "localized_name": "黍",
+      "output_path": "shu-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "yu-chibi",
+      "display_name": "Yu",
+      "localized_name": "余",
+      "output_path": "yu-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "beagle-chibi",
+      "display_name": "Beagle",
+      "localized_name": "米格鲁",
+      "output_path": "beagle-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "cardigan-chibi",
+      "display_name": "Cardigan",
+      "localized_name": "卡缇",
+      "output_path": "cardigan-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "spot-chibi",
+      "display_name": "Spot",
+      "localized_name": "斑点",
+      "output_path": "spot-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "croissant-chibi",
+      "display_name": "Croissant",
+      "localized_name": "可颂",
+      "output_path": "croissant-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "dur-nar-chibi",
+      "display_name": "Dur-nar",
+      "localized_name": "坚雷",
+      "output_path": "dur-nar-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "bubble-chibi",
+      "display_name": "Bubble",
+      "localized_name": "泡泡",
+      "output_path": "bubble-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "mudrock-chibi",
+      "display_name": "Mudrock",
+      "localized_name": "泥岩",
+      "output_path": "mudrock-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "heavyrain-chibi",
+      "display_name": "Heavyrain",
+      "localized_name": "暴雨",
+      "output_path": "heavyrain-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "asbestos-chibi",
+      "display_name": "Asbestos",
+      "localized_name": "石棉",
+      "output_path": "asbestos-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "firewhistle-chibi",
+      "display_name": "Firewhistle",
+      "localized_name": "火哨",
+      "output_path": "firewhistle-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "cement-chibi",
+      "display_name": "Cement",
+      "localized_name": "洋灰",
+      "output_path": "cement-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "thumpy-chibi",
+      "display_name": "Thumpy",
+      "localized_name": "珊比",
+      "output_path": "thumpy-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "friston-3-chibi",
+      "display_name": "Friston-3",
+      "localized_name": "Friston-3",
+      "output_path": "friston-3-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "mechanist-chibi",
+      "display_name": "Mechanist",
+      "localized_name": "机械师",
+      "output_path": "mechanist-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "saria-chibi",
+      "display_name": "Saria",
+      "localized_name": "塞雷娅",
+      "output_path": "saria-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "blitz-chibi",
+      "display_name": "Blitz",
+      "localized_name": "闪击",
+      "output_path": "blitz-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "eunectes-chibi",
+      "display_name": "Eunectes",
+      "localized_name": "森蚺",
+      "output_path": "eunectes-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "philae-chibi",
+      "display_name": "Philae",
+      "localized_name": "菲莱",
+      "output_path": "philae-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "penance-chibi",
+      "display_name": "Penance",
+      "localized_name": "斥罪",
+      "output_path": "penance-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "4207-branch-chibi",
+      "display_name": "Веточки",
+      "localized_name": "折桠",
+      "output_path": "4207-branch-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "crackborne-chibi",
+      "display_name": "Crackborne",
+      "localized_name": "裂响",
+      "output_path": "crackborne-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "196-sunbr-chibi",
+      "display_name": "Гум",
+      "localized_name": "古米",
+      "output_path": "196-sunbr-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "shalem-chibi",
+      "display_name": "Shalem",
+      "localized_name": "暮落",
+      "output_path": "shalem-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "horn-chibi",
+      "display_name": "Horn",
+      "localized_name": "号角",
+      "output_path": "horn-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ulpianus-chibi",
+      "display_name": "Ulpianus",
+      "localized_name": "乌尔比安",
+      "output_path": "ulpianus-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "skadi-chibi",
+      "display_name": "Skadi",
+      "localized_name": "斯卡蒂",
+      "output_path": "skadi-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "specter-chibi",
+      "display_name": "Specter",
+      "localized_name": "幽灵鲨",
+      "output_path": "specter-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "togawa-sakiko-chibi",
+      "display_name": "Togawa Sakiko",
+      "localized_name": "丰川祥子",
+      "output_path": "togawa-sakiko-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "yutenji-nyamu-chibi",
+      "display_name": "Yūtenji Nyamu",
+      "localized_name": "祐天寺若麦",
+      "output_path": "yutenji-nyamu-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "hellagur-chibi",
+      "display_name": "Hellagur",
+      "localized_name": "赫拉格",
+      "output_path": "hellagur-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "hoederer-chibi",
+      "display_name": "Hoederer",
+      "localized_name": "赫德雷",
+      "output_path": "hoederer-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "franka-chibi",
+      "display_name": "Franka",
+      "localized_name": "芙兰卡",
+      "output_path": "franka-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "tequila-chibi",
+      "display_name": "Tequila",
+      "localized_name": "龙舌兰",
+      "output_path": "tequila-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "la-pluma-chibi",
+      "display_name": "La Pluma",
+      "localized_name": "羽毛笔",
+      "output_path": "la-pluma-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "gracebearer-chibi",
+      "display_name": "Gracebearer",
+      "localized_name": "聆音",
+      "output_path": "gracebearer-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "mountain-chibi",
+      "display_name": "Mountain",
+      "localized_name": "山",
+      "output_path": "mountain-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "quartz-chibi",
+      "display_name": "Quartz",
+      "localized_name": "石英",
+      "output_path": "quartz-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "laios-chibi",
+      "display_name": "Laios",
+      "localized_name": "莱欧斯",
+      "output_path": "laios-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "morgan-chibi",
+      "display_name": "Morgan",
+      "localized_name": "摩根",
+      "output_path": "morgan-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "indra-chibi",
+      "display_name": "Indra",
+      "localized_name": "因陀罗",
+      "output_path": "indra-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "dagda-chibi",
+      "display_name": "Dagda",
+      "localized_name": "达格达",
+      "output_path": "dagda-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "matoimaru-chibi",
+      "display_name": "Matoimaru",
+      "localized_name": "缠丸",
+      "output_path": "matoimaru-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "utage-chibi",
+      "display_name": "Utage",
+      "localized_name": "宴",
+      "output_path": "utage-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "akafuyu-chibi",
+      "display_name": "Akafuyu",
+      "localized_name": "赤冬",
+      "output_path": "akafuyu-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "thorns-chibi",
+      "display_name": "Thorns",
+      "localized_name": "棘刺",
+      "output_path": "thorns-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "irene-chibi",
+      "display_name": "Irene",
+      "localized_name": "艾丽妮",
+      "output_path": "irene-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "highmore-chibi",
+      "display_name": "Highmore",
+      "localized_name": "海沫",
+      "output_path": "highmore-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "estelle-chibi",
+      "display_name": "Estelle",
+      "localized_name": "艾丝黛尔",
+      "output_path": "estelle-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "silverash-chibi",
+      "display_name": "SilverAsh",
+      "localized_name": "银灰",
+      "output_path": "silverash-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "degenbrecher-chibi",
+      "display_name": "Degenbrecher",
+      "localized_name": "锏",
+      "output_path": "degenbrecher-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "nearl-the-radiant-knight-chibi",
+      "display_name": "Nearl the Radiant Knight",
+      "localized_name": "耀骑士临光",
+      "output_path": "nearl-the-radiant-knight-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "whislash-chibi",
+      "display_name": "Whislash",
+      "localized_name": "鞭刃",
+      "output_path": "whislash-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "mynar-chibi",
+      "display_name": "Młynar",
+      "localized_name": "玛恩纳",
+      "output_path": "mynar-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ch-en-chibi",
+      "display_name": "Ch'en",
+      "localized_name": "陈",
+      "output_path": "ch-en-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "swire-chibi",
+      "display_name": "Swire",
+      "localized_name": "诗怀雅",
+      "output_path": "swire-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "lessing-chibi",
+      "display_name": "Lessing",
+      "localized_name": "止颂",
+      "output_path": "lessing-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "viviana-chibi",
+      "display_name": "Viviana",
+      "localized_name": "薇薇安娜",
+      "output_path": "viviana-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "arene-chibi",
+      "display_name": "Arene",
+      "localized_name": "芳汀",
+      "output_path": "arene-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "executor-the-ex-foedere-chibi",
+      "display_name": "Executor the Ex Foedere",
+      "localized_name": "圣约送葬人",
+      "output_path": "executor-the-ex-foedere-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "rathalos-s-noir-corne-chibi",
+      "display_name": "Rathalos S Noir Corne",
+      "localized_name": "火龙S黑角",
+      "output_path": "rathalos-s-noir-corne-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "zinogre-s-catapult-chibi",
+      "display_name": "Zinogre S Catapult",
+      "localized_name": "雷狼龙S空爆",
+      "output_path": "zinogre-s-catapult-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "conviction-chibi",
+      "display_name": "Conviction",
+      "localized_name": "断罪者",
+      "output_path": "conviction-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "pallas-chibi",
+      "display_name": "Pallas",
+      "localized_name": "帕拉斯",
+      "output_path": "pallas-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "varkaris-chibi",
+      "display_name": "Varkáris",
+      "localized_name": "摆渡人",
+      "output_path": "varkaris-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "chongyue-chibi",
+      "display_name": "Chongyue",
+      "localized_name": "重岳",
+      "output_path": "chongyue-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "melantha-chibi",
+      "display_name": "Melantha",
+      "localized_name": "玫兰莎",
+      "output_path": "melantha-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "midnight-chibi",
+      "display_name": "Midnight",
+      "localized_name": "月见夜",
+      "output_path": "midnight-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "popukar-chibi",
+      "display_name": "Popukar",
+      "localized_name": "泡普卡",
+      "output_path": "popukar-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "dobermann-chibi",
+      "display_name": "Dobermann",
+      "localized_name": "杜宾",
+      "output_path": "dobermann-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "surtr-chibi",
+      "display_name": "Surtr",
+      "localized_name": "史尔特尔",
+      "output_path": "surtr-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "frostleaf-chibi",
+      "display_name": "Frostleaf",
+      "localized_name": "霜叶",
+      "output_path": "frostleaf-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "sideroca-chibi",
+      "display_name": "Sideroca",
+      "localized_name": "铸铁",
+      "output_path": "sideroca-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "flamebringer-chibi",
+      "display_name": "Flamebringer",
+      "localized_name": "炎客",
+      "output_path": "flamebringer-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "bibeak-chibi",
+      "display_name": "Bibeak",
+      "localized_name": "柏喙",
+      "output_path": "bibeak-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "cutter-chibi",
+      "display_name": "Cutter",
+      "localized_name": "刻刀",
+      "output_path": "cutter-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "luo-xiaohei-chibi",
+      "display_name": "Luo Xiaohei",
+      "localized_name": "罗小黑",
+      "output_path": "luo-xiaohei-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "jackie-chibi",
+      "display_name": "Jackie",
+      "localized_name": "杰克",
+      "output_path": "jackie-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "odda-chibi",
+      "display_name": "Odda",
+      "localized_name": "奥达",
+      "output_path": "odda-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "entelechia-chibi",
+      "display_name": "Entelechia",
+      "localized_name": "隐德来希",
+      "output_path": "entelechia-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "humus-chibi",
+      "display_name": "Humus",
+      "localized_name": "休谟斯",
+      "output_path": "humus-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "savage-chibi",
+      "display_name": "Savage",
+      "localized_name": "暴行",
+      "output_path": "savage-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ayerscarpe-chibi",
+      "display_name": "Ayerscarpe",
+      "localized_name": "断崖",
+      "output_path": "ayerscarpe-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "castle-3-chibi",
+      "display_name": "Castle-3",
+      "localized_name": "Castle-3",
+      "output_path": "castle-3-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "blaze-chibi",
+      "display_name": "Blaze",
+      "localized_name": "煌",
+      "output_path": "blaze-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "gavial-the-invincible-chibi",
+      "display_name": "Gavial the Invincible",
+      "localized_name": "百炼嘉维尔",
+      "output_path": "gavial-the-invincible-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "astesia-chibi",
+      "display_name": "Astesia",
+      "localized_name": "星极",
+      "output_path": "astesia-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "tachanka-chibi",
+      "display_name": "Tachanka",
+      "localized_name": "战车",
+      "output_path": "tachanka-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "doc-chibi",
+      "display_name": "Doc",
+      "localized_name": "医生",
+      "output_path": "doc-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "fuze-chibi",
+      "display_name": "Fuze",
+      "localized_name": "导火索",
+      "output_path": "fuze-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "flint-chibi",
+      "display_name": "Flint",
+      "localized_name": "燧石",
+      "output_path": "flint-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "pepe-chibi",
+      "display_name": "Pepe",
+      "localized_name": "佩佩",
+      "output_path": "pepe-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "hadiya-chibi",
+      "display_name": "Hadiya",
+      "localized_name": "哈蒂娅",
+      "output_path": "hadiya-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "lappland-chibi",
+      "display_name": "Lappland",
+      "localized_name": "拉普兰德",
+      "output_path": "lappland-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "broca-chibi",
+      "display_name": "Broca",
+      "localized_name": "布洛卡",
+      "output_path": "broca-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "bellone-chibi",
+      "display_name": "Bellone",
+      "localized_name": "贝洛内",
+      "output_path": "bellone-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "bryophyta-chibi",
+      "display_name": "Bryophyta",
+      "localized_name": "苍苔",
+      "output_path": "bryophyta-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "beehunter-chibi",
+      "display_name": "Beehunter",
+      "localized_name": "猎蜂",
+      "output_path": "beehunter-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "zima-the-raging-tide-chibi",
+      "display_name": "Zima the Raging Tide",
+      "localized_name": "怒潮凛冬",
+      "output_path": "zima-the-raging-tide-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "194-leto-chibi",
+      "display_name": "Лето",
+      "localized_name": "烈夏",
+      "output_path": "194-leto-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "vina-victoria-chibi",
+      "display_name": "Vina Victoria",
+      "localized_name": "维娜·维多利亚",
+      "output_path": "vina-victoria-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "mousse-chibi",
+      "display_name": "Mousse",
+      "localized_name": "慕斯",
+      "output_path": "mousse-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "zuo-le-chibi",
+      "display_name": "Zuo Le",
+      "localized_name": "左乐",
+      "output_path": "zuo-le-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "wind-chimes-chibi",
+      "display_name": "Wind Chimes",
+      "localized_name": "铎铃",
+      "output_path": "wind-chimes-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "qiubai-chibi",
+      "display_name": "Qiubai",
+      "localized_name": "仇白",
+      "output_path": "qiubai-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "windscoot-chibi",
+      "display_name": "Windscoot",
+      "localized_name": "骋风",
+      "output_path": "windscoot-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "leizi-the-thunderbringer-chibi",
+      "display_name": "Leizi the Thunderbringer",
+      "localized_name": "司霆惊蛰",
+      "output_path": "leizi-the-thunderbringer-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ch-en-the-dawnstreak-chibi",
+      "display_name": "Ch'en the Dawnstreak",
+      "localized_name": "赤刃明霄陈",
+      "output_path": "ch-en-the-dawnstreak-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "kal-tsit-chibi",
+      "display_name": "Kal'tsit",
+      "localized_name": "凯尔希",
+      "output_path": "kal-tsit-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "reed-the-flame-shadow-chibi",
+      "display_name": "Reed The Flame Shadow",
+      "localized_name": "焰影苇草",
+      "output_path": "reed-the-flame-shadow-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "shining-chibi",
+      "display_name": "Shining",
+      "localized_name": "闪灵",
+      "output_path": "shining-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "nightingale-chibi",
+      "display_name": "Nightingale",
+      "localized_name": "夜莺",
+      "output_path": "nightingale-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "lumen-chibi",
+      "display_name": "Lumen",
+      "localized_name": "流明",
+      "output_path": "lumen-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "rose-salt-chibi",
+      "display_name": "Rose Salt",
+      "localized_name": "瑰盐",
+      "output_path": "rose-salt-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "gavial-chibi",
+      "display_name": "Gavial",
+      "localized_name": "嘉维尔",
+      "output_path": "gavial-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "eyjafjalla-the-hvit-aska-chibi",
+      "display_name": "Eyjafjalla the Hvít Aska",
+      "localized_name": "纯烬艾雅法拉",
+      "output_path": "eyjafjalla-the-hvit-aska-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "perfumer-chibi",
+      "display_name": "Perfumer",
+      "localized_name": "调香师",
+      "output_path": "perfumer-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "hibiscus-chibi",
+      "display_name": "Hibiscus",
+      "localized_name": "芙蓉",
+      "output_path": "hibiscus-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ansel-chibi",
+      "display_name": "Ansel",
+      "localized_name": "安赛尔",
+      "output_path": "ansel-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "kal-tsitesperanta-chibi",
+      "display_name": "Kal'tsit·Esperanta",
+      "localized_name": "凯尔希·思衡托",
+      "output_path": "kal-tsitesperanta-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "mon3tr-chibi",
+      "display_name": "Mon3tr",
+      "localized_name": "Mon3tr",
+      "output_path": "mon3tr-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "myrrh-chibi",
+      "display_name": "Myrrh",
+      "localized_name": "末药",
+      "output_path": "myrrh-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "warfarin-chibi",
+      "display_name": "Warfarin",
+      "localized_name": "华法琳",
+      "output_path": "warfarin-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "sussurro-chibi",
+      "display_name": "Sussurro",
+      "localized_name": "苏苏洛",
+      "output_path": "sussurro-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "breeze-chibi",
+      "display_name": "Breeze",
+      "localized_name": "微风",
+      "output_path": "breeze-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "folinic-chibi",
+      "display_name": "Folinic",
+      "localized_name": "亚叶",
+      "output_path": "folinic-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "chestnut-chibi",
+      "display_name": "Chestnut",
+      "localized_name": "褐果",
+      "output_path": "chestnut-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "purestream-chibi",
+      "display_name": "Purestream",
+      "localized_name": "清流",
+      "output_path": "purestream-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "whisperain-chibi",
+      "display_name": "Whisperain",
+      "localized_name": "絮雨",
+      "output_path": "whisperain-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "paprika-chibi",
+      "display_name": "Paprika",
+      "localized_name": "明椒",
+      "output_path": "paprika-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "honeyberry-chibi",
+      "display_name": "Honeyberry",
+      "localized_name": "蜜莓",
+      "output_path": "honeyberry-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "lancet-2-chibi",
+      "display_name": "Lancet-2",
+      "localized_name": "Lancet-2",
+      "output_path": "lancet-2-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "hibiscus-the-purifier-chibi",
+      "display_name": "Hibiscus the Purifier",
+      "localized_name": "濯尘芙蓉",
+      "output_path": "hibiscus-the-purifier-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "silence-chibi",
+      "display_name": "Silence",
+      "localized_name": "赫默",
+      "output_path": "silence-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ptilopsis-chibi",
+      "display_name": "Ptilopsis",
+      "localized_name": "白面鸮",
+      "output_path": "ptilopsis-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "tuye-chibi",
+      "display_name": "Tuye",
+      "localized_name": "图耶",
+      "output_path": "tuye-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "titi-chibi",
+      "display_name": "Titi",
+      "localized_name": "缇缇",
+      "output_path": "titi-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "papyrus-chibi",
+      "display_name": "Papyrus",
+      "localized_name": "莎草",
+      "output_path": "papyrus-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ceylon-chibi",
+      "display_name": "Ceylon",
+      "localized_name": "锡兰",
+      "output_path": "ceylon-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "4224-turdus-chibi",
+      "display_name": "Укусик",
+      "localized_name": "乌啾",
+      "output_path": "4224-turdus-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "vendela-chibi",
+      "display_name": "Vendela",
+      "localized_name": "刺玫",
+      "output_path": "vendela-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "harold-chibi",
+      "display_name": "Harold",
+      "localized_name": "哈洛德",
+      "output_path": "harold-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "nowell-chibi",
+      "display_name": "Nowell",
+      "localized_name": "诺威尔",
+      "output_path": "nowell-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "mulberry-chibi",
+      "display_name": "Mulberry",
+      "localized_name": "桑葚",
+      "output_path": "mulberry-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "record-keeper-chibi",
+      "display_name": "Record Keeper",
+      "localized_name": "录武官",
+      "output_path": "record-keeper-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "taraxacum-chibi",
+      "display_name": "Taraxacum",
+      "localized_name": "风絮",
+      "output_path": "taraxacum-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "rangers-chibi",
+      "display_name": "Rangers",
+      "localized_name": "巡林者",
+      "output_path": "rangers-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "blue-poison-chibi",
+      "display_name": "Blue Poison",
+      "localized_name": "蓝毒",
+      "output_path": "blue-poison-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "wis-adel-chibi",
+      "display_name": "Wiš'adel",
+      "localized_name": "维什戴尔",
+      "output_path": "wis-adel-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "w-chibi",
+      "display_name": "W",
+      "localized_name": "W",
+      "output_path": "w-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "jessica-chibi",
+      "display_name": "Jessica",
+      "localized_name": "杰西卡",
+      "output_path": "jessica-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "caper-chibi",
+      "display_name": "Caper",
+      "localized_name": "跃跃",
+      "output_path": "caper-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "pinecone-chibi",
+      "display_name": "Pinecone",
+      "localized_name": "松果",
+      "output_path": "pinecone-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "melanite-chibi",
+      "display_name": "Melanite",
+      "localized_name": "玫拉",
+      "output_path": "melanite-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "coldshot-chibi",
+      "display_name": "Coldshot",
+      "localized_name": "冰酿",
+      "output_path": "coldshot-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "skybox-chibi",
+      "display_name": "Skybox",
+      "localized_name": "天空盒",
+      "output_path": "skybox-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "brigid-chibi",
+      "display_name": "Brigid",
+      "localized_name": "水灯心",
+      "output_path": "brigid-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "kichisei-chibi",
+      "display_name": "Kichisei",
+      "localized_name": "吉星",
+      "output_path": "kichisei-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "andreana-chibi",
+      "display_name": "Andreana",
+      "localized_name": "安哲拉",
+      "output_path": "andreana-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "snow-hunter-chibi",
+      "display_name": "Snow Hunter",
+      "localized_name": "雪猎",
+      "output_path": "snow-hunter-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "platinum-chibi",
+      "display_name": "Platinum",
+      "localized_name": "白金",
+      "output_path": "platinum-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "fartooth-chibi",
+      "display_name": "Fartooth",
+      "localized_name": "远牙",
+      "output_path": "fartooth-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "justice-knight-chibi",
+      "display_name": "\"Justice Knight\"",
+      "localized_name": "正义骑士号",
+      "output_path": "justice-knight-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "shirayuki-chibi",
+      "display_name": "ShiraYuki",
+      "localized_name": "白雪",
+      "output_path": "shirayuki-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "executor-chibi",
+      "display_name": "Executor",
+      "localized_name": "送葬人",
+      "output_path": "executor-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ambriel-chibi",
+      "display_name": "Ambriel",
+      "localized_name": "安比尔",
+      "output_path": "ambriel-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "archetto-chibi",
+      "display_name": "Archetto",
+      "localized_name": "空弦",
+      "output_path": "archetto-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "fiammetta-chibi",
+      "display_name": "Fiammetta",
+      "localized_name": "菲亚梅塔",
+      "output_path": "fiammetta-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "insider-chibi",
+      "display_name": "Insider",
+      "localized_name": "隐现",
+      "output_path": "insider-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "lemuen-chibi",
+      "display_name": "Lemuen",
+      "localized_name": "蕾缪安",
+      "output_path": "lemuen-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "terra-research-commission-chibi",
+      "display_name": "Terra Research Commission",
+      "localized_name": "泰拉大陆调查团",
+      "output_path": "terra-research-commission-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "violet-mizutsune-orchid-chibi",
+      "display_name": "Violet Mizutsune Orchid",
+      "localized_name": "焰狐龙梓兰",
+      "output_path": "violet-mizutsune-orchid-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "erato-chibi",
+      "display_name": "Erato",
+      "localized_name": "埃拉托",
+      "output_path": "erato-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "kroos-chibi",
+      "display_name": "Kroos",
+      "localized_name": "克洛丝",
+      "output_path": "kroos-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "adnachiel-chibi",
+      "display_name": "Adnachiel",
+      "localized_name": "安德切尔",
+      "output_path": "adnachiel-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "catapult-chibi",
+      "display_name": "Catapult",
+      "localized_name": "空爆",
+      "output_path": "catapult-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "exusiai-chibi",
+      "display_name": "Exusiai",
+      "localized_name": "能天使",
+      "output_path": "exusiai-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "greythroat-chibi",
+      "display_name": "GreyThroat",
+      "localized_name": "灰喉",
+      "output_path": "greythroat-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ch-en-the-holungday-chibi",
+      "display_name": "Ch'en the Holungday",
+      "localized_name": "假日威龙陈",
+      "output_path": "ch-en-the-holungday-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "vermeil-chibi",
+      "display_name": "Vermeil",
+      "localized_name": "红云",
+      "output_path": "vermeil-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "aciddrop-chibi",
+      "display_name": "Aciddrop",
+      "localized_name": "酸糖",
+      "output_path": "aciddrop-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "4055-bgsnow-chibi",
+      "display_name": "Позёмка",
+      "localized_name": "鸿雪",
+      "output_path": "4055-bgsnow-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "sesa-chibi",
+      "display_name": "Sesa",
+      "localized_name": "慑砂",
+      "output_path": "sesa-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "april-chibi",
+      "display_name": "April",
+      "localized_name": "四月",
+      "output_path": "april-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ray-chibi",
+      "display_name": "Ray",
+      "localized_name": "莱伊",
+      "output_path": "ray-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "rosmontis-chibi",
+      "display_name": "Rosmontis",
+      "localized_name": "迷迭香",
+      "output_path": "rosmontis-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "kroos-the-keen-glint-chibi",
+      "display_name": "Kroos the Keen Glint",
+      "localized_name": "寒芒克洛丝",
+      "output_path": "kroos-the-keen-glint-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "greyy-the-lightningbearer-chibi",
+      "display_name": "Greyy the Lightningbearer",
+      "localized_name": "承曦格雷伊",
+      "output_path": "greyy-the-lightningbearer-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ash-chibi",
+      "display_name": "Ash",
+      "localized_name": "灰烬",
+      "output_path": "ash-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "totter-chibi",
+      "display_name": "Totter",
+      "localized_name": "铅踝",
+      "output_path": "totter-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "narantuya-chibi",
+      "display_name": "Narantuya",
+      "localized_name": "娜仁图亚",
+      "output_path": "narantuya-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "typhon-chibi",
+      "display_name": "Typhon",
+      "localized_name": "提丰",
+      "output_path": "typhon-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "provence-chibi",
+      "display_name": "Provence",
+      "localized_name": "普罗旺斯",
+      "output_path": "provence-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "aosta-chibi",
+      "display_name": "Aosta",
+      "localized_name": "奥斯塔",
+      "output_path": "aosta-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "lunacub-chibi",
+      "display_name": "Lunacub",
+      "localized_name": "子月",
+      "output_path": "lunacub-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "schwarz-chibi",
+      "display_name": "Schwarz",
+      "localized_name": "黑",
+      "output_path": "schwarz-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "firewatch-chibi",
+      "display_name": "Firewatch",
+      "localized_name": "守林人",
+      "output_path": "firewatch-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "meteor-chibi",
+      "display_name": "Meteor",
+      "localized_name": "流星",
+      "output_path": "meteor-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "meteorite-chibi",
+      "display_name": "Meteorite",
+      "localized_name": "陨星",
+      "output_path": "meteorite-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "197-poca-chibi",
+      "display_name": "Роса",
+      "localized_name": "早露",
+      "output_path": "197-poca-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "may-chibi",
+      "display_name": "May",
+      "localized_name": "梅",
+      "output_path": "may-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "toddifons-chibi",
+      "display_name": "Toddifons",
+      "localized_name": "熔泉",
+      "output_path": "toddifons-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "jieyun-chibi",
+      "display_name": "Jieyun",
+      "localized_name": "截云",
+      "output_path": "jieyun-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ju-chibi",
+      "display_name": "Ju",
+      "localized_name": "矩",
+      "output_path": "ju-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "gladiia-chibi",
+      "display_name": "Gladiia",
+      "localized_name": "歌蕾蒂娅",
+      "output_path": "gladiia-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "yahata-umiri-chibi",
+      "display_name": "Yahata Umiri",
+      "localized_name": "八幡海铃",
+      "output_path": "yahata-umiri-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "wakaba-mutsumi-chibi",
+      "display_name": "Wakaba Mutsumi",
+      "localized_name": "若叶睦",
+      "output_path": "wakaba-mutsumi-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "almond-chibi",
+      "display_name": "Almond",
+      "localized_name": "杏仁",
+      "output_path": "almond-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "kafka-chibi",
+      "display_name": "Kafka",
+      "localized_name": "卡夫卡",
+      "output_path": "kafka-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "robin-chibi",
+      "display_name": "Robin",
+      "localized_name": "罗宾",
+      "output_path": "robin-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "tippi-chibi",
+      "display_name": "Tippi",
+      "localized_name": "蒂比",
+      "output_path": "tippi-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "tin-man-chibi",
+      "display_name": "Tin Man",
+      "localized_name": "锡人",
+      "output_path": "tin-man-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "contrail-chibi",
+      "display_name": "Contrail",
+      "localized_name": "云迹",
+      "output_path": "contrail-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "specter-the-unchained-chibi",
+      "display_name": "Specter the Unchained",
+      "localized_name": "归溟幽灵鲨",
+      "output_path": "specter-the-unchained-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "kirara-chibi",
+      "display_name": "Kirara",
+      "localized_name": "绮良",
+      "output_path": "kirara-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "mizuki-chibi",
+      "display_name": "Mizuki",
+      "localized_name": "水月",
+      "output_path": "mizuki-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "kazemaru-chibi",
+      "display_name": "Kazemaru",
+      "localized_name": "风丸",
+      "output_path": "kazemaru-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "thorns-the-lodestar-chibi",
+      "display_name": "Thorns the Lodestar",
+      "localized_name": "引星棘刺",
+      "output_path": "thorns-the-lodestar-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "cliffheart-chibi",
+      "display_name": "Cliffheart",
+      "localized_name": "崖心",
+      "output_path": "cliffheart-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "gravel-chibi",
+      "display_name": "Gravel",
+      "localized_name": "砾",
+      "output_path": "gravel-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "shaw-chibi",
+      "display_name": "Shaw",
+      "localized_name": "阿消",
+      "output_path": "shaw-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "waai-fu-chibi",
+      "display_name": "Waai Fu",
+      "localized_name": "槐琥",
+      "output_path": "waai-fu-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "jaye-chibi",
+      "display_name": "Jaye",
+      "localized_name": "孑",
+      "output_path": "jaye-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "snowsant-chibi",
+      "display_name": "Snowsant",
+      "localized_name": "雪雉",
+      "output_path": "snowsant-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "lee-chibi",
+      "display_name": "Lee",
+      "localized_name": "老鲤",
+      "output_path": "lee-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "aak-chibi",
+      "display_name": "Aak",
+      "localized_name": "阿",
+      "output_path": "aak-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "swire-the-elegant-wit-chibi",
+      "display_name": "Swire the Elegant Wit",
+      "localized_name": "琳琅诗怀雅",
+      "output_path": "swire-the-elegant-wit-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "enforcer-chibi",
+      "display_name": "Enforcer",
+      "localized_name": "见行者",
+      "output_path": "enforcer-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "spuria-chibi",
+      "display_name": "Spuria",
+      "localized_name": "空构",
+      "output_path": "spuria-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "kirin-r-yato-chibi",
+      "display_name": "Kirin R Yato",
+      "localized_name": "麒麟R夜刀",
+      "output_path": "kirin-r-yato-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "wang-chibi",
+      "display_name": "Wang",
+      "localized_name": "望",
+      "output_path": "wang-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "texas-the-omertosa-chibi",
+      "display_name": "Texas the Omertosa",
+      "localized_name": "缄默德克萨斯",
+      "output_path": "texas-the-omertosa-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "exusiai-the-new-covenant-chibi",
+      "display_name": "Exusiai the New Covenant",
+      "localized_name": "新约能天使",
+      "output_path": "exusiai-the-new-covenant-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "angelina-the-mellow-wish-chibi",
+      "display_name": "Angelina the Mellow Wish",
+      "localized_name": "予愿安洁莉娜",
+      "output_path": "angelina-the-mellow-wish-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "phantom-chibi",
+      "display_name": "Phantom",
+      "localized_name": "傀影",
+      "output_path": "phantom-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "weedy-chibi",
+      "display_name": "Weedy",
+      "localized_name": "温蒂",
+      "output_path": "weedy-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ethan-chibi",
+      "display_name": "Ethan",
+      "localized_name": "伊桑",
+      "output_path": "ethan-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "crownslayer-chibi",
+      "display_name": "Crownslayer",
+      "localized_name": "弑君者",
+      "output_path": "crownslayer-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "rope-chibi",
+      "display_name": "Rope",
+      "localized_name": "暗索",
+      "output_path": "rope-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "thermal-ex-chibi",
+      "display_name": "Thermal-EX",
+      "localized_name": "THRM-EX",
+      "output_path": "thermal-ex-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "dorothy-chibi",
+      "display_name": "Dorothy",
+      "localized_name": "多萝西",
+      "output_path": "dorothy-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "frost-chibi",
+      "display_name": "Frost",
+      "localized_name": "霜华",
+      "output_path": "frost-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ela-chibi",
+      "display_name": "Ela",
+      "localized_name": "艾拉",
+      "output_path": "ela-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "iana-chibi",
+      "display_name": "Iana",
+      "localized_name": "双月",
+      "output_path": "iana-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "manticore-chibi",
+      "display_name": "Manticore",
+      "localized_name": "狮蝎",
+      "output_path": "manticore-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "wulfenite-chibi",
+      "display_name": "Wulfenite",
+      "localized_name": "钼铅",
+      "output_path": "wulfenite-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "figurino-chibi",
+      "display_name": "Figurino",
+      "localized_name": "裁度",
+      "output_path": "figurino-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ascalon-chibi",
+      "display_name": "Ascalon",
+      "localized_name": "阿斯卡纶",
+      "output_path": "ascalon-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "projekt-red-chibi",
+      "display_name": "Projekt Red",
+      "localized_name": "红",
+      "output_path": "projekt-red-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "bena-chibi",
+      "display_name": "Bena",
+      "localized_name": "贝娜",
+      "output_path": "bena-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "verdant-chibi",
+      "display_name": "Verdant",
+      "localized_name": "维荻",
+      "output_path": "verdant-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "feater-chibi",
+      "display_name": "FEater",
+      "localized_name": "食铁兽",
+      "output_path": "feater-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "mr-nothing-chibi",
+      "display_name": "Mr.Nothing",
+      "localized_name": "乌有",
+      "output_path": "mr-nothing-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "deepcolor-chibi",
+      "display_name": "Deepcolor",
+      "localized_name": "深海色",
+      "output_path": "deepcolor-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "lucilla-chibi",
+      "display_name": "Lucilla",
+      "localized_name": "海霓",
+      "output_path": "lucilla-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "misumi-uika-chibi",
+      "display_name": "Misumi Uika",
+      "localized_name": "三角初华",
+      "output_path": "misumi-uika-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "pedro-chibi",
+      "display_name": "Pedro",
+      "localized_name": "佩德洛",
+      "output_path": "pedro-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "roberta-chibi",
+      "display_name": "Roberta",
+      "localized_name": "罗比菈塔",
+      "output_path": "roberta-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "windflit-chibi",
+      "display_name": "Windflit",
+      "localized_name": "掠风",
+      "output_path": "windflit-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "bobbing-chibi",
+      "display_name": "Bobbing",
+      "localized_name": "波卜",
+      "output_path": "bobbing-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "skadi-the-corrupting-heart-chibi",
+      "display_name": "Skadi the Corrupting Heart",
+      "localized_name": "浊心斯卡蒂",
+      "output_path": "skadi-the-corrupting-heart-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "tragodia-chibi",
+      "display_name": "Tragodia",
+      "localized_name": "酒神",
+      "output_path": "tragodia-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "civilight-eterna-chibi",
+      "display_name": "Civilight Eterna",
+      "localized_name": "魔王",
+      "output_path": "civilight-eterna-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "haruka-chibi",
+      "display_name": "Haruka",
+      "localized_name": "遥",
+      "output_path": "haruka-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "gnosis-chibi",
+      "display_name": "Gnosis",
+      "localized_name": "灵知",
+      "output_path": "gnosis-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "pramanix-chibi",
+      "display_name": "Pramanix",
+      "localized_name": "初雪",
+      "output_path": "pramanix-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "proviso-chibi",
+      "display_name": "Proviso",
+      "localized_name": "但书",
+      "output_path": "proviso-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "earthspirit-chibi",
+      "display_name": "Earthspirit",
+      "localized_name": "地灵",
+      "output_path": "earthspirit-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "virtuosa-chibi",
+      "display_name": "Virtuosa",
+      "localized_name": "塑心",
+      "output_path": "virtuosa-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ling-chibi",
+      "display_name": "Ling",
+      "localized_name": "令",
+      "output_path": "ling-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "orchid-chibi",
+      "display_name": "Orchid",
+      "localized_name": "梓兰",
+      "output_path": "orchid-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "sora-chibi",
+      "display_name": "Sora",
+      "localized_name": "空",
+      "output_path": "sora-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "quercus-chibi",
+      "display_name": "Quercus",
+      "localized_name": "夏栎",
+      "output_path": "quercus-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "glaucus-chibi",
+      "display_name": "Glaucus",
+      "localized_name": "格劳克斯",
+      "output_path": "glaucus-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "tsukinogi-chibi",
+      "display_name": "Tsukinogi",
+      "localized_name": "月禾",
+      "output_path": "tsukinogi-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "shamare-chibi",
+      "display_name": "Shamare",
+      "localized_name": "巫恋",
+      "output_path": "shamare-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "podenco-chibi",
+      "display_name": "Podenco",
+      "localized_name": "波登可",
+      "output_path": "podenco-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "scene-chibi",
+      "display_name": "Scene",
+      "localized_name": "稀音",
+      "output_path": "scene-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "suzuran-chibi",
+      "display_name": "Suzuran",
+      "localized_name": "铃兰",
+      "output_path": "suzuran-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "alanna-chibi",
+      "display_name": "Alanna",
+      "localized_name": "阿兰娜",
+      "output_path": "alanna-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "phonor-0-chibi",
+      "display_name": "PhonoR-0",
+      "localized_name": "PhonoR-0",
+      "output_path": "phonor-0-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "raidian-chibi",
+      "display_name": "Raidian",
+      "localized_name": "电弧",
+      "output_path": "raidian-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "perfumer-the-distilled-chibi",
+      "display_name": "Perfumer the Distilled",
+      "localized_name": "撷英调香师",
+      "output_path": "perfumer-the-distilled-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "mayer-chibi",
+      "display_name": "Mayer",
+      "localized_name": "梅尔",
+      "output_path": "mayer-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "magallan-chibi",
+      "display_name": "Magallan",
+      "localized_name": "麦哲伦",
+      "output_path": "magallan-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "silence-the-paradigmatic-chibi",
+      "display_name": "Silence the Paradigmatic",
+      "localized_name": "淬羽赫默",
+      "output_path": "silence-the-paradigmatic-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "nasti-chibi",
+      "display_name": "Nasti",
+      "localized_name": "娜斯提",
+      "output_path": "nasti-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "astgenne-the-lightchaser-chibi",
+      "display_name": "Astgenne the Lightchaser",
+      "localized_name": "溯光星源",
+      "output_path": "astgenne-the-lightchaser-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "sand-reckoner-chibi",
+      "display_name": "Sand Reckoner",
+      "localized_name": "衡沙",
+      "output_path": "sand-reckoner-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "valarqvin-chibi",
+      "display_name": "Valarqvin",
+      "localized_name": "凛视",
+      "output_path": "valarqvin-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "angelina-chibi",
+      "display_name": "Angelina",
+      "localized_name": "安洁莉娜",
+      "output_path": "angelina-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "u-official-chibi",
+      "display_name": "U-Official",
+      "localized_name": "U-Official",
+      "output_path": "u-official-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "4223-botany-chibi",
+      "display_name": "Ботани",
+      "localized_name": "伯塔尼",
+      "output_path": "4223-botany-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "195-glassb-chibi",
+      "display_name": "Истина",
+      "localized_name": "真理",
+      "output_path": "195-glassb-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "stainless-chibi",
+      "display_name": "Stainless",
+      "localized_name": "白铁",
+      "output_path": "stainless-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "heidi-chibi",
+      "display_name": "Heidi",
+      "localized_name": "海蒂",
+      "output_path": "heidi-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "catherine-chibi",
+      "display_name": "Catherine",
+      "localized_name": "凯瑟琳",
+      "output_path": "catherine-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "nine-colored-deer-chibi",
+      "display_name": "Nine-Colored Deer",
+      "localized_name": "九色鹿",
+      "output_path": "nine-colored-deer-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "grain-buds-chibi",
+      "display_name": "Grain Buds",
+      "localized_name": "小满",
+      "output_path": "grain-buds-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "xingzhu-chibi",
+      "display_name": "Xingzhu",
+      "localized_name": "行箸",
+      "output_path": "xingzhu-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "yato-chibi",
+      "display_name": "Yato",
+      "localized_name": "夜刀",
+      "output_path": "yato-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "ines-chibi",
+      "display_name": "Ines",
+      "localized_name": "伊内丝",
+      "output_path": "ines-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "vanilla-chibi",
+      "display_name": "Vanilla",
+      "localized_name": "香草",
+      "output_path": "vanilla-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "surfer-chibi",
+      "display_name": "Surfer",
+      "localized_name": "寻澜",
+      "output_path": "surfer-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "beanstalk-chibi",
+      "display_name": "Beanstalk",
+      "localized_name": "豆苗",
+      "output_path": "beanstalk-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "chilchuck-chibi",
+      "display_name": "Chilchuck",
+      "localized_name": "齐尔查克",
+      "output_path": "chilchuck-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "siege-chibi",
+      "display_name": "Siege",
+      "localized_name": "推进之王",
+      "output_path": "siege-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "saga-chibi",
+      "display_name": "Saga",
+      "localized_name": "嵯峨",
+      "output_path": "saga-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "matsukiri-chibi",
+      "display_name": "Matsukiri",
+      "localized_name": "松桐",
+      "output_path": "matsukiri-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "reed-chibi",
+      "display_name": "Reed",
+      "localized_name": "苇草",
+      "output_path": "reed-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "courier-chibi",
+      "display_name": "Courier",
+      "localized_name": "讯使",
+      "output_path": "courier-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "silverash-the-reignfrost-chibi",
+      "display_name": "SilverAsh the Reignfrost",
+      "localized_name": "凛御银灰",
+      "output_path": "silverash-the-reignfrost-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "flametail-chibi",
+      "display_name": "Flametail",
+      "localized_name": "焰尾",
+      "output_path": "flametail-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "wild-mane-chibi",
+      "display_name": "Wild Mane",
+      "localized_name": "野鬃",
+      "output_path": "wild-mane-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "plume-chibi",
+      "display_name": "Plume",
+      "localized_name": "翎羽",
+      "output_path": "plume-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "confess-47-chibi",
+      "display_name": "CONFESS-47",
+      "localized_name": "CONFESS-47",
+      "output_path": "confess-47-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "rhodes-island-recon-chibi",
+      "display_name": "Rhodes Island Recon",
+      "localized_name": "罗德岛隐秘队",
+      "output_path": "rhodes-island-recon-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "fang-chibi",
+      "display_name": "Fang",
+      "localized_name": "芬",
+      "output_path": "fang-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "texas-chibi",
+      "display_name": "Texas",
+      "localized_name": "德克萨斯",
+      "output_path": "texas-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "closure-chibi",
+      "display_name": "Closure",
+      "localized_name": "可露希尔",
+      "output_path": "closure-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "vigna-chibi",
+      "display_name": "Vigna",
+      "localized_name": "红豆",
+      "output_path": "vigna-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "myrtle-chibi",
+      "display_name": "Myrtle",
+      "localized_name": "桃金娘",
+      "output_path": "myrtle-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "elysium-chibi",
+      "display_name": "Elysium",
+      "localized_name": "极境",
+      "output_path": "elysium-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "cantabile-chibi",
+      "display_name": "Cantabile",
+      "localized_name": "晓歌",
+      "output_path": "cantabile-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "mitm-chibi",
+      "display_name": "Mitm",
+      "localized_name": "渡桥",
+      "output_path": "mitm-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "blacknight-chibi",
+      "display_name": "Blacknight",
+      "localized_name": "夜半",
+      "output_path": "blacknight-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "jacinta-chibi",
+      "display_name": "Jacinta",
+      "localized_name": "嘉辛塔",
+      "output_path": "jacinta-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "fang-the-fire-sharpened-chibi",
+      "display_name": "Fang the Fire-sharpened",
+      "localized_name": "历阵锐枪芬",
+      "output_path": "fang-the-fire-sharpened-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "muelsyse-chibi",
+      "display_name": "Muelsyse",
+      "localized_name": "缪尔赛思",
+      "output_path": "muelsyse-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "bagpipe-chibi",
+      "display_name": "Bagpipe",
+      "localized_name": "风笛",
+      "output_path": "bagpipe-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "kestrel-chibi",
+      "display_name": "Kestrel",
+      "localized_name": "红隼",
+      "output_path": "kestrel-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "chiave-chibi",
+      "display_name": "Chiave",
+      "localized_name": "贾维",
+      "output_path": "chiave-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "vigil-chibi",
+      "display_name": "Vigil",
+      "localized_name": "伺夜",
+      "output_path": "vigil-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "vulpisfoglia-chibi",
+      "display_name": "Vulpisfoglia",
+      "localized_name": "忍冬",
+      "output_path": "vulpisfoglia-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "poncirus-chibi",
+      "display_name": "Poncirus",
+      "localized_name": "青枳",
+      "output_path": "poncirus-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "scavenger-chibi",
+      "display_name": "Scavenger",
+      "localized_name": "清道夫",
+      "output_path": "scavenger-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "y-chibi",
+      "display_name": "Снегyрочка",
+      "localized_name": "冬时",
+      "output_path": "y-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "115-headbr-chibi",
+      "display_name": "Зима",
+      "localized_name": "凛冬",
+      "output_path": "115-headbr-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "grani-chibi",
+      "display_name": "Grani",
+      "localized_name": "格拉尼",
+      "output_path": "grani-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "saileach-chibi",
+      "display_name": "Saileach",
+      "localized_name": "琴柳",
+      "output_path": "saileach-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "puzzle-chibi",
+      "display_name": "Puzzle",
+      "localized_name": "谜图",
+      "output_path": "puzzle-chibi/",
+      "validation_state": "validated"
+    },
+    {
+      "id": "wanqing-chibi",
+      "display_name": "Wanqing",
+      "localized_name": "万顷",
+      "output_path": "wanqing-chibi/",
+      "validation_state": "validated"
+    }
+  ],
+  "contact_sheets": [
+    "contact-sheets/001.webp",
+    "contact-sheets/002.webp",
+    "contact-sheets/003.webp",
+    "contact-sheets/004.webp",
+    "contact-sheets/005.webp",
+    "contact-sheets/006.webp",
+    "contact-sheets/007.webp",
+    "contact-sheets/008.webp",
+    "contact-sheets/009.webp"
+  ]
+}

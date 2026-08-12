@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "lappland-chibi",
+    "display_name": "Lappland",
+    "localized_name": "拉普兰德",
+    "source_name": "Lappland",
+    "source_id": "SR01",
+    "game_key": "char_140_whitew",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "领主",
+    "rarity": 5,
+    "race": "鲁珀",
+    "visual_signature": [
+      "long layered #e5e6e0 hair silhouette",
+      "coat outfit with #f3efee and #19191a blocks",
+      "animal ears: 鲁珀",
+      "polearm: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #c83743"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #e5e6e0 hair silhouette; coat outfit with #f3efee and #19191a blocks; animal ears: 鲁珀; polearm: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#e5e6e0",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 35,
+      "height": 31,
+      "eye_gap": 18.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.9,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "bare",
+      "boot_style": "tall",
+      "signature": "coat outfit with #f3efee and #19191a blocks"
+    },
+    "palette": {
+      "primary": "#f3efee",
+      "secondary": "#19191a",
+      "accent": "#c83743",
+      "hair": "#e5e6e0",
+      "hair_highlight": "#ecede9",
+      "eye": "#d06043",
+      "line": "#686769",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#757376",
+      "leg": "#1c1c21",
+      "metal": "#717478",
+      "horn": "#dad3c8",
+      "halo": "#e18150",
+      "weapon": "#b1b0b2"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "wolf",
+      "horns": "none",
+      "halo": "none",
+      "tail": "fluffy",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "polearm",
+      "side": "left",
+      "angle": -1,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.33,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 3,
+      "body_width": 48,
+      "coat_width": 8,
+      "leg_spacing": 1,
+      "ornament_code": 7,
+      "signature_code": 9
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

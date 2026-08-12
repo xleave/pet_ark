@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "valarqvin-chibi",
+    "display_name": "Valarqvin",
+    "localized_name": "凛视",
+    "source_name": "Valarqvin",
+    "source_id": "SI06",
+    "game_key": "char_4102_threye",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "巫役",
+    "rarity": 5,
+    "race": "萨卡兹",
+    "visual_signature": [
+      "side braid #161622 hair silhouette",
+      "dress outfit with #62646c and #e6e1dc blocks",
+      "horns: 萨卡兹",
+      "arts device: book",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #161622"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "side braid #161622 hair silhouette; dress outfit with #62646c and #e6e1dc blocks; horns: 萨卡兹; arts device: book; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "braid",
+      "color": "#161622",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 33,
+      "height": 29,
+      "eye_gap": 17.5,
+      "eye_width": 4.8,
+      "eye_height": 6.1000000000000005,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "wide",
+      "boot_style": "tall",
+      "signature": "dress outfit with #62646c and #e6e1dc blocks"
+    },
+    "palette": {
+      "primary": "#62646c",
+      "secondary": "#e6e1dc",
+      "accent": "#161622",
+      "hair": "#161622",
+      "hair_highlight": "#575760",
+      "eye": "#6e4e31",
+      "line": "#14141c",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#38393f",
+      "leg": "#7b787a",
+      "metal": "#cdcecf",
+      "horn": "#68615f",
+      "halo": "#7f6f3e",
+      "weapon": "#53565d"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "right",
+      "angle": -7,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "one-sided hair ornament"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 5,
+      "side_lock": 9,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 0,
+      "ornament_code": 1,
+      "signature_code": 3
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

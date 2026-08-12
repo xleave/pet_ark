@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "kal-tsit-chibi",
+    "display_name": "Kal'tsit",
+    "localized_name": "凯尔希",
+    "source_name": "Kal'tsit",
+    "source_id": "B003",
+    "game_key": "char_003_kalts",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "医师",
+    "rarity": 6,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #607d67 hair silhouette",
+      "coat outfit with #f8f7e9 and #3f372d blocks",
+      "animal ears: 菲林",
+      "medical device: medical",
+      "face mask",
+      "asymmetric profile 0:180 with accent #4bcbb6"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "long layered #607d67 hair silhouette; coat outfit with #f8f7e9 and #3f372d blocks; animal ears: 菲林; medical device: medical; face mask"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#607d67",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "coat outfit with #f8f7e9 and #3f372d blocks"
+    },
+    "palette": {
+      "primary": "#f8f7e9",
+      "secondary": "#3f372d",
+      "accent": "#4bcbb6",
+      "hair": "#607d67",
+      "hair_highlight": "#8da192",
+      "eye": "#3f372d",
+      "line": "#303b36",
+      "mouth": "#804d5b",
+      "skin": "#cfc7ad",
+      "skin_line": "#948174",
+      "boot": "#777674",
+      "leg": "#2e2a2a",
+      "metal": "#828181",
+      "horn": "#919985",
+      "halo": "#9cd38f",
+      "weapon": "#b4b5af"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "left",
+      "angle": -1,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "mask",
+      "side": "left",
+      "companion": "beast",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.18,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 0,
+      "body_width": 51,
+      "coat_width": 5,
+      "leg_spacing": 1,
+      "ornament_code": 8,
+      "signature_code": 8
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

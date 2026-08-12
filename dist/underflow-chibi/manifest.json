@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "underflow-chibi",
+    "display_name": "Underflow",
+    "localized_name": "深巡",
+    "source_name": "Underflow",
+    "source_id": "AE03",
+    "game_key": "char_4137_udflow",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "哨戒铁卫",
+    "rarity": 5,
+    "race": "阿戈尔",
+    "visual_signature": [
+      "long layered #303855 hair silhouette",
+      "armor outfit with #a1b2b8 and #292a48 blocks",
+      "阿戈尔: 阿戈尔",
+      "signature shield: shield",
+      "one-sided hair ornament",
+      "asymmetric profile 0:160 with accent #1c2542"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "long layered #303855 hair silhouette; armor outfit with #a1b2b8 and #292a48 blocks; 阿戈尔: 阿戈尔; signature shield: shield; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#303855",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 33,
+      "height": 32,
+      "eye_gap": 17.5,
+      "eye_width": 5.5,
+      "eye_height": 6.1000000000000005,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "wide",
+      "boot_style": "flat",
+      "signature": "armor outfit with #a1b2b8 and #292a48 blocks"
+    },
+    "palette": {
+      "primary": "#a1b2b8",
+      "secondary": "#292a48",
+      "accent": "#1c2542",
+      "hair": "#303855",
+      "hair_highlight": "#6a7085",
+      "eye": "#444e6a",
+      "line": "#1d212f",
+      "mouth": "#804d5b",
+      "skin": "#c6a7a4",
+      "skin_line": "#8f7070",
+      "boot": "#52595f",
+      "leg": "#242436",
+      "metal": "#787b8d",
+      "horn": "#77737b",
+      "halo": "#827750",
+      "weapon": "#7c888f"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "left",
+      "angle": 5,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.97,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 1,
+      "body_width": 50,
+      "coat_width": 14,
+      "leg_spacing": 2,
+      "ornament_code": 9,
+      "signature_code": 2
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

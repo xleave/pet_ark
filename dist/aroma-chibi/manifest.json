@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "aroma-chibi",
+    "display_name": "Aroma",
+    "localized_name": "阿罗玛",
+    "source_name": "Aroma",
+    "source_id": "SR39",
+    "game_key": "char_446_aroma",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "轰击术师",
+    "rarity": 5,
+    "race": "鲁珀",
+    "visual_signature": [
+      "long layered #fcf1ea hair silhouette",
+      "robe outfit with #fcf1ea and #1c262e blocks",
+      "animal ears: 鲁珀",
+      "arts staff: staff",
+      "glasses",
+      "asymmetric profile 0:180 with accent #1c262e"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #fcf1ea hair silhouette; robe outfit with #fcf1ea and #1c262e blocks; animal ears: 鲁珀; arts staff: staff; glasses"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#fcf1ea",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 34,
+      "height": 32,
+      "eye_gap": 18,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.5,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "robe outfit with #fcf1ea and #1c262e blocks"
+    },
+    "palette": {
+      "primary": "#fcf1ea",
+      "secondary": "#1c262e",
+      "accent": "#1c262e",
+      "hair": "#fcf1ea",
+      "hair_highlight": "#fdf5f0",
+      "eye": "#626f95",
+      "line": "#6b6768",
+      "mouth": "#804d5b",
+      "skin": "#967973",
+      "skin_line": "#755755",
+      "boot": "#787474",
+      "leg": "#1e222a",
+      "metal": "#727a81",
+      "horn": "#e7d9cd",
+      "halo": "#827844",
+      "weapon": "#b7b1af"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "wolf",
+      "horns": "none",
+      "halo": "none",
+      "tail": "fluffy",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "right",
+      "angle": 12,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.02,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 2,
+      "body_width": 53,
+      "coat_width": 15,
+      "leg_spacing": 4,
+      "ornament_code": 6,
+      "signature_code": 14
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "pedro-chibi",
+    "display_name": "Pedro",
+    "localized_name": "佩德洛",
+    "source_name": "Pedro",
+    "source_id": "BV02",
+    "game_key": "char_4234_pedro",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "游击手",
+    "rarity": 5,
+    "race": "佩洛",
+    "visual_signature": [
+      "long layered #2b2727 hair silhouette",
+      "dress outfit with #63625c and #959798 blocks",
+      "佩洛: 佩洛",
+      "arts device: book",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #987851"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #2b2727 hair silhouette; dress outfit with #63625c and #959798 blocks; 佩洛: 佩洛; arts device: book; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#2b2727",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 34,
+      "height": 29,
+      "eye_gap": 18,
+      "eye_width": 5.5,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "dress outfit with #63625c and #959798 blocks"
+    },
+    "palette": {
+      "primary": "#63625c",
+      "secondary": "#959798",
+      "accent": "#987851",
+      "hair": "#2b2727",
+      "hair_highlight": "#666363",
+      "eye": "#b5844b",
+      "line": "#1c1b1e",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#383839",
+      "leg": "#55565b",
+      "metal": "#a9acb1",
+      "horn": "#746a62",
+      "halo": "#c6a558",
+      "weapon": "#545453"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "left",
+      "angle": -5,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 2,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 2,
+      "ornament_code": 10,
+      "signature_code": 9
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

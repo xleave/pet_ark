@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "nine-colored-deer-chibi",
+    "display_name": "Nine-Colored Deer",
+    "localized_name": "九色鹿",
+    "source_name": "Nine-Colored Deer",
+    "source_id": "YD09",
+    "game_key": "char_4019_ncdeer",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "护佑者",
+    "rarity": 5,
+    "race": "埃拉菲亚",
+    "visual_signature": [
+      "long layered #b8b5b3 hair silhouette",
+      "dress outfit with #85878a and #f4edea blocks",
+      "animal ears: 埃拉菲亚",
+      "arts device: book",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #ab8c6a"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #b8b5b3 hair silhouette; dress outfit with #85878a and #f4edea blocks; animal ears: 埃拉菲亚; arts device: book; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#b8b5b3",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 33,
+      "height": 30,
+      "eye_gap": 17.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.1000000000000005,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "wide",
+      "boot_style": "heeled",
+      "signature": "dress outfit with #85878a and #f4edea blocks"
+    },
+    "palette": {
+      "primary": "#85878a",
+      "secondary": "#f4edea",
+      "accent": "#ab8c6a",
+      "hair": "#b8b5b3",
+      "hair_highlight": "#cccac8",
+      "eye": "#c08f58",
+      "line": "#515153",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#46474c",
+      "leg": "#817e81",
+      "metal": "#d4d3d6",
+      "horn": "#c1b8af",
+      "halo": "#d1b066",
+      "weapon": "#6a6c71"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "branch",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "right",
+      "angle": 9,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.17,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 7,
+      "highlight_width": 1,
+      "body_width": 50,
+      "coat_width": 5,
+      "leg_spacing": 1,
+      "ornament_code": 1,
+      "signature_code": 19
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

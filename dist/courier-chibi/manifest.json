@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "courier-chibi",
+    "display_name": "Courier",
+    "localized_name": "讯使",
+    "source_name": "Courier",
+    "source_id": "JC04",
+    "game_key": "char_198_blackd",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "vanguard",
+    "subprofession": "尖兵",
+    "rarity": 4,
+    "race": "依特拉",
+    "visual_signature": [
+      "long layered #3e3832 hair silhouette",
+      "uniform outfit with #1f1d1b and #5d0000 blocks",
+      "依特拉: 依特拉",
+      "vanguard polearm: spear",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #5d0000"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #3e3832 hair silhouette; uniform outfit with #1f1d1b and #5d0000 blocks; 依特拉: 依特拉; vanguard polearm: spear; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#3e3832",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 34,
+      "height": 32,
+      "eye_gap": 18,
+      "eye_width": 5.5,
+      "eye_height": 6.5,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #1f1d1b and #5d0000 blocks"
+    },
+    "palette": {
+      "primary": "#1f1d1b",
+      "secondary": "#5d0000",
+      "accent": "#5d0000",
+      "hair": "#3e3832",
+      "hair_highlight": "#74706b",
+      "eye": "#370d0c",
+      "line": "#232122",
+      "mouth": "#804d5b",
+      "skin": "#f4c9a9",
+      "skin_line": "#a88272",
+      "boot": "#1c1b1d",
+      "leg": "#3c1115",
+      "metal": "#90696c",
+      "horn": "#7e7368",
+      "halo": "#a6632b",
+      "weapon": "#272829"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "spear",
+      "label": "vanguard polearm",
+      "side": "left",
+      "angle": 5,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.03,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 2,
+      "body_width": 54,
+      "coat_width": 15,
+      "leg_spacing": 2,
+      "ornament_code": 2,
+      "signature_code": 27
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

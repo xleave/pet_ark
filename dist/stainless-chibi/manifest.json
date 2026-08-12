@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "stainless-chibi",
+    "display_name": "Stainless",
+    "localized_name": "白铁",
+    "source_name": "Stainless",
+    "source_id": "VC17",
+    "game_key": "char_4072_ironmn",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "工匠",
+    "rarity": 6,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #3e3531 hair silhouette",
+      "dress outfit with #261715 and #5a443d blocks",
+      "animal ears: 菲林",
+      "arts device: book",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #4b1913"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #3e3531 hair silhouette; dress outfit with #261715 and #5a443d blocks; animal ears: 菲林; arts device: book; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#3e3531",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 33,
+      "height": 32,
+      "eye_gap": 17.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.1000000000000005,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "wide",
+      "boot_style": "flat",
+      "signature": "dress outfit with #261715 and #5a443d blocks"
+    },
+    "palette": {
+      "primary": "#261715",
+      "secondary": "#5a443d",
+      "accent": "#4b1913",
+      "hair": "#3e3531",
+      "hair_highlight": "#746e6b",
+      "eye": "#5a3029",
+      "line": "#232022",
+      "mouth": "#804d5b",
+      "skin": "#d1bdad",
+      "skin_line": "#957c74",
+      "boot": "#1e181b",
+      "leg": "#3a3031",
+      "metal": "#8e8788",
+      "horn": "#7e7267",
+      "halo": "#9c7136",
+      "weapon": "#2c2425"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "right",
+      "angle": -11,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "drone",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 1,
+      "ornament_code": 13,
+      "signature_code": 28
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

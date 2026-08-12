@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "ch-en-the-holungday-chibi",
+    "display_name": "Ch'en the Holungday",
+    "localized_name": "假日威龙陈",
+    "source_name": "Ch'en the Holungday",
+    "source_id": "R112",
+    "game_key": "char_1013_chen2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "散射手",
+    "rarity": 6,
+    "race": "龙",
+    "visual_signature": [
+      "asymmetric ponytail #425167 hair silhouette",
+      "coat outfit with #7791a2 and #1d1922 blocks",
+      "horns: 龙",
+      "ranged weapon: gun",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #222c43"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "asymmetric ponytail #425167 hair silhouette; coat outfit with #7791a2 and #1d1922 blocks; horns: 龙; ranged weapon: gun; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "ponytail",
+      "color": "#425167",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 5.5,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "coat outfit with #7791a2 and #1d1922 blocks"
+    },
+    "palette": {
+      "primary": "#7791a2",
+      "secondary": "#1d1922",
+      "accent": "#222c43",
+      "hair": "#425167",
+      "hair_highlight": "#778292",
+      "eye": "#425167",
+      "line": "#242b36",
+      "mouth": "#804d5b",
+      "skin": "#dac7b4",
+      "skin_line": "#9a8178",
+      "boot": "#404b56",
+      "leg": "#1e1c25",
+      "metal": "#73747c",
+      "horn": "#818185",
+      "halo": "#857b50",
+      "weapon": "#617380"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": 0,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.33,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 8,
+      "highlight_width": 3,
+      "body_width": 48,
+      "coat_width": 8,
+      "leg_spacing": 2,
+      "ornament_code": 11,
+      "signature_code": 1
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

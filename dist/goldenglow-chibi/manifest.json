@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "goldenglow-chibi",
+    "display_name": "Goldenglow",
+    "localized_name": "澄闪",
+    "source_name": "Goldenglow",
+    "source_id": "VC09",
+    "game_key": "char_377_gdglow",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "驭械术师",
+    "rarity": 6,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #4f343c hair silhouette",
+      "robe outfit with #edd7df and #1d191c blocks",
+      "animal ears: 菲林",
+      "arts staff: staff",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #4c272e"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #4f343c hair silhouette; robe outfit with #edd7df and #1d191c blocks; animal ears: 菲林; arts staff: staff; single eyepatch"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#4f343c",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 5.85,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "robe outfit with #edd7df and #1d191c blocks"
+    },
+    "palette": {
+      "primary": "#edd7df",
+      "secondary": "#1d191c",
+      "accent": "#4c272e",
+      "hair": "#4f343c",
+      "hair_highlight": "#806d73",
+      "eye": "#95576a",
+      "line": "#292026",
+      "mouth": "#804d5b",
+      "skin": "#e6c3c6",
+      "skin_line": "#a07f82",
+      "boot": "#726970",
+      "leg": "#1e1c22",
+      "metal": "#737479",
+      "horn": "#88716e",
+      "halo": "#9d7844",
+      "weapon": "#ada0a8"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "left",
+      "angle": -4,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.2,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 3,
+      "side_lock": 3,
+      "highlight_width": 0,
+      "body_width": 52,
+      "coat_width": 6,
+      "leg_spacing": 3,
+      "ornament_code": 4,
+      "signature_code": 6
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

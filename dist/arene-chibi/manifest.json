@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "arene-chibi",
+    "display_name": "Arene",
+    "localized_name": "芳汀",
+    "source_name": "Arene",
+    "source_id": "LT06",
+    "game_key": "char_271_spikes",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "领主",
+    "rarity": 4,
+    "race": "萨科塔",
+    "visual_signature": [
+      "long layered #a8aaa6 hair silhouette",
+      "uniform outfit with #494948 and #272726 blocks",
+      "halo: 萨科塔",
+      "polearm: spear",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #8a6a46"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #a8aaa6 hair silhouette; uniform outfit with #494948 and #272726 blocks; halo: 萨科塔; polearm: spear; single eyepatch"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#a8aaa6",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 5.85,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #494948 and #272726 blocks"
+    },
+    "palette": {
+      "primary": "#494948",
+      "secondary": "#272726",
+      "accent": "#8a6a46",
+      "hair": "#a8aaa6",
+      "hair_highlight": "#c0c2bf",
+      "eye": "#ae7c45",
+      "line": "#4b4c4e",
+      "mouth": "#804d5b",
+      "skin": "#e7ded2",
+      "skin_line": "#a18e88",
+      "boot": "#2d2d30",
+      "leg": "#232327",
+      "metal": "#777a7d",
+      "horn": "#b9b2a8",
+      "halo": "#bf9d52",
+      "weapon": "#434446"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "ring",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "spear",
+      "label": "polearm",
+      "side": "left",
+      "angle": -9,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.97,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 0,
+      "body_width": 50,
+      "coat_width": 14,
+      "leg_spacing": 3,
+      "ornament_code": 8,
+      "signature_code": 26
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

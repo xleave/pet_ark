@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "wild-mane-chibi",
+    "display_name": "Wild Mane",
+    "localized_name": "野鬃",
+    "source_name": "Wild Mane",
+    "source_id": "KZ14",
+    "game_key": "char_496_wildmn",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "vanguard",
+    "subprofession": "冲锋手",
+    "rarity": 5,
+    "race": "库兰塔",
+    "visual_signature": [
+      "long layered #a8a49f hair silhouette",
+      "uniform outfit with #685b4d and #2f2b26 blocks",
+      "animal ears: 库兰塔",
+      "vanguard polearm: spear",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #684729"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #a8a49f hair silhouette; uniform outfit with #685b4d and #2f2b26 blocks; animal ears: 库兰塔; vanguard polearm: spear; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#a8a49f",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 34,
+      "height": 29,
+      "eye_gap": 18,
+      "eye_width": 5.5,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "uniform outfit with #685b4d and #2f2b26 blocks"
+    },
+    "palette": {
+      "primary": "#685b4d",
+      "secondary": "#2f2b26",
+      "accent": "#684729",
+      "hair": "#a8a49f",
+      "hair_highlight": "#c0bdba",
+      "eye": "#3c3126",
+      "line": "#4b4a4b",
+      "mouth": "#804d5b",
+      "skin": "#948879",
+      "skin_line": "#745f58",
+      "boot": "#3a3532",
+      "leg": "#262527",
+      "metal": "#7b7c7d",
+      "horn": "#b9afa4",
+      "halo": "#ac8a42",
+      "weapon": "#575049"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "spear",
+      "label": "vanguard polearm",
+      "side": "right",
+      "angle": 5,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 10,
+      "highlight_width": 2,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 2,
+      "ornament_code": 6,
+      "signature_code": 11
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

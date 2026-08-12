@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "broca-chibi",
+    "display_name": "Broca",
+    "localized_name": "布洛卡",
+    "source_name": "Broca",
+    "source_id": "SR27",
+    "game_key": "char_356_broca",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "强攻手",
+    "rarity": 5,
+    "race": "菲林",
+    "visual_signature": [
+      "asymmetric ponytail #2d2d2c hair silhouette",
+      "uniform outfit with #171716 and #93928f blocks",
+      "animal ears: 菲林",
+      "blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #6e4f2a"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "asymmetric ponytail #2d2d2c hair silhouette; uniform outfit with #171716 and #93928f blocks; animal ears: 菲林; blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "ponytail",
+      "color": "#2d2d2c",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 33,
+      "height": 30,
+      "eye_gap": 17.5,
+      "eye_width": 5.5,
+      "eye_height": 6.1000000000000005,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "wide",
+      "boot_style": "heeled",
+      "signature": "uniform outfit with #171716 and #93928f blocks"
+    },
+    "palette": {
+      "primary": "#171716",
+      "secondary": "#93928f",
+      "accent": "#6e4f2a",
+      "hair": "#2d2d2c",
+      "hair_highlight": "#686867",
+      "eye": "#9e6e35",
+      "line": "#1c1d20",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#18181b",
+      "leg": "#545457",
+      "metal": "#a8aaad",
+      "horn": "#756d65",
+      "halo": "#af8e42",
+      "weapon": "#222425"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "left",
+      "angle": -5,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.92,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 7,
+      "highlight_width": 1,
+      "body_width": 47,
+      "coat_width": 13,
+      "leg_spacing": 2,
+      "ornament_code": 5,
+      "signature_code": 26
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

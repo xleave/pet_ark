@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "mynar-chibi",
+    "display_name": "Młynar",
+    "localized_name": "玛恩纳",
+    "source_name": "Młynar",
+    "source_id": "KZ08",
+    "game_key": "char_4064_mlynar",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "解放者",
+    "rarity": 6,
+    "race": "库兰塔",
+    "visual_signature": [
+      "compact cropped #dfd2ad hair silhouette",
+      "coat outfit with #322927 and #564f4f blocks",
+      "animal ears: 库兰塔",
+      "blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #d2a139"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "compact cropped #dfd2ad hair silhouette; coat outfit with #322927 and #564f4f blocks; animal ears: 库兰塔; blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "short",
+      "color": "#dfd2ad",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 33,
+      "height": 32,
+      "eye_gap": 17.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.1000000000000005,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "wide",
+      "boot_style": "flat",
+      "signature": "coat outfit with #322927 and #564f4f blocks"
+    },
+    "palette": {
+      "primary": "#322927",
+      "secondary": "#564f4f",
+      "accent": "#d2a139",
+      "hair": "#dfd2ad",
+      "hair_highlight": "#e8dfc4",
+      "eye": "#5d3f36",
+      "line": "#1e1b1e",
+      "mouth": "#804d5b",
+      "skin": "#f9e2cb",
+      "skin_line": "#aa9085",
+      "boot": "#242022",
+      "leg": "#383539",
+      "metal": "#8c8c90",
+      "horn": "#d7c8ac",
+      "halo": "#e6bc4b",
+      "weapon": "#342f30"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "left",
+      "angle": -1,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.92,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 1,
+      "body_width": 47,
+      "coat_width": 13,
+      "leg_spacing": 1,
+      "ornament_code": 9,
+      "signature_code": 1
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

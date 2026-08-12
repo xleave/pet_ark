@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "liskarm-chibi",
+    "display_name": "Liskarm",
+    "localized_name": "雷蛇",
+    "source_name": "Liskarm",
+    "source_id": "BS02",
+    "game_key": "char_107_liskam",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "哨戒铁卫",
+    "rarity": 5,
+    "race": "瓦伊凡",
+    "visual_signature": [
+      "long layered #a39ca5 hair silhouette",
+      "armor outfit with #3b4253 and #7c7c88 blocks",
+      "horns: 瓦伊凡",
+      "signature shield: shield",
+      "distinctive hat",
+      "asymmetric profile 8:180 with accent #1f283d"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "long layered #a39ca5 hair silhouette; armor outfit with #3b4253 and #7c7c88 blocks; horns: 瓦伊凡; signature shield: shield; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#a39ca5",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 34,
+      "height": 29,
+      "eye_gap": 18,
+      "eye_width": 4.8,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "armor outfit with #3b4253 and #7c7c88 blocks"
+    },
+    "palette": {
+      "primary": "#3b4253",
+      "secondary": "#7c7c88",
+      "accent": "#1f283d",
+      "hair": "#a39ca5",
+      "hair_highlight": "#bdb8be",
+      "eye": "#3b4253",
+      "line": "#49474e",
+      "mouth": "#804d5b",
+      "skin": "#edd8c1",
+      "skin_line": "#a48a7f",
+      "boot": "#272a35",
+      "leg": "#4a4a54",
+      "metal": "#9ea0aa",
+      "horn": "#b6aaa7",
+      "halo": "#84794d",
+      "weapon": "#3a404d"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "right",
+      "angle": 8,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.07,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 33,
+      "top_height": 7,
+      "side_lock": 10,
+      "highlight_width": 2,
+      "body_width": 44,
+      "coat_width": 3,
+      "leg_spacing": 0,
+      "ornament_code": 14,
+      "signature_code": 26
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

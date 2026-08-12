@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "fiammetta-chibi",
+    "display_name": "Fiammetta",
+    "localized_name": "菲亚梅塔",
+    "source_name": "Fiammetta",
+    "source_id": "LT11",
+    "game_key": "char_300_phenxi",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "炮手",
+    "rarity": 6,
+    "race": "黎博利",
+    "visual_signature": [
+      "long layered #4f2928 hair silhouette",
+      "coat outfit with #281d1d and #76524f blocks",
+      "wings: 黎博利",
+      "ranged weapon: gun",
+      "one-sided hair ornament",
+      "asymmetric profile 5:180 with accent #692423"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #4f2928 hair silhouette; coat outfit with #281d1d and #76524f blocks; wings: 黎博利; ranged weapon: gun; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#4f2928",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 35,
+      "height": 32,
+      "eye_gap": 18.5,
+      "eye_width": 5.85,
+      "eye_height": 6.9,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "bare",
+      "boot_style": "heeled",
+      "signature": "coat outfit with #281d1d and #76524f blocks"
+    },
+    "palette": {
+      "primary": "#281d1d",
+      "secondary": "#76524f",
+      "accent": "#692423",
+      "hair": "#4f2928",
+      "hair_highlight": "#806564",
+      "eye": "#411819",
+      "line": "#291b1e",
+      "mouth": "#804d5b",
+      "skin": "#c53e34",
+      "skin_line": "#8e3733",
+      "boot": "#1f1b1e",
+      "leg": "#473639",
+      "metal": "#9b8d90",
+      "horn": "#886b62",
+      "halo": "#ac773e",
+      "weapon": "#2d282a"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": -9,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.08,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 36,
+      "top_height": 7,
+      "side_lock": 7,
+      "highlight_width": 3,
+      "body_width": 45,
+      "coat_width": 3,
+      "leg_spacing": 3,
+      "ornament_code": 15,
+      "signature_code": 1
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "nowell-chibi",
+    "display_name": "Nowell",
+    "localized_name": "诺威尔",
+    "source_name": "Nowell",
+    "source_id": "VC29",
+    "game_key": "char_4173_nowell",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "疗养师",
+    "rarity": 5,
+    "race": "沃尔珀",
+    "visual_signature": [
+      "side braid #1d1c1c hair silhouette",
+      "coat outfit with #484442 and #201f1f blocks",
+      "animal ears: 沃尔珀",
+      "medical device: medical",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #896842"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "side braid #1d1c1c hair silhouette; coat outfit with #484442 and #201f1f blocks; animal ears: 沃尔珀; medical device: medical; single eyepatch"
+    },
+    "hair": {
+      "shape": "braid",
+      "color": "#1d1c1c",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 34,
+      "height": 29,
+      "eye_gap": 18,
+      "eye_width": 5.85,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "coat outfit with #484442 and #201f1f blocks"
+    },
+    "palette": {
+      "primary": "#484442",
+      "secondary": "#201f1f",
+      "accent": "#896842",
+      "hair": "#1d1c1c",
+      "hair_highlight": "#5c5c5c",
+      "eye": "#ad7b42",
+      "line": "#16161a",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#2d2b2e",
+      "leg": "#1f1f23",
+      "metal": "#74767a",
+      "horn": "#6c645c",
+      "halo": "#be9c50",
+      "weapon": "#424142"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "fox",
+      "horns": "none",
+      "halo": "none",
+      "tail": "fluffy",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "right",
+      "angle": 6,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.37,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 2,
+      "body_width": 50,
+      "coat_width": 9,
+      "leg_spacing": 3,
+      "ornament_code": 14,
+      "signature_code": 16
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

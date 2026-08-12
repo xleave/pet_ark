@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "papyrus-chibi",
+    "display_name": "Papyrus",
+    "localized_name": "莎草",
+    "source_name": "Papyrus",
+    "source_id": "SG19",
+    "game_key": "char_4139_papyrs",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "链愈师",
+    "rarity": 5,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #f1f4f2 hair silhouette",
+      "coat outfit with #682411 and #98a0a1 blocks",
+      "animal ears: 菲林",
+      "medical device: medical",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #5c412e"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "long layered #f1f4f2 hair silhouette; coat outfit with #682411 and #98a0a1 blocks; animal ears: 菲林; medical device: medical; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#f1f4f2",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 4.8,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "coat outfit with #682411 and #98a0a1 blocks"
+    },
+    "palette": {
+      "primary": "#682411",
+      "secondary": "#98a0a1",
+      "accent": "#5c412e",
+      "hair": "#f1f4f2",
+      "hair_highlight": "#f5f7f6",
+      "eye": "#682411",
+      "line": "#331915",
+      "mouth": "#804d5b",
+      "skin": "#e68c54",
+      "skin_line": "#a06144",
+      "boot": "#3a1e19",
+      "leg": "#575a5f",
+      "metal": "#aab0b5",
+      "horn": "#e1dbd2",
+      "halo": "#a58744",
+      "weapon": "#572c22"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "left",
+      "angle": 8,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 0,
+      "ornament_code": 0,
+      "signature_code": 18
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

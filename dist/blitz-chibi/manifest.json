@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "blitz-chibi",
+    "display_name": "Blitz",
+    "localized_name": "闪击",
+    "source_name": "Blitz",
+    "source_id": "RS02",
+    "game_key": "char_457_blitz",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "哨戒铁卫",
+    "rarity": 5,
+    "race": "未知",
+    "visual_signature": [
+      "side braid #767473 hair silhouette",
+      "armor outfit with #2c2a29 and #555351 blocks",
+      "未知: 未知",
+      "signature shield: shield",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #7a5935"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "side braid #767473 hair silhouette; armor outfit with #2c2a29 and #555351 blocks; 未知: 未知; signature shield: shield; single eyepatch"
+    },
+    "hair": {
+      "shape": "braid",
+      "color": "#767473",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 34,
+      "height": 29,
+      "eye_gap": 18,
+      "eye_width": 5.85,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "armor outfit with #2c2a29 and #555351 blocks"
+    },
+    "palette": {
+      "primary": "#2c2a29",
+      "secondary": "#555351",
+      "accent": "#7a5935",
+      "hair": "#767473",
+      "hair_highlight": "#9c9b9a",
+      "eye": "#a5733b",
+      "line": "#38383b",
+      "mouth": "#804d5b",
+      "skin": "#e1d5ce",
+      "skin_line": "#9d8986",
+      "boot": "#212023",
+      "leg": "#38373a",
+      "metal": "#8c8e91",
+      "horn": "#9d948c",
+      "halo": "#b69448",
+      "weapon": "#303032"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "right",
+      "angle": 6,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.43,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 2,
+      "body_width": 54,
+      "coat_width": 10,
+      "leg_spacing": 3,
+      "ornament_code": 14,
+      "signature_code": 16
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

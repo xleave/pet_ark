@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "projekt-red-chibi",
+    "display_name": "Projekt Red",
+    "localized_name": "红",
+    "source_name": "Projekt Red",
+    "source_id": "SW01",
+    "game_key": "char_144_red",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "specialist",
+    "subprofession": "处决者",
+    "rarity": 5,
+    "race": "鲁珀",
+    "visual_signature": [
+      "side braid #bababa hair silhouette",
+      "uniform outfit with #251c1c and #7c7a78 blocks",
+      "animal ears: 鲁珀",
+      "technical device: drone",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #491b1c"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "side braid #bababa hair silhouette; uniform outfit with #251c1c and #7c7a78 blocks; animal ears: 鲁珀; technical device: drone; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "braid",
+      "color": "#bababa",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #251c1c and #7c7a78 blocks"
+    },
+    "palette": {
+      "primary": "#251c1c",
+      "secondary": "#7c7a78",
+      "accent": "#491b1c",
+      "hair": "#bababa",
+      "hair_highlight": "#cdcdcd",
+      "eye": "#6e3937",
+      "line": "#525256",
+      "mouth": "#804d5b",
+      "skin": "#ecdcd1",
+      "skin_line": "#a38c88",
+      "boot": "#1e1a1e",
+      "leg": "#4a494c",
+      "metal": "#9e9fa2",
+      "horn": "#c3bbb3",
+      "halo": "#9b723b",
+      "weapon": "#2b2729"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "wolf",
+      "horns": "none",
+      "halo": "none",
+      "tail": "fluffy",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "drone",
+      "label": "technical device",
+      "side": "left",
+      "angle": -6,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 8,
+      "highlight_width": 3,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 1,
+      "ornament_code": 11,
+      "signature_code": 0
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

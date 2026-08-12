@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "degenbrecher-chibi",
+    "display_name": "Degenbrecher",
+    "localized_name": "锏",
+    "source_name": "Degenbrecher",
+    "source_id": "JC07",
+    "game_key": "char_4116_blkkgt",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "剑豪",
+    "rarity": 6,
+    "race": "卡普里尼",
+    "visual_signature": [
+      "long layered #3b352d hair silhouette",
+      "uniform outfit with #1f1a15 and #493a26 blocks",
+      "horns: 卡普里尼",
+      "blade: sword",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #6e4b1e"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #3b352d hair silhouette; uniform outfit with #1f1a15 and #493a26 blocks; horns: 卡普里尼; blade: sword; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#3b352d",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 4.8,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #1f1a15 and #493a26 blocks"
+    },
+    "palette": {
+      "primary": "#1f1a15",
+      "secondary": "#493a26",
+      "accent": "#6e4b1e",
+      "hair": "#3b352d",
+      "hair_highlight": "#726e68",
+      "eye": "#3a2d1d",
+      "line": "#222020",
+      "mouth": "#804d5b",
+      "skin": "#c8a36a",
+      "skin_line": "#906e50",
+      "boot": "#1c191b",
+      "leg": "#322b27",
+      "metal": "#87837d",
+      "horn": "#7d7265",
+      "halo": "#af8c3c",
+      "weapon": "#272625"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "ram",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "right",
+      "angle": -2,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.27,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 0,
+      "body_width": 44,
+      "coat_width": 7,
+      "leg_spacing": 0,
+      "ornament_code": 4,
+      "signature_code": 16
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "ptilopsis-chibi",
+    "display_name": "Ptilopsis",
+    "localized_name": "白面鸮",
+    "source_name": "Ptilopsis",
+    "source_id": "RL04",
+    "game_key": "char_128_plosis",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "群愈师",
+    "rarity": 5,
+    "race": "黎博利",
+    "visual_signature": [
+      "long layered #383234 hair silhouette",
+      "coat outfit with #d2d2de and #89899b blocks",
+      "wings: 黎博利",
+      "medical device: medical",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #d5b698"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "long layered #383234 hair silhouette; coat outfit with #d2d2de and #89899b blocks; wings: 黎博利; medical device: medical; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#383234",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 34,
+      "height": 32,
+      "eye_gap": 18,
+      "eye_width": 5.5,
+      "eye_height": 6.5,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "coat outfit with #d2d2de and #89899b blocks"
+    },
+    "palette": {
+      "primary": "#d2d2de",
+      "secondary": "#89899b",
+      "accent": "#d5b698",
+      "hair": "#383234",
+      "hair_highlight": "#706b6d",
+      "eye": "#d7a672",
+      "line": "#201f23",
+      "mouth": "#804d5b",
+      "skin": "#c19a89",
+      "skin_line": "#8c6961",
+      "boot": "#67676f",
+      "leg": "#50505c",
+      "metal": "#a3a6b2",
+      "horn": "#7b7069",
+      "halo": "#e8c77f",
+      "weapon": "#9c9da7"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "left",
+      "angle": -10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 2,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 2,
+      "ornament_code": 14,
+      "signature_code": 0
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

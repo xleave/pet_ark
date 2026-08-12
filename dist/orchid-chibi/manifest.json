@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "orchid-chibi",
+    "display_name": "Orchid",
+    "localized_name": "梓兰",
+    "source_name": "Orchid",
+    "source_id": "PA61",
+    "game_key": "char_278_orchid",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "凝滞师",
+    "rarity": 3,
+    "race": "黎博利",
+    "visual_signature": [
+      "long layered #413e4b hair silhouette",
+      "dress outfit with #392c36 and #c4b4bc blocks",
+      "wings: 黎博利",
+      "instrument: instrument",
+      "glasses",
+      "asymmetric profile 0:180 with accent #182b61"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #413e4b hair silhouette; dress outfit with #392c36 and #c4b4bc blocks; wings: 黎博利; instrument: instrument; glasses"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#413e4b",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 32,
+      "height": 31,
+      "eye_gap": 17,
+      "eye_width": 6.199999999999999,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "dress outfit with #392c36 and #c4b4bc blocks"
+    },
+    "palette": {
+      "primary": "#392c36",
+      "secondary": "#c4b4bc",
+      "accent": "#182b61",
+      "hair": "#413e4b",
+      "hair_highlight": "#76747d",
+      "eye": "#294795",
+      "line": "#24232b",
+      "mouth": "#804d5b",
+      "skin": "#a68a8e",
+      "skin_line": "#7e6064",
+      "boot": "#262129",
+      "leg": "#6b646c",
+      "metal": "#bebac1",
+      "horn": "#807776",
+      "halo": "#807b61",
+      "weapon": "#38313a"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "instrument",
+      "label": "instrument",
+      "side": "right",
+      "angle": 2,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.35,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 0,
+      "body_width": 49,
+      "coat_width": 9,
+      "leg_spacing": 4,
+      "ornament_code": 8,
+      "signature_code": 20
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

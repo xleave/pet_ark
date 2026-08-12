@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "violet-mizutsune-orchid-chibi",
+    "display_name": "Violet Mizutsune Orchid",
+    "localized_name": "焰狐龙梓兰",
+    "source_name": "Violet Mizutsune Orchid",
+    "source_id": "MH05",
+    "game_key": "char_1048_orchd2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "重射手",
+    "rarity": 6,
+    "race": "黎博利",
+    "visual_signature": [
+      "long layered #f4e3e8 hair silhouette",
+      "coat outfit with #f3ebe9 and #3e3966 blocks",
+      "wings: 黎博利",
+      "ranged weapon: gun",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #3e3966"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #f4e3e8 hair silhouette; coat outfit with #f3ebe9 and #3e3966 blocks; wings: 黎博利; ranged weapon: gun; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#f4e3e8",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 33,
+      "height": 32,
+      "eye_gap": 17.5,
+      "eye_width": 5.5,
+      "eye_height": 6.1000000000000005,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "wide",
+      "boot_style": "flat",
+      "signature": "coat outfit with #f3ebe9 and #3e3966 blocks"
+    },
+    "palette": {
+      "primary": "#f3ebe9",
+      "secondary": "#3e3966",
+      "accent": "#3e3966",
+      "hair": "#f4e3e8",
+      "hair_highlight": "#f7ebee",
+      "eye": "#595e9e",
+      "line": "#686567",
+      "mouth": "#804d5b",
+      "skin": "#dbc0c5",
+      "skin_line": "#9a7d81",
+      "boot": "#757174",
+      "leg": "#2d2b44",
+      "metal": "#82829a",
+      "horn": "#e2d1cc",
+      "halo": "#958263",
+      "weapon": "#b1adaf"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": -10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 8,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 2,
+      "ornament_code": 5,
+      "signature_code": 4
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

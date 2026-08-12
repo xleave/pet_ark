@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "roberta-chibi",
+    "display_name": "Roberta",
+    "localized_name": "罗比菈塔",
+    "source_name": "Roberta",
+    "source_id": "CB11",
+    "game_key": "char_484_robrta",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "工匠",
+    "rarity": 4,
+    "race": "阿纳缇",
+    "visual_signature": [
+      "long layered #453132 hair silhouette",
+      "dress outfit with #f2e9e9 and #735858 blocks",
+      "阿纳缇: 阿纳缇",
+      "instrument: instrument",
+      "glasses",
+      "asymmetric profile 0:180 with accent #302023"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #453132 hair silhouette; dress outfit with #f2e9e9 and #735858 blocks; 阿纳缇: 阿纳缇; instrument: instrument; glasses"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#453132",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 32,
+      "height": 31,
+      "eye_gap": 17,
+      "eye_width": 6.199999999999999,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "dress outfit with #f2e9e9 and #735858 blocks"
+    },
+    "palette": {
+      "primary": "#f2e9e9",
+      "secondary": "#735858",
+      "accent": "#302023",
+      "hair": "#453132",
+      "hair_highlight": "#796b6b",
+      "eye": "#4a3536",
+      "line": "#251e22",
+      "mouth": "#804d5b",
+      "skin": "#978383",
+      "skin_line": "#755c5e",
+      "boot": "#747074",
+      "leg": "#46393e",
+      "metal": "#9a9094",
+      "horn": "#827068",
+      "halo": "#8d753e",
+      "weapon": "#b1acaf"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "instrument",
+      "label": "instrument",
+      "side": "left",
+      "angle": -8,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "left",
+      "companion": "drone",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 7,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 4,
+      "ornament_code": 12,
+      "signature_code": 18
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

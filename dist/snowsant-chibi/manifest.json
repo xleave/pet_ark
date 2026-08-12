@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "snowsant-chibi",
+    "display_name": "Snowsant",
+    "localized_name": "雪雉",
+    "source_name": "Snowsant",
+    "source_id": "LM16",
+    "game_key": "char_383_snsant",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "specialist",
+    "subprofession": "钩索师",
+    "rarity": 5,
+    "race": "黎博利",
+    "visual_signature": [
+      "side braid #f7f4e9 hair silhouette",
+      "uniform outfit with #575046 and #787a71 blocks",
+      "wings: 黎博利",
+      "specialist tool: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #926e45"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "side braid #f7f4e9 hair silhouette; uniform outfit with #575046 and #787a71 blocks; wings: 黎博利; specialist tool: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "braid",
+      "color": "#f7f4e9",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 33,
+      "height": 29,
+      "eye_gap": 17.5,
+      "eye_width": 4.8,
+      "eye_height": 6.1000000000000005,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "wide",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #575046 and #787a71 blocks"
+    },
+    "palette": {
+      "primary": "#575046",
+      "secondary": "#787a71",
+      "accent": "#926e45",
+      "hair": "#f7f4e9",
+      "hair_highlight": "#f9f7ef",
+      "eye": "#b27f44",
+      "line": "#2c2a29",
+      "mouth": "#804d5b",
+      "skin": "#a89b81",
+      "skin_line": "#7f695d",
+      "boot": "#33302f",
+      "leg": "#484949",
+      "metal": "#9c9f9f",
+      "horn": "#e4dbcd",
+      "halo": "#c3a051",
+      "weapon": "#4c4945"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "specialist tool",
+      "side": "right",
+      "angle": -7,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "one-sided hair ornament"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 2,
+      "side_lock": 9,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 0,
+      "ornament_code": 1,
+      "signature_code": 3
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

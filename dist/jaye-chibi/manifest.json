@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "jaye-chibi",
+    "display_name": "Jaye",
+    "localized_name": "孑",
+    "source_name": "Jaye",
+    "source_id": "LM14",
+    "game_key": "char_272_strong",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "specialist",
+    "subprofession": "行商",
+    "rarity": 4,
+    "race": "乌萨斯",
+    "visual_signature": [
+      "long layered #e3e6e7 hair silhouette",
+      "uniform outfit with #1d1e1d and #86847c blocks",
+      "animal ears: 乌萨斯",
+      "specialist tool: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #72532e"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #e3e6e7 hair silhouette; uniform outfit with #1d1e1d and #86847c blocks; animal ears: 乌萨斯; specialist tool: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#e3e6e7",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 33,
+      "height": 29,
+      "eye_gap": 17.5,
+      "eye_width": 5.85,
+      "eye_height": 6.1000000000000005,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "wide",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #1d1e1d and #86847c blocks"
+    },
+    "palette": {
+      "primary": "#1d1e1d",
+      "secondary": "#86847c",
+      "accent": "#72532e",
+      "hair": "#e3e6e7",
+      "hair_highlight": "#ebedee",
+      "eye": "#a07037",
+      "line": "#16171a",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#1b1b1e",
+      "leg": "#4e4d4e",
+      "metal": "#a2a4a4",
+      "horn": "#d9d3cc",
+      "halo": "#b19144",
+      "weapon": "#26282a"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "bear",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "specialist tool",
+      "side": "left",
+      "angle": 6,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 3,
+      "ornament_code": 5,
+      "signature_code": 20
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

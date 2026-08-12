@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "greyy-the-lightningbearer-chibi",
+    "display_name": "Greyy the Lightningbearer",
+    "localized_name": "承曦格雷伊",
+    "source_name": "Greyy the Lightningbearer",
+    "source_id": "RF23",
+    "game_key": "char_1027_greyy2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "投掷手",
+    "rarity": 5,
+    "race": "佩洛",
+    "visual_signature": [
+      "long layered #775a54 hair silhouette",
+      "coat outfit with #3f3034 and #755d56 blocks",
+      "佩洛: 佩洛",
+      "ranged weapon: gun",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #6b4942"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #775a54 hair silhouette; coat outfit with #3f3034 and #755d56 blocks; 佩洛: 佩洛; ranged weapon: gun; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#775a54",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 34,
+      "height": 29,
+      "eye_gap": 18,
+      "eye_width": 5.5,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "coat outfit with #3f3034 and #755d56 blocks"
+    },
+    "palette": {
+      "primary": "#3f3034",
+      "secondary": "#755d56",
+      "accent": "#6b4942",
+      "hair": "#775a54",
+      "hair_highlight": "#9d8884",
+      "eye": "#9c6a42",
+      "line": "#382e2f",
+      "mouth": "#804d5b",
+      "skin": "#8b695d",
+      "skin_line": "#6f4e49",
+      "boot": "#292328",
+      "leg": "#473c3d",
+      "metal": "#9a9293",
+      "horn": "#9e867b",
+      "halo": "#ae8b50",
+      "weapon": "#3c3439"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "left",
+      "angle": -5,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.28,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 2,
+      "body_width": 45,
+      "coat_width": 7,
+      "leg_spacing": 2,
+      "ornament_code": 10,
+      "signature_code": 9
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

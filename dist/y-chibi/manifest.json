@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "y-chibi",
+    "display_name": "Снегyрочка",
+    "localized_name": "冬时",
+    "source_name": "Снегyрочка",
+    "source_id": "US38",
+    "game_key": "char_4208_wintim",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "vanguard",
+    "subprofession": "情报官",
+    "rarity": 4,
+    "race": "黎博利",
+    "visual_signature": [
+      "long layered #9fa6a9 hair silhouette",
+      "uniform outfit with #343234 and #c6c8ca blocks",
+      "wings: 黎博利",
+      "vanguard polearm: spear",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #7e5e3b"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #9fa6a9 hair silhouette; uniform outfit with #343234 and #c6c8ca blocks; wings: 黎博利; vanguard polearm: spear; single eyepatch"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#9fa6a9",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 34,
+      "height": 29,
+      "eye_gap": 18,
+      "eye_width": 5.85,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "uniform outfit with #343234 and #c6c8ca blocks"
+    },
+    "palette": {
+      "primary": "#343234",
+      "secondary": "#c6c8ca",
+      "accent": "#7e5e3b",
+      "hair": "#9fa6a9",
+      "hair_highlight": "#babfc1",
+      "eye": "#233133",
+      "line": "#484b4f",
+      "mouth": "#804d5b",
+      "skin": "#fef1e7",
+      "skin_line": "#ad9894",
+      "boot": "#242428",
+      "leg": "#6c6d72",
+      "metal": "#bfc2c7",
+      "horn": "#b4b0a9",
+      "halo": "#b8974c",
+      "weapon": "#353539"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "spear",
+      "label": "vanguard polearm",
+      "side": "left",
+      "angle": -9,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 2,
+      "side_lock": 10,
+      "highlight_width": 2,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 3,
+      "ornament_code": 10,
+      "signature_code": 18
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

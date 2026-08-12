@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "dagda-chibi",
+    "display_name": "Dagda",
+    "localized_name": "达格达",
+    "source_name": "Dagda",
+    "source_id": "GG04",
+    "game_key": "char_157_dagda",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "斗士",
+    "rarity": 5,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #272a2a hair silhouette",
+      "uniform outfit with #626162 and #363f42 blocks",
+      "animal ears: 菲林",
+      "blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #987854"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #272a2a hair silhouette; uniform outfit with #626162 and #363f42 blocks; animal ears: 菲林; blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#272a2a",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 33,
+      "height": 30,
+      "eye_gap": 17.5,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.1000000000000005,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "wide",
+      "boot_style": "heeled",
+      "signature": "uniform outfit with #626162 and #363f42 blocks"
+    },
+    "palette": {
+      "primary": "#626162",
+      "secondary": "#363f42",
+      "accent": "#987854",
+      "hair": "#272a2a",
+      "hair_highlight": "#636666",
+      "eye": "#b5844c",
+      "line": "#1a1c1f",
+      "mouth": "#804d5b",
+      "skin": "#f0dfcd",
+      "skin_line": "#a58e86",
+      "boot": "#38373b",
+      "leg": "#2a2e33",
+      "metal": "#7e858a",
+      "horn": "#726c64",
+      "halo": "#c6a559",
+      "weapon": "#535457"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "right",
+      "angle": 12,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.42,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 7,
+      "highlight_width": 1,
+      "body_width": 53,
+      "coat_width": 10,
+      "leg_spacing": 4,
+      "ornament_code": 9,
+      "signature_code": 5
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

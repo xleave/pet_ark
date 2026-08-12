@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "alanna-chibi",
+    "display_name": "Alanna",
+    "localized_name": "阿兰娜",
+    "source_name": "Alanna",
+    "source_id": "RB17",
+    "game_key": "char_4178_alanna",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "工匠",
+    "rarity": 5,
+    "race": "萨弗拉",
+    "visual_signature": [
+      "long layered #3f2d2a hair silhouette",
+      "dress outfit with #352c29 and #787674 blocks",
+      "萨弗拉: 萨弗拉",
+      "arts device: book",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #5d2a23"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #3f2d2a hair silhouette; dress outfit with #352c29 and #787674 blocks; 萨弗拉: 萨弗拉; arts device: book; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#3f2d2a",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 33,
+      "height": 30,
+      "eye_gap": 17.5,
+      "eye_width": 4.8,
+      "eye_height": 6.1000000000000005,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "wide",
+      "boot_style": "heeled",
+      "signature": "dress outfit with #352c29 and #787674 blocks"
+    },
+    "palette": {
+      "primary": "#352c29",
+      "secondary": "#787674",
+      "accent": "#5d2a23",
+      "hair": "#3f2d2a",
+      "hair_highlight": "#756866",
+      "eye": "#6c423b",
+      "line": "#231d1f",
+      "mouth": "#804d5b",
+      "skin": "#d9705f",
+      "skin_line": "#99524a",
+      "boot": "#252123",
+      "leg": "#48474a",
+      "metal": "#9c9ea1",
+      "horn": "#7f6d64",
+      "halo": "#a67a3e",
+      "weapon": "#363132"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "left",
+      "angle": -2,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "drone",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 7,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 0,
+      "ornament_code": 13,
+      "signature_code": 12
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

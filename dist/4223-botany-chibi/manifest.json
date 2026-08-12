@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "4223-botany-chibi",
+    "display_name": "Ботани",
+    "localized_name": "伯塔尼",
+    "source_name": "Ботани",
+    "source_id": "US40",
+    "game_key": "char_4223_botany",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "巫役",
+    "rarity": 5,
+    "race": "埃拉菲亚",
+    "visual_signature": [
+      "long layered #60564d hair silhouette",
+      "dress outfit with #746154 and #1d1a1c blocks",
+      "animal ears: 埃拉菲亚",
+      "arts device: book",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #a1784c"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #60564d hair silhouette; dress outfit with #746154 and #1d1a1c blocks; animal ears: 埃拉菲亚; arts device: book; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#60564d",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 35,
+      "height": 31,
+      "eye_gap": 18.5,
+      "eye_width": 4.8,
+      "eye_height": 6.9,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "bare",
+      "boot_style": "tall",
+      "signature": "dress outfit with #746154 and #1d1a1c blocks"
+    },
+    "palette": {
+      "primary": "#746154",
+      "secondary": "#1d1a1c",
+      "accent": "#a1784c",
+      "hair": "#60564d",
+      "hair_highlight": "#8d857f",
+      "eye": "#ba8448",
+      "line": "#302c2c",
+      "mouth": "#804d5b",
+      "skin": "#d8c4ae",
+      "skin_line": "#997f75",
+      "boot": "#3f3735",
+      "leg": "#1e1d22",
+      "metal": "#737479",
+      "horn": "#918477",
+      "halo": "#cba555",
+      "weapon": "#5f544e"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "branch",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "left",
+      "angle": -2,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 3,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 0,
+      "ornament_code": 15,
+      "signature_code": 4
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

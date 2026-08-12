@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "rose-salt-chibi",
+    "display_name": "Rose Salt",
+    "localized_name": "瑰盐",
+    "source_name": "Rose Salt",
+    "source_id": "II11",
+    "game_key": "char_4163_rosesa",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "群愈师",
+    "rarity": 5,
+    "race": "斐迪亚",
+    "visual_signature": [
+      "long layered #2d2729 hair silhouette",
+      "coat outfit with #55413f and #928888 blocks",
+      "斐迪亚: 斐迪亚",
+      "medical device: medical",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #906641"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "long layered #2d2729 hair silhouette; coat outfit with #55413f and #928888 blocks; 斐迪亚: 斐迪亚; medical device: medical; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#2d2729",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 4.8,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "coat outfit with #55413f and #928888 blocks"
+    },
+    "palette": {
+      "primary": "#55413f",
+      "secondary": "#928888",
+      "accent": "#906641",
+      "hair": "#2d2729",
+      "hair_highlight": "#686365",
+      "eye": "#b17a42",
+      "line": "#1c1b1e",
+      "mouth": "#804d5b",
+      "skin": "#eecec1",
+      "skin_line": "#a4857f",
+      "boot": "#322a2c",
+      "leg": "#544f54",
+      "metal": "#a7a6aa",
+      "horn": "#756a63",
+      "halo": "#c29b4f",
+      "weapon": "#4a3f40"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "right",
+      "angle": -12,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.42,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 6,
+      "side_lock": 8,
+      "highlight_width": 2,
+      "body_width": 53,
+      "coat_width": 10,
+      "leg_spacing": 0,
+      "ornament_code": 10,
+      "signature_code": 6
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

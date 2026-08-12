@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "philae-chibi",
+    "display_name": "Philae",
+    "localized_name": "菲莱",
+    "source_name": "Philae",
+    "source_id": "SG10",
+    "game_key": "char_4148_philae",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "本源铁卫",
+    "rarity": 5,
+    "race": "萨卡兹",
+    "visual_signature": [
+      "side braid #382b21 hair silhouette",
+      "armor outfit with #bab7ad and #593821 blocks",
+      "horns: 萨卡兹",
+      "signature shield: shield",
+      "face mask",
+      "asymmetric profile 3:169 with accent #69421c"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "side braid #382b21 hair silhouette; armor outfit with #bab7ad and #593821 blocks; horns: 萨卡兹; signature shield: shield; face mask"
+    },
+    "hair": {
+      "shape": "braid",
+      "color": "#382b21",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 34,
+      "height": 32,
+      "eye_gap": 18,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.5,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "armor",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "armor outfit with #bab7ad and #593821 blocks"
+    },
+    "palette": {
+      "primary": "#bab7ad",
+      "secondary": "#593821",
+      "accent": "#69421c",
+      "hair": "#382b21",
+      "hair_highlight": "#70665f",
+      "eye": "#2e1b13",
+      "line": "#201c1b",
+      "mouth": "#804d5b",
+      "skin": "#ddb574",
+      "skin_line": "#9b7756",
+      "boot": "#5d5b5b",
+      "leg": "#3a2a24",
+      "metal": "#8e827b",
+      "horn": "#7b6c5f",
+      "halo": "#ac873b",
+      "weapon": "#8c8c88"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "left",
+      "angle": 4,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "mask",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.17,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 37,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 2,
+      "body_width": 50,
+      "coat_width": 5,
+      "leg_spacing": 1,
+      "ornament_code": 10,
+      "signature_code": 22
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

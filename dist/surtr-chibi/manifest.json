@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "surtr-chibi",
+    "display_name": "Surtr",
+    "localized_name": "史尔特尔",
+    "source_name": "Surtr",
+    "source_id": "R111",
+    "game_key": "char_350_surtr",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "术战者",
+    "rarity": 6,
+    "race": "萨卡兹",
+    "visual_signature": [
+      "long layered #bd323a hair silhouette",
+      "dress outfit with #6a0b11 and #96232c blocks",
+      "horns: 萨卡兹",
+      "blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #e7a33e"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #bd323a hair silhouette; dress outfit with #6a0b11 and #96232c blocks; horns: 萨卡兹; blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#bd323a",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 33,
+      "height": 32,
+      "eye_gap": 17.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.1000000000000005,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "wide",
+      "boot_style": "flat",
+      "signature": "dress outfit with #6a0b11 and #96232c blocks"
+    },
+    "palette": {
+      "primary": "#6a0b11",
+      "secondary": "#96232c",
+      "accent": "#e7a33e",
+      "hair": "#bd323a",
+      "hair_highlight": "#cf6b71",
+      "eye": "#6a0b11",
+      "line": "#531f25",
+      "mouth": "#804d5b",
+      "skin": "#b8393a",
+      "skin_line": "#873436",
+      "boot": "#3b1319",
+      "leg": "#562129",
+      "metal": "#a97880",
+      "horn": "#c4706c",
+      "halo": "#f2bd4d",
+      "weapon": "#581c22"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "left",
+      "angle": -6,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.12,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 1,
+      "body_width": 47,
+      "coat_width": 4,
+      "leg_spacing": 1,
+      "ornament_code": 5,
+      "signature_code": 24
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

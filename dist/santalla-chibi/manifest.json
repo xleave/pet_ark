@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "santalla-chibi",
+    "display_name": "Santalla",
+    "localized_name": "寒檀",
+    "source_name": "Santalla",
+    "source_id": "SI02",
+    "game_key": "char_341_sntlla",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "扩散术师",
+    "rarity": 5,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #252139 hair silhouette",
+      "robe outfit with #c9c6d0 and #a09eb1 blocks",
+      "animal ears: 菲林",
+      "arts staff: staff",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #252139"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #252139 hair silhouette; robe outfit with #c9c6d0 and #a09eb1 blocks; animal ears: 菲林; arts staff: staff; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#252139",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 33,
+      "height": 29,
+      "eye_gap": 17.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.1000000000000005,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "wide",
+      "boot_style": "tall",
+      "signature": "robe outfit with #c9c6d0 and #a09eb1 blocks"
+    },
+    "palette": {
+      "primary": "#c9c6d0",
+      "secondary": "#a09eb1",
+      "accent": "#252139",
+      "hair": "#252139",
+      "hair_highlight": "#625f70",
+      "eye": "#76543e",
+      "line": "#191825",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#636269",
+      "leg": "#5a5966",
+      "metal": "#aeb0bc",
+      "horn": "#71676c",
+      "halo": "#87754b",
+      "weapon": "#96959e"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "right",
+      "angle": -6,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 1,
+      "ornament_code": 9,
+      "signature_code": 8
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

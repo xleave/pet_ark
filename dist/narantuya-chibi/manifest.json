@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "narantuya-chibi",
+    "display_name": "Narantuya",
+    "localized_name": "娜仁图亚",
+    "source_name": "Narantuya",
+    "source_id": "SG17",
+    "game_key": "char_4138_narant",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "回环射手",
+    "rarity": 6,
+    "race": "库兰塔",
+    "visual_signature": [
+      "long layered #534141 hair silhouette",
+      "coat outfit with #f5ebe7 and #2e1515 blocks",
+      "animal ears: 库兰塔",
+      "ranged weapon: gun",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #822121"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #534141 hair silhouette; coat outfit with #f5ebe7 and #2e1515 blocks; animal ears: 库兰塔; ranged weapon: gun; single eyepatch"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#534141",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 5.85,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "coat outfit with #f5ebe7 and #2e1515 blocks"
+    },
+    "palette": {
+      "primary": "#f5ebe7",
+      "secondary": "#2e1515",
+      "accent": "#822121",
+      "hair": "#534141",
+      "hair_highlight": "#837676",
+      "eye": "#481413",
+      "line": "#2b2428",
+      "mouth": "#804d5b",
+      "skin": "#ba918b",
+      "skin_line": "#886462",
+      "boot": "#757173",
+      "leg": "#261a1f",
+      "metal": "#7a7276",
+      "horn": "#8a7870",
+      "halo": "#ba753d",
+      "weapon": "#b2adad"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": -4,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 3,
+      "ornament_code": 4,
+      "signature_code": 6
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

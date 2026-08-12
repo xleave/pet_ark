@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "executor-chibi",
+    "display_name": "Executor",
+    "localized_name": "送葬人",
+    "source_name": "Executor",
+    "source_id": "LT01",
+    "game_key": "char_279_excu",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "散射手",
+    "rarity": 5,
+    "race": "萨科塔",
+    "visual_signature": [
+      "long layered #767679 hair silhouette",
+      "coat outfit with #1f202f and #727379 blocks",
+      "halo: 萨科塔",
+      "ranged weapon: gun",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #735438"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "arts",
+      "summary": "long layered #767679 hair silhouette; coat outfit with #1f202f and #727379 blocks; halo: 萨科塔; ranged weapon: gun; single eyepatch"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#767679",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 5.85,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "coat outfit with #1f202f and #727379 blocks"
+    },
+    "palette": {
+      "primary": "#1f202f",
+      "secondary": "#727379",
+      "accent": "#735438",
+      "hair": "#767679",
+      "hair_highlight": "#9c9c9f",
+      "eye": "#171623",
+      "line": "#38393d",
+      "mouth": "#804d5b",
+      "skin": "#d7c5b9",
+      "skin_line": "#98807b",
+      "boot": "#1c1c26",
+      "leg": "#45464d",
+      "metal": "#999ca3",
+      "horn": "#9d968f",
+      "halo": "#b2914a",
+      "weapon": "#272936"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "ring",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": 11,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.23,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 2,
+      "body_width": 54,
+      "coat_width": 6,
+      "leg_spacing": 3,
+      "ornament_code": 10,
+      "signature_code": 25
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

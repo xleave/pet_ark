@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "irene-chibi",
+    "display_name": "Irene",
+    "localized_name": "艾丽妮",
+    "source_name": "Irene",
+    "source_id": "II07",
+    "game_key": "char_4009_irene",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "剑豪",
+    "rarity": 6,
+    "race": "黎博利",
+    "visual_signature": [
+      "long layered #2c2c2b hair silhouette",
+      "uniform outfit with #333231 and #9c9c97 blocks",
+      "wings: 黎博利",
+      "blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #7e5e39"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #2c2c2b hair silhouette; uniform outfit with #333231 and #9c9c97 blocks; wings: 黎博利; blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#2c2c2b",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 33,
+      "height": 29,
+      "eye_gap": 17.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.1000000000000005,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "wide",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #333231 and #9c9c97 blocks"
+    },
+    "palette": {
+      "primary": "#333231",
+      "secondary": "#9c9c97",
+      "accent": "#7e5e39",
+      "hair": "#2c2c2b",
+      "hair_highlight": "#676766",
+      "eye": "#a7763e",
+      "line": "#1c1c1f",
+      "mouth": "#804d5b",
+      "skin": "#e5dbd0",
+      "skin_line": "#a08c87",
+      "boot": "#242427",
+      "leg": "#58585b",
+      "metal": "#acafb0",
+      "horn": "#746d64",
+      "halo": "#b8974b",
+      "weapon": "#343537"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "right",
+      "angle": -6,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.97,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 1,
+      "body_width": 50,
+      "coat_width": 14,
+      "leg_spacing": 1,
+      "ornament_code": 9,
+      "signature_code": 8
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

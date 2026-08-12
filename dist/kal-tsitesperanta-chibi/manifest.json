@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "kal-tsitesperanta-chibi",
+    "display_name": "Kal'tsit·Esperanta",
+    "localized_name": "凯尔希·思衡托",
+    "source_name": "Kal'tsit·Esperanta",
+    "source_id": "R002",
+    "game_key": "char_1052_kalts2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "守望者",
+    "rarity": 6,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #dbd9cc hair silhouette",
+      "coat outfit with #f9f8f0 and #33352e blocks",
+      "animal ears: 菲林",
+      "medical device: medical",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #ebcba2"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "long layered #dbd9cc hair silhouette; coat outfit with #f9f8f0 and #33352e blocks; animal ears: 菲林; medical device: medical; single eyepatch"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#dbd9cc",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 5.85,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "coat outfit with #f9f8f0 and #33352e blocks"
+    },
+    "palette": {
+      "primary": "#f9f8f0",
+      "secondary": "#33352e",
+      "accent": "#ebcba2",
+      "hair": "#dbd9cc",
+      "hair_highlight": "#e5e4da",
+      "eye": "#e3b277",
+      "line": "#6a6a6a",
+      "mouth": "#804d5b",
+      "skin": "#c9c2b0",
+      "skin_line": "#907e76",
+      "boot": "#777777",
+      "leg": "#28292a",
+      "metal": "#7d8081",
+      "horn": "#d5ccbd",
+      "halo": "#f4d384",
+      "weapon": "#b5b6b3"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "right",
+      "angle": -9,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.42,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 8,
+      "highlight_width": 2,
+      "body_width": 53,
+      "coat_width": 10,
+      "leg_spacing": 3,
+      "ornament_code": 2,
+      "signature_code": 21
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

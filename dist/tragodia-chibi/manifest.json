@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "tragodia-chibi",
+    "display_name": "Tragodia",
+    "localized_name": "酒神",
+    "source_name": "Tragodia",
+    "source_id": "CT01",
+    "game_key": "char_1042_phatm2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "巫役",
+    "rarity": 6,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #3e3634 hair silhouette",
+      "dress outfit with #f0e6e1 and #1f1c1c blocks",
+      "animal ears: 菲林",
+      "arts device: book",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #e6c19a"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #3e3634 hair silhouette; dress outfit with #f0e6e1 and #1f1c1c blocks; animal ears: 菲林; arts device: book; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#3e3634",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "dress outfit with #f0e6e1 and #1f1c1c blocks"
+    },
+    "palette": {
+      "primary": "#f0e6e1",
+      "secondary": "#1f1c1c",
+      "accent": "#e6c19a",
+      "hair": "#3e3634",
+      "hair_highlight": "#746e6d",
+      "eye": "#e0ac73",
+      "line": "#232023",
+      "mouth": "#804d5b",
+      "skin": "#94857f",
+      "skin_line": "#745d5c",
+      "boot": "#736f70",
+      "leg": "#1f1e22",
+      "metal": "#747579",
+      "horn": "#7e7269",
+      "halo": "#f1cd80",
+      "weapon": "#afaaa9"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "right",
+      "angle": 9,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.22,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "one-sided hair ornament"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 3,
+      "body_width": 53,
+      "coat_width": 6,
+      "leg_spacing": 1,
+      "ornament_code": 15,
+      "signature_code": 27
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

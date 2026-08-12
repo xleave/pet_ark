@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "utage-chibi",
+    "display_name": "Utage",
+    "localized_name": "宴",
+    "source_name": "Utage",
+    "source_id": "HK03",
+    "game_key": "char_337_utage",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "武者",
+    "rarity": 4,
+    "race": "不明",
+    "visual_signature": [
+      "long layered #2a1a28 hair silhouette",
+      "uniform outfit with #412e2c and #dfd7df blocks",
+      "不明: 不明",
+      "blade: sword",
+      "head-mounted goggles",
+      "asymmetric profile 20:180 with accent #855b36"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #2a1a28 hair silhouette; uniform outfit with #412e2c and #dfd7df blocks; 不明: 不明; blade: sword; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#2a1a28",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 5.5,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #412e2c and #dfd7df blocks"
+    },
+    "palette": {
+      "primary": "#412e2c",
+      "secondary": "#dfd7df",
+      "accent": "#855b36",
+      "hair": "#2a1a28",
+      "hair_highlight": "#665a64",
+      "eye": "#2a1a28",
+      "line": "#1b161e",
+      "mouth": "#804d5b",
+      "skin": "#a48e7a",
+      "skin_line": "#7c6259",
+      "boot": "#2a2224",
+      "leg": "#77747c",
+      "metal": "#cac9d1",
+      "horn": "#736362",
+      "halo": "#bc9549",
+      "weapon": "#3e3334"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "right",
+      "angle": 0,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.1,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 4,
+      "side_lock": 2,
+      "highlight_width": 2,
+      "body_width": 46,
+      "coat_width": 4,
+      "leg_spacing": 2,
+      "ornament_code": 6,
+      "signature_code": 18
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

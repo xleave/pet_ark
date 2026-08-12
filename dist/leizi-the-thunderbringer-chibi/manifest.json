@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "leizi-the-thunderbringer-chibi",
+    "display_name": "Leizi the Thunderbringer",
+    "localized_name": "司霆惊蛰",
+    "source_name": "Leizi the Thunderbringer",
+    "source_id": "YD25",
+    "game_key": "char_1043_leizi2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "解放者",
+    "rarity": 6,
+    "race": "麒麟",
+    "visual_signature": [
+      "long layered #22282d hair silhouette",
+      "uniform outfit with #231415 and #5b4b3d blocks",
+      "麒麟: 麒麟",
+      "blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #57201e"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #22282d hair silhouette; uniform outfit with #231415 and #5b4b3d blocks; 麒麟: 麒麟; blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#22282d",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 5.5,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #231415 and #5b4b3d blocks"
+    },
+    "palette": {
+      "primary": "#231415",
+      "secondary": "#5b4b3d",
+      "accent": "#57201e",
+      "hair": "#22282d",
+      "hair_highlight": "#606468",
+      "eye": "#775330",
+      "line": "#181b20",
+      "mouth": "#804d5b",
+      "skin": "#8c6947",
+      "skin_line": "#6f4e3d",
+      "boot": "#1d171b",
+      "leg": "#3b3331",
+      "metal": "#8f8a88",
+      "horn": "#6f6b65",
+      "halo": "#a3753c",
+      "weapon": "#2a2225"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "left",
+      "angle": -5,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.2,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 3,
+      "body_width": 52,
+      "coat_width": 6,
+      "leg_spacing": 2,
+      "ornament_code": 3,
+      "signature_code": 5
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

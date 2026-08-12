@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "provence-chibi",
+    "display_name": "Provence",
+    "localized_name": "普罗旺斯",
+    "source_name": "Provence",
+    "source_id": "SR03",
+    "game_key": "char_145_prove",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "重射手",
+    "rarity": 5,
+    "race": "鲁珀",
+    "visual_signature": [
+      "asymmetric ponytail #d2ceed hair silhouette",
+      "coat outfit with #605889 and #3b304d blocks",
+      "animal ears: 鲁珀",
+      "ranged weapon: gun",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #3b304d"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "asymmetric ponytail #d2ceed hair silhouette; coat outfit with #605889 and #3b304d blocks; animal ears: 鲁珀; ranged weapon: gun; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "ponytail",
+      "color": "#d2ceed",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 35,
+      "height": 31,
+      "eye_gap": 18.5,
+      "eye_width": 5.85,
+      "eye_height": 6.9,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "bare",
+      "boot_style": "tall",
+      "signature": "coat outfit with #605889 and #3b304d blocks"
+    },
+    "palette": {
+      "primary": "#605889",
+      "secondary": "#3b304d",
+      "accent": "#3b304d",
+      "hair": "#d2ceed",
+      "hair_highlight": "#dfdcf2",
+      "eye": "#4c4773",
+      "line": "#302d43",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#37334c",
+      "leg": "#2c2738",
+      "metal": "#807e8f",
+      "horn": "#d0c6cf",
+      "halo": "#937d56",
+      "weapon": "#524e70"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "wolf",
+      "horns": "none",
+      "halo": "none",
+      "tail": "fluffy",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "left",
+      "angle": 11,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.12,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 3,
+      "body_width": 47,
+      "coat_width": 4,
+      "leg_spacing": 3,
+      "ornament_code": 3,
+      "signature_code": 21
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

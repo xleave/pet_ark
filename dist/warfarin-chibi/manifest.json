@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "warfarin-chibi",
+    "display_name": "Warfarin",
+    "localized_name": "华法琳",
+    "source_name": "Warfarin",
+    "source_id": "R106",
+    "game_key": "char_171_bldsk",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "医师",
+    "rarity": 5,
+    "race": "萨卡兹",
+    "visual_signature": [
+      "long layered #f8f3f3 hair silhouette",
+      "coat outfit with #4e4442 and #a29ba4 blocks",
+      "horns: 萨卡兹",
+      "medical device: medical",
+      "face mask",
+      "asymmetric profile 0:180 with accent #46292d"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "long layered #f8f3f3 hair silhouette; coat outfit with #4e4442 and #a29ba4 blocks; horns: 萨卡兹; medical device: medical; face mask"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#f8f3f3",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 34,
+      "height": 32,
+      "eye_gap": 18,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.5,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "coat outfit with #4e4442 and #a29ba4 blocks"
+    },
+    "palette": {
+      "primary": "#4e4442",
+      "secondary": "#a29ba4",
+      "accent": "#46292d",
+      "hair": "#f8f3f3",
+      "hair_highlight": "#faf6f6",
+      "eye": "#885937",
+      "line": "#292628",
+      "mouth": "#804d5b",
+      "skin": "#925c60",
+      "skin_line": "#73474b",
+      "boot": "#2f2b2e",
+      "leg": "#5b5860",
+      "metal": "#afaeb6",
+      "horn": "#e5dad2",
+      "halo": "#997a44",
+      "weapon": "#464142"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "right",
+      "angle": -6,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "mask",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.27,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 2,
+      "body_width": 44,
+      "coat_width": 7,
+      "leg_spacing": 1,
+      "ornament_code": 14,
+      "signature_code": 20
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

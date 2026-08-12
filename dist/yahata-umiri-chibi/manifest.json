@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "yahata-umiri-chibi",
+    "display_name": "Yahata Umiri",
+    "localized_name": "八幡海铃",
+    "source_name": "Yahata Umiri",
+    "source_id": "AM02",
+    "game_key": "char_4186_tmoris",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "specialist",
+    "subprofession": "伏击客",
+    "rarity": 5,
+    "race": "未知",
+    "visual_signature": [
+      "long layered #4d3a3b hair silhouette",
+      "uniform outfit with #423034 and #fcf4ee blocks",
+      "未知: 未知",
+      "specialist tool: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #865d3b"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #4d3a3b hair silhouette; uniform outfit with #423034 and #fcf4ee blocks; 未知: 未知; specialist tool: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#4d3a3b",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 35,
+      "height": 32,
+      "eye_gap": 18.5,
+      "eye_width": 5.85,
+      "eye_height": 6.9,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "heeled",
+      "signature": "uniform outfit with #423034 and #fcf4ee blocks"
+    },
+    "palette": {
+      "primary": "#423034",
+      "secondary": "#fcf4ee",
+      "accent": "#865d3b",
+      "hair": "#4d3a3b",
+      "hair_highlight": "#7f7172",
+      "eye": "#322326",
+      "line": "#282225",
+      "mouth": "#804d5b",
+      "skin": "#9a8086",
+      "skin_line": "#775b5f",
+      "boot": "#2a2328",
+      "leg": "#858183",
+      "metal": "#d7d6d7",
+      "horn": "#87756d",
+      "halo": "#bc964c",
+      "weapon": "#3e3439"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "specialist tool",
+      "side": "left",
+      "angle": 6,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.93,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 3,
+      "side_lock": 10,
+      "highlight_width": 3,
+      "body_width": 48,
+      "coat_width": 13,
+      "leg_spacing": 3,
+      "ornament_code": 3,
+      "signature_code": 28
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "tin-man-chibi",
+    "display_name": "Tin Man",
+    "localized_name": "锡人",
+    "source_name": "Tin Man",
+    "source_id": "CB30",
+    "game_key": "char_4151_tinman",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "specialist",
+    "subprofession": "炼金师",
+    "rarity": 5,
+    "race": "未公开",
+    "visual_signature": [
+      "long layered #18191e hair silhouette",
+      "uniform outfit with #191d22 and #5b5358 blocks",
+      "未公开: 未公开",
+      "technical device: drone",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #5f4340"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #18191e hair silhouette; uniform outfit with #191d22 and #5b5358 blocks; 未公开: 未公开; technical device: drone; single eyepatch"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#18191e",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 5.85,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #191d22 and #5b5358 blocks"
+    },
+    "palette": {
+      "primary": "#191d22",
+      "secondary": "#5b5358",
+      "accent": "#5f4340",
+      "hair": "#18191e",
+      "hair_highlight": "#59595d",
+      "eye": "#966741",
+      "line": "#14151a",
+      "mouth": "#804d5b",
+      "skin": "#876a61",
+      "skin_line": "#6d4f4b",
+      "boot": "#191b20",
+      "leg": "#3b373e",
+      "metal": "#8f8e94",
+      "horn": "#69625d",
+      "halo": "#a7884e",
+      "weapon": "#24282d"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "drone",
+      "label": "technical device",
+      "side": "right",
+      "angle": -4,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.15,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 0,
+      "body_width": 49,
+      "coat_width": 5,
+      "leg_spacing": 3,
+      "ornament_code": 0,
+      "signature_code": 22
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

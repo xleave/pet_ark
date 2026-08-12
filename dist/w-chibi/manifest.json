@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "w-chibi",
+    "display_name": "W",
+    "localized_name": "W",
+    "source_name": "W",
+    "source_id": "B214",
+    "game_key": "char_113_cqbw",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "炮手",
+    "rarity": 6,
+    "race": "萨卡兹",
+    "visual_signature": [
+      "paired twin-tail #e7e6df hair silhouette",
+      "uniform outfit with #646364 and #201c1d blocks",
+      "horns: 萨卡兹",
+      "ranged weapon: gun",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #bd2b3f"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "paired twin-tail #e7e6df hair silhouette; uniform outfit with #646364 and #201c1d blocks; horns: 萨卡兹; ranged weapon: gun; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "twin-tails",
+      "color": "#e7e6df",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 35,
+      "height": 31,
+      "eye_gap": 18.5,
+      "eye_width": 4.8,
+      "eye_height": 6.9,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #646364 and #201c1d blocks"
+    },
+    "palette": {
+      "primary": "#646364",
+      "secondary": "#201c1d",
+      "accent": "#bd2b3f",
+      "hair": "#e7e6df",
+      "hair_highlight": "#eeede8",
+      "eye": "#841f24",
+      "line": "#313135",
+      "mouth": "#804d5b",
+      "skin": "#c5b7b2",
+      "skin_line": "#8e7877",
+      "boot": "#39383c",
+      "leg": "#1f1e22",
+      "metal": "#747579",
+      "horn": "#dbd3c7",
+      "halo": "#db7b4e",
+      "weapon": "#545558"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": -7,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.35,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 3,
+      "body_width": 49,
+      "coat_width": 9,
+      "leg_spacing": 0,
+      "ornament_code": 11,
+      "signature_code": 27
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

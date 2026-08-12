@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "quercus-chibi",
+    "display_name": "Quercus",
+    "localized_name": "夏栎",
+    "source_name": "Quercus",
+    "source_id": "R121",
+    "game_key": "char_492_quercu",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "护佑者",
+    "rarity": 5,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #1e130c hair silhouette",
+      "dress outfit with #1e1511 and #f5f0eb blocks",
+      "animal ears: 菲林",
+      "arts device: book",
+      "face mask",
+      "asymmetric profile 0:180 with accent #421707"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #1e130c hair silhouette; dress outfit with #1e1511 and #f5f0eb blocks; animal ears: 菲林; arts device: book; face mask"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#1e130c",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 34,
+      "height": 29,
+      "eye_gap": 18,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "dress outfit with #1e1511 and #f5f0eb blocks"
+    },
+    "palette": {
+      "primary": "#1e1511",
+      "secondary": "#f5f0eb",
+      "accent": "#421707",
+      "hair": "#1e130c",
+      "hair_highlight": "#5d5550",
+      "eye": "#6c4317",
+      "line": "#171313",
+      "mouth": "#804d5b",
+      "skin": "#927545",
+      "skin_line": "#73553c",
+      "boot": "#1b1719",
+      "leg": "#817f81",
+      "metal": "#d4d4d6",
+      "horn": "#6d5f53",
+      "halo": "#97702f",
+      "weapon": "#272222"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "right",
+      "angle": -1,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "mask",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "face mask"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 7,
+      "highlight_width": 2,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 1,
+      "ornament_code": 10,
+      "signature_code": 0
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "perfumer-chibi",
+    "display_name": "Perfumer",
+    "localized_name": "调香师",
+    "source_name": "Perfumer",
+    "source_id": "MN03",
+    "game_key": "char_181_flower",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "群愈师",
+    "rarity": 4,
+    "race": "沃尔珀",
+    "visual_signature": [
+      "paired twin-tail #4c413d hair silhouette",
+      "coat outfit with #63524c and #bbb5af blocks",
+      "animal ears: 沃尔珀",
+      "medical device: medical",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #4b3a33"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "paired twin-tail #4c413d hair silhouette; coat outfit with #63524c and #bbb5af blocks; animal ears: 沃尔珀; medical device: medical; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "twin-tails",
+      "color": "#4c413d",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 33,
+      "height": 32,
+      "eye_gap": 17.5,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.1000000000000005,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "wide",
+      "boot_style": "flat",
+      "signature": "coat outfit with #63524c and #bbb5af blocks"
+    },
+    "palette": {
+      "primary": "#63524c",
+      "secondary": "#bbb5af",
+      "accent": "#4b3a33",
+      "hair": "#4c413d",
+      "hair_highlight": "#7e7673",
+      "eye": "#6e574f",
+      "line": "#282426",
+      "mouth": "#804d5b",
+      "skin": "#fed2b5",
+      "skin_line": "#ad8779",
+      "boot": "#383132",
+      "leg": "#676466",
+      "metal": "#bababb",
+      "horn": "#86786e",
+      "halo": "#9c8347",
+      "weapon": "#544a48"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "fox",
+      "horns": "none",
+      "halo": "none",
+      "tail": "fluffy",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "left",
+      "angle": 2,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 3,
+      "side_lock": 2,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 4,
+      "ornament_code": 1,
+      "signature_code": 16
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

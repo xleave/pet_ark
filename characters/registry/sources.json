@@ -1,0 +1,41 @@
+{
+  "scope": "Arknights mainland-CN playable operators published and indexable on the retrieval date; class conversions are one character, formally separate playable alters are separate entries. Priestess is retained as the repository regression baseline.",
+  "retrieved_at": "2026-08-12",
+  "sources": [
+    {
+      "id": "official-operator-archive",
+      "title": "明日方舟：干员动态集录",
+      "url": "https://ak.hypergryph.com/archive/dynamicCompile",
+      "authority": "official",
+      "use": "official public operator identity and visual-design verification"
+    },
+    {
+      "id": "prts-playable-operator-index",
+      "title": "PRTS 干员一览",
+      "url": "https://prts.wiki/w/干员一览",
+      "authority": "community index",
+      "use": "machine-readable playable roster, localized names, display numbers, class, rarity and race"
+    },
+    {
+      "id": "arknights-game-data",
+      "title": "Kengxxiao/ArknightsGameData character_table",
+      "url": "https://github.com/Kengxxiao/ArknightsGameData/blob/master/zh_CN/gamedata/excel/character_table.json",
+      "authority": "public game-data mirror",
+      "use": "display-number to current internal character-key reconciliation"
+    },
+    {
+      "id": "aceship-avatar-reference",
+      "title": "Aceship/Arknight-Images avatar index",
+      "url": "https://github.com/Aceship/Arknight-Images/tree/master/avatars",
+      "authority": "community visual index",
+      "use": "temporary, non-redistributed palette and silhouette analysis where official material is not machine-indexable"
+    }
+  ],
+  "normalization": {
+    "raw_index_entries": 427,
+    "duplicate_class_forms_removed": 2,
+    "playable_character_entries": 425,
+    "regression_baselines": 1,
+    "expected_total": 426
+  }
+}

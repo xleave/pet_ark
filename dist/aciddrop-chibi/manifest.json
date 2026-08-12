@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "aciddrop-chibi",
+    "display_name": "Aciddrop",
+    "localized_name": "酸糖",
+    "source_name": "Aciddrop",
+    "source_id": "R139",
+    "game_key": "char_366_acdrop",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "重射手",
+    "rarity": 4,
+    "race": "黎博利",
+    "visual_signature": [
+      "long layered #3d3034 hair silhouette",
+      "coat outfit with #443a44 and #756a76 blocks",
+      "wings: 黎博利",
+      "ranged weapon: gun",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #654034"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "none",
+      "summary": "long layered #3d3034 hair silhouette; coat outfit with #443a44 and #756a76 blocks; wings: 黎博利; ranged weapon: gun; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#3d3034",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 35,
+      "height": 31,
+      "eye_gap": 18.5,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.9,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "bare",
+      "boot_style": "tall",
+      "signature": "coat outfit with #443a44 and #756a76 blocks"
+    },
+    "palette": {
+      "primary": "#443a44",
+      "secondary": "#756a76",
+      "accent": "#654034",
+      "hair": "#3d3034",
+      "hair_highlight": "#736a6d",
+      "eye": "#795949",
+      "line": "#221e23",
+      "mouth": "#804d5b",
+      "skin": "#8b6752",
+      "skin_line": "#6f4d43",
+      "boot": "#2b272f",
+      "leg": "#47424b",
+      "metal": "#9a98a1",
+      "horn": "#7e6f69",
+      "halo": "#aa8648",
+      "weapon": "#3f3a43"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "right",
+      "angle": 2,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.32,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 3,
+      "body_width": 47,
+      "coat_width": 8,
+      "leg_spacing": 4,
+      "ornament_code": 15,
+      "signature_code": 24
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

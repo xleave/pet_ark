@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "adnachiel-chibi",
+    "display_name": "Adnachiel",
+    "localized_name": "安德切尔",
+    "source_name": "Adnachiel",
+    "source_id": "PA44",
+    "game_key": "char_211_adnach",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "sniper",
+    "subprofession": "速射手",
+    "rarity": 3,
+    "race": "萨科塔",
+    "visual_signature": [
+      "long layered #d9cdd5 hair silhouette",
+      "coat outfit with #fffef4 and #433953 blocks",
+      "halo: 萨科塔",
+      "ranged weapon: gun",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #100f1b"
+    ],
+    "identifying_features": {
+      "motif": "stripe",
+      "effect": "arts",
+      "summary": "long layered #d9cdd5 hair silhouette; coat outfit with #fffef4 and #433953 blocks; halo: 萨科塔; ranged weapon: gun; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#d9cdd5",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 5.5,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "coat outfit with #fffef4 and #433953 blocks"
+    },
+    "palette": {
+      "primary": "#fffef4",
+      "secondary": "#433953",
+      "accent": "#100f1b",
+      "hair": "#d9cdd5",
+      "hair_highlight": "#e4dbe1",
+      "eye": "#232233",
+      "line": "#6c6c6c",
+      "mouth": "#804d5b",
+      "skin": "#c3a9b0",
+      "skin_line": "#8d7176",
+      "boot": "#7a7978",
+      "leg": "#302b3b",
+      "metal": "#848292",
+      "horn": "#d4c5c2",
+      "halo": "#7c6b3a",
+      "weapon": "#b9bab6"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "ring",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "gun",
+      "label": "ranged weapon",
+      "side": "left",
+      "angle": 10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.78,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 0,
+      "body_width": 51,
+      "coat_width": 10,
+      "leg_spacing": 2,
+      "ornament_code": 0,
+      "signature_code": 28
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

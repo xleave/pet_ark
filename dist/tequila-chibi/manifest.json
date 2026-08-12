@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "tequila-chibi",
+    "display_name": "Tequila",
+    "localized_name": "龙舌兰",
+    "source_name": "Tequila",
+    "source_id": "BV12",
+    "game_key": "char_486_takila",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "解放者",
+    "rarity": 5,
+    "race": "佩洛",
+    "visual_signature": [
+      "long layered #657056 hair silhouette",
+      "uniform outfit with #6b7567 and #7e9e97 blocks",
+      "佩洛: 佩洛",
+      "blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #9fb277"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #657056 hair silhouette; uniform outfit with #6b7567 and #7e9e97 blocks; 佩洛: 佩洛; blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#657056",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 35,
+      "height": 31,
+      "eye_gap": 18.5,
+      "eye_width": 5.5,
+      "eye_height": 6.9,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #6b7567 and #7e9e97 blocks"
+    },
+    "palette": {
+      "primary": "#6b7567",
+      "secondary": "#7e9e97",
+      "accent": "#9fb277",
+      "hair": "#657056",
+      "hair_highlight": "#909885",
+      "eye": "#b9a460",
+      "line": "#323630",
+      "mouth": "#804d5b",
+      "skin": "#8f8861",
+      "skin_line": "#715f4b",
+      "boot": "#3b403d",
+      "leg": "#4b595b",
+      "metal": "#9eb0b0",
+      "horn": "#94927c",
+      "halo": "#cac56d",
+      "weapon": "#59615a"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "right",
+      "angle": 0,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.4,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 3,
+      "body_width": 52,
+      "coat_width": 10,
+      "leg_spacing": 2,
+      "ornament_code": 15,
+      "signature_code": 14
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

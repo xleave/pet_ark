@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "195-glassb-chibi",
+    "display_name": "Истина",
+    "localized_name": "真理",
+    "source_name": "Истина",
+    "source_id": "USS2",
+    "game_key": "char_195_glassb",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "凝滞师",
+    "rarity": 5,
+    "race": "乌萨斯",
+    "visual_signature": [
+      "long layered #dbeedb hair silhouette",
+      "dress outfit with #808a9c and #3b363a blocks",
+      "animal ears: 乌萨斯",
+      "arts device: book",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #341310"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #dbeedb hair silhouette; dress outfit with #808a9c and #3b363a blocks; animal ears: 乌萨斯; arts device: book; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#dbeedb",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 5.5,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "dress outfit with #808a9c and #3b363a blocks"
+    },
+    "palette": {
+      "primary": "#808a9c",
+      "secondary": "#3b363a",
+      "accent": "#341310",
+      "hair": "#dbeedb",
+      "hair_highlight": "#e5f3e5",
+      "eye": "#5a3d3b",
+      "line": "#3c404a",
+      "mouth": "#804d5b",
+      "skin": "#b49e9b",
+      "skin_line": "#856b6b",
+      "boot": "#444854",
+      "leg": "#2c2a30",
+      "metal": "#808186",
+      "horn": "#d5d8c5",
+      "halo": "#8f6d34",
+      "weapon": "#666e7c"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "bear",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "left",
+      "angle": -10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.37,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 8,
+      "highlight_width": 2,
+      "body_width": 53,
+      "coat_width": 7,
+      "leg_spacing": 2,
+      "ornament_code": 6,
+      "signature_code": 26
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

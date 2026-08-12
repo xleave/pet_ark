@@ -1,4 +1,113 @@
 {
+  "character": {
+    "id": "priestess-chibi",
+    "display_name": "Priestess",
+    "localized_name": "普瑞赛斯",
+    "source_name": "Priestess",
+    "source_id": "regression-priestess",
+    "status": "implemented",
+    "renderer": "priestess-vector-baseline-v1",
+    "profession": "story",
+    "rarity": null,
+    "visual_signature": [
+      "black waist-length hair",
+      "white research coat",
+      "violet tablet interface",
+      "dark tie and waist band",
+      "silver rectangular hair clip"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "white researcher coat, dark hair and handheld tablet"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#23232b",
+      "length": 55,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18.5,
+      "eye_width": 6.4,
+      "eye_height": 7.2,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "research coat and dark tie"
+    },
+    "palette": {
+      "primary": "#f3f4f4",
+      "secondary": "#dfe4e7",
+      "accent": "#765398",
+      "hair": "#23232b",
+      "hair_highlight": "#45434f",
+      "eye": "#76638e",
+      "line": "#41434d",
+      "mouth": "#7a4d5e",
+      "skin": "#f4d8d3",
+      "skin_line": "#6a5256",
+      "boot": "#34333c",
+      "leg": "#26242d",
+      "metal": "#a7a5b0",
+      "horn": "#a7a5b0",
+      "halo": "#d8be70",
+      "weapon": "#59606a"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "tablet",
+      "side": "right",
+      "angle": -6,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1,
+      "coat_weight": 1,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "custom-baseline",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 38,
+      "top_height": 2,
+      "side_lock": 4,
+      "highlight_width": 1,
+      "body_width": 49,
+      "coat_width": 11,
+      "leg_spacing": 1,
+      "ornament_code": 2,
+      "signature_code": 1
+    },
+    "sources": [
+      {
+        "url": "https://github.com/xleave/pet_ark",
+        "retrieved_at": "2026-08-12",
+        "purpose": "regression baseline"
+      }
+    ]
+  },
   "atlas": {
     "columns": 8,
     "rows": 9,
@@ -54,5 +163,18 @@
       "frames": 6
     }
   ],
-  "style": "hand-authored chibi vector, rendered to lossless WebP"
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
 }

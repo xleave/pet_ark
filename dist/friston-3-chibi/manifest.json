@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "friston-3-chibi",
+    "display_name": "Friston-3",
+    "localized_name": "Friston-3",
+    "source_name": "Friston-3",
+    "source_id": "RCX5",
+    "game_key": "char_4093_frston",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "defender",
+    "subprofession": "铁卫",
+    "rarity": 1,
+    "race": "",
+    "visual_signature": [
+      "compact cropped #343130 hair silhouette",
+      "mechanical outfit with #1f1f1e and #4e4946 blocks",
+      "human silhouette: mechanical unit",
+      "signature shield: shield",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #4d211f"
+    ],
+    "identifying_features": {
+      "motif": "diamond",
+      "effect": "none",
+      "summary": "compact cropped #343130 hair silhouette; mechanical outfit with #1f1f1e and #4e4946 blocks; human silhouette: mechanical unit; signature shield: shield; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "short",
+      "color": "#343130",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 5.5,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "mechanical",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "mechanical outfit with #1f1f1e and #4e4946 blocks"
+    },
+    "palette": {
+      "primary": "#1f1f1e",
+      "secondary": "#4e4946",
+      "accent": "#4d211f",
+      "hair": "#343130",
+      "hair_highlight": "#6d6b6a",
+      "eye": "#8c542f",
+      "line": "#1f1e21",
+      "mouth": "#804d5b",
+      "skin": "#9b8c87",
+      "skin_line": "#786160",
+      "boot": "#1c1c1f",
+      "leg": "#353235",
+      "metal": "#89898c",
+      "horn": "#797067",
+      "halo": "#9d753c",
+      "weapon": "#27292b"
+    },
+    "species_features": {
+      "body_kind": "robot",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "shield",
+      "label": "signature shield",
+      "side": "right",
+      "angle": 10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.2,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 0,
+      "body_width": 52,
+      "coat_width": 6,
+      "leg_spacing": 2,
+      "ornament_code": 8,
+      "signature_code": 25
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

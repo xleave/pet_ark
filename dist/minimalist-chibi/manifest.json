@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "minimalist-chibi",
+    "display_name": "Minimalist",
+    "localized_name": "至简",
+    "source_name": "Minimalist",
+    "source_id": "SG09",
+    "game_key": "char_4054_malist",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "驭械术师",
+    "rarity": 5,
+    "race": "杜林",
+    "visual_signature": [
+      "long layered #484848 hair silhouette",
+      "robe outfit with #292928 and #6d625d blocks",
+      "杜林: 杜林",
+      "arts staff: staff",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #785934"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #484848 hair silhouette; robe outfit with #292928 and #6d625d blocks; 杜林: 杜林; arts staff: staff; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#484848",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 35,
+      "height": 32,
+      "eye_gap": 18.5,
+      "eye_width": 4.8,
+      "eye_height": 6.9,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "bare",
+      "boot_style": "heeled",
+      "signature": "robe outfit with #292928 and #6d625d blocks"
+    },
+    "palette": {
+      "primary": "#292928",
+      "secondary": "#6d625d",
+      "accent": "#785934",
+      "hair": "#484848",
+      "hair_highlight": "#7b7b7b",
+      "eye": "#47302d",
+      "line": "#27272a",
+      "mouth": "#804d5b",
+      "skin": "#bfb1aa",
+      "skin_line": "#8b7573",
+      "boot": "#202023",
+      "leg": "#433e40",
+      "metal": "#979596",
+      "horn": "#847c74",
+      "halo": "#b59448",
+      "weapon": "#2e2f31"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "left",
+      "angle": 3,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.93,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 10,
+      "highlight_width": 3,
+      "body_width": 48,
+      "coat_width": 13,
+      "leg_spacing": 0,
+      "ornament_code": 11,
+      "signature_code": 13
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

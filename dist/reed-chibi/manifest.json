@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "reed-chibi",
+    "display_name": "Reed",
+    "localized_name": "苇草",
+    "source_name": "Reed",
+    "source_id": "HT03",
+    "game_key": "char_261_sddrag",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "vanguard",
+    "subprofession": "冲锋手",
+    "rarity": 5,
+    "race": "德拉克",
+    "visual_signature": [
+      "long layered #201c1a hair silhouette",
+      "uniform outfit with #2a221f and #e9e6d9 blocks",
+      "horns: 德拉克",
+      "tactical blade: sword",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #502f2c"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #201c1a hair silhouette; uniform outfit with #2a221f and #e9e6d9 blocks; horns: 德拉克; tactical blade: sword; single eyepatch"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#201c1a",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 5.85,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #2a221f and #e9e6d9 blocks"
+    },
+    "palette": {
+      "primary": "#2a221f",
+      "secondary": "#e9e6d9",
+      "accent": "#502f2c",
+      "hair": "#201c1a",
+      "hair_highlight": "#5e5c5a",
+      "eye": "#8e5c36",
+      "line": "#171619",
+      "mouth": "#804d5b",
+      "skin": "#8a7e71",
+      "skin_line": "#6e5a54",
+      "boot": "#201d1f",
+      "leg": "#7c7b79",
+      "metal": "#cfd0ce",
+      "horn": "#6e645b",
+      "halo": "#9f7d43",
+      "weapon": "#2f2b2b"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "tactical blade",
+      "side": "left",
+      "angle": 11,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 2,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 3,
+      "ornament_code": 10,
+      "signature_code": 25
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}
