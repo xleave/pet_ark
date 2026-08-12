@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "lucilla-chibi",
+    "display_name": "Lucilla",
+    "localized_name": "海霓",
+    "source_name": "Lucilla",
+    "source_id": "AE05",
+    "game_key": "char_4079_haini",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "削弱者",
+    "rarity": 5,
+    "race": "阿戈尔",
+    "visual_signature": [
+      "long layered #998a90 hair silhouette",
+      "dress outfit with #4f4a50 and #fbf0f2 blocks",
+      "阿戈尔: 阿戈尔",
+      "arts device: book",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #8d6b4a"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #998a90 hair silhouette; dress outfit with #4f4a50 and #fbf0f2 blocks; 阿戈尔: 阿戈尔; arts device: book; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#998a90",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 33,
+      "height": 32,
+      "eye_gap": 17.5,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.1000000000000005,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "wide",
+      "boot_style": "flat",
+      "signature": "dress outfit with #4f4a50 and #fbf0f2 blocks"
+    },
+    "palette": {
+      "primary": "#4f4a50",
+      "secondary": "#fbf0f2",
+      "accent": "#8d6b4a",
+      "hair": "#998a90",
+      "hair_highlight": "#b6abaf",
+      "eye": "#af7d47",
+      "line": "#454046",
+      "mouth": "#804d5b",
+      "skin": "#bf9a9d",
+      "skin_line": "#8b696c",
+      "boot": "#302e34",
+      "leg": "#847f84",
+      "metal": "#d7d4d9",
+      "horn": "#b0a09c",
+      "halo": "#c09e54",
+      "weapon": "#47454b"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "left",
+      "angle": -8,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.88,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 1,
+      "body_width": 45,
+      "coat_width": 12,
+      "leg_spacing": 4,
+      "ornament_code": 5,
+      "signature_code": 14
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

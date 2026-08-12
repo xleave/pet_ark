@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "xingzhu-chibi",
+    "display_name": "Xingzhu",
+    "localized_name": "行箸",
+    "source_name": "Xingzhu",
+    "source_id": "YD18",
+    "game_key": "char_4172_xingzh",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "护佑者",
+    "rarity": 5,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #5d6078 hair silhouette",
+      "dress outfit with #546079 and #292e3f blocks",
+      "animal ears: 菲林",
+      "instrument: instrument",
+      "distinctive hat",
+      "asymmetric profile 5:180 with accent #31364d"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #5d6078 hair silhouette; dress outfit with #546079 and #292e3f blocks; animal ears: 菲林; instrument: instrument; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#5d6078",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 4.8,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "dress outfit with #546079 and #292e3f blocks"
+    },
+    "palette": {
+      "primary": "#546079",
+      "secondary": "#292e3f",
+      "accent": "#31364d",
+      "hair": "#5d6078",
+      "hair_highlight": "#8a8d9e",
+      "eye": "#546079",
+      "line": "#2e303c",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#323745",
+      "leg": "#242632",
+      "metal": "#787d89",
+      "horn": "#8f898e",
+      "halo": "#8e8156",
+      "weapon": "#4a5366"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "instrument",
+      "label": "instrument",
+      "side": "right",
+      "angle": 8,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.35,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 36,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 0,
+      "body_width": 49,
+      "coat_width": 9,
+      "leg_spacing": 0,
+      "ornament_code": 0,
+      "signature_code": 18
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

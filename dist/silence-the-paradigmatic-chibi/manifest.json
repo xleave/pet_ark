@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "silence-the-paradigmatic-chibi",
+    "display_name": "Silence the Paradigmatic",
+    "localized_name": "淬羽赫默",
+    "source_name": "Silence the Paradigmatic",
+    "source_id": "RL10",
+    "game_key": "char_1031_slent2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "护佑者",
+    "rarity": 6,
+    "race": "黎博利",
+    "visual_signature": [
+      "long layered #736458 hair silhouette",
+      "dress outfit with #6b5f56 and #9e9c91 blocks",
+      "wings: 黎博利",
+      "arts device: book",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #51403a"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #736458 hair silhouette; dress outfit with #6b5f56 and #9e9c91 blocks; wings: 黎博利; arts device: book; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#736458",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 5.85,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "dress outfit with #6b5f56 and #9e9c91 blocks"
+    },
+    "palette": {
+      "primary": "#6b5f56",
+      "secondary": "#9e9c91",
+      "accent": "#51403a",
+      "hair": "#736458",
+      "hair_highlight": "#9a8f87",
+      "eye": "#8e653e",
+      "line": "#373230",
+      "mouth": "#804d5b",
+      "skin": "#a59380",
+      "skin_line": "#7d655c",
+      "boot": "#3b3636",
+      "leg": "#595858",
+      "metal": "#adafae",
+      "horn": "#9c8c7d",
+      "halo": "#9f864b",
+      "weapon": "#59524f"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "right",
+      "angle": -4,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 5,
+      "side_lock": 5,
+      "highlight_width": 3,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 3,
+      "ornament_code": 11,
+      "signature_code": 10
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

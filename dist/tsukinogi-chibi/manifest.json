@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "tsukinogi-chibi",
+    "display_name": "Tsukinogi",
+    "localized_name": "月禾",
+    "source_name": "Tsukinogi",
+    "source_id": "R129",
+    "game_key": "char_343_tknogi",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "护佑者",
+    "rarity": 5,
+    "race": "埃拉菲亚",
+    "visual_signature": [
+      "paired twin-tail #1d1e30 hair silhouette",
+      "dress outfit with #21222c and #454653 blocks",
+      "animal ears: 埃拉菲亚",
+      "arts device: book",
+      "glasses",
+      "asymmetric profile 0:180 with accent #745536"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "paired twin-tail #1d1e30 hair silhouette; dress outfit with #21222c and #454653 blocks; animal ears: 埃拉菲亚; arts device: book; glasses"
+    },
+    "hair": {
+      "shape": "twin-tails",
+      "color": "#1d1e30",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 34,
+      "height": 29,
+      "eye_gap": 18,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "dress outfit with #21222c and #454653 blocks"
+    },
+    "palette": {
+      "primary": "#21222c",
+      "secondary": "#454653",
+      "accent": "#745536",
+      "hair": "#1d1e30",
+      "hair_highlight": "#5c5d6a",
+      "eye": "#131426",
+      "line": "#161721",
+      "mouth": "#804d5b",
+      "skin": "#fae7e3",
+      "skin_line": "#ab9292",
+      "boot": "#1c1d24",
+      "leg": "#30313b",
+      "metal": "#858892",
+      "horn": "#6c6567",
+      "halo": "#b39249",
+      "weapon": "#292b34"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "branch",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "left",
+      "angle": -3,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 10,
+      "highlight_width": 2,
+      "body_width": 52,
+      "coat_width": 15,
+      "leg_spacing": 4,
+      "ornament_code": 10,
+      "signature_code": 19
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "earthspirit-chibi",
+    "display_name": "Earthspirit",
+    "localized_name": "地灵",
+    "source_name": "Earthspirit",
+    "source_id": "LN01",
+    "game_key": "char_183_skgoat",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "凝滞师",
+    "rarity": 4,
+    "race": "卡普里尼",
+    "visual_signature": [
+      "long layered #fcf4ed hair silhouette",
+      "dress outfit with #5c535b and #fef8f0 blocks",
+      "horns: 卡普里尼",
+      "arts device: book",
+      "glasses",
+      "asymmetric profile 0:180 with accent #341e1f"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #fcf4ed hair silhouette; dress outfit with #5c535b and #fef8f0 blocks; horns: 卡普里尼; arts device: book; glasses"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#fcf4ed",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "dress outfit with #5c535b and #fef8f0 blocks"
+    },
+    "palette": {
+      "primary": "#5c535b",
+      "secondary": "#fef8f0",
+      "accent": "#341e1f",
+      "hair": "#fcf4ed",
+      "hair_highlight": "#fdf7f2",
+      "eye": "#634040",
+      "line": "#2e2b31",
+      "mouth": "#804d5b",
+      "skin": "#ac7a72",
+      "skin_line": "#815855",
+      "boot": "#353138",
+      "leg": "#868383",
+      "metal": "#d8d8d8",
+      "horn": "#e7dbcf",
+      "halo": "#8f743c",
+      "weapon": "#4f4b52"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "ram",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "right",
+      "angle": 12,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.05,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 2,
+      "body_width": 43,
+      "coat_width": 3,
+      "leg_spacing": 4,
+      "ornament_code": 2,
+      "signature_code": 1
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "deepcolor-chibi",
+    "display_name": "Deepcolor",
+    "localized_name": "深海色",
+    "source_name": "Deepcolor",
+    "source_id": "AA04",
+    "game_key": "char_110_deepcl",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "召唤师",
+    "rarity": 4,
+    "race": "未公开",
+    "visual_signature": [
+      "long layered #121212 hair silhouette",
+      "dress outfit with #6d4c4d and #320e0f blocks",
+      "未公开: 未公开",
+      "arts device: book",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #800001"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #121212 hair silhouette; dress outfit with #6d4c4d and #320e0f blocks; 未公开: 未公开; arts device: book; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#121212",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 35,
+      "height": 32,
+      "eye_gap": 18.5,
+      "eye_width": 5.5,
+      "eye_height": 6.9,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "bare",
+      "boot_style": "heeled",
+      "signature": "dress outfit with #6d4c4d and #320e0f blocks"
+    },
+    "palette": {
+      "primary": "#6d4c4d",
+      "secondary": "#320e0f",
+      "accent": "#800001",
+      "hair": "#121212",
+      "hair_highlight": "#545454",
+      "eye": "#0a8685",
+      "line": "#121316",
+      "mouth": "#804d5b",
+      "skin": "#efccba",
+      "skin_line": "#a5847b",
+      "boot": "#3c2e32",
+      "leg": "#28171c",
+      "metal": "#7c6f73",
+      "horn": "#665f56",
+      "halo": "#b9632c",
+      "weapon": "#5a4649"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "left",
+      "angle": -5,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "beast",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.32,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 10,
+      "highlight_width": 3,
+      "body_width": 47,
+      "coat_width": 8,
+      "leg_spacing": 2,
+      "ornament_code": 15,
+      "signature_code": 21
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

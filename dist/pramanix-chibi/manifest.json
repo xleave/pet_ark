@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "pramanix-chibi",
+    "display_name": "Pramanix",
+    "localized_name": "初雪",
+    "source_name": "Pramanix",
+    "source_id": "JC05",
+    "game_key": "char_174_slbell",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "削弱者",
+    "rarity": 5,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #373533 hair silhouette",
+      "dress outfit with #64615c and #3f3e3b blocks",
+      "animal ears: 菲林",
+      "instrument: instrument",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #997851"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #373533 hair silhouette; dress outfit with #64615c and #3f3e3b blocks; animal ears: 菲林; instrument: instrument; single eyepatch"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#373533",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 5.85,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "dress outfit with #64615c and #3f3e3b blocks"
+    },
+    "palette": {
+      "primary": "#64615c",
+      "secondary": "#3f3e3b",
+      "accent": "#997851",
+      "hair": "#373533",
+      "hair_highlight": "#6f6e6c",
+      "eye": "#b6844b",
+      "line": "#202022",
+      "mouth": "#804d5b",
+      "skin": "#c7bab1",
+      "skin_line": "#8f7a77",
+      "boot": "#393739",
+      "leg": "#2e2d30",
+      "metal": "#828487",
+      "horn": "#7a7269",
+      "halo": "#c7a558",
+      "weapon": "#545453"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "instrument",
+      "label": "instrument",
+      "side": "right",
+      "angle": 11,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 3,
+      "ornament_code": 8,
+      "signature_code": 4
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

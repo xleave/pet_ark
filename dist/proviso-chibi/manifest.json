@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "proviso-chibi",
+    "display_name": "Proviso",
+    "localized_name": "但书",
+    "source_name": "Proviso",
+    "source_id": "KZ10",
+    "game_key": "char_4032_provs",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "凝滞师",
+    "rarity": 5,
+    "race": "库兰塔",
+    "visual_signature": [
+      "side braid #838874 hair silhouette",
+      "dress outfit with #5e5f4f and #3a2e21 blocks",
+      "animal ears: 库兰塔",
+      "arts device: book",
+      "single eyepatch",
+      "asymmetric profile 0:173 with accent #3a2e21"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "side braid #838874 hair silhouette; dress outfit with #5e5f4f and #3a2e21 blocks; animal ears: 库兰塔; arts device: book; single eyepatch"
+    },
+    "hair": {
+      "shape": "braid",
+      "color": "#838874",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 34,
+      "height": 29,
+      "eye_gap": 18,
+      "eye_width": 5.85,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "dress outfit with #5e5f4f and #3a2e21 blocks"
+    },
+    "palette": {
+      "primary": "#5e5f4f",
+      "secondary": "#3a2e21",
+      "accent": "#3a2e21",
+      "hair": "#838874",
+      "hair_highlight": "#a6a99b",
+      "eye": "#574e3a",
+      "line": "#3d3f3b",
+      "mouth": "#804d5b",
+      "skin": "#f5eddf",
+      "skin_line": "#a8968f",
+      "boot": "#363633",
+      "leg": "#2b2624",
+      "metal": "#807d7b",
+      "horn": "#a49f8c",
+      "halo": "#937c3d",
+      "weapon": "#50524a"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "left",
+      "angle": 6,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.27,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 34,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 2,
+      "body_width": 44,
+      "coat_width": 7,
+      "leg_spacing": 3,
+      "ornament_code": 14,
+      "signature_code": 16
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

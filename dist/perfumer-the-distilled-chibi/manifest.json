@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "perfumer-the-distilled-chibi",
+    "display_name": "Perfumer the Distilled",
+    "localized_name": "撷英调香师",
+    "source_name": "Perfumer the Distilled",
+    "source_id": "RF31",
+    "game_key": "char_1022_flwr2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "护佑者",
+    "rarity": 5,
+    "race": "沃尔珀",
+    "visual_signature": [
+      "long layered #51463d hair silhouette",
+      "dress outfit with #514640 and #81766a blocks",
+      "animal ears: 沃尔珀",
+      "arts device: book",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #6e8851"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #51463d hair silhouette; dress outfit with #514640 and #81766a blocks; animal ears: 沃尔珀; arts device: book; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#51463d",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 35,
+      "height": 31,
+      "eye_gap": 18.5,
+      "eye_width": 4.8,
+      "eye_height": 6.9,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "bare",
+      "boot_style": "tall",
+      "signature": "dress outfit with #514640 and #81766a blocks"
+    },
+    "palette": {
+      "primary": "#514640",
+      "secondary": "#81766a",
+      "accent": "#6e8851",
+      "hair": "#51463d",
+      "hair_highlight": "#827a73",
+      "eye": "#7b614e",
+      "line": "#2a2626",
+      "mouth": "#804d5b",
+      "skin": "#836651",
+      "skin_line": "#6b4d43",
+      "boot": "#312c2d",
+      "leg": "#4c4746",
+      "metal": "#a09e9c",
+      "horn": "#897b6e",
+      "halo": "#afae58",
+      "weapon": "#484241"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "fox",
+      "horns": "none",
+      "halo": "none",
+      "tail": "fluffy",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "right",
+      "angle": -12,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 1,
+      "side_lock": 6,
+      "highlight_width": 3,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 0,
+      "ornament_code": 3,
+      "signature_code": 2
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

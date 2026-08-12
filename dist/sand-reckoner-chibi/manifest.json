@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "sand-reckoner-chibi",
+    "display_name": "Sand Reckoner",
+    "localized_name": "衡沙",
+    "source_name": "Sand Reckoner",
+    "source_id": "SG23",
+    "game_key": "char_4140_lasher",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "召唤师",
+    "rarity": 5,
+    "race": "黎博利",
+    "visual_signature": [
+      "paired twin-tail #c4c5d6 hair silhouette",
+      "dress outfit with #454a5e and #6d7086 blocks",
+      "wings: 黎博利",
+      "arts device: book",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #19213e"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "paired twin-tail #c4c5d6 hair silhouette; dress outfit with #454a5e and #6d7086 blocks; wings: 黎博利; arts device: book; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "twin-tails",
+      "color": "#c4c5d6",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 33,
+      "height": 32,
+      "eye_gap": 17.5,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.1000000000000005,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "wide",
+      "boot_style": "flat",
+      "signature": "dress outfit with #454a5e and #6d7086 blocks"
+    },
+    "palette": {
+      "primary": "#454a5e",
+      "secondary": "#6d7086",
+      "accent": "#19213e",
+      "hair": "#c4c5d6",
+      "hair_highlight": "#d5d5e1",
+      "eye": "#364685",
+      "line": "#252833",
+      "mouth": "#804d5b",
+      "skin": "#e8c5c3",
+      "skin_line": "#a18080",
+      "boot": "#2b2e39",
+      "leg": "#434453",
+      "metal": "#979ba9",
+      "horn": "#c8c1c2",
+      "halo": "#80754d",
+      "weapon": "#404554"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "right",
+      "angle": 2,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "beast",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.08,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 1,
+      "body_width": 45,
+      "coat_width": 3,
+      "leg_spacing": 4,
+      "ornament_code": 1,
+      "signature_code": 16
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

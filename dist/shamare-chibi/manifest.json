@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "shamare-chibi",
+    "display_name": "Shamare",
+    "localized_name": "巫恋",
+    "source_name": "Shamare",
+    "source_id": "R148",
+    "game_key": "char_254_vodfox",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "削弱者",
+    "rarity": 5,
+    "race": "沃尔珀",
+    "visual_signature": [
+      "long layered #ce7191 hair silhouette",
+      "dress outfit with #824a69 and #be5e81 blocks",
+      "animal ears: 沃尔珀",
+      "arts device: book",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #632b44"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #ce7191 hair silhouette; dress outfit with #824a69 and #be5e81 blocks; animal ears: 沃尔珀; arts device: book; single eyepatch"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#ce7191",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 5.85,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "dress outfit with #824a69 and #be5e81 blocks"
+    },
+    "palette": {
+      "primary": "#824a69",
+      "secondary": "#be5e81",
+      "accent": "#632b44",
+      "hair": "#ce7191",
+      "hair_highlight": "#dc99b0",
+      "eye": "#99486f",
+      "line": "#593746",
+      "mouth": "#804d5b",
+      "skin": "#daa3b2",
+      "skin_line": "#9a6e77",
+      "boot": "#452e3e",
+      "leg": "#683c50",
+      "metal": "#bb93a6",
+      "horn": "#ce939c",
+      "halo": "#a97b51",
+      "weapon": "#68455b"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "fox",
+      "horns": "none",
+      "halo": "none",
+      "tail": "fluffy",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "left",
+      "angle": 1,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.42,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 2,
+      "body_width": 53,
+      "coat_width": 10,
+      "leg_spacing": 3,
+      "ornament_code": 14,
+      "signature_code": 23
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

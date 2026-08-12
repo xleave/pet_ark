@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "virtuosa-chibi",
+    "display_name": "Virtuosa",
+    "localized_name": "塑心",
+    "source_name": "Virtuosa",
+    "source_id": "LT22",
+    "game_key": "char_245_cello",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "supporter",
+    "subprofession": "巫役",
+    "rarity": 6,
+    "race": "萨科塔",
+    "visual_signature": [
+      "long layered #3c3b3c hair silhouette",
+      "dress outfit with #292b2e and #56504f blocks",
+      "halo: 萨科塔",
+      "arts device: book",
+      "glasses",
+      "asymmetric profile 0:180 with accent #785a37"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "arts",
+      "summary": "long layered #3c3b3c hair silhouette; dress outfit with #292b2e and #56504f blocks; halo: 萨科塔; arts device: book; glasses"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#3c3b3c",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 34,
+      "height": 32,
+      "eye_gap": 18,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.5,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "dress",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "dress outfit with #292b2e and #56504f blocks"
+    },
+    "palette": {
+      "primary": "#292b2e",
+      "secondary": "#56504f",
+      "accent": "#785a37",
+      "hair": "#3c3b3c",
+      "hair_highlight": "#737273",
+      "eye": "#a4743c",
+      "line": "#222226",
+      "mouth": "#804d5b",
+      "skin": "#88756b",
+      "skin_line": "#6d5551",
+      "boot": "#202125",
+      "leg": "#383639",
+      "metal": "#8c8c90",
+      "horn": "#7d756e",
+      "halo": "#b59449",
+      "weapon": "#2e3135"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "ring",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts device",
+      "side": "left",
+      "angle": 2,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.08,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 2,
+      "body_width": 45,
+      "coat_width": 3,
+      "leg_spacing": 4,
+      "ornament_code": 10,
+      "signature_code": 12
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}
