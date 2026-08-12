@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "nearl-the-radiant-knight-chibi",
+    "display_name": "Nearl the Radiant Knight",
+    "localized_name": "耀骑士临光",
+    "source_name": "Nearl the Radiant Knight",
+    "source_id": "KZ01",
+    "game_key": "char_1014_nearl2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "无畏者",
+    "rarity": 6,
+    "race": "库兰塔",
+    "visual_signature": [
+      "long layered #fffcd8 hair silhouette",
+      "uniform outfit with #2a2022 and #65514b blocks",
+      "animal ears: 库兰塔",
+      "blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #63473e"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #fffcd8 hair silhouette; uniform outfit with #2a2022 and #65514b blocks; animal ears: 库兰塔; blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#fffcd8",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #2a2022 and #65514b blocks"
+    },
+    "palette": {
+      "primary": "#2a2022",
+      "secondary": "#65514b",
+      "accent": "#63473e",
+      "hair": "#fffcd8",
+      "hair_highlight": "#fffde3",
+      "eye": "#3e2d2b",
+      "line": "#1b181c",
+      "mouth": "#804d5b",
+      "skin": "#eed1af",
+      "skin_line": "#a48676",
+      "boot": "#201c20",
+      "leg": "#3f3638",
+      "metal": "#938d8e",
+      "horn": "#e8dfc3",
+      "halo": "#a98a4d",
+      "weapon": "#2f292d"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "right",
+      "angle": 7,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.42,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 3,
+      "body_width": 53,
+      "coat_width": 10,
+      "leg_spacing": 4,
+      "ornament_code": 15,
+      "signature_code": 17
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

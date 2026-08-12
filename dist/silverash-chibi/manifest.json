@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "silverash-chibi",
+    "display_name": "SilverAsh",
+    "localized_name": "银灰",
+    "source_name": "SilverAsh",
+    "source_id": "JC01",
+    "game_key": "char_172_svrash",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "领主",
+    "rarity": 6,
+    "race": "菲林",
+    "visual_signature": [
+      "compact cropped #e8e9e4 hair silhouette",
+      "coat outfit with #2f2c2e and #fffaf3 blocks",
+      "animal ears: 菲林",
+      "polearm: sword",
+      "glasses",
+      "asymmetric profile 0:180 with accent #6ab1c0"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "compact cropped #e8e9e4 hair silhouette; coat outfit with #2f2c2e and #fffaf3 blocks; animal ears: 菲林; polearm: sword; glasses"
+    },
+    "hair": {
+      "shape": "short",
+      "color": "#e8e9e4",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 6.199999999999999,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "coat outfit with #2f2c2e and #fffaf3 blocks"
+    },
+    "palette": {
+      "primary": "#2f2c2e",
+      "secondary": "#fffaf3",
+      "accent": "#6ab1c0",
+      "hair": "#e8e9e4",
+      "hair_highlight": "#eeefec",
+      "eye": "#9ca488",
+      "line": "#1d1c20",
+      "mouth": "#804d5b",
+      "skin": "#ae9f95",
+      "skin_line": "#826b67",
+      "boot": "#222125",
+      "leg": "#868485",
+      "metal": "#d8d9da",
+      "horn": "#dcd5ca",
+      "halo": "#adc495",
+      "weapon": "#323135"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "fluffy",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "polearm",
+      "side": "right",
+      "angle": 12,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "right",
+      "companion": "beast",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 4,
+      "ornament_code": 0,
+      "signature_code": 9
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

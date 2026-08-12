@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "conviction-chibi",
+    "display_name": "Conviction",
+    "localized_name": "断罪者",
+    "source_name": "Conviction",
+    "source_id": "MN01",
+    "game_key": "char_159_peacok",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "无畏者",
+    "rarity": 4,
+    "race": "未知（疑似黎博利）",
+    "visual_signature": [
+      "long layered #0a1039 hair silhouette",
+      "uniform outfit with #0a1a3e and #2b516d blocks",
+      "未知（疑似黎博利）: 未知（疑似黎博利）",
+      "blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #14457f"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #0a1039 hair silhouette; uniform outfit with #0a1a3e and #2b516d blocks; 未知（疑似黎博利）: 未知（疑似黎博利）; blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#0a1039",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 33,
+      "height": 32,
+      "eye_gap": 17.5,
+      "eye_width": 5.5,
+      "eye_height": 6.1000000000000005,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "wide",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #0a1a3e and #2b516d blocks"
+    },
+    "palette": {
+      "primary": "#0a1a3e",
+      "secondary": "#2b516d",
+      "accent": "#14457f",
+      "hair": "#0a1039",
+      "hair_highlight": "#4f5370",
+      "eye": "#091d4f",
+      "line": "#0f1225",
+      "mouth": "#804d5b",
+      "skin": "#ffcea4",
+      "skin_line": "#ae8570",
+      "boot": "#13192c",
+      "leg": "#253647",
+      "metal": "#798d9d",
+      "horn": "#625d6c",
+      "halo": "#7e8971",
+      "weapon": "#1a263f"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "right",
+      "angle": -10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 8,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 2,
+      "ornament_code": 5,
+      "signature_code": 4
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

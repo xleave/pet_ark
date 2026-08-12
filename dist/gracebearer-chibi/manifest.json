@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "gracebearer-chibi",
+    "display_name": "Gracebearer",
+    "localized_name": "聆音",
+    "source_name": "Gracebearer",
+    "source_id": "BV27",
+    "game_key": "char_4187_graceb",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "本源近卫",
+    "rarity": 5,
+    "race": "未公开",
+    "visual_signature": [
+      "paired twin-tail #3c3b41 hair silhouette",
+      "uniform outfit with #282023 and #56535b blocks",
+      "未公开: 未公开",
+      "blade: sword",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #6a2e36"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "paired twin-tail #3c3b41 hair silhouette; uniform outfit with #282023 and #56535b blocks; 未公开: 未公开; blade: sword; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "twin-tails",
+      "color": "#3c3b41",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 5.5,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #282023 and #56535b blocks"
+    },
+    "palette": {
+      "primary": "#282023",
+      "secondary": "#56535b",
+      "accent": "#6a2e36",
+      "hair": "#3c3b41",
+      "hair_highlight": "#737276",
+      "eye": "#42282c",
+      "line": "#222228",
+      "mouth": "#804d5b",
+      "skin": "#8d4350",
+      "skin_line": "#703a42",
+      "boot": "#1f1c21",
+      "leg": "#38373f",
+      "metal": "#8c8e95",
+      "horn": "#7d7570",
+      "halo": "#ad7c49",
+      "weapon": "#2d292e"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "left",
+      "angle": 10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.3,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "head-mounted goggles"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 8,
+      "highlight_width": 2,
+      "body_width": 46,
+      "coat_width": 8,
+      "leg_spacing": 2,
+      "ornament_code": 2,
+      "signature_code": 20
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "lessing-chibi",
+    "display_name": "Lessing",
+    "localized_name": "止颂",
+    "source_name": "Lessing",
+    "source_id": "LN07",
+    "game_key": "char_4011_lessng",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "无畏者",
+    "rarity": 6,
+    "race": "卡普里尼",
+    "visual_signature": [
+      "long layered #87858b hair silhouette",
+      "uniform outfit with #6f6d78 and #423c46 blocks",
+      "horns: 卡普里尼",
+      "blade: sword",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #9f7e60"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #87858b hair silhouette; uniform outfit with #6f6d78 and #423c46 blocks; horns: 卡普里尼; blade: sword; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#87858b",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 4.8,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #6f6d78 and #423c46 blocks"
+    },
+    "palette": {
+      "primary": "#6f6d78",
+      "secondary": "#423c46",
+      "accent": "#9f7e60",
+      "hair": "#87858b",
+      "hair_highlight": "#a9a7ab",
+      "eye": "#b98753",
+      "line": "#3e3e44",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#3d3c44",
+      "leg": "#2f2c35",
+      "metal": "#83848c",
+      "horn": "#a69e99",
+      "halo": "#caa860",
+      "weapon": "#5b5c65"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "ram",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "left",
+      "angle": -2,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.13,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 2,
+      "body_width": 48,
+      "coat_width": 4,
+      "leg_spacing": 0,
+      "ornament_code": 6,
+      "signature_code": 8
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

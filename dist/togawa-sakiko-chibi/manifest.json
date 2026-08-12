@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "togawa-sakiko-chibi",
+    "display_name": "Togawa Sakiko",
+    "localized_name": "丰川祥子",
+    "source_name": "Togawa Sakiko",
+    "source_id": "AM01",
+    "game_key": "char_4182_oblvns",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "领主",
+    "rarity": 6,
+    "race": "未知",
+    "visual_signature": [
+      "long layered #c0c6d5 hair silhouette",
+      "uniform outfit with #555d7a and #7c8ca6 blocks",
+      "未知: 未知",
+      "polearm: spear",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #907561"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #c0c6d5 hair silhouette; uniform outfit with #555d7a and #7c8ca6 blocks; 未知: 未知; polearm: spear; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#c0c6d5",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 33,
+      "height": 30,
+      "eye_gap": 17.5,
+      "eye_width": 5.5,
+      "eye_height": 6.1000000000000005,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "wide",
+      "boot_style": "heeled",
+      "signature": "uniform outfit with #555d7a and #7c8ca6 blocks"
+    },
+    "palette": {
+      "primary": "#555d7a",
+      "secondary": "#7c8ca6",
+      "accent": "#907561",
+      "hair": "#c0c6d5",
+      "hair_highlight": "#d2d6e1",
+      "eye": "#5e7193",
+      "line": "#2b2f3d",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#323645",
+      "leg": "#4a5161",
+      "metal": "#9ea8b7",
+      "horn": "#c6c2c2",
+      "halo": "#c2a361",
+      "weapon": "#4a5166"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "spear",
+      "label": "polearm",
+      "side": "right",
+      "angle": 0,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "one-sided hair ornament"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 2,
+      "side_lock": 4,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 2,
+      "ornament_code": 13,
+      "signature_code": 22
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}
