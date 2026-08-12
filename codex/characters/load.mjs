@@ -1,11 +1,10 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { priestess } from '../characters/priestess.mjs';
+import { CHARACTER_DATA_DIR } from '../paths.mjs';
+import { priestess } from './priestess.mjs';
 import { renderGenericFrame } from '../renderer/generic.mjs';
 
-const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
-const registryPath = path.join(ROOT, 'characters', 'registry', 'operators.json');
+const registryPath = path.join(CHARACTER_DATA_DIR, 'operators.json');
 
 let cached;
 
@@ -37,5 +36,3 @@ export async function findCharacter(query) {
   if (!found) throw new Error(`Unknown character "${query}"`);
   return found;
 }
-
-export { ROOT };

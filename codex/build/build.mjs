@@ -2,7 +2,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { buildCharacter } from './atlas/build-character.mjs';
 import { buildContactSheets } from './contact-sheet/build.mjs';
-import { findCharacter, loadRegistry, ROOT } from './registry/load.mjs';
+import { findCharacter, loadRegistry } from '../characters/load.mjs';
+import { CHARACTER_DATA_DIR, CODEX_DIST_DIR } from '../paths.mjs';
 
 function parseArgs(argv) {
   const options = { all: false, character: null, concurrency: 2, frameConcurrency: 4 };
@@ -35,7 +36,7 @@ async function buildBounded(definitions, concurrency, frameConcurrency) {
 }
 
 async function writeAggregateFiles(definitions, contactSheets) {
-  const sources = JSON.parse(await fs.readFile(path.join(ROOT, 'characters', 'registry', 'sources.json'), 'utf8'));
+  const sources = JSON.parse(await fs.readFile(path.join(CHARACTER_DATA_DIR, 'codex-sources.json'), 'utf8'));
   const entries = definitions.map((definition) => ({
     id: definition.id,
     display_name: definition.display_name,
@@ -54,8 +55,8 @@ async function writeAggregateFiles(definitions, contactSheets) {
     missing,
   };
   await Promise.all([
-    fs.writeFile(path.join(ROOT, 'dist', 'index.json'), `${JSON.stringify({ sources, characters: entries, contact_sheets: contactSheets }, null, 2)}\n`),
-    fs.writeFile(path.join(ROOT, 'dist', 'coverage-manifest.json'), `${JSON.stringify(coverage, null, 2)}\n`),
+    fs.writeFile(path.join(CODEX_DIST_DIR, 'index.json'), `${JSON.stringify({ sources, characters: entries, contact_sheets: contactSheets }, null, 2)}\n`),
+    fs.writeFile(path.join(CODEX_DIST_DIR, 'coverage-manifest.json'), `${JSON.stringify(coverage, null, 2)}\n`),
   ]);
 }
 

@@ -1,4 +1,4 @@
-import { STATES } from '../config.mjs';
+import { STATES } from '../build/config.mjs';
 
 const stateFrames = new Map(STATES.map((state) => [state.id, state.frames]));
 

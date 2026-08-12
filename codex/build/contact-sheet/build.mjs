@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { createRequire } from 'node:module';
-import { ROOT } from '../registry/load.mjs';
+import { CODEX_DIST_DIR } from '../../paths.mjs';
 
 const require = createRequire(import.meta.url);
 const sharp = require('sharp');
@@ -9,7 +9,7 @@ const sharp = require('sharp');
 const escapeXml = (value) => String(value).replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' })[character]);
 
 export async function buildContactSheets(definitions, { batchSize = 48 } = {}) {
-  const outputDir = path.join(ROOT, 'dist', 'contact-sheets');
+  const outputDir = path.join(CODEX_DIST_DIR, 'contact-sheets');
   await fs.rm(outputDir, { recursive: true, force: true });
   await fs.mkdir(outputDir, { recursive: true });
   const columns = 6;
@@ -27,8 +27,8 @@ export async function buildContactSheets(definitions, { batchSize = 48 } = {}) {
       const label = `${definition.display_name}  ·  ${definition.source_id}`;
       const labelSvg = `<svg width="${tileWidth}" height="36" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#171a20"/><text x="12" y="24" fill="#f4f5f7" font-family="sans-serif" font-size="17">${escapeXml(label)}</text></svg>`;
       composites.push(
-        { input: path.join(ROOT, 'dist', definition.id, 'frames', '00-idle-00.png'), left, top: top + 36 },
-        { input: path.join(ROOT, 'dist', definition.id, 'frames', '01-running-right-01.png'), left: left + 192, top: top + 36 },
+        { input: path.join(CODEX_DIST_DIR, definition.id, 'frames', '00-idle-00.png'), left, top: top + 36 },
+        { input: path.join(CODEX_DIST_DIR, definition.id, 'frames', '01-running-right-01.png'), left: left + 192, top: top + 36 },
         { input: Buffer.from(labelSvg), left, top },
       );
     }

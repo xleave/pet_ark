@@ -5,12 +5,17 @@
   "type": "module",
   "description": "Auditable, code-drawn Arknights character collection for the Codex pet atlas format.",
   "scripts": {
-    "build": "node scripts/build.mjs",
-    "build:all": "node scripts/build.mjs --all",
-    "validate": "node scripts/validate.mjs",
-    "validate:all": "node scripts/validate.mjs --all",
-    "test": "node scripts/test-registry.mjs",
-    "rebuild": "npm run build && npm run validate"
+    "build": "npm run codex:build --",
+    "build:all": "npm run codex:build-all",
+    "validate": "npm run codex:validate --",
+    "validate:all": "npm run codex:validate-all",
+    "test": "npm run codex:test",
+    "rebuild": "npm run codex:build && npm run codex:validate",
+    "codex:build": "node codex/build/build.mjs",
+    "codex:build-all": "node codex/build/build.mjs --all",
+    "codex:validate": "node codex/validation/validate.mjs",
+    "codex:validate-all": "node codex/validation/validate.mjs --all",
+    "codex:test": "node codex/validation/test-registry.mjs"
   },
   "dependencies": {
     "sharp": "^0.34.3"

@@ -1,9 +1,9 @@
-import { createPose } from '../motion/index.mjs';
-import { drawFace } from '../primitives/face.mjs';
-import { drawAccessory, drawBackFeatures, drawHair, drawHeadFeatures, drawWeapon } from '../primitives/features.mjs';
-import { drawArm, drawLeg, drawOutfit } from '../primitives/figure.mjs';
-import { drawCompanion, drawSignature } from '../primitives/effects.mjs';
-import { n } from '../primitives/svg.mjs';
+import { createPose } from './motion.mjs';
+import { drawFace } from './primitives/face.mjs';
+import { drawAccessory, drawBackFeatures, drawHair, drawHeadFeatures, drawWeapon } from './primitives/features.mjs';
+import { drawArm, drawLeg, drawOutfit } from './primitives/figure.mjs';
+import { drawCompanion, drawSignature } from './primitives/effects.mjs';
+import { n } from './primitives/svg.mjs';
 
 function robotBody(definition, pose, state) {
   const { palette, geometry, face } = definition;

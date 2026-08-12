@@ -1,8 +1,9 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { createRequire } from 'node:module';
-import { ACTIVE_FRAME_COUNT, ATLAS_HEIGHT, ATLAS_WIDTH, CELL_HEIGHT, CELL_WIDTH, COLUMNS, DEFINITION_USAGE, ROWS, STATES } from './config.mjs';
-import { findCharacter, loadRegistry, ROOT } from './registry/load.mjs';
+import { ACTIVE_FRAME_COUNT, ATLAS_HEIGHT, ATLAS_WIDTH, CELL_HEIGHT, CELL_WIDTH, COLUMNS, DEFINITION_USAGE, ROWS, STATES } from '../build/config.mjs';
+import { findCharacter, loadRegistry } from '../characters/load.mjs';
+import { CODEX_DIST_DIR } from '../paths.mjs';
 
 const require = createRequire(import.meta.url);
 const sharp = require('sharp');
@@ -43,7 +44,7 @@ function validateDefinition(definition, manifest) {
 }
 
 async function validateCharacter(definition) {
-  const directory = path.join(ROOT, 'dist', definition.id);
+  const directory = path.join(CODEX_DIST_DIR, definition.id);
   const sheetPath = path.join(directory, 'spritesheet.webp');
   const [pet, manifest, frameNames] = await Promise.all([
     fs.readFile(path.join(directory, 'pet.json'), 'utf8').then(JSON.parse),
@@ -113,11 +114,11 @@ async function validateAll(definitions) {
     representatives.push(result);
     if ((index + 1) % 10 === 0 || index + 1 === definitions.length) console.log(`validated ${index + 1}/${definitions.length}: ${result.id}`);
   }
-  const indexPath = path.join(ROOT, 'dist', 'index.json');
+  const indexPath = path.join(CODEX_DIST_DIR, 'index.json');
   const index = JSON.parse(await fs.readFile(indexPath, 'utf8'));
   assert(index.characters.length === definitions.length, 'dist/index.json does not cover the registry');
   for (const entry of index.characters) entry.validation_state = 'validated';
-  for (const contactPath of index.contact_sheets) await fs.access(path.join(ROOT, 'dist', contactPath));
+  for (const contactPath of index.contact_sheets) await fs.access(path.join(CODEX_DIST_DIR, contactPath));
   const missing = definitions.filter((definition) => definition.status !== 'implemented' || typeof definition.renderFrame !== 'function').map((definition) => definition.id);
   const coverage = {
     source_retrieved_at: index.sources.retrieved_at,
@@ -129,7 +130,7 @@ async function validateAll(definitions) {
   };
   await Promise.all([
     fs.writeFile(indexPath, `${JSON.stringify(index, null, 2)}\n`),
-    fs.writeFile(path.join(ROOT, 'dist', 'coverage-manifest.json'), `${JSON.stringify(coverage, null, 2)}\n`),
+    fs.writeFile(path.join(CODEX_DIST_DIR, 'coverage-manifest.json'), `${JSON.stringify(coverage, null, 2)}\n`),
   ]);
   return coverage;
 }

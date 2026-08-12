@@ -4,7 +4,7 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { createRequire } from 'node:module';
 import { ACTIVE_FRAME_COUNT, ATLAS_HEIGHT, ATLAS_WIDTH, CELL_HEIGHT, CELL_WIDTH, COLUMNS, ROWS, STATES, DEFINITION_USAGE } from '../config.mjs';
-import { ROOT } from '../registry/load.mjs';
+import { CODEX_DIST_DIR, CODEX_ROOT } from '../../paths.mjs';
 
 const require = createRequire(import.meta.url);
 const sharp = require('sharp');
@@ -27,7 +27,7 @@ export function serializableDefinition(definition) {
 }
 
 export async function buildCharacter(definition, { frameConcurrency = 4 } = {}) {
-  const outputDir = path.join(ROOT, 'dist', definition.id);
+  const outputDir = path.join(CODEX_DIST_DIR, definition.id);
   const framesDir = path.join(outputDir, 'frames');
   await fs.rm(outputDir, { recursive: true, force: true });
   await fs.mkdir(framesDir, { recursive: true });
@@ -51,7 +51,7 @@ export async function buildCharacter(definition, { frameConcurrency = 4 } = {}) 
   const sheetPath = path.join(outputDir, 'spritesheet.webp');
   await sharp(raw, { raw: { width: ATLAS_WIDTH, height: ATLAS_HEIGHT, channels: 4 } }).png({ compressionLevel: 9 }).toFile(temporaryPng);
   const webpMethod = definition.id === 'priestess-chibi' ? '6' : '0';
-  await execFileAsync('python3', [path.join(ROOT, 'scripts', 'encode-webp-exact.py'), temporaryPng, sheetPath, webpMethod]);
+  await execFileAsync('python3', [path.join(CODEX_ROOT, 'build', 'encode-webp-exact.py'), temporaryPng, sheetPath, webpMethod]);
   await fs.unlink(temporaryPng);
 
   const displayName = definition.id === 'priestess-chibi' ? '普瑞赛斯·Q版' : `${definition.localized_name}·Q版`;

@@ -1,10 +1,11 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { STATES } from './config.mjs';
-import { loadRegistry, ROOT } from './registry/load.mjs';
+import { STATES } from '../build/config.mjs';
+import { loadRegistry } from '../characters/load.mjs';
+import { CHARACTER_DATA_DIR } from '../paths.mjs';
 
 const registry = await loadRegistry();
-const sources = JSON.parse(await fs.readFile(path.join(ROOT, 'characters', 'registry', 'sources.json'), 'utf8'));
+const sources = JSON.parse(await fs.readFile(path.join(CHARACTER_DATA_DIR, 'codex-sources.json'), 'utf8'));
 const assert = (condition, message) => { if (!condition) throw new Error(message); };
 
 assert(registry.length === sources.normalization.expected_total, `registry has ${registry.length}, source scope expects ${sources.normalization.expected_total}`);
