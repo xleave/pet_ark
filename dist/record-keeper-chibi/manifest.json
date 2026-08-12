@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "record-keeper-chibi",
+    "display_name": "Record Keeper",
+    "localized_name": "录武官",
+    "source_name": "Record Keeper",
+    "source_id": "YD26",
+    "game_key": "char_4196_reckpr",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "医师",
+    "rarity": 5,
+    "race": "佩洛",
+    "visual_signature": [
+      "long layered #8d8880 hair silhouette",
+      "coat outfit with #4e4945 and #fff8f0 blocks",
+      "佩洛: 佩洛",
+      "medical device: medical",
+      "one-sided hair ornament",
+      "asymmetric profile 5:172 with accent #8d6a44"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "long layered #8d8880 hair silhouette; coat outfit with #4e4945 and #fff8f0 blocks; 佩洛: 佩洛; medical device: medical; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#8d8880",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 33,
+      "height": 32,
+      "eye_gap": 17.5,
+      "eye_width": 5.85,
+      "eye_height": 6.1000000000000005,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "wide",
+      "boot_style": "flat",
+      "signature": "coat outfit with #4e4945 and #fff8f0 blocks"
+    },
+    "palette": {
+      "primary": "#4e4945",
+      "secondary": "#fff8f0",
+      "accent": "#8d6a44",
+      "hair": "#8d8880",
+      "hair_highlight": "#ada9a4",
+      "eye": "#af7c44",
+      "line": "#413f40",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#2f2d2f",
+      "leg": "#868383",
+      "metal": "#d8d8d8",
+      "horn": "#aa9f93",
+      "halo": "#c09d51",
+      "weapon": "#464444"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "right",
+      "angle": 1,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.35,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 38,
+      "top_height": 2,
+      "side_lock": 8,
+      "highlight_width": 1,
+      "body_width": 52,
+      "coat_width": 7,
+      "leg_spacing": 3,
+      "ornament_code": 9,
+      "signature_code": 11
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

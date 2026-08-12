@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "sussurro-chibi",
+    "display_name": "Sussurro",
+    "localized_name": "苏苏洛",
+    "source_name": "Sussurro",
+    "source_id": "R107",
+    "game_key": "char_298_susuro",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "医师",
+    "rarity": 4,
+    "race": "沃尔珀",
+    "visual_signature": [
+      "paired twin-tail #efe9e4 hair silhouette",
+      "coat outfit with #fdf6f2 and #757580 blocks",
+      "animal ears: 沃尔珀",
+      "medical device: medical",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #edc9a3"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "paired twin-tail #efe9e4 hair silhouette; coat outfit with #fdf6f2 and #757580 blocks; animal ears: 沃尔珀; medical device: medical; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "twin-tails",
+      "color": "#efe9e4",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 5.5,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "coat outfit with #fdf6f2 and #757580 blocks"
+    },
+    "palette": {
+      "primary": "#fdf6f2",
+      "secondary": "#757580",
+      "accent": "#edc9a3",
+      "hair": "#efe9e4",
+      "hair_highlight": "#f3efec",
+      "eye": "#e4b178",
+      "line": "#6b696b",
+      "mouth": "#804d5b",
+      "skin": "#f2d8d3",
+      "skin_line": "#a78a89",
+      "boot": "#797678",
+      "leg": "#474750",
+      "metal": "#9a9da6",
+      "horn": "#e0d5ca",
+      "halo": "#f5d285",
+      "weapon": "#b8b5b4"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "fox",
+      "horns": "none",
+      "halo": "none",
+      "tail": "fluffy",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "left",
+      "angle": 0,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 2,
+      "ornament_code": 4,
+      "signature_code": 26
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

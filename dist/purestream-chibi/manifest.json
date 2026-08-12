@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "purestream-chibi",
+    "display_name": "Purestream",
+    "localized_name": "清流",
+    "source_name": "Purestream",
+    "source_id": "R160",
+    "game_key": "char_385_finlpp",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "疗养师",
+    "rarity": 4,
+    "race": "阿戈尔",
+    "visual_signature": [
+      "long layered #e2f0ee hair silhouette",
+      "coat outfit with #40293a and #736485 blocks",
+      "阿戈尔: 阿戈尔",
+      "medical device: medical",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #41335d"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "long layered #e2f0ee hair silhouette; coat outfit with #40293a and #736485 blocks; 阿戈尔: 阿戈尔; medical device: medical; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#e2f0ee",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 4.8,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "coat outfit with #40293a and #736485 blocks"
+    },
+    "palette": {
+      "primary": "#40293a",
+      "secondary": "#736485",
+      "accent": "#41335d",
+      "hair": "#e2f0ee",
+      "hair_highlight": "#eaf4f3",
+      "eye": "#40293a",
+      "line": "#231b25",
+      "mouth": "#804d5b",
+      "skin": "#9a6b81",
+      "skin_line": "#774f5d",
+      "boot": "#29202a",
+      "leg": "#463f52",
+      "metal": "#9a96a8",
+      "horn": "#d9d9cf",
+      "halo": "#967f5e",
+      "weapon": "#3d2f3d"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "left",
+      "angle": -12,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.35,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 0,
+      "body_width": 49,
+      "coat_width": 9,
+      "leg_spacing": 0,
+      "ornament_code": 8,
+      "signature_code": 14
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

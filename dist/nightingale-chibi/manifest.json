@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "nightingale-chibi",
+    "display_name": "Nightingale",
+    "localized_name": "夜莺",
+    "source_name": "Nightingale",
+    "source_id": "FO03",
+    "game_key": "char_179_cgbird",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "群愈师",
+    "rarity": 6,
+    "race": "萨卡兹",
+    "visual_signature": [
+      "long layered #584b4b hair silhouette",
+      "coat outfit with #b6aeb5 and #5b4849 blocks",
+      "horns: 萨卡兹",
+      "medical device: medical",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #2f1d21"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "long layered #584b4b hair silhouette; coat outfit with #b6aeb5 and #5b4849 blocks; horns: 萨卡兹; medical device: medical; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#584b4b",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 5.5,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "coat outfit with #b6aeb5 and #5b4849 blocks"
+    },
+    "palette": {
+      "primary": "#b6aeb5",
+      "secondary": "#5b4849",
+      "accent": "#2f1d21",
+      "hair": "#584b4b",
+      "hair_highlight": "#877d7d",
+      "eye": "#533a3a",
+      "line": "#2d282b",
+      "mouth": "#804d5b",
+      "skin": "#ecc7ab",
+      "skin_line": "#a38173",
+      "boot": "#5b585e",
+      "leg": "#3b3237",
+      "metal": "#8f898d",
+      "horn": "#8d7e76",
+      "halo": "#8d733d",
+      "weapon": "#8a868d"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "left",
+      "angle": 10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.35,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 0,
+      "body_width": 49,
+      "coat_width": 9,
+      "leg_spacing": 2,
+      "ornament_code": 0,
+      "signature_code": 28
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

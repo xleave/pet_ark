@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "ceylon-chibi",
+    "display_name": "Ceylon",
+    "localized_name": "锡兰",
+    "source_name": "Ceylon",
+    "source_id": "SS01",
+    "game_key": "char_348_ceylon",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "疗养师",
+    "rarity": 5,
+    "race": "黎博利",
+    "visual_signature": [
+      "long layered #c1c4c3 hair silhouette",
+      "coat outfit with #2d365f and #80828f blocks",
+      "wings: 黎博利",
+      "medical device: medical",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #344f86"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "long layered #c1c4c3 hair silhouette; coat outfit with #2d365f and #80828f blocks; wings: 黎博利; medical device: medical; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#c1c4c3",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 35,
+      "height": 32,
+      "eye_gap": 18.5,
+      "eye_width": 4.8,
+      "eye_height": 6.9,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "bare",
+      "boot_style": "heeled",
+      "signature": "coat outfit with #2d365f and #80828f blocks"
+    },
+    "palette": {
+      "primary": "#2d365f",
+      "secondary": "#80828f",
+      "accent": "#344f86",
+      "hair": "#c1c4c3",
+      "hair_highlight": "#d2d5d4",
+      "eye": "#253654",
+      "line": "#545659",
+      "mouth": "#804d5b",
+      "skin": "#e4bdb4",
+      "skin_line": "#9f7c78",
+      "boot": "#21253a",
+      "leg": "#4c4d57",
+      "metal": "#9fa3ad",
+      "horn": "#c6c0b8",
+      "halo": "#8f8e75",
+      "weapon": "#303855"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "left",
+      "angle": 3,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.22,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 10,
+      "highlight_width": 3,
+      "body_width": 53,
+      "coat_width": 6,
+      "leg_spacing": 0,
+      "ornament_code": 11,
+      "signature_code": 13
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

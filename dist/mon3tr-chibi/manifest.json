@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "mon3tr-chibi",
+    "display_name": "Mon3tr",
+    "localized_name": "Mon3tr",
+    "source_name": "Mon3tr",
+    "source_id": "R003",
+    "game_key": "char_4179_monstr",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "链愈师",
+    "rarity": 6,
+    "race": "未公开",
+    "visual_signature": [
+      "long layered #787f5f hair silhouette",
+      "coat outfit with #161512 and #434534 blocks",
+      "未公开: 未公开",
+      "medical device: medical",
+      "glasses",
+      "asymmetric profile 0:180 with accent #392521"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "long layered #787f5f hair silhouette; coat outfit with #161512 and #434534 blocks; 未公开: 未公开; medical device: medical; glasses"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#787f5f",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 6.199999999999999,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "coat outfit with #161512 and #434534 blocks"
+    },
+    "palette": {
+      "primary": "#161512",
+      "secondary": "#434534",
+      "accent": "#392521",
+      "hair": "#787f5f",
+      "hair_highlight": "#9ea38c",
+      "eye": "#426047",
+      "line": "#393c33",
+      "mouth": "#804d5b",
+      "skin": "#d1c8a0",
+      "skin_line": "#95826d",
+      "boot": "#18171a",
+      "leg": "#30302d",
+      "metal": "#848884",
+      "horn": "#9e9a81",
+      "halo": "#92773d",
+      "weapon": "#222223"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "left",
+      "angle": -3,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 4,
+      "ornament_code": 8,
+      "signature_code": 27
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

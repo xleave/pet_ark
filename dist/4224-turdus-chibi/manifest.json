@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "4224-turdus-chibi",
+    "display_name": "Укусик",
+    "localized_name": "乌啾",
+    "source_name": "Укусик",
+    "source_id": "US39",
+    "game_key": "char_4224_turdus",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "medic",
+    "subprofession": "链愈师",
+    "rarity": 5,
+    "race": "黎博利",
+    "visual_signature": [
+      "long layered #65646b hair silhouette",
+      "coat outfit with #6c6d7b and #312e35 blocks",
+      "wings: 黎博利",
+      "medical device: medical",
+      "glasses",
+      "asymmetric profile 0:180 with accent #9d7e62"
+    ],
+    "identifying_features": {
+      "motif": "cross",
+      "effect": "none",
+      "summary": "long layered #65646b hair silhouette; coat outfit with #6c6d7b and #312e35 blocks; wings: 黎博利; medical device: medical; glasses"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#65646b",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 32,
+      "height": 31,
+      "eye_gap": 17,
+      "eye_width": 6.199999999999999,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "coat outfit with #6c6d7b and #312e35 blocks"
+    },
+    "palette": {
+      "primary": "#6c6d7b",
+      "secondary": "#312e35",
+      "accent": "#9d7e62",
+      "hair": "#65646b",
+      "hair_highlight": "#908f94",
+      "eye": "#b88754",
+      "line": "#323238",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#3c3c46",
+      "leg": "#27262d",
+      "metal": "#7c7d84",
+      "horn": "#948c87",
+      "halo": "#c9a861",
+      "weapon": "#595c67"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "medical",
+      "label": "medical device",
+      "side": "left",
+      "angle": -3,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.2,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 7,
+      "highlight_width": 0,
+      "body_width": 52,
+      "coat_width": 6,
+      "leg_spacing": 4,
+      "ornament_code": 0,
+      "signature_code": 24
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}
