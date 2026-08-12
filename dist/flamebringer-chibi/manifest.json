@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "flamebringer-chibi",
+    "display_name": "Flamebringer",
+    "localized_name": "炎客",
+    "source_name": "Flamebringer",
+    "source_id": "R137",
+    "game_key": "char_131_flameb",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "无畏者",
+    "rarity": 5,
+    "race": "萨卡兹",
+    "visual_signature": [
+      "asymmetric ponytail #151531 hair silhouette",
+      "uniform outfit with #262b37 and #585355 blocks",
+      "horns: 萨卡兹",
+      "blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #12102a"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "asymmetric ponytail #151531 hair silhouette; uniform outfit with #262b37 and #585355 blocks; horns: 萨卡兹; blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "ponytail",
+      "color": "#151531",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 35,
+      "height": 31,
+      "eye_gap": 18.5,
+      "eye_width": 5.5,
+      "eye_height": 6.9,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #262b37 and #585355 blocks"
+    },
+    "palette": {
+      "primary": "#262b37",
+      "secondary": "#585355",
+      "accent": "#12102a",
+      "hair": "#151531",
+      "hair_highlight": "#57576b",
+      "eye": "#39211a",
+      "line": "#131422",
+      "mouth": "#804d5b",
+      "skin": "#fee3c2",
+      "skin_line": "#ad9080",
+      "boot": "#1e2129",
+      "leg": "#39373c",
+      "metal": "#8d8e93",
+      "horn": "#686067",
+      "halo": "#7d6c42",
+      "weapon": "#2c313b"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "right",
+      "angle": -10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.92,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 3,
+      "body_width": 47,
+      "coat_width": 13,
+      "leg_spacing": 2,
+      "ornament_code": 3,
+      "signature_code": 12
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

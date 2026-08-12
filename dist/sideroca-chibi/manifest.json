@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "sideroca-chibi",
+    "display_name": "Sideroca",
+    "localized_name": "铸铁",
+    "source_name": "Sideroca",
+    "source_id": "R126",
+    "game_key": "char_333_sidero",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "术战者",
+    "rarity": 5,
+    "race": "丰蹄",
+    "visual_signature": [
+      "long layered #9f7092 hair silhouette",
+      "uniform outfit with #745b70 and #151419 blocks",
+      "animal ears: 丰蹄",
+      "blade: sword",
+      "face mask",
+      "asymmetric profile 0:180 with accent #7b2e39"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #9f7092 hair silhouette; uniform outfit with #745b70 and #151419 blocks; animal ears: 丰蹄; blade: sword; face mask"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#9f7092",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 32,
+      "height": 31,
+      "eye_gap": 17,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "uniform outfit with #745b70 and #151419 blocks"
+    },
+    "palette": {
+      "primary": "#745b70",
+      "secondary": "#151419",
+      "accent": "#7b2e39",
+      "hair": "#9f7092",
+      "hair_highlight": "#ba98b1",
+      "eye": "#5b3b47",
+      "line": "#483646",
+      "mouth": "#804d5b",
+      "skin": "#d8b0b8",
+      "skin_line": "#99757a",
+      "boot": "#3f3541",
+      "leg": "#1a1a21",
+      "metal": "#6f7278",
+      "horn": "#b4929d",
+      "halo": "#b67c4b",
+      "weapon": "#5f5060"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "left",
+      "angle": 4,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "mask",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 10,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 1,
+      "ornament_code": 8,
+      "signature_code": 1
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

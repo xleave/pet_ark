@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "194-leto-chibi",
+    "display_name": "Лето",
+    "localized_name": "烈夏",
+    "source_name": "Лето",
+    "source_id": "USS5",
+    "game_key": "char_194_leto",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "领主",
+    "rarity": 5,
+    "race": "乌萨斯",
+    "visual_signature": [
+      "paired twin-tail #2d1f21 hair silhouette",
+      "uniform outfit with #1e191d and #675553 blocks",
+      "animal ears: 乌萨斯",
+      "polearm: spear",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #601b1b"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "paired twin-tail #2d1f21 hair silhouette; uniform outfit with #1e191d and #675553 blocks; animal ears: 乌萨斯; polearm: spear; distinctive hat"
+    },
+    "hair": {
+      "shape": "twin-tails",
+      "color": "#2d1f21",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 4.8,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #1e191d and #675553 blocks"
+    },
+    "palette": {
+      "primary": "#1e191d",
+      "secondary": "#675553",
+      "accent": "#601b1b",
+      "hair": "#2d1f21",
+      "hair_highlight": "#685e5f",
+      "eye": "#2d0c0c",
+      "line": "#1c181b",
+      "mouth": "#804d5b",
+      "skin": "#845b55",
+      "skin_line": "#6b4745",
+      "boot": "#1b191e",
+      "leg": "#40383b",
+      "metal": "#948f92",
+      "horn": "#75665f",
+      "halo": "#a8723a",
+      "weapon": "#27252a"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "bear",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "spear",
+      "label": "polearm",
+      "side": "right",
+      "angle": 8,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 8,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 0,
+      "ornament_code": 8,
+      "signature_code": 15
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

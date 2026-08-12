@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "gavial-the-invincible-chibi",
+    "display_name": "Gavial the Invincible",
+    "localized_name": "百炼嘉维尔",
+    "source_name": "Gavial the Invincible",
+    "source_id": "RF22",
+    "game_key": "char_1026_gvial2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "强攻手",
+    "rarity": 6,
+    "race": "阿达克利斯",
+    "visual_signature": [
+      "asymmetric ponytail #2e3c21 hair silhouette",
+      "uniform outfit with #2b301f and #5e5b46 blocks",
+      "阿达克利斯: 阿达克利斯",
+      "blade: sword",
+      "face mask",
+      "asymmetric profile 0:180 with accent #41532d"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "asymmetric ponytail #2e3c21 hair silhouette; uniform outfit with #2b301f and #5e5b46 blocks; 阿达克利斯: 阿达克利斯; blade: sword; face mask"
+    },
+    "hair": {
+      "shape": "ponytail",
+      "color": "#2e3c21",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 32,
+      "height": 31,
+      "eye_gap": 17,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "uniform outfit with #2b301f and #5e5b46 blocks"
+    },
+    "palette": {
+      "primary": "#2b301f",
+      "secondary": "#5e5b46",
+      "accent": "#41532d",
+      "hair": "#2e3c21",
+      "hair_highlight": "#69735f",
+      "eye": "#232a1b",
+      "line": "#1d231b",
+      "mouth": "#804d5b",
+      "skin": "#9e8f54",
+      "skin_line": "#796344",
+      "boot": "#21231f",
+      "leg": "#3c3b35",
+      "metal": "#90918c",
+      "horn": "#76765f",
+      "halo": "#969144",
+      "weapon": "#2f342b"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "right",
+      "angle": -11,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "mask",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 7,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 1,
+      "ornament_code": 4,
+      "signature_code": 3
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

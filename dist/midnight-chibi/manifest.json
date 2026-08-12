@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "midnight-chibi",
+    "display_name": "Midnight",
+    "localized_name": "月见夜",
+    "source_name": "Midnight",
+    "source_id": "PA62",
+    "game_key": "char_283_midn",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "领主",
+    "rarity": 3,
+    "race": "萨卡兹",
+    "visual_signature": [
+      "long layered #141418 hair silhouette",
+      "uniform outfit with #383a3a and #111015 blocks",
+      "horns: 萨卡兹",
+      "polearm: spear",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #80623e"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #141418 hair silhouette; uniform outfit with #383a3a and #111015 blocks; horns: 萨卡兹; polearm: spear; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#141418",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 34,
+      "height": 29,
+      "eye_gap": 18,
+      "eye_width": 4.8,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "uniform outfit with #383a3a and #111015 blocks"
+    },
+    "palette": {
+      "primary": "#383a3a",
+      "secondary": "#111015",
+      "accent": "#80623e",
+      "hair": "#141418",
+      "hair_highlight": "#565659",
+      "eye": "#a87840",
+      "line": "#131318",
+      "mouth": "#804d5b",
+      "skin": "#83726f",
+      "skin_line": "#6b5353",
+      "boot": "#26272a",
+      "leg": "#19181f",
+      "metal": "#6d7076",
+      "horn": "#67605a",
+      "halo": "#b9994d",
+      "weapon": "#383a3d"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "spear",
+      "label": "polearm",
+      "side": "right",
+      "angle": 8,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 10,
+      "highlight_width": 2,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 0,
+      "ornament_code": 14,
+      "signature_code": 26
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

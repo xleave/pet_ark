@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "hadiya-chibi",
+    "display_name": "Hadiya",
+    "localized_name": "哈蒂娅",
+    "source_name": "Hadiya",
+    "source_id": "SG28",
+    "game_key": "char_394_hadiya",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "佣兵",
+    "rarity": 5,
+    "race": "卡普里尼",
+    "visual_signature": [
+      "long layered #655e58 hair silhouette",
+      "uniform outfit with #b4b0a7 and #1d171c blocks",
+      "horns: 卡普里尼",
+      "blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #c5a37a"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #655e58 hair silhouette; uniform outfit with #b4b0a7 and #1d171c blocks; horns: 卡普里尼; blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#655e58",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #b4b0a7 and #1d171c blocks"
+    },
+    "palette": {
+      "primary": "#b4b0a7",
+      "secondary": "#1d171c",
+      "accent": "#c5a37a",
+      "hair": "#655e58",
+      "hair_highlight": "#908b87",
+      "eye": "#ce9c61",
+      "line": "#323030",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#5a5858",
+      "leg": "#1e1b22",
+      "metal": "#737379",
+      "horn": "#94887d",
+      "halo": "#dfbd6e",
+      "weapon": "#888784"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "ram",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "left",
+      "angle": 7,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 3,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 4,
+      "ornament_code": 15,
+      "signature_code": 17
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

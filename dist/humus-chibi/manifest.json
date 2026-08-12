@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "humus-chibi",
+    "display_name": "Humus",
+    "localized_name": "休谟斯",
+    "source_name": "Humus",
+    "source_id": "R171",
+    "game_key": "char_491_humus",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "收割者",
+    "rarity": 4,
+    "race": "丰蹄",
+    "visual_signature": [
+      "long layered #221214 hair silhouette",
+      "uniform outfit with #3a2324 and #753535 blocks",
+      "animal ears: 丰蹄",
+      "blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #732a2e"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #221214 hair silhouette; uniform outfit with #3a2324 and #753535 blocks; animal ears: 丰蹄; blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#221214",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #3a2324 and #753535 blocks"
+    },
+    "palette": {
+      "primary": "#3a2324",
+      "secondary": "#753535",
+      "accent": "#732a2e",
+      "hair": "#221214",
+      "hair_highlight": "#605456",
+      "eye": "#492527",
+      "line": "#181316",
+      "mouth": "#804d5b",
+      "skin": "#a64747",
+      "skin_line": "#7e3c3d",
+      "boot": "#271d21",
+      "leg": "#47292d",
+      "metal": "#9a8084",
+      "horn": "#6f5f58",
+      "halo": "#b27a44",
+      "weapon": "#392b2e"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "right",
+      "angle": -1,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 3,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 1,
+      "ornament_code": 3,
+      "signature_code": 25
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

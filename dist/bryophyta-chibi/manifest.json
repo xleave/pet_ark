@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "bryophyta-chibi",
+    "display_name": "Bryophyta",
+    "localized_name": "苍苔",
+    "source_name": "Bryophyta",
+    "source_id": "SS03",
+    "game_key": "char_4106_bryota",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "教官",
+    "rarity": 5,
+    "race": "黎博利",
+    "visual_signature": [
+      "long layered #1b1715 hair silhouette",
+      "uniform outfit with #3f4233 and #1c1816 blocks",
+      "wings: 黎博利",
+      "polearm: spear",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #61291a"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #1b1715 hair silhouette; uniform outfit with #3f4233 and #1c1816 blocks; wings: 黎博利; polearm: spear; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#1b1715",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 35,
+      "height": 32,
+      "eye_gap": 18.5,
+      "eye_width": 5.5,
+      "eye_height": 6.9,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "heeled",
+      "signature": "uniform outfit with #3f4233 and #1c1816 blocks"
+    },
+    "palette": {
+      "primary": "#3f4233",
+      "secondary": "#1c1816",
+      "accent": "#61291a",
+      "hair": "#1b1715",
+      "hair_highlight": "#5b5857",
+      "eye": "#68433a",
+      "line": "#151517",
+      "mouth": "#804d5b",
+      "skin": "#ebc1b4",
+      "skin_line": "#a37e78",
+      "boot": "#292a27",
+      "leg": "#1e1c1f",
+      "metal": "#727376",
+      "horn": "#6b6158",
+      "halo": "#a87a3a",
+      "weapon": "#3c4038"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "spear",
+      "label": "polearm",
+      "side": "right",
+      "angle": -10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.78,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 3,
+      "body_width": 51,
+      "coat_width": 10,
+      "leg_spacing": 2,
+      "ornament_code": 7,
+      "signature_code": 25
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "odda-chibi",
+    "display_name": "Odda",
+    "localized_name": "奥达",
+    "source_name": "Odda",
+    "source_id": "R167",
+    "game_key": "char_4131_odda",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "撼地者",
+    "rarity": 5,
+    "race": "萨卡兹",
+    "visual_signature": [
+      "long layered #342d2e hair silhouette",
+      "uniform outfit with #2f2b2b and #716360 blocks",
+      "horns: 萨卡兹",
+      "heavy breaker: hammer",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #7c5a36"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #342d2e hair silhouette; uniform outfit with #2f2b2b and #716360 blocks; horns: 萨卡兹; heavy breaker: hammer; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#342d2e",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 34,
+      "height": 32,
+      "eye_gap": 18,
+      "eye_width": 5.5,
+      "eye_height": 6.5,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #2f2b2b and #716360 blocks"
+    },
+    "palette": {
+      "primary": "#2f2b2b",
+      "secondary": "#716360",
+      "accent": "#7c5a36",
+      "hair": "#342d2e",
+      "hair_highlight": "#6d6869",
+      "eye": "#382421",
+      "line": "#1f1d20",
+      "mouth": "#804d5b",
+      "skin": "#ac918c",
+      "skin_line": "#816463",
+      "boot": "#222124",
+      "leg": "#453e41",
+      "metal": "#999598",
+      "horn": "#796d66",
+      "halo": "#b79449",
+      "weapon": "#323133"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "hammer",
+      "label": "heavy breaker",
+      "side": "left",
+      "angle": 5,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.98,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 2,
+      "body_width": 51,
+      "coat_width": 14,
+      "leg_spacing": 2,
+      "ornament_code": 2,
+      "signature_code": 27
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

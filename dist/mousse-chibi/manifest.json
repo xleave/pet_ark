@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "mousse-chibi",
+    "display_name": "Mousse",
+    "localized_name": "慕斯",
+    "source_name": "Mousse",
+    "source_id": "VC04",
+    "game_key": "char_185_frncat",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "术战者",
+    "rarity": 4,
+    "race": "菲林",
+    "visual_signature": [
+      "paired twin-tail #453f46 hair silhouette",
+      "uniform outfit with #4b3d45 and #fbf8ed blocks",
+      "animal ears: 菲林",
+      "blade: sword",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #572121"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "paired twin-tail #453f46 hair silhouette; uniform outfit with #4b3d45 and #fbf8ed blocks; animal ears: 菲林; blade: sword; single eyepatch"
+    },
+    "hair": {
+      "shape": "twin-tails",
+      "color": "#453f46",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 34,
+      "height": 32,
+      "eye_gap": 18,
+      "eye_width": 5.85,
+      "eye_height": 6.5,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #4b3d45 and #fbf8ed blocks"
+    },
+    "palette": {
+      "primary": "#4b3d45",
+      "secondary": "#fbf8ed",
+      "accent": "#572121",
+      "hair": "#453f46",
+      "hair_highlight": "#79757a",
+      "eye": "#62423f",
+      "line": "#252429",
+      "mouth": "#804d5b",
+      "skin": "#c1866a",
+      "skin_line": "#8c5e50",
+      "boot": "#2e282f",
+      "leg": "#848382",
+      "metal": "#d7d8d7",
+      "horn": "#827773",
+      "halo": "#a3753d",
+      "weapon": "#443c44"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "right",
+      "angle": -9,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.95,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 2,
+      "body_width": 49,
+      "coat_width": 14,
+      "leg_spacing": 3,
+      "ornament_code": 6,
+      "signature_code": 5
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "entelechia-chibi",
+    "display_name": "Entelechia",
+    "localized_name": "隐德来希",
+    "source_name": "Entelechia",
+    "source_id": "R169",
+    "game_key": "char_4010_etlchi",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "guard",
+    "subprofession": "收割者",
+    "rarity": 6,
+    "race": "萨卡兹",
+    "visual_signature": [
+      "long layered #81777b hair silhouette",
+      "uniform outfit with #482f2c and #6c5f58 blocks",
+      "horns: 萨卡兹",
+      "blade: sword",
+      "glasses",
+      "asymmetric profile 0:180 with accent #291a16"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #81777b hair silhouette; uniform outfit with #482f2c and #6c5f58 blocks; horns: 萨卡兹; blade: sword; glasses"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#81777b",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 34,
+      "height": 32,
+      "eye_gap": 18,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.5,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #482f2c and #6c5f58 blocks"
+    },
+    "palette": {
+      "primary": "#482f2c",
+      "secondary": "#6c5f58",
+      "accent": "#291a16",
+      "hair": "#81777b",
+      "hair_highlight": "#a49da0",
+      "eye": "#5d2a28",
+      "line": "#3c393e",
+      "mouth": "#804d5b",
+      "skin": "#f4ecdd",
+      "skin_line": "#a8958e",
+      "boot": "#2d2224",
+      "leg": "#423c3e",
+      "metal": "#969394",
+      "horn": "#a39690",
+      "halo": "#897137",
+      "weapon": "#423334"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "blade",
+      "side": "right",
+      "angle": -8,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "glasses"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 2,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 4,
+      "ornament_code": 14,
+      "signature_code": 10
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}
