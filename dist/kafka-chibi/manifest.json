@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "kafka-chibi",
+    "display_name": "Kafka",
+    "localized_name": "卡夫卡",
+    "source_name": "Kafka",
+    "source_id": "CB06",
+    "game_key": "char_214_kafka",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "specialist",
+    "subprofession": "处决者",
+    "rarity": 5,
+    "race": "黎博利",
+    "visual_signature": [
+      "long layered #6a5244 hair silhouette",
+      "uniform outfit with #232024 and #787971 blocks",
+      "wings: 黎博利",
+      "technical device: drone",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #553c33"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #6a5244 hair silhouette; uniform outfit with #232024 and #787971 blocks; wings: 黎博利; technical device: drone; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#6a5244",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 33,
+      "height": 32,
+      "eye_gap": 17.5,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.1000000000000005,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "wide",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #232024 and #787971 blocks"
+    },
+    "palette": {
+      "primary": "#232024",
+      "secondary": "#787971",
+      "accent": "#553c33",
+      "hair": "#6a5244",
+      "hair_highlight": "#948278",
+      "eye": "#90633a",
+      "line": "#332b29",
+      "mouth": "#804d5b",
+      "skin": "#a48972",
+      "skin_line": "#7c6055",
+      "boot": "#1d1c21",
+      "leg": "#484849",
+      "metal": "#9c9f9f",
+      "horn": "#978272",
+      "halo": "#a28447",
+      "weapon": "#2a292e"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "feather"
+    },
+    "weapon": {
+      "type": "drone",
+      "label": "technical device",
+      "side": "left",
+      "angle": -8,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 4,
+      "ornament_code": 5,
+      "signature_code": 14
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

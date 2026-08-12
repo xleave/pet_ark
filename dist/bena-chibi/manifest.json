@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "bena-chibi",
+    "display_name": "Bena",
+    "localized_name": "贝娜",
+    "source_name": "Bena",
+    "source_id": "VC14",
+    "game_key": "char_369_bena",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "specialist",
+    "subprofession": "傀儡师",
+    "rarity": 5,
+    "race": "卡普里尼",
+    "visual_signature": [
+      "long layered #4c3c3e hair silhouette",
+      "uniform outfit with #6f6159 and #353035 blocks",
+      "horns: 卡普里尼",
+      "technical device: drone",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #9f784f"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #4c3c3e hair silhouette; uniform outfit with #6f6159 and #353035 blocks; horns: 卡普里尼; technical device: drone; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#4c3c3e",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 5.85,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #6f6159 and #353035 blocks"
+    },
+    "palette": {
+      "primary": "#6f6159",
+      "secondary": "#353035",
+      "accent": "#9f784f",
+      "hair": "#4c3c3e",
+      "hair_highlight": "#7e7374",
+      "eye": "#615044",
+      "line": "#282326",
+      "mouth": "#804d5b",
+      "skin": "#c2a996",
+      "skin_line": "#8d7168",
+      "boot": "#3d3737",
+      "leg": "#29272d",
+      "metal": "#7e7e84",
+      "horn": "#86766f",
+      "halo": "#caa557",
+      "weapon": "#5b5451"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "ram",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "drone",
+      "label": "technical device",
+      "side": "right",
+      "angle": -4,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.27,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 3,
+      "body_width": 44,
+      "coat_width": 7,
+      "leg_spacing": 3,
+      "ornament_code": 11,
+      "signature_code": 10
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

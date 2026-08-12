@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "lee-chibi",
+    "display_name": "Lee",
+    "localized_name": "老鲤",
+    "source_name": "Lee",
+    "source_id": "LM18",
+    "game_key": "char_322_lmlee",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "specialist",
+    "subprofession": "行商",
+    "rarity": 6,
+    "race": "龙",
+    "visual_signature": [
+      "long layered #282723 hair silhouette",
+      "uniform outfit with #675e49 and #2a2926 blocks",
+      "horns: 龙",
+      "specialist tool: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #4b4434"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #282723 hair silhouette; uniform outfit with #675e49 and #2a2926 blocks; horns: 龙; specialist tool: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#282723",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 33,
+      "height": 29,
+      "eye_gap": 17.5,
+      "eye_width": 5.5,
+      "eye_height": 6.1000000000000005,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "wide",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #675e49 and #2a2926 blocks"
+    },
+    "palette": {
+      "primary": "#675e49",
+      "secondary": "#2a2926",
+      "accent": "#4b4434",
+      "hair": "#282723",
+      "hair_highlight": "#646361",
+      "eye": "#655c47",
+      "line": "#1a1b1c",
+      "mouth": "#804d5b",
+      "skin": "#b9a87c",
+      "skin_line": "#88705a",
+      "boot": "#3a3631",
+      "leg": "#242427",
+      "metal": "#797b7d",
+      "horn": "#726a60",
+      "halo": "#9c8848",
+      "weapon": "#565247"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "specialist tool",
+      "side": "right",
+      "angle": 5,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.37,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 1,
+      "body_width": 50,
+      "coat_width": 9,
+      "leg_spacing": 2,
+      "ornament_code": 13,
+      "signature_code": 15
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

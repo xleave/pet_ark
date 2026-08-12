@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "shaw-chibi",
+    "display_name": "Shaw",
+    "localized_name": "阿消",
+    "source_name": "Shaw",
+    "source_id": "LM11",
+    "game_key": "char_277_sqrrel",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "specialist",
+    "subprofession": "推击手",
+    "rarity": 4,
+    "race": "札拉克",
+    "visual_signature": [
+      "long layered #f2f1ee hair silhouette",
+      "uniform outfit with #c0bfbb and #2f2e32 blocks",
+      "札拉克: 札拉克",
+      "specialist tool: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #cbab85"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #f2f1ee hair silhouette; uniform outfit with #c0bfbb and #2f2e32 blocks; 札拉克: 札拉克; specialist tool: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#f2f1ee",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 35,
+      "height": 31,
+      "eye_gap": 18.5,
+      "eye_width": 4.8,
+      "eye_height": 6.9,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #c0bfbb and #2f2e32 blocks"
+    },
+    "palette": {
+      "primary": "#c0bfbb",
+      "secondary": "#2f2e32",
+      "accent": "#cbab85",
+      "hair": "#f2f1ee",
+      "hair_highlight": "#f6f5f3",
+      "eye": "#d1a067",
+      "line": "#545456",
+      "mouth": "#804d5b",
+      "skin": "#a59b8e",
+      "skin_line": "#7d6964",
+      "boot": "#5f5f61",
+      "leg": "#26262c",
+      "metal": "#7b7d83",
+      "horn": "#e1d9cf",
+      "halo": "#e2c174",
+      "weapon": "#909191"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "specialist tool",
+      "side": "right",
+      "angle": -12,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.25,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 3,
+      "body_width": 43,
+      "coat_width": 7,
+      "leg_spacing": 0,
+      "ornament_code": 3,
+      "signature_code": 2
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

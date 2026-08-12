@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "thorns-the-lodestar-chibi",
+    "display_name": "Thorns the Lodestar",
+    "localized_name": "引星棘刺",
+    "source_name": "Thorns the Lodestar",
+    "source_id": "II02",
+    "game_key": "char_1039_thorn2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "specialist",
+    "subprofession": "炼金师",
+    "rarity": 6,
+    "race": "阿戈尔",
+    "visual_signature": [
+      "long layered #1b1919 hair silhouette",
+      "uniform outfit with #664039 and #1e1c1c blocks",
+      "阿戈尔: 阿戈尔",
+      "specialist tool: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #202237"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #1b1919 hair silhouette; uniform outfit with #664039 and #1e1c1c blocks; 阿戈尔: 阿戈尔; specialist tool: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#1b1919",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 35,
+      "height": 31,
+      "eye_gap": 18.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.9,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "bare",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #664039 and #1e1c1c blocks"
+    },
+    "palette": {
+      "primary": "#664039",
+      "secondary": "#1e1c1c",
+      "accent": "#202237",
+      "hair": "#1b1919",
+      "hair_highlight": "#5b5959",
+      "eye": "#664039",
+      "line": "#151518",
+      "mouth": "#804d5b",
+      "skin": "#95675f",
+      "skin_line": "#744d4a",
+      "boot": "#39292a",
+      "leg": "#1f1e22",
+      "metal": "#737579",
+      "horn": "#6b625a",
+      "halo": "#847649",
+      "weapon": "#563e3c"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "specialist tool",
+      "side": "left",
+      "angle": -11,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.08,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 3,
+      "body_width": 45,
+      "coat_width": 3,
+      "leg_spacing": 1,
+      "ornament_code": 11,
+      "signature_code": 7
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "almond-chibi",
+    "display_name": "Almond",
+    "localized_name": "杏仁",
+    "source_name": "Almond",
+    "source_id": "BS05",
+    "game_key": "char_4105_almond",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "specialist",
+    "subprofession": "钩索师",
+    "rarity": 5,
+    "race": "佩洛",
+    "visual_signature": [
+      "long layered #1b191b hair silhouette",
+      "uniform outfit with #1d1b1b and #fcf1eb blocks",
+      "佩洛: 佩洛",
+      "specialist tool: sword",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #72512d"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #1b191b hair silhouette; uniform outfit with #1d1b1b and #fcf1eb blocks; 佩洛: 佩洛; specialist tool: sword; single eyepatch"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#1b191b",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 32,
+      "height": 31,
+      "eye_gap": 17,
+      "eye_width": 5.85,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "uniform outfit with #1d1b1b and #fcf1eb blocks"
+    },
+    "palette": {
+      "primary": "#1d1b1b",
+      "secondary": "#fcf1eb",
+      "accent": "#72512d",
+      "hair": "#1b191b",
+      "hair_highlight": "#5b595b",
+      "eye": "#a06f37",
+      "line": "#151519",
+      "mouth": "#804d5b",
+      "skin": "#d6c9bc",
+      "skin_line": "#97827d",
+      "boot": "#1b1a1d",
+      "leg": "#858081",
+      "metal": "#d7d5d6",
+      "horn": "#6b625b",
+      "halo": "#b19044",
+      "weapon": "#262629"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "specialist tool",
+      "side": "left",
+      "angle": 1,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 10,
+      "highlight_width": 0,
+      "body_width": 52,
+      "coat_width": 15,
+      "leg_spacing": 3,
+      "ornament_code": 0,
+      "signature_code": 15
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

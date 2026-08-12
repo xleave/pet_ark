@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "aak-chibi",
+    "display_name": "Aak",
+    "localized_name": "阿",
+    "source_name": "Aak",
+    "source_id": "LM20",
+    "game_key": "char_225_haak",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "specialist",
+    "subprofession": "怪杰",
+    "rarity": 6,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #504743 hair silhouette",
+      "uniform outfit with #68554c and #f7eee9 blocks",
+      "animal ears: 菲林",
+      "technical device: drone",
+      "glasses",
+      "asymmetric profile 8:180 with accent #3f2f2a"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #504743 hair silhouette; uniform outfit with #68554c and #f7eee9 blocks; animal ears: 菲林; technical device: drone; glasses"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#504743",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #68554c and #f7eee9 blocks"
+    },
+    "palette": {
+      "primary": "#68554c",
+      "secondary": "#f7eee9",
+      "accent": "#3f2f2a",
+      "hair": "#504743",
+      "hair_highlight": "#817b78",
+      "eye": "#845c35",
+      "line": "#2a2728",
+      "mouth": "#804d5b",
+      "skin": "#874233",
+      "skin_line": "#6d3933",
+      "boot": "#3a3232",
+      "leg": "#827e80",
+      "metal": "#d5d4d5",
+      "horn": "#887c71",
+      "halo": "#957d42",
+      "weapon": "#574c48"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "drone",
+      "label": "technical device",
+      "side": "left",
+      "angle": 12,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "glasses",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.1,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 33,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 2,
+      "body_width": 46,
+      "coat_width": 4,
+      "leg_spacing": 4,
+      "ornament_code": 2,
+      "signature_code": 1
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}
