@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "lava-the-purgatory-chibi",
+    "display_name": "Lava the Purgatory",
+    "localized_name": "炎狱炎熔",
+    "source_name": "Lava the Purgatory",
+    "source_id": "RF01",
+    "game_key": "char_1011_lava2",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "扩散术师",
+    "rarity": 5,
+    "race": "萨卡兹",
+    "visual_signature": [
+      "long layered #625c57 hair silhouette",
+      "robe outfit with #4c454e and #191519 blocks",
+      "horns: 萨卡兹",
+      "arts staff: staff",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #8b6849"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #625c57 hair silhouette; robe outfit with #4c454e and #191519 blocks; horns: 萨卡兹; arts staff: staff; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#625c57",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 4.8,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "robe outfit with #4c454e and #191519 blocks"
+    },
+    "palette": {
+      "primary": "#4c454e",
+      "secondary": "#191519",
+      "accent": "#8b6849",
+      "hair": "#625c57",
+      "hair_highlight": "#8e8a86",
+      "eye": "#463048",
+      "line": "#302f30",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#2e2b33",
+      "leg": "#1c1a21",
+      "metal": "#717278",
+      "horn": "#92877c",
+      "halo": "#bf9c53",
+      "weapon": "#45424a"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "right",
+      "angle": -2,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.03,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 0,
+      "body_width": 54,
+      "coat_width": 15,
+      "leg_spacing": 0,
+      "ornament_code": 4,
+      "signature_code": 16
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

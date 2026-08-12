@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "gitano-chibi",
+    "display_name": "Gitano",
+    "localized_name": "远山",
+    "source_name": "Gitano",
+    "source_id": "SI01",
+    "game_key": "char_109_fmout",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "扩散术师",
+    "rarity": 4,
+    "race": "埃拉菲亚",
+    "visual_signature": [
+      "long layered #5e3f43 hair silhouette",
+      "robe outfit with #40282e and #f9f3ea blocks",
+      "animal ears: 埃拉菲亚",
+      "arts staff: staff",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #6f1e30"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #5e3f43 hair silhouette; robe outfit with #40282e and #f9f3ea blocks; animal ears: 埃拉菲亚; arts staff: staff; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#5e3f43",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 35,
+      "height": 31,
+      "eye_gap": 18.5,
+      "eye_width": 4.8,
+      "eye_height": 6.9,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "bare",
+      "boot_style": "tall",
+      "signature": "robe outfit with #40282e and #f9f3ea blocks"
+    },
+    "palette": {
+      "primary": "#40282e",
+      "secondary": "#f9f3ea",
+      "accent": "#6f1e30",
+      "hair": "#5e3f43",
+      "hair_highlight": "#8b7578",
+      "eye": "#3a161d",
+      "line": "#2f2428",
+      "mouth": "#804d5b",
+      "skin": "#f5e5dd",
+      "skin_line": "#a8918e",
+      "boot": "#291f25",
+      "leg": "#838181",
+      "metal": "#d6d6d6",
+      "horn": "#907771",
+      "halo": "#b07446",
+      "weapon": "#3d2f35"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "branch",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "left",
+      "angle": -12,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.12,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 3,
+      "body_width": 47,
+      "coat_width": 4,
+      "leg_spacing": 0,
+      "ornament_code": 3,
+      "signature_code": 2
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

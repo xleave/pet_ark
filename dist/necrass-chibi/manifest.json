@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "necrass-chibi",
+    "display_name": "Necrass",
+    "localized_name": "死芒",
+    "source_name": "Necrass",
+    "source_id": "DB01",
+    "game_key": "char_450_necras",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "塑灵术师",
+    "rarity": 6,
+    "race": "德拉克",
+    "visual_signature": [
+      "long layered #bbb7c0 hair silhouette",
+      "robe outfit with #303340 and #cccbcd blocks",
+      "horns: 德拉克",
+      "arts staff: staff",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #7c5e41"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #bbb7c0 hair silhouette; robe outfit with #303340 and #cccbcd blocks; horns: 德拉克; arts staff: staff; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#bbb7c0",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 5.5,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "robe outfit with #303340 and #cccbcd blocks"
+    },
+    "palette": {
+      "primary": "#303340",
+      "secondary": "#cccbcd",
+      "accent": "#7c5e41",
+      "hair": "#bbb7c0",
+      "hair_highlight": "#cecbd2",
+      "eye": "#a67642",
+      "line": "#525158",
+      "mouth": "#804d5b",
+      "skin": "#eee7da",
+      "skin_line": "#a4928d",
+      "boot": "#23242d",
+      "leg": "#6f6e73",
+      "metal": "#c2c4c9",
+      "horn": "#c3b9b6",
+      "halo": "#b7974f",
+      "weapon": "#323641"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "left",
+      "angle": -10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 2,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 2,
+      "ornament_code": 10,
+      "signature_code": 16
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "leonhardt-chibi",
+    "display_name": "Leonhardt",
+    "localized_name": "莱恩哈特",
+    "source_name": "Leonhardt",
+    "source_id": "RB03",
+    "game_key": "char_373_lionhd",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "扩散术师",
+    "rarity": 5,
+    "race": "卡特斯",
+    "visual_signature": [
+      "asymmetric ponytail #211e27 hair silhouette",
+      "robe outfit with #a0909d and #f2f560 blocks",
+      "animal ears: 卡特斯",
+      "arts staff: staff",
+      "face mask",
+      "asymmetric profile 0:180 with accent #49251a"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "asymmetric ponytail #211e27 hair silhouette; robe outfit with #a0909d and #f2f560 blocks; animal ears: 卡特斯; arts staff: staff; face mask"
+    },
+    "hair": {
+      "shape": "ponytail",
+      "color": "#211e27",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "robe outfit with #a0909d and #f2f560 blocks"
+    },
+    "palette": {
+      "primary": "#a0909d",
+      "secondary": "#f2f560",
+      "accent": "#49251a",
+      "hair": "#211e27",
+      "hair_highlight": "#5f5d63",
+      "eye": "#f2f560",
+      "line": "#18171e",
+      "mouth": "#804d5b",
+      "skin": "#f9deb1",
+      "skin_line": "#aa8e77",
+      "boot": "#524b54",
+      "leg": "#808141",
+      "metal": "#d3d798",
+      "horn": "#6e6562",
+      "halo": "#9b773a",
+      "weapon": "#7b727d"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "rabbit",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "left",
+      "angle": -6,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "mask",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.2,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 0,
+      "body_width": 52,
+      "coat_width": 6,
+      "leg_spacing": 1,
+      "ornament_code": 0,
+      "signature_code": 12
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

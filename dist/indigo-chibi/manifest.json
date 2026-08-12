@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "indigo-chibi",
+    "display_name": "Indigo",
+    "localized_name": "深靛",
+    "source_name": "Indigo",
+    "source_id": "II05",
+    "game_key": "char_469_indigo",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "秘术师",
+    "rarity": 4,
+    "race": "斐迪亚",
+    "visual_signature": [
+      "long layered #191717 hair silhouette",
+      "robe outfit with #201b1c and #715848 blocks",
+      "斐迪亚: 斐迪亚",
+      "arts staff: staff",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #745a47"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #191717 hair silhouette; robe outfit with #201b1c and #715848 blocks; 斐迪亚: 斐迪亚; arts staff: staff; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#191717",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 33,
+      "height": 29,
+      "eye_gap": 17.5,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.1000000000000005,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "wide",
+      "boot_style": "tall",
+      "signature": "robe outfit with #201b1c and #715848 blocks"
+    },
+    "palette": {
+      "primary": "#201b1c",
+      "secondary": "#715848",
+      "accent": "#745a47",
+      "hair": "#191717",
+      "hair_highlight": "#595858",
+      "eye": "#a17445",
+      "line": "#151518",
+      "mouth": "#804d5b",
+      "skin": "#e2d4c3",
+      "skin_line": "#9e8880",
+      "boot": "#1c1a1e",
+      "leg": "#453936",
+      "metal": "#99908d",
+      "horn": "#6a6159",
+      "halo": "#b39452",
+      "weapon": "#282629"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "right",
+      "angle": 7,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 9,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 4,
+      "ornament_code": 13,
+      "signature_code": 25
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

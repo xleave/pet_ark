@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "gallus2-chibi",
+    "display_name": "GALLUS²",
+    "localized_name": "GALLUS²",
+    "source_name": "GALLUS²",
+    "source_id": "RCX7",
+    "game_key": "char_4227_gallus",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "中坚术师",
+    "rarity": 1,
+    "race": "",
+    "visual_signature": [
+      "compact cropped #494e46 hair silhouette",
+      "mechanical outfit with #3c453f and #64675c blocks",
+      "human silhouette: mechanical unit",
+      "arts staff: staff",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #836841"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "compact cropped #494e46 hair silhouette; mechanical outfit with #3c453f and #64675c blocks; human silhouette: mechanical unit; arts staff: staff; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "short",
+      "color": "#494e46",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 6.199999999999999,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "mechanical",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "mechanical outfit with #3c453f and #64675c blocks"
+    },
+    "palette": {
+      "primary": "#3c453f",
+      "secondary": "#64675c",
+      "accent": "#836841",
+      "hair": "#494e46",
+      "hair_highlight": "#7c807a",
+      "eye": "#aa7b42",
+      "line": "#272929",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#282b2c",
+      "leg": "#3f403f",
+      "metal": "#939796",
+      "horn": "#848073",
+      "halo": "#bb9c4f",
+      "weapon": "#3a4240"
+    },
+    "species_features": {
+      "body_kind": "robot",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "right",
+      "angle": -3,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 8,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 4,
+      "ornament_code": 4,
+      "signature_code": 8
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "pudding-chibi",
+    "display_name": "Pudding",
+    "localized_name": "布丁",
+    "source_name": "Pudding",
+    "source_id": "CB03",
+    "game_key": "char_4004_pudd",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "链术师",
+    "rarity": 4,
+    "race": "阿戈尔",
+    "visual_signature": [
+      "long layered #a39699 hair silhouette",
+      "robe outfit with #b1c0f6 and #55383d blocks",
+      "阿戈尔: 阿戈尔",
+      "arts staff: staff",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #55383d"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #a39699 hair silhouette; robe outfit with #b1c0f6 and #55383d blocks; 阿戈尔: 阿戈尔; arts staff: staff; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#a39699",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 35,
+      "height": 30,
+      "eye_gap": 18.5,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 6.9,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "bare",
+      "boot_style": "flat",
+      "signature": "robe outfit with #b1c0f6 and #55383d blocks"
+    },
+    "palette": {
+      "primary": "#b1c0f6",
+      "secondary": "#55383d",
+      "accent": "#55383d",
+      "hair": "#a39699",
+      "hair_highlight": "#bdb3b6",
+      "eye": "#b1c0f6",
+      "line": "#494549",
+      "mouth": "#804d5b",
+      "skin": "#f8e0de",
+      "skin_line": "#aa8f8f",
+      "boot": "#595f79",
+      "leg": "#382a31",
+      "metal": "#8c8288",
+      "horn": "#b6a7a1",
+      "halo": "#a2824d",
+      "weapon": "#8691b7"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "right",
+      "angle": -1,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 3,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 1,
+      "ornament_code": 3,
+      "signature_code": 25
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

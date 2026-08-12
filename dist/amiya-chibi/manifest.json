@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "amiya-chibi",
+    "display_name": "Amiya",
+    "localized_name": "阿米娅",
+    "source_name": "Amiya",
+    "source_id": "R001",
+    "game_key": "char_002_amiya",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "中坚术师",
+    "rarity": 5,
+    "race": "卡特斯/奇美拉",
+    "visual_signature": [
+      "long layered #40362f hair silhouette",
+      "coat outfit with #1b1e23 and #3a4957 blocks",
+      "animal ears: 卡特斯/奇美拉",
+      "arts staff: book",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #2ac7c9"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #40362f hair silhouette; coat outfit with #1b1e23 and #3a4957 blocks; animal ears: 卡特斯/奇美拉; arts staff: book; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#40362f",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 5.5,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "coat outfit with #1b1e23 and #3a4957 blocks"
+    },
+    "palette": {
+      "primary": "#1b1e23",
+      "secondary": "#3a4957",
+      "accent": "#2ac7c9",
+      "hair": "#40362f",
+      "hair_highlight": "#756e69",
+      "eye": "#634238",
+      "line": "#232021",
+      "mouth": "#804d5b",
+      "skin": "#ab8974",
+      "skin_line": "#806056",
+      "boot": "#1a1b21",
+      "leg": "#2b323d",
+      "metal": "#808994",
+      "horn": "#7f7266",
+      "halo": "#8ad09a",
+      "weapon": "#25282e"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "rabbit",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "book",
+      "label": "arts staff",
+      "side": "right",
+      "angle": 10,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.37,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 0,
+      "body_width": 50,
+      "coat_width": 9,
+      "leg_spacing": 2,
+      "ornament_code": 12,
+      "signature_code": 15
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

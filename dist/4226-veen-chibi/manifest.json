@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "4226-veen-chibi",
+    "display_name": "Вий",
+    "localized_name": "维伊",
+    "source_name": "Вий",
+    "source_id": "US53",
+    "game_key": "char_4226_veen",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "秘术师",
+    "rarity": 6,
+    "race": "库兰塔",
+    "visual_signature": [
+      "asymmetric ponytail #fdf6f2 hair silhouette",
+      "robe outfit with #4c3d38 and #fef6f1 blocks",
+      "animal ears: 库兰塔",
+      "arts staff: staff",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #7c4b4d"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "asymmetric ponytail #fdf6f2 hair silhouette; robe outfit with #4c3d38 and #fef6f1 blocks; animal ears: 库兰塔; arts staff: staff; single eyepatch"
+    },
+    "hair": {
+      "shape": "ponytail",
+      "color": "#fdf6f2",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 5.85,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "robe outfit with #4c3d38 and #fef6f1 blocks"
+    },
+    "palette": {
+      "primary": "#4c3d38",
+      "secondary": "#fef6f1",
+      "accent": "#7c4b4d",
+      "hair": "#fdf6f2",
+      "hair_highlight": "#fef9f6",
+      "eye": "#4f2c2e",
+      "line": "#282324",
+      "mouth": "#804d5b",
+      "skin": "#b98982",
+      "skin_line": "#88605d",
+      "boot": "#2e282a",
+      "leg": "#868284",
+      "metal": "#d8d7d9",
+      "horn": "#e7dcd2",
+      "halo": "#b78c56",
+      "weapon": "#453c3c"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "deer",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "left",
+      "angle": -4,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.1,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 8,
+      "highlight_width": 2,
+      "body_width": 46,
+      "coat_width": 4,
+      "leg_spacing": 3,
+      "ornament_code": 6,
+      "signature_code": 27
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

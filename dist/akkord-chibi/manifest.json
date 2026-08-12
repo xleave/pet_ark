@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "akkord-chibi",
+    "display_name": "Akkord",
+    "localized_name": "协律",
+    "source_name": "Akkord",
+    "source_id": "LN22",
+    "game_key": "char_4051_akkord",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "轰击术师",
+    "rarity": 4,
+    "race": "卡普里尼",
+    "visual_signature": [
+      "asymmetric ponytail #aaa9a6 hair silhouette",
+      "robe outfit with #5e5958 and #262424 blocks",
+      "horns: 卡普里尼",
+      "arts staff: staff",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #353c4c"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "asymmetric ponytail #aaa9a6 hair silhouette; robe outfit with #5e5958 and #262424 blocks; horns: 卡普里尼; arts staff: staff; distinctive hat"
+    },
+    "hair": {
+      "shape": "ponytail",
+      "color": "#aaa9a6",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 34,
+      "height": 32,
+      "eye_gap": 18,
+      "eye_width": 4.8,
+      "eye_height": 6.5,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "robe outfit with #5e5958 and #262424 blocks"
+    },
+    "palette": {
+      "primary": "#5e5958",
+      "secondary": "#262424",
+      "accent": "#353c4c",
+      "hair": "#aaa9a6",
+      "hair_highlight": "#c2c1bf",
+      "eye": "#48546a",
+      "line": "#4c4c4e",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#363437",
+      "leg": "#222126",
+      "metal": "#77797d",
+      "horn": "#bab2a8",
+      "halo": "#908455",
+      "weapon": "#504e50"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "ram",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "right",
+      "angle": 3,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.98,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 2,
+      "body_width": 51,
+      "coat_width": 14,
+      "leg_spacing": 0,
+      "ornament_code": 2,
+      "signature_code": 17
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "aphrissa-chibi",
+    "display_name": "Aphrissa",
+    "localized_name": "谬因",
+    "source_name": "Aphrissa",
+    "source_id": "CB35",
+    "game_key": "char_4229_aphris",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "轰击术师",
+    "rarity": 6,
+    "race": "菲林",
+    "visual_signature": [
+      "long layered #735842 hair silhouette",
+      "robe outfit with #764f3b and #413025 blocks",
+      "animal ears: 菲林",
+      "arts staff: staff",
+      "single eyepatch",
+      "asymmetric profile 0:167 with accent #24170b"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #735842 hair silhouette; robe outfit with #764f3b and #413025 blocks; animal ears: 菲林; arts staff: staff; single eyepatch"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#735842",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 34,
+      "height": 31,
+      "eye_gap": 18,
+      "eye_width": 5.85,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "robe outfit with #764f3b and #413025 blocks"
+    },
+    "palette": {
+      "primary": "#764f3b",
+      "secondary": "#413025",
+      "accent": "#24170b",
+      "hair": "#735842",
+      "hair_highlight": "#9a8777",
+      "eye": "#329286",
+      "line": "#372d28",
+      "mouth": "#804d5b",
+      "skin": "#e2c7b4",
+      "skin_line": "#9e8178",
+      "boot": "#40302b",
+      "leg": "#2f2726",
+      "metal": "#837e7d",
+      "horn": "#9c8571",
+      "halo": "#877031",
+      "weapon": "#60483d"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "cat",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "left",
+      "angle": 1,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.15,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 38,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 2,
+      "body_width": 49,
+      "coat_width": 5,
+      "leg_spacing": 3,
+      "ornament_code": 14,
+      "signature_code": 23
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

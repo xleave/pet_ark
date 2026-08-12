@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "mostima-chibi",
+    "display_name": "Mostima",
+    "localized_name": "莫斯提马",
+    "source_name": "Mostima",
+    "source_id": "LT77",
+    "game_key": "char_213_mostma",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "扩散术师",
+    "rarity": 6,
+    "race": "未公开",
+    "visual_signature": [
+      "long layered #4b78a2 hair silhouette",
+      "coat outfit with #322c3f and #635760 blocks",
+      "horns: 未公开",
+      "arts staff: staff",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #48b7d1"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #4b78a2 hair silhouette; coat outfit with #322c3f and #635760 blocks; horns: 未公开; arts staff: staff; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#4b78a2",
+      "length": 62,
+      "fringe_count": 7
+    },
+    "face": {
+      "width": 33,
+      "height": 30,
+      "eye_gap": 17.5,
+      "eye_width": 6.199999999999999,
+      "eye_height": 6.1000000000000005,
+      "marking": "tattoo"
+    },
+    "outfit": {
+      "type": "coat",
+      "sleeve_style": "wide",
+      "boot_style": "heeled",
+      "signature": "coat outfit with #322c3f and #635760 blocks"
+    },
+    "palette": {
+      "primary": "#322c3f",
+      "secondary": "#635760",
+      "accent": "#48b7d1",
+      "hair": "#4b78a2",
+      "hair_highlight": "#7d9ebc",
+      "eye": "#142359",
+      "line": "#28394c",
+      "mouth": "#804d5b",
+      "skin": "#f9dbc5",
+      "skin_line": "#aa8c81",
+      "boot": "#24212c",
+      "leg": "#3e3941",
+      "metal": "#929098",
+      "horn": "#8697a6",
+      "halo": "#9ac89e",
+      "weapon": "#343140"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "fragmented",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "right",
+      "angle": 7,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.4,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 10,
+      "highlight_width": 1,
+      "body_width": 52,
+      "coat_width": 10,
+      "leg_spacing": 4,
+      "ornament_code": 1,
+      "signature_code": 9
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

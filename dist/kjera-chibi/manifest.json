@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "kjera-chibi",
+    "display_name": "Kjera",
+    "localized_name": "耶拉",
+    "source_name": "Kjera",
+    "source_id": "JC00",
+    "game_key": "char_4013_kjera",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "caster",
+    "subprofession": "驭械术师",
+    "rarity": 5,
+    "race": "未公开",
+    "visual_signature": [
+      "long layered #1b191b hair silhouette",
+      "robe outfit with #191819 and #444042 blocks",
+      "未公开: 未公开",
+      "arts staff: staff",
+      "single eyepatch",
+      "asymmetric profile 0:180 with accent #263555"
+    ],
+    "identifying_features": {
+      "motif": "ring",
+      "effect": "arts",
+      "summary": "long layered #1b191b hair silhouette; robe outfit with #191819 and #444042 blocks; 未公开: 未公开; arts staff: staff; single eyepatch"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#1b191b",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 34,
+      "height": 32,
+      "eye_gap": 18,
+      "eye_width": 5.85,
+      "eye_height": 6.5,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "robe",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "robe outfit with #191819 and #444042 blocks"
+    },
+    "palette": {
+      "primary": "#191819",
+      "secondary": "#444042",
+      "accent": "#263555",
+      "hair": "#1b191b",
+      "hair_highlight": "#5b595b",
+      "eye": "#1a202d",
+      "line": "#151519",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#19191c",
+      "leg": "#302e33",
+      "metal": "#84858a",
+      "horn": "#6b625b",
+      "halo": "#88805a",
+      "weapon": "#242427"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "staff",
+      "label": "arts staff",
+      "side": "left",
+      "angle": 6,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.1,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 3,
+      "highlight_width": 2,
+      "body_width": 46,
+      "coat_width": 4,
+      "leg_spacing": 3,
+      "ornament_code": 10,
+      "signature_code": 3
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}
