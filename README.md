@@ -109,7 +109,7 @@ frames/
 
 `dist/index.json` 给出显示名、输出路径和 validation state；`dist/coverage-manifest.json` 给出 expected / implemented / validated / missing 计数；九张 contact sheet 中每个角色同时显示 idle 与 running-right 代表帧。
 
-完整生成物体积较大，因此除 Priestess 回归包外不提交到 Git；在任意 clone 中运行全量命令可确定性重新生成。
+完整生成物按职业分组提交到 Git，clone 后可以直接审计每个角色的帧和 atlas；也可运行全量命令确定性重新生成并复验这些产物。
 
 ## 许可与声明
 
