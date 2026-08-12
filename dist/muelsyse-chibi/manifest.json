@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "muelsyse-chibi",
+    "display_name": "Muelsyse",
+    "localized_name": "缪尔赛思",
+    "source_name": "Muelsyse",
+    "source_id": "RL09",
+    "game_key": "char_249_mlyss",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "vanguard",
+    "subprofession": "战术家",
+    "rarity": 6,
+    "race": "精灵",
+    "visual_signature": [
+      "long layered #5d5242 hair silhouette",
+      "uniform outfit with #554c40 and #737b70 blocks",
+      "精灵: 精灵",
+      "vanguard polearm: spear",
+      "head-mounted goggles",
+      "asymmetric profile 0:180 with accent #796954"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #5d5242 hair silhouette; uniform outfit with #554c40 and #737b70 blocks; 精灵: 精灵; vanguard polearm: spear; head-mounted goggles"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#5d5242",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 5.5,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #554c40 and #737b70 blocks"
+    },
+    "palette": {
+      "primary": "#554c40",
+      "secondary": "#737b70",
+      "accent": "#796954",
+      "hair": "#5d5242",
+      "hair_highlight": "#8a8277",
+      "eye": "#47382b",
+      "line": "#2e2b28",
+      "mouth": "#804d5b",
+      "skin": "#cab68f",
+      "skin_line": "#917864",
+      "boot": "#322e2d",
+      "leg": "#464949",
+      "metal": "#9aa09f",
+      "horn": "#8f8271",
+      "halo": "#b59d59",
+      "weapon": "#4a4641"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "spear",
+      "label": "vanguard polearm",
+      "side": "left",
+      "angle": -5,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "goggles",
+      "side": "left",
+      "companion": "beast",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.2,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 6,
+      "side_lock": 9,
+      "highlight_width": 0,
+      "body_width": 52,
+      "coat_width": 6,
+      "leg_spacing": 2,
+      "ornament_code": 12,
+      "signature_code": 1
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

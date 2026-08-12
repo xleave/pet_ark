@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "115-headbr-chibi",
+    "display_name": "Зима",
+    "localized_name": "凛冬",
+    "source_name": "Зима",
+    "source_id": "USS1",
+    "game_key": "char_115_headbr",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "vanguard",
+    "subprofession": "尖兵",
+    "rarity": 5,
+    "race": "乌萨斯",
+    "visual_signature": [
+      "long layered #5b3c3e hair silhouette",
+      "uniform outfit with #564143 and #281519 blocks",
+      "animal ears: 乌萨斯",
+      "tactical blade: sword",
+      "face mask",
+      "asymmetric profile 0:180 with accent #dc2355"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #5b3c3e hair silhouette; uniform outfit with #564143 and #281519 blocks; animal ears: 乌萨斯; tactical blade: sword; face mask"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#5b3c3e",
+      "length": 62,
+      "fringe_count": 4
+    },
+    "face": {
+      "width": 32,
+      "height": 29,
+      "eye_gap": 17,
+      "eye_width": 5.1499999999999995,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #564143 and #281519 blocks"
+    },
+    "palette": {
+      "primary": "#564143",
+      "secondary": "#281519",
+      "accent": "#dc2355",
+      "hair": "#5b3c3e",
+      "hair_highlight": "#897374",
+      "eye": "#ad2849",
+      "line": "#2e2326",
+      "mouth": "#804d5b",
+      "skin": "#86766e",
+      "skin_line": "#6c5552",
+      "boot": "#332a2e",
+      "leg": "#231a21",
+      "metal": "#787278",
+      "horn": "#8e766f",
+      "halo": "#ec765a",
+      "weapon": "#4b3f43"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "bear",
+      "horns": "none",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "tactical blade",
+      "side": "left",
+      "angle": 9,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "mask",
+      "side": "left",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 2,
+      "highlight_width": 0,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 1,
+      "ornament_code": 0,
+      "signature_code": 20
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

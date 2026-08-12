@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "scavenger-chibi",
+    "display_name": "Scavenger",
+    "localized_name": "清道夫",
+    "source_name": "Scavenger",
+    "source_id": "SW02",
+    "game_key": "char_149_scave",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "vanguard",
+    "subprofession": "尖兵",
+    "rarity": 4,
+    "race": "札拉克",
+    "visual_signature": [
+      "long layered #a89eaf hair silhouette",
+      "uniform outfit with #2d242a and #d0cad8 blocks",
+      "札拉克: 札拉克",
+      "tactical blade: sword",
+      "one-sided hair ornament",
+      "asymmetric profile 0:180 with accent #7a5635"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #a89eaf hair silhouette; uniform outfit with #2d242a and #d0cad8 blocks; 札拉克: 札拉克; tactical blade: sword; one-sided hair ornament"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#a89eaf",
+      "length": 62,
+      "fringe_count": 5
+    },
+    "face": {
+      "width": 33,
+      "height": 32,
+      "eye_gap": 17.5,
+      "eye_width": 5.5,
+      "eye_height": 6.1000000000000005,
+      "marking": "freckles"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "wide",
+      "boot_style": "flat",
+      "signature": "uniform outfit with #2d242a and #d0cad8 blocks"
+    },
+    "palette": {
+      "primary": "#2d242a",
+      "secondary": "#d0cad8",
+      "accent": "#7a5635",
+      "hair": "#a89eaf",
+      "hair_highlight": "#c0b9c5",
+      "eye": "#a5713b",
+      "line": "#4b4851",
+      "mouth": "#804d5b",
+      "skin": "#f7cdba",
+      "skin_line": "#a9847b",
+      "boot": "#211e24",
+      "leg": "#706e78",
+      "metal": "#c3c3ce",
+      "horn": "#b9acad",
+      "halo": "#b69248",
+      "weapon": "#302c32"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "sword",
+      "label": "tactical blade",
+      "side": "right",
+      "angle": 0,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "ornament",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.85,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 5,
+      "highlight_width": 1,
+      "body_width": 43,
+      "coat_width": 12,
+      "leg_spacing": 2,
+      "ornament_code": 1,
+      "signature_code": 6
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

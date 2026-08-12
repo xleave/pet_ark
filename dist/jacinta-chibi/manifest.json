@@ -1,0 +1,184 @@
+{
+  "character": {
+    "id": "jacinta-chibi",
+    "display_name": "Jacinta",
+    "localized_name": "嘉辛塔",
+    "source_name": "Jacinta",
+    "source_id": "RB20",
+    "game_key": "char_4237_jcinta",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "vanguard",
+    "subprofession": "执旗手",
+    "rarity": 5,
+    "race": "卡特斯",
+    "visual_signature": [
+      "long layered #f0e9e1 hair silhouette",
+      "uniform outfit with #f7efe8 and #271e1d blocks",
+      "animal ears: 卡特斯",
+      "vanguard polearm: spear",
+      "single eyepatch",
+      "asymmetric profile 14:180 with accent #56423d"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #f0e9e1 hair silhouette; uniform outfit with #f7efe8 and #271e1d blocks; animal ears: 卡特斯; vanguard polearm: spear; single eyepatch"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#f0e9e1",
+      "length": 62,
+      "fringe_count": 6
+    },
+    "face": {
+      "width": 32,
+      "height": 30,
+      "eye_gap": 17,
+      "eye_width": 5.85,
+      "eye_height": 5.7,
+      "marking": "scar"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "tall",
+      "signature": "uniform outfit with #f7efe8 and #271e1d blocks"
+    },
+    "palette": {
+      "primary": "#f7efe8",
+      "secondary": "#271e1d",
+      "accent": "#56423d",
+      "hair": "#f0e9e1",
+      "hair_highlight": "#f4efe9",
+      "eye": "#916640",
+      "line": "#696767",
+      "mouth": "#804d5b",
+      "skin": "#deccc1",
+      "skin_line": "#9c847f",
+      "boot": "#767373",
+      "leg": "#231f22",
+      "metal": "#777679",
+      "horn": "#e0d5c8",
+      "halo": "#a2874d",
+      "weapon": "#b4b0ae"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "rabbit",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "spear",
+      "label": "vanguard polearm",
+      "side": "right",
+      "angle": 11,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "eyepatch",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": true
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 1.13,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "fixed-detail-overlay",
+      "fixed_elements": [
+        "single eyepatch"
+      ]
+    },
+    "geometry": {
+      "hair_volume": 37,
+      "top_height": 7,
+      "side_lock": 6,
+      "highlight_width": 0,
+      "body_width": 48,
+      "coat_width": 4,
+      "leg_spacing": 3,
+      "ornament_code": 8,
+      "signature_code": 4
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

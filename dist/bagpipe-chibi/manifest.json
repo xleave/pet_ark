@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "bagpipe-chibi",
+    "display_name": "Bagpipe",
+    "localized_name": "风笛",
+    "source_name": "Bagpipe",
+    "source_id": "RV02",
+    "game_key": "char_222_bpipe",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "vanguard",
+    "subprofession": "冲锋手",
+    "rarity": 6,
+    "race": "瓦伊凡",
+    "visual_signature": [
+      "long layered #2c2337 hair silhouette",
+      "uniform outfit with #b7b7c3 and #251c25 blocks",
+      "horns: 瓦伊凡",
+      "vanguard polearm: spear",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #924052"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "long layered #2c2337 hair silhouette; uniform outfit with #b7b7c3 and #251c25 blocks; horns: 瓦伊凡; vanguard polearm: spear; distinctive hat"
+    },
+    "hair": {
+      "shape": "long",
+      "color": "#2c2337",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 34,
+      "height": 29,
+      "eye_gap": 18,
+      "eye_width": 4.8,
+      "eye_height": 6.5,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "uniform outfit with #b7b7c3 and #251c25 blocks"
+    },
+    "palette": {
+      "primary": "#b7b7c3",
+      "secondary": "#251c25",
+      "accent": "#924052",
+      "hair": "#2c2337",
+      "hair_highlight": "#67616f",
+      "eye": "#612d41",
+      "line": "#1c1924",
+      "mouth": "#804d5b",
+      "skin": "#b04340",
+      "skin_line": "#833a3a",
+      "boot": "#5b5b64",
+      "leg": "#221e26",
+      "metal": "#76757d",
+      "horn": "#74686b",
+      "halo": "#c38658",
+      "weapon": "#8a8c96"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "curved",
+      "halo": "none",
+      "tail": "thin",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "spear",
+      "label": "vanguard polearm",
+      "side": "right",
+      "angle": -7,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.7,
+      "tail_weight": 1
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 7,
+      "highlight_width": 2,
+      "body_width": 43,
+      "coat_width": 11,
+      "leg_spacing": 0,
+      "ornament_code": 10,
+      "signature_code": 28
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}

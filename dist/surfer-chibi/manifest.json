@@ -1,0 +1,182 @@
+{
+  "character": {
+    "id": "surfer-chibi",
+    "display_name": "Surfer",
+    "localized_name": "寻澜",
+    "source_name": "Surfer",
+    "source_id": "BS07",
+    "game_key": "char_4052_surfer",
+    "status": "implemented",
+    "renderer": "generic-vector-v1",
+    "profession": "vanguard",
+    "subprofession": "情报官",
+    "rarity": 5,
+    "race": "札拉克",
+    "visual_signature": [
+      "paired twin-tail #f2f2fd hair silhouette",
+      "uniform outfit with #2d43a6 and #262b3c blocks",
+      "札拉克: 札拉克",
+      "vanguard polearm: spear",
+      "distinctive hat",
+      "asymmetric profile 0:180 with accent #515f9b"
+    ],
+    "identifying_features": {
+      "motif": "crest",
+      "effect": "none",
+      "summary": "paired twin-tail #f2f2fd hair silhouette; uniform outfit with #2d43a6 and #262b3c blocks; 札拉克: 札拉克; vanguard polearm: spear; distinctive hat"
+    },
+    "hair": {
+      "shape": "twin-tails",
+      "color": "#f2f2fd",
+      "length": 62,
+      "fringe_count": 3
+    },
+    "face": {
+      "width": 32,
+      "height": 31,
+      "eye_gap": 17,
+      "eye_width": 4.8,
+      "eye_height": 5.7,
+      "marking": "none"
+    },
+    "outfit": {
+      "type": "uniform",
+      "sleeve_style": "regular",
+      "boot_style": "heeled",
+      "signature": "uniform outfit with #2d43a6 and #262b3c blocks"
+    },
+    "palette": {
+      "primary": "#2d43a6",
+      "secondary": "#262b3c",
+      "accent": "#515f9b",
+      "hair": "#f2f2fd",
+      "hair_highlight": "#f6f6fe",
+      "eye": "#2d43a6",
+      "line": "#1c254e",
+      "mouth": "#804d5b",
+      "skin": "#efcdc2",
+      "skin_line": "#a58480",
+      "boot": "#212b58",
+      "leg": "#222531",
+      "metal": "#777c87",
+      "horn": "#e1dad8",
+      "halo": "#9f9780",
+      "weapon": "#304083"
+    },
+    "species_features": {
+      "body_kind": "human",
+      "ears": "none",
+      "horns": "none",
+      "halo": "none",
+      "tail": "none",
+      "wings": "none"
+    },
+    "weapon": {
+      "type": "spear",
+      "label": "vanguard polearm",
+      "side": "right",
+      "angle": -12,
+      "direction_fixed": false
+    },
+    "accessories": {
+      "headgear": "hat",
+      "side": "right",
+      "companion": "none",
+      "direction_fixed": false
+    },
+    "dynamics": {
+      "hair_weight": 1.23,
+      "coat_weight": 0.97,
+      "tail_weight": 0
+    },
+    "directional": {
+      "strategy": "safe-mirror",
+      "fixed_elements": []
+    },
+    "geometry": {
+      "hair_volume": 31,
+      "top_height": 7,
+      "side_lock": 4,
+      "highlight_width": 0,
+      "body_width": 50,
+      "coat_width": 14,
+      "leg_spacing": 0,
+      "ornament_code": 12,
+      "signature_code": 27
+    },
+    "source_refs": [
+      "official-operator-archive",
+      "prts-playable-operator-index",
+      "arknights-game-data"
+    ]
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "states": [
+    {
+      "id": "idle",
+      "row": 0,
+      "frames": 6
+    },
+    {
+      "id": "running-right",
+      "row": 1,
+      "frames": 8
+    },
+    {
+      "id": "running-left",
+      "row": 2,
+      "frames": 8
+    },
+    {
+      "id": "waving",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "id": "jumping",
+      "row": 4,
+      "frames": 5
+    },
+    {
+      "id": "failed",
+      "row": 5,
+      "frames": 8
+    },
+    {
+      "id": "waiting",
+      "row": 6,
+      "frames": 6
+    },
+    {
+      "id": "running",
+      "row": 7,
+      "frames": 6
+    },
+    {
+      "id": "review",
+      "row": 8,
+      "frames": 6
+    }
+  ],
+  "activeFrameCount": 57,
+  "rendererUses": [
+    "hair",
+    "face",
+    "outfit",
+    "palette",
+    "identifying_features",
+    "species_features",
+    "weapon",
+    "accessories",
+    "dynamics",
+    "directional"
+  ],
+  "style": "source-analyzed, code-drawn chibi vector rendered to lossless WebP"
+}
