@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "retrieval_date": "2026-08-12",
+  "scope": "Mainland-CN playable forms in shared/character-data/operators.json. Formally separate playable alters remain separate character entries; PRTS base-building appearances are variants and named appearances are skins.",
+  "sources": [
+    {
+      "id": "prts-playable-operator-index",
+      "title": "PRTS 干员一览",
+      "authority": "community public index",
+      "url": "https://prts.wiki/w/%E5%B9%B2%E5%91%98%E4%B8%80%E8%A7%88",
+      "use": "playable roster and localized identity index"
+    },
+    {
+      "id": "prts-char-spine-api",
+      "title": "PRTS public char_spine metadata and assets",
+      "authority": "community public asset service",
+      "url_template": "https://torappu.prts.wiki/assets/char_spine/{game_key}/meta.json",
+      "use": "enumerate public base-building Spine default appearances and named skin appearances"
+    },
+    {
+      "id": "arknights-game-data-character-meta",
+      "title": "Kengxxiao/ArknightsGameData character metadata",
+      "authority": "public game-data mirror",
+      "url": "https://github.com/Kengxxiao/ArknightsGameData/blob/master/zh_CN/gamedata/excel/char_meta_table.json",
+      "use": "audit formally separate playable alter groups without merging their roster entries"
+    }
+  ],
+  "statistics": {
+    "expected_characters": 425,
+    "source_indexed_characters": 425,
+    "source_unavailable_characters": 0,
+    "expected_default_appearances": 425,
+    "source_available_default_appearances": 425,
+    "source_incomplete_default_appearances": 0,
+    "expected_variants": 933,
+    "source_available_variants": 933,
+    "expected_skins": 508,
+    "source_available_skins": 508,
+    "source_incomplete_skins": 0,
+    "implemented_runtime_variants": 1
+  },
+  "unavailable_characters": [],
+  "incomplete_variants": []
+}
