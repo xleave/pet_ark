@@ -37,7 +37,7 @@ standalone 的 2026-08-12 source-of-truth 枚举 425 个正式可玩角色的默
 
 导出工具会在本地缓存中读取 PRTS Spine viewer source map 内的运行时代码来解释 Spine 3.8 数据；缓存被 `.gitignore` 排除，不随仓库分发。
 
-`standalone/assets/generated/` 单独保存 image2/等效 image-to-image 补帧及其来源关系。当前 manifest 记录 1 个 accepted 和 1 个 rejected 序列：accepted 的双向光流 midpoint 用于阿米娅默认外观 `sleep` runtime，rejected 候选不进入运行时资源。两者都不会标记为原始游戏素材。
+`standalone/assets/generated/` 单独保存 image2/等效 image-to-image 补帧及其来源关系。当前 manifest 记录 14 个 accepted 序列 / 14 帧和 2 个 rejected 序列。Accepted 结果使用 FFmpeg `minterpolate` 光流生成同角色、同外观端点之间的 midpoint，并在 runtime manifest 中保留 generated provenance；rejected 候选不进入运行时资源。它们都不会标记为 PRTS 或游戏原始素材。
 
 ## Wayland protocols
 
