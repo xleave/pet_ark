@@ -97,7 +97,25 @@
       "duration": 6.5,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/wild-mane/skin-epoque-16/special"
+      "path": "standalone/assets/cleaned/wild-mane/skin-epoque-16/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 2,
+          "reason": "The source Special animation intentionally moves the character fully off-screen during the first dash."
+        },
+        {
+          "frame": 3,
+          "reason": "The source Special animation intentionally holds the character off-screen through the first dash transition."
+        },
+        {
+          "frame": 5,
+          "reason": "The source Special animation intentionally moves the character fully off-screen during the second dash."
+        },
+        {
+          "frame": 6,
+          "reason": "The source Special animation intentionally holds the character off-screen through the second dash transition."
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",

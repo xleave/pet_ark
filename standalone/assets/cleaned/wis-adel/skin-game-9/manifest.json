@@ -97,7 +97,13 @@
       "duration": 12.166666984558105,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/wis-adel/skin-game-9/special"
+      "path": "standalone/assets/cleaned/wis-adel/skin-game-9/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 7,
+          "reason": "The source Special animation intentionally ends on a fully transparent disappearance beat after the companion interaction."
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
