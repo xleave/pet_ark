@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "blaze",
+  "character_name": "Blaze",
+  "localized_name": "煌",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/blaze/default",
+  "source_page": "https://prts.wiki/w/%E7%85%8C",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/meta.json",
+    "model": "defaultskin/build/build_char_017_huang",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/defaultskin/build/build_char_017_huang.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/defaultskin/build/build_char_017_huang.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/defaultskin/build/build_char_017_huang.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.2666666507720947
+    },
+    {
+      "name": "Move",
+      "duration": 2.133333444595337
+    },
+    {
+      "name": "Relax",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Sit",
+      "duration": 3.3333332538604736
+    },
+    {
+      "name": "Sleep",
+      "duration": 5.333333492279053
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/blaze/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.2666666507720947,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/blaze/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2.133333444595337,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/blaze/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/blaze/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/blaze/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 5.333333492279053,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/blaze/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -448.34824,
+      "maxX": 249.51035,
+      "minY": -134.02011,
+      "maxY": 435.1926
+    },
+    "scale": 0.2522,
+    "x_offset": 121.07347,
+    "y_offset": 182.20012,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:19:58.779Z"
+}

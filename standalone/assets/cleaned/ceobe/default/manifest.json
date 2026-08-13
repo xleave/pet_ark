@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "ceobe",
+  "character_name": "Ceobe",
+  "localized_name": "刻俄柏",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/ceobe/default",
+  "source_page": "https://prts.wiki/w/%E5%88%BB%E4%BF%84%E6%9F%8F",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2013_cerber/meta.json",
+    "model": "defaultskin/build/build_char_2013_cerber",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2013_cerber/defaultskin/build/build_char_2013_cerber.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2013_cerber/defaultskin/build/build_char_2013_cerber.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2013_cerber/defaultskin/build/build_char_2013_cerber.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 1.0666667222976685
+    },
+    {
+      "name": "Relax",
+      "duration": 3.200000047683716
+    },
+    {
+      "name": "Sit",
+      "duration": 3.3333332538604736
+    },
+    {
+      "name": "Sleep",
+      "duration": 4
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/ceobe/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/ceobe/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.0666667222976685,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/ceobe/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 3.200000047683716,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/ceobe/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/ceobe/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/ceobe/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -233.4496,
+      "maxX": 341.91913,
+      "minY": -121.07452,
+      "maxY": 457.85388
+    },
+    "scale": 0.30589,
+    "x_offset": 79.41008,
+    "y_offset": 178.96442,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:00.803Z"
+}

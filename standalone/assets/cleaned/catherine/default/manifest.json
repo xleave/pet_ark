@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "catherine",
+  "character_name": "Catherine",
+  "localized_name": "凯瑟琳",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/catherine/default",
+  "source_page": "https://prts.wiki/w/%E5%87%AF%E7%91%9F%E7%90%B3",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4162_cathy/meta.json",
+    "model": "defaultskin/build/build_char_4162_cathy",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4162_cathy/defaultskin/build/build_char_4162_cathy.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4162_cathy/defaultskin/build/build_char_4162_cathy.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4162_cathy/defaultskin/build/build_char_4162_cathy.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.6666666269302368
+    },
+    {
+      "name": "Move",
+      "duration": 2.4000000953674316
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 4.666666507720947
+    },
+    {
+      "name": "Sleep",
+      "duration": 5.333333492279053
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/catherine/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.6666666269302368,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/catherine/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2.4000000953674316,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/catherine/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/catherine/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 4.666666507720947,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/catherine/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 5.333333492279053,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/catherine/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -950.52167,
+      "maxX": 168.53419,
+      "minY": -101.11093,
+      "maxY": 411.06082
+    },
+    "scale": 0.15728,
+    "x_offset": 157.49371,
+    "y_offset": 200.09773,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:00.654Z"
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "cuora",
+  "character_name": "Cuora",
+  "localized_name": "蛇屠箱",
+  "variant": "skin-wild-1",
+  "variant_type": "skin",
+  "variant_name": "四边形",
+  "skin_id": "wild-1",
+  "skin_name": "四边形",
+  "source": "standalone/assets/source/cuora/skin-wild-1",
+  "source_page": "https://prts.wiki/w/%E8%9B%87%E5%B1%A0%E7%AE%B1",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_150_snakek/meta.json",
+    "model": "char_150_snakek_wild_1/build/build_char_150_snakek_wild_1",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_150_snakek/char_150_snakek_wild_1/build/build_char_150_snakek_wild_1.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_150_snakek/char_150_snakek_wild_1/build/build_char_150_snakek_wild_1.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_150_snakek/char_150_snakek_wild_1/build/build_char_150_snakek_wild_1.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.2000000476837158
+    },
+    {
+      "name": "Move",
+      "duration": 2
+    },
+    {
+      "name": "Relax",
+      "duration": 2
+    },
+    {
+      "name": "Sit",
+      "duration": 3.3333332538604736
+    },
+    {
+      "name": "Sleep",
+      "duration": 4
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/cuora/skin-wild-1/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.2000000476837158,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/cuora/skin-wild-1/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/cuora/skin-wild-1/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/cuora/skin-wild-1/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/cuora/skin-wild-1/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/cuora/skin-wild-1/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -273.57291,
+      "maxX": 497.9718,
+      "minY": -105.13124,
+      "maxY": 696.77509
+    },
+    "scale": 0.22811,
+    "x_offset": 70.40576,
+    "y_offset": 192.01811,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:03.030Z"
+}

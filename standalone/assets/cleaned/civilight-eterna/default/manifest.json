@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "civilight-eterna",
+  "character_name": "Civilight Eterna",
+  "localized_name": "魔王",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/civilight-eterna/default",
+  "source_page": "https://prts.wiki/w/%E9%AD%94%E7%8E%8B",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4134_cetsyr/meta.json",
+    "model": "defaultskin/build/build_char_4134_cetsyr",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4134_cetsyr/defaultskin/build/build_char_4134_cetsyr.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4134_cetsyr/defaultskin/build/build_char_4134_cetsyr.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4134_cetsyr/defaultskin/build/build_char_4134_cetsyr.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 6.733333110809326
+    },
+    {
+      "name": "Move",
+      "duration": 1.6666666269302368
+    },
+    {
+      "name": "Relax",
+      "duration": 10
+    },
+    {
+      "name": "Sit",
+      "duration": 16
+    },
+    {
+      "name": "Sleep",
+      "duration": 6
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/civilight-eterna/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 6.733333110809326,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/civilight-eterna/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.6666666269302368,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/civilight-eterna/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 10,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/civilight-eterna/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 16,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/civilight-eterna/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 6,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/civilight-eterna/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -268.96237,
+      "maxX": 187.16,
+      "minY": -107.43368,
+      "maxY": 446.82864
+    },
+    "scale": 0.37527,
+    "x_offset": 111.34913,
+    "y_offset": 175.68298,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:01.882Z"
+}

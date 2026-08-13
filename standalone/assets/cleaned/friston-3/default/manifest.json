@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "character": "friston-3",
+  "character_name": "Friston-3",
+  "localized_name": "Friston-3",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/friston-3/default",
+  "source_page": "https://prts.wiki/w/Friston-3",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4093_frston/meta.json",
+    "model": "defaultskin/build/build_char_4093_frston",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4093_frston/defaultskin/build/build_char_4093_frston.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4093_frston/defaultskin/build/build_char_4093_frston.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4093_frston/defaultskin/build/build_char_4093_frston.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 0.6666666865348816
+    },
+    {
+      "name": "Relax",
+      "duration": 8
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/friston-3/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/friston-3/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 0.6666666865348816,
+      "fps": 8,
+      "frames": 6,
+      "path": "standalone/assets/cleaned/friston-3/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/friston-3/default/relax"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -192.87488,
+      "maxX": 177.59479,
+      "minY": -2.57112,
+      "maxY": 281.40909
+    },
+    "scale": 0.41,
+    "x_offset": 99.13242,
+    "y_offset": 214.94584,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:07.556Z"
+}

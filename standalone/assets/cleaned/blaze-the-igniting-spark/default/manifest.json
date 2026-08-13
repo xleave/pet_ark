@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "blaze-the-igniting-spark",
+  "character_name": "Blaze the Igniting Spark",
+  "localized_name": "烛煌",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/blaze-the-igniting-spark/default",
+  "source_page": "https://prts.wiki/w/%E7%83%9B%E7%85%8C",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1040_blaze2/meta.json",
+    "model": "defaultskin/build/build_char_1040_blaze2",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1040_blaze2/defaultskin/build/build_char_1040_blaze2.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1040_blaze2/defaultskin/build/build_char_1040_blaze2.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1040_blaze2/defaultskin/build/build_char_1040_blaze2.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.5
+    },
+    {
+      "name": "Move",
+      "duration": 1
+    },
+    {
+      "name": "Relax",
+      "duration": 2.4000000953674316
+    },
+    {
+      "name": "Sit",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Sleep",
+      "duration": 1.6666666269302368
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/blaze-the-igniting-spark/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.5,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/blaze-the-igniting-spark/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/blaze-the-igniting-spark/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2.4000000953674316,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/blaze-the-igniting-spark/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/blaze-the-igniting-spark/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 1.6666666269302368,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/blaze-the-igniting-spark/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -257.33148,
+      "maxX": 268.38754,
+      "minY": -118.6136,
+      "maxY": 577.03461
+    },
+    "scale": 0.299,
+    "x_offset": 94.34711,
+    "y_offset": 180.53433,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:19:58.905Z"
+}

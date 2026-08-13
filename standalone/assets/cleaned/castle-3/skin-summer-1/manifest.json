@@ -1,0 +1,106 @@
+{
+  "schema_version": 2,
+  "character": "castle-3",
+  "character_name": "Castle-3",
+  "localized_name": "Castle-3",
+  "variant": "skin-summer-1",
+  "variant_type": "skin",
+  "variant_name": "SUM019.ver",
+  "skin_id": "summer-1",
+  "skin_name": "SUM019.ver",
+  "source": "standalone/assets/source/castle-3/skin-summer-1",
+  "source_page": "https://prts.wiki/w/Castle-3",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_286_cast3/meta.json",
+    "model": "char_286_cast3_summer_1/build/build_char_286_cast3_summer_1",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_286_cast3/char_286_cast3_summer_1/build/build_char_286_cast3_summer_1.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_286_cast3/char_286_cast3_summer_1/build/build_char_286_cast3_summer_1.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_286_cast3/char_286_cast3_summer_1/build/build_char_286_cast3_summer_1.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 0.5333333611488342
+    },
+    {
+      "name": "Relax",
+      "duration": 0.4000000059604645
+    },
+    {
+      "name": "Special",
+      "duration": 8.033333778381348
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/castle-3/skin-summer-1/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/castle-3/skin-summer-1/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 0.5333333611488342,
+      "fps": 8,
+      "frames": 5,
+      "path": "standalone/assets/cleaned/castle-3/skin-summer-1/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 0.4000000059604645,
+      "fps": 8,
+      "frames": 4,
+      "path": "standalone/assets/cleaned/castle-3/skin-summer-1/relax"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 8.033333778381348,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/castle-3/skin-summer-1/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -165.96512,
+      "maxX": 154.11261,
+      "minY": -1.19389,
+      "maxY": 337.9165
+    },
+    "scale": 0.41,
+    "x_offset": 98.42976,
+    "y_offset": 215.51051,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:00.570Z"
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "character": "amiya",
+  "character_name": "Amiya",
+  "localized_name": "阿米娅",
+  "variant": "skin-epoque-4",
+  "variant_type": "skin",
+  "variant_name": "见习联结者",
+  "skin_id": "epoque-4",
+  "skin_name": "见习联结者",
+  "source": "standalone/assets/source/amiya/skin-epoque-4",
+  "source_page": "https://prts.wiki/w/%E9%98%BF%E7%B1%B3%E5%A8%85",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/meta.json",
+    "model": "char_002_amiya_epoque_4/build/build_char_002_amiya_epoque_4",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_epoque_4/build/build_char_002_amiya_epoque_4.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_epoque_4/build/build_char_002_amiya_epoque_4.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_epoque_4/build/build_char_002_amiya_epoque_4.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 3.433333396911621
+    },
+    {
+      "name": "Move",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Relax",
+      "duration": 1
+    },
+    {
+      "name": "Sit",
+      "duration": 8
+    },
+    {
+      "name": "Sleep",
+      "duration": 3
+    },
+    {
+      "name": "Special",
+      "duration": 6.166666507720947
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/amiya/skin-epoque-4/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 3.433333396911621,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/amiya/skin-epoque-4/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/amiya/skin-epoque-4/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/amiya/skin-epoque-4/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/amiya/skin-epoque-4/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/amiya/skin-epoque-4/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 6.166666507720947,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/amiya/skin-epoque-4/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -289.44016,
+      "maxX": 811.78448,
+      "minY": -108.12182,
+      "maxY": 472.45593
+    },
+    "scale": 0.15982,
+    "x_offset": 54.25892,
+    "y_offset": 198.71975,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:19:55.601Z"
+}

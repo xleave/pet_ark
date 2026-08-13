@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "figurino",
+  "character_name": "Figurino",
+  "localized_name": "裁度",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/figurino/default",
+  "source_page": "https://prts.wiki/w/%E8%A3%81%E5%BA%A6",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4155_talr/meta.json",
+    "model": "defaultskin/build/build_char_4155_talr",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4155_talr/defaultskin/build/build_char_4155_talr.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4155_talr/defaultskin/build/build_char_4155_talr.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4155_talr/defaultskin/build/build_char_4155_talr.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 2.3333332538604736
+    },
+    {
+      "name": "Move",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Relax",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Sit",
+      "duration": 1.5333333015441895
+    },
+    {
+      "name": "Sleep",
+      "duration": 1.6666666269302368
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/figurino/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 2.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/figurino/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/figurino/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/figurino/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 1.5333333015441895,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/figurino/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 1.6666666269302368,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/figurino/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -229.87556,
+      "maxX": 197.44006,
+      "minY": -107.3136,
+      "maxY": 413.12308
+    },
+    "scale": 0.39966,
+    "x_offset": 102.48166,
+    "y_offset": 173.11058,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:06.897Z"
+}

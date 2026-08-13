@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "corroserum",
+  "character_name": "Corroserum",
+  "localized_name": "蚀清",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/corroserum/default",
+  "source_page": "https://prts.wiki/w/%E8%9A%80%E6%B8%85",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_489_serum/meta.json",
+    "model": "defaultskin/build/build_char_489_serum",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_489_serum/defaultskin/build/build_char_489_serum.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_489_serum/defaultskin/build/build_char_489_serum.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_489_serum/defaultskin/build/build_char_489_serum.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 2.1666667461395264
+    },
+    {
+      "name": "Move",
+      "duration": 3.200000047683716
+    },
+    {
+      "name": "Relax",
+      "duration": 5
+    },
+    {
+      "name": "Sit",
+      "duration": 5.333333492279053
+    },
+    {
+      "name": "Sleep",
+      "duration": 6.333333492279053
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/corroserum/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 2.1666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/corroserum/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 3.200000047683716,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/corroserum/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 5,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/corroserum/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 5.333333492279053,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/corroserum/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 6.333333492279053,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/corroserum/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -714.75,
+      "maxX": 229.63979,
+      "minY": -123.79486,
+      "maxY": 534.87079
+    },
+    "scale": 0.18636,
+    "x_offset": 141.20347,
+    "y_offset": 192.92913,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:02.531Z"
+}

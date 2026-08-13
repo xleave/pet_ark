@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "character": "castle-3",
+  "character_name": "Castle-3",
+  "localized_name": "Castle-3",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/castle-3/default",
+  "source_page": "https://prts.wiki/w/Castle-3",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_286_cast3/meta.json",
+    "model": "defaultskin/build/build_char_286_cast3",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_286_cast3/defaultskin/build/build_char_286_cast3.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_286_cast3/defaultskin/build/build_char_286_cast3.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_286_cast3/defaultskin/build/build_char_286_cast3.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 0.5333333611488342
+    },
+    {
+      "name": "Relax",
+      "duration": 0.4000000059604645
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/castle-3/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/castle-3/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 0.5333333611488342,
+      "fps": 8,
+      "frames": 5,
+      "path": "standalone/assets/cleaned/castle-3/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 0.4000000059604645,
+      "fps": 8,
+      "frames": 4,
+      "path": "standalone/assets/cleaned/castle-3/default/relax"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -159.88744,
+      "maxX": 154.11261,
+      "minY": -1.19389,
+      "maxY": 337.9165
+    },
+    "scale": 0.41,
+    "x_offset": 97.18384,
+    "y_offset": 215.51051,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:00.524Z"
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "andreana",
+  "character_name": "Andreana",
+  "localized_name": "安哲拉",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/andreana/default",
+  "source_page": "https://prts.wiki/w/%E5%AE%89%E5%93%B2%E6%8B%89",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/meta.json",
+    "model": "defaultskin/build/build_char_218_cuttle",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/defaultskin/build/build_char_218_cuttle.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/defaultskin/build/build_char_218_cuttle.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/defaultskin/build/build_char_218_cuttle.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 3.0999999046325684
+    },
+    {
+      "name": "Move",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Relax",
+      "duration": 8
+    },
+    {
+      "name": "Sit",
+      "duration": 5.333333492279053
+    },
+    {
+      "name": "Sleep",
+      "duration": 4
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/andreana/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 3.0999999046325684,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/andreana/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/andreana/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/andreana/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 5.333333492279053,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/andreana/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/andreana/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -206.76907,
+      "maxX": 174.02814,
+      "minY": -115.14017,
+      "maxY": 668.44501
+    },
+    "scale": 0.26545,
+    "x_offset": 100.34548,
+    "y_offset": 185.43644,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:19:55.647Z"
+}
