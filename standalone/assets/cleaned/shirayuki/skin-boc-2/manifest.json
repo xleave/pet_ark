@@ -97,7 +97,13 @@
       "duration": 3.1666667461395264,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/shirayuki/skin-boc-2/special"
+      "path": "standalone/assets/cleaned/shirayuki/skin-boc-2/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 4,
+          "reason": "The source Special animation intentionally becomes fully transparent inside the smoke substitution transition."
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",

@@ -97,7 +97,13 @@
       "duration": 10.166666984558105,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/ray/skin-summer-22/special"
+      "path": "standalone/assets/cleaned/ray/skin-summer-22/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 7,
+          "reason": "The source Special animation intentionally ends with the character fully off-screen after the movement sequence."
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",

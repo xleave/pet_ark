@@ -97,7 +97,13 @@
       "duration": 15.466666221618652,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/sankta-miksaparato/skin-boc-12/special"
+      "path": "standalone/assets/cleaned/sankta-miksaparato/skin-boc-12/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 4,
+          "reason": "The source Special animation intentionally inserts a transparent transformation beat between the winged and seated visible poses."
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
