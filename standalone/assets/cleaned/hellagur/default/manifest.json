@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "hellagur",
+  "character_name": "Hellagur",
+  "localized_name": "赫拉格",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/hellagur/default",
+  "source_page": "https://prts.wiki/w/%E8%B5%AB%E6%8B%89%E6%A0%BC",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/meta.json",
+    "model": "defaultskin/build/build_char_188_helage",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/defaultskin/build/build_char_188_helage.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/defaultskin/build/build_char_188_helage.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/defaultskin/build/build_char_188_helage.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 1.0666667222976685
+    },
+    {
+      "name": "Relax",
+      "duration": 6
+    },
+    {
+      "name": "Sit",
+      "duration": 1.4666666984558105
+    },
+    {
+      "name": "Sleep",
+      "duration": 2.6666667461395264
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/hellagur/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hellagur/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.0666667222976685,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hellagur/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 6,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hellagur/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 1.4666666984558105,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hellagur/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hellagur/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -294.04462,
+      "maxX": 235.96405,
+      "minY": -120.84959,
+      "maxY": 453.8436
+    },
+    "scale": 0.33207,
+    "x_offset": 105.64341,
+    "y_offset": 175.86947,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:10.188Z"
+}

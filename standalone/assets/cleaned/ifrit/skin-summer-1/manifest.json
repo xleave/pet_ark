@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "character": "ifrit",
+  "character_name": "Ifrit",
+  "localized_name": "伊芙利特",
+  "variant": "skin-summer-1",
+  "variant_type": "skin",
+  "variant_name": "日晒 SS.SP",
+  "skin_id": "summer-1",
+  "skin_name": "日晒 SS.SP",
+  "source": "standalone/assets/source/ifrit/skin-summer-1",
+  "source_page": "https://prts.wiki/w/%E4%BC%8A%E8%8A%99%E5%88%A9%E7%89%B9",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_134_ifrit/meta.json",
+    "model": "char_134_ifrit_summer_1/build/build_char_134_ifrit_summer_1",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_134_ifrit/char_134_ifrit_summer_1/build/build_char_134_ifrit_summer_1.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_134_ifrit/char_134_ifrit_summer_1/build/build_char_134_ifrit_summer_1.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_134_ifrit/char_134_ifrit_summer_1/build/build_char_134_ifrit_summer_1.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 1.0666667222976685
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 6.666666507720947
+    },
+    {
+      "name": "Sleep",
+      "duration": 4
+    },
+    {
+      "name": "Special",
+      "duration": 14.300000190734863
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/ifrit/skin-summer-1/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/ifrit/skin-summer-1/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.0666667222976685,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/ifrit/skin-summer-1/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/ifrit/skin-summer-1/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 6.666666507720947,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/ifrit/skin-summer-1/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/ifrit/skin-summer-1/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 14.300000190734863,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/ifrit/skin-summer-1/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -244.57205,
+      "maxX": 354.25171,
+      "minY": -103.12979,
+      "maxY": 410.44858
+    },
+    "scale": 0.29391,
+    "x_offset": 79.88205,
+    "y_offset": 185.68917,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:11.661Z"
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "character": "kroos",
+  "character_name": "Kroos",
+  "localized_name": "克洛丝",
+  "variant": "skin-sale-14",
+  "variant_type": "skin",
+  "variant_name": "星月漂流记",
+  "skin_id": "sale-14",
+  "skin_name": "星月漂流记",
+  "source": "standalone/assets/source/kroos/skin-sale-14",
+  "source_page": "https://prts.wiki/w/%E5%85%8B%E6%B4%9B%E4%B8%9D",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_124_kroos/meta.json",
+    "model": "char_124_kroos_sale_14/build/build_char_124_kroos_sale_14",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_124_kroos/char_124_kroos_sale_14/build/build_char_124_kroos_sale_14.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_124_kroos/char_124_kroos_sale_14/build/build_char_124_kroos_sale_14.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_124_kroos/char_124_kroos_sale_14/build/build_char_124_kroos_sale_14.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 3.1666667461395264
+    },
+    {
+      "name": "Move",
+      "duration": 1.2000000476837158
+    },
+    {
+      "name": "Relax",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Sit",
+      "duration": 2
+    },
+    {
+      "name": "Sleep",
+      "duration": 3
+    },
+    {
+      "name": "Special",
+      "duration": 14
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/kroos/skin-sale-14/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 3.1666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/kroos/skin-sale-14/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.2000000476837158,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/kroos/skin-sale-14/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/kroos/skin-sale-14/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/kroos/skin-sale-14/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/kroos/skin-sale-14/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 14,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/kroos/skin-sale-14/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -595.3418,
+      "maxX": 464.29819,
+      "minY": -129.25296,
+      "maxY": 696.69031
+    },
+    "scale": 0.16609,
+    "x_offset": 106.88279,
+    "y_offset": 194.53184,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:14.233Z"
+}

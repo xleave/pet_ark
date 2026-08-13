@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "character": "lancet-2",
+  "character_name": "Lancet-2",
+  "localized_name": "Lancet-2",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/lancet-2/default",
+  "source_page": "https://prts.wiki/w/Lancet-2",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/meta.json",
+    "model": "defaultskin/build/build_char_285_medic2",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/defaultskin/build/build_char_285_medic2.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/defaultskin/build/build_char_285_medic2.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/defaultskin/build/build_char_285_medic2.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 2.7333333492279053
+    },
+    {
+      "name": "Move",
+      "duration": 0.8666666746139526
+    },
+    {
+      "name": "Relax",
+      "duration": 0.4333333373069763
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/lancet-2/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 2.7333333492279053,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/lancet-2/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 0.8666666746139526,
+      "fps": 8,
+      "frames": 7,
+      "path": "standalone/assets/cleaned/lancet-2/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 0.4333333373069763,
+      "fps": 8,
+      "frames": 4,
+      "path": "standalone/assets/cleaned/lancet-2/default/relax"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -159.88744,
+      "maxX": 181.84367,
+      "minY": -2.20833,
+      "maxY": 320.35901
+    },
+    "scale": 0.41,
+    "x_offset": 91.49897,
+    "y_offset": 215.09458,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:14.346Z"
+}

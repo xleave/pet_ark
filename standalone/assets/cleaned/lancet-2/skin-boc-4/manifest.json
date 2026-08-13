@@ -1,0 +1,106 @@
+{
+  "schema_version": 2,
+  "character": "lancet-2",
+  "character_name": "Lancet-2",
+  "localized_name": "Lancet-2",
+  "variant": "skin-boc-4",
+  "variant_type": "skin",
+  "variant_name": "海岸救援改装",
+  "skin_id": "boc-4",
+  "skin_name": "海岸救援改装",
+  "source": "standalone/assets/source/lancet-2/skin-boc-4",
+  "source_page": "https://prts.wiki/w/Lancet-2",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/meta.json",
+    "model": "char_285_medic2_boc_4/build/build_char_285_medic2_boc_4",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/char_285_medic2_boc_4/build/build_char_285_medic2_boc_4.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/char_285_medic2_boc_4/build/build_char_285_medic2_boc_4.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/char_285_medic2_boc_4/build/build_char_285_medic2_boc_4.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.5
+    },
+    {
+      "name": "Move",
+      "duration": 0.8666666746139526
+    },
+    {
+      "name": "Relax",
+      "duration": 0.4333333373069763
+    },
+    {
+      "name": "Special",
+      "duration": 5.300000190734863
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/lancet-2/skin-boc-4/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.5,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/lancet-2/skin-boc-4/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 0.8666666746139526,
+      "fps": 8,
+      "frames": 7,
+      "path": "standalone/assets/cleaned/lancet-2/skin-boc-4/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 0.4333333373069763,
+      "fps": 8,
+      "frames": 4,
+      "path": "standalone/assets/cleaned/lancet-2/skin-boc-4/relax"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 5.300000190734863,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/lancet-2/skin-boc-4/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -341.2756,
+      "maxX": 237.96451,
+      "minY": -16.83158,
+      "maxY": 523.02319
+    },
+    "scale": 0.30385,
+    "x_offset": 111.69535,
+    "y_offset": 210.88579,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:14.474Z"
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "hibiscus",
+  "character_name": "Hibiscus",
+  "localized_name": "芙蓉",
+  "variant": "skin-nian-1",
+  "variant_type": "skin",
+  "variant_name": "守岁人",
+  "skin_id": "nian-1",
+  "skin_name": "守岁人",
+  "source": "standalone/assets/source/hibiscus/skin-nian-1",
+  "source_page": "https://prts.wiki/w/%E8%8A%99%E8%93%89",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/meta.json",
+    "model": "char_120_hibisc_nian_1/build/build_char_120_hibisc_nian_1",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/char_120_hibisc_nian_1/build/build_char_120_hibisc_nian_1.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/char_120_hibisc_nian_1/build/build_char_120_hibisc_nian_1.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/char_120_hibisc_nian_1/build/build_char_120_hibisc_nian_1.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 1.1333333253860474
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 8
+    },
+    {
+      "name": "Sleep",
+      "duration": 3
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/hibiscus/skin-nian-1/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hibiscus/skin-nian-1/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.1333333253860474,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hibiscus/skin-nian-1/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hibiscus/skin-nian-1/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hibiscus/skin-nian-1/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hibiscus/skin-nian-1/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -274.73343,
+      "maxX": 219.23756,
+      "minY": -155.90117,
+      "maxY": 408.14148
+    },
+    "scale": 0.3563,
+    "x_offset": 105.88648,
+    "y_offset": 160.453,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:10.251Z"
+}
