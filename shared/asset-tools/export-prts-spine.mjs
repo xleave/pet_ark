@@ -4,6 +4,7 @@ import path from 'node:path';
 import { pathToFileURL, fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 import { spawn } from 'node:child_process';
+import { rasterizeTexturedTriangles } from '../image-processing/triangle-rasterizer.mjs';
 
 const require = createRequire(import.meta.url);
 const sharp = require('sharp');
@@ -231,23 +232,7 @@ async function loadPrtsRuntime() {
   return (await import(`${pathToFileURL(runtimePath).href}?v=2`)).default;
 }
 
-function affine(source, destination) {
-  const [[x1, y1], [x2, y2], [x3, y3]] = source;
-  const [[X1, Y1], [X2, Y2], [X3, Y3]] = destination;
-  const denominator = x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2);
-  if (Math.abs(denominator) < 0.00001) return null;
-  const solve = (q1, q2, q3) => [
-    (q1 * (y2 - y3) + q2 * (y3 - y1) + q3 * (y1 - y2)) / denominator,
-    (q1 * (x3 - x2) + q2 * (x1 - x3) + q3 * (x2 - x1)) / denominator,
-    (q1 * (x2 * y3 - x3 * y2) + q2 * (x3 * y1 - x1 * y3) + q3 * (x1 * y2 - x2 * y1)) / denominator,
-  ];
-  const [a, c, e] = solve(X1, X2, X3);
-  const [b, d, f] = solve(Y1, Y2, Y3);
-  return [a, b, c, d, e, f];
-}
-
 const rounded = (value) => Number(value.toFixed(5));
-const point = ([x, y]) => `${rounded(x)},${rounded(y)}`;
 
 function geometryForAttachment(spine, slot, attachment) {
   let vertices;
@@ -343,58 +328,31 @@ function renderTransform(bounds, width, height) {
   };
 }
 
-function textureDefinitions(texturePages) {
-  const definitions = [];
-  for (const page of new Set(texturePages.values())) {
-    definitions.push(`<image id="${page.svgId}" href="data:image/png;base64,${page.data}" width="${page.width}" height="${page.height}"/>`);
-  }
-  return definitions;
-}
-
-function renderFrameElements(spine, skeleton, texturePages, width, height, transform, frame, firstTriangleId) {
+function renderFrameLayers(spine, skeleton, texturePages, transform) {
   const project = (x, y) => [
-    frame * width + transform.xOffset + x * transform.scale,
+    transform.xOffset + x * transform.scale,
     transform.yOffset - y * transform.scale,
   ];
-  const definitions = [];
   const layers = [];
-  let triangleId = firstTriangleId;
 
   for (const { slot, attachment, vertices, uvs, triangles } of visibleGeometry(spine, skeleton)) {
     const pageName = attachment.region?.page?.name;
     const page = texturePages.get(pageName) ?? texturePages.values().next().value;
     if (!page) continue;
     const opacity = Math.max(0, Math.min(1, skeleton.color.a * slot.color.a * attachment.color.a));
-    for (let index = 0; index < triangles.length; index += 3) {
-      const indices = [triangles[index], triangles[index + 1], triangles[index + 2]];
-      const source = indices.map((vertex) => [uvs[vertex * 2] * page.width, uvs[vertex * 2 + 1] * page.height]);
-      const destination = indices.map((vertex) => project(vertices[vertex * 2], vertices[vertex * 2 + 1]));
-      const matrix = affine(source, destination);
-      const invalidDestination = destination.some(([x, y]) => (
-        !Number.isFinite(x)
-        || !Number.isFinite(y)
-        || Math.abs(x - frame * width) > width * 64
-        || Math.abs(y) > height * 64
-      ));
-      const outsideCanvas = destination.every(([x]) => x < frame * width)
-        || destination.every(([x]) => x > (frame + 1) * width)
-        || destination.every(([, y]) => y < 0)
-        || destination.every(([, y]) => y > height);
-      const determinant = matrix ? matrix[0] * matrix[3] - matrix[1] * matrix[2] : 0;
-      if (
-        !matrix
-        || invalidDestination
-        || outsideCanvas
-        || !Number.isFinite(determinant)
-        || Math.abs(determinant) < 0.00001
-        || matrix.some((value) => !Number.isFinite(value) || Math.abs(value) > 100000)
-      ) continue;
-      const clipId = `triangle-${triangleId++}`;
-      definitions.push(`<clipPath id="${clipId}" clipPathUnits="userSpaceOnUse"><polygon points="${destination.map(point).join(' ')}"/></clipPath>`);
-      layers.push(`<g clip-path="url(#${clipId})"><use href="#${page.svgId}" transform="matrix(${matrix.map(rounded).join(' ')})" opacity="${rounded(opacity)}"/></g>`);
+    const projectedVertices = new Float64Array(vertices.length);
+    for (let index = 0; index < vertices.length; index += 2) {
+      [projectedVertices[index], projectedVertices[index + 1]] = project(vertices[index], vertices[index + 1]);
     }
+    layers.push({
+      vertices: projectedVertices,
+      uvs,
+      triangles,
+      texture: page,
+      opacity,
+    });
   }
-  return { definitions, layers, nextTriangleId: triangleId };
+  return layers;
 }
 
 async function encodeCleanFrame(data, width, height, channels) {
@@ -444,18 +402,19 @@ async function loadTexturePages(spine, atlasText, retrieval) {
   const sourceDir = path.join(REPO_ROOT, 'standalone/assets/source', retrieval.character_id, retrieval.variant_id);
   const files = retrieval.files.textures;
   const pages = new Map();
-  for (const [index, file] of files.entries()) {
+  for (const file of files) {
     const texturePath = path.join(REPO_ROOT, file.path);
     const buffer = await fs.readFile(texturePath);
-    const metadata = await sharp(buffer).metadata();
-    if (!metadata.width || !metadata.height) throw new Error(`Invalid source texture: ${texturePath}`);
+    const decoded = await sharp(buffer).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+    if (!decoded.info.width || !decoded.info.height || decoded.info.channels !== 4) {
+      throw new Error(`Invalid source texture: ${texturePath}`);
+    }
     const atlasName = path.relative(sourceDir, texturePath).replaceAll(path.sep, '/');
     const page = {
       name: atlasName,
-      svgId: `texture-page-${index}`,
-      width: metadata.width,
-      height: metadata.height,
-      data: buffer.toString('base64'),
+      width: decoded.info.width,
+      height: decoded.info.height,
+      data: decoded.data,
     };
     pages.set(atlasName, page);
     pages.set(path.basename(atlasName), page);
@@ -480,8 +439,11 @@ async function exportVariant(spine, { character, variant }, config) {
   const skeletonPath = path.join(REPO_ROOT, retrieval.files.skeleton);
   const atlasText = await fs.readFile(atlasPath, 'utf8');
   const { atlas, pages } = await loadTexturePages(spine, atlasText, retrieval);
-  const binary = new spine.SkeletonBinary(new spine.AtlasAttachmentLoader(atlas));
-  const skeletonData = binary.readSkeletonData(new Uint8Array(await fs.readFile(skeletonPath)));
+  const skeletonBytes = await fs.readFile(skeletonPath);
+  const attachmentLoader = new spine.AtlasAttachmentLoader(atlas);
+  const skeletonData = skeletonBytes[0] === 0x7b
+    ? new spine.SkeletonJson(attachmentLoader).readSkeletonData(JSON.parse(skeletonBytes.toString('utf8')))
+    : new spine.SkeletonBinary(attachmentLoader).readSkeletonData(new Uint8Array(skeletonBytes));
   const sourceAnimations = skeletonData.animations.map((animation) => ({
     name: animation.name,
     duration: animation.duration,
@@ -578,41 +540,29 @@ async function exportVariant(spine, { character, variant }, config) {
         for (let frame = 0; frame < frameCount; frame++) {
           const time = frameCount === 1 ? 0 : animation.duration * frame / frameCount;
           applyAnimation(skeleton, state, animation.name, time);
-          const elements = renderFrameElements(
+          const layers = renderFrameLayers(
             spine,
             skeleton,
             pages,
-            config.width,
-            config.height,
             transform,
-            0,
-            0,
           );
-          const definitions = [...textureDefinitions(pages), ...elements.definitions];
-          const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${config.width}" height="${config.height}" viewBox="0 0 ${config.width} ${config.height}"><defs>${definitions.join('')}</defs>${elements.layers.join('')}</svg>`;
-          let rasterized;
+          let data;
           try {
-            rasterized = await sharp(Buffer.from(svg)).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+            ({ data } = rasterizeTexturedTriangles({
+              width: config.width,
+              height: config.height,
+              layers,
+              sampleGrid: 2,
+            }));
           } catch (error) {
-            const diagnosticsDir = path.join(REPO_ROOT, '.cache/prts-spine/failed-svg');
-            await fs.mkdir(diagnosticsDir, { recursive: true });
-            const diagnosticsPath = path.join(
-              diagnosticsDir,
-              `${character.character_id}-${variant.variant_id}-${safeName}-${frame}.svg`,
-            );
-            await fs.writeFile(diagnosticsPath, svg);
-            throw new Error(`${animation.name} frame ${frame}: ${error.message}; diagnostic ${path.relative(REPO_ROOT, diagnosticsPath)}`);
-          }
-          const { data, info } = rasterized;
-          if (info.width !== config.width || info.height !== config.height || info.channels !== 4) {
-            throw new Error(`Unexpected rasterized frame format: ${info.width}x${info.height}x${info.channels}`);
+            throw new Error(`${animation.name} frame ${frame}: ${error.message}`);
           }
           const destination = path.join(temporaryDir, `${String(frame).padStart(3, '0')}.png`);
           await fs.writeFile(destination, await encodeCleanFrame(
             data,
             config.width,
             config.height,
-            info.channels,
+            4,
           ));
         }
         await fs.rm(animationDir, { recursive: true, force: true });
