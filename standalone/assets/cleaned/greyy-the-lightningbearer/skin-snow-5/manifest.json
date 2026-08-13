@@ -97,7 +97,13 @@
       "duration": 13.833333015441895,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/greyy-the-lightningbearer/skin-snow-5/special"
+      "path": "standalone/assets/cleaned/greyy-the-lightningbearer/skin-snow-5/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 1,
+          "reason": "The source Special animation intentionally starts its transition with a transparent beat before the visible prop sequence."
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",

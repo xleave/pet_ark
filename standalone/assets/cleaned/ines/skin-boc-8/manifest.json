@@ -97,7 +97,13 @@
       "duration": 13.333333015441895,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/ines/skin-boc-8/special"
+      "path": "standalone/assets/cleaned/ines/skin-boc-8/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 2,
+          "reason": "The source Special animation intentionally hides the character for the shadow-transition beat between visible poses."
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",

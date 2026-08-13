@@ -62,7 +62,13 @@
       "duration": 5,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/iana/skin-rainbow6-2/interact"
+      "path": "standalone/assets/cleaned/iana/skin-rainbow6-2/interact",
+      "intentional_blank_frames": [
+        {
+          "frame": 1,
+          "reason": "The source Interact animation intentionally uses a fully transparent decoy/camouflage transition beat before the next visible pose."
+        }
+      ]
     },
     "move": {
       "source_animation": "Move",

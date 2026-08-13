@@ -97,7 +97,13 @@
       "duration": 6.900000095367432,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/honeyberry/skin-epoque-17/special"
+      "path": "standalone/assets/cleaned/honeyberry/skin-epoque-17/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 3,
+          "reason": "The source Special animation intentionally removes the character for one transition beat between the two visible costume poses."
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
