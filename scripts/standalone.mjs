@@ -10,7 +10,10 @@ const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..
 const STANDALONE_ROOT = path.join(REPO_ROOT, 'standalone');
 const BUILD_BINARY = path.join(STANDALONE_ROOT, 'build', 'pet-ark');
 const DIST_APP = path.join(STANDALONE_ROOT, 'dist', 'app');
+const DIST_CHARACTERS = path.join(STANDALONE_ROOT, 'dist', 'characters');
+const DIST_MANIFESTS = path.join(STANDALONE_ROOT, 'dist', 'manifests');
 const REGISTRY_PATH = path.join(STANDALONE_ROOT, 'characters', 'registry.json');
+const ROSTER_PATH = path.join(REPO_ROOT, 'shared', 'character-data', 'standalone-roster.json');
 const RUNTIME_ASSETS = path.join(STANDALONE_ROOT, 'assets', 'runtime');
 
 function usage() {
@@ -22,10 +25,16 @@ Commands:
   package   Create standalone/dist/app with binary and runtime resources
   test      Run native state-machine, movement, and animation tests
   validate  Run logic tests and validate character/runtime asset metadata
+  build-all Build runtime resources for every character and skin, then compile
+  validate-all
+             Validate the complete roster, variants, skins, assets, and package registry
   assets    Prepare runtime atlases and regenerate the C registry
 
 Options:
-  --character <id>  Character for dev or asset preparation (default: amiya)
+  --character <id>  Select one character (default for dev: amiya)
+  --skin <id>       Select one skin id/variant id/name (default: default)
+  --variant <id>    Select one variant id (takes precedence over --skin)
+  --concurrency <n> Bounded source acquisition/export concurrency
   --sysroot <path>  Forward a cross-compilation sysroot to make/pkg-config
   --jobs <count>    Parallel make jobs
   --refresh-source  Download and export the selected PRTS Spine source first
@@ -42,6 +51,20 @@ function option(args, name, fallback = null) {
 function passthroughArgs(args) {
   const separator = args.indexOf('--');
   return separator >= 0 ? args.slice(separator + 1) : [];
+}
+
+function forwarded(args, names) {
+  const result = [];
+  for (const name of names) {
+    const value = option(args, name);
+    if (value !== null) result.push(name, value);
+  }
+  for (const name of ['--force']) if (args.includes(name)) result.push(name);
+  return result;
+}
+
+function filenamePart(value) {
+  return String(value).normalize('NFKC').replace(/[^a-z0-9._-]+/gi, '-').replace(/^-+|-+$/g, '') || 'selection';
 }
 
 function run(command, args, { cwd = REPO_ROOT, env = process.env } = {}) {
@@ -87,6 +110,69 @@ async function loadJson(file) {
   }
 }
 
+async function copyDirectory(source, destination) {
+  await fs.rm(destination, { recursive: true, force: true });
+  await fs.mkdir(path.dirname(destination), { recursive: true });
+  await fs.cp(source, destination, { recursive: true });
+}
+
+async function exists(file) {
+  try {
+    return (await fs.stat(file)).isFile();
+  } catch {
+    return false;
+  }
+}
+
+async function syncDistMetadata() {
+  await Promise.all([
+    fs.mkdir(DIST_MANIFESTS, { recursive: true }),
+    fs.mkdir(path.join(STANDALONE_ROOT, 'dist', 'registry'), { recursive: true }),
+  ]);
+  await Promise.all([
+    fs.copyFile(REGISTRY_PATH, path.join(DIST_MANIFESTS, 'registry.json')),
+    fs.copyFile(REGISTRY_PATH, path.join(STANDALONE_ROOT, 'dist', 'registry', 'characters.json')),
+    fs.copyFile(ROSTER_PATH, path.join(DIST_MANIFESTS, 'roster.json')),
+  ]);
+}
+
+function packagedRegistry(registry) {
+  return {
+    ...registry,
+    characters: registry.characters.map((character) => ({
+      ...character,
+      variants: character.variants.map((variant) => {
+        const subdir = variant.assets.replace(/^standalone\/assets\/runtime\/?/, '');
+        return { ...variant, assets: `assets/runtime/${subdir}` };
+      }),
+    })),
+  };
+}
+
+async function validatePackagedRegistry() {
+  const appManifest = await loadJson(path.join(DIST_APP, 'manifest.json'));
+  if (appManifest.schema_version !== 2 || !appManifest.character_registry || !appManifest.runtime_assets) {
+    throw new Error('packaged app manifest must use schema_version 2 and declare registry/runtime assets');
+  }
+  const registry = await loadJson(path.join(DIST_APP, appManifest.character_registry));
+  if (registry.schema_version !== 2 || !Array.isArray(registry.characters) || registry.characters.length === 0) {
+    throw new Error('packaged character registry is unreadable or empty');
+  }
+  let variants = 0;
+  for (const character of registry.characters) {
+    for (const variant of character.variants || []) {
+      const runtimeManifest = path.resolve(DIST_APP, variant.assets, 'manifest.json');
+      if (!runtimeManifest.startsWith(`${DIST_APP}${path.sep}`)) throw new Error(`${character.id}:${variant.id}: packaged assets leave app directory`);
+      const runtime = await loadJson(runtimeManifest);
+      if (runtime.character?.id !== character.id || (runtime.variant?.id || 'default') !== variant.id) {
+        throw new Error(`${character.id}:${variant.id}: packaged runtime identity mismatch`);
+      }
+      variants++;
+    }
+  }
+  console.log(`OK: packaged registry readable (${registry.characters.length} character(s), ${variants} variant(s))`);
+}
+
 async function assertFile(file, label) {
   try {
     const stat = await fs.stat(file);
@@ -105,83 +191,86 @@ async function pngDimensions(file) {
   return { width: header.readUInt32BE(16), height: header.readUInt32BE(20) };
 }
 
-async function validateAssets() {
-  const registry = await loadJson(REGISTRY_PATH);
-  if (registry.schema_version !== 1 || !Array.isArray(registry.characters) || registry.characters.length === 0) {
-    throw new Error('standalone character registry must use schema_version 1 and contain characters');
-  }
-  const requiredStates = ['idle', 'walk-left', 'walk-right', 'clicked', 'picked-up', 'dragging', 'dropped', 'rest', 'sleep', 'wake'];
-  const seen = new Set();
-  let stateCount = 0;
-  for (const character of registry.characters) {
-    if (!character.id || !character.name || seen.has(character.id)) throw new Error(`invalid or duplicate character id: ${character.id}`);
-    seen.add(character.id);
-    if (!character.assets || !character.animations || !character.movement || !character.mirrorRules) {
-      throw new Error(`${character.id}: missing assets, animations, movement, or mirrorRules`);
-    }
-    for (const state of requiredStates) {
-      if (!character.animations[state]) throw new Error(`${character.id}: missing required state ${state}`);
-    }
-    const runtimeDir = path.resolve(REPO_ROOT, character.assets);
-    const runtime = await loadJson(path.join(runtimeDir, 'manifest.json'));
-    if (runtime.schemaVersion !== 1 || runtime.character?.id !== character.id) throw new Error(`${character.id}: runtime manifest identity mismatch`);
-    const frameWidth = runtime.frameSize?.width;
-    const frameHeight = runtime.frameSize?.height;
-    if (!Number.isInteger(frameWidth) || !Number.isInteger(frameHeight) || frameWidth < 1 || frameHeight < 1) {
-      throw new Error(`${character.id}: invalid runtime frameSize`);
-    }
-    for (const [sourceId, source] of Object.entries(runtime.sources || {})) {
-      if (!Number.isInteger(source.frames) || source.frames < 1 || source.hitboxes?.length !== source.frames) {
-        throw new Error(`${character.id}:${sourceId}: source frame/hitbox count mismatch`);
-      }
-      const sheet = path.join(runtimeDir, source.sheet);
-      await assertFile(sheet, `${character.id}:${sourceId} runtime sheet`);
-      const dimensions = await pngDimensions(sheet);
-      if (dimensions.width !== source.columns * frameWidth || dimensions.height !== source.rows * frameHeight) {
-        throw new Error(`${character.id}:${sourceId}: runtime sheet dimensions do not match metadata`);
-      }
-      for (const hitbox of source.hitboxes) {
-        if (![hitbox.x, hitbox.y, hitbox.width, hitbox.height].every(Number.isInteger) || hitbox.width < 1 || hitbox.height < 1) {
-          throw new Error(`${character.id}:${sourceId}: invalid hitbox`);
-        }
-      }
-    }
-    for (const [state, animation] of Object.entries(runtime.animations || {})) {
-      const source = runtime.sources?.[animation.source];
-      if (!source || !Array.isArray(animation.frameOrder) || animation.frameOrder.length === 0 || !(animation.fps > 0)) {
-        throw new Error(`${character.id}:${state}: invalid animation definition`);
-      }
-      if (animation.frameOrder.some((frame) => !Number.isInteger(frame) || frame < 0 || frame >= source.frames)) {
-        throw new Error(`${character.id}:${state}: frame order references an unavailable source frame`);
-      }
-      stateCount++;
-    }
-  }
-  console.log(`OK: ${registry.characters.length} standalone character(s), ${stateCount} runtime animation states`);
-}
-
 async function prepareAssets(args) {
-  const registry = await loadJson(REGISTRY_PATH);
-  const selected = option(args, '--character');
-  const characters = selected
-    ? registry.characters.filter((character) => character.id === selected)
-    : registry.characters;
-  if (characters.length === 0) throw new Error(`Unknown standalone character: ${selected}`);
-  for (const character of characters) {
-    const characterArgs = ['--character', character.id];
-    if (args.includes('--refresh-source')) {
-      await run(process.execPath, ['shared/asset-tools/acquire-prts-spine.mjs', ...characterArgs]);
-      await run(process.execPath, ['shared/asset-tools/export-prts-spine.mjs', ...characterArgs]);
+  const roster = await loadJson(ROSTER_PATH);
+  const characterId = option(args, '--character', 'amiya');
+  const selector = option(args, '--variant', option(args, '--skin', 'default'));
+  const character = roster.characters.find((entry) => entry.character_id === characterId);
+  if (!character) throw new Error(`Unknown standalone character: ${characterId}`);
+  const variant = character.variants.find((entry) => entry.variant_id === selector || entry.skin_id === selector || entry.skin_name === selector);
+  if (!variant) throw new Error(`${characterId}: unknown skin/variant ${selector}`);
+  const defaultVariant = character.variants.find((entry) => entry.variant_id === character.default_variant_id);
+  const requiredVariants = variant.variant_id === character.default_variant_id ? [variant] : [defaultVariant, variant];
+  for (const requiredVariant of requiredVariants) {
+    if (!requiredVariant) throw new Error(`${characterId}: default variant is missing from roster`);
+    const selectedArgs = ['--character', characterId, '--variant', requiredVariant.variant_id];
+    const cleanedManifest = path.join(
+      STANDALONE_ROOT,
+      'assets',
+      'cleaned',
+      characterId,
+      requiredVariant.variant_id,
+      'manifest.json',
+    );
+    if (args.includes('--refresh-source') || !await exists(cleanedManifest)) {
+      const sourceArgs = [...selectedArgs, ...forwarded(args, ['--concurrency'])];
+      await run(process.execPath, ['shared/asset-tools/acquire-prts-spine.mjs', ...sourceArgs]);
+      await run(process.execPath, ['shared/asset-tools/export-prts-spine.mjs', ...sourceArgs]);
     }
-    await run(process.execPath, ['shared/image-processing/prepare-standalone-assets.mjs', ...characterArgs]);
+    await run(process.execPath, ['shared/image-processing/prepare-standalone-assets.mjs', ...selectedArgs]);
   }
+  await run(process.execPath, ['shared/image-processing/build-runtime-registry.mjs']);
   await run(process.execPath, ['shared/asset-tools/generate-standalone-registry.mjs']);
   await run(process.execPath, ['shared/image-processing/validate-generated-manifest.mjs']);
-  await validateAssets();
+  await run(process.execPath, [
+    'shared/image-processing/validate-standalone-coverage.mjs',
+    '--character', characterId,
+    '--variant', variant.variant_id,
+    '--write', `standalone/dist/manifests/coverage-${filenamePart(characterId)}-${filenamePart(variant.variant_id)}.json`,
+  ]);
+  await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs']);
+  for (const requiredVariant of requiredVariants) {
+    await copyDirectory(
+      path.join(RUNTIME_ASSETS, characterId, requiredVariant.variant_id),
+      path.join(DIST_CHARACTERS, characterId, requiredVariant.variant_id),
+    );
+  }
+  await syncDistMetadata();
+}
+
+async function prepareAll(args) {
+  const sourceArgs = ['--all', ...forwarded(args, ['--concurrency'])];
+  await run(process.execPath, ['shared/asset-tools/acquire-prts-spine.mjs', ...sourceArgs]);
+  await run(process.execPath, ['shared/asset-tools/export-prts-spine.mjs', ...sourceArgs]);
+  const roster = await loadJson(ROSTER_PATH);
+  const variants = roster.characters.flatMap((character) => character.variants.map((variant) => ({ character, variant })));
+  const concurrency = Number(option(args, '--concurrency', '4'));
+  if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 32) throw new Error('--concurrency must be an integer from 1 to 32');
+  let cursor = 0;
+  async function worker() {
+    while (cursor < variants.length) {
+      const index = cursor++;
+      const { character, variant } = variants[index];
+      await run(process.execPath, [
+        'shared/image-processing/prepare-standalone-assets.mjs',
+        '--character', character.character_id,
+        '--variant', variant.variant_id,
+      ]);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(concurrency, variants.length) }, () => worker()));
+  await run(process.execPath, ['shared/image-processing/build-runtime-registry.mjs']);
+  await run(process.execPath, ['shared/asset-tools/generate-standalone-registry.mjs']);
+  await run(process.execPath, ['shared/image-processing/validate-generated-manifest.mjs']);
+  await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs', '--require-complete']);
+  await copyDirectory(RUNTIME_ASSETS, DIST_CHARACTERS);
+  await syncDistMetadata();
 }
 
 async function packageApp(args) {
   await make('build', args);
+  await run(process.execPath, ['shared/image-processing/validate-generated-manifest.mjs']);
+  await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs']);
   const binaryDestination = path.join(DIST_APP, 'bin', 'pet-ark');
   const launcherDestination = path.join(DIST_APP, 'pet-ark');
   await fs.rm(DIST_APP, { recursive: true, force: true });
@@ -198,8 +287,17 @@ app_root=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 exec "$app_root/bin/pet-ark" --assets "$app_root/assets/runtime" "$@"
 `);
   await fs.chmod(launcherDestination, 0o755);
-  await fs.copyFile(REGISTRY_PATH, path.join(DIST_APP, 'characters', 'registry.json'));
+  const registry = await loadJson(REGISTRY_PATH);
+  await fs.writeFile(
+    path.join(DIST_APP, 'characters', 'registry.json'),
+    `${JSON.stringify(packagedRegistry(registry), null, 2)}\n`,
+  );
   await fs.cp(RUNTIME_ASSETS, path.join(DIST_APP, 'assets', 'runtime'), { recursive: true });
+  try {
+    await fs.copyFile(path.join(STANDALONE_ROOT, 'dist', 'coverage.json'), path.join(DIST_APP, 'coverage.json'));
+  } catch (error) {
+    if (error.code !== 'ENOENT') throw error;
+  }
   for (const notice of ['LICENSE', 'THIRD_PARTY_NOTICES.md']) {
     try {
       await fs.copyFile(path.join(REPO_ROOT, notice), path.join(DIST_APP, notice));
@@ -208,13 +306,17 @@ exec "$app_root/bin/pet-ark" --assets "$app_root/assets/runtime" "$@"
     }
   }
   await fs.writeFile(path.join(DIST_APP, 'manifest.json'), `${JSON.stringify({
-    schema_version: 1,
+    schema_version: 2,
     executable: 'pet-ark',
     native_binary: 'bin/pet-ark',
     character_registry: 'characters/registry.json',
     runtime_assets: 'assets/runtime',
+    coverage: 'coverage.json',
     platform: 'linux-wayland',
   }, null, 2)}\n`);
+  await copyDirectory(RUNTIME_ASSETS, DIST_CHARACTERS);
+  await syncDistMetadata();
+  await validatePackagedRegistry();
   console.log(`packaged ${path.relative(REPO_ROOT, DIST_APP)}`);
 }
 
@@ -226,6 +328,11 @@ async function main() {
   }
   switch (command) {
     case 'build':
+      if (option(args, '--character')) await prepareAssets(args);
+      await make('build', args);
+      break;
+    case 'build-all':
+      await prepareAll(args);
       await make('build', args);
       break;
     case 'test':
@@ -234,7 +341,21 @@ async function main() {
     case 'validate':
       await make('test', args);
       await run(process.execPath, ['shared/image-processing/validate-generated-manifest.mjs']);
-      await validateAssets();
+      if (option(args, '--character')) {
+        const id = option(args, '--character');
+        const variant = option(args, '--variant', option(args, '--skin', 'default'));
+        await run(process.execPath, [
+          'shared/image-processing/validate-standalone-coverage.mjs',
+          ...forwarded(args, ['--character', '--variant', '--skin']),
+          '--write', `standalone/dist/manifests/coverage-${filenamePart(id)}-${filenamePart(variant)}.json`,
+        ]);
+      }
+      await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs']);
+      break;
+    case 'validate-all':
+      await make('test', args);
+      await run(process.execPath, ['shared/image-processing/validate-generated-manifest.mjs']);
+      await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs', '--check-accounted', '--require-complete']);
       break;
     case 'assets':
       await prepareAssets(args);
@@ -245,7 +366,8 @@ async function main() {
     case 'dev': {
       await make('build', args);
       const character = option(args, '--character', 'amiya');
-      await run(BUILD_BINARY, ['--assets', RUNTIME_ASSETS, '--character', character, ...passthroughArgs(args)], {
+      const skin = option(args, '--variant', option(args, '--skin'));
+      await run(BUILD_BINARY, ['--assets', RUNTIME_ASSETS, '--character', character, ...(skin ? ['--skin', skin] : []), ...passthroughArgs(args)], {
         cwd: REPO_ROOT,
         env: {
           ...process.env,
