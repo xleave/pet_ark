@@ -290,16 +290,18 @@ function applyAnimation(skeleton, state, animationName, time) {
   skeleton.updateWorldTransform();
 }
 
-function measureSkeleton(spine, skeletonData) {
+function measureSkeleton(spine, skeletonData, config) {
   const skeleton = new spine.Skeleton(skeletonData);
   const state = new spine.AnimationState(new spine.AnimationStateData(skeletonData));
   const bounds = { minX: Infinity, maxX: -Infinity, minY: Infinity, maxY: -Infinity };
   applyAnimation(skeleton, state, null, 0);
   extendBounds(bounds, visibleGeometry(spine, skeleton));
   for (const animation of skeletonData.animations) {
-    const sampleCount = animation.duration === 0 ? 1 : Math.max(2, Math.min(6, Math.ceil(animation.duration * 3)));
-    for (let sample = 0; sample < sampleCount; sample++) {
-      const time = sampleCount === 1 ? 0 : animation.duration * sample / sampleCount;
+    const frameCount = animation.duration === 0
+      ? 1
+      : Math.max(2, Math.min(config.maxFrames, Math.ceil(animation.duration * config.fps)));
+    for (let frame = 0; frame < frameCount; frame++) {
+      const time = frameCount === 1 ? 0 : animation.duration * frame / frameCount;
       applyAnimation(skeleton, state, animation.name, time);
       extendBounds(bounds, visibleGeometry(spine, skeleton));
     }
@@ -479,7 +481,7 @@ async function exportVariant(spine, { character, variant }, config) {
   const manifestPath = path.join(outputDir, 'manifest.json');
   await fs.mkdir(outputDir, { recursive: true });
   const previous = await readJsonIfPresent(manifestPath);
-  const bounds = measureSkeleton(spine, skeletonData);
+  const bounds = measureSkeleton(spine, skeletonData, config);
   const transform = renderTransform(bounds, config.width, config.height);
   const manifest = {
     schema_version: 2,
