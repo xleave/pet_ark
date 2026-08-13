@@ -1,11 +1,13 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "sequences": [
     {
       "character": "amiya",
+      "variant": "default",
+      "skin": "default",
       "animation": "idle-to-rest",
-      "source_frame_a": "standalone/assets/cleaned/amiya/relax/000.png",
-      "source_frame_b": "standalone/assets/cleaned/amiya/sit/005.png",
+      "source_frame_a": "standalone/assets/cleaned/amiya/default/relax/000.png",
+      "source_frame_b": "standalone/assets/cleaned/amiya/default/sit/005.png",
       "generated_frames": [
         "standalone/assets/generated/amiya/idle-to-rest/001-rejected.png"
       ],
@@ -13,6 +15,31 @@
       "review": "Rejected: the image2 result changed line weight and proportions, synthesized lettering, returned an opaque checkerboard, and did not preserve the 384x448 ground registration. The original Spine Sit transition is continuous and remains the runtime source.",
       "generator": "built-in image2 image-to-image",
       "generated_on": "2026-08-12"
+    },
+    {
+      "character": "amiya",
+      "variant": "default",
+      "skin": "default",
+      "animation": "sleep",
+      "source_name": "sleep",
+      "insert_after": "000.png",
+      "source_frame_a": "standalone/assets/cleaned/amiya/default/sleep/000.png",
+      "source_frame_b": "standalone/assets/cleaned/amiya/default/sleep/001.png",
+      "generated_frames": [
+        "standalone/assets/generated/amiya/default/sleep/000-001-midpoint.png"
+      ],
+      "accepted": true,
+      "reason": "Accepted after visual review and pixel QA: the optical-flow midpoint preserves Amiya's face, ears, hair, outfit, accessories, proportions, palette, transparent background, and exact 256x300 ground registration. It adds no text, limbs, shadows, or identity changes. Its bounds stay within the two endpoint registrations, all fully transparent pixels have RGB zero, and it is inserted between sleep source frames 000 and 001 in the runtime atlas.",
+      "generator": "ffmpeg 6.1 minterpolate 50% optical-flow midpoint (MCI, AOBMC, bidirectional motion estimation, variable-size block motion compensation)",
+      "generated_on": "2026-08-12",
+      "runtime_usage": [
+        {
+          "manifest": "standalone/assets/runtime/amiya/default/manifest.json",
+          "state": "sleep",
+          "source": "standalone/assets/generated/amiya/default/sleep/000-001-midpoint.png",
+          "insert_after": "000.png"
+        }
+      ]
     }
   ]
 }

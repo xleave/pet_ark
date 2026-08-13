@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "amiya",
+  "character_name": "Amiya",
+  "localized_name": "阿米娅",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/amiya/default",
+  "source_page": "https://prts.wiki/w/%E9%98%BF%E7%B1%B3%E5%A8%85",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/meta.json",
+    "model": "defaultskin/build/build_char_002_amiya",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/defaultskin/build/build_char_002_amiya.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/defaultskin/build/build_char_002_amiya.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/defaultskin/build/build_char_002_amiya.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 1.1333333253860474
+    },
+    {
+      "name": "Relax",
+      "duration": 1
+    },
+    {
+      "name": "Sit",
+      "duration": 8
+    },
+    {
+      "name": "Sleep",
+      "duration": 3
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/amiya/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/amiya/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.1333333253860474,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/amiya/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/amiya/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/amiya/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/amiya/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -275.20718,
+      "maxX": 197.65878,
+      "minY": -96.18749,
+      "maxY": 450.26764
+    },
+    "scale": 0.3722,
+    "x_offset": 110.4317,
+    "y_offset": 180.19916,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T02:39:34.013Z"
+}
