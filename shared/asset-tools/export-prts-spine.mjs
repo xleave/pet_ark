@@ -3,6 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL, fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
+import { spawn } from 'node:child_process';
 
 const require = createRequire(import.meta.url);
 const sharp = require('sharp');
@@ -80,6 +81,134 @@ async function mapBounded(values, concurrency, work) {
     }
   }
   await Promise.all(Array.from({ length: Math.min(concurrency, values.length) }, worker));
+  return failures;
+}
+
+async function removeVariantPartials({ character, variant }) {
+  const outputDir = path.join(
+    REPO_ROOT,
+    'standalone/assets/cleaned',
+    character.character_id,
+    variant.variant_id,
+  );
+  let entries;
+  try {
+    entries = await fs.readdir(outputDir, { withFileTypes: true });
+  } catch (error) {
+    if (error.code === 'ENOENT') return;
+    throw error;
+  }
+  await Promise.all(entries
+    .filter((entry) => entry.isDirectory() && entry.name.includes('.partial-'))
+    .map((entry) => fs.rm(path.join(outputDir, entry.name), { recursive: true, force: true })));
+}
+
+function workerArguments(job, config, attempt) {
+  const childArgs = [
+    fileURLToPath(import.meta.url),
+    '--worker',
+    '--character', characterId(job),
+    '--variant', job.variant.variant_id,
+    '--width', String(config.width),
+    '--height', String(config.height),
+    '--fps', String(config.fps),
+    '--max-frames', String(config.maxFrames),
+  ];
+  const animation = argument('--animation');
+  if (animation) childArgs.push('--animation', animation);
+  if (args.includes('--inspect')) childArgs.push('--inspect');
+  // A retry resumes already completed atomic animation directories.
+  if (attempt === 1 && args.includes('--force')) childArgs.push('--force');
+  return childArgs;
+}
+
+function characterId(job) {
+  return job.character.character_id;
+}
+
+function spawnWorker(job, config, attempt, children) {
+  return new Promise((resolve, reject) => {
+    const label = `${characterId(job)}/${job.variant.variant_id}`;
+    const child = spawn(process.execPath, workerArguments(job, config, attempt), {
+      cwd: REPO_ROOT,
+      stdio: 'inherit',
+      env: {
+        ...process.env,
+        UV_THREADPOOL_SIZE: '1',
+        VIPS_CONCURRENCY: '1',
+      },
+    });
+    children.add(child);
+    child.once('error', (error) => {
+      children.delete(child);
+      reject(new Error(`${label} worker could not start: ${error.message}`));
+    });
+    child.once('close', (code, signal) => {
+      children.delete(child);
+      if (code === 0) resolve();
+      else reject(new Error(`${label} worker exited ${signal ? `on ${signal}` : `with code ${code}`}`));
+    });
+  });
+}
+
+async function supervise(jobs, config, concurrency) {
+  const retries = positiveInteger('--retries', 2, 5);
+  const children = new Set();
+  const failures = [];
+  let cursor = 0;
+  let completed = 0;
+
+  const stopChildren = (signal) => {
+    for (const child of children) child.kill(signal);
+  };
+  const onInterrupt = () => stopChildren('SIGTERM');
+  const onTerminate = () => stopChildren('SIGTERM');
+  process.once('SIGINT', onInterrupt);
+  process.once('SIGTERM', onTerminate);
+
+  async function supervisorWorker() {
+    while (cursor < jobs.length) {
+      const job = jobs[cursor++];
+      const label = `${characterId(job)}/${job.variant.variant_id}`;
+      let lastError;
+      await removeVariantPartials(job);
+      for (let attempt = 1; attempt <= retries + 1; attempt++) {
+        try {
+          console.log(`[worker ${attempt}/${retries + 1}] ${label}`);
+          await spawnWorker(job, config, attempt, children);
+          lastError = null;
+          break;
+        } catch (error) {
+          lastError = error;
+          await removeVariantPartials(job);
+          console.error(`worker failure ${attempt}/${retries + 1}: ${error.message}`);
+        }
+      }
+      if (lastError) failures.push({
+        character: characterId(job),
+        variant: job.variant.variant_id,
+        reason: lastError.message,
+      });
+      completed++;
+      console.log(`supervisor progress ${completed}/${jobs.length}, failures=${failures.length}`);
+    }
+  }
+
+  await Promise.all(Array.from({ length: Math.min(concurrency, jobs.length) }, supervisorWorker));
+  process.removeListener('SIGINT', onInterrupt);
+  process.removeListener('SIGTERM', onTerminate);
+
+  const reportPath = path.join(REPO_ROOT, '.cache/prts-spine/last-export-report.json');
+  await fs.mkdir(path.dirname(reportPath), { recursive: true });
+  await fs.writeFile(reportPath, `${JSON.stringify({
+    generated_at: new Date().toISOString(),
+    requested_variants: jobs.length,
+    completed_variants: jobs.length - failures.length,
+    failed_variants: failures.length,
+    concurrency,
+    retries,
+    failures,
+  }, null, 2)}\n`);
   return failures;
 }
 
@@ -222,7 +351,7 @@ function textureDefinitions(texturePages) {
   return definitions;
 }
 
-function renderFrameElements(spine, skeleton, texturePages, width, transform, frame, firstTriangleId) {
+function renderFrameElements(spine, skeleton, texturePages, width, height, transform, frame, firstTriangleId) {
   const project = (x, y) => [
     frame * width + transform.xOffset + x * transform.scale,
     transform.yOffset - y * transform.scale,
@@ -241,7 +370,25 @@ function renderFrameElements(spine, skeleton, texturePages, width, transform, fr
       const source = indices.map((vertex) => [uvs[vertex * 2] * page.width, uvs[vertex * 2 + 1] * page.height]);
       const destination = indices.map((vertex) => project(vertices[vertex * 2], vertices[vertex * 2 + 1]));
       const matrix = affine(source, destination);
-      if (!matrix || destination.some(([x, y]) => !Number.isFinite(x) || !Number.isFinite(y))) continue;
+      const invalidDestination = destination.some(([x, y]) => (
+        !Number.isFinite(x)
+        || !Number.isFinite(y)
+        || Math.abs(x - frame * width) > width * 64
+        || Math.abs(y) > height * 64
+      ));
+      const outsideCanvas = destination.every(([x]) => x < frame * width)
+        || destination.every(([x]) => x > (frame + 1) * width)
+        || destination.every(([, y]) => y < 0)
+        || destination.every(([, y]) => y > height);
+      const determinant = matrix ? matrix[0] * matrix[3] - matrix[1] * matrix[2] : 0;
+      if (
+        !matrix
+        || invalidDestination
+        || outsideCanvas
+        || !Number.isFinite(determinant)
+        || Math.abs(determinant) < 0.00001
+        || matrix.some((value) => !Number.isFinite(value) || Math.abs(value) > 100000)
+      ) continue;
       const clipId = `triangle-${triangleId++}`;
       definitions.push(`<clipPath id="${clipId}" clipPathUnits="userSpaceOnUse"><polygon points="${destination.map(point).join(' ')}"/></clipPath>`);
       layers.push(`<g clip-path="url(#${clipId})"><use href="#${page.svgId}" transform="matrix(${matrix.map(rounded).join(' ')})" opacity="${rounded(opacity)}"/></g>`);
@@ -427,34 +574,53 @@ async function exportVariant(spine, { character, variant }, config) {
 
     if (!canResume) {
       const temporaryDir = await fs.mkdtemp(`${animationDir}.partial-`);
-      for (let frame = 0; frame < frameCount; frame++) {
-        const time = frameCount === 1 ? 0 : animation.duration * frame / frameCount;
-        applyAnimation(skeleton, state, animation.name, time);
-        const elements = renderFrameElements(
-          spine,
-          skeleton,
-          pages,
-          config.width,
-          transform,
-          0,
-          0,
-        );
-        const definitions = [...textureDefinitions(pages), ...elements.definitions];
-        const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${config.width}" height="${config.height}" viewBox="0 0 ${config.width} ${config.height}"><defs>${definitions.join('')}</defs>${elements.layers.join('')}</svg>`;
-        const { data, info } = await sharp(Buffer.from(svg)).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
-        if (info.width !== config.width || info.height !== config.height || info.channels !== 4) {
-          throw new Error(`Unexpected rasterized frame format: ${info.width}x${info.height}x${info.channels}`);
+      try {
+        for (let frame = 0; frame < frameCount; frame++) {
+          const time = frameCount === 1 ? 0 : animation.duration * frame / frameCount;
+          applyAnimation(skeleton, state, animation.name, time);
+          const elements = renderFrameElements(
+            spine,
+            skeleton,
+            pages,
+            config.width,
+            config.height,
+            transform,
+            0,
+            0,
+          );
+          const definitions = [...textureDefinitions(pages), ...elements.definitions];
+          const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${config.width}" height="${config.height}" viewBox="0 0 ${config.width} ${config.height}"><defs>${definitions.join('')}</defs>${elements.layers.join('')}</svg>`;
+          let rasterized;
+          try {
+            rasterized = await sharp(Buffer.from(svg)).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+          } catch (error) {
+            const diagnosticsDir = path.join(REPO_ROOT, '.cache/prts-spine/failed-svg');
+            await fs.mkdir(diagnosticsDir, { recursive: true });
+            const diagnosticsPath = path.join(
+              diagnosticsDir,
+              `${character.character_id}-${variant.variant_id}-${safeName}-${frame}.svg`,
+            );
+            await fs.writeFile(diagnosticsPath, svg);
+            throw new Error(`${animation.name} frame ${frame}: ${error.message}; diagnostic ${path.relative(REPO_ROOT, diagnosticsPath)}`);
+          }
+          const { data, info } = rasterized;
+          if (info.width !== config.width || info.height !== config.height || info.channels !== 4) {
+            throw new Error(`Unexpected rasterized frame format: ${info.width}x${info.height}x${info.channels}`);
+          }
+          const destination = path.join(temporaryDir, `${String(frame).padStart(3, '0')}.png`);
+          await fs.writeFile(destination, await encodeCleanFrame(
+            data,
+            config.width,
+            config.height,
+            info.channels,
+          ));
         }
-        const destination = path.join(temporaryDir, `${String(frame).padStart(3, '0')}.png`);
-        await fs.writeFile(destination, await encodeCleanFrame(
-          data,
-          config.width,
-          config.height,
-          info.channels,
-        ));
+        await fs.rm(animationDir, { recursive: true, force: true });
+        await fs.rename(temporaryDir, animationDir);
+      } catch (error) {
+        await fs.rm(temporaryDir, { recursive: true, force: true });
+        throw error;
       }
-      await fs.rm(animationDir, { recursive: true, force: true });
-      await fs.rename(temporaryDir, animationDir);
       console.log(`rendered ${character.character_id}/${variant.variant_id}:${animation.name} (${frameCount} frames)`);
     } else {
       console.log(`resumed ${character.character_id}/${variant.variant_id}:${animation.name} (${frameCount} frames)`);
@@ -481,8 +647,18 @@ const config = {
   maxFrames: positiveInteger('--max-frames', 8, 120),
 };
 const concurrency = positiveInteger('--concurrency', 2, 8);
-const spine = await loadPrtsRuntime();
-console.log(`exporting ${jobs.length} standalone variant(s), concurrency=${concurrency}, canvas=${config.width}x${config.height}`);
-const failures = await mapBounded(jobs, concurrency, (job) => exportVariant(spine, job, config));
-console.log(`Spine export complete: ${jobs.length - failures.length}/${jobs.length}`);
-if (failures.length) process.exitCode = 1;
+if (!args.includes('--worker') && jobs.length > 1) {
+  console.log(`supervising ${jobs.length} isolated variant worker(s), concurrency=${concurrency}, canvas=${config.width}x${config.height}`);
+  const failures = await supervise(jobs, config, concurrency);
+  console.log(`Spine export complete: ${jobs.length - failures.length}/${jobs.length}`);
+  if (failures.length) process.exitCode = 1;
+} else {
+  if (jobs.length !== 1) throw new Error('An isolated export worker must select exactly one variant');
+  sharp.cache({ memory: 32, files: 0, items: 16 });
+  sharp.concurrency(1);
+  const spine = await loadPrtsRuntime();
+  console.log(`exporting ${jobs.length} standalone variant(s), isolated=${args.includes('--worker')}, canvas=${config.width}x${config.height}`);
+  const failures = await mapBounded(jobs, 1, (job) => exportVariant(spine, job, config));
+  console.log(`Spine export complete: ${jobs.length - failures.length}/${jobs.length}`);
+  if (failures.length) process.exitCode = 1;
+}
