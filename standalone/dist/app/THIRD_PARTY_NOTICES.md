@@ -24,18 +24,20 @@ Codex registry 的公开来源于 2026-08-12 获取：
 
 ## PRTS / Arknights Spine assets used by standalone
 
-standalone 第一阶段包含阿米娅公开基建 Q 版 Spine 资源及由其确定性导出的帧和运行时 spritesheet：
+standalone 的 2026-08-12 source-of-truth 枚举 425 个正式可玩角色的默认基建 Q 版外观和 508 个命名皮肤，共 933 个公开 `char_spine` asset set：
 
-- PRTS 角色页：<https://prts.wiki/w/阿米娅>
-- PRTS 公开资源入口：<https://torappu.prts.wiki/assets/char_spine/char_002_amiya/meta.json>
+- PRTS 干员一览：<https://prts.wiki/w/干员一览>
+- PRTS 公开资源 URL 模式：`https://torappu.prts.wiki/assets/char_spine/{game_key}/meta.json`
+- alter 分组审计：<https://github.com/Kengxxiao/ArknightsGameData/blob/master/zh_CN/gamedata/excel/char_meta_table.json>
 - 获取日期：2026-08-12
-- 逐文件来源与处理状态：`shared/character-data/sources.json`
+- 角色、皮肤与逐 asset set 来源：`shared/character-data/standalone-roster.json`
+- 来源范围和统计：`shared/character-data/standalone-sources.json`
 
-`standalone/assets/source/amiya/` 中的 `.skel`、`.atlas`、纹理和元数据是来源素材；`cleaned/`、`animations/` 与 `runtime/` 是它们的处理产物。它们不是本项目 MIT 代码的一部分，不得因仓库的 MIT License 被理解为获得额外的游戏素材授权。
+`standalone/assets/source/<character>/<variant>/` 中的 `.skel`、`.atlas`、纹理和元数据是来源素材；`cleaned/`、`animations/` 与 `runtime/` 是它们的处理产物。它们不是本项目 MIT 代码的一部分，不得因仓库的 MIT License 被理解为获得额外的游戏素材授权。
 
 导出工具会在本地缓存中读取 PRTS Spine viewer source map 内的运行时代码来解释 Spine 3.8 数据；缓存被 `.gitignore` 排除，不随仓库分发。
 
-`standalone/assets/generated/` 单独保存 image2 补帧候选。当前唯一候选被明确标记为 rejected，不进入运行时资源。
+`standalone/assets/generated/` 单独保存 image2/等效 image-to-image 补帧及其来源关系。当前 manifest 记录 1 个 accepted 和 1 个 rejected 序列：accepted 的双向光流 midpoint 用于阿米娅默认外观 `sleep` runtime，rejected 候选不进入运行时资源。两者都不会标记为原始游戏素材。
 
 ## Wayland protocols
 
