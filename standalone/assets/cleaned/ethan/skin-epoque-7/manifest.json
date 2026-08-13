@@ -62,7 +62,13 @@
       "duration": 2.5,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/ethan/skin-epoque-7/interact"
+      "path": "standalone/assets/cleaned/ethan/skin-epoque-7/interact",
+      "intentional_blank_frames": [
+        {
+          "frame": 2,
+          "reason": "The source Interact animation intentionally inserts a fully invisible camouflage beat between fade-out and reappearance."
+        }
+      ]
     },
     "move": {
       "source_animation": "Move",

@@ -72,7 +72,21 @@
       "duration": 10.666666984558105,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/ethan/default/relax"
+      "path": "standalone/assets/cleaned/ethan/default/relax",
+      "intentional_blank_frames": [
+        {
+          "frame": 5,
+          "reason": "The source Relax animation deliberately completes Ethan's camouflage fade; the character is fully invisible."
+        },
+        {
+          "frame": 6,
+          "reason": "The source Relax animation deliberately holds Ethan fully invisible during camouflage."
+        },
+        {
+          "frame": 7,
+          "reason": "The source Relax animation deliberately holds Ethan fully invisible through the sampled ending."
+        }
+      ]
     },
     "sit": {
       "source_animation": "Sit",
