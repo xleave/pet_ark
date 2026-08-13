@@ -1,0 +1,581 @@
+{
+  "schemaVersion": 2,
+  "character": {
+    "id": "haze",
+    "name": "Haze",
+    "localizedName": "夜烟",
+    "movement": {
+      "walkPixelsPerSecond": 68,
+      "runPixelsPerSecond": 116,
+      "idleMinSeconds": 4,
+      "idleMaxSeconds": 11,
+      "restAfterSeconds": 75
+    }
+  },
+  "variant": {
+    "id": "default",
+    "type": "base_form",
+    "skinId": null,
+    "name": "默认",
+    "localizedName": "默认",
+    "defaultScale": 1,
+    "mirrorRules": {
+      "strategy": "safe-mirror",
+      "independentDirections": false
+    },
+    "fallbackVariantId": null,
+    "stateFallbacks": {}
+  },
+  "frameSize": {
+    "width": 192,
+    "height": 224
+  },
+  "sources": {
+    "relax": {
+      "sheet": "relax.png",
+      "frames": 8,
+      "sourceFrames": 8,
+      "generatedFrames": 0,
+      "columns": 8,
+      "rows": 1,
+      "hitboxes": [
+        {
+          "x": 54,
+          "y": 25,
+          "width": 97,
+          "height": 153
+        },
+        {
+          "x": 53,
+          "y": 25,
+          "width": 98,
+          "height": 153
+        },
+        {
+          "x": 53,
+          "y": 26,
+          "width": 98,
+          "height": 152
+        },
+        {
+          "x": 53,
+          "y": 26,
+          "width": 98,
+          "height": 152
+        },
+        {
+          "x": 53,
+          "y": 26,
+          "width": 98,
+          "height": 157
+        },
+        {
+          "x": 53,
+          "y": 26,
+          "width": 98,
+          "height": 154
+        },
+        {
+          "x": 53,
+          "y": 26,
+          "width": 98,
+          "height": 152
+        },
+        {
+          "x": 43,
+          "y": 25,
+          "width": 108,
+          "height": 153
+        }
+      ]
+    },
+    "move": {
+      "sheet": "move.png",
+      "frames": 8,
+      "sourceFrames": 8,
+      "generatedFrames": 0,
+      "columns": 8,
+      "rows": 1,
+      "hitboxes": [
+        {
+          "x": 58,
+          "y": 23,
+          "width": 98,
+          "height": 155
+        },
+        {
+          "x": 58,
+          "y": 22,
+          "width": 98,
+          "height": 155
+        },
+        {
+          "x": 49,
+          "y": 23,
+          "width": 107,
+          "height": 154
+        },
+        {
+          "x": 47,
+          "y": 24,
+          "width": 109,
+          "height": 153
+        },
+        {
+          "x": 50,
+          "y": 23,
+          "width": 106,
+          "height": 155
+        },
+        {
+          "x": 54,
+          "y": 22,
+          "width": 102,
+          "height": 156
+        },
+        {
+          "x": 58,
+          "y": 23,
+          "width": 98,
+          "height": 155
+        },
+        {
+          "x": 58,
+          "y": 24,
+          "width": 98,
+          "height": 154
+        }
+      ]
+    },
+    "interact": {
+      "sheet": "interact.png",
+      "frames": 8,
+      "sourceFrames": 8,
+      "generatedFrames": 0,
+      "columns": 8,
+      "rows": 1,
+      "hitboxes": [
+        {
+          "x": 54,
+          "y": 25,
+          "width": 97,
+          "height": 153
+        },
+        {
+          "x": 45,
+          "y": 24,
+          "width": 109,
+          "height": 155
+        },
+        {
+          "x": 49,
+          "y": 22,
+          "width": 99,
+          "height": 157
+        },
+        {
+          "x": 46,
+          "y": 25,
+          "width": 96,
+          "height": 154
+        },
+        {
+          "x": 39,
+          "y": 32,
+          "width": 99,
+          "height": 146
+        },
+        {
+          "x": 35,
+          "y": 34,
+          "width": 103,
+          "height": 144
+        },
+        {
+          "x": 39,
+          "y": 28,
+          "width": 99,
+          "height": 150
+        },
+        {
+          "x": 46,
+          "y": 24,
+          "width": 100,
+          "height": 154
+        }
+      ]
+    },
+    "sit": {
+      "sheet": "sit.png",
+      "frames": 8,
+      "sourceFrames": 8,
+      "generatedFrames": 0,
+      "columns": 8,
+      "rows": 1,
+      "hitboxes": [
+        {
+          "x": 53,
+          "y": 68,
+          "width": 97,
+          "height": 147
+        },
+        {
+          "x": 55,
+          "y": 68,
+          "width": 97,
+          "height": 148
+        },
+        {
+          "x": 56,
+          "y": 67,
+          "width": 98,
+          "height": 149
+        },
+        {
+          "x": 54,
+          "y": 68,
+          "width": 98,
+          "height": 148
+        },
+        {
+          "x": 53,
+          "y": 68,
+          "width": 97,
+          "height": 147
+        },
+        {
+          "x": 55,
+          "y": 68,
+          "width": 97,
+          "height": 148
+        },
+        {
+          "x": 56,
+          "y": 67,
+          "width": 98,
+          "height": 149
+        },
+        {
+          "x": 54,
+          "y": 68,
+          "width": 98,
+          "height": 148
+        }
+      ]
+    },
+    "sleep": {
+      "sheet": "sleep.png",
+      "frames": 8,
+      "sourceFrames": 8,
+      "generatedFrames": 0,
+      "columns": 8,
+      "rows": 1,
+      "hitboxes": [
+        {
+          "x": 8,
+          "y": 95,
+          "width": 164,
+          "height": 89
+        },
+        {
+          "x": 8,
+          "y": 94,
+          "width": 158,
+          "height": 90
+        },
+        {
+          "x": 10,
+          "y": 94,
+          "width": 156,
+          "height": 91
+        },
+        {
+          "x": 11,
+          "y": 94,
+          "width": 161,
+          "height": 90
+        },
+        {
+          "x": 8,
+          "y": 95,
+          "width": 176,
+          "height": 89
+        },
+        {
+          "x": 8,
+          "y": 94,
+          "width": 165,
+          "height": 90
+        },
+        {
+          "x": 10,
+          "y": 94,
+          "width": 161,
+          "height": 91
+        },
+        {
+          "x": 11,
+          "y": 94,
+          "width": 168,
+          "height": 90
+        }
+      ]
+    }
+  },
+  "animations": {
+    "idle": {
+      "source": "relax",
+      "sheet": "relax.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 12,
+      "loop": true,
+      "mirror": false,
+      "holdLast": false,
+      "next": null,
+      "generatedFrames": []
+    },
+    "walk-left": {
+      "source": "move",
+      "sheet": "move.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 12,
+      "loop": true,
+      "mirror": true,
+      "holdLast": false,
+      "next": null,
+      "generatedFrames": []
+    },
+    "walk-right": {
+      "source": "move",
+      "sheet": "move.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 12,
+      "loop": true,
+      "mirror": false,
+      "holdLast": false,
+      "next": null,
+      "generatedFrames": []
+    },
+    "run-left": {
+      "source": "move",
+      "sheet": "move.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 18,
+      "loop": true,
+      "mirror": true,
+      "holdLast": false,
+      "next": null,
+      "generatedFrames": []
+    },
+    "run-right": {
+      "source": "move",
+      "sheet": "move.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 18,
+      "loop": true,
+      "mirror": false,
+      "holdLast": false,
+      "next": null,
+      "generatedFrames": []
+    },
+    "clicked": {
+      "source": "interact",
+      "sheet": "interact.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 12,
+      "loop": false,
+      "mirror": false,
+      "holdLast": false,
+      "next": "idle",
+      "generatedFrames": []
+    },
+    "picked-up": {
+      "source": "sit",
+      "sheet": "sit.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fps": 12,
+      "loop": false,
+      "mirror": false,
+      "holdLast": false,
+      "next": "dragging",
+      "generatedFrames": []
+    },
+    "dragging": {
+      "source": "sit",
+      "sheet": "sit.png",
+      "frameOrder": [
+        5,
+        6,
+        7
+      ],
+      "fps": 6,
+      "loop": true,
+      "mirror": false,
+      "holdLast": false,
+      "next": null,
+      "generatedFrames": []
+    },
+    "dropped": {
+      "source": "sit",
+      "sheet": "sit.png",
+      "frameOrder": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "fps": 12,
+      "loop": false,
+      "mirror": false,
+      "holdLast": false,
+      "next": "idle",
+      "generatedFrames": []
+    },
+    "rest": {
+      "source": "sit",
+      "sheet": "sit.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 8,
+      "loop": false,
+      "mirror": false,
+      "holdLast": true,
+      "next": "sleep",
+      "generatedFrames": []
+    },
+    "sleep": {
+      "source": "sleep",
+      "sheet": "sleep.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 10,
+      "loop": true,
+      "mirror": false,
+      "holdLast": false,
+      "next": null,
+      "generatedFrames": []
+    },
+    "wake": {
+      "source": "sleep",
+      "sheet": "sleep.png",
+      "frameOrder": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "fps": 12,
+      "loop": false,
+      "mirror": false,
+      "holdLast": false,
+      "next": "idle",
+      "generatedFrames": []
+    },
+    "special": {
+      "source": "interact",
+      "sheet": "interact.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 12,
+      "loop": false,
+      "mirror": false,
+      "holdLast": false,
+      "next": "idle",
+      "generatedFrames": []
+    }
+  },
+  "provenance": {
+    "generatedFrames": []
+  }
+}
