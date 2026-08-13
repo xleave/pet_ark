@@ -64,9 +64,11 @@ Codex atlas contract 保持不变：
 
 ## Standalone Desktop Pet
 
-Standalone 第一阶段是原生 C / Wayland 客户端，以 `wl_shm` 提交透明像素，不需要 Codex，也不需要 X11 或 XWayland。它优先使用 `wlr-layer-shell` 创建透明 top-layer surface；在没有该协议的 GNOME Wayland 等环境回退到原生 `xdg-shell`。
+Standalone 是原生 C / Wayland 客户端，以 `wl_shm` 提交透明像素，不需要 Codex，也不需要 X11 或 XWayland。它优先使用 `wlr-layer-shell` 创建透明 top-layer surface；在没有该协议的 GNOME Wayland 等环境回退到原生 `xdg-shell`。
 
-已接入角色：**阿米娅**。运行时动作包括：
+2026-08-12 建立的 standalone source-of-truth 包含 **425 个正式可玩角色、425 个默认形象和 508 个皮肤，共 933 个外观变体**。正式 playable alter 是独立角色；皮肤是所属角色的独立外观变体，不会伪装成动画状态。目标清单与来源分别在 `shared/character-data/standalone-roster.json` 和 `shared/character-data/standalone-sources.json`，实际完成度只以 `standalone/dist/coverage.json` 为准；source 已索引或已获取不等同于 runtime 已实现。
+
+每个已构建外观提供统一基础状态，并保留来源动作允许的特殊状态：
 
 - `idle`
 - `walk-left` / `walk-right`
@@ -75,7 +77,15 @@ Standalone 第一阶段是原生 C / Wayland 客户端，以 `wl_shm` 提交透�
 - `picked-up` / `dragging` / `dropped`
 - `rest` / `sleep` / `wake`
 
-桌宠使用真正的行为状态机，而不是循环 GIF。idle 会等待合理时间后选择屏幕内随机目标；movement 完成后回到 idle；一次性交互和 transition 播放结束后才切换；长时间无交互进入 rest/sleep；点击睡眠角色会先 wake。移动系统维护朝向、输出边界、拖动恢复、速度倍率和角色镜像规则。
+桌宠使用真正的行为状态机，而不是循环 GIF。idle 会等待合理时间后选择屏幕内随机目标；movement 完成后回到 idle；一次性交互和 transition 播放结束后才切换；长时间无交互进入 rest/sleep；点击睡眠角色会先 wake。移动系统维护朝向、输出边界、拖动恢复、速度倍率和每个外观的镜像规则。
+
+运行时 registry 按 `character → variants` 建模，启动时可同时指定角色与皮肤：
+
+```bash
+npm run standalone:dev -- --character amiya --skin skin-winter-1
+```
+
+动作解析次序固定为：当前外观精确状态 → 当前外观声明的兼容状态 → 该角色默认外观精确状态 → 默认外观声明的兼容状态。回退必须由 manifest 明确声明，绝不会跨到另一角色，也不会无提示混用错误皮肤。
 
 透明 surface 的 pointer input region 按当前帧 alpha bounds 更新，角色外透明区域不会用完整巨大矩形阻挡桌面。`--click-through` 可将 input region 置空，使用 `SIGUSR1` 恢复。
 
@@ -103,11 +113,12 @@ npm run standalone:dev -- --character amiya -- --no-auto-move --monitor 1
 | `SIGUSR1` | 开关 click-through |
 | `SIGUSR2` | 开关自动移动 |
 | `SIGHUP` | 切换到 registry 中下一个角色 |
+| `SIGRTMIN` | 切换当前角色的下一个可用皮肤 |
 | `SIGINT` / `SIGTERM` | 退出 |
 
 例如 `pkill -USR1 -x pet-ark` 可以在完全 click-through 后恢复输入。
 
-第一阶段的设置入口是启动参数、鼠标控制和进程信号，尚未提供托盘或可视设置面板。角色 registry 已是多角色结构，但当前只接入阿米娅；`SIGHUP` 切换路径需要加入第二个角色后再做实际轮换验收。退出可使用前台 `Ctrl-C`、`SIGTERM`，也会响应 compositor close。
+当前设置入口是启动参数、鼠标控制和进程信号，尚未提供托盘或可视设置面板。切换时只选择已经存在 runtime assets 的角色或皮肤。退出可使用前台 `Ctrl-C`、`SIGTERM`，也会响应 compositor close。
 
 Wayland/niri/KDE/GNOME 的具体实现路径与必须实机检查的项目见 [`docs/wayland.md`](docs/wayland.md)。原生应用已完成严格编译和真实链接且无编译警告；当前自动化环境没有图形 Wayland/niri session，因此不把 build、单元测试或无会话失败路径冒充 niri 实机验证。
 
@@ -124,9 +135,9 @@ standalone/assets/
 └── runtime/      应用加载的 per-animation spritesheet 与 metadata
 ```
 
-阿米娅原始 Spine 动作为 `Default`、`Interact`、`Move`、`Relax`、`Sit`、`Sleep`。导出器将其确定性合成到统一 384 × 448 透明画布，清理 hidden RGB，再按 source animation 生成独立 spritesheet 和逐帧可见 bounds。
+每个外观的 PRTS meta、Spine skeleton、atlas 和 texture 先原样写入 `source/<character>/<variant>/`；导出器再确定性生成透明、地面对齐、hidden RGB 已清零的逐帧 PNG，并按 source animation 生成独立 spritesheet 和逐帧可见 bounds。画布、采样率与最大帧数记录在各自 manifest，不依赖 Codex atlas。
 
-image2 流程已经建立，但不会为了增加帧数无意义生成。当前 `idle-to-rest` 候选因画风、比例、伪文字、透明度和地面配准问题被标记为 rejected；原始 `Sit` 已足够连续，因此没有 AI 生成帧进入 runtime。完整 A/B 源帧、候选路径、日期和评审结论在 `standalone/assets/generated/manifest.json`。
+image2/等效 image-to-image 流程不会为了增加帧数无意义生成。当前 manifest 有 1 个实际采纳序列：阿米娅默认外观 `sleep/000` 与 `sleep/001` 之间的光流 midpoint，经透明度、身份、配色、配件、地面配准和 hidden-RGB 检查后插入 runtime `sleep`；另一个 `idle-to-rest` 候选因画风、比例、伪文字、透明度和地面配准问题被明确 rejected。完整 A/B 源帧、生成器、候选路径、runtime usage、日期和评审结论在 `standalone/assets/generated/manifest.json`。
 
 获取、导出、接受/拒绝规则与新增角色步骤见 [`docs/character-assets.md`](docs/character-assets.md)。
 
@@ -177,7 +188,21 @@ Fedora：
 sudo dnf install gcc make pkgconf-pkg-config wayland-devel libpng-devel
 ```
 
-构建、测试、验证、打包：
+单角色默认外观或指定皮肤构建：
+
+```bash
+npm run standalone:build -- --character amiya --skin default
+npm run standalone:build -- --character amiya --skin skin-winter-1
+```
+
+全量素材构建使用有界并发；只有 425 个角色和 933 个外观全部进入 runtime 后才会通过完整性门禁：
+
+```bash
+npm run standalone:build-all -- --concurrency 4
+npm run standalone:validate-all
+```
+
+原生应用构建、测试、当前覆盖验证与打包：
 
 ```bash
 npm run standalone:build
@@ -188,16 +213,17 @@ npm run standalone:package
 
 打包输出位于 `standalone/dist/app/`，包含原生可执行文件、独立 runtime assets、角色 registry、manifest、license 和 third-party notices。
 
-重新整理已有素材：
+重新整理已有素材，可指定默认外观或皮肤：
 
 ```bash
-npm run standalone:assets -- --character amiya
+npm run standalone:assets -- --character amiya --skin default
+npm run standalone:assets -- --character amiya --skin skin-winter-1
 ```
 
 需要从记录中的 PRTS URL 重新获取并导出时显式加入：
 
 ```bash
-npm run standalone:assets -- --character amiya --refresh-source
+npm run standalone:assets -- --character amiya --skin skin-winter-1 --refresh-source
 ```
 
 该步骤需要网络；普通 build/test/validate 使用仓库内已有资源，不依赖手工下载。
@@ -208,11 +234,14 @@ npm run standalone:assets -- --character amiya --refresh-source
 
 - `shared/character-data/codex-sources.json`：完整 Codex roster 的范围、来源、日期和 normalization 统计。
 - `shared/character-data/operators.json`：425 条可玩角色定义；Priestess 回归定义单独保存在 `codex/characters/`。
-- `shared/character-data/sources.json`：跨产线总索引和 standalone 阿米娅素材记录。
-- `standalone/assets/source/amiya/retrieval.json`：阿米娅单次获取记录。
+- `shared/character-data/standalone-roster.json`：425 个角色、425 个默认形象、508 个皮肤及其 PRTS asset set。
+- `shared/character-data/standalone-sources.json`：standalone 来源、范围、日期和机器统计。
+- `shared/character-data/sources.json`：跨产线索引；保留早期逐角色来源记录。
+- `standalone/assets/source/<character>/<variant>/retrieval.json`：每个外观的单次获取记录。
 - `standalone/assets/generated/manifest.json`：所有 image2 序列的来源帧、生成帧和 accepted/rejected 结论。
+- `standalone/dist/coverage.json`：expected / implemented / missing / blocked 的角色、外观与皮肤覆盖结果。
 
-Codex roster 优先用鹰角网络官方干员档案核对；在官方页面不足以形成机器列表时，使用 PRTS、公开 game-data mirror 和公开 avatar index 做索引与视觉核对。Standalone 阿米娅第一阶段资源来自 PRTS 角色页可访问的公开 Q 版 Spine 资源，获取日期为 2026-08-12。
+Codex roster 优先用鹰角网络官方干员档案核对；在官方页面不足以形成机器列表时，使用 PRTS、公开 game-data mirror 和公开 avatar index 做索引与视觉核对。Standalone roster 以同日 425 条可玩角色记录为身份基线，通过 PRTS 公开 `char_spine` metadata 枚举 933 个可访问的基建 Q 版外观 asset set，并用公开 `char_meta_table.json` 审计正式 alter 分组；获取日期为 2026-08-12。
 
 ## Licensing
 

@@ -13,12 +13,12 @@ pet_ark/
 ├── standalone/
 │   ├── app/                   # Wayland 桌宠入口与窗口/交互实现
 │   ├── runtime/               # 状态机、移动、图像与 Wayland 协议绑定
-│   ├── characters/            # 多角色 registry 与生成的 C 数据
+│   ├── characters/            # character → skin/variant registry 与生成的 C 数据
 │   ├── animations/            # 独立逐动作播放器
-│   ├── assets/                # source → cleaned/generated → runtime
-│   └── dist/                  # 独立应用打包输出
+│   ├── assets/                # source → cleaned/generated/animations → runtime
+│   └── dist/                  # app、characters、registry、manifests、coverage
 ├── shared/
-│   ├── character-data/        # 角色 ID、名称、来源与 Codex roster
+│   ├── character-data/        # 角色 ID、名称、Codex/standalone roster 与来源
 │   ├── asset-tools/           # roster、PRTS 获取/导出、C registry 生成
 │   └── image-processing/      # standalone 图像整理与 manifest 验证
 ├── scripts/                   # 根级命令代理，不承载业务实现
@@ -44,17 +44,21 @@ Codex renderer 使用代码绘制的 SVG/vector primitives。它不读取 standa
 - 读取逐动作 runtime spritesheet 和独立 metadata；
 - 使用 `idle`、移动、交互、抓取、落下、休息、睡眠与 transition 状态机；
 - 在桌面边界内选择随机目标，按角色速度和朝向播放动作；
-- 每个角色通过统一 registry 声明动画、缩放、移动参数和镜像规则；
+- 每个角色通过统一 registry 声明移动参数，并在嵌套 variant 中声明皮肤身份、动画、缩放、镜像与回退规则；
 - 不读取 `pet.json`，也不从 8 × 9 Codex atlas 裁帧。
 
-JSON registry 在构建前转换为 `generated_registry.c`，因此运行时不需要 Node、Sharp 或 JSON parser。增加角色不需要创建新的桌面程序。
+2026-08-12 的 standalone source-of-truth 包含 425 个正式可玩角色、425 个默认形象和 508 个皮肤，共 933 个外观。正式 playable alter 是独立 character，皮肤是所属 character 的 variant。期望范围保存在 `shared/character-data/standalone-roster.json`，实际 runtime coverage 保存在 `standalone/dist/coverage.json`，两者不能混为一谈。
+
+JSON registry 在构建前转换为 `generated_registry.c`，因此运行时不需要 Node、Sharp 或 JSON parser。增加角色或皮肤不需要创建新的桌面程序。启动参数 `--character` 和 `--skin` 选择初始外观；`SIGHUP` 与 `SIGRTMIN` 分别切换到下一个可用角色和当前角色的下一个可用皮肤。
+
+缺失动作的回退由 variant manifest 显式声明，解析顺序是当前 variant 精确状态 → 当前 variant 兼容状态 → 同角色默认 variant 精确状态 → 默认 variant 兼容状态。运行时不会跨角色回退，也不会在缺少声明时静默混用错误皮肤。
 
 ## 真正共享的部分
 
 `shared/` 只保存两条产线都能合理使用的内容：
 
 - 稳定角色 ID、名称与 roster/source metadata；
-- 素材来源获取记录；
+- 默认形象、皮肤 ID、来源 asset set 与获取记录；
 - 通用获取、裁剪、透明像素处理和格式转换工具。
 
 以下内容刻意不共享：
