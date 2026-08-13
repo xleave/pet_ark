@@ -14,7 +14,8 @@
       "accepted": false,
       "review": "Rejected: the image2 result changed line weight and proportions, synthesized lettering, returned an opaque checkerboard, and did not preserve the 384x448 ground registration. The original Spine Sit transition is continuous and remains the runtime source.",
       "generator": "built-in image2 image-to-image",
-      "generated_on": "2026-08-12"
+      "generated_on": "2026-08-12",
+      "generator_kind": "image2"
     },
     {
       "character": "amiya",
@@ -39,7 +40,441 @@
           "source": "standalone/assets/generated/amiya/default/sleep/000-001-midpoint.png",
           "insert_after": "000.png"
         }
-      ]
+      ],
+      "generator_kind": "image2-equivalent"
+    },
+    {
+      "character": "castle-3",
+      "variant": "default",
+      "skin": "default",
+      "animation": "power-down-image2-v1",
+      "source_frame_a": "standalone/assets/cleaned/castle-3/default/relax/000.png",
+      "source_frame_b": "standalone/assets/cleaned/castle-3/default/relax/003.png",
+      "generated_frames": [
+        "standalone/assets/generated/castle-3/default/power-down/image2-rejected-v1.png"
+      ],
+      "accepted": false,
+      "reason": "Rejected: the built-in image2 result was 1161x1354 TrueColor without alpha, redrew the chassis and wheel assembly, changed structural details, introduced pseudo-symbols and an opaque checkerboard background, and did not preserve the required 192x224 ground registration.",
+      "generator": "built-in image2 image-to-image",
+      "generator_kind": "image2",
+      "generated_on": "2026-08-13",
+      "managed_by": "standalone-derived-motion-v1"
+    },
+    {
+      "character": "castle-3",
+      "variant": "default",
+      "skin": "default",
+      "animation": "power-down-midpoint",
+      "source_name": "derived-motion",
+      "source_frame_a": "standalone/assets/generated/castle-3/default/power-down/source-a.png",
+      "source_frame_b": "standalone/assets/generated/castle-3/default/power-down/source-b.png",
+      "generated_frames": [
+        "standalone/assets/generated/castle-3/default/power-down/optical-midpoint.png"
+      ],
+      "accepted": true,
+      "reason": "Accepted after deterministic endpoint QA and pixel validation: the optical-flow midpoint stays within the same character and skin, preserves the complete silhouette and equipment, retains the exact 192x224 transparent canvas and ground registration, contains no hidden RGB or synthetic text, differs from both endpoints, and is used between the two power-down poses.",
+      "generator": "ffmpeg 6.1 minterpolate 50% optical-flow midpoint (MCI, AOBMC, bidirectional motion estimation, variable-size block motion compensation)",
+      "generator_kind": "image2-equivalent",
+      "generated_on": "2026-08-13",
+      "runtime_usage": [
+        {
+          "manifest": "standalone/assets/runtime/castle-3/default/manifest.json",
+          "state": "rest",
+          "source": "standalone/assets/generated/castle-3/default/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        },
+        {
+          "manifest": "standalone/assets/runtime/castle-3/default/manifest.json",
+          "state": "wake",
+          "source": "standalone/assets/generated/castle-3/default/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        }
+      ],
+      "managed_by": "standalone-derived-motion-v1"
+    },
+    {
+      "character": "castle-3",
+      "variant": "skin-summer-1",
+      "skin": "skin-summer-1",
+      "animation": "power-down-midpoint",
+      "source_name": "derived-motion",
+      "source_frame_a": "standalone/assets/generated/castle-3/skin-summer-1/power-down/source-a.png",
+      "source_frame_b": "standalone/assets/generated/castle-3/skin-summer-1/power-down/source-b.png",
+      "generated_frames": [
+        "standalone/assets/generated/castle-3/skin-summer-1/power-down/optical-midpoint.png"
+      ],
+      "accepted": true,
+      "reason": "Accepted after deterministic endpoint QA and pixel validation: the optical-flow midpoint stays within the same character and skin, preserves the complete silhouette and equipment, retains the exact 192x224 transparent canvas and ground registration, contains no hidden RGB or synthetic text, differs from both endpoints, and is used between the two power-down poses.",
+      "generator": "ffmpeg 6.1 minterpolate 50% optical-flow midpoint (MCI, AOBMC, bidirectional motion estimation, variable-size block motion compensation)",
+      "generator_kind": "image2-equivalent",
+      "generated_on": "2026-08-13",
+      "runtime_usage": [
+        {
+          "manifest": "standalone/assets/runtime/castle-3/skin-summer-1/manifest.json",
+          "state": "rest",
+          "source": "standalone/assets/generated/castle-3/skin-summer-1/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        },
+        {
+          "manifest": "standalone/assets/runtime/castle-3/skin-summer-1/manifest.json",
+          "state": "wake",
+          "source": "standalone/assets/generated/castle-3/skin-summer-1/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        }
+      ],
+      "managed_by": "standalone-derived-motion-v1"
+    },
+    {
+      "character": "confess-47",
+      "variant": "default",
+      "skin": "default",
+      "animation": "power-down-midpoint",
+      "source_name": "derived-motion",
+      "source_frame_a": "standalone/assets/generated/confess-47/default/power-down/source-a.png",
+      "source_frame_b": "standalone/assets/generated/confess-47/default/power-down/source-b.png",
+      "generated_frames": [
+        "standalone/assets/generated/confess-47/default/power-down/optical-midpoint.png"
+      ],
+      "accepted": true,
+      "reason": "Accepted after deterministic endpoint QA and pixel validation: the optical-flow midpoint stays within the same character and skin, preserves the complete silhouette and equipment, retains the exact 192x224 transparent canvas and ground registration, contains no hidden RGB or synthetic text, differs from both endpoints, and is used between the two power-down poses.",
+      "generator": "ffmpeg 6.1 minterpolate 50% optical-flow midpoint (MCI, AOBMC, bidirectional motion estimation, variable-size block motion compensation)",
+      "generator_kind": "image2-equivalent",
+      "generated_on": "2026-08-13",
+      "runtime_usage": [
+        {
+          "manifest": "standalone/assets/runtime/confess-47/default/manifest.json",
+          "state": "rest",
+          "source": "standalone/assets/generated/confess-47/default/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        },
+        {
+          "manifest": "standalone/assets/runtime/confess-47/default/manifest.json",
+          "state": "wake",
+          "source": "standalone/assets/generated/confess-47/default/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        }
+      ],
+      "managed_by": "standalone-derived-motion-v1"
+    },
+    {
+      "character": "friston-3",
+      "variant": "default",
+      "skin": "default",
+      "animation": "power-down-midpoint",
+      "source_name": "derived-motion",
+      "source_frame_a": "standalone/assets/generated/friston-3/default/power-down/source-a.png",
+      "source_frame_b": "standalone/assets/generated/friston-3/default/power-down/source-b.png",
+      "generated_frames": [
+        "standalone/assets/generated/friston-3/default/power-down/optical-midpoint.png"
+      ],
+      "accepted": true,
+      "reason": "Accepted after deterministic endpoint QA and pixel validation: the optical-flow midpoint stays within the same character and skin, preserves the complete silhouette and equipment, retains the exact 192x224 transparent canvas and ground registration, contains no hidden RGB or synthetic text, differs from both endpoints, and is used between the two power-down poses.",
+      "generator": "ffmpeg 6.1 minterpolate 50% optical-flow midpoint (MCI, AOBMC, bidirectional motion estimation, variable-size block motion compensation)",
+      "generator_kind": "image2-equivalent",
+      "generated_on": "2026-08-13",
+      "runtime_usage": [
+        {
+          "manifest": "standalone/assets/runtime/friston-3/default/manifest.json",
+          "state": "rest",
+          "source": "standalone/assets/generated/friston-3/default/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        },
+        {
+          "manifest": "standalone/assets/runtime/friston-3/default/manifest.json",
+          "state": "wake",
+          "source": "standalone/assets/generated/friston-3/default/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        }
+      ],
+      "managed_by": "standalone-derived-motion-v1"
+    },
+    {
+      "character": "gallus2",
+      "variant": "default",
+      "skin": "default",
+      "animation": "power-down-midpoint",
+      "source_name": "derived-motion",
+      "source_frame_a": "standalone/assets/generated/gallus2/default/power-down/source-a.png",
+      "source_frame_b": "standalone/assets/generated/gallus2/default/power-down/source-b.png",
+      "generated_frames": [
+        "standalone/assets/generated/gallus2/default/power-down/optical-midpoint.png"
+      ],
+      "accepted": true,
+      "reason": "Accepted after deterministic endpoint QA and pixel validation: the optical-flow midpoint stays within the same character and skin, preserves the complete silhouette and equipment, retains the exact 192x224 transparent canvas and ground registration, contains no hidden RGB or synthetic text, differs from both endpoints, and is used between the two power-down poses.",
+      "generator": "ffmpeg 6.1 minterpolate 50% optical-flow midpoint (MCI, AOBMC, bidirectional motion estimation, variable-size block motion compensation)",
+      "generator_kind": "image2-equivalent",
+      "generated_on": "2026-08-13",
+      "runtime_usage": [
+        {
+          "manifest": "standalone/assets/runtime/gallus2/default/manifest.json",
+          "state": "rest",
+          "source": "standalone/assets/generated/gallus2/default/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        },
+        {
+          "manifest": "standalone/assets/runtime/gallus2/default/manifest.json",
+          "state": "wake",
+          "source": "standalone/assets/generated/gallus2/default/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        }
+      ],
+      "managed_by": "standalone-derived-motion-v1"
+    },
+    {
+      "character": "justice-knight",
+      "variant": "default",
+      "skin": "default",
+      "animation": "power-down-midpoint",
+      "source_name": "derived-motion",
+      "source_frame_a": "standalone/assets/generated/justice-knight/default/power-down/source-a.png",
+      "source_frame_b": "standalone/assets/generated/justice-knight/default/power-down/source-b.png",
+      "generated_frames": [
+        "standalone/assets/generated/justice-knight/default/power-down/optical-midpoint.png"
+      ],
+      "accepted": true,
+      "reason": "Accepted after deterministic endpoint QA and pixel validation: the optical-flow midpoint stays within the same character and skin, preserves the complete silhouette and equipment, retains the exact 192x224 transparent canvas and ground registration, contains no hidden RGB or synthetic text, differs from both endpoints, and is used between the two power-down poses.",
+      "generator": "ffmpeg 6.1 minterpolate 50% optical-flow midpoint (MCI, AOBMC, bidirectional motion estimation, variable-size block motion compensation)",
+      "generator_kind": "image2-equivalent",
+      "generated_on": "2026-08-13",
+      "runtime_usage": [
+        {
+          "manifest": "standalone/assets/runtime/justice-knight/default/manifest.json",
+          "state": "rest",
+          "source": "standalone/assets/generated/justice-knight/default/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        },
+        {
+          "manifest": "standalone/assets/runtime/justice-knight/default/manifest.json",
+          "state": "wake",
+          "source": "standalone/assets/generated/justice-knight/default/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        }
+      ],
+      "managed_by": "standalone-derived-motion-v1"
+    },
+    {
+      "character": "justice-knight",
+      "variant": "skin-boc-7",
+      "skin": "skin-boc-7",
+      "animation": "power-down-midpoint",
+      "source_name": "derived-motion",
+      "source_frame_a": "standalone/assets/generated/justice-knight/skin-boc-7/power-down/source-a.png",
+      "source_frame_b": "standalone/assets/generated/justice-knight/skin-boc-7/power-down/source-b.png",
+      "generated_frames": [
+        "standalone/assets/generated/justice-knight/skin-boc-7/power-down/optical-midpoint.png"
+      ],
+      "accepted": true,
+      "reason": "Accepted after deterministic endpoint QA and pixel validation: the optical-flow midpoint stays within the same character and skin, preserves the complete silhouette and equipment, retains the exact 192x224 transparent canvas and ground registration, contains no hidden RGB or synthetic text, differs from both endpoints, and is used between the two power-down poses.",
+      "generator": "ffmpeg 6.1 minterpolate 50% optical-flow midpoint (MCI, AOBMC, bidirectional motion estimation, variable-size block motion compensation)",
+      "generator_kind": "image2-equivalent",
+      "generated_on": "2026-08-13",
+      "runtime_usage": [
+        {
+          "manifest": "standalone/assets/runtime/justice-knight/skin-boc-7/manifest.json",
+          "state": "rest",
+          "source": "standalone/assets/generated/justice-knight/skin-boc-7/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        },
+        {
+          "manifest": "standalone/assets/runtime/justice-knight/skin-boc-7/manifest.json",
+          "state": "wake",
+          "source": "standalone/assets/generated/justice-knight/skin-boc-7/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        }
+      ],
+      "managed_by": "standalone-derived-motion-v1"
+    },
+    {
+      "character": "lancet-2",
+      "variant": "default",
+      "skin": "default",
+      "animation": "power-down-midpoint",
+      "source_name": "derived-motion",
+      "source_frame_a": "standalone/assets/generated/lancet-2/default/power-down/source-a.png",
+      "source_frame_b": "standalone/assets/generated/lancet-2/default/power-down/source-b.png",
+      "generated_frames": [
+        "standalone/assets/generated/lancet-2/default/power-down/optical-midpoint.png"
+      ],
+      "accepted": true,
+      "reason": "Accepted after deterministic endpoint QA and pixel validation: the optical-flow midpoint stays within the same character and skin, preserves the complete silhouette and equipment, retains the exact 192x224 transparent canvas and ground registration, contains no hidden RGB or synthetic text, differs from both endpoints, and is used between the two power-down poses.",
+      "generator": "ffmpeg 6.1 minterpolate 50% optical-flow midpoint (MCI, AOBMC, bidirectional motion estimation, variable-size block motion compensation)",
+      "generator_kind": "image2-equivalent",
+      "generated_on": "2026-08-13",
+      "runtime_usage": [
+        {
+          "manifest": "standalone/assets/runtime/lancet-2/default/manifest.json",
+          "state": "rest",
+          "source": "standalone/assets/generated/lancet-2/default/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        },
+        {
+          "manifest": "standalone/assets/runtime/lancet-2/default/manifest.json",
+          "state": "wake",
+          "source": "standalone/assets/generated/lancet-2/default/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        }
+      ],
+      "managed_by": "standalone-derived-motion-v1"
+    },
+    {
+      "character": "lancet-2",
+      "variant": "skin-boc-4",
+      "skin": "skin-boc-4",
+      "animation": "power-down-midpoint",
+      "source_name": "derived-motion",
+      "source_frame_a": "standalone/assets/generated/lancet-2/skin-boc-4/power-down/source-a.png",
+      "source_frame_b": "standalone/assets/generated/lancet-2/skin-boc-4/power-down/source-b.png",
+      "generated_frames": [
+        "standalone/assets/generated/lancet-2/skin-boc-4/power-down/optical-midpoint.png"
+      ],
+      "accepted": true,
+      "reason": "Accepted after deterministic endpoint QA and pixel validation: the optical-flow midpoint stays within the same character and skin, preserves the complete silhouette and equipment, retains the exact 192x224 transparent canvas and ground registration, contains no hidden RGB or synthetic text, differs from both endpoints, and is used between the two power-down poses.",
+      "generator": "ffmpeg 6.1 minterpolate 50% optical-flow midpoint (MCI, AOBMC, bidirectional motion estimation, variable-size block motion compensation)",
+      "generator_kind": "image2-equivalent",
+      "generated_on": "2026-08-13",
+      "runtime_usage": [
+        {
+          "manifest": "standalone/assets/runtime/lancet-2/skin-boc-4/manifest.json",
+          "state": "rest",
+          "source": "standalone/assets/generated/lancet-2/skin-boc-4/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        },
+        {
+          "manifest": "standalone/assets/runtime/lancet-2/skin-boc-4/manifest.json",
+          "state": "wake",
+          "source": "standalone/assets/generated/lancet-2/skin-boc-4/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        }
+      ],
+      "managed_by": "standalone-derived-motion-v1"
+    },
+    {
+      "character": "phonor-0",
+      "variant": "default",
+      "skin": "default",
+      "animation": "power-down-midpoint",
+      "source_name": "derived-motion",
+      "source_frame_a": "standalone/assets/generated/phonor-0/default/power-down/source-a.png",
+      "source_frame_b": "standalone/assets/generated/phonor-0/default/power-down/source-b.png",
+      "generated_frames": [
+        "standalone/assets/generated/phonor-0/default/power-down/optical-midpoint.png"
+      ],
+      "accepted": true,
+      "reason": "Accepted after deterministic endpoint QA and pixel validation: the optical-flow midpoint stays within the same character and skin, preserves the complete silhouette and equipment, retains the exact 192x224 transparent canvas and ground registration, contains no hidden RGB or synthetic text, differs from both endpoints, and is used between the two power-down poses.",
+      "generator": "ffmpeg 6.1 minterpolate 50% optical-flow midpoint (MCI, AOBMC, bidirectional motion estimation, variable-size block motion compensation)",
+      "generator_kind": "image2-equivalent",
+      "generated_on": "2026-08-13",
+      "runtime_usage": [
+        {
+          "manifest": "standalone/assets/runtime/phonor-0/default/manifest.json",
+          "state": "rest",
+          "source": "standalone/assets/generated/phonor-0/default/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        },
+        {
+          "manifest": "standalone/assets/runtime/phonor-0/default/manifest.json",
+          "state": "wake",
+          "source": "standalone/assets/generated/phonor-0/default/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        }
+      ],
+      "managed_by": "standalone-derived-motion-v1"
+    },
+    {
+      "character": "phonor-0",
+      "variant": "skin-boc-9",
+      "skin": "skin-boc-9",
+      "animation": "power-down-midpoint",
+      "source_name": "derived-motion",
+      "source_frame_a": "standalone/assets/generated/phonor-0/skin-boc-9/power-down/source-a.png",
+      "source_frame_b": "standalone/assets/generated/phonor-0/skin-boc-9/power-down/source-b.png",
+      "generated_frames": [
+        "standalone/assets/generated/phonor-0/skin-boc-9/power-down/optical-midpoint.png"
+      ],
+      "accepted": true,
+      "reason": "Accepted after deterministic endpoint QA and pixel validation: the optical-flow midpoint stays within the same character and skin, preserves the complete silhouette and equipment, retains the exact 192x224 transparent canvas and ground registration, contains no hidden RGB or synthetic text, differs from both endpoints, and is used between the two power-down poses.",
+      "generator": "ffmpeg 6.1 minterpolate 50% optical-flow midpoint (MCI, AOBMC, bidirectional motion estimation, variable-size block motion compensation)",
+      "generator_kind": "image2-equivalent",
+      "generated_on": "2026-08-13",
+      "runtime_usage": [
+        {
+          "manifest": "standalone/assets/runtime/phonor-0/skin-boc-9/manifest.json",
+          "state": "rest",
+          "source": "standalone/assets/generated/phonor-0/skin-boc-9/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        },
+        {
+          "manifest": "standalone/assets/runtime/phonor-0/skin-boc-9/manifest.json",
+          "state": "wake",
+          "source": "standalone/assets/generated/phonor-0/skin-boc-9/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        }
+      ],
+      "managed_by": "standalone-derived-motion-v1"
+    },
+    {
+      "character": "thermal-ex",
+      "variant": "default",
+      "skin": "default",
+      "animation": "power-down-midpoint",
+      "source_name": "derived-motion",
+      "source_frame_a": "standalone/assets/generated/thermal-ex/default/power-down/source-a.png",
+      "source_frame_b": "standalone/assets/generated/thermal-ex/default/power-down/source-b.png",
+      "generated_frames": [
+        "standalone/assets/generated/thermal-ex/default/power-down/optical-midpoint.png"
+      ],
+      "accepted": true,
+      "reason": "Accepted after deterministic endpoint QA and pixel validation: the optical-flow midpoint stays within the same character and skin, preserves the complete silhouette and equipment, retains the exact 192x224 transparent canvas and ground registration, contains no hidden RGB or synthetic text, differs from both endpoints, and is used between the two power-down poses.",
+      "generator": "ffmpeg 6.1 minterpolate 50% optical-flow midpoint (MCI, AOBMC, bidirectional motion estimation, variable-size block motion compensation)",
+      "generator_kind": "image2-equivalent",
+      "generated_on": "2026-08-13",
+      "runtime_usage": [
+        {
+          "manifest": "standalone/assets/runtime/thermal-ex/default/manifest.json",
+          "state": "rest",
+          "source": "standalone/assets/generated/thermal-ex/default/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        },
+        {
+          "manifest": "standalone/assets/runtime/thermal-ex/default/manifest.json",
+          "state": "wake",
+          "source": "standalone/assets/generated/thermal-ex/default/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        }
+      ],
+      "managed_by": "standalone-derived-motion-v1"
+    },
+    {
+      "character": "thermal-ex",
+      "variant": "skin-marthe-7",
+      "skin": "skin-marthe-7",
+      "animation": "power-down-midpoint",
+      "source_name": "derived-motion",
+      "source_frame_a": "standalone/assets/generated/thermal-ex/skin-marthe-7/power-down/source-a.png",
+      "source_frame_b": "standalone/assets/generated/thermal-ex/skin-marthe-7/power-down/source-b.png",
+      "generated_frames": [
+        "standalone/assets/generated/thermal-ex/skin-marthe-7/power-down/optical-midpoint.png"
+      ],
+      "accepted": true,
+      "reason": "Accepted after deterministic endpoint QA and pixel validation: the optical-flow midpoint stays within the same character and skin, preserves the complete silhouette and equipment, retains the exact 192x224 transparent canvas and ground registration, contains no hidden RGB or synthetic text, differs from both endpoints, and is used between the two power-down poses.",
+      "generator": "ffmpeg 6.1 minterpolate 50% optical-flow midpoint (MCI, AOBMC, bidirectional motion estimation, variable-size block motion compensation)",
+      "generator_kind": "image2-equivalent",
+      "generated_on": "2026-08-13",
+      "runtime_usage": [
+        {
+          "manifest": "standalone/assets/runtime/thermal-ex/skin-marthe-7/manifest.json",
+          "state": "rest",
+          "source": "standalone/assets/generated/thermal-ex/skin-marthe-7/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        },
+        {
+          "manifest": "standalone/assets/runtime/thermal-ex/skin-marthe-7/manifest.json",
+          "state": "wake",
+          "source": "standalone/assets/generated/thermal-ex/skin-marthe-7/power-down/optical-midpoint.png",
+          "source_name": "derived-motion"
+        }
+      ],
+      "managed_by": "standalone-derived-motion-v1"
     }
   ]
 }

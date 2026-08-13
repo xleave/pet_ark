@@ -9,7 +9,7 @@
   },
   "states": {
     "idle": {
-      "origin": "processed-prts-spine",
+      "origin": "source",
       "source_animation": "relax",
       "frame_order": [
         0,
@@ -21,10 +21,12 @@
         6,
         7
       ],
-      "mirror": false
+      "mirror": false,
+      "provenance_id": "processed-prts-spine:relax",
+      "generated_sequence": null
     },
     "walk-left": {
-      "origin": "processed-prts-spine",
+      "origin": "source",
       "source_animation": "move",
       "frame_order": [
         0,
@@ -36,10 +38,12 @@
         6,
         7
       ],
-      "mirror": true
+      "mirror": true,
+      "provenance_id": "processed-prts-spine:move",
+      "generated_sequence": null
     },
     "walk-right": {
-      "origin": "processed-prts-spine",
+      "origin": "source",
       "source_animation": "move",
       "frame_order": [
         0,
@@ -51,11 +55,13 @@
         6,
         7
       ],
-      "mirror": false
+      "mirror": false,
+      "provenance_id": "processed-prts-spine:move",
+      "generated_sequence": null
     },
     "run-left": {
-      "origin": "processed-prts-spine",
-      "source_animation": "move",
+      "origin": "derived",
+      "source_animation": "derived-motion",
       "frame_order": [
         0,
         1,
@@ -66,11 +72,13 @@
         6,
         7
       ],
-      "mirror": true
+      "mirror": true,
+      "provenance_id": "run-run",
+      "generated_sequence": null
     },
     "run-right": {
-      "origin": "processed-prts-spine",
-      "source_animation": "move",
+      "origin": "derived",
+      "source_animation": "derived-motion",
       "frame_order": [
         0,
         1,
@@ -81,10 +89,12 @@
         6,
         7
       ],
-      "mirror": false
+      "mirror": false,
+      "provenance_id": "run-run",
+      "generated_sequence": null
     },
     "clicked": {
-      "origin": "processed-prts-spine",
+      "origin": "source",
       "source_animation": "interact",
       "frame_order": [
         0,
@@ -96,103 +106,156 @@
         6,
         7
       ],
-      "mirror": false
+      "mirror": false,
+      "provenance_id": "processed-prts-spine:interact",
+      "generated_sequence": null
     },
     "picked-up": {
-      "origin": "processed-prts-spine",
-      "source_animation": "sit",
+      "origin": "derived",
+      "source_animation": "derived-motion",
       "frame_order": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
       ],
-      "mirror": false
+      "mirror": false,
+      "provenance_id": "picked-up-grabbed",
+      "generated_sequence": null
     },
     "dragging": {
-      "origin": "processed-prts-spine",
-      "source_animation": "sit",
+      "origin": "derived",
+      "source_animation": "derived-motion",
       "frame_order": [
-        5,
-        6,
-        7
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
       ],
-      "mirror": false
+      "mirror": false,
+      "provenance_id": "dragging-dragging",
+      "generated_sequence": null
     },
     "dropped": {
-      "origin": "processed-prts-spine",
-      "source_animation": "sit",
+      "origin": "derived",
+      "source_animation": "derived-motion",
       "frame_order": [
-        5,
-        4,
-        3,
-        2,
-        1,
-        0
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
       ],
-      "mirror": false
+      "mirror": false,
+      "provenance_id": "dropped-settle-dropped",
+      "generated_sequence": null
     },
     "rest": {
-      "origin": "processed-prts-spine",
-      "source_animation": "sit",
+      "origin": "derived",
+      "source_animation": "derived-motion",
       "frame_order": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
       ],
-      "mirror": false
+      "mirror": false,
+      "provenance_id": "rest-settle-rest",
+      "generated_sequence": null
     },
     "sleep": {
-      "origin": "processed-prts-spine",
-      "source_animation": "sleep",
+      "origin": "derived",
+      "source_animation": "derived-motion",
       "frame_order": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
       ],
-      "mirror": false
+      "mirror": false,
+      "provenance_id": "sleep-continuous-sleep",
+      "generated_sequence": null
     },
     "wake": {
-      "origin": "processed-prts-spine",
-      "source_animation": "sleep",
+      "origin": "derived",
+      "source_animation": "derived-motion",
       "frame_order": [
-        7,
-        6,
-        5,
-        4,
-        3,
-        2,
-        1,
-        0
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91
       ],
-      "mirror": false
+      "mirror": false,
+      "provenance_id": "wake-settle-wake",
+      "generated_sequence": null
     },
     "special": {
-      "origin": "processed-prts-spine",
-      "source_animation": "interact",
+      "origin": "derived",
+      "source_animation": "derived-motion",
       "frame_order": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
       ],
-      "mirror": false
+      "mirror": false,
+      "provenance_id": "special-settle-special",
+      "generated_sequence": null
     }
   }
 }

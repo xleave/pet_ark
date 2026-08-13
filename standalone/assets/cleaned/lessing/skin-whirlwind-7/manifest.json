@@ -97,7 +97,13 @@
       "duration": 7.900000095367432,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/lessing/skin-whirlwind-7/special"
+      "path": "standalone/assets/cleaned/lessing/skin-whirlwind-7/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 6,
+          "reason": "The source Special animation intentionally removes the character for the dash transition immediately before reappearance."
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",

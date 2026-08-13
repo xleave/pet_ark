@@ -1,0 +1,323 @@
+{
+  "schema_version": 1,
+  "character": "ling",
+  "variant": "default",
+  "frame_size": {
+    "width": 192,
+    "height": 224
+  },
+  "atlas": "standalone/assets/generated/ling/default/motion-atlas.png",
+  "atlas_columns": 8,
+  "atlas_rows": 11,
+  "profile": "character-local-desktop-motion",
+  "sequences": [
+    {
+      "id": "run-run",
+      "state": "run",
+      "intent": "run",
+      "origin": "derived",
+      "operation": "forward-lean-and-stride-bob",
+      "source_animation": "move",
+      "source_unique_frames": null,
+      "source_frames": [
+        "standalone/assets/cleaned/ling/default/move/000.png",
+        "standalone/assets/cleaned/ling/default/move/001.png",
+        "standalone/assets/cleaned/ling/default/move/002.png",
+        "standalone/assets/cleaned/ling/default/move/003.png",
+        "standalone/assets/cleaned/ling/default/move/004.png",
+        "standalone/assets/cleaned/ling/default/move/005.png",
+        "standalone/assets/cleaned/ling/default/move/006.png",
+        "standalone/assets/cleaned/ling/default/move/007.png"
+      ],
+      "atlas_frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "generated_frame": null,
+      "bridge_style": null,
+      "bridge_frames": null
+    },
+    {
+      "id": "picked-up-grabbed",
+      "state": "picked-up",
+      "intent": "grabbed",
+      "origin": "derived",
+      "operation": "lift-with-inertial-sway",
+      "source_animation": "sit",
+      "source_unique_frames": null,
+      "source_frames": [
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png"
+      ],
+      "atlas_frames": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "generated_frame": null,
+      "bridge_style": null,
+      "bridge_frames": null
+    },
+    {
+      "id": "dragging-dragging",
+      "state": "dragging",
+      "intent": "dragging",
+      "origin": "derived",
+      "operation": "suspended-sway-loop",
+      "source_animation": "sit",
+      "source_unique_frames": null,
+      "source_frames": [
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png"
+      ],
+      "atlas_frames": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "generated_frame": null,
+      "bridge_style": null,
+      "bridge_frames": null
+    },
+    {
+      "id": "dropped-motion-landing",
+      "state": "dropped-motion",
+      "intent": "landing",
+      "origin": "derived",
+      "operation": "fall-impact-squash-recovery",
+      "source_animation": "sit",
+      "source_unique_frames": null,
+      "source_frames": [
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png"
+      ],
+      "atlas_frames": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "generated_frame": null,
+      "bridge_style": null,
+      "bridge_frames": null
+    },
+    {
+      "id": "dropped-settle-dropped",
+      "state": "dropped-settle",
+      "intent": "dropped",
+      "origin": "derived",
+      "operation": "landing-to-idle-registration-bridge",
+      "source_animation": "sit",
+      "source_unique_frames": null,
+      "source_frames": [],
+      "atlas_frames": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "generated_frame": null,
+      "bridge_style": "single-silhouette-endpoint-transform",
+      "bridge_frames": 8
+    },
+    {
+      "id": "special-motion-special",
+      "state": "special-motion",
+      "intent": "special",
+      "origin": "derived",
+      "operation": "character-local-emphasis-pulse",
+      "source_animation": "interact",
+      "source_unique_frames": null,
+      "source_frames": [
+        "standalone/assets/cleaned/ling/default/interact/000.png",
+        "standalone/assets/cleaned/ling/default/interact/001.png",
+        "standalone/assets/cleaned/ling/default/interact/002.png",
+        "standalone/assets/cleaned/ling/default/interact/003.png",
+        "standalone/assets/cleaned/ling/default/interact/004.png",
+        "standalone/assets/cleaned/ling/default/interact/005.png",
+        "standalone/assets/cleaned/ling/default/interact/006.png",
+        "standalone/assets/cleaned/ling/default/interact/007.png"
+      ],
+      "atlas_frames": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "generated_frame": null,
+      "bridge_style": null,
+      "bridge_frames": null
+    },
+    {
+      "id": "special-settle-special",
+      "state": "special-settle",
+      "intent": "special",
+      "origin": "derived",
+      "operation": "special-to-idle-registration-bridge",
+      "source_animation": "interact",
+      "source_unique_frames": null,
+      "source_frames": [],
+      "atlas_frames": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "generated_frame": null,
+      "bridge_style": "single-silhouette-endpoint-transform",
+      "bridge_frames": 8
+    },
+    {
+      "id": "rest-source-rest",
+      "state": "rest-source",
+      "intent": "rest",
+      "origin": "derived",
+      "operation": "physical-rest-runtime-copy",
+      "source_animation": "sit",
+      "source_unique_frames": null,
+      "source_frames": [
+        "standalone/assets/cleaned/ling/default/sit/000.png",
+        "standalone/assets/cleaned/ling/default/sit/001.png",
+        "standalone/assets/cleaned/ling/default/sit/002.png",
+        "standalone/assets/cleaned/ling/default/sit/003.png",
+        "standalone/assets/cleaned/ling/default/sit/004.png",
+        "standalone/assets/cleaned/ling/default/sit/005.png",
+        "standalone/assets/cleaned/ling/default/sit/006.png",
+        "standalone/assets/cleaned/ling/default/sit/007.png"
+      ],
+      "atlas_frames": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "generated_frame": null,
+      "bridge_style": null,
+      "bridge_frames": null
+    },
+    {
+      "id": "rest-settle-rest",
+      "state": "rest-settle",
+      "intent": "rest",
+      "origin": "derived",
+      "operation": "rest-to-sleep-registration-bridge",
+      "source_animation": "sit",
+      "source_unique_frames": null,
+      "source_frames": [],
+      "atlas_frames": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "generated_frame": null,
+      "bridge_style": "single-silhouette-endpoint-transform",
+      "bridge_frames": 8
+    },
+    {
+      "id": "wake-source-wake",
+      "state": "wake-source",
+      "intent": "wake",
+      "origin": "derived",
+      "operation": "physical-wake-runtime-copy",
+      "source_animation": "sleep",
+      "source_unique_frames": null,
+      "source_frames": [
+        "standalone/assets/cleaned/ling/default/sleep/007.png",
+        "standalone/assets/cleaned/ling/default/sleep/006.png",
+        "standalone/assets/cleaned/ling/default/sleep/005.png",
+        "standalone/assets/cleaned/ling/default/sleep/004.png",
+        "standalone/assets/cleaned/ling/default/sleep/003.png",
+        "standalone/assets/cleaned/ling/default/sleep/002.png",
+        "standalone/assets/cleaned/ling/default/sleep/001.png",
+        "standalone/assets/cleaned/ling/default/sleep/000.png"
+      ],
+      "atlas_frames": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "generated_frame": null,
+      "bridge_style": null,
+      "bridge_frames": null
+    },
+    {
+      "id": "wake-settle-wake",
+      "state": "wake-settle",
+      "intent": "wake",
+      "origin": "derived",
+      "operation": "wake-to-idle-registration-bridge",
+      "source_animation": "sleep",
+      "source_unique_frames": null,
+      "source_frames": [],
+      "atlas_frames": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ],
+      "generated_frame": null,
+      "bridge_style": "single-silhouette-endpoint-transform",
+      "bridge_frames": 8
+    }
+  ]
+}

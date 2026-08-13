@@ -97,7 +97,13 @@
       "duration": 15.199999809265137,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/kazemaru/skin-witch-3/special"
+      "path": "standalone/assets/cleaned/kazemaru/skin-witch-3/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 7,
+          "reason": "The source Special animation intentionally ends on the fully disappeared transform/clone beat."
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",

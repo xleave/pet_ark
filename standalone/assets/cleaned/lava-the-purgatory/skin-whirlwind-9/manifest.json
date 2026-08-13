@@ -97,7 +97,13 @@
       "duration": 12.133333206176758,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/lava-the-purgatory/skin-whirlwind-9/special"
+      "path": "standalone/assets/cleaned/lava-the-purgatory/skin-whirlwind-9/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 2,
+          "reason": "The source Special animation intentionally contains a transparent transformation beat between the two visible stances."
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
