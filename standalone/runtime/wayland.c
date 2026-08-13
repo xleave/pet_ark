@@ -4,6 +4,7 @@
 
 #include "image.h"
 #include "movement.h"
+#include "runtime_policy.h"
 #include "state_machine.h"
 #include "../animations/animation.h"
 #include "../characters/character.h"
@@ -80,6 +81,7 @@ struct PetApp {
   struct xdg_surface *xdg_surface;
   struct xdg_toplevel *xdg_toplevel;
   struct zxdg_toplevel_decoration_v1 *decoration;
+  struct wl_callback *frame_callback;
   PetOutput outputs[PET_MAX_OUTPUTS];
   int output_count;
   PetOutput *output;
@@ -291,7 +293,7 @@ static void pointer_button(void *data, struct wl_pointer *pointer, uint32_t seri
     pet_state_machine_dispatch(&app->state, PET_EVENT_SPECIAL);
     restart_animation(app);
   } else if (button == BTN_MIDDLE && state == WL_POINTER_BUTTON_STATE_PRESSED) {
-    pet_state_machine_set_auto_move(&app->state, !app->state.auto_move);
+    pet_runtime_toggle_auto_move(&app->state, &app->config.auto_move);
     fprintf(stderr, "pet-ark: automatic movement %s\n", app->state.auto_move ? "enabled" : "disabled");
   }
 }
@@ -463,6 +465,17 @@ static void buffer_release(void *data, struct wl_buffer *object) {
 
 static const struct wl_buffer_listener buffer_listener = {
   .release = buffer_release,
+};
+
+static void frame_done(void *data, struct wl_callback *callback, uint32_t time) {
+  PetApp *app = data;
+  (void)time;
+  if (app->frame_callback == callback) app->frame_callback = NULL;
+  wl_callback_destroy(callback);
+}
+
+static const struct wl_callback_listener frame_listener = {
+  .done = frame_done,
 };
 
 static void destroy_buffer(PetBuffer *buffer) {
@@ -639,6 +652,7 @@ static PetBuffer *available_buffer(PetApp *app) {
 }
 
 static bool render(PetApp *app) {
+  if (app->frame_callback) return false;
   if (!resize_buffers(app)) return false;
   PetBuffer *buffer = available_buffer(app);
   if (!buffer) return false;
@@ -676,6 +690,14 @@ static bool render(PetApp *app) {
   buffer->previous_width = draw_width;
   buffer->previous_height = draw_height;
   set_input_region(app, draw_x, draw_y, frame_width, draw_width, draw_height, mirror);
+  app->frame_callback = wl_surface_frame(app->surface);
+  if (!app->frame_callback ||
+      wl_callback_add_listener(app->frame_callback, &frame_listener, app) < 0) {
+    if (app->frame_callback) wl_callback_destroy(app->frame_callback);
+    app->frame_callback = NULL;
+    fprintf(stderr, "pet-ark: cannot create Wayland frame callback\n");
+    return false;
+  }
   wl_surface_attach(app->surface, buffer->object, 0, 0);
   wl_surface_damage(app->surface, previous_x, previous_y, previous_width, previous_height);
   wl_surface_damage(app->surface, draw_x, draw_y, draw_width, draw_height);
@@ -722,7 +744,7 @@ static bool apply_selection(PetApp *app, size_t character_index, size_t variant_
   pet_state_machine_init(&app->state, (uint32_t)(time(NULL) ^ getpid()),
                          app->character->idle_min_seconds, app->character->idle_max_seconds,
                          app->character->rest_after_seconds);
-  pet_state_machine_set_auto_move(&app->state, app->config.auto_move);
+  pet_runtime_set_auto_move(&app->state, &app->config.auto_move, app->config.auto_move);
   pet_movement_init(&app->movement, (uint32_t)(time(NULL) + app->character_index * 7919));
   app->movement.speed_multiplier = app->speed;
   if (!first) {
@@ -787,8 +809,7 @@ static void update_runtime_controls(PetApp *app) {
   }
   if (signal_auto_move) {
     signal_auto_move = 0;
-    pet_state_machine_set_auto_move(&app->state, !app->state.auto_move);
-    app->config.auto_move = app->state.auto_move;
+    pet_runtime_toggle_auto_move(&app->state, &app->config.auto_move);
     fprintf(stderr, "pet-ark: automatic movement %s\n", app->state.auto_move ? "enabled" : "disabled");
   }
   if (signal_next_character) {
@@ -802,8 +823,14 @@ static void update_runtime_controls(PetApp *app) {
 }
 
 static void tick(PetApp *app, float delta) {
+  const PetVisualSnapshot before = {
+    .animation_definition = app->animation.definition,
+    .source_frame = pet_animation_source_frame(&app->animation),
+    .draw_x = (int)lroundf(app->movement.x),
+    .draw_y = (int)lroundf(app->movement.y),
+  };
   update_runtime_controls(app);
-  if (!app->configured || !app->character) return;
+  if (!app->running || !app->configured || !app->character) return;
   const PetBehavior previous_behavior = app->state.behavior;
   const bool animation_finished = pet_animation_tick(&app->animation, delta);
   if (app->picking_up && animation_finished) {
@@ -831,13 +858,22 @@ static void tick(PetApp *app, float delta) {
   }
   const PetAnimationDefinition *definition = desired_animation(app);
   pet_animation_set(&app->animation, definition);
-  app->needs_redraw = true;
+  const PetVisualSnapshot after = {
+    .animation_definition = app->animation.definition,
+    .source_frame = pet_animation_source_frame(&app->animation),
+    .draw_x = (int)lroundf(app->movement.x),
+    .draw_y = (int)lroundf(app->movement.y),
+  };
+  if (pet_visual_snapshot_changed(&before, &after)) app->needs_redraw = true;
 }
 
 static bool create_surface(PetApp *app) {
   app->surface = wl_compositor_create_surface(app->compositor);
   if (!app->surface) return false;
-  if (app->layer_shell) {
+  const PetShellMode shell_mode = pet_shell_mode(
+    app->layer_shell != NULL, app->xdg_wm_base != NULL,
+    app->config.xdg_fullscreen_fallback);
+  if (shell_mode == PET_SHELL_LAYER) {
     app->use_layer_shell = true;
     app->layer_surface = zwlr_layer_shell_v1_get_layer_surface(
       app->layer_shell, app->surface, app->output ? app->output->object : NULL,
@@ -850,7 +886,7 @@ static bool create_surface(PetApp *app) {
     zwlr_layer_surface_v1_set_exclusive_zone(app->layer_surface, -1);
     zwlr_layer_surface_v1_set_keyboard_interactivity(
       app->layer_surface, ZWLR_LAYER_SURFACE_V1_KEYBOARD_INTERACTIVITY_NONE);
-  } else if (app->xdg_wm_base) {
+  } else if (shell_mode == PET_SHELL_XDG_FULLSCREEN) {
     app->use_layer_shell = false;
     app->xdg_surface = xdg_wm_base_get_xdg_surface(app->xdg_wm_base, app->surface);
     xdg_surface_add_listener(app->xdg_surface, &xdg_surface_listener, app);
@@ -866,7 +902,14 @@ static bool create_surface(PetApp *app) {
     }
     xdg_toplevel_set_fullscreen(app->xdg_toplevel, app->output ? app->output->object : NULL);
   } else {
-    fprintf(stderr, "pet-ark: compositor exposes neither wlr-layer-shell nor xdg-shell\n");
+    if (app->xdg_wm_base && !app->config.xdg_fullscreen_fallback) {
+      fprintf(stderr,
+        "pet-ark: compositor does not expose wlr-layer-shell; refusing the xdg-shell "
+        "fullscreen fallback by default\n"
+        "pet-ark: pass --xdg-fullscreen-fallback to opt in after compositor-specific testing\n");
+    } else {
+      fprintf(stderr, "pet-ark: compositor exposes neither wlr-layer-shell nor xdg-shell\n");
+    }
     return false;
   }
   struct wl_region *empty = wl_compositor_create_region(app->compositor);
@@ -950,6 +993,7 @@ static bool resolve_assets_root(PetApp *app, char resolved[PATH_MAX]) {
 static void destroy_app(PetApp *app) {
   clear_sheets(app);
   for (int index = 0; index < PET_BUFFER_COUNT; index++) destroy_buffer(&app->buffers[index]);
+  if (app->frame_callback) wl_callback_destroy(app->frame_callback);
   if (app->decoration) zxdg_toplevel_decoration_v1_destroy(app->decoration);
   if (app->xdg_toplevel) xdg_toplevel_destroy(app->xdg_toplevel);
   if (app->xdg_surface) xdg_surface_destroy(app->xdg_surface);
@@ -977,7 +1021,8 @@ int pet_wayland_probe(void) {
     destroy_app(&app);
     return 1;
   }
-  printf("wayland: connected\noutputs: %d\nlayer-shell: %s\nxdg-shell: %s\n",
+  printf("wayland: connected\noutputs: %d\nlayer-shell: %s\nxdg-shell: %s\n"
+         "xdg-fullscreen-fallback: explicit-opt-in\n",
          app.output_count, app.layer_shell ? "yes" : "no", app.xdg_wm_base ? "yes" : "no");
   destroy_app(&app);
   return 0;
@@ -1026,8 +1071,9 @@ int pet_wayland_run(const PetWaylandConfig *config) {
     destroy_app(&app);
     return 1;
   }
-  fprintf(stderr, "pet-ark: using %s%s\n", app.use_layer_shell ? "wlr-layer-shell" : "xdg-shell fallback",
-          app.use_layer_shell ? "" : " (always-on-top is compositor-controlled)");
+  fprintf(stderr, "pet-ark: using %s%s\n",
+          app.use_layer_shell ? "wlr-layer-shell" : "xdg-shell fullscreen fallback",
+          app.use_layer_shell ? "" : " (explicit opt-in; compositor policy applies)");
   if (!apply_selection(&app, app.character_index, app.variant_index, true)) {
     destroy_app(&app);
     return 1;

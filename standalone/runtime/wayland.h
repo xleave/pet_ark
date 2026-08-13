@@ -11,6 +11,7 @@ typedef struct {
   float speed;
   bool auto_move;
   bool click_through;
+  bool xdg_fullscreen_fallback;
   int monitor;
   bool verbose;
 } PetWaylandConfig;

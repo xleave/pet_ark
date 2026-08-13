@@ -1,5 +1,6 @@
 #include "animation.h"
 #include "movement.h"
+#include "runtime_policy.h"
 #include "state_machine.h"
 
 #include <math.h>
@@ -181,12 +182,66 @@ static void test_animation_player(void) {
   CHECK(pet_animation_source_frame(&player) == 2);
 }
 
+static void test_auto_move_survives_selection_reinitialization(void) {
+  PetStateMachine machine;
+  bool configured_auto_move = true;
+  pet_state_machine_init(&machine, 61u, 1.0f, 2.0f, 30.0f);
+
+  pet_runtime_toggle_auto_move(&machine, &configured_auto_move);
+  CHECK(!machine.auto_move);
+  CHECK(!configured_auto_move);
+
+  /* apply_selection() reinitializes the machine, then reapplies this setting. */
+  pet_state_machine_init(&machine, 67u, 1.0f, 2.0f, 30.0f);
+  CHECK(machine.auto_move);
+  pet_runtime_set_auto_move(&machine, &configured_auto_move, configured_auto_move);
+  CHECK(!machine.auto_move);
+  CHECK(!configured_auto_move);
+
+  pet_runtime_toggle_auto_move(&machine, &configured_auto_move);
+  pet_state_machine_init(&machine, 71u, 1.0f, 2.0f, 30.0f);
+  pet_runtime_set_auto_move(&machine, &configured_auto_move, configured_auto_move);
+  CHECK(machine.auto_move);
+  CHECK(configured_auto_move);
+}
+
+static void test_shell_fallback_policy(void) {
+  CHECK(pet_shell_mode(true, true, false) == PET_SHELL_LAYER);
+  CHECK(pet_shell_mode(true, false, false) == PET_SHELL_LAYER);
+  CHECK(pet_shell_mode(false, true, false) == PET_SHELL_UNAVAILABLE);
+  CHECK(pet_shell_mode(false, true, true) == PET_SHELL_XDG_FULLSCREEN);
+  CHECK(pet_shell_mode(false, false, true) == PET_SHELL_UNAVAILABLE);
+}
+
+static void test_visual_snapshot_dirty_detection(void) {
+  static const int first_definition = 1;
+  static const int second_definition = 2;
+  const PetVisualSnapshot baseline = { &first_definition, 3, 120, 240 };
+  PetVisualSnapshot candidate = baseline;
+
+  CHECK(!pet_visual_snapshot_changed(&baseline, &candidate));
+  candidate.source_frame = 4;
+  CHECK(pet_visual_snapshot_changed(&baseline, &candidate));
+  candidate = baseline;
+  candidate.animation_definition = &second_definition;
+  CHECK(pet_visual_snapshot_changed(&baseline, &candidate));
+  candidate = baseline;
+  candidate.draw_x++;
+  CHECK(pet_visual_snapshot_changed(&baseline, &candidate));
+  candidate = baseline;
+  candidate.draw_y--;
+  CHECK(pet_visual_snapshot_changed(&baseline, &candidate));
+}
+
 int main(void) {
   test_state_machine_movement_cycle();
   test_state_machine_interactions();
   test_state_machine_rest_and_wake();
   test_movement_bounds_target_and_drag();
   test_animation_player();
-  printf("OK: %d runtime assertions (state machine, movement, animation)\n", assertions);
+  test_auto_move_survives_selection_reinitialization();
+  test_shell_fallback_policy();
+  test_visual_snapshot_dirty_detection();
+  printf("OK: %d runtime assertions (state machine, movement, animation, runtime policy)\n", assertions);
   return EXIT_SUCCESS;
 }

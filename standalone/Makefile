@@ -27,6 +27,7 @@ APP_BINARY := $(BUILD_DIR)/$(APP_NAME)
 TEST_SOURCES := \
   tests/test_runtime.c \
   runtime/state_machine.c \
+  runtime/runtime_policy.c \
   runtime/movement.c \
   animations/animation.c
 TEST_OBJECTS := $(patsubst %.c,$(BUILD_DIR)/test-objects/%.o,$(TEST_SOURCES))

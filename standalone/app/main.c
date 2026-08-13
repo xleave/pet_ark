@@ -20,6 +20,8 @@ static void usage(FILE *stream, const char *program) {
     "  --speed NUMBER       Movement speed multiplier, 0.1..5.0\n"
     "  --no-auto-move       Stay in place unless dragged\n"
     "  --click-through      Start with an empty pointer input region\n"
+    "  --xdg-fullscreen-fallback\n"
+    "                       Explicitly allow xdg-shell fullscreen fallback\n"
     "  --monitor NUMBER     Zero-based Wayland output index\n"
     "  --probe              Print available shell capability and exit\n"
     "  --verbose            Print state and output diagnostics\n"
@@ -70,6 +72,7 @@ int main(int argc, char **argv) {
     .speed = 1.0f,
     .auto_move = true,
     .click_through = false,
+    .xdg_fullscreen_fallback = false,
     .monitor = 0,
     .verbose = false,
   };
@@ -91,6 +94,10 @@ int main(int argc, char **argv) {
     }
     if (!strcmp(argument, "--click-through")) {
       config.click_through = true;
+      continue;
+    }
+    if (!strcmp(argument, "--xdg-fullscreen-fallback")) {
+      config.xdg_fullscreen_fallback = true;
       continue;
     }
     if (!strcmp(argument, "--verbose")) {
