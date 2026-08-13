@@ -113,7 +113,6 @@ function buildVariant({ characterId, gameKey, metaUrl, prefix, skinName, skin, d
   const sourceId = building?.file ? skinInternalId(building.file, gameKey) : null;
   const variantId = isDefault ? 'default' : `skin-${sourceId || `unresolved-${encodeURIComponent(skinName)}`}`;
   const sourceAvailable = Boolean(building?.file);
-  const legacyAmiya = characterId === 'amiya' && isDefault;
   return {
     variant_id: variantId,
     id: variantId,
@@ -130,8 +129,8 @@ function buildVariant({ characterId, gameKey, metaUrl, prefix, skinName, skin, d
     mirrorRules: { strategy: 'safe-mirror', independentDirections: false },
     fallbackVariant: isDefault ? null : 'default',
     runtime: {
-      status: legacyAmiya ? 'implemented' : 'pending',
-      path: legacyAmiya ? 'standalone/assets/runtime/amiya/manifest.json' : null,
+      status: 'pending',
+      path: null,
       fallback_variant_id: isDefault ? null : 'default',
       fallback_policy: isDefault ? 'none' : 'same-state-default-appearance-only-when-manifest-declares-compatible',
     },

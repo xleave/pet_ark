@@ -130,12 +130,6 @@ function runtimeCandidatePaths(character, variant, registryEntry, registryVarian
     const runtimeRoot = assets.startsWith('standalone/') ? assets : `standalone/assets/runtime/${assets}`;
     candidates.push(runtimeRoot.endsWith('.json') ? runtimeRoot : `${runtimeRoot}/manifest.json`);
   }
-  candidates.push(variant.runtime?.path);
-  if (variantName === 'default') {
-    const legacyAssets = registryEntry?.assets;
-    if (legacyAssets) candidates.push(`${legacyAssets}/manifest.json`);
-    candidates.push(`standalone/assets/runtime/${id}/manifest.json`);
-  }
   candidates.push(`standalone/assets/runtime/${id}/${variantName}/manifest.json`);
   return [...new Set(candidates.filter(Boolean).map((value) => relativePath(value)))];
 }
@@ -435,14 +429,14 @@ for (const character of selectedCharacters) {
 for (const character of selectedCharacters) {
   const id = characterId(character);
   const details = variantDetails.filter((variant) => variant.character_id === id);
-  const base = details.find((variant) => variant.variant_id === 'default');
+  const selected = details.find((variant) => variant.variant_id === character.default_variant_id) || details[0];
   characterDetails.push({
     character_id: id,
     character_name: character.character_name || character.name,
     localized_name: character.localized_name,
-    status: base.status,
-    reason: base.reason,
-    default_variant: base.variant_id,
+    status: selected.status,
+    reason: selected.reason,
+    default_variant: character.default_variant_id,
     variants: details.length,
     implemented_variants: details.filter((variant) => variant.status === 'implemented').length,
   });
@@ -453,7 +447,29 @@ for (const detail of variantDetails.filter((entry) => entry.status === 'implemen
   const variant = character.variants.find((entry) => variantId(entry) === detail.variant_id);
   const current = manifests.get(`${detail.character_id}:${detail.variant_id}`);
   const fallbackId = variant.runtime.fallback_variant_id;
-  const fallback = fallbackId ? manifests.get(`${detail.character_id}:${fallbackId}`) : null;
+  let fallback = fallbackId ? manifests.get(`${detail.character_id}:${fallbackId}`) : null;
+  if (fallbackId && !fallback) {
+    const fallbackVariant = character.variants.find((entry) => variantId(entry) === fallbackId);
+    const registryEntry = registryCharacter(runtimeRegistry, detail.character_id);
+    const runtimeVariant = registryVariant(registryEntry, fallbackId);
+    if (fallbackVariant && runtimeVariant) {
+      const candidate = (await Promise.all(runtimeCandidatePaths(
+        character,
+        fallbackVariant,
+        registryEntry,
+        runtimeVariant,
+      ).map(async (entry) => ({ ...entry, exists: await exists(entry.absolute) }))))
+        .find((entry) => entry.exists);
+      if (candidate) {
+        fallback = {
+          manifest: await validateRuntimeManifest(candidate.absolute, character, fallbackVariant),
+          file: candidate.absolute,
+          runtimeVariant,
+        };
+        manifests.set(`${detail.character_id}:${fallbackId}`, fallback);
+      }
+    }
+  }
   for (const state of REQUIRED_STATES) {
     if (resolveState(state, variant, current.manifest, current.runtimeVariant)) continue;
     if (fallback) {

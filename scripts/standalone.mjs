@@ -353,6 +353,8 @@ async function main() {
       await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs']);
       break;
     case 'validate-all':
+      await run(process.execPath, ['shared/image-processing/build-runtime-registry.mjs']);
+      await run(process.execPath, ['shared/asset-tools/generate-standalone-registry.mjs']);
       await make('test', args);
       await run(process.execPath, ['shared/image-processing/validate-generated-manifest.mjs']);
       await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs', '--check-accounted', '--require-complete']);
