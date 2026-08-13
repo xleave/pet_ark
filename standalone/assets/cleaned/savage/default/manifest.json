@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "savage",
+  "character_name": "Savage",
+  "localized_name": "暴行",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/savage/default",
+  "source_page": "https://prts.wiki/w/%E6%9A%B4%E8%A1%8C",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/meta.json",
+    "model": "defaultskin/build/build_char_230_savage",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/defaultskin/build/build_char_230_savage.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/defaultskin/build/build_char_230_savage.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/defaultskin/build/build_char_230_savage.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 1.0666667222976685
+    },
+    {
+      "name": "Relax",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Sit",
+      "duration": 4
+    },
+    {
+      "name": "Sleep",
+      "duration": 2.6666667461395264
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/savage/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/savage/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.0666667222976685,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/savage/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/savage/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/savage/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/savage/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -302.07898,
+      "maxX": 264.49167,
+      "minY": -82.69202,
+      "maxY": 467.44931
+    },
+    "scale": 0.31064,
+    "x_offset": 101.83808,
+    "y_offset": 190.31248,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:29.157Z"
+}

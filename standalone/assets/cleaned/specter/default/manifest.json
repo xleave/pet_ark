@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "specter",
+  "character_name": "Specter",
+  "localized_name": "幽灵鲨",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/specter/default",
+  "source_page": "https://prts.wiki/w/%E5%B9%BD%E7%81%B5%E9%B2%A8",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_143_ghost/meta.json",
+    "model": "defaultskin/build/build_char_143_ghost",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_143_ghost/defaultskin/build/build_char_143_ghost.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_143_ghost/defaultskin/build/build_char_143_ghost.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_143_ghost/defaultskin/build/build_char_143_ghost.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.2000000476837158
+    },
+    {
+      "name": "Move",
+      "duration": 2
+    },
+    {
+      "name": "Relax",
+      "duration": 2
+    },
+    {
+      "name": "Sit",
+      "duration": 3.3333332538604736
+    },
+    {
+      "name": "Sleep",
+      "duration": 4
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/specter/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.2000000476837158,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/specter/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/specter/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/specter/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/specter/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/specter/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -221.10675,
+      "maxX": 297.10815,
+      "minY": -116.17702,
+      "maxY": 385.56442
+    },
+    "scale": 0.33963,
+    "x_offset": 83.09392,
+    "y_offset": 176.54309,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:31.972Z"
+}

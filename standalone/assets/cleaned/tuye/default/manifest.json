@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "tuye",
+  "character_name": "Tuye",
+  "localized_name": "图耶",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/tuye/default",
+  "source_page": "https://prts.wiki/w/%E5%9B%BE%E8%80%B6",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_402_tuye/meta.json",
+    "model": "defaultskin/build/build_char_402_tuye",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_402_tuye/defaultskin/build/build_char_402_tuye.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_402_tuye/defaultskin/build/build_char_402_tuye.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_402_tuye/defaultskin/build/build_char_402_tuye.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.8333333730697632
+    },
+    {
+      "name": "Move",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Relax",
+      "duration": 10
+    },
+    {
+      "name": "Sit",
+      "duration": 5
+    },
+    {
+      "name": "Sleep",
+      "duration": 2.6666667461395264
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/tuye/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.8333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/tuye/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/tuye/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 10,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/tuye/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 5,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/tuye/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/tuye/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -235.82886,
+      "maxX": 265.00357,
+      "minY": -103.58244,
+      "maxY": 410.65823
+    },
+    "scale": 0.35141,
+    "x_offset": 90.87378,
+    "y_offset": 179.59958,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:35.227Z"
+}

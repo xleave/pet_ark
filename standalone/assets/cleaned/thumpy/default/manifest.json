@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "character": "thumpy",
+  "character_name": "Thumpy",
+  "localized_name": "珊比",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/thumpy/default",
+  "source_page": "https://prts.wiki/w/%E7%8F%8A%E6%AF%94",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4235_thumpy/meta.json",
+    "model": "defaultskin/build/build_char_4235_thumpy",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4235_thumpy/defaultskin/build/build_char_4235_thumpy.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4235_thumpy/defaultskin/build/build_char_4235_thumpy.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4235_thumpy/defaultskin/build/build_char_4235_thumpy.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Exit",
+      "duration": 3.3333332538604736
+    },
+    {
+      "name": "Interact",
+      "duration": 3.5333333015441895
+    },
+    {
+      "name": "Move",
+      "duration": 2.3333332538604736
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 8
+    },
+    {
+      "name": "Sleep",
+      "duration": 4
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/thumpy/default/default"
+    },
+    "exit": {
+      "source_animation": "Exit",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/thumpy/default/exit"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 3.5333333015441895,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/thumpy/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/thumpy/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/thumpy/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/thumpy/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/thumpy/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -271.8252,
+      "maxX": 219.53317,
+      "minY": -130.06604,
+      "maxY": 448.0961
+    },
+    "scale": 0.35819,
+    "x_offset": 105.36526,
+    "y_offset": 169.41155,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:34.428Z"
+}

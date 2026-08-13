@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "toddifons",
+  "character_name": "Toddifons",
+  "localized_name": "熔泉",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/toddifons/default",
+  "source_page": "https://prts.wiki/w/%E7%86%94%E6%B3%89",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_363_toddi/meta.json",
+    "model": "defaultskin/build/build_char_363_toddi",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_363_toddi/defaultskin/build/build_char_363_toddi.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_363_toddi/defaultskin/build/build_char_363_toddi.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_363_toddi/defaultskin/build/build_char_363_toddi.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Relax",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Sit",
+      "duration": 4
+    },
+    {
+      "name": "Sleep",
+      "duration": 3.3333332538604736
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/toddifons/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/toddifons/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/toddifons/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/toddifons/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/toddifons/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/toddifons/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -264.58356,
+      "maxX": 208.74098,
+      "minY": -125.77348,
+      "maxY": 443.08508
+    },
+    "scale": 0.36564,
+    "x_offset": 106.20926,
+    "y_offset": 170.01162,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:34.740Z"
+}

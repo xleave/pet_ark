@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "u-official",
+  "character_name": "U-Official",
+  "localized_name": "U-Official",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/u-official/default",
+  "source_page": "https://prts.wiki/w/U-Official",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4091_ulika/meta.json",
+    "model": "defaultskin/build/build_char_4091_ulika",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4091_ulika/defaultskin/build/build_char_4091_ulika.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4091_ulika/defaultskin/build/build_char_4091_ulika.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4091_ulika/defaultskin/build/build_char_4091_ulika.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 3.3333332538604736
+    },
+    {
+      "name": "Move",
+      "duration": 7
+    },
+    {
+      "name": "Relax",
+      "duration": 8
+    },
+    {
+      "name": "Sit",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Sleep",
+      "duration": 2
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/u-official/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/u-official/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 7,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/u-official/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/u-official/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/u-official/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/u-official/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -522.14276,
+      "maxX": 340.79761,
+      "minY": -146.03551,
+      "maxY": 590.38269
+    },
+    "scale": 0.20395,
+    "x_offset": 114.49302,
+    "y_offset": 186.2155,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:35.714Z"
+}

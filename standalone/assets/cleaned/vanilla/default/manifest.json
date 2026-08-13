@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "vanilla",
+  "character_name": "Vanilla",
+  "localized_name": "香草",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/vanilla/default",
+  "source_page": "https://prts.wiki/w/%E9%A6%99%E8%8D%89",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_240_wyvern/meta.json",
+    "model": "defaultskin/build/build_char_240_wyvern",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_240_wyvern/defaultskin/build/build_char_240_wyvern.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_240_wyvern/defaultskin/build/build_char_240_wyvern.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_240_wyvern/defaultskin/build/build_char_240_wyvern.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Move",
+      "duration": 1.0666667222976685
+    },
+    {
+      "name": "Relax",
+      "duration": 2
+    },
+    {
+      "name": "Sit",
+      "duration": 3.3333332538604736
+    },
+    {
+      "name": "Sleep",
+      "duration": 4
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/vanilla/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/vanilla/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.0666667222976685,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/vanilla/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/vanilla/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/vanilla/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/vanilla/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -203.56108,
+      "maxX": 307.10303,
+      "minY": -114.0852,
+      "maxY": 386.45901
+    },
+    "scale": 0.34465,
+    "x_offset": 78.15717,
+    "y_offset": 176.68062,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:36.077Z"
+}

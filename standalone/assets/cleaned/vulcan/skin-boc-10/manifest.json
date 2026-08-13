@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "character": "vulcan",
+  "character_name": "Vulcan",
+  "localized_name": "火神",
+  "variant": "skin-boc-10",
+  "variant_type": "skin",
+  "variant_name": "火种",
+  "skin_id": "boc-10",
+  "skin_name": "火种",
+  "source": "standalone/assets/source/vulcan/skin-boc-10",
+  "source_page": "https://prts.wiki/w/%E7%81%AB%E7%A5%9E",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_163_hpsts/meta.json",
+    "model": "char_163_hpsts_boc_10/build/build_char_163_hpsts_boc_10",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_163_hpsts/char_163_hpsts_boc_10/build/build_char_163_hpsts_boc_10.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_163_hpsts/char_163_hpsts_boc_10/build/build_char_163_hpsts_boc_10.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_163_hpsts/char_163_hpsts_boc_10/build/build_char_163_hpsts_boc_10.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Relax",
+      "duration": 2
+    },
+    {
+      "name": "Sit",
+      "duration": 2
+    },
+    {
+      "name": "Sleep",
+      "duration": 4
+    },
+    {
+      "name": "Special",
+      "duration": 11.666666984558105
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/vulcan/skin-boc-10/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/vulcan/skin-boc-10/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/vulcan/skin-boc-10/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/vulcan/skin-boc-10/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/vulcan/skin-boc-10/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/vulcan/skin-boc-10/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 11.666666984558105,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/vulcan/skin-boc-10/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -294.66858,
+      "maxX": 697.21002,
+      "minY": -111.53341,
+      "maxY": 533.90002
+    },
+    "scale": 0.17744,
+    "x_offset": 60.28631,
+    "y_offset": 196.20939,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:37.142Z"
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "typhon",
+  "character_name": "Typhon",
+  "localized_name": "提丰",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/typhon/default",
+  "source_page": "https://prts.wiki/w/%E6%8F%90%E4%B8%B0",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/meta.json",
+    "model": "defaultskin/build/build_char_2012_typhon",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/defaultskin/build/build_char_2012_typhon.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/defaultskin/build/build_char_2012_typhon.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/defaultskin/build/build_char_2012_typhon.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 4.400000095367432
+    },
+    {
+      "name": "Move",
+      "duration": 3.3333332538604736
+    },
+    {
+      "name": "Relax",
+      "duration": 8
+    },
+    {
+      "name": "Sit",
+      "duration": 5.333333492279053
+    },
+    {
+      "name": "Sleep",
+      "duration": 14.666666984558105
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/typhon/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 4.400000095367432,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/typhon/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/typhon/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/typhon/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 5.333333492279053,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/typhon/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 14.666666984558105,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/typhon/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -569.00793,
+      "maxX": 601.85004,
+      "minY": -353.38586,
+      "maxY": 788.09705
+    },
+    "scale": 0.15032,
+    "x_offset": 93.53163,
+    "y_offset": 162.88005,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:35.494Z"
+}

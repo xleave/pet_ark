@@ -1,0 +1,106 @@
+{
+  "schema_version": 2,
+  "character": "thermal-ex",
+  "character_name": "Thermal-EX",
+  "localized_name": "THRM-EX",
+  "variant": "skin-marthe-7",
+  "variant_type": "skin",
+  "variant_name": "双料四分卫",
+  "skin_id": "marthe-7",
+  "skin_name": "双料四分卫",
+  "source": "standalone/assets/source/thermal-ex/skin-marthe-7",
+  "source_page": "https://prts.wiki/w/THRM-EX",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/meta.json",
+    "model": "char_376_therex_marthe_7/build/build_char_376_therex_marthe_7",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/char_376_therex_marthe_7/build/build_char_376_therex_marthe_7.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/char_376_therex_marthe_7/build/build_char_376_therex_marthe_7.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/char_376_therex_marthe_7/build/build_char_376_therex_marthe_7.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.5333333015441895
+    },
+    {
+      "name": "Move",
+      "duration": 0.800000011920929
+    },
+    {
+      "name": "Relax",
+      "duration": 0.2666666805744171
+    },
+    {
+      "name": "Special",
+      "duration": 6.400000095367432
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/thermal-ex/skin-marthe-7/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.5333333015441895,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/thermal-ex/skin-marthe-7/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 0.800000011920929,
+      "fps": 8,
+      "frames": 7,
+      "path": "standalone/assets/cleaned/thermal-ex/skin-marthe-7/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 0.2666666805744171,
+      "fps": 8,
+      "frames": 3,
+      "path": "standalone/assets/cleaned/thermal-ex/skin-marthe-7/relax"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 6.400000095367432,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/thermal-ex/skin-marthe-7/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -633.37787,
+      "maxX": 385.9079,
+      "minY": -36.76955,
+      "maxY": 301.45129
+    },
+    "scale": 0.17267,
+    "x_offset": 117.36531,
+    "y_offset": 209.651,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:34.120Z"
+}

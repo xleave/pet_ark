@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "tecno",
+  "character_name": "Tecno",
+  "localized_name": "特克诺",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/tecno/default",
+  "source_page": "https://prts.wiki/w/%E7%89%B9%E5%85%8B%E8%AF%BA",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4164_tecno/meta.json",
+    "model": "defaultskin/build/build_char_4164_tecno",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4164_tecno/defaultskin/build/build_char_4164_tecno.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4164_tecno/defaultskin/build/build_char_4164_tecno.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4164_tecno/defaultskin/build/build_char_4164_tecno.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 2.5333333015441895
+    },
+    {
+      "name": "Move",
+      "duration": 1
+    },
+    {
+      "name": "Relax",
+      "duration": 8
+    },
+    {
+      "name": "Sit",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Sleep",
+      "duration": 6
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/tecno/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 2.5333333015441895,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/tecno/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/tecno/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/tecno/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/tecno/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 6,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/tecno/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -225.03419,
+      "maxX": 150.10036,
+      "minY": -111.92811,
+      "maxY": 359.16516
+    },
+    "scale": 0.41,
+    "x_offset": 111.36144,
+    "y_offset": 170.10948,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:33.608Z"
+}
