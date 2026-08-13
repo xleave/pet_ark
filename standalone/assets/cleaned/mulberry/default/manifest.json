@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "mulberry",
+  "character_name": "Mulberry",
+  "localized_name": "桑葚",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/mulberry/default",
+  "source_page": "https://prts.wiki/w/%E6%A1%91%E8%91%9A",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/meta.json",
+    "model": "defaultskin/build/build_char_473_mberry",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/defaultskin/build/build_char_473_mberry.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/defaultskin/build/build_char_473_mberry.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/defaultskin/build/build_char_473_mberry.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 0.6666666865348816
+    },
+    {
+      "name": "Move",
+      "duration": 4
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 5
+    },
+    {
+      "name": "Sleep",
+      "duration": 4
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/mulberry/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 0.6666666865348816,
+      "fps": 8,
+      "frames": 6,
+      "path": "standalone/assets/cleaned/mulberry/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/mulberry/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/mulberry/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 5,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/mulberry/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/mulberry/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -255.11635,
+      "maxX": 174.78481,
+      "minY": -112.33187,
+      "maxY": 453.93362
+    },
+    "scale": 0.36732,
+    "x_offset": 110.75365,
+    "y_offset": 174.73838,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:20.166Z"
+}

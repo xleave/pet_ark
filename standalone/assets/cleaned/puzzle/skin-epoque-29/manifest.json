@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "character": "puzzle",
+  "character_name": "Puzzle",
+  "localized_name": "谜图",
+  "variant": "skin-epoque-29",
+  "variant_type": "skin",
+  "variant_name": "碎片之间",
+  "skin_id": "epoque-29",
+  "skin_name": "碎片之间",
+  "source": "standalone/assets/source/puzzle/skin-epoque-29",
+  "source_page": "https://prts.wiki/w/%E8%B0%9C%E5%9B%BE",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4017_puzzle/meta.json",
+    "model": "char_4017_puzzle_epoque_29/build/build_char_4017_puzzle_epoque_29",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4017_puzzle/char_4017_puzzle_epoque_29/build/build_char_4017_puzzle_epoque_29.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4017_puzzle/char_4017_puzzle_epoque_29/build/build_char_4017_puzzle_epoque_29.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4017_puzzle/char_4017_puzzle_epoque_29/build/build_char_4017_puzzle_epoque_29.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.2000000476837158
+    },
+    {
+      "name": "Move",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 5
+    },
+    {
+      "name": "Sleep",
+      "duration": 8
+    },
+    {
+      "name": "Special",
+      "duration": 6.666666507720947
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/puzzle/skin-epoque-29/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.2000000476837158,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/puzzle/skin-epoque-29/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/puzzle/skin-epoque-29/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/puzzle/skin-epoque-29/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 5,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/puzzle/skin-epoque-29/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/puzzle/skin-epoque-29/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 6.666666507720947,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/puzzle/skin-epoque-29/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -272.69092,
+      "maxX": 783.1037,
+      "minY": -122.25515,
+      "maxY": 918.40125
+    },
+    "scale": 0.1667,
+    "x_offset": 53.45733,
+    "y_offset": 195.62018,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:25.751Z"
+}

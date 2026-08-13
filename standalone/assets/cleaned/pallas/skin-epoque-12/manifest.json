@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "character": "pallas",
+  "character_name": "Pallas",
+  "localized_name": "帕拉斯",
+  "variant": "skin-epoque-12",
+  "variant_type": "skin",
+  "variant_name": "传承",
+  "skin_id": "epoque-12",
+  "skin_name": "传承",
+  "source": "standalone/assets/source/pallas/skin-epoque-12",
+  "source_page": "https://prts.wiki/w/%E5%B8%95%E6%8B%89%E6%96%AF",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_485_pallas/meta.json",
+    "model": "char_485_pallas_epoque_12/build/build_char_485_pallas_epoque_12",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_485_pallas/char_485_pallas_epoque_12/build/build_char_485_pallas_epoque_12.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_485_pallas/char_485_pallas_epoque_12/build/build_char_485_pallas_epoque_12.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_485_pallas/char_485_pallas_epoque_12/build/build_char_485_pallas_epoque_12.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Move",
+      "duration": 1.5
+    },
+    {
+      "name": "Relax",
+      "duration": 6
+    },
+    {
+      "name": "Sit",
+      "duration": 4
+    },
+    {
+      "name": "Sleep",
+      "duration": 2
+    },
+    {
+      "name": "Special",
+      "duration": 7.566666603088379
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/pallas/skin-epoque-12/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/pallas/skin-epoque-12/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.5,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/pallas/skin-epoque-12/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 6,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/pallas/skin-epoque-12/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/pallas/skin-epoque-12/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/pallas/skin-epoque-12/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 7.566666603088379,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/pallas/skin-epoque-12/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -556.82263,
+      "maxX": 234.51183,
+      "minY": -122.46119,
+      "maxY": 528.12775
+    },
+    "scale": 0.22241,
+    "x_offset": 131.84243,
+    "y_offset": 188.76351,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:22.590Z"
+}

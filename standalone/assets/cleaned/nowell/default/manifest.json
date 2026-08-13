@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "nowell",
+  "character_name": "Nowell",
+  "localized_name": "诺威尔",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/nowell/default",
+  "source_page": "https://prts.wiki/w/%E8%AF%BA%E5%A8%81%E5%B0%94",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4173_nowell/meta.json",
+    "model": "defaultskin/build/build_char_4173_nowell",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4173_nowell/defaultskin/build/build_char_4173_nowell.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4173_nowell/defaultskin/build/build_char_4173_nowell.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4173_nowell/defaultskin/build/build_char_4173_nowell.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Move",
+      "duration": 2
+    },
+    {
+      "name": "Relax",
+      "duration": 5.333333492279053
+    },
+    {
+      "name": "Sit",
+      "duration": 5.333333492279053
+    },
+    {
+      "name": "Sleep",
+      "duration": 6.666666507720947
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/nowell/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/nowell/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/nowell/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 5.333333492279053,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/nowell/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 5.333333492279053,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/nowell/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 6.666666507720947,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/nowell/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -298.81107,
+      "maxX": 351.63251,
+      "minY": -138.8681,
+      "maxY": 418.81302
+    },
+    "scale": 0.27058,
+    "x_offset": 88.85367,
+    "y_offset": 178.42443,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:21.982Z"
+}

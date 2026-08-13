@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "magallan",
+  "character_name": "Magallan",
+  "localized_name": "麦哲伦",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/magallan/default",
+  "source_page": "https://prts.wiki/w/%E9%BA%A6%E5%93%B2%E4%BC%A6",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_248_mgllan/meta.json",
+    "model": "defaultskin/build/build_char_248_mgllan",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_248_mgllan/defaultskin/build/build_char_248_mgllan.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_248_mgllan/defaultskin/build/build_char_248_mgllan.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_248_mgllan/defaultskin/build/build_char_248_mgllan.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 2
+    },
+    {
+      "name": "Relax",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Sit",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Sleep",
+      "duration": 2
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/magallan/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/magallan/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/magallan/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/magallan/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/magallan/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/magallan/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -298.78888,
+      "maxX": 155.0983,
+      "minY": -100.55514,
+      "maxY": 380.3493
+    },
+    "scale": 0.38776,
+    "x_offset": 123.85884,
+    "y_offset": 177.00858,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:16.962Z"
+}
