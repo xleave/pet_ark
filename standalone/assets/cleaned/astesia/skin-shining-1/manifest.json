@@ -97,7 +97,13 @@
       "duration": 16.66666603088379,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/astesia/skin-shining-1/special"
+      "path": "standalone/assets/cleaned/astesia/skin-shining-1/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 7,
+          "reason": "The source Special animation intentionally ends on a transparent disappearance beat after the visible flourish."
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",

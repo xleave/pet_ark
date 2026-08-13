@@ -97,7 +97,13 @@
       "duration": 10.100000381469727,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/angelina/skin-boc-1/special"
+      "path": "standalone/assets/cleaned/angelina/skin-boc-1/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 5,
+          "reason": "The source Special animation intentionally hides the character between the visible launch and reappearance poses."
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",

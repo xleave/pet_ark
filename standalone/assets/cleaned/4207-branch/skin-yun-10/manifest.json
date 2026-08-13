@@ -97,7 +97,13 @@
       "duration": 16.66666603088379,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/4207-branch/skin-yun-10/special"
+      "path": "standalone/assets/cleaned/4207-branch/skin-yun-10/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 5,
+          "reason": "The source Special animation intentionally removes the character for its effect-only disappearance beat before the visible return pose."
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
