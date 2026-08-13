@@ -3,6 +3,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { referencedRuntimeSourceEntries } from './standalone-registry-sources.mjs';
+
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const registryPath = path.join(root, 'standalone/characters/registry.json');
 const outputPath = path.join(root, 'standalone/characters/generated_registry.c');
@@ -97,8 +99,9 @@ for (const entry of registry.characters) {
     if (Object.keys(sources).length === 0 || Object.keys(animations).length === 0) {
       throw new Error(`${entry.id}:${variant.id}: runtime sources and animations are required`);
     }
+    const referencedSources = referencedRuntimeSourceEntries(sources, animations, `${entry.id}:${variant.id}`);
 
-    for (const [sourceId, source] of Object.entries(sources)) {
+    for (const [sourceId, source] of referencedSources) {
       if (!Array.isArray(source.hitboxes) || source.hitboxes.length !== source.frames) {
         throw new Error(`${entry.id}:${variant.id}:${sourceId}: source hitbox count mismatch`);
       }
@@ -178,5 +181,11 @@ for (const { entry, characterSymbol } of characters) {
 output.push('};');
 output.push('const size_t PET_CHARACTER_COUNT = sizeof(PET_CHARACTERS) / sizeof(PET_CHARACTERS[0]);', '');
 
-await fs.writeFile(outputPath, output.join('\n'));
+const temporaryOutput = `${outputPath}.partial-${process.pid}`;
+try {
+  await fs.writeFile(temporaryOutput, output.join('\n'));
+  await fs.rename(temporaryOutput, outputPath);
+} finally {
+  await fs.rm(temporaryOutput, { force: true });
+}
 console.log(`generated C registry for ${characters.length} standalone character(s) and ${characters.reduce((total, entry) => total + entry.entry.variants.length, 0)} variant(s)`);

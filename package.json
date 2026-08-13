@@ -22,6 +22,12 @@
     "standalone:build-all": "node scripts/standalone.mjs build-all",
     "standalone:package": "node scripts/standalone.mjs package",
     "standalone:test": "node scripts/standalone.mjs test",
+    "standalone:contact-sheets": "node shared/image-processing/generate-standalone-contact-sheets.mjs",
+    "standalone:validate-contact-sheets": "node shared/image-processing/validate-standalone-contact-sheets.mjs",
+    "standalone:test-contact-sheets": "node shared/image-processing/test-standalone-contact-sheets.mjs",
+    "standalone:test-manifest-hygiene": "node shared/image-processing/test-dist-manifest-hygiene.mjs",
+    "standalone:animation-coverage": "node shared/image-processing/validate-standalone-animation-coverage.mjs",
+    "standalone:test-animation-coverage": "node shared/image-processing/test-standalone-animation-audit.mjs",
     "standalone:validate": "node scripts/standalone.mjs validate",
     "standalone:validate-all": "node scripts/standalone.mjs validate-all"
   },

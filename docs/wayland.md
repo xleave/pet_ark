@@ -112,7 +112,7 @@ pkill -TERM -x pet-ark
 - Codex 全量 validator：426 expected / 426 implemented / 426 validated / 0 missing；Priestess 单角色 regression 通过。
 - Standalone 纯逻辑测试覆盖状态机、移动边界、睡眠点击唤醒、动画播放器、角色/皮肤选择和回退规则。
 - Standalone coverage validator 分别核对 roster、默认形象、皮肤、动作、runtime manifest 与打包 registry；`validate-all` 要求 425 个角色和 933 个外观全部完成。
-- image2 trace validator 检查路径、A/B 源帧、候选帧、accepted/rejected 字段和 accepted runtime usage；当前有 1 个 accepted 序列实际用于阿米娅默认外观 `sleep`。
+- image2 trace validator 检查路径、A/B 源帧、候选帧、accepted/rejected 字段和 accepted runtime usage；当前有 14 个 accepted 序列 / 14 帧进入 runtime，2 个 rejected 序列仅保留审计记录。
 - 原生 standalone：在临时开发 sysroot 中完成真实编译和链接，严格 warnings 配置下为 0 warnings。
 
 具体的当前实现数必须读取 `standalone/dist/coverage.json`；source roster 的 425 / 933 / 508 不应被误写成 runtime 验证结果。上述检查仍不等价于 compositor 中窗口呈现和交互通过；本环境没有实际 Wayland/niri 图形会话。

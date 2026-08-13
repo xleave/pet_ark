@@ -8,6 +8,7 @@ import {
   selectStandaloneAnimations,
   validateStandaloneAnimationContract,
 } from './standalone-animation-contract.mjs';
+import { deriveStandaloneMotion } from './derive-standalone-motion.mjs';
 
 const require = createRequire(import.meta.url);
 const sharp = require('sharp');
@@ -97,8 +98,31 @@ async function inspectFrame(file, frameWidth, frameHeight) {
     }
   }
   if (dirty) throw new Error(`${file}: ${dirty} transparent pixels contain hidden RGB`);
-  if (right < left || bottom < top) return { x: 0, y: 0, width: 1, height: 1 };
-  return { x: left, y: top, width: right - left + 1, height: bottom - top + 1 };
+  if (right < left || bottom < top) {
+    return { hitbox: { x: 0, y: 0, width: 1, height: 1 }, transparent: true };
+  }
+  return {
+    hitbox: { x: left, y: top, width: right - left + 1, height: bottom - top + 1 },
+    transparent: false,
+  };
+}
+
+function intentionalBlankDeclarations(manifest, source, frameCount, identity) {
+  const declarations = manifest?.processed_states?.[source]?.intentional_blank_frames || [];
+  const result = new Map();
+  for (const declaration of declarations) {
+    if (!Number.isInteger(declaration.frame) || declaration.frame < 0 || declaration.frame >= frameCount) {
+      throw new Error(`${identity}:${source}: intentional blank declaration has invalid frame ${declaration.frame}`);
+    }
+    if (typeof declaration.reason !== 'string' || declaration.reason.trim().length < 20) {
+      throw new Error(`${identity}:${source}:${declaration.frame}: intentional blank requires a concrete reason`);
+    }
+    if (result.has(declaration.frame)) {
+      throw new Error(`${identity}:${source}:${declaration.frame}: duplicate intentional blank declaration`);
+    }
+    result.set(declaration.frame, declaration.reason.trim());
+  }
+  return result;
 }
 
 function acceptedInsertions(manifest, character, variant, source, sourceFrames) {
@@ -211,12 +235,19 @@ validateStandaloneAnimationContract(animationDefinitions, availableSources, `${c
 
 const sources = {};
 const generatedProvenance = [];
+const intentionalBlankProvenance = [];
 const sourceFrameMaps = {};
 for (const source of new Set(Object.values(animationDefinitions).map((animation) => animation.source))) {
   const sourceDir = path.join(cleanedDir, source);
   const originalFrames = (await fs.readdir(sourceDir)).filter((file) => file.endsWith('.png')).sort()
     .map((file) => path.join(sourceDir, file));
   const insertions = acceptedInsertions(generatedManifest, characterId, idVariant, source, originalFrames);
+  const blankDeclarations = intentionalBlankDeclarations(
+    cleanedManifest,
+    source,
+    originalFrames.length,
+    `${characterId}:${idVariant}`,
+  );
   const frames = [];
   const sourceFrameMap = [];
   for (let index = 0; index < originalFrames.length; index++) {
@@ -238,11 +269,36 @@ for (const source of new Set(Object.values(animationDefinitions).map((animation)
   const columns = Math.min(MAX_COLUMNS, frames.length);
   const rows = Math.ceil(frames.length / columns);
   const hitboxes = [];
+  const intentionalBlankFrames = [];
   const composites = [];
   for (let index = 0; index < frames.length; index++) {
     const file = frames[index].file;
-    hitboxes.push(await inspectFrame(file, frameWidth, frameHeight));
+    const inspection = await inspectFrame(file, frameWidth, frameHeight);
+    hitboxes.push(inspection.hitbox);
+    const sourceIndex = frames[index].sourceIndex;
+    const reason = frames[index].origin === 'source' ? blankDeclarations.get(sourceIndex) : null;
+    if (inspection.transparent && !reason) {
+      throw new Error(`${characterId}:${idVariant}:${source}:${sourceIndex}: transparent frame lacks an explicit cleaned-manifest intentional_blank_frames reason`);
+    }
+    if (!inspection.transparent && reason) {
+      throw new Error(`${characterId}:${idVariant}:${source}:${sourceIndex}: intentional blank declaration points to a visible frame`);
+    }
+    if (inspection.transparent) {
+      const declaration = {
+        frame: index,
+        sourceFrame: sourceIndex,
+        reason,
+        declaration: `standalone/assets/cleaned/${characterId}/${idVariant}/manifest.json`,
+      };
+      intentionalBlankFrames.push(declaration);
+      intentionalBlankProvenance.push({ source, ...declaration });
+    }
     composites.push({ input: file, left: (index % columns) * frameWidth, top: Math.floor(index / columns) * frameHeight });
+  }
+  for (const sourceIndex of blankDeclarations.keys()) {
+    if (!intentionalBlankFrames.some((entry) => entry.sourceFrame === sourceIndex)) {
+      throw new Error(`${characterId}:${idVariant}:${source}:${sourceIndex}: intentional blank declaration was not observed in the runtime source atlas`);
+    }
   }
   const outputName = `${source}.png`;
   await sharp({
@@ -261,6 +317,8 @@ for (const source of new Set(Object.values(animationDefinitions).map((animation)
     columns,
     rows,
     hitboxes,
+    intentionalBlankFrames,
+    origin: frames.some((frame) => frame.origin === 'generated') ? 'generated' : 'source',
   };
   sourceFrameMaps[source] = sourceFrameMap;
 }
@@ -288,8 +346,25 @@ for (const [state, definition] of Object.entries(animationDefinitions)) {
     holdLast: Boolean(definition.holdLast),
     next: definition.next || null,
     generatedFrames: relevantGenerated.map((entry) => entry.frame).filter((frame) => sourceOrder.includes(frame)),
+    origin: relevantGenerated.length ? 'generated' : 'source',
+    provenanceId: `processed-prts-spine:${definition.source}`,
+    generatedSequence: relevantGenerated.length ? relevantGenerated.map((entry) => entry.sequence).join(',') : null,
   };
 }
+
+const derivedMotion = await deriveStandaloneMotion({
+  root: REPO_ROOT,
+  character: characterId,
+  variant: idVariant,
+  cleanedDir,
+  runtimeDir,
+  frameWidth,
+  frameHeight,
+  animationDefinitions,
+});
+sources['derived-motion'] = derivedMotion.source;
+Object.assign(animations, derivedMotion.animations);
+generatedProvenance.push(...derivedMotion.provenance.generatedFrames);
 
 const animationManifest = {
   schema_version: 2,
@@ -298,10 +373,12 @@ const animationManifest = {
   skin: variant.skin_id || null,
   frameSize: { width: frameWidth, height: frameHeight },
   states: Object.fromEntries(Object.entries(animations).map(([state, animation]) => [state, {
-    origin: 'processed-prts-spine',
+    origin: animation.origin,
     source_animation: animation.source,
     frame_order: animation.frameOrder,
     mirror: animation.mirror,
+    provenance_id: animation.provenanceId,
+    generated_sequence: animation.generatedSequence,
   }])),
 };
 const runtimeManifest = {
@@ -334,6 +411,8 @@ const runtimeManifest = {
   animations,
   provenance: {
     generatedFrames: generatedProvenance,
+    derivedAnimations: derivedMotion.provenance.derivedAnimations,
+    intentionalBlankFrames: intentionalBlankProvenance,
   },
 };
 await Promise.all([

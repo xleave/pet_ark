@@ -10,8 +10,10 @@ const require = createRequire(import.meta.url);
 const sharp = require('sharp');
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const ROSTER_PATH = path.join(REPO_ROOT, 'shared/character-data/standalone-roster.json');
+const INTENTIONAL_BLANKS_PATH = path.join(REPO_ROOT, 'shared/character-data/standalone-intentional-blanks.json');
 const RUNTIME_MAP_URL = 'https://static.prts.wiki/widgets/production/SpineViewer.DzdEWlBa.js.map';
 const roster = JSON.parse(await fs.readFile(ROSTER_PATH, 'utf8'));
+const intentionalBlanks = JSON.parse(await fs.readFile(INTENTIONAL_BLANKS_PATH, 'utf8'));
 const args = process.argv.slice(2);
 
 function argument(name, fallback = null) {
@@ -125,6 +127,11 @@ function workerArguments(job, config, attempt) {
 
 function characterId(job) {
   return job.character.character_id;
+}
+
+function intentionalBlankFrames(character, variant, state) {
+  return intentionalBlanks.declarations.find((entry) =>
+    entry.character === character && entry.variant === variant && entry.state === state)?.frames || [];
 }
 
 function spawnWorker(job, config, attempt, children) {
@@ -584,6 +591,9 @@ async function exportVariant(spine, { character, variant }, config) {
       fps: config.fps,
       frames: frameCount,
       path: path.relative(REPO_ROOT, animationDir),
+      ...(intentionalBlankFrames(character.character_id, variant.variant_id, safeName).length ? {
+        intentional_blank_frames: intentionalBlankFrames(character.character_id, variant.variant_id, safeName),
+      } : {}),
     };
     manifest.exported_at = new Date().toISOString();
     await fs.writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);

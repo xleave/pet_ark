@@ -66,9 +66,24 @@ Codex atlas contract 保持不变：
 
 Standalone 是原生 C / Wayland 客户端，以 `wl_shm` 提交透明像素，不需要 Codex，也不需要 X11 或 XWayland。它优先使用 `wlr-layer-shell` 创建透明 top-layer surface；在没有该协议的 GNOME Wayland 等环境回退到原生 `xdg-shell`。
 
-2026-08-12 建立的 standalone source-of-truth 包含 **425 个正式可玩角色、425 个默认形象和 508 个皮肤，共 933 个外观变体**。正式 playable alter 是独立角色；皮肤是所属角色的独立外观变体，不会伪装成动画状态。目标清单与来源分别在 `shared/character-data/standalone-roster.json` 和 `shared/character-data/standalone-sources.json`，实际完成度只以 `standalone/dist/coverage.json` 为准；source 已索引或已获取不等同于 runtime 已实现。
+2026-08-12 建立的 standalone source-of-truth 包含 **425 个正式可玩角色、425 个默认形象和 508 个皮肤，共 933 个外观变体**。正式 playable alter 是独立角色；皮肤是所属角色的独立外观变体，不会伪装成动画状态。目标清单与来源分别在 `shared/character-data/standalone-roster.json` 和 `shared/character-data/standalone-sources.json`。角色/皮肤资源条目覆盖以 `standalone/dist/coverage.json` 为准，实际动作覆盖则单独以 `standalone/dist/animation-coverage.json` 为准；source 已索引、已获取或只有静态图都不等同于动作完成。
 
 当前提交的全量 runtime 已通过完整性门禁：**425 / 425 角色、933 / 933 外观、508 / 508 皮肤，missing / blocked / unaccounted 均为 0**。每个外观都有独立 PRTS Q 版 source、cleaned 帧、animation manifest 和可直接加载的 runtime atlas。
+
+动作完成门禁还会逐外观检查核心动作帧数、视觉唯一帧数、来源、时长、循环方式、fallback 和跨状态像素重复；transition bridge 后缀单独审计，不能给核心动作凑帧数或唯一帧。仅改状态名、重复 idle、把 `sleep`/`special` 映射为 `Relax`，或让多个语义状态使用同一静态帧，均不能计为完成。当前结果如下：
+
+| 动作覆盖 | 结果 |
+|---|---:|
+| animation-complete / partial / static-only | **933 / 0 / 0** |
+| idle / movement / interaction / drag | **933 / 933 / 933 / 933** |
+| rest / sleep / wake / special | **933 / 933 / 933 / 933** |
+| source 序列 / direct-runtime 状态 | **5,146 / 3,716** |
+| 确定性 derived 序列 / 含 derived 资源的外观 | **8,392 / 920** |
+| 使用 image2 生成帧的 runtime 状态 / semantic fallback | **27 / 0** |
+
+重复帧审计记录了 1,866 组 exact duplicate，全部是带独立朝向 metadata 的左右方向镜像关系；same-frame fallback、static reused state 和 unresolved semantic duplicate 均为 0。最终 JSON 中 suspicious relation 为 1 组：Amiya default 的 `sleep`/`wake` 共享已追踪的 generated 帧；13 个低来源机械外观的 `rest`/`wake` 则分类为有意反向序列，不属于 suspicious。跨状态 transition boundary 共审计 5,601 处，其中 4 处为 warning-only、severe 为 0；3,735 个 transition bridge 的结构错误、endpoint mismatch 和 double exposure 均为 0。78,445 个 derived atlas 帧全部同时具备 runtime 引用和 provenance；28 个透明 source 帧全部在 canonical cleaned manifest 中逐帧声明原因，unexpected/invalid 为 0。
+
+最终全量图像 QA 检查了 933 个 runtime manifest、6,080 张 atlas 和 119,574 个使用中的 cell，结构性硬错误为 0。保守视觉阈值仍列出 411 个相邻帧、41 个 bridge 内部、4 个跨状态边界和 1 个 source sleep loop 人工复核 warning；定向检查确认它们来自大型特效、单轮廓淡出/淡入或 source 特效边界变化，没有双人物、跨皮肤闪回、裁切或身份漂移。这些 warning 不等于 Wayland compositor 实机验收；当前自动化环境仍没有真实 niri/KDE/GNOME 图形会话。
 
 每个已构建外观提供统一基础状态，并保留来源动作允许的特殊状态：
 
@@ -79,7 +94,7 @@ Standalone 是原生 C / Wayland 客户端，以 `wl_shm` 提交透明像素，�
 - `picked-up` / `dragging` / `dropped`
 - `rest` / `sleep` / `wake`
 
-其中 502 个外观直接使用来源中的独立 `Special` 动作，其余外观使用各自 `Interact`；来源额外提供的动作也会进入 registry，目前包含 `exit`（3 个外观）、`idle-alt`（2 个）和 `move-alt`（1 个）。
+每个状态的 manifest 会记录 `direct`、`derived` 或 `generated` 来源、帧数、FPS/时长、loop mode、fallback 和视觉唯一帧。来源额外提供的 `exit`、`idle-alt`、`move-alt` 等动作也会保留；它们不会替代八组必需动作的完成门禁。
 
 桌宠使用真正的行为状态机，而不是循环 GIF。idle 会等待合理时间后选择屏幕内随机目标；movement 完成后回到 idle；一次性交互和 transition 播放结束后才切换；长时间无交互进入 rest/sleep；点击睡眠角色会先 wake。移动系统维护朝向、输出边界、拖动恢复、速度倍率和每个外观的镜像规则。
 
@@ -141,7 +156,19 @@ standalone/assets/
 
 每个外观的 PRTS meta、Spine skeleton、atlas 和 texture 先原样写入 `source/<character>/<variant>/`；导出器再确定性生成透明、地面对齐、hidden RGB 已清零的逐帧 PNG，并按 source animation 生成独立 spritesheet 和逐帧可见 bounds。画布、采样率与最大帧数记录在各自 manifest，不依赖 Codex atlas。
 
-image2/等效 image-to-image 流程不会为了增加帧数无意义生成。当前 manifest 有 1 个实际采纳序列：阿米娅默认外观 `sleep/000` 与 `sleep/001` 之间的光流 midpoint，经透明度、身份、配色、配件、地面配准和 hidden-RGB 检查后插入 runtime `sleep`；另一个 `idle-to-rest` 候选因画风、比例、伪文字、透明度和地面配准问题被明确 rejected。完整 A/B 源帧、生成器、候选路径、runtime usage、日期和评审结论在 `standalone/assets/generated/manifest.json`。
+image2/等效 image-to-image 流程不会为了增加帧数无意义生成。当前 manifest 有 **14 个 accepted 序列 / 14 帧**，被 27 个 runtime 状态实际引用；另有 **2 个 rejected 序列**，不会进入 runtime。每个结果都保留 A/B 源帧、生成器、候选路径、runtime usage、日期和评审结论；完整记录位于 `standalone/assets/generated/manifest.json`，不会把生成帧伪装成 PRTS 原始素材。
+
+Standalone 人工验收产物与机器动作清单分别位于：
+
+- `standalone/dist/contact-sheets/coverage/`：每个外观的 idle、movement、interaction、rest/sleep 和 special 代表帧；
+- `standalone/dist/contact-sheets/animation-strips/<character>/<variant>.webp`：逐动作帧序列 strip；
+- `standalone/dist/animation-coverage.json`：933 个外观逐状态的来源、帧数、时长、loop、fallback、视觉唯一性和重复关系。
+
+重新生成 contact sheets：
+
+```bash
+npm run standalone:contact-sheets
+```
 
 获取、导出、接受/拒绝规则与新增角色步骤见 [`docs/character-assets.md`](docs/character-assets.md)。
 
@@ -204,6 +231,8 @@ npm run standalone:build -- --character amiya --skin skin-winter-1
 ```bash
 npm run standalone:build-all -- --concurrency 4
 npm run standalone:validate-all
+npm run standalone:animation-coverage
+npm run standalone:contact-sheets
 ```
 
 原生应用构建、测试、当前覆盖验证与打包：
@@ -244,8 +273,12 @@ npm run standalone:assets -- --character amiya --skin skin-winter-1 --refresh-so
 - `standalone/assets/source/<character>/<variant>/retrieval.json`：每个外观的单次获取记录。
 - `standalone/assets/generated/manifest.json`：所有 image2 序列的来源帧、生成帧和 accepted/rejected 结论。
 - `standalone/dist/coverage.json`：expected / implemented / missing / blocked 的角色、外观与皮肤覆盖结果。
+- `standalone/dist/animation-coverage.json`：逐外观真实动作完成度、provenance、帧唯一性与重复/fallback 审计。
+- `standalone/dist/contact-sheets/`：角色覆盖表和逐外观动作序列 strip。
 
 Codex roster 优先用鹰角网络官方干员档案核对；在官方页面不足以形成机器列表时，使用 PRTS、公开 game-data mirror 和公开 avatar index 做索引与视觉核对。Standalone roster 以同日 425 条可玩角色记录为身份基线，通过 PRTS 公开 `char_spine` metadata 枚举 933 个可访问的基建 Q 版外观 asset set，并用公开 `char_meta_table.json` 审计正式 alter 分组；获取日期为 2026-08-12。
+
+Codex 的 426 与 Standalone 的 425 没有漏项：两者共享 425 个正式可玩角色，Codex 另外保留 1 个剧情角色 Priestess 作为既有视觉 regression baseline；Standalone 只统计正式可玩 roster，因此不包含这条 fan/story regression entry。
 
 ## Licensing
 

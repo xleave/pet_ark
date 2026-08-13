@@ -50,4 +50,4 @@ Standalone 身份范围先来自 425 条可玩角色记录，再由 PRTS 公开 
 
 每次实际获取还会在 `standalone/assets/source/<character>/<variant>/retrieval.json` 保存来源、日期、文件路径、原始动作和处理状态。source roster 数量不代表 runtime 已完成；actual implemented/missing/blocked 由 `standalone/dist/coverage.json` 计算。
 
-AI/image2 或等效 image-to-image 补帧不能写成原始素材。逐序列的 character、variant/skin、A/B 源帧、生成帧路径、接受状态、评审结论和 accepted runtime usage 记录在 `standalone/assets/generated/manifest.json`。当前 1 个 accepted midpoint 已用于阿米娅默认外观 `sleep`，另有 1 个 rejected 反例未进入 runtime。
+AI/image2 或等效 image-to-image 补帧不能写成原始素材。逐序列的 character、variant/skin、A/B 源帧、生成帧路径、接受状态、评审结论和 accepted runtime usage 记录在 `standalone/assets/generated/manifest.json`。当前 14 个 accepted 序列 / 14 帧已进入 runtime，2 个 rejected 序列只保留审计记录。

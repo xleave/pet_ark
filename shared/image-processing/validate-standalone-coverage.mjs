@@ -248,6 +248,25 @@ async function validateRuntimePng(file) {
   return { width: info.width, height: info.height };
 }
 
+async function variantLocalAsset(manifestFile, value, label) {
+  if (typeof value !== 'string' || !value || path.isAbsolute(value)) {
+    throw new Error(`${label}: source sheet must be a relative path inside its variant directory`);
+  }
+  const variantRoot = path.dirname(manifestFile);
+  const resolved = path.resolve(variantRoot, value);
+  if (!resolved.startsWith(`${variantRoot}${path.sep}`)) {
+    throw new Error(`${label}: source sheet leaves its variant directory`);
+  }
+  const [canonicalRoot, canonicalAsset] = await Promise.all([
+    fs.realpath(variantRoot),
+    fs.realpath(resolved),
+  ]);
+  if (!canonicalAsset.startsWith(`${canonicalRoot}${path.sep}`)) {
+    throw new Error(`${label}: source sheet resolves outside its variant directory`);
+  }
+  return resolved;
+}
+
 async function validateRuntimeManifest(file, character, variant) {
   const manifest = await readJson(file);
   const identity = manifestIdentity(manifest);
@@ -274,7 +293,7 @@ async function validateRuntimeManifest(file, character, variant) {
     if (!Number.isInteger(source.columns) || !Number.isInteger(source.rows) || !source.sheet) {
       throw new Error(`${expectedCharacter}:${expectedVariant}:${sourceId}: invalid source atlas metadata`);
     }
-    const sheet = path.resolve(path.dirname(file), source.sheet);
+    const sheet = await variantLocalAsset(file, source.sheet, `${expectedCharacter}:${expectedVariant}:${sourceId}`);
     const dimensions = await validateRuntimePng(sheet);
     if (dimensions.width !== source.columns * width || dimensions.height !== source.rows * height) {
       throw new Error(`${expectedCharacter}:${expectedVariant}:${sourceId}: atlas dimensions do not match manifest`);
@@ -301,6 +320,7 @@ async function validateRuntimeManifest(file, character, variant) {
     animations,
     availablePhysicalAnimations,
     `${expectedCharacter}:${expectedVariant}`,
+    { derivedAnimations: manifest.provenance?.derivedAnimations || [] },
   );
   for (const [state, animation] of Object.entries(animations)) {
     if (!(animation.fps > 0)) throw new Error(`${expectedCharacter}:${expectedVariant}:${state}: fps must be positive`);
@@ -568,12 +588,17 @@ const coverage = {
   },
 };
 
-const output = relativePath(option('--write', path.relative(ROOT, DEFAULT_OUTPUT)));
-await fs.mkdir(path.dirname(output.absolute), { recursive: true });
-await fs.writeFile(output.absolute, `${JSON.stringify(coverage, null, 2)}\n`);
+const requestedOutput = option('--write');
+const output = requestedOutput
+  ? relativePath(requestedOutput)
+  : (characterFilter || variantFilter) ? null : relativePath(path.relative(ROOT, DEFAULT_OUTPUT));
+if (output) {
+  await fs.mkdir(path.dirname(output.absolute), { recursive: true });
+  await fs.writeFile(output.absolute, `${JSON.stringify(coverage, null, 2)}\n`);
+}
 console.log(`coverage: characters ${coverage.implemented_characters}/${coverage.expected_characters}, variants ${coverage.implemented_variants}/${coverage.expected_variants}, skins ${coverage.implemented_skins}/${coverage.expected_skins}`);
 console.log(`coverage: missing ${coverage.missing_characters} character(s), ${coverage.missing_variants} variant(s), ${coverage.missing_skins} skin(s); unaccounted ${coverage.unaccounted_variants} variant(s)`);
-console.log(`wrote ${output.relative}`);
+console.log(output ? `wrote ${output.relative}` : 'selection report not persisted (pass --write to keep it)');
 
 if (flag('--check-accounted') && !coverage.accounted) {
   throw new Error(`coverage has ${coverage.unaccounted_variants} unimplemented variant(s) without a documented source/authorization block`);

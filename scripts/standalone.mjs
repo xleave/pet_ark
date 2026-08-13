@@ -4,6 +4,7 @@ import { spawn } from 'node:child_process';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
+import { isDeepStrictEqual } from 'node:util';
 import { fileURLToPath } from 'node:url';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -28,6 +29,7 @@ Commands:
   build-all Build runtime resources for every character and skin, then compile
   validate-all
              Validate the complete roster, variants, skins, assets, and package registry
+  audit      Generate pixel-audited standalone animation coverage
   assets    Prepare runtime atlases and regenerate the C registry
 
 Options:
@@ -110,6 +112,16 @@ async function loadJson(file) {
   }
 }
 
+async function withTemporaryManifestOutputs(operation) {
+  await fs.mkdir(DIST_MANIFESTS, { recursive: true });
+  const temporaryDirectory = await fs.mkdtemp(path.join(DIST_MANIFESTS, '.selection-'));
+  try {
+    return await operation(temporaryDirectory);
+  } finally {
+    await fs.rm(temporaryDirectory, { recursive: true, force: true });
+  }
+}
+
 async function copyTree(source, destination) {
   await fs.mkdir(destination, { recursive: true });
   const entries = await fs.readdir(source, { withFileTypes: true });
@@ -172,6 +184,25 @@ function packagedRegistry(registry) {
   };
 }
 
+function runtimeStateFallbacks(runtime) {
+  const animations = runtime.animations || runtime.states || {};
+  const aliases = {
+    'run-left': 'walk-left',
+    'run-right': 'walk-right',
+    clicked: 'idle',
+    special: 'idle',
+    'picked-up': 'rest',
+    dragging: 'rest',
+    dropped: 'idle',
+    sleep: 'rest',
+    wake: 'idle',
+  };
+  return {
+    ...Object.fromEntries(Object.entries(aliases).filter(([requested, fallback]) => !animations[requested] && animations[fallback])),
+    ...(runtime.variant?.stateFallbacks || runtime.variant?.state_fallbacks || runtime.stateFallbacks || runtime.state_fallbacks || {}),
+  };
+}
+
 async function validatePackagedRegistry() {
   const appManifest = await loadJson(path.join(DIST_APP, 'manifest.json'));
   if (appManifest.schema_version !== 2 || !appManifest.character_registry || !appManifest.runtime_assets) {
@@ -189,6 +220,17 @@ async function validatePackagedRegistry() {
       const runtime = await loadJson(runtimeManifest);
       if (runtime.character?.id !== character.id || (runtime.variant?.id || 'default') !== variant.id) {
         throw new Error(`${character.id}:${variant.id}: packaged runtime identity mismatch`);
+      }
+      const runtimeAnimations = runtime.animations || runtime.states || {};
+      if (!isDeepStrictEqual(variant.animations, runtimeAnimations)) {
+        throw new Error(`${character.id}:${variant.id}: packaged registry animations differ from runtime manifest`);
+      }
+      if (!isDeepStrictEqual(variant.stateFallbacks || {}, runtimeStateFallbacks(runtime))) {
+        throw new Error(`${character.id}:${variant.id}: packaged registry fallbacks differ from runtime manifest`);
+      }
+      const runtimeStates = Object.keys(runtimeAnimations);
+      if (!isDeepStrictEqual(variant.availableStates || [], runtimeStates)) {
+        throw new Error(`${character.id}:${variant.id}: packaged registry availableStates differ from runtime manifest`);
       }
       variants++;
     }
@@ -242,15 +284,18 @@ async function prepareAssets(args) {
     }
     await run(process.execPath, ['shared/image-processing/prepare-standalone-assets.mjs', ...selectedArgs]);
   }
+  await run(process.execPath, ['shared/image-processing/sync-generated-motion-manifest.mjs']);
   await run(process.execPath, ['shared/image-processing/build-runtime-registry.mjs']);
   await run(process.execPath, ['shared/asset-tools/generate-standalone-registry.mjs']);
   await run(process.execPath, ['shared/image-processing/validate-generated-manifest.mjs']);
-  await run(process.execPath, [
-    'shared/image-processing/validate-standalone-coverage.mjs',
-    '--character', characterId,
-    '--variant', variant.variant_id,
-    '--write', `standalone/dist/manifests/coverage-${filenamePart(characterId)}-${filenamePart(variant.variant_id)}.json`,
-  ]);
+  await withTemporaryManifestOutputs(async (temporaryDirectory) => {
+    await run(process.execPath, [
+      'shared/image-processing/validate-standalone-coverage.mjs',
+      '--character', characterId,
+      '--variant', variant.variant_id,
+      '--write', path.join(temporaryDirectory, `coverage-${filenamePart(characterId)}-${filenamePart(variant.variant_id)}.json`),
+    ]);
+  });
   await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs']);
   for (const requiredVariant of requiredVariants) {
     await copyDirectory(
@@ -282,18 +327,35 @@ async function prepareAll(args) {
     }
   }
   await Promise.all(Array.from({ length: Math.min(concurrency, variants.length) }, () => worker()));
+  await run(process.execPath, ['shared/image-processing/sync-generated-motion-manifest.mjs']);
   await run(process.execPath, ['shared/image-processing/build-runtime-registry.mjs']);
   await run(process.execPath, ['shared/asset-tools/generate-standalone-registry.mjs']);
   await run(process.execPath, ['shared/image-processing/validate-generated-manifest.mjs']);
   await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs', '--require-complete']);
+  await run(process.execPath, [
+    'shared/image-processing/validate-standalone-animation-coverage.mjs',
+    '--require-roster-reconciled',
+    '--require-complete',
+  ]);
   await copyDirectory(RUNTIME_ASSETS, DIST_CHARACTERS);
   await syncDistMetadata();
+  await run(process.execPath, [
+    'shared/image-processing/generate-standalone-contact-sheets.mjs',
+    ...forwarded(args, ['--concurrency']),
+  ]);
+  await run(process.execPath, ['shared/image-processing/validate-standalone-contact-sheets.mjs']);
 }
 
 async function packageApp(args) {
   await make('build', args);
   await run(process.execPath, ['shared/image-processing/validate-generated-manifest.mjs']);
   await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs']);
+  await run(process.execPath, [
+    'shared/image-processing/validate-standalone-animation-coverage.mjs',
+    '--require-roster-reconciled',
+    '--require-complete',
+  ]);
+  await run(process.execPath, ['shared/image-processing/validate-standalone-contact-sheets.mjs']);
   const binaryDestination = path.join(DIST_APP, 'bin', 'pet-ark');
   const launcherDestination = path.join(DIST_APP, 'pet-ark');
   await fs.rm(DIST_APP, { recursive: true, force: true });
@@ -321,6 +383,11 @@ exec "$app_root/bin/pet-ark" --assets "$app_root/assets/runtime" "$@"
   } catch (error) {
     if (error.code !== 'ENOENT') throw error;
   }
+  try {
+    await fs.copyFile(path.join(STANDALONE_ROOT, 'dist', 'animation-coverage.json'), path.join(DIST_APP, 'animation-coverage.json'));
+  } catch (error) {
+    if (error.code !== 'ENOENT') throw error;
+  }
   for (const notice of ['LICENSE', 'THIRD_PARTY_NOTICES.md']) {
     try {
       await fs.copyFile(path.join(REPO_ROOT, notice), path.join(DIST_APP, notice));
@@ -335,6 +402,7 @@ exec "$app_root/bin/pet-ark" --assets "$app_root/assets/runtime" "$@"
     character_registry: 'characters/registry.json',
     runtime_assets: 'assets/runtime',
     coverage: 'coverage.json',
+    animation_coverage: 'animation-coverage.json',
     platform: 'linux-wayland',
   }, null, 2)}\n`);
   await copyDirectory(RUNTIME_ASSETS, DIST_CHARACTERS);
@@ -360,27 +428,73 @@ async function main() {
       break;
     case 'test':
       await make('test', args);
+      await run(process.execPath, ['shared/image-processing/test-standalone-animation-audit.mjs']);
+      await run(process.execPath, ['shared/image-processing/test-derived-standalone-motion.mjs']);
+      await run(process.execPath, ['shared/image-processing/test-standalone-contact-sheets.mjs']);
+      await run(process.execPath, ['shared/image-processing/test-dist-manifest-hygiene.mjs']);
       break;
     case 'validate':
       await make('test', args);
-      await run(process.execPath, ['shared/image-processing/validate-generated-manifest.mjs']);
+      await run(process.execPath, ['shared/image-processing/test-standalone-animation-audit.mjs']);
+      await run(process.execPath, ['shared/image-processing/test-standalone-contact-sheets.mjs']);
+      await run(process.execPath, ['shared/image-processing/test-dist-manifest-hygiene.mjs']);
       if (option(args, '--character')) {
         const id = option(args, '--character');
         const variant = option(args, '--variant', option(args, '--skin', 'default'));
         await run(process.execPath, [
-          'shared/image-processing/validate-standalone-coverage.mjs',
+          'shared/image-processing/validate-generated-manifest.mjs',
           ...forwarded(args, ['--character', '--variant', '--skin']),
-          '--write', `standalone/dist/manifests/coverage-${filenamePart(id)}-${filenamePart(variant)}.json`,
+        ]);
+        await withTemporaryManifestOutputs(async (temporaryDirectory) => {
+          await run(process.execPath, [
+            'shared/image-processing/validate-standalone-coverage.mjs',
+            ...forwarded(args, ['--character', '--variant', '--skin']),
+            '--write', path.join(temporaryDirectory, `coverage-${filenamePart(id)}-${filenamePart(variant)}.json`),
+            '--require-complete',
+          ]);
+          await run(process.execPath, [
+            'shared/image-processing/validate-standalone-animation-coverage.mjs',
+            ...forwarded(args, ['--character', '--variant', '--skin']),
+            '--write', path.join(temporaryDirectory, `animation-coverage-${filenamePart(id)}-${filenamePart(variant)}.json`),
+            '--require-complete',
+          ]);
+        });
+      } else {
+        await run(process.execPath, ['shared/image-processing/test-derived-standalone-motion.mjs']);
+        await run(process.execPath, ['shared/image-processing/validate-generated-manifest.mjs']);
+        await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs']);
+        await run(process.execPath, [
+          'shared/image-processing/validate-standalone-animation-coverage.mjs',
+          '--require-roster-reconciled',
+          '--require-complete',
         ]);
       }
-      await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs']);
       break;
     case 'validate-all':
       await run(process.execPath, ['shared/image-processing/build-runtime-registry.mjs']);
       await run(process.execPath, ['shared/asset-tools/generate-standalone-registry.mjs']);
       await make('test', args);
+      await run(process.execPath, ['shared/image-processing/test-standalone-animation-audit.mjs']);
+      await run(process.execPath, ['shared/image-processing/test-derived-standalone-motion.mjs']);
+      await run(process.execPath, ['shared/image-processing/test-standalone-contact-sheets.mjs']);
+      await run(process.execPath, ['shared/image-processing/test-dist-manifest-hygiene.mjs']);
       await run(process.execPath, ['shared/image-processing/validate-generated-manifest.mjs']);
       await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs', '--check-accounted', '--require-complete']);
+      await run(process.execPath, [
+        'shared/image-processing/validate-standalone-animation-coverage.mjs',
+        '--require-roster-reconciled',
+        '--require-complete',
+      ]);
+      await run(process.execPath, ['shared/image-processing/validate-standalone-contact-sheets.mjs']);
+      await run(process.execPath, ['shared/image-processing/validate-dist-manifest-hygiene.mjs']);
+      break;
+    case 'audit':
+      await run(process.execPath, [
+        'shared/image-processing/validate-standalone-animation-coverage.mjs',
+        ...forwarded(args, ['--character', '--variant', '--skin', '--concurrency']),
+        ...((args.includes('--require-animation-complete') || args.includes('--require-complete')) ? ['--require-complete'] : []),
+        '--require-roster-reconciled',
+      ]);
       break;
     case 'assets':
       await prepareAssets(args);

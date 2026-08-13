@@ -16,7 +16,7 @@ pet_ark/
 │   ├── characters/            # character → skin/variant registry 与生成的 C 数据
 │   ├── animations/            # 独立逐动作播放器
 │   ├── assets/                # source → cleaned/generated/animations → runtime
-│   └── dist/                  # app、characters、registry、manifests、coverage
+│   └── dist/                  # app、characters、registry、coverage、动作审计/contact sheets
 ├── shared/
 │   ├── character-data/        # 角色 ID、名称、Codex/standalone roster 与来源
 │   ├── asset-tools/           # roster、PRTS 获取/导出、C registry 生成
@@ -47,11 +47,19 @@ Codex renderer 使用代码绘制的 SVG/vector primitives。它不读取 standa
 - 每个角色通过统一 registry 声明移动参数，并在嵌套 variant 中声明皮肤身份、动画、缩放、镜像与回退规则；
 - 不读取 `pet.json`，也不从 8 × 9 Codex atlas 裁帧。
 
-2026-08-12 的 standalone source-of-truth 包含 425 个正式可玩角色、425 个默认形象和 508 个皮肤，共 933 个外观。正式 playable alter 是独立 character，皮肤是所属 character 的 variant。期望范围保存在 `shared/character-data/standalone-roster.json`，实际 runtime coverage 保存在 `standalone/dist/coverage.json`，两者不能混为一谈。
+2026-08-12 的 standalone source-of-truth 包含 425 个正式可玩角色、425 个默认形象和 508 个皮肤，共 933 个外观。正式 playable alter 是独立 character，皮肤是所属 character 的 variant。期望范围保存在 `shared/character-data/standalone-roster.json`，资源条目 coverage 保存在 `standalone/dist/coverage.json`，真实动作 coverage 保存在 `standalone/dist/animation-coverage.json`，三者不能混为一谈。
+
+动作 coverage 以八组必需动作（idle、movement、interaction、drag、rest、sleep、wake、special）为门禁，检查不含 transition bridge 后缀的核心帧数/视觉唯一帧数、时长、loop mode、provenance、fallback 和跨状态像素重复；bridge 由独立结构、endpoint 和 double-exposure 门禁负责。当前 933 个外观全部 animation-complete，partial/static-only 均为 0；八组动作分别都是 933 / 933。报告统计 5,146 个 source sequences、3,716 个 direct runtime states、8,392 个 deterministically derived sequences（覆盖 920 个 derived asset sets）、27 个使用 image2 生成帧的 runtime 状态和 0 个 semantic fallback。
+
+重复审计中 1,866 组 exact duplicate 全部是已分类的左右方向镜像；same-frame fallback、static reused state 和 unresolved semantic duplicate 均为 0。最终 suspicious relation 为 1 组（Amiya default 的 `sleep`/`wake` 共享已追踪 generated 帧）；13 个低来源机械外观的 `rest`/`wake` 是有意反向序列，不计作 suspicious。跨状态边界共审计 5,601 处，4 处 warning-only、0 处 severe；3,735 个真实 endpoint bridge 的结构错误、endpoint mismatch 和 double exposure 均为 0。derived 帧的 runtime/provenance 双向覆盖为 78,445 / 78,445；28 个透明 source 帧均有 canonical cleaned 声明，unexpected/invalid 为 0。
+
+最终全量图像 QA 覆盖 933 个 runtime manifest、6,080 张 atlas 和 119,574 个使用中的 cell，结构性硬错误为 0。保守阈值保留 411 个相邻帧、41 个 bridge 内部帧、4 个边界和 1 个 source sleep loop 人工复核 warning；定向 strip 检查未发现双轮廓、错误皮肤、裁切或身份闪回。资源人工验收输出到 `standalone/dist/contact-sheets/coverage/` 与 `standalone/dist/contact-sheets/animation-strips/`，不进入 Codex contact sheet 产线。
 
 JSON registry 在构建前转换为 `generated_registry.c`，因此运行时不需要 Node、Sharp 或 JSON parser。增加角色或皮肤不需要创建新的桌面程序。启动参数 `--character` 和 `--skin` 选择初始外观；`SIGHUP` 与 `SIGRTMIN` 分别切换到下一个可用角色和当前角色的下一个可用皮肤。
 
-缺失动作的回退由 variant manifest 显式声明，解析顺序是当前 variant 精确状态 → 当前 variant 兼容状态 → 同角色默认 variant 精确状态 → 默认 variant 兼容状态。运行时不会跨角色回退，也不会在缺少声明时静默混用错误皮肤。
+运行时仍支持 manifest 显式声明的兼容解析顺序：当前 variant 精确状态 → 当前 variant 兼容状态 → 同角色默认 variant 精确状态 → 默认 variant 兼容状态。动作完成门禁不会把这种运行时容错当成完成依据；当前完整产物的 semantic fallback 计数为 0。运行时不会跨角色回退，也不会在缺少声明时静默混用错误皮肤。
+
+Codex roster 的 426 来自 425 个正式可玩角色加 1 个 Priestess story regression baseline；Standalone roster 只包含 425 个正式可玩角色，因此两者差 1 是有意边界，不是 Standalone 漏角色。本阶段不改变 Codex renderer、atlas contract 或其构建产线。
 
 ## 真正共享的部分
 

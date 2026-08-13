@@ -73,6 +73,7 @@ generate-registry:
 	  echo "error: Node.js is required to generate the standalone C character registry." >&2; \
 	  exit 2; \
 	}
+	$(NODE) ../shared/image-processing/build-runtime-registry.mjs
 	$(NODE) ../shared/asset-tools/generate-standalone-registry.mjs
 
 build: check-deps generate-registry
@@ -89,6 +90,7 @@ $(BUILD_DIR)/objects/%.o: %.c
 test: $(TEST_BINARY) $(REGISTRY_TEST_BINARY)
 	$(NODE) ../shared/image-processing/test-triangle-rasterizer.mjs
 	$(NODE) ../shared/image-processing/test-runtime-registry.mjs
+	$(NODE) ../shared/asset-tools/test-standalone-registry-sources.mjs
 	$(NODE) ../shared/image-processing/test-standalone-animation-contract.mjs
 	"$(TEST_BINARY)"
 	"$(REGISTRY_TEST_BINARY)"

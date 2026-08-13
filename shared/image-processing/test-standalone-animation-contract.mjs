@@ -31,6 +31,69 @@ assert.throws(
   () => validateStandaloneAnimationContract({ ...animations, exit: undefined }, complete, 'fixture'),
   /Exit must be exposed as exit/,
 );
+
+const derivedExitProvenance = [
+  {
+    id: 'exit-source-exit',
+    state: 'exit-source',
+    intent: 'exit',
+    origin: 'derived',
+    operation: 'physical-exit-runtime-copy',
+    source_animation: 'exit',
+    source_frames: ['standalone/assets/cleaned/fixture/default/exit/000.png'],
+    atlas_frames: [20, 21],
+  },
+  {
+    id: 'exit-settle-exit',
+    state: 'exit-settle',
+    intent: 'exit',
+    origin: 'derived',
+    operation: 'exit-to-idle-registration-bridge',
+    source_animation: 'exit',
+    source_frames: [],
+    atlas_frames: [22, 23],
+    bridge_style: 'single-silhouette-endpoint-transform',
+  },
+];
+const derivedExit = {
+  ...animations,
+  exit: {
+    source: 'derived-motion',
+    origin: 'derived',
+    provenanceId: 'exit-settle-exit',
+    transitionFromProvenanceId: 'exit-source-exit',
+    transitionBridge: 'exit-settle-exit',
+    frameOrder: [20, 21, 22, 23],
+    fps: 12,
+    loop: false,
+    next: 'idle',
+  },
+};
+assert.doesNotThrow(() => validateStandaloneAnimationContract(
+  derivedExit,
+  complete,
+  'derived fixture',
+  { derivedAnimations: derivedExitProvenance },
+));
+assert.throws(
+  () => validateStandaloneAnimationContract(derivedExit, complete, 'derived fixture'),
+  /transitionFromProvenanceId must resolve to exactly one provenance sequence/,
+);
+assert.throws(
+  () => validateStandaloneAnimationContract(derivedExit, complete, 'derived fixture', {
+    derivedAnimations: derivedExitProvenance.map((entry) => entry.id === 'exit-source-exit'
+      ? { ...entry, source_animation: 'interact' }
+      : entry),
+  }),
+  /must retain physical Exit provenance/,
+);
+assert.throws(
+  () => validateStandaloneAnimationContract({
+    ...derivedExit,
+    exit: { ...derivedExit.exit, frameOrder: [20, 22, 21, 23] },
+  }, complete, 'derived fixture', { derivedAnimations: derivedExitProvenance }),
+  /must play physical Exit before its settle bridge/,
+);
 assert.throws(
   () => validateStandaloneAnimationContract({
     ...animations,
@@ -44,6 +107,18 @@ assert.throws(
     'move-alt': { ...animations['move-alt'], source: 'Move' },
   }, complete, 'fixture'),
   /move-alt must use Move2/,
+);
+assert.throws(
+  () => validateStandaloneAnimationContract({
+    ...animations,
+    'idle-alt': {
+      source: 'derived-motion',
+      origin: 'derived',
+      provenanceId: 'idle-alt-derived',
+      loop: true,
+    },
+  }, complete, 'fixture', { derivedAnimations: derivedExitProvenance }),
+  /idle-alt must use zF_Idle/,
 );
 
 const staleRegistryAnimations = { idle: { source: 'stale', fps: 1, loop: true } };
