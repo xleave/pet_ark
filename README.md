@@ -64,7 +64,7 @@ Codex atlas contract 保持不变：
 
 ## Standalone Desktop Pet
 
-Standalone 是原生 C / Wayland 客户端，以 `wl_shm` 提交透明像素，不需要 Codex，也不需要 X11 或 XWayland。它优先使用 `wlr-layer-shell` 创建透明 top-layer surface；在没有该协议的 GNOME Wayland 等环境回退到原生 `xdg-shell`。
+Standalone 是原生 C / Wayland 客户端，以 `wl_shm` 提交透明像素，不需要 Codex，也不需要 X11 或 XWayland。它优先使用 `wlr-layer-shell` 创建透明 top-layer surface。缺少 layer-shell 时默认明确退出；尚未实机验收的 `xdg-shell` fullscreen 路径只在用户显式传入 `--xdg-fullscreen-fallback` 后启用。
 
 2026-08-12 建立的 standalone source-of-truth 包含 **425 个正式可玩角色、425 个默认形象和 508 个皮肤，共 933 个外观变体**。正式 playable alter 是独立角色；皮肤是所属角色的独立外观变体，不会伪装成动画状态。目标清单与来源分别在 `shared/character-data/standalone-roster.json` 和 `shared/character-data/standalone-sources.json`。角色/皮肤资源条目覆盖以 `standalone/dist/coverage.json` 为准，实际动作覆盖则单独以 `standalone/dist/animation-coverage.json` 为准；source 已索引、已获取或只有静态图都不等同于动作完成。
 
@@ -108,6 +108,8 @@ npm run standalone:dev -- --character amiya --skin skin-winter-1
 
 透明 surface 的 pointer input region 按当前帧 alpha bounds 更新，角色外透明区域不会用完整巨大矩形阻挡桌面。`--click-through` 可将 input region 置空，使用 `SIGUSR1` 恢复。
 
+runtime 只在动画 source frame、角色像素位置、缩放、选择或 input region 实际变化时标记 surface dirty；提交后使用 `wl_surface_frame` 等待 compositor frame callback，不会在静止画面上无条件以 60 Hz 重交整块 `wl_shm` surface。
+
 启动：
 
 ```bash
@@ -119,6 +121,12 @@ npm run standalone:dev -- --character amiya
 ```bash
 npm run standalone:dev -- --character amiya -- --scale 0.8 --speed 1.25 --verbose
 npm run standalone:dev -- --character amiya -- --no-auto-move --monitor 1
+```
+
+仅在明确接受 compositor 将透明窗口作为 fullscreen toplevel 管理时启用 xdg fallback：
+
+```bash
+npm run standalone:dev -- --character amiya -- --xdg-fullscreen-fallback
 ```
 
 运行时控制：
@@ -171,6 +179,8 @@ npm run standalone:contact-sheets
 ```
 
 获取、导出、接受/拒绝规则与新增角色步骤见 [`docs/character-assets.md`](docs/character-assets.md)。
+
+当前版本有意将 source、cleaned、generated、runtime 和人工验收表作为普通 Git 对象提交，以保证外部维护者 PR 的 provenance 可离线复核。仓库采用 4 GiB tracked-tree / 50 MiB 单文件预算，并由 `npm run repository:asset-budget` 在 PR CI 中检查；原因、迁移触发条件和 Git LFS 跨 fork 风险见 [`docs/asset-storage.md`](docs/asset-storage.md)。
 
 ## Building
 
@@ -242,6 +252,7 @@ npm run standalone:build
 npm run standalone:test
 npm run standalone:validate
 npm run standalone:package
+npm run repository:asset-budget
 ```
 
 打包输出位于 `standalone/dist/app/`，包含原生可执行文件、独立 runtime assets、角色 registry、manifest、license 和 third-party notices。

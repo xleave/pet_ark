@@ -14,9 +14,11 @@ Wayland 客户端不能像 X11 客户端一样任意设置顶层窗口的全局�
 |---|---|---|---|
 | niri / wlroots / Smithay compositor | `wlr-layer-shell-unstable-v1` | transparent top-layer surface，角色在选定输出内移动 | 仍需在真实 niri 会话人工检查 layer、缩放、输入和多显示器 |
 | KDE Plasma Wayland | compositor 提供 wlr layer-shell 时使用同一路径 | transparent layer surface | 不同 Plasma 版本的协议暴露和层级策略需实机核对 |
-| GNOME Wayland | `xdg-shell` fallback | 原生 Wayland fullscreen 透明面、无客户端边框、内部移动，输入仅覆盖当前角色 bbox | GNOME 不提供 wlr layer-shell；不能保证 always-on-top，compositor 也可能按全屏应用管理 surface |
+| GNOME Wayland | 默认不创建 surface；`--xdg-fullscreen-fallback` 显式 opt-in | opt-in 后使用原生 Wayland fullscreen 透明面、无客户端边框、内部移动，输入仅覆盖当前角色 bbox | 尚未实机验收；GNOME 可能按真正全屏应用管理 surface、focus、workspace 和 shell chrome |
 
-应用启动时优先检测 layer-shell global；不存在时自动使用 xdg-shell fullscreen fallback，不会强制 X11 或 XWayland。xdg fallback 通过 xdg-decoration 请求 client-side decoration，因此应用自身不绘制边框；compositor 是否额外装饰或保持层级仍由 compositor 决定。
+应用启动时优先检测 layer-shell global。不存在时默认报错并解释不支持桌宠定位，不会自动创建 fullscreen toplevel，也不会强制 X11 或 XWayland。只有显式传入 `--xdg-fullscreen-fallback` 才会创建 xdg fullscreen surface；该路径通过 xdg-decoration 请求 client-side decoration，因此应用自身不绘制边框，compositor 是否额外装饰、改变 focus/workspace 或保持层级仍由 compositor 决定。
+
+提交节奏由内容变化和 compositor 共同控制。动画 source frame、角色整数像素位置、scale、selection 或 input region 没有变化时不会置 dirty；一次 buffer commit 后等待 `wl_surface_frame` callback 才允许下一次 commit。因此静止桌宠不会固定 60 Hz attach/damage/commit，移动和动画也不会跑在 compositor pacing 之前。
 
 ## 构建依赖
 
@@ -65,7 +67,10 @@ npm run standalone:dev -- --character amiya -- --scale 0.8 --speed 1.25
 npm run standalone:dev -- --character amiya -- --no-auto-move
 npm run standalone:dev -- --character amiya -- --monitor 1
 npm run standalone:dev -- --character amiya -- --click-through
+npm run standalone:dev -- --character amiya -- --xdg-fullscreen-fallback
 ```
+
+最后一项仅用于明确测试 xdg fullscreen 路径；它不是 GNOME 的默认或已验证推荐设置。
 
 运行时控制：
 
@@ -105,6 +110,8 @@ pkill -TERM -x pet-ark
 
 `--monitor N` 按 Wayland output 枚举顺序选择显示器。移动边界取自该 output 配置；新增/移除显示器后的动态重选仍应纳入人工验收。
 
+当前只读取整数 `wl_output.scale` 来换算输出逻辑边界，尚未调用 `wl_surface_set_buffer_scale`，也未实现 fractional-scale/viewporter。高 DPI 或分数缩放输出可能由 compositor 放大 scale=1 的 shm buffer，清晰度可能低于原生像素密度；这是 niri/KDE/GNOME 实机验收前保留的明确限制。
+
 ## 自动验证边界
 
 当前分支已有以下可复现检查路径：
@@ -123,7 +130,7 @@ pkill -TERM -x pet-ark
 
 - niri：layer-shell surface 位于预期层，工作区切换行为符合预期。
 - KDE Wayland：实际版本是否公布 layer-shell，以及 top layer 是否稳定。
-- GNOME Wayland：xdg fallback 能否接受当前 workflow；确认不承诺 always-on-top。
+- GNOME Wayland：仅在显式 opt-in 后检查 xdg fullscreen fallback 对 workspace、focus、shell chrome 与 fullscreen policy 的影响；确认不承诺 always-on-top。
 - 透明区域点击桌面，角色可见区域点击角色；动态帧不会留下过大的阻挡矩形。
 - click-through 开启后 `SIGUSR1` 可以恢复输入。
 - 点击与拖动阈值合理，拖动释放后不越界、不突跳。
@@ -132,5 +139,6 @@ pkill -TERM -x pet-ark
 - `--scale`、滚轮、`--speed`、中键自动移动开关可用。
 - `--monitor 1` 在双显示器下选择正确 output，缩放比例和边界正确。
 - `SIGHUP` 在多个已构建角色间切换；`SIGRTMIN` 在同角色多个已构建皮肤间切换，并确认帧、比例和 input region 同步刷新。
+- HiDPI / fractional-scale 输出：记录 scale=1 shm buffer 的实际清晰度，再决定 buffer-scale 或 viewporter 实现。
 
 当前仓库环境只应报告原生编译/单元测试或 capability probe 的实际结果；在没有 niri 图形会话时，不得写成“niri 实机验证通过”。

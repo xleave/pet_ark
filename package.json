@@ -28,6 +28,7 @@
     "standalone:test-manifest-hygiene": "node shared/image-processing/test-dist-manifest-hygiene.mjs",
     "standalone:animation-coverage": "node shared/image-processing/validate-standalone-animation-coverage.mjs",
     "standalone:test-animation-coverage": "node shared/image-processing/test-standalone-animation-audit.mjs",
+    "repository:asset-budget": "node shared/asset-tools/validate-repository-asset-budget.mjs",
     "standalone:validate": "node scripts/standalone.mjs validate",
     "standalone:validate-all": "node scripts/standalone.mjs validate-all"
   },
