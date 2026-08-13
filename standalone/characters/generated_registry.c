@@ -2,169 +2,148 @@
 
 #include <stddef.h>
 
-static const PetHitbox amiya_relax_hitboxes[] = {
-  { 73, 58, 200, 370 },
-  { 67, 57, 205, 371 },
-  { 59, 56, 214, 372 },
-  { 44, 56, 228, 372 },
-  { 30, 57, 242, 371 },
-  { 26, 58, 247, 370 },
-  { 32, 60, 242, 368 },
-  { 45, 62, 231, 366 },
-  { 63, 62, 214, 366 },
-  { 79, 62, 198, 366 },
-  { 82, 61, 194, 367 },
-  { 79, 60, 195, 368 },
+static const PetHitbox amiya_default_relax_hitboxes[] = {
+  { 74, 17, 123, 227 },
+  { 69, 15, 128, 229 },
+  { 57, 15, 140, 229 },
+  { 46, 16, 151, 228 },
+  { 49, 18, 149, 226 },
+  { 63, 19, 136, 225 },
+  { 78, 19, 122, 225 },
+  { 79, 18, 120, 226 },
 };
-static const PetAnimationSource amiya_relax_source = {
-  "relax", "amiya/relax.png", 12, 8, 2, amiya_relax_hitboxes
+static const PetAnimationSource amiya_default_relax_source = {
+  "relax", "amiya/default/relax.png", 8, 8, 1, amiya_default_relax_hitboxes
 };
 
-static const PetHitbox amiya_move_hitboxes[] = {
-  { 90, 61, 190, 371 },
-  { 106, 62, 172, 369 },
-  { 101, 62, 176, 369 },
-  { 92, 63, 186, 368 },
-  { 84, 63, 196, 368 },
-  { 76, 62, 204, 369 },
-  { 74, 62, 204, 369 },
-  { 89, 61, 187, 372 },
-  { 102, 61, 174, 374 },
-  { 100, 62, 177, 372 },
-  { 89, 63, 188, 371 },
-  { 79, 63, 201, 370 },
-  { 70, 62, 213, 370 },
-  { 72, 61, 211, 371 },
+static const PetHitbox amiya_default_move_hitboxes[] = {
+  { 85, 19, 117, 227 },
+  { 94, 18, 106, 228 },
+  { 87, 20, 114, 226 },
+  { 80, 20, 122, 226 },
+  { 74, 19, 127, 227 },
+  { 84, 18, 115, 229 },
+  { 93, 19, 107, 229 },
+  { 86, 20, 114, 228 },
+  { 77, 20, 125, 227 },
+  { 72, 19, 132, 227 },
 };
-static const PetAnimationSource amiya_move_source = {
-  "move", "amiya/move.png", 14, 8, 2, amiya_move_hitboxes
+static const PetAnimationSource amiya_default_move_source = {
+  "move", "amiya/default/move.png", 10, 8, 2, amiya_default_move_hitboxes
 };
 
-static const PetHitbox amiya_interact_hitboxes[] = {
-  { 73, 58, 200, 370 },
-  { 31, 80, 221, 348 },
-  { 11, 87, 236, 341 },
-  { 8, 86, 228, 342 },
-  { 8, 86, 228, 342 },
-  { 7, 86, 229, 342 },
-  { 7, 86, 229, 342 },
-  { 7, 86, 229, 342 },
-  { 7, 86, 229, 342 },
-  { 7, 85, 230, 343 },
-  { 28, 79, 213, 349 },
-  { 54, 67, 201, 361 },
+static const PetHitbox amiya_default_interact_hitboxes[] = {
+  { 74, 17, 123, 227 },
+  { 39, 35, 144, 209 },
+  { 34, 34, 141, 210 },
+  { 34, 34, 141, 210 },
+  { 34, 34, 141, 210 },
+  { 34, 34, 141, 210 },
+  { 34, 33, 141, 211 },
+  { 58, 26, 122, 218 },
 };
-static const PetAnimationSource amiya_interact_source = {
-  "interact", "amiya/interact.png", 12, 8, 2, amiya_interact_hitboxes
+static const PetAnimationSource amiya_default_interact_source = {
+  "interact", "amiya/default/interact.png", 8, 8, 1, amiya_default_interact_hitboxes
 };
 
-static const PetHitbox amiya_sit_hitboxes[] = {
-  { 90, 149, 192, 299 },
-  { 91, 146, 192, 302 },
-  { 95, 147, 193, 301 },
-  { 100, 149, 194, 299 },
-  { 102, 145, 197, 303 },
-  { 100, 143, 200, 305 },
-  { 95, 145, 197, 303 },
-  { 91, 150, 191, 298 },
-  { 89, 147, 192, 301 },
-  { 93, 146, 192, 302 },
-  { 98, 149, 193, 299 },
-  { 101, 147, 195, 301 },
-  { 101, 143, 200, 305 },
-  { 98, 143, 199, 305 },
-  { 93, 147, 194, 301 },
-  { 90, 149, 192, 299 },
-  { 91, 146, 192, 302 },
-  { 95, 147, 193, 301 },
-  { 100, 149, 194, 299 },
-  { 102, 145, 197, 303 },
-  { 100, 143, 200, 305 },
-  { 95, 145, 197, 303 },
-  { 91, 150, 191, 298 },
-  { 89, 147, 192, 301 },
-  { 93, 146, 192, 302 },
-  { 98, 149, 193, 299 },
-  { 101, 147, 195, 301 },
-  { 101, 143, 200, 305 },
-  { 98, 143, 199, 305 },
-  { 93, 147, 194, 301 },
+static const PetHitbox amiya_default_sit_hitboxes[] = {
+  { 85, 72, 122, 219 },
+  { 88, 71, 118, 220 },
+  { 92, 70, 121, 221 },
+  { 89, 69, 122, 223 },
+  { 85, 72, 122, 219 },
+  { 88, 71, 118, 220 },
+  { 92, 70, 121, 221 },
+  { 89, 69, 122, 223 },
+  { 85, 72, 122, 219 },
+  { 88, 71, 118, 220 },
+  { 92, 70, 121, 221 },
+  { 89, 69, 122, 223 },
+  { 85, 72, 122, 219 },
+  { 88, 71, 118, 220 },
+  { 92, 70, 121, 221 },
+  { 89, 69, 122, 223 },
 };
-static const PetAnimationSource amiya_sit_source = {
-  "sit", "amiya/sit.png", 30, 8, 4, amiya_sit_hitboxes
+static const PetAnimationSource amiya_default_sit_source = {
+  "sit", "amiya/default/sit.png", 16, 8, 2, amiya_default_sit_hitboxes
 };
 
-static const PetHitbox amiya_sleep_hitboxes[] = {
-  { 0, 271, 353, 177 },
-  { 0, 271, 353, 177 },
-  { 0, 272, 353, 176 },
-  { 0, 272, 354, 176 },
-  { 0, 272, 354, 176 },
-  { 0, 273, 354, 175 },
-  { 0, 273, 354, 175 },
-  { 0, 274, 354, 174 },
-  { 0, 274, 354, 174 },
-  { 0, 275, 354, 173 },
-  { 0, 275, 354, 173 },
-  { 0, 275, 354, 173 },
-  { 0, 276, 354, 172 },
-  { 0, 276, 354, 172 },
-  { 0, 276, 354, 172 },
-  { 0, 277, 354, 171 },
-  { 0, 277, 354, 171 },
-  { 0, 276, 354, 172 },
-  { 0, 276, 354, 172 },
-  { 0, 276, 354, 172 },
-  { 0, 275, 354, 173 },
-  { 0, 275, 354, 173 },
-  { 0, 274, 354, 174 },
-  { 0, 274, 354, 174 },
-  { 0, 273, 354, 175 },
-  { 0, 273, 354, 175 },
-  { 0, 272, 354, 176 },
-  { 0, 272, 354, 176 },
-  { 0, 272, 353, 176 },
-  { 0, 271, 353, 177 },
+static const PetHitbox amiya_default_sleep_hitboxes[] = {
+  { 9, 147, 238, 116 },
+  { 9, 147, 238, 116 },
+  { 9, 148, 238, 115 },
+  { 9, 148, 238, 115 },
+  { 10, 149, 237, 114 },
+  { 10, 149, 237, 114 },
+  { 11, 150, 236, 113 },
+  { 11, 150, 236, 112 },
+  { 12, 151, 235, 111 },
+  { 12, 151, 235, 111 },
+  { 12, 151, 235, 111 },
+  { 12, 150, 235, 112 },
+  { 12, 150, 235, 113 },
+  { 11, 149, 236, 114 },
+  { 11, 149, 236, 114 },
+  { 10, 148, 237, 115 },
+  { 10, 148, 237, 115 },
 };
-static const PetAnimationSource amiya_sleep_source = {
-  "sleep", "amiya/sleep.png", 30, 8, 4, amiya_sleep_hitboxes
+static const PetAnimationSource amiya_default_sleep_source = {
+  "sleep", "amiya/default/sleep.png", 17, 8, 3, amiya_default_sleep_hitboxes
 };
 
-static const int amiya_idle_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
-static const int amiya_walk_left_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
-static const int amiya_walk_right_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
-static const int amiya_run_left_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
-static const int amiya_run_right_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
-static const int amiya_clicked_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
-static const int amiya_picked_up_order[] = { 0, 1, 2, 3, 4, 5 };
-static const int amiya_dragging_order[] = { 5, 6, 7, 8, 9, 10 };
-static const int amiya_dropped_order[] = { 5, 4, 3, 2, 1, 0 };
-static const int amiya_rest_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 };
-static const int amiya_sleep_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 };
-static const int amiya_wake_order[] = { 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
-static const int amiya_special_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+static const int amiya_default_idle_order[] = { 0, 1, 2, 3, 4, 5, 6, 7 };
+static const int amiya_default_walk_left_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+static const int amiya_default_walk_right_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+static const int amiya_default_run_left_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+static const int amiya_default_run_right_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+static const int amiya_default_clicked_order[] = { 0, 1, 2, 3, 4, 5, 6, 7 };
+static const int amiya_default_picked_up_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+static const int amiya_default_dragging_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+static const int amiya_default_dropped_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+static const int amiya_default_rest_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+static const int amiya_default_sleep_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
+static const int amiya_default_wake_order[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
+static const int amiya_default_special_order[] = { 0, 1, 2, 3, 4, 5, 6, 7 };
 
-static const PetAnimationDefinition amiya_animations[] = {
-  { "idle", &amiya_relax_source, amiya_idle_order, 12, 12, true, false, false, NULL },
-  { "walk-left", &amiya_move_source, amiya_walk_left_order, 14, 12, true, true, false, NULL },
-  { "walk-right", &amiya_move_source, amiya_walk_right_order, 14, 12, true, false, false, NULL },
-  { "run-left", &amiya_move_source, amiya_run_left_order, 14, 18, true, true, false, NULL },
-  { "run-right", &amiya_move_source, amiya_run_right_order, 14, 18, true, false, false, NULL },
-  { "clicked", &amiya_interact_source, amiya_clicked_order, 12, 12, false, false, false, "idle" },
-  { "picked-up", &amiya_sit_source, amiya_picked_up_order, 6, 12, false, false, false, "dragging" },
-  { "dragging", &amiya_sit_source, amiya_dragging_order, 6, 6, true, false, false, NULL },
-  { "dropped", &amiya_sit_source, amiya_dropped_order, 6, 12, false, false, false, "idle" },
-  { "rest", &amiya_sit_source, amiya_rest_order, 30, 8, false, false, true, "sleep" },
-  { "sleep", &amiya_sleep_source, amiya_sleep_order, 30, 10, true, false, false, NULL },
-  { "wake", &amiya_sleep_source, amiya_wake_order, 30, 12, false, false, false, "idle" },
-  { "special", &amiya_interact_source, amiya_special_order, 12, 12, false, false, false, "idle" },
+static const PetAnimationDefinition amiya_default_animations[] = {
+  { "idle", &amiya_default_relax_source, amiya_default_idle_order, 8, 12, true, false, false, NULL },
+  { "walk-left", &amiya_default_move_source, amiya_default_walk_left_order, 10, 12, true, true, false, NULL },
+  { "walk-right", &amiya_default_move_source, amiya_default_walk_right_order, 10, 12, true, false, false, NULL },
+  { "run-left", &amiya_default_move_source, amiya_default_run_left_order, 10, 18, true, true, false, NULL },
+  { "run-right", &amiya_default_move_source, amiya_default_run_right_order, 10, 18, true, false, false, NULL },
+  { "clicked", &amiya_default_interact_source, amiya_default_clicked_order, 8, 12, false, false, false, "idle" },
+  { "picked-up", &amiya_default_sit_source, amiya_default_picked_up_order, 16, 12, false, false, false, "dragging" },
+  { "dragging", &amiya_default_sit_source, amiya_default_dragging_order, 16, 6, true, false, false, NULL },
+  { "dropped", &amiya_default_sit_source, amiya_default_dropped_order, 16, 12, false, false, false, "idle" },
+  { "rest", &amiya_default_sit_source, amiya_default_rest_order, 16, 8, false, false, true, "sleep" },
+  { "sleep", &amiya_default_sleep_source, amiya_default_sleep_order, 17, 10, true, false, false, NULL },
+  { "wake", &amiya_default_sleep_source, amiya_default_wake_order, 17, 12, false, false, false, "idle" },
+  { "special", &amiya_default_interact_source, amiya_default_special_order, 8, 12, false, false, false, "idle" },
+};
+
+static const PetVariant amiya_variants[] = {
+  {
+    .id = "default",
+    .skin_id = NULL,
+    .name = "默认",
+    .localized_name = "默认",
+    .variant_type = "base_form",
+    .assets_subdir = "amiya/default",
+    .default_scale = 1.0f,
+    .can_mirror = true,
+    .animations = amiya_default_animations,
+    .animation_count = sizeof(amiya_default_animations) / sizeof(amiya_default_animations[0]),
+    .state_fallbacks = NULL,
+    .state_fallback_count = 0,
+    .fallback_variant_id = NULL,
+  },
 };
 
 const PetCharacter PET_CHARACTERS[] = {
   {
-    "amiya", "Amiya", "阿米娅", 1.0f,
+    "amiya", "Amiya", "阿米娅",
     68.0f, 116.0f, 4.0f, 11.0f, 75.0f,
-    true, amiya_animations, sizeof(amiya_animations) / sizeof(amiya_animations[0])
+    amiya_variants, sizeof(amiya_variants) / sizeof(amiya_variants[0]), "default"
   },
 };
 const size_t PET_CHARACTER_COUNT = sizeof(PET_CHARACTERS) / sizeof(PET_CHARACTERS[0]);

@@ -5,6 +5,7 @@
 
 typedef struct {
   const char *character_id;
+  const char *skin_id;
   const char *assets_root;
   float scale;
   float speed;

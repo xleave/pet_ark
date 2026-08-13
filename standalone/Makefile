@@ -31,6 +31,11 @@ TEST_SOURCES := \
   animations/animation.c
 TEST_OBJECTS := $(patsubst %.c,$(BUILD_DIR)/test-objects/%.o,$(TEST_SOURCES))
 TEST_BINARY := $(BUILD_DIR)/tests/runtime-tests
+REGISTRY_TEST_SOURCES := \
+  tests/test_registry.c \
+  characters/character.c
+REGISTRY_TEST_OBJECTS := $(patsubst %.c,$(BUILD_DIR)/registry-test-objects/%.o,$(REGISTRY_TEST_SOURCES))
+REGISTRY_TEST_BINARY := $(BUILD_DIR)/tests/registry-tests
 
 .PHONY: all build test check-deps generate-registry clean help
 
@@ -81,8 +86,9 @@ $(BUILD_DIR)/objects/%.o: %.c
 	@mkdir -p "$(@D)"
 	$(CC) $(SYSROOT_FLAG) $(CPPFLAGS) $(BASE_CPPFLAGS) $(PKG_CFLAGS) $(CFLAGS) $(BASE_CFLAGS) -c "$<" -o "$@"
 
-test: $(TEST_BINARY)
+test: $(TEST_BINARY) $(REGISTRY_TEST_BINARY)
 	"$(TEST_BINARY)"
+	"$(REGISTRY_TEST_BINARY)"
 
 $(TEST_BINARY): $(TEST_OBJECTS)
 	@mkdir -p "$(@D)"
@@ -92,8 +98,17 @@ $(BUILD_DIR)/test-objects/%.o: %.c
 	@mkdir -p "$(@D)"
 	$(CC) $(SYSROOT_FLAG) $(CPPFLAGS) $(BASE_CPPFLAGS) $(CFLAGS) $(BASE_CFLAGS) -c "$<" -o "$@"
 
+$(REGISTRY_TEST_BINARY): $(REGISTRY_TEST_OBJECTS)
+	@mkdir -p "$(@D)"
+	$(CC) $(SYSROOT_FLAG) $(LDFLAGS) $^ $(LDLIBS) -o "$@"
+
+$(BUILD_DIR)/registry-test-objects/%.o: %.c
+	@mkdir -p "$(@D)"
+	$(CC) $(SYSROOT_FLAG) $(CPPFLAGS) $(BASE_CPPFLAGS) $(CFLAGS) $(BASE_CFLAGS) -c "$<" -o "$@"
+
 clean:
 	rm -rf "$(BUILD_DIR)"
 
 -include $(APP_OBJECTS:.o=.d)
 -include $(TEST_OBJECTS:.o=.d)
+-include $(REGISTRY_TEST_OBJECTS:.o=.d)

@@ -109,6 +109,8 @@ struct PetApp {
   float speed;
   const PetCharacter *character;
   size_t character_index;
+  const PetVariant *variant;
+  size_t variant_index;
   PetStateMachine state;
   PetMovement movement;
   bool movement_positioned;
@@ -121,6 +123,8 @@ static volatile sig_atomic_t signal_quit;
 static volatile sig_atomic_t signal_click_through;
 static volatile sig_atomic_t signal_auto_move;
 static volatile sig_atomic_t signal_next_character;
+static volatile sig_atomic_t signal_next_variant;
+static volatile sig_atomic_t next_variant_signal_number;
 
 static int minimum_int(int left, int right) { return left < right ? left : right; }
 static int maximum_int(int left, int right) { return left > right ? left : right; }
@@ -151,11 +155,13 @@ static void on_signal(int number) {
   if (number == SIGUSR1) signal_click_through = 1;
   else if (number == SIGUSR2) signal_auto_move = 1;
   else if (number == SIGHUP) signal_next_character = 1;
+  else if (number == next_variant_signal_number) signal_next_variant = 1;
   else signal_quit = 1;
 }
 
 static void install_signal_handlers(void) {
   struct sigaction action = { 0 };
+  next_variant_signal_number = SIGRTMIN;
   action.sa_handler = on_signal;
   sigemptyset(&action.sa_mask);
   sigaction(SIGINT, &action, NULL);
@@ -163,6 +169,7 @@ static void install_signal_handlers(void) {
   sigaction(SIGUSR1, &action, NULL);
   sigaction(SIGUSR2, &action, NULL);
   sigaction(SIGHUP, &action, NULL);
+  sigaction((int)next_variant_signal_number, &action, NULL);
 }
 
 static void output_geometry(void *data, struct wl_output *output, int32_t x, int32_t y,
@@ -541,11 +548,13 @@ static const PetAnimationDefinition *desired_animation(PetApp *app) {
   if (app->picking_up) id = "picked-up";
   else if (app->special_animation && app->state.behavior == PET_BEHAVIOR_INTERACTION) id = "special";
   else id = pet_state_machine_animation(&app->state, app->movement.direction);
-  const PetAnimationDefinition *definition = pet_character_animation(app->character, id);
-  if (!definition && !strcmp(id, "run-left")) definition = pet_character_animation(app->character, "walk-left");
-  if (!definition && !strcmp(id, "run-right")) definition = pet_character_animation(app->character, "walk-right");
-  if (!definition) definition = pet_character_animation(app->character, "idle");
-  return definition;
+  PetAnimationResolution resolution;
+  if (!pet_character_resolve_animation(app->character, app->variant, id, &resolution)) {
+    fprintf(stderr, "pet-ark: state '%s' is unresolved for %s/%s\n",
+            id, app->character->id, app->variant->id);
+    return NULL;
+  }
+  return resolution.animation;
 }
 
 static bool current_frame_geometry(PetApp *app, PetImage **image, int *source_x, int *source_y,
@@ -676,14 +685,39 @@ static bool render(PetApp *app) {
   return true;
 }
 
-static void select_character(PetApp *app, size_t index, bool first) {
-  if (PET_CHARACTER_COUNT == 0) return;
+static bool variant_assets_available(const PetApp *app, const PetVariant *variant) {
+  char path[PATH_MAX];
+  return app->config.assets_root && variant && variant->assets_subdir &&
+         snprintf(path, sizeof(path), "%s/%s", app->config.assets_root,
+                  variant->assets_subdir) < (int)sizeof(path) &&
+         access(path, R_OK | X_OK) == 0;
+}
+
+static bool apply_selection(PetApp *app, size_t character_index, size_t variant_index,
+                            bool first) {
+  if (character_index >= PET_CHARACTER_COUNT) return false;
+  const PetCharacter *character = &PET_CHARACTERS[character_index];
+  if (variant_index >= character->variant_count) return false;
+  const PetVariant *variant = &character->variants[variant_index];
+  if (!variant_assets_available(app, variant)) {
+    fprintf(stderr, "pet-ark: runtime assets unavailable for %s/%s\n",
+            character->id, variant->id);
+    return false;
+  }
   const float previous_x = app->movement.x;
   const float previous_y = app->movement.y;
-  app->character_index = index % PET_CHARACTER_COUNT;
-  app->character = &PET_CHARACTERS[app->character_index];
+  app->character_index = character_index;
+  app->character = character;
+  app->variant_index = variant_index;
+  app->variant = variant;
+  app->config.character_id = character->id;
+  app->config.skin_id = variant->id;
+  app->pressed = false;
+  app->drag_started = false;
+  app->picking_up = false;
+  app->special_animation = false;
   clear_sheets(app);
-  if (!app->explicit_scale) app->scale = app->character->default_scale;
+  if (!app->explicit_scale) app->scale = app->variant->default_scale;
   app->scale = fminf(3.0f, fmaxf(0.25f, app->scale));
   pet_state_machine_init(&app->state, (uint32_t)(time(NULL) ^ getpid()),
                          app->character->idle_min_seconds, app->character->idle_max_seconds,
@@ -697,7 +731,13 @@ static void select_character(PetApp *app, size_t index, bool first) {
   }
   app->movement_positioned = !first;
   memset(&app->animation, 0, sizeof(app->animation));
-  pet_animation_set(&app->animation, pet_character_animation(app->character, "idle"));
+  PetAnimationResolution idle;
+  if (!pet_character_resolve_animation(app->character, app->variant, "idle", &idle)) {
+    fprintf(stderr, "pet-ark: %s/%s has no resolvable idle animation\n",
+            app->character->id, app->variant->id);
+    return false;
+  }
+  pet_animation_set(&app->animation, idle.animation);
   if (app->width > 0 && first) {
     PetImage *image = NULL;
     int sx, sy, fw, fh, dw, dh;
@@ -709,8 +749,32 @@ static void select_character(PetApp *app, size_t index, bool first) {
     }
   }
   app->needs_redraw = true;
-  fprintf(stderr, "pet-ark: character %s (%s)\n", app->character->id,
-          app->character->localized_name);
+  fprintf(stderr, "pet-ark: character %s (%s), skin %s (%s)\n",
+          app->character->id, app->character->localized_name,
+          app->variant->id, app->variant->localized_name);
+  return true;
+}
+
+static bool select_next_character(PetApp *app) {
+  for (size_t offset = 1; offset <= PET_CHARACTER_COUNT; offset++) {
+    const size_t index = (app->character_index + offset) % PET_CHARACTER_COUNT;
+    const PetCharacter *character = &PET_CHARACTERS[index];
+    const PetVariant *variant = pet_character_default_variant(character);
+    if (variant && variant_assets_available(app, variant))
+      return apply_selection(app, index, (size_t)(variant - character->variants), false);
+  }
+  return false;
+}
+
+static bool select_next_variant(PetApp *app) {
+  if (!app->character || app->character->variant_count == 0) return false;
+  for (size_t offset = 1; offset <= app->character->variant_count; offset++) {
+    const size_t index = (app->variant_index + offset) % app->character->variant_count;
+    const PetVariant *variant = &app->character->variants[index];
+    if (variant_assets_available(app, variant))
+      return apply_selection(app, app->character_index, index, false);
+  }
+  return false;
 }
 
 static void update_runtime_controls(PetApp *app) {
@@ -729,7 +793,11 @@ static void update_runtime_controls(PetApp *app) {
   }
   if (signal_next_character) {
     signal_next_character = 0;
-    select_character(app, app->character_index + 1, false);
+    if (!select_next_character(app)) fprintf(stderr, "pet-ark: no selectable character assets\n");
+  }
+  if (signal_next_variant) {
+    signal_next_variant = 0;
+    if (!select_next_variant(app)) fprintf(stderr, "pet-ark: no selectable skin assets\n");
   }
 }
 
@@ -838,10 +906,10 @@ static bool initialize_wayland(PetApp *app) {
   return true;
 }
 
-static bool path_has_character(const char *root, const char *character_id) {
+static bool path_has_variant(const char *root, const PetVariant *variant) {
   char path[PATH_MAX];
-  return root && character_id &&
-         snprintf(path, sizeof(path), "%s/%s", root, character_id) < (int)sizeof(path) &&
+  return root && variant && variant->assets_subdir &&
+         snprintf(path, sizeof(path), "%s/%s", root, variant->assets_subdir) < (int)sizeof(path) &&
          access(path, R_OK | X_OK) == 0;
 }
 
@@ -856,7 +924,7 @@ static bool resolve_assets_root(PetApp *app, char resolved[PATH_MAX]) {
     "characters",
   };
   for (size_t index = 0; index < sizeof(candidates) / sizeof(candidates[0]); index++) {
-    if (path_has_character(candidates[index], app->config.character_id)) {
+    if (path_has_variant(candidates[index], app->variant)) {
       snprintf(resolved, PATH_MAX, "%s", candidates[index]);
       return true;
     }
@@ -870,7 +938,7 @@ static bool resolve_assets_root(PetApp *app, char resolved[PATH_MAX]) {
       *slash = '\0';
       char candidate[PATH_MAX];
       if (snprintf(candidate, sizeof(candidate), "%s/../characters", executable) < (int)sizeof(candidate) &&
-          path_has_character(candidate, app->config.character_id)) {
+          path_has_variant(candidate, app->variant)) {
         snprintf(resolved, PATH_MAX, "%s", candidate);
         return true;
       }
@@ -918,6 +986,10 @@ int pet_wayland_probe(void) {
 int pet_wayland_run(const PetWaylandConfig *config) {
   PetApp app = { 0 };
   char assets_root[PATH_MAX];
+  if (PET_CHARACTER_COUNT == 0) {
+    fprintf(stderr, "pet-ark: character registry is empty\n");
+    return 2;
+  }
   for (int index = 0; index < PET_BUFFER_COUNT; index++) app.buffers[index].fd = -1;
   app.config = *config;
   app.click_through = config->click_through;
@@ -925,24 +997,41 @@ int pet_wayland_run(const PetWaylandConfig *config) {
   app.scale = app.explicit_scale ? config->scale : 1.0f;
   app.speed = config->speed > 0.0f ? config->speed : 1.0f;
   app.running = true;
-  if (!resolve_assets_root(&app, assets_root)) {
-    fprintf(stderr, "pet-ark: runtime assets not found; pass --assets standalone/assets/runtime\n");
-    return 1;
-  }
-  app.config.assets_root = assets_root;
-  const PetCharacter *character = pet_character_find(config->character_id);
+  const PetCharacter *character = config->character_id
+    ? pet_character_find(config->character_id)
+    : &PET_CHARACTERS[0];
   if (!character) {
     fprintf(stderr, "pet-ark: unknown character '%s'\n", config->character_id);
     return 2;
   }
+  const PetVariant *variant = config->skin_id
+    ? pet_character_variant(character, config->skin_id)
+    : pet_character_default_variant(character);
+  if (!variant) {
+    fprintf(stderr, "pet-ark: unknown skin '%s' for character '%s'\n",
+            config->skin_id ? config->skin_id : "(default)", character->id);
+    return 2;
+  }
+  app.character = character;
   app.character_index = (size_t)(character - PET_CHARACTERS);
+  app.variant = variant;
+  app.variant_index = (size_t)(variant - character->variants);
+  if (!resolve_assets_root(&app, assets_root)) {
+    fprintf(stderr, "pet-ark: runtime assets for %s/%s not found; pass --assets DIR\n",
+            character->id, variant->id);
+    return 1;
+  }
+  app.config.assets_root = assets_root;
   if (!initialize_wayland(&app) || !create_surface(&app)) {
     destroy_app(&app);
     return 1;
   }
   fprintf(stderr, "pet-ark: using %s%s\n", app.use_layer_shell ? "wlr-layer-shell" : "xdg-shell fallback",
           app.use_layer_shell ? "" : " (always-on-top is compositor-controlled)");
-  select_character(&app, app.character_index, true);
+  if (!apply_selection(&app, app.character_index, app.variant_index, true)) {
+    destroy_app(&app);
+    return 1;
+  }
   install_signal_handlers();
   if (wl_display_roundtrip(app.display) < 0) {
     destroy_app(&app);
