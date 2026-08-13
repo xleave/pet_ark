@@ -16,6 +16,8 @@ Standalone 素材不会覆盖原始文件，也不会把 image2/补帧产物伪�
 
 这些数字描述期望范围和可访问来源，不自动等于运行时实现完成。`standalone/dist/coverage.json` 独立统计 expected、implemented、missing、blocked 和 unaccounted 的角色、外观与皮肤；只有 `npm run standalone:validate-all` 的完整性门禁通过后，才可以把全量 runtime 报告为完成。
 
+当前仓库产物已经通过该门禁：425 / 425 角色、933 / 933 外观、508 / 508 皮肤，missing、blocked 和 unaccounted 均为 0。933 份 runtime manifest 全部提供基础桌宠动作；502 个外观使用物理 `Special`，并额外保留 3 个 `exit`、2 个 `idle-alt` 和 1 个 `move-alt` 来源动作。
+
 ## 来源
 
 - PRTS 干员一览：可玩 roster 和本地化身份索引；

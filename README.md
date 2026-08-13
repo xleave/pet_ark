@@ -68,6 +68,8 @@ Standalone 是原生 C / Wayland 客户端，以 `wl_shm` 提交透明像素，�
 
 2026-08-12 建立的 standalone source-of-truth 包含 **425 个正式可玩角色、425 个默认形象和 508 个皮肤，共 933 个外观变体**。正式 playable alter 是独立角色；皮肤是所属角色的独立外观变体，不会伪装成动画状态。目标清单与来源分别在 `shared/character-data/standalone-roster.json` 和 `shared/character-data/standalone-sources.json`，实际完成度只以 `standalone/dist/coverage.json` 为准；source 已索引或已获取不等同于 runtime 已实现。
 
+当前提交的全量 runtime 已通过完整性门禁：**425 / 425 角色、933 / 933 外观、508 / 508 皮肤，missing / blocked / unaccounted 均为 0**。每个外观都有独立 PRTS Q 版 source、cleaned 帧、animation manifest 和可直接加载的 runtime atlas。
+
 每个已构建外观提供统一基础状态，并保留来源动作允许的特殊状态：
 
 - `idle`
@@ -76,6 +78,8 @@ Standalone 是原生 C / Wayland 客户端，以 `wl_shm` 提交透明像素，�
 - `clicked` / `special`
 - `picked-up` / `dragging` / `dropped`
 - `rest` / `sleep` / `wake`
+
+其中 502 个外观直接使用来源中的独立 `Special` 动作，其余外观使用各自 `Interact`；来源额外提供的动作也会进入 registry，目前包含 `exit`（3 个外观）、`idle-alt`（2 个）和 `move-alt`（1 个）。
 
 桌宠使用真正的行为状态机，而不是循环 GIF。idle 会等待合理时间后选择屏幕内随机目标；movement 完成后回到 idle；一次性交互和 transition 播放结束后才切换；长时间无交互进入 rest/sleep；点击睡眠角色会先 wake。移动系统维护朝向、输出边界、拖动恢复、速度倍率和每个外观的镜像规则。
 

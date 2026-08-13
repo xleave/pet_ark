@@ -110,10 +110,33 @@ async function loadJson(file) {
   }
 }
 
+async function copyTree(source, destination) {
+  await fs.mkdir(destination, { recursive: true });
+  const entries = await fs.readdir(source, { withFileTypes: true });
+  for (const entry of entries) {
+    const sourceEntry = path.join(source, entry.name);
+    const destinationEntry = path.join(destination, entry.name);
+    if (entry.isDirectory()) await copyTree(sourceEntry, destinationEntry);
+    else if (entry.isFile()) await fs.copyFile(sourceEntry, destinationEntry);
+    else throw new Error(`Unsupported asset entry: ${path.relative(REPO_ROOT, sourceEntry)}`);
+  }
+}
+
 async function copyDirectory(source, destination) {
-  await fs.rm(destination, { recursive: true, force: true });
-  await fs.mkdir(path.dirname(destination), { recursive: true });
-  await fs.cp(source, destination, { recursive: true });
+  const parent = path.dirname(destination);
+  await fs.mkdir(parent, { recursive: true });
+  const temporary = await fs.mkdtemp(path.join(
+    path.dirname(REPO_ROOT),
+    `.pet-ark-copy-${path.basename(destination)}-`,
+  ));
+  try {
+    await copyTree(source, temporary);
+    await fs.rm(destination, { recursive: true, force: true });
+    await fs.rename(temporary, destination);
+  } catch (error) {
+    await fs.rm(temporary, { recursive: true, force: true });
+    throw error;
+  }
 }
 
 async function exists(file) {
@@ -292,7 +315,7 @@ exec "$app_root/bin/pet-ark" --assets "$app_root/assets/runtime" "$@"
     path.join(DIST_APP, 'characters', 'registry.json'),
     `${JSON.stringify(packagedRegistry(registry), null, 2)}\n`,
   );
-  await fs.cp(RUNTIME_ASSETS, path.join(DIST_APP, 'assets', 'runtime'), { recursive: true });
+  await copyDirectory(RUNTIME_ASSETS, path.join(DIST_APP, 'assets', 'runtime'));
   try {
     await fs.copyFile(path.join(STANDALONE_ROOT, 'dist', 'coverage.json'), path.join(DIST_APP, 'coverage.json'));
   } catch (error) {
