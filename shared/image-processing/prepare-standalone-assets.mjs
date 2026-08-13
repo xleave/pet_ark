@@ -4,6 +4,11 @@ import path from 'node:path';
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 
+import {
+  selectStandaloneAnimations,
+  validateStandaloneAnimationContract,
+} from './standalone-animation-contract.mjs';
+
 const require = createRequire(import.meta.url);
 const sharp = require('sharp');
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -63,38 +68,8 @@ async function hasSourceDirectories(directory) {
   return (await fs.readdir(directory, { withFileTypes: true })).some((entry) => entry.isDirectory());
 }
 
-function sourceName(available, ...preferred) {
-  for (const candidate of preferred) {
-    const match = available.find((entry) => entry.toLowerCase() === candidate.toLowerCase());
-    if (match) return match;
-  }
-  return null;
-}
-
-function derivedAnimations(available) {
-  const idle = sourceName(available, 'relax', 'default');
-  const move = sourceName(available, 'move', 'walk', 'run');
-  const interact = sourceName(available, 'interact', 'special', 'default', 'relax');
-  const sit = sourceName(available, 'sit', 'relax', 'default');
-  const sleep = sourceName(available, 'sleep', 'sit', 'relax', 'default');
-  if (!idle || !move || !interact || !sit || !sleep) {
-    throw new Error(`source animations cannot satisfy desktop states (available: ${available.join(', ')})`);
-  }
-  return {
-    idle: { source: idle, fps: 12, loop: true },
-    'walk-left': { source: move, fps: 12, loop: true, mirror: true },
-    'walk-right': { source: move, fps: 12, loop: true },
-    'run-left': { source: move, fps: 18, loop: true, mirror: true },
-    'run-right': { source: move, fps: 18, loop: true },
-    clicked: { source: interact, fps: 12, loop: false, next: 'idle' },
-    'picked-up': { source: sit, fps: 12, loop: false, range: [0, 5], next: 'dragging' },
-    dragging: { source: sit, fps: 6, loop: true, range: [5, 10] },
-    dropped: { source: sit, fps: 12, loop: false, range: [5, 0], next: 'idle' },
-    rest: { source: sit, fps: 8, loop: false, holdLast: true, next: 'sleep' },
-    sleep: { source: sleep, fps: 10, loop: true },
-    wake: { source: sleep, fps: 12, loop: false, reverse: true, next: 'idle' },
-    special: { source: interact, fps: 12, loop: false, next: 'idle' },
-  };
+function derivedAnimations(available, options = {}) {
+  return selectStandaloneAnimations({ available, ...options });
 }
 
 async function inspectFrame(file, frameWidth, frameHeight) {
@@ -227,7 +202,12 @@ const legacyAnimations = legacyVariant?.animations || (
     ? legacyCharacter.animations
     : null
 );
-const animationDefinitions = variant.animations || legacyAnimations || derivedAnimations(availableSources);
+const animationDefinitions = derivedAnimations(availableSources, {
+  variantAnimations: variant.animations,
+  legacyAnimations,
+  legacySchemaVersion: legacyRegistry?.schema_version,
+});
+validateStandaloneAnimationContract(animationDefinitions, availableSources, `${characterId}:${idVariant}`);
 
 const sources = {};
 const generatedProvenance = [];

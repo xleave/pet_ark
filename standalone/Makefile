@@ -87,7 +87,9 @@ $(BUILD_DIR)/objects/%.o: %.c
 	$(CC) $(SYSROOT_FLAG) $(CPPFLAGS) $(BASE_CPPFLAGS) $(PKG_CFLAGS) $(CFLAGS) $(BASE_CFLAGS) -c "$<" -o "$@"
 
 test: $(TEST_BINARY) $(REGISTRY_TEST_BINARY)
+	$(NODE) ../shared/image-processing/test-triangle-rasterizer.mjs
 	$(NODE) ../shared/image-processing/test-runtime-registry.mjs
+	$(NODE) ../shared/image-processing/test-standalone-animation-contract.mjs
 	"$(TEST_BINARY)"
 	"$(REGISTRY_TEST_BINARY)"
 

@@ -5,6 +5,8 @@ import process from 'node:process';
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 
+import { validateStandaloneAnimationContract } from './standalone-animation-contract.mjs';
+
 const require = createRequire(import.meta.url);
 const sharp = require('sharp');
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -283,7 +285,24 @@ async function validateRuntimeManifest(file, character, variant) {
       }
     }
   }
-  for (const [state, animation] of Object.entries(manifestAnimations(manifest))) {
+  const animations = manifestAnimations(manifest);
+  const cleanedManifest = await readJson(path.join(
+    STANDALONE,
+    'assets',
+    'cleaned',
+    expectedCharacter,
+    expectedVariant,
+    'manifest.json',
+  ), false);
+  const availablePhysicalAnimations = cleanedManifest
+    ? Object.keys(cleanedManifest.processed_states || cleanedManifest.animations || {})
+    : Object.keys(manifest.sources || {});
+  validateStandaloneAnimationContract(
+    animations,
+    availablePhysicalAnimations,
+    `${expectedCharacter}:${expectedVariant}`,
+  );
+  for (const [state, animation] of Object.entries(animations)) {
     if (!(animation.fps > 0)) throw new Error(`${expectedCharacter}:${expectedVariant}:${state}: fps must be positive`);
     if (animation.source) {
       const source = manifest.sources?.[animation.source];
@@ -297,6 +316,9 @@ async function validateRuntimeManifest(file, character, variant) {
       if (animation.generatedFrames?.some((frame) => !animation.frameOrder.includes(frame))) {
         throw new Error(`${expectedCharacter}:${expectedVariant}:${state}: generated frame is not in frame order`);
       }
+    }
+    if (animation.next && !animations[animation.next]) {
+      throw new Error(`${expectedCharacter}:${expectedVariant}:${state}: next state ${animation.next} is unavailable`);
     }
   }
   for (const provenance of manifest.provenance?.generatedFrames || []) {
@@ -491,6 +513,13 @@ const unaccountedCharacters = missingCharacters.filter((entry) => entry.status =
 const unaccountedVariants = missingVariants.filter((entry) => entry.status === 'missing');
 const unaccountedSkins = missingSkins.filter((entry) => entry.status === 'missing');
 const image2 = await generatedCounts();
+const animationStateCounts = {};
+for (const detail of variantDetails.filter((entry) => entry.status === 'implemented')) {
+  const current = manifests.get(`${detail.character_id}:${detail.variant_id}`);
+  for (const state of Object.keys(manifestAnimations(current.manifest))) {
+    animationStateCounts[state] = (animationStateCounts[state] || 0) + 1;
+  }
+}
 const coverage = {
   schema_version: 2,
   generated_on: roster.retrieved_at || roster.metadata?.retrieval_date || roster.metadata?.retrieved_on || new Date().toISOString().slice(0, 10),
@@ -512,6 +541,12 @@ const coverage = {
   blocked_skins: blockedSkins.length,
   unaccounted_skins: unaccountedSkins.length,
   image2,
+  animation_states: {
+    required: Object.fromEntries(REQUIRED_STATES.map((state) => [state, animationStateCounts[state] || 0])),
+    optional: Object.fromEntries(Object.entries(animationStateCounts)
+      .filter(([state]) => !REQUIRED_STATES.includes(state))
+      .sort(([left], [right]) => left.localeCompare(right))),
+  },
   complete: missingCharacters.length === 0 && missingVariants.length === 0 && missingSkins.length === 0,
   accounted: unaccountedCharacters.length === 0 && unaccountedVariants.length === 0 && unaccountedSkins.length === 0,
   characters: characterDetails,
