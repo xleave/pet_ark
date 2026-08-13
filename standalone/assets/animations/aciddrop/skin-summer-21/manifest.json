@@ -1,0 +1,198 @@
+{
+  "schema_version": 2,
+  "character": "aciddrop",
+  "variant": "skin-summer-21",
+  "skin": "summer-21",
+  "frameSize": {
+    "width": 192,
+    "height": 224
+  },
+  "states": {
+    "idle": {
+      "origin": "processed-prts-spine",
+      "source_animation": "relax",
+      "frame_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mirror": false
+    },
+    "walk-left": {
+      "origin": "processed-prts-spine",
+      "source_animation": "move",
+      "frame_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mirror": true
+    },
+    "walk-right": {
+      "origin": "processed-prts-spine",
+      "source_animation": "move",
+      "frame_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mirror": false
+    },
+    "run-left": {
+      "origin": "processed-prts-spine",
+      "source_animation": "move",
+      "frame_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mirror": true
+    },
+    "run-right": {
+      "origin": "processed-prts-spine",
+      "source_animation": "move",
+      "frame_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mirror": false
+    },
+    "clicked": {
+      "origin": "processed-prts-spine",
+      "source_animation": "interact",
+      "frame_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mirror": false
+    },
+    "picked-up": {
+      "origin": "processed-prts-spine",
+      "source_animation": "sit",
+      "frame_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "mirror": false
+    },
+    "dragging": {
+      "origin": "processed-prts-spine",
+      "source_animation": "sit",
+      "frame_order": [
+        5,
+        6,
+        7
+      ],
+      "mirror": false
+    },
+    "dropped": {
+      "origin": "processed-prts-spine",
+      "source_animation": "sit",
+      "frame_order": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "mirror": false
+    },
+    "rest": {
+      "origin": "processed-prts-spine",
+      "source_animation": "sit",
+      "frame_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mirror": false
+    },
+    "sleep": {
+      "origin": "processed-prts-spine",
+      "source_animation": "sleep",
+      "frame_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mirror": false
+    },
+    "wake": {
+      "origin": "processed-prts-spine",
+      "source_animation": "sleep",
+      "frame_order": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "mirror": false
+    },
+    "special": {
+      "origin": "processed-prts-spine",
+      "source_animation": "interact",
+      "frame_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mirror": false
+    }
+  }
+}
