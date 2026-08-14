@@ -38,7 +38,9 @@ jobs:
           python3 -m pip install -r requirements.txt
           npm ci
       - name: Enforce repository asset budget
-        run: npm run repository:asset-budget
+        run: |
+          npm run repository:test-asset-budget
+          npm run repository:asset-budget
       - name: Build native standalone runtime with warnings as errors
         run: |
           make -C standalone clean

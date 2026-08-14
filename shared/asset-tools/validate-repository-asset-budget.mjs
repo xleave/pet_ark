@@ -8,7 +8,8 @@ import { fileURLToPath } from 'node:url';
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const GIB = 1024 ** 3;
 const MIB = 1024 ** 2;
-const MAX_TRACKED_TREE_BYTES = 4 * GIB;
+const MAX_TRACKED_TREE_BYTES = 8 * GIB;
+const MAX_GIT_OBJECT_BYTES = 4 * GIB;
 const MAX_TRACKED_FILE_BYTES = 50 * MIB;
 
 function formatBytes(bytes) {
@@ -26,8 +27,36 @@ function trackedFiles() {
   return output.split('\0').filter(Boolean);
 }
 
+export function parseGitObjectStorage(output) {
+  const values = new Map();
+  for (const line of output.split(/\r?\n/)) {
+    if (!line.trim()) continue;
+    const match = /^([^:]+):\s*(\d+)$/.exec(line.trim());
+    if (!match) throw new Error(`unexpected git count-objects output: ${line}`);
+    values.set(match[1], Number.parseInt(match[2], 10));
+  }
+
+  for (const required of ['size', 'size-pack']) {
+    if (!values.has(required)) throw new Error(`git count-objects did not report ${required}`);
+  }
+
+  const kibibytes = values.get('size') + values.get('size-pack') + (values.get('size-garbage') || 0);
+  if (!Number.isSafeInteger(kibibytes)) throw new Error('git object storage size is not a safe integer');
+  return kibibytes * 1024;
+}
+
+function gitObjectStorageBytes() {
+  const output = execFileSync('git', ['count-objects', '-v'], {
+    cwd: REPO_ROOT,
+    encoding: 'utf8',
+    maxBuffer: MIB,
+  });
+  return parseGitObjectStorage(output);
+}
+
 async function main() {
   const files = trackedFiles();
+  const gitObjectBytes = gitObjectStorageBytes();
   let total = 0;
   const missing = [];
   const oversized = [];
@@ -61,10 +90,17 @@ async function main() {
   for (const [group, bytes] of [...groups.entries()].sort((left, right) => right[1] - left[1])) {
     console.log(`  ${group}: ${formatBytes(bytes)}`);
   }
-  console.log(`budget: ${formatBytes(MAX_TRACKED_TREE_BYTES)} total, ${formatBytes(MAX_TRACKED_FILE_BYTES)} per file`);
+  console.log(`git object storage: ${formatBytes(gitObjectBytes)}`);
+  console.log(
+    `budget: ${formatBytes(MAX_TRACKED_TREE_BYTES)} tracked tree, ` +
+    `${formatBytes(MAX_GIT_OBJECT_BYTES)} Git objects, ${formatBytes(MAX_TRACKED_FILE_BYTES)} per file`,
+  );
 
   if (total > MAX_TRACKED_TREE_BYTES) {
     throw new Error(`tracked tree exceeds the ${formatBytes(MAX_TRACKED_TREE_BYTES)} repository budget`);
+  }
+  if (gitObjectBytes > MAX_GIT_OBJECT_BYTES) {
+    throw new Error(`Git object storage exceeds the ${formatBytes(MAX_GIT_OBJECT_BYTES)} repository budget`);
   }
   if (oversized.length) {
     const details = oversized
@@ -75,7 +111,9 @@ async function main() {
   }
 }
 
-main().catch((error) => {
-  console.error(`asset-budget: ${error.message}`);
-  process.exitCode = 1;
-});
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main().catch((error) => {
+    console.error(`asset-budget: ${error.message}`);
+    process.exitCode = 1;
+  });
+}

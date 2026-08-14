@@ -180,7 +180,7 @@ npm run standalone:contact-sheets
 
 获取、导出、接受/拒绝规则与新增角色步骤见 [`docs/character-assets.md`](docs/character-assets.md)。
 
-当前版本有意将 source、cleaned、generated、runtime 和人工验收表作为普通 Git 对象提交，以保证外部维护者 PR 的 provenance 可离线复核。仓库采用 4 GiB tracked-tree / 50 MiB 单文件预算，并由 `npm run repository:asset-budget` 在 PR CI 中检查；原因、迁移触发条件和 Git LFS 跨 fork 风险见 [`docs/asset-storage.md`](docs/asset-storage.md)。
+当前版本有意将 source、cleaned、generated、runtime 和人工验收表作为普通 Git 对象提交，以保证外部维护者 PR 的 provenance 可离线复核。仓库采用 8 GiB 未压缩 tracked-tree / 4 GiB Git 对象存储 / 50 MiB 单文件预算，并由 `npm run repository:asset-budget` 在 PR CI 中检查；原因、迁移触发条件和 Git LFS 跨 fork 风险见 [`docs/asset-storage.md`](docs/asset-storage.md)。
 
 ## Building
 

@@ -79,4 +79,4 @@ Codex roster 的 426 来自 425 个正式可玩角色加 1 个 Priestess story r
 
 这种边界允许两条产线独立构建和验证，也避免为了复用形成耦合的万能 renderer。
 
-全量二进制资产当前有意使用普通 Git，并受 4 GiB tracked-tree 与 50 MiB 单文件预算约束；详见 [`asset-storage.md`](asset-storage.md)。这项存储决策独立于运行时/renderer 边界，超过预算时必须在合并前单独决定由 upstream 持有的 LFS 或 durable release 迁移。
+全量二进制资产当前有意使用普通 Git，并受 8 GiB 未压缩 tracked-tree、4 GiB Git 对象存储与 50 MiB 单文件预算约束；详见 [`asset-storage.md`](asset-storage.md)。这项存储决策独立于运行时/renderer 边界，超过预算时必须在合并前单独决定由 upstream 持有的 LFS 或 durable release 迁移。
