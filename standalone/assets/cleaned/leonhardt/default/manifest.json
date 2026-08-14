@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "leonhardt",
+  "character_name": "Leonhardt",
+  "localized_name": "莱恩哈特",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/leonhardt/default",
+  "source_page": "https://prts.wiki/w/%E8%8E%B1%E6%81%A9%E5%93%88%E7%89%B9",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/meta.json",
+    "model": "defaultskin/build/build_char_373_lionhd",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/defaultskin/build/build_char_373_lionhd.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/defaultskin/build/build_char_373_lionhd.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/defaultskin/build/build_char_373_lionhd.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.5666667222976685
+    },
+    {
+      "name": "Move",
+      "duration": 1.0666667222976685
+    },
+    {
+      "name": "Relax",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Sit",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Sleep",
+      "duration": 3.3333332538604736
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/leonhardt/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.5666667222976685,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/leonhardt/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.0666667222976685,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/leonhardt/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/leonhardt/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/leonhardt/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/leonhardt/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -190.47511,
+      "maxX": 141.70004,
+      "minY": -195.29659,
+      "maxY": 442.16275
+    },
+    "scale": 0.3263,
+    "x_offset": 103.95754,
+    "y_offset": 152.27564,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:15.391Z"
+}

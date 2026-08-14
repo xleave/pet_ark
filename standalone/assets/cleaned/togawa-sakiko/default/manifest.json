@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "togawa-sakiko",
+  "character_name": "Togawa Sakiko",
+  "localized_name": "丰川祥子",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/togawa-sakiko/default",
+  "source_page": "https://prts.wiki/w/%E4%B8%B0%E5%B7%9D%E7%A5%A5%E5%AD%90",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/meta.json",
+    "model": "defaultskin/build/build_char_4182_oblvns",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/defaultskin/build/build_char_4182_oblvns.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/defaultskin/build/build_char_4182_oblvns.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/defaultskin/build/build_char_4182_oblvns.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 3.066666603088379
+    },
+    {
+      "name": "Move",
+      "duration": 3.3333332538604736
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 7.333333492279053
+    },
+    {
+      "name": "Sleep",
+      "duration": 4.666666507720947
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/togawa-sakiko/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 3.066666603088379,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/togawa-sakiko/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/togawa-sakiko/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/togawa-sakiko/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 7.333333492279053,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/togawa-sakiko/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 4.666666507720947,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/togawa-sakiko/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -188.72456,
+      "maxX": 189.17747,
+      "minY": -124.82549,
+      "maxY": 690.95355
+    },
+    "scale": 0.25497,
+    "x_offset": 95.94226,
+    "y_offset": 184.17312,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:34.857Z"
+}

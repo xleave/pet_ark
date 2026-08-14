@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "hung",
+  "character_name": "Hung",
+  "localized_name": "吽",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/hung/default",
+  "source_page": "https://prts.wiki/w/%E5%90%BD",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_226_hmau/meta.json",
+    "model": "defaultskin/build/build_char_226_hmau",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_226_hmau/defaultskin/build/build_char_226_hmau.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_226_hmau/defaultskin/build/build_char_226_hmau.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_226_hmau/defaultskin/build/build_char_226_hmau.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 1.0666667222976685
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 4
+    },
+    {
+      "name": "Sleep",
+      "duration": 3.3333332538604736
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/hung/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hung/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.0666667222976685,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hung/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hung/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hung/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hung/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -221.64716,
+      "maxX": 211.65021,
+      "minY": -53.88051,
+      "maxY": 454.34784
+    },
+    "scale": 0.40619,
+    "x_offset": 98.03032,
+    "y_offset": 194.11441,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:11.326Z"
+}

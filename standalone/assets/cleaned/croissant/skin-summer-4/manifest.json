@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "character": "croissant",
+  "character_name": "Croissant",
+  "localized_name": "可颂",
+  "variant": "skin-summer-4",
+  "variant_type": "skin",
+  "variant_name": "探寻者 SK03",
+  "skin_id": "summer-4",
+  "skin_name": "探寻者 SK03",
+  "source": "standalone/assets/source/croissant/skin-summer-4",
+  "source_page": "https://prts.wiki/w/%E5%8F%AF%E9%A2%82",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/meta.json",
+    "model": "char_201_moeshd_summer_4/build/build_char_201_moeshd_summer_4",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_summer_4/build/build_char_201_moeshd_summer_4.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_summer_4/build/build_char_201_moeshd_summer_4.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_summer_4/build/build_char_201_moeshd_summer_4.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 4
+    },
+    {
+      "name": "Relax",
+      "duration": 2
+    },
+    {
+      "name": "Sit",
+      "duration": 4
+    },
+    {
+      "name": "Sleep",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Special",
+      "duration": 10.166666984558105
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/croissant/skin-summer-4/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/croissant/skin-summer-4/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/croissant/skin-summer-4/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/croissant/skin-summer-4/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/croissant/skin-summer-4/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/croissant/skin-summer-4/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 10.166666984558105,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/croissant/skin-summer-4/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -870.93195,
+      "maxX": 217.55249,
+      "minY": -126.16188,
+      "maxY": 451.97583
+    },
+    "scale": 0.16169,
+    "x_offset": 148.82335,
+    "y_offset": 195.60054,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:02.930Z"
+}

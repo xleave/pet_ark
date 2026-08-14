@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "character": "siege",
+  "character_name": "Siege",
+  "localized_name": "推进之王",
+  "variant": "skin-wild-2",
+  "variant_type": "skin",
+  "variant_name": "遗石",
+  "skin_id": "wild-2",
+  "skin_name": "遗石",
+  "source": "standalone/assets/source/siege/skin-wild-2",
+  "source_page": "https://prts.wiki/w/%E6%8E%A8%E8%BF%9B%E4%B9%8B%E7%8E%8B",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_112_siege/meta.json",
+    "model": "char_112_siege_wild_2/build/build_char_112_siege_wild_2",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_112_siege/char_112_siege_wild_2/build/build_char_112_siege_wild_2.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_112_siege/char_112_siege_wild_2/build/build_char_112_siege_wild_2.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_112_siege/char_112_siege_wild_2/build/build_char_112_siege_wild_2.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Move",
+      "duration": 1
+    },
+    {
+      "name": "Relax",
+      "duration": 2
+    },
+    {
+      "name": "Sit",
+      "duration": 2
+    },
+    {
+      "name": "Sleep",
+      "duration": 5.333333492279053
+    },
+    {
+      "name": "Special",
+      "duration": 2.3333332538604736
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/siege/skin-wild-2/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/siege/skin-wild-2/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/siege/skin-wild-2/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/siege/skin-wild-2/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/siege/skin-wild-2/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 5.333333492279053,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/siege/skin-wild-2/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 2.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/siege/skin-wild-2/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -243.09773,
+      "maxX": 202.21036,
+      "minY": -124.67519,
+      "maxY": 426.37604
+    },
+    "scale": 0.37746,
+    "x_offset": 103.71668,
+    "y_offset": 168.94006,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:30.758Z"
+}

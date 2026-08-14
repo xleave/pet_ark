@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "silence-the-paradigmatic",
+  "character_name": "Silence the Paradigmatic",
+  "localized_name": "淬羽赫默",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/silence-the-paradigmatic/default",
+  "source_page": "https://prts.wiki/w/%E6%B7%AC%E7%BE%BD%E8%B5%AB%E9%BB%98",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/meta.json",
+    "model": "defaultskin/build/build_char_1031_slent2",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/defaultskin/build/build_char_1031_slent2.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/defaultskin/build/build_char_1031_slent2.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/defaultskin/build/build_char_1031_slent2.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 3
+    },
+    {
+      "name": "Move",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 4
+    },
+    {
+      "name": "Sleep",
+      "duration": 2.6666667461395264
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/silence-the-paradigmatic/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 3,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/silence-the-paradigmatic/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/silence-the-paradigmatic/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/silence-the-paradigmatic/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/silence-the-paradigmatic/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/silence-the-paradigmatic/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -243.48058,
+      "maxX": 176.52774,
+      "minY": -98.8225,
+      "maxY": 471.94247
+    },
+    "scale": 0.36442,
+    "x_offset": 108.19958,
+    "y_offset": 179.98679,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:30.917Z"
+}

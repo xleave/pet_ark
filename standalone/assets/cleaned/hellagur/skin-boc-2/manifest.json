@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "character": "hellagur",
+  "character_name": "Hellagur",
+  "localized_name": "赫拉格",
+  "variant": "skin-boc-2",
+  "variant_type": "skin",
+  "variant_name": "歧路幻影",
+  "skin_id": "boc-2",
+  "skin_name": "歧路幻影",
+  "source": "standalone/assets/source/hellagur/skin-boc-2",
+  "source_page": "https://prts.wiki/w/%E8%B5%AB%E6%8B%89%E6%A0%BC",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/meta.json",
+    "model": "char_188_helage_boc_2/build/build_char_188_helage_boc_2",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/char_188_helage_boc_2/build/build_char_188_helage_boc_2.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/char_188_helage_boc_2/build/build_char_188_helage_boc_2.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/char_188_helage_boc_2/build/build_char_188_helage_boc_2.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 2
+    },
+    {
+      "name": "Move",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Relax",
+      "duration": 6
+    },
+    {
+      "name": "Sit",
+      "duration": 20
+    },
+    {
+      "name": "Sleep",
+      "duration": 20
+    },
+    {
+      "name": "Special",
+      "duration": 7.5333333015441895
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/hellagur/skin-boc-2/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hellagur/skin-boc-2/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hellagur/skin-boc-2/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 6,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hellagur/skin-boc-2/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 20,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hellagur/skin-boc-2/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 20,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hellagur/skin-boc-2/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 7.5333333015441895,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hellagur/skin-boc-2/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -274.96506,
+      "maxX": 495.77591,
+      "minY": -129.42734,
+      "maxY": 562.0354
+    },
+    "scale": 0.22835,
+    "x_offset": 70.78873,
+    "y_offset": 186.44505,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:10.264Z"
+}

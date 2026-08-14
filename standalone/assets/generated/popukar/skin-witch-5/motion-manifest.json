@@ -1,0 +1,323 @@
+{
+  "schema_version": 1,
+  "character": "popukar",
+  "variant": "skin-witch-5",
+  "frame_size": {
+    "width": 192,
+    "height": 224
+  },
+  "atlas": "standalone/assets/generated/popukar/skin-witch-5/motion-atlas.png",
+  "atlas_columns": 8,
+  "atlas_rows": 11,
+  "profile": "character-local-desktop-motion",
+  "sequences": [
+    {
+      "id": "run-run",
+      "state": "run",
+      "intent": "run",
+      "origin": "derived",
+      "operation": "forward-lean-and-stride-bob",
+      "source_animation": "move",
+      "source_unique_frames": null,
+      "source_frames": [
+        "standalone/assets/cleaned/popukar/skin-witch-5/move/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/move/001.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/move/002.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/move/003.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/move/004.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/move/005.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/move/006.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/move/007.png"
+      ],
+      "atlas_frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "generated_frame": null,
+      "bridge_style": null,
+      "bridge_frames": null
+    },
+    {
+      "id": "picked-up-grabbed",
+      "state": "picked-up",
+      "intent": "grabbed",
+      "origin": "derived",
+      "operation": "lift-with-inertial-sway",
+      "source_animation": "sit",
+      "source_unique_frames": null,
+      "source_frames": [
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png"
+      ],
+      "atlas_frames": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "generated_frame": null,
+      "bridge_style": null,
+      "bridge_frames": null
+    },
+    {
+      "id": "dragging-dragging",
+      "state": "dragging",
+      "intent": "dragging",
+      "origin": "derived",
+      "operation": "suspended-sway-loop",
+      "source_animation": "sit",
+      "source_unique_frames": null,
+      "source_frames": [
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png"
+      ],
+      "atlas_frames": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "generated_frame": null,
+      "bridge_style": null,
+      "bridge_frames": null
+    },
+    {
+      "id": "dropped-motion-landing",
+      "state": "dropped-motion",
+      "intent": "landing",
+      "origin": "derived",
+      "operation": "fall-impact-squash-recovery",
+      "source_animation": "sit",
+      "source_unique_frames": null,
+      "source_frames": [
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png"
+      ],
+      "atlas_frames": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "generated_frame": null,
+      "bridge_style": null,
+      "bridge_frames": null
+    },
+    {
+      "id": "dropped-settle-dropped",
+      "state": "dropped-settle",
+      "intent": "dropped",
+      "origin": "derived",
+      "operation": "landing-to-idle-registration-bridge",
+      "source_animation": "sit",
+      "source_unique_frames": null,
+      "source_frames": [],
+      "atlas_frames": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "generated_frame": null,
+      "bridge_style": "single-silhouette-endpoint-transform",
+      "bridge_frames": 8
+    },
+    {
+      "id": "special-source-special",
+      "state": "special-source",
+      "intent": "special",
+      "origin": "derived",
+      "operation": "physical-special-runtime-copy",
+      "source_animation": "special",
+      "source_unique_frames": null,
+      "source_frames": [
+        "standalone/assets/cleaned/popukar/skin-witch-5/special/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/special/001.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/special/002.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/special/003.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/special/004.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/special/005.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/special/006.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/special/007.png"
+      ],
+      "atlas_frames": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "generated_frame": null,
+      "bridge_style": null,
+      "bridge_frames": null
+    },
+    {
+      "id": "special-settle-special",
+      "state": "special-settle",
+      "intent": "special",
+      "origin": "derived",
+      "operation": "special-to-idle-registration-bridge",
+      "source_animation": "special",
+      "source_unique_frames": null,
+      "source_frames": [],
+      "atlas_frames": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "generated_frame": null,
+      "bridge_style": "single-silhouette-endpoint-transform",
+      "bridge_frames": 8
+    },
+    {
+      "id": "rest-source-rest",
+      "state": "rest-source",
+      "intent": "rest",
+      "origin": "derived",
+      "operation": "physical-rest-runtime-copy",
+      "source_animation": "sit",
+      "source_unique_frames": null,
+      "source_frames": [
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/000.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/001.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/002.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/003.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/004.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/005.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/006.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sit/007.png"
+      ],
+      "atlas_frames": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "generated_frame": null,
+      "bridge_style": null,
+      "bridge_frames": null
+    },
+    {
+      "id": "rest-settle-rest",
+      "state": "rest-settle",
+      "intent": "rest",
+      "origin": "derived",
+      "operation": "rest-to-sleep-registration-bridge",
+      "source_animation": "sit",
+      "source_unique_frames": null,
+      "source_frames": [],
+      "atlas_frames": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "generated_frame": null,
+      "bridge_style": "single-silhouette-endpoint-transform",
+      "bridge_frames": 8
+    },
+    {
+      "id": "wake-source-wake",
+      "state": "wake-source",
+      "intent": "wake",
+      "origin": "derived",
+      "operation": "physical-wake-runtime-copy",
+      "source_animation": "sleep",
+      "source_unique_frames": null,
+      "source_frames": [
+        "standalone/assets/cleaned/popukar/skin-witch-5/sleep/007.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sleep/006.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sleep/005.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sleep/004.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sleep/003.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sleep/002.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sleep/001.png",
+        "standalone/assets/cleaned/popukar/skin-witch-5/sleep/000.png"
+      ],
+      "atlas_frames": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "generated_frame": null,
+      "bridge_style": null,
+      "bridge_frames": null
+    },
+    {
+      "id": "wake-settle-wake",
+      "state": "wake-settle",
+      "intent": "wake",
+      "origin": "derived",
+      "operation": "wake-to-idle-registration-bridge",
+      "source_animation": "sleep",
+      "source_unique_frames": null,
+      "source_frames": [],
+      "atlas_frames": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ],
+      "generated_frame": null,
+      "bridge_style": "single-silhouette-endpoint-transform",
+      "bridge_frames": 8
+    }
+  ]
+}

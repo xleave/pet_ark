@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "character": "lessing",
+  "character_name": "Lessing",
+  "localized_name": "止颂",
+  "variant": "skin-whirlwind-7",
+  "variant_type": "skin",
+  "variant_name": "幻火",
+  "skin_id": "whirlwind-7",
+  "skin_name": "幻火",
+  "source": "standalone/assets/source/lessing/skin-whirlwind-7",
+  "source_page": "https://prts.wiki/w/%E6%AD%A2%E9%A2%82",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4011_lessng/meta.json",
+    "model": "char_4011_lessng_whirlwind_7/build/build_char_4011_lessng_whirlwind_7",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4011_lessng/char_4011_lessng_whirlwind_7/build/build_char_4011_lessng_whirlwind_7.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4011_lessng/char_4011_lessng_whirlwind_7/build/build_char_4011_lessng_whirlwind_7.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4011_lessng/char_4011_lessng_whirlwind_7/build/build_char_4011_lessng_whirlwind_7.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 2
+    },
+    {
+      "name": "Move",
+      "duration": 2.4000000953674316
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 6
+    },
+    {
+      "name": "Sleep",
+      "duration": 3.3333332538604736
+    },
+    {
+      "name": "Special",
+      "duration": 7.900000095367432
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/lessing/skin-whirlwind-7/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/lessing/skin-whirlwind-7/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2.4000000953674316,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/lessing/skin-whirlwind-7/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/lessing/skin-whirlwind-7/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 6,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/lessing/skin-whirlwind-7/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/lessing/skin-whirlwind-7/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 7.900000095367432,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/lessing/skin-whirlwind-7/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 6,
+          "reason": "The source Special animation intentionally removes the character for the dash transition immediately before reappearance."
+        }
+      ]
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -290.19421,
+      "maxX": 630.91907,
+      "minY": -99.01971,
+      "maxY": 640.97998
+    },
+    "scale": 0.19107,
+    "x_offset": 63.44832,
+    "y_offset": 197.07999,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:15.692Z"
+}

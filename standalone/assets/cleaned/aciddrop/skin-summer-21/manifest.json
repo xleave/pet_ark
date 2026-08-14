@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "character": "aciddrop",
+  "character_name": "Aciddrop",
+  "localized_name": "酸糖",
+  "variant": "skin-summer-21",
+  "variant_type": "skin",
+  "variant_name": "悠然假日 HD75",
+  "skin_id": "summer-21",
+  "skin_name": "悠然假日 HD75",
+  "source": "standalone/assets/source/aciddrop/skin-summer-21",
+  "source_page": "https://prts.wiki/w/%E9%85%B8%E7%B3%96",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/meta.json",
+    "model": "char_366_acdrop_summer_21/build/build_char_366_acdrop_summer_21",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/char_366_acdrop_summer_21/build/build_char_366_acdrop_summer_21.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/char_366_acdrop_summer_21/build/build_char_366_acdrop_summer_21.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/char_366_acdrop_summer_21/build/build_char_366_acdrop_summer_21.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 2.4666666984558105
+    },
+    {
+      "name": "Move",
+      "duration": 1.2000000476837158
+    },
+    {
+      "name": "Relax",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Sit",
+      "duration": 3.3333332538604736
+    },
+    {
+      "name": "Sleep",
+      "duration": 1.6666666269302368
+    },
+    {
+      "name": "Special",
+      "duration": 11.566666603088379
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/aciddrop/skin-summer-21/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 2.4666666984558105,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/aciddrop/skin-summer-21/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.2000000476837158,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/aciddrop/skin-summer-21/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/aciddrop/skin-summer-21/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/aciddrop/skin-summer-21/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 1.6666666269302368,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/aciddrop/skin-summer-21/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 11.566666603088379,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/aciddrop/skin-summer-21/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 7,
+          "reason": "The source Special animation intentionally ends on a fully faded effect-only beat after the visible action."
+        }
+      ]
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -1110.23669,
+      "maxX": 714.48871,
+      "minY": -101.14956,
+      "maxY": 798.50531
+    },
+    "scale": 0.09645,
+    "x_offset": 115.08551,
+    "y_offset": 206.24383,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:19:54.948Z"
+}

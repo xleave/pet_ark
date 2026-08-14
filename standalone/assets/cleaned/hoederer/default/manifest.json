@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "hoederer",
+  "character_name": "Hoederer",
+  "localized_name": "赫德雷",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/hoederer/default",
+  "source_page": "https://prts.wiki/w/%E8%B5%AB%E5%BE%B7%E9%9B%B7",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4088_hodrer/meta.json",
+    "model": "defaultskin/build/build_char_4088_hodrer",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4088_hodrer/defaultskin/build/build_char_4088_hodrer.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4088_hodrer/defaultskin/build/build_char_4088_hodrer.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4088_hodrer/defaultskin/build/build_char_4088_hodrer.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Move",
+      "duration": 1.2000000476837158
+    },
+    {
+      "name": "Relax",
+      "duration": 6.666666507720947
+    },
+    {
+      "name": "Sit",
+      "duration": 6
+    },
+    {
+      "name": "Sleep",
+      "duration": 2.6666667461395264
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/hoederer/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hoederer/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.2000000476837158,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hoederer/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 6.666666507720947,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hoederer/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 6,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hoederer/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/hoederer/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -246.57542,
+      "maxX": 190.36336,
+      "minY": -92.52057,
+      "maxY": 399.2052
+    },
+    "scale": 0.4028,
+    "x_offset": 107.32118,
+    "y_offset": 178.73249,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:10.653Z"
+}

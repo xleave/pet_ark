@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "morgan",
+  "character_name": "Morgan",
+  "localized_name": "摩根",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/morgan/default",
+  "source_page": "https://prts.wiki/w/%E6%91%A9%E6%A0%B9",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_154_morgan/meta.json",
+    "model": "defaultskin/build/build_char_154_morgan",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_154_morgan/defaultskin/build/build_char_154_morgan.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_154_morgan/defaultskin/build/build_char_154_morgan.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_154_morgan/defaultskin/build/build_char_154_morgan.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.899999976158142
+    },
+    {
+      "name": "Move",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Relax",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Sit",
+      "duration": 6
+    },
+    {
+      "name": "Sleep",
+      "duration": 12
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/morgan/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.899999976158142,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/morgan/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/morgan/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/morgan/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 6,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/morgan/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 12,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/morgan/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -233.43111,
+      "maxX": 227.58508,
+      "minY": -108.23602,
+      "maxY": 414.77948
+    },
+    "scale": 0.38177,
+    "x_offset": 97.1159,
+    "y_offset": 174.67924,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:19.064Z"
+}

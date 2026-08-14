@@ -1,0 +1,1555 @@
+{
+  "schemaVersion": 2,
+  "character": {
+    "id": "rosmontis",
+    "name": "Rosmontis",
+    "localizedName": "迷迭香",
+    "movement": {
+      "walkPixelsPerSecond": 68,
+      "runPixelsPerSecond": 116,
+      "idleMinSeconds": 4,
+      "idleMaxSeconds": 11,
+      "restAfterSeconds": 75
+    }
+  },
+  "variant": {
+    "id": "skin-epoque-17",
+    "type": "skin",
+    "skinId": "epoque-17",
+    "name": "拥抱新生",
+    "localizedName": "拥抱新生",
+    "defaultScale": 1,
+    "mirrorRules": {
+      "strategy": "safe-mirror",
+      "independentDirections": false
+    },
+    "fallbackVariantId": "default",
+    "stateFallbacks": {}
+  },
+  "frameSize": {
+    "width": 192,
+    "height": 224
+  },
+  "sources": {
+    "relax": {
+      "sheet": "relax.png",
+      "frames": 8,
+      "sourceFrames": 8,
+      "generatedFrames": 0,
+      "columns": 8,
+      "rows": 1,
+      "hitboxes": [
+        {
+          "x": 24,
+          "y": 37,
+          "width": 96,
+          "height": 137
+        },
+        {
+          "x": 23,
+          "y": 36,
+          "width": 102,
+          "height": 138
+        },
+        {
+          "x": 24,
+          "y": 36,
+          "width": 103,
+          "height": 138
+        },
+        {
+          "x": 18,
+          "y": 42,
+          "width": 102,
+          "height": 132
+        },
+        {
+          "x": 19,
+          "y": 41,
+          "width": 101,
+          "height": 133
+        },
+        {
+          "x": 23,
+          "y": 36,
+          "width": 102,
+          "height": 138
+        },
+        {
+          "x": 24,
+          "y": 36,
+          "width": 103,
+          "height": 138
+        },
+        {
+          "x": 23,
+          "y": 37,
+          "width": 99,
+          "height": 137
+        }
+      ],
+      "origin": "source"
+    },
+    "move": {
+      "sheet": "move.png",
+      "frames": 8,
+      "sourceFrames": 8,
+      "generatedFrames": 0,
+      "columns": 8,
+      "rows": 1,
+      "hitboxes": [
+        {
+          "x": 27,
+          "y": 38,
+          "width": 94,
+          "height": 135
+        },
+        {
+          "x": 27,
+          "y": 37,
+          "width": 95,
+          "height": 136
+        },
+        {
+          "x": 27,
+          "y": 38,
+          "width": 98,
+          "height": 135
+        },
+        {
+          "x": 26,
+          "y": 37,
+          "width": 96,
+          "height": 136
+        },
+        {
+          "x": 26,
+          "y": 38,
+          "width": 95,
+          "height": 135
+        },
+        {
+          "x": 27,
+          "y": 37,
+          "width": 95,
+          "height": 136
+        },
+        {
+          "x": 27,
+          "y": 38,
+          "width": 97,
+          "height": 135
+        },
+        {
+          "x": 27,
+          "y": 37,
+          "width": 96,
+          "height": 136
+        }
+      ],
+      "origin": "source"
+    },
+    "interact": {
+      "sheet": "interact.png",
+      "frames": 8,
+      "sourceFrames": 8,
+      "generatedFrames": 0,
+      "columns": 8,
+      "rows": 1,
+      "hitboxes": [
+        {
+          "x": 24,
+          "y": 37,
+          "width": 96,
+          "height": 137
+        },
+        {
+          "x": 8,
+          "y": 39,
+          "width": 110,
+          "height": 135
+        },
+        {
+          "x": 8,
+          "y": 39,
+          "width": 118,
+          "height": 135
+        },
+        {
+          "x": 10,
+          "y": 39,
+          "width": 107,
+          "height": 134
+        },
+        {
+          "x": 22,
+          "y": 37,
+          "width": 100,
+          "height": 137
+        },
+        {
+          "x": 23,
+          "y": 40,
+          "width": 99,
+          "height": 134
+        },
+        {
+          "x": 23,
+          "y": 40,
+          "width": 98,
+          "height": 134
+        },
+        {
+          "x": 24,
+          "y": 36,
+          "width": 101,
+          "height": 139
+        }
+      ],
+      "origin": "source"
+    },
+    "sit": {
+      "sheet": "sit.png",
+      "frames": 8,
+      "sourceFrames": 8,
+      "generatedFrames": 0,
+      "columns": 8,
+      "rows": 1,
+      "hitboxes": [
+        {
+          "x": 21,
+          "y": 75,
+          "width": 104,
+          "height": 140
+        },
+        {
+          "x": 21,
+          "y": 74,
+          "width": 105,
+          "height": 141
+        },
+        {
+          "x": 20,
+          "y": 73,
+          "width": 107,
+          "height": 142
+        },
+        {
+          "x": 19,
+          "y": 73,
+          "width": 111,
+          "height": 142
+        },
+        {
+          "x": 19,
+          "y": 75,
+          "width": 112,
+          "height": 141
+        },
+        {
+          "x": 19,
+          "y": 75,
+          "width": 112,
+          "height": 141
+        },
+        {
+          "x": 20,
+          "y": 73,
+          "width": 109,
+          "height": 143
+        },
+        {
+          "x": 21,
+          "y": 73,
+          "width": 106,
+          "height": 143
+        }
+      ],
+      "origin": "source"
+    },
+    "sleep": {
+      "sheet": "sleep.png",
+      "frames": 8,
+      "sourceFrames": 8,
+      "generatedFrames": 0,
+      "columns": 8,
+      "rows": 1,
+      "hitboxes": [
+        {
+          "x": 31,
+          "y": 74,
+          "width": 124,
+          "height": 101
+        },
+        {
+          "x": 32,
+          "y": 73,
+          "width": 122,
+          "height": 102
+        },
+        {
+          "x": 33,
+          "y": 72,
+          "width": 120,
+          "height": 103
+        },
+        {
+          "x": 32,
+          "y": 72,
+          "width": 122,
+          "height": 103
+        },
+        {
+          "x": 31,
+          "y": 74,
+          "width": 124,
+          "height": 101
+        },
+        {
+          "x": 32,
+          "y": 74,
+          "width": 122,
+          "height": 101
+        },
+        {
+          "x": 33,
+          "y": 72,
+          "width": 120,
+          "height": 103
+        },
+        {
+          "x": 32,
+          "y": 72,
+          "width": 122,
+          "height": 103
+        }
+      ],
+      "origin": "source"
+    },
+    "special": {
+      "sheet": "special.png",
+      "frames": 8,
+      "sourceFrames": 8,
+      "generatedFrames": 0,
+      "columns": 8,
+      "rows": 1,
+      "hitboxes": [
+        {
+          "x": 24,
+          "y": 37,
+          "width": 96,
+          "height": 137
+        },
+        {
+          "x": 24,
+          "y": 37,
+          "width": 102,
+          "height": 137
+        },
+        {
+          "x": 14,
+          "y": 41,
+          "width": 110,
+          "height": 133
+        },
+        {
+          "x": 11,
+          "y": 46,
+          "width": 121,
+          "height": 128
+        },
+        {
+          "x": 72,
+          "y": 38,
+          "width": 109,
+          "height": 139
+        },
+        {
+          "x": 49,
+          "y": 44,
+          "width": 112,
+          "height": 129
+        },
+        {
+          "x": 11,
+          "y": 43,
+          "width": 115,
+          "height": 131
+        },
+        {
+          "x": 22,
+          "y": 37,
+          "width": 105,
+          "height": 137
+        }
+      ],
+      "origin": "source"
+    },
+    "derived-motion": {
+      "sheet": "derived-motion.png",
+      "frames": 84,
+      "sourceFrames": 0,
+      "generatedFrames": 0,
+      "columns": 8,
+      "rows": 11,
+      "hitboxes": [
+        {
+          "x": 28,
+          "y": 42,
+          "width": 97,
+          "height": 131
+        },
+        {
+          "x": 29,
+          "y": 39,
+          "width": 98,
+          "height": 132
+        },
+        {
+          "x": 30,
+          "y": 37,
+          "width": 100,
+          "height": 132
+        },
+        {
+          "x": 28,
+          "y": 38,
+          "width": 98,
+          "height": 133
+        },
+        {
+          "x": 27,
+          "y": 40,
+          "width": 97,
+          "height": 133
+        },
+        {
+          "x": 27,
+          "y": 38,
+          "width": 97,
+          "height": 133
+        },
+        {
+          "x": 26,
+          "y": 37,
+          "width": 99,
+          "height": 132
+        },
+        {
+          "x": 27,
+          "y": 39,
+          "width": 99,
+          "height": 132
+        },
+        {
+          "x": 20,
+          "y": 73,
+          "width": 107,
+          "height": 142
+        },
+        {
+          "x": 22,
+          "y": 72,
+          "width": 106,
+          "height": 141
+        },
+        {
+          "x": 23,
+          "y": 71,
+          "width": 106,
+          "height": 141
+        },
+        {
+          "x": 23,
+          "y": 70,
+          "width": 105,
+          "height": 140
+        },
+        {
+          "x": 22,
+          "y": 70,
+          "width": 105,
+          "height": 139
+        },
+        {
+          "x": 22,
+          "y": 69,
+          "width": 104,
+          "height": 138
+        },
+        {
+          "x": 19,
+          "y": 69,
+          "width": 104,
+          "height": 138
+        },
+        {
+          "x": 21,
+          "y": 68,
+          "width": 104,
+          "height": 138
+        },
+        {
+          "x": 24,
+          "y": 69,
+          "width": 104,
+          "height": 138
+        },
+        {
+          "x": 25,
+          "y": 70,
+          "width": 104,
+          "height": 138
+        },
+        {
+          "x": 23,
+          "y": 69,
+          "width": 104,
+          "height": 138
+        },
+        {
+          "x": 20,
+          "y": 68,
+          "width": 104,
+          "height": 138
+        },
+        {
+          "x": 20,
+          "y": 69,
+          "width": 104,
+          "height": 138
+        },
+        {
+          "x": 20,
+          "y": 70,
+          "width": 105,
+          "height": 139
+        },
+        {
+          "x": 21,
+          "y": 71,
+          "width": 106,
+          "height": 141
+        },
+        {
+          "x": 21,
+          "y": 73,
+          "width": 107,
+          "height": 142
+        },
+        {
+          "x": 18,
+          "y": 89,
+          "width": 112,
+          "height": 129
+        },
+        {
+          "x": 21,
+          "y": 68,
+          "width": 105,
+          "height": 146
+        },
+        {
+          "x": 20,
+          "y": 76,
+          "width": 108,
+          "height": 140
+        },
+        {
+          "x": 20,
+          "y": 73,
+          "width": 107,
+          "height": 142
+        },
+        {
+          "x": 20,
+          "y": 73,
+          "width": 107,
+          "height": 142
+        },
+        {
+          "x": 21,
+          "y": 68,
+          "width": 105,
+          "height": 141
+        },
+        {
+          "x": 21,
+          "y": 62,
+          "width": 104,
+          "height": 141
+        },
+        {
+          "x": 22,
+          "y": 57,
+          "width": 102,
+          "height": 139
+        },
+        {
+          "x": 22,
+          "y": 53,
+          "width": 101,
+          "height": 139
+        },
+        {
+          "x": 23,
+          "y": 48,
+          "width": 99,
+          "height": 138
+        },
+        {
+          "x": 23,
+          "y": 42,
+          "width": 98,
+          "height": 138
+        },
+        {
+          "x": 24,
+          "y": 37,
+          "width": 96,
+          "height": 137
+        },
+        {
+          "x": 24,
+          "y": 37,
+          "width": 96,
+          "height": 137
+        },
+        {
+          "x": 24,
+          "y": 37,
+          "width": 102,
+          "height": 137
+        },
+        {
+          "x": 14,
+          "y": 41,
+          "width": 110,
+          "height": 133
+        },
+        {
+          "x": 11,
+          "y": 46,
+          "width": 121,
+          "height": 128
+        },
+        {
+          "x": 72,
+          "y": 38,
+          "width": 109,
+          "height": 139
+        },
+        {
+          "x": 49,
+          "y": 44,
+          "width": 112,
+          "height": 129
+        },
+        {
+          "x": 11,
+          "y": 43,
+          "width": 115,
+          "height": 131
+        },
+        {
+          "x": 22,
+          "y": 37,
+          "width": 105,
+          "height": 137
+        },
+        {
+          "x": 22,
+          "y": 37,
+          "width": 105,
+          "height": 137
+        },
+        {
+          "x": 22,
+          "y": 37,
+          "width": 104,
+          "height": 137
+        },
+        {
+          "x": 24,
+          "y": 37,
+          "width": 101,
+          "height": 137
+        },
+        {
+          "x": 24,
+          "y": 37,
+          "width": 100,
+          "height": 137
+        },
+        {
+          "x": 23,
+          "y": 37,
+          "width": 100,
+          "height": 137
+        },
+        {
+          "x": 23,
+          "y": 37,
+          "width": 99,
+          "height": 137
+        },
+        {
+          "x": 24,
+          "y": 37,
+          "width": 97,
+          "height": 137
+        },
+        {
+          "x": 24,
+          "y": 37,
+          "width": 96,
+          "height": 137
+        },
+        {
+          "x": 21,
+          "y": 75,
+          "width": 104,
+          "height": 140
+        },
+        {
+          "x": 21,
+          "y": 74,
+          "width": 105,
+          "height": 141
+        },
+        {
+          "x": 20,
+          "y": 73,
+          "width": 107,
+          "height": 142
+        },
+        {
+          "x": 19,
+          "y": 73,
+          "width": 111,
+          "height": 142
+        },
+        {
+          "x": 19,
+          "y": 75,
+          "width": 112,
+          "height": 141
+        },
+        {
+          "x": 19,
+          "y": 75,
+          "width": 112,
+          "height": 141
+        },
+        {
+          "x": 20,
+          "y": 73,
+          "width": 109,
+          "height": 143
+        },
+        {
+          "x": 21,
+          "y": 73,
+          "width": 106,
+          "height": 143
+        },
+        {
+          "x": 21,
+          "y": 73,
+          "width": 106,
+          "height": 143
+        },
+        {
+          "x": 22,
+          "y": 73,
+          "width": 109,
+          "height": 137
+        },
+        {
+          "x": 24,
+          "y": 73,
+          "width": 111,
+          "height": 131
+        },
+        {
+          "x": 25,
+          "y": 73,
+          "width": 114,
+          "height": 125
+        },
+        {
+          "x": 27,
+          "y": 74,
+          "width": 116,
+          "height": 119
+        },
+        {
+          "x": 28,
+          "y": 74,
+          "width": 119,
+          "height": 113
+        },
+        {
+          "x": 30,
+          "y": 74,
+          "width": 121,
+          "height": 107
+        },
+        {
+          "x": 31,
+          "y": 74,
+          "width": 124,
+          "height": 101
+        },
+        {
+          "x": 32,
+          "y": 72,
+          "width": 122,
+          "height": 103
+        },
+        {
+          "x": 33,
+          "y": 72,
+          "width": 120,
+          "height": 103
+        },
+        {
+          "x": 32,
+          "y": 74,
+          "width": 122,
+          "height": 101
+        },
+        {
+          "x": 31,
+          "y": 74,
+          "width": 124,
+          "height": 101
+        },
+        {
+          "x": 32,
+          "y": 72,
+          "width": 122,
+          "height": 103
+        },
+        {
+          "x": 33,
+          "y": 72,
+          "width": 120,
+          "height": 103
+        },
+        {
+          "x": 32,
+          "y": 73,
+          "width": 122,
+          "height": 102
+        },
+        {
+          "x": 31,
+          "y": 74,
+          "width": 124,
+          "height": 101
+        },
+        {
+          "x": 31,
+          "y": 74,
+          "width": 124,
+          "height": 101
+        },
+        {
+          "x": 30,
+          "y": 69,
+          "width": 120,
+          "height": 106
+        },
+        {
+          "x": 29,
+          "y": 64,
+          "width": 116,
+          "height": 111
+        },
+        {
+          "x": 28,
+          "y": 59,
+          "width": 112,
+          "height": 116
+        },
+        {
+          "x": 27,
+          "y": 52,
+          "width": 108,
+          "height": 122
+        },
+        {
+          "x": 26,
+          "y": 47,
+          "width": 104,
+          "height": 127
+        },
+        {
+          "x": 25,
+          "y": 42,
+          "width": 100,
+          "height": 132
+        },
+        {
+          "x": 24,
+          "y": 37,
+          "width": 96,
+          "height": 137
+        }
+      ],
+      "origin": "derived",
+      "generatedAsset": "standalone/assets/generated/rosmontis/skin-epoque-17/motion-atlas.png"
+    }
+  },
+  "animations": {
+    "idle": {
+      "source": "relax",
+      "sheet": "relax.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 12,
+      "loop": true,
+      "mirror": false,
+      "holdLast": false,
+      "next": null,
+      "generatedFrames": [],
+      "origin": "source",
+      "provenanceId": "processed-prts-spine:relax",
+      "generatedSequence": null
+    },
+    "walk-left": {
+      "source": "move",
+      "sheet": "move.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 12,
+      "loop": true,
+      "mirror": true,
+      "holdLast": false,
+      "next": null,
+      "generatedFrames": [],
+      "origin": "source",
+      "provenanceId": "processed-prts-spine:move",
+      "generatedSequence": null
+    },
+    "walk-right": {
+      "source": "move",
+      "sheet": "move.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 12,
+      "loop": true,
+      "mirror": false,
+      "holdLast": false,
+      "next": null,
+      "generatedFrames": [],
+      "origin": "source",
+      "provenanceId": "processed-prts-spine:move",
+      "generatedSequence": null
+    },
+    "run-left": {
+      "source": "derived-motion",
+      "sheet": "derived-motion.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mirror": true,
+      "holdLast": false,
+      "generatedFrames": [],
+      "origin": "derived",
+      "provenanceId": "run-run",
+      "generatedSequence": null,
+      "fps": 18,
+      "loop": true,
+      "next": null
+    },
+    "run-right": {
+      "source": "derived-motion",
+      "sheet": "derived-motion.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mirror": false,
+      "holdLast": false,
+      "generatedFrames": [],
+      "origin": "derived",
+      "provenanceId": "run-run",
+      "generatedSequence": null,
+      "fps": 18,
+      "loop": true,
+      "next": null
+    },
+    "clicked": {
+      "source": "interact",
+      "sheet": "interact.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 12,
+      "loop": false,
+      "mirror": false,
+      "holdLast": false,
+      "next": "idle",
+      "generatedFrames": [],
+      "origin": "source",
+      "provenanceId": "processed-prts-spine:interact",
+      "generatedSequence": null
+    },
+    "picked-up": {
+      "source": "derived-motion",
+      "sheet": "derived-motion.png",
+      "frameOrder": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "mirror": false,
+      "holdLast": false,
+      "generatedFrames": [],
+      "origin": "derived",
+      "provenanceId": "picked-up-grabbed",
+      "generatedSequence": null,
+      "fps": 12,
+      "loop": false,
+      "next": "dragging"
+    },
+    "dragging": {
+      "source": "derived-motion",
+      "sheet": "derived-motion.png",
+      "frameOrder": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "mirror": false,
+      "holdLast": false,
+      "generatedFrames": [],
+      "origin": "derived",
+      "provenanceId": "dragging-dragging",
+      "generatedSequence": null,
+      "fps": 8,
+      "loop": true,
+      "next": null
+    },
+    "dropped": {
+      "source": "derived-motion",
+      "sheet": "derived-motion.png",
+      "frameOrder": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "mirror": false,
+      "holdLast": false,
+      "generatedFrames": [],
+      "origin": "derived",
+      "provenanceId": "dropped-settle-dropped",
+      "generatedSequence": null,
+      "fps": 14,
+      "loop": false,
+      "next": "idle",
+      "transitionFromProvenanceId": "dropped-motion-landing",
+      "transitionBridge": "dropped-settle-dropped"
+    },
+    "rest": {
+      "source": "derived-motion",
+      "sheet": "derived-motion.png",
+      "frameOrder": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "mirror": false,
+      "holdLast": true,
+      "generatedFrames": [],
+      "origin": "derived",
+      "provenanceId": "rest-settle-rest",
+      "generatedSequence": null,
+      "fps": 8,
+      "loop": false,
+      "next": "sleep",
+      "transitionFromProvenanceId": "rest-source-rest",
+      "transitionBridge": "rest-settle-rest"
+    },
+    "sleep": {
+      "source": "sleep",
+      "sheet": "sleep.png",
+      "frameOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 10,
+      "loop": true,
+      "mirror": false,
+      "holdLast": false,
+      "next": null,
+      "generatedFrames": [],
+      "origin": "source",
+      "provenanceId": "processed-prts-spine:sleep",
+      "generatedSequence": null
+    },
+    "wake": {
+      "source": "derived-motion",
+      "sheet": "derived-motion.png",
+      "frameOrder": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ],
+      "mirror": false,
+      "holdLast": false,
+      "generatedFrames": [],
+      "origin": "derived",
+      "provenanceId": "wake-settle-wake",
+      "generatedSequence": null,
+      "fps": 12,
+      "loop": false,
+      "next": "idle",
+      "transitionFromProvenanceId": "wake-source-wake",
+      "transitionBridge": "wake-settle-wake"
+    },
+    "special": {
+      "source": "derived-motion",
+      "sheet": "derived-motion.png",
+      "frameOrder": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "mirror": false,
+      "holdLast": false,
+      "generatedFrames": [],
+      "origin": "derived",
+      "provenanceId": "special-settle-special",
+      "generatedSequence": null,
+      "fps": 12,
+      "loop": false,
+      "next": "idle",
+      "transitionFromProvenanceId": "special-source-special",
+      "transitionBridge": "special-settle-special"
+    }
+  },
+  "provenance": {
+    "generatedFrames": [],
+    "derivedAnimations": [
+      {
+        "id": "run-run",
+        "state": "run",
+        "intent": "run",
+        "origin": "derived",
+        "operation": "forward-lean-and-stride-bob",
+        "source_animation": "move",
+        "source_unique_frames": null,
+        "source_frames": [
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/move/000.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/move/001.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/move/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/move/003.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/move/004.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/move/005.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/move/006.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/move/007.png"
+        ],
+        "atlas_frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "generated_frame": null,
+        "bridge_style": null,
+        "bridge_frames": null
+      },
+      {
+        "id": "picked-up-grabbed",
+        "state": "picked-up",
+        "intent": "grabbed",
+        "origin": "derived",
+        "operation": "lift-with-inertial-sway",
+        "source_animation": "sit",
+        "source_unique_frames": null,
+        "source_frames": [
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png"
+        ],
+        "atlas_frames": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "generated_frame": null,
+        "bridge_style": null,
+        "bridge_frames": null
+      },
+      {
+        "id": "dragging-dragging",
+        "state": "dragging",
+        "intent": "dragging",
+        "origin": "derived",
+        "operation": "suspended-sway-loop",
+        "source_animation": "sit",
+        "source_unique_frames": null,
+        "source_frames": [
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png"
+        ],
+        "atlas_frames": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "generated_frame": null,
+        "bridge_style": null,
+        "bridge_frames": null
+      },
+      {
+        "id": "dropped-motion-landing",
+        "state": "dropped-motion",
+        "intent": "landing",
+        "origin": "derived",
+        "operation": "fall-impact-squash-recovery",
+        "source_animation": "sit",
+        "source_unique_frames": null,
+        "source_frames": [
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png"
+        ],
+        "atlas_frames": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "generated_frame": null,
+        "bridge_style": null,
+        "bridge_frames": null
+      },
+      {
+        "id": "dropped-settle-dropped",
+        "state": "dropped-settle",
+        "intent": "dropped",
+        "origin": "derived",
+        "operation": "landing-to-idle-registration-bridge",
+        "source_animation": "sit",
+        "source_unique_frames": null,
+        "source_frames": [],
+        "atlas_frames": [
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "generated_frame": null,
+        "bridge_style": "single-silhouette-endpoint-transform",
+        "bridge_frames": 8
+      },
+      {
+        "id": "special-source-special",
+        "state": "special-source",
+        "intent": "special",
+        "origin": "derived",
+        "operation": "physical-special-runtime-copy",
+        "source_animation": "special",
+        "source_unique_frames": null,
+        "source_frames": [
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/special/000.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/special/001.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/special/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/special/003.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/special/004.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/special/005.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/special/006.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/special/007.png"
+        ],
+        "atlas_frames": [
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43
+        ],
+        "generated_frame": null,
+        "bridge_style": null,
+        "bridge_frames": null
+      },
+      {
+        "id": "special-settle-special",
+        "state": "special-settle",
+        "intent": "special",
+        "origin": "derived",
+        "operation": "special-to-idle-registration-bridge",
+        "source_animation": "special",
+        "source_unique_frames": null,
+        "source_frames": [],
+        "atlas_frames": [
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51
+        ],
+        "generated_frame": null,
+        "bridge_style": "single-silhouette-endpoint-transform",
+        "bridge_frames": 8
+      },
+      {
+        "id": "rest-source-rest",
+        "state": "rest-source",
+        "intent": "rest",
+        "origin": "derived",
+        "operation": "physical-rest-runtime-copy",
+        "source_animation": "sit",
+        "source_unique_frames": null,
+        "source_frames": [
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/000.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/001.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/003.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/004.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/005.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/006.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sit/007.png"
+        ],
+        "atlas_frames": [
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59
+        ],
+        "generated_frame": null,
+        "bridge_style": null,
+        "bridge_frames": null
+      },
+      {
+        "id": "rest-settle-rest",
+        "state": "rest-settle",
+        "intent": "rest",
+        "origin": "derived",
+        "operation": "rest-to-sleep-registration-bridge",
+        "source_animation": "sit",
+        "source_unique_frames": null,
+        "source_frames": [],
+        "atlas_frames": [
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67
+        ],
+        "generated_frame": null,
+        "bridge_style": "single-silhouette-endpoint-transform",
+        "bridge_frames": 8
+      },
+      {
+        "id": "wake-source-wake",
+        "state": "wake-source",
+        "intent": "wake",
+        "origin": "derived",
+        "operation": "physical-wake-runtime-copy",
+        "source_animation": "sleep",
+        "source_unique_frames": null,
+        "source_frames": [
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sleep/007.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sleep/006.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sleep/005.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sleep/004.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sleep/003.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sleep/002.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sleep/001.png",
+          "standalone/assets/cleaned/rosmontis/skin-epoque-17/sleep/000.png"
+        ],
+        "atlas_frames": [
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75
+        ],
+        "generated_frame": null,
+        "bridge_style": null,
+        "bridge_frames": null
+      },
+      {
+        "id": "wake-settle-wake",
+        "state": "wake-settle",
+        "intent": "wake",
+        "origin": "derived",
+        "operation": "wake-to-idle-registration-bridge",
+        "source_animation": "sleep",
+        "source_unique_frames": null,
+        "source_frames": [],
+        "atlas_frames": [
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83
+        ],
+        "generated_frame": null,
+        "bridge_style": "single-silhouette-endpoint-transform",
+        "bridge_frames": 8
+      }
+    ]
+  }
+}

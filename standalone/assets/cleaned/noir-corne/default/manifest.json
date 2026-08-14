@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "noir-corne",
+  "character_name": "Noir Corne",
+  "localized_name": "黑角",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/noir-corne/default",
+  "source_page": "https://prts.wiki/w/%E9%BB%91%E8%A7%92",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_500_noirc/meta.json",
+    "model": "defaultskin/build/build_char_500_noirc",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_500_noirc/defaultskin/build/build_char_500_noirc.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_500_noirc/defaultskin/build/build_char_500_noirc.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_500_noirc/defaultskin/build/build_char_500_noirc.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 1.0666667222976685
+    },
+    {
+      "name": "Relax",
+      "duration": 2
+    },
+    {
+      "name": "Sit",
+      "duration": 3.3333332538604736
+    },
+    {
+      "name": "Sleep",
+      "duration": 3.3333332538604736
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/noir-corne/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/noir-corne/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.0666667222976685,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/noir-corne/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/noir-corne/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/noir-corne/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/noir-corne/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -223.13475,
+      "maxX": 173.81392,
+      "minY": -103.15652,
+      "maxY": 403.86905
+    },
+    "scale": 0.41,
+    "x_offset": 106.11077,
+    "y_offset": 173.70583,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:21.852Z"
+}

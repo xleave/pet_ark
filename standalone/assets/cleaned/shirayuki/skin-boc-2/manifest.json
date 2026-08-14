@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "character": "shirayuki",
+  "character_name": "ShiraYuki",
+  "localized_name": "白雪",
+  "variant": "skin-boc-2",
+  "variant_type": "skin",
+  "variant_name": "曲刃晴风",
+  "skin_id": "boc-2",
+  "skin_name": "曲刃晴风",
+  "source": "standalone/assets/source/shirayuki/skin-boc-2",
+  "source_page": "https://prts.wiki/w/%E7%99%BD%E9%9B%AA",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_118_yuki/meta.json",
+    "model": "char_118_yuki_boc_2/build/build_char_118_yuki_boc_2",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_118_yuki/char_118_yuki_boc_2/build/build_char_118_yuki_boc_2.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_118_yuki/char_118_yuki_boc_2/build/build_char_118_yuki_boc_2.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_118_yuki/char_118_yuki_boc_2/build/build_char_118_yuki_boc_2.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 2.3333332538604736
+    },
+    {
+      "name": "Move",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 5
+    },
+    {
+      "name": "Sleep",
+      "duration": 3
+    },
+    {
+      "name": "Special",
+      "duration": 3.1666667461395264
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/shirayuki/skin-boc-2/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 2.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/shirayuki/skin-boc-2/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/shirayuki/skin-boc-2/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/shirayuki/skin-boc-2/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 5,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/shirayuki/skin-boc-2/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/shirayuki/skin-boc-2/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 3.1666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/shirayuki/skin-boc-2/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 4,
+          "reason": "The source Special animation intentionally becomes fully transparent inside the smoke substitution transition."
+        }
+      ]
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -355.42459,
+      "maxX": 377.80957,
+      "minY": -122.34933,
+      "maxY": 389.22031
+    },
+    "scale": 0.24003,
+    "x_offset": 93.31344,
+    "y_offset": 186.63219,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:30.541Z"
+}

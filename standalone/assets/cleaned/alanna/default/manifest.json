@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "alanna",
+  "character_name": "Alanna",
+  "localized_name": "阿兰娜",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/alanna/default",
+  "source_page": "https://prts.wiki/w/%E9%98%BF%E5%85%B0%E5%A8%9C",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4178_alanna/meta.json",
+    "model": "defaultskin/build/build_char_4178_alanna",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4178_alanna/defaultskin/build/build_char_4178_alanna.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4178_alanna/defaultskin/build/build_char_4178_alanna.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4178_alanna/defaultskin/build/build_char_4178_alanna.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.9333332777023315
+    },
+    {
+      "name": "Move",
+      "duration": 5.333333492279053
+    },
+    {
+      "name": "Relax",
+      "duration": 5.333333492279053
+    },
+    {
+      "name": "Sit",
+      "duration": 6
+    },
+    {
+      "name": "Sleep",
+      "duration": 3.3333332538604736
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/alanna/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.9333332777023315,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/alanna/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 5.333333492279053,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/alanna/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 5.333333492279053,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/alanna/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 6,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/alanna/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/alanna/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -221.52213,
+      "maxX": 171.53403,
+      "minY": -123.0634,
+      "maxY": 422.64868
+    },
+    "scale": 0.38115,
+    "x_offset": 105.52657,
+    "y_offset": 169.09397,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:19:55.217Z"
+}

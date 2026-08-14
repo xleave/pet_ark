@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "myrtle",
+  "character_name": "Myrtle",
+  "localized_name": "桃金娘",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/myrtle/default",
+  "source_page": "https://prts.wiki/w/%E6%A1%83%E9%87%91%E5%A8%98",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/meta.json",
+    "model": "defaultskin/build/build_char_151_myrtle",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/defaultskin/build/build_char_151_myrtle.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/defaultskin/build/build_char_151_myrtle.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/defaultskin/build/build_char_151_myrtle.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 1.0666667222976685
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 3.3333332538604736
+    },
+    {
+      "name": "Sleep",
+      "duration": 4
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/myrtle/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/myrtle/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.0666667222976685,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/myrtle/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/myrtle/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/myrtle/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/myrtle/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -250.55811,
+      "maxX": 159.25687,
+      "minY": -81.54864,
+      "maxY": 523.0683
+    },
+    "scale": 0.34402,
+    "x_offset": 111.7047,
+    "y_offset": 187.94568,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:20.486Z"
+}

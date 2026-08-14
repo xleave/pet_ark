@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "estelle",
+  "character_name": "Estelle",
+  "localized_name": "艾丝黛尔",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/estelle/default",
+  "source_page": "https://prts.wiki/w/%E8%89%BE%E4%B8%9D%E9%BB%9B%E5%B0%94",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_127_estell/meta.json",
+    "model": "defaultskin/build/build_char_127_estell",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_127_estell/defaultskin/build/build_char_127_estell.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_127_estell/defaultskin/build/build_char_127_estell.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_127_estell/defaultskin/build/build_char_127_estell.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.2000000476837158
+    },
+    {
+      "name": "Move",
+      "duration": 1
+    },
+    {
+      "name": "Relax",
+      "duration": 2
+    },
+    {
+      "name": "Sit",
+      "duration": 1.6666666269302368
+    },
+    {
+      "name": "Sleep",
+      "duration": 3
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/estelle/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.2000000476837158,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/estelle/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/estelle/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/estelle/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 1.6666666269302368,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/estelle/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/estelle/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -282.45569,
+      "maxX": 186.41086,
+      "minY": -124.58717,
+      "maxY": 408.63321
+    },
+    "scale": 0.37537,
+    "x_offset": 114.02633,
+    "y_offset": 169.2333,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:04.957Z"
+}

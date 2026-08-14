@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "character": "greyy-the-lightningbearer",
+  "character_name": "Greyy the Lightningbearer",
+  "localized_name": "承曦格雷伊",
+  "variant": "skin-breaker-1",
+  "variant_type": "skin",
+  "variant_name": "生化沉溺",
+  "skin_id": "breaker-1",
+  "skin_name": "生化沉溺",
+  "source": "standalone/assets/source/greyy-the-lightningbearer/skin-breaker-1",
+  "source_page": "https://prts.wiki/w/%E6%89%BF%E6%9B%A6%E6%A0%BC%E9%9B%B7%E4%BC%8A",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/meta.json",
+    "model": "char_1027_greyy2_breaker_1/build/build_char_1027_greyy2_breaker_1",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/char_1027_greyy2_breaker_1/build/build_char_1027_greyy2_breaker_1.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/char_1027_greyy2_breaker_1/build/build_char_1027_greyy2_breaker_1.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/char_1027_greyy2_breaker_1/build/build_char_1027_greyy2_breaker_1.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 3.5
+    },
+    {
+      "name": "Move",
+      "duration": 8
+    },
+    {
+      "name": "Relax",
+      "duration": 8
+    },
+    {
+      "name": "Sit",
+      "duration": 8
+    },
+    {
+      "name": "Sleep",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Special",
+      "duration": 20.766666412353516
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/greyy-the-lightningbearer/skin-breaker-1/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 3.5,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/greyy-the-lightningbearer/skin-breaker-1/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/greyy-the-lightningbearer/skin-breaker-1/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/greyy-the-lightningbearer/skin-breaker-1/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/greyy-the-lightningbearer/skin-breaker-1/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/greyy-the-lightningbearer/skin-breaker-1/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 20.766666412353516,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/greyy-the-lightningbearer/skin-breaker-1/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 5,
+          "reason": "The source Special animation intentionally contains an effect-only disappearance beat before the character reappears."
+        }
+      ]
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -860.13062,
+      "maxX": 529.86688,
+      "minY": -104.61525,
+      "maxY": 911.79651
+    },
+    "scale": 0.12662,
+    "x_offset": 116.90882,
+    "y_offset": 202.75373,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:09.429Z"
+}

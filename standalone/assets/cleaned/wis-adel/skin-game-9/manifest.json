@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "character": "wis-adel",
+  "character_name": "Wiš'adel",
+  "localized_name": "维什戴尔",
+  "variant": "skin-game-9",
+  "variant_type": "skin",
+  "variant_name": "绝对主角",
+  "skin_id": "game-9",
+  "skin_name": "绝对主角",
+  "source": "standalone/assets/source/wis-adel/skin-game-9",
+  "source_page": "https://prts.wiki/w/%E7%BB%B4%E4%BB%80%E6%88%B4%E5%B0%94",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1035_wisdel/meta.json",
+    "model": "char_1035_wisdel_game_9/build/build_char_1035_wisdel_game_9",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1035_wisdel/char_1035_wisdel_game_9/build/build_char_1035_wisdel_game_9.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1035_wisdel/char_1035_wisdel_game_9/build/build_char_1035_wisdel_game_9.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1035_wisdel/char_1035_wisdel_game_9/build/build_char_1035_wisdel_game_9.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 2.2666666507720947
+    },
+    {
+      "name": "Move",
+      "duration": 0.9333333373069763
+    },
+    {
+      "name": "Relax",
+      "duration": 1.1333333253860474
+    },
+    {
+      "name": "Sit",
+      "duration": 1.1333333253860474
+    },
+    {
+      "name": "Sleep",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Special",
+      "duration": 12.166666984558105
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/wis-adel/skin-game-9/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 2.2666666507720947,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/wis-adel/skin-game-9/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 0.9333333373069763,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/wis-adel/skin-game-9/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 1.1333333253860474,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/wis-adel/skin-game-9/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 1.1333333253860474,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/wis-adel/skin-game-9/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/wis-adel/skin-game-9/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 12.166666984558105,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/wis-adel/skin-game-9/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 7,
+          "reason": "The source Special animation intentionally ends on a fully transparent disappearance beat after the companion interaction."
+        }
+      ]
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -482.71979,
+      "maxX": 511.62704,
+      "minY": -49.10185,
+      "maxY": 324.40747
+    },
+    "scale": 0.177,
+    "x_offset": 93.4417,
+    "y_offset": 207.30894,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:38.831Z"
+}

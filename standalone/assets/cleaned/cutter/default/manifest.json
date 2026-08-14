@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "cutter",
+  "character_name": "Cutter",
+  "localized_name": "刻刀",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/cutter/default",
+  "source_page": "https://prts.wiki/w/%E5%88%BB%E5%88%80",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_301_cutter/meta.json",
+    "model": "defaultskin/build/build_char_301_cutter",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_301_cutter/defaultskin/build/build_char_301_cutter.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_301_cutter/defaultskin/build/build_char_301_cutter.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_301_cutter/defaultskin/build/build_char_301_cutter.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 1
+    },
+    {
+      "name": "Relax",
+      "duration": 2
+    },
+    {
+      "name": "Sit",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Sleep",
+      "duration": 2
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/cutter/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/cutter/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/cutter/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/cutter/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/cutter/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/cutter/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -258.77365,
+      "maxX": 323.53854,
+      "minY": -123.60275,
+      "maxY": 410.89194
+    },
+    "scale": 0.30224,
+    "x_offset": 86.21262,
+    "y_offset": 178.64189,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:03.006Z"
+}

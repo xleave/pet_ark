@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "character": "greyy-the-lightningbearer",
+  "character_name": "Greyy the Lightningbearer",
+  "localized_name": "承曦格雷伊",
+  "variant": "skin-snow-5",
+  "variant_type": "skin",
+  "variant_name": "演出后的王子",
+  "skin_id": "snow-5",
+  "skin_name": "演出后的王子",
+  "source": "standalone/assets/source/greyy-the-lightningbearer/skin-snow-5",
+  "source_page": "https://prts.wiki/w/%E6%89%BF%E6%9B%A6%E6%A0%BC%E9%9B%B7%E4%BC%8A",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/meta.json",
+    "model": "char_1027_greyy2_snow_5/build/build_char_1027_greyy2_snow_5",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/char_1027_greyy2_snow_5/build/build_char_1027_greyy2_snow_5.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/char_1027_greyy2_snow_5/build/build_char_1027_greyy2_snow_5.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/char_1027_greyy2_snow_5/build/build_char_1027_greyy2_snow_5.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1.5
+    },
+    {
+      "name": "Move",
+      "duration": 5.333333492279053
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 4
+    },
+    {
+      "name": "Sleep",
+      "duration": 4
+    },
+    {
+      "name": "Special",
+      "duration": 13.833333015441895
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/greyy-the-lightningbearer/skin-snow-5/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.5,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/greyy-the-lightningbearer/skin-snow-5/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 5.333333492279053,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/greyy-the-lightningbearer/skin-snow-5/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/greyy-the-lightningbearer/skin-snow-5/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/greyy-the-lightningbearer/skin-snow-5/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/greyy-the-lightningbearer/skin-snow-5/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 13.833333015441895,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/greyy-the-lightningbearer/skin-snow-5/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 1,
+          "reason": "The source Special animation intentionally starts its transition with a transparent beat before the visible prop sequence."
+        }
+      ]
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -1496.7926,
+      "maxX": 945.24316,
+      "minY": -488.46176,
+      "maxY": 1075.70447
+    },
+    "scale": 0.07207,
+    "x_offset": 115.87536,
+    "y_offset": 180.79606,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:09.528Z"
+}

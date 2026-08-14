@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "sideroca",
+  "character_name": "Sideroca",
+  "localized_name": "铸铁",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/sideroca/default",
+  "source_page": "https://prts.wiki/w/%E9%93%B8%E9%93%81",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_333_sidero/meta.json",
+    "model": "defaultskin/build/build_char_333_sidero",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_333_sidero/defaultskin/build/build_char_333_sidero.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_333_sidero/defaultskin/build/build_char_333_sidero.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_333_sidero/defaultskin/build/build_char_333_sidero.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 2.1666667461395264
+    },
+    {
+      "name": "Move",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 6
+    },
+    {
+      "name": "Sleep",
+      "duration": 2.6666667461395264
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/sideroca/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 2.1666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/sideroca/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/sideroca/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/sideroca/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 6,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/sideroca/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/sideroca/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -274.73334,
+      "maxX": 214.95467,
+      "minY": -109.42616,
+      "maxY": 474.33105
+    },
+    "scale": 0.35631,
+    "x_offset": 106.64994,
+    "y_offset": 177.01009,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:30.497Z"
+}

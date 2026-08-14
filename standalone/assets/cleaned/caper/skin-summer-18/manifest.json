@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "character": "caper",
+  "character_name": "Caper",
+  "localized_name": "跃跃",
+  "variant": "skin-summer-18",
+  "variant_type": "skin",
+  "variant_name": "夏卉 FA083",
+  "skin_id": "summer-18",
+  "skin_name": "夏卉 FA083",
+  "source": "standalone/assets/source/caper/skin-summer-18",
+  "source_page": "https://prts.wiki/w/%E8%B7%83%E8%B7%83",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4100_caper/meta.json",
+    "model": "char_4100_caper_summer_18/build/build_char_4100_caper_summer_18",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4100_caper/char_4100_caper_summer_18/build/build_char_4100_caper_summer_18.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4100_caper/char_4100_caper_summer_18/build/build_char_4100_caper_summer_18.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4100_caper/char_4100_caper_summer_18/build/build_char_4100_caper_summer_18.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 4.666666507720947
+    },
+    {
+      "name": "Move",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Relax",
+      "duration": 6.666666507720947
+    },
+    {
+      "name": "Sit",
+      "duration": 8
+    },
+    {
+      "name": "Sleep",
+      "duration": 6
+    },
+    {
+      "name": "Special",
+      "duration": 25
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/caper/skin-summer-18/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 4.666666507720947,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/caper/skin-summer-18/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/caper/skin-summer-18/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 6.666666507720947,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/caper/skin-summer-18/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/caper/skin-summer-18/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 6,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/caper/skin-summer-18/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 25,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/caper/skin-summer-18/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -423.54288,
+      "maxX": 862.60522,
+      "minY": -361.62027,
+      "maxY": 551.06757
+    },
+    "scale": 0.13684,
+    "x_offset": 65.95876,
+    "y_offset": 166.5149,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:00.283Z"
+}

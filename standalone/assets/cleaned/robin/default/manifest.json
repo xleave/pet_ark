@@ -1,0 +1,106 @@
+{
+  "schema_version": 2,
+  "character": "robin",
+  "character_name": "Robin",
+  "localized_name": "罗宾",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/robin/default",
+  "source_page": "https://prts.wiki/w/%E7%BD%97%E5%AE%BE",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/meta.json",
+    "model": "defaultskin/build/build_char_451_robin",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/defaultskin/build/build_char_451_robin.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/defaultskin/build/build_char_451_robin.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/defaultskin/build/build_char_451_robin.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Interact",
+      "duration": 1.6666666269302368
+    },
+    {
+      "name": "Move",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Relax",
+      "duration": 9.333333015441895
+    },
+    {
+      "name": "Sit",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Sleep",
+      "duration": 6
+    }
+  ],
+  "processed_states": {
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.6666666269302368,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/robin/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/robin/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 9.333333015441895,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/robin/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/robin/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 6,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/robin/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -208.68857,
+      "maxX": 181.31166,
+      "minY": -131.12335,
+      "maxY": 392.95313
+    },
+    "scale": 0.39689,
+    "x_offset": 101.43279,
+    "y_offset": 163.95863,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:27.792Z"
+}

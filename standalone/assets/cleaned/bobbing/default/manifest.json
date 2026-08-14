@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "bobbing",
+  "character_name": "Bobbing",
+  "localized_name": "波卜",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/bobbing/default",
+  "source_page": "https://prts.wiki/w/%E6%B3%A2%E5%8D%9C",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/meta.json",
+    "model": "defaultskin/build/build_char_487_bobb",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/defaultskin/build/build_char_487_bobb.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/defaultskin/build/build_char_487_bobb.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/defaultskin/build/build_char_487_bobb.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 4.166666507720947
+    },
+    {
+      "name": "Move",
+      "duration": 3.4666666984558105
+    },
+    {
+      "name": "Relax",
+      "duration": 6
+    },
+    {
+      "name": "Sit",
+      "duration": 4
+    },
+    {
+      "name": "Sleep",
+      "duration": 6.666666507720947
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/bobbing/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 4.166666507720947,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/bobbing/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 3.4666666984558105,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/bobbing/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 6,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/bobbing/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/bobbing/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 6.666666507720947,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/bobbing/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -196.99001,
+      "maxX": 659.30945,
+      "minY": -105.15844,
+      "maxY": 396.01376
+    },
+    "scale": 0.20554,
+    "x_offset": 48.48845,
+    "y_offset": 194.3862,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:19:59.425Z"
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "quercus",
+  "character_name": "Quercus",
+  "localized_name": "夏栎",
+  "variant": "skin-epoque-17",
+  "variant_type": "skin",
+  "variant_name": "遥乡之径",
+  "skin_id": "epoque-17",
+  "skin_name": "遥乡之径",
+  "source": "standalone/assets/source/quercus/skin-epoque-17",
+  "source_page": "https://prts.wiki/w/%E5%A4%8F%E6%A0%8E",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/meta.json",
+    "model": "char_492_quercu_epoque_17/build/build_char_492_quercu_epoque_17",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/char_492_quercu_epoque_17/build/build_char_492_quercu_epoque_17.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/char_492_quercu_epoque_17/build/build_char_492_quercu_epoque_17.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/char_492_quercu_epoque_17/build/build_char_492_quercu_epoque_17.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Interact",
+      "duration": 1.8333333730697632
+    },
+    {
+      "name": "Move",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 4
+    },
+    {
+      "name": "Sleep",
+      "duration": 4
+    },
+    {
+      "name": "Special",
+      "duration": 4.5
+    }
+  ],
+  "processed_states": {
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.8333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/quercus/skin-epoque-17/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/quercus/skin-epoque-17/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/quercus/skin-epoque-17/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/quercus/skin-epoque-17/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/quercus/skin-epoque-17/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 4.5,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/quercus/skin-epoque-17/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -301.0499,
+      "maxX": 213.7498,
+      "minY": -96.77847,
+      "maxY": 462.95786
+    },
+    "scale": 0.34188,
+    "x_offset": 110.9231,
+    "y_offset": 182.91333,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:26.557Z"
+}

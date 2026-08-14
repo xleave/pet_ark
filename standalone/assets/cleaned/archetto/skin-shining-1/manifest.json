@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "character": "archetto",
+  "character_name": "Archetto",
+  "localized_name": "空弦",
+  "variant": "skin-shining-1",
+  "variant_type": "skin",
+  "variant_name": "宣传策略",
+  "skin_id": "shining-1",
+  "skin_name": "宣传策略",
+  "source": "standalone/assets/source/archetto/skin-shining-1",
+  "source_page": "https://prts.wiki/w/%E7%A9%BA%E5%BC%A6",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/meta.json",
+    "model": "char_332_archet_shining_1/build/build_char_332_archet_shining_1",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/char_332_archet_shining_1/build/build_char_332_archet_shining_1.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/char_332_archet_shining_1/build/build_char_332_archet_shining_1.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/char_332_archet_shining_1/build/build_char_332_archet_shining_1.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 2
+    },
+    {
+      "name": "Move",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Relax",
+      "duration": 8
+    },
+    {
+      "name": "Sit",
+      "duration": 8
+    },
+    {
+      "name": "Sleep",
+      "duration": 3.3333332538604736
+    },
+    {
+      "name": "Special",
+      "duration": 14.833333015441895
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/archetto/skin-shining-1/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/archetto/skin-shining-1/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/archetto/skin-shining-1/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/archetto/skin-shining-1/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/archetto/skin-shining-1/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/archetto/skin-shining-1/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 14.833333015441895,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/archetto/skin-shining-1/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -268.37378,
+      "maxX": 564.67999,
+      "minY": -130.37256,
+      "maxY": 443.45602
+    },
+    "scale": 0.21127,
+    "x_offset": 64.69956,
+    "y_offset": 188.45608,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:19:56.402Z"
+}

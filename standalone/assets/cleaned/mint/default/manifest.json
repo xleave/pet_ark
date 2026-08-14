@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "mint",
+  "character_name": "Mint",
+  "localized_name": "薄绿",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/mint/default",
+  "source_page": "https://prts.wiki/w/%E8%96%84%E7%BB%BF",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_388_mint/meta.json",
+    "model": "defaultskin/build/build_char_388_mint",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_388_mint/defaultskin/build/build_char_388_mint.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_388_mint/defaultskin/build/build_char_388_mint.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_388_mint/defaultskin/build/build_char_388_mint.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 2
+    },
+    {
+      "name": "Move",
+      "duration": 2
+    },
+    {
+      "name": "Relax",
+      "duration": 5.333333492279053
+    },
+    {
+      "name": "Sit",
+      "duration": 4.5
+    },
+    {
+      "name": "Sleep",
+      "duration": 3
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/mint/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/mint/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/mint/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 5.333333492279053,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/mint/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 4.5,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/mint/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/mint/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -237.92653,
+      "maxX": 339.14645,
+      "minY": -109.98159,
+      "maxY": 665.98785
+    },
+    "scale": 0.26805,
+    "x_offset": 82.43391,
+    "y_offset": 186.51924,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:18.590Z"
+}

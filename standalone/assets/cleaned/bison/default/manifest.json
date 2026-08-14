@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "bison",
+  "character_name": "Bison",
+  "localized_name": "拜松",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/bison/default",
+  "source_page": "https://prts.wiki/w/%E6%8B%9C%E6%9D%BE",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/meta.json",
+    "model": "defaultskin/build/build_char_325_bison",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/defaultskin/build/build_char_325_bison.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/defaultskin/build/build_char_325_bison.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/defaultskin/build/build_char_325_bison.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 2.4000000953674316
+    },
+    {
+      "name": "Relax",
+      "duration": 3
+    },
+    {
+      "name": "Sit",
+      "duration": 5
+    },
+    {
+      "name": "Sleep",
+      "duration": 3
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/bison/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/bison/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2.4000000953674316,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/bison/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 3,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/bison/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 5,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/bison/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/bison/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -216.55048,
+      "maxX": 199.30949,
+      "minY": -133.2541,
+      "maxY": 404.62918
+    },
+    "scale": 0.3867,
+    "x_offset": 99.33355,
+    "y_offset": 164.47051,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:19:58.404Z"
+}

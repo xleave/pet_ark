@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "character": "bison",
+  "character_name": "Bison",
+  "localized_name": "拜松",
+  "variant": "skin-yun-7",
+  "variant_type": "skin",
+  "variant_name": "凌云意",
+  "skin_id": "yun-7",
+  "skin_name": "凌云意",
+  "source": "standalone/assets/source/bison/skin-yun-7",
+  "source_page": "https://prts.wiki/w/%E6%8B%9C%E6%9D%BE",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/meta.json",
+    "model": "char_325_bison_yun_7/build/build_char_325_bison_yun_7",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/char_325_bison_yun_7/build/build_char_325_bison_yun_7.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/char_325_bison_yun_7/build/build_char_325_bison_yun_7.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/char_325_bison_yun_7/build/build_char_325_bison_yun_7.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 2.433333396911621
+    },
+    {
+      "name": "Move",
+      "duration": 4
+    },
+    {
+      "name": "Relax",
+      "duration": 8
+    },
+    {
+      "name": "Sit",
+      "duration": 8
+    },
+    {
+      "name": "Sleep",
+      "duration": 8
+    },
+    {
+      "name": "Special",
+      "duration": 8.866666793823242
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/bison/skin-yun-7/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 2.433333396911621,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/bison/skin-yun-7/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/bison/skin-yun-7/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/bison/skin-yun-7/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/bison/skin-yun-7/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/bison/skin-yun-7/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 8.866666793823242,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/bison/skin-yun-7/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -244.29678,
+      "maxX": 1148.7915,
+      "minY": -103.29615,
+      "maxY": 540.13135
+    },
+    "scale": 0.12634,
+    "x_offset": 38.86397,
+    "y_offset": 202.94977,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:19:58.518Z"
+}

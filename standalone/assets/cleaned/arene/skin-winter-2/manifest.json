@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "arene",
+  "character_name": "Arene",
+  "localized_name": "芳汀",
+  "variant": "skin-winter-2",
+  "variant_type": "skin",
+  "variant_name": "随性",
+  "skin_id": "winter-2",
+  "skin_name": "随性",
+  "source": "standalone/assets/source/arene/skin-winter-2",
+  "source_page": "https://prts.wiki/w/%E8%8A%B3%E6%B1%80",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/meta.json",
+    "model": "char_271_spikes_winter_2/build/build_char_271_spikes_winter_2",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/char_271_spikes_winter_2/build/build_char_271_spikes_winter_2.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/char_271_spikes_winter_2/build/build_char_271_spikes_winter_2.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/char_271_spikes_winter_2/build/build_char_271_spikes_winter_2.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Interact",
+      "duration": 1.5
+    },
+    {
+      "name": "Move",
+      "duration": 1.3333333730697632
+    },
+    {
+      "name": "Relax",
+      "duration": 2
+    },
+    {
+      "name": "Sit",
+      "duration": 8
+    },
+    {
+      "name": "Sleep",
+      "duration": 3
+    },
+    {
+      "name": "Special",
+      "duration": 9.333333015441895
+    }
+  ],
+  "processed_states": {
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1.5,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/arene/skin-winter-2/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.3333333730697632,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/arene/skin-winter-2/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/arene/skin-winter-2/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 8,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/arene/skin-winter-2/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/arene/skin-winter-2/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 9.333333015441895,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/arene/skin-winter-2/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -470.14709,
+      "maxX": 1078.82666,
+      "minY": -127.44131,
+      "maxY": 498.1713
+    },
+    "scale": 0.11362,
+    "x_offset": 61.41981,
+    "y_offset": 201.51966,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:19:56.563Z"
+}

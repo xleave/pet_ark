@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "breeze",
+  "character_name": "Breeze",
+  "localized_name": "微风",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/breeze/default",
+  "source_page": "https://prts.wiki/w/%E5%BE%AE%E9%A3%8E",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_275_breeze/meta.json",
+    "model": "defaultskin/build/build_char_275_breeze",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_275_breeze/defaultskin/build/build_char_275_breeze.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_275_breeze/defaultskin/build/build_char_275_breeze.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_275_breeze/defaultskin/build/build_char_275_breeze.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 1.0666667222976685
+    },
+    {
+      "name": "Relax",
+      "duration": 2.5999999046325684
+    },
+    {
+      "name": "Sit",
+      "duration": 1
+    },
+    {
+      "name": "Sleep",
+      "duration": 3.3333332538604736
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/breeze/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/breeze/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.0666667222976685,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/breeze/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2.5999999046325684,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/breeze/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/breeze/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/breeze/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -254.70593,
+      "maxX": 198.33795,
+      "minY": -121.44843,
+      "maxY": 426.57397
+    },
+    "scale": 0.37955,
+    "x_offset": 106.69714,
+    "y_offset": 169.90467,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:19:59.446Z"
+}

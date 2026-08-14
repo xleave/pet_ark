@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "skadi",
+  "character_name": "Skadi",
+  "localized_name": "斯卡蒂",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/skadi/default",
+  "source_page": "https://prts.wiki/w/%E6%96%AF%E5%8D%A1%E8%92%82",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_263_skadi/meta.json",
+    "model": "defaultskin/build/build_char_263_skadi",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_263_skadi/defaultskin/build/build_char_263_skadi.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_263_skadi/defaultskin/build/build_char_263_skadi.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_263_skadi/defaultskin/build/build_char_263_skadi.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 2.4000000953674316
+    },
+    {
+      "name": "Relax",
+      "duration": 1
+    },
+    {
+      "name": "Sit",
+      "duration": 5
+    },
+    {
+      "name": "Sleep",
+      "duration": 3
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/skadi/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/skadi/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2.4000000953674316,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/skadi/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/skadi/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 5,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/skadi/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 3,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/skadi/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -229.24382,
+      "maxX": 196.70952,
+      "minY": -112.27637,
+      "maxY": 396.08044
+    },
+    "scale": 0.40916,
+    "x_offset": 102.65589,
+    "y_offset": 170.06084,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:31.302Z"
+}

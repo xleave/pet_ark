@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "character": "popukar",
+  "character_name": "Popukar",
+  "localized_name": "泡普卡",
+  "variant": "default",
+  "variant_type": "base_form",
+  "variant_name": "默认",
+  "skin_id": null,
+  "skin_name": null,
+  "source": "standalone/assets/source/popukar/default",
+  "source_page": "https://prts.wiki/w/%E6%B3%A1%E6%99%AE%E5%8D%A1",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/meta.json",
+    "model": "defaultskin/build/build_char_281_popka",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/defaultskin/build/build_char_281_popka.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/defaultskin/build/build_char_281_popka.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/defaultskin/build/build_char_281_popka.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 1
+    },
+    {
+      "name": "Move",
+      "duration": 1.0666667222976685
+    },
+    {
+      "name": "Relax",
+      "duration": 2
+    },
+    {
+      "name": "Sit",
+      "duration": 3.3333332538604736
+    },
+    {
+      "name": "Sleep",
+      "duration": 4
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/popukar/default/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 1,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/popukar/default/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 1.0666667222976685,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/popukar/default/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/popukar/default/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 3.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/popukar/default/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/popukar/default/sleep"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -237.04303,
+      "maxX": 173.09616,
+      "minY": -96.75415,
+      "maxY": 399.95029
+    },
+    "scale": 0.41,
+    "x_offset": 109.10911,
+    "y_offset": 176.3308,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:24.213Z"
+}

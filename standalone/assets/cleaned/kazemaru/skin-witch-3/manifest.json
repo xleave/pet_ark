@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "character": "kazemaru",
+  "character_name": "Kazemaru",
+  "localized_name": "风丸",
+  "variant": "skin-witch-3",
+  "variant_type": "skin",
+  "variant_name": "幻影轻悄",
+  "skin_id": "witch-3",
+  "skin_name": "幻影轻悄",
+  "source": "standalone/assets/source/kazemaru/skin-witch-3",
+  "source_page": "https://prts.wiki/w/%E9%A3%8E%E4%B8%B8",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4016_kazema/meta.json",
+    "model": "char_4016_kazema_witch_3/build/build_char_4016_kazema_witch_3",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4016_kazema/char_4016_kazema_witch_3/build/build_char_4016_kazema_witch_3.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4016_kazema/char_4016_kazema_witch_3/build/build_char_4016_kazema_witch_3.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4016_kazema/char_4016_kazema_witch_3/build/build_char_4016_kazema_witch_3.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 2.3333332538604736
+    },
+    {
+      "name": "Move",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 4
+    },
+    {
+      "name": "Sleep",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Special",
+      "duration": 15.199999809265137
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/kazemaru/skin-witch-3/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 2.3333332538604736,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/kazemaru/skin-witch-3/interact"
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/kazemaru/skin-witch-3/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/kazemaru/skin-witch-3/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/kazemaru/skin-witch-3/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/kazemaru/skin-witch-3/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 15.199999809265137,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/kazemaru/skin-witch-3/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 7,
+          "reason": "The source Special animation intentionally ends on the fully disappeared transform/clone beat."
+        }
+      ]
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -499.4679,
+      "maxX": 1330.64258,
+      "minY": -118.86749,
+      "maxY": 401.27353
+    },
+    "scale": 0.09617,
+    "x_offset": 56.03336,
+    "y_offset": 204.56863,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:13.525Z"
+}

@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "character": "iana",
+  "character_name": "Iana",
+  "localized_name": "双月",
+  "variant": "skin-rainbow6-2",
+  "variant_type": "skin",
+  "variant_name": "镜廊",
+  "skin_id": "rainbow6-2",
+  "skin_name": "镜廊",
+  "source": "standalone/assets/source/iana/skin-rainbow6-2",
+  "source_page": "https://prts.wiki/w/%E5%8F%8C%E6%9C%88",
+  "source_asset_set": {
+    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4124_iana/meta.json",
+    "model": "char_4124_iana_rainbow6_2/build/build_char_4124_iana_rainbow6_2",
+    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4124_iana/char_4124_iana_rainbow6_2/build/build_char_4124_iana_rainbow6_2.skel",
+    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4124_iana/char_4124_iana_rainbow6_2/build/build_char_4124_iana_rainbow6_2.atlas",
+    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4124_iana/char_4124_iana_rainbow6_2/build/build_char_4124_iana_rainbow6_2.png"
+  },
+  "retrieval_date": "2026-08-12",
+  "spine_version": "3.8.99",
+  "original_animation_states": [
+    {
+      "name": "Default",
+      "duration": 0
+    },
+    {
+      "name": "Interact",
+      "duration": 5
+    },
+    {
+      "name": "Move",
+      "duration": 2
+    },
+    {
+      "name": "Relax",
+      "duration": 4
+    },
+    {
+      "name": "Sit",
+      "duration": 2.6666667461395264
+    },
+    {
+      "name": "Sleep",
+      "duration": 5.333333492279053
+    },
+    {
+      "name": "Special",
+      "duration": 7.5333333015441895
+    }
+  ],
+  "processed_states": {
+    "default": {
+      "source_animation": "Default",
+      "duration": 0,
+      "fps": 8,
+      "frames": 1,
+      "path": "standalone/assets/cleaned/iana/skin-rainbow6-2/default"
+    },
+    "interact": {
+      "source_animation": "Interact",
+      "duration": 5,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/iana/skin-rainbow6-2/interact",
+      "intentional_blank_frames": [
+        {
+          "frame": 1,
+          "reason": "The source Interact animation intentionally uses a fully transparent decoy/camouflage transition beat before the next visible pose."
+        }
+      ]
+    },
+    "move": {
+      "source_animation": "Move",
+      "duration": 2,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/iana/skin-rainbow6-2/move"
+    },
+    "relax": {
+      "source_animation": "Relax",
+      "duration": 4,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/iana/skin-rainbow6-2/relax"
+    },
+    "sit": {
+      "source_animation": "Sit",
+      "duration": 2.6666667461395264,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/iana/skin-rainbow6-2/sit"
+    },
+    "sleep": {
+      "source_animation": "Sleep",
+      "duration": 5.333333492279053,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/iana/skin-rainbow6-2/sleep"
+    },
+    "special": {
+      "source_animation": "Special",
+      "duration": 7.5333333015441895,
+      "fps": 8,
+      "frames": 8,
+      "path": "standalone/assets/cleaned/iana/skin-rainbow6-2/special"
+    }
+  },
+  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "canvas": {
+    "width": 192,
+    "height": 224,
+    "transparent_background": true,
+    "hidden_rgb_zeroed": true,
+    "ground_aligned": true
+  },
+  "sampling": {
+    "fps": 8,
+    "maximum_frames": 8
+  },
+  "placement": {
+    "source_bounds": {
+      "minX": -392.09003,
+      "maxX": 345.4501,
+      "minY": -136.37373,
+      "maxY": 459.05563
+    },
+    "scale": 0.23863,
+    "x_offset": 101.56487,
+    "y_offset": 183.45699,
+    "padding": 8
+  },
+  "exported_at": "2026-08-13T03:20:11.496Z"
+}
