@@ -11,7 +11,8 @@ const sharp = require('sharp');
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const ROSTER_PATH = path.join(REPO_ROOT, 'shared/character-data/standalone-roster.json');
 const INTENTIONAL_BLANKS_PATH = path.join(REPO_ROOT, 'shared/character-data/standalone-intentional-blanks.json');
-const RUNTIME_MAP_URL = 'https://static.prts.wiki/widgets/production/SpineViewer.DzdEWlBa.js.map';
+const RENDER_REVISION = 3;
+const CORE_PLACEMENT_ANIMATIONS = new Set(['default', 'idle', 'relax', 'move', 'run', 'sit', 'sleep']);
 const roster = JSON.parse(await fs.readFile(ROSTER_PATH, 'utf8'));
 const intentionalBlanks = JSON.parse(await fs.readFile(INTENTIONAL_BLANKS_PATH, 'utf8'));
 const args = process.argv.slice(2);
@@ -220,14 +221,32 @@ async function supervise(jobs, config, concurrency) {
   return failures;
 }
 
-async function loadPrtsRuntime() {
+async function discoverRuntimeMap(discoveryUrl) {
+  const pageResponse = await fetch(discoveryUrl);
+  if (!pageResponse.ok) {
+    throw new Error(`${pageResponse.status} ${pageResponse.statusText}: ${discoveryUrl}`);
+  }
+  const html = await pageResponse.text();
+  const scriptUrl = html.match(/https:\/\/static\.prts\.wiki\/widgets\/production\/SpineViewer\.[a-zA-Z0-9_-]+\.js/)?.[0];
+  if (!scriptUrl) throw new Error(`PRTS page does not advertise a SpineViewer runtime: ${discoveryUrl}`);
+  const scriptResponse = await fetch(scriptUrl);
+  if (!scriptResponse.ok) {
+    throw new Error(`${scriptResponse.status} ${scriptResponse.statusText}: ${scriptUrl}`);
+  }
+  const script = await scriptResponse.text();
+  const advertisedMap = script.match(/sourceMappingURL=(https:\/\/static\.prts\.wiki\/widgets\/production\/SpineViewer\.[a-zA-Z0-9_-]+\.js\.map)/)?.[1];
+  return advertisedMap ?? `${scriptUrl}.map`;
+}
+
+async function loadPrtsRuntime(discoveryUrl) {
   const cacheDir = path.join(REPO_ROOT, '.cache', 'prts-spine');
   const runtimePath = path.join(cacheDir, 'spine-webgl.mjs');
   try {
     await fs.access(runtimePath);
   } catch {
-    const response = await fetch(RUNTIME_MAP_URL);
-    if (!response.ok) throw new Error(`${response.status} ${response.statusText}: ${RUNTIME_MAP_URL}`);
+    const runtimeMapUrl = await discoverRuntimeMap(discoveryUrl);
+    const response = await fetch(runtimeMapUrl);
+    if (!response.ok) throw new Error(`${response.status} ${response.statusText}: ${runtimeMapUrl}`);
     const sourceMap = await response.json();
     const index = sourceMap.sources.findIndex((source) => source.endsWith('/spine-webgl.js'));
     if (index < 0 || !sourceMap.sourcesContent[index]) {
@@ -286,6 +305,51 @@ function extendBounds(bounds, geometries) {
   }
 }
 
+function emptyBounds() {
+  return { minX: Infinity, maxX: -Infinity, minY: Infinity, maxY: -Infinity };
+}
+
+function validBounds(bounds) {
+  return Object.values(bounds).every(Number.isFinite);
+}
+
+function geometryBounds(geometry) {
+  const bounds = emptyBounds();
+  extendBounds(bounds, [geometry]);
+  return bounds;
+}
+
+function median(values) {
+  if (!values.length) return 0;
+  const sorted = [...values].sort((left, right) => left - right);
+  const middle = Math.floor(sorted.length / 2);
+  return sorted.length % 2 ? sorted[middle] : (sorted[middle - 1] + sorted[middle]) / 2;
+}
+
+function clusteredGeometryBounds(geometries) {
+  const records = geometries.map((geometry) => {
+    const bounds = geometryBounds(geometry);
+    return {
+      geometry,
+      centerX: (bounds.minX + bounds.maxX) / 2,
+      centerY: (bounds.minY + bounds.maxY) / 2,
+    };
+  }).filter((record) => Number.isFinite(record.centerX) && Number.isFinite(record.centerY));
+  if (!records.length) return { bounds: emptyBounds(), retained: 0, total: 0 };
+  const centerX = median(records.map((record) => record.centerX));
+  const centerY = median(records.map((record) => record.centerY));
+  const deviationX = median(records.map((record) => Math.abs(record.centerX - centerX)));
+  const deviationY = median(records.map((record) => Math.abs(record.centerY - centerY)));
+  const radiusX = Math.max(256, deviationX * 8);
+  const radiusY = Math.max(384, deviationY * 8);
+  const retained = records.filter((record) =>
+    Math.abs(record.centerX - centerX) <= radiusX
+    && Math.abs(record.centerY - centerY) <= radiusY);
+  const bounds = emptyBounds();
+  extendBounds(bounds, retained.map((record) => record.geometry));
+  return { bounds, retained: retained.length, total: records.length, centerX, centerY, radiusX, radiusY };
+}
+
 function applyAnimation(skeleton, state, animationName, time) {
   skeleton.setToSetupPose();
   state.clearTracks();
@@ -300,23 +364,51 @@ function applyAnimation(skeleton, state, animationName, time) {
 function measureSkeleton(spine, skeletonData, config) {
   const skeleton = new spine.Skeleton(skeletonData);
   const state = new spine.AnimationState(new spine.AnimationStateData(skeletonData));
-  const bounds = { minX: Infinity, maxX: -Infinity, minY: Infinity, maxY: -Infinity };
+  const fullBounds = emptyBounds();
+  const coreGeometry = [];
   applyAnimation(skeleton, state, null, 0);
-  extendBounds(bounds, visibleGeometry(spine, skeleton));
+  const setupGeometry = visibleGeometry(spine, skeleton);
+  extendBounds(fullBounds, setupGeometry);
+  coreGeometry.push(...setupGeometry);
   for (const animation of skeletonData.animations) {
+    const contributesToCore = CORE_PLACEMENT_ANIMATIONS.has(safeAnimationName(animation.name));
     const frameCount = animation.duration === 0
       ? 1
       : Math.max(2, Math.min(config.maxFrames, Math.ceil(animation.duration * config.fps)));
     for (let frame = 0; frame < frameCount; frame++) {
       const time = frameCount === 1 ? 0 : animation.duration * frame / frameCount;
       applyAnimation(skeleton, state, animation.name, time);
-      extendBounds(bounds, visibleGeometry(spine, skeleton));
+      const geometry = visibleGeometry(spine, skeleton);
+      extendBounds(fullBounds, geometry);
+      if (contributesToCore) coreGeometry.push(...geometry);
     }
   }
-  if (!Object.values(bounds).every(Number.isFinite)) {
-    return { minX: -160, maxX: 160, minY: 0, maxY: 480 };
+  if (!validBounds(fullBounds)) {
+    const fallback = { minX: -160, maxX: 160, minY: 0, maxY: 480 };
+    return { bounds: fallback, fullBounds: fallback, policy: 'fallback' };
   }
-  return bounds;
+  const cluster = clusteredGeometryBounds(coreGeometry);
+  const coreBounds = cluster.bounds;
+  if (!validBounds(coreBounds)) {
+    return { bounds: fullBounds, fullBounds, policy: 'full-animation-envelope' };
+  }
+  const fullScale = renderTransform(fullBounds, config.width, config.height).scale;
+  const coreScale = renderTransform(coreBounds, config.width, config.height).scale;
+  const useCoreBounds = fullScale < coreScale * 0.6;
+  return {
+    bounds: useCoreBounds ? coreBounds : fullBounds,
+    fullBounds,
+    coreBounds,
+    cluster: {
+      retained: cluster.retained,
+      total: cluster.total,
+      centerX: rounded(cluster.centerX),
+      centerY: rounded(cluster.centerY),
+      radiusX: rounded(cluster.radiusX),
+      radiusY: rounded(cluster.radiusY),
+    },
+    policy: useCoreBounds ? 'core-character-envelope' : 'full-animation-envelope',
+  };
 }
 
 function renderTransform(bounds, width, height) {
@@ -401,7 +493,8 @@ async function animationIsComplete(directory, frames) {
 }
 
 function sameRenderConfig(manifest, config) {
-  return manifest?.canvas?.width === config.width
+  return manifest?.render_revision === RENDER_REVISION
+    && manifest?.canvas?.width === config.width
     && manifest?.canvas?.height === config.height
     && manifest?.sampling?.fps === config.fps
     && manifest?.sampling?.maximum_frames === config.maxFrames;
@@ -459,11 +552,21 @@ async function exportVariant(spine, { character, variant }, config) {
   }));
 
   if (args.includes('--inspect')) {
+    const measurement = measureSkeleton(spine, skeletonData, config);
+    const transform = renderTransform(measurement.bounds, config.width, config.height);
     console.log(JSON.stringify({
       character: character.character_id,
       variant: variant.variant_id,
       spine_version: skeletonData.version,
       animations: sourceAnimations,
+      placement: {
+        bounds_policy: measurement.policy,
+        source_bounds: measurement.bounds,
+        full_source_bounds: measurement.fullBounds,
+        core_source_bounds: measurement.coreBounds,
+        cluster: measurement.cluster,
+        scale: rounded(transform.scale),
+      },
     }, null, 2));
     return;
   }
@@ -488,10 +591,12 @@ async function exportVariant(spine, { character, variant }, config) {
   const manifestPath = path.join(outputDir, 'manifest.json');
   await fs.mkdir(outputDir, { recursive: true });
   const previous = await readJsonIfPresent(manifestPath);
-  const bounds = measureSkeleton(spine, skeletonData, config);
+  const measurement = measureSkeleton(spine, skeletonData, config);
+  const bounds = measurement.bounds;
   const transform = renderTransform(bounds, config.width, config.height);
   const manifest = {
     schema_version: 2,
+    render_revision: RENDER_REVISION,
     character: character.character_id,
     character_name: character.character_name,
     localized_name: character.localized_name,
@@ -520,7 +625,13 @@ async function exportVariant(spine, { character, variant }, config) {
       maximum_frames: config.maxFrames,
     },
     placement: {
+      bounds_policy: measurement.policy,
       source_bounds: Object.fromEntries(Object.entries(bounds).map(([key, value]) => [key, rounded(value)])),
+      full_source_bounds: Object.fromEntries(Object.entries(measurement.fullBounds).map(([key, value]) => [key, rounded(value)])),
+      ...(measurement.coreBounds ? {
+        core_source_bounds: Object.fromEntries(Object.entries(measurement.coreBounds).map(([key, value]) => [key, rounded(value)])),
+        cluster: measurement.cluster,
+      } : {}),
       scale: rounded(transform.scale),
       x_offset: rounded(transform.xOffset),
       y_offset: rounded(transform.yOffset),
@@ -618,7 +729,7 @@ if (!args.includes('--worker') && jobs.length > 1) {
   if (jobs.length !== 1) throw new Error('An isolated export worker must select exactly one variant');
   sharp.cache({ memory: 32, files: 0, items: 16 });
   sharp.concurrency(1);
-  const spine = await loadPrtsRuntime();
+  const spine = await loadPrtsRuntime(jobs[0].character.source_page);
   console.log(`exporting ${jobs.length} standalone variant(s), isolated=${args.includes('--worker')}, canvas=${config.width}x${config.height}`);
   const failures = await mapBounded(jobs, 1, (job) => exportVariant(spine, job, config));
   console.log(`Spine export complete: ${jobs.length - failures.length}/${jobs.length}`);

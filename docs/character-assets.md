@@ -86,7 +86,9 @@ node shared/asset-tools/export-prts-spine.mjs --character amiya --variant skin-w
 node shared/asset-tools/export-prts-spine.mjs --character amiya --variant skin-winter-1
 ```
 
-导出器使用 PRTS 页面所用 Spine 3.8 runtime 数据解释 skeleton，将 mesh triangle 确定性合成到透明画布，进行地面对齐并清除 alpha=0 像素中的 hidden RGB。画布、FPS、最大采样帧数和 source bounds 写入每个 cleaned manifest；runtime 每个 source animation 单独打包，不经过 Codex atlas。
+导出器使用 PRTS 页面当前声明的 SpineViewer source map 动态提取 Spine 3.8 runtime，不依赖会失效的静态文件哈希。它将 mesh triangle 确定性合成到透明画布，进行地面对齐并清除 alpha=0 像素中的 hidden RGB。画布、FPS、最大采样帧数和 source bounds 写入每个 cleaned manifest；runtime 每个 source animation 单独打包，不经过 Codex atlas。
+
+placement 同时记录完整动画边界与核心角色边界。若默认激活的远端 attachment 或大型特效会把角色主体压缩到正常比例的 60% 以下，导出器使用基于 attachment 空间聚类的核心边界决定缩放，同时保留完整边界用于审计；超出桌宠画布的远端特效允许裁切。`render_revision` 会使策略变化后旧 cleaned 帧失效，避免错误复用缓存。`standalone:test` 包含 Mon3tr“锋锐”的比例与可见像素回归门禁。
 
 选择非默认皮肤时，会同时准备同角色默认外观。这样 manifest 声明的默认外观回退始终可解析，不会跨角色取错资源。
 

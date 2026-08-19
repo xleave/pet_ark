@@ -19,14 +19,14 @@ WebView 没有通用 shell、文件系统或网络权限。角色和皮肤选择
 ## 功能
 
 - 总览：服务、PID、角色/皮肤、行为、动画、scale、speed 和开关状态；
-- 设置：角色、皮肤、大小、速度、自动移动、点击穿透和显示器；
-- 日志：读取 `pet-ark.service` 的 journald 记录并按内容筛选；
-- 服务：启动、停止、重启和“登录时启动”；
+- 设置：角色、皮肤、大小、速度、自动移动、点击穿透和显示器；大小与速度同时提供滑块和精确数值输入；
+- 日志：读取 `pet-ark.service` 的 journald 记录并按内容筛选，进入页面或手动刷新后定位到最新输出；
+- 服务：集中提供启动、停止、重启和“开机 / 登录后自启”开关，总览页不重复放置这些操作；
 - 预览：直接读取所选外观的 runtime manifest 与 idle atlas，不读取 Codex spritesheet。
 
-大小、速度、角色、皮肤、自动移动与点击穿透通过 control socket 实时生效。显示器需要重建 Wayland surface，因此 UI 提供“保存并重启”。所有设置同时原子写入 `~/.config/pet-ark/runtime.env`。
+大小、速度、角色、皮肤、自动移动与点击穿透通过 control socket 实时生效。设置页只有一个“应用设置”动作；当显示器编号发生变化时它会自动重启服务以重建 Wayland surface，否则直接实时应用。所有设置同时原子写入 `~/.config/pet-ark/runtime.env`。
 
-“登录时启动”对应 `systemctl --user enable pet-ark.service`，默认关闭；它不是系统启动前运行，也不会自动启用 user lingering。
+“开机 / 登录后自启”对应 `systemctl --user enable pet-ark.service`，默认关闭；桌宠需要 Wayland 桌面会话，因此语义是开机后进入用户桌面时启动，不会在图形登录前运行，也不会自动启用 user lingering。
 
 ## 本地 JSON 控制协议
 

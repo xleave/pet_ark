@@ -1,5 +1,6 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
   "character": "mon3tr",
   "character_name": "Mon3tr",
   "localized_name": "Mon3tr",
@@ -113,16 +114,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -256.12344,
+      "maxX": 242.06691,
+      "minY": -116.34686,
+      "maxY": 461.44159
+    },
+    "full_source_bounds": {
       "minX": -2165.37012,
       "maxX": 1209.91614,
       "minY": -116.34686,
-      "maxY": 695.17096
+      "maxY": 847.60846
     },
-    "scale": 0.05214,
-    "x_offset": 120.91047,
-    "y_offset": 209.93324,
+    "core_source_bounds": {
+      "minX": -256.12344,
+      "maxX": 242.06691,
+      "minY": -116.34686,
+      "maxY": 461.44159
+    },
+    "cluster": {
+      "retained": 3280,
+      "total": 3306,
+      "centerX": -8.20189,
+      "centerY": 128.58264,
+      "radiusX": 381.51888,
+      "radiusY": 619.47532
+    },
+    "scale": 0.35328,
+    "x_offset": 98.48294,
+    "y_offset": 174.89714,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:19.072Z"
+  "exported_at": "2026-08-19T04:25:55.079Z"
 }

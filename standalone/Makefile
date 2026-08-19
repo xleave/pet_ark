@@ -94,6 +94,7 @@ test: $(TEST_BINARY) $(REGISTRY_TEST_BINARY)
 	$(NODE) ../shared/image-processing/test-runtime-registry.mjs
 	$(NODE) ../shared/asset-tools/test-standalone-registry-sources.mjs
 	$(NODE) ../shared/image-processing/test-standalone-animation-contract.mjs
+	$(NODE) ../shared/image-processing/test-spine-placement-regressions.mjs
 	"$(TEST_BINARY)"
 	"$(REGISTRY_TEST_BINARY)"
 

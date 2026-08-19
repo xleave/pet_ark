@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { onMount, tick } from 'svelte';
   import { invoke } from '@tauri-apps/api/core';
   import { getCurrentWindow } from '@tauri-apps/api/window';
   import type {
@@ -45,6 +45,7 @@
   let notice = '正在连接桌宠运行时…';
   let noticeKind: 'info' | 'ok' | 'error' = 'info';
   let logFilter = '';
+  let logConsole: HTMLDivElement;
 
   $: selectedCharacter = characters.find((entry) => entry.id === config.character);
   $: variants = selectedCharacter?.variants ?? [];
@@ -57,6 +58,7 @@
   $: previewStyle = preview
     ? `background-image:url("${preview.data_url}");background-size:${preview.columns * 100}% ${preview.rows * 100}%;background-position:${preview.columns > 1 ? (previewColumn / (preview.columns - 1)) * 100 : 0}% ${preview.rows > 1 ? (previewRow / (preview.rows - 1)) * 100 : 0}%`
     : '';
+  $: settingsNeedRestart = runtime !== null && config.monitor !== runtime.monitor;
 
   function notify(message: string, kind: 'info' | 'ok' | 'error' = 'info') {
     notice = message;
@@ -74,13 +76,23 @@
     }
   }
 
-  async function refreshLogs() {
+  async function refreshLogs(followLatest = false) {
     if (section !== 'logs') return;
+    const wasFollowing = logConsole
+      ? logConsole.scrollHeight - logConsole.scrollTop - logConsole.clientHeight < 48
+      : true;
     try {
       logs = await invoke<LogEntry[]>('read_logs', { limit: 180 });
+      await tick();
+      if (logConsole && (followLatest || wasFollowing)) logConsole.scrollTop = logConsole.scrollHeight;
     } catch (error) {
       notify(`日志读取失败：${String(error)}`, 'error');
     }
+  }
+
+  function openLogs() {
+    section = 'logs';
+    void refreshLogs(true);
   }
 
   async function loadPreview() {
@@ -114,6 +126,12 @@
   async function save(restart = false) {
     saving = true;
     try {
+      config = {
+        ...config,
+        scale: Math.min(3, Math.max(0.25, Number(config.scale) || 1)),
+        speed: Math.min(5, Math.max(0.1, Number(config.speed) || 1)),
+        monitor: Math.min(15, Math.max(0, Math.trunc(Number(config.monitor) || 0))),
+      };
       runtime = await invoke<RuntimeStatus | null>('save_config', { config, restart });
       notify(restart ? '配置已保存并重启服务' : '配置已保存并实时应用', 'ok');
       service = await invoke<ServiceStatus>('service_status');
@@ -191,7 +209,7 @@
     <nav>
       <button class:active={section === 'overview'} onclick={() => section = 'overview'}><span>01</span>运行总览</button>
       <button class:active={section === 'settings'} onclick={() => section = 'settings'}><span>02</span>桌宠设置</button>
-      <button class:active={section === 'logs'} onclick={() => { section = 'logs'; refreshLogs(); }}><span>03</span>运行日志</button>
+      <button class:active={section === 'logs'} onclick={openLogs}><span>03</span>运行日志</button>
       <button class:active={section === 'system'} onclick={() => section = 'system'}><span>04</span>服务管理</button>
     </nav>
     <div class="sidebar-meta">
@@ -242,10 +260,7 @@
             <div class="telemetry-row"><span>移动速度</span><strong>{(runtime?.speed ?? config.speed).toFixed(2)}×</strong><i style={`--value:${((runtime?.speed ?? config.speed) / 5) * 100}%`}></i></div>
             <div class="telemetry-row binary"><span>自动移动</span><strong>{runtime?.auto_move ? 'ON' : 'OFF'}</strong></div>
             <div class="telemetry-row binary"><span>点击穿透</span><strong>{runtime?.click_through ? 'ON' : 'OFF'}</strong></div>
-            <div class="action-row">
-              <button class="primary" onclick={() => serviceAction(service.active ? 'restart' : 'start')}>{service.active ? '重启桌宠' : '启动桌宠'}</button>
-              {#if service.active}<button class="danger-soft" onclick={() => serviceAction('stop')}>停止</button>{/if}
-            </div>
+            <div class="action-row"><button class="ghost" onclick={() => section = 'system'}>前往服务管理 →</button></div>
           </article>
         </div>
       </section>
@@ -262,8 +277,8 @@
           </article>
           <article class="settings-card">
             <div class="card-title"><span>运动参数</span><small>LIVE</small></div>
-            <label class="range-field"><span>显示大小 <b>{config.scale.toFixed(2)}×</b></span><input type="range" min="0.25" max="3" step="0.05" bind:value={config.scale} /></label>
-            <label class="range-field"><span>移动速度 <b>{config.speed.toFixed(2)}×</b></span><input type="range" min="0.1" max="5" step="0.05" bind:value={config.speed} /></label>
+            <label class="range-field"><span>显示大小 <b>{Number(config.scale || 0).toFixed(2)}×</b></span><div class="range-control"><input type="range" min="0.25" max="3" step="0.05" bind:value={config.scale} /><input class="precision-input" aria-label="精确输入显示大小" type="number" min="0.25" max="3" step="0.01" bind:value={config.scale} /></div></label>
+            <label class="range-field"><span>移动速度 <b>{Number(config.speed || 0).toFixed(2)}×</b></span><div class="range-control"><input type="range" min="0.1" max="5" step="0.05" bind:value={config.speed} /><input class="precision-input" aria-label="精确输入移动速度" type="number" min="0.1" max="5" step="0.01" bind:value={config.speed} /></div></label>
           </article>
           <article class="settings-card">
             <div class="card-title"><span>行为策略</span><small>RUNTIME</small></div>
@@ -272,15 +287,15 @@
           </article>
           <article class="settings-card wide compact">
             <label><span>显示器编号</span><input type="number" min="0" max="15" bind:value={config.monitor} /></label>
-            <div class="settings-actions"><button class="ghost" onclick={() => save(true)} disabled={saving}>保存并重启</button><button class="primary" onclick={() => save(false)} disabled={saving}>立即应用</button></div>
+            <div class="settings-actions"><span>{settingsNeedRestart ? '显示器变更将自动重启桌宠' : '其余参数实时生效'}</span><button class="primary" onclick={() => save(settingsNeedRestart)} disabled={saving}>应用设置</button></div>
           </article>
         </div>
       </section>
     {:else if section === 'logs'}
       <section class="page logs-page enter">
-        <div class="page-heading"><div><span class="eyebrow">DIAGNOSTICS / 03</span><h1>运行日志</h1></div><button class="ghost" onclick={refreshLogs}>立即刷新</button></div>
+        <div class="page-heading"><div><span class="eyebrow">DIAGNOSTICS / 03</span><h1>运行日志</h1></div><button class="ghost" onclick={() => refreshLogs(true)}>刷新并定位最新</button></div>
         <div class="log-toolbar"><input placeholder="筛选日志内容…" bind:value={logFilter} /><span>{visibleLogs.length} RECORDS</span></div>
-        <div class="log-console">
+        <div class="log-console" bind:this={logConsole}>
           {#if visibleLogs.length === 0}<div class="empty">当前没有匹配日志</div>{/if}
           {#each visibleLogs as entry}
             <div class:error={entry.priority <= 3} class:warning={entry.priority === 4} class="log-line"><time>{entry.timestamp}</time><span>P{entry.priority}</span><p>{entry.message}</p></div>
@@ -300,8 +315,8 @@
             <div class="service-buttons"><button onclick={() => serviceAction('start')} disabled={service.active}>启动</button><button onclick={() => serviceAction('restart')} disabled={!service.active}>重启</button><button class="danger-soft" onclick={() => serviceAction('stop')} disabled={!service.active}>停止</button></div>
           </article>
           <article class="service-card">
-            <div class="card-title"><span>登录行为</span><small>DISABLED BY DEFAULT</small></div>
-            <label class="switch-row"><span><b>登录时启动</b><small>进入用户桌面会话后启动，不等同于系统开机</small></span><input type="checkbox" checked={service.autostart} onchange={toggleAutostart} /><i></i></label>
+            <div class="card-title"><span>开机自启</span><small>{service.autostart ? 'ENABLED' : 'DISABLED'}</small></div>
+            <label class="switch-row"><span><b>开机 / 登录后自启</b><small>开机进入 Wayland 桌面会话后自动启动桌宠</small></span><input type="checkbox" checked={service.autostart} onchange={toggleAutostart} /><i></i></label>
           </article>
           <article class="service-card path-card"><span>CONFIG</span><code>~/.config/pet-ark/runtime.env</code><span>CONTROL</span><code>$XDG_RUNTIME_DIR/pet-ark/control.sock</code></article>
         </div>
@@ -309,5 +324,5 @@
     {/if}
   </main>
 
-  <footer><span>PET ARK CONTROL CENTER</span><span>LOCAL AUTHORITY // NO NETWORK</span><span>BUILD 0.1.0</span></footer>
+  <footer><span>PET ARK CONTROL CENTER</span><span>LOCAL AUTHORITY // NO NETWORK</span><span>BUILD 0.2.0</span></footer>
 </div>
