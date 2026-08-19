@@ -57,6 +57,8 @@ Codex renderer 使用代码绘制的 SVG/vector primitives。它不读取 standa
 
 JSON registry 在构建前转换为 `generated_registry.c`，因此运行时不需要 Node、Sharp 或 JSON parser。增加角色或皮肤不需要创建新的桌面程序。启动参数 `--character` 和 `--skin` 选择初始外观；`SIGHUP` 与 `SIGRTMIN` 分别切换到下一个可用角色和当前角色的下一个可用皮肤。
 
+Wayland backend 只在动画帧、整数像素位置、scale、selection 或 input region 变化时标记 surface dirty，并用 `wl_surface_frame` callback 节流 buffer commit。layer-shell 是默认支持路径；xdg fullscreen fallback 必须显式 opt-in，避免在尚未实机验证的 GNOME 环境无意创建真正的 fullscreen toplevel。
+
 运行时仍支持 manifest 显式声明的兼容解析顺序：当前 variant 精确状态 → 当前 variant 兼容状态 → 同角色默认 variant 精确状态 → 默认 variant 兼容状态。动作完成门禁不会把这种运行时容错当成完成依据；当前完整产物的 semantic fallback 计数为 0。运行时不会跨角色回退，也不会在缺少声明时静默混用错误皮肤。
 
 Codex roster 的 426 来自 425 个正式可玩角色加 1 个 Priestess story regression baseline；Standalone roster 只包含 425 个正式可玩角色，因此两者差 1 是有意边界，不是 Standalone 漏角色。本阶段不改变 Codex renderer、atlas contract 或其构建产线。
@@ -76,3 +78,5 @@ Codex roster 的 426 来自 425 个正式可玩角色加 1 个 Priestess story r
 - Codex 的代码绘制 renderer 与 standalone 的游戏 Q 版 Spine runtime 资源。
 
 这种边界允许两条产线独立构建和验证，也避免为了复用形成耦合的万能 renderer。
+
+全量二进制资产当前有意使用普通 Git，并受 8 GiB 未压缩 tracked-tree、4 GiB Git 对象存储与 50 MiB 单文件预算约束；详见 [`asset-storage.md`](asset-storage.md)。这项存储决策独立于运行时/renderer 边界，超过预算时必须在合并前单独决定由 upstream 持有的 LFS 或 durable release 迁移。

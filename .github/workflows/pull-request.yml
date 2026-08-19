@@ -1,0 +1,56 @@
+name: Pull request validation
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pull-request-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      CFLAGS: -Werror
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          lfs: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install native build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes build-essential pkg-config libwayland-dev libpng-dev
+      - name: Install project dependencies
+        run: |
+          python3 -m pip install -r requirements.txt
+          npm ci
+      - name: Enforce repository asset budget
+        run: |
+          npm run repository:test-asset-budget
+          npm run repository:asset-budget
+      - name: Build native standalone runtime with warnings as errors
+        run: |
+          make -C standalone clean
+          npm run standalone:build
+          standalone/build/pet-ark --help
+      - name: Run standalone native and manifest tests
+        run: npm run standalone:test
+      - name: Validate all standalone assets without a compositor
+        run: npm run standalone:validate-all -- --jobs 2
+      - name: Validate all Codex pets
+        run: npm run codex:validate-all
+      - name: Check patch whitespace
+        run: git diff --check
