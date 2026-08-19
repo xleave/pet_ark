@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ashlock",
   "character_name": "Ashlock",
   "localized_name": "灰毫",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-28",
   "skin_name": "卡利斯卡群枪",
   "source": "standalone/assets/source/ashlock/skin-epoque-28",
-  "source_page": "https://prts.wiki/w/%E7%81%B0%E6%AF%AB",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_431_ashlok/meta.json",
-    "model": "char_431_ashlok_epoque_28/build/build_char_431_ashlok_epoque_28",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_431_ashlok/char_431_ashlok_epoque_28/build/build_char_431_ashlok_epoque_28.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_431_ashlok/char_431_ashlok_epoque_28/build/build_char_431_ashlok_epoque_28.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_431_ashlok/char_431_ashlok_epoque_28/build/build_char_431_ashlok_epoque_28.png"
+    "assetId": "build_char_431_ashlok_epoque#28",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "灰毫",
+    "appellation": "Ashlock",
+    "skinGroupId": "2023#epoque#10",
+    "skinGroupName": "时代/XXVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_431_ashlok_epoque#28.atlas",
+      ".png": "build_char_431_ashlok_epoque#28.png",
+      ".skel": "build_char_431_ashlok_epoque#28.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/ashlock/skin-epoque-28/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -135,17 +150,23 @@
       "maxY": 447.09549
     },
     "cluster": {
-      "retained": 2066,
-      "total": 2072,
-      "centerX": -5.06254,
-      "centerY": 131.69554,
-      "radiusX": 285.3178,
-      "radiusY": 689.3425
+      "retained": 2048,
+      "total": 2054,
+      "centerX": -0.88007,
+      "centerY": 170.55618,
+      "radiusX": 580.89203,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 84,
+      "visible_height": 168,
+      "density_zoom": 1
     },
     "scale": 0.37493,
     "x_offset": 106.48693,
     "y_offset": 175.62997,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:09.445Z"
+  "exported_at": "2026-08-19T13:21:30.673Z"
 }

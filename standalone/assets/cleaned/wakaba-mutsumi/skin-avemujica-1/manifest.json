@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "wakaba-mutsumi",
   "character_name": "Wakaba Mutsumi",
   "localized_name": "若叶睦",
@@ -9,15 +12,29 @@
   "skin_id": "avemujica-1",
   "skin_name": "提线的本我",
   "source": "standalone/assets/source/wakaba-mutsumi/skin-avemujica-1",
-  "source_page": "https://prts.wiki/w/%E8%8B%A5%E5%8F%B6%E7%9D%A6",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/meta.json",
-    "model": "char_4183_mortis_avemujica_1/build/build_char_4183_mortis_avemujica_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/char_4183_mortis_avemujica_1/build/build_char_4183_mortis_avemujica_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/char_4183_mortis_avemujica_1/build/build_char_4183_mortis_avemujica_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/char_4183_mortis_avemujica_1/build/build_char_4183_mortis_avemujica_1.png"
+    "assetId": "build_char_4183_mortis_avemujica#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "若叶睦",
+    "appellation": "Wakaba Mutsumi",
+    "skinGroupId": "2025#avemujica",
+    "skinGroupName": "Ave Mujica",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4183_mortis_avemujica#1.atlas",
+      ".png": "build_char_4183_mortis_avemujica#1.png",
+      ".skel": "build_char_4183_mortis_avemujica#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/wakaba-mutsumi/skin-avemujica-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -257.15161,
+      "minX": -257.14548,
       "maxX": 236.24573,
       "minY": -123.39825,
-      "maxY": 435.28394
+      "maxY": 436.19669
+    },
+    "full_source_bounds": {
+      "minX": -257.14548,
+      "maxX": 236.24573,
+      "minY": -123.39825,
+      "maxY": 436.19669
+    },
+    "core_source_bounds": {
+      "minX": -257.14548,
+      "maxX": 236.24573,
+      "minY": -123.39825,
+      "maxY": 436.19669
+    },
+    "cluster": {
+      "retained": 2610,
+      "total": 2610,
+      "centerX": -4.46486,
+      "centerY": 203.32542,
+      "radiusX": 480.47825,
+      "radiusY": 645.67633
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 97,
+      "visible_height": 154,
+      "density_zoom": 1
     },
     "scale": 0.35671,
-    "x_offset": 99.72867,
-    "y_offset": 171.98255,
+    "x_offset": 99.72763,
+    "y_offset": 171.98201,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:37.715Z"
+  "exported_at": "2026-08-19T13:24:25.000Z"
 }

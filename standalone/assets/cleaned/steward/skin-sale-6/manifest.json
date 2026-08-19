@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "steward",
   "character_name": "Steward",
   "localized_name": "史都华德",
@@ -9,15 +12,29 @@
   "skin_id": "sale-6",
   "skin_name": "风雪邀请",
   "source": "standalone/assets/source/steward/skin-sale-6",
-  "source_page": "https://prts.wiki/w/%E5%8F%B2%E9%83%BD%E5%8D%8E%E5%BE%B7",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_210_stward/meta.json",
-    "model": "char_210_stward_sale_6/build/build_char_210_stward_sale_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_210_stward/char_210_stward_sale_6/build/build_char_210_stward_sale_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_210_stward/char_210_stward_sale_6/build/build_char_210_stward_sale_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_210_stward/char_210_stward_sale_6/build/build_char_210_stward_sale_6.png"
+    "assetId": "build_char_210_stward_sale#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "史都华德",
+    "appellation": "Steward",
+    "skinGroupId": "2022#sale#3",
+    "skinGroupName": "忒斯特收藏/VII",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_210_stward_sale#6.atlas",
+      ".png": "build_char_210_stward_sale#6.png",
+      ".skel": "build_char_210_stward_sale#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/steward/skin-sale-6/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -260.55646,
-      "maxX": 329.06451,
-      "minY": -106.56857,
-      "maxY": 425.28949
+      "minX": -260.41791,
+      "maxX": 246.46613,
+      "minY": -107.36105,
+      "maxY": 418.75342
     },
-    "scale": 0.2985,
-    "x_offset": 85.77528,
-    "y_offset": 184.18962,
+    "full_source_bounds": {
+      "minX": -260.41791,
+      "maxX": 455.57056,
+      "minY": -107.36105,
+      "maxY": 506.91006
+    },
+    "core_source_bounds": {
+      "minX": -260.41791,
+      "maxX": 246.46613,
+      "minY": -107.36105,
+      "maxY": 418.75342
+    },
+    "cluster": {
+      "retained": 2081,
+      "total": 2081,
+      "centerX": -7.52376,
+      "centerY": 176.82537,
+      "radiusX": 344.14911,
+      "radiusY": 832.42535
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 89,
+      "visible_height": 143,
+      "density_zoom": 1
+    },
+    "scale": 0.34722,
+    "x_offset": 98.42217,
+    "y_offset": 178.72215,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:32.481Z"
+  "exported_at": "2026-08-19T13:24:01.959Z"
 }

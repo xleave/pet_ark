@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "akafuyu",
   "character_name": "Akafuyu",
   "localized_name": "赤冬",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-15",
   "skin_name": "心性",
   "source": "standalone/assets/source/akafuyu/skin-epoque-15",
-  "source_page": "https://prts.wiki/w/%E8%B5%A4%E5%86%AC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_475_akafyu/meta.json",
-    "model": "char_475_akafyu_epoque_15/build/build_char_475_akafyu_epoque_15",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_475_akafyu/char_475_akafyu_epoque_15/build/build_char_475_akafyu_epoque_15.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_475_akafyu/char_475_akafyu_epoque_15/build/build_char_475_akafyu_epoque_15.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_475_akafyu/char_475_akafyu_epoque_15/build/build_char_475_akafyu_epoque_15.png"
+    "assetId": "build_char_475_akafyu_epoque#15",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "赤冬",
+    "appellation": "Akafuyu",
+    "skinGroupId": "2022#epoque#2",
+    "skinGroupName": "时代/XV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_475_akafyu_epoque#15.atlas",
+      ".png": "build_char_475_akafyu_epoque#15.png",
+      ".skel": "build_char_475_akafyu_epoque#15.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/akafuyu/skin-epoque-15/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -255.37808,
-      "maxX": 322.51965,
-      "minY": -129.92026,
-      "maxY": 494.85666
+      "minX": -1117.82581,
+      "maxX": 3306.00952,
+      "minY": -757.70581,
+      "maxY": 899.82721
     },
     "full_source_bounds": {
       "minX": -1117.82581,
@@ -129,23 +144,29 @@
       "maxY": 1470.96765
     },
     "core_source_bounds": {
-      "minX": -255.37808,
-      "maxX": 322.51965,
-      "minY": -129.92026,
-      "maxY": 494.85666
+      "minX": -1117.82581,
+      "maxX": 3306.00952,
+      "minY": -757.70581,
+      "maxY": 899.82721
     },
     "cluster": {
-      "retained": 2946,
-      "total": 3078,
-      "centerX": 6.57869,
-      "centerY": 154.88424,
-      "radiusX": 256,
-      "radiusY": 654.49542
+      "retained": 3032,
+      "total": 3062,
+      "centerX": 73.10074,
+      "centerY": 190.69063,
+      "radiusX": 3578.84544,
+      "radiusY": 715.00252
     },
-    "scale": 0.30455,
-    "x_offset": 85.77594,
-    "y_offset": 176.43251,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 10,
+      "visible_height": 16,
+      "density_zoom": 8.75
+    },
+    "scale": 0.34811,
+    "x_offset": 104.50606,
+    "y_offset": 223.48183,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:07.692Z"
+  "exported_at": "2026-08-19T13:21:21.547Z"
 }

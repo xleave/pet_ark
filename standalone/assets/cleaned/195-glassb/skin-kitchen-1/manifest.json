@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "195-glassb",
@@ -12,15 +12,29 @@
   "skin_id": "kitchen-1",
   "skin_name": "书味",
   "source": "standalone/assets/source/195-glassb/skin-kitchen-1",
-  "source_page": "https://prts.wiki/w/%E7%9C%9F%E7%90%86",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_195_glassb/meta.json",
-    "model": "char_195_glassb_kitchen_1/build/build_char_195_glassb_kitchen_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_195_glassb/char_195_glassb_kitchen_1/build/build_char_195_glassb_kitchen_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_195_glassb/char_195_glassb_kitchen_1/build/build_char_195_glassb_kitchen_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_195_glassb/char_195_glassb_kitchen_1/build/build_char_195_glassb_kitchen_1.png"
+    "assetId": "build_char_195_glassb_kitchen#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "真理",
+    "appellation": "Истина",
+    "skinGroupId": "2020#kitchen",
+    "skinGroupName": "罗德厨房",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_195_glassb_kitchen#1.atlas",
+      ".png": "build_char_195_glassb_kitchen#1.png",
+      ".skel": "build_char_195_glassb_kitchen#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/195-glassb/skin-kitchen-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -154,5 +168,5 @@
     "y_offset": 217.06501,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:43.574Z"
+  "exported_at": "2026-08-19T13:21:15.972Z"
 }

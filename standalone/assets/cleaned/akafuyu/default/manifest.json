@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "akafuyu",
   "character_name": "Akafuyu",
   "localized_name": "赤冬",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/akafuyu/default",
-  "source_page": "https://prts.wiki/w/%E8%B5%A4%E5%86%AC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_475_akafyu/meta.json",
-    "model": "defaultskin/build/build_char_475_akafyu",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_475_akafyu/defaultskin/build/build_char_475_akafyu.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_475_akafyu/defaultskin/build/build_char_475_akafyu.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_475_akafyu/defaultskin/build/build_char_475_akafyu.png"
+    "assetId": "build_char_475_akafyu",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "赤冬",
+    "appellation": "Akafuyu",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_475_akafyu.atlas",
+      ".png": "build_char_475_akafyu.png",
+      ".skel": "build_char_475_akafyu.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/akafuyu/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -144.84924,
-      "maxX": 119.17541,
+      "minX": -145.63184,
+      "maxX": 121.50209,
       "minY": -115.35849,
-      "maxY": 465.93365
+      "maxY": 467.18811
     },
-    "scale": 0.35782,
-    "x_offset": 100.59335,
-    "y_offset": 174.72202,
+    "full_source_bounds": {
+      "minX": -145.63184,
+      "maxX": 121.50209,
+      "minY": -115.35849,
+      "maxY": 467.18811
+    },
+    "core_source_bounds": {
+      "minX": -145.63184,
+      "maxX": 121.50209,
+      "minY": -115.35849,
+      "maxY": 466.98126
+    },
+    "cluster": {
+      "retained": 2281,
+      "total": 2281,
+      "centerX": -1.96546,
+      "centerY": 213.36163,
+      "radiusX": 320,
+      "radiusY": 555.76809
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 85,
+      "visible_height": 165,
+      "density_zoom": 1
+    },
+    "scale": 0.35705,
+    "x_offset": 100.3078,
+    "y_offset": 174.81091,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:55.000Z"
+  "exported_at": "2026-08-19T13:21:21.047Z"
 }

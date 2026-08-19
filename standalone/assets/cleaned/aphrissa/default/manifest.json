@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "aphrissa",
   "character_name": "Aphrissa",
   "localized_name": "谬因",
@@ -11,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/aphrissa/default",
-  "source_page": "https://prts.wiki/w/%E8%B0%AC%E5%9B%A0",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4229_aphris/meta.json",
-    "model": "defaultskin/build/build_char_4229_aphris",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4229_aphris/defaultskin/build/build_char_4229_aphris.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4229_aphris/defaultskin/build/build_char_4229_aphris.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4229_aphris/defaultskin/build/build_char_4229_aphris.png"
+    "assetId": "build_char_4229_aphris",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "谬因",
+    "appellation": "Aphrissa",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4229_aphris.atlas",
+      ".png": "build_char_4229_aphris.png",
+      ".skel": "build_char_4229_aphris.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +105,7 @@
       "path": "standalone/assets/cleaned/aphrissa/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -126,15 +140,21 @@
     "cluster": {
       "retained": 3141,
       "total": 3148,
-      "centerX": 9.50958,
-      "centerY": 138.07134,
-      "radiusX": 349.35278,
-      "radiusY": 625.8435
+      "centerX": 37.12737,
+      "centerY": 176.63875,
+      "radiusX": 920.04154,
+      "radiusY": 610.01308
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 102,
+      "visible_height": 132,
+      "density_zoom": 1.06061
     },
     "scale": 0.29609,
     "x_offset": 95.03952,
     "y_offset": 179.74406,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:08.404Z"
+  "exported_at": "2026-08-19T13:21:26.295Z"
 }

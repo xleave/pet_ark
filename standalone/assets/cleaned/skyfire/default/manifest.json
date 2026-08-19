@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "skyfire",
   "character_name": "Skyfire",
   "localized_name": "天火",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/skyfire/default",
-  "source_page": "https://prts.wiki/w/%E5%A4%A9%E7%81%AB",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/meta.json",
-    "model": "defaultskin/build/build_char_166_skfire",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/defaultskin/build/build_char_166_skfire.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/defaultskin/build/build_char_166_skfire.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/defaultskin/build/build_char_166_skfire.png"
+    "assetId": "build_char_166_skfire",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "天火",
+    "appellation": "Skyfire",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_166_skfire.atlas",
+      ".png": "build_char_166_skfire.png",
+      ".skel": "build_char_166_skfire.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/skyfire/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -211.05141,
       "maxX": 269.00818,
-      "minY": -108.73998,
+      "minY": -107.1542,
       "maxY": 401.06769
+    },
+    "full_source_bounds": {
+      "minX": -211.05141,
+      "maxX": 269.00818,
+      "minY": -107.1542,
+      "maxY": 401.06769
+    },
+    "core_source_bounds": {
+      "minX": -211.05141,
+      "maxX": 269.00818,
+      "minY": -107.1542,
+      "maxY": 401.06769
+    },
+    "cluster": {
+      "retained": 1361,
+      "total": 1361,
+      "centerX": 1.31023,
+      "centerY": 182.66425,
+      "radiusX": 365.10326,
+      "radiusY": 604.97105
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 72,
+      "visible_height": 145,
+      "density_zoom": 1
     },
     "scale": 0.36662,
     "x_offset": 85.37591,
-    "y_offset": 176.13362,
+    "y_offset": 176.715,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:31.611Z"
+  "exported_at": "2026-08-19T13:23:58.057Z"
 }

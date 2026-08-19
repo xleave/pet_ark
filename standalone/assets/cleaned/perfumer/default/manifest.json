@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "perfumer",
   "character_name": "Perfumer",
   "localized_name": "调香师",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/perfumer/default",
-  "source_page": "https://prts.wiki/w/%E8%B0%83%E9%A6%99%E5%B8%88",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/meta.json",
-    "model": "defaultskin/build/build_char_181_flower",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/defaultskin/build/build_char_181_flower.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/defaultskin/build/build_char_181_flower.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/defaultskin/build/build_char_181_flower.png"
+    "assetId": "build_char_181_flower",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "调香师",
+    "appellation": "Perfumer",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_181_flower.atlas",
+      ".png": "build_char_181_flower.png",
+      ".skel": "build_char_181_flower.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/perfumer/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -232.01062,
+      "minX": -259.77615,
       "maxX": 349.72824,
-      "minY": -106.53815,
+      "minY": -103.47549,
       "maxY": 402.32004
     },
-    "scale": 0.30254,
-    "x_offset": 78.19278,
-    "y_offset": 183.76781,
+    "full_source_bounds": {
+      "minX": -259.77615,
+      "maxX": 349.72824,
+      "minY": -103.47549,
+      "maxY": 402.32004
+    },
+    "core_source_bounds": {
+      "minX": -243.06541,
+      "maxX": 349.72824,
+      "minY": -103.47549,
+      "maxY": 402.32004
+    },
+    "cluster": {
+      "retained": 1145,
+      "total": 1145,
+      "centerX": -4.7496,
+      "centerY": 174.30177,
+      "radiusX": 459.98919,
+      "radiusY": 632.48246
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 99,
+      "visible_height": 111,
+      "density_zoom": 1.26126
+    },
+    "scale": 0.3642,
+    "x_offset": 113.67374,
+    "y_offset": 217.41324,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:23.080Z"
+  "exported_at": "2026-08-19T13:23:25.082Z"
 }

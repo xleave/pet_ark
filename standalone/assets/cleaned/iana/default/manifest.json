@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "iana",
   "character_name": "Iana",
   "localized_name": "双月",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/iana/default",
-  "source_page": "https://prts.wiki/w/%E5%8F%8C%E6%9C%88",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4124_iana/meta.json",
-    "model": "defaultskin/build/build_char_4124_iana",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4124_iana/defaultskin/build/build_char_4124_iana.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4124_iana/defaultskin/build/build_char_4124_iana.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4124_iana/defaultskin/build/build_char_4124_iana.png"
+    "assetId": "build_char_4124_iana",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "双月",
+    "appellation": "Iana",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4124_iana.atlas",
+      ".png": "build_char_4124_iana.png",
+      ".skel": "build_char_4124_iana.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/iana/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -391.88004,
       "maxX": 168.79286,
       "minY": -127.67835,
       "maxY": 403.26001
     },
-    "scale": 0.31391,
-    "x_offset": 131.01448,
-    "y_offset": 175.92068,
+    "full_source_bounds": {
+      "minX": -391.88004,
+      "maxX": 168.79286,
+      "minY": -127.67835,
+      "maxY": 403.26001
+    },
+    "core_source_bounds": {
+      "minX": -391.88004,
+      "maxX": 168.79286,
+      "minY": -127.67835,
+      "maxY": 403.26001
+    },
+    "cluster": {
+      "retained": 1737,
+      "total": 1737,
+      "centerX": -4.47351,
+      "centerY": 198.00051,
+      "radiusX": 465.08595,
+      "radiusY": 634.9176
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 58,
+      "visible_height": 118,
+      "density_zoom": 1.24138
+    },
+    "scale": 0.38968,
+    "x_offset": 100.36281,
+    "y_offset": 215.90153,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:11.451Z"
+  "exported_at": "2026-08-19T13:22:32.765Z"
 }

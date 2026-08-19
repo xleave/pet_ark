@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "vulpisfoglia",
   "character_name": "Vulpisfoglia",
   "localized_name": "忍冬",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-55",
   "skin_name": "失焦",
   "source": "standalone/assets/source/vulpisfoglia/skin-epoque-55",
-  "source_page": "https://prts.wiki/w/%E5%BF%8D%E5%86%AC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4026_vulpis/meta.json",
-    "model": "char_4026_vulpis_epoque_55/build/build_char_4026_vulpis_epoque_55",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4026_vulpis/char_4026_vulpis_epoque_55/build/build_char_4026_vulpis_epoque_55.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4026_vulpis/char_4026_vulpis_epoque_55/build/build_char_4026_vulpis_epoque_55.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4026_vulpis/char_4026_vulpis_epoque_55/build/build_char_4026_vulpis_epoque_55.png"
+    "assetId": "build_char_4026_vulpis_epoque#55",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "忍冬",
+    "appellation": "Vulpisfoglia",
+    "skinGroupId": "2026#epoque#6",
+    "skinGroupName": "时代/LV",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4026_vulpis_epoque#55.atlas",
+      ".png": "build_char_4026_vulpis_epoque#55.png",
+      ".skel": "build_char_4026_vulpis_epoque#55.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/vulpisfoglia/skin-epoque-55/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,9 +130,9 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -225.5575,
+      "minX": -1022.4245,
       "maxX": 214.91626,
       "minY": -105.57211,
       "maxY": 412.39767
@@ -129,23 +144,29 @@
       "maxY": 417.00531
     },
     "core_source_bounds": {
-      "minX": -225.5575,
+      "minX": -1022.4245,
       "maxX": 214.91626,
       "minY": -105.57211,
       "maxY": 412.39767
     },
     "cluster": {
-      "retained": 2914,
+      "retained": 2955,
       "total": 2973,
-      "centerX": 6.68532,
-      "centerY": 119.29038,
-      "radiusX": 292.70845,
-      "radiusY": 546.68568
+      "centerX": -53.41769,
+      "centerY": 178.91026,
+      "radiusX": 1094.09614,
+      "radiusY": 781.07524
     },
-    "scale": 0.39957,
-    "x_offset": 98.12596,
-    "y_offset": 173.81657,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 48,
+      "visible_height": 58,
+      "density_zoom": 2.41379
+    },
+    "scale": 0.34334,
+    "x_offset": 105.48669,
+    "y_offset": 218.37364,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:42.509Z"
+  "exported_at": "2026-08-19T13:24:23.876Z"
 }

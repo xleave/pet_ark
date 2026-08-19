@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "mudrock",
@@ -12,15 +12,29 @@
   "skin_id": "summer-6",
   "skin_name": "静谧午夜 DN06",
   "source": "standalone/assets/source/mudrock/skin-summer-6",
-  "source_page": "https://prts.wiki/w/%E6%B3%A5%E5%B2%A9",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/meta.json",
-    "model": "char_311_mudrok_summer_6/build/build_char_311_mudrok_summer_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_summer_6/build/build_char_311_mudrok_summer_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_summer_6/build/build_char_311_mudrok_summer_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_summer_6/build/build_char_311_mudrok_summer_6.png"
+    "assetId": "build_char_311_mudrok_summer#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "泥岩",
+    "appellation": "Mudrock",
+    "skinGroupId": "2021#summer#2",
+    "skinGroupName": "珊瑚海岸/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_311_mudrok_summer#6.atlas",
+      ".png": "build_char_311_mudrok_summer#6.png",
+      ".skel": "build_char_311_mudrok_summer#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/mudrock/skin-summer-6/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -146,13 +160,13 @@
     "pixel_probe": {
       "animation": "Relax",
       "visible_width": 73,
-      "visible_height": 93,
-      "density_zoom": 1.50538
+      "visible_height": 92,
+      "density_zoom": 1.52174
     },
-    "scale": 0.33578,
-    "x_offset": 112.37447,
-    "y_offset": 213.24103,
+    "scale": 0.33943,
+    "x_offset": 112.55245,
+    "y_offset": 214.73278,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:03.120Z"
+  "exported_at": "2026-08-19T13:23:11.236Z"
 }

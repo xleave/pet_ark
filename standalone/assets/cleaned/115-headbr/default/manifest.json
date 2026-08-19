@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "115-headbr",
   "character_name": "Зима",
   "localized_name": "凛冬",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/115-headbr/default",
-  "source_page": "https://prts.wiki/w/%E5%87%9B%E5%86%AC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_115_headbr/meta.json",
-    "model": "defaultskin/build/build_char_115_headbr",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_115_headbr/defaultskin/build/build_char_115_headbr.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_115_headbr/defaultskin/build/build_char_115_headbr.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_115_headbr/defaultskin/build/build_char_115_headbr.png"
+    "assetId": "build_char_115_headbr",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "凛冬",
+    "appellation": "Зима",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_115_headbr.atlas",
+      ".png": "build_char_115_headbr.png",
+      ".skel": "build_char_115_headbr.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/115-headbr/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -211.34251,
       "maxX": 194.99008,
-      "minY": -108.70457,
-      "maxY": 385.02856
+      "minY": -106.18133,
+      "maxY": 386.22397
+    },
+    "full_source_bounds": {
+      "minX": -211.34251,
+      "maxX": 194.99008,
+      "minY": -106.18133,
+      "maxY": 386.22397
+    },
+    "core_source_bounds": {
+      "minX": -211.34251,
+      "maxX": 194.99008,
+      "minY": -106.18133,
+      "maxY": 386.22397
+    },
+    "cluster": {
+      "retained": 1539,
+      "total": 1539,
+      "centerX": -6.26255,
+      "centerY": 182.58962,
+      "radiusX": 485.00388,
+      "radiusY": 731.97424
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 79,
+      "visible_height": 156,
+      "density_zoom": 1
     },
     "scale": 0.41,
     "x_offset": 99.35225,
-    "y_offset": 171.43113,
+    "y_offset": 172.46566,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:53.745Z"
+  "exported_at": "2026-08-19T13:21:15.704Z"
 }

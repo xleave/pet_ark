@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "goldenglow",
   "character_name": "Goldenglow",
   "localized_name": "澄闪",
@@ -11,15 +12,29 @@
   "skin_id": "summer-12",
   "skin_name": "夏卉 FA394",
   "source": "standalone/assets/source/goldenglow/skin-summer-12",
-  "source_page": "https://prts.wiki/w/%E6%BE%84%E9%97%AA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/meta.json",
-    "model": "char_377_gdglow_summer_12/build/build_char_377_gdglow_summer_12",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/char_377_gdglow_summer_12/build/build_char_377_gdglow_summer_12.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/char_377_gdglow_summer_12/build/build_char_377_gdglow_summer_12.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/char_377_gdglow_summer_12/build/build_char_377_gdglow_summer_12.png"
+    "assetId": "build_char_377_gdglow_summer#12",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "澄闪",
+    "appellation": "Goldenglow",
+    "skinGroupId": "2023#summer#2",
+    "skinGroupName": "珊瑚海岸/XII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_377_gdglow_summer#12.atlas",
+      ".png": "build_char_377_gdglow_summer#12.png",
+      ".skel": "build_char_377_gdglow_summer#12.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/goldenglow/skin-summer-12/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,11 +130,11 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -312.26953,
-      "maxX": 203.15071,
-      "minY": -115.95991,
+      "minX": -956.24323,
+      "maxX": 722.04138,
+      "minY": -437.1131,
       "maxY": 620.78699
     },
     "full_source_bounds": {
@@ -129,23 +144,29 @@
       "maxY": 620.78699
     },
     "core_source_bounds": {
-      "minX": -312.26953,
-      "maxX": 203.15071,
-      "minY": -115.95991,
+      "minX": -948.19141,
+      "maxX": 722.04138,
+      "minY": -437.1131,
       "maxY": 620.78699
     },
     "cluster": {
-      "retained": 3494,
+      "retained": 3557,
       "total": 3558,
-      "centerX": -1.04981,
-      "centerY": 124.43123,
-      "radiusX": 285.68623,
-      "radiusY": 700.37261
+      "centerX": -36.08883,
+      "centerY": 227.13136,
+      "radiusX": 876.16188,
+      "radiusY": 938.47519
     },
-    "scale": 0.28232,
-    "x_offset": 111.40333,
-    "y_offset": 183.26194,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 26,
+      "visible_height": 46,
+      "density_zoom": 3.04348
+    },
+    "scale": 0.31917,
+    "x_offset": 107.50512,
+    "y_offset": 216.48816,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:28.526Z"
+  "exported_at": "2026-08-19T13:22:20.698Z"
 }

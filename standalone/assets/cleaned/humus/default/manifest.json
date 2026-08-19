@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "humus",
   "character_name": "Humus",
   "localized_name": "休谟斯",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/humus/default",
-  "source_page": "https://prts.wiki/w/%E4%BC%91%E8%B0%9F%E6%96%AF",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_491_humus/meta.json",
-    "model": "defaultskin/build/build_char_491_humus",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_491_humus/defaultskin/build/build_char_491_humus.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_491_humus/defaultskin/build/build_char_491_humus.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_491_humus/defaultskin/build/build_char_491_humus.png"
+    "assetId": "build_char_491_humus",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "休谟斯",
+    "appellation": "Humus",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_491_humus.atlas",
+      ".png": "build_char_491_humus.png",
+      ".skel": "build_char_491_humus.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/humus/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -276.94052,
       "maxX": 196.15495,
       "minY": -123.91521,
-      "maxY": 441.36798
+      "maxY": 441.26785
     },
-    "scale": 0.36796,
-    "x_offset": 110.86281,
-    "y_offset": 170.40451,
+    "full_source_bounds": {
+      "minX": -276.94052,
+      "maxX": 196.15495,
+      "minY": -123.91521,
+      "maxY": 441.26785
+    },
+    "core_source_bounds": {
+      "minX": -276.94052,
+      "maxX": 196.15495,
+      "minY": -123.91521,
+      "maxY": 441.26785
+    },
+    "cluster": {
+      "retained": 2007,
+      "total": 2007,
+      "centerX": -1.85627,
+      "centerY": 227.31667,
+      "radiusX": 397.50686,
+      "radiusY": 569.43188
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 87,
+      "visible_height": 158,
+      "density_zoom": 1
+    },
+    "scale": 0.36802,
+    "x_offset": 110.86545,
+    "y_offset": 170.39643,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:11.282Z"
+  "exported_at": "2026-08-19T13:22:32.104Z"
 }

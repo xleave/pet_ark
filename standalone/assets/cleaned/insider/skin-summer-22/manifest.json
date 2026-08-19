@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "insider",
   "character_name": "Insider",
   "localized_name": "隐现",
@@ -11,15 +12,29 @@
   "skin_id": "summer-22",
   "skin_name": "悠然假日 HDm25",
   "source": "standalone/assets/source/insider/skin-summer-22",
-  "source_page": "https://prts.wiki/w/%E9%9A%90%E7%8E%B0",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_498_inside/meta.json",
-    "model": "char_498_inside_summer_22/build/build_char_498_inside_summer_22",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_498_inside/char_498_inside_summer_22/build/build_char_498_inside_summer_22.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_498_inside/char_498_inside_summer_22/build/build_char_498_inside_summer_22.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_498_inside/char_498_inside_summer_22/build/build_char_498_inside_summer_22.png"
+    "assetId": "build_char_498_inside_summer#22",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "隐现",
+    "appellation": "Insider",
+    "skinGroupId": "2026#summer",
+    "skinGroupName": "珊瑚海岸/XXII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_498_inside_summer#22.atlas",
+      ".png": "build_char_498_inside_summer#22.png",
+      ".skel": "build_char_498_inside_summer#22.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/insider/skin-summer-22/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -220.65318,
+      "minX": -799.73889,
       "maxX": 192.49698,
       "minY": -105.66896,
-      "maxY": 438.65601
+      "maxY": 551.28424
     },
     "full_source_bounds": {
       "minX": -799.73889,
@@ -129,23 +144,29 @@
       "maxY": 551.28424
     },
     "core_source_bounds": {
-      "minX": -220.65318,
+      "minX": -679.65143,
       "maxX": 192.49698,
       "minY": -105.66896,
-      "maxY": 438.65601
+      "maxY": 453.25836
     },
     "cluster": {
-      "retained": 2192,
+      "retained": 2199,
       "total": 2210,
-      "centerX": 0.25111,
-      "centerY": 159.98563,
-      "radiusX": 298.74913,
-      "radiusY": 515.86009
+      "centerX": -4.53013,
+      "centerY": 176.84102,
+      "radiusX": 599.99858,
+      "radiusY": 480
     },
-    "scale": 0.38212,
-    "x_offset": 101.37959,
-    "y_offset": 175.62128,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 52,
+      "visible_height": 78,
+      "density_zoom": 1.79487
+    },
+    "scale": 0.31837,
+    "x_offset": 102.02256,
+    "y_offset": 216.46081,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:42.478Z"
+  "exported_at": "2026-08-19T13:22:35.841Z"
 }

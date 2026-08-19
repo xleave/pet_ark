@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "frost",
@@ -12,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/frost/default",
-  "source_page": "https://prts.wiki/w/%E9%9C%9C%E5%8D%8E",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_458_rfrost/meta.json",
-    "model": "defaultskin/build/build_char_458_rfrost",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_458_rfrost/defaultskin/build/build_char_458_rfrost.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_458_rfrost/defaultskin/build/build_char_458_rfrost.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_458_rfrost/defaultskin/build/build_char_458_rfrost.png"
+    "assetId": "build_char_458_rfrost",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "霜华",
+    "appellation": "Frost",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_458_rfrost.atlas",
+      ".png": "build_char_458_rfrost.png",
+      ".skel": "build_char_458_rfrost.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -92,7 +105,7 @@
       "path": "standalone/assets/cleaned/frost/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -134,14 +147,14 @@
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 55,
-      "visible_height": 131,
+      "visible_width": 54,
+      "visible_height": 130,
       "density_zoom": 1.26134
     },
     "scale": 0.41,
-    "x_offset": 98.18416,
+    "x_offset": 98.81483,
     "y_offset": 216.21795,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:51.988Z"
+  "exported_at": "2026-08-19T13:22:16.057Z"
 }

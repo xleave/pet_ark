@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "leizi-the-thunderbringer",
   "character_name": "Leizi the Thunderbringer",
   "localized_name": "司霆惊蛰",
@@ -11,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/leizi-the-thunderbringer/default",
-  "source_page": "https://prts.wiki/w/%E5%8F%B8%E9%9C%86%E6%83%8A%E8%9B%B0",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1043_leizi2/meta.json",
-    "model": "defaultskin/build/build_char_1043_leizi2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1043_leizi2/defaultskin/build/build_char_1043_leizi2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1043_leizi2/defaultskin/build/build_char_1043_leizi2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1043_leizi2/defaultskin/build/build_char_1043_leizi2.png"
+    "assetId": "build_char_1043_leizi2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "司霆惊蛰",
+    "appellation": "Leizi the Thunderbringer",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1043_leizi2.atlas",
+      ".png": "build_char_1043_leizi2.png",
+      ".skel": "build_char_1043_leizi2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +106,7 @@
       "path": "standalone/assets/cleaned/leizi-the-thunderbringer/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,12 +119,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -288.91821,
-      "maxX": 179.28622,
+      "minX": -624.23999,
+      "maxX": 675.34998,
       "minY": -128.5164,
-      "maxY": 415.51263
+      "maxY": 528.69
     },
     "full_source_bounds": {
       "minX": -624.23999,
@@ -118,23 +133,29 @@
       "maxY": 528.69
     },
     "core_source_bounds": {
-      "minX": -288.91821,
-      "maxX": 179.28622,
+      "minX": -624.23999,
+      "maxX": 675.34998,
       "minY": -128.5164,
-      "maxY": 415.51263
+      "maxY": 528.69
     },
     "cluster": {
-      "retained": 3078,
+      "retained": 3181,
       "total": 3181,
-      "centerX": -9.44069,
-      "centerY": 141.29229,
-      "radiusX": 316.21457,
-      "radiusY": 638.88327
+      "centerX": 44.0779,
+      "centerY": 211.54478,
+      "radiusX": 4091.67105,
+      "radiusY": 827.49157
     },
-    "scale": 0.3759,
-    "x_offset": 116.60556,
-    "y_offset": 167.69015,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 38,
+      "visible_height": 56,
+      "density_zoom": 2.5
+    },
+    "scale": 0.33857,
+    "x_offset": 108.59789,
+    "y_offset": 217.48842,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:20.905Z"
+  "exported_at": "2026-08-19T13:22:49.675Z"
 }

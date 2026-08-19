@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "executor",
   "character_name": "Executor",
   "localized_name": "送葬人",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/executor/default",
-  "source_page": "https://prts.wiki/w/%E9%80%81%E8%91%AC%E4%BA%BA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_279_excu/meta.json",
-    "model": "defaultskin/build/build_char_279_excu",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_279_excu/defaultskin/build/build_char_279_excu.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_279_excu/defaultskin/build/build_char_279_excu.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_279_excu/defaultskin/build/build_char_279_excu.png"
+    "assetId": "build_char_279_excu",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "送葬人",
+    "appellation": "Executor",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_279_excu.atlas",
+      ".png": "build_char_279_excu.png",
+      ".skel": "build_char_279_excu.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/executor/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -255.22679,
+      "minX": -255.42201,
       "maxX": 192.41002,
       "minY": -101.36893,
-      "maxY": 403.21301
+      "maxY": 404.38489
     },
-    "scale": 0.39318,
-    "x_offset": 108.34902,
-    "y_offset": 176.14418,
+    "full_source_bounds": {
+      "minX": -255.42201,
+      "maxX": 192.41002,
+      "minY": -101.36893,
+      "maxY": 404.38489
+    },
+    "core_source_bounds": {
+      "minX": -255.42201,
+      "maxX": 192.41002,
+      "minY": -101.36893,
+      "maxY": 404.37292
+    },
+    "cluster": {
+      "retained": 1651,
+      "total": 1651,
+      "centerX": -2.95133,
+      "centerY": 163.03584,
+      "radiusX": 452.52382,
+      "radiusY": 525.00237
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 114,
+      "visible_height": 158,
+      "density_zoom": 1
+    },
+    "scale": 0.393,
+    "x_offset": 108.382,
+    "y_offset": 176.16155,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:05.335Z"
+  "exported_at": "2026-08-19T13:22:06.707Z"
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "115-headbr",
@@ -12,15 +12,29 @@
   "skin_id": "marthe-2",
   "skin_name": "整装待发",
   "source": "standalone/assets/source/115-headbr/skin-marthe-2",
-  "source_page": "https://prts.wiki/w/%E5%87%9B%E5%86%AC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_115_headbr/meta.json",
-    "model": "char_115_headbr_marthe_2/build/build_char_115_headbr_marthe_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_115_headbr/char_115_headbr_marthe_2/build/build_char_115_headbr_marthe_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_115_headbr/char_115_headbr_marthe_2/build/build_char_115_headbr_marthe_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_115_headbr/char_115_headbr_marthe_2/build/build_char_115_headbr_marthe_2.png"
+    "assetId": "build_char_115_headbr_marthe#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "凛冬",
+    "appellation": "Зима",
+    "skinGroupId": "2020#marthe#2",
+    "skinGroupName": "玛尔特/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_115_headbr_marthe#2.atlas",
+      ".png": "build_char_115_headbr_marthe#2.png",
+      ".skel": "build_char_115_headbr_marthe#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/115-headbr/skin-marthe-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -154,5 +168,5 @@
     "y_offset": 217.06663,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:41.447Z"
+  "exported_at": "2026-08-19T13:21:15.869Z"
 }

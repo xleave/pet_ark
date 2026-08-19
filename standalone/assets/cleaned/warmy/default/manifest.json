@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "warmy",
   "character_name": "Warmy",
   "localized_name": "温米",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/warmy/default",
-  "source_page": "https://prts.wiki/w/%E6%B8%A9%E7%B1%B3",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4081_warmy/meta.json",
-    "model": "defaultskin/build/build_char_4081_warmy",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4081_warmy/defaultskin/build/build_char_4081_warmy.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4081_warmy/defaultskin/build/build_char_4081_warmy.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4081_warmy/defaultskin/build/build_char_4081_warmy.png"
+    "assetId": "build_char_4081_warmy",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "温米",
+    "appellation": "Warmy",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4081_warmy.atlas",
+      ".png": "build_char_4081_warmy.png",
+      ".skel": "build_char_4081_warmy.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/warmy/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -262.25644,
       "maxX": 179.37337,
-      "minY": -111.64902,
-      "maxY": 455.3157
+      "minY": -110.51144,
+      "maxY": 457.95837
     },
-    "scale": 0.36687,
-    "x_offset": 111.20348,
-    "y_offset": 175.03979,
+    "full_source_bounds": {
+      "minX": -262.25644,
+      "maxX": 179.37337,
+      "minY": -110.51144,
+      "maxY": 457.95837
+    },
+    "core_source_bounds": {
+      "minX": -262.25644,
+      "maxX": 179.37337,
+      "minY": -110.51144,
+      "maxY": 456.61292
+    },
+    "cluster": {
+      "retained": 2300,
+      "total": 2300,
+      "centerX": -5.25673,
+      "centerY": 199.40617,
+      "radiusX": 405.12935,
+      "radiusY": 623.13889
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 79,
+      "visible_height": 167,
+      "density_zoom": 1
+    },
+    "scale": 0.36589,
+    "x_offset": 111.16323,
+    "y_offset": 175.56447,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:37.930Z"
+  "exported_at": "2026-08-19T13:24:25.960Z"
 }

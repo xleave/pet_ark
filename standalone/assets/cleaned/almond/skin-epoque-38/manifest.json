@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "almond",
   "character_name": "Almond",
   "localized_name": "杏仁",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-38",
   "skin_name": "“杏仁”拼盘",
   "source": "standalone/assets/source/almond/skin-epoque-38",
-  "source_page": "https://prts.wiki/w/%E6%9D%8F%E4%BB%81",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4105_almond/meta.json",
-    "model": "char_4105_almond_epoque_38/build/build_char_4105_almond_epoque_38",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4105_almond/char_4105_almond_epoque_38/build/build_char_4105_almond_epoque_38.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4105_almond/char_4105_almond_epoque_38/build/build_char_4105_almond_epoque_38.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4105_almond/char_4105_almond_epoque_38/build/build_char_4105_almond_epoque_38.png"
+    "assetId": "build_char_4105_almond_epoque#38",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "杏仁",
+    "appellation": "Almond",
+    "skinGroupId": "2025#nian",
+    "skinGroupName": "0011制造/XI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4105_almond_epoque#38.atlas",
+      ".png": "build_char_4105_almond_epoque#38.png",
+      ".skel": "build_char_4105_almond_epoque#38.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/almond/skin-epoque-38/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,10 +130,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -323.68011,
-      "maxX": 200.71893,
+      "minX": -774.25,
+      "maxX": 344.06329,
       "minY": -129.76686,
       "maxY": 530.65143
     },
@@ -129,23 +144,29 @@
       "maxY": 530.65143
     },
     "core_source_bounds": {
-      "minX": -323.68011,
+      "minX": -774.25,
       "maxX": 200.71893,
       "minY": -129.76686,
       "maxY": 530.65143
     },
     "cluster": {
-      "retained": 2592,
+      "retained": 2624,
       "total": 2624,
-      "centerX": -1.31759,
-      "centerY": 124.34464,
-      "radiusX": 367.68693,
-      "radiusY": 645.60706
+      "centerX": -181.11626,
+      "centerY": 204.01296,
+      "radiusX": 850.07343,
+      "radiusY": 623.38387
     },
-    "scale": 0.31495,
-    "x_offset": 115.36343,
-    "y_offset": 175.12968,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 35,
+      "visible_height": 61,
+      "density_zoom": 2.29508
+    },
+    "scale": 0.3612,
+    "x_offset": 104.8392,
+    "y_offset": 217.32497,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:07.843Z"
+  "exported_at": "2026-08-19T13:21:22.622Z"
 }

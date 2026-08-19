@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "u-official",
   "character_name": "U-Official",
   "localized_name": "U-Official",
@@ -11,15 +12,29 @@
   "skin_id": "sanrio-1",
   "skin_name": "云上直播间",
   "source": "standalone/assets/source/u-official/skin-sanrio-1",
-  "source_page": "https://prts.wiki/w/U-Official",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4091_ulika/meta.json",
-    "model": "char_4091_ulika_sanrio_1/build/build_char_4091_ulika_sanrio_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4091_ulika/char_4091_ulika_sanrio_1/build/build_char_4091_ulika_sanrio_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4091_ulika/char_4091_ulika_sanrio_1/build/build_char_4091_ulika_sanrio_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4091_ulika/char_4091_ulika_sanrio_1/build/build_char_4091_ulika_sanrio_1.png"
+    "assetId": "build_char_4091_ulika_sanrio#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "U-Official",
+    "appellation": "U-Official",
+    "skinGroupId": "2024#sanrio",
+    "skinGroupName": "三丽鸥家族",
+    "sortTags": [
+      "Operator",
+      "Rarity_1",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4091_ulika_sanrio#1.atlas",
+      ".png": "build_char_4091_ulika_sanrio#1.png",
+      ".skel": "build_char_4091_ulika_sanrio#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/u-official/skin-sanrio-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -310.91049,
-      "maxX": 265.99493,
+      "maxX": 437.9599,
       "minY": -157.08147,
-      "maxY": 571.65442
+      "maxY": 887.30505
     },
     "full_source_bounds": {
       "minX": -384.67538,
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -310.91049,
-      "maxX": 265.99493,
+      "maxX": 437.9599,
       "minY": -157.08147,
-      "maxY": 571.65442
+      "maxY": 887.30505
     },
     "cluster": {
-      "retained": 4344,
+      "retained": 4345,
       "total": 4377,
-      "centerX": -7.18091,
-      "centerY": 196.08794,
-      "radiusX": 312.5606,
-      "radiusY": 480.01563
+      "centerX": 30.08738,
+      "centerY": 218.09607,
+      "radiusX": 587.43,
+      "radiusY": 653.42331
     },
-    "scale": 0.28543,
-    "x_offset": 102.41003,
-    "y_offset": 171.1649,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 81,
+      "visible_height": 108,
+      "density_zoom": 1.2963
+    },
+    "scale": 0.25817,
+    "x_offset": 105.52573,
+    "y_offset": 223.40919,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:05.171Z"
+  "exported_at": "2026-08-19T13:24:16.045Z"
 }

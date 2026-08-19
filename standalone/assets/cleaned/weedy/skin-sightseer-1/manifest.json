@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "weedy",
   "character_name": "Weedy",
   "localized_name": "温蒂",
@@ -11,15 +12,29 @@
   "skin_id": "sightseer-1",
   "skin_name": "倾听",
   "source": "standalone/assets/source/weedy/skin-sightseer-1",
-  "source_page": "https://prts.wiki/w/%E6%B8%A9%E8%92%82",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/meta.json",
-    "model": "char_400_weedy_sightseer_1/build/build_char_400_weedy_sightseer_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/char_400_weedy_sightseer_1/build/build_char_400_weedy_sightseer_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/char_400_weedy_sightseer_1/build/build_char_400_weedy_sightseer_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/char_400_weedy_sightseer_1/build/build_char_400_weedy_sightseer_1.png"
+    "assetId": "build_char_400_weedy_sightseer#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "温蒂",
+    "appellation": "Weedy",
+    "skinGroupId": "2024#sightseer",
+    "skinGroupName": "错位巡礼/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_400_weedy_sightseer#1.atlas",
+      ".png": "build_char_400_weedy_sightseer#1.png",
+      ".skel": "build_char_400_weedy_sightseer#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/weedy/skin-sightseer-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -137,15 +152,21 @@
     "cluster": {
       "retained": 2753,
       "total": 2764,
-      "centerX": -12.68359,
-      "centerY": 167.47049,
-      "radiusX": 363.11501,
-      "radiusY": 799.49219
+      "centerX": -3.95623,
+      "centerY": 181.65914,
+      "radiusX": 506.59044,
+      "radiusY": 628.01605
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 109,
+      "visible_height": 143,
+      "density_zoom": 1
     },
     "scale": 0.31125,
     "x_offset": 101.2201,
     "y_offset": 176.83975,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:29.509Z"
+  "exported_at": "2026-08-19T13:24:27.258Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "arene",
   "character_name": "Arene",
   "localized_name": "芳汀",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/arene/default",
-  "source_page": "https://prts.wiki/w/%E8%8A%B3%E6%B1%80",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/meta.json",
-    "model": "defaultskin/build/build_char_271_spikes",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/defaultskin/build/build_char_271_spikes.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/defaultskin/build/build_char_271_spikes.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/defaultskin/build/build_char_271_spikes.png"
+    "assetId": "build_char_271_spikes",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "芳汀",
+    "appellation": "Arene",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_271_spikes.atlas",
+      ".png": "build_char_271_spikes.png",
+      ".skel": "build_char_271_spikes.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/arene/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -428.5058,
       "maxX": 186.21281,
-      "minY": -122.11926,
-      "maxY": 417.59137
+      "minY": -116.89783,
+      "maxY": 419.42264
+    },
+    "full_source_bounds": {
+      "minX": -428.5058,
+      "maxX": 186.21281,
+      "minY": -116.89783,
+      "maxY": 419.42264
+    },
+    "core_source_bounds": {
+      "minX": -428.5058,
+      "maxX": 186.21281,
+      "minY": -116.89783,
+      "maxY": 419.42264
+    },
+    "cluster": {
+      "retained": 1740,
+      "total": 1740,
+      "centerX": -5.98131,
+      "centerY": 174.37979,
+      "radiusX": 424.97643,
+      "radiusY": 635
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 81,
+      "visible_height": 118,
+      "density_zoom": 1.18644
     },
     "scale": 0.28631,
     "x_offset": 130.68544,
-    "y_offset": 181.03605,
+    "y_offset": 182.531,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:56.251Z"
+  "exported_at": "2026-08-19T13:21:27.235Z"
 }

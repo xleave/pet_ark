@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "verdant",
   "character_name": "Verdant",
   "localized_name": "维荻",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/verdant/default",
-  "source_page": "https://prts.wiki/w/%E7%BB%B4%E8%8D%BB",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4107_vrdant/meta.json",
-    "model": "defaultskin/build/build_char_4107_vrdant",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4107_vrdant/defaultskin/build/build_char_4107_vrdant.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4107_vrdant/defaultskin/build/build_char_4107_vrdant.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4107_vrdant/defaultskin/build/build_char_4107_vrdant.png"
+    "assetId": "build_char_4107_vrdant",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "维荻",
+    "appellation": "Verdant",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4107_vrdant.atlas",
+      ".png": "build_char_4107_vrdant.png",
+      ".skel": "build_char_4107_vrdant.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/verdant/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -243.4677,
+      "minX": -243.73674,
       "maxX": 153.1781,
       "minY": -90.03809,
-      "maxY": 392.8432
+      "maxY": 393.12595
+    },
+    "full_source_bounds": {
+      "minX": -243.73674,
+      "maxX": 153.1781,
+      "minY": -90.03809,
+      "maxY": 393.12595
+    },
+    "core_source_bounds": {
+      "minX": -243.73674,
+      "maxX": 153.1781,
+      "minY": -90.03809,
+      "maxY": 393.12595
+    },
+    "cluster": {
+      "retained": 2591,
+      "total": 2591,
+      "centerX": -4.55128,
+      "centerY": 187.75595,
+      "radiusX": 329.21879,
+      "radiusY": 485.0918
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 86,
+      "visible_height": 160,
+      "density_zoom": 1
     },
     "scale": 0.41,
-    "x_offset": 114.50937,
+    "x_offset": 114.56452,
     "y_offset": 179.08438,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:36.428Z"
+  "exported_at": "2026-08-19T13:24:18.812Z"
 }

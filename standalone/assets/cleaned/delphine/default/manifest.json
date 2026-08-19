@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "delphine",
   "character_name": "Delphine",
   "localized_name": "戴菲恩",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/delphine/default",
-  "source_page": "https://prts.wiki/w/%E6%88%B4%E8%8F%B2%E6%81%A9",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4110_delphn/meta.json",
-    "model": "defaultskin/build/build_char_4110_delphn",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4110_delphn/defaultskin/build/build_char_4110_delphn.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4110_delphn/defaultskin/build/build_char_4110_delphn.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4110_delphn/defaultskin/build/build_char_4110_delphn.png"
+    "assetId": "build_char_4110_delphn",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "戴菲恩",
+    "appellation": "Delphine",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4110_delphn.atlas",
+      ".png": "build_char_4110_delphn.png",
+      ".skel": "build_char_4110_delphn.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/delphine/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -248.87476,
       "maxX": 160.00104,
-      "minY": -118.867,
-      "maxY": 405.68774
+      "minY": -119.32005,
+      "maxY": 406.67093
     },
-    "scale": 0.39653,
-    "x_offset": 113.6204,
-    "y_offset": 168.86605,
+    "full_source_bounds": {
+      "minX": -248.87476,
+      "maxX": 160.00104,
+      "minY": -119.32005,
+      "maxY": 406.67093
+    },
+    "core_source_bounds": {
+      "minX": -248.87476,
+      "maxX": 160.00104,
+      "minY": -119.32005,
+      "maxY": 401.60907
+    },
+    "cluster": {
+      "retained": 2687,
+      "total": 2687,
+      "centerX": -4.11831,
+      "centerY": 186.35085,
+      "radiusX": 373.98273,
+      "radiusY": 502.43837
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 115,
+      "visible_height": 159,
+      "density_zoom": 1
+    },
+    "scale": 0.39544,
+    "x_offset": 113.57229,
+    "y_offset": 168.8156,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:03.491Z"
+  "exported_at": "2026-08-19T13:21:59.558Z"
 }

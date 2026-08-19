@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "amiya",
   "character_name": "Amiya",
   "localized_name": "阿米娅",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-4",
   "skin_name": "见习联结者",
   "source": "standalone/assets/source/amiya/skin-epoque-4",
-  "source_page": "https://prts.wiki/w/%E9%98%BF%E7%B1%B3%E5%A8%85",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/meta.json",
-    "model": "char_002_amiya_epoque_4/build/build_char_002_amiya_epoque_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_epoque_4/build/build_char_002_amiya_epoque_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_epoque_4/build/build_char_002_amiya_epoque_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_epoque_4/build/build_char_002_amiya_epoque_4.png"
+    "assetId": "build_char_002_amiya_epoque#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "阿米娅",
+    "appellation": "Amiya",
+    "skinGroupId": "2020#sale",
+    "skinGroupName": "忒斯特收藏/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_002_amiya_epoque#4.atlas",
+      ".png": "build_char_002_amiya_epoque#4.png",
+      ".skel": "build_char_002_amiya_epoque#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/amiya/skin-epoque-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -137,15 +152,21 @@
     "cluster": {
       "retained": 1603,
       "total": 1609,
-      "centerX": 1.7388,
-      "centerY": 146.36484,
-      "radiusX": 273.09579,
-      "radiusY": 692.73154
+      "centerX": 14.28298,
+      "centerY": 208.31204,
+      "radiusX": 464.98518,
+      "radiusY": 637.90802
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 113,
+      "visible_height": 168,
+      "density_zoom": 1
     },
     "scale": 0.36072,
     "x_offset": 113.82426,
     "y_offset": 176.99849,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:32.417Z"
+  "exported_at": "2026-08-19T13:21:23.314Z"
 }

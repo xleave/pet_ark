@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "philae",
   "character_name": "Philae",
   "localized_name": "菲莱",
@@ -11,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/philae/default",
-  "source_page": "https://prts.wiki/w/%E8%8F%B2%E8%8E%B1",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4148_philae/meta.json",
-    "model": "defaultskin/build/build_char_4148_philae",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4148_philae/defaultskin/build/build_char_4148_philae.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4148_philae/defaultskin/build/build_char_4148_philae.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4148_philae/defaultskin/build/build_char_4148_philae.png"
+    "assetId": "build_char_4148_philae",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "菲莱",
+    "appellation": "Philae",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4148_philae.atlas",
+      ".png": "build_char_4148_philae.png",
+      ".skel": "build_char_4148_philae.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +105,7 @@
       "path": "standalone/assets/cleaned/philae/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,12 +118,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -253.13145,
-      "maxX": 171.66219,
+      "minX": -475.27002,
+      "maxX": 355.72998,
       "minY": -136.95775,
-      "maxY": 436.34811
+      "maxY": 436.86002
     },
     "full_source_bounds": {
       "minX": -475.27002,
@@ -118,23 +132,29 @@
       "maxY": 436.86002
     },
     "core_source_bounds": {
-      "minX": -253.13145,
-      "maxX": 171.66219,
+      "minX": -475.27002,
+      "maxX": 355.72998,
       "minY": -136.95775,
       "maxY": 436.34811
     },
     "cluster": {
-      "retained": 2625,
+      "retained": 2627,
       "total": 2627,
-      "centerX": -5.48415,
-      "centerY": 138.71877,
-      "radiusX": 288.9375,
-      "radiusY": 598.07349
+      "centerX": -9.50151,
+      "centerY": 164.63808,
+      "radiusX": 458.74357,
+      "radiusY": 526.25128
     },
-    "scale": 0.36281,
-    "x_offset": 110.77885,
-    "y_offset": 166.31062,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 45,
+      "visible_height": 92,
+      "density_zoom": 1.6
+    },
+    "scale": 0.33887,
+    "x_offset": 101.8542,
+    "y_offset": 217.58929,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:45.387Z"
+  "exported_at": "2026-08-19T13:23:27.171Z"
 }

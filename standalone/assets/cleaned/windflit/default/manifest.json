@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "windflit",
   "character_name": "Windflit",
   "localized_name": "掠风",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/windflit/default",
-  "source_page": "https://prts.wiki/w/%E6%8E%A0%E9%A3%8E",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_433_windft/meta.json",
-    "model": "defaultskin/build/build_char_433_windft",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_433_windft/defaultskin/build/build_char_433_windft.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_433_windft/defaultskin/build/build_char_433_windft.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_433_windft/defaultskin/build/build_char_433_windft.png"
+    "assetId": "build_char_433_windft",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "掠风",
+    "appellation": "Windflit",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_433_windft.atlas",
+      ".png": "build_char_433_windft.png",
+      ".skel": "build_char_433_windft.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/windflit/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -183.00719,
+      "minX": -183.08101,
       "maxX": 177.9035,
       "minY": -110.11381,
-      "maxY": 392.90198
+      "maxY": 393.22354
+    },
+    "full_source_bounds": {
+      "minX": -183.08101,
+      "maxX": 177.9035,
+      "minY": -110.11381,
+      "maxY": 393.22354
+    },
+    "core_source_bounds": {
+      "minX": -183.08101,
+      "maxX": 177.9035,
+      "minY": -110.11381,
+      "maxY": 393.22354
+    },
+    "cluster": {
+      "retained": 2006,
+      "total": 2006,
+      "centerX": -2.7293,
+      "centerY": 198.80299,
+      "radiusX": 330.00743,
+      "radiusY": 669.98146
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 94,
+      "visible_height": 161,
+      "density_zoom": 1
     },
     "scale": 0.41,
-    "x_offset": 97.04626,
+    "x_offset": 97.06139,
     "y_offset": 170.85334,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:38.541Z"
+  "exported_at": "2026-08-19T13:24:28.716Z"
 }

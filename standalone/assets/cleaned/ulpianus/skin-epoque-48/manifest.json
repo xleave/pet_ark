@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "ulpianus",
@@ -12,15 +12,29 @@
   "skin_id": "epoque-48",
   "skin_name": "注目深渊",
   "source": "standalone/assets/source/ulpianus/skin-epoque-48",
-  "source_page": "https://prts.wiki/w/%E4%B9%8C%E5%B0%94%E6%AF%94%E5%AE%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4145_ulpia/meta.json",
-    "model": "char_4145_ulpia_epoque_48/build/build_char_4145_ulpia_epoque_48",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4145_ulpia/char_4145_ulpia_epoque_48/build/build_char_4145_ulpia_epoque_48.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4145_ulpia/char_4145_ulpia_epoque_48/build/build_char_4145_ulpia_epoque_48.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4145_ulpia/char_4145_ulpia_epoque_48/build/build_char_4145_ulpia_epoque_48.png"
+    "assetId": "build_char_4145_ulpia_epoque#48",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "乌尔比安",
+    "appellation": "Ulpianus",
+    "skinGroupId": "2025#epoque#10",
+    "skinGroupName": "时代/XLVII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4145_ulpia_epoque#48.atlas",
+      ".png": "build_char_4145_ulpia_epoque#48.png",
+      ".skel": "build_char_4145_ulpia_epoque#48.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/ulpianus/skin-epoque-48/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -119,29 +133,29 @@
     "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -711.21002,
-      "maxX": 1151.29175,
+      "maxX": 1146.75391,
       "minY": -410.59131,
-      "maxY": 584.97845
+      "maxY": 463.77493
     },
     "full_source_bounds": {
       "minX": -711.21002,
-      "maxX": 1151.29175,
+      "maxX": 1146.75391,
       "minY": -410.59131,
-      "maxY": 584.97845
+      "maxY": 463.77493
     },
     "core_source_bounds": {
       "minX": -711.21002,
-      "maxX": 1042.39221,
+      "maxX": 954.7522,
       "minY": -410.59131,
-      "maxY": 584.97516
+      "maxY": 443.32187
     },
     "cluster": {
-      "retained": 3366,
+      "retained": 3367,
       "total": 3400,
       "centerX": 41.62965,
       "centerY": 203.59259,
       "radiusX": 867.51884,
-      "radiusY": 762.82734
+      "radiusY": 760.08743
     },
     "pixel_probe": {
       "animation": "Relax",
@@ -149,10 +163,10 @@
       "visible_height": 37,
       "density_zoom": 3.78378
     },
-    "scale": 0.35755,
-    "x_offset": 110.0261,
-    "y_offset": 216.75878,
+    "scale": 0.35843,
+    "x_offset": 110.64718,
+    "y_offset": 220.18401,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:55.463Z"
+  "exported_at": "2026-08-19T13:24:16.919Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "jackie",
   "character_name": "Jackie",
   "localized_name": "杰克",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/jackie/default",
-  "source_page": "https://prts.wiki/w/%E6%9D%B0%E5%85%8B",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/meta.json",
-    "model": "defaultskin/build/build_char_347_jaksel",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/defaultskin/build/build_char_347_jaksel.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/defaultskin/build/build_char_347_jaksel.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/defaultskin/build/build_char_347_jaksel.png"
+    "assetId": "build_char_347_jaksel",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "杰克",
+    "appellation": "Jackie",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_347_jaksel.atlas",
+      ".png": "build_char_347_jaksel.png",
+      ".skel": "build_char_347_jaksel.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/jackie/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -234.90015,
       "maxX": 156.85905,
       "minY": -110.25344,
       "maxY": 496.90561
     },
+    "full_source_bounds": {
+      "minX": -234.90015,
+      "maxX": 156.85905,
+      "minY": -110.25344,
+      "maxY": 496.90561
+    },
+    "core_source_bounds": {
+      "minX": -234.90015,
+      "maxX": 156.85905,
+      "minY": -110.25344,
+      "maxY": 381.95142
+    },
+    "cluster": {
+      "retained": 2062,
+      "total": 2062,
+      "centerX": -7.40741,
+      "centerY": 207.35793,
+      "radiusX": 320,
+      "radiusY": 580.00099
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 66,
+      "visible_height": 132,
+      "density_zoom": 1.09091
+    },
     "scale": 0.34258,
     "x_offset": 109.36762,
     "y_offset": 178.22948,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:31:26.919Z"
+  "exported_at": "2026-08-19T13:22:37.478Z"
 }

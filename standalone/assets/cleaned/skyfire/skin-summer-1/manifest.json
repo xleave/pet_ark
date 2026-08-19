@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "skyfire",
   "character_name": "Skyfire",
   "localized_name": "天火",
@@ -9,15 +12,29 @@
   "skin_id": "summer-1",
   "skin_name": "温差 RT.RX01",
   "source": "standalone/assets/source/skyfire/skin-summer-1",
-  "source_page": "https://prts.wiki/w/%E5%A4%A9%E7%81%AB",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/meta.json",
-    "model": "char_166_skfire_summer_1/build/build_char_166_skfire_summer_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/char_166_skfire_summer_1/build/build_char_166_skfire_summer_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/char_166_skfire_summer_1/build/build_char_166_skfire_summer_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/char_166_skfire_summer_1/build/build_char_166_skfire_summer_1.png"
+    "assetId": "build_char_166_skfire_summer#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "天火",
+    "appellation": "Skyfire",
+    "skinGroupId": "2019#summer",
+    "skinGroupName": "珊瑚海岸/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_166_skfire_summer#1.atlas",
+      ".png": "build_char_166_skfire_summer#1.png",
+      ".skel": "build_char_166_skfire_summer#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/skyfire/skin-summer-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -210.84924,
       "maxX": 276.93628,
-      "minY": -113.82845,
-      "maxY": 404.08408
+      "minY": -110.9611,
+      "maxY": 403.37854
+    },
+    "full_source_bounds": {
+      "minX": -210.84924,
+      "maxX": 276.93628,
+      "minY": -110.9611,
+      "maxY": 403.37854
+    },
+    "core_source_bounds": {
+      "minX": -210.84924,
+      "maxX": 276.93628,
+      "minY": -110.9611,
+      "maxY": 395.65234
+    },
+    "cluster": {
+      "retained": 1217,
+      "total": 1217,
+      "centerX": -0.46485,
+      "centerY": 173.68102,
+      "radiusX": 320,
+      "radiusY": 524.99174
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 67,
+      "visible_height": 143,
+      "density_zoom": 1.07463
     },
     "scale": 0.36081,
     "x_offset": 84.07743,
-    "y_offset": 174.92906,
+    "y_offset": 175.96365,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:31.640Z"
+  "exported_at": "2026-08-19T13:23:58.581Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "lava-the-purgatory",
   "character_name": "Lava the Purgatory",
   "localized_name": "炎狱炎熔",
@@ -9,15 +12,30 @@
   "skin_id": "whirlwind-9",
   "skin_name": "镇邪焱",
   "source": "standalone/assets/source/lava-the-purgatory/skin-whirlwind-9",
-  "source_page": "https://prts.wiki/w/%E7%82%8E%E7%8B%B1%E7%82%8E%E7%86%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1011_lava2/meta.json",
-    "model": "char_1011_lava2_whirlwind_9/build/build_char_1011_lava2_whirlwind_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1011_lava2/char_1011_lava2_whirlwind_9/build/build_char_1011_lava2_whirlwind_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1011_lava2/char_1011_lava2_whirlwind_9/build/build_char_1011_lava2_whirlwind_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1011_lava2/char_1011_lava2_whirlwind_9/build/build_char_1011_lava2_whirlwind_9.png"
+    "assetId": "build_char_1011_lava2_whirlwind#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "炎狱炎熔",
+    "appellation": "Lava the Purgatory",
+    "skinGroupId": "2025#whirlwind#2",
+    "skinGroupName": "0011/飙系列/IX",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1011_lava2_whirlwind#9.atlas",
+      ".png": "build_char_1011_lava2_whirlwind#9.png",
+      ".skel": "build_char_1011_lava2_whirlwind#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -106,7 +124,7 @@
       ]
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -119,16 +137,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -301.9296,
       "maxX": 269.21893,
       "minY": -140.38417,
       "maxY": 531.72296
     },
+    "full_source_bounds": {
+      "minX": -301.9296,
+      "maxX": 269.21893,
+      "minY": -140.38417,
+      "maxY": 531.72296
+    },
+    "core_source_bounds": {
+      "minX": -231.38379,
+      "maxX": 265.89502,
+      "minY": -140.38417,
+      "maxY": 531.72296
+    },
+    "cluster": {
+      "retained": 2605,
+      "total": 2605,
+      "centerX": -8.72601,
+      "centerY": 233.25864,
+      "radiusX": 506.47548,
+      "radiusY": 668.63922
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 90,
+      "visible_height": 123,
+      "density_zoom": 1.13821
+    },
     "scale": 0.30815,
     "x_offset": 101.03991,
     "y_offset": 172.74048,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:31:26.982Z"
+  "exported_at": "2026-08-19T13:22:48.805Z"
 }

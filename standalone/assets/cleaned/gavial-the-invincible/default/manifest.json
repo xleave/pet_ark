@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "gavial-the-invincible",
   "character_name": "Gavial the Invincible",
   "localized_name": "百炼嘉维尔",
@@ -9,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/gavial-the-invincible/default",
-  "source_page": "https://prts.wiki/w/%E7%99%BE%E7%82%BC%E5%98%89%E7%BB%B4%E5%B0%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1026_gvial2/meta.json",
-    "model": "defaultskin/build/char_1026_gvial2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1026_gvial2/defaultskin/build/char_1026_gvial2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1026_gvial2/defaultskin/build/char_1026_gvial2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1026_gvial2/defaultskin/build/char_1026_gvial2.png"
+    "assetId": "build_char_1026_gvial2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "百炼嘉维尔",
+    "appellation": "Gavial the Invincible",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "char_1026_gvial2.atlas",
+      ".png": "char_1026_gvial2.png",
+      ".skel": "char_1026_gvial2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/gavial-the-invincible/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -242.25302,
       "maxX": 325.03699,
       "minY": -112.3018,
       "maxY": 639.50195
     },
-    "scale": 0.27667,
-    "x_offset": 84.54817,
-    "y_offset": 184.92969,
+    "full_source_bounds": {
+      "minX": -242.25302,
+      "maxX": 325.03699,
+      "minY": -112.3018,
+      "maxY": 639.50195
+    },
+    "core_source_bounds": {
+      "minX": -242.25302,
+      "maxX": 325.03699,
+      "minY": -112.3018,
+      "maxY": 444.0719
+    },
+    "cluster": {
+      "retained": 2743,
+      "total": 2743,
+      "centerX": 1.74991,
+      "centerY": 146.60259,
+      "radiusX": 434.97645,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 87,
+      "visible_height": 112,
+      "density_zoom": 1.25
+    },
+    "scale": 0.34583,
+    "x_offset": 106.68521,
+    "y_offset": 217.16211,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:31:26.857Z"
+  "exported_at": "2026-08-19T13:22:17.660Z"
 }

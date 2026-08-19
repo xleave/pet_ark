@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "surfer",
   "character_name": "Surfer",
   "localized_name": "寻澜",
@@ -11,15 +12,29 @@
   "skin_id": "nian-12",
   "skin_name": "共凭栏",
   "source": "standalone/assets/source/surfer/skin-nian-12",
-  "source_page": "https://prts.wiki/w/%E5%AF%BB%E6%BE%9C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/meta.json",
-    "model": "char_4052_surfer_nian_12/build/build_char_4052_surfer_nian_12",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/char_4052_surfer_nian_12/build/build_char_4052_surfer_nian_12.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/char_4052_surfer_nian_12/build/build_char_4052_surfer_nian_12.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/char_4052_surfer_nian_12/build/build_char_4052_surfer_nian_12.png"
+    "assetId": "build_char_4052_surfer_nian#12",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "寻澜",
+    "appellation": "Surfer",
+    "skinGroupId": "2026#nian",
+    "skinGroupName": "0011制造/XII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4052_surfer_nian#12.atlas",
+      ".png": "build_char_4052_surfer_nian#12.png",
+      ".skel": "build_char_4052_surfer_nian#12.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/surfer/skin-nian-12/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,9 +130,9 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -308.14441,
+      "minX": -872.25873,
       "maxX": 256.07806,
       "minY": -107.51234,
       "maxY": 479.26172
@@ -129,23 +144,29 @@
       "maxY": 485.03885
     },
     "core_source_bounds": {
-      "minX": -308.14441,
+      "minX": -872.25873,
       "maxX": 256.07806,
       "minY": -107.51234,
       "maxY": 479.26172
     },
     "cluster": {
-      "retained": 3013,
+      "retained": 3071,
       "total": 3074,
-      "centerX": -2.11942,
-      "centerY": 137.5883,
-      "radiusX": 256,
-      "radiusY": 654.91541
+      "centerX": -45.70027,
+      "centerY": 156.1249,
+      "radiusX": 1057.44181,
+      "radiusY": 601.17599
     },
-    "scale": 0.31193,
-    "x_offset": 104.12062,
-    "y_offset": 182.46328,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 36,
+      "visible_height": 74,
+      "density_zoom": 2
+    },
+    "scale": 0.31196,
+    "x_offset": 103.11297,
+    "y_offset": 216.46007,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:02.637Z"
+  "exported_at": "2026-08-19T13:24:02.736Z"
 }

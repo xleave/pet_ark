@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "lin",
@@ -12,15 +12,29 @@
   "skin_id": "nian-10",
   "skin_name": "列瑶台",
   "source": "standalone/assets/source/lin/skin-nian-10",
-  "source_page": "https://prts.wiki/w/%E6%9E%97",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/meta.json",
-    "model": "char_4080_lin_nian_10/build/build_char_4080_lin_nian_10",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/char_4080_lin_nian_10/build/build_char_4080_lin_nian_10.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/char_4080_lin_nian_10/build/build_char_4080_lin_nian_10.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/char_4080_lin_nian_10/build/build_char_4080_lin_nian_10.png"
+    "assetId": "build_char_4080_lin_nian#10",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "林",
+    "appellation": "Lin",
+    "skinGroupId": "2024#nian",
+    "skinGroupName": "0011制造/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4080_lin_nian#10.atlas",
+      ".png": "build_char_4080_lin_nian#10.png",
+      ".skel": "build_char_4080_lin_nian#10.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/lin/skin-nian-10/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -136,23 +150,23 @@
       "maxY": 482.22
     },
     "cluster": {
-      "retained": 2555,
-      "total": 2558,
+      "retained": 2536,
+      "total": 2539,
       "centerX": -278.01754,
       "centerY": 181.69963,
       "radiusX": 555.05024,
-      "radiusY": 789.96006
+      "radiusY": 787.61005
     },
     "pixel_probe": {
       "animation": "Relax",
       "visible_width": 55,
-      "visible_height": 86,
-      "density_zoom": 1.62791
+      "visible_height": 84,
+      "density_zoom": 1.66667
     },
-    "scale": 0.3534,
-    "x_offset": 108.16769,
-    "y_offset": 216.07094,
+    "scale": 0.36181,
+    "x_offset": 108.4574,
+    "y_offset": 217.7393,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:58.162Z"
+  "exported_at": "2026-08-19T13:22:53.039Z"
 }

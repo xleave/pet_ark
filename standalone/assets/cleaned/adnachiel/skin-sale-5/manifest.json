@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "adnachiel",
   "character_name": "Adnachiel",
   "localized_name": "安德切尔",
@@ -9,15 +12,29 @@
   "skin_id": "sale-5",
   "skin_name": "无痕行者",
   "source": "standalone/assets/source/adnachiel/skin-sale-5",
-  "source_page": "https://prts.wiki/w/%E5%AE%89%E5%BE%B7%E5%88%87%E5%B0%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_211_adnach/meta.json",
-    "model": "char_211_adnach_sale_5/build/build_char_211_adnach_sale_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_211_adnach/char_211_adnach_sale_5/build/build_char_211_adnach_sale_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_211_adnach/char_211_adnach_sale_5/build/build_char_211_adnach_sale_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_211_adnach/char_211_adnach_sale_5/build/build_char_211_adnach_sale_5.png"
+    "assetId": "build_char_211_adnach_sale#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "安德切尔",
+    "appellation": "Adnachiel",
+    "skinGroupId": "2022#sale#2",
+    "skinGroupName": "忒斯特收藏/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_211_adnach_sale#5.atlas",
+      ".png": "build_char_211_adnach_sale#5.png",
+      ".skel": "build_char_211_adnach_sale#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/adnachiel/skin-sale-5/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -271.78107,
+      "minX": -221.20992,
       "maxX": 310.31293,
-      "minY": -127.49465,
-      "maxY": 522.60419
+      "minY": -128.55144,
+      "maxY": 407.67914
     },
-    "scale": 0.30236,
-    "x_offset": 90.17482,
-    "y_offset": 177.45114,
+    "full_source_bounds": {
+      "minX": -454.41449,
+      "maxX": 310.31293,
+      "minY": -128.55144,
+      "maxY": 609.86621
+    },
+    "core_source_bounds": {
+      "minX": -221.20992,
+      "maxX": 310.31293,
+      "minY": -128.55144,
+      "maxY": 407.67914
+    },
+    "cluster": {
+      "retained": 2085,
+      "total": 2085,
+      "centerX": 6.25677,
+      "centerY": 175.06267,
+      "radiusX": 387.46507,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 83,
+      "visible_height": 135,
+      "density_zoom": 1.03704
+    },
+    "scale": 0.33112,
+    "x_offset": 81.24792,
+    "y_offset": 173.43353,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:54.970Z"
+  "exported_at": "2026-08-19T13:21:21.038Z"
 }

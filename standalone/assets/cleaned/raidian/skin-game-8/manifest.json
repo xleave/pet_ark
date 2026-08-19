@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "raidian",
   "character_name": "Raidian",
   "localized_name": "电弧",
@@ -11,15 +12,29 @@
   "skin_id": "game-8",
   "skin_name": "乱数法则",
   "source": "standalone/assets/source/raidian/skin-game-8",
-  "source_page": "https://prts.wiki/w/%E7%94%B5%E5%BC%A7",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4195_radian/meta.json",
-    "model": "char_4195_radian_game_8/build/build_char_4195_radian_game_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4195_radian/char_4195_radian_game_8/build/build_char_4195_radian_game_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4195_radian/char_4195_radian_game_8/build/build_char_4195_radian_game_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4195_radian/char_4195_radian_game_8/build/build_char_4195_radian_game_8.png"
+    "assetId": "build_char_4195_radian_game#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "电弧",
+    "appellation": "Raidian",
+    "skinGroupId": "2026#game",
+    "skinGroupName": "成就之星/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4195_radian_game#8.atlas",
+      ".png": "build_char_4195_radian_game#8.png",
+      ".skel": "build_char_4195_radian_game#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/raidian/skin-game-8/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,10 +130,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -272.20999,
-      "maxX": 393.86429,
+      "minX": -463.30002,
+      "maxX": 849.28003,
       "minY": -128.06329,
       "maxY": 547.43518
     },
@@ -129,23 +144,29 @@
       "maxY": 547.43518
     },
     "core_source_bounds": {
-      "minX": -272.20999,
-      "maxX": 393.86429,
+      "minX": -463.30002,
+      "maxX": 810.38,
       "minY": -128.06329,
       "maxY": 547.43518
     },
     "cluster": {
-      "retained": 3133,
-      "total": 3151,
-      "centerX": 4.84284,
-      "centerY": 137.33663,
-      "radiusX": 295.6355,
-      "radiusY": 558.29053
+      "retained": 3147,
+      "total": 3150,
+      "centerX": 12.71559,
+      "centerY": 168.57399,
+      "radiusX": 624.98555,
+      "radiusY": 536.89926
     },
-    "scale": 0.26423,
-    "x_offset": 79.92735,
-    "y_offset": 182.16122,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 55,
+      "visible_height": 55,
+      "density_zoom": 2.54545
+    },
+    "scale": 0.34131,
+    "x_offset": 91.221,
+    "y_offset": 218.10858,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:24.095Z"
+  "exported_at": "2026-08-19T13:23:38.612Z"
 }

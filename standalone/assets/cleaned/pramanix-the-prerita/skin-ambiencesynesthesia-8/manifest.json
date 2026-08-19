@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
-  "placement_revision": 2,
+  "placement_revision": 3,
   "character": "pramanix-the-prerita",
   "character_name": "Pramanix the Prerita",
   "localized_name": "圣聆初雪",
@@ -12,15 +12,30 @@
   "skin_id": "ambiencesynesthesia-8",
   "skin_name": "曙光祝颂",
   "source": "standalone/assets/source/pramanix-the-prerita/skin-ambiencesynesthesia-8",
-  "source_page": "https://prts.wiki/w/%E5%9C%A3%E8%81%86%E5%88%9D%E9%9B%AA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1046_sbell2/meta.json",
-    "model": "char_1046_sbell2_ambiencesynesthesia_8/build/build_char_1046_sbell2_ambienceSynesthesia_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1046_sbell2/char_1046_sbell2_ambiencesynesthesia_8/build/build_char_1046_sbell2_ambienceSynesthesia_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1046_sbell2/char_1046_sbell2_ambiencesynesthesia_8/build/build_char_1046_sbell2_ambienceSynesthesia_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1046_sbell2/char_1046_sbell2_ambiencesynesthesia_8/build/build_char_1046_sbell2_ambienceSynesthesia_8.png"
+    "assetId": "build_char_1046_sbell2_ambiencesynesthesia#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "圣聆初雪",
+    "appellation": "Pramanix the Prerita",
+    "skinGroupId": "2026#ambienceSynesthesia#3",
+    "skinGroupName": "音律联觉/IX",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1046_sbell2_ambienceSynesthesia#8.atlas",
+      ".png": "build_char_1046_sbell2_ambienceSynesthesia#8.png",
+      ".skel": "build_char_1046_sbell2_ambienceSynesthesia#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +118,7 @@
       "path": "standalone/assets/cleaned/pramanix-the-prerita/skin-ambiencesynesthesia-8/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -143,10 +158,16 @@
       "radiusX": 655.02185,
       "radiusY": 486.07811
     },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 103,
+      "visible_height": 120,
+      "density_zoom": 1.16667
+    },
     "scale": 0.26097,
     "x_offset": 78.12522,
     "y_offset": 171.07935,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:07:50.862Z"
+  "exported_at": "2026-08-19T13:23:31.821Z"
 }

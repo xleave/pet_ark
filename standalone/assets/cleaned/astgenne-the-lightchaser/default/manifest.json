@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "astgenne-the-lightchaser",
   "character_name": "Astgenne the Lightchaser",
   "localized_name": "溯光星源",
@@ -9,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/astgenne-the-lightchaser/default",
-  "source_page": "https://prts.wiki/w/%E6%BA%AF%E5%85%89%E6%98%9F%E6%BA%90",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1047_halo2/meta.json",
-    "model": "defaultskin/build/build_char_1047_halo2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1047_halo2/defaultskin/build/build_char_1047_halo2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1047_halo2/defaultskin/build/build_char_1047_halo2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1047_halo2/defaultskin/build/build_char_1047_halo2.png"
+    "assetId": "build_char_1047_halo2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "溯光星源",
+    "appellation": "Astgenne the Lightchaser",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1047_halo2.atlas",
+      ".png": "build_char_1047_halo2.png",
+      ".skel": "build_char_1047_halo2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/astgenne-the-lightchaser/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -295.37747,
       "maxX": 337.05539,
       "minY": -131.40125,
-      "maxY": 421.03522
+      "maxY": 421.67465
+    },
+    "full_source_bounds": {
+      "minX": -295.37747,
+      "maxX": 337.05539,
+      "minY": -131.40125,
+      "maxY": 421.67465
+    },
+    "core_source_bounds": {
+      "minX": -295.37747,
+      "maxX": 337.05539,
+      "minY": -131.40125,
+      "maxY": 421.43262
+    },
+    "cluster": {
+      "retained": 2708,
+      "total": 2708,
+      "centerX": -3.089,
+      "centerY": 176.63103,
+      "radiusX": 490.86755,
+      "radiusY": 527.52916
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 140,
+      "visible_height": 117,
+      "density_zoom": 1.19658
     },
     "scale": 0.27829,
     "x_offset": 90.20072,
     "y_offset": 179.43229,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:57.269Z"
+  "exported_at": "2026-08-19T13:21:31.866Z"
 }

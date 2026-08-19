@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "scene",
   "character_name": "Scene",
   "localized_name": "稀音",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-22",
   "skin_name": "别枝",
   "source": "standalone/assets/source/scene/skin-epoque-22",
-  "source_page": "https://prts.wiki/w/%E7%A8%80%E9%9F%B3",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/meta.json",
-    "model": "char_336_folivo_epoque_22/build/build_char_336_folivo_epoque_22",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/char_336_folivo_epoque_22/build/build_char_336_folivo_epoque_22.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/char_336_folivo_epoque_22/build/build_char_336_folivo_epoque_22.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/char_336_folivo_epoque_22/build/build_char_336_folivo_epoque_22.png"
+    "assetId": "build_char_336_folivo_epoque#22",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "稀音",
+    "appellation": "Scene",
+    "skinGroupId": "2023#epoque#4",
+    "skinGroupName": "时代/XXII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_336_folivo_epoque#22.atlas",
+      ".png": "build_char_336_folivo_epoque#22.png",
+      ".skel": "build_char_336_folivo_epoque#22.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/scene/skin-epoque-22/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,10 +130,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -366.05145,
-      "maxX": 160.15242,
+      "minX": -385.83359,
+      "maxX": 555.34589,
       "minY": -111.11781,
       "maxY": 542.99402
     },
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -366.05145,
-      "maxX": 160.15242,
+      "maxX": 437.73196,
       "minY": -111.11781,
       "maxY": 542.99402
     },
     "cluster": {
-      "retained": 1852,
+      "retained": 1853,
       "total": 1860,
-      "centerX": -11.01038,
-      "centerY": 151.77701,
-      "radiusX": 256,
-      "radiusY": 862.5045
+      "centerX": -6.30239,
+      "centerY": 210.99026,
+      "radiusX": 439.68359,
+      "radiusY": 742.78231
     },
-    "scale": 0.31799,
-    "x_offset": 128.73676,
-    "y_offset": 180.66582,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 57,
+      "visible_height": 88,
+      "density_zoom": 1.59091
+    },
+    "scale": 0.2975,
+    "x_offset": 118.5124,
+    "y_offset": 216.35165,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:05:04.028Z"
+  "exported_at": "2026-08-19T13:23:49.422Z"
 }

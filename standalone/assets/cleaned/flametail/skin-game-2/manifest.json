@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "flametail",
   "character_name": "Flametail",
   "localized_name": "焰尾",
@@ -11,15 +12,29 @@
   "skin_id": "game-2",
   "skin_name": "小健将",
   "source": "standalone/assets/source/flametail/skin-game-2",
-  "source_page": "https://prts.wiki/w/%E7%84%B0%E5%B0%BE",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_420_flamtl/meta.json",
-    "model": "char_420_flamtl_game_2/build/build_char_420_flamtl_game_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_420_flamtl/char_420_flamtl_game_2/build/build_char_420_flamtl_game_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_420_flamtl/char_420_flamtl_game_2/build/build_char_420_flamtl_game_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_420_flamtl/char_420_flamtl_game_2/build/build_char_420_flamtl_game_2.png"
+    "assetId": "build_char_420_flamtl_game#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "焰尾",
+    "appellation": "Flametail",
+    "skinGroupId": "2022#game#2",
+    "skinGroupName": "成就之星/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_420_flamtl_game#2.atlas",
+      ".png": "build_char_420_flamtl_game#2.png",
+      ".skel": "build_char_420_flamtl_game#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/flametail/skin-game-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -301.44412,
-      "maxX": 332.31216,
+      "maxX": 569.25427,
       "minY": -101.37225,
-      "maxY": 500.15387
+      "maxY": 812.14716
     },
     "full_source_bounds": {
       "minX": -700.78625,
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -301.44412,
-      "maxX": 332.31216,
+      "maxX": 569.25427,
       "minY": -101.37225,
-      "maxY": 500.15387
+      "maxY": 812.14716
     },
     "cluster": {
-      "retained": 2372,
+      "retained": 2374,
       "total": 2401,
-      "centerX": 1.22913,
-      "centerY": 147.62312,
-      "radiusX": 256,
-      "radiusY": 690.30653
+      "centerX": 14.69853,
+      "centerY": 195.83082,
+      "radiusX": 557.49534,
+      "radiusY": 659.99969
     },
-    "scale": 0.27771,
-    "x_offset": 91.71383,
-    "y_offset": 187.84798,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 54,
+      "visible_height": 92,
+      "density_zoom": 1.52174
+    },
+    "scale": 0.3076,
+    "x_offset": 107.31091,
+    "y_offset": 216.7745,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:26.663Z"
+  "exported_at": "2026-08-19T13:22:14.768Z"
 }

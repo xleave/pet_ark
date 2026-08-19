@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "texas-the-omertosa",
   "character_name": "Texas the Omertosa",
   "localized_name": "缄默德克萨斯",
@@ -9,15 +12,30 @@
   "skin_id": "epoque-36",
   "skin_name": "幽兰秘辛",
   "source": "standalone/assets/source/texas-the-omertosa/skin-epoque-36",
-  "source_page": "https://prts.wiki/w/%E7%BC%84%E9%BB%98%E5%BE%B7%E5%85%8B%E8%90%A8%E6%96%AF",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/meta.json",
-    "model": "char_1028_texas2_epoque_36/build/build_char_1028_texas2_epoque_36",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/char_1028_texas2_epoque_36/build/build_char_1028_texas2_epoque_36.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/char_1028_texas2_epoque_36/build/build_char_1028_texas2_epoque_36.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/char_1028_texas2_epoque_36/build/build_char_1028_texas2_epoque_36.png"
+    "assetId": "build_char_1028_texas2_epoque#36",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "缄默德克萨斯",
+    "appellation": "Texas the Omertosa",
+    "skinGroupId": "2024#epoque#7",
+    "skinGroupName": "时代/XXXVI",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1028_texas2_epoque#36.atlas",
+      ".png": "build_char_1028_texas2_epoque#36.png",
+      ".skel": "build_char_1028_texas2_epoque#36"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +118,7 @@
       "path": "standalone/assets/cleaned/texas-the-omertosa/skin-epoque-36/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +131,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -266.71625,
-      "maxX": 259.612,
+      "maxX": 235.21146,
       "minY": -94.62879,
       "maxY": 475.48001
     },
-    "scale": 0.33439,
-    "x_offset": 97.1878,
-    "y_offset": 184.35688,
+    "full_source_bounds": {
+      "minX": -266.71625,
+      "maxX": 235.21146,
+      "minY": -94.62879,
+      "maxY": 475.48001
+    },
+    "core_source_bounds": {
+      "minX": -262.70001,
+      "maxX": 235.21146,
+      "minY": -94.62879,
+      "maxY": 475.48001
+    },
+    "cluster": {
+      "retained": 2816,
+      "total": 2816,
+      "centerX": 1.89191,
+      "centerY": 191.22584,
+      "radiusX": 422.49242,
+      "radiusY": 640.97126
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 96,
+      "visible_height": 143,
+      "density_zoom": 1
+    },
+    "scale": 0.35065,
+    "x_offset": 101.52355,
+    "y_offset": 182.81859,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:34.029Z"
+  "exported_at": "2026-08-19T13:24:09.369Z"
 }

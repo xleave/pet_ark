@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "gavial",
   "character_name": "Gavial",
   "localized_name": "嘉维尔",
@@ -9,15 +12,29 @@
   "skin_id": "epoque-2",
   "skin_name": "战医",
   "source": "standalone/assets/source/gavial/skin-epoque-2",
-  "source_page": "https://prts.wiki/w/%E5%98%89%E7%BB%B4%E5%B0%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_187_ccheal/meta.json",
-    "model": "char_187_ccheal_epoque_2/build/build_char_187_ccheal_epoque_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_187_ccheal/char_187_ccheal_epoque_2/build/build_char_187_ccheal_epoque_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_187_ccheal/char_187_ccheal_epoque_2/build/build_char_187_ccheal_epoque_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_187_ccheal/char_187_ccheal_epoque_2/build/build_char_187_ccheal_epoque_2.png"
+    "assetId": "build_char_187_ccheal_epoque#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "嘉维尔",
+    "appellation": "Gavial",
+    "skinGroupId": "2020#epoque",
+    "skinGroupName": "时代/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_187_ccheal_epoque#2.atlas",
+      ".png": "build_char_187_ccheal_epoque#2.png",
+      ".skel": "build_char_187_ccheal_epoque#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/gavial/skin-epoque-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -238.76353,
+      "minX": -238.78697,
       "maxX": 333.04794,
-      "minY": -109.51345,
-      "maxY": 441.86041
+      "minY": -111.51632,
+      "maxY": 435.66797
     },
-    "scale": 0.30779,
-    "x_offset": 81.48992,
-    "y_offset": 182.29244,
+    "full_source_bounds": {
+      "minX": -238.78697,
+      "maxX": 333.04794,
+      "minY": -111.51632,
+      "maxY": 435.66797
+    },
+    "core_source_bounds": {
+      "minX": -238.78697,
+      "maxX": 333.04794,
+      "minY": -111.51632,
+      "maxY": 432.4418
+    },
+    "cluster": {
+      "retained": 1481,
+      "total": 1481,
+      "centerX": -1.97911,
+      "centerY": 193.85307,
+      "radiusX": 336.89321,
+      "radiusY": 669.82834
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 77,
+      "visible_height": 133,
+      "density_zoom": 1.05263
+    },
+    "scale": 0.30778,
+    "x_offset": 81.49413,
+    "y_offset": 181.67738,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:07.913Z"
+  "exported_at": "2026-08-19T13:22:17.453Z"
 }

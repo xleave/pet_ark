@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
-  "placement_revision": 2,
+  "placement_revision": 3,
   "character": "vulcan",
   "character_name": "Vulcan",
   "localized_name": "火神",
@@ -12,15 +12,29 @@
   "skin_id": "boc-10",
   "skin_name": "火种",
   "source": "standalone/assets/source/vulcan/skin-boc-10",
-  "source_page": "https://prts.wiki/w/%E7%81%AB%E7%A5%9E",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_163_hpsts/meta.json",
-    "model": "char_163_hpsts_boc_10/build/build_char_163_hpsts_boc_10",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_163_hpsts/char_163_hpsts_boc_10/build/build_char_163_hpsts_boc_10.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_163_hpsts/char_163_hpsts_boc_10/build/build_char_163_hpsts_boc_10.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_163_hpsts/char_163_hpsts_boc_10/build/build_char_163_hpsts_boc_10.png"
+    "assetId": "build_char_163_hpsts_boc#10",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "火神",
+    "appellation": "Vulcan",
+    "skinGroupId": "2025#boc#2",
+    "skinGroupName": "斗争血脉/X",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_163_hpsts_boc#10.atlas",
+      ".png": "build_char_163_hpsts_boc#10.png",
+      ".skel": "build_char_163_hpsts_boc#10.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/vulcan/skin-boc-10/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -139,14 +153,20 @@
       "retained": 1772,
       "total": 1774,
       "centerX": -26.33326,
-      "centerY": 262.39533,
-      "radiusX": 520,
-      "radiusY": 1289.95338
+      "centerY": 261.89532,
+      "radiusX": 520.00004,
+      "radiusY": 1284.95331
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 83,
+      "visible_height": 119,
+      "density_zoom": 1.17647
     },
     "scale": 0.26749,
     "x_offset": 86.82159,
     "y_offset": 185.61196,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:07:52.892Z"
+  "exported_at": "2026-08-19T13:24:22.880Z"
 }

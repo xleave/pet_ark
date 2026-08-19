@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "sankta-miksaparato",
   "character_name": "Sankta Miksaparato",
   "localized_name": "信仰搅拌机",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/sankta-miksaparato/default",
-  "source_page": "https://prts.wiki/w/%E4%BF%A1%E4%BB%B0%E6%90%85%E6%8B%8C%E6%9C%BA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4194_rmixer/meta.json",
-    "model": "defaultskin/build/build_char_4194_rmixer",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4194_rmixer/defaultskin/build/build_char_4194_rmixer.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4194_rmixer/defaultskin/build/build_char_4194_rmixer.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4194_rmixer/defaultskin/build/build_char_4194_rmixer.png"
+    "assetId": "build_char_4194_rmixer",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "信仰搅拌机",
+    "appellation": "Sankta Miksaparato",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4194_rmixer.atlas",
+      ".png": "build_char_4194_rmixer.png",
+      ".skel": "build_char_4194_rmixer.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/sankta-miksaparato/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -251.12914,
+      "minX": -249.91608,
       "maxX": 377.246,
       "minY": -151.91499,
-      "maxY": 483.21222
+      "maxY": 484.75961
     },
-    "scale": 0.28009,
-    "x_offset": 78.33812,
-    "y_offset": 173.45051,
+    "full_source_bounds": {
+      "minX": -249.91608,
+      "maxX": 377.246,
+      "minY": -151.91499,
+      "maxY": 484.75961
+    },
+    "core_source_bounds": {
+      "minX": -249.91608,
+      "maxX": 377.246,
+      "minY": -151.91499,
+      "maxY": 484.75961
+    },
+    "cluster": {
+      "retained": 1757,
+      "total": 1757,
+      "centerX": 0.47149,
+      "centerY": 173.52164,
+      "radiusX": 591.8557,
+      "radiusY": 661.28445
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 111,
+      "visible_height": 134,
+      "density_zoom": 1.04478
+    },
+    "scale": 0.28063,
+    "x_offset": 78.13375,
+    "y_offset": 173.36822,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:28.811Z"
+  "exported_at": "2026-08-19T13:23:46.167Z"
 }

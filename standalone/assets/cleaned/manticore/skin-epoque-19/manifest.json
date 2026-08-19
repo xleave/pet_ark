@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "manticore",
   "character_name": "Manticore",
   "localized_name": "狮蝎",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-19",
   "skin_name": "面纱之下",
   "source": "standalone/assets/source/manticore/skin-epoque-19",
-  "source_page": "https://prts.wiki/w/%E7%8B%AE%E8%9D%8E",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_215_mantic/meta.json",
-    "model": "char_215_mantic_epoque_19/build/build_char_215_mantic_epoque_19",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_215_mantic/char_215_mantic_epoque_19/build/build_char_215_mantic_epoque_19.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_215_mantic/char_215_mantic_epoque_19/build/build_char_215_mantic_epoque_19.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_215_mantic/char_215_mantic_epoque_19/build/build_char_215_mantic_epoque_19.png"
+    "assetId": "build_char_215_mantic_epoque#19",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "狮蝎",
+    "appellation": "Manticore",
+    "skinGroupId": "2023#epoque#2",
+    "skinGroupName": "时代/XX",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_215_mantic_epoque#19.atlas",
+      ".png": "build_char_215_mantic_epoque#19.png",
+      ".skel": "build_char_215_mantic_epoque#19.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/manticore/skin-epoque-19/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,10 +130,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -310.31509,
-      "maxX": 232.31017,
+      "minX": -314.22342,
+      "maxX": 764.40039,
       "minY": -122.49143,
       "maxY": 453.88412
     },
@@ -129,23 +144,29 @@
       "maxY": 453.88412
     },
     "core_source_bounds": {
-      "minX": -310.31509,
-      "maxX": 232.31017,
+      "minX": -314.22342,
+      "maxX": 764.40039,
       "minY": -122.49143,
       "maxY": 453.88412
     },
     "cluster": {
-      "retained": 2748,
+      "retained": 2813,
       "total": 2813,
-      "centerX": -2.20993,
-      "centerY": 139.77515,
-      "radiusX": 296.36005,
-      "radiusY": 640.94953
+      "centerX": 46.53441,
+      "centerY": 166.09906,
+      "radiusX": 1539.65837,
+      "radiusY": 480
     },
-    "scale": 0.32435,
-    "x_offset": 108.65041,
-    "y_offset": 176.27002,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 64,
+      "visible_height": 73,
+      "density_zoom": 1.91781
+    },
+    "scale": 0.31293,
+    "x_offset": 91.72734,
+    "y_offset": 217.94267,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:05:01.214Z"
+  "exported_at": "2026-08-19T13:22:58.723Z"
 }

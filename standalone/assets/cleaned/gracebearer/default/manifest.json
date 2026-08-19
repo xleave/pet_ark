@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "gracebearer",
   "character_name": "Gracebearer",
   "localized_name": "聆音",
@@ -11,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/gracebearer/default",
-  "source_page": "https://prts.wiki/w/%E8%81%86%E9%9F%B3",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4187_graceb/meta.json",
-    "model": "defaultskin/build/build_char_4187_graceb",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4187_graceb/defaultskin/build/build_char_4187_graceb.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4187_graceb/defaultskin/build/build_char_4187_graceb.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4187_graceb/defaultskin/build/build_char_4187_graceb.png"
+    "assetId": "build_char_4187_graceb",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "聆音",
+    "appellation": "Gracebearer",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4187_graceb.atlas",
+      ".png": "build_char_4187_graceb.png",
+      ".skel": "build_char_4187_graceb.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +105,7 @@
       "path": "standalone/assets/cleaned/gracebearer/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,12 +118,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -246.7738,
-      "maxX": 190.04407,
+      "minX": -510.97165,
+      "maxX": 542.34009,
       "minY": -114.42525,
-      "maxY": 411.2637
+      "maxY": 542.14368
     },
     "full_source_bounds": {
       "minX": -510.97165,
@@ -118,23 +132,29 @@
       "maxY": 542.14368
     },
     "core_source_bounds": {
-      "minX": -246.7738,
-      "maxX": 190.04407,
+      "minX": -403.26819,
+      "maxX": 542.34009,
       "minY": -114.42525,
-      "maxY": 411.2637
+      "maxY": 542.14368
     },
     "cluster": {
-      "retained": 2706,
+      "retained": 2709,
       "total": 2710,
-      "centerX": -9.02744,
-      "centerY": 152.16936,
-      "radiusX": 256,
-      "radiusY": 678.45343
+      "centerX": 1.85904,
+      "centerY": 186.18118,
+      "radiusX": 409.78899,
+      "radiusY": 610.30827
     },
-    "scale": 0.39567,
-    "x_offset": 107.22316,
-    "y_offset": 170.72522,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 48,
+      "visible_height": 68,
+      "density_zoom": 2.05882
+    },
+    "scale": 0.34401,
+    "x_offset": 106.0456,
+    "y_offset": 217.81269,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:40.797Z"
+  "exported_at": "2026-08-19T13:22:20.886Z"
 }

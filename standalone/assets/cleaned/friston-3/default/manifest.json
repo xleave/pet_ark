@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "friston-3",
   "character_name": "Friston-3",
   "localized_name": "Friston-3",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/friston-3/default",
-  "source_page": "https://prts.wiki/w/Friston-3",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4093_frston/meta.json",
-    "model": "defaultskin/build/build_char_4093_frston",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4093_frston/defaultskin/build/build_char_4093_frston.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4093_frston/defaultskin/build/build_char_4093_frston.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4093_frston/defaultskin/build/build_char_4093_frston.png"
+    "assetId": "build_char_4093_frston",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "Friston-3",
+    "appellation": "Friston-3",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_1"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4093_frston.atlas",
+      ".png": "build_char_4093_frston.png",
+      ".skel": "build_char_4093_frston.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -67,7 +83,7 @@
       "path": "standalone/assets/cleaned/friston-3/default/relax"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -80,16 +96,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -192.87488,
-      "maxX": 177.59479,
+      "maxX": 195.90532,
       "minY": -2.57112,
-      "maxY": 281.40909
+      "maxY": 334.80545
+    },
+    "full_source_bounds": {
+      "minX": -192.87488,
+      "maxX": 195.90532,
+      "minY": -2.57112,
+      "maxY": 334.80545
+    },
+    "core_source_bounds": {
+      "minX": -192.87488,
+      "maxX": 177.59691,
+      "minY": -2.57112,
+      "maxY": 281.41547
+    },
+    "cluster": {
+      "retained": 449,
+      "total": 449,
+      "centerX": 43.63297,
+      "centerY": 130.92756,
+      "radiusX": 485.02916,
+      "radiusY": 639.9778
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 152,
+      "visible_height": 115,
+      "density_zoom": 1
     },
     "scale": 0.41,
-    "x_offset": 99.13242,
+    "x_offset": 95.37876,
     "y_offset": 214.94584,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:07.556Z"
+  "exported_at": "2026-08-19T13:22:15.987Z"
 }

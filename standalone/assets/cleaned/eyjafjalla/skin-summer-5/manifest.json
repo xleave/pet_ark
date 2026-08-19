@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "eyjafjalla",
   "character_name": "Eyjafjalla",
   "localized_name": "艾雅法拉",
@@ -11,15 +12,29 @@
   "skin_id": "summer-5",
   "skin_name": "夏卉 FA018",
   "source": "standalone/assets/source/eyjafjalla/skin-summer-5",
-  "source_page": "https://prts.wiki/w/%E8%89%BE%E9%9B%85%E6%B3%95%E6%8B%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_180_amgoat/meta.json",
-    "model": "char_180_amgoat_summer_5/build/build_char_180_amgoat_summer_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_180_amgoat/char_180_amgoat_summer_5/build/build_char_180_amgoat_summer_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_180_amgoat/char_180_amgoat_summer_5/build/build_char_180_amgoat_summer_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_180_amgoat/char_180_amgoat_summer_5/build/build_char_180_amgoat_summer_5.png"
+    "assetId": "build_char_180_amgoat_summer#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "艾雅法拉",
+    "appellation": "Eyjafjalla",
+    "skinGroupId": "2021#summer",
+    "skinGroupName": "珊瑚海岸/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_180_amgoat_summer#5.atlas",
+      ".png": "build_char_180_amgoat_summer#5.png",
+      ".skel": "build_char_180_amgoat_summer#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/eyjafjalla/skin-summer-5/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,10 +130,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -195.22295,
-      "maxX": 281.33862,
+      "minX": -609.86536,
+      "maxX": 312.58011,
       "minY": -204.57307,
       "maxY": 409.37628
     },
@@ -129,23 +144,29 @@
       "maxY": 409.37628
     },
     "core_source_bounds": {
-      "minX": -195.22295,
+      "minX": -572.96252,
       "maxX": 281.33862,
       "minY": -204.57307,
       "maxY": 409.37628
     },
     "cluster": {
-      "retained": 2676,
+      "retained": 2696,
       "total": 2697,
-      "centerX": -3.44001,
-      "centerY": 141.26472,
-      "radiusX": 281.00986,
-      "radiusY": 561.65369
+      "centerX": -9.31391,
+      "centerY": 160.92976,
+      "radiusX": 553.90129,
+      "radiusY": 958.00428
     },
-    "scale": 0.33879,
-    "x_offset": 81.41243,
-    "y_offset": 146.69266,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 62,
+      "visible_height": 77,
+      "density_zoom": 1.81818
+    },
+    "scale": 0.3469,
+    "x_offset": 99.3829,
+    "y_offset": 217.76006,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:58.174Z"
+  "exported_at": "2026-08-19T13:22:09.649Z"
 }

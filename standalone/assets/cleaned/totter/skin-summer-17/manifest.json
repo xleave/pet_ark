@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "totter",
@@ -12,15 +12,29 @@
   "skin_id": "summer-17",
   "skin_name": "灿阳朝露 SDm09",
   "source": "standalone/assets/source/totter/skin-summer-17",
-  "source_page": "https://prts.wiki/w/%E9%93%85%E8%B8%9D",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4062_totter/meta.json",
-    "model": "char_4062_totter_summer_17/build/build_char_4062_totter_summer_17",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4062_totter/char_4062_totter_summer_17/build/build_char_4062_totter_summer_17.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4062_totter/char_4062_totter_summer_17/build/build_char_4062_totter_summer_17.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4062_totter/char_4062_totter_summer_17/build/build_char_4062_totter_summer_17.png"
+    "assetId": "build_char_4062_totter_summer#17",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "铅踝",
+    "appellation": "Totter",
+    "skinGroupId": "2024#summer#2",
+    "skinGroupName": "珊瑚海岸/XVII",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4062_totter_summer#17.atlas",
+      ".png": "build_char_4062_totter_summer#17.png",
+      ".skel": "build_char_4062_totter_summer#17.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/totter/skin-summer-17/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -146,13 +160,13 @@
     "pixel_probe": {
       "animation": "Relax",
       "visible_width": 63,
-      "visible_height": 105,
-      "density_zoom": 1.33333
+      "visible_height": 104,
+      "density_zoom": 1.34615
     },
-    "scale": 0.37247,
-    "x_offset": 102.22422,
-    "y_offset": 215.62493,
+    "scale": 0.37605,
+    "x_offset": 102.28407,
+    "y_offset": 216.96748,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:16.815Z"
+  "exported_at": "2026-08-19T13:24:13.527Z"
 }

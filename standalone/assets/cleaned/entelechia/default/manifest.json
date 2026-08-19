@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "entelechia",
   "character_name": "Entelechia",
   "localized_name": "隐德来希",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/entelechia/default",
-  "source_page": "https://prts.wiki/w/%E9%9A%90%E5%BE%B7%E6%9D%A5%E5%B8%8C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4010_etlchi/meta.json",
-    "model": "defaultskin/build/build_char_4010_etlchi",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4010_etlchi/defaultskin/build/build_char_4010_etlchi.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4010_etlchi/defaultskin/build/build_char_4010_etlchi.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4010_etlchi/defaultskin/build/build_char_4010_etlchi.png"
+    "assetId": "build_char_4010_etlchi",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "隐德来希",
+    "appellation": "Entelechia",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4010_etlchi.atlas",
+      ".png": "build_char_4010_etlchi.png",
+      ".skel": "build_char_4010_etlchi.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/entelechia/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -339.03015,
       "maxX": 197.35818,
-      "minY": -114.80258,
+      "minY": -114.30028,
       "maxY": 473.14896
+    },
+    "full_source_bounds": {
+      "minX": -339.03015,
+      "maxX": 197.35818,
+      "minY": -114.30028,
+      "maxY": 473.14896
+    },
+    "core_source_bounds": {
+      "minX": -339.03015,
+      "maxX": 197.35818,
+      "minY": -114.30028,
+      "maxY": 473.14896
+    },
+    "cluster": {
+      "retained": 2429,
+      "total": 2429,
+      "centerX": -1.99704,
+      "centerY": 174.34611,
+      "radiusX": 569.67771,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 92,
+      "visible_height": 131,
+      "density_zoom": 1.0687
     },
     "scale": 0.32812,
     "x_offset": 119.24274,
-    "y_offset": 178.33092,
+    "y_offset": 178.49574,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:04.762Z"
+  "exported_at": "2026-08-19T13:22:04.467Z"
 }

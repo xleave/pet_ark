@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "honeyberry",
   "character_name": "Honeyberry",
   "localized_name": "蜜莓",
@@ -11,15 +12,29 @@
   "skin_id": "nian-10",
   "skin_name": "洇灵雨",
   "source": "standalone/assets/source/honeyberry/skin-nian-10",
-  "source_page": "https://prts.wiki/w/%E8%9C%9C%E8%8E%93",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_449_glider/meta.json",
-    "model": "char_449_glider_nian_10/build/build_char_449_glider_nian_10",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_449_glider/char_449_glider_nian_10/build/build_char_449_glider_nian_10.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_449_glider/char_449_glider_nian_10/build/build_char_449_glider_nian_10.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_449_glider/char_449_glider_nian_10/build/build_char_449_glider_nian_10.png"
+    "assetId": "build_char_449_glider_nian#10",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "蜜莓",
+    "appellation": "Honeyberry",
+    "skinGroupId": "2024#nian",
+    "skinGroupName": "0011制造/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_449_glider_nian#10.atlas",
+      ".png": "build_char_449_glider_nian#10.png",
+      ".skel": "build_char_449_glider_nian#10.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/honeyberry/skin-nian-10/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -137,15 +152,21 @@
     "cluster": {
       "retained": 3212,
       "total": 3212,
-      "centerX": -4.1525,
-      "centerY": 143.777,
-      "radiusX": 272.19576,
-      "radiusY": 796.80927
+      "centerX": -3.63907,
+      "centerY": 189.44722,
+      "radiusX": 366.90772,
+      "radiusY": 677.37164
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 121,
+      "visible_height": 168,
+      "density_zoom": 1
     },
     "scale": 0.37898,
     "x_offset": 115.58218,
     "y_offset": 176.58091,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:05:07.741Z"
+  "exported_at": "2026-08-19T13:22:30.903Z"
 }

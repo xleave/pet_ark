@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "passenger",
   "character_name": "Passenger",
   "localized_name": "异客",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-17",
   "skin_name": "今昔须臾之梦",
   "source": "standalone/assets/source/passenger/skin-epoque-17",
-  "source_page": "https://prts.wiki/w/%E5%BC%82%E5%AE%A2",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_472_pasngr/meta.json",
-    "model": "char_472_pasngr_epoque_17/build/build_char_472_pasngr_epoque_17",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_472_pasngr/char_472_pasngr_epoque_17/build/build_char_472_pasngr_epoque_17.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_472_pasngr/char_472_pasngr_epoque_17/build/build_char_472_pasngr_epoque_17.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_472_pasngr/char_472_pasngr_epoque_17/build/build_char_472_pasngr_epoque_17.png"
+    "assetId": "build_char_472_pasngr_epoque#17",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "异客",
+    "appellation": "Passenger",
+    "skinGroupId": "2022#epoque#4",
+    "skinGroupName": "时代/XVII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_472_pasngr_epoque#17.atlas",
+      ".png": "build_char_472_pasngr_epoque#17.png",
+      ".skel": "build_char_472_pasngr_epoque#17.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/passenger/skin-epoque-17/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,37 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -254.42192,
+      "minX": -948.30237,
       "maxX": 262.17029,
       "minY": -101.6814,
       "maxY": 467.35519
     },
     "full_source_bounds": {
       "minX": -1773.66052,
-      "maxX": 544.24359,
+      "maxX": 441.57428,
       "minY": -101.6814,
       "maxY": 911.43707
     },
     "core_source_bounds": {
-      "minX": -254.42192,
+      "minX": -948.30237,
       "maxX": 262.17029,
       "minY": -101.6814,
       "maxY": 467.35519
     },
     "cluster": {
-      "retained": 2272,
-      "total": 2355,
-      "centerX": 1.2283,
-      "centerY": 148.15377,
-      "radiusX": 308.54583,
-      "radiusY": 644.87029
+      "retained": 2290,
+      "total": 2309,
+      "centerX": -37.58905,
+      "centerY": 174.90223,
+      "radiusX": 837.1795,
+      "radiusY": 725.09746
     },
-    "scale": 0.34069,
-    "x_offset": 94.68009,
-    "y_offset": 181.35773,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 38,
+      "visible_height": 68,
+      "density_zoom": 2.05882
+    },
+    "scale": 0.29935,
+    "x_offset": 109.13741,
+    "y_offset": 216.4442,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:17.088Z"
+  "exported_at": "2026-08-19T13:23:24.766Z"
 }

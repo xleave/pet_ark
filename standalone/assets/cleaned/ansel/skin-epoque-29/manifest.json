@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "ansel",
@@ -12,15 +12,29 @@
   "skin_id": "epoque-29",
   "skin_name": "晚间咖啡店",
   "source": "standalone/assets/source/ansel/skin-epoque-29",
-  "source_page": "https://prts.wiki/w/%E5%AE%89%E8%B5%9B%E5%B0%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/meta.json",
-    "model": "char_212_ansel_epoque_29/build/build_char_212_ansel_epoque_29",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/char_212_ansel_epoque_29/build/build_char_212_ansel_epoque_29.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/char_212_ansel_epoque_29/build/build_char_212_ansel_epoque_29.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/char_212_ansel_epoque_29/build/build_char_212_ansel_epoque_29.png"
+    "assetId": "build_char_212_ansel_epoque#29",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "安赛尔",
+    "appellation": "Ansel",
+    "skinGroupId": "2023#epoque#11",
+    "skinGroupName": "时代/XXIX",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_212_ansel_epoque#29.atlas",
+      ".png": "build_char_212_ansel_epoque#29.png",
+      ".skel": "build_char_212_ansel_epoque#29.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/ansel/skin-epoque-29/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -154,5 +168,5 @@
     "y_offset": 215.81104,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:43.694Z"
+  "exported_at": "2026-08-19T13:21:25.188Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "penance",
   "character_name": "Penance",
   "localized_name": "斥罪",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/penance/default",
-  "source_page": "https://prts.wiki/w/%E6%96%A5%E7%BD%AA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4065_judge/meta.json",
-    "model": "defaultskin/build/build_char_4065_judge",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4065_judge/defaultskin/build/build_char_4065_judge.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4065_judge/defaultskin/build/build_char_4065_judge.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4065_judge/defaultskin/build/build_char_4065_judge.png"
+    "assetId": "build_char_4065_judge",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "斥罪",
+    "appellation": "Penance",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4065_judge.atlas",
+      ".png": "build_char_4065_judge.png",
+      ".skel": "build_char_4065_judge.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/penance/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -215.05023,
       "maxX": 209.42912,
-      "minY": -102.95822,
-      "maxY": 419.327
+      "minY": -102.98151,
+      "maxY": 419.05817
     },
-    "scale": 0.39825,
-    "x_offset": 97.1193,
-    "y_offset": 174.99691,
+    "full_source_bounds": {
+      "minX": -215.05023,
+      "maxX": 209.42912,
+      "minY": -102.98151,
+      "maxY": 419.05817
+    },
+    "core_source_bounds": {
+      "minX": -215.05023,
+      "maxX": 209.42912,
+      "minY": -102.98151,
+      "maxY": 419.05817
+    },
+    "cluster": {
+      "retained": 2000,
+      "total": 2000,
+      "centerX": -3.88395,
+      "centerY": 191.92105,
+      "radiusX": 449.29314,
+      "radiusY": 670.6155
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 86,
+      "visible_height": 166,
+      "density_zoom": 1
+    },
+    "scale": 0.39844,
+    "x_offset": 97.11983,
+    "y_offset": 174.96834,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:22.979Z"
+  "exported_at": "2026-08-19T13:23:24.842Z"
 }

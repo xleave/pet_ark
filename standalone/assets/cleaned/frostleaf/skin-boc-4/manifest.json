@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "frostleaf",
   "character_name": "Frostleaf",
   "localized_name": "霜叶",
@@ -9,15 +12,29 @@
   "skin_id": "boc-4",
   "skin_name": "破冰",
   "source": "standalone/assets/source/frostleaf/skin-boc-4",
-  "source_page": "https://prts.wiki/w/%E9%9C%9C%E5%8F%B6",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_193_frostl/meta.json",
-    "model": "char_193_frostl_boc_4/build/build_char_193_frostl_boc_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_193_frostl/char_193_frostl_boc_4/build/build_char_193_frostl_boc_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_193_frostl/char_193_frostl_boc_4/build/build_char_193_frostl_boc_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_193_frostl/char_193_frostl_boc_4/build/build_char_193_frostl_boc_4.png"
+    "assetId": "build_char_193_frostl_boc#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "霜叶",
+    "appellation": "Frostleaf",
+    "skinGroupId": "2022#boc",
+    "skinGroupName": "斗争血脉/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_193_frostl_boc#4.atlas",
+      ".png": "build_char_193_frostl_boc#4.png",
+      ".skel": "build_char_193_frostl_boc#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/frostleaf/skin-boc-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -254.31418,
-      "maxX": 172.97928,
-      "minY": -101.39522,
-      "maxY": 424.18094
+      "minX": -254.28496,
+      "maxX": 173.14706,
+      "minY": -101.24452,
+      "maxY": 422.31586
     },
-    "scale": 0.39576,
-    "x_offset": 112.09439,
-    "y_offset": 175.87222,
+    "full_source_bounds": {
+      "minX": -254.28496,
+      "maxX": 173.14706,
+      "minY": -101.24452,
+      "maxY": 422.31586
+    },
+    "core_source_bounds": {
+      "minX": -254.28496,
+      "maxX": 173.14706,
+      "minY": -101.24452,
+      "maxY": 416.45053
+    },
+    "cluster": {
+      "retained": 1841,
+      "total": 1841,
+      "centerX": -13.27323,
+      "centerY": 157.7401,
+      "radiusX": 455.00053,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 121,
+      "visible_height": 160,
+      "density_zoom": 1
+    },
+    "scale": 0.39728,
+    "x_offset": 112.11723,
+    "y_offset": 175.77759,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:07.654Z"
+  "exported_at": "2026-08-19T13:22:16.771Z"
 }

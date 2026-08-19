@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "puzzle",
   "character_name": "Puzzle",
   "localized_name": "谜图",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-29",
   "skin_name": "碎片之间",
   "source": "standalone/assets/source/puzzle/skin-epoque-29",
-  "source_page": "https://prts.wiki/w/%E8%B0%9C%E5%9B%BE",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4017_puzzle/meta.json",
-    "model": "char_4017_puzzle_epoque_29/build/build_char_4017_puzzle_epoque_29",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4017_puzzle/char_4017_puzzle_epoque_29/build/build_char_4017_puzzle_epoque_29.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4017_puzzle/char_4017_puzzle_epoque_29/build/build_char_4017_puzzle_epoque_29.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4017_puzzle/char_4017_puzzle_epoque_29/build/build_char_4017_puzzle_epoque_29.png"
+    "assetId": "build_char_4017_puzzle_epoque#29",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "谜图",
+    "appellation": "Puzzle",
+    "skinGroupId": "2023#epoque#11",
+    "skinGroupName": "时代/XXIX",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4017_puzzle_epoque#29.atlas",
+      ".png": "build_char_4017_puzzle_epoque#29.png",
+      ".skel": "build_char_4017_puzzle_epoque#29.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/puzzle/skin-epoque-29/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -274.84882,
-      "maxX": 182.16458,
+      "minX": -280.66223,
+      "maxX": 783.1037,
       "minY": -124.80479,
-      "maxY": 414.45883
+      "maxY": 918.40125
     },
     "full_source_bounds": {
       "minX": -280.66223,
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -274.84882,
-      "maxX": 182.16458,
+      "maxX": 783.1037,
       "minY": -124.80479,
-      "maxY": 414.45883
+      "maxY": 918.40125
     },
     "cluster": {
-      "retained": 2712,
+      "retained": 2750,
       "total": 2750,
-      "centerX": 6.08638,
-      "centerY": 132.72598,
-      "radiusX": 292.17138,
-      "radiusY": 674.78818
+      "centerX": 43.08035,
+      "centerY": 263.22224,
+      "radiusX": 839.96911,
+      "radiusY": 1189.18066
     },
-    "scale": 0.38511,
-    "x_offset": 113.84677,
-    "y_offset": 167.93654,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 61,
+      "visible_height": 69,
+      "density_zoom": 2.02899
+    },
+    "scale": 0.3357,
+    "x_offset": 119.20256,
+    "y_offset": 216.71229,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:05:03.000Z"
+  "exported_at": "2026-08-19T13:23:34.646Z"
 }

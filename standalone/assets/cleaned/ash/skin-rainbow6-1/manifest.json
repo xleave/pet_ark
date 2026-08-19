@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ash",
   "character_name": "Ash",
   "localized_name": "灰烬",
@@ -9,15 +12,29 @@
   "skin_id": "rainbow6-1",
   "skin_name": "游侠",
   "source": "standalone/assets/source/ash/skin-rainbow6-1",
-  "source_page": "https://prts.wiki/w/%E7%81%B0%E7%83%AC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/meta.json",
-    "model": "char_456_ash_rainbow6_1/build/build_char_456_ash_rainbow6_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/char_456_ash_rainbow6_1/build/build_char_456_ash_rainbow6_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/char_456_ash_rainbow6_1/build/build_char_456_ash_rainbow6_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/char_456_ash_rainbow6_1/build/build_char_456_ash_rainbow6_1.png"
+    "assetId": "build_char_456_ash_rainbow6#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "灰烬",
+    "appellation": "Ash",
+    "skinGroupId": "2021#rainbow6",
+    "skinGroupName": "彩虹六号：围攻",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_456_ash_rainbow6#1.atlas",
+      ".png": "build_char_456_ash_rainbow6#1.png",
+      ".skel": "build_char_456_ash_rainbow6#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/ash/skin-rainbow6-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -321.67966,
+      "minX": -320.87073,
       "maxX": 195.31346,
-      "minY": -111.87962,
-      "maxY": 409.83493
+      "minY": -111.93281,
+      "maxY": 409.12009
     },
-    "scale": 0.34043,
-    "x_offset": 117.50943,
-    "y_offset": 177.91281,
+    "full_source_bounds": {
+      "minX": -320.87073,
+      "maxX": 195.31346,
+      "minY": -111.93281,
+      "maxY": 409.12009
+    },
+    "core_source_bounds": {
+      "minX": -311.79218,
+      "maxX": 195.31346,
+      "minY": -111.93281,
+      "maxY": 409.12009
+    },
+    "cluster": {
+      "retained": 2510,
+      "total": 2510,
+      "centerX": -6.24685,
+      "centerY": 196.21226,
+      "radiusX": 329.93065,
+      "radiusY": 628.31394
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 128,
+      "visible_height": 136,
+      "density_zoom": 1.02941
+    },
+    "scale": 0.34096,
+    "x_offset": 117.40523,
+    "y_offset": 177.83499,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:56.922Z"
+  "exported_at": "2026-08-19T13:21:29.916Z"
 }

@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "mountain",
   "character_name": "Mountain",
   "localized_name": "山",
@@ -11,15 +12,29 @@
   "skin_id": "marthe-13",
   "skin_name": "硬派速度",
   "source": "standalone/assets/source/mountain/skin-marthe-13",
-  "source_page": "https://prts.wiki/w/%E5%B1%B1",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/meta.json",
-    "model": "char_264_f12yin_marthe_13/build/build_char_264_f12yin_marthe_13",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/char_264_f12yin_marthe_13/build/build_char_264_f12yin_marthe_13.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/char_264_f12yin_marthe_13/build/build_char_264_f12yin_marthe_13.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/char_264_f12yin_marthe_13/build/build_char_264_f12yin_marthe_13.png"
+    "assetId": "build_char_264_f12yin_marthe#13",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "山",
+    "appellation": "Mountain",
+    "skinGroupId": "2026#marthe#2",
+    "skinGroupName": "玛尔特/XIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_264_f12yin_marthe#13.atlas",
+      ".png": "build_char_264_f12yin_marthe#13.png",
+      ".skel": "build_char_264_f12yin_marthe#13.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/mountain/skin-marthe-13/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,37 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -258.33588,
-      "maxX": 280.33221,
-      "minY": -316.65488,
+      "maxX": 512.1142,
+      "minY": -350.5658,
       "maxY": 451.39838
     },
     "full_source_bounds": {
       "minX": -284.48514,
       "maxX": 1067.38318,
-      "minY": -482.66864,
+      "minY": -471.19916,
       "maxY": 456.54611
     },
     "core_source_bounds": {
       "minX": -258.33588,
-      "maxX": 280.33221,
-      "minY": -316.65488,
+      "maxX": 512.1142,
+      "minY": -350.5658,
       "maxY": 451.39838
     },
     "cluster": {
-      "retained": 2359,
-      "total": 2366,
-      "centerX": 21.33859,
-      "centerY": 174.8477,
-      "radiusX": 365.70674,
-      "radiusY": 695.29557
+      "retained": 2363,
+      "total": 2365,
+      "centerX": 37.5506,
+      "centerY": 164.25355,
+      "radiusX": 590.24628,
+      "radiusY": 1645.55656
     },
-    "scale": 0.27081,
-    "x_offset": 93.02154,
-    "y_offset": 130.24525,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 91,
+      "visible_height": 103,
+      "density_zoom": 1.35922
+    },
+    "scale": 0.3105,
+    "x_offset": 115.04776,
+    "y_offset": 217.24707,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:21.322Z"
+  "exported_at": "2026-08-19T13:23:09.340Z"
 }

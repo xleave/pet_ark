@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ptilopsis",
   "character_name": "Ptilopsis",
   "localized_name": "白面鸮",
@@ -9,15 +12,29 @@
   "skin_id": "epoque-3",
   "skin_name": "幽静",
   "source": "standalone/assets/source/ptilopsis/skin-epoque-3",
-  "source_page": "https://prts.wiki/w/%E7%99%BD%E9%9D%A2%E9%B8%AE",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_128_plosis/meta.json",
-    "model": "char_128_plosis_epoque_3/build/build_char_128_plosis_epoque_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_128_plosis/char_128_plosis_epoque_3/build/build_char_128_plosis_epoque_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_128_plosis/char_128_plosis_epoque_3/build/build_char_128_plosis_epoque_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_128_plosis/char_128_plosis_epoque_3/build/build_char_128_plosis_epoque_3.png"
+    "assetId": "build_char_128_plosis_epoque#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "白面鸮",
+    "appellation": "Ptilopsis",
+    "skinGroupId": "2020#epoque#2",
+    "skinGroupName": "时代/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_128_plosis_epoque#3.atlas",
+      ".png": "build_char_128_plosis_epoque#3.png",
+      ".skel": "build_char_128_plosis_epoque#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/ptilopsis/skin-epoque-3/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -192.24777,
       "maxX": 217.65811,
-      "minY": -97.77907,
-      "maxY": 465.341
+      "minY": -97.77927,
+      "maxY": 467.11572
     },
-    "scale": 0.36937,
-    "x_offset": 91.30708,
-    "y_offset": 179.88329,
+    "full_source_bounds": {
+      "minX": -192.24777,
+      "maxX": 217.65811,
+      "minY": -97.77927,
+      "maxY": 467.11572
+    },
+    "core_source_bounds": {
+      "minX": -192.24777,
+      "maxX": 217.65811,
+      "minY": -97.77927,
+      "maxY": 389.79108
+    },
+    "cluster": {
+      "retained": 2136,
+      "total": 2136,
+      "centerX": -1.32963,
+      "centerY": 195.12744,
+      "radiusX": 413.95879,
+      "radiusY": 659.76582
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 82,
+      "visible_height": 143,
+      "density_zoom": 1
+    },
+    "scale": 0.36821,
+    "x_offset": 91.32183,
+    "y_offset": 179.99669,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:24.904Z"
+  "exported_at": "2026-08-19T13:23:33.458Z"
 }

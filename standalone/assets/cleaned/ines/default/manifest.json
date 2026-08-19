@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ines",
   "character_name": "Ines",
   "localized_name": "伊内丝",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/ines/default",
-  "source_page": "https://prts.wiki/w/%E4%BC%8A%E5%86%85%E4%B8%9D",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4087_ines/meta.json",
-    "model": "defaultskin/build/build_char_4087_ines",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4087_ines/defaultskin/build/build_char_4087_ines.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4087_ines/defaultskin/build/build_char_4087_ines.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4087_ines/defaultskin/build/build_char_4087_ines.png"
+    "assetId": "build_char_4087_ines",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "伊内丝",
+    "appellation": "Ines",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4087_ines.atlas",
+      ".png": "build_char_4087_ines.png",
+      ".skel": "build_char_4087_ines.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/ines/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -248.00276,
       "maxX": 279.22955,
-      "minY": -125.11322,
-      "maxY": 416.63599
+      "minY": -124.66803,
+      "maxY": 416.62531
+    },
+    "full_source_bounds": {
+      "minX": -248.00276,
+      "maxX": 279.22955,
+      "minY": -124.66803,
+      "maxY": 416.62531
+    },
+    "core_source_bounds": {
+      "minX": -248.00276,
+      "maxX": 279.22955,
+      "minY": -124.66803,
+      "maxY": 408.68384
+    },
+    "cluster": {
+      "retained": 2745,
+      "total": 2745,
+      "centerX": 1.90611,
+      "centerY": 174.37785,
+      "radiusX": 419.98561,
+      "radiusY": 539.98962
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 106,
+      "visible_height": 137,
+      "density_zoom": 1.0219
     },
     "scale": 0.33382,
     "x_offset": 90.78796,
-    "y_offset": 174.23487,
+    "y_offset": 174.38348,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:11.843Z"
+  "exported_at": "2026-08-19T13:22:35.196Z"
 }

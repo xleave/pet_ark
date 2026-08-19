@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "kestrel",
   "character_name": "Kestrel",
   "localized_name": "红隼",
@@ -11,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/kestrel/default",
-  "source_page": "https://prts.wiki/w/%E7%BA%A2%E9%9A%BC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/meta.json",
-    "model": "defaultskin/build/build_char_4023_rfalcn",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/defaultskin/build/build_char_4023_rfalcn.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/defaultskin/build/build_char_4023_rfalcn.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/defaultskin/build/build_char_4023_rfalcn.png"
+    "assetId": "build_char_4023_rfalcn",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "红隼",
+    "appellation": "Kestrel",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4023_rfalcn.atlas",
+      ".png": "build_char_4023_rfalcn.png",
+      ".skel": "build_char_4023_rfalcn.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +105,7 @@
       "path": "standalone/assets/cleaned/kestrel/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,10 +118,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -232.02994,
-      "maxX": 260.67996,
+      "maxX": 816.71631,
       "minY": -123.67739,
       "maxY": 394.80716
     },
@@ -119,22 +133,28 @@
     },
     "core_source_bounds": {
       "minX": -232.02994,
-      "maxX": 260.67996,
+      "maxX": 816.71631,
       "minY": -123.67739,
       "maxY": 394.80716
     },
     "cluster": {
-      "retained": 2024,
+      "retained": 2068,
       "total": 2068,
-      "centerX": -4.60889,
-      "centerY": 137.87118,
-      "radiusX": 283.80091,
-      "radiusY": 627.47791
+      "centerX": 41.61391,
+      "centerY": 155.00672,
+      "radiusX": 1055.23344,
+      "radiusY": 480
     },
-    "scale": 0.35721,
-    "x_offset": 90.88299,
-    "y_offset": 171.82143,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 33,
+      "visible_height": 65,
+      "density_zoom": 2.18182
+    },
+    "scale": 0.36615,
+    "x_offset": 102.41265,
+    "y_offset": 216.53352,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:18.467Z"
+  "exported_at": "2026-08-19T13:22:42.563Z"
 }

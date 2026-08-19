@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "jieyun",
   "character_name": "Jieyun",
   "localized_name": "截云",
@@ -11,15 +12,29 @@
   "skin_id": "yun-2",
   "skin_name": "伴青莲",
   "source": "standalone/assets/source/jieyun/skin-yun-2",
-  "source_page": "https://prts.wiki/w/%E6%88%AA%E4%BA%91",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4078_bdhkgt/meta.json",
-    "model": "char_4078_bdhkgt_yun_2/build/build_char_4078_bdhkgt_yun_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4078_bdhkgt/char_4078_bdhkgt_yun_2/build/build_char_4078_bdhkgt_yun_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4078_bdhkgt/char_4078_bdhkgt_yun_2/build/build_char_4078_bdhkgt_yun_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4078_bdhkgt/char_4078_bdhkgt_yun_2/build/build_char_4078_bdhkgt_yun_2.png"
+    "assetId": "build_char_4078_bdhkgt_yun#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "截云",
+    "appellation": "Jieyun",
+    "skinGroupId": "2024#yun",
+    "skinGroupName": "0011/韵系列/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4078_bdhkgt_yun#2.atlas",
+      ".png": "build_char_4078_bdhkgt_yun#2.png",
+      ".skel": "build_char_4078_bdhkgt_yun#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/jieyun/skin-yun-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -310.72379,
-      "maxX": 176.95636,
+      "minX": -587.00256,
+      "maxX": 1384.06348,
       "minY": -108.57329,
-      "maxY": 498.38312
+      "maxY": 863.04999
     },
     "full_source_bounds": {
       "minX": -1261.00476,
@@ -129,23 +144,29 @@
       "maxY": 863.04999
     },
     "core_source_bounds": {
-      "minX": -310.72379,
-      "maxX": 176.95636,
+      "minX": -587.00256,
+      "maxX": 1384.06348,
       "minY": -108.57329,
-      "maxY": 498.38312
+      "maxY": 863.04999
     },
     "cluster": {
-      "retained": 3033,
+      "retained": 3128,
       "total": 3128,
-      "centerX": -0.70367,
-      "centerY": 134.14619,
-      "radiusX": 315.84926,
-      "radiusY": 573.66924
+      "centerX": 45.09644,
+      "centerY": 198.21049,
+      "radiusX": 2853.18108,
+      "radiusY": 872.69909
     },
-    "scale": 0.34269,
-    "x_offset": 118.92061,
-    "y_offset": 178.79264,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 22,
+      "visible_height": 39,
+      "density_zoom": 3.58974
+    },
+    "scale": 0.32053,
+    "x_offset": 106.46233,
+    "y_offset": 217.09594,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:14.428Z"
+  "exported_at": "2026-08-19T13:22:40.664Z"
 }

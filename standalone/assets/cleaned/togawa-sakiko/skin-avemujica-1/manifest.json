@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "togawa-sakiko",
   "character_name": "Togawa Sakiko",
   "localized_name": "丰川祥子",
@@ -11,15 +12,29 @@
   "skin_id": "avemujica-1",
   "skin_name": "旋律的主人",
   "source": "standalone/assets/source/togawa-sakiko/skin-avemujica-1",
-  "source_page": "https://prts.wiki/w/%E4%B8%B0%E5%B7%9D%E7%A5%A5%E5%AD%90",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/meta.json",
-    "model": "char_4182_oblvns_avemujica_1/build/build_char_4182_oblvns_avemujica_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/char_4182_oblvns_avemujica_1/build/build_char_4182_oblvns_avemujica_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/char_4182_oblvns_avemujica_1/build/build_char_4182_oblvns_avemujica_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/char_4182_oblvns_avemujica_1/build/build_char_4182_oblvns_avemujica_1.png"
+    "assetId": "build_char_4182_oblvns_avemujica#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "丰川祥子",
+    "appellation": "Togawa Sakiko",
+    "skinGroupId": "2025#avemujica",
+    "skinGroupName": "Ave Mujica",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4182_oblvns_avemujica#1.atlas",
+      ".png": "build_char_4182_oblvns_avemujica#1.png",
+      ".skel": "build_char_4182_oblvns_avemujica#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/togawa-sakiko/skin-avemujica-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -135,17 +150,23 @@
       "maxY": 416.10995
     },
     "cluster": {
-      "retained": 2895,
-      "total": 2917,
-      "centerX": -1.99349,
-      "centerY": 121.0624,
-      "radiusX": 298.12971,
-      "radiusY": 640.43597
+      "retained": 2850,
+      "total": 2872,
+      "centerX": 24.94973,
+      "centerY": 198.00439,
+      "radiusX": 542.79446,
+      "radiusY": 685.61005
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 107,
+      "visible_height": 161,
+      "density_zoom": 1
     },
     "scale": 0.38704,
     "x_offset": 104.68652,
     "y_offset": 169.10405,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:04.033Z"
+  "exported_at": "2026-08-19T13:24:13.388Z"
 }

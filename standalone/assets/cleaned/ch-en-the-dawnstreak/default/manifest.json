@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ch-en-the-dawnstreak",
   "character_name": "Ch'en the Dawnstreak",
   "localized_name": "赤刃明霄陈",
@@ -11,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/ch-en-the-dawnstreak/default",
-  "source_page": "https://prts.wiki/w/%E8%B5%A4%E5%88%83%E6%98%8E%E9%9C%84%E9%99%88",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1050_chen3/meta.json",
-    "model": "defaultskin/build/build_char_1050_chen3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1050_chen3/defaultskin/build/build_char_1050_chen3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1050_chen3/defaultskin/build/build_char_1050_chen3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1050_chen3/defaultskin/build/build_char_1050_chen3.png"
+    "assetId": "build_char_1050_chen3",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "赤刃明霄陈",
+    "appellation": "Ch'en the Dawnstreak",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1050_chen3.atlas",
+      ".png": "build_char_1050_chen3.png",
+      ".skel": "build_char_1050_chen3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +106,7 @@
       "path": "standalone/assets/cleaned/ch-en-the-dawnstreak/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,10 +119,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -272.85742,
-      "maxX": 235.842,
+      "maxX": 1006.25073,
       "minY": -127.30634,
       "maxY": 435.64133
     },
@@ -119,22 +134,28 @@
     },
     "core_source_bounds": {
       "minX": -272.85742,
-      "maxX": 235.842,
+      "maxX": 1006.25073,
       "minY": -127.30634,
       "maxY": 435.64133
     },
     "cluster": {
-      "retained": 2881,
+      "retained": 2966,
       "total": 2966,
-      "centerX": 6.32745,
-      "centerY": 121.36855,
-      "radiusX": 318.09718,
-      "radiusY": 581.94006
+      "centerX": 139.00468,
+      "centerY": 173.06216,
+      "radiusX": 2471.28502,
+      "radiusY": 550.09314
     },
-    "scale": 0.34598,
-    "x_offset": 102.40331,
-    "y_offset": 171.95451,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 58,
+      "visible_height": 59,
+      "density_zoom": 2.37288
+    },
+    "scale": 0.3265,
+    "x_offset": 96.10454,
+    "y_offset": 217.14651,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:36.069Z"
+  "exported_at": "2026-08-19T13:21:49.220Z"
 }

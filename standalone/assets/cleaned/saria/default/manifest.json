@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "saria",
   "character_name": "Saria",
   "localized_name": "塞雷娅",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/saria/default",
-  "source_page": "https://prts.wiki/w/%E5%A1%9E%E9%9B%B7%E5%A8%85",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/meta.json",
-    "model": "defaultskin/build/build_char_202_demkni",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/defaultskin/build/build_char_202_demkni.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/defaultskin/build/build_char_202_demkni.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/defaultskin/build/build_char_202_demkni.png"
+    "assetId": "build_char_202_demkni",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "塞雷娅",
+    "appellation": "Saria",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_202_demkni.atlas",
+      ".png": "build_char_202_demkni.png",
+      ".skel": "build_char_202_demkni.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/saria/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -239.54131,
-      "maxX": 201.47762,
+      "minX": -239.57068,
+      "maxX": 201.46823,
       "minY": -142.86137,
-      "maxY": 385.82416
+      "maxY": 387.95471
     },
-    "scale": 0.39343,
-    "x_offset": 103.48767,
-    "y_offset": 159.79425,
+    "full_source_bounds": {
+      "minX": -239.57068,
+      "maxX": 201.46823,
+      "minY": -142.86137,
+      "maxY": 387.95471
+    },
+    "core_source_bounds": {
+      "minX": -239.57068,
+      "maxX": 201.46823,
+      "minY": -142.86137,
+      "maxY": 383.83469
+    },
+    "cluster": {
+      "retained": 1429,
+      "total": 1429,
+      "centerX": 20.77038,
+      "centerY": 182.90021,
+      "radiusX": 365.80001,
+      "radiusY": 520.30815
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 98,
+      "visible_height": 151,
+      "density_zoom": 1
+    },
+    "scale": 0.39185,
+    "x_offset": 103.46521,
+    "y_offset": 160.01985,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:29.141Z"
+  "exported_at": "2026-08-19T13:23:46.982Z"
 }

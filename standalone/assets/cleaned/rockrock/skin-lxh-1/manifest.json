@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "rockrock",
   "character_name": "Rockrock",
   "localized_name": "洛洛",
@@ -11,15 +12,29 @@
   "skin_id": "lxh-1",
   "skin_name": "欢唱之前",
   "source": "standalone/assets/source/rockrock/skin-lxh-1",
-  "source_page": "https://prts.wiki/w/%E6%B4%9B%E6%B4%9B",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4040_rockr/meta.json",
-    "model": "char_4040_rockr_lxh_1/build/build_char_4040_rockr_lxh_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4040_rockr/char_4040_rockr_lxh_1/build/build_char_4040_rockr_lxh_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4040_rockr/char_4040_rockr_lxh_1/build/build_char_4040_rockr_lxh_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4040_rockr/char_4040_rockr_lxh_1/build/build_char_4040_rockr_lxh_1.png"
+    "assetId": "build_char_4040_rockr_lxh#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "洛洛",
+    "appellation": "Rockrock",
+    "skinGroupId": "2022#lxh",
+    "skinGroupName": "罗小黑战记",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4040_rockr_lxh#1.atlas",
+      ".png": "build_char_4040_rockr_lxh#1.png",
+      ".skel": "build_char_4040_rockr_lxh#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/rockrock/skin-lxh-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,10 +130,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -203.99438,
-      "maxX": 298.07736,
+      "maxX": 930.81757,
       "minY": -152.92996,
       "maxY": 515.07275
     },
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -203.99438,
-      "maxX": 298.07736,
+      "maxX": 848.81482,
       "minY": -152.92996,
       "maxY": 515.07275
     },
     "cluster": {
-      "retained": 4284,
+      "retained": 4315,
       "total": 4331,
-      "centerX": -9.5134,
-      "centerY": 132.78333,
-      "radiusX": 297.44898,
-      "radiusY": 635.13935
+      "centerX": 23.34087,
+      "centerY": 214.98733,
+      "radiusX": 796.85332,
+      "radiusY": 674.1444
     },
-    "scale": 0.31138,
-    "x_offset": 81.35241,
-    "y_offset": 168.38128,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 42,
+      "visible_height": 64,
+      "density_zoom": 2.1875
+    },
+    "scale": 0.33926,
+    "x_offset": 100.67655,
+    "y_offset": 216.61648,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:25.359Z"
+  "exported_at": "2026-08-19T13:23:43.261Z"
 }

@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "typhon",
   "character_name": "Typhon",
   "localized_name": "提丰",
@@ -11,15 +12,29 @@
   "skin_id": "wild-9",
   "skin_name": "北地引路人",
   "source": "standalone/assets/source/typhon/skin-wild-9",
-  "source_page": "https://prts.wiki/w/%E6%8F%90%E4%B8%B0",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/meta.json",
-    "model": "char_2012_typhon_wild_9/build/build_char_2012_typhon_wild_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/char_2012_typhon_wild_9/build/build_char_2012_typhon_wild_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/char_2012_typhon_wild_9/build/build_char_2012_typhon_wild_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/char_2012_typhon_wild_9/build/build_char_2012_typhon_wild_9.png"
+    "assetId": "build_char_2012_typhon_wild#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "提丰",
+    "appellation": "Typhon",
+    "skinGroupId": "2023#wild#3",
+    "skinGroupName": "生命之地/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2012_typhon_wild#9.atlas",
+      ".png": "build_char_2012_typhon_wild#9.png",
+      ".skel": "build_char_2012_typhon_wild#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/typhon/skin-wild-9/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -118,8 +133,8 @@
     "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -274.6687,
-      "maxX": 211.26096,
-      "minY": -157.06639,
+      "maxX": 382.87204,
+      "minY": -317.31134,
       "maxY": 445.06421
     },
     "full_source_bounds": {
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -274.6687,
-      "maxX": 211.26096,
-      "minY": -157.06639,
+      "maxX": 382.87204,
+      "minY": -317.31134,
       "maxY": 445.06421
     },
     "cluster": {
-      "retained": 3061,
+      "retained": 3062,
       "total": 3068,
-      "centerX": 0.42116,
-      "centerY": 134.12664,
-      "radiusX": 343.00747,
-      "radiusY": 692.40305
+      "centerX": 4.45365,
+      "centerY": 211.61759,
+      "radiusX": 375.18103,
+      "radiusY": 627.24636
     },
-    "scale": 0.34544,
-    "x_offset": 106.95179,
-    "y_offset": 161.74298,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 91,
+      "visible_height": 117,
+      "density_zoom": 1.19658
+    },
+    "scale": 0.26766,
+    "x_offset": 81.51893,
+    "y_offset": 131.06717,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:10.427Z"
+  "exported_at": "2026-08-19T13:24:15.392Z"
 }

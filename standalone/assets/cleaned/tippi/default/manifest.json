@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "tippi",
@@ -12,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/tippi/default",
-  "source_page": "https://prts.wiki/w/%E8%92%82%E6%AF%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4191_tippi/meta.json",
-    "model": "defaultskin/build/build_char_4191_tippi",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4191_tippi/defaultskin/build/build_char_4191_tippi.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4191_tippi/defaultskin/build/build_char_4191_tippi.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4191_tippi/defaultskin/build/build_char_4191_tippi.png"
+    "assetId": "build_char_4191_tippi",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "蒂比",
+    "appellation": "Tippi",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4191_tippi.atlas",
+      ".png": "build_char_4191_tippi.png",
+      ".skel": "build_char_4191_tippi.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -92,7 +105,7 @@
       "path": "standalone/assets/cleaned/tippi/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -143,5 +156,5 @@
     "y_offset": 216.34245,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:15.467Z"
+  "exported_at": "2026-08-19T13:24:11.728Z"
 }

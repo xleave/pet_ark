@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "zima-the-raging-tide",
   "character_name": "Zima the Raging Tide",
   "localized_name": "怒潮凛冬",
@@ -9,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/zima-the-raging-tide/default",
-  "source_page": "https://prts.wiki/w/%E6%80%92%E6%BD%AE%E5%87%9B%E5%86%AC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1051_headb2/meta.json",
-    "model": "defaultskin/build/build_char_1051_headb2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1051_headb2/defaultskin/build/build_char_1051_headb2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1051_headb2/defaultskin/build/build_char_1051_headb2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1051_headb2/defaultskin/build/build_char_1051_headb2.png"
+    "assetId": "build_char_1051_headb2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "怒潮凛冬",
+    "appellation": "Zima the Raging Tide",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1051_headb2.atlas",
+      ".png": "build_char_1051_headb2.png",
+      ".skel": "build_char_1051_headb2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/zima-the-raging-tide/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -238.90199,
+      "minX": -238.9969,
       "maxX": 181.20035,
-      "minY": -112.80747,
+      "minY": -112.90343,
       "maxY": 421.30289
     },
-    "scale": 0.38943,
-    "x_offset": 107.23545,
-    "y_offset": 172.06909,
+    "full_source_bounds": {
+      "minX": -238.9969,
+      "maxX": 181.20035,
+      "minY": -112.90343,
+      "maxY": 421.30289
+    },
+    "core_source_bounds": {
+      "minX": -238.9969,
+      "maxX": 181.20035,
+      "minY": -112.90343,
+      "maxY": 421.30289
+    },
+    "cluster": {
+      "retained": 2419,
+      "total": 2419,
+      "centerX": 6.62162,
+      "centerY": 201.93156,
+      "radiusX": 365.19454,
+      "radiusY": 605.00519
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 124,
+      "visible_height": 161,
+      "density_zoom": 1
+    },
+    "scale": 0.38936,
+    "x_offset": 107.25191,
+    "y_offset": 172.03962,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:39.521Z"
+  "exported_at": "2026-08-19T13:24:32.969Z"
 }

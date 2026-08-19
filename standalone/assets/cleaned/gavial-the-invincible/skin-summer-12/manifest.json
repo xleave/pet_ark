@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "gavial-the-invincible",
   "character_name": "Gavial the Invincible",
   "localized_name": "百炼嘉维尔",
@@ -11,15 +12,30 @@
   "skin_id": "summer-12",
   "skin_name": "悠然假日 HD26",
   "source": "standalone/assets/source/gavial-the-invincible/skin-summer-12",
-  "source_page": "https://prts.wiki/w/%E7%99%BE%E7%82%BC%E5%98%89%E7%BB%B4%E5%B0%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1026_gvial2/meta.json",
-    "model": "char_1026_gvial2_summer_12/build/build_char_1026_gvial2_summer_12",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1026_gvial2/char_1026_gvial2_summer_12/build/build_char_1026_gvial2_summer_12.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1026_gvial2/char_1026_gvial2_summer_12/build/build_char_1026_gvial2_summer_12.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1026_gvial2/char_1026_gvial2_summer_12/build/build_char_1026_gvial2_summer_12.png"
+    "assetId": "build_char_1026_gvial2_summer#12",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "百炼嘉维尔",
+    "appellation": "Gavial the Invincible",
+    "skinGroupId": "2023#summer#2",
+    "skinGroupName": "珊瑚海岸/XII",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1026_gvial2_summer#12.atlas",
+      ".png": "build_char_1026_gvial2_summer#12.png",
+      ".skel": "build_char_1026_gvial2_summer#12.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +118,7 @@
       "path": "standalone/assets/cleaned/gavial-the-invincible/skin-summer-12/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +131,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -234.12389,
-      "maxX": 191.80959,
+      "minX": -311.18124,
+      "maxX": 366.72675,
       "minY": -96.96085,
-      "maxY": 399.2272
+      "maxY": 1146.51831
     },
     "full_source_bounds": {
       "minX": -311.18124,
@@ -129,23 +145,29 @@
       "maxY": 1146.51831
     },
     "core_source_bounds": {
-      "minX": -234.12389,
-      "maxX": 191.80959,
+      "minX": -297.36304,
+      "maxX": 307.2301,
       "minY": -96.96085,
-      "maxY": 399.2272
+      "maxY": 978.66638
     },
     "cluster": {
-      "retained": 2277,
-      "total": 2295,
-      "centerX": -0.95982,
-      "centerY": 149.69644,
-      "radiusX": 266.21764,
-      "radiusY": 656.64674
+      "retained": 2273,
+      "total": 2286,
+      "centerX": -7.66728,
+      "centerY": 218.49301,
+      "radiusX": 615.01816,
+      "radiusY": 705.02884
     },
-    "scale": 0.41,
-    "x_offset": 104.67443,
-    "y_offset": 176.24605,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 46,
+      "visible_height": 67,
+      "density_zoom": 2.08955
+    },
+    "scale": 0.34952,
+    "x_offset": 108.23303,
+    "y_offset": 217.63216,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:15.007Z"
+  "exported_at": "2026-08-19T13:22:18.026Z"
 }

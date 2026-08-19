@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "kirin-r-yato",
   "character_name": "Kirin R Yato",
   "localized_name": "麒麟R夜刀",
@@ -11,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/kirin-r-yato/default",
-  "source_page": "https://prts.wiki/w/%E9%BA%92%E9%BA%9FR%E5%A4%9C%E5%88%80",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1029_yato2/meta.json",
-    "model": "defaultskin/build/build_char_1029_yato2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1029_yato2/defaultskin/build/build_char_1029_yato2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1029_yato2/defaultskin/build/build_char_1029_yato2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1029_yato2/defaultskin/build/build_char_1029_yato2.png"
+    "assetId": "build_char_1029_yato2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "麒麟R夜刀",
+    "appellation": "Kirin R Yato",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1029_yato2.atlas",
+      ".png": "build_char_1029_yato2.png",
+      ".skel": "build_char_1029_yato2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +106,7 @@
       "path": "standalone/assets/cleaned/kirin-r-yato/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -126,15 +141,21 @@
     "cluster": {
       "retained": 3440,
       "total": 3450,
-      "centerX": -5.26553,
-      "centerY": 151.00166,
-      "radiusX": 319.81137,
-      "radiusY": 633.8531
+      "centerX": 7.36753,
+      "centerY": 252.94762,
+      "radiusX": 370.02887,
+      "radiusY": 518.04649
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 100,
+      "visible_height": 144,
+      "density_zoom": 1
     },
     "scale": 0.34374,
     "x_offset": 93.09599,
     "y_offset": 198.3912,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:19.142Z"
+  "exported_at": "2026-08-19T13:22:44.094Z"
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "pepe",
@@ -12,15 +12,29 @@
   "skin_id": "sightseer-2",
   "skin_name": "星移",
   "source": "standalone/assets/source/pepe/skin-sightseer-2",
-  "source_page": "https://prts.wiki/w/%E4%BD%A9%E4%BD%A9",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4058_pepe/meta.json",
-    "model": "char_4058_pepe_sightseer_2/build/build_char_4058_pepe_sightseer_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4058_pepe/char_4058_pepe_sightseer_2/build/build_char_4058_pepe_sightseer_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4058_pepe/char_4058_pepe_sightseer_2/build/build_char_4058_pepe_sightseer_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4058_pepe/char_4058_pepe_sightseer_2/build/build_char_4058_pepe_sightseer_2.png"
+    "assetId": "build_char_4058_pepe_sightseer#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "佩佩",
+    "appellation": "Pepe",
+    "skinGroupId": "2025#sightseer",
+    "skinGroupName": "错位巡礼/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4058_pepe_sightseer#2.atlas",
+      ".png": "build_char_4058_pepe_sightseer#2.png",
+      ".skel": "build_char_4058_pepe_sightseer#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/pepe/skin-sightseer-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -154,5 +168,5 @@
     "y_offset": 215.41274,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:06.133Z"
+  "exported_at": "2026-08-19T13:23:25.450Z"
 }

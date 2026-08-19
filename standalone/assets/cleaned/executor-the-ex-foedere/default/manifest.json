@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "executor-the-ex-foedere",
   "character_name": "Executor the Ex Foedere",
   "localized_name": "圣约送葬人",
@@ -11,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/executor-the-ex-foedere/default",
-  "source_page": "https://prts.wiki/w/%E5%9C%A3%E7%BA%A6%E9%80%81%E8%91%AC%E4%BA%BA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/meta.json",
-    "model": "defaultskin/build/build_char_1032_excu2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/defaultskin/build/build_char_1032_excu2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/defaultskin/build/build_char_1032_excu2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/defaultskin/build/build_char_1032_excu2.png"
+    "assetId": "build_char_1032_excu2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "圣约送葬人",
+    "appellation": "Executor the Ex Foedere",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1032_excu2.atlas",
+      ".png": "build_char_1032_excu2.png",
+      ".skel": "build_char_1032_excu2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +106,7 @@
       "path": "standalone/assets/cleaned/executor-the-ex-foedere/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,12 +119,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -409.03232,
-      "maxX": 234.98465,
+      "minX": -523.84106,
+      "maxX": 756.2442,
       "minY": -95.48086,
-      "maxY": 451.70639
+      "maxY": 656.93188
     },
     "full_source_bounds": {
       "minX": -523.84106,
@@ -118,23 +133,29 @@
       "maxY": 656.93188
     },
     "core_source_bounds": {
-      "minX": -409.03232,
-      "maxX": 234.98465,
+      "minX": -523.84106,
+      "maxX": 756.2442,
       "minY": -95.48086,
-      "maxY": 451.70639
+      "maxY": 656.93188
     },
     "cluster": {
-      "retained": 2972,
+      "retained": 3003,
       "total": 3013,
-      "centerX": -3.25406,
-      "centerY": 148.502,
-      "radiusX": 350.24102,
-      "radiusY": 581.94498
+      "centerX": -0.9927,
+      "centerY": 209.7152,
+      "radiusX": 744.18524,
+      "radiusY": 696.94695
     },
-    "scale": 0.27328,
-    "x_offset": 119.78228,
-    "y_offset": 189.90654,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 51,
+      "visible_height": 62,
+      "density_zoom": 2.25806
+    },
+    "scale": 0.31046,
+    "x_offset": 109.60111,
+    "y_offset": 215.71155,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:55.651Z"
+  "exported_at": "2026-08-19T13:22:07.298Z"
 }

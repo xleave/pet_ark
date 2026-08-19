@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "197-poca",
   "character_name": "Роса",
   "localized_name": "早露",
@@ -11,15 +12,29 @@
   "skin_id": "rilakkuma-1",
   "skin_name": "常伴我身",
   "source": "standalone/assets/source/197-poca/skin-rilakkuma-1",
-  "source_page": "https://prts.wiki/w/%E6%97%A9%E9%9C%B2",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/meta.json",
-    "model": "char_197_poca_rilakkuma_1/build/build_char_197_poca_rilakkuma_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/char_197_poca_rilakkuma_1/build/build_char_197_poca_rilakkuma_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/char_197_poca_rilakkuma_1/build/build_char_197_poca_rilakkuma_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/char_197_poca_rilakkuma_1/build/build_char_197_poca_rilakkuma_1.png"
+    "assetId": "build_char_197_poca_rilakkuma#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "早露",
+    "appellation": "Роса",
+    "skinGroupId": "2026#rilakkuma",
+    "skinGroupName": "轻松小熊",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_197_poca_rilakkuma#1.atlas",
+      ".png": "build_char_197_poca_rilakkuma#1.png",
+      ".skel": "build_char_197_poca_rilakkuma#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/197-poca/skin-rilakkuma-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -291.7905,
-      "maxX": 349.20999,
+      "minX": -542.5896,
+      "maxX": 932.30994,
       "minY": -102.67661,
-      "maxY": 418.48148
+      "maxY": 510.48849
     },
     "full_source_bounds": {
       "minX": -542.5896,
@@ -129,23 +144,29 @@
       "maxY": 510.48849
     },
     "core_source_bounds": {
-      "minX": -291.7905,
-      "maxX": 349.20999,
+      "minX": -542.5896,
+      "maxX": 932.30994,
       "minY": -102.67661,
-      "maxY": 418.48148
+      "maxY": 510.48849
     },
     "cluster": {
-      "retained": 3182,
+      "retained": 3258,
       "total": 3258,
-      "centerX": 6.62283,
-      "centerY": 130.56228,
-      "radiusX": 314.61767,
-      "radiusY": 699.88315
+      "centerX": 44.19753,
+      "centerY": 153.19218,
+      "radiusX": 1230.95039,
+      "radiusY": 519.58683
     },
-    "scale": 0.27457,
-    "x_offset": 88.11714,
-    "y_offset": 187.80801,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 45,
+      "visible_height": 50,
+      "density_zoom": 2.8
+    },
+    "scale": 0.33412,
+    "x_offset": 81.29245,
+    "y_offset": 218.09324,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:19.544Z"
+  "exported_at": "2026-08-19T13:21:17.844Z"
 }

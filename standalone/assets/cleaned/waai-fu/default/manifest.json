@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "waai-fu",
   "character_name": "Waai Fu",
   "localized_name": "槐琥",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/waai-fu/default",
-  "source_page": "https://prts.wiki/w/%E6%A7%90%E7%90%A5",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_243_waaifu/meta.json",
-    "model": "defaultskin/build/build_char_243_waaifu",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_243_waaifu/defaultskin/build/build_char_243_waaifu.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_243_waaifu/defaultskin/build/build_char_243_waaifu.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_243_waaifu/defaultskin/build/build_char_243_waaifu.png"
+    "assetId": "build_char_243_waaifu",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "槐琥",
+    "appellation": "Waai Fu",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_243_waaifu.atlas",
+      ".png": "build_char_243_waaifu.png",
+      ".skel": "build_char_243_waaifu.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/waai-fu/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -350.12955,
-      "maxX": 231.46011,
-      "minY": -115.79493,
+      "maxX": 233.19499,
+      "minY": -115.78675,
       "maxY": 419.7941
     },
-    "scale": 0.30262,
-    "x_offset": 113.9558,
-    "y_offset": 180.95827,
+    "full_source_bounds": {
+      "minX": -350.12955,
+      "maxX": 233.19499,
+      "minY": -115.78675,
+      "maxY": 419.7941
+    },
+    "core_source_bounds": {
+      "minX": -350.12955,
+      "maxX": 233.19499,
+      "minY": -115.78675,
+      "maxY": 419.7941
+    },
+    "cluster": {
+      "retained": 1504,
+      "total": 1504,
+      "centerX": -0.0029,
+      "centerY": 207.27535,
+      "radiusX": 385.00884,
+      "radiusY": 617.97422
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 87,
+      "visible_height": 126,
+      "density_zoom": 1.11111
+    },
+    "scale": 0.30172,
+    "x_offset": 113.64068,
+    "y_offset": 181.06496,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:37.547Z"
+  "exported_at": "2026-08-19T13:24:23.500Z"
 }

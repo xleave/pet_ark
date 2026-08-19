@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "tippi",
@@ -12,15 +12,29 @@
   "skin_id": "epoque-57",
   "skin_name": "清新布景",
   "source": "standalone/assets/source/tippi/skin-epoque-57",
-  "source_page": "https://prts.wiki/w/%E8%92%82%E6%AF%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4191_tippi/meta.json",
-    "model": "char_4191_tippi_epoque_57/build/build_char_4191_tippi_epoque_57",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4191_tippi/char_4191_tippi_epoque_57/build/build_char_4191_tippi_epoque_57.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4191_tippi/char_4191_tippi_epoque_57/build/build_char_4191_tippi_epoque_57.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4191_tippi/char_4191_tippi_epoque_57/build/build_char_4191_tippi_epoque_57.png"
+    "assetId": "build_char_4191_tippi_epoque#57",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "蒂比",
+    "appellation": "Tippi",
+    "skinGroupId": "2026#epoque#8",
+    "skinGroupName": "时代/LVII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4191_tippi_epoque#57.atlas",
+      ".png": "build_char_4191_tippi_epoque#57.png",
+      ".skel": "build_char_4191_tippi_epoque#57.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/tippi/skin-epoque-57/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -136,8 +150,8 @@
       "maxY": 557.96545
     },
     "cluster": {
-      "retained": 3145,
-      "total": 3145,
+      "retained": 3142,
+      "total": 3142,
       "centerX": -9.81762,
       "centerY": 256.92735,
       "radiusX": 673.07718,
@@ -145,14 +159,14 @@
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 50,
+      "visible_width": 51,
       "visible_height": 83,
       "density_zoom": 1.68675
     },
     "scale": 0.30251,
-    "x_offset": 103.82761,
+    "x_offset": 104.67098,
     "y_offset": 217.10461,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:38.663Z"
+  "exported_at": "2026-08-19T13:24:12.208Z"
 }

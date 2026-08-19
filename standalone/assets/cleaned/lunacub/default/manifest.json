@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "lunacub",
   "character_name": "Lunacub",
   "localized_name": "子月",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/lunacub/default",
-  "source_page": "https://prts.wiki/w/%E5%AD%90%E6%9C%88",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4014_lunacu/meta.json",
-    "model": "defaultskin/build/char_4014_lunacu",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4014_lunacu/defaultskin/build/char_4014_lunacu.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4014_lunacu/defaultskin/build/char_4014_lunacu.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4014_lunacu/defaultskin/build/char_4014_lunacu.png"
+    "assetId": "build_char_4014_lunacu",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "子月",
+    "appellation": "Lunacub",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "char_4014_lunacu.atlas",
+      ".png": "char_4014_lunacu.png",
+      ".skel": "char_4014_lunacu.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/lunacub/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -183.16534,
+      "minX": -183.41444,
       "maxX": 222.54413,
-      "minY": -104.2441,
+      "minY": -107.20054,
+      "maxY": 391.05093
+    },
+    "full_source_bounds": {
+      "minX": -183.41444,
+      "maxX": 222.54413,
+      "minY": -107.20054,
+      "maxY": 391.05093
+    },
+    "core_source_bounds": {
+      "minX": -183.41444,
+      "maxX": 222.54413,
+      "minY": -107.20054,
       "maxY": 388.20673
     },
+    "cluster": {
+      "retained": 2192,
+      "total": 2192,
+      "centerX": -4.99143,
+      "centerY": 170.89799,
+      "radiusX": 415.70014,
+      "radiusY": 669.97417
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 126,
+      "visible_height": 160,
+      "density_zoom": 1
+    },
     "scale": 0.41,
-    "x_offset": 87.92735,
-    "y_offset": 173.25992,
+    "x_offset": 87.97841,
+    "y_offset": 172.04778,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:16.730Z"
+  "exported_at": "2026-08-19T13:22:56.646Z"
 }

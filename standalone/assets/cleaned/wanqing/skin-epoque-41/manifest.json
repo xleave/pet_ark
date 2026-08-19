@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "wanqing",
   "character_name": "Wanqing",
   "localized_name": "万顷",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-41",
   "skin_name": "万顷阳光",
   "source": "standalone/assets/source/wanqing/skin-epoque-41",
-  "source_page": "https://prts.wiki/w/%E4%B8%87%E9%A1%B7",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4119_wanqin/meta.json",
-    "model": "char_4119_wanqin_epoque_41/build/build_char_4119_wanqin_epoque_41",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4119_wanqin/char_4119_wanqin_epoque_41/build/build_char_4119_wanqin_epoque_41.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4119_wanqin/char_4119_wanqin_epoque_41/build/build_char_4119_wanqin_epoque_41.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4119_wanqin/char_4119_wanqin_epoque_41/build/build_char_4119_wanqin_epoque_41.png"
+    "assetId": "build_char_4119_wanqin_epoque#41",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "万顷",
+    "appellation": "Wanqing",
+    "skinGroupId": "2025#epoque#3",
+    "skinGroupName": "时代/XL",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4119_wanqin_epoque#41.atlas",
+      ".png": "build_char_4119_wanqin_epoque#41.png",
+      ".skel": "build_char_4119_wanqin_epoque#41.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/wanqing/skin-epoque-41/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,10 +130,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -173.99002,
-      "maxX": 135.73024,
+      "minX": -698.00769,
+      "maxX": 700.81384,
       "minY": -97.90411,
       "maxY": 399.29123
     },
@@ -129,23 +144,29 @@
       "maxY": 409.65247
     },
     "core_source_bounds": {
-      "minX": -173.99002,
-      "maxX": 135.73024,
+      "minX": -698.00769,
+      "maxX": 700.81384,
       "minY": -97.90411,
       "maxY": 399.29123
     },
     "cluster": {
-      "retained": 2904,
+      "retained": 2924,
       "total": 2965,
-      "centerX": -2.16291,
-      "centerY": 153.04316,
-      "radiusX": 281.70739,
-      "radiusY": 698.40022
+      "centerX": -0.28701,
+      "centerY": 151.93848,
+      "radiusX": 645.17122,
+      "radiusY": 657.58527
     },
-    "scale": 0.41,
-    "x_offset": 103.84326,
-    "y_offset": 175.85932,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 35,
+      "visible_height": 50,
+      "density_zoom": 2.8
+    },
+    "scale": 0.3523,
+    "x_offset": 109.5057,
+    "y_offset": 217.90872,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:05.732Z"
+  "exported_at": "2026-08-19T13:24:25.384Z"
 }

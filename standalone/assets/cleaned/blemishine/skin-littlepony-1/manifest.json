@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "blemishine",
   "character_name": "Blemishine",
   "localized_name": "瑕光",
@@ -11,15 +12,29 @@
   "skin_id": "littlepony-1",
   "skin_name": "善良坚强之心",
   "source": "standalone/assets/source/blemishine/skin-littlepony-1",
-  "source_page": "https://prts.wiki/w/%E7%91%95%E5%85%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/meta.json",
-    "model": "char_423_blemsh_littlepony_1/build/build_char_423_blemsh_littlePony_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/char_423_blemsh_littlepony_1/build/build_char_423_blemsh_littlePony_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/char_423_blemsh_littlepony_1/build/build_char_423_blemsh_littlePony_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/char_423_blemsh_littlepony_1/build/build_char_423_blemsh_littlePony_1.png"
+    "assetId": "build_char_423_blemsh_littlepony#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "瑕光",
+    "appellation": "Blemishine",
+    "skinGroupId": "2026#littlePony",
+    "skinGroupName": "小马宝莉",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_423_blemsh_littlePony#1.atlas",
+      ".png": "build_char_423_blemsh_littlePony#1.png",
+      ".skel": "build_char_423_blemsh_littlePony#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/blemishine/skin-littlepony-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -351.48862,
-      "maxX": 217.35066,
-      "minY": -108.45421,
-      "maxY": 472.95346
+      "minX": -1047.31738,
+      "maxX": 328.76019,
+      "minY": -180.30386,
+      "maxY": 499.01755
     },
     "full_source_bounds": {
       "minX": -1047.31738,
@@ -129,23 +144,29 @@
       "maxY": 499.01755
     },
     "core_source_bounds": {
-      "minX": -351.48862,
+      "minX": -1047.31738,
       "maxX": 217.35066,
-      "minY": -108.45421,
+      "minY": -180.30386,
       "maxY": 472.95346
     },
     "cluster": {
-      "retained": 4070,
-      "total": 4138,
-      "centerX": 2.1013,
-      "centerY": 123.49324,
-      "radiusX": 343.49331,
-      "radiusY": 543.85429
+      "retained": 4120,
+      "total": 4120,
+      "centerX": -71.55202,
+      "centerY": 156.24778,
+      "radiusX": 1295.29713,
+      "radiusY": 657.65762
     },
-    "scale": 0.3094,
-    "x_offset": 116.75127,
-    "y_offset": 182.44405,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 48,
+      "visible_height": 55,
+      "density_zoom": 2.54545
+    },
+    "scale": 0.32556,
+    "x_offset": 125.14965,
+    "y_offset": 215.84518,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:45.366Z"
+  "exported_at": "2026-08-19T13:21:40.348Z"
 }

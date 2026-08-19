@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "ho-olheyak",
@@ -12,15 +12,29 @@
   "skin_id": "ambiencesynesthesia-4",
   "skin_name": "历世流风",
   "source": "standalone/assets/source/ho-olheyak/skin-ambiencesynesthesia-4",
-  "source_page": "https://prts.wiki/w/%E9%9C%8D%E5%B0%94%E6%B5%B7%E9%9B%85",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/meta.json",
-    "model": "char_4027_heyak_ambiencesynesthesia_4/build/build_char_4027_heyak_ambienceSynesthesia_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/char_4027_heyak_ambiencesynesthesia_4/build/build_char_4027_heyak_ambienceSynesthesia_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/char_4027_heyak_ambiencesynesthesia_4/build/build_char_4027_heyak_ambienceSynesthesia_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/char_4027_heyak_ambiencesynesthesia_4/build/build_char_4027_heyak_ambienceSynesthesia_4.png"
+    "assetId": "build_char_4027_heyak_ambiencesynesthesia#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "霍尔海雅",
+    "appellation": "Ho'olheyak",
+    "skinGroupId": "2024#ambienceSynesthesia",
+    "skinGroupName": "音律联觉/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4027_heyak_ambienceSynesthesia#4.atlas",
+      ".png": "build_char_4027_heyak_ambienceSynesthesia#4.png",
+      ".skel": "build_char_4027_heyak_ambienceSynesthesia#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/ho-olheyak/skin-ambiencesynesthesia-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -136,12 +150,12 @@
       "maxY": 494.81616
     },
     "cluster": {
-      "retained": 2208,
-      "total": 2208,
+      "retained": 2197,
+      "total": 2197,
       "centerX": -7.81049,
       "centerY": 194.67998,
       "radiusX": 570.57589,
-      "radiusY": 630.38631
+      "radiusY": 626.24756
     },
     "pixel_probe": {
       "animation": "Relax",
@@ -154,5 +168,5 @@
     "y_offset": 216.98998,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:53.728Z"
+  "exported_at": "2026-08-19T13:22:29.148Z"
 }

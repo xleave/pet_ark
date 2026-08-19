@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "hibiscus-the-purifier",
   "character_name": "Hibiscus the Purifier",
   "localized_name": "濯尘芙蓉",
@@ -9,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/hibiscus-the-purifier/default",
-  "source_page": "https://prts.wiki/w/%E6%BF%AF%E5%B0%98%E8%8A%99%E8%93%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1024_hbisc2/meta.json",
-    "model": "defaultskin/build/build_char_1024_hbisc2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1024_hbisc2/defaultskin/build/build_char_1024_hbisc2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1024_hbisc2/defaultskin/build/build_char_1024_hbisc2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1024_hbisc2/defaultskin/build/build_char_1024_hbisc2.png"
+    "assetId": "build_char_1024_hbisc2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "濯尘芙蓉",
+    "appellation": "Hibiscus the Purifier",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1024_hbisc2.atlas",
+      ".png": "build_char_1024_hbisc2.png",
+      ".skel": "build_char_1024_hbisc2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/hibiscus-the-purifier/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -395.03757,
       "maxX": 209.43118,
       "minY": -116.83112,
-      "maxY": 399.01892
+      "maxY": 399.95673
     },
-    "scale": 0.29116,
-    "x_offset": 123.02102,
-    "y_offset": 181.9829,
+    "full_source_bounds": {
+      "minX": -395.03757,
+      "maxX": 209.43118,
+      "minY": -116.83112,
+      "maxY": 399.95673
+    },
+    "core_source_bounds": {
+      "minX": -395.03757,
+      "maxX": 209.43118,
+      "minY": -116.83112,
+      "maxY": 399.95673
+    },
+    "cluster": {
+      "retained": 2179,
+      "total": 2179,
+      "centerX": -2.79797,
+      "centerY": 176.76009,
+      "radiusX": 514.56143,
+      "radiusY": 551.58356
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 85,
+      "visible_height": 116,
+      "density_zoom": 1.2069
+    },
+    "scale": 0.35141,
+    "x_offset": 103.26675,
+    "y_offset": 214.77246,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:10.371Z"
+  "exported_at": "2026-08-19T13:22:27.984Z"
 }

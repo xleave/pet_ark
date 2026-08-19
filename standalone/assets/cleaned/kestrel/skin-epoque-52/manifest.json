@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "kestrel",
@@ -12,15 +12,29 @@
   "skin_id": "epoque-52",
   "skin_name": "三元风情",
   "source": "standalone/assets/source/kestrel/skin-epoque-52",
-  "source_page": "https://prts.wiki/w/%E7%BA%A2%E9%9A%BC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/meta.json",
-    "model": "char_4023_rfalcn_epoque_52/build/build_char_4023_rfalcn_epoque_52",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/char_4023_rfalcn_epoque_52/build/build_char_4023_rfalcn_epoque_52.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/char_4023_rfalcn_epoque_52/build/build_char_4023_rfalcn_epoque_52.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/char_4023_rfalcn_epoque_52/build/build_char_4023_rfalcn_epoque_52.png"
+    "assetId": "build_char_4023_rfalcn_epoque#52",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "红隼",
+    "appellation": "Kestrel",
+    "skinGroupId": "2026#epoque#3",
+    "skinGroupName": "时代/LII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4023_rfalcn_epoque#52.atlas",
+      ".png": "build_char_4023_rfalcn_epoque#52.png",
+      ".skel": "build_char_4023_rfalcn_epoque#52.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/kestrel/skin-epoque-52/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -145,14 +159,14 @@
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 50,
-      "visible_height": 86,
-      "density_zoom": 1.62791
+      "visible_width": 48,
+      "visible_height": 85,
+      "density_zoom": 1.64706
     },
-    "scale": 0.35866,
-    "x_offset": 105.84626,
-    "y_offset": 215.63536,
+    "scale": 0.36288,
+    "x_offset": 105.96209,
+    "y_offset": 217.27813,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:31.445Z"
+  "exported_at": "2026-08-19T13:22:42.991Z"
 }

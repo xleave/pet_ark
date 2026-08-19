@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "saileach",
   "character_name": "Saileach",
   "localized_name": "琴柳",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-14",
   "skin_name": "识芳",
   "source": "standalone/assets/source/saileach/skin-epoque-14",
-  "source_page": "https://prts.wiki/w/%E7%90%B4%E6%9F%B3",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/meta.json",
-    "model": "char_479_sleach_epoque_14/build/build_char_479_sleach_epoque_14",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/char_479_sleach_epoque_14/build/build_char_479_sleach_epoque_14.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/char_479_sleach_epoque_14/build/build_char_479_sleach_epoque_14.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/char_479_sleach_epoque_14/build/build_char_479_sleach_epoque_14.png"
+    "assetId": "build_char_479_sleach_epoque#14",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "琴柳",
+    "appellation": "Saileach",
+    "skinGroupId": "2022#epoque",
+    "skinGroupName": "时代/XIV",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_479_sleach_epoque#14.atlas",
+      ".png": "build_char_479_sleach_epoque#14.png",
+      ".skel": "build_char_479_sleach_epoque#14.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/saileach/skin-epoque-14/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -343.27826,
+      "minX": -488.2337,
       "maxX": 293.16193,
       "minY": -131.66154,
-      "maxY": 393.13086
+      "maxY": 426.11896
     },
     "full_source_bounds": {
       "minX": -1971.54602,
@@ -129,23 +144,29 @@
       "maxY": 502.05963
     },
     "core_source_bounds": {
-      "minX": -343.27826,
+      "minX": -488.2337,
       "maxX": 293.16193,
       "minY": -131.66154,
-      "maxY": 393.13086
+      "maxY": 426.11896
     },
     "cluster": {
-      "retained": 2614,
+      "retained": 2629,
       "total": 2643,
-      "centerX": 0.83086,
-      "centerY": 138.63128,
-      "radiusX": 295.75534,
-      "radiusY": 568.71725
+      "centerX": -22.25985,
+      "centerY": 210.59246,
+      "radiusX": 640.10068,
+      "radiusY": 640.93044
     },
-    "scale": 0.27654,
-    "x_offset": 102.92954,
-    "y_offset": 179.59056,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 91,
+      "visible_height": 90,
+      "density_zoom": 1.55556
+    },
+    "scale": 0.35037,
+    "x_offset": 105.28478,
+    "y_offset": 214.98082,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:17.384Z"
+  "exported_at": "2026-08-19T13:23:45.485Z"
 }

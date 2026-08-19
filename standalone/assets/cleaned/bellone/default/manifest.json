@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "bellone",
   "character_name": "Bellone",
   "localized_name": "贝洛内",
@@ -11,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/bellone/default",
-  "source_page": "https://prts.wiki/w/%E8%B4%9D%E6%B4%9B%E5%86%85",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4037_demetr/meta.json",
-    "model": "defaultskin/build/build_char_4037_demetr",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4037_demetr/defaultskin/build/build_char_4037_demetr.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4037_demetr/defaultskin/build/build_char_4037_demetr.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4037_demetr/defaultskin/build/build_char_4037_demetr.png"
+    "assetId": "build_char_4037_demetr",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "贝洛内",
+    "appellation": "Bellone",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4037_demetr.atlas",
+      ".png": "build_char_4037_demetr.png",
+      ".skel": "build_char_4037_demetr.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +105,7 @@
       "path": "standalone/assets/cleaned/bellone/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,12 +118,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -314.32565,
-      "maxX": 313.70688,
+      "minX": -461.24902,
+      "maxX": 833.58319,
       "minY": -150.65125,
-      "maxY": 465.62
+      "maxY": 520.84637
     },
     "full_source_bounds": {
       "minX": -461.24902,
@@ -118,23 +132,29 @@
       "maxY": 520.84637
     },
     "core_source_bounds": {
-      "minX": -314.32565,
-      "maxX": 313.70688,
+      "minX": -461.24902,
+      "maxX": 833.58319,
       "minY": -150.65125,
-      "maxY": 465.62
+      "maxY": 520.84637
     },
     "cluster": {
-      "retained": 3012,
+      "retained": 3104,
       "total": 3104,
-      "centerX": 6.676,
-      "centerY": 140.02147,
-      "radiusX": 292.7015,
-      "radiusY": 620.42966
+      "centerX": 31.15838,
+      "centerY": 140.1295,
+      "radiusX": 2444.82339,
+      "radiusY": 610.04787
     },
-    "scale": 0.28024,
-    "x_offset": 96.0867,
-    "y_offset": 173.78146,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 37,
+      "visible_height": 57,
+      "density_zoom": 2.45614
+    },
+    "scale": 0.33385,
+    "x_offset": 105.07605,
+    "y_offset": 217.28392,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:11.041Z"
+  "exported_at": "2026-08-19T13:21:36.395Z"
 }

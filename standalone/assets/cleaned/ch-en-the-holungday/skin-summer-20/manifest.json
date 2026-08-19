@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ch-en-the-holungday",
   "character_name": "Ch'en the Holungday",
   "localized_name": "假日威龙陈",
@@ -11,15 +12,30 @@
   "skin_id": "summer-20",
   "skin_name": "悠然假日 HD79",
   "source": "standalone/assets/source/ch-en-the-holungday/skin-summer-20",
-  "source_page": "https://prts.wiki/w/%E5%81%87%E6%97%A5%E5%A8%81%E9%BE%99%E9%99%88",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/meta.json",
-    "model": "char_1013_chen2_summer_20/build/build_char_1013_chen2_summer_20",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/char_1013_chen2_summer_20/build/build_char_1013_chen2_summer_20.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/char_1013_chen2_summer_20/build/build_char_1013_chen2_summer_20.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/char_1013_chen2_summer_20/build/build_char_1013_chen2_summer_20.png"
+    "assetId": "build_char_1013_chen2_summer#20",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "假日威龙陈",
+    "appellation": "Ch'en the Holungday",
+    "skinGroupId": "2025#summer#2",
+    "skinGroupName": "珊瑚海岸/XX",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1013_chen2_summer#20.atlas",
+      ".png": "build_char_1013_chen2_summer#20.png",
+      ".skel": "build_char_1013_chen2_summer#20.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +118,7 @@
       "path": "standalone/assets/cleaned/ch-en-the-holungday/skin-summer-20/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,10 +131,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -335.4108,
-      "maxX": 211.32379,
+      "minX": -404.20801,
+      "maxX": 612.91919,
       "minY": -143.13063,
       "maxY": 471.54736
     },
@@ -129,23 +145,29 @@
       "maxY": 833.10016
     },
     "core_source_bounds": {
-      "minX": -335.4108,
-      "maxX": 211.32379,
+      "minX": -404.20801,
+      "maxX": 612.91919,
       "minY": -143.13063,
       "maxY": 471.54736
     },
     "cluster": {
-      "retained": 2797,
-      "total": 2832,
-      "centerX": -8.83473,
-      "centerY": 131.02771,
-      "radiusX": 343.96401,
-      "radiusY": 738.82038
+      "retained": 2786,
+      "total": 2813,
+      "centerX": -27.08794,
+      "centerY": 215.3722,
+      "radiusX": 545.04398,
+      "radiusY": 960.64186
     },
-    "scale": 0.32191,
-    "x_offset": 115.9725,
-    "y_offset": 169.92464,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 44,
+      "visible_height": 75,
+      "density_zoom": 1.86667
+    },
+    "scale": 0.323,
+    "x_offset": 102.42635,
+    "y_offset": 216.4353,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:13.648Z"
+  "exported_at": "2026-08-19T13:21:49.963Z"
 }

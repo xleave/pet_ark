@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "april",
   "character_name": "April",
   "localized_name": "四月",
@@ -9,15 +12,29 @@
   "skin_id": "wild-3",
   "skin_name": "远望",
   "source": "standalone/assets/source/april/skin-wild-3",
-  "source_page": "https://prts.wiki/w/%E5%9B%9B%E6%9C%88",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/meta.json",
-    "model": "char_365_aprl_wild_3/build/build_char_365_aprl_wild_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/char_365_aprl_wild_3/build/build_char_365_aprl_wild_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/char_365_aprl_wild_3/build/build_char_365_aprl_wild_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/char_365_aprl_wild_3/build/build_char_365_aprl_wild_3.png"
+    "assetId": "build_char_365_aprl_wild#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "四月",
+    "appellation": "April",
+    "skinGroupId": "2020#wild",
+    "skinGroupName": "生命之地/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_365_aprl_wild#3.atlas",
+      ".png": "build_char_365_aprl_wild#3.png",
+      ".skel": "build_char_365_aprl_wild#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/april/skin-wild-3/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -297.08145,
-      "maxX": 187.99991,
+      "maxX": 191.67792,
       "minY": -106.54935,
       "maxY": 526.91504
     },
+    "full_source_bounds": {
+      "minX": -297.08145,
+      "maxX": 191.67792,
+      "minY": -106.54935,
+      "maxY": 526.91504
+    },
+    "core_source_bounds": {
+      "minX": -297.08145,
+      "maxX": 184.84326,
+      "minY": -106.54935,
+      "maxY": 526.91504
+    },
+    "cluster": {
+      "retained": 2216,
+      "total": 2216,
+      "centerX": -10.66468,
+      "centerY": 189.89303,
+      "radiusX": 444.98429,
+      "radiusY": 607.47244
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 92,
+      "visible_height": 146,
+      "density_zoom": 1
+    },
     "scale": 0.32835,
-    "x_offset": 113.90863,
+    "x_offset": 113.30479,
     "y_offset": 181.01419,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:56.294Z"
+  "exported_at": "2026-08-19T13:21:26.946Z"
 }

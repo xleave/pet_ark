@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "enforcer",
   "character_name": "Enforcer",
   "localized_name": "见行者",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-20",
   "skin_name": "拾翼",
   "source": "standalone/assets/source/enforcer/skin-epoque-20",
-  "source_page": "https://prts.wiki/w/%E8%A7%81%E8%A1%8C%E8%80%85",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/meta.json",
-    "model": "char_4036_forcer_epoque_20/build/build_char_4036_forcer_epoque_20",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/char_4036_forcer_epoque_20/build/build_char_4036_forcer_epoque_20.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/char_4036_forcer_epoque_20/build/build_char_4036_forcer_epoque_20.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/char_4036_forcer_epoque_20/build/build_char_4036_forcer_epoque_20.png"
+    "assetId": "build_char_4036_forcer_epoque#20",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "见行者",
+    "appellation": "Enforcer",
+    "skinGroupId": "2023#epoque#3",
+    "skinGroupName": "时代/XXI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4036_forcer_epoque#20.atlas",
+      ".png": "build_char_4036_forcer_epoque#20.png",
+      ".skel": "build_char_4036_forcer_epoque#20.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/enforcer/skin-epoque-20/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -266.04745,
-      "maxX": 221.00587,
-      "minY": -86.77385,
-      "maxY": 453.02731
+      "minX": -279.1315,
+      "maxX": 567.53662,
+      "minY": -314.05374,
+      "maxY": 466.53833
     },
     "full_source_bounds": {
       "minX": -279.1315,
@@ -129,23 +144,29 @@
       "maxY": 466.53833
     },
     "core_source_bounds": {
-      "minX": -266.04745,
-      "maxX": 221.00587,
-      "minY": -86.77385,
+      "minX": -279.1315,
+      "maxX": 567.53662,
+      "minY": -314.05374,
       "maxY": 453.02731
     },
     "cluster": {
-      "retained": 3683,
+      "retained": 3712,
       "total": 3712,
-      "centerX": 4.93915,
-      "centerY": 147.83975,
-      "radiusX": 257.39705,
-      "radiusY": 563.29305
+      "centerX": 28.81727,
+      "centerY": 169.09373,
+      "radiusX": 529.99856,
+      "radiusY": 546.39809
     },
-    "scale": 0.36136,
-    "x_offset": 104.13804,
-    "y_offset": 184.64369,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 65,
+      "visible_height": 93,
+      "density_zoom": 1.50538
+    },
+    "scale": 0.31293,
+    "x_offset": 111.09002,
+    "y_offset": 217.0786,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:57.202Z"
+  "exported_at": "2026-08-19T13:22:04.383Z"
 }

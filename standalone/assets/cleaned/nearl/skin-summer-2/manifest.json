@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "nearl",
   "character_name": "Nearl",
   "localized_name": "临光",
@@ -9,15 +12,29 @@
   "skin_id": "summer-2",
   "skin_name": "灿阳朝露 SD01",
   "source": "standalone/assets/source/nearl/skin-summer-2",
-  "source_page": "https://prts.wiki/w/%E4%B8%B4%E5%85%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_148_nearl/meta.json",
-    "model": "char_148_nearl_summer_2/build/build_char_148_nearl_summer_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_148_nearl/char_148_nearl_summer_2/build/build_char_148_nearl_summer_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_148_nearl/char_148_nearl_summer_2/build/build_char_148_nearl_summer_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_148_nearl/char_148_nearl_summer_2/build/build_char_148_nearl_summer_2.png"
+    "assetId": "build_char_148_nearl_summer#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "临光",
+    "appellation": "Nearl",
+    "skinGroupId": "2020#summer",
+    "skinGroupName": "珊瑚海岸/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_148_nearl_summer#2.atlas",
+      ".png": "build_char_148_nearl_summer#2.png",
+      ".skel": "build_char_148_nearl_summer#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/nearl/skin-summer-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -255.89096,
-      "maxX": 377.76859,
-      "minY": -138.5025,
+      "minX": -255.8831,
+      "maxX": 341.73734,
+      "minY": -138.35689,
       "maxY": 515.17944
     },
-    "scale": 0.27775,
-    "x_offset": 79.07414,
-    "y_offset": 177.5307,
+    "full_source_bounds": {
+      "minX": -255.8831,
+      "maxX": 341.73734,
+      "minY": -138.35689,
+      "maxY": 515.17944
+    },
+    "core_source_bounds": {
+      "minX": -255.8831,
+      "maxX": 195.26591,
+      "minY": -138.35689,
+      "maxY": 515.17944
+    },
+    "cluster": {
+      "retained": 1881,
+      "total": 1881,
+      "centerX": -5.93587,
+      "centerY": 201.17843,
+      "radiusX": 426.24071,
+      "radiusY": 585.05165
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 124,
+      "visible_height": 132,
+      "density_zoom": 1.06061
+    },
+    "scale": 0.2945,
+    "x_offset": 83.35791,
+    "y_offset": 175.25372,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:21.062Z"
+  "exported_at": "2026-08-19T13:23:16.213Z"
 }

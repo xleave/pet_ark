@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "beanstalk",
   "character_name": "Beanstalk",
   "localized_name": "豆苗",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/beanstalk/default",
-  "source_page": "https://prts.wiki/w/%E8%B1%86%E8%8B%97",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/meta.json",
-    "model": "defaultskin/build/build_char_452_bstalk",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/defaultskin/build/build_char_452_bstalk.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/defaultskin/build/build_char_452_bstalk.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/defaultskin/build/build_char_452_bstalk.png"
+    "assetId": "build_char_452_bstalk",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "豆苗",
+    "appellation": "Beanstalk",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_452_bstalk.atlas",
+      ".png": "build_char_452_bstalk.png",
+      ".skel": "build_char_452_bstalk.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/beanstalk/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -257.62479,
       "maxX": 200.57063,
       "minY": -128.21422,
       "maxY": 423.43594
     },
+    "full_source_bounds": {
+      "minX": -257.62479,
+      "maxX": 200.57063,
+      "minY": -128.21422,
+      "maxY": 423.43594
+    },
+    "core_source_bounds": {
+      "minX": -257.62479,
+      "maxX": 200.57063,
+      "minY": -128.21422,
+      "maxY": 412.67105
+    },
+    "cluster": {
+      "retained": 2386,
+      "total": 2386,
+      "centerX": -152.62477,
+      "centerY": 165.36792,
+      "radiusX": 383.7981,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 81,
+      "visible_height": 155,
+      "density_zoom": 1
+    },
     "scale": 0.37705,
     "x_offset": 106.75615,
     "y_offset": 167.65676,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:57.876Z"
+  "exported_at": "2026-08-19T13:21:34.654Z"
 }

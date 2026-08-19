@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "vigna",
   "character_name": "Vigna",
   "localized_name": "红豆",
@@ -11,15 +12,29 @@
   "skin_id": "as-1",
   "skin_name": "漆黑热浪",
   "source": "standalone/assets/source/vigna/skin-as-1",
-  "source_page": "https://prts.wiki/w/%E7%BA%A2%E8%B1%86",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_290_vigna/meta.json",
-    "model": "char_290_vigna_as_1/build/build_char_290_vigna_as_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_290_vigna/char_290_vigna_as_1/build/build_char_290_vigna_as_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_290_vigna/char_290_vigna_as_1/build/build_char_290_vigna_as_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_290_vigna/char_290_vigna_as_1/build/build_char_290_vigna_as_1.png"
+    "assetId": "build_char_290_vigna_as#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "红豆",
+    "appellation": "Vigna",
+    "skinGroupId": "2021#as",
+    "skinGroupName": "音律联觉",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_290_vigna_as#1.atlas",
+      ".png": "build_char_290_vigna_as#1.png",
+      ".skel": "build_char_290_vigna_as#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/vigna/skin-as-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -137,15 +152,21 @@
     "cluster": {
       "retained": 2248,
       "total": 2250,
-      "centerX": -13.25461,
-      "centerY": 153.14293,
-      "radiusX": 260.83846,
-      "radiusY": 717.22707
+      "centerX": 0.39748,
+      "centerY": 208.03999,
+      "radiusX": 379.78855,
+      "radiusY": 567.48558
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 106,
+      "visible_height": 168,
+      "density_zoom": 1
     },
     "scale": 0.41,
     "x_offset": 110.84773,
     "y_offset": 198.50458,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:05:06.925Z"
+  "exported_at": "2026-08-19T13:24:20.679Z"
 }

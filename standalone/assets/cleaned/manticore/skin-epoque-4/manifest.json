@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "manticore",
   "character_name": "Manticore",
   "localized_name": "狮蝎",
@@ -9,15 +12,29 @@
   "skin_id": "epoque-4",
   "skin_name": "无形悼挽",
   "source": "standalone/assets/source/manticore/skin-epoque-4",
-  "source_page": "https://prts.wiki/w/%E7%8B%AE%E8%9D%8E",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_215_mantic/meta.json",
-    "model": "char_215_mantic_epoque_4/build/build_char_215_mantic_epoque_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_215_mantic/char_215_mantic_epoque_4/build/build_char_215_mantic_epoque_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_215_mantic/char_215_mantic_epoque_4/build/build_char_215_mantic_epoque_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_215_mantic/char_215_mantic_epoque_4/build/build_char_215_mantic_epoque_4.png"
+    "assetId": "build_char_215_mantic_epoque#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "狮蝎",
+    "appellation": "Manticore",
+    "skinGroupId": "2020#epoque#3",
+    "skinGroupName": "时代/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_215_mantic_epoque#4.atlas",
+      ".png": "build_char_215_mantic_epoque#4.png",
+      ".skel": "build_char_215_mantic_epoque#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/manticore/skin-epoque-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -296.9899,
+      "minX": -296.98392,
       "maxX": 324.31818,
       "minY": -139.24359,
       "maxY": 462.54922
     },
-    "scale": 0.28327,
-    "x_offset": 92.12931,
-    "y_offset": 176.55601,
+    "full_source_bounds": {
+      "minX": -296.98392,
+      "maxX": 324.31818,
+      "minY": -139.24359,
+      "maxY": 462.54922
+    },
+    "core_source_bounds": {
+      "minX": -296.98392,
+      "maxX": 324.31818,
+      "minY": -139.24359,
+      "maxY": 462.54922
+    },
+    "cluster": {
+      "retained": 2470,
+      "total": 2470,
+      "centerX": 12.59227,
+      "centerY": 160.50955,
+      "radiusX": 565.351,
+      "radiusY": 748.04722
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 109,
+      "visible_height": 120,
+      "density_zoom": 1.16667
+    },
+    "scale": 0.28328,
+    "x_offset": 92.12843,
+    "y_offset": 176.55563,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:17.158Z"
+  "exported_at": "2026-08-19T13:22:58.594Z"
 }

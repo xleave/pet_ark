@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "vermeil",
   "character_name": "Vermeil",
   "localized_name": "红云",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/vermeil/default",
-  "source_page": "https://prts.wiki/w/%E7%BA%A2%E4%BA%91",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_190_clour/meta.json",
-    "model": "defaultskin/build/build_char_190_clour",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_190_clour/defaultskin/build/build_char_190_clour.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_190_clour/defaultskin/build/build_char_190_clour.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_190_clour/defaultskin/build/build_char_190_clour.png"
+    "assetId": "build_char_190_clour",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "红云",
+    "appellation": "Vermeil",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_190_clour.atlas",
+      ".png": "build_char_190_clour.png",
+      ".skel": "build_char_190_clour.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/vermeil/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -278.90759,
+      "minX": -278.97693,
       "maxX": 156.62219,
-      "minY": -129.26434,
-      "maxY": 404.54803
+      "minY": -129.43349,
+      "maxY": 413.16174
     },
-    "scale": 0.38965,
-    "x_offset": 119.82425,
-    "y_offset": 165.63215,
+    "full_source_bounds": {
+      "minX": -278.97693,
+      "maxX": 156.62219,
+      "minY": -129.43349,
+      "maxY": 413.16174
+    },
+    "core_source_bounds": {
+      "minX": -278.97693,
+      "maxX": 156.62219,
+      "minY": -129.43349,
+      "maxY": 404.30469
+    },
+    "cluster": {
+      "retained": 1520,
+      "total": 1520,
+      "centerX": 3.22378,
+      "centerY": 199.40426,
+      "radiusX": 415.35377,
+      "radiusY": 565.00286
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 80,
+      "visible_height": 154,
+      "density_zoom": 1
+    },
+    "scale": 0.38334,
+    "x_offset": 119.45191,
+    "y_offset": 166.3826,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:36.372Z"
+  "exported_at": "2026-08-19T13:24:19.133Z"
 }

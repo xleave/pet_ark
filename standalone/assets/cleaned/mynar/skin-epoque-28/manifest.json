@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "mynar",
@@ -12,15 +12,29 @@
   "skin_id": "epoque-28",
   "skin_name": "远路",
   "source": "standalone/assets/source/mynar/skin-epoque-28",
-  "source_page": "https://prts.wiki/w/%E7%8E%9B%E6%81%A9%E7%BA%B3",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4064_mlynar/meta.json",
-    "model": "char_4064_mlynar_epoque_28/build/build_char_4064_mlynar_epoque_28",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4064_mlynar/char_4064_mlynar_epoque_28/build/build_char_4064_mlynar_epoque_28.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4064_mlynar/char_4064_mlynar_epoque_28/build/build_char_4064_mlynar_epoque_28.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4064_mlynar/char_4064_mlynar_epoque_28/build/build_char_4064_mlynar_epoque_28.png"
+    "assetId": "build_char_4064_mlynar_epoque#28",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "玛恩纳",
+    "appellation": "Młynar",
+    "skinGroupId": "2023#epoque#10",
+    "skinGroupName": "时代/XXVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4064_mlynar_epoque#28.atlas",
+      ".png": "build_char_4064_mlynar_epoque#28.png",
+      ".skel": "build_char_4064_mlynar_epoque#28.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/mynar/skin-epoque-28/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -119,40 +133,40 @@
     "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -354.49579,
-      "maxX": 418.44003,
+      "maxX": 369.01089,
       "minY": -116.08002,
       "maxY": 787.10797
     },
     "full_source_bounds": {
       "minX": -354.49579,
-      "maxX": 418.44003,
+      "maxX": 369.01089,
       "minY": -116.08002,
       "maxY": 787.10797
     },
     "core_source_bounds": {
       "minX": -302.12039,
-      "maxX": 418.44003,
+      "maxX": 368.99002,
       "minY": -116.08002,
       "maxY": 554.91998
     },
     "cluster": {
-      "retained": 3257,
-      "total": 3257,
-      "centerX": 22.34869,
-      "centerY": 176.62872,
-      "radiusX": 624.89014,
-      "radiusY": 605.0087
+      "retained": 3223,
+      "total": 3223,
+      "centerX": 21.35053,
+      "centerY": 179.87799,
+      "radiusX": 604.0296,
+      "radiusY": 573.72204
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 137,
-      "visible_height": 96,
-      "density_zoom": 1.28467
+      "visible_width": 67,
+      "visible_height": 97,
+      "density_zoom": 1.4433
     },
-    "scale": 0.29252,
-    "x_offset": 62.23863,
-    "y_offset": 216.72995,
+    "scale": 0.33239,
+    "x_offset": 108.02069,
+    "y_offset": 216.38581,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:43.359Z"
+  "exported_at": "2026-08-19T13:23:13.453Z"
 }

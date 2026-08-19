@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "scavenger",
   "character_name": "Scavenger",
   "localized_name": "清道夫",
@@ -9,15 +12,29 @@
   "skin_id": "striker-2",
   "skin_name": "生存",
   "source": "standalone/assets/source/scavenger/skin-striker-2",
-  "source_page": "https://prts.wiki/w/%E6%B8%85%E9%81%93%E5%A4%AB",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_149_scave/meta.json",
-    "model": "char_149_scave_striker_2/build/build_char_149_scave_striker_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_149_scave/char_149_scave_striker_2/build/build_char_149_scave_striker_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_149_scave/char_149_scave_striker_2/build/build_char_149_scave_striker_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_149_scave/char_149_scave_striker_2/build/build_char_149_scave_striker_2.png"
+    "assetId": "build_char_149_scave_striker#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "清道夫",
+    "appellation": "Scavenger",
+    "skinGroupId": "2022#striker",
+    "skinGroupName": "雷神推进者/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_149_scave_striker#2.atlas",
+      ".png": "build_char_149_scave_striker#2.png",
+      ".skel": "build_char_149_scave_striker#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/scavenger/skin-striker-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -238.64857,
+      "minX": -238.64687,
       "maxX": 264.20407,
       "minY": -119.56796,
-      "maxY": 503.4325
+      "maxY": 418.36835
     },
-    "scale": 0.33387,
-    "x_offset": 91.73392,
-    "y_offset": 176.08007,
+    "full_source_bounds": {
+      "minX": -238.64687,
+      "maxX": 264.20407,
+      "minY": -119.56796,
+      "maxY": 418.36835
+    },
+    "core_source_bounds": {
+      "minX": -238.64687,
+      "maxX": 264.20407,
+      "minY": -119.56796,
+      "maxY": 392.78873
+    },
+    "cluster": {
+      "retained": 2335,
+      "total": 2335,
+      "centerX": -0.3456,
+      "centerY": 211.56678,
+      "radiusX": 350.48527,
+      "radiusY": 625.08163
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 102,
+      "visible_height": 136,
+      "density_zoom": 1.02941
+    },
+    "scale": 0.35,
+    "x_offset": 91.52743,
+    "y_offset": 174.1507,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:29.464Z"
+  "exported_at": "2026-08-19T13:23:49.335Z"
 }

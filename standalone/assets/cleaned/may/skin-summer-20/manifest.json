@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "may",
   "character_name": "May",
   "localized_name": "梅",
@@ -9,15 +12,29 @@
   "skin_id": "summer-20",
   "skin_name": "夏卉 FA054",
   "source": "standalone/assets/source/may/skin-summer-20",
-  "source_page": "https://prts.wiki/w/%E6%A2%85",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_133_mm/meta.json",
-    "model": "char_133_mm_summer_20/build/build_char_133_mm_summer_20",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_133_mm/char_133_mm_summer_20/build/build_char_133_mm_summer_20.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_133_mm/char_133_mm_summer_20/build/build_char_133_mm_summer_20.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_133_mm/char_133_mm_summer_20/build/build_char_133_mm_summer_20.png"
+    "assetId": "build_char_133_mm_summer#20",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "梅",
+    "appellation": "May",
+    "skinGroupId": "2025#summer#2",
+    "skinGroupName": "珊瑚海岸/XX",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_133_mm_summer#20.atlas",
+      ".png": "build_char_133_mm_summer#20.png",
+      ".skel": "build_char_133_mm_summer#20.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/may/skin-summer-20/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -378.88074,
       "maxX": 202.16327,
       "minY": -114.75119,
       "maxY": 417.69815
     },
+    "full_source_bounds": {
+      "minX": -378.88074,
+      "maxX": 202.16327,
+      "minY": -114.75119,
+      "maxY": 417.69815
+    },
+    "core_source_bounds": {
+      "minX": -378.88074,
+      "maxX": 202.16327,
+      "minY": -114.75119,
+      "maxY": 414.43048
+    },
+    "cluster": {
+      "retained": 2800,
+      "total": 2800,
+      "centerX": -11.90489,
+      "centerY": 192.24366,
+      "radiusX": 519.93182,
+      "radiusY": 684.99588
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 75,
+      "visible_height": 125,
+      "density_zoom": 1.12
+    },
     "scale": 0.3029,
     "x_offset": 122.76413,
     "y_offset": 181.24151,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:17.822Z"
+  "exported_at": "2026-08-19T13:23:00.683Z"
 }

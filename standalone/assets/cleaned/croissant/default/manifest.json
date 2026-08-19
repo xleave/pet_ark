@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "croissant",
   "character_name": "Croissant",
   "localized_name": "可颂",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/croissant/default",
-  "source_page": "https://prts.wiki/w/%E5%8F%AF%E9%A2%82",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/meta.json",
-    "model": "defaultskin/build/char_201_moeshd",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/defaultskin/build/char_201_moeshd.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/defaultskin/build/char_201_moeshd.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/defaultskin/build/char_201_moeshd.png"
+    "assetId": "build_char_201_moeshd",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "可颂",
+    "appellation": "Croissant",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "char_201_moeshd.atlas",
+      ".png": "char_201_moeshd.png",
+      ".skel": "char_201_moeshd.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/croissant/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -217.32697,
+      "minX": -217.36809,
       "maxX": 254.56686,
-      "minY": -120.7727,
+      "minY": -120.78073,
+      "maxY": 381.78009
+    },
+    "full_source_bounds": {
+      "minX": -217.36809,
+      "maxX": 254.56686,
+      "minY": -120.78073,
+      "maxY": 381.78009
+    },
+    "core_source_bounds": {
+      "minX": -217.36809,
+      "maxX": 254.56686,
+      "minY": -120.78073,
       "maxY": 379.18802
     },
-    "scale": 0.37297,
-    "x_offset": 89.05541,
-    "y_offset": 170.95598,
+    "cluster": {
+      "retained": 1342,
+      "total": 1342,
+      "centerX": 5.13598,
+      "centerY": 163.38705,
+      "radiusX": 439.98202,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 93,
+      "visible_height": 141,
+      "density_zoom": 1
+    },
+    "scale": 0.37293,
+    "x_offset": 89.06368,
+    "y_offset": 170.95691,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:02.731Z"
+  "exported_at": "2026-08-19T13:21:55.406Z"
 }

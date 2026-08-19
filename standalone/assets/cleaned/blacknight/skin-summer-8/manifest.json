@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "blacknight",
   "character_name": "Blacknight",
   "localized_name": "夜半",
@@ -9,15 +12,29 @@
   "skin_id": "summer-8",
   "skin_name": "夏卉 FA641",
   "source": "standalone/assets/source/blacknight/skin-summer-8",
-  "source_page": "https://prts.wiki/w/%E5%A4%9C%E5%8D%8A",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_476_blkngt/meta.json",
-    "model": "char_476_blkngt_summer_8/build/build_char_476_blkngt_summer_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_476_blkngt/char_476_blkngt_summer_8/build/build_char_476_blkngt_summer_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_476_blkngt/char_476_blkngt_summer_8/build/build_char_476_blkngt_summer_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_476_blkngt/char_476_blkngt_summer_8/build/build_char_476_blkngt_summer_8.png"
+    "assetId": "build_char_476_blkngt_summer#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "夜半",
+    "appellation": "Blacknight",
+    "skinGroupId": "2022#summer",
+    "skinGroupName": "珊瑚海岸/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_476_blkngt_summer#8.atlas",
+      ".png": "build_char_476_blkngt_summer#8.png",
+      ".skel": "build_char_476_blkngt_summer#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/blacknight/skin-summer-8/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -221.28616,
+      "minX": -211.20232,
       "maxX": 354.19476,
       "minY": -115.74574,
       "maxY": 563.39777
     },
-    "scale": 0.30583,
-    "x_offset": 75.6762,
-    "y_offset": 180.60135,
+    "full_source_bounds": {
+      "minX": -211.20232,
+      "maxX": 354.19476,
+      "minY": -115.74574,
+      "maxY": 563.39777
+    },
+    "core_source_bounds": {
+      "minX": -198.07663,
+      "maxX": 354.19476,
+      "minY": -115.74574,
+      "maxY": 563.39777
+    },
+    "cluster": {
+      "retained": 2912,
+      "total": 2912,
+      "centerX": 8.99895,
+      "centerY": 203.539,
+      "radiusX": 478.79664,
+      "radiusY": 600.04532
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 100,
+      "visible_height": 122,
+      "density_zoom": 1.14754
+    },
+    "scale": 0.30627,
+    "x_offset": 74.10299,
+    "y_offset": 180.55077,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:58.850Z"
+  "exported_at": "2026-08-19T13:21:38.548Z"
 }

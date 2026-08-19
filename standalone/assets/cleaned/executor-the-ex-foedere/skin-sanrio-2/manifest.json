@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "executor-the-ex-foedere",
   "character_name": "Executor the Ex Foedere",
   "localized_name": "圣约送葬人",
@@ -11,15 +12,30 @@
   "skin_id": "sanrio-2",
   "skin_name": "蒸汽寻踪者",
   "source": "standalone/assets/source/executor-the-ex-foedere/skin-sanrio-2",
-  "source_page": "https://prts.wiki/w/%E5%9C%A3%E7%BA%A6%E9%80%81%E8%91%AC%E4%BA%BA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/meta.json",
-    "model": "char_1032_excu2_sanrio_2/build/build_char_1032_excu2_sanrio_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/char_1032_excu2_sanrio_2/build/build_char_1032_excu2_sanrio_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/char_1032_excu2_sanrio_2/build/build_char_1032_excu2_sanrio_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/char_1032_excu2_sanrio_2/build/build_char_1032_excu2_sanrio_2.png"
+    "assetId": "build_char_1032_excu2_sanrio#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "圣约送葬人",
+    "appellation": "Executor the Ex Foedere",
+    "skinGroupId": "2025#sanrio",
+    "skinGroupName": "三丽鸥家族/II",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1032_excu2_sanrio#2.atlas",
+      ".png": "build_char_1032_excu2_sanrio#2.png",
+      ".skel": "build_char_1032_excu2_sanrio#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +118,7 @@
       "path": "standalone/assets/cleaned/executor-the-ex-foedere/skin-sanrio-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +131,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -349.95905,
-      "maxX": 337.11896,
+      "minX": -713.5174,
+      "maxX": 648.67236,
       "minY": -101.79391,
-      "maxY": 506.38669
+      "maxY": 567.91534
     },
     "full_source_bounds": {
       "minX": -713.5174,
@@ -129,23 +145,29 @@
       "maxY": 567.91534
     },
     "core_source_bounds": {
-      "minX": -349.95905,
-      "maxX": 337.11896,
+      "minX": -713.5174,
+      "maxX": 606.61578,
       "minY": -101.79391,
       "maxY": 506.38669
     },
     "cluster": {
-      "retained": 2821,
+      "retained": 2904,
       "total": 2904,
-      "centerX": -1.34886,
-      "centerY": 151.33491,
-      "radiusX": 318.9394,
-      "radiusY": 637.72968
+      "centerX": 21.13666,
+      "centerY": 186.98605,
+      "radiusX": 2579.88204,
+      "radiusY": 518.24484
     },
-    "scale": 0.25616,
-    "x_offset": 97.64454,
-    "y_offset": 189.92475,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 50,
+      "visible_height": 58,
+      "density_zoom": 2.41379
+    },
+    "scale": 0.31187,
+    "x_offset": 109.73233,
+    "y_offset": 218.04653,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:13.710Z"
+  "exported_at": "2026-08-19T13:22:08.154Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "crackborne",
   "character_name": "Crackborne",
   "localized_name": "裂响",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/crackborne/default",
-  "source_page": "https://prts.wiki/w/%E8%A3%82%E5%93%8D",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4225_tanya/meta.json",
-    "model": "defaultskin/build/build_char_4225_tanya",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4225_tanya/defaultskin/build/build_char_4225_tanya.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4225_tanya/defaultskin/build/build_char_4225_tanya.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4225_tanya/defaultskin/build/build_char_4225_tanya.png"
+    "assetId": "build_char_4225_tanya",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "裂响",
+    "appellation": "Crackborne",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4225_tanya.atlas",
+      ".png": "build_char_4225_tanya.png",
+      ".skel": "build_char_4225_tanya.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/crackborne/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -239.42599,
+      "minX": -239.43323,
       "maxX": 165.82021,
-      "minY": -121.56507,
-      "maxY": 389.88107
+      "minY": -122.42507,
+      "maxY": 390.44067
     },
-    "scale": 0.40669,
-    "x_offset": 110.96737,
-    "y_offset": 166.56071,
+    "full_source_bounds": {
+      "minX": -239.43323,
+      "maxX": 165.82021,
+      "minY": -122.42507,
+      "maxY": 390.44067
+    },
+    "core_source_bounds": {
+      "minX": -239.43323,
+      "maxX": 165.82021,
+      "minY": -122.42507,
+      "maxY": 386.89011
+    },
+    "cluster": {
+      "retained": 3119,
+      "total": 3119,
+      "centerX": 1.17153,
+      "centerY": 166.98723,
+      "radiusX": 402.71036,
+      "radiusY": 612.9309
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 87,
+      "visible_height": 157,
+      "density_zoom": 1
+    },
+    "scale": 0.40556,
+    "x_offset": 110.9274,
+    "y_offset": 166.34877,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:02.721Z"
+  "exported_at": "2026-08-19T13:21:55.794Z"
 }

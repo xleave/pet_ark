@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "viviana",
   "character_name": "Viviana",
   "localized_name": "薇薇安娜",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-40",
   "skin_name": "寄自奥格尼斯科",
   "source": "standalone/assets/source/viviana/skin-epoque-40",
-  "source_page": "https://prts.wiki/w/%E8%96%87%E8%96%87%E5%AE%89%E5%A8%9C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4098_vvana/meta.json",
-    "model": "char_4098_vvana_epoque_40/build/build_char_4098_vvana_epoque_40",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4098_vvana/char_4098_vvana_epoque_40/build/build_char_4098_vvana_epoque_40.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4098_vvana/char_4098_vvana_epoque_40/build/build_char_4098_vvana_epoque_40.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4098_vvana/char_4098_vvana_epoque_40/build/build_char_4098_vvana_epoque_40.png"
+    "assetId": "build_char_4098_vvana_epoque#40",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "薇薇安娜",
+    "appellation": "Viviana",
+    "skinGroupId": "2025#epoque#2",
+    "skinGroupName": "时代/XXXIX",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4098_vvana_epoque#40.atlas",
+      ".png": "build_char_4098_vvana_epoque#40.png",
+      ".skel": "build_char_4098_vvana_epoque#40.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/viviana/skin-epoque-40/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -135,17 +150,23 @@
       "maxY": 494.16577
     },
     "cluster": {
-      "retained": 3210,
-      "total": 3212,
-      "centerX": -9.7496,
-      "centerY": 141.58342,
-      "radiusX": 315.71482,
-      "radiusY": 665.83521
+      "retained": 3110,
+      "total": 3112,
+      "centerX": -8.20024,
+      "centerY": 173.9995,
+      "radiusX": 503.38006,
+      "radiusY": 677.34568
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 82,
+      "visible_height": 157,
+      "density_zoom": 1
     },
     "scale": 0.32104,
     "x_offset": 109.27935,
     "y_offset": 179.19781,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:52.522Z"
+  "exported_at": "2026-08-19T13:24:22.820Z"
 }

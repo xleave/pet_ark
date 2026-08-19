@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "miss-christine",
   "character_name": "Miss.Christine",
   "localized_name": "Miss.Christine",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-56",
   "skin_name": "底绒舞会",
   "source": "standalone/assets/source/miss-christine/skin-epoque-56",
-  "source_page": "https://prts.wiki/w/Miss.Christine",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/meta.json",
-    "model": "char_4198_christ_epoque_56/build/build_char_4198_christ_epoque_56",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/char_4198_christ_epoque_56/build/build_char_4198_christ_epoque_56.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/char_4198_christ_epoque_56/build/build_char_4198_christ_epoque_56.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/char_4198_christ_epoque_56/build/build_char_4198_christ_epoque_56.png"
+    "assetId": "build_char_4198_christ_epoque#56",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "Miss.Christine",
+    "appellation": "Miss.Christine",
+    "skinGroupId": "2026#epoque#7",
+    "skinGroupName": "时代/LVI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4198_christ_epoque#56.atlas",
+      ".png": "build_char_4198_christ_epoque#56.png",
+      ".skel": "build_char_4198_christ_epoque#56.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/miss-christine/skin-epoque-56/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -255.19394,
-      "maxX": 156.95828,
+      "minX": -258.3847,
+      "maxX": 641.81763,
       "minY": -6.87533,
-      "maxY": 288.00378
+      "maxY": 379.21295
     },
     "full_source_bounds": {
       "minX": -258.3847,
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -255.19394,
-      "maxX": 156.95828,
+      "maxX": 614.42163,
       "minY": -6.87533,
       "maxY": 288.00378
     },
     "cluster": {
-      "retained": 1719,
+      "retained": 1722,
       "total": 1723,
-      "centerX": 28.36881,
-      "centerY": 106.32227,
-      "radiusX": 420.74545,
-      "radiusY": 384
+      "centerX": 50.87483,
+      "centerY": 106.76277,
+      "radiusX": 559.95846,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 77,
+      "visible_height": 54,
+      "density_zoom": 2.09706
     },
     "scale": 0.41,
-    "x_offset": 116.13831,
-    "y_offset": 213.18112,
+    "x_offset": 115.95818,
+    "y_offset": 215.27818,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:44.837Z"
+  "exported_at": "2026-08-19T13:23:05.180Z"
 }

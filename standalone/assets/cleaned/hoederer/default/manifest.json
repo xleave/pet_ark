@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "hoederer",
   "character_name": "Hoederer",
   "localized_name": "赫德雷",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/hoederer/default",
-  "source_page": "https://prts.wiki/w/%E8%B5%AB%E5%BE%B7%E9%9B%B7",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4088_hodrer/meta.json",
-    "model": "defaultskin/build/build_char_4088_hodrer",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4088_hodrer/defaultskin/build/build_char_4088_hodrer.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4088_hodrer/defaultskin/build/build_char_4088_hodrer.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4088_hodrer/defaultskin/build/build_char_4088_hodrer.png"
+    "assetId": "build_char_4088_hodrer",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "赫德雷",
+    "appellation": "Hoederer",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4088_hodrer.atlas",
+      ".png": "build_char_4088_hodrer.png",
+      ".skel": "build_char_4088_hodrer.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/hoederer/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -246.57542,
       "maxX": 190.36336,
-      "minY": -92.52057,
-      "maxY": 399.2052
+      "minY": -92.58801,
+      "maxY": 400.32285
+    },
+    "full_source_bounds": {
+      "minX": -246.57542,
+      "maxX": 190.36336,
+      "minY": -92.58801,
+      "maxY": 400.32285
+    },
+    "core_source_bounds": {
+      "minX": -246.57542,
+      "maxX": 190.36336,
+      "minY": -92.58801,
+      "maxY": 400.32285
+    },
+    "cluster": {
+      "retained": 1956,
+      "total": 1956,
+      "centerX": -6.39348,
+      "centerY": 198.06306,
+      "radiusX": 434.96156,
+      "radiusY": 654.05378
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 120,
+      "visible_height": 161,
+      "density_zoom": 1
     },
     "scale": 0.4028,
     "x_offset": 107.32118,
-    "y_offset": 178.73249,
+    "y_offset": 178.70532,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:10.653Z"
+  "exported_at": "2026-08-19T13:22:29.427Z"
 }

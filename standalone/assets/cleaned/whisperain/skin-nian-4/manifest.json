@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "whisperain",
   "character_name": "Whisperain",
   "localized_name": "絮雨",
@@ -11,15 +12,29 @@
   "skin_id": "nian-4",
   "skin_name": "孤寒峭",
   "source": "standalone/assets/source/whisperain/skin-nian-4",
-  "source_page": "https://prts.wiki/w/%E7%B5%AE%E9%9B%A8",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/meta.json",
-    "model": "char_436_whispr_nian_4/build/build_char_436_whispr_nian_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/char_436_whispr_nian_4/build/build_char_436_whispr_nian_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/char_436_whispr_nian_4/build/build_char_436_whispr_nian_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/char_436_whispr_nian_4/build/build_char_436_whispr_nian_4.png"
+    "assetId": "build_char_436_whispr_nian#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "絮雨",
+    "appellation": "Whisperain",
+    "skinGroupId": "2021#nian",
+    "skinGroupName": "0011制造/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_436_whispr_nian#4.atlas",
+      ".png": "build_char_436_whispr_nian#4.png",
+      ".skel": "build_char_436_whispr_nian#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/whisperain/skin-nian-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -276.46634,
-      "maxX": 222.06001,
-      "minY": -147.59767,
-      "maxY": 405.46646
+      "minX": -529.62079,
+      "maxX": 506.12,
+      "minY": -147.62325,
+      "maxY": 666.14142
     },
     "full_source_bounds": {
       "minX": -529.62079,
@@ -129,23 +144,29 @@
       "maxY": 666.14142
     },
     "core_source_bounds": {
-      "minX": -276.46634,
-      "maxX": 222.06001,
-      "minY": -147.59767,
+      "minX": -529.62079,
+      "maxX": 506.12,
+      "minY": -147.62325,
       "maxY": 405.46646
     },
     "cluster": {
-      "retained": 2627,
+      "retained": 2668,
       "total": 2668,
-      "centerX": 3.52259,
-      "centerY": 135.57493,
-      "radiusX": 276.78659,
-      "radiusY": 559.75653
+      "centerX": -6.5223,
+      "centerY": 147.13767,
+      "radiusX": 685.10353,
+      "radiusY": 875.0438
     },
-    "scale": 0.35304,
-    "x_offset": 105.60382,
-    "y_offset": 163.89204,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 64,
+      "visible_height": 68,
+      "density_zoom": 2.05882
+    },
+    "scale": 0.34985,
+    "x_offset": 103.1991,
+    "y_offset": 217.88356,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:05:07.512Z"
+  "exported_at": "2026-08-19T13:24:27.934Z"
 }

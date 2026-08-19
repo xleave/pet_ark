@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "eyjafjalla-the-hvit-aska",
   "character_name": "Eyjafjalla the Hvít Aska",
   "localized_name": "纯烬艾雅法拉",
@@ -11,15 +12,30 @@
   "skin_id": "epoque-34",
   "skin_name": "远行前的野餐",
   "source": "standalone/assets/source/eyjafjalla-the-hvit-aska/skin-epoque-34",
-  "source_page": "https://prts.wiki/w/%E7%BA%AF%E7%83%AC%E8%89%BE%E9%9B%85%E6%B3%95%E6%8B%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/meta.json",
-    "model": "char_1016_agoat2_epoque_34/build/build_char_1016_agoat2_epoque_34",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/char_1016_agoat2_epoque_34/build/build_char_1016_agoat2_epoque_34.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/char_1016_agoat2_epoque_34/build/build_char_1016_agoat2_epoque_34.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/char_1016_agoat2_epoque_34/build/build_char_1016_agoat2_epoque_34.png"
+    "assetId": "build_char_1016_agoat2_epoque#34",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "纯烬艾雅法拉",
+    "appellation": "Eyjafjalla the Hvít Aska",
+    "skinGroupId": "2024#epoque#5",
+    "skinGroupName": "时代/XXXIV",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1016_agoat2_epoque#34.atlas",
+      ".png": "build_char_1016_agoat2_epoque#34.png",
+      ".skel": "build_char_1016_agoat2_epoque#34.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -99,17 +115,10 @@
       "duration": 12.033333778381348,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/eyjafjalla-the-hvit-aska/skin-epoque-34/special",
-      "intentional_blank_frames": [
-        {
-          "frame": 5,
-          "reason": "The deterministic Spine Special sample contains no visible pixels in the canonical character envelope; retained explicitly as a source-authored transition beat.",
-          "observed_by": "blank-policy-revision-1"
-        }
-      ]
+      "path": "standalone/assets/cleaned/eyjafjalla-the-hvit-aska/skin-epoque-34/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -122,11 +131,11 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -235.65237,
-      "maxX": 254.33998,
-      "minY": -114.44541,
+      "maxX": 1645.23303,
+      "minY": -450.74936,
       "maxY": 476.99884
     },
     "full_source_bounds": {
@@ -137,22 +146,28 @@
     },
     "core_source_bounds": {
       "minX": -235.65237,
-      "maxX": 254.33998,
-      "minY": -114.44541,
+      "maxX": 1645.23303,
+      "minY": -450.74936,
       "maxY": 476.99884
     },
     "cluster": {
-      "retained": 4490,
+      "retained": 4562,
       "total": 4588,
-      "centerX": -0.63282,
-      "centerY": 149.70049,
-      "radiusX": 348.9384,
-      "radiusY": 777.56213
+      "centerX": 77.28678,
+      "centerY": 128.20298,
+      "radiusX": 1535.4319,
+      "radiusY": 1275.06165
     },
-    "scale": 0.35168,
-    "x_offset": 92.71396,
-    "y_offset": 175.75167,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 29,
+      "visible_height": 45,
+      "density_zoom": 3.11111
+    },
+    "scale": 0.29112,
+    "x_offset": 93.04659,
+    "y_offset": 218.55749,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:13.916Z"
+  "exported_at": "2026-08-19T13:22:10.279Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "fuze",
   "character_name": "Fuze",
   "localized_name": "导火索",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/fuze/default",
-  "source_page": "https://prts.wiki/w/%E5%AF%BC%E7%81%AB%E7%B4%A2",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4126_fuze/meta.json",
-    "model": "defaultskin/build/build_char_4126_fuze",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4126_fuze/defaultskin/build/build_char_4126_fuze.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4126_fuze/defaultskin/build/build_char_4126_fuze.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4126_fuze/defaultskin/build/build_char_4126_fuze.png"
+    "assetId": "build_char_4126_fuze",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "导火索",
+    "appellation": "Fuze",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4126_fuze.atlas",
+      ".png": "build_char_4126_fuze.png",
+      ".skel": "build_char_4126_fuze.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/fuze/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -287.36328,
-      "maxX": 246.09181,
-      "minY": -95.71608,
-      "maxY": 387.15268
+      "maxX": 227.595,
+      "minY": -101.63345,
+      "maxY": 386.87439
     },
-    "scale": 0.32992,
-    "x_offset": 102.80824,
-    "y_offset": 184.4209,
+    "full_source_bounds": {
+      "minX": -287.36328,
+      "maxX": 227.595,
+      "minY": -101.63345,
+      "maxY": 386.87439
+    },
+    "core_source_bounds": {
+      "minX": -287.36328,
+      "maxX": 147.31668,
+      "minY": -101.63345,
+      "maxY": 386.87439
+    },
+    "cluster": {
+      "retained": 1631,
+      "total": 1631,
+      "centerX": -36.28671,
+      "centerY": 138.85369,
+      "radiusX": 501.63309,
+      "radiusY": 507.49784
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 71,
+      "visible_height": 131,
+      "density_zoom": 1.0687
+    },
+    "scale": 0.34178,
+    "x_offset": 106.21366,
+    "y_offset": 181.2642,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:07.727Z"
+  "exported_at": "2026-08-19T13:22:16.504Z"
 }

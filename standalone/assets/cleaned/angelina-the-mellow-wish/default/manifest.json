@@ -12,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/angelina-the-mellow-wish/default",
-  "source_page": "https://prts.wiki/w/%E4%BA%88%E6%84%BF%E5%AE%89%E6%B4%81%E8%8E%89%E5%A8%9C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1015_aglna2/meta.json",
-    "model": "defaultskin/build/build_char_1015_aglna2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1015_aglna2/defaultskin/build/build_char_1015_aglna2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1015_aglna2/defaultskin/build/build_char_1015_aglna2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1015_aglna2/defaultskin/build/build_char_1015_aglna2.png"
+    "assetId": "build_char_1015_aglna2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "予愿安洁莉娜",
+    "appellation": "Angelina the Mellow Wish",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1015_aglna2.atlas",
+      ".png": "build_char_1015_aglna2.png",
+      ".skel": "build_char_1015_aglna2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -92,7 +106,7 @@
       "path": "standalone/assets/cleaned/angelina-the-mellow-wish/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -134,7 +148,7 @@
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 161,
+      "visible_width": 160,
       "visible_height": 144,
       "density_zoom": 1
     },
@@ -143,5 +157,5 @@
     "y_offset": 169.11659,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:48:32.217Z"
+  "exported_at": "2026-08-19T13:21:25.085Z"
 }

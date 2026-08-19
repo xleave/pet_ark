@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "siege",
   "character_name": "Siege",
   "localized_name": "推进之王",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/siege/default",
-  "source_page": "https://prts.wiki/w/%E6%8E%A8%E8%BF%9B%E4%B9%8B%E7%8E%8B",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_112_siege/meta.json",
-    "model": "defaultskin/build/build_char_112_siege",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_112_siege/defaultskin/build/build_char_112_siege.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_112_siege/defaultskin/build/build_char_112_siege.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_112_siege/defaultskin/build/build_char_112_siege.png"
+    "assetId": "build_char_112_siege",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "推进之王",
+    "appellation": "Siege",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_112_siege.atlas",
+      ".png": "build_char_112_siege.png",
+      ".skel": "build_char_112_siege.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/siege/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -256.98389,
-      "maxX": 171.07079,
-      "minY": -120.02704,
+      "minX": -258.17947,
+      "maxX": 171.04411,
+      "minY": -121.33797,
       "maxY": 417.68616
     },
-    "scale": 0.38682,
-    "x_offset": 112.6166,
-    "y_offset": 169.57074,
+    "full_source_bounds": {
+      "minX": -258.17947,
+      "maxX": 171.04411,
+      "minY": -121.33797,
+      "maxY": 417.68616
+    },
+    "core_source_bounds": {
+      "minX": -239.95644,
+      "maxX": 171.04411,
+      "minY": -121.33797,
+      "maxY": 417.68616
+    },
+    "cluster": {
+      "retained": 1255,
+      "total": 1255,
+      "centerX": 5.05441,
+      "centerY": 177.41006,
+      "radiusX": 441.19213,
+      "radiusY": 486.30711
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 93,
+      "visible_height": 161,
+      "density_zoom": 1
+    },
+    "scale": 0.38588,
+    "x_offset": 112.81201,
+    "y_offset": 169.1778,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:30.677Z"
+  "exported_at": "2026-08-19T13:23:53.781Z"
 }

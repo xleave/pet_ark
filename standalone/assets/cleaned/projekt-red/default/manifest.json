@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "projekt-red",
   "character_name": "Projekt Red",
   "localized_name": "红",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/projekt-red/default",
-  "source_page": "https://prts.wiki/w/%E7%BA%A2",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_144_red/meta.json",
-    "model": "defaultskin/build/build_char_144_red",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_144_red/defaultskin/build/build_char_144_red.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_144_red/defaultskin/build/build_char_144_red.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_144_red/defaultskin/build/build_char_144_red.png"
+    "assetId": "build_char_144_red",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "红",
+    "appellation": "Projekt Red",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_144_red.atlas",
+      ".png": "build_char_144_red.png",
+      ".skel": "build_char_144_red.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/projekt-red/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -264.33749,
-      "maxX": 167.93118,
-      "minY": -115.86359,
-      "maxY": 392.54355
+      "minX": -264.44351,
+      "maxX": 167.89569,
+      "minY": -116.22782,
+      "maxY": 393.90768
     },
-    "scale": 0.40715,
-    "x_offset": 115.62612,
-    "y_offset": 168.82565,
+    "full_source_bounds": {
+      "minX": -264.44351,
+      "maxX": 167.89569,
+      "minY": -116.22782,
+      "maxY": 393.90768
+    },
+    "core_source_bounds": {
+      "minX": -264.44351,
+      "maxX": 167.89569,
+      "minY": -116.22782,
+      "maxY": 392.97409
+    },
+    "cluster": {
+      "retained": 1482,
+      "total": 1482,
+      "centerX": 5.7603,
+      "centerY": 175.71416,
+      "radiusX": 450.00194,
+      "radiusY": 533.11522
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 101,
+      "visible_height": 159,
+      "density_zoom": 1
+    },
+    "scale": 0.40709,
+    "x_offset": 115.65172,
+    "y_offset": 168.68508,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:24.519Z"
+  "exported_at": "2026-08-19T13:23:31.254Z"
 }

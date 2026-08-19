@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "hoshiguma-the-breacher",
   "character_name": "Hoshiguma the Breacher",
   "localized_name": "斩业星熊",
@@ -9,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/hoshiguma-the-breacher/default",
-  "source_page": "https://prts.wiki/w/%E6%96%A9%E4%B8%9A%E6%98%9F%E7%86%8A",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1044_hsgma2/meta.json",
-    "model": "defaultskin/build/build_char_1044_hsgma2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1044_hsgma2/defaultskin/build/build_char_1044_hsgma2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1044_hsgma2/defaultskin/build/build_char_1044_hsgma2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1044_hsgma2/defaultskin/build/build_char_1044_hsgma2.png"
+    "assetId": "build_char_1044_hsgma2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "斩业星熊",
+    "appellation": "Hoshiguma the Breacher",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1044_hsgma2.atlas",
+      ".png": "build_char_1044_hsgma2.png",
+      ".skel": "build_char_1044_hsgma2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/hoshiguma-the-breacher/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -250.6985,
       "maxX": 217.52107,
       "minY": -127.67812,
-      "maxY": 399.25507
+      "maxY": 399.34683
+    },
+    "full_source_bounds": {
+      "minX": -250.6985,
+      "maxX": 217.52107,
+      "minY": -127.67812,
+      "maxY": 399.34683
+    },
+    "core_source_bounds": {
+      "minX": -250.6985,
+      "maxX": 217.52107,
+      "minY": -127.67812,
+      "maxY": 399.315
+    },
+    "cluster": {
+      "retained": 2323,
+      "total": 2323,
+      "centerX": -7.91415,
+      "centerY": 170.93795,
+      "radiusX": 494.9439,
+      "radiusY": 602.58656
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 119,
+      "visible_height": 150,
+      "density_zoom": 1
     },
     "scale": 0.37589,
     "x_offset": 102.23557,
     "y_offset": 168.00681,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:11.132Z"
+  "exported_at": "2026-08-19T13:22:32.063Z"
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "sideroca",
@@ -12,15 +12,29 @@
   "skin_id": "summer-6",
   "skin_name": "轻风 LB03",
   "source": "standalone/assets/source/sideroca/skin-summer-6",
-  "source_page": "https://prts.wiki/w/%E9%93%B8%E9%93%81",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_333_sidero/meta.json",
-    "model": "char_333_sidero_summer_6/build/build_char_333_sidero_summer_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_333_sidero/char_333_sidero_summer_6/build/build_char_333_sidero_summer_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_333_sidero/char_333_sidero_summer_6/build/build_char_333_sidero_summer_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_333_sidero/char_333_sidero_summer_6/build/build_char_333_sidero_summer_6.png"
+    "assetId": "build_char_333_sidero_summer#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "铸铁",
+    "appellation": "Sideroca",
+    "skinGroupId": "2021#summer#2",
+    "skinGroupName": "珊瑚海岸/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_333_sidero_summer#6.atlas",
+      ".png": "build_char_333_sidero_summer#6.png",
+      ".skel": "build_char_333_sidero_summer#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/sideroca/skin-summer-6/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -154,5 +168,5 @@
     "y_offset": 217.01595,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:52.109Z"
+  "exported_at": "2026-08-19T13:23:53.769Z"
 }

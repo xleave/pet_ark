@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "robin",
   "character_name": "Robin",
   "localized_name": "罗宾",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-13",
   "skin_name": "原野的馈赠",
   "source": "standalone/assets/source/robin/skin-epoque-13",
-  "source_page": "https://prts.wiki/w/%E7%BD%97%E5%AE%BE",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/meta.json",
-    "model": "char_451_robin_epoque_13/build/build_char_451_robin_epoque_13",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/char_451_robin_epoque_13/build/build_char_451_robin_epoque_13.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/char_451_robin_epoque_13/build/build_char_451_robin_epoque_13.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/char_451_robin_epoque_13/build/build_char_451_robin_epoque_13.png"
+    "assetId": "build_char_451_robin_epoque#13",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "罗宾",
+    "appellation": "Robin",
+    "skinGroupId": "2021#epoque#5",
+    "skinGroupName": "时代/XIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_451_robin_epoque#13.atlas",
+      ".png": "build_char_451_robin_epoque#13.png",
+      ".skel": "build_char_451_robin_epoque#13.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/robin/skin-epoque-13/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -277.43362,
-      "maxX": 387.93484,
+      "minX": -456.83353,
+      "maxX": 615.92999,
       "minY": -189.64055,
-      "maxY": 592.9964
+      "maxY": 629.81982
     },
     "full_source_bounds": {
       "minX": -771.67999,
@@ -129,23 +144,29 @@
       "maxY": 629.81982
     },
     "core_source_bounds": {
-      "minX": -277.43362,
-      "maxX": 387.93484,
+      "minX": -456.83353,
+      "maxX": 615.92999,
       "minY": -189.64055,
-      "maxY": 592.9964
+      "maxY": 629.81982
     },
     "cluster": {
-      "retained": 4484,
+      "retained": 4519,
       "total": 4524,
-      "centerX": -7.0593,
-      "centerY": 128.58193,
-      "radiusX": 368.41807,
-      "radiusY": 561.66965
+      "centerX": 20.43957,
+      "centerY": 291.51759,
+      "radiusX": 694.9893,
+      "radiusY": 1469.77875
     },
-    "scale": 0.26452,
-    "x_offset": 81.38538,
-    "y_offset": 165.83721,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 78,
+      "visible_height": 64,
+      "density_zoom": 2.1875
+    },
+    "scale": 0.35889,
+    "x_offset": 105.73249,
+    "y_offset": 217.94063,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:24.320Z"
+  "exported_at": "2026-08-19T13:23:43.513Z"
 }

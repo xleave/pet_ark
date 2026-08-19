@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ch-en",
   "character_name": "Ch'en",
   "localized_name": "陈",
@@ -9,15 +12,29 @@
   "skin_id": "nian-2",
   "skin_name": "岁红霞",
   "source": "standalone/assets/source/ch-en/skin-nian-2",
-  "source_page": "https://prts.wiki/w/%E9%99%88",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_010_chen/meta.json",
-    "model": "char_010_chen_nian_2/build/build_char_010_chen_nian_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_010_chen/char_010_chen_nian_2/build/build_char_010_chen_nian_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_010_chen/char_010_chen_nian_2/build/build_char_010_chen_nian_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_010_chen/char_010_chen_nian_2/build/build_char_010_chen_nian_2.png"
+    "assetId": "build_char_010_chen_nian#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "陈",
+    "appellation": "Ch'en",
+    "skinGroupId": "2020#nian",
+    "skinGroupName": "0011制造/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_010_chen_nian#2.atlas",
+      ".png": "build_char_010_chen_nian#2.png",
+      ".skel": "build_char_010_chen_nian#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/ch-en/skin-nian-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -273.81876,
+      "minX": -274.24692,
+      "maxX": 259.32077,
+      "minY": -131.46214,
+      "maxY": 573.02191
+    },
+    "full_source_bounds": {
+      "minX": -274.24692,
+      "maxX": 259.32077,
+      "minY": -131.46214,
+      "maxY": 573.02191
+    },
+    "core_source_bounds": {
+      "minX": -274.24692,
       "maxX": 237.80058,
       "minY": -131.46214,
       "maxY": 573.02191
     },
+    "cluster": {
+      "retained": 1733,
+      "total": 1733,
+      "centerX": 39.92794,
+      "centerY": 168.77774,
+      "radiusX": 505.00208,
+      "radiusY": 674.19289
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 89,
+      "visible_height": 124,
+      "density_zoom": 1.12903
+    },
     "scale": 0.29525,
-    "x_offset": 101.31721,
+    "x_offset": 98.20348,
     "y_offset": 177.1856,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:01.110Z"
+  "exported_at": "2026-08-19T13:21:48.550Z"
 }

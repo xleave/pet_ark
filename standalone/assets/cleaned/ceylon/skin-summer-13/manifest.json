@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ceylon",
   "character_name": "Ceylon",
   "localized_name": "锡兰",
@@ -11,15 +12,29 @@
   "skin_id": "summer-13",
   "skin_name": "悠然假日 HD49",
   "source": "standalone/assets/source/ceylon/skin-summer-13",
-  "source_page": "https://prts.wiki/w/%E9%94%A1%E5%85%B0",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_348_ceylon/meta.json",
-    "model": "char_348_ceylon_summer_13/build/build_char_348_ceylon_summer_13",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_348_ceylon/char_348_ceylon_summer_13/build/build_char_348_ceylon_summer_13.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_348_ceylon/char_348_ceylon_summer_13/build/build_char_348_ceylon_summer_13.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_348_ceylon/char_348_ceylon_summer_13/build/build_char_348_ceylon_summer_13.png"
+    "assetId": "build_char_348_ceylon_summer#13",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "锡兰",
+    "appellation": "Ceylon",
+    "skinGroupId": "2023#summer#3",
+    "skinGroupName": "珊瑚海岸/XIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_348_ceylon_summer#13.atlas",
+      ".png": "build_char_348_ceylon_summer#13.png",
+      ".skel": "build_char_348_ceylon_summer#13.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/ceylon/skin-summer-13/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,9 +130,9 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -320.88751,
+      "minX": -701.60864,
       "maxX": 206.25517,
       "minY": -89.69978,
       "maxY": 680.49268
@@ -129,23 +144,29 @@
       "maxY": 680.49268
     },
     "core_source_bounds": {
-      "minX": -320.88751,
+      "minX": -701.60864,
       "maxX": 206.25517,
       "minY": -89.69978,
       "maxY": 680.49268
     },
     "cluster": {
-      "retained": 2176,
-      "total": 2189,
-      "centerX": -4.43874,
-      "centerY": 140.61877,
-      "radiusX": 295.61089,
-      "radiusY": 637.89163
+      "retained": 2167,
+      "total": 2173,
+      "centerX": -20.40171,
+      "centerY": 258.58833,
+      "radiusX": 605.44914,
+      "radiusY": 1256.17441
     },
-    "scale": 0.27006,
-    "x_offset": 111.47894,
-    "y_offset": 191.77547,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 51,
+      "visible_height": 73,
+      "density_zoom": 1.91781
+    },
+    "scale": 0.37179,
+    "x_offset": 109.45348,
+    "y_offset": 217.17111,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:12.839Z"
+  "exported_at": "2026-08-19T13:21:48.704Z"
 }

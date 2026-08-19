@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "lee",
   "character_name": "Lee",
   "localized_name": "老鲤",
@@ -11,15 +12,29 @@
   "skin_id": "witch-3",
   "skin_name": "手到牌来",
   "source": "standalone/assets/source/lee/skin-witch-3",
-  "source_page": "https://prts.wiki/w/%E8%80%81%E9%B2%A4",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/meta.json",
-    "model": "char_322_lmlee_witch_3/build/build_char_322_lmlee_witch_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/char_322_lmlee_witch_3/build/build_char_322_lmlee_witch_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/char_322_lmlee_witch_3/build/build_char_322_lmlee_witch_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/char_322_lmlee_witch_3/build/build_char_322_lmlee_witch_3.png"
+    "assetId": "build_char_322_lmlee_witch#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "老鲤",
+    "appellation": "Lee",
+    "skinGroupId": "2022#witch",
+    "skinGroupName": "巫异盛宴/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_322_lmlee_witch#3.atlas",
+      ".png": "build_char_322_lmlee_witch#3.png",
+      ".skel": "build_char_322_lmlee_witch#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +106,7 @@
       "path": "standalone/assets/cleaned/lee/skin-witch-3/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,10 +119,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -313.85831,
-      "maxX": 272.17227,
+      "minX": -538.88953,
+      "maxX": 1353.92566,
       "minY": -92.79313,
       "maxY": 682.37329
     },
@@ -118,23 +133,29 @@
       "maxY": 682.37329
     },
     "core_source_bounds": {
-      "minX": -313.85831,
-      "maxX": 272.17227,
+      "minX": -538.88953,
+      "maxX": 1123.16846,
       "minY": -92.79313,
       "maxY": 682.37329
     },
     "cluster": {
-      "retained": 2196,
+      "retained": 2222,
       "total": 2233,
-      "centerX": -7.11155,
-      "centerY": 161.42446,
-      "radiusX": 297.9393,
-      "radiusY": 634.94122
+      "centerX": 15.66741,
+      "centerY": 245.79475,
+      "radiusX": 1022.4971,
+      "radiusY": 784.19182
     },
-    "scale": 0.26833,
-    "x_offset": 101.5928,
-    "y_offset": 191.10087,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 35,
+      "visible_height": 45,
+      "density_zoom": 3.11111
+    },
+    "scale": 0.28928,
+    "x_offset": 105.6683,
+    "y_offset": 217.15671,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:30.559Z"
+  "exported_at": "2026-08-19T13:22:49.300Z"
 }

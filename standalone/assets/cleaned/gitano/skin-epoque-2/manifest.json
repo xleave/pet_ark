@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "gitano",
   "character_name": "Gitano",
   "localized_name": "远山",
@@ -9,15 +12,29 @@
   "skin_id": "epoque-2",
   "skin_name": "未知的旅行",
   "source": "standalone/assets/source/gitano/skin-epoque-2",
-  "source_page": "https://prts.wiki/w/%E8%BF%9C%E5%B1%B1",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_109_fmout/meta.json",
-    "model": "char_109_fmout_epoque_2/build/build_char_109_fmout_epoque_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_109_fmout/char_109_fmout_epoque_2/build/build_char_109_fmout_epoque_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_109_fmout/char_109_fmout_epoque_2/build/build_char_109_fmout_epoque_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_109_fmout/char_109_fmout_epoque_2/build/build_char_109_fmout_epoque_2.png"
+    "assetId": "build_char_109_fmout_epoque#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "远山",
+    "appellation": "Gitano",
+    "skinGroupId": "2020#epoque",
+    "skinGroupName": "时代/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_109_fmout_epoque#2.atlas",
+      ".png": "build_char_109_fmout_epoque#2.png",
+      ".skel": "build_char_109_fmout_epoque#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/gitano/skin-epoque-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -245.12265,
-      "maxX": 243.29539,
-      "minY": -121.11412,
-      "maxY": 426.21643
+      "minX": -242.28932,
+      "maxX": 246.21359,
+      "minY": -122.03167,
+      "maxY": 427.95471
     },
-    "scale": 0.36035,
-    "x_offset": 96.32922,
-    "y_offset": 172.35688,
+    "full_source_bounds": {
+      "minX": -242.28932,
+      "maxX": 246.21359,
+      "minY": -122.03167,
+      "maxY": 427.95471
+    },
+    "core_source_bounds": {
+      "minX": -242.28932,
+      "maxX": 203.32942,
+      "minY": -122.03167,
+      "maxY": 424.04434
+    },
+    "cluster": {
+      "retained": 2221,
+      "total": 2221,
+      "centerX": -4.06939,
+      "centerY": 159.85591,
+      "radiusX": 479.99091,
+      "radiusY": 795.00061
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 120,
+      "visible_height": 148,
+      "density_zoom": 1
+    },
+    "scale": 0.36028,
+    "x_offset": 95.29307,
+    "y_offset": 172.03389,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:08.064Z"
+  "exported_at": "2026-08-19T13:22:18.467Z"
 }

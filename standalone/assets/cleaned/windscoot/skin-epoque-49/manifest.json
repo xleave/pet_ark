@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "windscoot",
   "character_name": "Windscoot",
   "localized_name": "骋风",
@@ -9,15 +12,29 @@
   "skin_id": "epoque-49",
   "skin_name": "异乡的云",
   "source": "standalone/assets/source/windscoot/skin-epoque-49",
-  "source_page": "https://prts.wiki/w/%E9%AA%8B%E9%A3%8E",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_445_wscoot/meta.json",
-    "model": "char_445_wscoot_epoque_49/build/build_char_445_wscoot_epoque_49",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_445_wscoot/char_445_wscoot_epoque_49/build/build_char_445_wscoot_epoque_49.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_445_wscoot/char_445_wscoot_epoque_49/build/build_char_445_wscoot_epoque_49.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_445_wscoot/char_445_wscoot_epoque_49/build/build_char_445_wscoot_epoque_49.png"
+    "assetId": "build_char_445_wscoot_epoque#49",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "骋风",
+    "appellation": "Windscoot",
+    "skinGroupId": "2025#epoque#11",
+    "skinGroupName": "时代/XLVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_445_wscoot_epoque#49.atlas",
+      ".png": "build_char_445_wscoot_epoque#49.png",
+      ".skel": "build_char_445_wscoot_epoque#49.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/windscoot/skin-epoque-49/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -249.80794,
-      "maxX": 175.04684,
-      "minY": -130.48669,
-      "maxY": 404.84314
+      "maxX": 174.80931,
+      "minY": -130.63957,
+      "maxY": 404.03455
     },
-    "scale": 0.38855,
-    "x_offset": 110.52404,
-    "y_offset": 165.29998,
+    "full_source_bounds": {
+      "minX": -249.80794,
+      "maxX": 174.80931,
+      "minY": -130.63957,
+      "maxY": 404.03455
+    },
+    "core_source_bounds": {
+      "minX": -249.80794,
+      "maxX": 174.80931,
+      "minY": -130.63957,
+      "maxY": 402.01523
+    },
+    "cluster": {
+      "retained": 2278,
+      "total": 2278,
+      "centerX": 16.33713,
+      "centerY": 168.34926,
+      "radiusX": 350.5018,
+      "radiusY": 500.03967
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 98,
+      "visible_height": 155,
+      "density_zoom": 1
+    },
+    "scale": 0.38902,
+    "x_offset": 110.58806,
+    "y_offset": 165.17833,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:38.723Z"
+  "exported_at": "2026-08-19T13:24:29.430Z"
 }

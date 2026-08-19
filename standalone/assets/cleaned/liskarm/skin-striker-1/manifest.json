@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "liskarm",
   "character_name": "Liskarm",
   "localized_name": "雷蛇",
@@ -11,15 +12,29 @@
   "skin_id": "striker-1",
   "skin_name": "超载",
   "source": "standalone/assets/source/liskarm/skin-striker-1",
-  "source_page": "https://prts.wiki/w/%E9%9B%B7%E8%9B%87",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/meta.json",
-    "model": "char_107_liskam_striker_1/build/build_char_107_liskam_striker_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/char_107_liskam_striker_1/build/build_char_107_liskam_striker_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/char_107_liskam_striker_1/build/build_char_107_liskam_striker_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/char_107_liskam_striker_1/build/build_char_107_liskam_striker_1.png"
+    "assetId": "build_char_107_liskam_striker#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "雷蛇",
+    "appellation": "Liskarm",
+    "skinGroupId": "2021#striker",
+    "skinGroupName": "雷神推进者",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_107_liskam_striker#1.atlas",
+      ".png": "build_char_107_liskam_striker#1.png",
+      ".skel": "build_char_107_liskam_striker#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/liskarm/skin-striker-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -137,15 +152,21 @@
     "cluster": {
       "retained": 1949,
       "total": 1949,
-      "centerX": -18.36038,
-      "centerY": 132.05373,
-      "radiusX": 325.17974,
-      "radiusY": 633.45891
+      "centerX": -1.33799,
+      "centerY": 171.286,
+      "radiusX": 475.86515,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 101,
+      "visible_height": 169,
+      "density_zoom": 1
     },
     "scale": 0.38462,
     "x_offset": 108.52912,
     "y_offset": 179.70149,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:05:00.066Z"
+  "exported_at": "2026-08-19T13:22:54.737Z"
 }

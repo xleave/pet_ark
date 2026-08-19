@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "logos",
   "character_name": "Logos",
   "localized_name": "逻各斯",
@@ -11,15 +12,29 @@
   "skin_id": "ambiencesynesthesia-6",
   "skin_name": "辉煌的静谧",
   "source": "standalone/assets/source/logos/skin-ambiencesynesthesia-6",
-  "source_page": "https://prts.wiki/w/%E9%80%BB%E5%90%84%E6%96%AF",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4133_logos/meta.json",
-    "model": "char_4133_logos_ambiencesynesthesia_6/build/build_char_4133_logos_ambienceSynesthesia_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4133_logos/char_4133_logos_ambiencesynesthesia_6/build/build_char_4133_logos_ambienceSynesthesia_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4133_logos/char_4133_logos_ambiencesynesthesia_6/build/build_char_4133_logos_ambienceSynesthesia_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4133_logos/char_4133_logos_ambiencesynesthesia_6/build/build_char_4133_logos_ambienceSynesthesia_6.png"
+    "assetId": "build_char_4133_logos_ambiencesynesthesia#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "逻各斯",
+    "appellation": "Logos",
+    "skinGroupId": "2025#ambienceSynesthesia#2",
+    "skinGroupName": "音律联觉/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4133_logos_ambienceSynesthesia#6.atlas",
+      ".png": "build_char_4133_logos_ambienceSynesthesia#6.png",
+      ".skel": "build_char_4133_logos_ambienceSynesthesia#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/logos/skin-ambiencesynesthesia-6/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,7 +130,7 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -278.15814,
       "maxX": 189.02066,
@@ -137,15 +152,21 @@
     "cluster": {
       "retained": 3263,
       "total": 3289,
-      "centerX": -2.47235,
-      "centerY": 125.73426,
-      "radiusX": 349.70195,
-      "radiusY": 666.67429
+      "centerX": -18.76627,
+      "centerY": 169.42001,
+      "radiusX": 600.06666,
+      "radiusY": 636.58302
     },
-    "scale": 0.24599,
-    "x_offset": 106.96325,
-    "y_offset": 120.39559,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 89,
+      "visible_height": 112,
+      "density_zoom": 1.25
+    },
+    "scale": 0.30748,
+    "x_offset": 104.70407,
+    "y_offset": 216.49449,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:16.163Z"
+  "exported_at": "2026-08-19T13:22:55.237Z"
 }

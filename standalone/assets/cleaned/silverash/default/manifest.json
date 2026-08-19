@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "silverash",
   "character_name": "SilverAsh",
   "localized_name": "银灰",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/silverash/default",
-  "source_page": "https://prts.wiki/w/%E9%93%B6%E7%81%B0",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/meta.json",
-    "model": "defaultskin/build/build_char_172_svrash",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/defaultskin/build/build_char_172_svrash.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/defaultskin/build/build_char_172_svrash.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/defaultskin/build/build_char_172_svrash.png"
+    "assetId": "build_char_172_svrash",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "银灰",
+    "appellation": "SilverAsh",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_172_svrash.atlas",
+      ".png": "build_char_172_svrash.png",
+      ".skel": "build_char_172_svrash.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/silverash/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -253.17461,
+      "minX": -242.45877,
       "maxX": 272.77554,
-      "minY": -101.62826,
+      "minY": -102.72559,
       "maxY": 457.51669
     },
-    "scale": 0.33463,
-    "x_offset": 92.72044,
-    "y_offset": 181.99188,
+    "full_source_bounds": {
+      "minX": -242.45877,
+      "maxX": 272.77554,
+      "minY": -102.72559,
+      "maxY": 457.51669
+    },
+    "core_source_bounds": {
+      "minX": -242.45877,
+      "maxX": 272.77554,
+      "minY": -102.72559,
+      "maxY": 457.51669
+    },
+    "cluster": {
+      "retained": 1232,
+      "total": 1232,
+      "centerX": 7.88938,
+      "centerY": 220.98886,
+      "radiusX": 493.76356,
+      "radiusY": 851.83088
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 105,
+      "visible_height": 136,
+      "density_zoom": 1.02941
+    },
+    "scale": 0.34159,
+    "x_offset": 90.82201,
+    "y_offset": 180.90974,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:31.055Z"
+  "exported_at": "2026-08-19T13:23:55.376Z"
 }

@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
-  "placement_revision": 2,
+  "placement_revision": 3,
   "character": "myrtle",
   "character_name": "Myrtle",
   "localized_name": "桃金娘",
@@ -12,15 +12,29 @@
   "skin_id": "summer-12",
   "skin_name": "夏卉 FA062",
   "source": "standalone/assets/source/myrtle/skin-summer-12",
-  "source_page": "https://prts.wiki/w/%E6%A1%83%E9%87%91%E5%A8%98",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/meta.json",
-    "model": "char_151_myrtle_summer_12/build/build_char_151_myrtle_summer_12",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/char_151_myrtle_summer_12/build/build_char_151_myrtle_summer_12.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/char_151_myrtle_summer_12/build/build_char_151_myrtle_summer_12.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/char_151_myrtle_summer_12/build/build_char_151_myrtle_summer_12.png"
+    "assetId": "build_char_151_myrtle_summer#12",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "桃金娘",
+    "appellation": "Myrtle",
+    "skinGroupId": "2023#summer#2",
+    "skinGroupName": "珊瑚海岸/XII",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_151_myrtle_summer#12.atlas",
+      ".png": "build_char_151_myrtle_summer#12.png",
+      ".skel": "build_char_151_myrtle_summer#12.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/myrtle/skin-summer-12/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -143,10 +157,16 @@
       "radiusX": 475.00668,
       "radiusY": 891.70818
     },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 80,
+      "visible_height": 128,
+      "density_zoom": 1.09375
+    },
     "scale": 0.28969,
     "x_offset": 70.35174,
     "y_offset": 179.58995,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:07:43.036Z"
+  "exported_at": "2026-08-19T13:23:14.760Z"
 }

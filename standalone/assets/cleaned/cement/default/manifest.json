@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "cement",
   "character_name": "Cement",
   "localized_name": "洋灰",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/cement/default",
-  "source_page": "https://prts.wiki/w/%E6%B4%8B%E7%81%B0",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_464_cement/meta.json",
-    "model": "defaultskin/build/build_char_464_cement",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_464_cement/defaultskin/build/build_char_464_cement.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_464_cement/defaultskin/build/build_char_464_cement.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_464_cement/defaultskin/build/build_char_464_cement.png"
+    "assetId": "build_char_464_cement",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "洋灰",
+    "appellation": "Cement",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_464_cement.atlas",
+      ".png": "build_char_464_cement.png",
+      ".skel": "build_char_464_cement.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/cement/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -236.82988,
       "maxX": 222.59364,
-      "minY": -123.76668,
-      "maxY": 426.3811
+      "minY": -128.30629,
+      "maxY": 421.99701
     },
-    "scale": 0.37808,
-    "x_offset": 98.69122,
-    "y_offset": 169.20627,
+    "full_source_bounds": {
+      "minX": -236.82988,
+      "maxX": 222.59364,
+      "minY": -128.30629,
+      "maxY": 421.99701
+    },
+    "core_source_bounds": {
+      "minX": -236.82988,
+      "maxX": 222.59364,
+      "minY": -128.30629,
+      "maxY": 421.99701
+    },
+    "cluster": {
+      "retained": 2820,
+      "total": 2820,
+      "centerX": 13.01989,
+      "centerY": 202.82086,
+      "radiusX": 320,
+      "radiusY": 644.9704
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 88,
+      "visible_height": 158,
+      "density_zoom": 1
+    },
+    "scale": 0.37797,
+    "x_offset": 98.69046,
+    "y_offset": 167.50364,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:00.773Z"
+  "exported_at": "2026-08-19T13:21:46.960Z"
 }

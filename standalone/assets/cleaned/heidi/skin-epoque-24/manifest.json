@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "heidi",
@@ -12,15 +12,29 @@
   "skin_id": "epoque-24",
   "skin_name": "书信零落",
   "source": "standalone/assets/source/heidi/skin-epoque-24",
-  "source_page": "https://prts.wiki/w/%E6%B5%B7%E8%92%82",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4045_heidi/meta.json",
-    "model": "char_4045_heidi_epoque_24/build/build_char_4045_heidi_epoque_24",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4045_heidi/char_4045_heidi_epoque_24/build/build_char_4045_heidi_epoque_24.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4045_heidi/char_4045_heidi_epoque_24/build/build_char_4045_heidi_epoque_24.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4045_heidi/char_4045_heidi_epoque_24/build/build_char_4045_heidi_epoque_24.png"
+    "assetId": "build_char_4045_heidi_epoque#24",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "海蒂",
+    "appellation": "Heidi",
+    "skinGroupId": "2023#epoque#6",
+    "skinGroupName": "时代/XXIV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4045_heidi_epoque#24.atlas",
+      ".png": "build_char_4045_heidi_epoque#24.png",
+      ".skel": "build_char_4045_heidi_epoque#24.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/heidi/skin-epoque-24/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -146,13 +160,13 @@
     "pixel_probe": {
       "animation": "Relax",
       "visible_width": 61,
-      "visible_height": 95,
-      "density_zoom": 1.47368
+      "visible_height": 94,
+      "density_zoom": 1.48936
     },
-    "scale": 0.33964,
-    "x_offset": 103.99485,
-    "y_offset": 215.54017,
+    "scale": 0.34325,
+    "x_offset": 104.0799,
+    "y_offset": 217.02464,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:53.820Z"
+  "exported_at": "2026-08-19T13:22:27.217Z"
 }

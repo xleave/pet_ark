@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "bena",
   "character_name": "Bena",
   "localized_name": "贝娜",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-38",
   "skin_name": "草原小帮手",
   "source": "standalone/assets/source/bena/skin-epoque-38",
-  "source_page": "https://prts.wiki/w/%E8%B4%9D%E5%A8%9C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_369_bena/meta.json",
-    "model": "char_369_bena_epoque_38/build/build_char_369_bena_epoque_38",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_369_bena/char_369_bena_epoque_38/build/build_char_369_bena_epoque_38.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_369_bena/char_369_bena_epoque_38/build/build_char_369_bena_epoque_38.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_369_bena/char_369_bena_epoque_38/build/build_char_369_bena_epoque_38.png"
+    "assetId": "build_char_369_bena_epoque#38",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "贝娜",
+    "appellation": "Bena",
+    "skinGroupId": "2025#nian",
+    "skinGroupName": "0011制造/XI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_369_bena_epoque#38.atlas",
+      ".png": "build_char_369_bena_epoque#38.png",
+      ".skel": "build_char_369_bena_epoque#38.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/bena/skin-epoque-38/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -245.5377,
-      "maxX": 293.68301,
+      "minX": -964.16003,
+      "maxX": 1223.3075,
       "minY": -101.4984,
-      "maxY": 407.68051
+      "maxY": 541.23047
     },
     "full_source_bounds": {
       "minX": -964.16003,
@@ -129,23 +144,29 @@
       "maxY": 541.23047
     },
     "core_source_bounds": {
-      "minX": -245.5377,
-      "maxX": 293.68301,
+      "minX": -964.16003,
+      "maxX": 1223.3075,
       "minY": -101.4984,
-      "maxY": 407.68051
+      "maxY": 475.17999
     },
     "cluster": {
-      "retained": 2536,
+      "retained": 2637,
       "total": 2637,
-      "centerX": -9.4697,
-      "centerY": 165.11164,
-      "radiusX": 440.79276,
-      "radiusY": 718.20905
+      "centerX": 109.03285,
+      "centerY": 171.51321,
+      "radiusX": 6666.01982,
+      "radiusY": 480
     },
-    "scale": 0.3264,
-    "x_offset": 88.14276,
-    "y_offset": 182.87123,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 24,
+      "visible_height": 33,
+      "density_zoom": 4.24242
+    },
+    "scale": 0.34134,
+    "x_offset": 96.31696,
+    "y_offset": 219.53652,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:22.877Z"
+  "exported_at": "2026-08-19T13:21:37.112Z"
 }

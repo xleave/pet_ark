@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "mantra",
   "character_name": "Mantra",
   "localized_name": "真言",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/mantra/default",
-  "source_page": "https://prts.wiki/w/%E7%9C%9F%E8%A8%80",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4204_mantra/meta.json",
-    "model": "defaultskin/build/build_char_4204_mantra",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4204_mantra/defaultskin/build/build_char_4204_mantra.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4204_mantra/defaultskin/build/build_char_4204_mantra.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4204_mantra/defaultskin/build/build_char_4204_mantra.png"
+    "assetId": "build_char_4204_mantra",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "真言",
+    "appellation": "Mantra",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4204_mantra.atlas",
+      ".png": "build_char_4204_mantra.png",
+      ".skel": "build_char_4204_mantra.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/mantra/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -256.7793,
+      "minX": -259.56564,
       "maxX": 173.23677,
-      "minY": -110.41532,
+      "minY": -110.43061,
       "maxY": 421.96002
     },
-    "scale": 0.3907,
-    "x_offset": 112.32011,
-    "y_offset": 172.86054,
+    "full_source_bounds": {
+      "minX": -259.56564,
+      "maxX": 173.23677,
+      "minY": -110.43061,
+      "maxY": 421.96002
+    },
+    "core_source_bounds": {
+      "minX": -254.76698,
+      "maxX": 173.23677,
+      "minY": -110.43061,
+      "maxY": 421.96002
+    },
+    "cluster": {
+      "retained": 2652,
+      "total": 2652,
+      "centerX": -15.38245,
+      "centerY": 143.34137,
+      "radiusX": 597.49738,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 146,
+      "visible_height": 156,
+      "density_zoom": 1
+    },
+    "scale": 0.39069,
+    "x_offset": 112.86394,
+    "y_offset": 172.8558,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:17.241Z"
+  "exported_at": "2026-08-19T13:22:58.833Z"
 }

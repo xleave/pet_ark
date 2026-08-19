@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "lemuen",
@@ -12,15 +12,29 @@
   "skin_id": "ambiencesynesthesia-7",
   "skin_name": "暮星安魂曲",
   "source": "standalone/assets/source/lemuen/skin-ambiencesynesthesia-7",
-  "source_page": "https://prts.wiki/w/%E8%95%BE%E7%BC%AA%E5%AE%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4193_lemuen/meta.json",
-    "model": "char_4193_lemuen_ambiencesynesthesia_7/build/build_char_4193_lemuen_ambienceSynesthesia_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4193_lemuen/char_4193_lemuen_ambiencesynesthesia_7/build/build_char_4193_lemuen_ambienceSynesthesia_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4193_lemuen/char_4193_lemuen_ambiencesynesthesia_7/build/build_char_4193_lemuen_ambienceSynesthesia_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4193_lemuen/char_4193_lemuen_ambiencesynesthesia_7/build/build_char_4193_lemuen_ambienceSynesthesia_7.png"
+    "assetId": "build_char_4193_lemuen_ambiencesynesthesia#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "蕾缪安",
+    "appellation": "Lemuen",
+    "skinGroupId": "2026#ambienceSynesthesia#2",
+    "skinGroupName": "音律联觉/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4193_lemuen_ambienceSynesthesia#7.atlas",
+      ".png": "build_char_4193_lemuen_ambienceSynesthesia#7.png",
+      ".skel": "build_char_4193_lemuen_ambienceSynesthesia#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/lemuen/skin-ambiencesynesthesia-7/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -136,8 +150,8 @@
       "maxY": 972.90002
     },
     "cluster": {
-      "retained": 3350,
-      "total": 3350,
+      "retained": 3343,
+      "total": 3343,
       "centerX": -173.56242,
       "centerY": 287.76044,
       "radiusX": 1569.73633,
@@ -146,13 +160,13 @@
     "pixel_probe": {
       "animation": "Relax",
       "visible_width": 66,
-      "visible_height": 81,
-      "density_zoom": 1.7284
+      "visible_height": 82,
+      "density_zoom": 1.70732
     },
-    "scale": 0.32388,
-    "x_offset": 99.2076,
-    "y_offset": 216.53169,
+    "scale": 0.31993,
+    "x_offset": 99.16848,
+    "y_offset": 216.52521,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:58.487Z"
+  "exported_at": "2026-08-19T13:22:52.054Z"
 }

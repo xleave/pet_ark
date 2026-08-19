@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
-  "placement_revision": 2,
+  "placement_revision": 3,
   "character": "mulberry",
   "character_name": "Mulberry",
   "localized_name": "桑葚",
@@ -12,15 +12,29 @@
   "skin_id": "nian-9",
   "skin_name": "照冰轮",
   "source": "standalone/assets/source/mulberry/skin-nian-9",
-  "source_page": "https://prts.wiki/w/%E6%A1%91%E8%91%9A",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/meta.json",
-    "model": "char_473_mberry_nian_9/build/build_char_473_mberry_nian_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/char_473_mberry_nian_9/build/build_char_473_mberry_nian_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/char_473_mberry_nian_9/build/build_char_473_mberry_nian_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/char_473_mberry_nian_9/build/build_char_473_mberry_nian_9.png"
+    "assetId": "build_char_473_mberry_nian#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "桑葚",
+    "appellation": "Mulberry",
+    "skinGroupId": "2023#nian#2",
+    "skinGroupName": "0011制造/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_473_mberry_nian#9.atlas",
+      ".png": "build_char_473_mberry_nian#9.png",
+      ".skel": "build_char_473_mberry_nian#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/mulberry/skin-nian-9/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -116,7 +130,7 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -283.99753,
       "maxX": 315.36099,
@@ -143,10 +157,16 @@
       "radiusX": 540.0035,
       "radiusY": 1452.49369
     },
-    "scale": 0.29365,
-    "x_offset": 91.3951,
-    "y_offset": 141.21599,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 87,
+      "visible_height": 111,
+      "density_zoom": 1.26126
+    },
+    "scale": 0.37037,
+    "x_offset": 97.75959,
+    "y_offset": 216.27242,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:07:50.565Z"
+  "exported_at": "2026-08-19T13:23:13.464Z"
 }

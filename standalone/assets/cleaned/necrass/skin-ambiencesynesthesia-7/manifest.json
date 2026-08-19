@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
-  "placement_revision": 2,
+  "placement_revision": 3,
   "character": "necrass",
   "character_name": "Necrass",
   "localized_name": "死芒",
@@ -12,15 +12,29 @@
   "skin_id": "ambiencesynesthesia-7",
   "skin_name": "晶化信念",
   "source": "standalone/assets/source/necrass/skin-ambiencesynesthesia-7",
-  "source_page": "https://prts.wiki/w/%E6%AD%BB%E8%8A%92",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/meta.json",
-    "model": "char_450_necras_ambiencesynesthesia_7/build/build_char_450_necras_ambienceSynesthesia_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/char_450_necras_ambiencesynesthesia_7/build/build_char_450_necras_ambienceSynesthesia_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/char_450_necras_ambiencesynesthesia_7/build/build_char_450_necras_ambienceSynesthesia_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/char_450_necras_ambiencesynesthesia_7/build/build_char_450_necras_ambienceSynesthesia_7.png"
+    "assetId": "build_char_450_necras_ambiencesynesthesia#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "死芒",
+    "appellation": "Necrass",
+    "skinGroupId": "2026#ambienceSynesthesia#2",
+    "skinGroupName": "音律联觉/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_450_necras_ambienceSynesthesia#7.atlas",
+      ".png": "build_char_450_necras_ambienceSynesthesia#7.png",
+      ".skel": "build_char_450_necras_ambienceSynesthesia#7"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/necrass/skin-ambiencesynesthesia-7/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -116,7 +130,7 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -407.33661,
       "maxX": 397.42984,
@@ -143,10 +157,16 @@
       "radiusX": 444.99549,
       "radiusY": 736.49998
     },
-    "scale": 0.2187,
-    "x_offset": 97.08329,
-    "y_offset": 189.09917,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 98,
+      "visible_height": 112,
+      "density_zoom": 1.25
+    },
+    "scale": 0.27337,
+    "x_offset": 109.22911,
+    "y_offset": 203.62396,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:08:01.848Z"
+  "exported_at": "2026-08-19T13:23:17.728Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "harold",
   "character_name": "Harold",
   "localized_name": "哈洛德",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/harold/default",
-  "source_page": "https://prts.wiki/w/%E5%93%88%E6%B4%9B%E5%BE%B7",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4114_harold/meta.json",
-    "model": "defaultskin/build/build_char_4114_harold",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4114_harold/defaultskin/build/build_char_4114_harold.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4114_harold/defaultskin/build/build_char_4114_harold.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4114_harold/defaultskin/build/build_char_4114_harold.png"
+    "assetId": "build_char_4114_harold",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "哈洛德",
+    "appellation": "Harold",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4114_harold.atlas",
+      ".png": "build_char_4114_harold.png",
+      ".skel": "build_char_4114_harold.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/harold/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -217.02518,
+      "minX": -217.13307,
       "maxX": 201.5423,
-      "minY": -97.14396,
+      "minY": -97.5232,
       "maxY": 484.53
     },
-    "scale": 0.35759,
-    "x_offset": 98.76825,
-    "y_offset": 181.26242,
+    "full_source_bounds": {
+      "minX": -217.13307,
+      "maxX": 201.5423,
+      "minY": -97.5232,
+      "maxY": 484.53
+    },
+    "core_source_bounds": {
+      "minX": -217.13307,
+      "maxX": 201.5423,
+      "minY": -97.5232,
+      "maxY": 484.53
+    },
+    "cluster": {
+      "retained": 2791,
+      "total": 2791,
+      "centerX": 1.86998,
+      "centerY": 197.0937,
+      "radiusX": 386.44264,
+      "radiusY": 645.05173
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 81,
+      "visible_height": 145,
+      "density_zoom": 1
+    },
+    "scale": 0.35736,
+    "x_offset": 98.78573,
+    "y_offset": 181.14953,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:09.597Z"
+  "exported_at": "2026-08-19T13:22:24.903Z"
 }

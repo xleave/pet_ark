@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "kirara",
   "character_name": "Kirara",
   "localized_name": "绮良",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/kirara/default",
-  "source_page": "https://prts.wiki/w/%E7%BB%AE%E8%89%AF",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/meta.json",
-    "model": "defaultskin/build/build_char_478_kirara",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/defaultskin/build/build_char_478_kirara.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/defaultskin/build/build_char_478_kirara.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/defaultskin/build/build_char_478_kirara.png"
+    "assetId": "build_char_478_kirara",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "绮良",
+    "appellation": "Kirara",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_478_kirara.atlas",
+      ".png": "build_char_478_kirara.png",
+      ".skel": "build_char_478_kirara.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/kirara/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -288.27588,
+      "minX": -288.81857,
       "maxX": 171.29733,
-      "minY": -128.30464,
-      "maxY": 439.56723
+      "minY": -129.08305,
+      "maxY": 441.0809
     },
-    "scale": 0.36628,
-    "x_offset": 117.42344,
-    "y_offset": 169.0046,
+    "full_source_bounds": {
+      "minX": -288.81857,
+      "maxX": 171.29733,
+      "minY": -129.08305,
+      "maxY": 441.0809
+    },
+    "core_source_bounds": {
+      "minX": -288.81857,
+      "maxX": 171.29733,
+      "minY": -129.08305,
+      "maxY": 441.0809
+    },
+    "cluster": {
+      "retained": 2074,
+      "total": 2074,
+      "centerX": 4.67248,
+      "centerY": 211.61872,
+      "radiusX": 335.00003,
+      "radiusY": 610.08289
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 75,
+      "visible_height": 159,
+      "density_zoom": 1
+    },
+    "scale": 0.36481,
+    "x_offset": 117.43631,
+    "y_offset": 168.90955,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:13.778Z"
+  "exported_at": "2026-08-19T13:22:43.626Z"
 }

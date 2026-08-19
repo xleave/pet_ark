@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ela",
   "character_name": "Ela",
   "localized_name": "艾拉",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/ela/default",
-  "source_page": "https://prts.wiki/w/%E8%89%BE%E6%8B%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4123_ela/meta.json",
-    "model": "defaultskin/build/build_char_4123_ela",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4123_ela/defaultskin/build/build_char_4123_ela.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4123_ela/defaultskin/build/build_char_4123_ela.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4123_ela/defaultskin/build/build_char_4123_ela.png"
+    "assetId": "build_char_4123_ela",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "艾拉",
+    "appellation": "Ela",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4123_ela.atlas",
+      ".png": "build_char_4123_ela.png",
+      ".skel": "build_char_4123_ela.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/ela/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -144.99774,
+      "minX": -145.42821,
       "maxX": 263.67999,
       "minY": -102.7749,
-      "maxY": 381.98041
+      "maxY": 379.77692
+    },
+    "full_source_bounds": {
+      "minX": -145.42821,
+      "maxX": 263.67999,
+      "minY": -102.7749,
+      "maxY": 379.77692
+    },
+    "core_source_bounds": {
+      "minX": -145.42821,
+      "maxX": 263.67999,
+      "minY": -102.7749,
+      "maxY": 379.77692
+    },
+    "cluster": {
+      "retained": 2721,
+      "total": 2721,
+      "centerX": 3.07692,
+      "centerY": 223.81038,
+      "radiusX": 375.23801,
+      "radiusY": 637.49027
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 71,
+      "visible_height": 155,
+      "density_zoom": 1
     },
     "scale": 0.41,
-    "x_offset": 71.67014,
+    "x_offset": 71.75838,
     "y_offset": 173.86229,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:04.465Z"
+  "exported_at": "2026-08-19T13:22:03.000Z"
 }

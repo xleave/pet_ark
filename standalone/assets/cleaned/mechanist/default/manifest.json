@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "mechanist",
   "character_name": "Mechanist",
   "localized_name": "机械师",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/mechanist/default",
-  "source_page": "https://prts.wiki/w/%E6%9C%BA%E6%A2%B0%E5%B8%88",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4230_mcnist/meta.json",
-    "model": "defaultskin/build/build_char_4230_mcnist",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4230_mcnist/defaultskin/build/build_char_4230_mcnist.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4230_mcnist/defaultskin/build/build_char_4230_mcnist.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4230_mcnist/defaultskin/build/build_char_4230_mcnist.png"
+    "assetId": "build_char_4230_mcnist",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "机械师",
+    "appellation": "Mechanist",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4230_mcnist.atlas",
+      ".png": "build_char_4230_mcnist.png",
+      ".skel": "build_char_4230_mcnist.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/mechanist/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -284.42947,
       "maxX": 221.46106,
-      "minY": -128.53268,
+      "minY": -129.42613,
       "maxY": 563.09863
     },
-    "scale": 0.30074,
-    "x_offset": 105.46851,
-    "y_offset": 177.3453,
+    "full_source_bounds": {
+      "minX": -284.42947,
+      "maxX": 221.46106,
+      "minY": -129.42613,
+      "maxY": 563.09863
+    },
+    "core_source_bounds": {
+      "minX": -284.42947,
+      "maxX": 221.46106,
+      "minY": -129.42613,
+      "maxY": 563.09863
+    },
+    "cluster": {
+      "retained": 1425,
+      "total": 1425,
+      "centerX": 0.20999,
+      "centerY": 144.70834,
+      "radiusX": 645.04995,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 83,
+      "visible_height": 122,
+      "density_zoom": 1.14754
+    },
+    "scale": 0.30035,
+    "x_offset": 105.45629,
+    "y_offset": 177.12683,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:17.754Z"
+  "exported_at": "2026-08-19T13:23:01.076Z"
 }

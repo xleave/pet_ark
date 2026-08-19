@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "chestnut",
   "character_name": "Chestnut",
   "localized_name": "褐果",
@@ -9,15 +12,29 @@
   "skin_id": "summer-12",
   "skin_name": "悠然假日 HDm57",
   "source": "standalone/assets/source/chestnut/skin-summer-12",
-  "source_page": "https://prts.wiki/w/%E8%A4%90%E6%9E%9C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4041_chnut/meta.json",
-    "model": "char_4041_chnut_summer_12/build/build_char_4041_chnut_summer_12",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4041_chnut/char_4041_chnut_summer_12/build/build_char_4041_chnut_summer_12.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4041_chnut/char_4041_chnut_summer_12/build/build_char_4041_chnut_summer_12.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4041_chnut/char_4041_chnut_summer_12/build/build_char_4041_chnut_summer_12.png"
+    "assetId": "build_char_4041_chnut_summer#12",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "褐果",
+    "appellation": "Chestnut",
+    "skinGroupId": "2023#summer#2",
+    "skinGroupName": "珊瑚海岸/XII",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4041_chnut_summer#12.atlas",
+      ".png": "build_char_4041_chnut_summer#12.png",
+      ".skel": "build_char_4041_chnut_summer#12.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/chestnut/skin-summer-12/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -233.36633,
+      "minX": -233.44385,
       "maxX": 249.51129,
-      "minY": -97.37183,
+      "minY": -97.07607,
       "maxY": 424.55081
     },
-    "scale": 0.36448,
-    "x_offset": 93.05773,
-    "y_offset": 180.50976,
+    "full_source_bounds": {
+      "minX": -233.44385,
+      "maxX": 249.51129,
+      "minY": -97.07607,
+      "maxY": 424.55081
+    },
+    "core_source_bounds": {
+      "minX": -233.44385,
+      "maxX": 249.51129,
+      "minY": -97.07607,
+      "maxY": 424.55081
+    },
+    "cluster": {
+      "retained": 1973,
+      "total": 1973,
+      "centerX": -5.57633,
+      "centerY": 168.0116,
+      "radiusX": 339.99002,
+      "radiusY": 544.35783
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 62,
+      "visible_height": 127,
+      "density_zoom": 1.12507
+    },
+    "scale": 0.36442,
+    "x_offset": 93.07233,
+    "y_offset": 180.62324,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:01.398Z"
+  "exported_at": "2026-08-19T13:21:49.908Z"
 }

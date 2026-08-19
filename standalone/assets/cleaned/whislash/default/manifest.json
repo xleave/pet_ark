@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "whislash",
   "character_name": "Whislash",
   "localized_name": "鞭刃",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/whislash/default",
-  "source_page": "https://prts.wiki/w/%E9%9E%AD%E5%88%83",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_265_sophia/meta.json",
-    "model": "defaultskin/build/build_char_265_sophia",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_265_sophia/defaultskin/build/build_char_265_sophia.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_265_sophia/defaultskin/build/build_char_265_sophia.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_265_sophia/defaultskin/build/build_char_265_sophia.png"
+    "assetId": "build_char_265_sophia",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "鞭刃",
+    "appellation": "Whislash",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_265_sophia.atlas",
+      ".png": "build_char_265_sophia.png",
+      ".skel": "build_char_265_sophia.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/whislash/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -220.77464,
-      "maxX": 217.8486,
-      "minY": -105.3109,
-      "maxY": 430.42624
+      "maxX": 216.56438,
+      "minY": -105.39841,
+      "maxY": 428.85333
     },
-    "scale": 0.38825,
-    "x_offset": 96.56802,
-    "y_offset": 175.11303,
+    "full_source_bounds": {
+      "minX": -220.77464,
+      "maxX": 216.56438,
+      "minY": -105.39841,
+      "maxY": 428.85333
+    },
+    "core_source_bounds": {
+      "minX": -220.77464,
+      "maxX": 216.56438,
+      "minY": -105.39841,
+      "maxY": 428.85333
+    },
+    "cluster": {
+      "retained": 2344,
+      "total": 2344,
+      "centerX": -0.47349,
+      "centerY": 208.71572,
+      "radiusX": 336.20885,
+      "radiusY": 621.62298
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 93,
+      "visible_height": 163,
+      "density_zoom": 1
+    },
+    "scale": 0.38933,
+    "x_offset": 96.81959,
+    "y_offset": 174.96528,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:38.232Z"
+  "exported_at": "2026-08-19T13:24:27.061Z"
 }

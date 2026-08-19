@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "bison",
   "character_name": "Bison",
   "localized_name": "拜松",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/bison/default",
-  "source_page": "https://prts.wiki/w/%E6%8B%9C%E6%9D%BE",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/meta.json",
-    "model": "defaultskin/build/build_char_325_bison",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/defaultskin/build/build_char_325_bison.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/defaultskin/build/build_char_325_bison.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/defaultskin/build/build_char_325_bison.png"
+    "assetId": "build_char_325_bison",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "拜松",
+    "appellation": "Bison",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_325_bison.atlas",
+      ".png": "build_char_325_bison.png",
+      ".skel": "build_char_325_bison.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/bison/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -216.55048,
-      "maxX": 199.30949,
+      "maxX": 199.40723,
       "minY": -133.2541,
-      "maxY": 404.62918
+      "maxY": 406.18195
     },
-    "scale": 0.3867,
-    "x_offset": 99.33355,
-    "y_offset": 164.47051,
+    "full_source_bounds": {
+      "minX": -216.55048,
+      "maxX": 199.40723,
+      "minY": -133.2541,
+      "maxY": 406.18195
+    },
+    "core_source_bounds": {
+      "minX": -216.55048,
+      "maxX": 199.40723,
+      "minY": -133.2541,
+      "maxY": 406.18195
+    },
+    "cluster": {
+      "retained": 1448,
+      "total": 1448,
+      "centerX": -13.32969,
+      "centerY": 198.76598,
+      "radiusX": 464.22933,
+      "radiusY": 602.47965
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 92,
+      "visible_height": 153,
+      "density_zoom": 1
+    },
+    "scale": 0.38559,
+    "x_offset": 99.30511,
+    "y_offset": 164.61883,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:58.404Z"
+  "exported_at": "2026-08-19T13:21:36.931Z"
 }

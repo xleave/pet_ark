@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "magallan",
   "character_name": "Magallan",
   "localized_name": "麦哲伦",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/magallan/default",
-  "source_page": "https://prts.wiki/w/%E9%BA%A6%E5%93%B2%E4%BC%A6",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_248_mgllan/meta.json",
-    "model": "defaultskin/build/build_char_248_mgllan",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_248_mgllan/defaultskin/build/build_char_248_mgllan.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_248_mgllan/defaultskin/build/build_char_248_mgllan.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_248_mgllan/defaultskin/build/build_char_248_mgllan.png"
+    "assetId": "build_char_248_mgllan",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "麦哲伦",
+    "appellation": "Magallan",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_248_mgllan.atlas",
+      ".png": "build_char_248_mgllan.png",
+      ".skel": "build_char_248_mgllan.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/magallan/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -298.78888,
       "maxX": 155.0983,
       "minY": -100.55514,
-      "maxY": 380.3493
+      "maxY": 380.55734
+    },
+    "full_source_bounds": {
+      "minX": -298.78888,
+      "maxX": 155.0983,
+      "minY": -100.55514,
+      "maxY": 380.55734
+    },
+    "core_source_bounds": {
+      "minX": -298.78888,
+      "maxX": 155.0983,
+      "minY": -100.55514,
+      "maxY": 377.22827
+    },
+    "cluster": {
+      "retained": 1387,
+      "total": 1387,
+      "centerX": -11.78888,
+      "centerY": 163.12132,
+      "radiusX": 449.97527,
+      "radiusY": 819.97673
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 75,
+      "visible_height": 146,
+      "density_zoom": 1
     },
     "scale": 0.38776,
     "x_offset": 123.85884,
     "y_offset": 177.00858,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:16.962Z"
+  "exported_at": "2026-08-19T13:22:57.046Z"
 }

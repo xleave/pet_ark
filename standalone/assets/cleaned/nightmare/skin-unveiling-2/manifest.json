@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "nightmare",
   "character_name": "Nightmare",
   "localized_name": "夜魔",
@@ -11,15 +12,29 @@
   "skin_id": "unveiling-2",
   "skin_name": "湖畔的少女",
   "source": "standalone/assets/source/nightmare/skin-unveiling-2",
-  "source_page": "https://prts.wiki/w/%E5%A4%9C%E9%AD%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_164_nightm/meta.json",
-    "model": "char_164_nightm_unveiling_2/build/build_char_164_nightm_unveiling_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_164_nightm/char_164_nightm_unveiling_2/build/build_char_164_nightm_unveiling_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_164_nightm/char_164_nightm_unveiling_2/build/build_char_164_nightm_unveiling_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_164_nightm/char_164_nightm_unveiling_2/build/build_char_164_nightm_unveiling_2.png"
+    "assetId": "build_char_164_nightm_unveiling#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "夜魔",
+    "appellation": "Nightmare",
+    "skinGroupId": "2025#unveiling",
+    "skinGroupName": "待予花冠/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_164_nightm_unveiling#2.atlas",
+      ".png": "build_char_164_nightm_unveiling#2.png",
+      ".skel": "build_char_164_nightm_unveiling#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/nightmare/skin-unveiling-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -250.59311,
-      "maxX": 281.99277,
+      "minX": -348.68002,
+      "maxX": 564.41998,
       "minY": -104.10937,
-      "maxY": 435.89841
+      "maxY": 487.40833
     },
     "full_source_bounds": {
       "minX": -348.68002,
@@ -129,23 +144,29 @@
       "maxY": 487.40833
     },
     "core_source_bounds": {
-      "minX": -250.59311,
-      "maxX": 281.99277,
+      "minX": -348.68002,
+      "maxX": 564.41998,
       "minY": -104.10937,
       "maxY": 435.89841
     },
     "cluster": {
-      "retained": 2440,
+      "retained": 2494,
       "total": 2494,
-      "centerX": 4.17563,
-      "centerY": 133.73323,
-      "radiusX": 258.21588,
-      "radiusY": 578.50086
+      "centerX": 130.74073,
+      "centerY": 214.07814,
+      "radiusX": 1521.39759,
+      "radiusY": 885.99026
     },
-    "scale": 0.33046,
-    "x_offset": 90.81179,
-    "y_offset": 181.59569,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 37,
+      "visible_height": 77,
+      "density_zoom": 1.94595
+    },
+    "scale": 0.37508,
+    "x_offset": 104.18867,
+    "y_offset": 217.81542,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:44.920Z"
+  "exported_at": "2026-08-19T13:23:19.913Z"
 }

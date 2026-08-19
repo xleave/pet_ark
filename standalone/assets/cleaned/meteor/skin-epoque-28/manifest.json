@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "meteor",
   "character_name": "Meteor",
   "localized_name": "流星",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-28",
   "skin_name": "星橼林",
   "source": "standalone/assets/source/meteor/skin-epoque-28",
-  "source_page": "https://prts.wiki/w/%E6%B5%81%E6%98%9F",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/meta.json",
-    "model": "char_126_shotst_epoque_28/build/build_char_126_shotst_epoque_28",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/char_126_shotst_epoque_28/build/build_char_126_shotst_epoque_28.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/char_126_shotst_epoque_28/build/build_char_126_shotst_epoque_28.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/char_126_shotst_epoque_28/build/build_char_126_shotst_epoque_28.png"
+    "assetId": "build_char_126_shotst_epoque#28",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "流星",
+    "appellation": "Meteor",
+    "skinGroupId": "2023#epoque#10",
+    "skinGroupName": "时代/XXVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_126_shotst_epoque#28.atlas",
+      ".png": "build_char_126_shotst_epoque#28.png",
+      ".skel": "build_char_126_shotst_epoque#28.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/meteor/skin-epoque-28/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -277.89417,
-      "maxX": 380.32733,
-      "minY": -127.03493,
-      "maxY": 410.72409
+      "minX": -1347.70117,
+      "maxX": 1093.12744,
+      "minY": -144.54871,
+      "maxY": 1073.44006
     },
     "full_source_bounds": {
       "minX": -1347.70117,
@@ -129,23 +144,29 @@
       "maxY": 1073.44006
     },
     "core_source_bounds": {
-      "minX": -277.89417,
-      "maxX": 380.32733,
+      "minX": -944.53003,
+      "maxX": 986.38,
       "minY": -127.03493,
-      "maxY": 410.72409
+      "maxY": 1073.44006
     },
     "cluster": {
-      "retained": 3139,
+      "retained": 3194,
       "total": 3212,
-      "centerX": -4.12945,
-      "centerY": 127.26563,
-      "radiusX": 290.25824,
-      "radiusY": 701.73467
+      "centerX": 20.57259,
+      "centerY": 162.92703,
+      "radiusX": 902.44499,
+      "radiusY": 712.91927
     },
-    "scale": 0.26739,
-    "x_offset": 82.30534,
-    "y_offset": 182.03249,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 23,
+      "visible_height": 30,
+      "density_zoom": 4.66667
+    },
+    "scale": 0.3365,
+    "x_offset": 92.16508,
+    "y_offset": 218.69302,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:16.516Z"
+  "exported_at": "2026-08-19T13:23:03.271Z"
 }

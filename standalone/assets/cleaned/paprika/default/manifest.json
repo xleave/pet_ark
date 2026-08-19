@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "paprika",
   "character_name": "Paprika",
   "localized_name": "明椒",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/paprika/default",
-  "source_page": "https://prts.wiki/w/%E6%98%8E%E6%A4%92",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/meta.json",
-    "model": "defaultskin/build/build_char_4071_peper",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/defaultskin/build/build_char_4071_peper.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/defaultskin/build/build_char_4071_peper.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/defaultskin/build/build_char_4071_peper.png"
+    "assetId": "build_char_4071_peper",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "明椒",
+    "appellation": "Paprika",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4071_peper.atlas",
+      ".png": "build_char_4071_peper.png",
+      ".skel": "build_char_4071_peper.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/paprika/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -231.2981,
-      "maxX": 209.56975,
-      "minY": -118.75655,
-      "maxY": 408.94681
+      "maxX": 209.14648,
+      "minY": -116.83047,
+      "maxY": 414.18323
     },
-    "scale": 0.39416,
-    "x_offset": 100.28223,
-    "y_offset": 169.19082,
+    "full_source_bounds": {
+      "minX": -231.2981,
+      "maxX": 209.14648,
+      "minY": -116.83047,
+      "maxY": 414.18323
+    },
+    "core_source_bounds": {
+      "minX": -231.2981,
+      "maxX": 192.46228,
+      "minY": -116.83047,
+      "maxY": 409.20795
+    },
+    "cluster": {
+      "retained": 2299,
+      "total": 2299,
+      "centerX": -1.57117,
+      "centerY": 170.37457,
+      "radiusX": 495.56212,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 114,
+      "visible_height": 159,
+      "density_zoom": 1
+    },
+    "scale": 0.3917,
+    "x_offset": 100.33843,
+    "y_offset": 170.23708,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:22.589Z"
+  "exported_at": "2026-08-19T13:23:23.276Z"
 }

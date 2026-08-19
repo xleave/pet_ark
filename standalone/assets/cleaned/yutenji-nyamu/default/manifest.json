@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "yutenji-nyamu",
   "character_name": "Yūtenji Nyamu",
   "localized_name": "祐天寺若麦",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/yutenji-nyamu/default",
-  "source_page": "https://prts.wiki/w/%E7%A5%90%E5%A4%A9%E5%AF%BA%E8%8B%A5%E9%BA%A6",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4185_amoris/meta.json",
-    "model": "defaultskin/build/build_char_4185_amoris",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4185_amoris/defaultskin/build/build_char_4185_amoris.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4185_amoris/defaultskin/build/build_char_4185_amoris.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4185_amoris/defaultskin/build/build_char_4185_amoris.png"
+    "assetId": "build_char_4185_amoris",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "祐天寺若麦",
+    "appellation": "Yūtenji Nyamu",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4185_amoris.atlas",
+      ".png": "build_char_4185_amoris.png",
+      ".skel": "build_char_4185_amoris.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/yutenji-nyamu/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -197.25461,
-      "maxX": 179.21153,
-      "minY": -95.48046,
+      "maxX": 179.46747,
+      "minY": -95.42388,
+      "maxY": 376.63611
+    },
+    "full_source_bounds": {
+      "minX": -197.25461,
+      "maxX": 179.46747,
+      "minY": -95.42388,
+      "maxY": 376.63611
+    },
+    "core_source_bounds": {
+      "minX": -197.25461,
+      "maxX": 179.46747,
+      "minY": -95.42388,
       "maxY": 372.73193
     },
+    "cluster": {
+      "retained": 2004,
+      "total": 2004,
+      "centerX": -0.14858,
+      "centerY": 169.12936,
+      "radiusX": 409.91795,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 67,
+      "visible_height": 154,
+      "density_zoom": 1
+    },
     "scale": 0.41,
-    "x_offset": 99.69883,
-    "y_offset": 176.85301,
+    "x_offset": 99.64636,
+    "y_offset": 176.87621,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:39.459Z"
+  "exported_at": "2026-08-19T13:24:32.214Z"
 }

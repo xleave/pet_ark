@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "arene",
   "character_name": "Arene",
   "localized_name": "芳汀",
@@ -11,15 +12,29 @@
   "skin_id": "winter-2",
   "skin_name": "随性",
   "source": "standalone/assets/source/arene/skin-winter-2",
-  "source_page": "https://prts.wiki/w/%E8%8A%B3%E6%B1%80",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/meta.json",
-    "model": "char_271_spikes_winter_2/build/build_char_271_spikes_winter_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/char_271_spikes_winter_2/build/build_char_271_spikes_winter_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/char_271_spikes_winter_2/build/build_char_271_spikes_winter_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/char_271_spikes_winter_2/build/build_char_271_spikes_winter_2.png"
+    "assetId": "build_char_271_spikes_winter#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "芳汀",
+    "appellation": "Arene",
+    "skinGroupId": "2021#winter",
+    "skinGroupName": "寒武纪/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_271_spikes_winter#2.atlas",
+      ".png": "build_char_271_spikes_winter#2.png",
+      ".skel": "build_char_271_spikes_winter#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +106,7 @@
       "path": "standalone/assets/cleaned/arene/skin-winter-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,12 +119,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -249.94965,
-      "maxX": 268.51086,
+      "minX": -470.14709,
+      "maxX": 1078.82666,
       "minY": -119.89088,
-      "maxY": 419.42264
+      "maxY": 434.39859
     },
     "full_source_bounds": {
       "minX": -470.14709,
@@ -118,23 +133,29 @@
       "maxY": 434.39859
     },
     "core_source_bounds": {
-      "minX": -249.94965,
-      "maxX": 268.51086,
+      "minX": -470.14709,
+      "maxX": 1078.82666,
       "minY": -119.89088,
       "maxY": 419.42264
     },
     "cluster": {
-      "retained": 1876,
+      "retained": 1930,
       "total": 1930,
-      "centerX": -11.00527,
-      "centerY": 126.02563,
-      "radiusX": 265.69656,
-      "radiusY": 555.90096
+      "centerX": 46.05496,
+      "centerY": 165.07871,
+      "radiusX": 1245.70882,
+      "radiusY": 480
     },
-    "scale": 0.33947,
-    "x_offset": 92.84954,
-    "y_offset": 175.30106,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 32,
+      "visible_height": 48,
+      "density_zoom": 2.91667
+    },
+    "scale": 0.3314,
+    "x_offset": 116.18279,
+    "y_offset": 217.10123,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:53.500Z"
+  "exported_at": "2026-08-19T13:21:28.022Z"
 }

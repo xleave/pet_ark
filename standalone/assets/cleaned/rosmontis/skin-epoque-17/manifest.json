@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "rosmontis",
   "character_name": "Rosmontis",
   "localized_name": "迷迭香",
@@ -9,15 +12,29 @@
   "skin_id": "epoque-17",
   "skin_name": "拥抱新生",
   "source": "standalone/assets/source/rosmontis/skin-epoque-17",
-  "source_page": "https://prts.wiki/w/%E8%BF%B7%E8%BF%AD%E9%A6%99",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_391_rosmon/meta.json",
-    "model": "char_391_rosmon_epoque_17/build/build_char_391_rosmon_epoque_17",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_391_rosmon/char_391_rosmon_epoque_17/build/build_char_391_rosmon_epoque_17.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_391_rosmon/char_391_rosmon_epoque_17/build/build_char_391_rosmon_epoque_17.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_391_rosmon/char_391_rosmon_epoque_17/build/build_char_391_rosmon_epoque_17.png"
+    "assetId": "build_char_391_rosmon_epoque#17",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "迷迭香",
+    "appellation": "Rosmontis",
+    "skinGroupId": "2022#epoque#4",
+    "skinGroupName": "时代/XVII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_391_rosmon_epoque#17.atlas",
+      ".png": "build_char_391_rosmon_epoque#17.png",
+      ".skel": "build_char_391_rosmon_epoque#17.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/rosmontis/skin-epoque-17/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -282.19287,
+      "minX": -282.19226,
       "maxX": 273.0473,
-      "minY": -138.03065,
-      "maxY": 428.97501
+      "minY": -138.13786,
+      "maxY": 430.64246
+    },
+    "full_source_bounds": {
+      "minX": -282.19226,
+      "maxX": 273.0473,
+      "minY": -138.13786,
+      "maxY": 430.64246
+    },
+    "core_source_bounds": {
+      "minX": -248.57629,
+      "maxX": 273.0473,
+      "minY": -138.13786,
+      "maxY": 429.96719
+    },
+    "cluster": {
+      "retained": 2360,
+      "total": 2360,
+      "centerX": -6.66365,
+      "centerY": 187.94558,
+      "radiusX": 512.51258,
+      "radiusY": 584.10683
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 95,
+      "visible_height": 137,
+      "density_zoom": 1.0219
     },
     "scale": 0.31698,
-    "x_offset": 97.44948,
-    "y_offset": 172.24705,
+    "x_offset": 97.44939,
+    "y_offset": 172.21302,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:28.513Z"
+  "exported_at": "2026-08-19T13:23:44.381Z"
 }

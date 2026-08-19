@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "quercus",
   "character_name": "Quercus",
   "localized_name": "夏栎",
@@ -11,15 +12,29 @@
   "skin_id": "witch-4",
   "skin_name": "树影吟游",
   "source": "standalone/assets/source/quercus/skin-witch-4",
-  "source_page": "https://prts.wiki/w/%E5%A4%8F%E6%A0%8E",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/meta.json",
-    "model": "char_492_quercu_witch_4/build/build_char_492_quercu_witch_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/char_492_quercu_witch_4/build/build_char_492_quercu_witch_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/char_492_quercu_witch_4/build/build_char_492_quercu_witch_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/char_492_quercu_witch_4/build/build_char_492_quercu_witch_4.png"
+    "assetId": "build_char_492_quercu_witch#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "夏栎",
+    "appellation": "Quercus",
+    "skinGroupId": "2023#witch",
+    "skinGroupName": "巫异盛宴/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_492_quercu_witch#4.atlas",
+      ".png": "build_char_492_quercu_witch#4.png",
+      ".skel": "build_char_492_quercu_witch#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/quercus/skin-witch-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -309.99158,
-      "maxX": 248.15349,
+      "minX": -652.18909,
+      "maxX": 397.74094,
       "minY": -133.37418,
-      "maxY": 453.92905
+      "maxY": 460.19
     },
     "full_source_bounds": {
       "minX": -652.18909,
@@ -129,23 +144,29 @@
       "maxY": 460.19
     },
     "core_source_bounds": {
-      "minX": -309.99158,
-      "maxX": 248.15349,
+      "minX": -453.75003,
+      "maxX": 366.99997,
       "minY": -133.37418,
-      "maxY": 453.92905
+      "maxY": 460.19
     },
     "cluster": {
-      "retained": 2605,
+      "retained": 2617,
       "total": 2620,
-      "centerX": -9.09784,
-      "centerY": 138.62008,
-      "radiusX": 256,
-      "radiusY": 631.02827
+      "centerX": -0.24933,
+      "centerY": 177.70954,
+      "radiusX": 551.85775,
+      "radiusY": 770.53064
     },
-    "scale": 0.31533,
-    "x_offset": 105.74971,
-    "y_offset": 173.94309,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 52,
+      "visible_height": 77,
+      "density_zoom": 1.81818
+    },
+    "scale": 0.30478,
+    "x_offset": 110.23018,
+    "y_offset": 215.34992,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:05:04.106Z"
+  "exported_at": "2026-08-19T13:23:37.548Z"
 }

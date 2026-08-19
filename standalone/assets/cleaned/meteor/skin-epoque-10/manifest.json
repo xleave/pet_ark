@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "meteor",
   "character_name": "Meteor",
   "localized_name": "流星",
@@ -9,15 +12,29 @@
   "skin_id": "epoque-10",
   "skin_name": "诗人的假日",
   "source": "standalone/assets/source/meteor/skin-epoque-10",
-  "source_page": "https://prts.wiki/w/%E6%B5%81%E6%98%9F",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/meta.json",
-    "model": "char_126_shotst_epoque_10/build/build_char_126_shotst_epoque_10",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/char_126_shotst_epoque_10/build/build_char_126_shotst_epoque_10.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/char_126_shotst_epoque_10/build/build_char_126_shotst_epoque_10.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/char_126_shotst_epoque_10/build/build_char_126_shotst_epoque_10.png"
+    "assetId": "build_char_126_shotst_epoque#10",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "流星",
+    "appellation": "Meteor",
+    "skinGroupId": "2021#epoque#2",
+    "skinGroupName": "时代/X",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_126_shotst_epoque#10.atlas",
+      ".png": "build_char_126_shotst_epoque#10.png",
+      ".skel": "build_char_126_shotst_epoque#10.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/meteor/skin-epoque-10/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -256.85355,
       "maxX": 207.41095,
-      "minY": -119.74274,
-      "maxY": 403.02484
+      "minY": -119.73636,
+      "maxY": 404.99881
+    },
+    "full_source_bounds": {
+      "minX": -256.85355,
+      "maxX": 207.41095,
+      "minY": -119.73636,
+      "maxY": 404.99881
+    },
+    "core_source_bounds": {
+      "minX": -256.85355,
+      "maxX": 207.41095,
+      "minY": -119.73636,
+      "maxY": 396.20093
+    },
+    "cluster": {
+      "retained": 2325,
+      "total": 2325,
+      "centerX": -141.35174,
+      "centerY": 162.85339,
+      "radiusX": 427.48617,
+      "radiusY": 514.02287
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 94,
+      "visible_height": 150,
+      "density_zoom": 1
     },
     "scale": 0.37909,
     "x_offset": 105.3717,
-    "y_offset": 170.60621,
+    "y_offset": 170.60864,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:18.009Z"
+  "exported_at": "2026-08-19T13:23:02.775Z"
 }

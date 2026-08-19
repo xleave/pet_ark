@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "exusiai",
   "character_name": "Exusiai",
   "localized_name": "能天使",
@@ -11,15 +12,29 @@
   "skin_id": "sale-8",
   "skin_name": "午夜邮差",
   "source": "standalone/assets/source/exusiai/skin-sale-8",
-  "source_page": "https://prts.wiki/w/%E8%83%BD%E5%A4%A9%E4%BD%BF",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_103_angel/meta.json",
-    "model": "char_103_angel_sale_8/build/build_char_103_angel_sale_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_103_angel/char_103_angel_sale_8/build/build_char_103_angel_sale_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_103_angel/char_103_angel_sale_8/build/build_char_103_angel_sale_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_103_angel/char_103_angel_sale_8/build/build_char_103_angel_sale_8.png"
+    "assetId": "build_char_103_angel_sale#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "能天使",
+    "appellation": "Exusiai",
+    "skinGroupId": "2023#sale",
+    "skinGroupName": "忒斯特收藏/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_103_angel_sale#8.atlas",
+      ".png": "build_char_103_angel_sale#8.png",
+      ".skel": "build_char_103_angel_sale#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,16 +117,6 @@
       "path": "standalone/assets/cleaned/exusiai/skin-sale-8/special",
       "intentional_blank_frames": [
         {
-          "frame": 1,
-          "reason": "The deterministic Spine Special sample contains no visible pixels in the canonical character envelope; retained explicitly as a source-authored transition beat.",
-          "observed_by": "blank-policy-revision-1"
-        },
-        {
-          "frame": 2,
-          "reason": "The deterministic Spine Special sample contains no visible pixels in the canonical character envelope; retained explicitly as a source-authored transition beat.",
-          "observed_by": "blank-policy-revision-1"
-        },
-        {
           "frame": 4,
           "reason": "The deterministic Spine Special sample contains no visible pixels in the canonical character envelope; retained explicitly as a source-authored transition beat.",
           "observed_by": "blank-policy-revision-1"
@@ -124,7 +129,7 @@
       ]
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -137,11 +142,11 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -250.0405,
-      "maxX": 235.15381,
-      "minY": -109.84487,
+      "minX": -544.99829,
+      "maxX": 617.3064,
+      "minY": -837.87476,
       "maxY": 474.11163
     },
     "full_source_bounds": {
@@ -151,23 +156,29 @@
       "maxY": 837.78149
     },
     "core_source_bounds": {
-      "minX": -250.0405,
-      "maxX": 235.15381,
-      "minY": -109.84487,
+      "minX": -544.99829,
+      "maxX": 617.3064,
+      "minY": -837.87476,
       "maxY": 474.11163
     },
     "cluster": {
-      "retained": 2582,
+      "retained": 2593,
       "total": 2608,
-      "centerX": -8.94497,
-      "centerY": 139.15483,
-      "radiusX": 304.06366,
-      "radiusY": 632.08305
+      "centerX": 5.03809,
+      "centerY": 169.88197,
+      "radiusX": 543.08171,
+      "radiusY": 924.91516
     },
-    "scale": 0.35619,
-    "x_offset": 98.65125,
-    "y_offset": 176.87426,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 47,
+      "visible_height": 63,
+      "density_zoom": 2.22222
+    },
+    "scale": 0.3365,
+    "x_offset": 106.05652,
+    "y_offset": 218.50277,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:07.656Z"
+  "exported_at": "2026-08-19T13:22:08.129Z"
 }

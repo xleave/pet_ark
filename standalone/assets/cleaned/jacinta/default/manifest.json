@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "jacinta",
   "character_name": "Jacinta",
   "localized_name": "嘉辛塔",
@@ -11,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/jacinta/default",
-  "source_page": "https://prts.wiki/w/%E5%98%89%E8%BE%9B%E5%A1%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4237_jcinta/meta.json",
-    "model": "defaultskin/build/build_char_4237_jcinta",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4237_jcinta/defaultskin/build/build_char_4237_jcinta.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4237_jcinta/defaultskin/build/build_char_4237_jcinta.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4237_jcinta/defaultskin/build/build_char_4237_jcinta.png"
+    "assetId": "build_char_4237_jcinta",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "嘉辛塔",
+    "appellation": "Jacinta",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4237_jcinta.atlas",
+      ".png": "build_char_4237_jcinta.png",
+      ".skel": "build_char_4237_jcinta.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +116,7 @@
       "path": "standalone/assets/cleaned/jacinta/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,9 +129,9 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -276.49823,
+      "minX": -657.19531,
       "maxX": 177.74812,
       "minY": -118.58503,
       "maxY": 451.38593
@@ -129,23 +143,29 @@
       "maxY": 451.38593
     },
     "core_source_bounds": {
-      "minX": -276.49823,
+      "minX": -560.67651,
       "maxX": 177.74812,
       "minY": -118.58503,
       "maxY": 451.38593
     },
     "cluster": {
-      "retained": 3137,
+      "retained": 3158,
       "total": 3168,
-      "centerX": -4.80629,
-      "centerY": 127.09179,
-      "radiusX": 277.11065,
-      "radiusY": 649.18537
+      "centerX": -16.32306,
+      "centerY": 195.23939,
+      "radiusX": 569.09736,
+      "radiusY": 643.09202
     },
-    "scale": 0.36493,
-    "x_offset": 114.01848,
-    "y_offset": 172.72466,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 55,
+      "visible_height": 95,
+      "density_zoom": 1.47368
+    },
+    "scale": 0.31064,
+    "x_offset": 104.15241,
+    "y_offset": 216.00463,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:58.969Z"
+  "exported_at": "2026-08-19T13:22:37.719Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "4055-bgsnow",
   "character_name": "Позёмка",
   "localized_name": "鸿雪",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/4055-bgsnow/default",
-  "source_page": "https://prts.wiki/w/%E9%B8%BF%E9%9B%AA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/meta.json",
-    "model": "defaultskin/build/build_char_4055_bgsnow",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/defaultskin/build/build_char_4055_bgsnow.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/defaultskin/build/build_char_4055_bgsnow.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/defaultskin/build/build_char_4055_bgsnow.png"
+    "assetId": "build_char_4055_bgsnow",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "鸿雪",
+    "appellation": "Позёмка",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4055_bgsnow.atlas",
+      ".png": "build_char_4055_bgsnow.png",
+      ".skel": "build_char_4055_bgsnow.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/4055-bgsnow/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -260.70508,
+      "minX": -260.63721,
       "maxX": 246.85017,
-      "minY": -135.50389,
-      "maxY": 438.75836
+      "minY": -139.11763,
+      "maxY": 438.5163
     },
-    "scale": 0.34676,
-    "x_offset": 98.40217,
-    "y_offset": 169.01263,
+    "full_source_bounds": {
+      "minX": -260.63721,
+      "maxX": 246.85017,
+      "minY": -139.11763,
+      "maxY": 438.5163
+    },
+    "core_source_bounds": {
+      "minX": -260.63721,
+      "maxX": 246.85017,
+      "minY": -139.11763,
+      "maxY": 438.5163
+    },
+    "cluster": {
+      "retained": 2979,
+      "total": 2979,
+      "centerX": -15.50471,
+      "centerY": 171.00732,
+      "radiusX": 434.91125,
+      "radiusY": 617.51683
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 103,
+      "visible_height": 150,
+      "density_zoom": 1
+    },
+    "scale": 0.34681,
+    "x_offset": 98.39072,
+    "y_offset": 167.75308,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:54.214Z"
+  "exported_at": "2026-08-19T13:21:17.624Z"
 }

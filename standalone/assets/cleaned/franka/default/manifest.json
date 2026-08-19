@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "franka",
   "character_name": "Franka",
   "localized_name": "芙兰卡",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/franka/default",
-  "source_page": "https://prts.wiki/w/%E8%8A%99%E5%85%B0%E5%8D%A1",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_106_franka/meta.json",
-    "model": "defaultskin/build/build_char_106_franka",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_106_franka/defaultskin/build/build_char_106_franka.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_106_franka/defaultskin/build/build_char_106_franka.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_106_franka/defaultskin/build/build_char_106_franka.png"
+    "assetId": "build_char_106_franka",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "芙兰卡",
+    "appellation": "Franka",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_106_franka.atlas",
+      ".png": "build_char_106_franka.png",
+      ".skel": "build_char_106_franka.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/franka/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -260.35464,
-      "maxX": 180.23871,
-      "minY": -141.39305,
-      "maxY": 423.35068
+      "minX": -260.37137,
+      "maxX": 180.24031,
+      "minY": -140.94241,
+      "maxY": 425.87921
     },
-    "scale": 0.36831,
-    "x_offset": 110.7537,
-    "y_offset": 163.92372,
+    "full_source_bounds": {
+      "minX": -260.37137,
+      "maxX": 180.24031,
+      "minY": -140.94241,
+      "maxY": 425.87921
+    },
+    "core_source_bounds": {
+      "minX": -260.37137,
+      "maxX": 180.24031,
+      "minY": -140.94241,
+      "maxY": 422.28824
+    },
+    "cluster": {
+      "retained": 1130,
+      "total": 1130,
+      "centerX": 5.59485,
+      "centerY": 196.42123,
+      "radiusX": 320,
+      "radiusY": 523.93047
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 72,
+      "visible_height": 156,
+      "density_zoom": 1
+    },
+    "scale": 0.36696,
+    "x_offset": 110.70239,
+    "y_offset": 164.27999,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:07.454Z"
+  "exported_at": "2026-08-19T13:22:15.970Z"
 }

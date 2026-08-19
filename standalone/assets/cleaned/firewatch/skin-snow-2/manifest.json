@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "firewatch",
   "character_name": "Firewatch",
   "localized_name": "守林人",
@@ -9,15 +12,29 @@
   "skin_id": "snow-2",
   "skin_name": "覆雪",
   "source": "standalone/assets/source/firewatch/skin-snow-2",
-  "source_page": "https://prts.wiki/w/%E5%AE%88%E6%9E%97%E4%BA%BA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/meta.json",
-    "model": "char_158_milu_snow_2/build/build_char_158_milu_snow_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/char_158_milu_snow_2/build/build_char_158_milu_snow_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/char_158_milu_snow_2/build/build_char_158_milu_snow_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/char_158_milu_snow_2/build/build_char_158_milu_snow_2.png"
+    "assetId": "build_char_158_milu_snow#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "守林人",
+    "appellation": "Firewatch",
+    "skinGroupId": "2020#xmas",
+    "skinGroupName": "冰原信使/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_158_milu_snow#2.atlas",
+      ".png": "build_char_158_milu_snow#2.png",
+      ".skel": "build_char_158_milu_snow#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/firewatch/skin-snow-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -291.53918,
+      "minX": -260.62686,
       "maxX": 324.45117,
-      "minY": -110.13023,
-      "maxY": 423.73993
+      "minY": -109.73425,
+      "maxY": 426.48996
     },
-    "scale": 0.28572,
-    "x_offset": 91.29821,
-    "y_offset": 184.53373,
+    "full_source_bounds": {
+      "minX": -260.62686,
+      "maxX": 324.45117,
+      "minY": -109.73425,
+      "maxY": 426.48996
+    },
+    "core_source_bounds": {
+      "minX": -260.62686,
+      "maxX": 207.35341,
+      "minY": -109.73425,
+      "maxY": 423.86884
+    },
+    "cluster": {
+      "retained": 1951,
+      "total": 1951,
+      "centerX": 18.12438,
+      "centerY": 178.64543,
+      "radiusX": 332.3209,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 74,
+      "visible_height": 126,
+      "density_zoom": 1.11111
+    },
+    "scale": 0.30081,
+    "x_offset": 86.40036,
+    "y_offset": 182.99034,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:06.976Z"
+  "exported_at": "2026-08-19T13:22:13.166Z"
 }

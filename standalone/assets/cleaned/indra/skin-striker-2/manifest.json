@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "indra",
   "character_name": "Indra",
   "localized_name": "因陀罗",
@@ -11,15 +12,29 @@
   "skin_id": "striker-2",
   "skin_name": "悍将",
   "source": "standalone/assets/source/indra/skin-striker-2",
-  "source_page": "https://prts.wiki/w/%E5%9B%A0%E9%99%80%E7%BD%97",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_155_tiger/meta.json",
-    "model": "char_155_tiger_striker_2/build/build_char_155_tiger_striker_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_155_tiger/char_155_tiger_striker_2/build/build_char_155_tiger_striker_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_155_tiger/char_155_tiger_striker_2/build/build_char_155_tiger_striker_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_155_tiger/char_155_tiger_striker_2/build/build_char_155_tiger_striker_2.png"
+    "assetId": "build_char_155_tiger_striker#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "因陀罗",
+    "appellation": "Indra",
+    "skinGroupId": "2022#striker",
+    "skinGroupName": "雷神推进者/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_155_tiger_striker#2.atlas",
+      ".png": "build_char_155_tiger_striker#2.png",
+      ".skel": "build_char_155_tiger_striker#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/indra/skin-striker-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,10 +130,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -204.60373,
-      "maxX": 301.62988,
+      "maxX": 401.12766,
       "minY": -108.29386,
       "maxY": 409.54926
     },
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -204.60373,
-      "maxX": 301.62988,
+      "maxX": 401.12766,
       "minY": -108.29386,
       "maxY": 409.54926
     },
     "cluster": {
-      "retained": 2544,
+      "retained": 2562,
       "total": 2573,
-      "centerX": 1.20276,
-      "centerY": 133.59734,
-      "radiusX": 286.32312,
-      "radiusY": 571.45056
+      "centerX": 42.8422,
+      "centerY": 184.40868,
+      "radiusX": 629.96567,
+      "radiusY": 784.13689
     },
-    "scale": 0.34767,
-    "x_offset": 79.13367,
-    "y_offset": 178.34995,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 70,
+      "visible_height": 116,
+      "density_zoom": 1.2069
+    },
+    "scale": 0.35067,
+    "x_offset": 104.38699,
+    "y_offset": 216.64493,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:18.070Z"
+  "exported_at": "2026-08-19T13:22:35.191Z"
 }

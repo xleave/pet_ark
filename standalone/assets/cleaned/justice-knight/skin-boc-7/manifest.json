@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "justice-knight",
   "character_name": "\"Justice Knight\"",
   "localized_name": "正义骑士号",
@@ -9,15 +12,29 @@
   "skin_id": "boc-7",
   "skin_name": "竞技之梦改装",
   "source": "standalone/assets/source/justice-knight/skin-boc-7",
-  "source_page": "https://prts.wiki/w/%E6%AD%A3%E4%B9%89%E9%AA%91%E5%A3%AB%E5%8F%B7",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4000_jnight/meta.json",
-    "model": "char_4000_jnight_boc_7/build/build_char_4000_jnight_boc_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4000_jnight/char_4000_jnight_boc_7/build/build_char_4000_jnight_boc_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4000_jnight/char_4000_jnight_boc_7/build/build_char_4000_jnight_boc_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4000_jnight/char_4000_jnight_boc_7/build/build_char_4000_jnight_boc_7.png"
+    "assetId": "build_char_4000_jnight_boc#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "正义骑士号",
+    "appellation": "\"Justice Knight\"",
+    "skinGroupId": "2023#boc#2",
+    "skinGroupName": "斗争血脉/VII",
+    "sortTags": [
+      "Operator",
+      "Rarity_1",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4000_jnight_boc#7.atlas",
+      ".png": "build_char_4000_jnight_boc#7.png",
+      ".skel": "build_char_4000_jnight_boc#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -78,7 +95,7 @@
       "path": "standalone/assets/cleaned/justice-knight/skin-boc-7/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -91,16 +108,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -276.2233,
+      "maxX": 167.79163,
+      "minY": -6.71498,
+      "maxY": 382.3631
+    },
+    "full_source_bounds": {
       "minX": -415.48068,
       "maxX": 173.83032,
       "minY": -19.47655,
       "maxY": 388.31805
     },
-    "scale": 0.29865,
-    "x_offset": 132.08491,
-    "y_offset": 210.18325,
+    "core_source_bounds": {
+      "minX": -276.2233,
+      "maxX": 167.79163,
+      "minY": -6.71498,
+      "maxY": 382.3631
+    },
+    "cluster": {
+      "retained": 1428,
+      "total": 1428,
+      "centerX": -5.27897,
+      "centerY": 99.36296,
+      "radiusX": 804.99987,
+      "radiusY": 655.00005
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 175,
+      "visible_height": 152,
+      "density_zoom": 1
+    },
+    "scale": 0.39638,
+    "x_offset": 117.49024,
+    "y_offset": 213.3383,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:14.874Z"
+  "exported_at": "2026-08-19T13:22:40.633Z"
 }

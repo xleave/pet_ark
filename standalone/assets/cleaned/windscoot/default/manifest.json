@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "windscoot",
   "character_name": "Windscoot",
   "localized_name": "骋风",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/windscoot/default",
-  "source_page": "https://prts.wiki/w/%E9%AA%8B%E9%A3%8E",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_445_wscoot/meta.json",
-    "model": "defaultskin/build/build_char_445_wscoot",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_445_wscoot/defaultskin/build/build_char_445_wscoot.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_445_wscoot/defaultskin/build/build_char_445_wscoot.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_445_wscoot/defaultskin/build/build_char_445_wscoot.png"
+    "assetId": "build_char_445_wscoot",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "骋风",
+    "appellation": "Windscoot",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_445_wscoot.atlas",
+      ".png": "build_char_445_wscoot.png",
+      ".skel": "build_char_445_wscoot.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/windscoot/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -260.27686,
+      "minX": -260.26019,
       "maxX": 233.97841,
-      "minY": -101.26482,
-      "maxY": 410.91431
+      "minY": -101.38583,
+      "maxY": 411.27884
     },
-    "scale": 0.35609,
-    "x_offset": 100.68232,
-    "y_offset": 179.94048,
+    "full_source_bounds": {
+      "minX": -260.26019,
+      "maxX": 233.97841,
+      "minY": -101.38583,
+      "maxY": 411.27884
+    },
+    "core_source_bounds": {
+      "minX": -260.26019,
+      "maxX": 233.97841,
+      "minY": -101.38583,
+      "maxY": 411.27884
+    },
+    "cluster": {
+      "retained": 2339,
+      "total": 2339,
+      "centerX": 3.25217,
+      "centerY": 160.53561,
+      "radiusX": 458.33725,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 89,
+      "visible_height": 145,
+      "density_zoom": 1
+    },
+    "scale": 0.3561,
+    "x_offset": 100.67952,
+    "y_offset": 179.89617,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:38.694Z"
+  "exported_at": "2026-08-19T13:24:28.898Z"
 }

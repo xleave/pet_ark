@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "wulfenite",
   "character_name": "Wulfenite",
   "localized_name": "钼铅",
@@ -11,15 +12,29 @@
   "skin_id": "marthe-14",
   "skin_name": "跃动节拍",
   "source": "standalone/assets/source/wulfenite/skin-marthe-14",
-  "source_page": "https://prts.wiki/w/%E9%92%BC%E9%93%85",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4171_wulfen/meta.json",
-    "model": "char_4171_wulfen_marthe_14/build/build_char_4171_wulfen_marthe_14",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4171_wulfen/char_4171_wulfen_marthe_14/build/build_char_4171_wulfen_marthe_14.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4171_wulfen/char_4171_wulfen_marthe_14/build/build_char_4171_wulfen_marthe_14.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4171_wulfen/char_4171_wulfen_marthe_14/build/build_char_4171_wulfen_marthe_14.png"
+    "assetId": "build_char_4171_wulfen_marthe#14",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "钼铅",
+    "appellation": "Wulfenite",
+    "skinGroupId": "2026#marthe#3",
+    "skinGroupName": "玛尔特/XIV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4171_wulfen_marthe#14.atlas",
+      ".png": "build_char_4171_wulfen_marthe#14.png",
+      ".skel": "build_char_4171_wulfen_marthe#14.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/wulfenite/skin-marthe-14/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,9 +130,9 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -315.57547,
+      "minX": -416.40381,
       "maxX": 199.68962,
       "minY": -109.26398,
       "maxY": 451.21307
@@ -129,23 +144,29 @@
       "maxY": 657.89996
     },
     "core_source_bounds": {
-      "minX": -315.57547,
+      "minX": -416.40381,
       "maxX": 199.68962,
       "minY": -109.26398,
       "maxY": 451.21307
     },
     "cluster": {
-      "retained": 2493,
+      "retained": 2495,
       "total": 2498,
-      "centerX": 3.494,
-      "centerY": 145.7929,
-      "radiusX": 300.73734,
-      "radiusY": 806.37296
+      "centerX": -13.64886,
+      "centerY": 179.67888,
+      "radiusX": 518.95244,
+      "radiusY": 701.85265
     },
-    "scale": 0.34157,
-    "x_offset": 115.79167,
-    "y_offset": 178.67851,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 80,
+      "visible_height": 114,
+      "density_zoom": 1.22807
+    },
+    "scale": 0.35082,
+    "x_offset": 96.55813,
+    "y_offset": 216.96582,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:29.291Z"
+  "exported_at": "2026-08-19T13:24:30.454Z"
 }

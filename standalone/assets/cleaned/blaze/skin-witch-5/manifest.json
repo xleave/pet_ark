@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "blaze",
   "character_name": "Blaze",
   "localized_name": "煌",
@@ -9,15 +12,29 @@
   "skin_id": "witch-5",
   "skin_name": "易爆蓝焰",
   "source": "standalone/assets/source/blaze/skin-witch-5",
-  "source_page": "https://prts.wiki/w/%E7%85%8C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/meta.json",
-    "model": "char_017_huang_witch_5/build/build_char_017_huang_witch_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/char_017_huang_witch_5/build/build_char_017_huang_witch_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/char_017_huang_witch_5/build/build_char_017_huang_witch_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/char_017_huang_witch_5/build/build_char_017_huang_witch_5.png"
+    "assetId": "build_char_017_huang_witch#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "煌",
+    "appellation": "Blaze",
+    "skinGroupId": "2024#witch",
+    "skinGroupName": "巫异盛宴/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_017_huang_witch#5.atlas",
+      ".png": "build_char_017_huang_witch#5.png",
+      ".skel": "build_char_017_huang_witch#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/blaze/skin-witch-5/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -247.08414,
-      "maxX": 490.31995,
-      "minY": -122.56969,
+      "minX": -247.66591,
+      "maxX": 506.6951,
+      "minY": -122.61891,
       "maxY": 571.13092
     },
-    "scale": 0.23868,
-    "x_offset": 66.97283,
-    "y_offset": 186.74566,
+    "full_source_bounds": {
+      "minX": -247.66591,
+      "maxX": 506.6951,
+      "minY": -122.61891,
+      "maxY": 571.13092
+    },
+    "core_source_bounds": {
+      "minX": -247.66591,
+      "maxX": 490.31995,
+      "minY": -122.61891,
+      "maxY": 571.13092
+    },
+    "cluster": {
+      "retained": 3079,
+      "total": 3079,
+      "centerX": -1.93078,
+      "centerY": 181.36962,
+      "radiusX": 473.24372,
+      "radiusY": 613.07149
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 94,
+      "visible_height": 100,
+      "density_zoom": 1.4
+    },
+    "scale": 0.32663,
+    "x_offset": 107.59612,
+    "y_offset": 216.54849,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:58.940Z"
+  "exported_at": "2026-08-19T13:21:39.396Z"
 }

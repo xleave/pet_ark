@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "weedy",
   "character_name": "Weedy",
   "localized_name": "温蒂",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/weedy/default",
-  "source_page": "https://prts.wiki/w/%E6%B8%A9%E8%92%82",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/meta.json",
-    "model": "defaultskin/build/build_char_400_weedy",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/defaultskin/build/build_char_400_weedy.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/defaultskin/build/build_char_400_weedy.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/defaultskin/build/build_char_400_weedy.png"
+    "assetId": "build_char_400_weedy",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "温蒂",
+    "appellation": "Weedy",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_400_weedy.atlas",
+      ".png": "build_char_400_weedy.png",
+      ".skel": "build_char_400_weedy.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/weedy/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -262.99075,
+      "minX": -263.51364,
       "maxX": 284.04431,
-      "minY": -144.38242,
+      "minY": -144.39015,
       "maxY": 452.14099
     },
-    "scale": 0.32173,
-    "x_offset": 92.61317,
-    "y_offset": 169.54721,
+    "full_source_bounds": {
+      "minX": -263.51364,
+      "maxX": 284.04431,
+      "minY": -144.39015,
+      "maxY": 452.14099
+    },
+    "core_source_bounds": {
+      "minX": -263.51364,
+      "maxX": 284.04431,
+      "minY": -144.39015,
+      "maxY": 452.14099
+    },
+    "cluster": {
+      "retained": 1726,
+      "total": 1726,
+      "centerX": 13.54434,
+      "centerY": 224.57203,
+      "radiusX": 494.98785,
+      "radiusY": 535.00008
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 102,
+      "visible_height": 146,
+      "density_zoom": 1
+    },
+    "scale": 0.32143,
+    "x_offset": 92.70044,
+    "y_offset": 169.58908,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:38.040Z"
+  "exported_at": "2026-08-19T13:24:26.155Z"
 }

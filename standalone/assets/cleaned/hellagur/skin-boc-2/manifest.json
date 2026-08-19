@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
-  "placement_revision": 2,
+  "placement_revision": 3,
   "character": "hellagur",
   "character_name": "Hellagur",
   "localized_name": "赫拉格",
@@ -12,15 +12,29 @@
   "skin_id": "boc-2",
   "skin_name": "歧路幻影",
   "source": "standalone/assets/source/hellagur/skin-boc-2",
-  "source_page": "https://prts.wiki/w/%E8%B5%AB%E6%8B%89%E6%A0%BC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/meta.json",
-    "model": "char_188_helage_boc_2/build/build_char_188_helage_boc_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/char_188_helage_boc_2/build/build_char_188_helage_boc_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/char_188_helage_boc_2/build/build_char_188_helage_boc_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/char_188_helage_boc_2/build/build_char_188_helage_boc_2.png"
+    "assetId": "build_char_188_helage_boc#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "赫拉格",
+    "appellation": "Hellagur",
+    "skinGroupId": "2021#boc",
+    "skinGroupName": "斗争血脉/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_188_helage_boc#2.atlas",
+      ".png": "build_char_188_helage_boc#2.png",
+      ".skel": "build_char_188_helage_boc#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/hellagur/skin-boc-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -143,10 +157,16 @@
       "radiusX": 380.10001,
       "radiusY": 800.12573
     },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 97,
+      "visible_height": 151,
+      "density_zoom": 1
+    },
     "scale": 0.33144,
     "x_offset": 99.18686,
     "y_offset": 173.07476,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:07:56.963Z"
+  "exported_at": "2026-08-19T13:22:27.726Z"
 }

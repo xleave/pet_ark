@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ifrit",
   "character_name": "Ifrit",
   "localized_name": "伊芙利特",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/ifrit/default",
-  "source_page": "https://prts.wiki/w/%E4%BC%8A%E8%8A%99%E5%88%A9%E7%89%B9",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_134_ifrit/meta.json",
-    "model": "defaultskin/build/build_char_134_ifrit",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_134_ifrit/defaultskin/build/build_char_134_ifrit.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_134_ifrit/defaultskin/build/build_char_134_ifrit.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_134_ifrit/defaultskin/build/build_char_134_ifrit.png"
+    "assetId": "build_char_134_ifrit",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "伊芙利特",
+    "appellation": "Ifrit",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_134_ifrit.atlas",
+      ".png": "build_char_134_ifrit.png",
+      ".skel": "build_char_134_ifrit.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/ifrit/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -256.68561,
+      "minX": -264.53699,
       "maxX": 151.72777,
       "minY": -93.9894,
-      "maxY": 409.63422
+      "maxY": 415.12274
     },
-    "scale": 0.41,
-    "x_offset": 117.51636,
-    "y_offset": 177.46434,
+    "full_source_bounds": {
+      "minX": -264.53699,
+      "maxX": 151.72777,
+      "minY": -93.9894,
+      "maxY": 415.12274
+    },
+    "core_source_bounds": {
+      "minX": -229.95064,
+      "maxX": 146.95122,
+      "minY": -93.9894,
+      "maxY": 373.81195
+    },
+    "cluster": {
+      "retained": 1329,
+      "total": 1329,
+      "centerX": -3.1025,
+      "centerY": 195.89809,
+      "radiusX": 412.50003,
+      "radiusY": 667.71992
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 98,
+      "visible_height": 154,
+      "density_zoom": 1
+    },
+    "scale": 0.40855,
+    "x_offset": 119.04435,
+    "y_offset": 177.60022,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:11.499Z"
+  "exported_at": "2026-08-19T13:22:33.375Z"
 }

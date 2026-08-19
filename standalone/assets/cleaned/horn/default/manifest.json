@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "horn",
   "character_name": "Horn",
   "localized_name": "号角",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/horn/default",
-  "source_page": "https://prts.wiki/w/%E5%8F%B7%E8%A7%92",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4039_horn/meta.json",
-    "model": "defaultskin/build/build_char_4039_horn",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4039_horn/defaultskin/build/build_char_4039_horn.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4039_horn/defaultskin/build/build_char_4039_horn.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4039_horn/defaultskin/build/build_char_4039_horn.png"
+    "assetId": "build_char_4039_horn",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "号角",
+    "appellation": "Horn",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4039_horn.atlas",
+      ".png": "build_char_4039_horn.png",
+      ".skel": "build_char_4039_horn.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/horn/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -257.33453,
+      "minX": -257.44327,
       "maxX": 180.07512,
       "minY": -130.11873,
-      "maxY": 416.14343
+      "maxY": 417.50632
     },
-    "scale": 0.38077,
-    "x_offset": 110.70902,
-    "y_offset": 166.45475,
+    "full_source_bounds": {
+      "minX": -257.44327,
+      "maxX": 180.07512,
+      "minY": -130.11873,
+      "maxY": 417.50632
+    },
+    "core_source_bounds": {
+      "minX": -257.44327,
+      "maxX": 180.07512,
+      "minY": -130.11873,
+      "maxY": 410.64896
+    },
+    "cluster": {
+      "retained": 2110,
+      "total": 2110,
+      "centerX": -6.52618,
+      "centerY": 177.51952,
+      "radiusX": 335.04754,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 70,
+      "visible_height": 155,
+      "density_zoom": 1.02857
+    },
+    "scale": 0.37982,
+    "x_offset": 110.69306,
+    "y_offset": 166.57805,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:10.929Z"
+  "exported_at": "2026-08-19T13:22:30.445Z"
 }

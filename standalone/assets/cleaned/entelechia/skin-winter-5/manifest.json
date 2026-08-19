@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "entelechia",
   "character_name": "Entelechia",
   "localized_name": "隐德来希",
@@ -9,15 +12,29 @@
   "skin_id": "winter-5",
   "skin_name": "耀目之蓝",
   "source": "standalone/assets/source/entelechia/skin-winter-5",
-  "source_page": "https://prts.wiki/w/%E9%9A%90%E5%BE%B7%E6%9D%A5%E5%B8%8C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4010_etlchi/meta.json",
-    "model": "char_4010_etlchi_winter_5/build/build_char_4010_etlchi_winter_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4010_etlchi/char_4010_etlchi_winter_5/build/build_char_4010_etlchi_winter_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4010_etlchi/char_4010_etlchi_winter_5/build/build_char_4010_etlchi_winter_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4010_etlchi/char_4010_etlchi_winter_5/build/build_char_4010_etlchi_winter_5.png"
+    "assetId": "build_char_4010_etlchi_winter#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "隐德来希",
+    "appellation": "Entelechia",
+    "skinGroupId": "2026#winter",
+    "skinGroupName": "寒武纪/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4010_etlchi_winter#5.atlas",
+      ".png": "build_char_4010_etlchi_winter#5.png",
+      ".skel": "build_char_4010_etlchi_winter#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/entelechia/skin-winter-5/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -227.90001,
       "maxX": 269.79974,
       "minY": -130.70685,
       "maxY": 401.52524
     },
+    "full_source_bounds": {
+      "minX": -227.90001,
+      "maxX": 269.79974,
+      "minY": -130.70685,
+      "maxY": 401.52524
+    },
+    "core_source_bounds": {
+      "minX": -227.90001,
+      "maxX": 240.08002,
+      "minY": -130.70685,
+      "maxY": 401.52524
+    },
+    "cluster": {
+      "retained": 2567,
+      "total": 2567,
+      "centerX": -6.695,
+      "centerY": 176.70216,
+      "radiusX": 455.01483,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 70,
+      "visible_height": 138,
+      "density_zoom": 1.02857
+    },
     "scale": 0.35363,
     "x_offset": 88.59156,
     "y_offset": 169.77855,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:13.332Z"
+  "exported_at": "2026-08-19T13:22:04.733Z"
 }

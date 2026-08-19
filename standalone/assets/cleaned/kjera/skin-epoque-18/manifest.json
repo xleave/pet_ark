@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "kjera",
   "character_name": "Kjera",
   "localized_name": "耶拉",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-18",
   "skin_name": "灵巧侍者",
   "source": "standalone/assets/source/kjera/skin-epoque-18",
-  "source_page": "https://prts.wiki/w/%E8%80%B6%E6%8B%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4013_kjera/meta.json",
-    "model": "char_4013_kjera_epoque_18/build/build_char_4013_kjera_epoque_18",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4013_kjera/char_4013_kjera_epoque_18/build/build_char_4013_kjera_epoque_18.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4013_kjera/char_4013_kjera_epoque_18/build/build_char_4013_kjera_epoque_18.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4013_kjera/char_4013_kjera_epoque_18/build/build_char_4013_kjera_epoque_18.png"
+    "assetId": "build_char_4013_kjera_epoque#18",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "耶拉",
+    "appellation": "Kjera",
+    "skinGroupId": "2022#epoque#5",
+    "skinGroupName": "时代/XVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4013_kjera_epoque#18.atlas",
+      ".png": "build_char_4013_kjera_epoque#18.png",
+      ".skel": "build_char_4013_kjera_epoque#18.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/kjera/skin-epoque-18/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -307.13937,
-      "maxX": 249.42444,
+      "minX": -686.31244,
+      "maxX": 361.66034,
       "minY": -108.45538,
-      "maxY": 405.39905
+      "maxY": 523.72565
     },
     "full_source_bounds": {
       "minX": -686.31244,
@@ -129,23 +144,29 @@
       "maxY": 523.72565
     },
     "core_source_bounds": {
-      "minX": -307.13937,
-      "maxX": 249.42444,
+      "minX": -686.31244,
+      "maxX": 141.84364,
       "minY": -108.45538,
-      "maxY": 405.39905
+      "maxY": 506.85779
     },
     "cluster": {
-      "retained": 2548,
+      "retained": 2562,
       "total": 2618,
-      "centerX": 2.83485,
-      "centerY": 135.02282,
-      "radiusX": 278.51157,
-      "radiusY": 598.50334
+      "centerX": -323.71974,
+      "centerY": 181.32919,
+      "radiusX": 423.9684,
+      "radiusY": 695.02947
     },
-    "scale": 0.31623,
-    "x_offset": 105.12548,
-    "y_offset": 181.70358,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 61,
+      "visible_height": 68,
+      "density_zoom": 2.05882
+    },
+    "scale": 0.34577,
+    "x_offset": 125.36206,
+    "y_offset": 217.61751,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:59.640Z"
+  "exported_at": "2026-08-19T13:22:44.914Z"
 }

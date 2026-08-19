@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "mr-nothing",
@@ -12,15 +12,29 @@
   "skin_id": "nian-7",
   "skin_name": "冷山月",
   "source": "standalone/assets/source/mr-nothing/skin-nian-7",
-  "source_page": "https://prts.wiki/w/%E4%B9%8C%E6%9C%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_455_nothin/meta.json",
-    "model": "char_455_nothin_nian_7/build/build_char_455_nothin_nian_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_455_nothin/char_455_nothin_nian_7/build/build_char_455_nothin_nian_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_455_nothin/char_455_nothin_nian_7/build/build_char_455_nothin_nian_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_455_nothin/char_455_nothin_nian_7/build/build_char_455_nothin_nian_7.png"
+    "assetId": "build_char_455_nothin_nian#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "乌有",
+    "appellation": "Mr.Nothing",
+    "skinGroupId": "2022#nian#2",
+    "skinGroupName": "0011制造/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_455_nothin_nian#7.atlas",
+      ".png": "build_char_455_nothin_nian#7.png",
+      ".skel": "build_char_455_nothin_nian#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/mr-nothing/skin-nian-7/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -145,14 +159,14 @@
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 78,
-      "visible_height": 103,
-      "density_zoom": 1.35922
+      "visible_width": 77,
+      "visible_height": 101,
+      "density_zoom": 1.38614
     },
-    "scale": 0.339,
-    "x_offset": 98.21727,
-    "y_offset": 217.34335,
+    "scale": 0.34571,
+    "x_offset": 97.5681,
+    "y_offset": 217.36995,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:42.231Z"
+  "exported_at": "2026-08-19T13:23:10.729Z"
 }

@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "grain-buds",
   "character_name": "Grain Buds",
   "localized_name": "小满",
@@ -11,15 +12,29 @@
   "skin_id": "yun-3",
   "skin_name": "步芳兰",
   "source": "standalone/assets/source/grain-buds/skin-yun-3",
-  "source_page": "https://prts.wiki/w/%E5%B0%8F%E6%BB%A1",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4122_grabds/meta.json",
-    "model": "char_4122_grabds_yun_3/build/build_char_4122_grabds_yun_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4122_grabds/char_4122_grabds_yun_3/build/build_char_4122_grabds_yun_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4122_grabds/char_4122_grabds_yun_3/build/build_char_4122_grabds_yun_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4122_grabds/char_4122_grabds_yun_3/build/build_char_4122_grabds_yun_3.png"
+    "assetId": "build_char_4122_grabds_yun#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "小满",
+    "appellation": "Grain Buds",
+    "skinGroupId": "2024#yun#2",
+    "skinGroupName": "0011/韵系列/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4122_grabds_yun#3.atlas",
+      ".png": "build_char_4122_grabds_yun#3.png",
+      ".skel": "build_char_4122_grabds_yun#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/grain-buds/skin-yun-3/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -287.10403,
+      "minX": -540.91541,
       "maxX": 263.53186,
       "minY": -108.3389,
-      "maxY": 671.74048
+      "maxY": 714.60071
     },
     "full_source_bounds": {
       "minX": -656.52789,
@@ -129,23 +144,29 @@
       "maxY": 714.60071
     },
     "core_source_bounds": {
-      "minX": -287.10403,
+      "minX": -540.91541,
       "maxX": 263.53186,
       "minY": -108.3389,
-      "maxY": 671.74048
+      "maxY": 714.60071
     },
     "cluster": {
-      "retained": 3408,
-      "total": 3424,
-      "centerX": -4.78227,
-      "centerY": 147.79454,
-      "radiusX": 301.11244,
-      "radiusY": 677.90101
+      "retained": 3366,
+      "total": 3366,
+      "centerX": -8.03521,
+      "centerY": 209.28783,
+      "radiusX": 569.91102,
+      "radiusY": 665.52925
     },
-    "scale": 0.26664,
-    "x_offset": 99.14264,
-    "y_offset": 187.11257,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 70,
+      "visible_height": 88,
+      "density_zoom": 1.59091
+    },
+    "scale": 0.34807,
+    "x_offset": 89.3874,
+    "y_offset": 216.47283,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:16.059Z"
+  "exported_at": "2026-08-19T13:22:21.535Z"
 }

@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "necrass",
   "character_name": "Necrass",
   "localized_name": "死芒",
@@ -11,15 +12,29 @@
   "skin_id": "summer-20",
   "skin_name": "夏卉 FA161",
   "source": "standalone/assets/source/necrass/skin-summer-20",
-  "source_page": "https://prts.wiki/w/%E6%AD%BB%E8%8A%92",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/meta.json",
-    "model": "char_450_necras_summer_20/build/build_char_450_necras_summer_20",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/char_450_necras_summer_20/build/build_char_450_necras_summer_20.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/char_450_necras_summer_20/build/build_char_450_necras_summer_20.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/char_450_necras_summer_20/build/build_char_450_necras_summer_20.png"
+    "assetId": "build_char_450_necras_summer#20",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "死芒",
+    "appellation": "Necrass",
+    "skinGroupId": "2025#summer#2",
+    "skinGroupName": "珊瑚海岸/XX",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_450_necras_summer#20.atlas",
+      ".png": "build_char_450_necras_summer#20.png",
+      ".skel": "build_char_450_necras_summer#20"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/necrass/skin-summer-20/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,7 +130,7 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -406.77789,
       "maxX": 429.87854,
@@ -123,9 +138,9 @@
       "maxY": 698.57373
     },
     "full_source_bounds": {
-      "minX": -733.39722,
-      "maxX": 2654.98853,
-      "minY": -1041.71472,
+      "minX": -655.57129,
+      "maxX": 945.92548,
+      "minY": -105.03521,
       "maxY": 824.34741
     },
     "core_source_bounds": {
@@ -136,16 +151,22 @@
     },
     "cluster": {
       "retained": 3163,
-      "total": 3511,
-      "centerX": -25.47295,
-      "centerY": 157.09563,
-      "radiusX": 444.3301,
-      "radiusY": 851.67725
+      "total": 3173,
+      "centerX": -5.59807,
+      "centerY": 210.12421,
+      "radiusX": 647.56393,
+      "radiusY": 787.47993
     },
-    "scale": 0.21036,
-    "x_offset": 93.57026,
-    "y_offset": 193.90467,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 91,
+      "visible_height": 114,
+      "density_zoom": 1.22807
+    },
+    "scale": 0.25834,
+    "x_offset": 118.80558,
+    "y_offset": 215.88293,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:48.327Z"
+  "exported_at": "2026-08-19T13:23:17.831Z"
 }

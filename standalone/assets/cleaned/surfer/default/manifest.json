@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "surfer",
   "character_name": "Surfer",
   "localized_name": "寻澜",
@@ -11,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/surfer/default",
-  "source_page": "https://prts.wiki/w/%E5%AF%BB%E6%BE%9C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/meta.json",
-    "model": "defaultskin/build/build_char_4052_surfer",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/defaultskin/build/build_char_4052_surfer.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/defaultskin/build/build_char_4052_surfer.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/defaultskin/build/build_char_4052_surfer.png"
+    "assetId": "build_char_4052_surfer",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "寻澜",
+    "appellation": "Surfer",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4052_surfer.atlas",
+      ".png": "build_char_4052_surfer.png",
+      ".skel": "build_char_4052_surfer.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +105,7 @@
       "path": "standalone/assets/cleaned/surfer/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,12 +118,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -295.39157,
-      "maxX": 264.60632,
-      "minY": -112.0413,
-      "maxY": 618.84998
+      "minX": -1040.20996,
+      "maxX": 407.59909,
+      "minY": -210.64001,
+      "maxY": 896.35999
     },
     "full_source_bounds": {
       "minX": -1040.20996,
@@ -118,23 +132,29 @@
       "maxY": 896.35999
     },
     "core_source_bounds": {
-      "minX": -295.39157,
-      "maxX": 264.60632,
-      "minY": -112.0413,
-      "maxY": 618.84998
+      "minX": -1040.20996,
+      "maxX": 407.59909,
+      "minY": -210.64001,
+      "maxY": 896.35999
     },
     "cluster": {
-      "retained": 2535,
+      "retained": 2539,
       "total": 2539,
-      "centerX": 1.54636,
-      "centerY": 134.26114,
-      "radiusX": 288.56806,
-      "radiusY": 512.57712
+      "centerX": -113.88757,
+      "centerY": 174.22693,
+      "radiusX": 855.08156,
+      "radiusY": 480
     },
-    "scale": 0.28458,
-    "x_offset": 100.3805,
-    "y_offset": 184.11483,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 28,
+      "visible_height": 58,
+      "density_zoom": 2.57143
+    },
+    "scale": 0.31259,
+    "x_offset": 103.58838,
+    "y_offset": 217.01306,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:26.593Z"
+  "exported_at": "2026-08-19T13:24:02.204Z"
 }

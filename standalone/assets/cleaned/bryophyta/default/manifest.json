@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "bryophyta",
   "character_name": "Bryophyta",
   "localized_name": "苍苔",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/bryophyta/default",
-  "source_page": "https://prts.wiki/w/%E8%8B%8D%E8%8B%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4106_bryota/meta.json",
-    "model": "defaultskin/build/build_char_4106_bryota",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4106_bryota/defaultskin/build/build_char_4106_bryota.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4106_bryota/defaultskin/build/build_char_4106_bryota.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4106_bryota/defaultskin/build/build_char_4106_bryota.png"
+    "assetId": "build_char_4106_bryota",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "苍苔",
+    "appellation": "Bryophyta",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4106_bryota.atlas",
+      ".png": "build_char_4106_bryota.png",
+      ".skel": "build_char_4106_bryota.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/bryophyta/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -236.27452,
+      "minX": -236.05945,
       "maxX": 174.06581,
       "minY": -122.55452,
       "maxY": 398.36642
     },
+    "full_source_bounds": {
+      "minX": -236.05945,
+      "maxX": 174.06581,
+      "minY": -122.55452,
+      "maxY": 398.36642
+    },
+    "core_source_bounds": {
+      "minX": -236.05945,
+      "maxX": 174.06581,
+      "minY": -122.55452,
+      "maxY": 398.36642
+    },
+    "cluster": {
+      "retained": 2569,
+      "total": 2569,
+      "centerX": 9.93491,
+      "centerY": 197.60479,
+      "radiusX": 355.21361,
+      "radiusY": 616.24443
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 81,
+      "visible_height": 157,
+      "density_zoom": 1
+    },
     "scale": 0.39929,
-    "x_offset": 108.41975,
+    "x_offset": 108.37681,
     "y_offset": 167.06486,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:59.737Z"
+  "exported_at": "2026-08-19T13:21:42.811Z"
 }

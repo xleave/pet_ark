@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "rose-salt",
   "character_name": "Rose Salt",
   "localized_name": "瑰盐",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/rose-salt/default",
-  "source_page": "https://prts.wiki/w/%E7%91%B0%E7%9B%90",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4163_rosesa/meta.json",
-    "model": "defaultskin/build/build_char_4163_rosesa",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4163_rosesa/defaultskin/build/build_char_4163_rosesa.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4163_rosesa/defaultskin/build/build_char_4163_rosesa.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4163_rosesa/defaultskin/build/build_char_4163_rosesa.png"
+    "assetId": "build_char_4163_rosesa",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "瑰盐",
+    "appellation": "Rose Salt",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4163_rosesa.atlas",
+      ".png": "build_char_4163_rosesa.png",
+      ".skel": "build_char_4163_rosesa.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/rose-salt/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -304.13333,
       "maxX": 291.16327,
-      "minY": -97.84896,
-      "maxY": 406.76132
+      "minY": -99.0797,
+      "maxY": 409.12573
+    },
+    "full_source_bounds": {
+      "minX": -304.13333,
+      "maxX": 291.16327,
+      "minY": -99.0797,
+      "maxY": 409.12573
+    },
+    "core_source_bounds": {
+      "minX": -304.13333,
+      "maxX": 291.16327,
+      "minY": -99.0797,
+      "maxY": 409.12573
+    },
+    "cluster": {
+      "retained": 3019,
+      "total": 3019,
+      "centerX": 4.36438,
+      "centerY": 162.82403,
+      "radiusX": 530.01074,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 103,
+      "visible_height": 120,
+      "density_zoom": 1.16667
     },
     "scale": 0.29565,
     "x_offset": 97.91731,
-    "y_offset": 187.07086,
+    "y_offset": 186.70699,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:28.081Z"
+  "exported_at": "2026-08-19T13:23:43.657Z"
 }

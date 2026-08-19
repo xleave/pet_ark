@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "mousse",
   "character_name": "Mousse",
   "localized_name": "慕斯",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/mousse/default",
-  "source_page": "https://prts.wiki/w/%E6%85%95%E6%96%AF",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_185_frncat/meta.json",
-    "model": "defaultskin/build/build_char_185_frncat",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_185_frncat/defaultskin/build/build_char_185_frncat.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_185_frncat/defaultskin/build/build_char_185_frncat.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_185_frncat/defaultskin/build/build_char_185_frncat.png"
+    "assetId": "build_char_185_frncat",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "慕斯",
+    "appellation": "Mousse",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_185_frncat.atlas",
+      ".png": "build_char_185_frncat.png",
+      ".skel": "build_char_185_frncat.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/mousse/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -221.85599,
       "maxX": 192.2549,
-      "minY": -113.38127,
-      "maxY": 391.92456
+      "minY": -111.15611,
+      "maxY": 393.49142
+    },
+    "full_source_bounds": {
+      "minX": -221.85599,
+      "maxX": 192.2549,
+      "minY": -111.15611,
+      "maxY": 393.49142
+    },
+    "core_source_bounds": {
+      "minX": -221.85599,
+      "maxX": 192.2549,
+      "minY": -111.15611,
+      "maxY": 392.24387
+    },
+    "cluster": {
+      "retained": 1157,
+      "total": 1157,
+      "centerX": -3.25563,
+      "centerY": 174.65786,
+      "radiusX": 404.24248,
+      "radiusY": 661.53145
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 85,
+      "visible_height": 161,
+      "density_zoom": 1
     },
     "scale": 0.41,
     "x_offset": 102.06822,
-    "y_offset": 169.51368,
+    "y_offset": 170.426,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:19.530Z"
+  "exported_at": "2026-08-19T13:23:09.068Z"
 }

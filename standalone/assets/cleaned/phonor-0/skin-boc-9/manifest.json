@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "phonor-0",
   "character_name": "PhonoR-0",
   "localized_name": "PhonoR-0",
@@ -11,15 +12,29 @@
   "skin_id": "boc-9",
   "skin_name": "最初的颂歌",
   "source": "standalone/assets/source/phonor-0/skin-boc-9",
-  "source_page": "https://prts.wiki/w/PhonoR-0",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4136_phonor/meta.json",
-    "model": "char_4136_phonor_boc_9/build/build_char_4136_phonor_boc_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4136_phonor/char_4136_phonor_boc_9/build/build_char_4136_phonor_boc_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4136_phonor/char_4136_phonor_boc_9/build/build_char_4136_phonor_boc_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4136_phonor/char_4136_phonor_boc_9/build/build_char_4136_phonor_boc_9.png"
+    "assetId": "build_char_4136_phonor_boc#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "PhonoR-0",
+    "appellation": "PhonoR-0",
+    "skinGroupId": "2025#boc",
+    "skinGroupName": "斗争血脉/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_1",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4136_phonor_boc#9.atlas",
+      ".png": "build_char_4136_phonor_boc#9.png",
+      ".skel": "build_char_4136_phonor_boc#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -80,7 +95,7 @@
       "path": "standalone/assets/cleaned/phonor-0/skin-boc-9/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -93,12 +108,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -195.953,
-      "maxX": 164.49699,
-      "minY": -0.532,
-      "maxY": 465.24622
+      "minX": -200.59737,
+      "maxX": 1117.95996,
+      "minY": -3.21684,
+      "maxY": 476.5658
     },
     "full_source_bounds": {
       "minX": -200.59737,
@@ -108,22 +123,28 @@
     },
     "core_source_bounds": {
       "minX": -195.953,
-      "maxX": 164.49699,
-      "minY": -0.532,
-      "maxY": 465.24622
+      "maxX": 1117.95996,
+      "minY": -0.94,
+      "maxY": 476.5658
     },
     "cluster": {
-      "retained": 612,
+      "retained": 649,
       "total": 649,
-      "centerX": -16.74582,
-      "centerY": 165.077,
-      "radiusX": 504.62037,
-      "radiusY": 519.86401
+      "centerX": 777.95999,
+      "centerY": 174.977,
+      "radiusX": 2709.99969,
+      "radiusY": 643.49998
     },
-    "scale": 0.41,
-    "x_offset": 102.44848,
-    "y_offset": 215.78188,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 49,
+      "visible_height": 59,
+      "density_zoom": 2.37288
+    },
+    "scale": 0.31673,
+    "x_offset": 102.58612,
+    "y_offset": 217.35401,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:49.756Z"
+  "exported_at": "2026-08-19T13:23:27.695Z"
 }

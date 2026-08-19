@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "carnelian",
   "character_name": "Carnelian",
   "localized_name": "卡涅利安",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/carnelian/default",
-  "source_page": "https://prts.wiki/w/%E5%8D%A1%E6%B6%85%E5%88%A9%E5%AE%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_426_billro/meta.json",
-    "model": "defaultskin/build/build_char_426_billro",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_426_billro/defaultskin/build/build_char_426_billro.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_426_billro/defaultskin/build/build_char_426_billro.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_426_billro/defaultskin/build/build_char_426_billro.png"
+    "assetId": "build_char_426_billro",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "卡涅利安",
+    "appellation": "Carnelian",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_426_billro.atlas",
+      ".png": "build_char_426_billro.png",
+      ".skel": "build_char_426_billro.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/carnelian/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -262.28409,
       "maxX": 184.07523,
       "minY": -114.16762,
-      "maxY": 424.42316
+      "maxY": 424.02252
     },
-    "scale": 0.38619,
-    "x_offset": 111.10186,
-    "y_offset": 171.90926,
+    "full_source_bounds": {
+      "minX": -262.28409,
+      "maxX": 184.07523,
+      "minY": -114.16762,
+      "maxY": 424.02252
+    },
+    "core_source_bounds": {
+      "minX": -262.28409,
+      "maxX": 184.07523,
+      "minY": -114.16762,
+      "maxY": 422.77371
+    },
+    "cluster": {
+      "retained": 2111,
+      "total": 2111,
+      "centerX": -3.95001,
+      "centerY": 194.80093,
+      "radiusX": 329.90001,
+      "radiusY": 689.91554
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 96,
+      "visible_height": 163,
+      "density_zoom": 1
+    },
+    "scale": 0.38648,
+    "x_offset": 111.1131,
+    "y_offset": 171.87644,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:00.442Z"
+  "exported_at": "2026-08-19T13:21:45.521Z"
 }

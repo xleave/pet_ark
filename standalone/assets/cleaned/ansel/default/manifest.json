@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ansel",
   "character_name": "Ansel",
   "localized_name": "安赛尔",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/ansel/default",
-  "source_page": "https://prts.wiki/w/%E5%AE%89%E8%B5%9B%E5%B0%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/meta.json",
-    "model": "defaultskin/build/build_char_212_ansel",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/defaultskin/build/build_char_212_ansel.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/defaultskin/build/build_char_212_ansel.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/defaultskin/build/build_char_212_ansel.png"
+    "assetId": "build_char_212_ansel",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "安赛尔",
+    "appellation": "Ansel",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_3"
+    ],
+    "assetList": {
+      ".atlas": "build_char_212_ansel.atlas",
+      ".png": "build_char_212_ansel.png",
+      ".skel": "build_char_212_ansel.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/ansel/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -214.80977,
-      "maxX": 147.5097,
-      "minY": -80.35439,
-      "maxY": 371.2316
+      "maxX": 160.60841,
+      "minY": -80.22768,
+      "maxY": 376.30719
+    },
+    "full_source_bounds": {
+      "minX": -214.80977,
+      "maxX": 160.60841,
+      "minY": -80.22768,
+      "maxY": 376.30719
+    },
+    "core_source_bounds": {
+      "minX": -195.30614,
+      "maxX": 137.04892,
+      "minY": -80.22768,
+      "maxY": 371.51862
+    },
+    "cluster": {
+      "retained": 1542,
+      "total": 1542,
+      "centerX": -3.51573,
+      "centerY": 176.29,
+      "radiusX": 381.50012,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 90,
+      "visible_height": 150,
+      "density_zoom": 1
     },
     "scale": 0.41,
-    "x_offset": 109.79651,
-    "y_offset": 183.0547,
+    "x_offset": 107.11128,
+    "y_offset": 183.10665,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:55.919Z"
+  "exported_at": "2026-08-19T13:21:24.846Z"
 }

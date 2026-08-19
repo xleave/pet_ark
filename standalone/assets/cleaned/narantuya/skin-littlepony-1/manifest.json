@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "narantuya",
   "character_name": "Narantuya",
   "localized_name": "娜仁图亚",
@@ -11,15 +12,29 @@
   "skin_id": "littlepony-1",
   "skin_name": "率直诚实之人",
   "source": "standalone/assets/source/narantuya/skin-littlepony-1",
-  "source_page": "https://prts.wiki/w/%E5%A8%9C%E4%BB%81%E5%9B%BE%E4%BA%9A",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/meta.json",
-    "model": "char_4138_narant_littlepony_1/build/build_char_4138_narant_littlePony_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/char_4138_narant_littlepony_1/build/build_char_4138_narant_littlePony_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/char_4138_narant_littlepony_1/build/build_char_4138_narant_littlePony_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/char_4138_narant_littlepony_1/build/build_char_4138_narant_littlePony_1.png"
+    "assetId": "build_char_4138_narant_littlepony#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "娜仁图亚",
+    "appellation": "Narantuya",
+    "skinGroupId": "2026#littlePony",
+    "skinGroupName": "小马宝莉",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4138_narant_littlePony#1.atlas",
+      ".png": "build_char_4138_narant_littlePony#1.png",
+      ".skel": "build_char_4138_narant_littlePony#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/narantuya/skin-littlepony-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -288.53381,
-      "maxX": 189.39685,
+      "maxX": 1524.7478,
       "minY": -125.28671,
-      "maxY": 419.34149
+      "maxY": 633.42999
     },
     "full_source_bounds": {
       "minX": -288.53381,
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -288.53381,
-      "maxX": 189.39685,
+      "maxX": 1524.7478,
       "minY": -125.28671,
-      "maxY": 419.34149
+      "maxY": 633.42999
     },
     "cluster": {
-      "retained": 3357,
+      "retained": 3469,
       "total": 3469,
-      "centerX": 0.21158,
-      "centerY": 114.90066,
-      "radiusX": 389.78675,
-      "radiusY": 512.9711
+      "centerX": 681.27072,
+      "centerY": 149.08936,
+      "radiusX": 7453.95498,
+      "radiusY": 480
     },
-    "scale": 0.36825,
-    "x_offset": 114.2538,
-    "y_offset": 169.86264,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 35,
+      "visible_height": 41,
+      "density_zoom": 3.41463
+    },
+    "scale": 0.33143,
+    "x_offset": 113.09213,
+    "y_offset": 218.86649,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:33.200Z"
+  "exported_at": "2026-08-19T13:23:15.903Z"
 }

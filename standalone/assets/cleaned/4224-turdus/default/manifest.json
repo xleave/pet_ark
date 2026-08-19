@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "4224-turdus",
   "character_name": "Укусик",
   "localized_name": "乌啾",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/4224-turdus/default",
-  "source_page": "https://prts.wiki/w/%E4%B9%8C%E5%95%BE",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4224_turdus/meta.json",
-    "model": "defaultskin/build/build_char_4224_turdus",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4224_turdus/defaultskin/build/build_char_4224_turdus.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4224_turdus/defaultskin/build/build_char_4224_turdus.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4224_turdus/defaultskin/build/build_char_4224_turdus.png"
+    "assetId": "build_char_4224_turdus",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "乌啾",
+    "appellation": "Укусик",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4224_turdus.atlas",
+      ".png": "build_char_4224_turdus.png",
+      ".skel": "build_char_4224_turdus.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/4224-turdus/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -276.85065,
       "maxX": 183.57193,
-      "minY": -117.93584,
+      "minY": -118.11918,
       "maxY": 470.86191
     },
-    "scale": 0.35326,
-    "x_offset": 112.47592,
-    "y_offset": 174.33772,
+    "full_source_bounds": {
+      "minX": -276.85065,
+      "maxX": 183.57193,
+      "minY": -118.11918,
+      "maxY": 470.86191
+    },
+    "core_source_bounds": {
+      "minX": -276.85065,
+      "maxX": 183.57193,
+      "minY": -118.11918,
+      "maxY": 470.86191
+    },
+    "cluster": {
+      "retained": 2382,
+      "total": 2382,
+      "centerX": -13.36983,
+      "centerY": 239.57472,
+      "radiusX": 525.0088,
+      "radiusY": 704.95178
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 82,
+      "visible_height": 140,
+      "density_zoom": 1
+    },
+    "scale": 0.35315,
+    "x_offset": 112.47079,
+    "y_offset": 174.28595,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:54.531Z"
+  "exported_at": "2026-08-19T13:21:19.143Z"
 }

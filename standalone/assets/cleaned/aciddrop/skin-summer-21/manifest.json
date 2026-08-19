@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "aciddrop",
@@ -12,15 +12,29 @@
   "skin_id": "summer-21",
   "skin_name": "悠然假日 HD75",
   "source": "standalone/assets/source/aciddrop/skin-summer-21",
-  "source_page": "https://prts.wiki/w/%E9%85%B8%E7%B3%96",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/meta.json",
-    "model": "char_366_acdrop_summer_21/build/build_char_366_acdrop_summer_21",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/char_366_acdrop_summer_21/build/build_char_366_acdrop_summer_21.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/char_366_acdrop_summer_21/build/build_char_366_acdrop_summer_21.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/char_366_acdrop_summer_21/build/build_char_366_acdrop_summer_21.png"
+    "assetId": "build_char_366_acdrop_summer#21",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "酸糖",
+    "appellation": "Aciddrop",
+    "skinGroupId": "2025#summer#3",
+    "skinGroupName": "珊瑚海岸/XXI",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_366_acdrop_summer#21.atlas",
+      ".png": "build_char_366_acdrop_summer#21.png",
+      ".skel": "build_char_366_acdrop_summer#21.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -109,7 +123,7 @@
       ]
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -151,14 +165,14 @@
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 76,
-      "visible_height": 90,
-      "density_zoom": 1.55556
+      "visible_width": 72,
+      "visible_height": 87,
+      "density_zoom": 1.6092
     },
-    "scale": 0.33143,
-    "x_offset": 85.33008,
-    "y_offset": 212.03144,
+    "scale": 0.34286,
+    "x_offset": 88.18054,
+    "y_offset": 216.72218,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:43.603Z"
+  "exported_at": "2026-08-19T13:21:20.891Z"
 }

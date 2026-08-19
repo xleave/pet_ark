@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "odda",
   "character_name": "Odda",
   "localized_name": "奥达",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/odda/default",
-  "source_page": "https://prts.wiki/w/%E5%A5%A5%E8%BE%BE",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4131_odda/meta.json",
-    "model": "defaultskin/build/build_char_4131_odda",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4131_odda/defaultskin/build/build_char_4131_odda.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4131_odda/defaultskin/build/build_char_4131_odda.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4131_odda/defaultskin/build/build_char_4131_odda.png"
+    "assetId": "build_char_4131_odda",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "奥达",
+    "appellation": "Odda",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4131_odda.atlas",
+      ".png": "build_char_4131_odda.png",
+      ".skel": "build_char_4131_odda.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/odda/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -237.97289,
-      "maxX": 168.59576,
-      "minY": -106.5694,
-      "maxY": 399.85593
+      "minX": -238.00987,
+      "maxX": 169.00003,
+      "minY": -105.8538,
+      "maxY": 398.67438
+    },
+    "full_source_bounds": {
+      "minX": -238.00987,
+      "maxX": 169.00003,
+      "minY": -105.8538,
+      "maxY": 398.67438
+    },
+    "core_source_bounds": {
+      "minX": -238.00987,
+      "maxX": 169.00003,
+      "minY": -105.8538,
+      "maxY": 398.67438
+    },
+    "cluster": {
+      "retained": 2399,
+      "total": 2399,
+      "centerX": -0.77588,
+      "centerY": 200.13644,
+      "radiusX": 410.02601,
+      "radiusY": 579.8423
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 94,
+      "visible_height": 163,
+      "density_zoom": 1
     },
     "scale": 0.41,
-    "x_offset": 110.22231,
-    "y_offset": 172.30654,
+    "x_offset": 110.14702,
+    "y_offset": 172.59994,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:22.247Z"
+  "exported_at": "2026-08-19T13:23:21.282Z"
 }

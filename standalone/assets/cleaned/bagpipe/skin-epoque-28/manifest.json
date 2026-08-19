@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "bagpipe",
@@ -12,15 +12,29 @@
   "skin_id": "epoque-28",
   "skin_name": "皇家近卫",
   "source": "standalone/assets/source/bagpipe/skin-epoque-28",
-  "source_page": "https://prts.wiki/w/%E9%A3%8E%E7%AC%9B",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/meta.json",
-    "model": "char_222_bpipe_epoque_28/build/build_char_222_bpipe_epoque_28",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/char_222_bpipe_epoque_28/build/build_char_222_bpipe_epoque_28.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/char_222_bpipe_epoque_28/build/build_char_222_bpipe_epoque_28.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/char_222_bpipe_epoque_28/build/build_char_222_bpipe_epoque_28.png"
+    "assetId": "build_char_222_bpipe_epoque#28",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "风笛",
+    "appellation": "Bagpipe",
+    "skinGroupId": "2023#epoque#10",
+    "skinGroupName": "时代/XXVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_222_bpipe_epoque#28.atlas",
+      ".png": "build_char_222_bpipe_epoque#28.png",
+      ".skel": "build_char_222_bpipe_epoque#28.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/bagpipe/skin-epoque-28/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -145,14 +159,14 @@
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 53,
+      "visible_width": 52,
       "visible_height": 85,
       "density_zoom": 1.64706
     },
     "scale": 0.37301,
-    "x_offset": 104.25259,
+    "x_offset": 103.42906,
     "y_offset": 217.25378,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:22.887Z"
+  "exported_at": "2026-08-19T13:21:33.909Z"
 }

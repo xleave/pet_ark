@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ho-olheyak",
   "character_name": "Ho'olheyak",
   "localized_name": "霍尔海雅",
@@ -11,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/ho-olheyak/default",
-  "source_page": "https://prts.wiki/w/%E9%9C%8D%E5%B0%94%E6%B5%B7%E9%9B%85",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/meta.json",
-    "model": "defaultskin/build/build_char_4027_heyak",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/defaultskin/build/build_char_4027_heyak.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/defaultskin/build/build_char_4027_heyak.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/defaultskin/build/build_char_4027_heyak.png"
+    "assetId": "build_char_4027_heyak",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "霍尔海雅",
+    "appellation": "Ho'olheyak",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4027_heyak.atlas",
+      ".png": "build_char_4027_heyak.png",
+      ".skel": "build_char_4027_heyak.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +105,7 @@
       "path": "standalone/assets/cleaned/ho-olheyak/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,9 +118,9 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -356.17081,
+      "minX": -626.57861,
       "maxX": 298.59537,
       "minY": -117.62172,
       "maxY": 419.40714
@@ -118,23 +132,29 @@
       "maxY": 440.20657
     },
     "core_source_bounds": {
-      "minX": -356.17081,
+      "minX": -626.57861,
       "maxX": 298.59537,
       "minY": -117.62172,
       "maxY": 419.40714
     },
     "cluster": {
-      "retained": 2276,
+      "retained": 2307,
       "total": 2308,
-      "centerX": -1.6318,
-      "centerY": 128.78101,
-      "radiusX": 299.72629,
-      "radiusY": 545.85772
+      "centerX": -294.67081,
+      "centerY": 175.65032,
+      "radiusX": 450.02838,
+      "radiusY": 629.98177
     },
-    "scale": 0.2688,
-    "x_offset": 103.73809,
-    "y_offset": 184.38349,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 70,
+      "visible_height": 80,
+      "density_zoom": 1.75
+    },
+    "scale": 0.33291,
+    "x_offset": 118.21951,
+    "y_offset": 217.09251,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:16.379Z"
+  "exported_at": "2026-08-19T13:22:28.641Z"
 }

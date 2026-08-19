@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "whisperain",
   "character_name": "Whisperain",
   "localized_name": "絮雨",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/whisperain/default",
-  "source_page": "https://prts.wiki/w/%E7%B5%AE%E9%9B%A8",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/meta.json",
-    "model": "defaultskin/build/build_char_436_whispr",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/defaultskin/build/build_char_436_whispr.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/defaultskin/build/build_char_436_whispr.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/defaultskin/build/build_char_436_whispr.png"
+    "assetId": "build_char_436_whispr",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "絮雨",
+    "appellation": "Whisperain",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_436_whispr.atlas",
+      ".png": "build_char_436_whispr.png",
+      ".skel": "build_char_436_whispr.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/whisperain/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -304.88651,
       "maxX": 275.63171,
       "minY": -103.03241,
       "maxY": 466.31726
     },
+    "full_source_bounds": {
+      "minX": -304.88651,
+      "maxX": 275.63171,
+      "minY": -103.03241,
+      "maxY": 466.31726
+    },
+    "core_source_bounds": {
+      "minX": -304.88651,
+      "maxX": 275.63171,
+      "minY": -103.03241,
+      "maxY": 466.31726
+    },
+    "cluster": {
+      "retained": 2858,
+      "total": 2858,
+      "centerX": -1.58002,
+      "centerY": 162.81482,
+      "radiusX": 524.969,
+      "radiusY": 664.97807
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 81,
+      "visible_height": 123,
+      "density_zoom": 1.13821
+    },
     "scale": 0.30318,
     "x_offset": 100.4347,
     "y_offset": 184.7629,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:38.358Z"
+  "exported_at": "2026-08-19T13:24:27.146Z"
 }

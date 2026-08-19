@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "4055-bgsnow",
   "character_name": "Позёмка",
   "localized_name": "鸿雪",
@@ -11,15 +12,29 @@
   "skin_id": "wild-7",
   "skin_name": "字句中的雪原",
   "source": "standalone/assets/source/4055-bgsnow/skin-wild-7",
-  "source_page": "https://prts.wiki/w/%E9%B8%BF%E9%9B%AA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/meta.json",
-    "model": "char_4055_bgsnow_wild_7/build/build_char_4055_bgsnow_wild_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/char_4055_bgsnow_wild_7/build/build_char_4055_bgsnow_wild_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/char_4055_bgsnow_wild_7/build/build_char_4055_bgsnow_wild_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/char_4055_bgsnow_wild_7/build/build_char_4055_bgsnow_wild_7.png"
+    "assetId": "build_char_4055_bgsnow_wild#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "鸿雪",
+    "appellation": "Позёмка",
+    "skinGroupId": "2023#wild",
+    "skinGroupName": "生命之地/VII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4055_bgsnow_wild#7.atlas",
+      ".png": "build_char_4055_bgsnow_wild#7.png",
+      ".skel": "build_char_4055_bgsnow_wild#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/4055-bgsnow/skin-wild-7/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -137,15 +152,21 @@
     "cluster": {
       "retained": 3060,
       "total": 3074,
-      "centerX": -0.30178,
-      "centerY": 144.2024,
-      "radiusX": 293.70585,
-      "radiusY": 674.05659
+      "centerX": 18.8515,
+      "centerY": 205.50185,
+      "radiusX": 462.41641,
+      "radiusY": 609.99939
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 89,
+      "visible_height": 146,
+      "density_zoom": 1
     },
     "scale": 0.33258,
     "x_offset": 102.33578,
     "y_offset": 173.42182,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:19.750Z"
+  "exported_at": "2026-08-19T13:21:18.019Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "kafka",
   "character_name": "Kafka",
   "localized_name": "卡夫卡",
@@ -9,15 +12,29 @@
   "skin_id": "snow-3",
   "skin_name": "纸板仙子",
   "source": "standalone/assets/source/kafka/skin-snow-3",
-  "source_page": "https://prts.wiki/w/%E5%8D%A1%E5%A4%AB%E5%8D%A1",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_214_kafka/meta.json",
-    "model": "char_214_kafka_snow_3/build/build_char_214_kafka_snow_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_214_kafka/char_214_kafka_snow_3/build/build_char_214_kafka_snow_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_214_kafka/char_214_kafka_snow_3/build/build_char_214_kafka_snow_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_214_kafka/char_214_kafka_snow_3/build/build_char_214_kafka_snow_3.png"
+    "assetId": "build_char_214_kafka_snow#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "卡夫卡",
+    "appellation": "Kafka",
+    "skinGroupId": "2021#xmas",
+    "skinGroupName": "冰原信使/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_214_kafka_snow#3.atlas",
+      ".png": "build_char_214_kafka_snow#3.png",
+      ".skel": "build_char_214_kafka_snow#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/kafka/skin-snow-3/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -321.27173,
       "maxX": 175.66687,
       "minY": -145.38547,
-      "maxY": 447.06699
+      "maxY": 448.4718
     },
-    "scale": 0.35108,
-    "x_offset": 121.5597,
-    "y_offset": 164.95763,
+    "full_source_bounds": {
+      "minX": -321.27173,
+      "maxX": 175.66687,
+      "minY": -145.38547,
+      "maxY": 448.4718
+    },
+    "core_source_bounds": {
+      "minX": -321.27173,
+      "maxX": 175.66687,
+      "minY": -145.38547,
+      "maxY": 445.69931
+    },
+    "cluster": {
+      "retained": 2337,
+      "total": 2337,
+      "centerX": -19.7963,
+      "centerY": 153.32765,
+      "radiusX": 555.16377,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 94,
+      "visible_height": 153,
+      "density_zoom": 1
+    },
+    "scale": 0.35025,
+    "x_offset": 121.49923,
+    "y_offset": 165.07837,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:13.327Z"
+  "exported_at": "2026-08-19T13:22:41.177Z"
 }

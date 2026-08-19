@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "zuo-le",
   "character_name": "Zuo Le",
   "localized_name": "左乐",
@@ -11,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/zuo-le/default",
-  "source_page": "https://prts.wiki/w/%E5%B7%A6%E4%B9%90",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/meta.json",
-    "model": "defaultskin/build/build_char_4121_zuole",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/defaultskin/build/build_char_4121_zuole.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/defaultskin/build/build_char_4121_zuole.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/defaultskin/build/build_char_4121_zuole.png"
+    "assetId": "build_char_4121_zuole",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "左乐",
+    "appellation": "Zuo Le",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4121_zuole.atlas",
+      ".png": "build_char_4121_zuole.png",
+      ".skel": "build_char_4121_zuole.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +105,7 @@
       "path": "standalone/assets/cleaned/zuo-le/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,12 +118,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -293.3884,
+      "minX": -473.74237,
       "maxX": 291.17062,
       "minY": -81.74532,
-      "maxY": 548.97986
+      "maxY": 549.49384
     },
     "full_source_bounds": {
       "minX": -473.74237,
@@ -118,23 +132,29 @@
       "maxY": 549.49384
     },
     "core_source_bounds": {
-      "minX": -293.3884,
+      "minX": -473.74237,
       "maxX": 291.17062,
       "minY": -81.74532,
-      "maxY": 548.97986
+      "maxY": 549.49384
     },
     "cluster": {
-      "retained": 3033,
+      "retained": 3067,
       "total": 3070,
-      "centerX": 1.53355,
-      "centerY": 137.34798,
-      "radiusX": 297.32354,
-      "radiusY": 527.18413
+      "centerX": -28.55966,
+      "centerY": 153.55,
+      "radiusX": 687.59464,
+      "radiusY": 480
     },
-    "scale": 0.30108,
-    "x_offset": 96.33387,
-    "y_offset": 191.38798,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 65,
+      "visible_height": 91,
+      "density_zoom": 1.53846
+    },
+    "scale": 0.35399,
+    "x_offset": 105.23709,
+    "y_offset": 216.29399,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:30.147Z"
+  "exported_at": "2026-08-19T13:24:33.173Z"
 }

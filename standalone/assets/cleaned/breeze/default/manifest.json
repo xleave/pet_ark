@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "breeze",
   "character_name": "Breeze",
   "localized_name": "微风",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/breeze/default",
-  "source_page": "https://prts.wiki/w/%E5%BE%AE%E9%A3%8E",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_275_breeze/meta.json",
-    "model": "defaultskin/build/build_char_275_breeze",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_275_breeze/defaultskin/build/build_char_275_breeze.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_275_breeze/defaultskin/build/build_char_275_breeze.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_275_breeze/defaultskin/build/build_char_275_breeze.png"
+    "assetId": "build_char_275_breeze",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "微风",
+    "appellation": "Breeze",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_275_breeze.atlas",
+      ".png": "build_char_275_breeze.png",
+      ".skel": "build_char_275_breeze.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/breeze/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -254.70593,
       "maxX": 198.33795,
-      "minY": -121.44843,
+      "minY": -121.51511,
       "maxY": 426.57397
     },
-    "scale": 0.37955,
-    "x_offset": 106.69714,
-    "y_offset": 169.90467,
+    "full_source_bounds": {
+      "minX": -254.70593,
+      "maxX": 198.33795,
+      "minY": -121.51511,
+      "maxY": 426.57397
+    },
+    "core_source_bounds": {
+      "minX": -254.70593,
+      "maxX": 198.33795,
+      "minY": -121.51511,
+      "maxY": 426.57397
+    },
+    "cluster": {
+      "retained": 1574,
+      "total": 1574,
+      "centerX": -0.16165,
+      "centerY": 195.65002,
+      "radiusX": 329.9998,
+      "radiusY": 609.98878
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 101,
+      "visible_height": 161,
+      "density_zoom": 1
+    },
+    "scale": 0.3795,
+    "x_offset": 106.69583,
+    "y_offset": 169.88497,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:59.446Z"
+  "exported_at": "2026-08-19T13:21:41.400Z"
 }

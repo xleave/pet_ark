@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "minimalist",
   "character_name": "Minimalist",
   "localized_name": "至简",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/minimalist/default",
-  "source_page": "https://prts.wiki/w/%E8%87%B3%E7%AE%80",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4054_malist/meta.json",
-    "model": "defaultskin/build/char_4054_malist",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4054_malist/defaultskin/build/char_4054_malist.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4054_malist/defaultskin/build/char_4054_malist.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4054_malist/defaultskin/build/char_4054_malist.png"
+    "assetId": "build_char_4054_malist",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "至简",
+    "appellation": "Minimalist",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "char_4054_malist.atlas",
+      ".png": "char_4054_malist.png",
+      ".skel": "char_4054_malist.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/minimalist/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -204.66922,
+      "minX": -204.5903,
       "maxX": 189.81226,
-      "minY": -118.51775,
-      "maxY": 379.49249
+      "minY": -119.00916,
+      "maxY": 381.01749
+    },
+    "full_source_bounds": {
+      "minX": -204.5903,
+      "maxX": 189.81226,
+      "minY": -119.00916,
+      "maxY": 381.01749
+    },
+    "core_source_bounds": {
+      "minX": -204.5903,
+      "maxX": 189.81226,
+      "minY": -119.00916,
+      "maxY": 381.01749
+    },
+    "cluster": {
+      "retained": 2194,
+      "total": 2194,
+      "centerX": -3.73522,
+      "centerY": 190.42982,
+      "radiusX": 448.30759,
+      "radiusY": 593.45106
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 80,
+      "visible_height": 154,
+      "density_zoom": 1
     },
     "scale": 0.41,
-    "x_offset": 99.04568,
-    "y_offset": 167.40772,
+    "x_offset": 99.0295,
+    "y_offset": 167.20624,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:18.298Z"
+  "exported_at": "2026-08-19T13:23:03.402Z"
 }

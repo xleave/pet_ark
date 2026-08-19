@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "indra",
   "character_name": "Indra",
   "localized_name": "因陀罗",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/indra/default",
-  "source_page": "https://prts.wiki/w/%E5%9B%A0%E9%99%80%E7%BD%97",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_155_tiger/meta.json",
-    "model": "defaultskin/build/build_char_155_tiger",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_155_tiger/defaultskin/build/build_char_155_tiger.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_155_tiger/defaultskin/build/build_char_155_tiger.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_155_tiger/defaultskin/build/build_char_155_tiger.png"
+    "assetId": "build_char_155_tiger",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "因陀罗",
+    "appellation": "Indra",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_155_tiger.atlas",
+      ".png": "build_char_155_tiger.png",
+      ".skel": "build_char_155_tiger.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/indra/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -219.93675,
       "maxX": 205.33968,
-      "minY": -118.49934,
-      "maxY": 410.56976
+      "minY": -119.72127,
+      "maxY": 410.79526
     },
-    "scale": 0.39314,
-    "x_offset": 98.86937,
-    "y_offset": 169.41277,
+    "full_source_bounds": {
+      "minX": -219.93675,
+      "maxX": 205.33968,
+      "minY": -119.72127,
+      "maxY": 410.79526
+    },
+    "core_source_bounds": {
+      "minX": -219.93675,
+      "maxX": 205.33968,
+      "minY": -119.72127,
+      "maxY": 410.79526
+    },
+    "cluster": {
+      "retained": 1218,
+      "total": 1218,
+      "centerX": 4.55457,
+      "centerY": 184.17457,
+      "radiusX": 394.18643,
+      "radiusY": 672.31773
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 104,
+      "visible_height": 158,
+      "density_zoom": 1
+    },
+    "scale": 0.39207,
+    "x_offset": 98.86154,
+    "y_offset": 169.0608,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:11.805Z"
+  "exported_at": "2026-08-19T13:22:34.342Z"
 }

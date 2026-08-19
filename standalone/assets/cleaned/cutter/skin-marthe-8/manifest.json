@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "cutter",
   "character_name": "Cutter",
   "localized_name": "刻刀",
@@ -9,15 +12,29 @@
   "skin_id": "marthe-8",
   "skin_name": "拭刀",
   "source": "standalone/assets/source/cutter/skin-marthe-8",
-  "source_page": "https://prts.wiki/w/%E5%88%BB%E5%88%80",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_301_cutter/meta.json",
-    "model": "char_301_cutter_marthe_8/build/build_char_301_cutter_marthe_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_301_cutter/char_301_cutter_marthe_8/build/build_char_301_cutter_marthe_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_301_cutter/char_301_cutter_marthe_8/build/build_char_301_cutter_marthe_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_301_cutter/char_301_cutter_marthe_8/build/build_char_301_cutter_marthe_8.png"
+    "assetId": "build_char_301_cutter_marthe#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "刻刀",
+    "appellation": "Cutter",
+    "skinGroupId": "2025#marthe",
+    "skinGroupName": "玛尔特/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_301_cutter_marthe#8.atlas",
+      ".png": "build_char_301_cutter_marthe#8.png",
+      ".skel": "build_char_301_cutter_marthe#8"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/cutter/skin-marthe-8/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -277.94678,
-      "maxX": 149.92339,
+      "minX": -277.94638,
+      "maxX": 142.32944,
       "minY": -107.26541,
-      "maxY": 429.39352
+      "maxY": 428.1257
     },
-    "scale": 0.38758,
-    "x_offset": 120.80986,
-    "y_offset": 174.42573,
+    "full_source_bounds": {
+      "minX": -277.94638,
+      "maxX": 142.32944,
+      "minY": -107.26541,
+      "maxY": 428.1257
+    },
+    "core_source_bounds": {
+      "minX": -277.94638,
+      "maxX": 141.75539,
+      "minY": -107.26541,
+      "maxY": 428.1257
+    },
+    "cluster": {
+      "retained": 1950,
+      "total": 1950,
+      "centerX": -1.61325,
+      "centerY": 207.8004,
+      "radiusX": 389.91514,
+      "radiusY": 682.59968
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 86,
+      "visible_height": 163,
+      "density_zoom": 1
+    },
+    "scale": 0.3885,
+    "x_offset": 122.34366,
+    "y_offset": 174.32728,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:03.182Z"
+  "exported_at": "2026-08-19T13:21:57.943Z"
 }

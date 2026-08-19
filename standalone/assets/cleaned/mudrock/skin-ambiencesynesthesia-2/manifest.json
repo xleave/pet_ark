@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "mudrock",
   "character_name": "Mudrock",
   "localized_name": "泥岩",
@@ -9,15 +12,29 @@
   "skin_id": "ambiencesynesthesia-2",
   "skin_name": "黑曜石",
   "source": "standalone/assets/source/mudrock/skin-ambiencesynesthesia-2",
-  "source_page": "https://prts.wiki/w/%E6%B3%A5%E5%B2%A9",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/meta.json",
-    "model": "char_311_mudrok_ambiencesynesthesia_2/build/build_char_311_mudrok_ambienceSynesthesia_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_ambiencesynesthesia_2/build/build_char_311_mudrok_ambienceSynesthesia_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_ambiencesynesthesia_2/build/build_char_311_mudrok_ambienceSynesthesia_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_ambiencesynesthesia_2/build/build_char_311_mudrok_ambienceSynesthesia_2.png"
+    "assetId": "build_char_311_mudrok_ambiencesynesthesia#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "泥岩",
+    "appellation": "Mudrock",
+    "skinGroupId": "2022#ambienceSynesthesia",
+    "skinGroupName": "音律联觉/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_311_mudrok_ambienceSynesthesia#2.atlas",
+      ".png": "build_char_311_mudrok_ambienceSynesthesia#2.png",
+      ".skel": "build_char_311_mudrok_ambienceSynesthesia#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/mudrock/skin-ambiencesynesthesia-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -225.06905,
-      "maxX": 298.65347,
-      "minY": -114.99586,
-      "maxY": 419.54324
+      "maxX": 278.00891,
+      "minY": -116.18348,
+      "maxY": 418.40076
     },
-    "scale": 0.33606,
-    "x_offset": 83.63576,
-    "y_offset": 177.35497,
+    "full_source_bounds": {
+      "minX": -225.06905,
+      "maxX": 278.00891,
+      "minY": -116.18348,
+      "maxY": 418.40076
+    },
+    "core_source_bounds": {
+      "minX": -225.06905,
+      "maxX": 275.22864,
+      "minY": -116.18348,
+      "maxY": 418.40076
+    },
+    "cluster": {
+      "retained": 2439,
+      "total": 2439,
+      "centerX": 1.49103,
+      "centerY": 210.28673,
+      "radiusX": 385.03189,
+      "radiusY": 564.93038
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 88,
+      "visible_height": 145,
+      "density_zoom": 1
+    },
+    "scale": 0.34985,
+    "x_offset": 86.73959,
+    "y_offset": 175.35363,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:19.947Z"
+  "exported_at": "2026-08-19T13:23:10.901Z"
 }

@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "aosta",
   "character_name": "Aosta",
   "localized_name": "奥斯塔",
@@ -11,15 +12,29 @@
   "skin_id": "game-2",
   "skin_name": "光铳调试员",
   "source": "standalone/assets/source/aosta/skin-game-2",
-  "source_page": "https://prts.wiki/w/%E5%A5%A5%E6%96%AF%E5%A1%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_346_aosta/meta.json",
-    "model": "char_346_aosta_game_2/build/build_char_346_aosta_game_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_346_aosta/char_346_aosta_game_2/build/build_char_346_aosta_game_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_346_aosta/char_346_aosta_game_2/build/build_char_346_aosta_game_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_346_aosta/char_346_aosta_game_2/build/build_char_346_aosta_game_2.png"
+    "assetId": "build_char_346_aosta_game#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "奥斯塔",
+    "appellation": "Aosta",
+    "skinGroupId": "2022#game#2",
+    "skinGroupName": "成就之星/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_346_aosta_game#2.atlas",
+      ".png": "build_char_346_aosta_game#2.png",
+      ".skel": "build_char_346_aosta_game#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/aosta/skin-game-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -221.64093,
-      "maxX": 334.76135,
+      "minX": -771.44006,
+      "maxX": 762.00977,
       "minY": -120.5266,
-      "maxY": 401.68677
+      "maxY": 740.44
     },
     "full_source_bounds": {
       "minX": -771.44006,
@@ -129,23 +144,29 @@
       "maxY": 740.44
     },
     "core_source_bounds": {
-      "minX": -221.64093,
-      "maxX": 334.76135,
+      "minX": -771.44006,
+      "maxX": 762.00977,
       "minY": -120.5266,
-      "maxY": 401.68677
+      "maxY": 740.44
     },
     "cluster": {
-      "retained": 1520,
+      "retained": 1586,
       "total": 1586,
-      "centerX": 5.395,
-      "centerY": 137.18704,
-      "radiusX": 319.67465,
-      "radiusY": 647.08535
+      "centerX": 34.28844,
+      "centerY": 148.95353,
+      "radiusX": 2859.14453,
+      "radiusY": 597.66472
     },
-    "scale": 0.31632,
-    "x_offset": 78.10899,
-    "y_offset": 177.87528,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 28,
+      "visible_height": 45,
+      "density_zoom": 3.11111
+    },
+    "scale": 0.35707,
+    "x_offset": 108.57255,
+    "y_offset": 219.62971,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:20.136Z"
+  "exported_at": "2026-08-19T13:21:25.999Z"
 }

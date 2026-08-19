@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "mostima",
   "character_name": "Mostima",
   "localized_name": "莫斯提马",
@@ -9,15 +12,29 @@
   "skin_id": "epoque-5",
   "skin_name": "除魅",
   "source": "standalone/assets/source/mostima/skin-epoque-5",
-  "source_page": "https://prts.wiki/w/%E8%8E%AB%E6%96%AF%E6%8F%90%E9%A9%AC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/meta.json",
-    "model": "char_213_mostma_epoque_5/build/build_char_213_mostma_epoque_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/char_213_mostma_epoque_5/build/build_char_213_mostma_epoque_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/char_213_mostma_epoque_5/build/build_char_213_mostma_epoque_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/char_213_mostma_epoque_5/build/build_char_213_mostma_epoque_5.png"
+    "assetId": "build_char_213_mostma_epoque#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "莫斯提马",
+    "appellation": "Mostima",
+    "skinGroupId": "2020#epoque#4",
+    "skinGroupName": "时代/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_213_mostma_epoque#5.atlas",
+      ".png": "build_char_213_mostma_epoque#5.png",
+      ".skel": "build_char_213_mostma_epoque#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/mostima/skin-epoque-5/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -307.73755,
-      "maxX": 264.31787,
+      "maxX": 262.02664,
       "minY": -108.27337,
       "maxY": 460.80981
     },
-    "scale": 0.30766,
-    "x_offset": 102.6793,
-    "y_offset": 182.68834,
+    "full_source_bounds": {
+      "minX": -307.73755,
+      "maxX": 262.02664,
+      "minY": -108.27337,
+      "maxY": 460.80981
+    },
+    "core_source_bounds": {
+      "minX": -307.73755,
+      "maxX": 226.25983,
+      "minY": -108.27337,
+      "maxY": 460.80981
+    },
+    "cluster": {
+      "retained": 2277,
+      "total": 2277,
+      "centerX": -1.23598,
+      "centerY": 154.19711,
+      "radiusX": 490.02166,
+      "radiusY": 509.96109
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 81,
+      "visible_height": 122,
+      "density_zoom": 1.14754
+    },
+    "scale": 0.3089,
+    "x_offset": 103.06004,
+    "y_offset": 182.55439,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:19.438Z"
+  "exported_at": "2026-08-19T13:23:08.459Z"
 }

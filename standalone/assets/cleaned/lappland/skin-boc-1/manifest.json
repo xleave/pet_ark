@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "lappland",
   "character_name": "Lappland",
   "localized_name": "拉普兰德",
@@ -11,15 +12,29 @@
   "skin_id": "boc-1",
   "skin_name": "典雅噩兆",
   "source": "standalone/assets/source/lappland/skin-boc-1",
-  "source_page": "https://prts.wiki/w/%E6%8B%89%E6%99%AE%E5%85%B0%E5%BE%B7",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_140_whitew/meta.json",
-    "model": "char_140_whitew_boc_1/build/build_char_140_whitew_boc_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_140_whitew/char_140_whitew_boc_1/build/build_char_140_whitew_boc_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_140_whitew/char_140_whitew_boc_1/build/build_char_140_whitew_boc_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_140_whitew/char_140_whitew_boc_1/build/build_char_140_whitew_boc_1.png"
+    "assetId": "build_char_140_whitew_boc#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "拉普兰德",
+    "appellation": "Lappland",
+    "skinGroupId": "2020#boc",
+    "skinGroupName": "斗争血脉/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_140_whitew_boc#1.atlas",
+      ".png": "build_char_140_whitew_boc#1.png",
+      ".skel": "build_char_140_whitew_boc#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/lappland/skin-boc-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -137,15 +152,21 @@
     "cluster": {
       "retained": 1689,
       "total": 1689,
-      "centerX": -2.52456,
-      "centerY": 140.3668,
-      "radiusX": 298.7385,
-      "radiusY": 624.20851
+      "centerX": 1.10234,
+      "centerY": 221.83211,
+      "radiusX": 415.06237,
+      "radiusY": 620.02209
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 92,
+      "visible_height": 148,
+      "density_zoom": 1
     },
     "scale": 0.37328,
     "x_offset": 111.33559,
     "y_offset": 164.62188,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:06:39.328Z"
+  "exported_at": "2026-08-19T13:22:47.496Z"
 }

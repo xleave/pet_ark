@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "hibiscus",
   "character_name": "Hibiscus",
   "localized_name": "芙蓉",
@@ -9,15 +12,29 @@
   "skin_id": "nian-1",
   "skin_name": "守岁人",
   "source": "standalone/assets/source/hibiscus/skin-nian-1",
-  "source_page": "https://prts.wiki/w/%E8%8A%99%E8%93%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/meta.json",
-    "model": "char_120_hibisc_nian_1/build/build_char_120_hibisc_nian_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/char_120_hibisc_nian_1/build/build_char_120_hibisc_nian_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/char_120_hibisc_nian_1/build/build_char_120_hibisc_nian_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/char_120_hibisc_nian_1/build/build_char_120_hibisc_nian_1.png"
+    "assetId": "build_char_120_hibisc_nian#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "芙蓉",
+    "appellation": "Hibiscus",
+    "skinGroupId": "2019#nian",
+    "skinGroupName": "0011制造/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_120_hibisc_nian#1.atlas",
+      ".png": "build_char_120_hibisc_nian#1.png",
+      ".skel": "build_char_120_hibisc_nian#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/hibiscus/skin-nian-1/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -274.73343,
+      "minX": -293.75116,
       "maxX": 219.23756,
       "minY": -155.90117,
       "maxY": 408.14148
     },
-    "scale": 0.3563,
-    "x_offset": 105.88648,
-    "y_offset": 160.453,
+    "full_source_bounds": {
+      "minX": -293.75116,
+      "maxX": 219.23756,
+      "minY": -155.90117,
+      "maxY": 408.14148
+    },
+    "core_source_bounds": {
+      "minX": -257.66904,
+      "maxX": 219.23756,
+      "minY": -155.90117,
+      "maxY": 408.14148
+    },
+    "cluster": {
+      "retained": 1452,
+      "total": 1452,
+      "centerX": -4.14627,
+      "centerY": 177.44482,
+      "radiusX": 401.79866,
+      "radiusY": 799.83559
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 124,
+      "visible_height": 139,
+      "density_zoom": 1.00719
+    },
+    "scale": 0.34309,
+    "x_offset": 108.78234,
+    "y_offset": 162.51226,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:10.251Z"
+  "exported_at": "2026-08-19T13:22:27.446Z"
 }

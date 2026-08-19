@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "absinthe",
   "character_name": "Absinthe",
   "localized_name": "苦艾",
@@ -9,15 +12,29 @@
   "skin_id": "epoque-28",
   "skin_name": "正午余光",
   "source": "standalone/assets/source/absinthe/skin-epoque-28",
-  "source_page": "https://prts.wiki/w/%E8%8B%A6%E8%89%BE",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_405_absin/meta.json",
-    "model": "char_405_absin_epoque_28/build/build_char_405_absin_epoque_28",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_405_absin/char_405_absin_epoque_28/build/build_char_405_absin_epoque_28.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_405_absin/char_405_absin_epoque_28/build/build_char_405_absin_epoque_28.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_405_absin/char_405_absin_epoque_28/build/build_char_405_absin_epoque_28.png"
+    "assetId": "build_char_405_absin_epoque#28",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "苦艾",
+    "appellation": "Absinthe",
+    "skinGroupId": "2023#epoque#10",
+    "skinGroupName": "时代/XXVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_405_absin_epoque#28.atlas",
+      ".png": "build_char_405_absin_epoque#28.png",
+      ".skel": "build_char_405_absin_epoque#28.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/absinthe/skin-epoque-28/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -246.29668,
-      "maxX": 189.94879,
+      "maxX": 214.37976,
       "minY": -128.25781,
-      "maxY": 424.89743
+      "maxY": 407.68115
     },
-    "scale": 0.37602,
-    "x_offset": 106.5941,
-    "y_offset": 167.7719,
+    "full_source_bounds": {
+      "minX": -246.29668,
+      "maxX": 214.37976,
+      "minY": -128.25781,
+      "maxY": 407.68115
+    },
+    "core_source_bounds": {
+      "minX": -246.29668,
+      "maxX": 184.01619,
+      "minY": -128.25781,
+      "maxY": 387.05905
+    },
+    "cluster": {
+      "retained": 1786,
+      "total": 1786,
+      "centerX": 0.61119,
+      "centerY": 183.68625,
+      "radiusX": 455.26372,
+      "radiusY": 592.05101
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 108,
+      "visible_height": 146,
+      "density_zoom": 1
+    },
+    "scale": 0.38205,
+    "x_offset": 102.09688,
+    "y_offset": 166.9995,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:54.731Z"
+  "exported_at": "2026-08-19T13:21:20.564Z"
 }

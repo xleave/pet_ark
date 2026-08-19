@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "andreana",
   "character_name": "Andreana",
   "localized_name": "安哲拉",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-12",
   "skin_name": "暗矢",
   "source": "standalone/assets/source/andreana/skin-epoque-12",
-  "source_page": "https://prts.wiki/w/%E5%AE%89%E5%93%B2%E6%8B%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/meta.json",
-    "model": "char_218_cuttle_epoque_12/build/build_char_218_cuttle_epoque_12",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/char_218_cuttle_epoque_12/build/build_char_218_cuttle_epoque_12.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/char_218_cuttle_epoque_12/build/build_char_218_cuttle_epoque_12.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/char_218_cuttle_epoque_12/build/build_char_218_cuttle_epoque_12.png"
+    "assetId": "build_char_218_cuttle_epoque#12",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "安哲拉",
+    "appellation": "Andreana",
+    "skinGroupId": "2021#epoque#4",
+    "skinGroupName": "时代/XII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_218_cuttle_epoque#12.atlas",
+      ".png": "build_char_218_cuttle_epoque#12.png",
+      ".skel": "build_char_218_cuttle_epoque#12.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/andreana/skin-epoque-12/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -137,15 +152,21 @@
     "cluster": {
       "retained": 2441,
       "total": 2452,
-      "centerX": -11.82542,
-      "centerY": 106.01456,
-      "radiusX": 279.80181,
-      "radiusY": 580.32524
+      "centerX": -17.7325,
+      "centerY": 159.15597,
+      "radiusX": 474.53146,
+      "radiusY": 988.92795
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 109,
+      "visible_height": 157,
+      "density_zoom": 1
     },
     "scale": 0.41,
     "x_offset": 103.45761,
     "y_offset": 176.11751,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:08.355Z"
+  "exported_at": "2026-08-19T13:21:24.352Z"
 }

@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "papyrus",
   "character_name": "Papyrus",
   "localized_name": "莎草",
@@ -11,15 +12,29 @@
   "skin_id": "game-8",
   "skin_name": "下一个任务",
   "source": "standalone/assets/source/papyrus/skin-game-8",
-  "source_page": "https://prts.wiki/w/%E8%8E%8E%E8%8D%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4139_papyrs/meta.json",
-    "model": "char_4139_papyrs_game_8/build/build_char_4139_papyrs_game_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4139_papyrs/char_4139_papyrs_game_8/build/build_char_4139_papyrs_game_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4139_papyrs/char_4139_papyrs_game_8/build/build_char_4139_papyrs_game_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4139_papyrs/char_4139_papyrs_game_8/build/build_char_4139_papyrs_game_8.png"
+    "assetId": "build_char_4139_papyrs_game#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "莎草",
+    "appellation": "Papyrus",
+    "skinGroupId": "2026#game",
+    "skinGroupName": "成就之星/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4139_papyrs_game#8.atlas",
+      ".png": "build_char_4139_papyrs_game#8.png",
+      ".skel": "build_char_4139_papyrs_game#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/papyrus/skin-game-8/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -260.38824,
+      "minX": -669.86328,
       "maxX": 233.73666,
       "minY": -118.38803,
-      "maxY": 499.5712
+      "maxY": 731.42731
     },
     "full_source_bounds": {
       "minX": -669.86328,
@@ -129,23 +144,29 @@
       "maxY": 731.42731
     },
     "core_source_bounds": {
-      "minX": -260.38824,
+      "minX": -669.86328,
       "maxX": 233.73666,
       "minY": -118.38803,
-      "maxY": 499.5712
+      "maxY": 731.42731
     },
     "cluster": {
-      "retained": 2672,
+      "retained": 2703,
       "total": 2703,
-      "centerX": 2.11501,
-      "centerY": 144.42973,
-      "radiusX": 256,
-      "radiusY": 685.4137
+      "centerX": -32.31598,
+      "centerY": 197.43089,
+      "radiusX": 603.97033,
+      "radiusY": 520.04797
     },
-    "scale": 0.33659,
-    "x_offset": 100.48535,
-    "y_offset": 176.15156,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 63,
+      "visible_height": 81,
+      "density_zoom": 1.7284
+    },
+    "scale": 0.33665,
+    "x_offset": 121.0161,
+    "y_offset": 215.89768,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:24.081Z"
+  "exported_at": "2026-08-19T13:23:23.518Z"
 }

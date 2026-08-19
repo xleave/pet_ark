@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "goldenglow",
   "character_name": "Goldenglow",
   "localized_name": "澄闪",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/goldenglow/default",
-  "source_page": "https://prts.wiki/w/%E6%BE%84%E9%97%AA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/meta.json",
-    "model": "defaultskin/build/build_char_377_gdglow",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/defaultskin/build/build_char_377_gdglow.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/defaultskin/build/build_char_377_gdglow.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/defaultskin/build/build_char_377_gdglow.png"
+    "assetId": "build_char_377_gdglow",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "澄闪",
+    "appellation": "Goldenglow",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_377_gdglow.atlas",
+      ".png": "build_char_377_gdglow.png",
+      ".skel": "build_char_377_gdglow.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/goldenglow/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -213.75002,
       "maxX": 168.82498,
-      "minY": -111.60916,
+      "minY": -110.23816,
       "maxY": 431.76486
     },
-    "scale": 0.38279,
-    "x_offset": 104.5985,
-    "y_offset": 173.27675,
+    "full_source_bounds": {
+      "minX": -213.75002,
+      "maxX": 168.82498,
+      "minY": -110.23816,
+      "maxY": 431.76486
+    },
+    "core_source_bounds": {
+      "minX": -213.75002,
+      "maxX": 168.82498,
+      "minY": -110.23816,
+      "maxY": 431.76486
+    },
+    "cluster": {
+      "retained": 2186,
+      "total": 2186,
+      "centerX": -0.89199,
+      "centerY": 198.86521,
+      "radiusX": 372.49764,
+      "radiusY": 580.64192
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 99,
+      "visible_height": 145,
+      "density_zoom": 1
+    },
+    "scale": 0.38376,
+    "x_offset": 104.62025,
+    "y_offset": 173.69482,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:08.335Z"
+  "exported_at": "2026-08-19T13:22:19.600Z"
 }

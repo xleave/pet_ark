@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "shamare",
   "character_name": "Shamare",
   "localized_name": "巫恋",
@@ -11,15 +12,29 @@
   "skin_id": "yun-8",
   "skin_name": "绣云鹤",
   "source": "standalone/assets/source/shamare/skin-yun-8",
-  "source_page": "https://prts.wiki/w/%E5%B7%AB%E6%81%8B",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_254_vodfox/meta.json",
-    "model": "char_254_vodfox_yun_8/build/build_char_254_vodfox_yun_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_254_vodfox/char_254_vodfox_yun_8/build/build_char_254_vodfox_yun_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_254_vodfox/char_254_vodfox_yun_8/build/build_char_254_vodfox_yun_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_254_vodfox/char_254_vodfox_yun_8/build/build_char_254_vodfox_yun_8.png"
+    "assetId": "build_char_254_vodfox_yun#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "巫恋",
+    "appellation": "Shamare",
+    "skinGroupId": "2025#yun#3",
+    "skinGroupName": "0011/韵系列/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_254_vodfox_yun#8.atlas",
+      ".png": "build_char_254_vodfox_yun#8.png",
+      ".skel": "build_char_254_vodfox_yun#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/shamare/skin-yun-8/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -312.50919,
-      "maxX": 282.89761,
+      "minX": -609.06146,
+      "maxX": 431.80359,
       "minY": -100.9119,
-      "maxY": 440.52603
+      "maxY": 498.82703
     },
     "full_source_bounds": {
       "minX": -609.06146,
@@ -129,23 +144,29 @@
       "maxY": 498.82703
     },
     "core_source_bounds": {
-      "minX": -312.50919,
+      "minX": -609.06146,
       "maxX": 282.89761,
       "minY": -100.9119,
       "maxY": 440.52603
     },
     "cluster": {
-      "retained": 3555,
+      "retained": 3567,
       "total": 3567,
-      "centerX": -4.5642,
-      "centerY": 138.00893,
-      "radiusX": 362.4506,
-      "radiusY": 607.45926
+      "centerX": -10.06347,
+      "centerY": 203.09654,
+      "radiusX": 602.52277,
+      "radiusY": 695.61203
     },
-    "scale": 0.2956,
-    "x_offset": 100.37653,
-    "y_offset": 186.17082,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 69,
+      "visible_height": 75,
+      "density_zoom": 1.86667
+    },
+    "scale": 0.31563,
+    "x_offset": 107.17439,
+    "y_offset": 215.88202,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:05:04.591Z"
+  "exported_at": "2026-08-19T13:23:52.475Z"
 }

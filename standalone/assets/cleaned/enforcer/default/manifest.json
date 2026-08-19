@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "enforcer",
   "character_name": "Enforcer",
   "localized_name": "见行者",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/enforcer/default",
-  "source_page": "https://prts.wiki/w/%E8%A7%81%E8%A1%8C%E8%80%85",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/meta.json",
-    "model": "defaultskin/build/build_char_4036_forcer",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/defaultskin/build/build_char_4036_forcer.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/defaultskin/build/build_char_4036_forcer.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/defaultskin/build/build_char_4036_forcer.png"
+    "assetId": "build_char_4036_forcer",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "见行者",
+    "appellation": "Enforcer",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4036_forcer.atlas",
+      ".png": "build_char_4036_forcer.png",
+      ".skel": "build_char_4036_forcer.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/enforcer/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -281.18518,
+      "minX": -281.26022,
       "maxX": 197.24426,
-      "minY": -87.33572,
-      "maxY": 455.55951
+      "minY": -88.38068,
+      "maxY": 458.46198
     },
-    "scale": 0.36787,
-    "x_offset": 111.43969,
-    "y_offset": 183.87178,
+    "full_source_bounds": {
+      "minX": -281.26022,
+      "maxX": 197.24426,
+      "minY": -88.38068,
+      "maxY": 458.46198
+    },
+    "core_source_bounds": {
+      "minX": -281.26022,
+      "maxX": 197.24426,
+      "minY": -88.38068,
+      "maxY": 450.02902
+    },
+    "cluster": {
+      "retained": 2757,
+      "total": 2757,
+      "centerX": -0.9108,
+      "centerY": 181.91592,
+      "radiusX": 381.86344,
+      "radiusY": 528.22205
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 115,
+      "visible_height": 164,
+      "density_zoom": 1
+    },
+    "scale": 0.36781,
+    "x_offset": 111.45107,
+    "y_offset": 183.49247,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:04.663Z"
+  "exported_at": "2026-08-19T13:22:04.159Z"
 }

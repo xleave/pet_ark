@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ayerscarpe",
   "character_name": "Ayerscarpe",
   "localized_name": "断崖",
@@ -9,15 +12,29 @@
   "skin_id": "boc-3",
   "skin_name": "受验者",
   "source": "standalone/assets/source/ayerscarpe/skin-boc-3",
-  "source_page": "https://prts.wiki/w/%E6%96%AD%E5%B4%96",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_294_ayer/meta.json",
-    "model": "char_294_ayer_boc_3/build/build_char_294_ayer_boc_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_294_ayer/char_294_ayer_boc_3/build/build_char_294_ayer_boc_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_294_ayer/char_294_ayer_boc_3/build/build_char_294_ayer_boc_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_294_ayer/char_294_ayer_boc_3/build/build_char_294_ayer_boc_3.png"
+    "assetId": "build_char_294_ayer_boc#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "断崖",
+    "appellation": "Ayerscarpe",
+    "skinGroupId": "2021#boc#2",
+    "skinGroupName": "斗争血脉/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_294_ayer_boc#3.atlas",
+      ".png": "build_char_294_ayer_boc#3.png",
+      ".skel": "build_char_294_ayer_boc#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/ayerscarpe/skin-boc-3/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -225.86887,
-      "maxX": 172.57649,
-      "minY": -114.08682,
+      "minX": -225.96761,
+      "maxX": 173.34366,
+      "minY": -116.61517,
       "maxY": 515.18915
     },
-    "scale": 0.33054,
-    "x_offset": 104.80759,
-    "y_offset": 178.2899,
+    "full_source_bounds": {
+      "minX": -225.96761,
+      "maxX": 173.34366,
+      "minY": -116.61517,
+      "maxY": 515.18915
+    },
+    "core_source_bounds": {
+      "minX": -225.96761,
+      "maxX": 171.20705,
+      "minY": -116.61517,
+      "maxY": 515.18915
+    },
+    "cluster": {
+      "retained": 2319,
+      "total": 2319,
+      "centerX": 32.91764,
+      "centerY": 193.16981,
+      "radiusX": 444.06959,
+      "radiusY": 573.95885
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 99,
+      "visible_height": 131,
+      "density_zoom": 1.0687
+    },
+    "scale": 0.32922,
+    "x_offset": 104.66232,
+    "y_offset": 177.60844,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:57.554Z"
+  "exported_at": "2026-08-19T13:21:33.008Z"
 }

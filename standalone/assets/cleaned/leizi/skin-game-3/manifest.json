@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "leizi",
   "character_name": "Leizi",
   "localized_name": "惊蛰",
@@ -11,15 +12,29 @@
   "skin_id": "game-3",
   "skin_name": "遗迹游学者",
   "source": "standalone/assets/source/leizi/skin-game-3",
-  "source_page": "https://prts.wiki/w/%E6%83%8A%E8%9B%B0",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_306_leizi/meta.json",
-    "model": "char_306_leizi_game_3/build/build_char_306_leizi_game_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_306_leizi/char_306_leizi_game_3/build/build_char_306_leizi_game_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_306_leizi/char_306_leizi_game_3/build/build_char_306_leizi_game_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_306_leizi/char_306_leizi_game_3/build/build_char_306_leizi_game_3.png"
+    "assetId": "build_char_306_leizi_game#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "惊蛰",
+    "appellation": "Leizi",
+    "skinGroupId": "2024#game",
+    "skinGroupName": "成就之星/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_306_leizi_game#3.atlas",
+      ".png": "build_char_306_leizi_game#3.png",
+      ".skel": "build_char_306_leizi_game#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/leizi/skin-game-3/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -118,7 +133,7 @@
     "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -253.64116,
-      "maxX": 263.30237,
+      "maxX": 279.30634,
       "minY": -121.59179,
       "maxY": 436.66077
     },
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -253.64116,
-      "maxX": 263.30237,
+      "maxX": 279.30634,
       "minY": -121.59179,
       "maxY": 436.66077
     },
     "cluster": {
-      "retained": 2715,
+      "retained": 2723,
       "total": 2733,
-      "centerX": -5.99133,
-      "centerY": 132.62611,
-      "radiusX": 256.06482,
-      "radiusY": 694.18652
+      "centerX": 28.66335,
+      "centerY": 236.50237,
+      "radiusX": 547.24751,
+      "radiusY": 889.28986
     },
-    "scale": 0.34046,
-    "x_offset": 94.35536,
-    "y_offset": 174.60253,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 96,
+      "visible_height": 134,
+      "density_zoom": 1.04478
+    },
+    "scale": 0.33024,
+    "x_offset": 91.76218,
+    "y_offset": 175.84566,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:31.009Z"
+  "exported_at": "2026-08-19T13:22:49.853Z"
 }

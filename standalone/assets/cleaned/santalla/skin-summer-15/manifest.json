@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "santalla",
   "character_name": "Santalla",
   "localized_name": "寒檀",
@@ -11,15 +12,29 @@
   "skin_id": "summer-15",
   "skin_name": "悠然假日 HD71",
   "source": "standalone/assets/source/santalla/skin-summer-15",
-  "source_page": "https://prts.wiki/w/%E5%AF%92%E6%AA%80",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_341_sntlla/meta.json",
-    "model": "char_341_sntlla_summer_15/build/build_char_341_sntlla_summer_15",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_341_sntlla/char_341_sntlla_summer_15/build/build_char_341_sntlla_summer_15.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_341_sntlla/char_341_sntlla_summer_15/build/build_char_341_sntlla_summer_15.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_341_sntlla/char_341_sntlla_summer_15/build/build_char_341_sntlla_summer_15.png"
+    "assetId": "build_char_341_sntlla_summer#15",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "寒檀",
+    "appellation": "Santalla",
+    "skinGroupId": "2023#summer#5",
+    "skinGroupName": "珊瑚海岸/XV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_341_sntlla_summer#15.atlas",
+      ".png": "build_char_341_sntlla_summer#15.png",
+      ".skel": "build_char_341_sntlla_summer#15.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/santalla/skin-summer-15/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -300.01041,
-      "maxX": 164.8793,
+      "minX": -830.43311,
+      "maxX": 329.31735,
       "minY": -114.70654,
-      "maxY": 400.01001
+      "maxY": 419.33704
     },
     "full_source_bounds": {
       "minX": -830.43311,
@@ -129,23 +144,29 @@
       "maxY": 419.33704
     },
     "core_source_bounds": {
-      "minX": -300.01041,
+      "minX": -765.8255,
       "maxX": 164.8793,
       "minY": -114.70654,
       "maxY": 400.01001
     },
     "cluster": {
-      "retained": 2478,
+      "retained": 2492,
       "total": 2498,
-      "centerX": -10.95134,
-      "centerY": 127.81877,
-      "radiusX": 359.11533,
-      "radiusY": 647.16306
+      "centerX": -51.59471,
+      "centerY": 147.58281,
+      "radiusX": 630.02614,
+      "radiusY": 565.55748
     },
-    "scale": 0.37858,
-    "x_offset": 121.57927,
-    "y_offset": 172.57389,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 55,
+      "visible_height": 61,
+      "density_zoom": 2.29508
+    },
+    "scale": 0.34829,
+    "x_offset": 128.1859,
+    "y_offset": 217.35985,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:49.709Z"
+  "exported_at": "2026-08-19T13:23:47.109Z"
 }

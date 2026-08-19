@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "asbestos",
   "character_name": "Asbestos",
   "localized_name": "石棉",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/asbestos/default",
-  "source_page": "https://prts.wiki/w/%E7%9F%B3%E6%A3%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_378_asbest/meta.json",
-    "model": "defaultskin/build/build_char_378_asbest",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_378_asbest/defaultskin/build/build_char_378_asbest.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_378_asbest/defaultskin/build/build_char_378_asbest.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_378_asbest/defaultskin/build/build_char_378_asbest.png"
+    "assetId": "build_char_378_asbest",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "石棉",
+    "appellation": "Asbestos",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_378_asbest.atlas",
+      ".png": "build_char_378_asbest.png",
+      ".skel": "build_char_378_asbest.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/asbestos/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -246.35577,
-      "maxX": 201.22884,
-      "minY": -96.34773,
-      "maxY": 387.10983
+      "minX": -276.45593,
+      "maxX": 201.32364,
+      "minY": -96.45923,
+      "maxY": 388.4512
     },
-    "scale": 0.39322,
-    "x_offset": 104.87245,
-    "y_offset": 178.11398,
+    "full_source_bounds": {
+      "minX": -276.45593,
+      "maxX": 201.32364,
+      "minY": -96.45923,
+      "maxY": 388.4512
+    },
+    "core_source_bounds": {
+      "minX": -216.97955,
+      "maxX": 201.32364,
+      "minY": -96.45923,
+      "maxY": 381.86026
+    },
+    "cluster": {
+      "retained": 1970,
+      "total": 1970,
+      "centerX": -32.88557,
+      "centerY": 192.33301,
+      "radiusX": 407.67028,
+      "radiusY": 645.01873
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 105,
+      "visible_height": 140,
+      "density_zoom": 1
+    },
+    "scale": 0.36837,
+    "x_offset": 109.83827,
+    "y_offset": 180.46725,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:56.674Z"
+  "exported_at": "2026-08-19T13:21:28.719Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "amiya",
   "character_name": "Amiya",
   "localized_name": "阿米娅",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/amiya/default",
-  "source_page": "https://prts.wiki/w/%E9%98%BF%E7%B1%B3%E5%A8%85",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/meta.json",
-    "model": "defaultskin/build/build_char_002_amiya",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/defaultskin/build/build_char_002_amiya.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/defaultskin/build/build_char_002_amiya.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/defaultskin/build/build_char_002_amiya.png"
+    "assetId": "build_char_002_amiya",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "阿米娅",
+    "appellation": "Amiya",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_002_amiya.atlas",
+      ".png": "build_char_002_amiya.png",
+      ".skel": "build_char_002_amiya.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/amiya/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -275.20718,
       "maxX": 197.65878,
       "minY": -96.18749,
-      "maxY": 450.26764
+      "maxY": 451.73026
+    },
+    "full_source_bounds": {
+      "minX": -275.20718,
+      "maxX": 197.65878,
+      "minY": -96.18749,
+      "maxY": 451.73026
+    },
+    "core_source_bounds": {
+      "minX": -275.20718,
+      "maxX": 197.65878,
+      "minY": -96.18749,
+      "maxY": 451.73026
+    },
+    "cluster": {
+      "retained": 1124,
+      "total": 1124,
+      "centerX": 1.60052,
+      "centerY": 191.54252,
+      "radiusX": 324.99474,
+      "radiusY": 489.98623
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 91,
+      "visible_height": 168,
+      "density_zoom": 1
     },
     "scale": 0.3722,
     "x_offset": 110.4317,
     "y_offset": 180.19916,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:55.357Z"
+  "exported_at": "2026-08-19T13:21:22.544Z"
 }

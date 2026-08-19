@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "reed-the-flame-shadow",
   "character_name": "Reed The Flame Shadow",
   "localized_name": "焰影苇草",
@@ -11,15 +12,30 @@
   "skin_id": "epoque-30",
   "skin_name": "博物",
   "source": "standalone/assets/source/reed-the-flame-shadow/skin-epoque-30",
-  "source_page": "https://prts.wiki/w/%E7%84%B0%E5%BD%B1%E8%8B%87%E8%8D%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/meta.json",
-    "model": "char_1020_reed2_epoque_30/build/build_char_1020_reed2_epoque_30",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/char_1020_reed2_epoque_30/build/build_char_1020_reed2_epoque_30.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/char_1020_reed2_epoque_30/build/build_char_1020_reed2_epoque_30.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/char_1020_reed2_epoque_30/build/build_char_1020_reed2_epoque_30.png"
+    "assetId": "build_char_1020_reed2_epoque#30",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "焰影苇草",
+    "appellation": "Reed The Flame Shadow",
+    "skinGroupId": "2024#epoque",
+    "skinGroupName": "时代/XXX",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1020_reed2_epoque#30.atlas",
+      ".png": "build_char_1020_reed2_epoque#30.png",
+      ".skel": "build_char_1020_reed2_epoque#30.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +118,7 @@
       "path": "standalone/assets/cleaned/reed-the-flame-shadow/skin-epoque-30/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,11 +131,11 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -407.08389,
-      "maxX": 342.61877,
-      "minY": -292.08292,
+      "minX": -986.71729,
+      "maxX": 402.85089,
+      "minY": -614.09619,
       "maxY": 448.17963
     },
     "full_source_bounds": {
@@ -129,23 +145,29 @@
       "maxY": 448.17963
     },
     "core_source_bounds": {
-      "minX": -407.08389,
+      "minX": -986.71729,
       "maxX": 342.61877,
-      "minY": -292.08292,
+      "minY": -614.09619,
       "maxY": 448.17963
     },
     "cluster": {
-      "retained": 3056,
+      "retained": 3084,
       "total": 3084,
-      "centerX": -0.34599,
-      "centerY": 138.23836,
-      "radiusX": 374.44207,
-      "radiusY": 636.99689
+      "centerX": -68.06969,
+      "centerY": 105.14901,
+      "radiusX": 1160.29096,
+      "radiusY": 1466.45069
     },
-    "scale": 0.23476,
-    "x_offset": 103.56691,
-    "y_offset": 147.43069,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 64,
+      "visible_height": 56,
+      "density_zoom": 2.5
+    },
+    "scale": 0.31665,
+    "x_offset": 129.68923,
+    "y_offset": 219.04943,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:47.622Z"
+  "exported_at": "2026-08-19T13:23:40.466Z"
 }

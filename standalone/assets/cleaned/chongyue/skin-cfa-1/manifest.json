@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "chongyue",
   "character_name": "Chongyue",
   "localized_name": "重岳",
@@ -11,15 +12,29 @@
   "skin_id": "cfa-1",
   "skin_name": "全能演员",
   "source": "standalone/assets/source/chongyue/skin-cfa-1",
-  "source_page": "https://prts.wiki/w/%E9%87%8D%E5%B2%B3",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2024_chyue/meta.json",
-    "model": "char_2024_chyue_cfa_1/build/build_char_2024_chyue_cfa_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2024_chyue/char_2024_chyue_cfa_1/build/build_char_2024_chyue_cfa_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2024_chyue/char_2024_chyue_cfa_1/build/build_char_2024_chyue_cfa_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2024_chyue/char_2024_chyue_cfa_1/build/build_char_2024_chyue_cfa_1.png"
+    "assetId": "build_char_2024_chyue_cfa#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "重岳",
+    "appellation": "Chongyue",
+    "skinGroupId": "2024#cfa",
+    "skinGroupName": "中国电影资料馆",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2024_chyue_cfa#1.atlas",
+      ".png": "build_char_2024_chyue_cfa#1.png",
+      ".skel": "build_char_2024_chyue_cfa#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/chongyue/skin-cfa-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -137,15 +152,21 @@
     "cluster": {
       "retained": 2571,
       "total": 2599,
-      "centerX": -3.00287,
-      "centerY": 141.59732,
-      "radiusX": 356.43925,
-      "radiusY": 630.36801
+      "centerX": 7.31972,
+      "centerY": 177.23173,
+      "radiusX": 624.32348,
+      "radiusY": 879.96819
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 114,
+      "visible_height": 164,
+      "density_zoom": 1
     },
     "scale": 0.36728,
     "x_offset": 121.90588,
     "y_offset": 175.8376,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:24.644Z"
+  "exported_at": "2026-08-19T13:21:51.379Z"
 }

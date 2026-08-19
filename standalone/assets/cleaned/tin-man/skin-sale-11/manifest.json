@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "tin-man",
   "character_name": "Tin Man",
   "localized_name": "锡人",
@@ -9,15 +12,29 @@
   "skin_id": "sale-11",
   "skin_name": "相位面容",
   "source": "standalone/assets/source/tin-man/skin-sale-11",
-  "source_page": "https://prts.wiki/w/%E9%94%A1%E4%BA%BA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4151_tinman/meta.json",
-    "model": "char_4151_tinman_sale_11/build/build_char_4151_tinman_sale_11",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4151_tinman/char_4151_tinman_sale_11/build/build_char_4151_tinman_sale_11.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4151_tinman/char_4151_tinman_sale_11/build/build_char_4151_tinman_sale_11.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4151_tinman/char_4151_tinman_sale_11/build/build_char_4151_tinman_sale_11.png"
+    "assetId": "build_char_4151_tinman_sale#11",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "锡人",
+    "appellation": "Tin Man",
+    "skinGroupId": "2024#sale#2",
+    "skinGroupName": "忒斯特收藏/XII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4151_tinman_sale#11.atlas",
+      ".png": "build_char_4151_tinman_sale#11.png",
+      ".skel": "build_char_4151_tinman_sale#11.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/tin-man/skin-sale-11/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -241.71101,
-      "maxX": 287.83994,
+      "minX": -241.71443,
+      "maxX": 172.49532,
       "minY": -106.10312,
-      "maxY": 582.52582
+      "maxY": 413.4379
     },
-    "scale": 0.30205,
-    "x_offset": 89.03339,
-    "y_offset": 183.95161,
+    "full_source_bounds": {
+      "minX": -241.71443,
+      "maxX": 261.13742,
+      "minY": -106.10312,
+      "maxY": 567.0899
+    },
+    "core_source_bounds": {
+      "minX": -241.71443,
+      "maxX": 172.49532,
+      "minY": -106.10312,
+      "maxY": 413.4379
+    },
+    "cluster": {
+      "retained": 2348,
+      "total": 2348,
+      "centerX": -5.95215,
+      "centerY": 152.60056,
+      "radiusX": 565.52122,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 115,
+      "visible_height": 166,
+      "density_zoom": 1
+    },
+    "scale": 0.40035,
+    "x_offset": 109.85605,
+    "y_offset": 173.52126,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:34.666Z"
+  "exported_at": "2026-08-19T13:24:11.594Z"
 }

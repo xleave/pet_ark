@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
-  "placement_revision": 2,
+  "placement_revision": 3,
   "character": "shirayuki",
   "character_name": "ShiraYuki",
   "localized_name": "白雪",
@@ -12,15 +12,29 @@
   "skin_id": "boc-2",
   "skin_name": "曲刃晴风",
   "source": "standalone/assets/source/shirayuki/skin-boc-2",
-  "source_page": "https://prts.wiki/w/%E7%99%BD%E9%9B%AA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_118_yuki/meta.json",
-    "model": "char_118_yuki_boc_2/build/build_char_118_yuki_boc_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_118_yuki/char_118_yuki_boc_2/build/build_char_118_yuki_boc_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_118_yuki/char_118_yuki_boc_2/build/build_char_118_yuki_boc_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_118_yuki/char_118_yuki_boc_2/build/build_char_118_yuki_boc_2.png"
+    "assetId": "build_char_118_yuki_boc#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "白雪",
+    "appellation": "ShiraYuki",
+    "skinGroupId": "2021#boc",
+    "skinGroupName": "斗争血脉/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_118_yuki_boc#2.atlas",
+      ".png": "build_char_118_yuki_boc#2.png",
+      ".skel": "build_char_118_yuki_boc#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -109,7 +123,7 @@
       ]
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -149,10 +163,16 @@
       "radiusX": 473.90291,
       "radiusY": 503.11302
     },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 73,
+      "visible_height": 149,
+      "density_zoom": 1
+    },
     "scale": 0.38712,
     "x_offset": 105.45053,
     "y_offset": 168.18591,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:07:44.949Z"
+  "exported_at": "2026-08-19T13:23:53.282Z"
 }

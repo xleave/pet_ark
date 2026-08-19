@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "indigo",
   "character_name": "Indigo",
   "localized_name": "深靛",
@@ -9,15 +12,29 @@
   "skin_id": "nian-7",
   "skin_name": "待晴日",
   "source": "standalone/assets/source/indigo/skin-nian-7",
-  "source_page": "https://prts.wiki/w/%E6%B7%B1%E9%9D%9B",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_469_indigo/meta.json",
-    "model": "char_469_indigo_nian_7/build/build_char_469_indigo_nian_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_469_indigo/char_469_indigo_nian_7/build/build_char_469_indigo_nian_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_469_indigo/char_469_indigo_nian_7/build/build_char_469_indigo_nian_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_469_indigo/char_469_indigo_nian_7/build/build_char_469_indigo_nian_7.png"
+    "assetId": "build_char_469_indigo_nian#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "深靛",
+    "appellation": "Indigo",
+    "skinGroupId": "2022#nian#2",
+    "skinGroupName": "0011制造/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_469_indigo_nian#7.atlas",
+      ".png": "build_char_469_indigo_nian#7.png",
+      ".skel": "build_char_469_indigo_nian#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/indigo/skin-nian-7/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -274.75308,
+      "minX": -275.495,
       "maxX": 328.57141,
-      "minY": -124.50687,
+      "minY": -124.81155,
       "maxY": 466.38998
     },
-    "scale": 0.29172,
-    "x_offset": 88.15014,
-    "y_offset": 179.67923,
+    "full_source_bounds": {
+      "minX": -275.495,
+      "maxX": 328.57141,
+      "minY": -124.81155,
+      "maxY": 466.38998
+    },
+    "core_source_bounds": {
+      "minX": -275.495,
+      "maxX": 328.57141,
+      "minY": -124.81155,
+      "maxY": 466.38998
+    },
+    "cluster": {
+      "retained": 2108,
+      "total": 2108,
+      "centerX": 3.77575,
+      "centerY": 191.88341,
+      "radiusX": 599.15378,
+      "radiusY": 690.01978
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 136,
+      "visible_height": 116,
+      "density_zoom": 1.2069
+    },
+    "scale": 0.35164,
+    "x_offset": 108.9957,
+    "y_offset": 214.35267,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:11.799Z"
+  "exported_at": "2026-08-19T13:22:34.663Z"
 }

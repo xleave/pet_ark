@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "mudrock",
   "character_name": "Mudrock",
   "localized_name": "泥岩",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/mudrock/default",
-  "source_page": "https://prts.wiki/w/%E6%B3%A5%E5%B2%A9",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/meta.json",
-    "model": "defaultskin/build/build_char_311_mudrok",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/defaultskin/build/build_char_311_mudrok.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/defaultskin/build/build_char_311_mudrok.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/defaultskin/build/build_char_311_mudrok.png"
+    "assetId": "build_char_311_mudrok",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "泥岩",
+    "appellation": "Mudrock",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_311_mudrok.atlas",
+      ".png": "build_char_311_mudrok.png",
+      ".skel": "build_char_311_mudrok.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/mudrock/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -276.38541,
+      "minX": -276.62808,
       "maxX": 215.86575,
-      "minY": -97.62253,
-      "maxY": 487.58524
+      "minY": -97.62697,
+      "maxY": 487.78012
     },
-    "scale": 0.35543,
-    "x_offset": 106.75523,
-    "y_offset": 181.30209,
+    "full_source_bounds": {
+      "minX": -276.62808,
+      "maxX": 215.86575,
+      "minY": -97.62697,
+      "maxY": 487.78012
+    },
+    "core_source_bounds": {
+      "minX": -276.62808,
+      "maxX": 215.86575,
+      "minY": -97.62697,
+      "maxY": 470.96143
+    },
+    "cluster": {
+      "retained": 1385,
+      "total": 1385,
+      "centerX": -7.62129,
+      "centerY": 193.58853,
+      "radiusX": 658.39572,
+      "radiusY": 636.05926
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 107,
+      "visible_height": 166,
+      "density_zoom": 1
+    },
+    "scale": 0.35531,
+    "x_offset": 106.79468,
+    "y_offset": 181.31233,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:19.658Z"
+  "exported_at": "2026-08-19T13:23:10.601Z"
 }

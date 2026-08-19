@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "rathalos-s-noir-corne",
   "character_name": "Rathalos S Noir Corne",
   "localized_name": "火龙S黑角",
@@ -9,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/rathalos-s-noir-corne/default",
-  "source_page": "https://prts.wiki/w/%E7%81%AB%E9%BE%99S%E9%BB%91%E8%A7%92",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1030_noirc2/meta.json",
-    "model": "defaultskin/build/build_char_1030_noirc2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1030_noirc2/defaultskin/build/build_char_1030_noirc2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1030_noirc2/defaultskin/build/build_char_1030_noirc2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1030_noirc2/defaultskin/build/build_char_1030_noirc2.png"
+    "assetId": "build_char_1030_noirc2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "火龙S黑角",
+    "appellation": "Rathalos S Noir Corne",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1030_noirc2.atlas",
+      ".png": "build_char_1030_noirc2.png",
+      ".skel": "build_char_1030_noirc2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/rathalos-s-noir-corne/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -171.46077,
       "maxX": 264.51553,
-      "minY": -96.68421,
+      "minY": -97.6637,
       "maxY": 418.42001
     },
-    "scale": 0.40369,
-    "x_offset": 77.21728,
-    "y_offset": 176.96939,
+    "full_source_bounds": {
+      "minX": -171.46077,
+      "maxX": 264.51553,
+      "minY": -97.6637,
+      "maxY": 418.42001
+    },
+    "core_source_bounds": {
+      "minX": -156.37979,
+      "maxX": 264.51553,
+      "minY": -97.6637,
+      "maxY": 418.42001
+    },
+    "cluster": {
+      "retained": 1869,
+      "total": 1869,
+      "centerX": -9.61198,
+      "centerY": 191.87372,
+      "radiusX": 562.59053,
+      "radiusY": 602.0699
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 124,
+      "visible_height": 163,
+      "density_zoom": 1
+    },
+    "scale": 0.40304,
+    "x_offset": 77.24782,
+    "y_offset": 176.63807,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:26.946Z"
+  "exported_at": "2026-08-19T13:23:37.859Z"
 }

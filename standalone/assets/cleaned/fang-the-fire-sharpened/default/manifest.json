@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "fang-the-fire-sharpened",
   "character_name": "Fang the Fire-sharpened",
   "localized_name": "历阵锐枪芬",
@@ -9,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/fang-the-fire-sharpened/default",
-  "source_page": "https://prts.wiki/w/%E5%8E%86%E9%98%B5%E9%94%90%E6%9E%AA%E8%8A%AC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1036_fang2/meta.json",
-    "model": "defaultskin/build/build_char_1036_fang2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1036_fang2/defaultskin/build/build_char_1036_fang2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1036_fang2/defaultskin/build/build_char_1036_fang2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1036_fang2/defaultskin/build/build_char_1036_fang2.png"
+    "assetId": "build_char_1036_fang2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "历阵锐枪芬",
+    "appellation": "Fang the Fire-sharpened",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1036_fang2.atlas",
+      ".png": "build_char_1036_fang2.png",
+      ".skel": "build_char_1036_fang2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/fang-the-fire-sharpened/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -296.65665,
       "maxX": 178.07721,
-      "minY": -116.85303,
+      "minY": -117.66643,
       "maxY": 415.87949
+    },
+    "full_source_bounds": {
+      "minX": -296.65665,
+      "maxX": 178.07721,
+      "minY": -117.66643,
+      "maxY": 415.87949
+    },
+    "core_source_bounds": {
+      "minX": -296.65665,
+      "maxX": 178.07721,
+      "minY": -117.66643,
+      "maxY": 415.87949
+    },
+    "cluster": {
+      "retained": 1720,
+      "total": 1720,
+      "centerX": -147.15149,
+      "centerY": 172.17187,
+      "radiusX": 440.03311,
+      "radiusY": 480.10647
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 80,
+      "visible_height": 153,
+      "density_zoom": 1
     },
     "scale": 0.37073,
     "x_offset": 117.98072,
-    "y_offset": 172.6786,
+    "y_offset": 172.37705,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:06.364Z"
+  "exported_at": "2026-08-19T13:22:10.746Z"
 }

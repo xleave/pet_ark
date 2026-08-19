@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "akkord",
   "character_name": "Akkord",
   "localized_name": "协律",
@@ -11,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/akkord/default",
-  "source_page": "https://prts.wiki/w/%E5%8D%8F%E5%BE%8B",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4051_akkord/meta.json",
-    "model": "defaultskin/build/build_char_4051_akkord",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4051_akkord/defaultskin/build/build_char_4051_akkord.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4051_akkord/defaultskin/build/build_char_4051_akkord.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4051_akkord/defaultskin/build/build_char_4051_akkord.png"
+    "assetId": "build_char_4051_akkord",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "协律",
+    "appellation": "Akkord",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4051_akkord.atlas",
+      ".png": "build_char_4051_akkord.png",
+      ".skel": "build_char_4051_akkord.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +105,7 @@
       "path": "standalone/assets/cleaned/akkord/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,12 +118,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -262.26099,
-      "maxX": 184.35501,
+      "minX": -540.10004,
+      "maxX": 862.40997,
       "minY": -113.34821,
-      "maxY": 440.53473
+      "maxY": 530.77002
     },
     "full_source_bounds": {
       "minX": -540.10004,
@@ -118,23 +132,29 @@
       "maxY": 530.77002
     },
     "core_source_bounds": {
-      "minX": -262.26099,
-      "maxX": 184.35501,
+      "minX": -540.10004,
+      "maxX": 862.40997,
       "minY": -113.34821,
-      "maxY": 440.53473
+      "maxY": 530.77002
     },
     "cluster": {
-      "retained": 1976,
-      "total": 2026,
-      "centerX": -3.45457,
-      "centerY": 135.96847,
-      "radiusX": 314.00304,
-      "radiusY": 673.32948
+      "retained": 2024,
+      "total": 2024,
+      "centerX": 50.68499,
+      "centerY": 202.42185,
+      "radiusX": 1268.2996,
+      "radiusY": 760.89325
     },
-    "scale": 0.37553,
-    "x_offset": 110.62804,
-    "y_offset": 173.43428,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 33,
+      "visible_height": 55,
+      "density_zoom": 2.54545
+    },
+    "scale": 0.31943,
+    "x_offset": 105.61361,
+    "y_offset": 217.9753,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:06.956Z"
+  "exported_at": "2026-08-19T13:21:21.474Z"
 }

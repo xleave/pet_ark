@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "nine-colored-deer",
@@ -12,15 +12,29 @@
   "skin_id": "ncdeer-1",
   "skin_name": "古往今来的月",
   "source": "standalone/assets/source/nine-colored-deer/skin-ncdeer-1",
-  "source_page": "https://prts.wiki/w/%E4%B9%9D%E8%89%B2%E9%B9%BF",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4019_ncdeer/meta.json",
-    "model": "char_4019_ncdeer_ncdeer_1/build/build_char_4019_ncdeer_ncdeer_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4019_ncdeer/char_4019_ncdeer_ncdeer_1/build/build_char_4019_ncdeer_ncdeer_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4019_ncdeer/char_4019_ncdeer_ncdeer_1/build/build_char_4019_ncdeer_ncdeer_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4019_ncdeer/char_4019_ncdeer_ncdeer_1/build/build_char_4019_ncdeer_ncdeer_1.png"
+    "assetId": "build_char_4019_ncdeer_ncdeer#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "九色鹿",
+    "appellation": "Nine-Colored Deer",
+    "skinGroupId": "2023#ncdeer",
+    "skinGroupName": "九色鹿",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4019_ncdeer_ncdeer#1.atlas",
+      ".png": "build_char_4019_ncdeer_ncdeer#1.png",
+      ".skel": "build_char_4019_ncdeer_ncdeer#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/nine-colored-deer/skin-ncdeer-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -119,40 +133,40 @@
     "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -440.68262,
-      "maxX": 1333.43286,
+      "maxX": 1141.43005,
       "minY": -331.07739,
       "maxY": 605.48944
     },
     "full_source_bounds": {
       "minX": -440.68262,
-      "maxX": 1333.43286,
+      "maxX": 1141.43005,
       "minY": -331.07739,
       "maxY": 605.48944
     },
     "core_source_bounds": {
       "minX": -440.68262,
       "maxX": 959.07465,
-      "minY": -327.90442,
+      "minY": -321.39713,
       "maxY": 605.48944
     },
     "cluster": {
       "retained": 2214,
-      "total": 2224,
-      "centerX": -10.29922,
-      "centerY": 158.86101,
-      "radiusX": 932.2667,
-      "radiusY": 1197.26475
+      "total": 2223,
+      "centerX": -10.54922,
+      "centerY": 159.82894,
+      "radiusX": 927.68265,
+      "radiusY": 1196.43744
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 25,
-      "visible_height": 47,
-      "density_zoom": 2.97872
+      "visible_width": 28,
+      "visible_height": 53,
+      "density_zoom": 2.64151
     },
-    "scale": 0.2955,
-    "x_offset": 104.0951,
-    "y_offset": 216.46372,
+    "scale": 0.29385,
+    "x_offset": 105.30642,
+    "y_offset": 216.44837,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:43.768Z"
+  "exported_at": "2026-08-19T13:23:19.926Z"
 }

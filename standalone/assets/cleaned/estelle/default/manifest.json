@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "estelle",
   "character_name": "Estelle",
   "localized_name": "艾丝黛尔",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/estelle/default",
-  "source_page": "https://prts.wiki/w/%E8%89%BE%E4%B8%9D%E9%BB%9B%E5%B0%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_127_estell/meta.json",
-    "model": "defaultskin/build/build_char_127_estell",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_127_estell/defaultskin/build/build_char_127_estell.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_127_estell/defaultskin/build/build_char_127_estell.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_127_estell/defaultskin/build/build_char_127_estell.png"
+    "assetId": "build_char_127_estell",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "艾丝黛尔",
+    "appellation": "Estelle",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_127_estell.atlas",
+      ".png": "build_char_127_estell.png",
+      ".skel": "build_char_127_estell.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/estelle/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -282.45569,
+      "minX": -295.82166,
       "maxX": 186.41086,
-      "minY": -124.58717,
-      "maxY": 408.63321
+      "minY": -125.29855,
+      "maxY": 415.72806
     },
-    "scale": 0.37537,
-    "x_offset": 114.02633,
-    "y_offset": 169.2333,
+    "full_source_bounds": {
+      "minX": -295.82166,
+      "maxX": 186.41086,
+      "minY": -125.29855,
+      "maxY": 415.72806
+    },
+    "core_source_bounds": {
+      "minX": -233.16547,
+      "maxX": 186.41086,
+      "minY": -125.29855,
+      "maxY": 377.49979
+    },
+    "cluster": {
+      "retained": 1411,
+      "total": 1411,
+      "centerX": -5.53216,
+      "centerY": 203.01295,
+      "radiusX": 513.11436,
+      "radiusY": 612.0907
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 95,
+      "visible_height": 137,
+      "density_zoom": 1.0219
+    },
+    "scale": 0.36497,
+    "x_offset": 115.96578,
+    "y_offset": 170.26989,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:04.957Z"
+  "exported_at": "2026-08-19T13:22:05.478Z"
 }

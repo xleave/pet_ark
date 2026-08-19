@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "siege",
   "character_name": "Siege",
   "localized_name": "推进之王",
@@ -9,15 +12,29 @@
   "skin_id": "wild-2",
   "skin_name": "遗石",
   "source": "standalone/assets/source/siege/skin-wild-2",
-  "source_page": "https://prts.wiki/w/%E6%8E%A8%E8%BF%9B%E4%B9%8B%E7%8E%8B",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_112_siege/meta.json",
-    "model": "char_112_siege_wild_2/build/build_char_112_siege_wild_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_112_siege/char_112_siege_wild_2/build/build_char_112_siege_wild_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_112_siege/char_112_siege_wild_2/build/build_char_112_siege_wild_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_112_siege/char_112_siege_wild_2/build/build_char_112_siege_wild_2.png"
+    "assetId": "build_char_112_siege_wild#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "推进之王",
+    "appellation": "Siege",
+    "skinGroupId": "2019#wild#2",
+    "skinGroupName": "生命之地/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_112_siege_wild#2.atlas",
+      ".png": "build_char_112_siege_wild#2.png",
+      ".skel": "build_char_112_siege_wild#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/siege/skin-wild-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -243.09773,
+      "minX": -243.49272,
       "maxX": 202.21036,
-      "minY": -124.67519,
-      "maxY": 426.37604
+      "minY": -124.67949,
+      "maxY": 426.72623
     },
-    "scale": 0.37746,
-    "x_offset": 103.71668,
-    "y_offset": 168.94006,
+    "full_source_bounds": {
+      "minX": -243.49272,
+      "maxX": 202.21036,
+      "minY": -124.67949,
+      "maxY": 426.72623
+    },
+    "core_source_bounds": {
+      "minX": -243.49272,
+      "maxX": 202.21036,
+      "minY": -124.67949,
+      "maxY": 426.72623
+    },
+    "cluster": {
+      "retained": 1905,
+      "total": 1905,
+      "centerX": 20.37389,
+      "centerY": 150.61311,
+      "radiusX": 465.07921,
+      "radiusY": 765.46204
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 111,
+      "visible_height": 160,
+      "density_zoom": 1
+    },
+    "scale": 0.37722,
+    "x_offset": 103.78622,
+    "y_offset": 168.96869,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:30.758Z"
+  "exported_at": "2026-08-19T13:23:54.522Z"
 }

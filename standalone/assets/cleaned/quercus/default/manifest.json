@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "quercus",
   "character_name": "Quercus",
   "localized_name": "夏栎",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/quercus/default",
-  "source_page": "https://prts.wiki/w/%E5%A4%8F%E6%A0%8E",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/meta.json",
-    "model": "defaultskin/build/build_char_492_quercu",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/defaultskin/build/build_char_492_quercu.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/defaultskin/build/build_char_492_quercu.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/defaultskin/build/build_char_492_quercu.png"
+    "assetId": "build_char_492_quercu",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "夏栎",
+    "appellation": "Quercus",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_492_quercu.atlas",
+      ".png": "build_char_492_quercu.png",
+      ".skel": "build_char_492_quercu.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/quercus/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -297.30359,
-      "maxX": 213.23444,
-      "minY": -116.18703,
-      "maxY": 445.7363
+      "maxX": 213.38957,
+      "minY": -116.48277,
+      "maxY": 447.33038
     },
-    "scale": 0.34473,
-    "x_offset": 110.49076,
-    "y_offset": 175.94634,
+    "full_source_bounds": {
+      "minX": -297.30359,
+      "maxX": 213.38957,
+      "minY": -116.48277,
+      "maxY": 447.33038
+    },
+    "core_source_bounds": {
+      "minX": -297.30359,
+      "maxX": 213.38957,
+      "minY": -116.48277,
+      "maxY": 447.33038
+    },
+    "cluster": {
+      "retained": 2940,
+      "total": 2940,
+      "centerX": 3.25809,
+      "centerY": 200.7487,
+      "radiusX": 353.10415,
+      "radiusY": 635.16045
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 112,
+      "visible_height": 152,
+      "density_zoom": 1
+    },
+    "scale": 0.34463,
+    "x_offset": 110.45963,
+    "y_offset": 175.85659,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:26.453Z"
+  "exported_at": "2026-08-19T13:23:36.301Z"
 }

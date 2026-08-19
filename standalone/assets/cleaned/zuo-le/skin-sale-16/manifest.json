@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "zuo-le",
   "character_name": "Zuo Le",
   "localized_name": "左乐",
@@ -11,15 +12,29 @@
   "skin_id": "sale-16",
   "skin_name": "无息破局",
   "source": "standalone/assets/source/zuo-le/skin-sale-16",
-  "source_page": "https://prts.wiki/w/%E5%B7%A6%E4%B9%90",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/meta.json",
-    "model": "char_4121_zuole_sale_16/build/build_char_4121_zuole_sale_16",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/char_4121_zuole_sale_16/build/build_char_4121_zuole_sale_16.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/char_4121_zuole_sale_16/build/build_char_4121_zuole_sale_16.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/char_4121_zuole_sale_16/build/build_char_4121_zuole_sale_16.png"
+    "assetId": "build_char_4121_zuole_sale#16",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "左乐",
+    "appellation": "Zuo Le",
+    "skinGroupId": "2025#sale#4",
+    "skinGroupName": "忒斯特收藏/XVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4121_zuole_sale#16.atlas",
+      ".png": "build_char_4121_zuole_sale#16.png",
+      ".skel": "build_char_4121_zuole_sale#16.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/zuo-le/skin-sale-16/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -276.19019,
-      "maxX": 316.67117,
-      "minY": -89.59247,
-      "maxY": 388.99039
+      "minX": -581.26685,
+      "maxX": 1932.57385,
+      "minY": -685.47003,
+      "maxY": 582.17218
     },
     "full_source_bounds": {
       "minX": -581.26685,
@@ -129,23 +144,29 @@
       "maxY": 582.17218
     },
     "core_source_bounds": {
-      "minX": -276.19019,
-      "maxX": 316.67117,
-      "minY": -89.59247,
-      "maxY": 388.99039
+      "minX": -427.67194,
+      "maxX": 1932.57385,
+      "minY": -685.47003,
+      "maxY": 574.10211
     },
     "cluster": {
-      "retained": 2757,
+      "retained": 2850,
       "total": 2860,
-      "centerX": 3.24164,
-      "centerY": 123.60776,
-      "radiusX": 295.2394,
-      "radiusY": 571.12379
+      "centerX": 115.17476,
+      "centerY": 152.83074,
+      "radiusX": 3626.23976,
+      "radiusY": 655.64215
     },
-    "scale": 0.29687,
-    "x_offset": 89.9913,
-    "y_offset": 189.4031,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 21,
+      "visible_height": 27,
+      "density_zoom": 5.18519
+    },
+    "scale": 0.36303,
+    "x_offset": 109.97865,
+    "y_offset": 221.2298,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:43.003Z"
+  "exported_at": "2026-08-19T13:24:33.886Z"
 }

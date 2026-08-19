@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "alanna",
   "character_name": "Alanna",
   "localized_name": "阿兰娜",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/alanna/default",
-  "source_page": "https://prts.wiki/w/%E9%98%BF%E5%85%B0%E5%A8%9C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4178_alanna/meta.json",
-    "model": "defaultskin/build/build_char_4178_alanna",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4178_alanna/defaultskin/build/build_char_4178_alanna.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4178_alanna/defaultskin/build/build_char_4178_alanna.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4178_alanna/defaultskin/build/build_char_4178_alanna.png"
+    "assetId": "build_char_4178_alanna",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "阿兰娜",
+    "appellation": "Alanna",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4178_alanna.atlas",
+      ".png": "build_char_4178_alanna.png",
+      ".skel": "build_char_4178_alanna.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/alanna/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -221.52213,
-      "maxX": 171.53403,
-      "minY": -123.0634,
+      "minX": -221.69746,
+      "maxX": 172.26563,
+      "minY": -123.08054,
       "maxY": 422.64868
     },
-    "scale": 0.38115,
-    "x_offset": 105.52657,
-    "y_offset": 169.09397,
+    "full_source_bounds": {
+      "minX": -221.69746,
+      "maxX": 172.26563,
+      "minY": -123.08054,
+      "maxY": 422.64868
+    },
+    "core_source_bounds": {
+      "minX": -221.69746,
+      "maxX": 172.26563,
+      "minY": -123.08054,
+      "maxY": 422.64868
+    },
+    "cluster": {
+      "retained": 2630,
+      "total": 2630,
+      "centerX": -11.43815,
+      "centerY": 211.31195,
+      "radiusX": 466.15209,
+      "radiusY": 747.42271
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 91,
+      "visible_height": 142,
+      "density_zoom": 1
+    },
+    "scale": 0.38114,
+    "x_offset": 105.42026,
+    "y_offset": 169.08891,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:55.217Z"
+  "exported_at": "2026-08-19T13:21:22.303Z"
 }

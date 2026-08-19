@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "midnight",
   "character_name": "Midnight",
   "localized_name": "月见夜",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/midnight/default",
-  "source_page": "https://prts.wiki/w/%E6%9C%88%E8%A7%81%E5%A4%9C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_283_midn/meta.json",
-    "model": "defaultskin/build/char_283_midn",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_283_midn/defaultskin/build/char_283_midn.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_283_midn/defaultskin/build/char_283_midn.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_283_midn/defaultskin/build/char_283_midn.png"
+    "assetId": "build_char_283_midn",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "月见夜",
+    "appellation": "Midnight",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_3"
+    ],
+    "assetList": {
+      ".atlas": "char_283_midn.atlas",
+      ".png": "char_283_midn.png",
+      ".skel": "char_283_midn.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/midnight/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -248.70522,
-      "maxX": 172.48865,
+      "maxX": 172.48866,
       "minY": -153.0769,
-      "maxY": 395.26428
+      "maxY": 405.98001
     },
-    "scale": 0.37933,
-    "x_offset": 110.45546,
-    "y_offset": 157.93397,
+    "full_source_bounds": {
+      "minX": -248.70522,
+      "maxX": 172.48866,
+      "minY": -153.0769,
+      "maxY": 405.98001
+    },
+    "core_source_bounds": {
+      "minX": -248.70522,
+      "maxX": 172.48866,
+      "minY": -153.0769,
+      "maxY": 395.88837
+    },
+    "cluster": {
+      "retained": 1712,
+      "total": 1712,
+      "centerX": -3.12541,
+      "centerY": 170.27018,
+      "radiusX": 405.51245,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 83,
+      "visible_height": 147,
+      "density_zoom": 1
+    },
+    "scale": 0.37206,
+    "x_offset": 110.17838,
+    "y_offset": 159.04695,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:18.255Z"
+  "exported_at": "2026-08-19T13:23:03.094Z"
 }

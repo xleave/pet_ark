@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "leonhardt",
   "character_name": "Leonhardt",
   "localized_name": "莱恩哈特",
@@ -9,15 +12,29 @@
   "skin_id": "wild-3",
   "skin_name": "宝藏行家",
   "source": "standalone/assets/source/leonhardt/skin-wild-3",
-  "source_page": "https://prts.wiki/w/%E8%8E%B1%E6%81%A9%E5%93%88%E7%89%B9",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/meta.json",
-    "model": "char_373_lionhd_wild_3/build/build_char_373_lionhd_wild_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/char_373_lionhd_wild_3/build/build_char_373_lionhd_wild_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/char_373_lionhd_wild_3/build/build_char_373_lionhd_wild_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/char_373_lionhd_wild_3/build/build_char_373_lionhd_wild_3.png"
+    "assetId": "build_char_373_lionhd_wild#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "莱恩哈特",
+    "appellation": "Leonhardt",
+    "skinGroupId": "2020#wild",
+    "skinGroupName": "生命之地/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_373_lionhd_wild#3.atlas",
+      ".png": "build_char_373_lionhd_wild#3.png",
+      ".skel": "build_char_373_lionhd_wild#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/leonhardt/skin-wild-3/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -256.23001,
-      "maxX": 155.47899,
+      "maxX": 153.53627,
       "minY": -201.92766,
-      "maxY": 437.37424
+      "maxY": 437.98175
     },
-    "scale": 0.32535,
-    "x_offset": 112.38992,
-    "y_offset": 150.30185,
+    "full_source_bounds": {
+      "minX": -256.23001,
+      "maxX": 153.53627,
+      "minY": -201.92766,
+      "maxY": 437.98175
+    },
+    "core_source_bounds": {
+      "minX": -256.23001,
+      "maxX": 153.53627,
+      "minY": -201.92766,
+      "maxY": 433.43063
+    },
+    "cluster": {
+      "retained": 3605,
+      "total": 3605,
+      "centerX": -39.98044,
+      "centerY": 114.05638,
+      "radiusX": 537.93331,
+      "radiusY": 749.86427
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 95,
+      "visible_height": 141,
+      "density_zoom": 1
+    },
+    "scale": 0.32505,
+    "x_offset": 112.6901,
+    "y_offset": 150.36422,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:15.656Z"
+  "exported_at": "2026-08-19T13:22:51.466Z"
 }

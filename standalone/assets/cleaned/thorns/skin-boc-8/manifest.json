@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "thorns",
@@ -12,15 +12,29 @@
   "skin_id": "boc-8",
   "skin_name": "锋潮",
   "source": "standalone/assets/source/thorns/skin-boc-8",
-  "source_page": "https://prts.wiki/w/%E6%A3%98%E5%88%BA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_293_thorns/meta.json",
-    "model": "char_293_thorns_boc_8/build/build_char_293_thorns_boc_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_293_thorns/char_293_thorns_boc_8/build/build_char_293_thorns_boc_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_293_thorns/char_293_thorns_boc_8/build/build_char_293_thorns_boc_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_293_thorns/char_293_thorns_boc_8/build/build_char_293_thorns_boc_8.png"
+    "assetId": "build_char_293_thorns_boc#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "棘刺",
+    "appellation": "Thorns",
+    "skinGroupId": "2024#boc",
+    "skinGroupName": "斗争血脉/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_293_thorns_boc#8.atlas",
+      ".png": "build_char_293_thorns_boc#8.png",
+      ".skel": "build_char_293_thorns_boc#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/thorns/skin-boc-8/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -140,19 +154,19 @@
       "total": 3598,
       "centerX": -8.19951,
       "centerY": 173.35301,
-      "radiusX": 497.47502,
+      "radiusX": 497.4737,
       "radiusY": 529.96629
     },
     "pixel_probe": {
       "animation": "Relax",
       "visible_width": 63,
-      "visible_height": 90,
-      "density_zoom": 1.55556
+      "visible_height": 89,
+      "density_zoom": 1.57303
     },
-    "scale": 0.33516,
-    "x_offset": 96.7378,
-    "y_offset": 217.16771,
+    "scale": 0.33893,
+    "x_offset": 96.74608,
+    "y_offset": 217.18083,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:14.107Z"
+  "exported_at": "2026-08-19T13:24:10.173Z"
 }

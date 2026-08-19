@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "mulberry",
   "character_name": "Mulberry",
   "localized_name": "桑葚",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-14",
   "skin_name": "植药",
   "source": "standalone/assets/source/mulberry/skin-epoque-14",
-  "source_page": "https://prts.wiki/w/%E6%A1%91%E8%91%9A",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/meta.json",
-    "model": "char_473_mberry_epoque_14/build/build_char_473_mberry_epoque_14",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/char_473_mberry_epoque_14/build/build_char_473_mberry_epoque_14.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/char_473_mberry_epoque_14/build/build_char_473_mberry_epoque_14.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/char_473_mberry_epoque_14/build/build_char_473_mberry_epoque_14.png"
+    "assetId": "build_char_473_mberry_epoque#14",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "桑葚",
+    "appellation": "Mulberry",
+    "skinGroupId": "2022#epoque",
+    "skinGroupName": "时代/XIV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_473_mberry_epoque#14.atlas",
+      ".png": "build_char_473_mberry_epoque#14.png",
+      ".skel": "build_char_473_mberry_epoque#14.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/mulberry/skin-epoque-14/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -137,15 +152,21 @@
     "cluster": {
       "retained": 2645,
       "total": 2673,
-      "centerX": 18.73577,
-      "centerY": 145.31971,
-      "radiusX": 256,
-      "radiusY": 664.18529
+      "centerX": 42.92739,
+      "centerY": 182.54736,
+      "radiusX": 499.98057,
+      "radiusY": 511.44798
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 92,
+      "visible_height": 144,
+      "density_zoom": 1
     },
     "scale": 0.37796,
     "x_offset": 89.40596,
     "y_offset": 174.75812,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:22.239Z"
+  "exported_at": "2026-08-19T13:23:12.928Z"
 }

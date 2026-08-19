@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "stainless",
   "character_name": "Stainless",
   "localized_name": "白铁",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/stainless/default",
-  "source_page": "https://prts.wiki/w/%E7%99%BD%E9%93%81",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4072_ironmn/meta.json",
-    "model": "defaultskin/build/build_char_4072_ironmn",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4072_ironmn/defaultskin/build/build_char_4072_ironmn.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4072_ironmn/defaultskin/build/build_char_4072_ironmn.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4072_ironmn/defaultskin/build/build_char_4072_ironmn.png"
+    "assetId": "build_char_4072_ironmn",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "白铁",
+    "appellation": "Stainless",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4072_ironmn.atlas",
+      ".png": "build_char_4072_ironmn.png",
+      ".skel": "build_char_4072_ironmn.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/stainless/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -232.90089,
+      "minX": -232.91124,
       "maxX": 209.00375,
-      "minY": -104.76593,
-      "maxY": 411.10098
+      "minY": -105.04032,
+      "maxY": 418.64151
     },
-    "scale": 0.39828,
-    "x_offset": 100.75883,
-    "y_offset": 174.27425,
+    "full_source_bounds": {
+      "minX": -232.91124,
+      "maxX": 209.00375,
+      "minY": -105.04032,
+      "maxY": 418.64151
+    },
+    "core_source_bounds": {
+      "minX": -232.91124,
+      "maxX": 209.00375,
+      "minY": -105.04032,
+      "maxY": 412.70505
+    },
+    "cluster": {
+      "retained": 2864,
+      "total": 2864,
+      "centerX": -0.50686,
+      "centerY": 149.44884,
+      "radiusX": 483.43534,
+      "radiusY": 856.52489
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 106,
+      "visible_height": 160,
+      "density_zoom": 1
+    },
+    "scale": 0.39719,
+    "x_offset": 100.74788,
+    "y_offset": 174.27927,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:32.264Z"
+  "exported_at": "2026-08-19T13:24:01.157Z"
 }

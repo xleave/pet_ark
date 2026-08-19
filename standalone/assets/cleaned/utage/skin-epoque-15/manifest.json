@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "utage",
   "character_name": "Utage",
   "localized_name": "宴",
@@ -9,15 +12,29 @@
   "skin_id": "epoque-15",
   "skin_name": "伪装",
   "source": "standalone/assets/source/utage/skin-epoque-15",
-  "source_page": "https://prts.wiki/w/%E5%AE%B4",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_337_utage/meta.json",
-    "model": "char_337_utage_epoque_15/build/build_char_337_utage_epoque_15",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_337_utage/char_337_utage_epoque_15/build/build_char_337_utage_epoque_15.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_337_utage/char_337_utage_epoque_15/build/build_char_337_utage_epoque_15.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_337_utage/char_337_utage_epoque_15/build/build_char_337_utage_epoque_15.png"
+    "assetId": "build_char_337_utage_epoque#15",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "宴",
+    "appellation": "Utage",
+    "skinGroupId": "2022#epoque#2",
+    "skinGroupName": "时代/XV",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_337_utage_epoque#15.atlas",
+      ".png": "build_char_337_utage_epoque#15.png",
+      ".skel": "build_char_337_utage_epoque#15.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/utage/skin-epoque-15/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -260.7146,
-      "maxX": 203.66359,
+      "minX": -255.8282,
+      "maxX": 203.6116,
       "minY": -125.26488,
-      "maxY": 402.53107
+      "maxY": 402.49634
     },
-    "scale": 0.379,
-    "x_offset": 106.81121,
-    "y_offset": 168.52443,
+    "full_source_bounds": {
+      "minX": -255.8282,
+      "maxX": 203.6116,
+      "minY": -125.26488,
+      "maxY": 402.49634
+    },
+    "core_source_bounds": {
+      "minX": -255.8282,
+      "maxX": 203.6116,
+      "minY": -125.26488,
+      "maxY": 400.71323
+    },
+    "cluster": {
+      "retained": 3052,
+      "total": 3052,
+      "centerX": 10.90473,
+      "centerY": 207.7092,
+      "radiusX": 332.53947,
+      "radiusY": 659.92451
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 153,
+      "visible_height": 154,
+      "density_zoom": 1
+    },
+    "scale": 0.38308,
+    "x_offset": 106.00144,
+    "y_offset": 168.01413,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:35.986Z"
+  "exported_at": "2026-08-19T13:24:17.328Z"
 }

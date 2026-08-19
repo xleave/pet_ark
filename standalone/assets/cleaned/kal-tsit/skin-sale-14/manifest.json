@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "kal-tsit",
   "character_name": "Kal'tsit",
   "localized_name": "凯尔希",
@@ -11,15 +12,29 @@
   "skin_id": "sale-14",
   "skin_name": "时遗",
   "source": "standalone/assets/source/kal-tsit/skin-sale-14",
-  "source_page": "https://prts.wiki/w/%E5%87%AF%E5%B0%94%E5%B8%8C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/meta.json",
-    "model": "char_003_kalts_sale_14/build/build_char_003_kalts_sale_14",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/char_003_kalts_sale_14/build/build_char_003_kalts_sale_14.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/char_003_kalts_sale_14/build/build_char_003_kalts_sale_14.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/char_003_kalts_sale_14/build/build_char_003_kalts_sale_14.png"
+    "assetId": "build_char_003_kalts_sale#14",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "凯尔希",
+    "appellation": "Kal'tsit",
+    "skinGroupId": "2025#sale#2",
+    "skinGroupName": "忒斯特收藏/XVI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_003_kalts_sale#14.atlas",
+      ".png": "build_char_003_kalts_sale#14.png",
+      ".skel": "build_char_003_kalts_sale#14.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/kal-tsit/skin-sale-14/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -213.73592,
-      "maxX": 139.79207,
+      "minX": -1514.91052,
+      "maxX": 1476.48987,
       "minY": -129.57736,
-      "maxY": 434.66974
+      "maxY": 898.48383
     },
     "full_source_bounds": {
       "minX": -1514.91052,
@@ -129,23 +144,29 @@
       "maxY": 898.48383
     },
     "core_source_bounds": {
-      "minX": -213.73592,
-      "maxX": 139.79207,
+      "minX": -1514.91052,
+      "maxX": 1476.48987,
       "minY": -129.57736,
-      "maxY": 434.66974
+      "maxY": 898.48383
     },
     "cluster": {
-      "retained": 2584,
+      "retained": 2700,
       "total": 2700,
-      "centerX": -4.34441,
-      "centerY": 164.27143,
-      "radiusX": 309.38313,
-      "radiusY": 573.43445
+      "centerX": 730.84778,
+      "centerY": 558.45465,
+      "radiusX": 4037.14844,
+      "radiusY": 2093.40576
     },
-    "scale": 0.36863,
-    "x_offset": 109.62906,
-    "y_offset": 168.23353,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 20,
+      "visible_height": 26,
+      "density_zoom": 5.38462
+    },
+    "scale": 0.31681,
+    "x_offset": 115.54748,
+    "y_offset": 218.02609,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:07.977Z"
+  "exported_at": "2026-08-19T13:22:42.174Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "pramanix-the-prerita",
   "character_name": "Pramanix the Prerita",
   "localized_name": "圣聆初雪",
@@ -9,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/pramanix-the-prerita/default",
-  "source_page": "https://prts.wiki/w/%E5%9C%A3%E8%81%86%E5%88%9D%E9%9B%AA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1046_sbell2/meta.json",
-    "model": "defaultskin/build/build_char_1046_sbell2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1046_sbell2/defaultskin/build/build_char_1046_sbell2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1046_sbell2/defaultskin/build/build_char_1046_sbell2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1046_sbell2/defaultskin/build/build_char_1046_sbell2.png"
+    "assetId": "build_char_1046_sbell2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "圣聆初雪",
+    "appellation": "Pramanix the Prerita",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1046_sbell2.atlas",
+      ".png": "build_char_1046_sbell2.png",
+      ".skel": "build_char_1046_sbell2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/pramanix-the-prerita/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -217.71762,
+      "minX": -233.84531,
       "maxX": 196.16782,
-      "minY": -125.47644,
-      "maxY": 413.85461
+      "minY": -121.86004,
+      "maxY": 414.47656
     },
-    "scale": 0.38566,
-    "x_offset": 100.15548,
-    "y_offset": 167.60839,
+    "full_source_bounds": {
+      "minX": -233.84531,
+      "maxX": 196.16782,
+      "minY": -121.86004,
+      "maxY": 414.47656
+    },
+    "core_source_bounds": {
+      "minX": -233.84531,
+      "maxX": 196.16782,
+      "minY": -121.86004,
+      "maxY": 409.55869
+    },
+    "cluster": {
+      "retained": 3733,
+      "total": 3733,
+      "centerX": -5.13592,
+      "centerY": 218.49345,
+      "radiusX": 452.5507,
+      "radiusY": 655.02235
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 152,
+      "visible_height": 160,
+      "density_zoom": 1
+    },
+    "scale": 0.38782,
+    "x_offset": 103.30597,
+    "y_offset": 168.74071,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:24.537Z"
+  "exported_at": "2026-08-19T13:23:31.833Z"
 }

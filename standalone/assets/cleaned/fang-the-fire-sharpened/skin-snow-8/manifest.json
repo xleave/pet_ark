@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "fang-the-fire-sharpened",
   "character_name": "Fang the Fire-sharpened",
   "localized_name": "历阵锐枪芬",
@@ -11,15 +12,30 @@
   "skin_id": "snow-8",
   "skin_name": "纯净乐段",
   "source": "standalone/assets/source/fang-the-fire-sharpened/skin-snow-8",
-  "source_page": "https://prts.wiki/w/%E5%8E%86%E9%98%B5%E9%94%90%E6%9E%AA%E8%8A%AC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1036_fang2/meta.json",
-    "model": "char_1036_fang2_snow_8/build/build_char_1036_fang2_snow_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1036_fang2/char_1036_fang2_snow_8/build/build_char_1036_fang2_snow_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1036_fang2/char_1036_fang2_snow_8/build/build_char_1036_fang2_snow_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1036_fang2/char_1036_fang2_snow_8/build/build_char_1036_fang2_snow_8.png"
+    "assetId": "build_char_1036_fang2_snow#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "历阵锐枪芬",
+    "appellation": "Fang the Fire-sharpened",
+    "skinGroupId": "2025#xmas",
+    "skinGroupName": "冰原信使/VIII",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1036_fang2_snow#8.atlas",
+      ".png": "build_char_1036_fang2_snow#8.png",
+      ".skel": "build_char_1036_fang2_snow#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +118,7 @@
       "path": "standalone/assets/cleaned/fang-the-fire-sharpened/skin-snow-8/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +131,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -230.35986,
-      "maxX": 275.30072,
+      "maxX": 644.80652,
       "minY": -133.45869,
-      "maxY": 413.73639
+      "maxY": 415.73352
     },
     "full_source_bounds": {
       "minX": -230.35986,
@@ -130,22 +146,28 @@
     },
     "core_source_bounds": {
       "minX": -230.35986,
-      "maxX": 275.30072,
+      "maxX": 644.80652,
       "minY": -133.45869,
       "maxY": 413.73639
     },
     "cluster": {
-      "retained": 2431,
+      "retained": 2479,
       "total": 2479,
-      "centerX": -2.63691,
-      "centerY": 141.57271,
-      "radiusX": 284.55035,
-      "radiusY": 675.77208
+      "centerX": 69.52162,
+      "centerY": 147.55268,
+      "radiusX": 1252.8595,
+      "radiusY": 963.09675
     },
-    "scale": 0.34806,
-    "x_offset": 88.17895,
-    "y_offset": 169.54843,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 54,
+      "visible_height": 84,
+      "density_zoom": 1.66667
+    },
+    "scale": 0.33517,
+    "x_offset": 105.71072,
+    "y_offset": 216.26807,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:39.289Z"
+  "exported_at": "2026-08-19T13:22:11.578Z"
 }

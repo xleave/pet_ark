@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "silence-the-paradigmatic",
   "character_name": "Silence the Paradigmatic",
   "localized_name": "淬羽赫默",
@@ -11,15 +12,30 @@
   "skin_id": "epoque-32",
   "skin_name": "栖息",
   "source": "standalone/assets/source/silence-the-paradigmatic/skin-epoque-32",
-  "source_page": "https://prts.wiki/w/%E6%B7%AC%E7%BE%BD%E8%B5%AB%E9%BB%98",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/meta.json",
-    "model": "char_1031_slent2_epoque_32/build/build_char_1031_slent2_epoque_32",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/char_1031_slent2_epoque_32/build/build_char_1031_slent2_epoque_32.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/char_1031_slent2_epoque_32/build/build_char_1031_slent2_epoque_32.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/char_1031_slent2_epoque_32/build/build_char_1031_slent2_epoque_32.png"
+    "assetId": "build_char_1031_slent2_epoque#32",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "淬羽赫默",
+    "appellation": "Silence the Paradigmatic",
+    "skinGroupId": "2024#epoque#3",
+    "skinGroupName": "时代/XXXII",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1031_slent2_epoque#32.atlas",
+      ".png": "build_char_1031_slent2_epoque#32.png",
+      ".skel": "build_char_1031_slent2_epoque#32.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +118,7 @@
       "path": "standalone/assets/cleaned/silence-the-paradigmatic/skin-epoque-32/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,10 +131,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -301.76392,
-      "maxX": 241.87016,
+      "minX": -897.2312,
+      "maxX": 403.75998,
       "minY": -117.51341,
       "maxY": 496.80643
     },
@@ -129,23 +145,29 @@
       "maxY": 496.80643
     },
     "core_source_bounds": {
-      "minX": -301.76392,
+      "minX": -897.2312,
       "maxX": 241.87016,
       "minY": -117.51341,
       "maxY": 496.80643
     },
     "cluster": {
-      "retained": 2598,
+      "retained": 2602,
       "total": 2606,
-      "centerX": 1.33875,
-      "centerY": 129.30707,
-      "radiusX": 305.89368,
-      "radiusY": 610.62122
+      "centerX": -41.04949,
+      "centerY": 237.30034,
+      "radiusX": 735.13069,
+      "radiusY": 830.68317
     },
-    "scale": 0.32375,
-    "x_offset": 105.69522,
-    "y_offset": 177.95536,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 42,
+      "visible_height": 53,
+      "density_zoom": 2.64151
+    },
+    "scale": 0.35735,
+    "x_offset": 106.24577,
+    "y_offset": 218.91256,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:25.569Z"
+  "exported_at": "2026-08-19T13:23:55.415Z"
 }

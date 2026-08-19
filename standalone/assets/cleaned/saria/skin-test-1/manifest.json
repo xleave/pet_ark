@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "saria",
   "character_name": "Saria",
   "localized_name": "塞雷娅",
@@ -11,15 +12,29 @@
   "skin_id": "test-1",
   "skin_name": "铁律",
   "source": "standalone/assets/source/saria/skin-test-1",
-  "source_page": "https://prts.wiki/w/%E5%A1%9E%E9%9B%B7%E5%A8%85",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/meta.json",
-    "model": "char_202_demkni_test_1/build/build_char_202_demkni_test_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/char_202_demkni_test_1/build/build_char_202_demkni_test_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/char_202_demkni_test_1/build/build_char_202_demkni_test_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/char_202_demkni_test_1/build/build_char_202_demkni_test_1.png"
+    "assetId": "build_char_202_demkni_test#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "塞雷娅",
+    "appellation": "Saria",
+    "skinGroupId": "2020#sale#2",
+    "skinGroupName": "忒斯特收藏/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_202_demkni_test#1.atlas",
+      ".png": "build_char_202_demkni_test#1.png",
+      ".skel": "build_char_202_demkni_test#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/saria/skin-test-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -137,15 +152,21 @@
     "cluster": {
       "retained": 2011,
       "total": 2011,
-      "centerX": -3.61738,
-      "centerY": 143.28956,
-      "radiusX": 281.8442,
-      "radiusY": 661.3488
+      "centerX": -2.28857,
+      "centerY": 217.62782,
+      "radiusX": 384.65911,
+      "radiusY": 664.96994
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 93,
+      "visible_height": 138,
+      "density_zoom": 1.01449
     },
     "scale": 0.35194,
     "x_offset": 114.73641,
     "y_offset": 178.35739,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:36.217Z"
+  "exported_at": "2026-08-19T13:23:48.200Z"
 }

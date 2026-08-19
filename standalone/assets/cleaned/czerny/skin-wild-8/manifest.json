@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "czerny",
   "character_name": "Czerny",
   "localized_name": "车尔尼",
@@ -11,15 +12,29 @@
   "skin_id": "wild-8",
   "skin_name": "荒野寻音",
   "source": "standalone/assets/source/czerny/skin-wild-8",
-  "source_page": "https://prts.wiki/w/%E8%BD%A6%E5%B0%94%E5%B0%BC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4047_pianst/meta.json",
-    "model": "char_4047_pianst_wild_8/build/build_char_4047_pianst_wild_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4047_pianst/char_4047_pianst_wild_8/build/build_char_4047_pianst_wild_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4047_pianst/char_4047_pianst_wild_8/build/build_char_4047_pianst_wild_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4047_pianst/char_4047_pianst_wild_8/build/build_char_4047_pianst_wild_8.png"
+    "assetId": "build_char_4047_pianst_wild#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "车尔尼",
+    "appellation": "Czerny",
+    "skinGroupId": "2023#wild#2",
+    "skinGroupName": "生命之地/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4047_pianst_wild#8.atlas",
+      ".png": "build_char_4047_pianst_wild#8.png",
+      ".skel": "build_char_4047_pianst_wild#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/czerny/skin-wild-8/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -288.8537,
-      "maxX": 308.70377,
+      "minX": -507.96616,
+      "maxX": 539.30945,
       "minY": -103.31664,
-      "maxY": 477.13983
+      "maxY": 505.05603
     },
     "full_source_bounds": {
       "minX": -507.96616,
@@ -129,23 +144,29 @@
       "maxY": 505.05603
     },
     "core_source_bounds": {
-      "minX": -288.8537,
-      "maxX": 308.70377,
+      "minX": -507.96616,
+      "maxX": 539.30945,
       "minY": -103.31664,
       "maxY": 477.13983
     },
     "cluster": {
-      "retained": 1929,
+      "retained": 1946,
       "total": 1946,
-      "centerX": -2.87889,
-      "centerY": 161.2333,
-      "radiusX": 294.7693,
-      "radiusY": 729.27435
+      "centerX": -3.15957,
+      "centerY": 174.33504,
+      "radiusX": 539.63729,
+      "radiusY": 950.63774
     },
-    "scale": 0.29453,
-    "x_offset": 93.07676,
-    "y_offset": 185.56991,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 45,
+      "visible_height": 80,
+      "density_zoom": 1.75
+    },
+    "scale": 0.2941,
+    "x_offset": 98.39103,
+    "y_offset": 217.11495,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:37.706Z"
+  "exported_at": "2026-08-19T13:21:58.187Z"
 }

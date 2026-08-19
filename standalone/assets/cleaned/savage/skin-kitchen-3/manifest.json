@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "savage",
   "character_name": "Savage",
   "localized_name": "暴行",
@@ -9,15 +12,29 @@
   "skin_id": "kitchen-3",
   "skin_name": "家传秘方",
   "source": "standalone/assets/source/savage/skin-kitchen-3",
-  "source_page": "https://prts.wiki/w/%E6%9A%B4%E8%A1%8C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/meta.json",
-    "model": "char_230_savage_kitchen_3/build/build_char_230_savage_kitchen_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/char_230_savage_kitchen_3/build/build_char_230_savage_kitchen_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/char_230_savage_kitchen_3/build/build_char_230_savage_kitchen_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/char_230_savage_kitchen_3/build/build_char_230_savage_kitchen_3.png"
+    "assetId": "build_char_230_savage_kitchen#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "暴行",
+    "appellation": "Savage",
+    "skinGroupId": "2025#kitchen",
+    "skinGroupName": "罗德厨房/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_230_savage_kitchen#3.atlas",
+      ".png": "build_char_230_savage_kitchen#3.png",
+      ".skel": "build_char_230_savage_kitchen#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/savage/skin-kitchen-3/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -271.83319,
-      "maxX": 223.80957,
-      "minY": -107.32368,
-      "maxY": 468.07199
+      "minX": -270.38971,
+      "maxX": 225.23943,
+      "minY": -107.34978,
+      "maxY": 467.66763
     },
-    "scale": 0.35509,
-    "x_offset": 104.52646,
-    "y_offset": 177.88996,
+    "full_source_bounds": {
+      "minX": -270.38971,
+      "maxX": 225.23943,
+      "minY": -107.34978,
+      "maxY": 467.66763
+    },
+    "core_source_bounds": {
+      "minX": -270.38971,
+      "maxX": 191.2688,
+      "minY": -107.34978,
+      "maxY": 467.66763
+    },
+    "cluster": {
+      "retained": 2531,
+      "total": 2531,
+      "centerX": -9.26693,
+      "centerY": 202.14082,
+      "radiusX": 379.93689,
+      "radiusY": 585.0692
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 99,
+      "visible_height": 166,
+      "density_zoom": 1
+    },
+    "scale": 0.3551,
+    "x_offset": 104.01653,
+    "y_offset": 177.87964,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:29.453Z"
+  "exported_at": "2026-08-19T13:23:48.718Z"
 }

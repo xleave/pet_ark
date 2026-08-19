@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "highmore",
   "character_name": "Highmore",
   "localized_name": "海沫",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-45",
   "skin_name": "搁浅",
   "source": "standalone/assets/source/highmore/skin-epoque-45",
-  "source_page": "https://prts.wiki/w/%E6%B5%B7%E6%B2%AB",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/meta.json",
-    "model": "char_4066_highmo_epoque_45/build/build_char_4066_highmo_epoque_45",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/char_4066_highmo_epoque_45/build/build_char_4066_highmo_epoque_45.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/char_4066_highmo_epoque_45/build/build_char_4066_highmo_epoque_45.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/char_4066_highmo_epoque_45/build/build_char_4066_highmo_epoque_45.png"
+    "assetId": "build_char_4066_highmo_epoque#45",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "海沫",
+    "appellation": "Highmore",
+    "skinGroupId": "2025#epoque#7",
+    "skinGroupName": "时代/XLIV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4066_highmo_epoque#45.atlas",
+      ".png": "build_char_4066_highmo_epoque#45.png",
+      ".skel": "build_char_4066_highmo_epoque#45.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/highmore/skin-epoque-45/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -344.23999,
-      "maxX": 204.85631,
-      "minY": -283.06,
-      "maxY": 398.18173
+      "maxX": 637.42493,
+      "minY": -579.08978,
+      "maxY": 402.56677
     },
     "full_source_bounds": {
       "minX": -344.23999,
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -344.23999,
-      "maxX": 204.85631,
-      "minY": -283.06,
+      "maxX": 572.92432,
+      "minY": -579.08978,
       "maxY": 398.18173
     },
     "cluster": {
-      "retained": 3763,
+      "retained": 3764,
       "total": 3770,
-      "centerX": -16.47597,
-      "centerY": 123.2654,
-      "radiusX": 350.14157,
-      "radiusY": 597.7625
+      "centerX": -4.27452,
+      "centerY": 166.2281,
+      "radiusX": 525.01415,
+      "radiusY": 830.10529
     },
-    "scale": 0.30532,
-    "x_offset": 117.27865,
-    "y_offset": 129.57476,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 50,
+      "visible_height": 72,
+      "density_zoom": 1.94444
+    },
+    "scale": 0.34861,
+    "x_offset": 115.86802,
+    "y_offset": 216.34336,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:42.160Z"
+  "exported_at": "2026-08-19T13:22:28.834Z"
 }

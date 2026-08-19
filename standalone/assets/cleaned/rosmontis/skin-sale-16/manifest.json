@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "rosmontis",
   "character_name": "Rosmontis",
   "localized_name": "迷迭香",
@@ -11,15 +12,29 @@
   "skin_id": "sale-16",
   "skin_name": "轻盈一梦",
   "source": "standalone/assets/source/rosmontis/skin-sale-16",
-  "source_page": "https://prts.wiki/w/%E8%BF%B7%E8%BF%AD%E9%A6%99",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_391_rosmon/meta.json",
-    "model": "char_391_rosmon_sale_16/build/build_char_391_rosmon_sale_16",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_391_rosmon/char_391_rosmon_sale_16/build/build_char_391_rosmon_sale_16.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_391_rosmon/char_391_rosmon_sale_16/build/build_char_391_rosmon_sale_16.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_391_rosmon/char_391_rosmon_sale_16/build/build_char_391_rosmon_sale_16.png"
+    "assetId": "build_char_391_rosmon_sale#16",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "迷迭香",
+    "appellation": "Rosmontis",
+    "skinGroupId": "2025#sale#4",
+    "skinGroupName": "忒斯特收藏/XVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_391_rosmon_sale#16.atlas",
+      ".png": "build_char_391_rosmon_sale#16.png",
+      ".skel": "build_char_391_rosmon_sale#16.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/rosmontis/skin-sale-16/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,37 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -271.30743,
-      "maxX": 288.17001,
+      "minX": -667.70001,
+      "maxX": 600.29065,
       "minY": -129.89067,
-      "maxY": 450.36792
+      "maxY": 465.03003
     },
     "full_source_bounds": {
-      "minX": -964.77271,
+      "minX": -667.70001,
       "maxX": 1283.15002,
-      "minY": -921.59271,
-      "maxY": 644.90149
+      "minY": -129.89067,
+      "maxY": 568.44
     },
     "core_source_bounds": {
-      "minX": -271.30743,
-      "maxX": 288.17001,
+      "minX": -667.70001,
+      "maxX": 600.29065,
       "minY": -129.89067,
-      "maxY": 450.36792
+      "maxY": 465.03003
     },
     "cluster": {
-      "retained": 3556,
-      "total": 3621,
-      "centerX": 0.75307,
-      "centerY": 125.72161,
-      "radiusX": 289.21579,
-      "radiusY": 663.23184
+      "retained": 3584,
+      "total": 3587,
+      "centerX": 9.0089,
+      "centerY": 164.13424,
+      "radiusX": 563.63737,
+      "radiusY": 728.95774
     },
-    "scale": 0.31458,
-    "x_offset": 93.34769,
-    "y_offset": 175.13909,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 41,
+      "visible_height": 62,
+      "density_zoom": 2.25806
+    },
+    "scale": 0.31342,
+    "x_offset": 115.59613,
+    "y_offset": 218.19231,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:42.102Z"
+  "exported_at": "2026-08-19T13:23:44.968Z"
 }

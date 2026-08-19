@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "zinogre-s-catapult",
   "character_name": "Zinogre S Catapult",
   "localized_name": "雷狼龙S空爆",
@@ -9,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/zinogre-s-catapult/default",
-  "source_page": "https://prts.wiki/w/%E9%9B%B7%E7%8B%BC%E9%BE%99S%E7%A9%BA%E7%88%86",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1049_catap2/meta.json",
-    "model": "defaultskin/build/build_char_1049_catap2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1049_catap2/defaultskin/build/build_char_1049_catap2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1049_catap2/defaultskin/build/build_char_1049_catap2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1049_catap2/defaultskin/build/build_char_1049_catap2.png"
+    "assetId": "build_char_1049_catap2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "雷狼龙S空爆",
+    "appellation": "Zinogre S Catapult",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1049_catap2.atlas",
+      ".png": "build_char_1049_catap2.png",
+      ".skel": "build_char_1049_catap2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/zinogre-s-catapult/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -292.41199,
-      "maxX": 159.42557,
-      "minY": -135.20601,
-      "maxY": 452.22394
+      "maxX": 159.56656,
+      "minY": -136.67087,
+      "maxY": 450.82407
     },
-    "scale": 0.35408,
-    "x_offset": 119.54423,
-    "y_offset": 168.12561,
+    "full_source_bounds": {
+      "minX": -292.41199,
+      "maxX": 159.56656,
+      "minY": -136.67087,
+      "maxY": 450.82407
+    },
+    "core_source_bounds": {
+      "minX": -292.41199,
+      "maxX": 149.00314,
+      "minY": -136.67087,
+      "maxY": 443.46375
+    },
+    "cluster": {
+      "retained": 3221,
+      "total": 3221,
+      "centerX": 1.84527,
+      "centerY": 208.89443,
+      "radiusX": 409.95578,
+      "radiusY": 694.97723
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 92,
+      "visible_height": 155,
+      "density_zoom": 1
+    },
+    "scale": 0.35405,
+    "x_offset": 119.51667,
+    "y_offset": 167.61228,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:39.583Z"
+  "exported_at": "2026-08-19T13:24:33.273Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "gnosis",
   "character_name": "Gnosis",
   "localized_name": "灵知",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/gnosis/default",
-  "source_page": "https://prts.wiki/w/%E7%81%B5%E7%9F%A5",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_206_gnosis/meta.json",
-    "model": "defaultskin/build/build_char_206_gnosis",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_206_gnosis/defaultskin/build/build_char_206_gnosis.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_206_gnosis/defaultskin/build/build_char_206_gnosis.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_206_gnosis/defaultskin/build/build_char_206_gnosis.png"
+    "assetId": "build_char_206_gnosis",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "灵知",
+    "appellation": "Gnosis",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_206_gnosis.atlas",
+      ".png": "build_char_206_gnosis.png",
+      ".skel": "build_char_206_gnosis.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/gnosis/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -291.27002,
       "maxX": 294.74002,
       "minY": -124.44381,
       "maxY": 415.05765
     },
+    "full_source_bounds": {
+      "minX": -291.27002,
+      "maxX": 294.74002,
+      "minY": -124.44381,
+      "maxY": 415.05765
+    },
+    "core_source_bounds": {
+      "minX": -291.27002,
+      "maxX": 294.74002,
+      "minY": -124.44381,
+      "maxY": 415.05765
+    },
+    "cluster": {
+      "retained": 2390,
+      "total": 2390,
+      "centerX": 5.73777,
+      "centerY": 161.37461,
+      "radiusX": 458.04391,
+      "radiusY": 521.42448
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 66,
+      "visible_height": 120,
+      "density_zoom": 1.16667
+    },
     "scale": 0.30034,
     "x_offset": 95.47892,
     "y_offset": 178.62503,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:08.232Z"
+  "exported_at": "2026-08-19T13:22:19.302Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "poncirus",
   "character_name": "Poncirus",
   "localized_name": "青枳",
@@ -9,15 +12,29 @@
   "skin_id": "epoque-34",
   "skin_name": "晚风休憩",
   "source": "standalone/assets/source/poncirus/skin-epoque-34",
-  "source_page": "https://prts.wiki/w/%E9%9D%92%E6%9E%B3",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_488_buildr/meta.json",
-    "model": "char_488_buildr_epoque_34/build/build_char_488_buildr_epoque_34",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_488_buildr/char_488_buildr_epoque_34/build/build_char_488_buildr_epoque_34.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_488_buildr/char_488_buildr_epoque_34/build/build_char_488_buildr_epoque_34.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_488_buildr/char_488_buildr_epoque_34/build/build_char_488_buildr_epoque_34.png"
+    "assetId": "build_char_488_buildr_epoque#34",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "青枳",
+    "appellation": "Poncirus",
+    "skinGroupId": "2024#epoque#5",
+    "skinGroupName": "时代/XXXIV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_488_buildr_epoque#34.atlas",
+      ".png": "build_char_488_buildr_epoque#34.png",
+      ".skel": "build_char_488_buildr_epoque#34.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/poncirus/skin-epoque-34/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -249.70187,
-      "maxX": 294.70209,
-      "minY": -108.75529,
-      "maxY": 380.08676
+      "maxX": 266.34225,
+      "minY": -109.8443,
+      "maxY": 377.32227
     },
-    "scale": 0.32329,
-    "x_offset": 88.72596,
-    "y_offset": 180.84057,
+    "full_source_bounds": {
+      "minX": -249.70187,
+      "maxX": 266.34225,
+      "minY": -109.8443,
+      "maxY": 377.32227
+    },
+    "core_source_bounds": {
+      "minX": -231.27911,
+      "maxX": 169.48444,
+      "minY": -109.8443,
+      "maxY": 371.67456
+    },
+    "cluster": {
+      "retained": 1694,
+      "total": 1694,
+      "centerX": 16.95666,
+      "centerY": 227.04531,
+      "radiusX": 320,
+      "radiusY": 606.026
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 90,
+      "visible_height": 126,
+      "density_zoom": 1.11111
+    },
+    "scale": 0.34106,
+    "x_offset": 93.16235,
+    "y_offset": 178.53693,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:24.132Z"
+  "exported_at": "2026-08-19T13:23:29.995Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "scene",
   "character_name": "Scene",
   "localized_name": "稀音",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/scene/default",
-  "source_page": "https://prts.wiki/w/%E7%A8%80%E9%9F%B3",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/meta.json",
-    "model": "defaultskin/build/build_char_336_folivo",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/defaultskin/build/build_char_336_folivo.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/defaultskin/build/build_char_336_folivo.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/defaultskin/build/build_char_336_folivo.png"
+    "assetId": "build_char_336_folivo",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "稀音",
+    "appellation": "Scene",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_336_folivo.atlas",
+      ".png": "build_char_336_folivo.png",
+      ".skel": "build_char_336_folivo.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/scene/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -237.47342,
       "maxX": 181.66507,
       "minY": -113.72222,
       "maxY": 398.36221
     },
+    "full_source_bounds": {
+      "minX": -237.47342,
+      "maxX": 181.66507,
+      "minY": -113.72222,
+      "maxY": 398.36221
+    },
+    "core_source_bounds": {
+      "minX": -237.47342,
+      "maxX": 181.66507,
+      "minY": -113.72222,
+      "maxY": 398.36221
+    },
+    "cluster": {
+      "retained": 1836,
+      "total": 1836,
+      "centerX": -2.94245,
+      "centerY": 197.73083,
+      "radiusX": 390.00274,
+      "radiusY": 609.99969
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 85,
+      "visible_height": 159,
+      "density_zoom": 1
+    },
     "scale": 0.40618,
     "x_offset": 107.3342,
     "y_offset": 169.80797,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:29.510Z"
+  "exported_at": "2026-08-19T13:23:49.271Z"
 }

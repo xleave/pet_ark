@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "diamante",
   "character_name": "Diamante",
   "localized_name": "折光",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-37",
   "skin_name": "斜照",
   "source": "standalone/assets/source/diamante/skin-epoque-37",
-  "source_page": "https://prts.wiki/w/%E6%8A%98%E5%85%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_499_kaitou/meta.json",
-    "model": "char_499_kaitou_epoque_37/build/build_char_499_kaitou_epoque_37",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_499_kaitou/char_499_kaitou_epoque_37/build/build_char_499_kaitou_epoque_37.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_499_kaitou/char_499_kaitou_epoque_37/build/build_char_499_kaitou_epoque_37.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_499_kaitou/char_499_kaitou_epoque_37/build/build_char_499_kaitou_epoque_37.png"
+    "assetId": "build_char_499_kaitou_epoque#37",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "折光",
+    "appellation": "Diamante",
+    "skinGroupId": "2024#epoque#8",
+    "skinGroupName": "时代/XXXVII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_499_kaitou_epoque#37.atlas",
+      ".png": "build_char_499_kaitou_epoque#37.png",
+      ".skel": "build_char_499_kaitou_epoque#37.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/diamante/skin-epoque-37/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -117,9 +132,9 @@
   "placement": {
     "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -219.65692,
+      "minX": -353.65472,
       "maxX": 180.65314,
-      "minY": -113.40078,
+      "minY": -136.19968,
       "maxY": 386.88318
     },
     "full_source_bounds": {
@@ -129,23 +144,29 @@
       "maxY": 387.57272
     },
     "core_source_bounds": {
-      "minX": -219.65692,
+      "minX": -353.65472,
       "maxX": 180.65314,
-      "minY": -113.40078,
+      "minY": -136.19968,
       "maxY": 386.88318
     },
     "cluster": {
-      "retained": 2598,
+      "retained": 2602,
       "total": 2605,
-      "centerX": -4.25437,
-      "centerY": 132.86703,
-      "radiusX": 264.06483,
-      "radiusY": 635.07895
+      "centerX": -4.76211,
+      "centerY": 200.02053,
+      "radiusX": 342.499,
+      "radiusY": 704.97988
     },
-    "scale": 0.41,
-    "x_offset": 103.99578,
-    "y_offset": 169.50568,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 64,
+      "visible_height": 127,
+      "density_zoom": 1.125
+    },
+    "scale": 0.3294,
+    "x_offset": 124.4932,
+    "y_offset": 171.13608,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:38.652Z"
+  "exported_at": "2026-08-19T13:21:59.741Z"
 }

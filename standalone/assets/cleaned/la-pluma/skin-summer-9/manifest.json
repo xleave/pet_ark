@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "la-pluma",
@@ -12,15 +12,29 @@
   "skin_id": "summer-9",
   "skin_name": "夏卉 FA210",
   "source": "standalone/assets/source/la-pluma/skin-summer-9",
-  "source_page": "https://prts.wiki/w/%E7%BE%BD%E6%AF%9B%E7%AC%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/meta.json",
-    "model": "char_421_crow_summer_9/build/build_char_421_crow_summer_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/char_421_crow_summer_9/build/build_char_421_crow_summer_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/char_421_crow_summer_9/build/build_char_421_crow_summer_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/char_421_crow_summer_9/build/build_char_421_crow_summer_9.png"
+    "assetId": "build_char_421_crow_summer#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "羽毛笔",
+    "appellation": "La Pluma",
+    "skinGroupId": "2022#summer#2",
+    "skinGroupName": "珊瑚海岸/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_421_crow_summer#9.atlas",
+      ".png": "build_char_421_crow_summer#9.png",
+      ".skel": "build_char_421_crow_summer#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/la-pluma/skin-summer-9/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -145,14 +159,14 @@
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 57,
+      "visible_width": 55,
       "visible_height": 119,
-      "density_zoom": 1.26316
+      "density_zoom": 1.30909
     },
-    "scale": 0.38484,
-    "x_offset": 98.92675,
-    "y_offset": 215.63852,
+    "scale": 0.39884,
+    "x_offset": 99.03318,
+    "y_offset": 215.62538,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:56.678Z"
+  "exported_at": "2026-08-19T13:22:45.947Z"
 }

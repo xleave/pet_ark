@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "glaucus",
   "character_name": "Glaucus",
   "localized_name": "格劳克斯",
@@ -11,15 +12,29 @@
   "skin_id": "ghost-1",
   "skin_name": "广场扫荡客",
   "source": "standalone/assets/source/glaucus/skin-ghost-1",
-  "source_page": "https://prts.wiki/w/%E6%A0%BC%E5%8A%B3%E5%85%8B%E6%96%AF",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_326_glacus/meta.json",
-    "model": "char_326_glacus_ghost_1/build/build_char_326_glacus_ghost_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_326_glacus/char_326_glacus_ghost_1/build/build_char_326_glacus_ghost_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_326_glacus/char_326_glacus_ghost_1/build/build_char_326_glacus_ghost_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_326_glacus/char_326_glacus_ghost_1/build/build_char_326_glacus_ghost_1.png"
+    "assetId": "build_char_326_glacus_ghost#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "格劳克斯",
+    "appellation": "Glaucus",
+    "skinGroupId": "2020#ghost",
+    "skinGroupName": "缠梦古堡",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_326_glacus_ghost#1.atlas",
+      ".png": "build_char_326_glacus_ghost#1.png",
+      ".skel": "build_char_326_glacus_ghost#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/glaucus/skin-ghost-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -117,10 +132,10 @@
   "placement": {
     "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -251.76889,
+      "minX": -380.40646,
       "maxX": 218.77773,
       "minY": -151.40738,
-      "maxY": 402.95428
+      "maxY": 468.41229
     },
     "full_source_bounds": {
       "minX": -792.12,
@@ -129,23 +144,29 @@
       "maxY": 527.37
     },
     "core_source_bounds": {
-      "minX": -251.76889,
+      "minX": -380.40646,
       "maxX": 218.77773,
       "minY": -151.40738,
-      "maxY": 402.95428
+      "maxY": 468.41229
     },
     "cluster": {
-      "retained": 2379,
+      "retained": 2380,
       "total": 2386,
-      "centerX": -0.42148,
-      "centerY": 132.30362,
-      "radiusX": 266.63316,
-      "radiusY": 626.46266
+      "centerX": -17.08322,
+      "centerY": 165.66332,
+      "radiusX": 376.31579,
+      "radiusY": 705.74983
     },
-    "scale": 0.37403,
-    "x_offset": 102.16989,
-    "y_offset": 159.36863,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 84,
+      "visible_height": 117,
+      "density_zoom": 1.19658
+    },
+    "scale": 0.29373,
+    "x_offset": 119.73782,
+    "y_offset": 171.5267,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:39.649Z"
+  "exported_at": "2026-08-19T13:22:19.079Z"
 }

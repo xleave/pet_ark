@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "proviso",
   "character_name": "Proviso",
   "localized_name": "但书",
@@ -11,15 +12,29 @@
   "skin_id": "wild-7",
   "skin_name": "秋高气爽",
   "source": "standalone/assets/source/proviso/skin-wild-7",
-  "source_page": "https://prts.wiki/w/%E4%BD%86%E4%B9%A6",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4032_provs/meta.json",
-    "model": "char_4032_provs_wild_7/build/build_char_4032_provs_wild_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4032_provs/char_4032_provs_wild_7/build/build_char_4032_provs_wild_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4032_provs/char_4032_provs_wild_7/build/build_char_4032_provs_wild_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4032_provs/char_4032_provs_wild_7/build/build_char_4032_provs_wild_7.png"
+    "assetId": "build_char_4032_provs_wild#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "但书",
+    "appellation": "Proviso",
+    "skinGroupId": "2023#wild",
+    "skinGroupName": "生命之地/VII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4032_provs_wild#7.atlas",
+      ".png": "build_char_4032_provs_wild#7.png",
+      ".skel": "build_char_4032_provs_wild#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/proviso/skin-wild-7/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -351.9454,
-      "maxX": 203.98193,
+      "minX": -647.55554,
+      "maxX": 391.98724,
       "minY": -122.60744,
-      "maxY": 452.03619
+      "maxY": 492.10272
     },
     "full_source_bounds": {
       "minX": -846.30157,
@@ -129,23 +144,29 @@
       "maxY": 645.34747
     },
     "core_source_bounds": {
-      "minX": -351.9454,
-      "maxX": 203.98193,
+      "minX": -647.55554,
+      "maxX": 391.98724,
       "minY": -122.60744,
-      "maxY": 452.03619
+      "maxY": 492.10272
     },
     "cluster": {
-      "retained": 1924,
-      "total": 1958,
-      "centerX": 3.02106,
-      "centerY": 146.67468,
-      "radiusX": 256,
-      "radiusY": 657.72365
+      "retained": 1949,
+      "total": 1954,
+      "centerX": -193.94115,
+      "centerY": 161.53634,
+      "radiusX": 540.02426,
+      "radiusY": 834.85117
     },
-    "scale": 0.31659,
-    "x_offset": 119.42174,
-    "y_offset": 177.18394,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 35,
+      "visible_height": 74,
+      "density_zoom": 2.05714
+    },
+    "scale": 0.34828,
+    "x_offset": 101.41959,
+    "y_offset": 216.49767,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:50.741Z"
+  "exported_at": "2026-08-19T13:23:33.039Z"
 }

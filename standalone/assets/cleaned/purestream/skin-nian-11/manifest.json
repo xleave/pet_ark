@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "purestream",
   "character_name": "Purestream",
   "localized_name": "清流",
@@ -9,15 +12,29 @@
   "skin_id": "nian-11",
   "skin_name": "贺新禧",
   "source": "standalone/assets/source/purestream/skin-nian-11",
-  "source_page": "https://prts.wiki/w/%E6%B8%85%E6%B5%81",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_385_finlpp/meta.json",
-    "model": "char_385_finlpp_nian_11/build/build_char_385_finlpp_nian_11",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_385_finlpp/char_385_finlpp_nian_11/build/build_char_385_finlpp_nian_11.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_385_finlpp/char_385_finlpp_nian_11/build/build_char_385_finlpp_nian_11.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_385_finlpp/char_385_finlpp_nian_11/build/build_char_385_finlpp_nian_11.png"
+    "assetId": "build_char_385_finlpp_nian#11",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "清流",
+    "appellation": "Purestream",
+    "skinGroupId": "2024#nian#2",
+    "skinGroupName": "0011制造/X",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_385_finlpp_nian#11.atlas",
+      ".png": "build_char_385_finlpp_nian#11.png",
+      ".skel": "build_char_385_finlpp_nian#11.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/purestream/skin-nian-11/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -261.91858,
-      "maxX": 207.90637,
-      "minY": -127.00372,
+      "minX": -263.25864,
+      "maxX": 208.40034,
+      "minY": -127.86064,
       "maxY": 464.01434
     },
-    "scale": 0.35194,
-    "x_offset": 105.5044,
-    "y_offset": 171.30293,
+    "full_source_bounds": {
+      "minX": -263.25864,
+      "maxX": 208.40034,
+      "minY": -127.86064,
+      "maxY": 464.01434
+    },
+    "core_source_bounds": {
+      "minX": -263.25864,
+      "maxX": 208.40034,
+      "minY": -127.86064,
+      "maxY": 464.01434
+    },
+    "cluster": {
+      "retained": 2009,
+      "total": 2009,
+      "centerX": 17.70207,
+      "centerY": 194.60031,
+      "radiusX": 382.61951,
+      "radiusY": 684.93629
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 90,
+      "visible_height": 146,
+      "density_zoom": 1
+    },
+    "scale": 0.35143,
+    "x_offset": 105.6393,
+    "y_offset": 171.0665,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:25.686Z"
+  "exported_at": "2026-08-19T13:23:34.665Z"
 }

@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "197-poca",
   "character_name": "Роса",
   "localized_name": "早露",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-12",
   "skin_name": "杰作",
   "source": "standalone/assets/source/197-poca/skin-epoque-12",
-  "source_page": "https://prts.wiki/w/%E6%97%A9%E9%9C%B2",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/meta.json",
-    "model": "char_197_poca_epoque_12/build/build_char_197_poca_epoque_12",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/char_197_poca_epoque_12/build/build_char_197_poca_epoque_12.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/char_197_poca_epoque_12/build/build_char_197_poca_epoque_12.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/char_197_poca_epoque_12/build/build_char_197_poca_epoque_12.png"
+    "assetId": "build_char_197_poca_epoque#12",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "早露",
+    "appellation": "Роса",
+    "skinGroupId": "2021#epoque#4",
+    "skinGroupName": "时代/XII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_197_poca_epoque#12.atlas",
+      ".png": "build_char_197_poca_epoque#12.png",
+      ".skel": "build_char_197_poca_epoque#12.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/197-poca/skin-epoque-12/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,11 +130,11 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -218.89999,
-      "maxX": 216.13998,
-      "minY": -122.34647,
+      "minX": -255.16484,
+      "maxX": 746.2522,
+      "minY": -534.8017,
       "maxY": 406.23956
     },
     "full_source_bounds": {
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -218.89999,
-      "maxX": 216.13998,
+      "maxX": 645.24005,
       "minY": -122.34647,
       "maxY": 406.23956
     },
     "cluster": {
-      "retained": 2888,
+      "retained": 2889,
       "total": 2906,
-      "centerX": -1.9936,
-      "centerY": 152.63573,
-      "radiusX": 286.33653,
-      "radiusY": 545.99251
+      "centerX": 0.20971,
+      "centerY": 160.4839,
+      "radiusX": 639.89508,
+      "radiusY": 622.78948
     },
-    "scale": 0.3935,
-    "x_offset": 96.54304,
-    "y_offset": 167.85634,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 63,
+      "visible_height": 71,
+      "density_zoom": 1.97183
+    },
+    "scale": 0.34655,
+    "x_offset": 107.52627,
+    "y_offset": 214.04412,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:53.989Z"
+  "exported_at": "2026-08-19T13:21:17.797Z"
 }

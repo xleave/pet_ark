@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "bagpipe",
@@ -12,15 +12,29 @@
   "skin_id": "epoque-40",
   "skin_name": "风笛声声",
   "source": "standalone/assets/source/bagpipe/skin-epoque-40",
-  "source_page": "https://prts.wiki/w/%E9%A3%8E%E7%AC%9B",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/meta.json",
-    "model": "char_222_bpipe_epoque_40/build/build_char_222_bpipe_epoque_40",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/char_222_bpipe_epoque_40/build/build_char_222_bpipe_epoque_40.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/char_222_bpipe_epoque_40/build/build_char_222_bpipe_epoque_40.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/char_222_bpipe_epoque_40/build/build_char_222_bpipe_epoque_40.png"
+    "assetId": "build_char_222_bpipe_epoque#40",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "风笛",
+    "appellation": "Bagpipe",
+    "skinGroupId": "2025#epoque#2",
+    "skinGroupName": "时代/XXXIX",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_222_bpipe_epoque#40.atlas",
+      ".png": "build_char_222_bpipe_epoque#40.png",
+      ".skel": "build_char_222_bpipe_epoque#40.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -109,7 +123,7 @@
       ]
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -142,8 +156,8 @@
       "maxY": 559.73444
     },
     "cluster": {
-      "retained": 2298,
-      "total": 2298,
+      "retained": 2282,
+      "total": 2282,
       "centerX": 24.07255,
       "centerY": 119.66494,
       "radiusX": 3319.97442,
@@ -152,13 +166,13 @@
     "pixel_probe": {
       "animation": "Relax",
       "visible_width": 21,
-      "visible_height": 33,
-      "density_zoom": 4.24242
+      "visible_height": 32,
+      "density_zoom": 4.375
     },
-    "scale": 0.36174,
-    "x_offset": 102.9883,
-    "y_offset": 216.9088,
+    "scale": 0.37305,
+    "x_offset": 103.20668,
+    "y_offset": 221.3122,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:24.409Z"
+  "exported_at": "2026-08-19T13:21:33.952Z"
 }

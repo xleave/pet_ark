@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "firewatch",
   "character_name": "Firewatch",
   "localized_name": "守林人",
@@ -9,15 +12,29 @@
   "skin_id": "wild-2",
   "skin_name": "枯柏",
   "source": "standalone/assets/source/firewatch/skin-wild-2",
-  "source_page": "https://prts.wiki/w/%E5%AE%88%E6%9E%97%E4%BA%BA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/meta.json",
-    "model": "char_158_milu_wild_2/build/build_char_158_milu_wild_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/char_158_milu_wild_2/build/build_char_158_milu_wild_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/char_158_milu_wild_2/build/build_char_158_milu_wild_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/char_158_milu_wild_2/build/build_char_158_milu_wild_2.png"
+    "assetId": "build_char_158_milu_wild#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "守林人",
+    "appellation": "Firewatch",
+    "skinGroupId": "2019#wild#2",
+    "skinGroupName": "生命之地/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_158_milu_wild#2.atlas",
+      ".png": "build_char_158_milu_wild#2.png",
+      ".skel": "build_char_158_milu_wild#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/firewatch/skin-wild-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -274.26544,
-      "maxX": 161.31917,
+      "minX": -274.29144,
+      "maxX": 161.3201,
       "minY": -34.01257,
-      "maxY": 419.08972
+      "maxY": 423.17838
     },
-    "scale": 0.40405,
-    "x_offset": 118.81824,
-    "y_offset": 202.25706,
+    "full_source_bounds": {
+      "minX": -274.29144,
+      "maxX": 161.3201,
+      "minY": -34.01257,
+      "maxY": 423.17838
+    },
+    "core_source_bounds": {
+      "minX": -274.29144,
+      "maxX": 161.3201,
+      "minY": -34.01257,
+      "maxY": 418.91156
+    },
+    "cluster": {
+      "retained": 1802,
+      "total": 1802,
+      "centerX": 7.35958,
+      "centerY": 189.24396,
+      "radiusX": 326.26592,
+      "radiusY": 508.85033
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 81,
+      "visible_height": 169,
+      "density_zoom": 1
+    },
+    "scale": 0.40403,
+    "x_offset": 118.82189,
+    "y_offset": 202.25791,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:06.995Z"
+  "exported_at": "2026-08-19T13:22:13.587Z"
 }

@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "croissant",
   "character_name": "Croissant",
   "localized_name": "可颂",
@@ -11,15 +12,29 @@
   "skin_id": "summer-4",
   "skin_name": "探寻者 SK03",
   "source": "standalone/assets/source/croissant/skin-summer-4",
-  "source_page": "https://prts.wiki/w/%E5%8F%AF%E9%A2%82",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/meta.json",
-    "model": "char_201_moeshd_summer_4/build/build_char_201_moeshd_summer_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_summer_4/build/build_char_201_moeshd_summer_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_summer_4/build/build_char_201_moeshd_summer_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_summer_4/build/build_char_201_moeshd_summer_4.png"
+    "assetId": "build_char_201_moeshd_summer#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "可颂",
+    "appellation": "Croissant",
+    "skinGroupId": "2020#summer#3",
+    "skinGroupName": "珊瑚海岸/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_201_moeshd_summer#4.atlas",
+      ".png": "build_char_201_moeshd_summer#4.png",
+      ".skel": "build_char_201_moeshd_summer#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/croissant/skin-summer-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -137,15 +152,21 @@
     "cluster": {
       "retained": 2138,
       "total": 2138,
-      "centerX": 0.32678,
-      "centerY": 143.00009,
-      "radiusX": 303.23895,
-      "radiusY": 639.0646
+      "centerX": 26.97175,
+      "centerY": 148.29956,
+      "radiusX": 496.69201,
+      "radiusY": 619.87228
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 141,
+      "visible_height": 157,
+      "density_zoom": 1
     },
     "scale": 0.36944,
     "x_offset": 100.25943,
     "y_offset": 169.39019,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:06:39.297Z"
+  "exported_at": "2026-08-19T13:21:56.407Z"
 }

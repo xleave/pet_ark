@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "savage",
   "character_name": "Savage",
   "localized_name": "暴行",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/savage/default",
-  "source_page": "https://prts.wiki/w/%E6%9A%B4%E8%A1%8C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/meta.json",
-    "model": "defaultskin/build/build_char_230_savage",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/defaultskin/build/build_char_230_savage.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/defaultskin/build/build_char_230_savage.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/defaultskin/build/build_char_230_savage.png"
+    "assetId": "build_char_230_savage",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "暴行",
+    "appellation": "Savage",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_230_savage.atlas",
+      ".png": "build_char_230_savage.png",
+      ".skel": "build_char_230_savage.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/savage/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -302.07898,
       "maxX": 264.49167,
       "minY": -82.69202,
-      "maxY": 467.44931
+      "maxY": 469.28168
+    },
+    "full_source_bounds": {
+      "minX": -302.07898,
+      "maxX": 264.49167,
+      "minY": -82.69202,
+      "maxY": 469.28168
+    },
+    "core_source_bounds": {
+      "minX": -302.07898,
+      "maxX": 264.49167,
+      "minY": -82.69202,
+      "maxY": 469.08942
+    },
+    "cluster": {
+      "retained": 1439,
+      "total": 1439,
+      "centerX": -10.43518,
+      "centerY": 200.02293,
+      "radiusX": 320,
+      "radiusY": 625.00515
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 78,
+      "visible_height": 145,
+      "density_zoom": 1
     },
     "scale": 0.31064,
     "x_offset": 101.83808,
     "y_offset": 190.31248,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:29.157Z"
+  "exported_at": "2026-08-19T13:23:47.818Z"
 }

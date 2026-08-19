@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "myrtle",
   "character_name": "Myrtle",
   "localized_name": "桃金娘",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/myrtle/default",
-  "source_page": "https://prts.wiki/w/%E6%A1%83%E9%87%91%E5%A8%98",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/meta.json",
-    "model": "defaultskin/build/build_char_151_myrtle",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/defaultskin/build/build_char_151_myrtle.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/defaultskin/build/build_char_151_myrtle.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/defaultskin/build/build_char_151_myrtle.png"
+    "assetId": "build_char_151_myrtle",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "桃金娘",
+    "appellation": "Myrtle",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_151_myrtle.atlas",
+      ".png": "build_char_151_myrtle.png",
+      ".skel": "build_char_151_myrtle.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/myrtle/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -250.55811,
       "maxX": 159.25687,
-      "minY": -81.54864,
+      "minY": -81.54303,
       "maxY": 523.0683
     },
+    "full_source_bounds": {
+      "minX": -250.55811,
+      "maxX": 159.25687,
+      "minY": -81.54303,
+      "maxY": 523.0683
+    },
+    "core_source_bounds": {
+      "minX": -250.55811,
+      "maxX": 159.25687,
+      "minY": -81.54303,
+      "maxY": 523.0683
+    },
+    "cluster": {
+      "retained": 1675,
+      "total": 1675,
+      "centerX": -0.0579,
+      "centerY": 197.72806,
+      "radiusX": 389.99997,
+      "radiusY": 638.40231
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 84,
+      "visible_height": 130,
+      "density_zoom": 1.07692
+    },
     "scale": 0.34402,
-    "x_offset": 111.7047,
-    "y_offset": 187.94568,
+    "x_offset": 111.70485,
+    "y_offset": 187.94735,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:20.486Z"
+  "exported_at": "2026-08-19T13:23:13.933Z"
 }

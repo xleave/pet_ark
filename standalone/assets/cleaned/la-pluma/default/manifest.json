@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "la-pluma",
   "character_name": "La Pluma",
   "localized_name": "羽毛笔",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/la-pluma/default",
-  "source_page": "https://prts.wiki/w/%E7%BE%BD%E6%AF%9B%E7%AC%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/meta.json",
-    "model": "defaultskin/build/build_char_421_crow",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/defaultskin/build/build_char_421_crow.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/defaultskin/build/build_char_421_crow.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/defaultskin/build/build_char_421_crow.png"
+    "assetId": "build_char_421_crow",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "羽毛笔",
+    "appellation": "La Pluma",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_421_crow.atlas",
+      ".png": "build_char_421_crow.png",
+      ".skel": "build_char_421_crow.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -78,7 +94,7 @@
       "path": "standalone/assets/cleaned/la-pluma/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -91,16 +107,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -223.20343,
+      "minX": -223.41855,
       "maxX": 184.60294,
-      "minY": -111.36282,
-      "maxY": 399.0625
+      "minY": -111.05621,
+      "maxY": 399.51627
     },
-    "scale": 0.4075,
-    "x_offset": 103.86491,
-    "y_offset": 170.61929,
+    "full_source_bounds": {
+      "minX": -223.41855,
+      "maxX": 184.60294,
+      "minY": -111.05621,
+      "maxY": 399.51627
+    },
+    "core_source_bounds": {
+      "minX": -223.41855,
+      "maxX": 184.60294,
+      "minY": -111.05621,
+      "maxY": 399.51627
+    },
+    "cluster": {
+      "retained": 2125,
+      "total": 2125,
+      "centerX": 3.39136,
+      "centerY": 188.03565,
+      "radiusX": 420.0128,
+      "radiusY": 629.95283
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 83,
+      "visible_height": 164,
+      "density_zoom": 1
+    },
+    "scale": 0.40739,
+    "x_offset": 103.90647,
+    "y_offset": 170.75727,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:14.299Z"
+  "exported_at": "2026-08-19T13:22:45.612Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "archetto",
   "character_name": "Archetto",
   "localized_name": "空弦",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/archetto/default",
-  "source_page": "https://prts.wiki/w/%E7%A9%BA%E5%BC%A6",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/meta.json",
-    "model": "defaultskin/build/build_char_332_archet",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/defaultskin/build/build_char_332_archet.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/defaultskin/build/build_char_332_archet.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/defaultskin/build/build_char_332_archet.png"
+    "assetId": "build_char_332_archet",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "空弦",
+    "appellation": "Archetto",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_332_archet.atlas",
+      ".png": "build_char_332_archet.png",
+      ".skel": "build_char_332_archet.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/archetto/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -267.91965,
-      "maxX": 222.57153,
+      "maxX": 222.58617,
       "minY": -127.01928,
-      "maxY": 420.5079
+      "maxY": 419.66248
     },
-    "scale": 0.35882,
-    "x_offset": 104.136,
-    "y_offset": 170.42244,
+    "full_source_bounds": {
+      "minX": -267.91965,
+      "maxX": 222.58617,
+      "minY": -127.01928,
+      "maxY": 419.66248
+    },
+    "core_source_bounds": {
+      "minX": -267.91965,
+      "maxX": 222.58617,
+      "minY": -127.01928,
+      "maxY": 419.66248
+    },
+    "cluster": {
+      "retained": 1847,
+      "total": 1847,
+      "centerX": 2.57603,
+      "centerY": 175.40625,
+      "radiusX": 405.58966,
+      "radiusY": 505.04364
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 103,
+      "visible_height": 150,
+      "density_zoom": 1
+    },
+    "scale": 0.35881,
+    "x_offset": 104.13313,
+    "y_offset": 170.4238,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:56.322Z"
+  "exported_at": "2026-08-19T13:21:26.896Z"
 }

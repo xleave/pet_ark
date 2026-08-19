@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "april",
   "character_name": "April",
   "localized_name": "四月",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/april/default",
-  "source_page": "https://prts.wiki/w/%E5%9B%9B%E6%9C%88",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/meta.json",
-    "model": "defaultskin/build/build_char_365_aprl",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/defaultskin/build/build_char_365_aprl.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/defaultskin/build/build_char_365_aprl.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/defaultskin/build/build_char_365_aprl.png"
+    "assetId": "build_char_365_aprl",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "四月",
+    "appellation": "April",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_365_aprl.atlas",
+      ".png": "build_char_365_aprl.png",
+      ".skel": "build_char_365_aprl.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/april/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -288.90857,
-      "maxX": 207.31946,
-      "minY": -95.46026,
+      "maxX": 218.84999,
+      "minY": -95.1238,
       "maxY": 527.01331
     },
-    "scale": 0.33415,
-    "x_offset": 109.63153,
-    "y_offset": 184.10188,
+    "full_source_bounds": {
+      "minX": -288.90857,
+      "maxX": 218.84999,
+      "minY": -95.1238,
+      "maxY": 527.01331
+    },
+    "core_source_bounds": {
+      "minX": -288.90857,
+      "maxX": 168.75653,
+      "minY": -95.1238,
+      "maxY": 527.01331
+    },
+    "cluster": {
+      "retained": 1891,
+      "total": 1891,
+      "centerX": -6.9086,
+      "centerY": 184.98849,
+      "radiusX": 460.00006,
+      "radiusY": 624.65355
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 85,
+      "visible_height": 152,
+      "density_zoom": 1
+    },
+    "scale": 0.33433,
+    "x_offset": 107.71139,
+    "y_offset": 184.19712,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:56.068Z"
+  "exported_at": "2026-08-19T13:21:26.324Z"
 }

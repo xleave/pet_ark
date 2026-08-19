@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "erato",
   "character_name": "Erato",
   "localized_name": "埃拉托",
@@ -11,15 +12,29 @@
   "skin_id": "snow-5",
   "skin_name": "未讲述的故事",
   "source": "standalone/assets/source/erato/skin-snow-5",
-  "source_page": "https://prts.wiki/w/%E5%9F%83%E6%8B%89%E6%89%98",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4043_erato/meta.json",
-    "model": "char_4043_erato_snow_5/build/build_char_4043_erato_snow_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4043_erato/char_4043_erato_snow_5/build/build_char_4043_erato_snow_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4043_erato/char_4043_erato_snow_5/build/build_char_4043_erato_snow_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4043_erato/char_4043_erato_snow_5/build/build_char_4043_erato_snow_5.png"
+    "assetId": "build_char_4043_erato_snow#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "埃拉托",
+    "appellation": "Erato",
+    "skinGroupId": "2022#xmas",
+    "skinGroupName": "冰原信使/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4043_erato_snow#5.atlas",
+      ".png": "build_char_4043_erato_snow#5.png",
+      ".skel": "build_char_4043_erato_snow#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/erato/skin-snow-5/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -239.00847,
-      "maxX": 183.77664,
+      "minX": -615.6684,
+      "maxX": 276.32532,
       "minY": -128.69861,
-      "maxY": 395.01205
+      "maxY": 771.12488
     },
     "full_source_bounds": {
       "minX": -615.6684,
@@ -129,23 +144,29 @@
       "maxY": 771.12488
     },
     "core_source_bounds": {
-      "minX": -239.00847,
+      "minX": -615.6684,
       "maxX": 183.77664,
       "minY": -128.69861,
-      "maxY": 395.01205
+      "maxY": 771.12488
     },
     "cluster": {
-      "retained": 2303,
-      "total": 2321,
-      "centerX": 5.38559,
-      "centerY": 142.89877,
-      "radiusX": 315.95316,
-      "radiusY": 714.73914
+      "retained": 2320,
+      "total": 2320,
+      "centerX": -15.61257,
+      "centerY": 246.08609,
+      "radiusX": 602.0863,
+      "radiusY": 880.73143
     },
-    "scale": 0.39717,
-    "x_offset": 106.9681,
-    "y_offset": 164.88531,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 50,
+      "visible_height": 78,
+      "density_zoom": 1.79487
+    },
+    "scale": 0.35415,
+    "x_offset": 106.72979,
+    "y_offset": 217.08836,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:38.971Z"
+  "exported_at": "2026-08-19T13:22:05.274Z"
 }

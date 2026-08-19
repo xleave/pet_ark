@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "robin",
   "character_name": "Robin",
   "localized_name": "罗宾",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/robin/default",
-  "source_page": "https://prts.wiki/w/%E7%BD%97%E5%AE%BE",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/meta.json",
-    "model": "defaultskin/build/build_char_451_robin",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/defaultskin/build/build_char_451_robin.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/defaultskin/build/build_char_451_robin.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/defaultskin/build/build_char_451_robin.png"
+    "assetId": "build_char_451_robin",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "罗宾",
+    "appellation": "Robin",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_451_robin.atlas",
+      ".png": "build_char_451_robin.png",
+      ".skel": "build_char_451_robin.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -78,7 +94,7 @@
       "path": "standalone/assets/cleaned/robin/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -91,16 +107,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -208.68857,
       "maxX": 181.31166,
-      "minY": -131.12335,
-      "maxY": 392.95313
+      "minY": -132.45522,
+      "maxY": 392.58746
     },
-    "scale": 0.39689,
-    "x_offset": 101.43279,
-    "y_offset": 163.95863,
+    "full_source_bounds": {
+      "minX": -208.68857,
+      "maxX": 181.31166,
+      "minY": -132.45522,
+      "maxY": 392.58746
+    },
+    "core_source_bounds": {
+      "minX": -208.68857,
+      "maxX": 181.31166,
+      "minY": -132.45522,
+      "maxY": 392.58746
+    },
+    "cluster": {
+      "retained": 2012,
+      "total": 2012,
+      "centerX": -1.50525,
+      "centerY": 192.62861,
+      "radiusX": 474.93901,
+      "radiusY": 645.01286
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 87,
+      "visible_height": 154,
+      "density_zoom": 1
+    },
+    "scale": 0.39616,
+    "x_offset": 101.42279,
+    "y_offset": 163.52677,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:27.792Z"
+  "exported_at": "2026-08-19T13:23:42.468Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "matterhorn",
   "character_name": "Matterhorn",
   "localized_name": "角峰",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/matterhorn/default",
-  "source_page": "https://prts.wiki/w/%E8%A7%92%E5%B3%B0",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_199_yak/meta.json",
-    "model": "defaultskin/build/build_char_199_yak",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_199_yak/defaultskin/build/build_char_199_yak.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_199_yak/defaultskin/build/build_char_199_yak.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_199_yak/defaultskin/build/build_char_199_yak.png"
+    "assetId": "build_char_199_yak",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "角峰",
+    "appellation": "Matterhorn",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_199_yak.atlas",
+      ".png": "build_char_199_yak.png",
+      ".skel": "build_char_199_yak.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/matterhorn/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -266.17868,
-      "maxX": 220.4487,
-      "minY": -114.01938,
-      "maxY": 437.43958
+      "maxX": 220.4633,
+      "minY": -127.35605,
+      "maxY": 438.61307
     },
-    "scale": 0.36167,
-    "x_offset": 104.26965,
-    "y_offset": 174.76227,
+    "full_source_bounds": {
+      "minX": -266.17868,
+      "maxX": 220.4633,
+      "minY": -127.35605,
+      "maxY": 438.61307
+    },
+    "core_source_bounds": {
+      "minX": -266.17868,
+      "maxX": 220.4633,
+      "minY": -127.35605,
+      "maxY": 438.61307
+    },
+    "cluster": {
+      "retained": 1293,
+      "total": 1293,
+      "centerX": 7.86823,
+      "centerY": 193.76001,
+      "radiusX": 369.9979,
+      "radiusY": 655
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 85,
+      "visible_height": 158,
+      "density_zoom": 1
+    },
+    "scale": 0.36166,
+    "x_offset": 104.26676,
+    "y_offset": 169.94013,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:17.489Z"
+  "exported_at": "2026-08-19T13:22:59.857Z"
 }

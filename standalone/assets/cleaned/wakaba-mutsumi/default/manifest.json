@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "wakaba-mutsumi",
   "character_name": "Wakaba Mutsumi",
   "localized_name": "若叶睦",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/wakaba-mutsumi/default",
-  "source_page": "https://prts.wiki/w/%E8%8B%A5%E5%8F%B6%E7%9D%A6",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/meta.json",
-    "model": "defaultskin/build/build_char_4183_mortis",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/defaultskin/build/build_char_4183_mortis.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/defaultskin/build/build_char_4183_mortis.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/defaultskin/build/build_char_4183_mortis.png"
+    "assetId": "build_char_4183_mortis",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "若叶睦",
+    "appellation": "Wakaba Mutsumi",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4183_mortis.atlas",
+      ".png": "build_char_4183_mortis.png",
+      ".skel": "build_char_4183_mortis.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/wakaba-mutsumi/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -130.84993,
+      "minX": -128.24545,
       "maxX": 195.12665,
       "minY": -88.95067,
-      "maxY": 405.87668
+      "maxY": 407.67914
+    },
+    "full_source_bounds": {
+      "minX": -128.24545,
+      "maxX": 195.12665,
+      "minY": -88.95067,
+      "maxY": 407.67914
+    },
+    "core_source_bounds": {
+      "minX": -128.24545,
+      "maxX": 195.12665,
+      "minY": -88.95067,
+      "maxY": 407.67914
+    },
+    "cluster": {
+      "retained": 2269,
+      "total": 2269,
+      "centerX": 2.37835,
+      "centerY": 204.81728,
+      "radiusX": 347.22708,
+      "radiusY": 545.47321
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 73,
+      "visible_height": 162,
+      "density_zoom": 1
     },
     "scale": 0.41,
-    "x_offset": 82.82327,
+    "x_offset": 82.28936,
     "y_offset": 179.53023,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:37.562Z"
+  "exported_at": "2026-08-19T13:24:24.476Z"
 }

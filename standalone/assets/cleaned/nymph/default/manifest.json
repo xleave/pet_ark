@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "nymph",
   "character_name": "Nymph",
   "localized_name": "妮芙",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/nymph/default",
-  "source_page": "https://prts.wiki/w/%E5%A6%AE%E8%8A%99",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/meta.json",
-    "model": "defaultskin/build/build_char_4146_nymph",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/defaultskin/build/build_char_4146_nymph.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/defaultskin/build/build_char_4146_nymph.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/defaultskin/build/build_char_4146_nymph.png"
+    "assetId": "build_char_4146_nymph",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "妮芙",
+    "appellation": "Nymph",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4146_nymph.atlas",
+      ".png": "build_char_4146_nymph.png",
+      ".skel": "build_char_4146_nymph.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/nymph/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -287.17526,
-      "maxX": 169.2567,
-      "minY": -133.29007,
-      "maxY": 443.2164
+      "minX": -287.19943,
+      "maxX": 172.19322,
+      "minY": -134.15904,
+      "maxY": 446.49344
     },
-    "scale": 0.36079,
-    "x_offset": 117.27215,
-    "y_offset": 167.90976,
+    "full_source_bounds": {
+      "minX": -287.19943,
+      "maxX": 172.19322,
+      "minY": -134.15904,
+      "maxY": 446.49344
+    },
+    "core_source_bounds": {
+      "minX": -287.19943,
+      "maxX": 172.19322,
+      "minY": -134.15904,
+      "maxY": 439.79749
+    },
+    "cluster": {
+      "retained": 3322,
+      "total": 3322,
+      "centerX": -3.98803,
+      "centerY": 183.97633,
+      "radiusX": 412.50268,
+      "radiusY": 659.93053
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 128,
+      "visible_height": 156,
+      "density_zoom": 1
+    },
+    "scale": 0.35822,
+    "x_offset": 116.59863,
+    "y_offset": 167.94186,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:22.086Z"
+  "exported_at": "2026-08-19T13:23:21.143Z"
 }

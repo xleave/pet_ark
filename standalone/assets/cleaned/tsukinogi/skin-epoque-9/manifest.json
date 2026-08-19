@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "tsukinogi",
   "character_name": "Tsukinogi",
   "localized_name": "月禾",
@@ -9,15 +12,29 @@
   "skin_id": "epoque-9",
   "skin_name": "伦式巫女",
   "source": "standalone/assets/source/tsukinogi/skin-epoque-9",
-  "source_page": "https://prts.wiki/w/%E6%9C%88%E7%A6%BE",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_343_tknogi/meta.json",
-    "model": "char_343_tknogi_epoque_9/build/build_char_343_tknogi_epoque_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_343_tknogi/char_343_tknogi_epoque_9/build/build_char_343_tknogi_epoque_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_343_tknogi/char_343_tknogi_epoque_9/build/build_char_343_tknogi_epoque_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_343_tknogi/char_343_tknogi_epoque_9/build/build_char_343_tknogi_epoque_9.png"
+    "assetId": "build_char_343_tknogi_epoque#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "月禾",
+    "appellation": "Tsukinogi",
+    "skinGroupId": "2021#epoque",
+    "skinGroupName": "时代/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_343_tknogi_epoque#9.atlas",
+      ".png": "build_char_343_tknogi_epoque#9.png",
+      ".skel": "build_char_343_tknogi_epoque#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/tsukinogi/skin-epoque-9/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -317.84546,
+      "minX": -317.86392,
       "maxX": 166.41364,
-      "minY": -113.33891,
-      "maxY": 478.6944
+      "minY": -113.61877,
+      "maxY": 478.02481
     },
-    "scale": 0.35133,
-    "x_offset": 122.60139,
-    "y_offset": 176.18046,
+    "full_source_bounds": {
+      "minX": -317.86392,
+      "maxX": 166.41364,
+      "minY": -113.61877,
+      "maxY": 478.02481
+    },
+    "core_source_bounds": {
+      "minX": -317.86392,
+      "maxX": 166.41364,
+      "minY": -113.61877,
+      "maxY": 477.31442
+    },
+    "cluster": {
+      "retained": 2719,
+      "total": 2719,
+      "centerX": -4.60885,
+      "centerY": 246.20741,
+      "radiusX": 389.8928,
+      "radiusY": 544.92069
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 82,
+      "visible_height": 169,
+      "density_zoom": 1
+    },
+    "scale": 0.35156,
+    "x_offset": 122.62216,
+    "y_offset": 176.05584,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:35.193Z"
+  "exported_at": "2026-08-19T13:24:14.004Z"
 }

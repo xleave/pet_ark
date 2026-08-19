@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "highmore",
   "character_name": "Highmore",
   "localized_name": "海沫",
@@ -11,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/highmore/default",
-  "source_page": "https://prts.wiki/w/%E6%B5%B7%E6%B2%AB",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/meta.json",
-    "model": "defaultskin/build/build_char_4066_highmo",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/defaultskin/build/build_char_4066_highmo.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/defaultskin/build/build_char_4066_highmo.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/defaultskin/build/build_char_4066_highmo.png"
+    "assetId": "build_char_4066_highmo",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "海沫",
+    "appellation": "Highmore",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4066_highmo.atlas",
+      ".png": "build_char_4066_highmo.png",
+      ".skel": "build_char_4066_highmo.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +105,7 @@
       "path": "standalone/assets/cleaned/highmore/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -126,15 +140,21 @@
     "cluster": {
       "retained": 2748,
       "total": 2753,
-      "centerX": 6.26945,
-      "centerY": 126.68983,
-      "radiusX": 272.48261,
-      "radiusY": 629.23972
+      "centerX": 2.06933,
+      "centerY": 198.22216,
+      "radiusX": 404.99653,
+      "radiusY": 654.99107
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 130,
+      "visible_height": 156,
+      "density_zoom": 1
     },
     "scale": 0.39918,
     "x_offset": 102.52898,
     "y_offset": 165.66391,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:57.152Z"
+  "exported_at": "2026-08-19T13:22:28.556Z"
 }

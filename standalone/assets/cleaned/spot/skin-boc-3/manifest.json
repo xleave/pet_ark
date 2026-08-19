@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "spot",
   "character_name": "Spot",
   "localized_name": "斑点",
@@ -9,15 +12,29 @@
   "skin_id": "boc-3",
   "skin_name": "专业人士",
   "source": "standalone/assets/source/spot/skin-boc-3",
-  "source_page": "https://prts.wiki/w/%E6%96%91%E7%82%B9",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_284_spot/meta.json",
-    "model": "char_284_spot_boc_3/build/build_char_284_spot_boc_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_284_spot/char_284_spot_boc_3/build/build_char_284_spot_boc_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_284_spot/char_284_spot_boc_3/build/build_char_284_spot_boc_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_284_spot/char_284_spot_boc_3/build/build_char_284_spot_boc_3.png"
+    "assetId": "build_char_284_spot_boc#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "斑点",
+    "appellation": "Spot",
+    "skinGroupId": "2021#boc#2",
+    "skinGroupName": "斗争血脉/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_284_spot_boc#3.atlas",
+      ".png": "build_char_284_spot_boc#3.png",
+      ".skel": "build_char_284_spot_boc#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/spot/skin-boc-3/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -236.7509,
+      "minX": -236.75215,
       "maxX": 186.67001,
       "minY": -107.14489,
-      "maxY": 448.74112
+      "maxY": 442.67282
     },
-    "scale": 0.37418,
-    "x_offset": 105.36957,
-    "y_offset": 175.9088,
+    "full_source_bounds": {
+      "minX": -236.75215,
+      "maxX": 186.67001,
+      "minY": -107.14489,
+      "maxY": 442.67282
+    },
+    "core_source_bounds": {
+      "minX": -236.75215,
+      "maxX": 186.67001,
+      "minY": -107.14489,
+      "maxY": 384.7771
+    },
+    "cluster": {
+      "retained": 1685,
+      "total": 1685,
+      "centerX": 4.63998,
+      "centerY": 185.36412,
+      "radiusX": 454.96144,
+      "radiusY": 757.10884
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 66,
+      "visible_height": 146,
+      "density_zoom": 1.08378
+    },
+    "scale": 0.37831,
+    "x_offset": 105.47322,
+    "y_offset": 175.46632,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:32.275Z"
+  "exported_at": "2026-08-19T13:24:00.675Z"
 }

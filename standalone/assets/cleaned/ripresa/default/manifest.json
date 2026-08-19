@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ripresa",
   "character_name": "Ripresa",
   "localized_name": "复奏",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/ripresa/default",
-  "source_page": "https://prts.wiki/w/%E5%A4%8D%E5%A5%8F",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4031_liesel/meta.json",
-    "model": "defaultskin/build/build_char_4031_liesel",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4031_liesel/defaultskin/build/build_char_4031_liesel.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4031_liesel/defaultskin/build/build_char_4031_liesel.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4031_liesel/defaultskin/build/build_char_4031_liesel.png"
+    "assetId": "build_char_4031_liesel",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "复奏",
+    "appellation": "Ripresa",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4031_liesel.atlas",
+      ".png": "build_char_4031_liesel.png",
+      ".skel": "build_char_4031_liesel.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/ripresa/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -263.33167,
       "maxX": 217.14673,
-      "minY": -127.31303,
+      "minY": -127.43518,
       "maxY": 527.60168
     },
-    "scale": 0.3176,
-    "x_offset": 103.33414,
-    "y_offset": 175.56556,
+    "full_source_bounds": {
+      "minX": -263.33167,
+      "maxX": 217.14673,
+      "minY": -127.43518,
+      "maxY": 527.60168
+    },
+    "core_source_bounds": {
+      "minX": -263.33167,
+      "maxX": 217.14673,
+      "minY": -127.43518,
+      "maxY": 527.60168
+    },
+    "cluster": {
+      "retained": 2512,
+      "total": 2512,
+      "centerX": -13.3585,
+      "centerY": 246.58823,
+      "radiusX": 412.97673,
+      "radiusY": 630.04547
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 74,
+      "visible_height": 133,
+      "density_zoom": 1.05263
+    },
+    "scale": 0.31754,
+    "x_offset": 103.33277,
+    "y_offset": 175.53431,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:27.607Z"
+  "exported_at": "2026-08-19T13:23:40.958Z"
 }

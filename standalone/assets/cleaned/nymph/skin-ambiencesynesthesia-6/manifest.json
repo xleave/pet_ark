@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "nymph",
   "character_name": "Nymph",
   "localized_name": "妮芙",
@@ -11,15 +12,29 @@
   "skin_id": "ambiencesynesthesia-6",
   "skin_name": "繁花梦幻谈",
   "source": "standalone/assets/source/nymph/skin-ambiencesynesthesia-6",
-  "source_page": "https://prts.wiki/w/%E5%A6%AE%E8%8A%99",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/meta.json",
-    "model": "char_4146_nymph_ambiencesynesthesia_6/build/build_char_4146_nymph_ambienceSynesthesia_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/char_4146_nymph_ambiencesynesthesia_6/build/build_char_4146_nymph_ambienceSynesthesia_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/char_4146_nymph_ambiencesynesthesia_6/build/build_char_4146_nymph_ambienceSynesthesia_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/char_4146_nymph_ambiencesynesthesia_6/build/build_char_4146_nymph_ambienceSynesthesia_6.png"
+    "assetId": "build_char_4146_nymph_ambiencesynesthesia#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "妮芙",
+    "appellation": "Nymph",
+    "skinGroupId": "2026#ambienceSynesthesia",
+    "skinGroupName": "音律联觉/VII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4146_nymph_ambienceSynesthesia#6.atlas",
+      ".png": "build_char_4146_nymph_ambienceSynesthesia#6.png",
+      ".skel": "build_char_4146_nymph_ambienceSynesthesia#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/nymph/skin-ambiencesynesthesia-6/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,9 +130,9 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -282.81061,
+      "minX": -464.87048,
       "maxX": 261.47223,
       "minY": -113.89745,
       "maxY": 440.0275
@@ -129,23 +144,29 @@
       "maxY": 558.60992
     },
     "core_source_bounds": {
-      "minX": -282.81061,
+      "minX": -464.87048,
       "maxX": 261.47223,
       "minY": -113.89745,
       "maxY": 440.0275
     },
     "cluster": {
-      "retained": 2937,
+      "retained": 2940,
       "total": 2954,
-      "centerX": -6.08668,
-      "centerY": 127.05711,
-      "radiusX": 318.37409,
-      "radiusY": 572.1096
+      "centerX": -16.78584,
+      "centerY": 199.27234,
+      "radiusX": 550.22679,
+      "radiusY": 728.53146
     },
-    "scale": 0.32336,
-    "x_offset": 99.45,
-    "y_offset": 179.16997,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 85,
+      "visible_height": 107,
+      "density_zoom": 1.30841
+    },
+    "scale": 0.31704,
+    "x_offset": 115.15867,
+    "y_offset": 216.52536,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:33.732Z"
+  "exported_at": "2026-08-19T13:23:21.486Z"
 }

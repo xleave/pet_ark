@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "swire-the-elegant-wit",
   "character_name": "Swire the Elegant Wit",
   "localized_name": "琳琅诗怀雅",
@@ -9,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/swire-the-elegant-wit/default",
-  "source_page": "https://prts.wiki/w/%E7%90%B3%E7%90%85%E8%AF%97%E6%80%80%E9%9B%85",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1033_swire2/meta.json",
-    "model": "defaultskin/build/build_char_1033_swire2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1033_swire2/defaultskin/build/build_char_1033_swire2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1033_swire2/defaultskin/build/build_char_1033_swire2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1033_swire2/defaultskin/build/build_char_1033_swire2.png"
+    "assetId": "build_char_1033_swire2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "琳琅诗怀雅",
+    "appellation": "Swire the Elegant Wit",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1033_swire2.atlas",
+      ".png": "build_char_1033_swire2.png",
+      ".skel": "build_char_1033_swire2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/swire-the-elegant-wit/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -246.33374,
       "maxX": 248.65482,
-      "minY": -129.94144,
+      "minY": -130.27304,
       "maxY": 413.72641
+    },
+    "full_source_bounds": {
+      "minX": -246.33374,
+      "maxX": 248.65482,
+      "minY": -130.27304,
+      "maxY": 413.72641
+    },
+    "core_source_bounds": {
+      "minX": -246.33374,
+      "maxX": 248.65482,
+      "minY": -130.27304,
+      "maxY": 413.72641
+    },
+    "cluster": {
+      "retained": 2792,
+      "total": 2792,
+      "centerX": 0.94099,
+      "centerY": 199.30498,
+      "radiusX": 417.73602,
+      "radiusY": 792.00184
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 111,
+      "visible_height": 143,
+      "density_zoom": 1
     },
     "scale": 0.35556,
     "x_offset": 95.58735,
-    "y_offset": 169.79753,
+    "y_offset": 169.67963,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:33.189Z"
+  "exported_at": "2026-08-19T13:24:05.242Z"
 }

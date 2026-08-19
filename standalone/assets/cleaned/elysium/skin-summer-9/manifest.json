@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "elysium",
   "character_name": "Elysium",
   "localized_name": "极境",
@@ -9,15 +12,29 @@
   "skin_id": "summer-9",
   "skin_name": "灿阳朝露 SDm11",
   "source": "standalone/assets/source/elysium/skin-summer-9",
-  "source_page": "https://prts.wiki/w/%E6%9E%81%E5%A2%83",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/meta.json",
-    "model": "char_401_elysm_summer_9/build/build_char_401_elysm_summer_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/char_401_elysm_summer_9/build/build_char_401_elysm_summer_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/char_401_elysm_summer_9/build/build_char_401_elysm_summer_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/char_401_elysm_summer_9/build/build_char_401_elysm_summer_9.png"
+    "assetId": "build_char_401_elysm_summer#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "极境",
+    "appellation": "Elysium",
+    "skinGroupId": "2022#summer#2",
+    "skinGroupName": "珊瑚海岸/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_401_elysm_summer#9.atlas",
+      ".png": "build_char_401_elysm_summer#9.png",
+      ".skel": "build_char_401_elysm_summer#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/elysium/skin-summer-9/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -217.81273,
       "maxX": 318.20029,
-      "minY": -109.23486,
+      "minY": -109.41007,
       "maxY": 412.52258
+    },
+    "full_source_bounds": {
+      "minX": -217.81273,
+      "maxX": 318.20029,
+      "minY": -109.41007,
+      "maxY": 412.52258
+    },
+    "core_source_bounds": {
+      "minX": -217.81273,
+      "maxX": 318.20029,
+      "minY": -109.41007,
+      "maxY": 412.52258
+    },
+    "cluster": {
+      "retained": 3156,
+      "total": 3156,
+      "centerX": 4.47455,
+      "centerY": 164.03514,
+      "radiusX": 428.01848,
+      "radiusY": 529.89952
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 103,
+      "visible_height": 133,
+      "density_zoom": 1.05263
     },
     "scale": 0.32835,
     "x_offset": 79.51886,
-    "y_offset": 180.13271,
+    "y_offset": 180.07518,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:04.729Z"
+  "exported_at": "2026-08-19T13:22:04.242Z"
 }

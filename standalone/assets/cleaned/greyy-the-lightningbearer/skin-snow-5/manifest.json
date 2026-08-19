@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "greyy-the-lightningbearer",
@@ -12,15 +12,30 @@
   "skin_id": "snow-5",
   "skin_name": "演出后的王子",
   "source": "standalone/assets/source/greyy-the-lightningbearer/skin-snow-5",
-  "source_page": "https://prts.wiki/w/%E6%89%BF%E6%9B%A6%E6%A0%BC%E9%9B%B7%E4%BC%8A",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/meta.json",
-    "model": "char_1027_greyy2_snow_5/build/build_char_1027_greyy2_snow_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/char_1027_greyy2_snow_5/build/build_char_1027_greyy2_snow_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/char_1027_greyy2_snow_5/build/build_char_1027_greyy2_snow_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/char_1027_greyy2_snow_5/build/build_char_1027_greyy2_snow_5.png"
+    "assetId": "build_char_1027_greyy2_snow#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "承曦格雷伊",
+    "appellation": "Greyy the Lightningbearer",
+    "skinGroupId": "2022#xmas",
+    "skinGroupName": "冰原信使/V",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1027_greyy2_snow#5.atlas",
+      ".png": "build_char_1027_greyy2_snow#5.png",
+      ".skel": "build_char_1027_greyy2_snow#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -109,7 +124,7 @@
       ]
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -160,5 +175,5 @@
     "y_offset": 219.21929,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:29.100Z"
+  "exported_at": "2026-08-19T13:22:24.061Z"
 }

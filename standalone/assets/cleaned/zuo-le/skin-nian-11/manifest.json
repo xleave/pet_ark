@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "zuo-le",
   "character_name": "Zuo Le",
   "localized_name": "左乐",
@@ -11,15 +12,29 @@
   "skin_id": "nian-11",
   "skin_name": "少年游",
   "source": "standalone/assets/source/zuo-le/skin-nian-11",
-  "source_page": "https://prts.wiki/w/%E5%B7%A6%E4%B9%90",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/meta.json",
-    "model": "char_4121_zuole_nian_11/build/build_char_4121_zuole_nian_11",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/char_4121_zuole_nian_11/build/build_char_4121_zuole_nian_11.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/char_4121_zuole_nian_11/build/build_char_4121_zuole_nian_11.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/char_4121_zuole_nian_11/build/build_char_4121_zuole_nian_11.png"
+    "assetId": "build_char_4121_zuole_nian#11",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "左乐",
+    "appellation": "Zuo Le",
+    "skinGroupId": "2025#nian",
+    "skinGroupName": "0011制造/XI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4121_zuole_nian#11.atlas",
+      ".png": "build_char_4121_zuole_nian#11.png",
+      ".skel": "build_char_4121_zuole_nian#11.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/zuo-le/skin-nian-11/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,10 +130,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -330.10916,
-      "maxX": 291.35498,
+      "minX": -666.96002,
+      "maxX": 565.21472,
       "minY": -105.86713,
       "maxY": 657.76117
     },
@@ -129,23 +144,29 @@
       "maxY": 657.76117
     },
     "core_source_bounds": {
-      "minX": -330.10916,
-      "maxX": 291.35498,
+      "minX": -666.96002,
+      "maxX": 565.21472,
       "minY": -105.86713,
       "maxY": 657.76117
     },
     "cluster": {
-      "retained": 3104,
+      "retained": 3152,
       "total": 3165,
-      "centerX": -3.36667,
-      "centerY": 128.71546,
-      "radiusX": 294.96069,
-      "radiusY": 559.92801
+      "centerX": -7.24996,
+      "centerY": 150.82277,
+      "radiusX": 757.81519,
+      "radiusY": 524.10962
     },
-    "scale": 0.27238,
-    "x_offset": 101.27801,
-    "y_offset": 187.1635,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 46,
+      "visible_height": 56,
+      "density_zoom": 2.5
+    },
+    "scale": 0.35709,
+    "x_offset": 100.41623,
+    "y_offset": 218.19567,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:42.643Z"
+  "exported_at": "2026-08-19T13:24:33.613Z"
 }

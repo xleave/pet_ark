@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "bobbing",
   "character_name": "Bobbing",
   "localized_name": "波卜",
@@ -11,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/bobbing/default",
-  "source_page": "https://prts.wiki/w/%E6%B3%A2%E5%8D%9C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/meta.json",
-    "model": "defaultskin/build/build_char_487_bobb",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/defaultskin/build/build_char_487_bobb.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/defaultskin/build/build_char_487_bobb.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/defaultskin/build/build_char_487_bobb.png"
+    "assetId": "build_char_487_bobb",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "波卜",
+    "appellation": "Bobbing",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_487_bobb.atlas",
+      ".png": "build_char_487_bobb.png",
+      ".skel": "build_char_487_bobb.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +105,7 @@
       "path": "standalone/assets/cleaned/bobbing/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,10 +118,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -199.68411,
-      "maxX": 187.49789,
+      "maxX": 659.30945,
       "minY": -104.45397,
       "maxY": 396.39813
     },
@@ -119,22 +133,28 @@
     },
     "core_source_bounds": {
       "minX": -199.68411,
-      "maxX": 187.49789,
+      "maxX": 498.57907,
       "minY": -104.45397,
       "maxY": 396.39813
     },
     "cluster": {
-      "retained": 2430,
-      "total": 2452,
-      "centerX": -7.34973,
-      "centerY": 143.13141,
-      "radiusX": 256,
-      "radiusY": 679.68251
+      "retained": 2422,
+      "total": 2436,
+      "centerX": 17.56078,
+      "centerY": 215.20622,
+      "radiusX": 464.89145,
+      "radiusY": 655.25177
     },
-    "scale": 0.41,
-    "x_offset": 98.49817,
-    "y_offset": 173.17387,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 42,
+      "visible_height": 79,
+      "density_zoom": 1.77215
+    },
+    "scale": 0.3631,
+    "x_offset": 105.59348,
+    "y_offset": 217.06033,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:33.796Z"
+  "exported_at": "2026-08-19T13:21:41.231Z"
 }

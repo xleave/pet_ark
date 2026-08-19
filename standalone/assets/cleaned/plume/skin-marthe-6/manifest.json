@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "plume",
@@ -12,15 +12,29 @@
   "skin_id": "marthe-6",
   "skin_name": "从容时刻",
   "source": "standalone/assets/source/plume/skin-marthe-6",
-  "source_page": "https://prts.wiki/w/%E7%BF%8E%E7%BE%BD",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_192_falco/meta.json",
-    "model": "char_192_falco_marthe_6/build/build_char_192_falco_marthe_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_192_falco/char_192_falco_marthe_6/build/build_char_192_falco_marthe_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_192_falco/char_192_falco_marthe_6/build/build_char_192_falco_marthe_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_192_falco/char_192_falco_marthe_6/build/build_char_192_falco_marthe_6.png"
+    "assetId": "build_char_192_falco_marthe#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "翎羽",
+    "appellation": "Plume",
+    "skinGroupId": "2024#marthe",
+    "skinGroupName": "玛尔特/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_192_falco_marthe#6.atlas",
+      ".png": "build_char_192_falco_marthe#6.png",
+      ".skel": "build_char_192_falco_marthe#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/plume/skin-marthe-6/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -136,8 +150,8 @@
       "maxY": 371.03439
     },
     "cluster": {
-      "retained": 1563,
-      "total": 1563,
+      "retained": 1545,
+      "total": 1545,
       "centerX": -171.20132,
       "centerY": 210.48963,
       "radiusX": 500.00732,
@@ -146,13 +160,13 @@
     "pixel_probe": {
       "animation": "Relax",
       "visible_width": 55,
-      "visible_height": 111,
+      "visible_height": 109,
       "density_zoom": 1.30909
     },
     "scale": 0.388,
     "x_offset": 92.00087,
-    "y_offset": 215.87648,
+    "y_offset": 217.18557,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:06.449Z"
+  "exported_at": "2026-08-19T13:23:28.941Z"
 }

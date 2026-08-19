@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "blemishine",
   "character_name": "Blemishine",
   "localized_name": "瑕光",
@@ -11,15 +12,29 @@
   "skin_id": "witch-2",
   "skin_name": "异月灾裔",
   "source": "standalone/assets/source/blemishine/skin-witch-2",
-  "source_page": "https://prts.wiki/w/%E7%91%95%E5%85%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/meta.json",
-    "model": "char_423_blemsh_witch_2/build/build_char_423_blemsh_witch_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/char_423_blemsh_witch_2/build/build_char_423_blemsh_witch_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/char_423_blemsh_witch_2/build/build_char_423_blemsh_witch_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/char_423_blemsh_witch_2/build/build_char_423_blemsh_witch_2.png"
+    "assetId": "build_char_423_blemsh_witch#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "瑕光",
+    "appellation": "Blemishine",
+    "skinGroupId": "2021#witch",
+    "skinGroupName": "巫异盛宴/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_423_blemsh_witch#2.atlas",
+      ".png": "build_char_423_blemsh_witch#2.png",
+      ".skel": "build_char_423_blemsh_witch#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/blemishine/skin-witch-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -249.97563,
-      "maxX": 199.91864,
-      "minY": -43.50174,
-      "maxY": 424.71716
+      "minX": -688.96558,
+      "maxX": 206.13274,
+      "minY": -87.52721,
+      "maxY": 603.98505
     },
     "full_source_bounds": {
       "minX": -688.96558,
@@ -129,23 +144,29 @@
       "maxY": 603.98505
     },
     "core_source_bounds": {
-      "minX": -249.97563,
+      "minX": -499.52475,
       "maxX": 199.91864,
       "minY": -43.50174,
       "maxY": 424.71716
     },
     "cluster": {
-      "retained": 2592,
+      "retained": 2600,
       "total": 2607,
-      "centerX": -1.68287,
-      "centerY": 138.28293,
-      "radiusX": 276.97441,
-      "radiusY": 573.01082
+      "centerX": -10.24123,
+      "centerY": 211.02929,
+      "radiusX": 500.25578,
+      "radiusY": 694.43417
     },
-    "scale": 0.3912,
-    "x_offset": 105.79122,
-    "y_offset": 198.98199,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 64,
+      "visible_height": 83,
+      "density_zoom": 1.68675
+    },
+    "scale": 0.33166,
+    "x_offset": 107.75469,
+    "y_offset": 217.33225,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:55.796Z"
+  "exported_at": "2026-08-19T13:21:40.308Z"
 }

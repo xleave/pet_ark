@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "vermeil",
@@ -12,15 +12,29 @@
   "skin_id": "epoque-43",
   "skin_name": "玩伴",
   "source": "standalone/assets/source/vermeil/skin-epoque-43",
-  "source_page": "https://prts.wiki/w/%E7%BA%A2%E4%BA%91",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_190_clour/meta.json",
-    "model": "char_190_clour_epoque_43/build/build_char_190_clour_epoque_43",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_190_clour/char_190_clour_epoque_43/build/build_char_190_clour_epoque_43.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_190_clour/char_190_clour_epoque_43/build/build_char_190_clour_epoque_43.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_190_clour/char_190_clour_epoque_43/build/build_char_190_clour_epoque_43.png"
+    "assetId": "build_char_190_clour_epoque#43",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "红云",
+    "appellation": "Vermeil",
+    "skinGroupId": "2025#epoque#5",
+    "skinGroupName": "时代/XLII",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_190_clour_epoque#43.atlas",
+      ".png": "build_char_190_clour_epoque#43.png",
+      ".skel": "build_char_190_clour_epoque#43.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/vermeil/skin-epoque-43/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -139,9 +153,9 @@
       "retained": 2136,
       "total": 2136,
       "centerX": -3.44688,
-      "centerY": 258.74979,
+      "centerY": 258.74982,
       "radiusX": 623.80489,
-      "radiusY": 1140.14778
+      "radiusY": 1140.14748
     },
     "pixel_probe": {
       "animation": "Relax",
@@ -154,5 +168,5 @@
     "y_offset": 217.35142,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:40.574Z"
+  "exported_at": "2026-08-19T13:24:19.895Z"
 }

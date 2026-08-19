@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "texas-the-omertosa",
   "character_name": "Texas the Omertosa",
   "localized_name": "缄默德克萨斯",
@@ -11,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/texas-the-omertosa/default",
-  "source_page": "https://prts.wiki/w/%E7%BC%84%E9%BB%98%E5%BE%B7%E5%85%8B%E8%90%A8%E6%96%AF",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/meta.json",
-    "model": "defaultskin/build/build_char_1028_texas2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/defaultskin/build/build_char_1028_texas2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/defaultskin/build/build_char_1028_texas2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/defaultskin/build/build_char_1028_texas2.png"
+    "assetId": "build_char_1028_texas2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "缄默德克萨斯",
+    "appellation": "Texas the Omertosa",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1028_texas2.atlas",
+      ".png": "build_char_1028_texas2.png",
+      ".skel": "build_char_1028_texas2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +106,7 @@
       "path": "standalone/assets/cleaned/texas-the-omertosa/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,10 +119,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -239.37292,
-      "maxX": 177.9931,
+      "maxX": 738.19348,
       "minY": -113.20885,
       "maxY": 407.2981
     },
@@ -119,22 +134,28 @@
     },
     "core_source_bounds": {
       "minX": -239.37292,
-      "maxX": 177.9931,
+      "maxX": 738.19348,
       "minY": -113.20885,
       "maxY": 407.2981
     },
     "cluster": {
-      "retained": 2354,
+      "retained": 2406,
       "total": 2406,
-      "centerX": 6.18474,
-      "centerY": 130.35327,
-      "radiusX": 272.46846,
-      "radiusY": 624.43713
+      "centerX": 58.39661,
+      "centerY": 155.2223,
+      "radiusX": 1281.8572,
+      "radiusY": 480
     },
-    "scale": 0.39961,
-    "x_offset": 108.26401,
-    "y_offset": 170.76056,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 59,
+      "visible_height": 73,
+      "density_zoom": 1.91781
+    },
+    "scale": 0.34528,
+    "x_offset": 98.10277,
+    "y_offset": 217.18521,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:05:05.581Z"
+  "exported_at": "2026-08-19T13:24:08.517Z"
 }

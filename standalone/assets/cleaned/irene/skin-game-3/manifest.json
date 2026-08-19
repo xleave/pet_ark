@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "irene",
@@ -12,15 +12,29 @@
   "skin_id": "game-3",
   "skin_name": "至高判决",
   "source": "standalone/assets/source/irene/skin-game-3",
-  "source_page": "https://prts.wiki/w/%E8%89%BE%E4%B8%BD%E5%A6%AE",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/meta.json",
-    "model": "char_4009_irene_game_3/build/build_char_4009_irene_game_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/char_4009_irene_game_3/build/build_char_4009_irene_game_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/char_4009_irene_game_3/build/build_char_4009_irene_game_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/char_4009_irene_game_3/build/build_char_4009_irene_game_3.png"
+    "assetId": "build_char_4009_irene_game#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "艾丽妮",
+    "appellation": "Irene",
+    "skinGroupId": "2024#game",
+    "skinGroupName": "成就之星/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4009_irene_game#3.atlas",
+      ".png": "build_char_4009_irene_game#3.png",
+      ".skel": "build_char_4009_irene_game#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/irene/skin-game-3/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -118,41 +132,41 @@
   "placement": {
     "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -359.27798,
-      "maxX": 612.40613,
+      "minX": -434.16818,
+      "maxX": 511.23801,
       "minY": -117.41958,
-      "maxY": 443.36551
+      "maxY": 471.30164
     },
     "full_source_bounds": {
-      "minX": -1938.01294,
-      "maxX": 1979.23706,
-      "minY": -305.07489,
+      "minX": -434.16818,
+      "maxX": 511.23801,
+      "minY": -117.41958,
       "maxY": 471.30164
     },
     "core_source_bounds": {
       "minX": -359.27798,
-      "maxX": 612.40613,
+      "maxX": 511.23801,
       "minY": -117.41958,
       "maxY": 443.36551
     },
     "cluster": {
-      "retained": 2672,
-      "total": 2689,
-      "centerX": 35.34089,
-      "centerY": 141.30251,
-      "radiusX": 585.32866,
-      "radiusY": 780.0949
+      "retained": 2669,
+      "total": 2670,
+      "centerX": 23.46645,
+      "centerY": 175.18409,
+      "radiusX": 436.38595,
+      "radiusY": 777.97532
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 48,
-      "visible_height": 79,
-      "density_zoom": 1.77215
+      "visible_width": 49,
+      "visible_height": 81,
+      "density_zoom": 1.7284
     },
-    "scale": 0.32099,
-    "x_offset": 114.74157,
-    "y_offset": 217.29709,
+    "scale": 0.32176,
+    "x_offset": 114.71197,
+    "y_offset": 217.97171,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:55.418Z"
+  "exported_at": "2026-08-19T13:22:37.171Z"
 }

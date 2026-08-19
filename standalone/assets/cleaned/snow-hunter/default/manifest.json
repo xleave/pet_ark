@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "snow-hunter",
   "character_name": "Snow Hunter",
   "localized_name": "雪猎",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/snow-hunter/default",
-  "source_page": "https://prts.wiki/w/%E9%9B%AA%E7%8C%8E",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4211_snhunt/meta.json",
-    "model": "defaultskin/build/build_char_4211_snhunt",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4211_snhunt/defaultskin/build/build_char_4211_snhunt.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4211_snhunt/defaultskin/build/build_char_4211_snhunt.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4211_snhunt/defaultskin/build/build_char_4211_snhunt.png"
+    "assetId": "build_char_4211_snhunt",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "雪猎",
+    "appellation": "Snow Hunter",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4211_snhunt.atlas",
+      ".png": "build_char_4211_snhunt.png",
+      ".skel": "build_char_4211_snhunt.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/snow-hunter/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -216.58984,
+      "minX": -216.70773,
       "maxX": 191.47388,
-      "minY": -119.91058,
+      "minY": -120.54627,
       "maxY": 385.80148
     },
+    "full_source_bounds": {
+      "minX": -216.70773,
+      "maxX": 191.47388,
+      "minY": -120.54627,
+      "maxY": 385.80148
+    },
+    "core_source_bounds": {
+      "minX": -216.70773,
+      "maxX": 191.47388,
+      "minY": -120.54627,
+      "maxY": 380.38028
+    },
+    "cluster": {
+      "retained": 3164,
+      "total": 3164,
+      "centerX": 2.93915,
+      "centerY": 195.07362,
+      "radiusX": 374.97826,
+      "radiusY": 619.97639
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 88,
+      "visible_height": 154,
+      "density_zoom": 1
+    },
     "scale": 0.41,
-    "x_offset": 101.14877,
-    "y_offset": 166.83666,
+    "x_offset": 101.17294,
+    "y_offset": 166.57603,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:31.764Z"
+  "exported_at": "2026-08-19T13:23:58.905Z"
 }

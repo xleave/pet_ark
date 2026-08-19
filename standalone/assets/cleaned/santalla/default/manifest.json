@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "santalla",
   "character_name": "Santalla",
   "localized_name": "寒檀",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/santalla/default",
-  "source_page": "https://prts.wiki/w/%E5%AF%92%E6%AA%80",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_341_sntlla/meta.json",
-    "model": "defaultskin/build/build_char_341_sntlla",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_341_sntlla/defaultskin/build/build_char_341_sntlla.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_341_sntlla/defaultskin/build/build_char_341_sntlla.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_341_sntlla/defaultskin/build/build_char_341_sntlla.png"
+    "assetId": "build_char_341_sntlla",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "寒檀",
+    "appellation": "Santalla",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_341_sntlla.atlas",
+      ".png": "build_char_341_sntlla.png",
+      ".skel": "build_char_341_sntlla.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/santalla/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -229.1089,
+      "minX": -229.11778,
       "maxX": 208.30708,
-      "minY": -111.92603,
-      "maxY": 413.40152
+      "minY": -113.03844,
+      "maxY": 418.54913
     },
-    "scale": 0.39594,
-    "x_offset": 100.11817,
-    "y_offset": 171.68362,
+    "full_source_bounds": {
+      "minX": -229.11778,
+      "maxX": 208.30708,
+      "minY": -113.03844,
+      "maxY": 418.54913
+    },
+    "core_source_bounds": {
+      "minX": -229.11778,
+      "maxX": 208.30708,
+      "minY": -113.03844,
+      "maxY": 411.37323
+    },
+    "cluster": {
+      "retained": 1952,
+      "total": 1952,
+      "centerX": 3.42655,
+      "centerY": 167.47793,
+      "radiusX": 351.45246,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 115,
+      "visible_height": 161,
+      "density_zoom": 1
+    },
+    "scale": 0.39128,
+    "x_offset": 100.07141,
+    "y_offset": 171.77023,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:28.947Z"
+  "exported_at": "2026-08-19T13:23:46.987Z"
 }

@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "matoimaru",
   "character_name": "Matoimaru",
   "localized_name": "缠丸",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-40",
   "skin_name": "繁霜满阶",
   "source": "standalone/assets/source/matoimaru/skin-epoque-40",
-  "source_page": "https://prts.wiki/w/%E7%BC%A0%E4%B8%B8",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_289_gyuki/meta.json",
-    "model": "char_289_gyuki_epoque_40/build/build_char_289_gyuki_epoque_40",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_289_gyuki/char_289_gyuki_epoque_40/build/build_char_289_gyuki_epoque_40.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_289_gyuki/char_289_gyuki_epoque_40/build/build_char_289_gyuki_epoque_40.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_289_gyuki/char_289_gyuki_epoque_40/build/build_char_289_gyuki_epoque_40.png"
+    "assetId": "build_char_289_gyuki_epoque#40",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "缠丸",
+    "appellation": "Matoimaru",
+    "skinGroupId": "2025#epoque#2",
+    "skinGroupName": "时代/XXXIX",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_289_gyuki_epoque#40.atlas",
+      ".png": "build_char_289_gyuki_epoque#40.png",
+      ".skel": "build_char_289_gyuki_epoque#40.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/matoimaru/skin-epoque-40/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -302.38388,
-      "maxX": 323.64807,
+      "minX": -822.42334,
+      "maxX": 345.17166,
       "minY": -104.7897,
-      "maxY": 664.5116
+      "maxY": 740.1665
     },
     "full_source_bounds": {
       "minX": -822.42334,
@@ -129,23 +144,29 @@
       "maxY": 740.1665
     },
     "core_source_bounds": {
-      "minX": -302.38388,
+      "minX": -799.47998,
       "maxX": 323.64807,
       "minY": -104.7897,
       "maxY": 664.5116
     },
     "cluster": {
-      "retained": 3059,
+      "retained": 3074,
       "total": 3077,
-      "centerX": 1.49931,
-      "centerY": 141.44844,
-      "radiusX": 324.15624,
-      "radiusY": 643.85172
+      "centerX": 11.56088,
+      "centerY": 256.85189,
+      "radiusX": 756.23285,
+      "radiusY": 1101.10117
     },
-    "scale": 0.27038,
-    "x_offset": 93.12534,
-    "y_offset": 187.66746,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 52,
+      "visible_height": 68,
+      "density_zoom": 2.05882
+    },
+    "scale": 0.31034,
+    "x_offset": 111.37898,
+    "y_offset": 216.4206,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:44.830Z"
+  "exported_at": "2026-08-19T13:22:59.968Z"
 }

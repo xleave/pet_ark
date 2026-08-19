@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "beanstalk",
   "character_name": "Beanstalk",
   "localized_name": "豆苗",
@@ -11,15 +12,29 @@
   "skin_id": "snow-4",
   "skin_name": "未完成的礼物",
   "source": "standalone/assets/source/beanstalk/skin-snow-4",
-  "source_page": "https://prts.wiki/w/%E8%B1%86%E8%8B%97",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/meta.json",
-    "model": "char_452_bstalk_snow_4/build/build_char_452_bstalk_snow_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/char_452_bstalk_snow_4/build/build_char_452_bstalk_snow_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/char_452_bstalk_snow_4/build/build_char_452_bstalk_snow_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/char_452_bstalk_snow_4/build/build_char_452_bstalk_snow_4.png"
+    "assetId": "build_char_452_bstalk_snow#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "豆苗",
+    "appellation": "Beanstalk",
+    "skinGroupId": "2021#xmas#2",
+    "skinGroupName": "冰原信使/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_452_bstalk_snow#4.atlas",
+      ".png": "build_char_452_bstalk_snow#4.png",
+      ".skel": "build_char_452_bstalk_snow#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/beanstalk/skin-snow-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -267.17871,
-      "maxX": 185.02652,
+      "minX": -672.72394,
+      "maxX": 249.65709,
       "minY": -114.17626,
-      "maxY": 419.6774
+      "maxY": 451.2735
     },
     "full_source_bounds": {
       "minX": -672.72394,
@@ -129,23 +144,29 @@
       "maxY": 451.2735
     },
     "core_source_bounds": {
-      "minX": -267.17871,
+      "minX": -672.72394,
       "maxX": 185.02652,
       "minY": -114.17626,
-      "maxY": 419.6774
+      "maxY": 451.2735
     },
     "cluster": {
-      "retained": 2718,
+      "retained": 2753,
       "total": 2753,
-      "centerX": 1.09816,
-      "centerY": 138.78794,
-      "radiusX": 256,
-      "radiusY": 683.38757
+      "centerX": -186.26268,
+      "centerY": 190.18236,
+      "radiusX": 749.99359,
+      "radiusY": 880.06165
     },
-    "scale": 0.3892,
-    "x_offset": 111.98697,
-    "y_offset": 171.56216,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 37,
+      "visible_height": 81,
+      "density_zoom": 1.94595
+    },
+    "scale": 0.37131,
+    "x_offset": 94.76005,
+    "y_offset": 216.41637,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:33.474Z"
+  "exported_at": "2026-08-19T13:21:35.429Z"
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "papyrus",
@@ -12,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/papyrus/default",
-  "source_page": "https://prts.wiki/w/%E8%8E%8E%E8%8D%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4139_papyrs/meta.json",
-    "model": "defaultskin/build/build_char_4139_papyrs",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4139_papyrs/defaultskin/build/build_char_4139_papyrs.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4139_papyrs/defaultskin/build/build_char_4139_papyrs.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4139_papyrs/defaultskin/build/build_char_4139_papyrs.png"
+    "assetId": "build_char_4139_papyrs",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "莎草",
+    "appellation": "Papyrus",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4139_papyrs.atlas",
+      ".png": "build_char_4139_papyrs.png",
+      ".skel": "build_char_4139_papyrs.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -92,7 +105,7 @@
       "path": "standalone/assets/cleaned/papyrus/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -127,9 +140,9 @@
     "cluster": {
       "retained": 3156,
       "total": 3156,
-      "centerX": -165.74496,
+      "centerX": -165.74519,
       "centerY": 258.3687,
-      "radiusX": 495.04799,
+      "radiusX": 495.0457,
       "radiusY": 815.19531
     },
     "pixel_probe": {
@@ -143,5 +156,5 @@
     "y_offset": 216.91337,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:05.521Z"
+  "exported_at": "2026-08-19T13:23:23.247Z"
 }

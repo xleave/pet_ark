@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "rope",
   "character_name": "Rope",
   "localized_name": "暗索",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/rope/default",
-  "source_page": "https://prts.wiki/w/%E6%9A%97%E7%B4%A2",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_236_rope/meta.json",
-    "model": "defaultskin/build/build_char_236_rope",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_236_rope/defaultskin/build/build_char_236_rope.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_236_rope/defaultskin/build/build_char_236_rope.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_236_rope/defaultskin/build/build_char_236_rope.png"
+    "assetId": "build_char_236_rope",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "暗索",
+    "appellation": "Rope",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_236_rope.atlas",
+      ".png": "build_char_236_rope.png",
+      ".skel": "build_char_236_rope.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/rope/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -301.08905,
       "maxX": 160.43666,
       "minY": -112.48347,
       "maxY": 468.21924
     },
+    "full_source_bounds": {
+      "minX": -301.08905,
+      "maxX": 160.43666,
+      "minY": -112.48347,
+      "maxY": 468.21924
+    },
+    "core_source_bounds": {
+      "minX": -301.08905,
+      "maxX": 160.43666,
+      "minY": -112.48347,
+      "maxY": 468.21924
+    },
+    "cluster": {
+      "retained": 1194,
+      "total": 1194,
+      "centerX": 1.37651,
+      "centerY": 165.77245,
+      "radiusX": 350.20555,
+      "radiusY": 715.05501
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 99,
+      "visible_height": 163,
+      "density_zoom": 1
+    },
     "scale": 0.35819,
     "x_offset": 121.18991,
     "y_offset": 175.70992,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:27.968Z"
+  "exported_at": "2026-08-19T13:23:42.754Z"
 }

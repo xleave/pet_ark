@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "cardigan",
   "character_name": "Cardigan",
   "localized_name": "卡缇",
@@ -9,15 +12,29 @@
   "skin_id": "snow-1",
   "skin_name": "快乐卫士",
   "source": "standalone/assets/source/cardigan/skin-snow-1",
-  "source_page": "https://prts.wiki/w/%E5%8D%A1%E7%BC%87",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_209_ardign/meta.json",
-    "model": "char_209_ardign_snow_1/build/build_char_209_ardign_snow_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_209_ardign/char_209_ardign_snow_1/build/build_char_209_ardign_snow_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_209_ardign/char_209_ardign_snow_1/build/build_char_209_ardign_snow_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_209_ardign/char_209_ardign_snow_1/build/build_char_209_ardign_snow_1.png"
+    "assetId": "build_char_209_ardign_snow#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "卡缇",
+    "appellation": "Cardigan",
+    "skinGroupId": "2019#xmas",
+    "skinGroupName": "冰原信使/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_209_ardign_snow#1.atlas",
+      ".png": "build_char_209_ardign_snow#1.png",
+      ".skel": "build_char_209_ardign_snow#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/cardigan/skin-snow-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -272.16623,
-      "maxX": 176.62057,
-      "minY": -115.17236,
+      "minX": -272.20871,
+      "maxX": 194.61955,
+      "minY": -115.34998,
       "maxY": 438.25745
     },
-    "scale": 0.37584,
-    "x_offset": 113.95485,
-    "y_offset": 172.71384,
+    "full_source_bounds": {
+      "minX": -272.20871,
+      "maxX": 194.61955,
+      "minY": -115.34998,
+      "maxY": 438.25745
+    },
+    "core_source_bounds": {
+      "minX": -272.20871,
+      "maxX": 170.32645,
+      "minY": -115.34998,
+      "maxY": 432.83563
+    },
+    "cluster": {
+      "retained": 1677,
+      "total": 1677,
+      "centerX": -5.42584,
+      "centerY": 201.67024,
+      "radiusX": 362.56053,
+      "radiusY": 594.95432
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 83,
+      "visible_height": 160,
+      "density_zoom": 1
+    },
+    "scale": 0.37572,
+    "x_offset": 110.5758,
+    "y_offset": 172.66099,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:00.329Z"
+  "exported_at": "2026-08-19T13:21:45.254Z"
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "shining",
@@ -12,15 +12,29 @@
   "skin_id": "summer-1",
   "skin_name": "静谧午夜 DN02",
   "source": "standalone/assets/source/shining/skin-summer-1",
-  "source_page": "https://prts.wiki/w/%E9%97%AA%E7%81%B5",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_147_shining/meta.json",
-    "model": "char_147_shining_summer_1/build/build_char_147_shining_summer_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_147_shining/char_147_shining_summer_1/build/build_char_147_shining_summer_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_147_shining/char_147_shining_summer_1/build/build_char_147_shining_summer_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_147_shining/char_147_shining_summer_1/build/build_char_147_shining_summer_1.png"
+    "assetId": "build_char_147_shining_summer#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "闪灵",
+    "appellation": "Shining",
+    "skinGroupId": "2019#summer",
+    "skinGroupName": "珊瑚海岸/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_147_shining_summer#1.atlas",
+      ".png": "build_char_147_shining_summer#1.png",
+      ".skel": "build_char_147_shining_summer#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/shining/skin-summer-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -146,13 +160,13 @@
     "pixel_probe": {
       "animation": "Relax",
       "visible_width": 78,
-      "visible_height": 107,
-      "density_zoom": 1.30841
+      "visible_height": 105,
+      "density_zoom": 1.33333
     },
-    "scale": 0.3884,
-    "x_offset": 111.67675,
-    "y_offset": 199.93573,
+    "scale": 0.3958,
+    "x_offset": 111.97535,
+    "y_offset": 202.29641,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:50.988Z"
+  "exported_at": "2026-08-19T13:23:52.925Z"
 }

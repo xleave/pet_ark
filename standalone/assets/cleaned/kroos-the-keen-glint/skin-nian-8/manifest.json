@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "kroos-the-keen-glint",
@@ -12,15 +12,30 @@
   "skin_id": "nian-8",
   "skin_name": "廊下游",
   "source": "standalone/assets/source/kroos-the-keen-glint/skin-nian-8",
-  "source_page": "https://prts.wiki/w/%E5%AF%92%E8%8A%92%E5%85%8B%E6%B4%9B%E4%B8%9D",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1021_kroos2/meta.json",
-    "model": "char_1021_kroos2_nian_8/build/build_char_1021_kroos2_nian_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1021_kroos2/char_1021_kroos2_nian_8/build/build_char_1021_kroos2_nian_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1021_kroos2/char_1021_kroos2_nian_8/build/build_char_1021_kroos2_nian_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1021_kroos2/char_1021_kroos2_nian_8/build/build_char_1021_kroos2_nian_8.png"
+    "assetId": "build_char_1021_kroos2_nian#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "寒芒克洛丝",
+    "appellation": "Kroos the Keen Glint",
+    "skinGroupId": "2023#nian",
+    "skinGroupName": "0011制造/VII",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1021_kroos2_nian#8.atlas",
+      ".png": "build_char_1021_kroos2_nian#8.png",
+      ".skel": "build_char_1021_kroos2_nian#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +118,7 @@
       "path": "standalone/assets/cleaned/kroos-the-keen-glint/skin-nian-8/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -145,14 +160,14 @@
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 59,
+      "visible_width": 58,
       "visible_height": 135,
-      "density_zoom": 1.22034
+      "density_zoom": 1.24138
     },
-    "scale": 0.36534,
-    "x_offset": 101.74174,
-    "y_offset": 215.90379,
+    "scale": 0.37163,
+    "x_offset": 101.22005,
+    "y_offset": 215.90213,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:34.043Z"
+  "exported_at": "2026-08-19T13:22:45.828Z"
 }

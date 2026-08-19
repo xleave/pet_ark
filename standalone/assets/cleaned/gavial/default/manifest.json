@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "gavial",
   "character_name": "Gavial",
   "localized_name": "嘉维尔",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/gavial/default",
-  "source_page": "https://prts.wiki/w/%E5%98%89%E7%BB%B4%E5%B0%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_187_ccheal/meta.json",
-    "model": "defaultskin/build/build_char_187_ccheal",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_187_ccheal/defaultskin/build/build_char_187_ccheal.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_187_ccheal/defaultskin/build/build_char_187_ccheal.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_187_ccheal/defaultskin/build/build_char_187_ccheal.png"
+    "assetId": "build_char_187_ccheal",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "嘉维尔",
+    "appellation": "Gavial",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_187_ccheal.atlas",
+      ".png": "build_char_187_ccheal.png",
+      ".skel": "build_char_187_ccheal.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/gavial/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -267.12256,
+      "minX": -267.13315,
       "maxX": 275.7663,
       "minY": -115.98585,
-      "maxY": 427.39932
+      "maxY": 428.43411
+    },
+    "full_source_bounds": {
+      "minX": -267.13315,
+      "maxX": 275.7663,
+      "minY": -115.98585,
+      "maxY": 428.43411
+    },
+    "core_source_bounds": {
+      "minX": -267.13315,
+      "maxX": 275.7663,
+      "minY": -115.98585,
+      "maxY": 428.43411
+    },
+    "cluster": {
+      "retained": 1225,
+      "total": 1225,
+      "centerX": -14.32226,
+      "centerY": 188.33176,
+      "radiusX": 356.40018,
+      "radiusY": 645.11299
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 85,
+      "visible_height": 139,
+      "density_zoom": 1.00719
     },
     "scale": 0.32419,
-    "x_offset": 94.59889,
-    "y_offset": 178.39836,
+    "x_offset": 94.60063,
+    "y_offset": 178.3991,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:07.789Z"
+  "exported_at": "2026-08-19T13:22:17.314Z"
 }

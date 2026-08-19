@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "ling",
@@ -12,15 +12,29 @@
   "skin_id": "nian-9",
   "skin_name": "濯缨",
   "source": "standalone/assets/source/ling/skin-nian-9",
-  "source_page": "https://prts.wiki/w/%E4%BB%A4",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2023_ling/meta.json",
-    "model": "char_2023_ling_nian_9/build/build_char_2023_ling_nian_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2023_ling/char_2023_ling_nian_9/build/build_char_2023_ling_nian_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2023_ling/char_2023_ling_nian_9/build/build_char_2023_ling_nian_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2023_ling/char_2023_ling_nian_9/build/build_char_2023_ling_nian_9.png"
+    "assetId": "build_char_2023_ling_nian#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "令",
+    "appellation": "Ling",
+    "skinGroupId": "2023#nian#2",
+    "skinGroupName": "0011制造/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2023_ling_nian#9.atlas",
+      ".png": "build_char_2023_ling_nian#9.png",
+      ".skel": "build_char_2023_ling_nian#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/ling/skin-nian-9/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -154,5 +168,5 @@
     "y_offset": 215.13382,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:58.671Z"
+  "exported_at": "2026-08-19T13:22:54.116Z"
 }

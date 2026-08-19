@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "194-leto",
@@ -12,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/194-leto/default",
-  "source_page": "https://prts.wiki/w/%E7%83%88%E5%A4%8F",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_194_leto/meta.json",
-    "model": "defaultskin/build/build_char_194_leto",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_194_leto/defaultskin/build/build_char_194_leto.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_194_leto/defaultskin/build/build_char_194_leto.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_194_leto/defaultskin/build/build_char_194_leto.png"
+    "assetId": "build_char_194_leto",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "烈夏",
+    "appellation": "Лето",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_194_leto.atlas",
+      ".png": "build_char_194_leto.png",
+      ".skel": "build_char_194_leto.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -92,7 +105,7 @@
       "path": "standalone/assets/cleaned/194-leto/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -135,13 +148,13 @@
     "pixel_probe": {
       "animation": "Relax",
       "visible_width": 70,
-      "visible_height": 95,
-      "density_zoom": 1.47368
+      "visible_height": 94,
+      "density_zoom": 1.48936
     },
-    "scale": 0.35578,
-    "x_offset": 94.09742,
-    "y_offset": 215.96233,
+    "scale": 0.35956,
+    "x_offset": 94.07718,
+    "y_offset": 217.45129,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:42.188Z"
+  "exported_at": "2026-08-19T13:21:15.916Z"
 }

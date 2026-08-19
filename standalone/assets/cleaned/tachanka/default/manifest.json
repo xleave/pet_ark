@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "tachanka",
@@ -12,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/tachanka/default",
-  "source_page": "https://prts.wiki/w/%E6%88%98%E8%BD%A6",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_459_tachak/meta.json",
-    "model": "defaultskin/build/build_char_459_tachak",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_459_tachak/defaultskin/build/build_char_459_tachak.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_459_tachak/defaultskin/build/build_char_459_tachak.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_459_tachak/defaultskin/build/build_char_459_tachak.png"
+    "assetId": "build_char_459_tachak",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "战车",
+    "appellation": "Tachanka",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_459_tachak.atlas",
+      ".png": "build_char_459_tachak.png",
+      ".skel": "build_char_459_tachak.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -92,7 +105,7 @@
       "path": "standalone/assets/cleaned/tachanka/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -134,7 +147,7 @@
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 58,
+      "visible_width": 56,
       "visible_height": 129,
       "density_zoom": 1.23378
     },
@@ -143,5 +156,5 @@
     "y_offset": 216.59954,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:52.393Z"
+  "exported_at": "2026-08-19T13:24:05.471Z"
 }

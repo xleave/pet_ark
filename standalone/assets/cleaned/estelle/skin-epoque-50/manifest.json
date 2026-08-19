@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "estelle",
@@ -12,15 +12,29 @@
   "skin_id": "epoque-50",
   "skin_name": "花冕圆舞曲",
   "source": "standalone/assets/source/estelle/skin-epoque-50",
-  "source_page": "https://prts.wiki/w/%E8%89%BE%E4%B8%9D%E9%BB%9B%E5%B0%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_127_estell/meta.json",
-    "model": "char_127_estell_epoque_50/build/build_char_127_estell_epoque_50",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_127_estell/char_127_estell_epoque_50/build/build_char_127_estell_epoque_50.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_127_estell/char_127_estell_epoque_50/build/build_char_127_estell_epoque_50.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_127_estell/char_127_estell_epoque_50/build/build_char_127_estell_epoque_50.png"
+    "assetId": "build_char_127_estell_epoque#50",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "艾丝黛尔",
+    "appellation": "Estelle",
+    "skinGroupId": "2025#epoque#12",
+    "skinGroupName": "时代/XLIX",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_127_estell_epoque#50.atlas",
+      ".png": "build_char_127_estell_epoque#50.png",
+      ".skel": "build_char_127_estell_epoque#50.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/estelle/skin-epoque-50/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -154,5 +168,5 @@
     "y_offset": 217.40335,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:49.559Z"
+  "exported_at": "2026-08-19T13:22:06.152Z"
 }

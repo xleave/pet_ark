@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ambriel",
   "character_name": "Ambriel",
   "localized_name": "安比尔",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/ambriel/default",
-  "source_page": "https://prts.wiki/w/%E5%AE%89%E6%AF%94%E5%B0%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_302_glaze/meta.json",
-    "model": "defaultskin/build/build_char_302_glaze",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_302_glaze/defaultskin/build/build_char_302_glaze.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_302_glaze/defaultskin/build/build_char_302_glaze.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_302_glaze/defaultskin/build/build_char_302_glaze.png"
+    "assetId": "build_char_302_glaze",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "安比尔",
+    "appellation": "Ambriel",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_302_glaze.atlas",
+      ".png": "build_char_302_glaze.png",
+      ".skel": "build_char_302_glaze.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/ambriel/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -244.85861,
       "maxX": 181.19588,
       "minY": -106.36391,
       "maxY": 494.29111
     },
+    "full_source_bounds": {
+      "minX": -244.85861,
+      "maxX": 181.19588,
+      "minY": -106.36391,
+      "maxY": 494.29111
+    },
+    "core_source_bounds": {
+      "minX": -244.85861,
+      "maxX": 181.19588,
+      "minY": -106.36391,
+      "maxY": 494.29111
+    },
+    "cluster": {
+      "retained": 1939,
+      "total": 1939,
+      "centerX": -9.59334,
+      "centerY": 199.41155,
+      "radiusX": 376.13842,
+      "radiusY": 605.00216
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 108,
+      "visible_height": 143,
+      "density_zoom": 1
+    },
     "scale": 0.34629,
     "x_offset": 107.02284,
     "y_offset": 179.16739,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:55.385Z"
+  "exported_at": "2026-08-19T13:21:22.454Z"
 }

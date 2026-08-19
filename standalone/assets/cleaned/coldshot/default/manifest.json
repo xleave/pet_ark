@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "coldshot",
   "character_name": "Coldshot",
   "localized_name": "冰酿",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/coldshot/default",
-  "source_page": "https://prts.wiki/w/%E5%86%B0%E9%85%BF",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4104_coldst/meta.json",
-    "model": "defaultskin/build/build_char_4104_coldst",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4104_coldst/defaultskin/build/build_char_4104_coldst.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4104_coldst/defaultskin/build/build_char_4104_coldst.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4104_coldst/defaultskin/build/build_char_4104_coldst.png"
+    "assetId": "build_char_4104_coldst",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "冰酿",
+    "appellation": "Coldshot",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4104_coldst.atlas",
+      ".png": "build_char_4104_coldst.png",
+      ".skel": "build_char_4104_coldst.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/coldshot/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -268.35373,
       "maxX": 268.09958,
       "minY": -119.2376,
-      "maxY": 446.62332
+      "maxY": 445.90253
+    },
+    "full_source_bounds": {
+      "minX": -268.35373,
+      "maxX": 268.09958,
+      "minY": -119.2376,
+      "maxY": 445.90253
+    },
+    "core_source_bounds": {
+      "minX": -268.35373,
+      "maxX": 268.09958,
+      "minY": -119.2376,
+      "maxY": 441.93585
+    },
+    "cluster": {
+      "retained": 2281,
+      "total": 2281,
+      "centerX": -2.81911,
+      "centerY": 176.2671,
+      "radiusX": 407.98131,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 74,
+      "visible_height": 144,
+      "density_zoom": 1
     },
     "scale": 0.32808,
     "x_offset": 96.04169,
     "y_offset": 176.88044,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:02.302Z"
+  "exported_at": "2026-08-19T13:21:53.517Z"
 }

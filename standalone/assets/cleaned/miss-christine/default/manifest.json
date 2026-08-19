@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "miss-christine",
   "character_name": "Miss.Christine",
   "localized_name": "Miss.Christine",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/miss-christine/default",
-  "source_page": "https://prts.wiki/w/Miss.Christine",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/meta.json",
-    "model": "defaultskin/build/build_char_4198_christ",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/defaultskin/build/build_char_4198_christ.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/defaultskin/build/build_char_4198_christ.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/defaultskin/build/build_char_4198_christ.png"
+    "assetId": "build_char_4198_christ",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "Miss.Christine",
+    "appellation": "Miss.Christine",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4198_christ.atlas",
+      ".png": "build_char_4198_christ.png",
+      ".skel": "build_char_4198_christ.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/miss-christine/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -269.77084,
-      "maxX": 168.55113,
-      "minY": -11.21336,
+      "maxX": 169.36856,
+      "minY": -11.49255,
       "maxY": 398.52847
     },
-    "scale": 0.40153,
-    "x_offset": 116.32144,
-    "y_offset": 211.49749,
+    "full_source_bounds": {
+      "minX": -269.77084,
+      "maxX": 169.36856,
+      "minY": -11.49255,
+      "maxY": 398.52847
+    },
+    "core_source_bounds": {
+      "minX": -255.14534,
+      "maxX": 148.13293,
+      "minY": -6.60659,
+      "maxY": 398.52847
+    },
+    "cluster": {
+      "retained": 1111,
+      "total": 1111,
+      "centerX": 73.63915,
+      "centerY": 138.8017,
+      "radiusX": 320,
+      "radiusY": 553.96597
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 156,
+      "visible_height": 107,
+      "density_zoom": 1.023
+    },
+    "scale": 0.40078,
+    "x_offset": 116.11981,
+    "y_offset": 211.39397,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:18.566Z"
+  "exported_at": "2026-08-19T13:23:04.607Z"
 }

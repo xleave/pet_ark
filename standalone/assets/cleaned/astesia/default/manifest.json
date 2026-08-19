@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "astesia",
   "character_name": "Astesia",
   "localized_name": "星极",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/astesia/default",
-  "source_page": "https://prts.wiki/w/%E6%98%9F%E6%9E%81",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/meta.json",
-    "model": "defaultskin/build/build_char_274_astesi",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/defaultskin/build/build_char_274_astesi.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/defaultskin/build/build_char_274_astesi.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/defaultskin/build/build_char_274_astesi.png"
+    "assetId": "build_char_274_astesi",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "星极",
+    "appellation": "Astesia",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_274_astesi.atlas",
+      ".png": "build_char_274_astesi.png",
+      ".skel": "build_char_274_astesi.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/astesia/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -229.67645,
-      "maxX": 154.43832,
-      "minY": -126.60311,
-      "maxY": 386.22528
+      "minX": -229.52434,
+      "maxX": 154.43848,
+      "minY": -126.39083,
+      "maxY": 395.26584
     },
-    "scale": 0.40559,
-    "x_offset": 111.25806,
-    "y_offset": 164.65057,
+    "full_source_bounds": {
+      "minX": -229.52434,
+      "maxX": 154.43848,
+      "minY": -126.39083,
+      "maxY": 395.26584
+    },
+    "core_source_bounds": {
+      "minX": -229.52434,
+      "maxX": 154.43848,
+      "minY": -126.39083,
+      "maxY": 384.84128
+    },
+    "cluster": {
+      "retained": 1477,
+      "total": 1477,
+      "centerX": -3.4438,
+      "centerY": 200.95408,
+      "radiusX": 385.96235,
+      "radiusY": 619.99214
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 94,
+      "visible_height": 153,
+      "density_zoom": 1
+    },
+    "scale": 0.39873,
+    "x_offset": 110.96948,
+    "y_offset": 165.60422,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:57.014Z"
+  "exported_at": "2026-08-19T13:21:30.646Z"
 }

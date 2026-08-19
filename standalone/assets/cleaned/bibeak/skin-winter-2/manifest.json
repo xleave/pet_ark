@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "bibeak",
@@ -12,15 +12,29 @@
   "skin_id": "winter-2",
   "skin_name": "软绒",
   "source": "standalone/assets/source/bibeak/skin-winter-2",
-  "source_page": "https://prts.wiki/w/%E6%9F%8F%E5%96%99",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_252_bibeak/meta.json",
-    "model": "char_252_bibeak_winter_2/build/build_char_252_bibeak_winter_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_252_bibeak/char_252_bibeak_winter_2/build/build_char_252_bibeak_winter_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_252_bibeak/char_252_bibeak_winter_2/build/build_char_252_bibeak_winter_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_252_bibeak/char_252_bibeak_winter_2/build/build_char_252_bibeak_winter_2.png"
+    "assetId": "build_char_252_bibeak_winter#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "柏喙",
+    "appellation": "Bibeak",
+    "skinGroupId": "2021#winter",
+    "skinGroupName": "寒武纪/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_252_bibeak_winter#2.atlas",
+      ".png": "build_char_252_bibeak_winter#2.png",
+      ".skel": "build_char_252_bibeak_winter#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/bibeak/skin-winter-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -145,14 +159,14 @@
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 68,
+      "visible_width": 67,
       "visible_height": 91,
       "density_zoom": 1.53846
     },
     "scale": 0.35859,
-    "x_offset": 118.14405,
+    "x_offset": 118.91328,
     "y_offset": 214.94604,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:45.069Z"
+  "exported_at": "2026-08-19T13:21:37.083Z"
 }

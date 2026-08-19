@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
-  "placement_revision": 2,
+  "placement_revision": 3,
   "character": "marcille",
   "character_name": "Marcille",
   "localized_name": "玛露西尔",
@@ -12,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/marcille/default",
-  "source_page": "https://prts.wiki/w/%E7%8E%9B%E9%9C%B2%E8%A5%BF%E5%B0%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4141_marcil/meta.json",
-    "model": "defaultskin/build/build_char_4141_marcil",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4141_marcil/defaultskin/build/build_char_4141_marcil.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4141_marcil/defaultskin/build/build_char_4141_marcil.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4141_marcil/defaultskin/build/build_char_4141_marcil.png"
+    "assetId": "build_char_4141_marcil",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "玛露西尔",
+    "appellation": "Marcille",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4141_marcil.atlas",
+      ".png": "build_char_4141_marcil.png",
+      ".skel": "build_char_4141_marcil.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -92,7 +105,7 @@
       "path": "standalone/assets/cleaned/marcille/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -132,10 +145,16 @@
       "radiusX": 414.97579,
       "radiusY": 570.09533
     },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 100,
+      "visible_height": 151,
+      "density_zoom": 1
+    },
     "scale": 0.41,
     "x_offset": 90.30842,
     "y_offset": 174.54729,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:07:49.947Z"
+  "exported_at": "2026-08-19T13:22:58.873Z"
 }

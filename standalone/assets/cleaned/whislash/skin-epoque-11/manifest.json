@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "whislash",
   "character_name": "Whislash",
   "localized_name": "鞭刃",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-11",
   "skin_name": "荣耀之紫",
   "source": "standalone/assets/source/whislash/skin-epoque-11",
-  "source_page": "https://prts.wiki/w/%E9%9E%AD%E5%88%83",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_265_sophia/meta.json",
-    "model": "char_265_sophia_epoque_11/build/build_char_265_sophia_epoque_11",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_265_sophia/char_265_sophia_epoque_11/build/build_char_265_sophia_epoque_11.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_265_sophia/char_265_sophia_epoque_11/build/build_char_265_sophia_epoque_11.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_265_sophia/char_265_sophia_epoque_11/build/build_char_265_sophia_epoque_11.png"
+    "assetId": "build_char_265_sophia_epoque#11",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "鞭刃",
+    "appellation": "Whislash",
+    "skinGroupId": "2021#epoque#3",
+    "skinGroupName": "时代/XI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_265_sophia_epoque#11.atlas",
+      ".png": "build_char_265_sophia_epoque#11.png",
+      ".skel": "build_char_265_sophia_epoque#11.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/whislash/skin-epoque-11/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -224.03447,
-      "maxX": 283.81778,
+      "maxX": 864.63599,
       "minY": -106.81751,
-      "maxY": 549.80249
+      "maxY": 779.88348
     },
     "full_source_bounds": {
       "minX": -224.03447,
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -224.03447,
-      "maxX": 283.81778,
+      "maxX": 756.11346,
       "minY": -106.81751,
-      "maxY": 549.80249
+      "maxY": 638.09241
     },
     "cluster": {
-      "retained": 2332,
+      "retained": 2355,
       "total": 2360,
-      "centerX": -3.13433,
-      "centerY": 130.11491,
-      "radiusX": 280.26979,
-      "radiusY": 686.16578
+      "centerX": 41.49312,
+      "centerY": 209.80983,
+      "radiusX": 652.64622,
+      "radiusY": 824.99838
     },
-    "scale": 0.31677,
-    "x_offset": 86.53111,
-    "y_offset": 182.16301,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 43,
+      "visible_height": 68,
+      "density_zoom": 2.05882
+    },
+    "scale": 0.33284,
+    "x_offset": 100.56761,
+    "y_offset": 217.5057,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:53.262Z"
+  "exported_at": "2026-08-19T13:24:27.402Z"
 }

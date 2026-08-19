@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "texas",
   "character_name": "Texas",
   "localized_name": "德克萨斯",
@@ -9,15 +12,29 @@
   "skin_id": "winter-1",
   "skin_name": "寒冬信使",
   "source": "standalone/assets/source/texas/skin-winter-1",
-  "source_page": "https://prts.wiki/w/%E5%BE%B7%E5%85%8B%E8%90%A8%E6%96%AF",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/meta.json",
-    "model": "char_102_texas_winter_1/build/build_char_102_texas_winter_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/char_102_texas_winter_1/build/build_char_102_texas_winter_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/char_102_texas_winter_1/build/build_char_102_texas_winter_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/char_102_texas_winter_1/build/build_char_102_texas_winter_1.png"
+    "assetId": "build_char_102_texas_winter#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "德克萨斯",
+    "appellation": "Texas",
+    "skinGroupId": "2018#winter",
+    "skinGroupName": "寒武纪/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_102_texas_winter#1.atlas",
+      ".png": "build_char_102_texas_winter#1.png",
+      ".skel": "build_char_102_texas_winter#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/texas/skin-winter-1/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -234.49698,
+      "minX": -234.42,
       "maxX": 191.73657,
       "minY": -141.99832,
-      "maxY": 409.46243
+      "maxY": 409.56531
     },
-    "scale": 0.37718,
-    "x_offset": 104.06419,
-    "y_offset": 162.44106,
+    "full_source_bounds": {
+      "minX": -234.42,
+      "maxX": 191.73657,
+      "minY": -141.99832,
+      "maxY": 409.56531
+    },
+    "core_source_bounds": {
+      "minX": -234.42,
+      "maxX": 191.73657,
+      "minY": -141.99832,
+      "maxY": 409.56531
+    },
+    "cluster": {
+      "retained": 1681,
+      "total": 1681,
+      "centerX": 0.03032,
+      "centerY": 175.26547,
+      "radiusX": 453.75177,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 96,
+      "visible_height": 153,
+      "density_zoom": 1
+    },
+    "scale": 0.37711,
+    "x_offset": 104.04817,
+    "y_offset": 162.45105,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:33.909Z"
+  "exported_at": "2026-08-19T13:24:08.255Z"
 }

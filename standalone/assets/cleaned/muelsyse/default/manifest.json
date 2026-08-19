@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "muelsyse",
@@ -12,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/muelsyse/default",
-  "source_page": "https://prts.wiki/w/%E7%BC%AA%E5%B0%94%E8%B5%9B%E6%80%9D",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/meta.json",
-    "model": "defaultskin/build/build_char_249_mlyss",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/defaultskin/build/build_char_249_mlyss.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/defaultskin/build/build_char_249_mlyss.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/defaultskin/build/build_char_249_mlyss.png"
+    "assetId": "build_char_249_mlyss",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "缪尔赛思",
+    "appellation": "Muelsyse",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_249_mlyss.atlas",
+      ".png": "build_char_249_mlyss.png",
+      ".skel": "build_char_249_mlyss.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -92,7 +105,7 @@
       "path": "standalone/assets/cleaned/muelsyse/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -125,8 +138,8 @@
       "maxY": 400.66119
     },
     "cluster": {
-      "retained": 2062,
-      "total": 2062,
+      "retained": 2044,
+      "total": 2044,
       "centerX": 13.86181,
       "centerY": 165.96168,
       "radiusX": 384.9805,
@@ -134,14 +147,14 @@
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 65,
-      "visible_height": 103,
-      "density_zoom": 1.35922
+      "visible_width": 64,
+      "visible_height": 102,
+      "density_zoom": 1.37255
     },
-    "scale": 0.34851,
-    "x_offset": 90.94157,
-    "y_offset": 215.9399,
+    "scale": 0.35192,
+    "x_offset": 91.57825,
+    "y_offset": 215.93931,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:42.559Z"
+  "exported_at": "2026-08-19T13:23:10.997Z"
 }

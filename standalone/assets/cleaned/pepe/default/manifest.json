@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "pepe",
   "character_name": "Pepe",
   "localized_name": "佩佩",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/pepe/default",
-  "source_page": "https://prts.wiki/w/%E4%BD%A9%E4%BD%A9",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4058_pepe/meta.json",
-    "model": "defaultskin/build/build_char_4058_pepe",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4058_pepe/defaultskin/build/build_char_4058_pepe.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4058_pepe/defaultskin/build/build_char_4058_pepe.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4058_pepe/defaultskin/build/build_char_4058_pepe.png"
+    "assetId": "build_char_4058_pepe",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "佩佩",
+    "appellation": "Pepe",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4058_pepe.atlas",
+      ".png": "build_char_4058_pepe.png",
+      ".skel": "build_char_4058_pepe.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/pepe/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -271.21964,
-      "maxX": 183.03462,
+      "maxX": 182.98317,
       "minY": -21.96755,
-      "maxY": 419.28284
+      "maxY": 419.75293
     },
-    "scale": 0.38745,
-    "x_offset": 113.08356,
-    "y_offset": 207.48871,
+    "full_source_bounds": {
+      "minX": -271.21964,
+      "maxX": 182.98317,
+      "minY": -21.96755,
+      "maxY": 419.75293
+    },
+    "core_source_bounds": {
+      "minX": -271.21964,
+      "maxX": 182.98317,
+      "minY": -21.96755,
+      "maxY": 418.79059
+    },
+    "cluster": {
+      "retained": 2496,
+      "total": 2496,
+      "centerX": 1.52074,
+      "centerY": 154.00787,
+      "radiusX": 374.99915,
+      "radiusY": 669.6032
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 92,
+      "visible_height": 162,
+      "density_zoom": 1
+    },
+    "scale": 0.38749,
+    "x_offset": 113.09547,
+    "y_offset": 207.48775,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:23.089Z"
+  "exported_at": "2026-08-19T13:23:25.139Z"
 }

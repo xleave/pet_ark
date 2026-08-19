@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "hoshiguma",
   "character_name": "Hoshiguma",
   "localized_name": "星熊",
@@ -11,15 +12,29 @@
   "skin_id": "summer-16",
   "skin_name": "探寻者 SK97",
   "source": "standalone/assets/source/hoshiguma/skin-summer-16",
-  "source_page": "https://prts.wiki/w/%E6%98%9F%E7%86%8A",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_136_hsguma/meta.json",
-    "model": "char_136_hsguma_summer_16/build/build_char_136_hsguma_summer_16",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_136_hsguma/char_136_hsguma_summer_16/build/build_char_136_hsguma_summer_16.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_136_hsguma/char_136_hsguma_summer_16/build/build_char_136_hsguma_summer_16.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_136_hsguma/char_136_hsguma_summer_16/build/build_char_136_hsguma_summer_16.png"
+    "assetId": "build_char_136_hsguma_summer#16",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "星熊",
+    "appellation": "Hoshiguma",
+    "skinGroupId": "2024#summer",
+    "skinGroupName": "珊瑚海岸/XVI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_136_hsguma_summer#16.atlas",
+      ".png": "build_char_136_hsguma_summer#16.png",
+      ".skel": "build_char_136_hsguma_summer#16.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/hoshiguma/skin-summer-16/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -123,7 +138,7 @@
       "maxY": 437.88214
     },
     "full_source_bounds": {
-      "minX": -249.97705,
+      "minX": -249.97707,
       "maxX": 683.64526,
       "minY": -124.77779,
       "maxY": 620.42371
@@ -137,15 +152,21 @@
     "cluster": {
       "retained": 1785,
       "total": 1785,
-      "centerX": -7.01866,
-      "centerY": 139.46684,
-      "radiusX": 277.43922,
-      "radiusY": 695.74032
+      "centerX": 33.34143,
+      "centerY": 240.43922,
+      "radiusX": 376.44117,
+      "radiusY": 897.10918
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 101,
+      "visible_height": 135,
+      "density_zoom": 1.03704
     },
     "scale": 0.34516,
     "x_offset": 91.05127,
     "y_offset": 182.1566,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:47.892Z"
+  "exported_at": "2026-08-19T13:22:31.924Z"
 }

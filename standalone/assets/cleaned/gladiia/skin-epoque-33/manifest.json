@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "gladiia",
   "character_name": "Gladiia",
   "localized_name": "歌蕾蒂娅",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-33",
   "skin_name": "我即潮汐",
   "source": "standalone/assets/source/gladiia/skin-epoque-33",
-  "source_page": "https://prts.wiki/w/%E6%AD%8C%E8%95%BE%E8%92%82%E5%A8%85",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_474_glady/meta.json",
-    "model": "char_474_glady_epoque_33/build/build_char_474_glady_epoque_33",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_474_glady/char_474_glady_epoque_33/build/build_char_474_glady_epoque_33.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_474_glady/char_474_glady_epoque_33/build/build_char_474_glady_epoque_33.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_474_glady/char_474_glady_epoque_33/build/build_char_474_glady_epoque_33.png"
+    "assetId": "build_char_474_glady_epoque#33",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "歌蕾蒂娅",
+    "appellation": "Gladiia",
+    "skinGroupId": "2024#epoque#4",
+    "skinGroupName": "时代/XXXIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_474_glady_epoque#33.atlas",
+      ".png": "build_char_474_glady_epoque#33.png",
+      ".skel": "build_char_474_glady_epoque#33.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -114,7 +129,7 @@
       ]
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -149,15 +164,21 @@
     "cluster": {
       "retained": 3381,
       "total": 3398,
-      "centerX": 1.01328,
-      "centerY": 137.94012,
-      "radiusX": 256,
-      "radiusY": 519.64021
+      "centerX": 7.49458,
+      "centerY": 174.35624,
+      "radiusX": 347.76559,
+      "radiusY": 653.59639
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 124,
+      "visible_height": 154,
+      "density_zoom": 1
     },
     "scale": 0.34731,
     "x_offset": 104.81844,
     "y_offset": 162.3772,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:15.311Z"
+  "exported_at": "2026-08-19T13:22:19.371Z"
 }

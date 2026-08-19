@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "silence",
   "character_name": "Silence",
   "localized_name": "赫默",
@@ -9,15 +12,29 @@
   "skin_id": "winter-2",
   "skin_name": "霜息",
   "source": "standalone/assets/source/silence/skin-winter-2",
-  "source_page": "https://prts.wiki/w/%E8%B5%AB%E9%BB%98",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_108_silent/meta.json",
-    "model": "char_108_silent_winter_2/build/build_char_108_silent_winter_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_108_silent/char_108_silent_winter_2/build/build_char_108_silent_winter_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_108_silent/char_108_silent_winter_2/build/build_char_108_silent_winter_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_108_silent/char_108_silent_winter_2/build/build_char_108_silent_winter_2.png"
+    "assetId": "build_char_108_silent_winter#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "赫默",
+    "appellation": "Silence",
+    "skinGroupId": "2021#winter",
+    "skinGroupName": "寒武纪/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_108_silent_winter#2.atlas",
+      ".png": "build_char_108_silent_winter#2.png",
+      ".skel": "build_char_108_silent_winter#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/silence/skin-winter-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -245.31355,
+      "minX": -247.07024,
       "maxX": 202.98877,
-      "minY": -120.56314,
+      "minY": -122.06779,
       "maxY": 407.60413
     },
-    "scale": 0.39259,
-    "x_offset": 104.30819,
-    "y_offset": 168.66785,
+    "full_source_bounds": {
+      "minX": -247.07024,
+      "maxX": 202.98877,
+      "minY": -122.06779,
+      "maxY": 407.60413
+    },
+    "core_source_bounds": {
+      "minX": -215.96237,
+      "maxX": 202.98877,
+      "minY": -122.06779,
+      "maxY": 407.60413
+    },
+    "cluster": {
+      "retained": 2044,
+      "total": 2044,
+      "centerX": 6.03387,
+      "centerY": 221.99714,
+      "radiusX": 320,
+      "radiusY": 531.60641
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 91,
+      "visible_height": 160,
+      "density_zoom": 1
+    },
+    "scale": 0.39106,
+    "x_offset": 104.61925,
+    "y_offset": 168.26419,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:30.877Z"
+  "exported_at": "2026-08-19T13:23:55.332Z"
 }

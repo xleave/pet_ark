@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "astesia",
   "character_name": "Astesia",
   "localized_name": "星极",
@@ -9,15 +12,29 @@
   "skin_id": "epoque-5",
   "skin_name": "寻耀",
   "source": "standalone/assets/source/astesia/skin-epoque-5",
-  "source_page": "https://prts.wiki/w/%E6%98%9F%E6%9E%81",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/meta.json",
-    "model": "char_274_astesi_epoque_5/build/build_char_274_astesi_epoque_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/char_274_astesi_epoque_5/build/build_char_274_astesi_epoque_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/char_274_astesi_epoque_5/build/build_char_274_astesi_epoque_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/char_274_astesi_epoque_5/build/build_char_274_astesi_epoque_5.png"
+    "assetId": "build_char_274_astesi_epoque#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "星极",
+    "appellation": "Astesia",
+    "skinGroupId": "2020#epoque#4",
+    "skinGroupName": "时代/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_274_astesi_epoque#5.atlas",
+      ".png": "build_char_274_astesi_epoque#5.png",
+      ".skel": "build_char_274_astesi_epoque#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/astesia/skin-epoque-5/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -251.96399,
-      "maxX": 477.95111,
-      "minY": -158.15508,
-      "maxY": 446.95422
+      "minX": -252.10382,
+      "maxX": 477.89526,
+      "minY": -157.92827,
+      "maxY": 451.69547
     },
-    "scale": 0.24112,
-    "x_offset": 68.75455,
-    "y_offset": 177.86503,
+    "full_source_bounds": {
+      "minX": -252.10382,
+      "maxX": 477.89526,
+      "minY": -157.92827,
+      "maxY": 451.69547
+    },
+    "core_source_bounds": {
+      "minX": -252.10382,
+      "maxX": 477.65421,
+      "minY": -157.92827,
+      "maxY": 445.87933
+    },
+    "cluster": {
+      "retained": 2160,
+      "total": 2160,
+      "centerX": 3.49442,
+      "centerY": 196.03081,
+      "radiusX": 444.99298,
+      "radiusY": 666.3414
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 147,
+      "visible_height": 111,
+      "density_zoom": 1.19728
+    },
+    "scale": 0.2411,
+    "x_offset": 68.78127,
+    "y_offset": 177.9241,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:57.237Z"
+  "exported_at": "2026-08-19T13:21:31.136Z"
 }

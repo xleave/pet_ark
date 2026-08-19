@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "harmonie",
   "character_name": "Harmonie",
   "localized_name": "和弦",
@@ -9,15 +12,29 @@
   "skin_id": "epoque-24",
   "skin_name": "邀约",
   "source": "standalone/assets/source/harmonie/skin-epoque-24",
-  "source_page": "https://prts.wiki/w/%E5%92%8C%E5%BC%A6",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/meta.json",
-    "model": "char_297_hamoni_epoque_24/build/build_char_297_hamoni_epoque_24",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/char_297_hamoni_epoque_24/build/build_char_297_hamoni_epoque_24.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/char_297_hamoni_epoque_24/build/build_char_297_hamoni_epoque_24.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/char_297_hamoni_epoque_24/build/build_char_297_hamoni_epoque_24.png"
+    "assetId": "build_char_297_hamoni_epoque#24",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "和弦",
+    "appellation": "Harmonie",
+    "skinGroupId": "2023#epoque#6",
+    "skinGroupName": "时代/XXIV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_297_hamoni_epoque#24.atlas",
+      ".png": "build_char_297_hamoni_epoque#24.png",
+      ".skel": "build_char_297_hamoni_epoque#24.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/harmonie/skin-epoque-24/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -276.08115,
       "maxX": 318.36734,
       "minY": -105.9594,
-      "maxY": 419.95364
+      "maxY": 425.52206
+    },
+    "full_source_bounds": {
+      "minX": -276.08115,
+      "maxX": 318.36734,
+      "minY": -105.9594,
+      "maxY": 425.52206
+    },
+    "core_source_bounds": {
+      "minX": -276.08115,
+      "maxX": 318.36734,
+      "minY": -105.9594,
+      "maxY": 417.21722
+    },
+    "cluster": {
+      "retained": 1974,
+      "total": 1974,
+      "centerX": 20.59727,
+      "centerY": 169.61388,
+      "radiusX": 442.49305,
+      "radiusY": 777.30865
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 70,
+      "visible_height": 124,
+      "density_zoom": 1.12903
     },
     "scale": 0.29607,
     "x_offset": 89.74011,
     "y_offset": 184.62831,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:09.432Z"
+  "exported_at": "2026-08-19T13:22:24.248Z"
 }

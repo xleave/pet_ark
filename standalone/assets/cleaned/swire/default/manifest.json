@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "swire",
   "character_name": "Swire",
   "localized_name": "诗怀雅",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/swire/default",
-  "source_page": "https://prts.wiki/w/%E8%AF%97%E6%80%80%E9%9B%85",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_308_swire/meta.json",
-    "model": "defaultskin/build/build_char_308_swire",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_308_swire/defaultskin/build/build_char_308_swire.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_308_swire/defaultskin/build/build_char_308_swire.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_308_swire/defaultskin/build/build_char_308_swire.png"
+    "assetId": "build_char_308_swire",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "诗怀雅",
+    "appellation": "Swire",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_308_swire.atlas",
+      ".png": "build_char_308_swire.png",
+      ".skel": "build_char_308_swire.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/swire/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -269.22595,
       "maxX": 191.23102,
       "minY": -129.62167,
       "maxY": 390.04407
     },
+    "full_source_bounds": {
+      "minX": -269.22595,
+      "maxX": 191.23102,
+      "minY": -129.62167,
+      "maxY": 390.04407
+    },
+    "core_source_bounds": {
+      "minX": -243.75385,
+      "maxX": 191.23102,
+      "minY": -129.62167,
+      "maxY": 390.04407
+    },
+    "cluster": {
+      "retained": 1615,
+      "total": 1615,
+      "centerX": -5.49402,
+      "centerY": 183.38765,
+      "radiusX": 454.10269,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 120,
+      "visible_height": 149,
+      "density_zoom": 1
+    },
     "scale": 0.38223,
     "x_offset": 110.90596,
     "y_offset": 166.45484,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:31:27.092Z"
+  "exported_at": "2026-08-19T13:24:04.834Z"
 }

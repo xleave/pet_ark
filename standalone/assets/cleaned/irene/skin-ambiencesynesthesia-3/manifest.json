@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
-  "placement_revision": 2,
+  "placement_revision": 3,
   "character": "irene",
   "character_name": "Irene",
   "localized_name": "艾丽妮",
@@ -12,15 +12,29 @@
   "skin_id": "ambiencesynesthesia-3",
   "skin_name": "飞羽",
   "source": "standalone/assets/source/irene/skin-ambiencesynesthesia-3",
-  "source_page": "https://prts.wiki/w/%E8%89%BE%E4%B8%BD%E5%A6%AE",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/meta.json",
-    "model": "char_4009_irene_ambiencesynesthesia_3/build/build_char_4009_irene_ambienceSynesthesia_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/char_4009_irene_ambiencesynesthesia_3/build/build_char_4009_irene_ambienceSynesthesia_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/char_4009_irene_ambiencesynesthesia_3/build/build_char_4009_irene_ambienceSynesthesia_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/char_4009_irene_ambiencesynesthesia_3/build/build_char_4009_irene_ambienceSynesthesia_3.png"
+    "assetId": "build_char_4009_irene_ambiencesynesthesia#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "艾丽妮",
+    "appellation": "Irene",
+    "skinGroupId": "2023#ambienceSynesthesia",
+    "skinGroupName": "音律联觉/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4009_irene_ambienceSynesthesia#3.atlas",
+      ".png": "build_char_4009_irene_ambienceSynesthesia#3.png",
+      ".skel": "build_char_4009_irene_ambienceSynesthesia#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/irene/skin-ambiencesynesthesia-3/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -143,10 +157,16 @@
       "radiusX": 331.36234,
       "radiusY": 587.50866
     },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 79,
+      "visible_height": 147,
+      "density_zoom": 1
+    },
     "scale": 0.3535,
     "x_offset": 96.11377,
     "y_offset": 179.11754,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:07:42.562Z"
+  "exported_at": "2026-08-19T13:22:37.207Z"
 }

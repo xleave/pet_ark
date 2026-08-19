@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "silverash",
   "character_name": "SilverAsh",
   "localized_name": "银灰",
@@ -11,15 +12,29 @@
   "skin_id": "ambiencesynesthesia-4",
   "skin_name": "不融冰",
   "source": "standalone/assets/source/silverash/skin-ambiencesynesthesia-4",
-  "source_page": "https://prts.wiki/w/%E9%93%B6%E7%81%B0",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/meta.json",
-    "model": "char_172_svrash_ambiencesynesthesia_4/build/build_char_172_svrash_ambienceSynesthesia_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/char_172_svrash_ambiencesynesthesia_4/build/build_char_172_svrash_ambienceSynesthesia_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/char_172_svrash_ambiencesynesthesia_4/build/build_char_172_svrash_ambienceSynesthesia_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/char_172_svrash_ambiencesynesthesia_4/build/build_char_172_svrash_ambienceSynesthesia_4.png"
+    "assetId": "build_char_172_svrash_ambiencesynesthesia#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "银灰",
+    "appellation": "SilverAsh",
+    "skinGroupId": "2024#ambienceSynesthesia",
+    "skinGroupName": "音律联觉/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_172_svrash_ambienceSynesthesia#4.atlas",
+      ".png": "build_char_172_svrash_ambienceSynesthesia#4.png",
+      ".skel": "build_char_172_svrash_ambienceSynesthesia#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/silverash/skin-ambiencesynesthesia-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -118,7 +133,7 @@
     "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -253.0502,
-      "maxX": 274.94095,
+      "maxX": 358.59125,
       "minY": -105.69688,
       "maxY": 527.18158
     },
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -253.0502,
-      "maxX": 274.94095,
+      "maxX": 358.59125,
       "minY": -105.69688,
       "maxY": 527.18158
     },
     "cluster": {
-      "retained": 2382,
+      "retained": 2385,
       "total": 2412,
-      "centerX": 7.45169,
-      "centerY": 144.9795,
-      "radiusX": 274.71105,
-      "radiusY": 693.06921
+      "centerX": 52.1805,
+      "centerY": 177.24113,
+      "radiusX": 844.17838,
+      "radiusY": 713.45081
     },
-    "scale": 0.32866,
-    "x_offset": 92.40273,
-    "y_offset": 181.26197,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 98,
+      "visible_height": 119,
+      "density_zoom": 1.17647
+    },
+    "scale": 0.28775,
+    "x_offset": 80.81527,
+    "y_offset": 185.58569,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:36.506Z"
+  "exported_at": "2026-08-19T13:23:55.804Z"
 }

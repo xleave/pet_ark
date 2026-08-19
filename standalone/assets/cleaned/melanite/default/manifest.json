@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "melanite",
   "character_name": "Melanite",
   "localized_name": "玫拉",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/melanite/default",
-  "source_page": "https://prts.wiki/w/%E7%8E%AB%E6%8B%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4006_melnte/meta.json",
-    "model": "defaultskin/build/build_char_4006_melnte",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4006_melnte/defaultskin/build/build_char_4006_melnte.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4006_melnte/defaultskin/build/build_char_4006_melnte.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4006_melnte/defaultskin/build/build_char_4006_melnte.png"
+    "assetId": "build_char_4006_melnte",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "玫拉",
+    "appellation": "Melanite",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4006_melnte.atlas",
+      ".png": "build_char_4006_melnte.png",
+      ".skel": "build_char_4006_melnte.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/melanite/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -257.17795,
-      "maxX": 215.05309,
-      "minY": -116.76031,
-      "maxY": 387.13354
+      "minX": -253.7072,
+      "maxX": 215.85071,
+      "minY": -119.14845,
+      "maxY": 387.76175
     },
-    "scale": 0.3727,
-    "x_offset": 103.84995,
-    "y_offset": 172.48356,
+    "full_source_bounds": {
+      "minX": -253.7072,
+      "maxX": 215.85071,
+      "minY": -119.14845,
+      "maxY": 387.76175
+    },
+    "core_source_bounds": {
+      "minX": -245.76999,
+      "maxX": 215.85071,
+      "minY": -119.14845,
+      "maxY": 380.70361
+    },
+    "cluster": {
+      "retained": 2290,
+      "total": 2290,
+      "centerX": -0.21949,
+      "centerY": 176.30602,
+      "radiusX": 419.99931,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 125,
+      "visible_height": 143,
+      "density_zoom": 1
+    },
+    "scale": 0.37482,
+    "x_offset": 103.0947,
+    "y_offset": 171.3407,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:17.829Z"
+  "exported_at": "2026-08-19T13:23:01.339Z"
 }

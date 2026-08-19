@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "hung",
   "character_name": "Hung",
   "localized_name": "吽",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/hung/default",
-  "source_page": "https://prts.wiki/w/%E5%90%BD",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_226_hmau/meta.json",
-    "model": "defaultskin/build/build_char_226_hmau",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_226_hmau/defaultskin/build/build_char_226_hmau.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_226_hmau/defaultskin/build/build_char_226_hmau.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_226_hmau/defaultskin/build/build_char_226_hmau.png"
+    "assetId": "build_char_226_hmau",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "吽",
+    "appellation": "Hung",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_226_hmau.atlas",
+      ".png": "build_char_226_hmau.png",
+      ".skel": "build_char_226_hmau.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/hung/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -221.64716,
       "maxX": 211.65021,
       "minY": -53.88051,
       "maxY": 454.34784
     },
+    "full_source_bounds": {
+      "minX": -221.64716,
+      "maxX": 211.65021,
+      "minY": -53.88051,
+      "maxY": 454.34784
+    },
+    "core_source_bounds": {
+      "minX": -221.64716,
+      "maxX": 211.65021,
+      "minY": -53.88051,
+      "maxY": 454.34784
+    },
+    "cluster": {
+      "retained": 1948,
+      "total": 1948,
+      "centerX": 7.23382,
+      "centerY": 175.46002,
+      "radiusX": 343.44738,
+      "radiusY": 636.03412
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 88,
+      "visible_height": 178,
+      "density_zoom": 1
+    },
     "scale": 0.40619,
     "x_offset": 98.03032,
     "y_offset": 194.11441,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:11.326Z"
+  "exported_at": "2026-08-19T13:22:32.564Z"
 }

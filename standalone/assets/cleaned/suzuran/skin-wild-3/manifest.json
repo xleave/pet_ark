@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "suzuran",
   "character_name": "Suzuran",
   "localized_name": "铃兰",
@@ -11,15 +12,29 @@
   "skin_id": "wild-3",
   "skin_name": "弃土花开",
   "source": "standalone/assets/source/suzuran/skin-wild-3",
-  "source_page": "https://prts.wiki/w/%E9%93%83%E5%85%B0",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/meta.json",
-    "model": "char_358_lisa_wild_3/build/build_char_358_lisa_wild_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/char_358_lisa_wild_3/build/build_char_358_lisa_wild_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/char_358_lisa_wild_3/build/build_char_358_lisa_wild_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/char_358_lisa_wild_3/build/build_char_358_lisa_wild_3.png"
+    "assetId": "build_char_358_lisa_wild#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "铃兰",
+    "appellation": "Suzuran",
+    "skinGroupId": "2020#wild",
+    "skinGroupName": "生命之地/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_358_lisa_wild#3.atlas",
+      ".png": "build_char_358_lisa_wild#3.png",
+      ".skel": "build_char_358_lisa_wild#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/suzuran/skin-wild-3/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,10 +130,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -222.99774,
-      "maxX": 176.88148,
+      "maxX": 417.47034,
       "minY": -36.86457,
       "maxY": 507.23047
     },
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -222.99774,
-      "maxX": 176.88148,
+      "maxX": 417.47034,
       "minY": -36.86457,
       "maxY": 507.23047
     },
     "cluster": {
-      "retained": 2398,
+      "retained": 2399,
       "total": 2400,
-      "centerX": -4.04282,
-      "centerY": 124.78497,
-      "radiusX": 282.15216,
-      "radiusY": 454.8756
+      "centerX": -6.11501,
+      "centerY": 171.00216,
+      "radiusX": 432.50008,
+      "radiusY": 616.39584
     },
-    "scale": 0.38229,
-    "x_offset": 104.8148,
-    "y_offset": 201.90719,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 70,
+      "visible_height": 99,
+      "density_zoom": 1.41414
+    },
+    "scale": 0.3886,
+    "x_offset": 105.58726,
+    "y_offset": 217.22981,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:50.360Z"
+  "exported_at": "2026-08-19T13:24:05.209Z"
 }

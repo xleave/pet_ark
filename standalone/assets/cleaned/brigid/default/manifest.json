@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "brigid",
   "character_name": "Brigid",
   "localized_name": "水灯心",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/brigid/default",
-  "source_page": "https://prts.wiki/w/%E6%B0%B4%E7%81%AF%E5%BF%83",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4177_brigid/meta.json",
-    "model": "defaultskin/build/build_char_4177_brigid",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4177_brigid/defaultskin/build/build_char_4177_brigid.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4177_brigid/defaultskin/build/build_char_4177_brigid.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4177_brigid/defaultskin/build/build_char_4177_brigid.png"
+    "assetId": "build_char_4177_brigid",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "水灯心",
+    "appellation": "Brigid",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4177_brigid.atlas",
+      ".png": "build_char_4177_brigid.png",
+      ".skel": "build_char_4177_brigid.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/brigid/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -211.3315,
+      "minX": -211.22998,
       "maxX": 179.89122,
-      "minY": -113.10986,
+      "minY": -119.57516,
       "maxY": 382.0455
     },
+    "full_source_bounds": {
+      "minX": -211.22998,
+      "maxX": 179.89122,
+      "minY": -119.57516,
+      "maxY": 382.0455
+    },
+    "core_source_bounds": {
+      "minX": -211.22998,
+      "maxX": 179.89122,
+      "minY": -119.57516,
+      "maxY": 382.0455
+    },
+    "cluster": {
+      "retained": 2849,
+      "total": 2849,
+      "centerX": 2.94287,
+      "centerY": 168.4297,
+      "radiusX": 344.05865,
+      "radiusY": 539.94514
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 108,
+      "visible_height": 156,
+      "density_zoom": 1
+    },
     "scale": 0.41,
-    "x_offset": 102.44526,
-    "y_offset": 169.62496,
+    "x_offset": 102.42445,
+    "y_offset": 166.97418,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:59.475Z"
+  "exported_at": "2026-08-19T13:21:42.412Z"
 }

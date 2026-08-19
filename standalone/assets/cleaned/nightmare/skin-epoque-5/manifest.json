@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "nightmare",
   "character_name": "Nightmare",
   "localized_name": "夜魔",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-5",
   "skin_name": "光影",
   "source": "standalone/assets/source/nightmare/skin-epoque-5",
-  "source_page": "https://prts.wiki/w/%E5%A4%9C%E9%AD%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_164_nightm/meta.json",
-    "model": "char_164_nightm_epoque_5/build/build_char_164_nightm_epoque_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_164_nightm/char_164_nightm_epoque_5/build/build_char_164_nightm_epoque_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_164_nightm/char_164_nightm_epoque_5/build/build_char_164_nightm_epoque_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_164_nightm/char_164_nightm_epoque_5/build/build_char_164_nightm_epoque_5.png"
+    "assetId": "build_char_164_nightm_epoque#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "夜魔",
+    "appellation": "Nightmare",
+    "skinGroupId": "2020#epoque#3",
+    "skinGroupName": "时代/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_164_nightm_epoque#5.atlas",
+      ".png": "build_char_164_nightm_epoque#5.png",
+      ".skel": "build_char_164_nightm_epoque#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/nightmare/skin-epoque-5/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -338.06879,
-      "maxX": 296.85901,
-      "minY": -29.1832,
-      "maxY": 413.82883
+      "minX": -556.59998,
+      "maxX": 521.07159,
+      "minY": -197.95094,
+      "maxY": 471.84518
     },
     "full_source_bounds": {
       "minX": -556.59998,
@@ -129,23 +144,29 @@
       "maxY": 471.84518
     },
     "core_source_bounds": {
-      "minX": -338.06879,
-      "maxX": 296.85901,
-      "minY": -29.1832,
-      "maxY": 413.82883
+      "minX": -422.28406,
+      "maxX": 521.07159,
+      "minY": -197.95094,
+      "maxY": 456.32123
     },
     "cluster": {
-      "retained": 2110,
+      "retained": 2125,
       "total": 2128,
-      "centerX": -4.64511,
-      "centerY": 154.79151,
-      "radiusX": 297.69715,
-      "radiusY": 650.11312
+      "centerX": 31.24602,
+      "centerY": 208.10226,
+      "radiusX": 418.80537,
+      "radiusY": 610.00406
     },
-    "scale": 0.2772,
-    "x_offset": 101.71161,
-    "y_offset": 207.91051,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 42,
+      "visible_height": 68,
+      "density_zoom": 2.05882
+    },
+    "scale": 0.33624,
+    "x_offset": 105.06121,
+    "y_offset": 217.38277,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:05:01.871Z"
+  "exported_at": "2026-08-19T13:23:19.507Z"
 }

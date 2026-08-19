@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ansel",
   "character_name": "Ansel",
   "localized_name": "安赛尔",
@@ -9,15 +12,29 @@
   "skin_id": "summer-1",
   "skin_name": "悠然假日 HDm06",
   "source": "standalone/assets/source/ansel/skin-summer-1",
-  "source_page": "https://prts.wiki/w/%E5%AE%89%E8%B5%9B%E5%B0%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/meta.json",
-    "model": "char_212_ansel_summer_1/build/build_char_212_ansel_summer_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/char_212_ansel_summer_1/build/build_char_212_ansel_summer_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/char_212_ansel_summer_1/build/build_char_212_ansel_summer_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/char_212_ansel_summer_1/build/build_char_212_ansel_summer_1.png"
+    "assetId": "build_char_212_ansel_summer#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "安赛尔",
+    "appellation": "Ansel",
+    "skinGroupId": "2019#summer",
+    "skinGroupName": "珊瑚海岸/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_212_ansel_summer#1.atlas",
+      ".png": "build_char_212_ansel_summer#1.png",
+      ".skel": "build_char_212_ansel_summer#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/ansel/skin-summer-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -264.99594,
-      "maxX": 297.12759,
-      "minY": -120.25815,
+      "minX": -265.08582,
+      "maxX": 275.6423,
+      "minY": -120.90076,
+      "maxY": 521.86145
+    },
+    "full_source_bounds": {
+      "minX": -265.08582,
+      "maxX": 275.6423,
+      "minY": -120.90076,
+      "maxY": 521.86145
+    },
+    "core_source_bounds": {
+      "minX": -265.08582,
+      "maxX": 255.32123,
+      "minY": -120.90076,
       "maxY": 449.05838
     },
-    "scale": 0.3131,
-    "x_offset": 90.96981,
-    "y_offset": 178.34736,
+    "cluster": {
+      "retained": 1670,
+      "total": 1670,
+      "centerX": 19.60249,
+      "centerY": 195.09288,
+      "radiusX": 418.97412,
+      "radiusY": 596.48621
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 115,
+      "visible_height": 143,
+      "density_zoom": 1
+    },
+    "scale": 0.3236,
+    "x_offset": 94.29194,
+    "y_offset": 176.87611,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:55.956Z"
+  "exported_at": "2026-08-19T13:21:25.408Z"
 }

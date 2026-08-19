@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "sussurro",
   "character_name": "Sussurro",
   "localized_name": "苏苏洛",
@@ -11,15 +12,29 @@
   "skin_id": "winter-4",
   "skin_name": "随意而行",
   "source": "standalone/assets/source/sussurro/skin-winter-4",
-  "source_page": "https://prts.wiki/w/%E8%8B%8F%E8%8B%8F%E6%B4%9B",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_298_susuro/meta.json",
-    "model": "char_298_susuro_winter_4/build/build_char_298_susuro_winter_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_298_susuro/char_298_susuro_winter_4/build/build_char_298_susuro_winter_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_298_susuro/char_298_susuro_winter_4/build/build_char_298_susuro_winter_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_298_susuro/char_298_susuro_winter_4/build/build_char_298_susuro_winter_4.png"
+    "assetId": "build_char_298_susuro_winter#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "苏苏洛",
+    "appellation": "Sussurro",
+    "skinGroupId": "2024#winter",
+    "skinGroupName": "寒武纪/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_298_susuro_winter#4.atlas",
+      ".png": "build_char_298_susuro_winter#4.png",
+      ".skel": "build_char_298_susuro_winter#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/sussurro/skin-winter-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,9 +130,9 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -297.48105,
+      "minX": -570.88,
       "maxX": 134.43915,
       "minY": -102.28332,
       "maxY": 374.66302
@@ -129,23 +144,29 @@
       "maxY": 374.66302
     },
     "core_source_bounds": {
-      "minX": -297.48105,
+      "minX": -570.88,
       "maxX": 134.43915,
       "minY": -102.28332,
       "maxY": 374.66302
     },
     "cluster": {
-      "retained": 2210,
-      "total": 2235,
-      "centerX": 0.62782,
-      "centerY": 139.77038,
-      "radiusX": 311.68807,
-      "radiusY": 557.07787
+      "retained": 2219,
+      "total": 2219,
+      "centerX": -173.46061,
+      "centerY": 184.42867,
+      "radiusX": 626.24489,
+      "radiusY": 643.48045
     },
-    "scale": 0.40748,
-    "x_offset": 129.21838,
-    "y_offset": 174.32132,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 76,
+      "visible_height": 94,
+      "density_zoom": 1.48936
+    },
+    "scale": 0.37164,
+    "x_offset": 110.82373,
+    "y_offset": 216.71042,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:05:04.584Z"
+  "exported_at": "2026-08-19T13:24:03.840Z"
 }

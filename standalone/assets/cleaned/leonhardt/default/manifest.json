@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "leonhardt",
   "character_name": "Leonhardt",
   "localized_name": "莱恩哈特",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/leonhardt/default",
-  "source_page": "https://prts.wiki/w/%E8%8E%B1%E6%81%A9%E5%93%88%E7%89%B9",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/meta.json",
-    "model": "defaultskin/build/build_char_373_lionhd",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/defaultskin/build/build_char_373_lionhd.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/defaultskin/build/build_char_373_lionhd.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/defaultskin/build/build_char_373_lionhd.png"
+    "assetId": "build_char_373_lionhd",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "莱恩哈特",
+    "appellation": "Leonhardt",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_373_lionhd.atlas",
+      ".png": "build_char_373_lionhd.png",
+      ".skel": "build_char_373_lionhd.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/leonhardt/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -190.47511,
-      "maxX": 141.70004,
+      "maxX": 140.72603,
       "minY": -195.29659,
-      "maxY": 442.16275
+      "maxY": 442.43158
     },
-    "scale": 0.3263,
-    "x_offset": 103.95754,
-    "y_offset": 152.27564,
+    "full_source_bounds": {
+      "minX": -190.47511,
+      "maxX": 140.72603,
+      "minY": -195.29659,
+      "maxY": 442.43158
+    },
+    "core_source_bounds": {
+      "minX": -190.47511,
+      "maxX": 127.58044,
+      "minY": -195.29659,
+      "maxY": 442.43158
+    },
+    "cluster": {
+      "retained": 1934,
+      "total": 1934,
+      "centerX": -1.62235,
+      "centerY": 181.38036,
+      "radiusX": 394.60085,
+      "radiusY": 799.87289
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 71,
+      "visible_height": 144,
+      "density_zoom": 1.01408
+    },
+    "scale": 0.32616,
+    "x_offset": 104.11303,
+    "y_offset": 152.3025,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:15.391Z"
+  "exported_at": "2026-08-19T13:22:50.741Z"
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "shu",
@@ -12,15 +12,29 @@
   "skin_id": "nian-11",
   "skin_name": "春日宴",
   "source": "standalone/assets/source/shu/skin-nian-11",
-  "source_page": "https://prts.wiki/w/%E9%BB%8D",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2025_shu/meta.json",
-    "model": "char_2025_shu_nian_11/build/build_char_2025_shu_nian_11",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2025_shu/char_2025_shu_nian_11/build/build_char_2025_shu_nian_11.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2025_shu/char_2025_shu_nian_11/build/build_char_2025_shu_nian_11.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2025_shu/char_2025_shu_nian_11/build/build_char_2025_shu_nian_11.png"
+    "assetId": "build_char_2025_shu_nian#11",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "黍",
+    "appellation": "Shu",
+    "skinGroupId": "2025#nian",
+    "skinGroupName": "0011制造/XI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2025_shu_nian#11.atlas",
+      ".png": "build_char_2025_shu_nian#11.png",
+      ".skel": "build_char_2025_shu_nian#11.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/shu/skin-nian-11/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -136,12 +150,12 @@
       "maxY": 687.67572
     },
     "cluster": {
-      "retained": 3315,
-      "total": 3315,
-      "centerX": 8.41143,
-      "centerY": 196.83571,
-      "radiusX": 431.85504,
-      "radiusY": 707.73617
+      "retained": 3314,
+      "total": 3314,
+      "centerX": 5.16286,
+      "centerY": 197.5928,
+      "radiusX": 449.84109,
+      "radiusY": 700.18517
     },
     "pixel_probe": {
       "animation": "Relax",
@@ -154,5 +168,5 @@
     "y_offset": 217.22255,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:51.102Z"
+  "exported_at": "2026-08-19T13:23:54.041Z"
 }

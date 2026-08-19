@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "wind-chimes",
@@ -12,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/wind-chimes/default",
-  "source_page": "https://prts.wiki/w/%E9%93%8E%E9%93%83",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4083_chimes/meta.json",
-    "model": "defaultskin/build/build_char_4083_chimes",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4083_chimes/defaultskin/build/build_char_4083_chimes.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4083_chimes/defaultskin/build/build_char_4083_chimes.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4083_chimes/defaultskin/build/build_char_4083_chimes.png"
+    "assetId": "build_char_4083_chimes",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "铎铃",
+    "appellation": "Wind Chimes",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4083_chimes.atlas",
+      ".png": "build_char_4083_chimes.png",
+      ".skel": "build_char_4083_chimes.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -92,7 +105,7 @@
       "path": "standalone/assets/cleaned/wind-chimes/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -125,8 +138,8 @@
       "maxY": 618.78857
     },
     "cluster": {
-      "retained": 2726,
-      "total": 2726,
+      "retained": 2704,
+      "total": 2704,
       "centerX": -161.23117,
       "centerY": 200.85105,
       "radiusX": 454.96927,
@@ -143,5 +156,5 @@
     "y_offset": 217.82341,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:40.831Z"
+  "exported_at": "2026-08-19T13:24:28.546Z"
 }

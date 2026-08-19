@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "sussurro",
   "character_name": "Sussurro",
   "localized_name": "苏苏洛",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/sussurro/default",
-  "source_page": "https://prts.wiki/w/%E8%8B%8F%E8%8B%8F%E6%B4%9B",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_298_susuro/meta.json",
-    "model": "defaultskin/build/build_char_298_susuro",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_298_susuro/defaultskin/build/build_char_298_susuro.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_298_susuro/defaultskin/build/build_char_298_susuro.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_298_susuro/defaultskin/build/build_char_298_susuro.png"
+    "assetId": "build_char_298_susuro",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "苏苏洛",
+    "appellation": "Sussurro",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_298_susuro.atlas",
+      ".png": "build_char_298_susuro.png",
+      ".skel": "build_char_298_susuro.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/sussurro/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -248.83922,
+      "minX": -249.05103,
       "maxX": 143.69891,
       "minY": -91.15346,
-      "maxY": 380.80191
+      "maxY": 389.57684
+    },
+    "full_source_bounds": {
+      "minX": -249.05103,
+      "maxX": 143.69891,
+      "minY": -91.15346,
+      "maxY": 389.57684
+    },
+    "core_source_bounds": {
+      "minX": -249.05103,
+      "maxX": 143.69891,
+      "minY": -91.15346,
+      "maxY": 377.01605
+    },
+    "cluster": {
+      "retained": 1923,
+      "total": 1923,
+      "centerX": -0.68386,
+      "centerY": 194.74585,
+      "radiusX": 352.51462,
+      "radiusY": 518.16084
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 82,
+      "visible_height": 152,
+      "density_zoom": 1
     },
     "scale": 0.41,
-    "x_offset": 117.55376,
+    "x_offset": 117.59718,
     "y_offset": 178.62708,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:32.742Z"
+  "exported_at": "2026-08-19T13:24:03.295Z"
 }

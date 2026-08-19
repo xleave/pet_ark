@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "blue-poison",
   "character_name": "Blue Poison",
   "localized_name": "蓝毒",
@@ -11,15 +12,29 @@
   "skin_id": "iteration-2",
   "skin_name": "哀律西昂夜曲",
   "source": "standalone/assets/source/blue-poison/skin-iteration-2",
-  "source_page": "https://prts.wiki/w/%E8%93%9D%E6%AF%92",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_129_bluep/meta.json",
-    "model": "char_129_bluep_iteration_2/build/build_char_129_bluep_iteration_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_129_bluep/char_129_bluep_iteration_2/build/build_char_129_bluep_iteration_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_129_bluep/char_129_bluep_iteration_2/build/build_char_129_bluep_iteration_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_129_bluep/char_129_bluep_iteration_2/build/build_char_129_bluep_iteration_2.png"
+    "assetId": "build_char_129_bluep_iteration#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "蓝毒",
+    "appellation": "Blue Poison",
+    "skinGroupId": "2024#iteration",
+    "skinGroupName": "命途迭代/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_129_bluep_iteration#2.atlas",
+      ".png": "build_char_129_bluep_iteration#2.png",
+      ".skel": "build_char_129_bluep_iteration#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/blue-poison/skin-iteration-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -318.88846,
-      "maxX": 267.87402,
+      "minX": -681.30499,
+      "maxX": 1589.16858,
       "minY": -126.34892,
-      "maxY": 444.38449
+      "maxY": 528.37988
     },
     "full_source_bounds": {
       "minX": -681.30499,
@@ -129,23 +144,29 @@
       "maxY": 528.37988
     },
     "core_source_bounds": {
-      "minX": -318.88846,
-      "maxX": 267.87402,
+      "minX": -681.30499,
+      "maxX": 1589.16858,
       "minY": -126.34892,
-      "maxY": 444.38449
+      "maxY": 528.37988
     },
     "cluster": {
-      "retained": 2475,
+      "retained": 2565,
       "total": 2565,
-      "centerX": -4.41833,
-      "centerY": 134.80084,
-      "radiusX": 314.79287,
-      "radiusY": 474.7941
+      "centerX": 60.69178,
+      "centerY": 192.16257,
+      "radiusX": 3340.0767,
+      "radiusY": 732.15824
     },
-    "scale": 0.29995,
-    "x_offset": 103.65092,
-    "y_offset": 178.10152,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 23,
+      "visible_height": 33,
+      "density_zoom": 4.24242
+    },
+    "scale": 0.32886,
+    "x_offset": 103.68994,
+    "y_offset": 216.87321,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:10.913Z"
+  "exported_at": "2026-08-19T13:21:40.405Z"
 }

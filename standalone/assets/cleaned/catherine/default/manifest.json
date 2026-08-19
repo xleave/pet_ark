@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "catherine",
   "character_name": "Catherine",
   "localized_name": "凯瑟琳",
@@ -11,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/catherine/default",
-  "source_page": "https://prts.wiki/w/%E5%87%AF%E7%91%9F%E7%90%B3",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4162_cathy/meta.json",
-    "model": "defaultskin/build/build_char_4162_cathy",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4162_cathy/defaultskin/build/build_char_4162_cathy.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4162_cathy/defaultskin/build/build_char_4162_cathy.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4162_cathy/defaultskin/build/build_char_4162_cathy.png"
+    "assetId": "build_char_4162_cathy",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "凯瑟琳",
+    "appellation": "Catherine",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4162_cathy.atlas",
+      ".png": "build_char_4162_cathy.png",
+      ".skel": "build_char_4162_cathy.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +105,7 @@
       "path": "standalone/assets/cleaned/catherine/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -124,17 +138,23 @@
       "maxY": 409.99338
     },
     "cluster": {
-      "retained": 2448,
-      "total": 2465,
-      "centerX": 3.17382,
-      "centerY": 158.21694,
-      "radiusX": 256,
-      "radiusY": 575.77788
+      "retained": 2446,
+      "total": 2463,
+      "centerX": -10.83366,
+      "centerY": 194.22936,
+      "radiusX": 375.08504,
+      "radiusY": 639.97398
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 76,
+      "visible_height": 165,
+      "density_zoom": 1
     },
     "scale": 0.40703,
     "x_offset": 87.75101,
     "y_offset": 174.87909,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:12.288Z"
+  "exported_at": "2026-08-19T13:21:46.907Z"
 }

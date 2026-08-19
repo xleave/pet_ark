@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "eyjafjalla-the-hvit-aska",
   "character_name": "Eyjafjalla the Hvít Aska",
   "localized_name": "纯烬艾雅法拉",
@@ -9,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/eyjafjalla-the-hvit-aska/default",
-  "source_page": "https://prts.wiki/w/%E7%BA%AF%E7%83%AC%E8%89%BE%E9%9B%85%E6%B3%95%E6%8B%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/meta.json",
-    "model": "defaultskin/build/build_char_1016_agoat2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/defaultskin/build/build_char_1016_agoat2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/defaultskin/build/build_char_1016_agoat2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/defaultskin/build/build_char_1016_agoat2.png"
+    "assetId": "build_char_1016_agoat2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "纯烬艾雅法拉",
+    "appellation": "Eyjafjalla the Hvít Aska",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1016_agoat2.atlas",
+      ".png": "build_char_1016_agoat2.png",
+      ".skel": "build_char_1016_agoat2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/eyjafjalla-the-hvit-aska/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -224.07527,
+      "minX": -224.01627,
       "maxX": 202.83936,
-      "minY": -110.07317,
+      "minY": -110.05071,
       "maxY": 418.58206
     },
-    "scale": 0.39345,
-    "x_offset": 100.17765,
-    "y_offset": 172.69159,
+    "full_source_bounds": {
+      "minX": -224.01627,
+      "maxX": 202.83936,
+      "minY": -110.05071,
+      "maxY": 418.58206
+    },
+    "core_source_bounds": {
+      "minX": -224.01627,
+      "maxX": 202.83936,
+      "minY": -110.05071,
+      "maxY": 418.58206
+    },
+    "cluster": {
+      "retained": 3173,
+      "total": 3173,
+      "centerX": -1.57772,
+      "centerY": 184.78989,
+      "radiusX": 524.95262,
+      "radiusY": 510.00458
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 99,
+      "visible_height": 161,
+      "density_zoom": 1
+    },
+    "scale": 0.39347,
+    "x_offset": 100.16622,
+    "y_offset": 172.69858,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:06.069Z"
+  "exported_at": "2026-08-19T13:22:09.884Z"
 }

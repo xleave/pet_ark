@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "insider",
   "character_name": "Insider",
   "localized_name": "隐现",
@@ -9,15 +12,29 @@
   "skin_id": "kitchen-2",
   "skin_name": "甜品大奖",
   "source": "standalone/assets/source/insider/skin-kitchen-2",
-  "source_page": "https://prts.wiki/w/%E9%9A%90%E7%8E%B0",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_498_inside/meta.json",
-    "model": "char_498_inside_kitchen_2/build/build_char_498_inside_kitchen_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_498_inside/char_498_inside_kitchen_2/build/build_char_498_inside_kitchen_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_498_inside/char_498_inside_kitchen_2/build/build_char_498_inside_kitchen_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_498_inside/char_498_inside_kitchen_2/build/build_char_498_inside_kitchen_2.png"
+    "assetId": "build_char_498_inside_kitchen#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "隐现",
+    "appellation": "Insider",
+    "skinGroupId": "2024#kitchen",
+    "skinGroupName": "罗德厨房/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_498_inside_kitchen#2.atlas",
+      ".png": "build_char_498_inside_kitchen#2.png",
+      ".skel": "build_char_498_inside_kitchen#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/insider/skin-kitchen-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -276.38559,
+      "minX": -276.36349,
       "maxX": 224.73973,
-      "minY": -108.24255,
-      "maxY": 444.62912
+      "minY": -108.24093,
+      "maxY": 445.77713
     },
-    "scale": 0.35121,
-    "x_offset": 105.06926,
-    "y_offset": 177.98418,
+    "full_source_bounds": {
+      "minX": -276.36349,
+      "maxX": 224.73973,
+      "minY": -108.24093,
+      "maxY": 445.77713
+    },
+    "core_source_bounds": {
+      "minX": -276.36349,
+      "maxX": 176.41209,
+      "minY": -108.24093,
+      "maxY": 445.77713
+    },
+    "cluster": {
+      "retained": 2257,
+      "total": 2257,
+      "centerX": -4.30139,
+      "centerY": 195.77243,
+      "radiusX": 339.90351,
+      "radiusY": 570.00145
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 101,
+      "visible_height": 153,
+      "density_zoom": 1
+    },
+    "scale": 0.35123,
+    "x_offset": 105.06578,
+    "y_offset": 177.98308,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:12.238Z"
+  "exported_at": "2026-08-19T13:22:36.095Z"
 }

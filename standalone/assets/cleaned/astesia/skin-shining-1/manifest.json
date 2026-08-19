@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "astesia",
   "character_name": "Astesia",
   "localized_name": "星极",
@@ -11,15 +12,29 @@
   "skin_id": "shining-1",
   "skin_name": "殿堂上的游禽",
   "source": "standalone/assets/source/astesia/skin-shining-1",
-  "source_page": "https://prts.wiki/w/%E6%98%9F%E6%9E%81",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/meta.json",
-    "model": "char_274_astesi_shining_1/build/build_char_274_astesi_shining_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/char_274_astesi_shining_1/build/build_char_274_astesi_shining_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/char_274_astesi_shining_1/build/build_char_274_astesi_shining_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/char_274_astesi_shining_1/build/build_char_274_astesi_shining_1.png"
+    "assetId": "build_char_274_astesi_shining#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "星极",
+    "appellation": "Astesia",
+    "skinGroupId": "2021#shining",
+    "skinGroupName": "闪耀阶梯",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_274_astesi_shining#1.atlas",
+      ".png": "build_char_274_astesi_shining#1.png",
+      ".skel": "build_char_274_astesi_shining#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -108,7 +123,7 @@
       ]
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -121,10 +136,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -292.61267,
-      "maxX": 299.05423,
+      "maxX": 378.70779,
       "minY": -129.7202,
       "maxY": 445.737
     },
@@ -136,22 +151,28 @@
     },
     "core_source_bounds": {
       "minX": -292.61267,
-      "maxX": 299.05423,
+      "maxX": 378.70779,
       "minY": -129.7202,
       "maxY": 445.737
     },
     "cluster": {
-      "retained": 3570,
+      "retained": 3572,
       "total": 3573,
-      "centerX": 17.39122,
-      "centerY": 147.77251,
-      "radiusX": 256,
-      "radiusY": 626.19946
+      "centerX": 15.63653,
+      "centerY": 211.08957,
+      "radiusX": 415.29344,
+      "radiusY": 645.02357
     },
-    "scale": 0.29746,
-    "x_offset": 95.04193,
-    "y_offset": 177.41282,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 87,
+      "visible_height": 115,
+      "density_zoom": 1.21739
+    },
+    "scale": 0.31916,
+    "x_offset": 100.52167,
+    "y_offset": 215.98937,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:32.992Z"
+  "exported_at": "2026-08-19T13:21:31.786Z"
 }

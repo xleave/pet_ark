@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "mayer",
   "character_name": "Mayer",
   "localized_name": "梅尔",
@@ -11,15 +12,29 @@
   "skin_id": "ghost-1",
   "skin_name": "庭院寻梦尖兵",
   "source": "standalone/assets/source/mayer/skin-ghost-1",
-  "source_page": "https://prts.wiki/w/%E6%A2%85%E5%B0%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_242_otter/meta.json",
-    "model": "char_242_otter_ghost_1/build/build_char_242_otter_ghost_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_242_otter/char_242_otter_ghost_1/build/build_char_242_otter_ghost_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_242_otter/char_242_otter_ghost_1/build/build_char_242_otter_ghost_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_242_otter/char_242_otter_ghost_1/build/build_char_242_otter_ghost_1.png"
+    "assetId": "build_char_242_otter_ghost#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "梅尔",
+    "appellation": "Mayer",
+    "skinGroupId": "2020#ghost",
+    "skinGroupName": "缠梦古堡",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_242_otter_ghost#1.atlas",
+      ".png": "build_char_242_otter_ghost#1.png",
+      ".skel": "build_char_242_otter_ghost#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/mayer/skin-ghost-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -117,7 +132,7 @@
   "placement": {
     "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -292.80386,
+      "minX": -352.55383,
       "maxX": 174.46719,
       "minY": -117.03244,
       "maxY": 458.9874
@@ -129,23 +144,29 @@
       "maxY": 458.9874
     },
     "core_source_bounds": {
-      "minX": -292.80386,
+      "minX": -352.55383,
       "maxX": 174.46719,
       "minY": -117.03244,
       "maxY": 458.9874
     },
     "cluster": {
-      "retained": 2047,
+      "retained": 2081,
       "total": 2084,
-      "centerX": -11.65066,
-      "centerY": 137.48005,
-      "radiusX": 259.23126,
-      "radiusY": 626.69313
+      "centerX": -1.30986,
+      "centerY": 207.95003,
+      "radiusX": 355.02367,
+      "radiusY": 540.00015
     },
-    "scale": 0.3611,
-    "x_offset": 117.36561,
-    "y_offset": 173.73974,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 150,
+      "visible_height": 132,
+      "density_zoom": 1.06061
+    },
+    "scale": 0.33395,
+    "x_offset": 125.73624,
+    "y_offset": 176.91672,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:05:08.347Z"
+  "exported_at": "2026-08-19T13:23:00.790Z"
 }

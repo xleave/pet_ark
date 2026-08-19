@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
-  "placement_revision": 2,
+  "placement_revision": 3,
   "character": "togawa-sakiko",
   "character_name": "Togawa Sakiko",
   "localized_name": "丰川祥子",
@@ -12,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/togawa-sakiko/default",
-  "source_page": "https://prts.wiki/w/%E4%B8%B0%E5%B7%9D%E7%A5%A5%E5%AD%90",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/meta.json",
-    "model": "defaultskin/build/build_char_4182_oblvns",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/defaultskin/build/build_char_4182_oblvns.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/defaultskin/build/build_char_4182_oblvns.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/defaultskin/build/build_char_4182_oblvns.png"
+    "assetId": "build_char_4182_oblvns",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "丰川祥子",
+    "appellation": "Togawa Sakiko",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4182_oblvns.atlas",
+      ".png": "build_char_4182_oblvns.png",
+      ".skel": "build_char_4182_oblvns.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -92,7 +105,7 @@
       "path": "standalone/assets/cleaned/togawa-sakiko/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -125,17 +138,23 @@
       "maxY": 372.53577
     },
     "cluster": {
-      "retained": 2522,
-      "total": 2528,
+      "retained": 2504,
+      "total": 2510,
       "centerX": 15.35551,
       "centerY": 165.97389,
       "radiusX": 416.06551,
       "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 77,
+      "visible_height": 153,
+      "density_zoom": 1
     },
     "scale": 0.41,
     "x_offset": 95.85505,
     "y_offset": 164.77753,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:07:51.789Z"
+  "exported_at": "2026-08-19T13:24:12.588Z"
 }

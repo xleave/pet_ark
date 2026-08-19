@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
-  "placement_revision": 2,
+  "placement_revision": 3,
   "character": "hung",
   "character_name": "Hung",
   "localized_name": "吽",
@@ -12,15 +12,29 @@
   "skin_id": "nian-4",
   "skin_name": "一介车夫",
   "source": "standalone/assets/source/hung/skin-nian-4",
-  "source_page": "https://prts.wiki/w/%E5%90%BD",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_226_hmau/meta.json",
-    "model": "char_226_hmau_nian_4/build/build_char_226_hmau_nian_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_226_hmau/char_226_hmau_nian_4/build/build_char_226_hmau_nian_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_226_hmau/char_226_hmau_nian_4/build/build_char_226_hmau_nian_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_226_hmau/char_226_hmau_nian_4/build/build_char_226_hmau_nian_4.png"
+    "assetId": "build_char_226_hmau_nian#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "吽",
+    "appellation": "Hung",
+    "skinGroupId": "2021#nian",
+    "skinGroupName": "0011制造/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_226_hmau_nian#4.atlas",
+      ".png": "build_char_226_hmau_nian#4.png",
+      ".skel": "build_char_226_hmau_nian#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/hung/skin-nian-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -143,10 +157,16 @@
       "radiusX": 410,
       "radiusY": 1140.04616
     },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 90,
+      "visible_height": 139,
+      "density_zoom": 1.00719
+    },
     "scale": 0.29844,
     "x_offset": 84.40534,
     "y_offset": 149.50247,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:07:42.293Z"
+  "exported_at": "2026-08-19T13:22:32.960Z"
 }

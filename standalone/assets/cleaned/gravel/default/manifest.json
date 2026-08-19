@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "gravel",
   "character_name": "Gravel",
   "localized_name": "砾",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/gravel/default",
-  "source_page": "https://prts.wiki/w/%E7%A0%BE",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_237_gravel/meta.json",
-    "model": "defaultskin/build/build_char_237_gravel",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_237_gravel/defaultskin/build/build_char_237_gravel.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_237_gravel/defaultskin/build/build_char_237_gravel.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_237_gravel/defaultskin/build/build_char_237_gravel.png"
+    "assetId": "build_char_237_gravel",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "砾",
+    "appellation": "Gravel",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_237_gravel.atlas",
+      ".png": "build_char_237_gravel.png",
+      ".skel": "build_char_237_gravel.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/gravel/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -255.20039,
       "maxX": 190.44142,
       "minY": -116.61711,
-      "maxY": 381.78973
+      "maxY": 383.07828
+    },
+    "full_source_bounds": {
+      "minX": -255.20039,
+      "maxX": 190.44142,
+      "minY": -116.61711,
+      "maxY": 383.07828
+    },
+    "core_source_bounds": {
+      "minX": -255.20039,
+      "maxX": 190.44142,
+      "minY": -116.61711,
+      "maxY": 383.07828
+    },
+    "cluster": {
+      "retained": 1421,
+      "total": 1421,
+      "centerX": 0.22714,
+      "centerY": 189.68835,
+      "radiusX": 409.9589,
+      "radiusY": 695.06721
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 100,
+      "visible_height": 151,
+      "density_zoom": 1
     },
     "scale": 0.39494,
     "x_offset": 108.78783,
     "y_offset": 169.9437,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:08.882Z"
+  "exported_at": "2026-08-19T13:22:21.713Z"
 }

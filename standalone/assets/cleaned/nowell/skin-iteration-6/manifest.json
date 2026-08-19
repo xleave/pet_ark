@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "nowell",
   "character_name": "Nowell",
   "localized_name": "诺威尔",
@@ -11,15 +12,29 @@
   "skin_id": "iteration-6",
   "skin_name": "幽蓝渡灵师",
   "source": "standalone/assets/source/nowell/skin-iteration-6",
-  "source_page": "https://prts.wiki/w/%E8%AF%BA%E5%A8%81%E5%B0%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4173_nowell/meta.json",
-    "model": "char_4173_nowell_iteration_6/build/build_char_4173_nowell_iteration_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4173_nowell/char_4173_nowell_iteration_6/build/build_char_4173_nowell_iteration_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4173_nowell/char_4173_nowell_iteration_6/build/build_char_4173_nowell_iteration_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4173_nowell/char_4173_nowell_iteration_6/build/build_char_4173_nowell_iteration_6.png"
+    "assetId": "build_char_4173_nowell_iteration#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "诺威尔",
+    "appellation": "Nowell",
+    "skinGroupId": "2026#iteration",
+    "skinGroupName": "命途迭代/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4173_nowell_iteration#6.atlas",
+      ".png": "build_char_4173_nowell_iteration#6.png",
+      ".skel": "build_char_4173_nowell_iteration#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/nowell/skin-iteration-6/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,9 +130,9 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -216.02042,
+      "minX": -874.04327,
       "maxX": 209.7197,
       "minY": -104.56574,
       "maxY": 425.38986
@@ -129,23 +144,29 @@
       "maxY": 527.10608
     },
     "core_source_bounds": {
-      "minX": -216.02042,
+      "minX": -874.04327,
       "maxX": 209.7197,
       "minY": -104.56574,
       "maxY": 425.38986
     },
     "cluster": {
-      "retained": 2728,
+      "retained": 2765,
       "total": 2766,
-      "centerX": 5.35585,
-      "centerY": 126.76884,
-      "radiusX": 298.46982,
-      "radiusY": 622.52174
+      "centerX": -44.59952,
+      "centerY": 143.86101,
+      "radiusX": 863.42791,
+      "radiusY": 608.13797
     },
-    "scale": 0.39249,
-    "x_offset": 97.23647,
-    "y_offset": 174.95944,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 49,
+      "visible_height": 69,
+      "density_zoom": 2.02899
+    },
+    "scale": 0.3295,
+    "x_offset": 97.91155,
+    "y_offset": 216.03819,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:00.507Z"
+  "exported_at": "2026-08-19T13:23:20.804Z"
 }

@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "reed-the-flame-shadow",
   "character_name": "Reed The Flame Shadow",
   "localized_name": "焰影苇草",
@@ -11,15 +12,30 @@
   "skin_id": "snow-8",
   "skin_name": "闪焰之夜",
   "source": "standalone/assets/source/reed-the-flame-shadow/skin-snow-8",
-  "source_page": "https://prts.wiki/w/%E7%84%B0%E5%BD%B1%E8%8B%87%E8%8D%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/meta.json",
-    "model": "char_1020_reed2_snow_8/build/build_char_1020_reed2_snow_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/char_1020_reed2_snow_8/build/build_char_1020_reed2_snow_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/char_1020_reed2_snow_8/build/build_char_1020_reed2_snow_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/char_1020_reed2_snow_8/build/build_char_1020_reed2_snow_8.png"
+    "assetId": "build_char_1020_reed2_snow#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "焰影苇草",
+    "appellation": "Reed The Flame Shadow",
+    "skinGroupId": "2025#xmas",
+    "skinGroupName": "冰原信使/VIII",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1020_reed2_snow#8.atlas",
+      ".png": "build_char_1020_reed2_snow#8.png",
+      ".skel": "build_char_1020_reed2_snow#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +118,7 @@
       "path": "standalone/assets/cleaned/reed-the-flame-shadow/skin-snow-8/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,10 +131,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -398.65826,
-      "maxX": 312.98242,
+      "minX": -510.35568,
+      "maxX": 1228.18787,
       "minY": -122.29426,
       "maxY": 740.48712
     },
@@ -129,23 +145,29 @@
       "maxY": 855.63483
     },
     "core_source_bounds": {
-      "minX": -398.65826,
-      "maxX": 312.98242,
+      "minX": -510.35568,
+      "maxX": 1228.18787,
       "minY": -122.29426,
       "maxY": 740.48712
     },
     "cluster": {
-      "retained": 2420,
-      "total": 2478,
-      "centerX": 5.8851,
-      "centerY": 145.90528,
-      "radiusX": 310.6375,
-      "radiusY": 623.32825
+      "retained": 2428,
+      "total": 2462,
+      "centerX": 40.80714,
+      "centerY": 202.77043,
+      "radiusX": 1136.65044,
+      "radiusY": 610.11566
     },
-    "scale": 0.24108,
-    "x_offset": 106.3274,
-    "y_offset": 186.51721,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 52,
+      "visible_height": 45,
+      "density_zoom": 3.11111
+    },
+    "scale": 0.31495,
+    "x_offset": 127.62578,
+    "y_offset": 217.92778,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:41.569Z"
+  "exported_at": "2026-08-19T13:23:40.797Z"
 }

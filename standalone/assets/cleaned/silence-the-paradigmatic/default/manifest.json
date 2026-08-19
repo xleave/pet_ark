@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "silence-the-paradigmatic",
   "character_name": "Silence the Paradigmatic",
   "localized_name": "淬羽赫默",
@@ -9,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/silence-the-paradigmatic/default",
-  "source_page": "https://prts.wiki/w/%E6%B7%AC%E7%BE%BD%E8%B5%AB%E9%BB%98",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/meta.json",
-    "model": "defaultskin/build/build_char_1031_slent2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/defaultskin/build/build_char_1031_slent2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/defaultskin/build/build_char_1031_slent2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/defaultskin/build/build_char_1031_slent2.png"
+    "assetId": "build_char_1031_slent2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "淬羽赫默",
+    "appellation": "Silence the Paradigmatic",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1031_slent2.atlas",
+      ".png": "build_char_1031_slent2.png",
+      ".skel": "build_char_1031_slent2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/silence-the-paradigmatic/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -243.48058,
+      "minX": -243.56868,
       "maxX": 176.52774,
-      "minY": -98.8225,
+      "minY": -98.9296,
       "maxY": 471.94247
     },
-    "scale": 0.36442,
-    "x_offset": 108.19958,
-    "y_offset": 179.98679,
+    "full_source_bounds": {
+      "minX": -243.56868,
+      "maxX": 176.52774,
+      "minY": -98.9296,
+      "maxY": 471.94247
+    },
+    "core_source_bounds": {
+      "minX": -243.56868,
+      "maxX": 176.52774,
+      "minY": -98.9296,
+      "maxY": 471.94247
+    },
+    "cluster": {
+      "retained": 2822,
+      "total": 2822,
+      "centerX": -6.53355,
+      "centerY": 215.69995,
+      "radiusX": 480.02341,
+      "radiusY": 734.97803
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 110,
+      "visible_height": 141,
+      "density_zoom": 1
+    },
+    "scale": 0.36435,
+    "x_offset": 108.21335,
+    "y_offset": 179.95452,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:30.917Z"
+  "exported_at": "2026-08-19T13:23:55.285Z"
 }

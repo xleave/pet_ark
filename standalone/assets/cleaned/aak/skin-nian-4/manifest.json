@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "aak",
   "character_name": "Aak",
   "localized_name": "阿",
@@ -11,15 +12,29 @@
   "skin_id": "nian-4",
   "skin_name": "百面郎中",
   "source": "standalone/assets/source/aak/skin-nian-4",
-  "source_page": "https://prts.wiki/w/%E9%98%BF",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_225_haak/meta.json",
-    "model": "char_225_haak_nian_4/build/build_char_225_haak_nian_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_225_haak/char_225_haak_nian_4/build/build_char_225_haak_nian_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_225_haak/char_225_haak_nian_4/build/build_char_225_haak_nian_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_225_haak/char_225_haak_nian_4/build/build_char_225_haak_nian_4.png"
+    "assetId": "build_char_225_haak_nian#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "阿",
+    "appellation": "Aak",
+    "skinGroupId": "2021#nian",
+    "skinGroupName": "0011制造/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_225_haak_nian#4.atlas",
+      ".png": "build_char_225_haak_nian#4.png",
+      ".skel": "build_char_225_haak_nian#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/aak/skin-nian-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -266.97559,
-      "maxX": 180.2606,
+      "minX": -305.41705,
+      "maxX": 751.59686,
       "minY": -98.77138,
-      "maxY": 422.02402
+      "maxY": 464.26892
     },
     "full_source_bounds": {
       "minX": -305.41705,
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -266.97559,
-      "maxX": 180.2606,
+      "maxX": 624.59686,
       "minY": -98.77138,
       "maxY": 422.02402
     },
     "cluster": {
-      "retained": 1884,
+      "retained": 1897,
       "total": 1907,
-      "centerX": -5.76111,
-      "centerY": 128.62121,
-      "radiusX": 256,
-      "radiusY": 638.85367
+      "centerX": 24.53539,
+      "centerY": 195.12113,
+      "radiusX": 550.9441,
+      "radiusY": 647.99194
     },
-    "scale": 0.39353,
-    "x_offset": 113.06239,
-    "y_offset": 177.13069,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 38,
+      "visible_height": 70,
+      "density_zoom": 2
+    },
+    "scale": 0.33301,
+    "x_offset": 104.70803,
+    "y_offset": 217.10779,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:30.798Z"
+  "exported_at": "2026-08-19T13:21:19.426Z"
 }

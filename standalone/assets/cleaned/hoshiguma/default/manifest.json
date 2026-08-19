@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "hoshiguma",
   "character_name": "Hoshiguma",
   "localized_name": "星熊",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/hoshiguma/default",
-  "source_page": "https://prts.wiki/w/%E6%98%9F%E7%86%8A",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_136_hsguma/meta.json",
-    "model": "defaultskin/build/build_char_136_hsguma",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_136_hsguma/defaultskin/build/build_char_136_hsguma.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_136_hsguma/defaultskin/build/build_char_136_hsguma.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_136_hsguma/defaultskin/build/build_char_136_hsguma.png"
+    "assetId": "build_char_136_hsguma",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "星熊",
+    "appellation": "Hoshiguma",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_136_hsguma.atlas",
+      ".png": "build_char_136_hsguma.png",
+      ".skel": "build_char_136_hsguma.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/hoshiguma/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -213.42087,
       "maxX": 200.26001,
-      "minY": -111.75337,
-      "maxY": 395.91772
+      "minY": -112.98212,
+      "maxY": 396.72897
     },
-    "scale": 0.40971,
-    "x_offset": 98.69609,
-    "y_offset": 170.21307,
+    "full_source_bounds": {
+      "minX": -213.42087,
+      "maxX": 200.26001,
+      "minY": -112.98212,
+      "maxY": 396.72897
+    },
+    "core_source_bounds": {
+      "minX": -213.42087,
+      "maxX": 200.26001,
+      "minY": -112.98212,
+      "maxY": 396.72897
+    },
+    "cluster": {
+      "retained": 1330,
+      "total": 1330,
+      "centerX": 0.40771,
+      "centerY": 158.94815,
+      "radiusX": 400.80777,
+      "radiusY": 618.34743
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 86,
+      "visible_height": 159,
+      "density_zoom": 1
+    },
+    "scale": 0.40807,
+    "x_offset": 98.6853,
+    "y_offset": 169.8949,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:10.990Z"
+  "exported_at": "2026-08-19T13:22:30.829Z"
 }

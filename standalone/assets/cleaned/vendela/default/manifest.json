@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "vendela",
   "character_name": "Vendela",
   "localized_name": "刺玫",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/vendela/default",
-  "source_page": "https://prts.wiki/w/%E5%88%BA%E7%8E%AB",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_494_vendla/meta.json",
-    "model": "defaultskin/build/build_char_494_vendla",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_494_vendla/defaultskin/build/build_char_494_vendla.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_494_vendla/defaultskin/build/build_char_494_vendla.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_494_vendla/defaultskin/build/build_char_494_vendla.png"
+    "assetId": "build_char_494_vendla",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "刺玫",
+    "appellation": "Vendela",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_494_vendla.atlas",
+      ".png": "build_char_494_vendla.png",
+      ".skel": "build_char_494_vendla.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/vendela/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -361.4299,
       "maxX": 190.96873,
-      "minY": -108.8567,
-      "maxY": 426.48557
+      "minY": -109.14976,
+      "maxY": 427.47119
+    },
+    "full_source_bounds": {
+      "minX": -361.4299,
+      "maxX": 190.96873,
+      "minY": -109.14976,
+      "maxY": 427.47119
+    },
+    "core_source_bounds": {
+      "minX": -361.4299,
+      "maxX": 190.96873,
+      "minY": -109.14976,
+      "maxY": 427.47119
+    },
+    "cluster": {
+      "retained": 3468,
+      "total": 3468,
+      "centerX": -4.39435,
+      "centerY": 181.37915,
+      "radiusX": 467.16501,
+      "radiusY": 547.50008
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 96,
+      "visible_height": 135,
+      "density_zoom": 1.03704
     },
     "scale": 0.31861,
     "x_offset": 123.15536,
-    "y_offset": 181.31711,
+    "y_offset": 181.22374,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:36.321Z"
+  "exported_at": "2026-08-19T13:24:18.742Z"
 }

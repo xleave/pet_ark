@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "skadi-the-corrupting-heart",
   "character_name": "Skadi the Corrupting Heart",
   "localized_name": "浊心斯卡蒂",
@@ -11,15 +12,30 @@
   "skin_id": "boc-4",
   "skin_name": "升华",
   "source": "standalone/assets/source/skadi-the-corrupting-heart/skin-boc-4",
-  "source_page": "https://prts.wiki/w/%E6%B5%8A%E5%BF%83%E6%96%AF%E5%8D%A1%E8%92%82",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1012_skadi2/meta.json",
-    "model": "char_1012_skadi2_boc_4/build/build_char_1012_skadi2_boc_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1012_skadi2/char_1012_skadi2_boc_4/build/build_char_1012_skadi2_boc_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1012_skadi2/char_1012_skadi2_boc_4/build/build_char_1012_skadi2_boc_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1012_skadi2/char_1012_skadi2_boc_4/build/build_char_1012_skadi2_boc_4.png"
+    "assetId": "build_char_1012_skadi2_boc#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "浊心斯卡蒂",
+    "appellation": "Skadi the Corrupting Heart",
+    "skinGroupId": "2022#boc",
+    "skinGroupName": "斗争血脉/IV",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1012_skadi2_boc#4.atlas",
+      ".png": "build_char_1012_skadi2_boc#4.png",
+      ".skel": "build_char_1012_skadi2_boc#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +118,7 @@
       "path": "standalone/assets/cleaned/skadi-the-corrupting-heart/skin-boc-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -137,15 +153,21 @@
     "cluster": {
       "retained": 2617,
       "total": 2639,
-      "centerX": -13.67374,
-      "centerY": 133.06936,
-      "radiusX": 353.36257,
-      "radiusY": 687.61313
+      "centerX": 12.4159,
+      "centerY": 169.9773,
+      "radiusX": 551.18304,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 126,
+      "visible_height": 145,
+      "density_zoom": 1
     },
     "scale": 0.32454,
     "x_offset": 107.01412,
     "y_offset": 175.95055,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:36.811Z"
+  "exported_at": "2026-08-19T13:23:57.865Z"
 }

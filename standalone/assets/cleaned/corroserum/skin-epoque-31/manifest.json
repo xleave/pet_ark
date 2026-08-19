@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "corroserum",
   "character_name": "Corroserum",
   "localized_name": "蚀清",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-31",
   "skin_name": "逸趣",
   "source": "standalone/assets/source/corroserum/skin-epoque-31",
-  "source_page": "https://prts.wiki/w/%E8%9A%80%E6%B8%85",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_489_serum/meta.json",
-    "model": "char_489_serum_epoque_31/build/build_char_489_serum_epoque_31",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_489_serum/char_489_serum_epoque_31/build/build_char_489_serum_epoque_31.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_489_serum/char_489_serum_epoque_31/build/build_char_489_serum_epoque_31.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_489_serum/char_489_serum_epoque_31/build/build_char_489_serum_epoque_31.png"
+    "assetId": "build_char_489_serum_epoque#31",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "蚀清",
+    "appellation": "Corroserum",
+    "skinGroupId": "2024#epoque#2",
+    "skinGroupName": "时代/XXXI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_489_serum_epoque#31.atlas",
+      ".png": "build_char_489_serum_epoque#31.png",
+      ".skel": "build_char_489_serum_epoque#31.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/corroserum/skin-epoque-31/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,10 +130,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -306.1803,
-      "maxX": 229.97066,
+      "minX": -596.43378,
+      "maxX": 421.43002,
       "minY": -120.09058,
       "maxY": 485.03186
     },
@@ -129,23 +144,29 @@
       "maxY": 485.03186
     },
     "core_source_bounds": {
-      "minX": -306.1803,
+      "minX": -596.43378,
       "maxX": 229.97066,
       "minY": -120.09058,
       "maxY": 485.03186
     },
     "cluster": {
-      "retained": 2864,
+      "retained": 2867,
       "total": 2867,
-      "centerX": 3.81011,
-      "centerY": 123.39388,
-      "radiusX": 327.5925,
-      "radiusY": 633.41637
+      "centerX": -154.45922,
+      "centerY": 172.08278,
+      "radiusX": 474.97307,
+      "radiusY": 890.04356
     },
-    "scale": 0.32827,
-    "x_offset": 108.50851,
-    "y_offset": 176.57837,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 63,
+      "visible_height": 69,
+      "density_zoom": 2.02899
+    },
+    "scale": 0.35083,
+    "x_offset": 92.2059,
+    "y_offset": 216.47681,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:56.815Z"
+  "exported_at": "2026-08-19T13:21:54.981Z"
 }

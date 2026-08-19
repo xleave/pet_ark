@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "vanilla",
@@ -12,15 +12,29 @@
   "skin_id": "game-4",
   "skin_name": "平原驯虫士",
   "source": "standalone/assets/source/vanilla/skin-game-4",
-  "source_page": "https://prts.wiki/w/%E9%A6%99%E8%8D%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_240_wyvern/meta.json",
-    "model": "char_240_wyvern_game_4/build/build_char_240_wyvern_game_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_240_wyvern/char_240_wyvern_game_4/build/build_char_240_wyvern_game_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_240_wyvern/char_240_wyvern_game_4/build/build_char_240_wyvern_game_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_240_wyvern/char_240_wyvern_game_4/build/build_char_240_wyvern_game_4.png"
+    "assetId": "build_char_240_wyvern_game#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "香草",
+    "appellation": "Vanilla",
+    "skinGroupId": "2024#game#2",
+    "skinGroupName": "成就之星/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_240_wyvern_game#4.atlas",
+      ".png": "build_char_240_wyvern_game#4.png",
+      ".skel": "build_char_240_wyvern_game#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/vanilla/skin-game-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -146,13 +160,13 @@
     "pixel_probe": {
       "animation": "Relax",
       "visible_width": 52,
-      "visible_height": 93,
-      "density_zoom": 1.50538
+      "visible_height": 91,
+      "density_zoom": 1.53846
     },
-    "scale": 0.3443,
-    "x_offset": 107.09037,
-    "y_offset": 213.93696,
+    "scale": 0.35186,
+    "x_offset": 107.33412,
+    "y_offset": 216.96854,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:39.455Z"
+  "exported_at": "2026-08-19T13:24:18.390Z"
 }

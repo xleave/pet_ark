@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "perfumer",
   "character_name": "Perfumer",
   "localized_name": "调香师",
@@ -9,15 +12,29 @@
   "skin_id": "epoque-9",
   "skin_name": "闲适午后",
   "source": "standalone/assets/source/perfumer/skin-epoque-9",
-  "source_page": "https://prts.wiki/w/%E8%B0%83%E9%A6%99%E5%B8%88",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/meta.json",
-    "model": "char_181_flower_epoque_9/build/build_char_181_flower_epoque_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/char_181_flower_epoque_9/build/build_char_181_flower_epoque_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/char_181_flower_epoque_9/build/build_char_181_flower_epoque_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/char_181_flower_epoque_9/build/build_char_181_flower_epoque_9.png"
+    "assetId": "build_char_181_flower_epoque#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "调香师",
+    "appellation": "Perfumer",
+    "skinGroupId": "2021#epoque",
+    "skinGroupName": "时代/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_181_flower_epoque#9.atlas",
+      ".png": "build_char_181_flower_epoque#9.png",
+      ".skel": "build_char_181_flower_epoque#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/perfumer/skin-epoque-9/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -234.86769,
       "maxX": 314.92355,
-      "minY": -118.38521,
-      "maxY": 491.97046
+      "minY": -114.1987,
+      "maxY": 497.28546
+    },
+    "full_source_bounds": {
+      "minX": -234.86769,
+      "maxX": 314.92355,
+      "minY": -114.1987,
+      "maxY": 497.28546
+    },
+    "core_source_bounds": {
+      "minX": -234.86769,
+      "maxX": 314.92355,
+      "minY": -114.1987,
+      "maxY": 392.10443
+    },
+    "cluster": {
+      "retained": 2530,
+      "total": 2530,
+      "centerX": -1.58224,
+      "centerY": 182.83483,
+      "radiusX": 565.03471,
+      "radiusY": 816.30042
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 81,
+      "visible_height": 125,
+      "density_zoom": 1.12
     },
     "scale": 0.32012,
     "x_offset": 83.1862,
-    "y_offset": 178.10235,
+    "y_offset": 179.44254,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:23.297Z"
+  "exported_at": "2026-08-19T13:23:26.230Z"
 }

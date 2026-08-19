@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "specter-the-unchained",
   "character_name": "Specter the Unchained",
   "localized_name": "归溟幽灵鲨",
@@ -9,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/specter-the-unchained/default",
-  "source_page": "https://prts.wiki/w/%E5%BD%92%E6%BA%9F%E5%B9%BD%E7%81%B5%E9%B2%A8",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1023_ghost2/meta.json",
-    "model": "defaultskin/build/build_char_1023_ghost2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1023_ghost2/defaultskin/build/build_char_1023_ghost2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1023_ghost2/defaultskin/build/build_char_1023_ghost2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1023_ghost2/defaultskin/build/build_char_1023_ghost2.png"
+    "assetId": "build_char_1023_ghost2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "归溟幽灵鲨",
+    "appellation": "Specter the Unchained",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1023_ghost2.atlas",
+      ".png": "build_char_1023_ghost2.png",
+      ".skel": "build_char_1023_ghost2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/specter-the-unchained/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -243.74518,
-      "maxX": 234.53146,
+      "minX": -258.52954,
+      "maxX": 234.75697,
       "minY": -108.58916,
       "maxY": 434.33521
     },
-    "scale": 0.36799,
-    "x_offset": 97.69527,
-    "y_offset": 176.04051,
+    "full_source_bounds": {
+      "minX": -258.52954,
+      "maxX": 234.75697,
+      "minY": -108.58916,
+      "maxY": 434.33521
+    },
+    "core_source_bounds": {
+      "minX": -258.52954,
+      "maxX": 234.75697,
+      "minY": -108.58916,
+      "maxY": 428.06528
+    },
+    "cluster": {
+      "retained": 3179,
+      "total": 3179,
+      "centerX": 3.54012,
+      "centerY": 175.50524,
+      "radiusX": 450.04168,
+      "radiusY": 793.78426
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 126,
+      "visible_height": 161,
+      "density_zoom": 1
+    },
+    "scale": 0.35679,
+    "x_offset": 100.24091,
+    "y_offset": 177.2564,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:31.998Z"
+  "exported_at": "2026-08-19T13:24:00.334Z"
 }

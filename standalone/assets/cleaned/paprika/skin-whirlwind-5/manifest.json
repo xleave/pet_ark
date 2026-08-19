@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "paprika",
   "character_name": "Paprika",
   "localized_name": "明椒",
@@ -11,15 +12,29 @@
   "skin_id": "whirlwind-5",
   "skin_name": "来路",
   "source": "standalone/assets/source/paprika/skin-whirlwind-5",
-  "source_page": "https://prts.wiki/w/%E6%98%8E%E6%A4%92",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/meta.json",
-    "model": "char_4071_peper_whirlwind_5/build/build_char_4071_peper_whirlwind_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/char_4071_peper_whirlwind_5/build/build_char_4071_peper_whirlwind_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/char_4071_peper_whirlwind_5/build/build_char_4071_peper_whirlwind_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/char_4071_peper_whirlwind_5/build/build_char_4071_peper_whirlwind_5.png"
+    "assetId": "build_char_4071_peper_whirlwind#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "明椒",
+    "appellation": "Paprika",
+    "skinGroupId": "2023#whirlwind",
+    "skinGroupName": "0011/飙系列/Ⅴ",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4071_peper_whirlwind#5.atlas",
+      ".png": "build_char_4071_peper_whirlwind#5.png",
+      ".skel": "build_char_4071_peper_whirlwind#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/paprika/skin-whirlwind-5/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,10 +130,10 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -244.36545,
-      "maxX": 183.0202,
+      "maxX": 626.74078,
       "minY": -124.1322,
       "maxY": 403.71384
     },
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -244.36545,
-      "maxX": 183.0202,
+      "maxX": 626.74078,
       "minY": -124.1322,
       "maxY": 403.71384
     },
     "cluster": {
-      "retained": 2701,
+      "retained": 2709,
       "total": 2734,
-      "centerX": -4.8103,
-      "centerY": 133.50982,
-      "radiusX": 358.3836,
-      "radiusY": 636.96078
+      "centerX": 54.32796,
+      "centerY": 154.12253,
+      "radiusX": 728.22854,
+      "radiusY": 480
     },
-    "scale": 0.39405,
-    "x_offset": 108.08668,
-    "y_offset": 167.08517,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 50,
+      "visible_height": 81,
+      "density_zoom": 1.7284
+    },
+    "scale": 0.34921,
+    "x_offset": 109.60605,
+    "y_offset": 217.59028,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:48.937Z"
+  "exported_at": "2026-08-19T13:23:23.547Z"
 }

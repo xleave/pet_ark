@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "podenco",
   "character_name": "Podenco",
   "localized_name": "波登可",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/podenco/default",
-  "source_page": "https://prts.wiki/w/%E6%B3%A2%E7%99%BB%E5%8F%AF",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_258_podego/meta.json",
-    "model": "defaultskin/build/build_char_258_podego",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_258_podego/defaultskin/build/build_char_258_podego.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_258_podego/defaultskin/build/build_char_258_podego.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_258_podego/defaultskin/build/build_char_258_podego.png"
+    "assetId": "build_char_258_podego",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "波登可",
+    "appellation": "Podenco",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_258_podego.atlas",
+      ".png": "build_char_258_podego.png",
+      ".skel": "build_char_258_podego.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/podenco/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -279.58392,
       "maxX": 175.38374,
       "minY": -107.13177,
       "maxY": 414.30093
     },
+    "full_source_bounds": {
+      "minX": -279.58392,
+      "maxX": 175.38374,
+      "minY": -107.13177,
+      "maxY": 414.30093
+    },
+    "core_source_bounds": {
+      "minX": -279.58392,
+      "maxX": 175.38374,
+      "minY": -107.13177,
+      "maxY": 414.30093
+    },
+    "cluster": {
+      "retained": 1666,
+      "total": 1666,
+      "centerX": 0.2797,
+      "centerY": 193.9647,
+      "radiusX": 320,
+      "radiusY": 574.8907
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 89,
+      "visible_height": 157,
+      "density_zoom": 1
+    },
     "scale": 0.38684,
     "x_offset": 116.15443,
     "y_offset": 174.55707,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:24.034Z"
+  "exported_at": "2026-08-19T13:23:28.977Z"
 }

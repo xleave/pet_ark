@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "197-poca",
   "character_name": "Роса",
   "localized_name": "早露",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/197-poca/default",
-  "source_page": "https://prts.wiki/w/%E6%97%A9%E9%9C%B2",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/meta.json",
-    "model": "defaultskin/build/build_char_197_poca",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/defaultskin/build/build_char_197_poca.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/defaultskin/build/build_char_197_poca.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/defaultskin/build/build_char_197_poca.png"
+    "assetId": "build_char_197_poca",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "早露",
+    "appellation": "Роса",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_197_poca.atlas",
+      ".png": "build_char_197_poca.png",
+      ".skel": "build_char_197_poca.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/197-poca/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -216.01389,
       "maxX": 189.66418,
       "minY": -120.30977,
       "maxY": 407.14136
     },
+    "full_source_bounds": {
+      "minX": -216.01389,
+      "maxX": 189.66418,
+      "minY": -120.30977,
+      "maxY": 407.14136
+    },
+    "core_source_bounds": {
+      "minX": -216.01389,
+      "maxX": 189.66418,
+      "minY": -120.30977,
+      "maxY": 407.14136
+    },
+    "cluster": {
+      "retained": 2034,
+      "total": 2034,
+      "centerX": -3.05824,
+      "centerY": 195.07613,
+      "radiusX": 440.82462,
+      "radiusY": 578.37997
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 86,
+      "visible_height": 158,
+      "density_zoom": 1
+    },
     "scale": 0.39435,
     "x_offset": 101.19549,
     "y_offset": 168.55592,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:54.069Z"
+  "exported_at": "2026-08-19T13:21:17.390Z"
 }

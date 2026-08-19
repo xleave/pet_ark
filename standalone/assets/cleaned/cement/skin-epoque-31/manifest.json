@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "cement",
@@ -12,15 +12,29 @@
   "skin_id": "epoque-31",
   "skin_name": "全新业务",
   "source": "standalone/assets/source/cement/skin-epoque-31",
-  "source_page": "https://prts.wiki/w/%E6%B4%8B%E7%81%B0",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_464_cement/meta.json",
-    "model": "char_464_cement_epoque_31/build/build_char_464_cement_epoque_31",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_464_cement/char_464_cement_epoque_31/build/build_char_464_cement_epoque_31.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_464_cement/char_464_cement_epoque_31/build/build_char_464_cement_epoque_31.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_464_cement/char_464_cement_epoque_31/build/build_char_464_cement_epoque_31.png"
+    "assetId": "build_char_464_cement_epoque#31",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "洋灰",
+    "appellation": "Cement",
+    "skinGroupId": "2024#epoque#2",
+    "skinGroupName": "时代/XXXI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_464_cement_epoque#31.atlas",
+      ".png": "build_char_464_cement_epoque#31.png",
+      ".skel": "build_char_464_cement_epoque#31.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/cement/skin-epoque-31/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -145,14 +159,14 @@
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 25,
+      "visible_width": 24,
       "visible_height": 51,
-      "density_zoom": 2.88
+      "density_zoom": 3
     },
-    "scale": 0.38451,
-    "x_offset": 103.49696,
-    "y_offset": 218.13442,
+    "scale": 0.40053,
+    "x_offset": 102.30933,
+    "y_offset": 218.22336,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:25.527Z"
+  "exported_at": "2026-08-19T13:21:47.226Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "croissant",
   "character_name": "Croissant",
   "localized_name": "可颂",
@@ -9,15 +12,29 @@
   "skin_id": "kfc-1",
   "skin_name": "清晨七点",
   "source": "standalone/assets/source/croissant/skin-kfc-1",
-  "source_page": "https://prts.wiki/w/%E5%8F%AF%E9%A2%82",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/meta.json",
-    "model": "char_201_moeshd_kfc_1/build/build_char_201_moeshd_kfc_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_kfc_1/build/build_char_201_moeshd_kfc_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_kfc_1/build/build_char_201_moeshd_kfc_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_kfc_1/build/build_char_201_moeshd_kfc_1.png"
+    "assetId": "build_char_201_moeshd_kfc#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "可颂",
+    "appellation": "Croissant",
+    "skinGroupId": "2019#kfc",
+    "skinGroupName": "肯德基",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_201_moeshd_kfc#1.atlas",
+      ".png": "build_char_201_moeshd_kfc#1.png",
+      ".skel": "build_char_201_moeshd_kfc#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/croissant/skin-kfc-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -231.66661,
+      "minX": -232.54404,
       "maxX": 220.94897,
-      "minY": -63.05616,
-      "maxY": 394.04401
+      "minY": -63.05739,
+      "maxY": 394.37109
     },
-    "scale": 0.38885,
-    "x_offset": 98.08378,
-    "y_offset": 191.48055,
+    "full_source_bounds": {
+      "minX": -232.54404,
+      "maxX": 220.94897,
+      "minY": -63.05739,
+      "maxY": 394.37109
+    },
+    "core_source_bounds": {
+      "minX": -232.54404,
+      "maxX": 220.94897,
+      "minY": -63.05739,
+      "maxY": 394.37109
+    },
+    "cluster": {
+      "retained": 1987,
+      "total": 1987,
+      "centerX": 13.39871,
+      "centerY": 162.84826,
+      "radiusX": 424.23111,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 91,
+      "visible_height": 152,
+      "density_zoom": 1
+    },
+    "scale": 0.3881,
+    "x_offset": 98.25001,
+    "y_offset": 191.52752,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:02.812Z"
+  "exported_at": "2026-08-19T13:21:56.140Z"
 }

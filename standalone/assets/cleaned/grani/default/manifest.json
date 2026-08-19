@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "grani",
   "character_name": "Grani",
   "localized_name": "格拉尼",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/grani/default",
-  "source_page": "https://prts.wiki/w/%E6%A0%BC%E6%8B%89%E5%B0%BC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_220_grani/meta.json",
-    "model": "defaultskin/build/build_char_220_grani",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_220_grani/defaultskin/build/build_char_220_grani.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_220_grani/defaultskin/build/build_char_220_grani.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_220_grani/defaultskin/build/build_char_220_grani.png"
+    "assetId": "build_char_220_grani",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "格拉尼",
+    "appellation": "Grani",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_220_grani.atlas",
+      ".png": "build_char_220_grani.png",
+      ".skel": "build_char_220_grani.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/grani/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -276.80893,
+      "minX": -276.85599,
       "maxX": 161.97292,
-      "minY": -91.67359,
+      "minY": -91.77493,
       "maxY": 490.58209
     },
-    "scale": 0.35723,
-    "x_offset": 116.51151,
-    "y_offset": 183.25132,
+    "full_source_bounds": {
+      "minX": -276.85599,
+      "maxX": 161.97292,
+      "minY": -91.77493,
+      "maxY": 490.58209
+    },
+    "core_source_bounds": {
+      "minX": -276.85599,
+      "maxX": 161.97292,
+      "minY": -91.77493,
+      "maxY": 490.58209
+    },
+    "cluster": {
+      "retained": 1639,
+      "total": 1639,
+      "centerX": -15.18848,
+      "centerY": 169.57907,
+      "radiusX": 445.017,
+      "radiusY": 595.04456
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 82,
+      "visible_height": 153,
+      "density_zoom": 1
+    },
+    "scale": 0.35717,
+    "x_offset": 116.51635,
+    "y_offset": 183.22082,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:08.847Z"
+  "exported_at": "2026-08-19T13:22:21.005Z"
 }

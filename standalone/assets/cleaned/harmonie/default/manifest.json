@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "harmonie",
   "character_name": "Harmonie",
   "localized_name": "和弦",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/harmonie/default",
-  "source_page": "https://prts.wiki/w/%E5%92%8C%E5%BC%A6",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/meta.json",
-    "model": "defaultskin/build/build_char_297_hamoni",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/defaultskin/build/build_char_297_hamoni.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/defaultskin/build/build_char_297_hamoni.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/defaultskin/build/build_char_297_hamoni.png"
+    "assetId": "build_char_297_hamoni",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "和弦",
+    "appellation": "Harmonie",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_297_hamoni.atlas",
+      ".png": "build_char_297_hamoni.png",
+      ".skel": "build_char_297_hamoni.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/harmonie/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -205.33,
-      "maxX": 215.15373,
-      "minY": -117.73412,
-      "maxY": 425.55972
+      "minX": -208.68971,
+      "maxX": 214.68692,
+      "minY": -118.53081,
+      "maxY": 426.30847
     },
-    "scale": 0.38285,
-    "x_offset": 94.11949,
-    "y_offset": 170.9255,
+    "full_source_bounds": {
+      "minX": -208.68971,
+      "maxX": 214.68692,
+      "minY": -118.53081,
+      "maxY": 426.30847
+    },
+    "core_source_bounds": {
+      "minX": -201.79315,
+      "maxX": 214.68692,
+      "minY": -118.53081,
+      "maxY": 417.89603
+    },
+    "cluster": {
+      "retained": 1835,
+      "total": 1835,
+      "centerX": 1.5353,
+      "centerY": 205.82235,
+      "radiusX": 330.01756,
+      "radiusY": 565.01198
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 100,
+      "visible_height": 160,
+      "density_zoom": 1
+    },
+    "scale": 0.38176,
+    "x_offset": 94.85524,
+    "y_offset": 170.74921,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:09.359Z"
+  "exported_at": "2026-08-19T13:22:23.805Z"
 }

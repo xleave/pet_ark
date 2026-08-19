@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "lee",
   "character_name": "Lee",
   "localized_name": "老鲤",
@@ -11,15 +12,29 @@
   "skin_id": "whirlwind-10",
   "skin_name": "鉴浮生",
   "source": "standalone/assets/source/lee/skin-whirlwind-10",
-  "source_page": "https://prts.wiki/w/%E8%80%81%E9%B2%A4",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/meta.json",
-    "model": "char_322_lmlee_whirlwind_10/build/build_char_322_lmlee_whirlwind_10",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/char_322_lmlee_whirlwind_10/build/build_char_322_lmlee_whirlwind_10.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/char_322_lmlee_whirlwind_10/build/build_char_322_lmlee_whirlwind_10.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/char_322_lmlee_whirlwind_10/build/build_char_322_lmlee_whirlwind_10.png"
+    "assetId": "build_char_322_lmlee_whirlwind#10",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "老鲤",
+    "appellation": "Lee",
+    "skinGroupId": "2025#whirlwind#3",
+    "skinGroupName": "0011/飙系列/X",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_322_lmlee_whirlwind#10.atlas",
+      ".png": "build_char_322_lmlee_whirlwind#10.png",
+      ".skel": "build_char_322_lmlee_whirlwind#10.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/lee/skin-whirlwind-10/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -296.64273,
+      "minX": -1195.21704,
       "maxX": 185.3553,
       "minY": -118.21474,
-      "maxY": 506.4791
+      "maxY": 634.45996
     },
     "full_source_bounds": {
       "minX": -1195.21704,
@@ -129,23 +144,29 @@
       "maxY": 637.20996
     },
     "core_source_bounds": {
-      "minX": -296.64273,
+      "minX": -1195.21704,
       "maxX": 185.3553,
       "minY": -118.21474,
-      "maxY": 506.4791
+      "maxY": 634.45996
     },
     "cluster": {
-      "retained": 2348,
+      "retained": 2390,
       "total": 2392,
-      "centerX": -7.72258,
-      "centerY": 151.28435,
-      "radiusX": 372.91759,
-      "radiusY": 610.20825
+      "centerX": -62.88195,
+      "centerY": 209.01182,
+      "radiusX": 1062.44851,
+      "radiusY": 962.33963
     },
-    "scale": 0.33296,
-    "x_offset": 114.5273,
-    "y_offset": 176.63885,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 47,
+      "visible_height": 64,
+      "density_zoom": 2.1875
+    },
+    "scale": 0.27887,
+    "x_offset": 118.685,
+    "y_offset": 218.03347,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:29.746Z"
+  "exported_at": "2026-08-19T13:22:49.645Z"
 }

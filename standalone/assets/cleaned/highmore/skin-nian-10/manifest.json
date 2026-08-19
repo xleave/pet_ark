@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "highmore",
@@ -12,15 +12,29 @@
   "skin_id": "nian-10",
   "skin_name": "及山海",
   "source": "standalone/assets/source/highmore/skin-nian-10",
-  "source_page": "https://prts.wiki/w/%E6%B5%B7%E6%B2%AB",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/meta.json",
-    "model": "char_4066_highmo_nian_10/build/build_char_4066_highmo_nian_10",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/char_4066_highmo_nian_10/build/build_char_4066_highmo_nian_10.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/char_4066_highmo_nian_10/build/build_char_4066_highmo_nian_10.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/char_4066_highmo_nian_10/build/build_char_4066_highmo_nian_10.png"
+    "assetId": "build_char_4066_highmo_nian#10",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "海沫",
+    "appellation": "Highmore",
+    "skinGroupId": "2024#nian",
+    "skinGroupName": "0011制造/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4066_highmo_nian#10.atlas",
+      ".png": "build_char_4066_highmo_nian#10.png",
+      ".skel": "build_char_4066_highmo_nian#10.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/highmore/skin-nian-10/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -136,8 +150,8 @@
       "maxY": 670.95752
     },
     "cluster": {
-      "retained": 2967,
-      "total": 2979,
+      "retained": 2959,
+      "total": 2971,
       "centerX": 28.50659,
       "centerY": 221.78908,
       "radiusX": 657.52106,
@@ -146,13 +160,13 @@
     "pixel_probe": {
       "animation": "Relax",
       "visible_width": 42,
-      "visible_height": 58,
-      "density_zoom": 2.41379
+      "visible_height": 57,
+      "density_zoom": 2.45614
     },
-    "scale": 0.29325,
-    "x_offset": 104.12367,
-    "y_offset": 215.96468,
+    "scale": 0.29839,
+    "x_offset": 104.26619,
+    "y_offset": 215.96406,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:31.764Z"
+  "exported_at": "2026-08-19T13:22:29.114Z"
 }

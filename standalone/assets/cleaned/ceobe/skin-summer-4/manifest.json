@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ceobe",
   "character_name": "Ceobe",
   "localized_name": "刻俄柏",
@@ -11,15 +12,29 @@
   "skin_id": "summer-4",
   "skin_name": "夏卉 FA333",
   "source": "standalone/assets/source/ceobe/skin-summer-4",
-  "source_page": "https://prts.wiki/w/%E5%88%BB%E4%BF%84%E6%9F%8F",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2013_cerber/meta.json",
-    "model": "char_2013_cerber_summer_4/build/build_char_2013_cerber_summer_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2013_cerber/char_2013_cerber_summer_4/build/build_char_2013_cerber_summer_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2013_cerber/char_2013_cerber_summer_4/build/build_char_2013_cerber_summer_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2013_cerber/char_2013_cerber_summer_4/build/build_char_2013_cerber_summer_4.png"
+    "assetId": "build_char_2013_cerber_summer#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "刻俄柏",
+    "appellation": "Ceobe",
+    "skinGroupId": "2020#summer#3",
+    "skinGroupName": "珊瑚海岸/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2013_cerber_summer#4.atlas",
+      ".png": "build_char_2013_cerber_summer#4.png",
+      ".skel": "build_char_2013_cerber_summer#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/ceobe/skin-summer-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,11 +130,11 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -279.81503,
-      "maxX": 370.48889,
-      "minY": -100.56396,
+      "minX": -780.48712,
+      "maxX": 445.36722,
+      "minY": -217.45125,
       "maxY": 586.01099
     },
     "full_source_bounds": {
@@ -129,23 +144,29 @@
       "maxY": 586.01099
     },
     "core_source_bounds": {
-      "minX": -279.81503,
-      "maxX": 370.48889,
+      "minX": -567.60419,
+      "maxX": 440.04901,
       "minY": -100.56396,
       "maxY": 586.01099
     },
     "cluster": {
-      "retained": 2420,
+      "retained": 2422,
       "total": 2422,
-      "centerX": 1.08689,
-      "centerY": 128.12259,
-      "radiusX": 299.51161,
-      "radiusY": 620.71255
+      "centerX": 1.24081,
+      "centerY": 175.93162,
+      "radiusX": 477.78333,
+      "radiusY": 557.3748
     },
-    "scale": 0.27064,
-    "x_offset": 83.72989,
-    "y_offset": 188.7831,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 68,
+      "visible_height": 55,
+      "density_zoom": 2.54545
+    },
+    "scale": 0.36546,
+    "x_offset": 112.69091,
+    "y_offset": 217.98494,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:35.848Z"
+  "exported_at": "2026-08-19T13:21:48.104Z"
 }

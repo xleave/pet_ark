@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "schwarz",
   "character_name": "Schwarz",
   "localized_name": "黑",
@@ -11,15 +12,29 @@
   "skin_id": "striker-1",
   "skin_name": "天际线",
   "source": "standalone/assets/source/schwarz/skin-striker-1",
-  "source_page": "https://prts.wiki/w/%E9%BB%91",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_340_shwaz/meta.json",
-    "model": "char_340_shwaz_striker_1/build/build_char_340_shwaz_striker_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_340_shwaz/char_340_shwaz_striker_1/build/build_char_340_shwaz_striker_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_340_shwaz/char_340_shwaz_striker_1/build/build_char_340_shwaz_striker_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_340_shwaz/char_340_shwaz_striker_1/build/build_char_340_shwaz_striker_1.png"
+    "assetId": "build_char_340_shwaz_striker#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "黑",
+    "appellation": "Schwarz",
+    "skinGroupId": "2021#striker",
+    "skinGroupName": "雷神推进者",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_340_shwaz_striker#1.atlas",
+      ".png": "build_char_340_shwaz_striker#1.png",
+      ".skel": "build_char_340_shwaz_striker#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/schwarz/skin-striker-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -275.7709,
+      "minX": -631.37006,
       "maxX": 216.22273,
       "minY": -78.73164,
-      "maxY": 402.34988
+      "maxY": 891.68854
     },
     "full_source_bounds": {
       "minX": -631.37006,
@@ -129,23 +144,29 @@
       "maxY": 891.68854
     },
     "core_source_bounds": {
-      "minX": -275.7709,
+      "minX": -631.37006,
       "maxX": 216.22273,
       "minY": -78.73164,
-      "maxY": 402.34988
+      "maxY": 891.68854
     },
     "cluster": {
-      "retained": 2053,
+      "retained": 2068,
       "total": 2089,
-      "centerX": -17.59391,
-      "centerY": 132.8815,
-      "radiusX": 256,
-      "radiusY": 578.45395
+      "centerX": -1.9,
+      "centerY": 209.49219,
+      "radiusX": 641.20901,
+      "radiusY": 852.68047
     },
-    "scale": 0.35773,
-    "x_offset": 106.65103,
-    "y_offset": 187.83547,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 53,
+      "visible_height": 83,
+      "density_zoom": 1.68675
+    },
+    "scale": 0.35025,
+    "x_offset": 111.35281,
+    "y_offset": 217.09912,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:01.957Z"
+  "exported_at": "2026-08-19T13:23:50.337Z"
 }

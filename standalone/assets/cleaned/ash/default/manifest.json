@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ash",
   "character_name": "Ash",
   "localized_name": "灰烬",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/ash/default",
-  "source_page": "https://prts.wiki/w/%E7%81%B0%E7%83%AC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/meta.json",
-    "model": "defaultskin/build/build_char_456_ash",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/defaultskin/build/build_char_456_ash.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/defaultskin/build/build_char_456_ash.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/defaultskin/build/build_char_456_ash.png"
+    "assetId": "build_char_456_ash",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "灰烬",
+    "appellation": "Ash",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_456_ash.atlas",
+      ".png": "build_char_456_ash.png",
+      ".skel": "build_char_456_ash.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/ash/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -248.77319,
+      "minX": -248.77345,
       "maxX": 161.65904,
-      "minY": -105.26344,
-      "maxY": 394.14294
+      "minY": -105.34738,
+      "maxY": 394.19684
+    },
+    "full_source_bounds": {
+      "minX": -248.77345,
+      "maxX": 161.65904,
+      "minY": -105.34738,
+      "maxY": 394.19684
+    },
+    "core_source_bounds": {
+      "minX": -248.77345,
+      "maxX": 161.65904,
+      "minY": -105.34738,
+      "maxY": 387.76163
+    },
+    "cluster": {
+      "retained": 1774,
+      "total": 1774,
+      "centerX": -3.59254,
+      "centerY": 207.62454,
+      "radiusX": 340.0415,
+      "radiusY": 600.04559
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 72,
+      "visible_height": 156,
+      "density_zoom": 1
     },
     "scale": 0.41,
-    "x_offset": 113.8584,
-    "y_offset": 172.84199,
+    "x_offset": 113.85845,
+    "y_offset": 172.80757,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:56.880Z"
+  "exported_at": "2026-08-19T13:21:29.422Z"
 }

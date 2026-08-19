@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "y",
   "character_name": "Снегyрочка",
   "localized_name": "冬时",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/y/default",
-  "source_page": "https://prts.wiki/w/%E5%86%AC%E6%97%B6",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4208_wintim/meta.json",
-    "model": "defaultskin/build/build_char_4208_wintim",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4208_wintim/defaultskin/build/build_char_4208_wintim.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4208_wintim/defaultskin/build/build_char_4208_wintim.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4208_wintim/defaultskin/build/build_char_4208_wintim.png"
+    "assetId": "build_char_4208_wintim",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "冬时",
+    "appellation": "Снегурочка",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4208_wintim.atlas",
+      ".png": "build_char_4208_wintim.png",
+      ".skel": "build_char_4208_wintim.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/y/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -175.13942,
       "maxX": 323.37085,
-      "minY": -94.82211,
-      "maxY": 381.60553
+      "minY": -94.79025,
+      "maxY": 382.63937
+    },
+    "full_source_bounds": {
+      "minX": -175.13942,
+      "maxX": 323.37085,
+      "minY": -94.79025,
+      "maxY": 382.63937
+    },
+    "core_source_bounds": {
+      "minX": -175.13942,
+      "maxX": 323.37085,
+      "minY": -94.79025,
+      "maxY": 381.79739
+    },
+    "cluster": {
+      "retained": 3320,
+      "total": 3320,
+      "centerX": -1.52114,
+      "centerY": 175.8291,
+      "radiusX": 470.02156,
+      "radiusY": 499.94251
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 84,
+      "visible_height": 134,
+      "density_zoom": 1.04478
     },
     "scale": 0.35305,
     "x_offset": 69.83331,
-    "y_offset": 182.52287,
+    "y_offset": 182.53412,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:39.137Z"
+  "exported_at": "2026-08-19T13:24:31.071Z"
 }

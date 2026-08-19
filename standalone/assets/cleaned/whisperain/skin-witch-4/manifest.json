@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "whisperain",
@@ -12,15 +12,29 @@
   "skin_id": "witch-4",
   "skin_name": "幽邃隐修",
   "source": "standalone/assets/source/whisperain/skin-witch-4",
-  "source_page": "https://prts.wiki/w/%E7%B5%AE%E9%9B%A8",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/meta.json",
-    "model": "char_436_whispr_witch_4/build/build_char_436_whispr_witch_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/char_436_whispr_witch_4/build/build_char_436_whispr_witch_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/char_436_whispr_witch_4/build/build_char_436_whispr_witch_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/char_436_whispr_witch_4/build/build_char_436_whispr_witch_4.png"
+    "assetId": "build_char_436_whispr_witch#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "絮雨",
+    "appellation": "Whisperain",
+    "skinGroupId": "2023#witch",
+    "skinGroupName": "巫异盛宴/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_436_whispr_witch#4.atlas",
+      ".png": "build_char_436_whispr_witch#4.png",
+      ".skel": "build_char_436_whispr_witch#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/whisperain/skin-witch-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -145,14 +159,14 @@
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 63,
+      "visible_width": 62,
       "visible_height": 82,
       "density_zoom": 1.70732
     },
     "scale": 0.33022,
-    "x_offset": 99.55811,
+    "x_offset": 100.41177,
     "y_offset": 216.04531,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:18.402Z"
+  "exported_at": "2026-08-19T13:24:28.286Z"
 }

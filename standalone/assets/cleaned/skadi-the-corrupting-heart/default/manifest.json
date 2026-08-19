@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "skadi-the-corrupting-heart",
   "character_name": "Skadi the Corrupting Heart",
   "localized_name": "浊心斯卡蒂",
@@ -9,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/skadi-the-corrupting-heart/default",
-  "source_page": "https://prts.wiki/w/%E6%B5%8A%E5%BF%83%E6%96%AF%E5%8D%A1%E8%92%82",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1012_skadi2/meta.json",
-    "model": "defaultskin/build/build_char_1012_skadi2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1012_skadi2/defaultskin/build/build_char_1012_skadi2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1012_skadi2/defaultskin/build/build_char_1012_skadi2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1012_skadi2/defaultskin/build/build_char_1012_skadi2.png"
+    "assetId": "build_char_1012_skadi2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "浊心斯卡蒂",
+    "appellation": "Skadi the Corrupting Heart",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1012_skadi2.atlas",
+      ".png": "build_char_1012_skadi2.png",
+      ".skel": "build_char_1012_skadi2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/skadi-the-corrupting-heart/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -265.75189,
+      "minX": -265.78116,
       "maxX": 229.2487,
       "minY": -117.35471,
-      "maxY": 434.53033
+      "maxY": 435.44751
     },
-    "scale": 0.35556,
-    "x_offset": 102.48945,
-    "y_offset": 174.27393,
+    "full_source_bounds": {
+      "minX": -265.78116,
+      "maxX": 229.2487,
+      "minY": -117.35471,
+      "maxY": 435.44751
+    },
+    "core_source_bounds": {
+      "minX": -265.78116,
+      "maxX": 229.2487,
+      "minY": -117.35471,
+      "maxY": 435.44751
+    },
+    "cluster": {
+      "retained": 3176,
+      "total": 3176,
+      "centerX": 7.39098,
+      "centerY": 182.14142,
+      "radiusX": 356.12901,
+      "radiusY": 538.99147
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 137,
+      "visible_height": 155,
+      "density_zoom": 1
+    },
+    "scale": 0.35553,
+    "x_offset": 102.49427,
+    "y_offset": 174.2764,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:31.514Z"
+  "exported_at": "2026-08-19T13:23:57.361Z"
 }

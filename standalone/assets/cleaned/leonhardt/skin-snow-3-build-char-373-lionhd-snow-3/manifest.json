@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "leonhardt",
   "character_name": "Leonhardt",
   "localized_name": "莱恩哈特",
@@ -9,15 +12,29 @@
   "skin_id": "snow-3-build-char-373-lionhd-snow-3",
   "skin_name": "希望巡游",
   "source": "standalone/assets/source/leonhardt/skin-snow-3-build-char-373-lionhd-snow-3",
-  "source_page": "https://prts.wiki/w/%E8%8E%B1%E6%81%A9%E5%93%88%E7%89%B9",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/meta.json",
-    "model": "char_373_lionhd_snow_3/build/char_373_lionhd_snow_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/char_373_lionhd_snow_3/build/char_373_lionhd_snow_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/char_373_lionhd_snow_3/build/char_373_lionhd_snow_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/char_373_lionhd_snow_3/build/char_373_lionhd_snow_3.png"
+    "assetId": "build_char_373_lionhd_snow#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "莱恩哈特",
+    "appellation": "Leonhardt",
+    "skinGroupId": "2021#xmas",
+    "skinGroupName": "冰原信使/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "char_373_lionhd_snow#3.atlas",
+      ".png": "char_373_lionhd_snow#3.png",
+      ".skel": "char_373_lionhd_snow#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/leonhardt/skin-snow-3-build-char-373-lionhd-snow-3/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -277.78827,
+      "minX": -277.94406,
       "maxX": 405.99783,
-      "minY": -127.92811,
-      "maxY": 458.44113
+      "minY": -127.92403,
+      "maxY": 459.40985
     },
-    "scale": 0.25739,
-    "x_offset": 79.50004,
-    "y_offset": 183.07253,
+    "full_source_bounds": {
+      "minX": -277.94406,
+      "maxX": 405.99783,
+      "minY": -127.92403,
+      "maxY": 459.40985
+    },
+    "core_source_bounds": {
+      "minX": -277.94406,
+      "maxX": 405.99783,
+      "minY": -127.92403,
+      "maxY": 459.40985
+    },
+    "cluster": {
+      "retained": 3329,
+      "total": 3329,
+      "centerX": -7.60435,
+      "centerY": 135.02233,
+      "radiusX": 484.99176,
+      "radiusY": 862.86354
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 77,
+      "visible_height": 118,
+      "density_zoom": 1.18644
+    },
+    "scale": 0.25733,
+    "x_offset": 79.52385,
+    "y_offset": 183.08108,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:15.507Z"
+  "exported_at": "2026-08-19T13:22:50.974Z"
 }

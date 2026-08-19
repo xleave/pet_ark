@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "proviso",
   "character_name": "Proviso",
   "localized_name": "但书",
@@ -11,15 +12,29 @@
   "skin_id": "summer-17",
   "skin_name": "悠然假日 HD78",
   "source": "standalone/assets/source/proviso/skin-summer-17",
-  "source_page": "https://prts.wiki/w/%E4%BD%86%E4%B9%A6",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4032_provs/meta.json",
-    "model": "char_4032_provs_summer_17/build/build_char_4032_provs_summer_17",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4032_provs/char_4032_provs_summer_17/build/build_char_4032_provs_summer_17.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4032_provs/char_4032_provs_summer_17/build/build_char_4032_provs_summer_17.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4032_provs/char_4032_provs_summer_17/build/build_char_4032_provs_summer_17.png"
+    "assetId": "build_char_4032_provs_summer#17",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "但书",
+    "appellation": "Proviso",
+    "skinGroupId": "2024#summer#2",
+    "skinGroupName": "珊瑚海岸/XVII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4032_provs_summer#17.atlas",
+      ".png": "build_char_4032_provs_summer#17.png",
+      ".skel": "build_char_4032_provs_summer#17.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/proviso/skin-summer-17/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -267.06555,
-      "maxX": 342.70532,
+      "minX": -660.80878,
+      "maxX": 653.22711,
       "minY": -116.62063,
-      "maxY": 524.86743
+      "maxY": 619.28351
     },
     "full_source_bounds": {
       "minX": -660.80878,
@@ -129,23 +144,29 @@
       "maxY": 619.28351
     },
     "core_source_bounds": {
-      "minX": -267.06555,
-      "maxX": 342.70532,
+      "minX": -597.89703,
+      "maxX": 527.74304,
       "minY": -116.62063,
-      "maxY": 524.86743
+      "maxY": 557.84344
     },
     "cluster": {
-      "retained": 2523,
+      "retained": 2530,
       "total": 2541,
-      "centerX": 1.35452,
-      "centerY": 142.95451,
-      "radiusX": 290.65046,
-      "radiusY": 667.33728
+      "centerX": 0.91947,
+      "centerY": 194.58582,
+      "radiusX": 490.04023,
+      "radiusY": 627.80823
     },
-    "scale": 0.28863,
-    "x_offset": 85.08393,
-    "y_offset": 182.33944,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 29,
+      "visible_height": 59,
+      "density_zoom": 2.48276
+    },
+    "scale": 0.33254,
+    "x_offset": 102.22611,
+    "y_offset": 216.94347,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:50.331Z"
+  "exported_at": "2026-08-19T13:23:33.034Z"
 }

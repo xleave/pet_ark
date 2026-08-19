@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "sesa",
   "character_name": "Sesa",
   "localized_name": "慑砂",
@@ -9,15 +12,29 @@
   "skin_id": "game-5",
   "skin_name": "万物有灵",
   "source": "standalone/assets/source/sesa/skin-game-5",
-  "source_page": "https://prts.wiki/w/%E6%85%91%E7%A0%82",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_379_sesa/meta.json",
-    "model": "char_379_sesa_game_5/build/build_char_379_sesa_game_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_379_sesa/char_379_sesa_game_5/build/build_char_379_sesa_game_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_379_sesa/char_379_sesa_game_5/build/build_char_379_sesa_game_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_379_sesa/char_379_sesa_game_5/build/build_char_379_sesa_game_5.png"
+    "assetId": "build_char_379_sesa_game#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "慑砂",
+    "appellation": "Sesa",
+    "skinGroupId": "2025#game",
+    "skinGroupName": "成就之星/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_379_sesa_game#5.atlas",
+      ".png": "build_char_379_sesa_game#5.png",
+      ".skel": "build_char_379_sesa_game#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/sesa/skin-game-5/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -274.83295,
-      "maxX": 313.78564,
-      "minY": -134.20131,
+      "minX": -292.15131,
+      "maxX": 303.86996,
+      "minY": -133.3638,
+      "maxY": 503.20599
+    },
+    "full_source_bounds": {
+      "minX": -292.15131,
+      "maxX": 303.86996,
+      "minY": -133.3638,
+      "maxY": 503.20599
+    },
+    "core_source_bounds": {
+      "minX": -275.14587,
+      "maxX": 303.86996,
+      "minY": -133.3638,
       "maxY": 483.93997
     },
-    "scale": 0.29901,
-    "x_offset": 90.17647,
-    "y_offset": 175.87312,
+    "cluster": {
+      "retained": 2385,
+      "total": 2385,
+      "centerX": 1.51423,
+      "centerY": 179.55139,
+      "radiusX": 419.41095,
+      "radiusY": 589.87371
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 125,
+      "visible_height": 125,
+      "density_zoom": 1.12
+    },
+    "scale": 0.29529,
+    "x_offset": 94.26979,
+    "y_offset": 176.61881,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:29.883Z"
+  "exported_at": "2026-08-19T13:23:51.005Z"
 }

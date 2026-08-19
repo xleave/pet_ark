@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "thermal-ex",
   "character_name": "Thermal-EX",
   "localized_name": "THRM-EX",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/thermal-ex/default",
-  "source_page": "https://prts.wiki/w/THRM-EX",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/meta.json",
-    "model": "defaultskin/build/build_char_376_therex",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/defaultskin/build/build_char_376_therex.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/defaultskin/build/build_char_376_therex.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/defaultskin/build/build_char_376_therex.png"
+    "assetId": "build_char_376_therex",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "THRM-EX",
+    "appellation": "Thermal-EX",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_1"
+    ],
+    "assetList": {
+      ".atlas": "build_char_376_therex.atlas",
+      ".png": "build_char_376_therex.png",
+      ".skel": "build_char_376_therex.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -67,7 +83,7 @@
       "path": "standalone/assets/cleaned/thermal-ex/default/relax"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -80,16 +96,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -148.55226,
       "maxX": 147.44778,
-      "minY": -3.96329,
-      "maxY": 367.88934
+      "minY": -5.52221,
+      "maxY": 365.64694
+    },
+    "full_source_bounds": {
+      "minX": -148.55226,
+      "maxX": 147.44778,
+      "minY": -5.52221,
+      "maxY": 365.64694
+    },
+    "core_source_bounds": {
+      "minX": -148.55226,
+      "maxX": 147.44778,
+      "minY": -4.86915,
+      "maxY": 335.77493
+    },
+    "cluster": {
+      "retained": 154,
+      "total": 154,
+      "centerX": -16.92817,
+      "centerY": 110.19682,
+      "radiusX": 416.08204,
+      "radiusY": 609.38597
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 122,
+      "visible_height": 139,
+      "density_zoom": 1
     },
     "scale": 0.41,
     "x_offset": 96.22642,
-    "y_offset": 214.37505,
+    "y_offset": 213.7359,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:33.881Z"
+  "exported_at": "2026-08-19T13:24:08.284Z"
 }

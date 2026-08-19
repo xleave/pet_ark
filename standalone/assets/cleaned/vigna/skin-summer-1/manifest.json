@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "vigna",
   "character_name": "Vigna",
   "localized_name": "红豆",
@@ -11,15 +12,29 @@
   "skin_id": "summer-1",
   "skin_name": "悠然假日 HD01",
   "source": "standalone/assets/source/vigna/skin-summer-1",
-  "source_page": "https://prts.wiki/w/%E7%BA%A2%E8%B1%86",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_290_vigna/meta.json",
-    "model": "char_290_vigna_summer_1/build/build_char_290_vigna_summer_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_290_vigna/char_290_vigna_summer_1/build/build_char_290_vigna_summer_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_290_vigna/char_290_vigna_summer_1/build/build_char_290_vigna_summer_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_290_vigna/char_290_vigna_summer_1/build/build_char_290_vigna_summer_1.png"
+    "assetId": "build_char_290_vigna_summer#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "红豆",
+    "appellation": "Vigna",
+    "skinGroupId": "2019#summer",
+    "skinGroupName": "珊瑚海岸/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_290_vigna_summer#1.atlas",
+      ".png": "build_char_290_vigna_summer#1.png",
+      ".skel": "build_char_290_vigna_summer#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/vigna/skin-summer-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,9 +130,9 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -298.3569,
+      "minX": -536.90784,
       "maxX": 175.90547,
       "minY": -113.00096,
       "maxY": 496.11609
@@ -129,23 +144,29 @@
       "maxY": 517.54889
     },
     "core_source_bounds": {
-      "minX": -298.3569,
+      "minX": -536.90784,
       "maxX": 175.90547,
       "minY": -113.00096,
       "maxY": 496.11609
     },
     "cluster": {
-      "retained": 1939,
+      "retained": 1942,
       "total": 1950,
-      "centerX": -7.68165,
-      "centerY": 126.7823,
-      "radiusX": 293.47652,
-      "radiusY": 599.1462
+      "centerX": 0.71085,
+      "centerY": 169.11449,
+      "radiusX": 527.53349,
+      "radiusY": 632.52334
     },
-    "scale": 0.34148,
-    "x_offset": 116.90723,
-    "y_offset": 177.41267,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 74,
+      "visible_height": 112,
+      "density_zoom": 1.25
+    },
+    "scale": 0.30864,
+    "x_offset": 106.0842,
+    "y_offset": 217.37381,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:04.953Z"
+  "exported_at": "2026-08-19T13:24:20.736Z"
 }

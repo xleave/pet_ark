@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "perfumer",
   "character_name": "Perfumer",
   "localized_name": "调香师",
@@ -9,15 +12,29 @@
   "skin_id": "daily-1",
   "skin_name": "植物种志",
   "source": "standalone/assets/source/perfumer/skin-daily-1",
-  "source_page": "https://prts.wiki/w/%E8%B0%83%E9%A6%99%E5%B8%88",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/meta.json",
-    "model": "char_181_flower_daily_1/build/build_char_181_flower_daily_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/char_181_flower_daily_1/build/build_char_181_flower_daily_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/char_181_flower_daily_1/build/build_char_181_flower_daily_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/char_181_flower_daily_1/build/build_char_181_flower_daily_1.png"
+    "assetId": "build_char_181_flower_daily#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "调香师",
+    "appellation": "Perfumer",
+    "skinGroupId": "2018#sale",
+    "skinGroupName": "忒斯特收藏/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_181_flower_daily#1.atlas",
+      ".png": "build_char_181_flower_daily#1.png",
+      ".skel": "build_char_181_flower_daily#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/perfumer/skin-daily-1/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -245.11435,
       "maxX": 311.15616,
-      "minY": -108.40777,
+      "minY": -105.69634,
       "maxY": 410.10309
+    },
+    "full_source_bounds": {
+      "minX": -245.11435,
+      "maxX": 311.15616,
+      "minY": -105.69634,
+      "maxY": 410.10309
+    },
+    "core_source_bounds": {
+      "minX": -245.11435,
+      "maxX": 311.15616,
+      "minY": -105.69634,
+      "maxY": 410.10309
+    },
+    "cluster": {
+      "retained": 1301,
+      "total": 1301,
+      "centerX": 1.68246,
+      "centerY": 168.9678,
+      "radiusX": 593.76601,
+      "radiusY": 809.8929
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 79,
+      "visible_height": 130,
+      "density_zoom": 1.07692
     },
     "scale": 0.31639,
     "x_offset": 85.55242,
-    "y_offset": 181.70056,
+    "y_offset": 182.55844,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:23.401Z"
+  "exported_at": "2026-08-19T13:23:25.962Z"
 }

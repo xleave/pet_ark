@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "elysium",
   "character_name": "Elysium",
   "localized_name": "极境",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/elysium/default",
-  "source_page": "https://prts.wiki/w/%E6%9E%81%E5%A2%83",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/meta.json",
-    "model": "defaultskin/build/build_char_401_elysm",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/defaultskin/build/build_char_401_elysm.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/defaultskin/build/build_char_401_elysm.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/defaultskin/build/build_char_401_elysm.png"
+    "assetId": "build_char_401_elysm",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "极境",
+    "appellation": "Elysium",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_401_elysm.atlas",
+      ".png": "build_char_401_elysm.png",
+      ".skel": "build_char_401_elysm.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/elysium/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -191.13765,
       "maxX": 201.18179,
-      "minY": -126.09707,
+      "minY": -128.69319,
       "maxY": 389.203
     },
-    "scale": 0.40365,
-    "x_offset": 93.97285,
-    "y_offset": 165.10113,
+    "full_source_bounds": {
+      "minX": -191.13765,
+      "maxX": 201.18179,
+      "minY": -128.69319,
+      "maxY": 389.203
+    },
+    "core_source_bounds": {
+      "minX": -191.13765,
+      "maxX": 201.18179,
+      "minY": -128.69319,
+      "maxY": 388.685
+    },
+    "cluster": {
+      "retained": 2141,
+      "total": 2141,
+      "centerX": -4.45275,
+      "centerY": 184.53593,
+      "radiusX": 325.79045,
+      "radiusY": 557.51297
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 83,
+      "visible_height": 153,
+      "density_zoom": 1
+    },
+    "scale": 0.40162,
+    "x_offset": 93.98301,
+    "y_offset": 164.31361,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:04.557Z"
+  "exported_at": "2026-08-19T13:22:03.520Z"
 }

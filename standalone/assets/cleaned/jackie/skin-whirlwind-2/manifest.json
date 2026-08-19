@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "jackie",
   "character_name": "Jackie",
   "localized_name": "杰克",
@@ -11,15 +12,29 @@
   "skin_id": "whirlwind-2",
   "skin_name": "纵身一跃",
   "source": "standalone/assets/source/jackie/skin-whirlwind-2",
-  "source_page": "https://prts.wiki/w/%E6%9D%B0%E5%85%8B",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/meta.json",
-    "model": "char_347_jaksel_whirlwind_2/build/build_char_347_jaksel_whirlwind_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/char_347_jaksel_whirlwind_2/build/build_char_347_jaksel_whirlwind_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/char_347_jaksel_whirlwind_2/build/build_char_347_jaksel_whirlwind_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/char_347_jaksel_whirlwind_2/build/build_char_347_jaksel_whirlwind_2.png"
+    "assetId": "build_char_347_jaksel_whirlwind#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "杰克",
+    "appellation": "Jackie",
+    "skinGroupId": "2022#whirlwind#2",
+    "skinGroupName": "0011/飙系列/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_347_jaksel_whirlwind#2.atlas",
+      ".png": "build_char_347_jaksel_whirlwind#2.png",
+      ".skel": "build_char_347_jaksel_whirlwind#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/jackie/skin-whirlwind-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -243.56554,
-      "maxX": 176.7088,
+      "maxX": 269.6283,
       "minY": -113.28265,
-      "maxY": 420.0918
+      "maxY": 917.07001
     },
     "full_source_bounds": {
       "minX": -919.84277,
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -243.56554,
-      "maxX": 176.7088,
+      "maxX": 269.6283,
       "minY": -113.28265,
-      "maxY": 420.0918
+      "maxY": 917.07001
     },
     "cluster": {
-      "retained": 1949,
+      "retained": 1958,
       "total": 1965,
-      "centerX": -4.1942,
-      "centerY": 145.23215,
-      "radiusX": 267.04135,
-      "radiusY": 672.34959
+      "centerX": 7.95839,
+      "centerY": 262.24088,
+      "radiusX": 420.3055,
+      "radiusY": 870.02541
     },
-    "scale": 0.38997,
-    "x_offset": 109.03606,
-    "y_offset": 171.82317,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 40,
+      "visible_height": 85,
+      "density_zoom": 1.8
+    },
+    "scale": 0.36337,
+    "x_offset": 99.36478,
+    "y_offset": 216.2364,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:18.214Z"
+  "exported_at": "2026-08-19T13:22:37.818Z"
 }

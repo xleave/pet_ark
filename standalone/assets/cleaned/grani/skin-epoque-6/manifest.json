@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "grani",
   "character_name": "Grani",
   "localized_name": "格拉尼",
@@ -9,15 +12,29 @@
   "skin_id": "epoque-6",
   "skin_name": "美妙时光",
   "source": "standalone/assets/source/grani/skin-epoque-6",
-  "source_page": "https://prts.wiki/w/%E6%A0%BC%E6%8B%89%E5%B0%BC",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_220_grani/meta.json",
-    "model": "char_220_grani_epoque_6/build/build_char_220_grani_epoque_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_220_grani/char_220_grani_epoque_6/build/build_char_220_grani_epoque_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_220_grani/char_220_grani_epoque_6/build/build_char_220_grani_epoque_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_220_grani/char_220_grani_epoque_6/build/build_char_220_grani_epoque_6.png"
+    "assetId": "build_char_220_grani_epoque#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "格拉尼",
+    "appellation": "Grani",
+    "skinGroupId": "2020#epoque#5",
+    "skinGroupName": "时代/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_220_grani_epoque#6.atlas",
+      ".png": "build_char_220_grani_epoque#6.png",
+      ".skel": "build_char_220_grani_epoque#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/grani/skin-epoque-6/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -267.04459,
+      "minX": -280.23175,
       "maxX": 475.58981,
       "minY": -86.12656,
-      "maxY": 536.70862
+      "maxY": 539.86169
     },
-    "scale": 0.23699,
-    "x_offset": 71.288,
-    "y_offset": 195.58851,
+    "full_source_bounds": {
+      "minX": -280.23175,
+      "maxX": 475.58981,
+      "minY": -86.12656,
+      "maxY": 539.86169
+    },
+    "core_source_bounds": {
+      "minX": -263.87054,
+      "maxX": 475.58981,
+      "minY": -86.12656,
+      "maxY": 539.86169
+    },
+    "cluster": {
+      "retained": 1476,
+      "total": 1476,
+      "centerX": -3.11865,
+      "centerY": 166.572,
+      "radiusX": 619.37274,
+      "radiusY": 587.50998
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 60,
+      "visible_height": 123,
+      "density_zoom": 1.2
+    },
+    "scale": 0.27943,
+    "x_offset": 105.30545,
+    "y_offset": 217.13357,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:08.928Z"
+  "exported_at": "2026-08-19T13:22:21.781Z"
 }

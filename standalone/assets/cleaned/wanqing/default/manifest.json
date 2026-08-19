@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "wanqing",
   "character_name": "Wanqing",
   "localized_name": "万顷",
@@ -11,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/wanqing/default",
-  "source_page": "https://prts.wiki/w/%E4%B8%87%E9%A1%B7",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4119_wanqin/meta.json",
-    "model": "defaultskin/build/build_char_4119_wanqin",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4119_wanqin/defaultskin/build/build_char_4119_wanqin.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4119_wanqin/defaultskin/build/build_char_4119_wanqin.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4119_wanqin/defaultskin/build/build_char_4119_wanqin.png"
+    "assetId": "build_char_4119_wanqin",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "万顷",
+    "appellation": "Wanqing",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4119_wanqin.atlas",
+      ".png": "build_char_4119_wanqin.png",
+      ".skel": "build_char_4119_wanqin.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +105,7 @@
       "path": "standalone/assets/cleaned/wanqing/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,11 +118,11 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -217.09888,
+      "minX": -736.91785,
       "maxX": 204.95219,
-      "minY": -154.29935,
+      "minY": -277.43307,
       "maxY": 398.67169
     },
     "full_source_bounds": {
@@ -118,23 +132,29 @@
       "maxY": 398.67169
     },
     "core_source_bounds": {
-      "minX": -217.09888,
+      "minX": -642.94812,
       "maxX": 204.95219,
-      "minY": -154.29935,
+      "minY": -277.43307,
       "maxY": 398.67169
     },
     "cluster": {
-      "retained": 2401,
+      "retained": 2411,
       "total": 2421,
-      "centerX": 10.14523,
-      "centerY": 134.94749,
-      "radiusX": 300.93724,
-      "radiusY": 619.89947
+      "centerX": -6.01651,
+      "centerY": 155.02015,
+      "radiusX": 551.67688,
+      "radiusY": 828.40186
     },
-    "scale": 0.37615,
-    "x_offset": 98.28449,
-    "y_offset": 157.96032,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 46,
+      "visible_height": 74,
+      "density_zoom": 1.89189
+    },
+    "scale": 0.35352,
+    "x_offset": 103.95004,
+    "y_offset": 216.29933,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:52.543Z"
+  "exported_at": "2026-08-19T13:24:24.779Z"
 }

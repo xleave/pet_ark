@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "196-sunbr",
   "character_name": "Гум",
   "localized_name": "古米",
@@ -9,15 +12,29 @@
   "skin_id": "summer-1",
   "skin_name": "夏卉 FA011",
   "source": "standalone/assets/source/196-sunbr/skin-summer-1",
-  "source_page": "https://prts.wiki/w/%E5%8F%A4%E7%B1%B3",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_196_sunbr/meta.json",
-    "model": "char_196_sunbr_summer_1/build/build_char_196_sunbr_summer_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_196_sunbr/char_196_sunbr_summer_1/build/build_char_196_sunbr_summer_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_196_sunbr/char_196_sunbr_summer_1/build/build_char_196_sunbr_summer_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_196_sunbr/char_196_sunbr_summer_1/build/build_char_196_sunbr_summer_1.png"
+    "assetId": "build_char_196_sunbr_summer#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "古米",
+    "appellation": "Гум",
+    "skinGroupId": "2019#summer",
+    "skinGroupName": "珊瑚海岸/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_196_sunbr_summer#1.atlas",
+      ".png": "build_char_196_sunbr_summer#1.png",
+      ".skel": "build_char_196_sunbr_summer#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/196-sunbr/skin-summer-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -265.37991,
       "maxX": 220.80225,
-      "minY": -114.97449,
-      "maxY": 401.06839
+      "minY": -112.25246,
+      "maxY": 399.99988
+    },
+    "full_source_bounds": {
+      "minX": -265.37991,
+      "maxX": 220.80225,
+      "minY": -112.25246,
+      "maxY": 399.99988
+    },
+    "core_source_bounds": {
+      "minX": -265.37991,
+      "maxX": 220.80225,
+      "minY": -112.25246,
+      "maxY": 398.19708
+    },
+    "cluster": {
+      "retained": 1676,
+      "total": 1676,
+      "centerX": 0.44563,
+      "centerY": 174.49585,
+      "radiusX": 446.31962,
+      "radiusY": 640.20567
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 77,
+      "visible_height": 143,
+      "density_zoom": 1
     },
     "scale": 0.362,
     "x_offset": 104.06865,
-    "y_offset": 174.37875,
+    "y_offset": 175.36414,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:53.978Z"
+  "exported_at": "2026-08-19T13:21:17.145Z"
 }

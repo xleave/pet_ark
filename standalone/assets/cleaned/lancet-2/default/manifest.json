@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "lancet-2",
   "character_name": "Lancet-2",
   "localized_name": "Lancet-2",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/lancet-2/default",
-  "source_page": "https://prts.wiki/w/Lancet-2",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/meta.json",
-    "model": "defaultskin/build/build_char_285_medic2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/defaultskin/build/build_char_285_medic2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/defaultskin/build/build_char_285_medic2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/defaultskin/build/build_char_285_medic2.png"
+    "assetId": "build_char_285_medic2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "Lancet-2",
+    "appellation": "Lancet-2",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_1"
+    ],
+    "assetList": {
+      ".atlas": "build_char_285_medic2.atlas",
+      ".png": "build_char_285_medic2.png",
+      ".skel": "build_char_285_medic2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -67,7 +83,7 @@
       "path": "standalone/assets/cleaned/lancet-2/default/relax"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -80,16 +96,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -159.88744,
       "maxX": 181.84367,
-      "minY": -2.20833,
+      "minY": -1.16604,
       "maxY": 320.35901
+    },
+    "full_source_bounds": {
+      "minX": -159.88744,
+      "maxX": 181.84367,
+      "minY": -1.16604,
+      "maxY": 320.35901
+    },
+    "core_source_bounds": {
+      "minX": -159.88744,
+      "maxX": 181.84367,
+      "minY": -1.16604,
+      "maxY": 320.35901
+    },
+    "cluster": {
+      "retained": 301,
+      "total": 301,
+      "centerX": 17.85918,
+      "centerY": 45.83395,
+      "radiusX": 361.52037,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 125,
+      "visible_height": 116,
+      "density_zoom": 1
     },
     "scale": 0.41,
     "x_offset": 91.49897,
-    "y_offset": 215.09458,
+    "y_offset": 215.52192,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:14.346Z"
+  "exported_at": "2026-08-19T13:22:45.846Z"
 }

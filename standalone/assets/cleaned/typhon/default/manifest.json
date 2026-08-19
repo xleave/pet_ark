@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "typhon",
   "character_name": "Typhon",
   "localized_name": "提丰",
@@ -11,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/typhon/default",
-  "source_page": "https://prts.wiki/w/%E6%8F%90%E4%B8%B0",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/meta.json",
-    "model": "defaultskin/build/build_char_2012_typhon",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/defaultskin/build/build_char_2012_typhon.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/defaultskin/build/build_char_2012_typhon.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/defaultskin/build/build_char_2012_typhon.png"
+    "assetId": "build_char_2012_typhon",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "提丰",
+    "appellation": "Typhon",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2012_typhon.atlas",
+      ".png": "build_char_2012_typhon.png",
+      ".skel": "build_char_2012_typhon.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +105,7 @@
       "path": "standalone/assets/cleaned/typhon/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -104,12 +118,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -307.453,
-      "maxX": 300.31097,
+      "minX": -569.00793,
+      "maxX": 601.85004,
       "minY": -353.38586,
-      "maxY": 451.32513
+      "maxY": 788.09705
     },
     "full_source_bounds": {
       "minX": -569.00793,
@@ -118,23 +132,29 @@
       "maxY": 788.09705
     },
     "core_source_bounds": {
-      "minX": -307.453,
-      "maxX": 300.31097,
+      "minX": -569.00793,
+      "maxX": 601.85004,
       "minY": -353.38586,
-      "maxY": 451.32513
+      "maxY": 788.09705
     },
     "cluster": {
-      "retained": 2777,
+      "retained": 2789,
       "total": 2789,
-      "centerX": 2.42212,
-      "centerY": 140.1857,
-      "radiusX": 320.3978,
-      "radiusY": 633.54614
+      "centerX": -0.76883,
+      "centerY": 241.02187,
+      "radiusX": 525.00347,
+      "radiusY": 805.00994
     },
-    "scale": 0.25848,
-    "x_offset": 96.92303,
-    "y_offset": 124.65757,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 58,
+      "visible_height": 67,
+      "density_zoom": 2.08955
+    },
+    "scale": 0.3141,
+    "x_offset": 116.96163,
+    "y_offset": 217.83892,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:05:05.905Z"
+  "exported_at": "2026-08-19T13:24:15.168Z"
 }

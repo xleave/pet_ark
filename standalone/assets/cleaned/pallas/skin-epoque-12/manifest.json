@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
-  "placement_revision": 2,
+  "placement_revision": 3,
   "character": "pallas",
   "character_name": "Pallas",
   "localized_name": "帕拉斯",
@@ -12,15 +12,29 @@
   "skin_id": "epoque-12",
   "skin_name": "传承",
   "source": "standalone/assets/source/pallas/skin-epoque-12",
-  "source_page": "https://prts.wiki/w/%E5%B8%95%E6%8B%89%E6%96%AF",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_485_pallas/meta.json",
-    "model": "char_485_pallas_epoque_12/build/build_char_485_pallas_epoque_12",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_485_pallas/char_485_pallas_epoque_12/build/build_char_485_pallas_epoque_12.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_485_pallas/char_485_pallas_epoque_12/build/build_char_485_pallas_epoque_12.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_485_pallas/char_485_pallas_epoque_12/build/build_char_485_pallas_epoque_12.png"
+    "assetId": "build_char_485_pallas_epoque#12",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "帕拉斯",
+    "appellation": "Pallas",
+    "skinGroupId": "2021#epoque#4",
+    "skinGroupName": "时代/XII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_485_pallas_epoque#12.atlas",
+      ".png": "build_char_485_pallas_epoque#12.png",
+      ".skel": "build_char_485_pallas_epoque#12.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/pallas/skin-epoque-12/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -143,10 +157,16 @@
       "radiusX": 379.95524,
       "radiusY": 763.22448
     },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 110,
+      "visible_height": 137,
+      "density_zoom": 1.0219
+    },
     "scale": 0.27261,
     "x_offset": 120.15367,
     "y_offset": 182.85257,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:08:02.521Z"
+  "exported_at": "2026-08-19T13:23:23.041Z"
 }

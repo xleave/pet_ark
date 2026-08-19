@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "shaw",
   "character_name": "Shaw",
   "localized_name": "阿消",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/shaw/default",
-  "source_page": "https://prts.wiki/w/%E9%98%BF%E6%B6%88",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_277_sqrrel/meta.json",
-    "model": "defaultskin/build/build_char_277_sqrrel",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_277_sqrrel/defaultskin/build/build_char_277_sqrrel.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_277_sqrrel/defaultskin/build/build_char_277_sqrrel.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_277_sqrrel/defaultskin/build/build_char_277_sqrrel.png"
+    "assetId": "build_char_277_sqrrel",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "阿消",
+    "appellation": "Shaw",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_277_sqrrel.atlas",
+      ".png": "build_char_277_sqrrel.png",
+      ".skel": "build_char_277_sqrrel.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/shaw/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -228.30292,
+      "minX": -229.30377,
       "maxX": 172.09111,
       "minY": -97.51637,
-      "maxY": 381.41534
+      "maxY": 383.52484
+    },
+    "full_source_bounds": {
+      "minX": -229.30377,
+      "maxX": 172.09111,
+      "minY": -97.51637,
+      "maxY": 383.52484
+    },
+    "core_source_bounds": {
+      "minX": -215.00177,
+      "maxX": 172.09111,
+      "minY": -97.51637,
+      "maxY": 383.52484
+    },
+    "cluster": {
+      "retained": 1481,
+      "total": 1481,
+      "centerX": 1.12929,
+      "centerY": 191.58098,
+      "radiusX": 370.13045,
+      "radiusY": 569.99092
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 100,
+      "visible_height": 155,
+      "density_zoom": 1
     },
     "scale": 0.41,
-    "x_offset": 107.52342,
+    "x_offset": 107.7286,
     "y_offset": 176.01829,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:30.121Z"
+  "exported_at": "2026-08-19T13:23:52.059Z"
 }

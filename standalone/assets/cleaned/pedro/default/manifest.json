@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "pedro",
   "character_name": "Pedro",
   "localized_name": "佩德洛",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/pedro/default",
-  "source_page": "https://prts.wiki/w/%E4%BD%A9%E5%BE%B7%E6%B4%9B",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4234_pedro/meta.json",
-    "model": "defaultskin/build/build_char_4234_pedro",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4234_pedro/defaultskin/build/build_char_4234_pedro.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4234_pedro/defaultskin/build/build_char_4234_pedro.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4234_pedro/defaultskin/build/build_char_4234_pedro.png"
+    "assetId": "build_char_4234_pedro",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "佩德洛",
+    "appellation": "Pedro",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4234_pedro.atlas",
+      ".png": "build_char_4234_pedro.png",
+      ".skel": "build_char_4234_pedro.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/pedro/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -198.21153,
       "maxX": 228.83951,
-      "minY": -133.18265,
-      "maxY": 373.06284
+      "minY": -130.5892,
+      "maxY": 369.67749
+    },
+    "full_source_bounds": {
+      "minX": -198.21153,
+      "maxX": 228.83951,
+      "minY": -130.5892,
+      "maxY": 369.67749
+    },
+    "core_source_bounds": {
+      "minX": -198.21153,
+      "maxX": 228.83951,
+      "minY": -130.5892,
+      "maxY": 369.67749
+    },
+    "cluster": {
+      "retained": 2856,
+      "total": 2856,
+      "centerX": -5.19022,
+      "centerY": 178.77716,
+      "radiusX": 439.97224,
+      "radiusY": 716.89386
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 120,
+      "visible_height": 152,
+      "density_zoom": 1
     },
     "scale": 0.41,
     "x_offset": 89.72127,
-    "y_offset": 161.39511,
+    "y_offset": 162.45843,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:22.985Z"
+  "exported_at": "2026-08-19T13:23:24.772Z"
 }

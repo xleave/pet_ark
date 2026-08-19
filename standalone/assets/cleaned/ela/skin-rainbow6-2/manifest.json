@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ela",
   "character_name": "Ela",
   "localized_name": "艾拉",
@@ -11,15 +12,29 @@
   "skin_id": "rainbow6-2",
   "skin_name": "密室",
   "source": "standalone/assets/source/ela/skin-rainbow6-2",
-  "source_page": "https://prts.wiki/w/%E8%89%BE%E6%8B%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4123_ela/meta.json",
-    "model": "char_4123_ela_rainbow6_2/build/build_char_4123_ela_rainbow6_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4123_ela/char_4123_ela_rainbow6_2/build/build_char_4123_ela_rainbow6_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4123_ela/char_4123_ela_rainbow6_2/build/build_char_4123_ela_rainbow6_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4123_ela/char_4123_ela_rainbow6_2/build/build_char_4123_ela_rainbow6_2.png"
+    "assetId": "build_char_4123_ela_rainbow6#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "艾拉",
+    "appellation": "Ela",
+    "skinGroupId": "2024#rainbow6",
+    "skinGroupName": "彩虹六号：围攻/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4123_ela_rainbow6#2.atlas",
+      ".png": "build_char_4123_ela_rainbow6#2.png",
+      ".skel": "build_char_4123_ela_rainbow6#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/ela/skin-rainbow6-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,11 +130,11 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -247.89995,
-      "maxX": 260.72571,
-      "minY": -102.52689,
+      "maxX": 680.24036,
+      "minY": -527.53912,
       "maxY": 414.54916
     },
     "full_source_bounds": {
@@ -130,22 +145,28 @@
     },
     "core_source_bounds": {
       "minX": -247.89995,
-      "maxX": 260.72571,
-      "minY": -102.52689,
+      "maxX": 680.24036,
+      "minY": -527.53912,
       "maxY": 414.54916
     },
     "cluster": {
-      "retained": 3578,
+      "retained": 3613,
       "total": 3617,
-      "centerX": 0.71037,
-      "centerY": 117.59558,
-      "radiusX": 304.58634,
-      "radiusY": 573.18546
+      "centerX": 41.86784,
+      "centerY": 141.91083,
+      "radiusX": 638.41302,
+      "radiusY": 1187.48859
     },
-    "scale": 0.34603,
-    "x_offset": 93.78095,
-    "y_offset": 180.52257,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 37,
+      "visible_height": 80,
+      "density_zoom": 1.94595
+    },
+    "scale": 0.369,
+    "x_offset": 99.90824,
+    "y_offset": 215.93112,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:26.171Z"
+  "exported_at": "2026-08-19T13:22:03.556Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "taraxacum",
   "character_name": "Taraxacum",
   "localized_name": "风絮",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/taraxacum/default",
-  "source_page": "https://prts.wiki/w/%E9%A3%8E%E7%B5%AE",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4222_taraxa/meta.json",
-    "model": "defaultskin/build/build_char_4222_taraxa",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4222_taraxa/defaultskin/build/build_char_4222_taraxa.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4222_taraxa/defaultskin/build/build_char_4222_taraxa.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4222_taraxa/defaultskin/build/build_char_4222_taraxa.png"
+    "assetId": "build_char_4222_taraxa",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "风絮",
+    "appellation": "Taraxacum",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4222_taraxa.atlas",
+      ".png": "build_char_4222_taraxa.png",
+      ".skel": "build_char_4222_taraxa.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/taraxacum/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -231.30984,
+      "minX": -231.48862,
       "maxX": 176.29478,
       "minY": -109.09061,
-      "maxY": 416.74933
+      "maxY": 417.87958
     },
-    "scale": 0.39556,
-    "x_offset": 106.88081,
-    "y_offset": 172.84838,
+    "full_source_bounds": {
+      "minX": -231.48862,
+      "maxX": 176.29478,
+      "minY": -109.09061,
+      "maxY": 417.87958
+    },
+    "core_source_bounds": {
+      "minX": -231.48862,
+      "maxX": 176.29478,
+      "minY": -109.09061,
+      "maxY": 417.87958
+    },
+    "cluster": {
+      "retained": 3916,
+      "total": 3916,
+      "centerX": -7.29216,
+      "centerY": 188.07376,
+      "radiusX": 322.49725,
+      "radiusY": 625.21809
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 98,
+      "visible_height": 162,
+      "density_zoom": 1
+    },
+    "scale": 0.39471,
+    "x_offset": 106.89276,
+    "y_offset": 172.94093,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:33.561Z"
+  "exported_at": "2026-08-19T13:24:07.134Z"
 }

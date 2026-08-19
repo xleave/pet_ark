@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "conviction",
   "character_name": "Conviction",
   "localized_name": "断罪者",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/conviction/default",
-  "source_page": "https://prts.wiki/w/%E6%96%AD%E7%BD%AA%E8%80%85",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_159_peacok/meta.json",
-    "model": "defaultskin/build/build_char_159_peacok",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_159_peacok/defaultskin/build/build_char_159_peacok.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_159_peacok/defaultskin/build/build_char_159_peacok.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_159_peacok/defaultskin/build/build_char_159_peacok.png"
+    "assetId": "build_char_159_peacok",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "断罪者",
+    "appellation": "Conviction",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_159_peacok.atlas",
+      ".png": "build_char_159_peacok.png",
+      ".skel": "build_char_159_peacok.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/conviction/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -219.59349,
+      "minX": -235.53171,
       "maxX": 187.75719,
-      "minY": -94.81532,
+      "minY": -92.53153,
       "maxY": 395.74084
     },
+    "full_source_bounds": {
+      "minX": -235.53171,
+      "maxX": 187.75719,
+      "minY": -92.53153,
+      "maxY": 395.74084
+    },
+    "core_source_bounds": {
+      "minX": -214.77472,
+      "maxX": 187.75719,
+      "minY": -92.53153,
+      "maxY": 395.74084
+    },
+    "cluster": {
+      "retained": 1173,
+      "total": 1173,
+      "centerX": -2.13028,
+      "centerY": 156.32938,
+      "radiusX": 535.66317,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 137,
+      "visible_height": 162,
+      "density_zoom": 1
+    },
     "scale": 0.41,
-    "x_offset": 102.52644,
-    "y_offset": 177.12572,
+    "x_offset": 105.79378,
+    "y_offset": 178.06207,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:02.364Z"
+  "exported_at": "2026-08-19T13:21:54.196Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "mizuki",
   "character_name": "Mizuki",
   "localized_name": "水月",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/mizuki/default",
-  "source_page": "https://prts.wiki/w/%E6%B0%B4%E6%9C%88",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_437_mizuki/meta.json",
-    "model": "defaultskin/build/build_char_437_mizuki",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_437_mizuki/defaultskin/build/build_char_437_mizuki.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_437_mizuki/defaultskin/build/build_char_437_mizuki.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_437_mizuki/defaultskin/build/build_char_437_mizuki.png"
+    "assetId": "build_char_437_mizuki",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "水月",
+    "appellation": "Mizuki",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_437_mizuki.atlas",
+      ".png": "build_char_437_mizuki.png",
+      ".skel": "build_char_437_mizuki.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/mizuki/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -269.03693,
       "maxX": 186.35771,
       "minY": -105.48277,
       "maxY": 442.60486
     },
+    "full_source_bounds": {
+      "minX": -269.03693,
+      "maxX": 186.35771,
+      "minY": -105.48277,
+      "maxY": 442.60486
+    },
+    "core_source_bounds": {
+      "minX": -269.03693,
+      "maxX": 186.35771,
+      "minY": -105.48277,
+      "maxY": 442.60486
+    },
+    "cluster": {
+      "retained": 2878,
+      "total": 2878,
+      "centerX": -3.05516,
+      "centerY": 169.84548,
+      "radiusX": 420.01934,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 89,
+      "visible_height": 152,
+      "density_zoom": 1
+    },
     "scale": 0.3795,
     "x_offset": 111.68844,
     "y_offset": 175.96914,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:19.030Z"
+  "exported_at": "2026-08-19T13:23:06.354Z"
 }

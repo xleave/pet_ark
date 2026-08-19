@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "pramanix",
   "character_name": "Pramanix",
   "localized_name": "初雪",
@@ -11,15 +12,29 @@
   "skin_id": "snow-1",
   "skin_name": "开斯特之霜",
   "source": "standalone/assets/source/pramanix/skin-snow-1",
-  "source_page": "https://prts.wiki/w/%E5%88%9D%E9%9B%AA",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_174_slbell/meta.json",
-    "model": "char_174_slbell_snow_1/build/build_char_174_slbell_snow_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_174_slbell/char_174_slbell_snow_1/build/build_char_174_slbell_snow_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_174_slbell/char_174_slbell_snow_1/build/build_char_174_slbell_snow_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_174_slbell/char_174_slbell_snow_1/build/build_char_174_slbell_snow_1.png"
+    "assetId": "build_char_174_slbell_snow#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "初雪",
+    "appellation": "Pramanix",
+    "skinGroupId": "2019#xmas",
+    "skinGroupName": "冰原信使/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_174_slbell_snow#1.atlas",
+      ".png": "build_char_174_slbell_snow#1.png",
+      ".skel": "build_char_174_slbell_snow#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -91,7 +106,7 @@
       "path": "standalone/assets/cleaned/pramanix/skin-snow-1/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -126,15 +141,21 @@
     "cluster": {
       "retained": 1847,
       "total": 1849,
-      "centerX": 8.20062,
-      "centerY": 126.26373,
-      "radiusX": 271.93154,
-      "radiusY": 525.30266
+      "centerX": 0.24159,
+      "centerY": 180.47146,
+      "radiusX": 455.04513,
+      "radiusY": 493.49785
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 96,
+      "visible_height": 158,
+      "density_zoom": 1
     },
     "scale": 0.38904,
     "x_offset": 111.9664,
     "y_offset": 172.41685,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:46.595Z"
+  "exported_at": "2026-08-19T13:23:30.880Z"
 }

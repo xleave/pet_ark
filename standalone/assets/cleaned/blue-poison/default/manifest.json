@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "blue-poison",
   "character_name": "Blue Poison",
   "localized_name": "蓝毒",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/blue-poison/default",
-  "source_page": "https://prts.wiki/w/%E8%93%9D%E6%AF%92",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_129_bluep/meta.json",
-    "model": "defaultskin/build/build_char_129_bluep",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_129_bluep/defaultskin/build/build_char_129_bluep.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_129_bluep/defaultskin/build/build_char_129_bluep.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_129_bluep/defaultskin/build/build_char_129_bluep.png"
+    "assetId": "build_char_129_bluep",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "蓝毒",
+    "appellation": "Blue Poison",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_129_bluep.atlas",
+      ".png": "build_char_129_bluep.png",
+      ".skel": "build_char_129_bluep.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/blue-poison/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -210.23827,
       "maxX": 198.35869,
-      "minY": -118.38383,
+      "minY": -116.28134,
       "maxY": 394.19025
     },
-    "scale": 0.4058,
-    "x_offset": 98.41034,
-    "y_offset": 167.96043,
+    "full_source_bounds": {
+      "minX": -210.23827,
+      "maxX": 198.35869,
+      "minY": -116.28134,
+      "maxY": 394.19025
+    },
+    "core_source_bounds": {
+      "minX": -210.23827,
+      "maxX": 198.35869,
+      "minY": -116.28134,
+      "maxY": 394.19025
+    },
+    "cluster": {
+      "retained": 1218,
+      "total": 1218,
+      "centerX": 11.2572,
+      "centerY": 173.23019,
+      "radiusX": 372.95966,
+      "radiusY": 535.00328
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 76,
+      "visible_height": 160,
+      "density_zoom": 1
+    },
+    "scale": 0.40747,
+    "x_offset": 98.42026,
+    "y_offset": 168.61926,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:59.195Z"
+  "exported_at": "2026-08-19T13:21:39.924Z"
 }

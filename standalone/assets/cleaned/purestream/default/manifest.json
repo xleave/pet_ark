@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "purestream",
   "character_name": "Purestream",
   "localized_name": "清流",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/purestream/default",
-  "source_page": "https://prts.wiki/w/%E6%B8%85%E6%B5%81",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_385_finlpp/meta.json",
-    "model": "defaultskin/build/build_char_385_finlpp",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_385_finlpp/defaultskin/build/build_char_385_finlpp.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_385_finlpp/defaultskin/build/build_char_385_finlpp.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_385_finlpp/defaultskin/build/build_char_385_finlpp.png"
+    "assetId": "build_char_385_finlpp",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "清流",
+    "appellation": "Purestream",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_385_finlpp.atlas",
+      ".png": "build_char_385_finlpp.png",
+      ".skel": "build_char_385_finlpp.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/purestream/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -226.04959,
       "maxX": 200.99907,
-      "minY": -115.59692,
-      "maxY": 426.01605
+      "minY": -116.20668,
+      "maxY": 431.32321
     },
-    "scale": 0.38404,
-    "x_offset": 100.81018,
-    "y_offset": 171.60638,
+    "full_source_bounds": {
+      "minX": -226.04959,
+      "maxX": 200.99907,
+      "minY": -116.20668,
+      "maxY": 431.32321
+    },
+    "core_source_bounds": {
+      "minX": -226.04959,
+      "maxX": 200.99907,
+      "minY": -116.20668,
+      "maxY": 431.32321
+    },
+    "cluster": {
+      "retained": 1567,
+      "total": 1567,
+      "centerX": 0.25661,
+      "centerY": 182.96604,
+      "radiusX": 335.4734,
+      "radiusY": 579.98724
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 89,
+      "visible_height": 159,
+      "density_zoom": 1
+    },
+    "scale": 0.37989,
+    "x_offset": 100.7582,
+    "y_offset": 171.85448,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:25.547Z"
+  "exported_at": "2026-08-19T13:23:33.974Z"
 }

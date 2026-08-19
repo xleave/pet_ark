@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "kal-tsit",
   "character_name": "Kal'tsit",
   "localized_name": "凯尔希",
@@ -11,15 +12,29 @@
   "skin_id": "boc-6",
   "skin_name": "残余",
   "source": "standalone/assets/source/kal-tsit/skin-boc-6",
-  "source_page": "https://prts.wiki/w/%E5%87%AF%E5%B0%94%E5%B8%8C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/meta.json",
-    "model": "char_003_kalts_boc_6/build/build_char_003_kalts_boc_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/char_003_kalts_boc_6/build/build_char_003_kalts_boc_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/char_003_kalts_boc_6/build/build_char_003_kalts_boc_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/char_003_kalts_boc_6/build/build_char_003_kalts_boc_6.png"
+    "assetId": "build_char_003_kalts_boc#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "凯尔希",
+    "appellation": "Kal'tsit",
+    "skinGroupId": "2023#boc",
+    "skinGroupName": "斗争血脉/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_003_kalts_boc#6.atlas",
+      ".png": "build_char_003_kalts_boc#6.png",
+      ".skel": "build_char_003_kalts_boc#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/kal-tsit/skin-boc-6/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -276.83096,
-      "maxX": 274.04373,
+      "minX": -1064.08105,
+      "maxX": 1509.54175,
       "minY": -327.77258,
-      "maxY": 423.49677
+      "maxY": 570.55548
     },
     "full_source_bounds": {
       "minX": -1139.68604,
@@ -129,23 +144,29 @@
       "maxY": 724.17767
     },
     "core_source_bounds": {
-      "minX": -276.83096,
-      "maxX": 274.04373,
+      "minX": -1064.08105,
+      "maxX": 1509.54175,
       "minY": -327.77258,
-      "maxY": 423.49677
+      "maxY": 570.55548
     },
     "cluster": {
-      "retained": 2591,
+      "retained": 2630,
       "total": 2645,
-      "centerX": -0.20448,
-      "centerY": 133.04286,
-      "radiusX": 322.18192,
-      "radiusY": 593.78358
+      "centerX": 115.77819,
+      "centerY": 169.08843,
+      "radiusX": 1404.28317,
+      "radiusY": 544.83347
     },
-    "scale": 0.27686,
-    "x_offset": 96.38584,
-    "y_offset": 125.25133,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 22,
+      "visible_height": 29,
+      "density_zoom": 4.82759
+    },
+    "scale": 0.33014,
+    "x_offset": 111.77821,
+    "y_offset": 218.82373,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:07.708Z"
+  "exported_at": "2026-08-19T13:22:42.253Z"
 }

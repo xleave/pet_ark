@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "aurora",
   "character_name": "Aurora",
   "localized_name": "极光",
@@ -11,15 +12,29 @@
   "skin_id": "boc-4",
   "skin_name": "极昼捕手",
   "source": "standalone/assets/source/aurora/skin-boc-4",
-  "source_page": "https://prts.wiki/w/%E6%9E%81%E5%85%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_422_aurora/meta.json",
-    "model": "char_422_aurora_boc_4/build/build_char_422_aurora_boc_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_422_aurora/char_422_aurora_boc_4/build/build_char_422_aurora_boc_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_422_aurora/char_422_aurora_boc_4/build/build_char_422_aurora_boc_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_422_aurora/char_422_aurora_boc_4/build/build_char_422_aurora_boc_4.png"
+    "assetId": "build_char_422_aurora_boc#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "极光",
+    "appellation": "Aurora",
+    "skinGroupId": "2022#boc",
+    "skinGroupName": "斗争血脉/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_422_aurora_boc#4.atlas",
+      ".png": "build_char_422_aurora_boc#4.png",
+      ".skel": "build_char_422_aurora_boc#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/aurora/skin-boc-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +130,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -242.71915,
+      "minX": -478.19229,
       "maxX": 150.76843,
       "minY": -90.60716,
-      "maxY": 385.76123
+      "maxY": 457.87833
     },
     "full_source_bounds": {
       "minX": -1015.55139,
@@ -129,23 +144,29 @@
       "maxY": 479.55838
     },
     "core_source_bounds": {
-      "minX": -242.71915,
+      "minX": -478.19229,
       "maxX": 150.76843,
       "minY": -90.60716,
-      "maxY": 385.76123
+      "maxY": 457.87833
     },
     "cluster": {
-      "retained": 2388,
+      "retained": 2396,
       "total": 2414,
-      "centerX": -6.20793,
-      "centerY": 145.26499,
-      "radiusX": 256,
-      "radiusY": 703.36762
+      "centerX": -5.37395,
+      "centerY": 213.95321,
+      "radiusX": 467.49537,
+      "radiusY": 757.51465
     },
-    "scale": 0.41,
-    "x_offset": 114.8499,
-    "y_offset": 178.85106,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 62,
+      "visible_height": 107,
+      "density_zoom": 1.30841
+    },
+    "scale": 0.36613,
+    "x_offset": 108.18257,
+    "y_offset": 216.84484,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:54.050Z"
+  "exported_at": "2026-08-19T13:21:32.609Z"
 }

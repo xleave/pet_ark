@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "stainless",
   "character_name": "Stainless",
   "localized_name": "白铁",
@@ -11,15 +12,29 @@
   "skin_id": "summer-11",
   "skin_name": "沙滩护卫 GT003",
   "source": "standalone/assets/source/stainless/skin-summer-11",
-  "source_page": "https://prts.wiki/w/%E7%99%BD%E9%93%81",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4072_ironmn/meta.json",
-    "model": "char_4072_ironmn_summer_11/build/build_char_4072_ironmn_summer_11",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4072_ironmn/char_4072_ironmn_summer_11/build/build_char_4072_ironmn_summer_11.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4072_ironmn/char_4072_ironmn_summer_11/build/build_char_4072_ironmn_summer_11.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4072_ironmn/char_4072_ironmn_summer_11/build/build_char_4072_ironmn_summer_11.png"
+    "assetId": "build_char_4072_ironmn_summer#11",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "白铁",
+    "appellation": "Stainless",
+    "skinGroupId": "2023#summer",
+    "skinGroupName": "珊瑚海岸/XI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4072_ironmn_summer#11.atlas",
+      ".png": "build_char_4072_ironmn_summer#11.png",
+      ".skel": "build_char_4072_ironmn_summer#11.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/stainless/skin-summer-11/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -135,17 +150,23 @@
       "maxY": 479.94891
     },
     "cluster": {
-      "retained": 2965,
-      "total": 2996,
-      "centerX": 4.84474,
-      "centerY": 122.49479,
-      "radiusX": 298.1444,
-      "radiusY": 702.3518
+      "retained": 2947,
+      "total": 2978,
+      "centerX": 44.36081,
+      "centerY": 172.72193,
+      "radiusX": 697.14751,
+      "radiusY": 670.40888
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 87,
+      "visible_height": 124,
+      "density_zoom": 1.12903
     },
     "scale": 0.30314,
     "x_offset": 82.64464,
     "y_offset": 183.63073,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:36.834Z"
+  "exported_at": "2026-08-19T13:24:01.739Z"
 }

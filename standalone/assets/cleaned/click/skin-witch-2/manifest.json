@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "click",
   "character_name": "Click",
   "localized_name": "卡达",
@@ -11,15 +12,29 @@
   "skin_id": "witch-2",
   "skin_name": "安息处的怪盗",
   "source": "standalone/assets/source/click/skin-witch-2",
-  "source_page": "https://prts.wiki/w/%E5%8D%A1%E8%BE%BE",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_328_cammou/meta.json",
-    "model": "char_328_cammou_witch_2/build/build_char_328_cammou_witch_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_328_cammou/char_328_cammou_witch_2/build/build_char_328_cammou_witch_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_328_cammou/char_328_cammou_witch_2/build/build_char_328_cammou_witch_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_328_cammou/char_328_cammou_witch_2/build/build_char_328_cammou_witch_2.png"
+    "assetId": "build_char_328_cammou_witch#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "卡达",
+    "appellation": "Click",
+    "skinGroupId": "2021#witch",
+    "skinGroupName": "巫异盛宴/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_328_cammou_witch#2.atlas",
+      ".png": "build_char_328_cammou_witch#2.png",
+      ".skel": "build_char_328_cammou_witch#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/click/skin-witch-2/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -137,15 +152,21 @@
     "cluster": {
       "retained": 1963,
       "total": 1967,
-      "centerX": 12.36563,
-      "centerY": 121.25454,
-      "radiusX": 256,
-      "radiusY": 629.4858
+      "centerX": 1.01045,
+      "centerY": 182.89955,
+      "radiusX": 525.10326,
+      "radiusY": 507.97703
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 80,
+      "visible_height": 158,
+      "density_zoom": 1
     },
     "scale": 0.37128,
     "x_offset": 106.88506,
     "y_offset": 173.57361,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:36.740Z"
+  "exported_at": "2026-08-19T13:21:52.355Z"
 }

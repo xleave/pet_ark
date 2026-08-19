@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "lessing",
@@ -12,15 +12,29 @@
   "skin_id": "whirlwind-7",
   "skin_name": "幻火",
   "source": "standalone/assets/source/lessing/skin-whirlwind-7",
-  "source_page": "https://prts.wiki/w/%E6%AD%A2%E9%A2%82",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4011_lessng/meta.json",
-    "model": "char_4011_lessng_whirlwind_7/build/build_char_4011_lessng_whirlwind_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4011_lessng/char_4011_lessng_whirlwind_7/build/build_char_4011_lessng_whirlwind_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4011_lessng/char_4011_lessng_whirlwind_7/build/build_char_4011_lessng_whirlwind_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4011_lessng/char_4011_lessng_whirlwind_7/build/build_char_4011_lessng_whirlwind_7.png"
+    "assetId": "build_char_4011_lessng_whirlwind#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "止颂",
+    "appellation": "Lessing",
+    "skinGroupId": "2024#whirlwind",
+    "skinGroupName": "0011/飙系列/VII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4011_lessng_whirlwind#7.atlas",
+      ".png": "build_char_4011_lessng_whirlwind#7.png",
+      ".skel": "build_char_4011_lessng_whirlwind#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -109,7 +123,7 @@
       ]
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -160,5 +174,5 @@
     "y_offset": 216.54127,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:10:32.061Z"
+  "exported_at": "2026-08-19T13:22:51.550Z"
 }

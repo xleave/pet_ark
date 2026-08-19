@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "texas",
   "character_name": "Texas",
   "localized_name": "德克萨斯",
@@ -11,15 +12,29 @@
   "skin_id": "epoque-7",
   "skin_name": "意志",
   "source": "standalone/assets/source/texas/skin-epoque-7",
-  "source_page": "https://prts.wiki/w/%E5%BE%B7%E5%85%8B%E8%90%A8%E6%96%AF",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/meta.json",
-    "model": "char_102_texas_epoque_7/build/build_char_102_texas_epoque_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/char_102_texas_epoque_7/build/build_char_102_texas_epoque_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/char_102_texas_epoque_7/build/build_char_102_texas_epoque_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/char_102_texas_epoque_7/build/build_char_102_texas_epoque_7.png"
+    "assetId": "build_char_102_texas_epoque#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "德克萨斯",
+    "appellation": "Texas",
+    "skinGroupId": "2020#epoque#6",
+    "skinGroupName": "时代/VII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_102_texas_epoque#7.atlas",
+      ".png": "build_char_102_texas_epoque#7.png",
+      ".skel": "build_char_102_texas_epoque#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/texas/skin-epoque-7/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -137,15 +152,21 @@
     "cluster": {
       "retained": 1802,
       "total": 1802,
-      "centerX": -5.39617,
-      "centerY": 136.67413,
-      "radiusX": 256,
-      "radiusY": 605.87556
+      "centerX": -4.95312,
+      "centerY": 205.64476,
+      "radiusX": 320,
+      "radiusY": 591.44264
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 80,
+      "visible_height": 163,
+      "density_zoom": 1
     },
     "scale": 0.39294,
     "x_offset": 112.50838,
     "y_offset": 172.96848,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:04:27.168Z"
+  "exported_at": "2026-08-19T13:24:08.581Z"
 }

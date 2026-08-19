@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "blaze-the-igniting-spark",
   "character_name": "Blaze the Igniting Spark",
   "localized_name": "烛煌",
@@ -9,15 +12,29 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/blaze-the-igniting-spark/default",
-  "source_page": "https://prts.wiki/w/%E7%83%9B%E7%85%8C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1040_blaze2/meta.json",
-    "model": "defaultskin/build/build_char_1040_blaze2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1040_blaze2/defaultskin/build/build_char_1040_blaze2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1040_blaze2/defaultskin/build/build_char_1040_blaze2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1040_blaze2/defaultskin/build/build_char_1040_blaze2.png"
+    "assetId": "build_char_1040_blaze2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "烛煌",
+    "appellation": "Blaze the Igniting Spark",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1040_blaze2.atlas",
+      ".png": "build_char_1040_blaze2.png",
+      ".skel": "build_char_1040_blaze2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +106,7 @@
       "path": "standalone/assets/cleaned/blaze-the-igniting-spark/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +119,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -257.33148,
+      "minX": -257.33917,
       "maxX": 268.38754,
       "minY": -118.6136,
       "maxY": 577.03461
     },
+    "full_source_bounds": {
+      "minX": -257.33917,
+      "maxX": 268.38754,
+      "minY": -118.6136,
+      "maxY": 577.03461
+    },
+    "core_source_bounds": {
+      "minX": -257.33917,
+      "maxX": 268.38754,
+      "minY": -118.6136,
+      "maxY": 577.03461
+    },
+    "cluster": {
+      "retained": 2619,
+      "total": 2619,
+      "centerX": 2.34,
+      "centerY": 181.2902,
+      "radiusX": 555.23563,
+      "radiusY": 645.01976
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 93,
+      "visible_height": 130,
+      "density_zoom": 1.07692
+    },
     "scale": 0.299,
-    "x_offset": 94.34711,
+    "x_offset": 94.34826,
     "y_offset": 180.53433,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:58.905Z"
+  "exported_at": "2026-08-19T13:21:38.555Z"
 }

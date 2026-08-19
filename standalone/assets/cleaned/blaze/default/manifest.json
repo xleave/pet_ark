@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "blaze",
   "character_name": "Blaze",
   "localized_name": "煌",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/blaze/default",
-  "source_page": "https://prts.wiki/w/%E7%85%8C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/meta.json",
-    "model": "defaultskin/build/build_char_017_huang",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/defaultskin/build/build_char_017_huang.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/defaultskin/build/build_char_017_huang.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/defaultskin/build/build_char_017_huang.png"
+    "assetId": "build_char_017_huang",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "煌",
+    "appellation": "Blaze",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_017_huang.atlas",
+      ".png": "build_char_017_huang.png",
+      ".skel": "build_char_017_huang.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/blaze/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -448.34824,
-      "maxX": 249.51035,
+      "minX": -251.68512,
+      "maxX": 248.66396,
       "minY": -134.02011,
-      "maxY": 435.1926
+      "maxY": 436.29034
     },
-    "scale": 0.2522,
-    "x_offset": 121.07347,
-    "y_offset": 182.20012,
+    "full_source_bounds": {
+      "minX": -448.34824,
+      "maxX": 248.66396,
+      "minY": -134.02011,
+      "maxY": 436.29034
+    },
+    "core_source_bounds": {
+      "minX": -251.68512,
+      "maxX": 248.66396,
+      "minY": -134.02011,
+      "maxY": 436.29034
+    },
+    "cluster": {
+      "retained": 2243,
+      "total": 2244,
+      "centerX": 0.74914,
+      "centerY": 220.91159,
+      "radiusX": 389.44402,
+      "radiusY": 615.74181
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 147,
+      "visible_height": 151,
+      "density_zoom": 1
+    },
+    "scale": 0.35175,
+    "x_offset": 96.53135,
+    "y_offset": 168.85783,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:58.779Z"
+  "exported_at": "2026-08-19T13:21:38.455Z"
 }

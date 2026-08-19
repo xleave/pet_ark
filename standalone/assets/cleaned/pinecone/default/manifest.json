@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "pinecone",
   "character_name": "Pinecone",
   "localized_name": "松果",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/pinecone/default",
-  "source_page": "https://prts.wiki/w/%E6%9D%BE%E6%9E%9C",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_440_pinecn/meta.json",
-    "model": "defaultskin/build/Build_char_440_pinecn",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_440_pinecn/defaultskin/build/Build_char_440_pinecn.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_440_pinecn/defaultskin/build/Build_char_440_pinecn.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_440_pinecn/defaultskin/build/Build_char_440_pinecn.png"
+    "assetId": "build_char_440_pinecn",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "松果",
+    "appellation": "Pinecone",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "Build_char_440_pinecn.atlas",
+      ".png": "Build_char_440_pinecn.png",
+      ".skel": "Build_char_440_pinecn.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/pinecone/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -310.58191,
       "maxX": 186.83614,
-      "minY": -132.21814,
-      "maxY": 398.92371
+      "minY": -131.53725,
+      "maxY": 399.84698
+    },
+    "full_source_bounds": {
+      "minX": -310.58191,
+      "maxX": 186.83614,
+      "minY": -131.53725,
+      "maxY": 399.84698
+    },
+    "core_source_bounds": {
+      "minX": -310.58191,
+      "maxX": 186.83614,
+      "minY": -131.53725,
+      "maxY": 391.01953
+    },
+    "cluster": {
+      "retained": 2652,
+      "total": 2652,
+      "centerX": -177.57848,
+      "centerY": 199.87287,
+      "radiusX": 462.46283,
+      "radiusY": 532.50006
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 75,
+      "visible_height": 139,
+      "density_zoom": 1.00719
     },
     "scale": 0.35383,
     "x_offset": 117.89231,
-    "y_offset": 169.21763,
+    "y_offset": 169.45855,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:23.701Z"
+  "exported_at": "2026-08-19T13:23:28.071Z"
 }

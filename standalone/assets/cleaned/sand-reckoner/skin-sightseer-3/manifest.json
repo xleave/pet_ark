@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "sand-reckoner",
   "character_name": "Sand Reckoner",
   "localized_name": "衡沙",
@@ -9,15 +12,29 @@
   "skin_id": "sightseer-3",
   "skin_name": "憩羽",
   "source": "standalone/assets/source/sand-reckoner/skin-sightseer-3",
-  "source_page": "https://prts.wiki/w/%E8%A1%A1%E6%B2%99",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4140_lasher/meta.json",
-    "model": "char_4140_lasher_sightseer_3/build/build_char_4140_lasher_sightseer_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4140_lasher/char_4140_lasher_sightseer_3/build/build_char_4140_lasher_sightseer_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4140_lasher/char_4140_lasher_sightseer_3/build/build_char_4140_lasher_sightseer_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4140_lasher/char_4140_lasher_sightseer_3/build/build_char_4140_lasher_sightseer_3.png"
+    "assetId": "build_char_4140_lasher_sightseer#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "衡沙",
+    "appellation": "Sand Reckoner",
+    "skinGroupId": "2025#sightseer#2",
+    "skinGroupName": "错位巡礼/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4140_lasher_sightseer#3.atlas",
+      ".png": "build_char_4140_lasher_sightseer#3.png",
+      ".skel": "build_char_4140_lasher_sightseer#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -100,7 +117,7 @@
       "path": "standalone/assets/cleaned/sand-reckoner/skin-sightseer-3/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -113,16 +130,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -262.37061,
+      "minX": -262.42072,
       "maxX": 346.62344,
-      "minY": -113.95316,
+      "minY": -113.86907,
       "maxY": 532.75256
     },
-    "scale": 0.289,
-    "x_offset": 83.82542,
-    "y_offset": 183.0674,
+    "full_source_bounds": {
+      "minX": -262.42072,
+      "maxX": 346.62344,
+      "minY": -113.86907,
+      "maxY": 532.75256
+    },
+    "core_source_bounds": {
+      "minX": -262.42072,
+      "maxX": 346.62344,
+      "minY": -113.86907,
+      "maxY": 462.45483
+    },
+    "cluster": {
+      "retained": 2979,
+      "total": 2979,
+      "centerX": 9.43999,
+      "centerY": 190.45432,
+      "radiusX": 394.95494,
+      "radiusY": 670.03296
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 134,
+      "visible_height": 115,
+      "density_zoom": 1.21739
+    },
+    "scale": 0.3518,
+    "x_offset": 96.40619,
+    "y_offset": 216.11494,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:28.968Z"
+  "exported_at": "2026-08-19T13:23:46.464Z"
 }

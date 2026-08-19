@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "gallus2",
   "character_name": "GALLUS²",
   "localized_name": "GALLUS²",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/gallus2/default",
-  "source_page": "https://prts.wiki/w/GALLUS%C2%B2",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4227_gallus/meta.json",
-    "model": "defaultskin/build/build_char_4227_gallus",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4227_gallus/defaultskin/build/build_char_4227_gallus.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4227_gallus/defaultskin/build/build_char_4227_gallus.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4227_gallus/defaultskin/build/build_char_4227_gallus.png"
+    "assetId": "build_char_4227_gallus",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "GALLUS²",
+    "appellation": "GALLUS²",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_1"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4227_gallus.atlas",
+      ".png": "build_char_4227_gallus.png",
+      ".skel": "build_char_4227_gallus.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -67,7 +83,7 @@
       "path": "standalone/assets/cleaned/gallus2/default/relax"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -80,16 +96,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -232.30536,
-      "maxX": 206.55736,
-      "minY": -6.92543,
-      "maxY": 483.30746
+      "maxX": 209.01292,
+      "minY": -7.44009,
+      "maxY": 484.31064
     },
-    "scale": 0.40104,
-    "x_offset": 101.16295,
-    "y_offset": 213.22265,
+    "full_source_bounds": {
+      "minX": -232.30536,
+      "maxX": 209.01292,
+      "minY": -7.44009,
+      "maxY": 484.31064
+    },
+    "core_source_bounds": {
+      "minX": -232.30536,
+      "maxX": 209.01292,
+      "minY": -7.44009,
+      "maxY": 467.75385
+    },
+    "cluster": {
+      "retained": 1170,
+      "total": 1170,
+      "centerX": -30.23349,
+      "centerY": 125.24616,
+      "radiusX": 678.19111,
+      "radiusY": 619.04335
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 161,
+      "visible_height": 188,
+      "density_zoom": 1
+    },
+    "scale": 0.39881,
+    "x_offset": 100.64457,
+    "y_offset": 213.03286,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:07.732Z"
+  "exported_at": "2026-08-19T13:22:16.544Z"
 }

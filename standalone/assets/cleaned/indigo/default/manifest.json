@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "indigo",
   "character_name": "Indigo",
   "localized_name": "深靛",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/indigo/default",
-  "source_page": "https://prts.wiki/w/%E6%B7%B1%E9%9D%9B",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_469_indigo/meta.json",
-    "model": "defaultskin/build/build_char_469_indigo",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_469_indigo/defaultskin/build/build_char_469_indigo.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_469_indigo/defaultskin/build/build_char_469_indigo.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_469_indigo/defaultskin/build/build_char_469_indigo.png"
+    "assetId": "build_char_469_indigo",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "深靛",
+    "appellation": "Indigo",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_469_indigo.atlas",
+      ".png": "build_char_469_indigo.png",
+      ".skel": "build_char_469_indigo.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/indigo/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -213.80057,
+      "minX": -237.44127,
       "maxX": 181.17918,
-      "minY": -133.16893,
-      "maxY": 417.76154
+      "minY": -133.29149,
+      "maxY": 417.75134
     },
-    "scale": 0.37754,
-    "x_offset": 102.15799,
-    "y_offset": 165.72299,
+    "full_source_bounds": {
+      "minX": -237.44127,
+      "maxX": 181.17918,
+      "minY": -133.29149,
+      "maxY": 417.75134
+    },
+    "core_source_bounds": {
+      "minX": -197.11874,
+      "maxX": 181.17918,
+      "minY": -133.29149,
+      "maxY": 414.16367
+    },
+    "cluster": {
+      "retained": 2622,
+      "total": 2622,
+      "centerX": -10.17946,
+      "centerY": 190.43754,
+      "radiusX": 434.98506,
+      "radiusY": 615.02998
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 105,
+      "visible_height": 159,
+      "density_zoom": 1
+    },
+    "scale": 0.37747,
+    "x_offset": 106.61852,
+    "y_offset": 165.68698,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:11.685Z"
+  "exported_at": "2026-08-19T13:22:34.357Z"
 }

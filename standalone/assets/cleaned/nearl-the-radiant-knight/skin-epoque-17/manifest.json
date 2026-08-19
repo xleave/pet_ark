@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "nearl-the-radiant-knight",
   "character_name": "Nearl the Radiant Knight",
   "localized_name": "耀骑士临光",
@@ -11,15 +12,30 @@
   "skin_id": "epoque-17",
   "skin_name": "复现荣光",
   "source": "standalone/assets/source/nearl-the-radiant-knight/skin-epoque-17",
-  "source_page": "https://prts.wiki/w/%E8%80%80%E9%AA%91%E5%A3%AB%E4%B8%B4%E5%85%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1014_nearl2/meta.json",
-    "model": "char_1014_nearl2_epoque_17/build/build_char_1014_nearl2_epoque_17",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1014_nearl2/char_1014_nearl2_epoque_17/build/build_char_1014_nearl2_epoque_17.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1014_nearl2/char_1014_nearl2_epoque_17/build/build_char_1014_nearl2_epoque_17.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1014_nearl2/char_1014_nearl2_epoque_17/build/build_char_1014_nearl2_epoque_17.png"
+    "assetId": "build_char_1014_nearl2_epoque#17",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "耀骑士临光",
+    "appellation": "Nearl the Radiant Knight",
+    "skinGroupId": "2022#epoque#4",
+    "skinGroupName": "时代/XVII",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1014_nearl2_epoque#17.atlas",
+      ".png": "build_char_1014_nearl2_epoque#17.png",
+      ".skel": "build_char_1014_nearl2_epoque#17.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +118,7 @@
       "path": "standalone/assets/cleaned/nearl-the-radiant-knight/skin-epoque-17/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,12 +131,12 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -275.47604,
-      "maxX": 207.03255,
+      "minX": -415.04108,
+      "maxX": 576.52509,
       "minY": -113.42432,
-      "maxY": 425.76102
+      "maxY": 615.98041
     },
     "full_source_bounds": {
       "minX": -415.04108,
@@ -129,23 +145,29 @@
       "maxY": 615.98041
     },
     "core_source_bounds": {
-      "minX": -275.47604,
-      "maxX": 207.03255,
+      "minX": -384.83307,
+      "maxX": 576.52509,
       "minY": -113.42432,
-      "maxY": 425.76102
+      "maxY": 590.39099
     },
     "cluster": {
-      "retained": 2829,
+      "retained": 2834,
       "total": 2834,
-      "centerX": -0.81563,
-      "centerY": 143.29842,
-      "radiusX": 285.48388,
-      "radiusY": 617.13423
+      "centerX": 3.9783,
+      "centerY": 188.18657,
+      "radiusX": 574.40322,
+      "radiusY": 598.12973
     },
-    "scale": 0.36476,
-    "x_offset": 108.48274,
-    "y_offset": 174.62731,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 58,
+      "visible_height": 75,
+      "density_zoom": 1.86667
+    },
+    "scale": 0.33133,
+    "x_offset": 103.78127,
+    "y_offset": 217.61938,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:05:01.618Z"
+  "exported_at": "2026-08-19T13:23:17.208Z"
 }

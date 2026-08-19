@@ -1,7 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "surtr",
   "character_name": "Surtr",
   "localized_name": "史尔特尔",
@@ -11,15 +12,29 @@
   "skin_id": "summer-9",
   "skin_name": "缤纷奇境 CW03",
   "source": "standalone/assets/source/surtr/skin-summer-9",
-  "source_page": "https://prts.wiki/w/%E5%8F%B2%E5%B0%94%E7%89%B9%E5%B0%94",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_350_surtr/meta.json",
-    "model": "char_350_surtr_summer_9/build/build_char_350_surtr_summer_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_350_surtr/char_350_surtr_summer_9/build/build_char_350_surtr_summer_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_350_surtr/char_350_surtr_summer_9/build/build_char_350_surtr_summer_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_350_surtr/char_350_surtr_summer_9/build/build_char_350_surtr_summer_9.png"
+    "assetId": "build_char_350_surtr_summer#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "史尔特尔",
+    "appellation": "Surtr",
+    "skinGroupId": "2022#summer#2",
+    "skinGroupName": "珊瑚海岸/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_350_surtr_summer#9.atlas",
+      ".png": "build_char_350_surtr_summer#9.png",
+      ".skel": "build_char_350_surtr_summer#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -102,7 +117,7 @@
       "path": "standalone/assets/cleaned/surtr/skin-summer-9/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -115,9 +130,9 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -228.38223,
+      "minX": -532.78809,
       "maxX": 205.42252,
       "minY": -110.70625,
       "maxY": 413.21359
@@ -129,23 +144,29 @@
       "maxY": 460.26364
     },
     "core_source_bounds": {
-      "minX": -228.38223,
+      "minX": -532.78809,
       "maxX": 205.42252,
       "minY": -110.70625,
       "maxY": 413.21359
     },
     "cluster": {
-      "retained": 2499,
+      "retained": 2502,
       "total": 2516,
-      "centerX": -8.51199,
-      "centerY": 130.76267,
-      "radiusX": 297.01427,
-      "radiusY": 659.61407
+      "centerX": -10.32891,
+      "centerY": 179.24577,
+      "radiusX": 549.98305,
+      "radiusY": 784.74329
     },
-    "scale": 0.39701,
-    "x_offset": 100.55759,
-    "y_offset": 172.04881,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 67,
+      "visible_height": 98,
+      "density_zoom": 1.42857
+    },
+    "scale": 0.34059,
+    "x_offset": 103.17761,
+    "y_offset": 216.86578,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:03:51.990Z"
+  "exported_at": "2026-08-19T13:24:03.428Z"
 }

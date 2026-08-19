@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "blemishine",
   "character_name": "Blemishine",
   "localized_name": "瑕光",
@@ -9,15 +12,28 @@
   "skin_id": null,
   "skin_name": null,
   "source": "standalone/assets/source/blemishine/default",
-  "source_page": "https://prts.wiki/w/%E7%91%95%E5%85%89",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/meta.json",
-    "model": "defaultskin/build/build_char_423_blemsh",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/defaultskin/build/build_char_423_blemsh.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/defaultskin/build/build_char_423_blemsh.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/defaultskin/build/build_char_423_blemsh.png"
+    "assetId": "build_char_423_blemsh",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "瑕光",
+    "appellation": "Blemishine",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_423_blemsh.atlas",
+      ".png": "build_char_423_blemsh.png",
+      ".skel": "build_char_423_blemsh.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -89,7 +105,7 @@
       "path": "standalone/assets/cleaned/blemishine/default/sleep"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -102,16 +118,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -227.97418,
+      "minX": -228.0184,
       "maxX": 214.72354,
-      "minY": -63.74197,
-      "maxY": 422.11353
+      "minY": -63.57021,
+      "maxY": 422.49084
     },
-    "scale": 0.39756,
-    "x_offset": 98.63398,
-    "y_offset": 190.65859,
+    "full_source_bounds": {
+      "minX": -228.0184,
+      "maxX": 214.72354,
+      "minY": -63.57021,
+      "maxY": 422.49084
+    },
+    "core_source_bounds": {
+      "minX": -228.0184,
+      "maxX": 214.72354,
+      "minY": -63.57021,
+      "maxY": 422.49084
+    },
+    "cluster": {
+      "retained": 2763,
+      "total": 2763,
+      "centerX": -4.9176,
+      "centerY": 188.19927,
+      "radiusX": 459.89561,
+      "radiusY": 719.88655
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 124,
+      "visible_height": 168,
+      "density_zoom": 1
+    },
+    "scale": 0.39752,
+    "x_offset": 98.6425,
+    "y_offset": 190.72939,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:58.984Z"
+  "exported_at": "2026-08-19T13:21:39.848Z"
 }

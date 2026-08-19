@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
   "blank_policy_revision": 1,
   "placement_revision": 3,
   "character": "dorothy",
@@ -12,15 +12,29 @@
   "skin_id": "witch-4",
   "skin_name": "命运主宰",
   "source": "standalone/assets/source/dorothy/skin-witch-4",
-  "source_page": "https://prts.wiki/w/%E5%A4%9A%E8%90%9D%E8%A5%BF",
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
   "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4048_doroth/meta.json",
-    "model": "char_4048_doroth_witch_4/build/build_char_4048_doroth_witch_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4048_doroth/char_4048_doroth_witch_4/build/build_char_4048_doroth_witch_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4048_doroth/char_4048_doroth_witch_4/build/build_char_4048_doroth_witch_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4048_doroth/char_4048_doroth_witch_4/build/build_char_4048_doroth_witch_4.png"
+    "assetId": "build_char_4048_doroth_witch#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "多萝西",
+    "appellation": "Dorothy",
+    "skinGroupId": "2023#witch",
+    "skinGroupName": "巫异盛宴/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4048_doroth_witch#4.atlas",
+      ".png": "build_char_4048_doroth_witch#4.png",
+      ".skel": "build_char_4048_doroth_witch#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -103,7 +117,7 @@
       "path": "standalone/assets/cleaned/dorothy/skin-witch-4/special"
     }
   },
-  "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
+  "renderer": "Ark-Models PC-client Spine data with official spine-ts 3.8.95 compat 2 and deterministic CPU triangle composition",
   "canvas": {
     "width": 192,
     "height": 224,
@@ -138,21 +152,21 @@
     "cluster": {
       "retained": 3257,
       "total": 3278,
-      "centerX": 39.451,
+      "centerX": 39.90015,
       "centerY": 177.62854,
-      "radiusX": 933.97519,
+      "radiusX": 929.48373,
       "radiusY": 819.56284
     },
     "pixel_probe": {
       "animation": "Relax",
-      "visible_width": 49,
+      "visible_width": 48,
       "visible_height": 68,
       "density_zoom": 2.05882
     },
     "scale": 0.29952,
-    "x_offset": 96.11906,
+    "x_offset": 97.14847,
     "y_offset": 215.59103,
     "padding": 8
   },
-  "exported_at": "2026-08-19T05:11:28.646Z"
+  "exported_at": "2026-08-19T13:22:01.668Z"
 }
