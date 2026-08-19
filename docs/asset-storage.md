@@ -1,15 +1,18 @@
-# Standalone asset storage policy
+# 资产存储策略
 
-The standalone source, deterministic exports, accepted generated motion, runtime atlases, and contact sheets are intentionally committed as ordinary Git objects in this repository. This keeps a checkout reproducible and reviewable without depending on an expiring CI artifact or on Git LFS ownership and quota being transferred from an external-maintainer fork to the upstream repository.
+Standalone 的 source、cleaned frames、accepted generated motion、runtime atlas 与 contact sheets 当前作为普通 Git 对象提交。这样 checkout 后可以离线复现、审查 provenance，并避免 fork PR 只提交 LFS pointer 而上游拿不到对象。
 
-This is a deliberate policy for the current 425-character / 933-variant release, not an accidental consequence of the build pipeline. It carries a real clone and fetch cost, so the repository enforces these limits in pull-request CI:
+仓库设置以下预算：
 
-- at most **8 GiB** for the complete uncompressed tracked working tree;
-- at most **4 GiB** for Git object storage in the fresh, shallow CI checkout, after Git's ordinary object reuse and compression;
-- at most **50 MiB** for any individual tracked file;
-- generated tiers may exist only when they serve a distinct audit or runtime purpose; new duplicate output tiers require maintainer review;
-- crossing any budget requires a separate storage migration decision before merge, such as an upstream-owned Git LFS allocation or durable release storage.
+- tracked working tree：8 GiB；
+- fresh shallow checkout 的 Git object storage：4 GiB；
+- 单文件：50 MiB；
+- 新的重复输出层必须说明独立用途。
 
-`npm run repository:asset-budget` checks all three numeric limits. It sums ordinary file sizes for the working-tree and per-file limits, and reads `git count-objects -v` for the repository object-store limit. It intentionally does not add hashes or digests. The file-size check requires a complete checkout so a sparse clone cannot undercount assets; CI uses a fresh depth-one checkout so unrelated local history cannot inflate the object-store measurement.
+检查命令：
 
-The current choice avoids a subtle failure mode in cross-fork pull requests: LFS pointers can be merged while their backing objects remain billed to, or only accessible through, the contributor's fork. If upstream later provisions and owns LFS storage, the migration should rewrite the relevant asset history in a dedicated maintenance change and update CI checkout behavior at the same time.
+```bash
+npm run repository:asset-budget
+```
+
+CI 使用完整 depth-one checkout 计算文件预算。超过任一预算时，应在单独维护变更中选择由上游持有的 Git LFS 或 durable release storage，并同步调整历史迁移和 CI checkout。

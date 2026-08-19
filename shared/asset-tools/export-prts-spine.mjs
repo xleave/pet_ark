@@ -11,7 +11,7 @@ const sharp = require('sharp');
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const ROSTER_PATH = path.join(REPO_ROOT, 'shared/character-data/standalone-roster.json');
 const INTENTIONAL_BLANKS_PATH = path.join(REPO_ROOT, 'shared/character-data/standalone-intentional-blanks.json');
-const RENDER_REVISION = 3;
+const RENDER_REVISION = 4;
 const BLANK_POLICY_REVISION = 1;
 const PLACEMENT_REVISION = 3;
 const CORE_PLACEMENT_ANIMATIONS = new Set(['default', 'idle', 'relax', 'move', 'run', 'sit', 'sleep']);
@@ -289,15 +289,59 @@ function geometryForAttachment(spine, slot, attachment) {
   return { vertices, uvs, triangles };
 }
 
+function clippedGeometry(spine, clipper, geometry) {
+  clipper.clipTriangles(
+    geometry.vertices,
+    geometry.vertices.length,
+    geometry.triangles,
+    geometry.triangles.length,
+    geometry.uvs,
+    { r: 1, g: 1, b: 1, a: 1 },
+    { r: 0, g: 0, b: 0, a: 0 },
+    false,
+  );
+  const stride = 8;
+  const count = clipper.clippedVertices.length / stride;
+  const vertices = new Float32Array(count * 2);
+  const uvs = new Float32Array(count * 2);
+  for (let index = 0; index < count; index++) {
+    vertices[index * 2] = clipper.clippedVertices[index * stride];
+    vertices[index * 2 + 1] = clipper.clippedVertices[index * stride + 1];
+    uvs[index * 2] = clipper.clippedVertices[index * stride + 6];
+    uvs[index * 2 + 1] = clipper.clippedVertices[index * stride + 7];
+  }
+  return {
+    vertices,
+    uvs,
+    triangles: Uint16Array.from(clipper.clippedTriangles),
+  };
+}
+
 function visibleGeometry(spine, skeleton) {
   const geometries = [];
+  const clipper = new spine.SkeletonClipping();
   for (const slot of skeleton.drawOrder) {
     const attachment = slot.getAttachment();
-    if (!attachment || slot.color.a <= 0.001) continue;
-    const geometry = geometryForAttachment(spine, slot, attachment);
-    if (geometry) geometries.push({ slot, attachment, ...geometry });
+    if (attachment instanceof spine.ClippingAttachment) {
+      clipper.clipStart(slot, attachment);
+      continue;
+    }
+    if (attachment && slot.color.a > 0.001) {
+      let geometry = geometryForAttachment(spine, slot, attachment);
+      if (geometry && clipper.isClipping()) geometry = clippedGeometry(spine, clipper, geometry);
+      if (geometry?.triangles.length) geometries.push({ slot, attachment, ...geometry });
+    }
+    clipper.clipEndWithSlot(slot);
   }
+  clipper.clipEnd();
   return geometries;
+}
+
+function blendModeName(spine, blendMode) {
+  if (blendMode === spine.BlendMode.Additive) return 'additive';
+  if (blendMode === spine.BlendMode.Multiply) return 'multiply';
+  if (blendMode === spine.BlendMode.Screen) return 'screen';
+  return 'normal';
 }
 
 function extendBounds(bounds, geometries) {
@@ -544,6 +588,14 @@ function renderFrameLayers(spine, skeleton, texturePages, transform) {
     const page = texturePages.get(pageName) ?? texturePages.values().next().value;
     if (!page) continue;
     const opacity = Math.max(0, Math.min(1, skeleton.color.a * slot.color.a * attachment.color.a));
+    const tint = [
+      skeleton.color.r * slot.color.r * attachment.color.r,
+      skeleton.color.g * slot.color.g * attachment.color.g,
+      skeleton.color.b * slot.color.b * attachment.color.b,
+    ];
+    const darkTint = slot.darkColor
+      ? [slot.darkColor.r, slot.darkColor.g, slot.darkColor.b]
+      : [0, 0, 0];
     const projectedVertices = new Float64Array(vertices.length);
     for (let index = 0; index < vertices.length; index += 2) {
       [projectedVertices[index], projectedVertices[index + 1]] = project(vertices[index], vertices[index + 1]);
@@ -554,6 +606,9 @@ function renderFrameLayers(spine, skeleton, texturePages, transform) {
       triangles,
       texture: page,
       opacity,
+      tint,
+      darkTint,
+      blendMode: blendModeName(spine, slot.data.blendMode),
     });
   }
   return layers;

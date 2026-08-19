@@ -1,39 +1,47 @@
-# Pet Ark Control Center
+# Control Center
 
-Control Center 是 Standalone Desktop Pet 的独立管理界面。它使用 Tauri 2、Svelte 和一个只暴露白名单命令的 Rust backend；关闭窗口不会结束或替换原生 C / Wayland 桌宠。
+Control Center 是 Standalone 桌宠的单窗口管理界面。关闭控制中心不会停止桌宠。
 
-所有视觉建议和组件约束集中在 `docs/control-center-design-system.md` 与 `control-center/src/design-tokens.css`；`npm run check:design` 禁止页面样式重新引入散落的原始颜色和动效时长。
+## 实例上下文
 
-## 边界
+标题栏实例选择器控制整个窗口：
+
+- 运行总览显示所选实例的角色、动作、PID 与参数；
+- 桌宠设置读取并写入所选实例配置；
+- 运行日志打开时直接显示所选实例最新 journald 输出；
+- 服务管理负责所选实例的启停、重启和登录自启；
+- 编队页负责实例创建、快速切换与互动测试。
+
+默认实例配置位于 `~/.config/pet-ark/runtime.env`。其他实例位于 `~/.config/pet-ark/instances/<id>.env`。
+
+## 控制链路
 
 ```text
 Svelte UI
-  └─ Tauri invoke（白名单）
-       ├─ systemctl --user：start / stop / restart / enable / disable
-       ├─ journalctl --user：按实例只读 service 日志
-       ├─ runtime.env / instances/*.env：原子保存持久配置
-       └─ control.sock / <instance>.sock：受限 JSON runtime commands
-             └─ 原生 C / Wayland 桌宠
+  └─ Tauri commands
+       ├─ systemctl --user
+       ├─ journalctl --user
+       ├─ runtime.env / instances/*.env
+       └─ $XDG_RUNTIME_DIR/pet-ark/*.sock
+              └─ native Wayland runtime
 ```
 
-WebView 没有通用 shell、文件系统或网络权限。角色和皮肤选择必须存在于 standalone registry；所有 ID 都限制为字母、数字、点、下划线和连字符。运行时 socket 位于 `$XDG_RUNTIME_DIR/pet-ark/control.sock`，权限为当前用户读写。
+角色和外观必须存在于 Standalone registry。实例 ID 支持字母、数字、点、下划线和连字符。
 
-## 功能
+## 参数行为
 
-- 总览：服务、PID、角色/皮肤、行为、动画、scale、speed 和开关状态；
-- 编队：创建并选择最多 8 个独立实例，集中管理启停、重启、自启和即时互动；桌面事件感知是单独可关闭的只读 capability；
-- 设置：角色、皮肤、大小、速度、自动移动、点击穿透和显示器；大小与速度同时提供滑块和精确数值输入；
-- 日志：按选中实例读取 journald 记录并按内容筛选，进入页面或手动刷新后定位到最新输出；
-- 服务：集中提供启动、停止、重启和“开机 / 登录后自启”开关，总览页不重复放置这些操作；
-- 预览：直接读取所选外观的 runtime manifest 与 idle atlas，不读取 Codex spritesheet。
+大小和速度同时提供滑块、数值输入与微调按钮。角色、外观、大小、速度、自动移动和点击穿透通过 socket 实时应用；显示器编号改变时重启所选实例。
 
-大小、速度、角色、皮肤、自动移动与点击穿透通过 control socket 实时生效。设置页只有一个“应用设置”动作；当显示器编号发生变化时它会自动重启服务以重建 Wayland surface，否则直接实时应用。所有设置同时原子写入 `~/.config/pet-ark/runtime.env`。
+登录自启对应：
 
-“开机 / 登录后自启”对应 `systemctl --user enable pet-ark.service`，默认关闭；桌宠需要 Wayland 桌面会话，因此语义是开机后进入用户桌面时启动，不会在图形登录前运行，也不会自动启用 user lingering。
+```bash
+systemctl --user enable pet-ark.service
+systemctl --user enable pet-ark@<id>.service
+```
 
-## 本地 JSON 控制协议
+## JSON 控制协议
 
-每次 Unix stream 连接发送一个 JSON 请求并接收一个 JSON 响应：
+每个 Unix stream 连接发送一个 JSON 请求并读取一个 JSON 响应：
 
 ```json
 {"command":"get_status"}
@@ -43,7 +51,6 @@ WebView 没有通用 shell、文件系统或网络权限。角色和皮肤选择
 {"command":"set_click_through","value":false}
 {"command":"select","character":"amiya","variant":"default"}
 {"command":"react","event":"attention"}
-{"command":"quit"}
 ```
 
 命令行客户端：
@@ -51,37 +58,22 @@ WebView 没有通用 shell、文件系统或网络权限。角色和皮肤选择
 ```bash
 npm run standalone:control -- status
 npm run standalone:control -- --instance mon3tr-side status
-npm run standalone:control -- scale 0.85
-npm run standalone:control -- select amiya skin-winter-1
+npm run standalone:control -- --instance mon3tr-side scale 0.85
 ```
 
-## 开发和部署
-
-Fedora 开发依赖包括 Rust、Node.js、`webkit2gtk4.1-devel` 和原有 standalone native dependencies。安装依赖并检查：
+## 开发与部署
 
 ```bash
 npm run control:center:install
 npm run control:center:check
-cargo test --manifest-path control-center/src-tauri/Cargo.toml
-```
-
-开发启动：
-
-```bash
 npm run control:center:dev
 ```
 
-构建 release 并安装到当前用户的应用菜单：
+Release 部署：
 
 ```bash
 npm run control:center:build
 npm run control:center:deploy
 ```
 
-用户服务安装默认启动但不启用登录自启：
-
-```bash
-npm run standalone:service:install
-```
-
-只有显式传入 `--enable` 才会启用登录时启动。
+部署产物安装到 `standalone/dist/app/bin/pet-ark-control-center`，并写入当前用户的应用菜单。

@@ -10,7 +10,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 const variant = path.join(root, 'standalone/assets/cleaned/mon3tr/skin-boc-11');
 const manifest = JSON.parse(await fs.readFile(path.join(variant, 'manifest.json'), 'utf8'));
 
-assert.equal(manifest.render_revision, 3, 'Mon3tr sharp skin must use the current Spine renderer');
+assert.ok(manifest.render_revision >= 3, 'Mon3tr sharp skin must use the core-placement renderer');
 assert.equal(
   manifest.placement.bounds_policy,
   'core-character-envelope',
@@ -51,8 +51,23 @@ const densityVisible = await visibleMetrics(path.join(densityVariant, 'relax/000
 assert.ok(densityVisible.width >= 70, `density-corrected frame is too narrow: ${densityVisible.width}px`);
 assert.ok(densityVisible.height >= 130, `density-corrected frame is too short: ${densityVisible.height}px`);
 
+const angelinaVariant = path.join(root, 'standalone/assets/cleaned/angelina-the-mellow-wish/default');
+const angelinaManifest = JSON.parse(await fs.readFile(path.join(angelinaVariant, 'manifest.json'), 'utf8'));
+assert.ok(angelinaManifest.render_revision >= 4, 'Angelina closed-eye frames require Spine tint and clipping');
+const angelinaClosed = await sharp(path.join(angelinaVariant, 'interact/007.png'))
+  .ensureAlpha()
+  .raw()
+  .toBuffer({ resolveWithObject: true });
+const eyeProbe = (83 * angelinaClosed.info.width + 72) * angelinaClosed.info.channels;
+const [eyeRed, eyeGreen, eyeBlue, eyeAlpha] = angelinaClosed.data.subarray(eyeProbe, eyeProbe + 4);
+assert.ok(eyeAlpha > 200, 'Angelina closed-eye probe must remain visible');
+assert.ok(
+  Math.max(eyeRed, eyeGreen, eyeBlue) - Math.min(eyeRed, eyeGreen, eyeBlue) < 16,
+  `Angelina closed-eye mask leaked the open red iris: ${eyeRed},${eyeGreen},${eyeBlue}`,
+);
+
 console.log(
   `OK: Spine placement regression (Mon3tr sharp scale=${manifest.placement.scale}, `
   + `visible=${mon3trVisible.width}x${mon3trVisible.height}, pixels=${mon3trVisible.pixels}; `
-  + `Lunacub=${densityVisible.width}x${densityVisible.height})`,
+  + `Lunacub=${densityVisible.width}x${densityVisible.height}; Angelina eye=${eyeRed},${eyeGreen},${eyeBlue})`,
 );

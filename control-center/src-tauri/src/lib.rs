@@ -302,6 +302,11 @@ fn service_status() -> Result<ServiceStatus, String> {
 }
 
 #[tauri::command]
+fn instance_service_status(id: String) -> Result<ServiceStatus, String> {
+    service_status_for(&instance_unit(&id)?)
+}
+
+#[tauri::command]
 fn service_action(action: String) -> Result<ServiceStatus, String> {
     if !matches!(action.as_str(), "start" | "stop" | "restart") {
         return Err("unsupported service action".into());
@@ -362,6 +367,11 @@ fn runtime_status() -> Result<RuntimeStatus, String> {
     send_control(json!({ "command": "get_status" }))
 }
 
+#[tauri::command]
+fn instance_runtime_status(id: String) -> Result<RuntimeStatus, String> {
+    send_control_to(&id, json!({ "command": "get_status" }))
+}
+
 fn parse_bool(value: &str) -> Option<bool> {
     match value {
         "1" | "true" | "yes" | "on" => Some(true),
@@ -407,6 +417,11 @@ fn load_config_from(path: &PathBuf) -> RuntimeConfig {
 fn load_config() -> Result<RuntimeConfig, String> {
     let path = config_path()?;
     Ok(load_config_from(&path))
+}
+
+#[tauri::command]
+fn load_instance_config(id: String) -> Result<RuntimeConfig, String> {
+    Ok(load_config_from(&instance_config_path(&id)?))
 }
 
 fn valid_id(value: &str) -> bool {
@@ -479,29 +494,44 @@ PET_ARK_AUTO_MOVE={}\nPET_ARK_CLICK_THROUGH={}\nPET_ARK_MONITOR={}\nPET_ARK_VERB
     fs::rename(&temporary, &path).map_err(|error| format!("cannot replace config: {error}"))
 }
 
-fn write_config(config: &RuntimeConfig) -> Result<(), String> {
-    write_config_to(config_path()?, config)
+#[tauri::command]
+fn save_config(config: RuntimeConfig, restart: bool) -> Result<Option<RuntimeStatus>, String> {
+    save_instance_config("default".into(), config, restart)
 }
 
 #[tauri::command]
-fn save_config(config: RuntimeConfig, restart: bool) -> Result<Option<RuntimeStatus>, String> {
-    write_config(&config)?;
+fn save_instance_config(
+    id: String,
+    config: RuntimeConfig,
+    restart: bool,
+) -> Result<Option<RuntimeStatus>, String> {
+    write_config_to(instance_config_path(&id)?, &config)?;
     if restart {
-        service_action("restart".into())?;
+        let unit = instance_unit(&id)?;
+        let output = systemctl(&["restart", &unit])?;
+        if !output.status.success() {
+            return Err(output_error("instance restart", &output));
+        }
         std::thread::sleep(Duration::from_millis(350));
-        return Ok(runtime_status().ok());
+        return Ok(send_control_to(&id, json!({ "command": "get_status" })).ok());
     }
-    if !service_status()?.active {
+    if !service_status_for(&instance_unit(&id)?)?.active {
         return Ok(None);
     }
-    send_control(
+    send_control_to(
+        &id,
         json!({ "command": "select", "character": config.character, "variant": config.variant }),
     )?;
-    send_control(json!({ "command": "set_scale", "value": config.scale }))?;
-    send_control(json!({ "command": "set_speed", "value": config.speed }))?;
-    send_control(json!({ "command": "set_auto_move", "value": config.auto_move }))?;
-    let status =
-        send_control(json!({ "command": "set_click_through", "value": config.click_through }))?;
+    send_control_to(&id, json!({ "command": "set_scale", "value": config.scale }))?;
+    send_control_to(&id, json!({ "command": "set_speed", "value": config.speed }))?;
+    send_control_to(
+        &id,
+        json!({ "command": "set_auto_move", "value": config.auto_move }),
+    )?;
+    let status = send_control_to(
+        &id,
+        json!({ "command": "set_click_through", "value": config.click_through }),
+    )?;
     Ok(Some(status))
 }
 
@@ -771,11 +801,15 @@ pub fn run() {
     tauri::Builder::default()
         .invoke_handler(tauri::generate_handler![
             service_status,
+            instance_service_status,
             service_action,
             set_autostart,
             runtime_status,
+            instance_runtime_status,
             load_config,
+            load_instance_config,
             save_config,
+            save_instance_config,
             list_characters,
             preview_asset,
             read_logs,

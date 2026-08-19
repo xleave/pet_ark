@@ -1,23 +1,22 @@
 # 角色数据
 
-这里保存 Codex 与独立桌宠都能复用的角色身份和来源元数据，不包含任一运行时的状态假设。
+此目录保存 Codex 与 Standalone 共用的角色身份、外观范围和来源记录。
 
-## 文件
+| 文件 | 用途 |
+|---|---|
+| `operators.json` | Codex roster、renderer 与视觉签名 |
+| `codex-sources.json` | Codex 数据来源、获取日期与归一化统计 |
+| `standalone-roster.json` | 425 个角色、508 个皮肤、933 个外观 |
+| `standalone-sources.json` | Standalone 来源范围与统计 |
+| `sources.json` | 跨产线来源索引与早期记录 |
 
-- `operators.json`：Codex 可玩角色 source-of-truth。每个条目包含稳定来源 ID、名称、实现状态、renderer、`visual_signature`，以及代码绘制 renderer 实际使用的 hair、face、outfit、palette、species、equipment、directional 等数据。
-- `codex-sources.json`：Codex roster 的来源、获取日期、范围与去重统计。
-- `standalone-roster.json`：2026-08-12 获取的 standalone source-of-truth；包含 425 个正式可玩角色、每个角色的默认外观、508 个皮肤和共 933 个 PRTS `基建` Q 版 asset set。
-- `standalone-sources.json`：standalone roster 的来源、范围、日期、可用/不完整统计和 alter 审计来源。
-- `sources.json`：跨产线来源索引与早期逐角色记录；新增 standalone 全量实现以 `standalone-roster.json` / `standalone-sources.json` 为准。
+## 数据边界
 
-两条产线只共享角色 ID、名称、来源与可复用的视觉元数据：
+共享层保存稳定 ID、名称、来源页、game key、skin ID 和可复用视觉元数据。Codex 的 atlas 行/帧约束与 Standalone 的状态机/Wayland 设置分别留在各自目录。
 
-- Codex 的 8 × 9 atlas、九行状态和帧数约束不会进入 standalone runtime。
-- standalone 的窗口、桌面移动和状态机不会进入 Codex renderer。
+## Codex roster
 
-## Codex roster 刷新
-
-从本地已获取的索引、游戏数据与临时视觉分析输入重新编译 roster：
+刷新工具：
 
 ```bash
 python3 shared/asset-tools/compile-roster.py \
@@ -27,27 +26,17 @@ python3 shared/asset-tools/compile-roster.py \
   --output shared/character-data/operators.json
 ```
 
-编译器会在索引条目缺少游戏数据映射或视觉分析输入时失败。刷新时还必须更新 `codex-sources.json` 的获取日期和 normalization 统计，并重新执行完整 Codex build 与 validation。
+刷新后同步 `codex-sources.json`，再运行 Codex 全量构建与验证。临时头像只用于视觉分析，不复制到 registry 或生成产物。
 
-角色头像只作为临时分析输入，不会复制到 registry 或 Codex 生成物中。
+## Standalone roster
 
-## Standalone roster 与素材记录
+Standalone 从可玩角色记录出发，再通过 PRTS `char_spine/{game_key}/meta.json` 枚举默认外观和命名皮肤。每个 variant 记录：
 
-Standalone 身份范围先来自 425 条可玩角色记录，再由 PRTS 公开 `char_spine/{game_key}/meta.json` 机器枚举默认外观和命名皮肤。正式 playable alter 不合并；皮肤作为所属角色的 variant，不作为动画状态。当前统计为：
+- `character_id`、`variant_id`、`variant_type`；
+- `skin_id`、名称与默认标志；
+- `source_page`、`source_meta`、model、skeleton、atlas 与 texture；
+- source 状态。
 
-- expected characters：425；
-- expected default appearances：425；
-- expected skins：508；
-- expected variants：933；
-- indexed variants lacking a public `基建` asset set：0。
+实际获取记录位于 `standalone/assets/source/<character>/<variant>/retrieval.json`。运行时覆盖以 `standalone/dist/coverage.json` 为准，动作覆盖以 `standalone/dist/animation-coverage.json` 为准。
 
-每个 variant 在 `standalone-roster.json` 中至少记录：
-
-- `character_id`、角色名称、`variant_id` 和 `variant_type`；
-- `skin_id`、`skin_name` 和默认形象标志；
-- `source_page`、`source_meta` 与 `.skel` / `.atlas` / texture / model asset set；
-- source 状态和无法实现原因（如适用）。
-
-每次实际获取还会在 `standalone/assets/source/<character>/<variant>/retrieval.json` 保存来源、日期、文件路径、原始动作和处理状态。source roster 数量不代表 runtime 已完成；actual implemented/missing/blocked 由 `standalone/dist/coverage.json` 计算。
-
-AI/image2 或等效 image-to-image 补帧不能写成原始素材。逐序列的 character、variant/skin、A/B 源帧、生成帧路径、接受状态、评审结论和 accepted runtime usage 记录在 `standalone/assets/generated/manifest.json`。当前 14 个 accepted 序列 / 14 帧已进入 runtime，2 个 rejected 序列只保留审计记录。
+生成补间的输入、输出、评审与使用位置位于 `standalone/assets/generated/manifest.json`。来源和权利说明见根目录 [`THIRD_PARTY_NOTICES.md`](../../THIRD_PARTY_NOTICES.md)。

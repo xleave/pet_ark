@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "angelina-the-mellow-wish",
   "character_name": "Angelina the Mellow Wish",
   "localized_name": "予愿安洁莉娜",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -249.17754,
-      "maxX": 274.8175,
-      "minY": -140.98212,
+      "minX": -249.08833,
+      "maxX": 275.00964,
+      "minY": -139.61081,
+      "maxY": 464.16119
+    },
+    "full_source_bounds": {
+      "minX": -249.08833,
+      "maxX": 275.00964,
+      "minY": -139.61081,
+      "maxY": 464.16119
+    },
+    "core_source_bounds": {
+      "minX": -249.08833,
+      "maxX": 275.00964,
+      "minY": -139.61081,
       "maxY": 460.4986
     },
-    "scale": 0.33588,
-    "x_offset": 91.69401,
-    "y_offset": 168.64678,
+    "cluster": {
+      "retained": 3001,
+      "total": 3001,
+      "centerX": -14.70984,
+      "centerY": 234.61654,
+      "radiusX": 498.464,
+      "radiusY": 668.51683
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 161,
+      "visible_height": 144,
+      "density_zoom": 1
+    },
+    "scale": 0.33582,
+    "x_offset": 91.64762,
+    "y_offset": 169.11659,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:55.991Z"
+  "exported_at": "2026-08-19T05:48:32.217Z"
 }

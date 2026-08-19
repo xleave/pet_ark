@@ -1,51 +1,66 @@
-# 多桌宠与桌面交互设计
+# 多桌宠与桌面互动
 
 ## 多实例模型
 
-多桌宠采用“一个实例一个原生进程/Wayland surface”，不把多个角色塞进同一个渲染循环。这样单个素材或协议故障不会拖垮全部桌宠，也能独立设置显示器、大小、速度、层级和交互策略。
+每只桌宠运行在独立进程和 Wayland surface 中：
 
 ```text
-Pet Ark Manager
-  ├─ instance: amiya-main  → pet-ark@amiya-main.service → amiya-main.sock
-  ├─ instance: mon3tr-side → pet-ark@mon3tr-side.service → mon3tr-side.sock
-  └─ instance: mascot      → pet-ark@mascot.service     → mascot.sock
+default       → pet-ark.service          → control.sock
+amiya-side    → pet-ark@amiya-side       → amiya-side.sock
+mon3tr-side   → pet-ark@mon3tr-side      → mon3tr-side.sock
 ```
 
-实例注册表保存到 `~/.config/pet-ark/instances.json`，单实例配置位于 `~/.config/pet-ark/instances/<id>.env`。运行时 socket 使用 `$XDG_RUNTIME_DIR/pet-ark/<id>.sock`，systemd 使用 `pet-ark@.service` 模板。现有 `pet-ark.service` 和 `runtime.env` 迁移为 ID `default`，保持兼容。
+实例配置位于：
 
-Control Center 的总览将变为实例列表；角色、日志、启停、自启和参数操作都绑定选中实例。新增/复制实例是普通操作，删除实例需要二次确认且只删除该实例配置，不删除角色资产。
+```text
+~/.config/pet-ark/runtime.env
+~/.config/pet-ark/instances/<id>.env
+```
 
-为避免多只桌宠重叠，manager 分配初始区域并广播其他实例的 alpha bounds。每个原生进程仍自行处理动画与拖动，但移动目标会避开其他桌宠。默认上限建议 8 个实例，并显示总内存与 surface 数。
+Control Center 使用统一实例上下文切换总览、设置、日志和服务操作。编队上限为 8 个实例。
 
-## 桌面与应用程序交互
+命令行：
 
-Wayland 不允许普通客户端任意读取所有窗口或注入全局输入，因此交互必须通过独立、可关闭的 `desktop-context-broker`，不能把 compositor 私有权限直接塞进动画进程。
+```bash
+npm run standalone:instance -- list
+npm run standalone:instance -- create mon3tr-side mon3tr default
+npm run standalone:control -- --instance mon3tr-side status
+```
 
-第一阶段只读感知：
+## niri 事件 broker
 
-- 当前 workspace、focused app ID、窗口标题与可见矩形；
-- 显示器工作区和窗口边缘；
-- 锁屏、全屏、演示和空闲状态。
+`pet-ark-context.service` 运行 `scripts/pet-ark-context-broker.mjs` 并订阅 niri event stream。当前事件映射：
 
-niri 适配器使用其 JSON event stream；KDE/GNOME 后续使用各自受支持接口。broker 将统一事件发送给 manager，桌宠只能收到去敏后的结构化上下文，不读取窗口内容。
+| 桌面事件 | 桌宠反应 |
+|---|---|
+| 工作区 / 焦点变化 | `attention` 或 `wake` |
+| 桌宠社交计时 | 轮换实例发送 `celebrate` / `attention` |
+| broker 启动或重连 | 刷新实例与活动窗口状态 |
 
-首批安全行为包括：靠在活动窗口边缘、避让最大化窗口、切换应用时播放反应、全屏时自动安静/隐藏、在空桌面恢复巡游。任何会打开 URI、文件或应用的动作必须通过 xdg-desktop-portal 和用户确认。
+社交事件使用随机间隔和轮换目标，避免所有桌宠同步播放相同动作。
 
-默认禁止全局键鼠注入、读取剪贴板、截取窗口内容和按窗口标题执行 shell。若以后加入自动化，必须是单独 capability、应用级 allowlist、可见审计日志和随时可撤销的授权。
+启停：
 
-## 实施顺序
+```bash
+systemctl --user start pet-ark-context.service
+systemctl --user stop pet-ark-context.service
+```
 
-1. 实例 ID、独立 socket 和 `pet-ark@.service`；
-2. Control Center 实例列表、复制/新增与逐实例日志；
-3. manager 的碰撞避让和资源预算；
-4. niri 只读 broker 与窗口边缘/全屏行为；
-5. portal 动作和其他 compositor adapter。
+可用环境变量：
 
-这样多实例基础不依赖某个桌面环境，桌面交互也不会破坏原生桌宠的最小权限边界。
+```text
+PET_ARK_CONTEXT_FOCUS=false
+PET_ARK_CONTEXT_SOCIAL=false
+```
 
-## 已落地的第一阶段
+## 互动演进
 
-- 原生 runtime 接受 `PET_ARK_INSTANCE` / `--instance`。默认实例继续使用 `control.sock`，其他实例使用 `<id>.sock`；状态响应包含实例 ID，初始位置与随机行为种子也按实例打散。
-- `pet-ark@.service` 从 `~/.config/pet-ark/instances/<id>.env` 启动独立实例；`npm run standalone:instance -- create <id>` 会校验 registry 后创建并启动实例。
-- `pet-ark-context.service` 运行只读 niri event-stream broker。它对焦点、工作区和多桌宠社交时刻发送受限的 `wake`、`attention`、`celebrate` 事件，不注入键鼠、不读取窗口内容，也不依赖轮询。
-- 多桌宠“社交时刻”带抖动间隔和轮换目标，避免所有角色机械地同步播放同一动作；可用 `PET_ARK_CONTEXT_FOCUS=false` 或 `PET_ARK_CONTEXT_SOCIAL=false` 分别关闭。
+下一阶段沿用桌面环境的成熟接口：
+
+1. 使用 niri window/layout 信息让桌宠靠近活动窗口边缘并避让全屏区域；
+2. 引入跨实例位置广播，减少桌宠重叠并增加追逐、会合、接力等社交动作；
+3. 使用 `xdg-desktop-portal` 打开 URI、文件或应用，为角色动作配置可见的快捷行为；
+4. 为 KDE/GNOME 增加独立 adapter，保持事件模型一致；
+5. 在控制中心提供事件时间线和逐实例互动强度。
+
+桌宠运行时只接收 `wake`、`attention`、`celebrate` 等结构化事件；桌面环境适配保留在 broker 中，避免将 compositor 逻辑耦合到动画进程。

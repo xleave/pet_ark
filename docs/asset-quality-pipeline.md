@@ -1,22 +1,54 @@
 # 增量资产质量管线
 
-全量重新导出 933 个外观耗时长，也会让一个构建器改动同时扩大到整个仓库。资产维护改为四级增量流程：
+资产修复以“索引 → 计划 → 单变体重建 → 抽查”为主，不需要为一个构图问题重新导出全部 933 个外观。
 
-1. `npm run standalone:quality` 只读取 cleaned/runtime manifest 与 idle hitbox，通常一秒内生成 `standalone/dist/asset-quality.json`；
-2. 候选通过 `npm run standalone:quality:plan` 运行 Spine placement dry-run，只计算新旧边界与预期缩放，不编码 PNG；
-3. 仅重建当前导出器预测缩放至少改善 20% 的变体，逐变体原子替换 cleaned/runtime atlas；完整/核心边界策略仍记录在每个 manifest 中，不把“必须切换到核心边界”误当成重建前提；
-4. 对变更集合运行代表帧、动作覆盖和一次 compositor 抽查；全量验证留给定时任务或构建器大版本升级。
+## 当前状态
 
-质量索引同时使用 placement scale、同角色默认外观比例、idle 可见宽高和渲染修订号。它是修复队列而不是最终视觉结论：大型机械单位、远端 companion 或有意留白仍需人工确认。
+`standalone/dist/asset-quality.json` 当前统计：
 
-当前基线为 933 个外观：346 pass、281 critical、109 high、197 review。Mon3tr“锋锐”已从 critical 修复为 pass。报告中的 `reasons` 可用于批量选择同类问题，例如 `placement-scale-critical`、`idle-width-critical` 和 `variant-default-scale-drift`。
+| 分类 | 数量 |
+|---|---:|
+| 外观总数 | 933 |
+| pass | 703 |
+| review | 230 |
+| critical / high | 0 / 0 |
 
-新的 Spine 导出器有两项关键改进：
+`review` 是人工构图复核队列，常见对象包括大型机械单位、远端 companion 与有意留白。Mon3tr“锋锐”已有独立的可见像素和主体比例回归门禁。
 
-- 从角色 PRTS 页面动态发现当前 SpineViewer source map，不再依赖易失效的静态哈希；
-- 同时计算完整特效边界，以及由 setup pose 锚定、吸收邻近常规动作几何的核心角色边界。完整边界把主体密度压到核心边界的 78% 以下时切换，完整边界仍写入 manifest 供审计。
-- 在编码前用 Relax/Default 代表帧做 alpha 像素密度反馈；若角色仍过小，则在统一自然比例上限内重算整套动作的缩放、水平中心和落地点，而不是逐帧放大造成动画跳动。
+## 工作流
 
-`npm run standalone:quality:repair` 读取计划并进行有界并行重建。单个外观失败会隔离到 `standalone/dist/spine-repair-results.json`，不会终止其余队列；全部 worker 结束后只统一刷新一次 registry、dist runtime 和质量报告。`--severity`、`--limit`、`--concurrency` 可用于本地分批执行。
+1. 更新快速索引：
 
-Spine 原始 `Special` / `Interact` 动作可能包含完全透明的变身或位移节拍。导出器会在像素编码阶段探测它们，并向 cleaned manifest 写入带 `blank_policy_revision`、帧号和具体原因的显式声明；核心 idle/move/sit/sleep 等动作出现未声明透明帧仍会使构建失败，不能用 1×1 hitbox 悄悄掩盖。
+   ```bash
+   npm run standalone:quality
+   ```
+
+2. 对候选执行 placement dry-run：
+
+   ```bash
+   npm run standalone:quality:plan
+   ```
+
+3. 重建计划中的变体：
+
+   ```bash
+   npm run standalone:quality:repair
+   ```
+
+4. 检查代表帧、动作 strip 与实际桌面显示。
+
+质量索引结合 placement scale、同角色默认外观比例、idle 可见宽高和渲染修订号。修复器只处理预计有明确改善的候选，并原子替换 cleaned/runtime 产物。
+
+## 导出清晰度策略
+
+- 从 PRTS 角色页动态发现 SpineViewer source map，减少静态构建哈希失效；
+- 同时记录完整动画边界与核心角色边界；
+- setup pose attachment 聚类用于识别主体，远端特效不再主导缩放；
+- Relax/Default 代表帧执行像素密度探测，主体过小时统一提高所有动作的渲染比例；
+- CPU 合成器处理 Spine light/dark tint、slot blend mode 与 clipping attachment；
+- `placement_revision` 与 `render_revision` 变化会使旧缓存失效；
+- 超出桌宠画布的远端特效可以裁切，角色主体、武器和 companion 进入人工复核。
+
+全量 coverage 与动作完整性由 `standalone:validate-all` 管理；本流程只负责清晰度和构图风险。
+
+予愿安洁莉娜的闭眼帧是 render revision 4 的回归样例：眼睑 tint 与 clipping 必须完整遮挡 open-eye attachment。后续触达的旧外观会按 revision 增量重建。

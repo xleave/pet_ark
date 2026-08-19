@@ -55,6 +55,7 @@
   let preview: PreviewAsset | null = null;
   let previewFrame = 0;
   let previewTimer: number | undefined;
+  let instanceSelectionVersion = 0;
   let loading = true;
   let saving = false;
   let notice = '正在连接桌宠运行时…';
@@ -84,14 +85,54 @@
   }
 
   async function refreshStatus(silent = false) {
+    const instance = selectedInstanceId;
     try {
-      service = await invoke<ServiceStatus>('service_status');
-      runtime = service.active ? await invoke<RuntimeStatus>('runtime_status') : null;
-      if (!silent) notify(runtime ? '运行时连接正常' : '桌宠服务当前未运行', runtime ? 'ok' : 'info');
+      const nextService = await invoke<ServiceStatus>('instance_service_status', { id: instance });
+      const nextRuntime = nextService.active
+        ? await invoke<RuntimeStatus>('instance_runtime_status', { id: instance })
+        : null;
+      if (instance !== selectedInstanceId) return;
+      service = nextService;
+      runtime = nextRuntime;
+      if (!silent) notify(runtime ? `${instance} 已连接` : `${instance} 已停止`, runtime ? 'ok' : 'info');
     } catch (error) {
+      if (instance !== selectedInstanceId) return;
       runtime = null;
       if (!silent) notify(String(error), 'error');
     }
+  }
+
+  async function selectInstance(id: string, announce = false) {
+    if (!id) return;
+    const version = ++instanceSelectionVersion;
+    selectedInstanceId = id;
+    try {
+      const [nextConfig, nextService] = await Promise.all([
+        invoke<RuntimeConfig>('load_instance_config', { id }),
+        invoke<ServiceStatus>('instance_service_status', { id }),
+      ]);
+      const nextRuntime = nextService.active
+        ? await invoke<RuntimeStatus>('instance_runtime_status', { id })
+        : null;
+      if (version !== instanceSelectionVersion || id !== selectedInstanceId) return;
+      config = nextConfig;
+      service = nextService;
+      runtime = nextRuntime;
+      await loadPreview();
+      notify(
+        announce ? `已切换到 ${id}` : nextRuntime ? `${id} 已连接` : `${id} 已停止`,
+        nextRuntime ? 'ok' : 'info',
+      );
+    } catch (error) {
+      if (version === instanceSelectionVersion) notify(String(error), 'error');
+    }
+  }
+
+  function instanceSelectionChanged() {
+    const id = selectedInstanceId;
+    void selectInstance(id, true).then(() => {
+      if (section === 'logs') void refreshLogs(true);
+    });
   }
 
   async function refreshFleet(silent = true) {
@@ -100,7 +141,9 @@
         invoke<PetInstance[]>('list_instances'),
         invoke<ServiceStatus>('context_status'),
       ]);
-      if (!instances.some((entry) => entry.id === selectedInstanceId)) selectedInstanceId = instances[0]?.id ?? 'default';
+      if (!instances.some((entry) => entry.id === selectedInstanceId)) {
+        await selectInstance(instances[0]?.id ?? 'default');
+      }
     } catch (error) {
       if (!silent) notify(String(error), 'error');
     }
@@ -145,7 +188,7 @@
   async function serviceAction(action: 'start' | 'stop' | 'restart') {
     try {
       notify(`${action === 'start' ? '启动' : action === 'stop' ? '停止' : '重启'}请求已发送…`);
-      await invoke('service_action', { action });
+      instances = await invoke<PetInstance[]>('instance_action', { id: selectedInstanceId, action });
       await new Promise((resolve) => setTimeout(resolve, 500));
       await refreshStatus();
     } catch (error) {
@@ -162,9 +205,14 @@
         speed: Math.min(5, Math.max(0.1, Number(config.speed) || 1)),
         monitor: Math.min(15, Math.max(0, Math.trunc(Number(config.monitor) || 0))),
       };
-      runtime = await invoke<RuntimeStatus | null>('save_config', { config, restart });
+      runtime = await invoke<RuntimeStatus | null>('save_instance_config', {
+        id: selectedInstanceId,
+        config,
+        restart,
+      });
       notify(restart ? '配置已保存并重启服务' : '配置已保存并实时应用', 'ok');
-      service = await invoke<ServiceStatus>('service_status');
+      await refreshFleet();
+      service = await invoke<ServiceStatus>('instance_service_status', { id: selectedInstanceId });
     } catch (error) {
       notify(String(error), 'error');
     } finally {
@@ -174,7 +222,11 @@
 
   async function toggleAutostart() {
     try {
-      service = await invoke<ServiceStatus>('set_autostart', { enabled: !service.autostart });
+      instances = await invoke<PetInstance[]>('set_instance_autostart', {
+        id: selectedInstanceId,
+        enabled: !service.autostart,
+      });
+      service = { ...service, autostart: !service.autostart };
       notify(service.autostart ? '已启用登录时启动' : '已关闭登录时启动', 'ok');
     } catch (error) {
       notify(String(error), 'error');
@@ -185,6 +237,8 @@
     if (!selectedInstance) return;
     try {
       instances = await invoke<PetInstance[]>('instance_action', { id: selectedInstance.id, action });
+      await new Promise((resolve) => setTimeout(resolve, 350));
+      await refreshStatus(true);
       notify(`实例 ${selectedInstance.id} 已${action === 'start' ? '启动' : action === 'stop' ? '停止' : '重启'}`, 'ok');
     } catch (error) {
       notify(String(error), 'error');
@@ -193,13 +247,14 @@
 
   async function createPetInstance() {
     try {
+      const id = newInstanceId.trim();
       instances = await invoke<PetInstance[]>('create_instance', {
-        id: newInstanceId.trim(),
+        id,
         character: newInstanceCharacter,
         variant: newInstanceVariant,
       });
-      selectedInstanceId = newInstanceId.trim();
       newInstanceId = '';
+      await selectInstance(id);
       notify('新桌宠实例已创建并启动', 'ok');
     } catch (error) {
       notify(String(error), 'error');
@@ -213,11 +268,13 @@
 
   async function toggleInstanceAutostart() {
     if (!selectedInstance) return;
+    const enabled = !selectedInstance.autostart;
     try {
       instances = await invoke<PetInstance[]>('set_instance_autostart', {
         id: selectedInstance.id,
-        enabled: !selectedInstance.autostart,
+        enabled,
       });
+      service = { ...service, autostart: enabled };
       notify('实例自启策略已更新', 'ok');
     } catch (error) {
       notify(String(error), 'error');
@@ -237,7 +294,7 @@
   async function toggleContextService() {
     try {
       contextService = await invoke<ServiceStatus>('context_action', { action: contextService.active ? 'stop' : 'start' });
-      notify(contextService.active ? '桌面只读感知已启用' : '桌面只读感知已停止', 'ok');
+      notify(contextService.active ? '桌面事件响应已启用' : '桌面事件响应已停止', 'ok');
     } catch (error) {
       notify(String(error), 'error');
     }
@@ -262,17 +319,15 @@
     let cancelled = false;
     Promise.all([
       invoke<CharacterSummary[]>('list_characters'),
-      invoke<RuntimeConfig>('load_config'),
       invoke<PetInstance[]>('list_instances'),
       invoke<ServiceStatus>('context_status'),
-    ]).then(async ([registry, saved, runningInstances, context]) => {
+    ]).then(async ([registry, runningInstances, context]) => {
       if (cancelled) return;
-      config = saved;
       characters = registry;
       instances = runningInstances;
       contextService = context;
-      await loadPreview();
-      await refreshStatus();
+      selectedInstanceId = runningInstances[0]?.id ?? 'default';
+      await selectInstance(selectedInstanceId);
       loading = false;
     }).catch((error) => {
       loading = false;
@@ -297,9 +352,15 @@
       <span class="brand-mark">PA</span>
       <div data-tauri-drag-region>
         <strong>PET ARK</strong>
-        <small>WAYLAND CONTROL TERMINAL</small>
+        <small>WAYLAND DESKTOP COMPANION</small>
       </div>
     </div>
+    <label class="instance-context">
+      <span>当前实例</span>
+      <select aria-label="当前桌宠实例" bind:value={selectedInstanceId} onchange={instanceSelectionChanged}>
+        {#each instances as instance}<option value={instance.id}>{instance.id} · {characters.find((entry) => entry.id === instance.character)?.localized_name ?? instance.character}</option>{/each}
+      </select>
+    </label>
     <div class="title-status" data-tauri-drag-region>
       <span class:online={service.active} class="status-dot"></span>
       <span>{service.active ? 'LINK ACTIVE' : 'LINK OFFLINE'}</span>
@@ -315,7 +376,7 @@
     <div class="section-label">CONTROL INDEX</div>
     <nav>
       <button class:active={section === 'overview'} onclick={() => section = 'overview'}><span>01</span>运行总览</button>
-      <button class:active={section === 'fleet'} onclick={() => { section = 'fleet'; void refreshFleet(false); }}><span>02</span>多桌宠编队</button>
+      <button class:active={section === 'fleet'} onclick={() => { section = 'fleet'; void refreshFleet(false); }}><span>02</span>桌宠编队</button>
       <button class:active={section === 'settings'} onclick={() => section = 'settings'}><span>03</span>桌宠设置</button>
       <button class:active={section === 'logs'} onclick={openLogs}><span>04</span>运行日志</button>
       <button class:active={section === 'system'} onclick={() => section = 'system'}><span>05</span>服务管理</button>
@@ -332,14 +393,12 @@
 
     {#if loading}
       <section class="loading-panel">
-        <div class="loader-ring"></div>
-        <h2>正在建立神经连接</h2>
-        <p>同步角色注册表、服务状态与运行时配置</p>
+        <div class="loader-ring"></div><h2>正在载入控制中心</h2>
       </section>
     {:else if section === 'overview'}
       <section class="page enter">
         <div class="page-heading">
-          <div><span class="eyebrow">OPERATION / 01</span><h1>运行总览</h1></div>
+          <div><span class="eyebrow">OPERATION / 01 · {selectedInstanceId}</span><h1>运行总览</h1></div>
           <button class="ghost" onclick={() => refreshStatus()}>刷新状态</button>
         </div>
         <div class="metrics-grid">
@@ -383,7 +442,7 @@
             <div class="card-title"><span>实例阵列</span><small>SELECT ONE</small></div>
             <div class="instance-grid">
               {#each instances as instance}
-                <button class:active={selectedInstance?.id === instance.id} class="instance-card" onclick={() => selectedInstanceId = instance.id}>
+                <button class:active={selectedInstance?.id === instance.id} class="instance-card" onclick={() => selectInstance(instance.id, true)}>
                   <span class:online={instance.active} class="instance-signal"></span>
                   <small>{instance.id === 'default' ? 'PRIMARY' : 'AUXILIARY'}</small>
                   <strong>{characters.find((entry) => entry.id === instance.character)?.localized_name ?? instance.character}</strong>
@@ -403,7 +462,7 @@
                 <button onclick={() => fleetAction('restart')} disabled={!selectedInstance.active}>重启</button>
                 <button class="danger-soft" onclick={() => fleetAction('stop')} disabled={!selectedInstance.active}>停止</button>
               </div>
-              <label class="switch-row"><span><b>随桌面会话自启</b><small>仅控制当前选中实例</small></span><input type="checkbox" checked={selectedInstance.autostart} onchange={toggleInstanceAutostart} /><i></i></label>
+              <label class="switch-row"><span><b>登录后自启</b></span><input type="checkbox" checked={selectedInstance.autostart} onchange={toggleInstanceAutostart} /><i></i></label>
               <div class="reaction-panel">
                 <span>即时互动测试</span>
                 <div><button onclick={() => reactInstance('attention')} disabled={!selectedInstance.active}>打招呼</button><button onclick={() => reactInstance('celebrate')} disabled={!selectedInstance.active}>庆祝一下</button><button onclick={() => reactInstance('wake')} disabled={!selectedInstance.active}>轻声唤醒</button></div>
@@ -422,17 +481,17 @@
           </article>
 
           <article class="context-card">
-            <div class="card-title"><span>桌面事件感知</span><small>READ ONLY / NIRI</small></div>
+            <div class="card-title"><span>桌面互动</span><small>NIRI EVENTS</small></div>
             <div class="capability-row">
-              <div><b>焦点响应与社交时刻</b><p>读取 niri 结构化事件，让桌宠响应工作区、应用焦点并偶发相互问候；不截屏、不读窗口内容、不注入键鼠。</p></div>
-              <button class:context-active={contextService.active} onclick={toggleContextService}>{contextService.active ? '停止感知' : '启用感知'}</button>
+              <div><b>焦点响应与社交事件</b><p>随工作区和应用焦点触发动态反应。</p></div>
+              <button class:context-active={contextService.active} onclick={toggleContextService}>{contextService.active ? '停止响应' : '启用响应'}</button>
             </div>
           </article>
         </div>
       </section>
     {:else if section === 'settings'}
       <section class="page enter">
-        <div class="page-heading"><div><span class="eyebrow">CONFIGURATION / 02</span><h1>桌宠设置</h1></div><span class="save-state">{saving ? '正在同步…' : '实时控制可用'}</span></div>
+        <div class="page-heading"><div><span class="eyebrow">CONFIGURATION / 03 · {selectedInstanceId}</span><h1>桌宠设置</h1></div><span class="save-state">{saving ? '正在同步…' : 'LIVE'}</span></div>
         <div class="settings-grid">
           <article class="settings-card wide">
             <div class="card-title"><span>角色与外观</span><small>{characters.length} OPERATORS</small></div>
@@ -468,19 +527,19 @@
           </article>
           <article class="settings-card">
             <div class="card-title"><span>行为策略</span><small>RUNTIME</small></div>
-            <label class="switch-row"><span><b>自动移动</b><small>空闲后在当前输出内巡游</small></span><input type="checkbox" bind:checked={config.auto_move} /><i></i></label>
-            <label class="switch-row"><span><b>点击穿透</b><small>允许指针穿过桌宠可见区域</small></span><input type="checkbox" bind:checked={config.click_through} /><i></i></label>
+            <label class="switch-row"><span><b>自动移动</b></span><input type="checkbox" bind:checked={config.auto_move} /><i></i></label>
+            <label class="switch-row"><span><b>点击穿透</b></span><input type="checkbox" bind:checked={config.click_through} /><i></i></label>
           </article>
           <article class="settings-card wide compact">
             <label><span>显示器编号</span><input type="number" min="0" max="15" bind:value={config.monitor} /></label>
-            <div class="settings-actions"><span>{settingsNeedRestart ? '显示器变更将自动重启桌宠' : '其余参数实时生效'}</span><button class="primary" onclick={() => save(settingsNeedRestart)} disabled={saving}>应用设置</button></div>
+            <div class="settings-actions"><span>{settingsNeedRestart ? '应用时重启实例' : '实时应用'}</span><button class="primary" onclick={() => save(settingsNeedRestart)} disabled={saving}>应用设置</button></div>
           </article>
         </div>
       </section>
     {:else if section === 'logs'}
       <section class="page logs-page enter">
-        <div class="page-heading"><div><span class="eyebrow">DIAGNOSTICS / 03</span><h1>运行日志</h1></div><button class="ghost" onclick={() => refreshLogs(true)}>刷新并定位最新</button></div>
-        <div class="log-toolbar"><select aria-label="日志实例" bind:value={selectedInstanceId} onchange={() => refreshLogs(true)}>{#each instances as instance}<option value={instance.id}>{instance.id} / {instance.character}</option>{/each}</select><input placeholder="筛选日志内容…" bind:value={logFilter} /><span>{visibleLogs.length} RECORDS</span></div>
+        <div class="page-heading"><div><span class="eyebrow">DIAGNOSTICS / 04 · {selectedInstanceId}</span><h1>运行日志</h1></div><button class="ghost" onclick={() => refreshLogs(true)}>定位最新</button></div>
+        <div class="log-toolbar"><input placeholder="筛选日志内容…" bind:value={logFilter} /><span>{visibleLogs.length} RECORDS</span></div>
         <div class="log-console" bind:this={logConsole}>
           {#if visibleLogs.length === 0}<div class="empty">当前没有匹配日志</div>{/if}
           {#each visibleLogs as entry}
@@ -490,11 +549,11 @@
       </section>
     {:else}
       <section class="page enter">
-        <div class="page-heading"><div><span class="eyebrow">SERVICE / 04</span><h1>服务管理</h1></div></div>
+        <div class="page-heading"><div><span class="eyebrow">SERVICE / 05 · {selectedInstanceId}</span><h1>服务管理</h1></div></div>
         <div class="service-layout">
           <article class="service-card hero-service">
             <span class:online={service.active} class="service-beacon"></span>
-            <div><small>PET-ARK.SERVICE</small><h2>{service.active ? 'SYSTEM NOMINAL' : 'SERVICE OFFLINE'}</h2><p>{service.state} / {service.sub_state} · PID {service.pid || '—'}</p></div>
+            <div><small>{selectedInstanceId === 'default' ? 'PET-ARK.SERVICE' : `PET-ARK@${selectedInstanceId}.SERVICE`}</small><h2>{service.active ? 'SYSTEM NOMINAL' : 'SERVICE OFFLINE'}</h2><p>{service.state} / {service.sub_state} · PID {service.pid || '—'}</p></div>
           </article>
           <article class="service-card">
             <div class="card-title"><span>进程控制</span><small>USER SERVICE</small></div>
@@ -502,13 +561,13 @@
           </article>
           <article class="service-card">
             <div class="card-title"><span>开机自启</span><small>{service.autostart ? 'ENABLED' : 'DISABLED'}</small></div>
-            <label class="switch-row"><span><b>开机 / 登录后自启</b><small>开机进入 Wayland 桌面会话后自动启动桌宠</small></span><input type="checkbox" checked={service.autostart} onchange={toggleAutostart} /><i></i></label>
+            <label class="switch-row"><span><b>登录后自启</b></span><input type="checkbox" checked={service.autostart} onchange={toggleAutostart} /><i></i></label>
           </article>
-          <article class="service-card path-card"><span>CONFIG</span><code>~/.config/pet-ark/runtime.env</code><span>CONTROL</span><code>$XDG_RUNTIME_DIR/pet-ark/control.sock</code></article>
+          <article class="service-card path-card"><span>CONFIG</span><code>{selectedInstanceId === 'default' ? '~/.config/pet-ark/runtime.env' : `~/.config/pet-ark/instances/${selectedInstanceId}.env`}</code><span>CONTROL</span><code>{selectedInstanceId === 'default' ? '$XDG_RUNTIME_DIR/pet-ark/control.sock' : `$XDG_RUNTIME_DIR/pet-ark/${selectedInstanceId}.sock`}</code></article>
         </div>
       </section>
     {/if}
   </main>
 
-  <footer><span>PET ARK CONTROL CENTER</span><span>LOCAL AUTHORITY // NO NETWORK</span><span>BUILD 0.2.1</span></footer>
+  <footer><span>PET ARK CONTROL CENTER</span><span>NATIVE WAYLAND RUNTIME</span><span>BUILD 0.3.0</span></footer>
 </div>

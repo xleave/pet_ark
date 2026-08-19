@@ -58,6 +58,10 @@ function validateInput(width, height, layers, sampleGrid) {
   for (const layer of layers) validateTexture(layer.texture);
 }
 
+function colorChannel(value, fallback) {
+  return clamp(Number.isFinite(value) ? value : fallback, 0, 1);
+}
+
 /**
  * Rasterizes draw-ordered Spine-style textured triangles to transparent RGBA.
  * Vertices are canvas pixels and UVs are normalized texture coordinates.
@@ -81,6 +85,17 @@ export function rasterizeTexturedTriangles({
   for (const layer of layers) {
     const { vertices, uvs, triangles, texture } = layer;
     const opacity = clamp(Number.isFinite(layer.opacity) ? layer.opacity : 1, 0, 1);
+    const light = [
+      colorChannel(layer.tint?.[0], 1),
+      colorChannel(layer.tint?.[1], 1),
+      colorChannel(layer.tint?.[2], 1),
+    ];
+    const dark = [
+      colorChannel(layer.darkTint?.[0], 0),
+      colorChannel(layer.darkTint?.[1], 0),
+      colorChannel(layer.darkTint?.[2], 0),
+    ];
+    const blendMode = layer.blendMode ?? 'normal';
     if (!vertices || !uvs || !triangles || opacity === 0) continue;
 
     for (let triangleIndex = 0; triangleIndex < triangles.length; triangleIndex += 3) {
@@ -138,24 +153,70 @@ export function rasterizeTexturedTriangles({
               );
               const sourceAlpha = texel[3] * opacity;
               if (sourceAlpha <= 0) continue;
+              const sourceRed = (1 - texel[0]) * dark[0] + texel[0] * light[0];
+              const sourceGreen = (1 - texel[1]) * dark[1] + texel[1] * light[1];
+              const sourceBlue = (1 - texel[2]) * dark[2] + texel[2] * light[2];
 
               const sample = sampleY * sampleGrid + sampleX;
               const destination = (
                 (destinationY * width + destinationX) * samplesPerPixel + sample
               ) * 4;
+              const destinationAlpha = premultiplied[destination + 3];
+              const destinationRed = destinationAlpha > 0
+                ? premultiplied[destination] / destinationAlpha
+                : 0;
+              const destinationGreen = destinationAlpha > 0
+                ? premultiplied[destination + 1] / destinationAlpha
+                : 0;
+              const destinationBlue = destinationAlpha > 0
+                ? premultiplied[destination + 2] / destinationAlpha
+                : 0;
               const remainingAlpha = 1 - sourceAlpha;
-              premultiplied[destination] = (
-                texel[0] * sourceAlpha + premultiplied[destination] * remainingAlpha
-              );
-              premultiplied[destination + 1] = (
-                texel[1] * sourceAlpha + premultiplied[destination + 1] * remainingAlpha
-              );
-              premultiplied[destination + 2] = (
-                texel[2] * sourceAlpha + premultiplied[destination + 2] * remainingAlpha
-              );
-              premultiplied[destination + 3] = (
-                sourceAlpha + premultiplied[destination + 3] * remainingAlpha
-              );
+              if (blendMode === 'additive') {
+                premultiplied[destination] = clamp(
+                  premultiplied[destination] + sourceRed * sourceAlpha,
+                  0,
+                  1,
+                );
+                premultiplied[destination + 1] = clamp(
+                  premultiplied[destination + 1] + sourceGreen * sourceAlpha,
+                  0,
+                  1,
+                );
+                premultiplied[destination + 2] = clamp(
+                  premultiplied[destination + 2] + sourceBlue * sourceAlpha,
+                  0,
+                  1,
+                );
+              } else if (blendMode === 'multiply') {
+                premultiplied[destination] = destinationRed
+                  * (sourceRed * sourceAlpha + remainingAlpha) * destinationAlpha;
+                premultiplied[destination + 1] = destinationGreen
+                  * (sourceGreen * sourceAlpha + remainingAlpha) * destinationAlpha;
+                premultiplied[destination + 2] = destinationBlue
+                  * (sourceBlue * sourceAlpha + remainingAlpha) * destinationAlpha;
+              } else if (blendMode === 'screen') {
+                premultiplied[destination] = (
+                  sourceRed * sourceAlpha + premultiplied[destination] * remainingAlpha
+                );
+                premultiplied[destination + 1] = (
+                  sourceGreen * sourceAlpha + premultiplied[destination + 1] * remainingAlpha
+                );
+                premultiplied[destination + 2] = (
+                  sourceBlue * sourceAlpha + premultiplied[destination + 2] * remainingAlpha
+                );
+              } else {
+                premultiplied[destination] = (
+                  sourceRed * sourceAlpha + premultiplied[destination] * remainingAlpha
+                );
+                premultiplied[destination + 1] = (
+                  sourceGreen * sourceAlpha + premultiplied[destination + 1] * remainingAlpha
+                );
+                premultiplied[destination + 2] = (
+                  sourceBlue * sourceAlpha + premultiplied[destination + 2] * remainingAlpha
+                );
+              }
+              premultiplied[destination + 3] = sourceAlpha + destinationAlpha * remainingAlpha;
             }
           }
         }

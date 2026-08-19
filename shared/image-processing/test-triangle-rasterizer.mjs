@@ -44,4 +44,20 @@ const opacityOnly = rasterizeTexturedTriangles({
 });
 assert.deepEqual([...opacityOnly.data.subarray(0, 4)], [255, 0, 0, 128], 'layer opacity preserves color');
 
-console.log('Triangle rasterizer tests passed: dimensions, hidden RGB, draw order, opacity');
+const tinted = rasterizeTexturedTriangles({
+  width: 1,
+  height: 1,
+  layers: [{ ...red, tint: [0.5, 0.25, 1] }],
+  sampleGrid: 1,
+});
+assert.deepEqual([...tinted.data.subarray(0, 4)], [128, 0, 0, 255], 'light tint multiplies texture RGB');
+
+const twoColor = rasterizeTexturedTriangles({
+  width: 1,
+  height: 1,
+  layers: [{ ...geometry, texture: solidTexture(128, 128, 128), darkTint: [0.25, 0, 0] }],
+  sampleGrid: 1,
+});
+assert.deepEqual([...twoColor.data.subarray(0, 4)], [160, 128, 128, 255], 'dark tint colors dark texels');
+
+console.log('Triangle rasterizer tests passed: dimensions, hidden RGB, draw order, opacity, tint');
