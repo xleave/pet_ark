@@ -22,12 +22,12 @@
         7
       ],
       "mirror": false,
-      "provenance_id": "processed-prts-spine:relax",
+      "provenance_id": "processed-ark-models-spine:relax",
       "generated_sequence": null
     },
     "walk-left": {
-      "origin": "derived",
-      "source_animation": "derived-motion",
+      "origin": "source",
+      "source_animation": "move",
       "frame_order": [
         0,
         1,
@@ -39,12 +39,12 @@
         7
       ],
       "mirror": true,
-      "provenance_id": "walk-walk",
+      "provenance_id": "processed-ark-models-spine:move",
       "generated_sequence": null
     },
     "walk-right": {
-      "origin": "derived",
-      "source_animation": "derived-motion",
+      "origin": "source",
+      "source_animation": "move",
       "frame_order": [
         0,
         1,
@@ -56,21 +56,21 @@
         7
       ],
       "mirror": false,
-      "provenance_id": "walk-walk",
+      "provenance_id": "processed-ark-models-spine:move",
       "generated_sequence": null
     },
     "run-left": {
       "origin": "derived",
       "source_animation": "derived-motion",
       "frame_order": [
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
       ],
       "mirror": true,
       "provenance_id": "run-run",
@@ -80,14 +80,14 @@
       "origin": "derived",
       "source_animation": "derived-motion",
       "frame_order": [
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
       ],
       "mirror": false,
       "provenance_id": "run-run",
@@ -107,19 +107,19 @@
         7
       ],
       "mirror": false,
-      "provenance_id": "processed-prts-spine:interact",
+      "provenance_id": "processed-ark-models-spine:interact",
       "generated_sequence": null
     },
     "picked-up": {
       "origin": "derived",
       "source_animation": "derived-motion",
       "frame_order": [
-        16,
-        17,
-        18,
-        19,
-        20,
-        21
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
       ],
       "mirror": false,
       "provenance_id": "picked-up-grabbed",
@@ -129,12 +129,12 @@
       "origin": "derived",
       "source_animation": "derived-motion",
       "frame_order": [
-        22,
-        23,
-        24,
-        25,
-        26,
-        27
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
       ],
       "mirror": false,
       "provenance_id": "dragging-dragging",
@@ -144,6 +144,14 @@
       "origin": "derived",
       "source_animation": "derived-motion",
       "frame_order": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
         28,
         29,
         30,
@@ -151,15 +159,7 @@
         32,
         33,
         34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42,
-        43
+        35
       ],
       "mirror": false,
       "provenance_id": "dropped-settle-dropped",
@@ -169,6 +169,14 @@
       "origin": "derived",
       "source_animation": "derived-motion",
       "frame_order": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
         60,
         61,
         62,
@@ -176,15 +184,7 @@
         64,
         65,
         66,
-        67,
-        68,
-        69,
-        70,
-        71,
-        72,
-        73,
-        74,
-        75
+        67
       ],
       "mirror": false,
       "provenance_id": "rest-settle-rest",
@@ -204,13 +204,21 @@
         7
       ],
       "mirror": false,
-      "provenance_id": "processed-prts-spine:sleep",
+      "provenance_id": "processed-ark-models-spine:sleep",
       "generated_sequence": null
     },
     "wake": {
       "origin": "derived",
       "source_animation": "derived-motion",
       "frame_order": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
         76,
         77,
         78,
@@ -218,15 +226,7 @@
         80,
         81,
         82,
-        83,
-        84,
-        85,
-        86,
-        87,
-        88,
-        89,
-        90,
-        91
+        83
       ],
       "mirror": false,
       "provenance_id": "wake-settle-wake",
@@ -236,6 +236,14 @@
       "origin": "derived",
       "source_animation": "derived-motion",
       "frame_order": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
         44,
         45,
         46,
@@ -243,15 +251,7 @@
         48,
         49,
         50,
-        51,
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59
+        51
       ],
       "mirror": false,
       "provenance_id": "special-settle-special",

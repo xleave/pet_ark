@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const qualityPath = path.join(root, 'standalone/dist/asset-quality.json');
 const planPath = path.join(root, 'standalone/dist/spine-repair-plan.json');
-const exporter = path.join(root, 'shared/asset-tools/export-prts-spine.mjs');
+const exporter = path.join(root, 'shared/asset-tools/export-ark-models-spine.mjs');
 const preparer = path.join(root, 'shared/image-processing/prepare-standalone-assets.mjs');
 const runtimeRoot = path.join(root, 'standalone/assets/runtime');
 

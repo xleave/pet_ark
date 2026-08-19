@@ -1,6 +1,6 @@
 {
   "name": "pet-ark-all-characters",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "private": true,
   "type": "module",
   "description": "Auditable Arknights Codex pets and an independent Wayland desktop-pet runtime.",
@@ -31,6 +31,8 @@
     "standalone:quality:plan": "node shared/asset-tools/repair-spine-asset-quality.mjs --plan",
     "standalone:quality:repair": "node shared/asset-tools/repair-spine-asset-quality.mjs --apply",
     "standalone:source:ark-models": "node shared/asset-tools/acquire-ark-models-spine.mjs",
+    "standalone:source:audit": "node shared/asset-tools/acquire-ark-models-spine.mjs --all --audit",
+    "standalone:source:validate": "node shared/asset-tools/validate-ark-models-sources.mjs",
     "standalone:test-animation-coverage": "node shared/image-processing/test-standalone-animation-audit.mjs",
     "repository:asset-budget": "node shared/asset-tools/validate-repository-asset-budget.mjs",
     "repository:test-asset-budget": "node shared/asset-tools/test-repository-asset-budget.mjs",

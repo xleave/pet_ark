@@ -11,6 +11,7 @@ const roster = JSON.parse(await fs.readFile(ROSTER_PATH, 'utf8'));
 const sourceRecord = JSON.parse(await fs.readFile(SOURCE_RECORD_PATH, 'utf8'));
 const arkModels = sourceRecord.sources.ark_models;
 const args = process.argv.slice(2);
+const mirrorRoot = argument('--mirror');
 
 function argument(name, fallback = null) {
   const inline = args.find((value) => value.startsWith(`${name}=`));
@@ -92,7 +93,18 @@ async function fetchBuffer(url) {
         signal: AbortSignal.timeout(45_000),
         headers: { 'user-agent': 'pet-ark-asset-pipeline/0.4' },
       });
-      if (!response.ok) throw new Error(`${response.status} ${response.statusText}: ${url}`);
+      if (!response.ok) {
+        const separator = url.lastIndexOf('/');
+        const lowerFilenameUrl = `${url.slice(0, separator + 1)}${url.slice(separator + 1).toLocaleLowerCase()}`;
+        if (response.status === 404 && lowerFilenameUrl !== url) {
+          const fallback = await fetch(lowerFilenameUrl, {
+            signal: AbortSignal.timeout(45_000),
+            headers: { 'user-agent': 'pet-ark-asset-pipeline/0.4' },
+          });
+          if (fallback.ok) return Buffer.from(await fallback.arrayBuffer());
+        }
+        throw new Error(`${response.status} ${response.statusText}: ${url}`);
+      }
       return Buffer.from(await response.arrayBuffer());
     } catch (error) {
       lastError = error;
@@ -100,6 +112,20 @@ async function fetchBuffer(url) {
     }
   }
   throw lastError;
+}
+
+async function sourceBuffer(relativePath) {
+  const safePath = safeRelativeAssetPath(relativePath);
+  if (mirrorRoot) {
+    const exact = path.join(path.resolve(mirrorRoot), safePath);
+    try { return await fs.readFile(exact); }
+    catch (error) {
+      if (error.code !== 'ENOENT') throw error;
+      const lowerFilename = path.join(path.dirname(exact), path.basename(exact).toLocaleLowerCase());
+      return fs.readFile(lowerFilename);
+    }
+  }
+  return fetchBuffer(rawUrl(safePath));
 }
 
 async function fileIsPresent(filePath) {
@@ -115,12 +141,24 @@ async function readJsonIfPresent(filePath) {
   }
 }
 
-async function download(url, destination, { force = false } = {}) {
+async function resolvedAssetName(sourceDirectory, assetName) {
+  const safeName = safeRelativeAssetPath(assetName);
+  if (!mirrorRoot) return safeName;
+  const relative = safeRelativeAssetPath(`${sourceDirectory}/${safeName}`);
+  const exact = path.join(path.resolve(mirrorRoot), relative);
+  if (await fileIsPresent(exact)) return safeName;
+  const lowerName = path.basename(safeName).toLocaleLowerCase();
+  const lower = path.join(path.dirname(exact), lowerName);
+  if (await fileIsPresent(lower)) return path.posix.join(path.posix.dirname(safeName), lowerName).replace(/^\.\//, '');
+  return safeName;
+}
+
+async function download(relativeSource, destination, { force = false } = {}) {
   if (!force && await fileIsPresent(destination)) {
     const data = await fs.readFile(destination);
     return { resumed: true, bytes: data.length, sha256: createHash('sha256').update(data).digest('hex') };
   }
-  const data = await fetchBuffer(url);
+  const data = await sourceBuffer(relativeSource);
   const temporary = `${destination}.partial-${process.pid}`;
   await fs.mkdir(path.dirname(destination), { recursive: true });
   await fs.writeFile(temporary, data);
@@ -152,12 +190,50 @@ function atlasTextureNames(atlasText) {
 function sourceEntry(metadata, variant) {
   const wanted = normalizedAssetId(path.basename(variant.source_asset_set.model));
   const matches = Object.entries(metadata.data || {})
-    .filter(([, entry]) => entry.type === 'Operator' && normalizedAssetId(entry.assetId) === wanted);
+    .filter(([, entry]) => {
+      if (entry.type !== 'Operator') return false;
+      const candidates = [
+        entry.assetId,
+        ...Object.values(entry.assetList || {}).map((value) => {
+          if (typeof value !== 'string') return '';
+          return path.basename(value, path.extname(value));
+        }),
+      ];
+      return candidates.some((candidate) => normalizedAssetId(candidate) === wanted);
+    });
   if (matches.length !== 1) {
     throw new Error(`Ark-Models has ${matches.length} matches for ${path.basename(variant.source_asset_set.model)}`);
   }
   const [directory, entry] = matches[0];
   return { directory: safeRelativeAssetPath(directory), entry };
+}
+
+async function removeObsoleteSourceAssets(sourceDir, retainedPaths) {
+  const retained = new Set(retainedPaths.map((file) => path.resolve(file)));
+  const removableExtensions = new Set(['.atlas', '.json', '.png', '.skel', '.webp']);
+  async function visit(directory) {
+    let entries;
+    try { entries = await fs.readdir(directory, { withFileTypes: true }); }
+    catch (error) {
+      if (error.code === 'ENOENT') return;
+      throw error;
+    }
+    for (const entry of entries) {
+      const file = path.join(directory, entry.name);
+      if (entry.isDirectory()) {
+        await visit(file);
+        if ((await fs.readdir(file)).length === 0) await fs.rmdir(file);
+      } else if (
+        entry.isFile()
+        && removableExtensions.has(path.extname(entry.name).toLocaleLowerCase())
+        && !retained.has(path.resolve(file))
+        && !['meta.json', 'retrieval.json'].includes(entry.name)
+      ) {
+        await fs.rm(file);
+      }
+    }
+  }
+  await visit(sourceDir);
 }
 
 async function mapBounded(values, concurrency, work) {
@@ -187,30 +263,35 @@ async function acquire(metadata, { character, variant }) {
   if (typeof atlasAsset !== 'string' || typeof skeletonAsset !== 'string') {
     throw new Error(`Ark-Models entry is missing Spine files: ${entry.assetId}`);
   }
-  const atlasName = safeRelativeAssetPath(atlasAsset);
-  const skeletonName = safeRelativeAssetPath(skeletonAsset);
+  const atlasName = await resolvedAssetName(sourceDirectory, atlasAsset);
+  const skeletonName = await resolvedAssetName(sourceDirectory, skeletonAsset);
   const atlasPath = path.join(sourceDir, atlasName);
   const skeletonPath = path.join(sourceDir, skeletonName);
-  const atlasSource = rawUrl(`${sourceDirectory}/${atlasName}`);
-  const skeletonSource = rawUrl(`${sourceDirectory}/${skeletonName}`);
+  const atlasRelativeSource = `${sourceDirectory}/${atlasName}`;
+  const skeletonRelativeSource = `${sourceDirectory}/${skeletonName}`;
+  const atlasSource = rawUrl(atlasRelativeSource);
+  const skeletonSource = rawUrl(skeletonRelativeSource);
   const previous = await readJsonIfPresent(path.join(sourceDir, 'retrieval.json'));
   const refreshPinnedSource = force
     || previous?.source_provider !== 'ark-models'
     || previous?.source_commit !== arkModels.commit;
 
   const [atlasDownload, skeletonDownload] = await Promise.all([
-    download(atlasSource, atlasPath, { force: refreshPinnedSource }),
-    download(skeletonSource, skeletonPath, { force: refreshPinnedSource }),
+    download(atlasRelativeSource, atlasPath, { force: refreshPinnedSource }),
+    download(skeletonRelativeSource, skeletonPath, { force: refreshPinnedSource }),
   ]);
   const atlasText = await fs.readFile(atlasPath, 'utf8');
   const textureNames = atlasTextureNames(atlasText);
   if (!textureNames.length) throw new Error(`No texture page found in ${atlasPath}`);
   const textureFiles = [];
   for (const textureName of textureNames) {
-    const source = rawUrl(`${sourceDirectory}/${textureName}`);
-    const destination = path.join(sourceDir, textureName);
-    const downloadResult = await download(source, destination, { force: refreshPinnedSource });
+    const resolvedTextureName = await resolvedAssetName(sourceDirectory, textureName);
+    const relativeSource = `${sourceDirectory}/${resolvedTextureName}`;
+    const source = rawUrl(relativeSource);
+    const destination = path.join(sourceDir, resolvedTextureName);
+    const downloadResult = await download(relativeSource, destination, { force: refreshPinnedSource });
     textureFiles.push({
+      atlas_name: textureName,
       source,
       path: path.relative(REPO_ROOT, destination),
       bytes: downloadResult.bytes,
@@ -256,13 +337,41 @@ async function acquire(metadata, { character, variant }) {
     },
   };
   await fs.writeFile(path.join(sourceDir, 'retrieval.json'), `${JSON.stringify(retrieval, null, 2)}\n`);
+  await removeObsoleteSourceAssets(sourceDir, [
+    metadataPath,
+    path.join(sourceDir, 'retrieval.json'),
+    atlasPath,
+    skeletonPath,
+    ...textureFiles.map((entry) => path.join(REPO_ROOT, entry.path)),
+  ]);
   console.log(`ready ${character.character_id}/${variant.variant_id} from Ark-Models@${arkModels.commit.slice(0, 12)}`);
 }
 
-const metadata = JSON.parse((await fetchBuffer(rawUrl('models_data.json'))).toString('utf8'));
+const metadata = JSON.parse((await sourceBuffer('models_data.json')).toString('utf8'));
 const jobs = selectedJobs();
+if (args.includes('--audit')) {
+  const failures = [];
+  for (const job of jobs) {
+    try { sourceEntry(metadata, job.variant); }
+    catch (error) {
+      failures.push({
+        character: job.character.character_id,
+        variant: job.variant.variant_id,
+        reason: error.message,
+      });
+    }
+  }
+  console.log(JSON.stringify({
+    source: `${arkModels.repository}@${arkModels.commit}`,
+    requested_variants: jobs.length,
+    mapped_variants: jobs.length - failures.length,
+    failed_variants: failures,
+  }, null, 2));
+  if (failures.length) process.exitCode = 1;
+} else {
 const concurrency = positiveInteger('--concurrency', 4, 12);
 console.log(`acquiring ${jobs.length} Ark-Models source variant(s), concurrency=${concurrency}`);
 const failures = await mapBounded(jobs, concurrency, (job) => acquire(metadata, job));
 console.log(`Ark-Models acquisition complete: ${jobs.length - failures.length}/${jobs.length}`);
 if (failures.length) process.exitCode = 1;
+}

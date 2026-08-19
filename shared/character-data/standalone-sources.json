@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "retrieval_date": "2026-08-12",
-  "scope": "Mainland-CN playable forms in shared/character-data/operators.json. Formally separate playable alters remain separate character entries; PRTS base-building appearances are variants and named appearances are skins.",
+  "scope": "Mainland-CN playable forms in shared/character-data/operators.json. PRTS indexes appearances; Ark-Models is the only permitted Standalone animation source.",
   "sources": [
     {
       "id": "prts-playable-operator-index",
@@ -12,10 +12,17 @@
     },
     {
       "id": "prts-char-spine-api",
-      "title": "PRTS public char_spine metadata and assets",
+      "title": "PRTS public char_spine metadata",
       "authority": "community public asset service",
       "url_template": "https://torappu.prts.wiki/assets/char_spine/{game_key}/meta.json",
-      "use": "enumerate public base-building Spine default appearances and named skin appearances"
+      "use": "enumerate appearance names and model identifiers only; runtime animation files are not consumed"
+    },
+    {
+      "id": "ark-models-pc-client-spine",
+      "title": "isHarryh/Ark-Models",
+      "authority": "community PC-client extraction",
+      "url": "https://github.com/isHarryh/Ark-Models",
+      "use": "exclusive source of Standalone Spine skeleton, atlas, and texture files"
     },
     {
       "id": "arknights-game-data-character-meta",
@@ -33,12 +40,18 @@
     "source_available_default_appearances": 425,
     "source_incomplete_default_appearances": 0,
     "expected_variants": 933,
-    "source_available_variants": 933,
+    "source_available_variants": 932,
     "expected_skins": 508,
-    "source_available_skins": 508,
-    "source_incomplete_skins": 0,
-    "implemented_runtime_variants": 933
+    "source_available_skins": 507,
+    "source_incomplete_skins": 1,
+    "implemented_runtime_variants": 932
   },
   "unavailable_characters": [],
-  "incomplete_variants": []
+  "incomplete_variants": [
+    {
+      "character_id": "akkord",
+      "variant_id": "skin-summer-23",
+      "reason": "Ark-Models@3745e5c6e10b does not publish this appearance; it is omitted instead of retaining a PRTS texture fallback."
+    }
+  ]
 }

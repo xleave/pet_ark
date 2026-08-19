@@ -9,14 +9,14 @@
   "blocked_characters": 0,
   "unaccounted_characters": 0,
   "expected_variants": 933,
-  "implemented_variants": 933,
-  "missing_variants": 0,
-  "blocked_variants": 0,
+  "implemented_variants": 932,
+  "missing_variants": 1,
+  "blocked_variants": 1,
   "unaccounted_variants": 0,
   "expected_skins": 508,
-  "implemented_skins": 508,
-  "missing_skins": 0,
-  "blocked_skins": 0,
+  "implemented_skins": 507,
+  "missing_skins": 1,
+  "blocked_skins": 1,
   "unaccounted_skins": 0,
   "image2": {
     "sequences": 16,
@@ -25,27 +25,27 @@
   },
   "animation_states": {
     "required": {
-      "idle": 933,
-      "walk-left": 933,
-      "walk-right": 933,
-      "clicked": 933,
-      "picked-up": 933,
-      "dragging": 933,
-      "dropped": 933,
-      "rest": 933,
-      "sleep": 933,
-      "wake": 933,
-      "special": 933
+      "idle": 932,
+      "walk-left": 932,
+      "walk-right": 932,
+      "clicked": 932,
+      "picked-up": 932,
+      "dragging": 932,
+      "dropped": 932,
+      "rest": 932,
+      "sleep": 932,
+      "wake": 932,
+      "special": 932
     },
     "optional": {
       "exit": 3,
       "idle-alt": 2,
       "move-alt": 1,
-      "run-left": 933,
-      "run-right": 933
+      "run-left": 932,
+      "run-right": 932
     }
   },
-  "complete": true,
+  "complete": false,
   "accounted": true,
   "characters": [
     {
@@ -216,7 +216,7 @@
       "reason": null,
       "default_variant": "default",
       "variants": 2,
-      "implemented_variants": 2
+      "implemented_variants": 1
     },
     {
       "character_id": "alanna",
@@ -4770,10 +4770,10 @@
       "variant_type": "skin",
       "skin_id": "summer-23",
       "skin_name": "悠然假日 HD91",
-      "source_status": "source-available",
-      "status": "implemented",
-      "reason": null,
-      "runtime_manifest": "standalone/assets/runtime/akkord/skin-summer-23/manifest.json",
+      "source_status": "source-unavailable",
+      "status": "blocked",
+      "reason": "Ark-Models@3745e5c6e10b does not publish this appearance; it is omitted instead of retaining a PRTS texture fallback.",
+      "runtime_manifest": null,
       "fallback_variant_id": "default"
     },
     {
@@ -17365,13 +17365,73 @@
   ],
   "missing": {
     "characters": [],
-    "variants": [],
-    "skins": []
+    "variants": [
+      {
+        "character_id": "akkord",
+        "character_name": "Akkord",
+        "localized_name": "协律",
+        "variant_id": "skin-summer-23",
+        "variant_type": "skin",
+        "skin_id": "summer-23",
+        "skin_name": "悠然假日 HD91",
+        "source_status": "source-unavailable",
+        "status": "blocked",
+        "reason": "Ark-Models@3745e5c6e10b does not publish this appearance; it is omitted instead of retaining a PRTS texture fallback.",
+        "runtime_manifest": null,
+        "fallback_variant_id": "default"
+      }
+    ],
+    "skins": [
+      {
+        "character_id": "akkord",
+        "character_name": "Akkord",
+        "localized_name": "协律",
+        "variant_id": "skin-summer-23",
+        "variant_type": "skin",
+        "skin_id": "summer-23",
+        "skin_name": "悠然假日 HD91",
+        "source_status": "source-unavailable",
+        "status": "blocked",
+        "reason": "Ark-Models@3745e5c6e10b does not publish this appearance; it is omitted instead of retaining a PRTS texture fallback.",
+        "runtime_manifest": null,
+        "fallback_variant_id": "default"
+      }
+    ]
   },
   "blocked": {
     "characters": [],
-    "variants": [],
-    "skins": []
+    "variants": [
+      {
+        "character_id": "akkord",
+        "character_name": "Akkord",
+        "localized_name": "协律",
+        "variant_id": "skin-summer-23",
+        "variant_type": "skin",
+        "skin_id": "summer-23",
+        "skin_name": "悠然假日 HD91",
+        "source_status": "source-unavailable",
+        "status": "blocked",
+        "reason": "Ark-Models@3745e5c6e10b does not publish this appearance; it is omitted instead of retaining a PRTS texture fallback.",
+        "runtime_manifest": null,
+        "fallback_variant_id": "default"
+      }
+    ],
+    "skins": [
+      {
+        "character_id": "akkord",
+        "character_name": "Akkord",
+        "localized_name": "协律",
+        "variant_id": "skin-summer-23",
+        "variant_type": "skin",
+        "skin_id": "summer-23",
+        "skin_name": "悠然假日 HD91",
+        "source_status": "source-unavailable",
+        "status": "blocked",
+        "reason": "Ark-Models@3745e5c6e10b does not publish this appearance; it is omitted instead of retaining a PRTS texture fallback.",
+        "runtime_manifest": null,
+        "fallback_variant_id": "default"
+      }
+    ]
   },
   "unaccounted": {
     "characters": [],

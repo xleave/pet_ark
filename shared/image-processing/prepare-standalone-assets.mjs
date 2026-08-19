@@ -347,7 +347,7 @@ for (const [state, definition] of Object.entries(animationDefinitions)) {
     next: definition.next || null,
     generatedFrames: relevantGenerated.map((entry) => entry.frame).filter((frame) => sourceOrder.includes(frame)),
     origin: relevantGenerated.length ? 'generated' : 'source',
-    provenanceId: `processed-prts-spine:${definition.source}`,
+    provenanceId: `processed-ark-models-spine:${definition.source}`,
     generatedSequence: relevantGenerated.length ? relevantGenerated.map((entry) => entry.sequence).join(',') : null,
   };
 }
@@ -383,6 +383,12 @@ const animationManifest = {
 };
 const runtimeManifest = {
   schemaVersion: 2,
+  source: {
+    provider: cleanedManifest?.source_provider || null,
+    page: cleanedManifest?.source_page || null,
+    commit: cleanedManifest?.source_commit || null,
+    asset: cleanedManifest?.source_asset_set || null,
+  },
   character: {
     id: characterId,
     name: character.character_name,

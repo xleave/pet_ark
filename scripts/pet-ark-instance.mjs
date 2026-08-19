@@ -17,6 +17,7 @@ function usage() {
 Commands:
   list
   create ID [--character ID] [--variant ID] [--scale N] [--speed N] [--monitor N] [--no-start]
+  delete ID --yes
   start|stop|restart ID`);
 }
 
@@ -86,12 +87,28 @@ async function listInstances() {
   }
 }
 
+async function deleteInstance(id, args) {
+  if (!args.includes('--yes')) throw new Error('delete requires --yes');
+  const file = path.join(instancesRoot, `${id}.env`);
+  try {
+    const stat = await fs.stat(file);
+    if (!stat.isFile()) throw new Error(`instance config is not a file: ${id}`);
+  } catch (error) {
+    if (error.code === 'ENOENT') throw new Error(`instance does not exist: ${id}`);
+    throw error;
+  }
+  await run('systemctl', ['--user', 'disable', '--now', `pet-ark@${id}.service`]);
+  await fs.rm(file);
+  console.log(`deleted ${id}`);
+}
+
 const [command, id, ...args] = process.argv.slice(2);
 if (!command || command === '--help' || command === '-h') usage();
 else if (command === 'list') await listInstances();
 else {
   if (!id || !safeId.test(id) || id === 'default' || id === 'control') throw new Error('instance id must be safe and cannot be default/control');
   if (command === 'create') await createInstance(id, args);
+  else if (command === 'delete') await deleteInstance(id, args);
   else if (['start', 'stop', 'restart'].includes(command)) await run('systemctl', ['--user', command, `pet-ark@${id}.service`]);
   else throw new Error(`unknown command: ${command}`);
 }

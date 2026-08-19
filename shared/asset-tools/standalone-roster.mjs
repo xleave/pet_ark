@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Enumerate PRTS public base-building Spine models for the checked-in playable roster.
+ * Enumerate appearance identifiers for the checked-in playable roster.
  *
  * This deliberately records URLs and source availability only. It does not download
  * or mark a runtime variant implemented; the standalone asset builder owns that step.
@@ -16,6 +16,7 @@ const DATA = path.join(ROOT, 'shared/character-data');
 const DEFAULT_OPERATORS = path.join(DATA, 'operators.json');
 const DEFAULT_OUTPUT = path.join(DATA, 'standalone-roster.json');
 const DEFAULT_SOURCES = path.join(DATA, 'standalone-sources.json');
+const SOURCE_POLICY = path.join(DATA, 'standalone-source-policy.json');
 const GAME_META_URL = 'https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master/zh_CN/gamedata/excel/char_meta_table.json';
 const PRTS_PAGE_ROOT = 'https://prts.wiki/w/';
 const PRTS_ASSET_ROOT = 'https://torappu.prts.wiki/assets/char_spine';
@@ -203,6 +204,7 @@ function previousMeta(previous, gameKey) {
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const operators = JSON.parse(await fs.readFile(args.operators, 'utf8'));
+  const sourcePolicy = JSON.parse(await fs.readFile(SOURCE_POLICY, 'utf8'));
   const previous = args.refresh ? null : await readPrevious(args.output);
 
   // Each alter remains a standalone character entry. The grouping source only classifies it.
@@ -251,6 +253,14 @@ async function main() {
   process.stderr.write('\n');
 
   characters.sort((left, right) => left.character_id.localeCompare(right.character_id));
+  for (const exclusion of sourcePolicy.unavailable_variants || []) {
+    const character = characters.find((entry) => entry.character_id === exclusion.character_id);
+    const variant = character?.variants.find((entry) => entry.variant_id === exclusion.variant_id);
+    if (!variant) throw new Error(`Source policy references an unknown variant: ${exclusion.character_id}/${exclusion.variant_id}`);
+    variant.status = 'source-unavailable';
+    variant.reason = exclusion.reason;
+    variant.runtime = { ...variant.runtime, status: 'source-unavailable', path: null };
+  }
   const allVariants = characters.flatMap((character) => character.variants);
   const statistics = {
     expected_characters: characters.length,
@@ -269,8 +279,8 @@ async function main() {
   const roster = {
     schema_version: 1,
     retrieved_at: RETRIEVAL_DATE,
-    scope: 'Mainland-CN playable forms in shared/character-data/operators.json. Formally separate playable alters remain separate character entries; PRTS base-building appearances are variants and named appearances are skins.',
-    sources: ['prts-playable-operator-index', 'prts-char-spine-api', 'arknights-game-data-character-meta'],
+    scope: 'Mainland-CN playable forms in shared/character-data/operators.json. PRTS indexes appearances; Ark-Models is the only permitted Standalone animation source.',
+    sources: ['prts-playable-operator-index', 'prts-char-spine-api', 'ark-models-pc-client-spine', 'arknights-game-data-character-meta'],
     statistics,
     characters,
   };
@@ -284,8 +294,12 @@ async function main() {
         url: 'https://prts.wiki/w/%E5%B9%B2%E5%91%98%E4%B8%80%E8%A7%88', use: 'playable roster and localized identity index',
       },
       {
-        id: 'prts-char-spine-api', title: 'PRTS public char_spine metadata and assets', authority: 'community public asset service',
-        url_template: `${PRTS_ASSET_ROOT}/{game_key}/meta.json`, use: 'enumerate public base-building Spine default appearances and named skin appearances',
+        id: 'prts-char-spine-api', title: 'PRTS public char_spine metadata', authority: 'community public metadata service',
+        url_template: `${PRTS_ASSET_ROOT}/{game_key}/meta.json`, use: 'enumerate appearance names and model identifiers only; runtime animation files are not consumed',
+      },
+      {
+        id: 'ark-models-pc-client-spine', title: 'isHarryh/Ark-Models', authority: 'community PC-client extraction',
+        url: 'https://github.com/isHarryh/Ark-Models', use: 'exclusive source of Standalone Spine skeleton, atlas, and texture files',
       },
       {
         id: 'arknights-game-data-character-meta', title: 'Kengxxiao/ArknightsGameData character metadata', authority: 'public game-data mirror',

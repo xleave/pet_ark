@@ -7,7 +7,7 @@
 - `shared/character-data/standalone-roster.json`
 - `shared/character-data/standalone-sources.json`
 
-当前范围为 425 个可玩角色、425 个默认形象、508 个皮肤，共 933 个外观。正式 playable alter 保持独立角色；皮肤作为所属角色的 variant。
+当前索引范围为 425 个可玩角色、425 个默认形象、508 个皮肤，共 933 个外观。Ark-Models 固定提交提供其中 932 个；未发布的协律“悠然假日 HD91”记录为 source-unavailable，不使用低清来源回退。
 
 资源 coverage、动作 coverage 与构图质量分别记录在：
 
@@ -17,7 +17,7 @@
 
 ## 来源与分层
 
-角色/皮肤索引来自 PRTS；ArknightsGameData 用于 ID 与 alter 分组核对。Spine 文件可来自 PRTS `char_spine` 或 Ark-Models 的 PC 客户端提取，provider、固定提交与完整性信息写入：
+角色/皮肤文字索引来自 PRTS；ArknightsGameData 用于 ID 与 alter 分组核对。所有可运行 Spine 文件只来自 Ark-Models 的 PC 客户端提取，provider、固定提交与完整性信息写入：
 
 ```text
 standalone/assets/source/<character>/<variant>/retrieval.json
@@ -47,22 +47,15 @@ npm run standalone:validate
 分步获取与导出：
 
 ```bash
-node shared/asset-tools/acquire-prts-spine.mjs --character amiya --variant skin-winter-1
-node shared/asset-tools/export-prts-spine.mjs --character amiya --variant skin-winter-1 --inspect
-node shared/asset-tools/export-prts-spine.mjs --character amiya --variant skin-winter-1
-```
-
-按需切换到 Ark-Models 高清来源：
-
-```bash
 npm run standalone:source:ark-models -- --character mon3tr --variant skin-boc-11
-node shared/asset-tools/export-prts-spine.mjs --character mon3tr --variant skin-boc-11 --force
+node shared/asset-tools/export-ark-models-spine.mjs --character mon3tr --variant skin-boc-11 --inspect
+node shared/asset-tools/export-ark-models-spine.mjs --character mon3tr --variant skin-boc-11 --force
 npm run standalone:assets -- --character mon3tr --variant skin-boc-11
 ```
 
-获取器固定 `shared/character-data/upstream-sources.json` 中的提交，不克隆约 1 GiB 的完整上游仓库。若 provider 或提交变化，同名旧文件不会被错误复用。
+获取器固定 `shared/character-data/upstream-sources.json` 中的提交，支持从 raw URL 按外观下载，或用 `--mirror` 指向已检出的只读本地镜像。若 provider 或提交变化，同名旧文件不会被错误复用。
 
-导出器动态读取页面当前的 SpineViewer source map，确定性合成 mesh、对齐地面并清理透明像素的 hidden RGB。每个 cleaned manifest 记录画布、采样率、边界、placement 和 render revision。
+导出器固定官方 spine-ts 3.8 运行时，确定性合成 mesh、对齐地面并清理透明像素的 hidden RGB。每个 cleaned manifest 记录 Ark-Models provider/commit、画布、采样率、边界、placement 和 render revision。
 
 ## 增量清晰度修复
 
@@ -83,7 +76,7 @@ npm run standalone:animation-coverage
 npm run standalone:contact-sheets
 ```
 
-全量流程使用有界 worker，随后更新 JSON/C registry、coverage、动作审计与 contact sheets。
+全量流程使用有界 worker，随后更新 JSON/C registry、coverage、动作审计与 contact sheets。`standalone:source:validate` 强制每个可运行外观的 retrieval provider 和固定提交一致。
 
 ## 动作规则
 

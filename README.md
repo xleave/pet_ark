@@ -1,18 +1,18 @@
 # Pet Ark
 
-原生 Linux Wayland《明日方舟》桌宠。项目包含多桌宠运行时、工业风图形控制中心、933 个外观的资产管线，以及独立的 Codex Pet atlas 工具链。
+原生 Linux Wayland《明日方舟》桌宠。项目包含多桌宠运行时、工业风图形控制中心、Ark-Models 高清资产管线，以及独立的 Codex Pet atlas 工具链。
 
 ![Pet Ark Control Center](docs/images/control-center-overview.png)
 
 ## 功能
 
 - 原生 C / Wayland 透明桌宠，使用 `wl_shm` 与 layer-shell；
-- 425 名干员、933 个默认外观与皮肤，支持 idle、移动、互动、拖动、休息、睡眠与特殊动作；
+- 425 名干员、933 个已索引外观，其中 932 个 Ark-Models 高清外观可运行，支持 idle、移动、互动、拖动、休息、睡眠与特殊动作；
 - 多实例运行，每只桌宠拥有独立进程、配置、systemd unit 与控制 socket；
 - Tauri + Svelte 控制中心，在同一窗口切换实例并管理外观、大小、速度、显示器、日志与登录自启；
 - 行为调度器与多桌宠空间总线，包含 12 种焦点、窗口、工作区、指针和桌宠社交行为；
 - 内置可回放 Mock AI，并支持本地 OpenAI-compatible 接口与 OpenAI Responses API；
-- 增量资产质量索引，当前 933 个外观中 703 个自动通过，230 个进入人工复核队列，critical/high 为 0。
+- 增量资产质量索引，当前 932 个可运行外观中 696 个自动通过，236 个进入人工复核队列，critical/high 为 0。
 
 ## 快速开始
 
@@ -63,12 +63,13 @@ systemctl --user start pet-ark-context.service
 控制中心的“桌宠编队”可创建和管理最多 8 个实例。命令行也可操作实例：
 
 ```bash
-npm run standalone:instance -- create mon3tr-side mon3tr default
+npm run standalone:instance -- create mon3tr-side --character mon3tr --variant default
 npm run standalone:instance -- list
 npm run standalone:control -- --instance mon3tr-side status
+npm run standalone:instance -- delete mon3tr-side --yes
 ```
 
-默认实例使用 `pet-ark.service`、`~/.config/pet-ark/runtime.env` 与 `control.sock`；其他实例使用 `pet-ark@<id>.service`、`instances/<id>.env` 与 `<id>.sock`。
+默认实例使用 `pet-ark.service`、`~/.config/pet-ark/runtime.env` 与 `control.sock`；其他实例使用 `pet-ark@<id>.service`、`instances/<id>.env` 与 `<id>.sock`。控制中心的“删除实例”采用二次确认，并同步停止服务、关闭自启和移除实例配置；默认实例受保护。
 
 ## 桌面交互
 
@@ -116,6 +117,8 @@ Standalone 与 Codex atlas 共用角色身份和来源记录，但使用各自�
 | `npm run standalone:quality` | 更新增量清晰度/构图索引 |
 | `npm run standalone:quality:plan` | 生成候选修复计划 |
 | `npm run standalone:source:ark-models -- --character mon3tr --variant skin-boc-11` | 按需获取高清 Spine 来源 |
+| `npm run standalone:source:audit` | 审计 Ark-Models 全量映射 |
+| `npm run standalone:source:validate` | 验证所有运行外观没有来源回退 |
 | `npm run standalone:build -- --character amiya --skin default` | 重建一个外观 |
 | `npm run behavior:test` | 运行调度器与 Mock AI 回放测试 |
 | `npm run control:center:check` | 检查 UI、类型与设计令牌 |
@@ -135,8 +138,9 @@ Standalone 与 Codex atlas 共用角色身份和来源记录，但使用各自�
 
 ## 致谢与权利说明
 
-- [PRTS Wiki](https://prts.wiki/) 提供干员资料索引与公开 `char_spine` 资源入口；PRTS 站点文字内容采用 CC BY-NC-SA 4.0，站内游戏素材权利归上海鹰角网络科技有限公司及其关联公司；
-- [isHarryh/Ark-Models](https://github.com/isHarryh/Ark-Models) 提供从 PC 客户端提取的高清 Spine 3.8 模型来源；Pet Ark 采用固定提交按需获取，并保留逐文件来源与校验记录；
+- [PRTS Wiki](https://prts.wiki/) 用于干员、中文名与外观索引；Standalone 不再从 PRTS 获取 skeleton、atlas 或纹理；
+- [isHarryh/Ark-Models](https://github.com/isHarryh/Ark-Models) 提供从 PC 客户端提取的高清 Spine 3.8 模型，是 Standalone 动画文件的唯一来源；Pet Ark 固定提交并保留逐文件来源与校验记录；
+- [EsotericSoftware/spine-runtimes](https://github.com/EsotericSoftware/spine-runtimes) 提供固定版本的官方 spine-ts 3.8 解析运行时；
 - [ArknightsGameData](https://github.com/Kengxxiao/ArknightsGameData) 用于角色 ID 与 alter 分组核对；
 - [Aceship/Arknight-Images](https://github.com/Aceship/Arknight-Images) 用于 Codex 角色视觉索引核对；
 - [wayland-protocols](https://gitlab.freedesktop.org/wayland/wayland-protocols) 与 [wlr-protocols](https://gitlab.freedesktop.org/wlroots/wlr-protocols) 提供协议定义。

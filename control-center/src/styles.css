@@ -128,7 +128,7 @@ select:focus,input:focus { border-color:var(--cyan); }.range-field { display:blo
 .fleet-console { min-height:290px; }
 .fleet-status-line { display:flex; justify-content:space-between; padding:10px 0 16px; color:var(--text-muted); font-size:10px; }
 .fleet-status-line strong { color:var(--ark-steel-200); font:700 12px var(--font-display); letter-spacing:.12em; }.fleet-status-line strong.online-text { color:var(--cyan); }
-.fleet-buttons { margin-bottom:12px; }
+.service-buttons.fleet-buttons { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); margin-bottom:12px; }
 .reaction-panel { padding-top:16px; }.reaction-panel > span { color:var(--text-muted); font-size:10px; }.reaction-panel div { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; margin-top:8px; }.reaction-panel button { min-height:34px; padding:0 5px; border:var(--control-border-width) solid var(--border-control); background:var(--surface-button-subtle); color:var(--ark-silver-250); font-size:9px; cursor:pointer; }.reaction-panel button:hover { border-color:var(--yellow); color:var(--yellow); }.reaction-panel button:disabled { opacity:.4; }
 .fleet-create,.context-card { grid-column:1/-1; }
 .fleet-create-fields { display:grid; grid-template-columns:1fr 1.35fr 1.35fr auto; align-items:end; gap:12px; }

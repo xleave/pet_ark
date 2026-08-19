@@ -1,5 +1,28 @@
 {
   "schemaVersion": 2,
+  "source": {
+    "provider": "ark-models",
+    "page": "https://github.com/isHarryh/Ark-Models",
+    "commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+    "asset": {
+      "assetId": "build_char_420_flamtl",
+      "type": "Operator",
+      "style": "BuildingDefault",
+      "name": "焰尾",
+      "appellation": "Flametail",
+      "skinGroupId": "DEFAULT",
+      "skinGroupName": "默认服装",
+      "sortTags": [
+        "Operator",
+        "Rarity_6"
+      ],
+      "assetList": {
+        ".atlas": "build_char_420_flamtl.atlas",
+        ".png": "build_char_420_flamtl.png",
+        ".skel": "build_char_420_flamtl.skel"
+      }
+    }
+  },
   "character": {
     "id": "flametail",
     "name": "Flametail",
@@ -76,9 +99,9 @@
           "height": 155
         },
         {
-          "x": 68,
+          "x": 69,
           "y": 16,
-          "width": 94,
+          "width": 93,
           "height": 156
         },
         {
@@ -88,6 +111,7 @@
           "height": 156
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "move": {
@@ -101,7 +125,7 @@
         {
           "x": 35,
           "y": 9,
-          "width": 111,
+          "width": 110,
           "height": 160
         },
         {
@@ -114,18 +138,18 @@
           "x": 41,
           "y": 9,
           "width": 105,
-          "height": 163
+          "height": 162
         },
         {
-          "x": 34,
+          "x": 35,
           "y": 13,
-          "width": 113,
+          "width": 112,
           "height": 160
         },
         {
           "x": 57,
           "y": 8,
-          "width": 96,
+          "width": 95,
           "height": 162
         },
         {
@@ -141,12 +165,13 @@
           "height": 163
         },
         {
-          "x": 49,
+          "x": 50,
           "y": 13,
-          "width": 99,
+          "width": 98,
           "height": 161
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "interact": {
@@ -170,9 +195,9 @@
           "height": 154
         },
         {
-          "x": 65,
+          "x": 66,
           "y": 17,
-          "width": 89,
+          "width": 88,
           "height": 155
         },
         {
@@ -184,13 +209,13 @@
         {
           "x": 68,
           "y": 13,
-          "width": 114,
+          "width": 113,
           "height": 159
         },
         {
           "x": 68,
           "y": 13,
-          "width": 110,
+          "width": 109,
           "height": 159
         },
         {
@@ -206,6 +231,7 @@
           "height": 156
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "sit": {
@@ -265,6 +291,7 @@
           "height": 152
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "sleep": {
@@ -275,6 +302,12 @@
       "columns": 8,
       "rows": 1,
       "hitboxes": [
+        {
+          "x": 12,
+          "y": 109,
+          "width": 158,
+          "height": 69
+        },
         {
           "x": 12,
           "y": 109,
@@ -294,27 +327,15 @@
           "height": 71
         },
         {
-          "x": 12,
+          "x": 13,
           "y": 108,
-          "width": 158,
+          "width": 157,
           "height": 72
         },
         {
           "x": 13,
-          "y": 107,
+          "y": 108,
           "width": 157,
-          "height": 73
-        },
-        {
-          "x": 12,
-          "y": 108,
-          "width": 158,
-          "height": 72
-        },
-        {
-          "x": 12,
-          "y": 108,
-          "width": 158,
           "height": 71
         },
         {
@@ -322,8 +343,15 @@
           "y": 108,
           "width": 158,
           "height": 71
+        },
+        {
+          "x": 12,
+          "y": 109,
+          "width": 158,
+          "height": 69
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "derived-motion": {
@@ -337,7 +365,7 @@
         {
           "x": 36,
           "y": 14,
-          "width": 114,
+          "width": 113,
           "height": 155
         },
         {
@@ -350,7 +378,7 @@
           "x": 44,
           "y": 9,
           "width": 108,
-          "height": 159
+          "height": 158
         },
         {
           "x": 37,
@@ -361,13 +389,13 @@
         {
           "x": 58,
           "y": 11,
-          "width": 98,
+          "width": 97,
           "height": 159
         },
         {
-          "x": 37,
+          "x": 38,
           "y": 9,
-          "width": 111,
+          "width": 110,
           "height": 159
         },
         {
@@ -577,13 +605,13 @@
         {
           "x": 68,
           "y": 7,
-          "width": 117,
+          "width": 116,
           "height": 163
         },
         {
           "x": 67,
           "y": 9,
-          "width": 112,
+          "width": 111,
           "height": 161
         },
         {
@@ -744,32 +772,26 @@
         },
         {
           "x": 12,
-          "y": 108,
+          "y": 109,
           "width": 158,
-          "height": 71
+          "height": 69
         },
         {
           "x": 12,
           "y": 108,
           "width": 158,
           "height": 71
-        },
-        {
-          "x": 12,
-          "y": 108,
-          "width": 158,
-          "height": 72
         },
         {
           "x": 13,
-          "y": 107,
+          "y": 108,
           "width": 157,
-          "height": 73
+          "height": 71
         },
         {
-          "x": 12,
+          "x": 13,
           "y": 108,
-          "width": 158,
+          "width": 157,
           "height": 72
         },
         {
@@ -783,6 +805,12 @@
           "y": 108,
           "width": 158,
           "height": 71
+        },
+        {
+          "x": 12,
+          "y": 109,
+          "width": 158,
+          "height": 69
         },
         {
           "x": 12,
@@ -864,7 +892,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:relax",
+      "provenanceId": "processed-ark-models-spine:relax",
       "generatedSequence": null
     },
     "walk-left": {
@@ -887,7 +915,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:move",
+      "provenanceId": "processed-ark-models-spine:move",
       "generatedSequence": null
     },
     "walk-right": {
@@ -910,7 +938,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:move",
+      "provenanceId": "processed-ark-models-spine:move",
       "generatedSequence": null
     },
     "run-left": {
@@ -979,7 +1007,7 @@
       "next": "idle",
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:interact",
+      "provenanceId": "processed-ark-models-spine:interact",
       "generatedSequence": null
     },
     "picked-up": {
@@ -1110,7 +1138,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:sleep",
+      "provenanceId": "processed-ark-models-spine:sleep",
       "generatedSequence": null
     },
     "wake": {
@@ -1491,6 +1519,7 @@
         "bridge_style": "single-silhouette-endpoint-transform",
         "bridge_frames": 8
       }
-    ]
+    ],
+    "intentionalBlankFrames": []
   }
 }

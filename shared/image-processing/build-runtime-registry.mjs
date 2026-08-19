@@ -115,9 +115,10 @@ export async function buildRuntimeRegistry(root = defaultRoot) {
         variant_type: sourceVariant.variant_type,
         assets,
         source: {
-          page: sourceCharacter.source_page,
-          meta: sourceVariant.source_asset_set?.meta,
-          model: sourceVariant.source_asset_set?.model,
+          provider: runtime.source?.provider || null,
+          page: runtime.source?.page || null,
+          commit: runtime.source?.commit || null,
+          asset: runtime.source?.asset || null,
         },
         animations,
         stateFallbacks,

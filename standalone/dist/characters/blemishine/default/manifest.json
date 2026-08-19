@@ -1,5 +1,28 @@
 {
   "schemaVersion": 2,
+  "source": {
+    "provider": "ark-models",
+    "page": "https://github.com/isHarryh/Ark-Models",
+    "commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+    "asset": {
+      "assetId": "build_char_423_blemsh",
+      "type": "Operator",
+      "style": "BuildingDefault",
+      "name": "瑕光",
+      "appellation": "Blemishine",
+      "skinGroupId": "DEFAULT",
+      "skinGroupName": "默认服装",
+      "sortTags": [
+        "Operator",
+        "Rarity_6"
+      ],
+      "assetList": {
+        ".atlas": "build_char_423_blemsh.atlas",
+        ".png": "build_char_423_blemsh.png",
+        ".skel": "build_char_423_blemsh.skel"
+      }
+    }
+  },
   "character": {
     "id": "blemishine",
     "name": "Blemishine",
@@ -72,7 +95,7 @@
         {
           "x": 32,
           "y": 23,
-          "width": 128,
+          "width": 127,
           "height": 168
         },
         {
@@ -83,11 +106,12 @@
         },
         {
           "x": 33,
-          "y": 23,
+          "y": 24,
           "width": 127,
-          "height": 168
+          "height": 167
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "move": {
@@ -100,9 +124,9 @@
       "hitboxes": [
         {
           "x": 35,
-          "y": 25,
+          "y": 26,
           "width": 104,
-          "height": 166
+          "height": 165
         },
         {
           "x": 34,
@@ -112,9 +136,9 @@
         },
         {
           "x": 35,
-          "y": 22,
+          "y": 23,
           "width": 104,
-          "height": 169
+          "height": 168
         },
         {
           "x": 32,
@@ -124,29 +148,30 @@
         },
         {
           "x": 29,
-          "y": 25,
+          "y": 26,
           "width": 110,
-          "height": 167
+          "height": 166
         },
         {
-          "x": 27,
+          "x": 28,
           "y": 24,
-          "width": 113,
+          "width": 111,
           "height": 169
         },
         {
-          "x": 30,
+          "x": 31,
           "y": 23,
-          "width": 109,
+          "width": 108,
           "height": 170
         },
         {
-          "x": 35,
+          "x": 36,
           "y": 24,
-          "width": 104,
+          "width": 103,
           "height": 167
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "interact": {
@@ -164,9 +189,9 @@
           "height": 168
         },
         {
-          "x": 25,
+          "x": 26,
           "y": 37,
-          "width": 129,
+          "width": 128,
           "height": 163
         },
         {
@@ -177,27 +202,27 @@
         },
         {
           "x": 24,
-          "y": 34,
+          "y": 35,
           "width": 126,
-          "height": 161
+          "height": 160
         },
         {
           "x": 33,
           "y": 34,
           "width": 116,
-          "height": 164
+          "height": 163
         },
         {
-          "x": 42,
+          "x": 43,
           "y": 31,
-          "width": 114,
+          "width": 113,
           "height": 165
         },
         {
           "x": 54,
-          "y": 32,
-          "width": 109,
-          "height": 166
+          "y": 33,
+          "width": 108,
+          "height": 164
         },
         {
           "x": 44,
@@ -206,6 +231,7 @@
           "height": 163
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "sit": {
@@ -226,7 +252,7 @@
           "x": 40,
           "y": 56,
           "width": 106,
-          "height": 160
+          "height": 159
         },
         {
           "x": 41,
@@ -250,7 +276,7 @@
           "x": 40,
           "y": 56,
           "width": 106,
-          "height": 160
+          "height": 159
         },
         {
           "x": 41,
@@ -265,6 +291,7 @@
           "height": 159
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "sleep": {
@@ -297,7 +324,19 @@
           "x": 9,
           "y": 121,
           "width": 175,
-          "height": 76
+          "height": 75
+        },
+        {
+          "x": 9,
+          "y": 122,
+          "width": 175,
+          "height": 74
+        },
+        {
+          "x": 8,
+          "y": 122,
+          "width": 176,
+          "height": 75
         },
         {
           "x": 8,
@@ -310,20 +349,9 @@
           "y": 121,
           "width": 176,
           "height": 76
-        },
-        {
-          "x": 8,
-          "y": 121,
-          "width": 176,
-          "height": 76
-        },
-        {
-          "x": 8,
-          "y": 121,
-          "width": 176,
-          "height": 76
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "derived-motion": {
@@ -336,9 +364,9 @@
       "hitboxes": [
         {
           "x": 36,
-          "y": 30,
+          "y": 31,
           "width": 107,
-          "height": 161
+          "height": 160
         },
         {
           "x": 36,
@@ -348,14 +376,14 @@
         },
         {
           "x": 38,
-          "y": 22,
+          "y": 23,
           "width": 107,
-          "height": 165
+          "height": 164
         },
         {
-          "x": 34,
+          "x": 35,
           "y": 25,
-          "width": 109,
+          "width": 108,
           "height": 164
         },
         {
@@ -365,21 +393,21 @@
           "height": 163
         },
         {
-          "x": 27,
+          "x": 28,
           "y": 25,
-          "width": 115,
+          "width": 113,
           "height": 166
         },
         {
-          "x": 29,
+          "x": 30,
           "y": 23,
-          "width": 112,
+          "width": 111,
           "height": 166
         },
         {
-          "x": 35,
+          "x": 36,
           "y": 27,
-          "width": 107,
+          "width": 106,
           "height": 162
         },
         {
@@ -479,21 +507,21 @@
           "height": 159
         },
         {
-          "x": 37,
+          "x": 38,
           "y": 73,
-          "width": 112,
+          "width": 111,
           "height": 145
         },
         {
-          "x": 40,
+          "x": 41,
           "y": 51,
-          "width": 105,
+          "width": 104,
           "height": 163
         },
         {
-          "x": 39,
+          "x": 40,
           "y": 59,
-          "width": 108,
+          "width": 107,
           "height": 157
         },
         {
@@ -509,15 +537,15 @@
           "height": 159
         },
         {
-          "x": 38,
+          "x": 39,
           "y": 52,
-          "width": 109,
+          "width": 108,
           "height": 160
         },
         {
-          "x": 37,
+          "x": 38,
           "y": 46,
-          "width": 112,
+          "width": 111,
           "height": 162
         },
         {
@@ -570,27 +598,27 @@
         },
         {
           "x": 22,
-          "y": 28,
+          "y": 29,
           "width": 129,
-          "height": 165
+          "height": 164
         },
         {
           "x": 33,
           "y": 28,
           "width": 119,
-          "height": 168
+          "height": 167
         },
         {
-          "x": 41,
-          "y": 26,
-          "width": 116,
-          "height": 168
+          "x": 42,
+          "y": 27,
+          "width": 115,
+          "height": 167
         },
         {
           "x": 53,
-          "y": 29,
-          "width": 110,
-          "height": 168
+          "y": 30,
+          "width": 109,
+          "height": 166
         },
         {
           "x": 44,
@@ -656,7 +684,7 @@
           "x": 40,
           "y": 56,
           "width": 106,
-          "height": 160
+          "height": 159
         },
         {
           "x": 41,
@@ -680,7 +708,7 @@
           "x": 40,
           "y": 56,
           "width": 106,
-          "height": 160
+          "height": 159
         },
         {
           "x": 41,
@@ -701,15 +729,15 @@
           "height": 159
         },
         {
-          "x": 36,
+          "x": 37,
           "y": 66,
-          "width": 116,
+          "width": 115,
           "height": 147
         },
         {
-          "x": 31,
+          "x": 32,
           "y": 76,
-          "width": 126,
+          "width": 125,
           "height": 135
         },
         {
@@ -750,15 +778,9 @@
         },
         {
           "x": 8,
-          "y": 121,
+          "y": 122,
           "width": 176,
-          "height": 76
-        },
-        {
-          "x": 8,
-          "y": 121,
-          "width": 176,
-          "height": 76
+          "height": 75
         },
         {
           "x": 8,
@@ -768,9 +790,15 @@
         },
         {
           "x": 9,
+          "y": 122,
+          "width": 175,
+          "height": 74
+        },
+        {
+          "x": 9,
           "y": 121,
           "width": 175,
-          "height": 76
+          "height": 75
         },
         {
           "x": 9,
@@ -864,7 +892,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:relax",
+      "provenanceId": "processed-ark-models-spine:relax",
       "generatedSequence": null
     },
     "walk-left": {
@@ -887,7 +915,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:move",
+      "provenanceId": "processed-ark-models-spine:move",
       "generatedSequence": null
     },
     "walk-right": {
@@ -910,7 +938,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:move",
+      "provenanceId": "processed-ark-models-spine:move",
       "generatedSequence": null
     },
     "run-left": {
@@ -979,7 +1007,7 @@
       "next": "idle",
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:interact",
+      "provenanceId": "processed-ark-models-spine:interact",
       "generatedSequence": null
     },
     "picked-up": {
@@ -1110,7 +1138,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:sleep",
+      "provenanceId": "processed-ark-models-spine:sleep",
       "generatedSequence": null
     },
     "wake": {
@@ -1491,6 +1519,7 @@
         "bridge_style": "single-silhouette-endpoint-transform",
         "bridge_frames": 8
       }
-    ]
+    ],
+    "intentionalBlankFrames": []
   }
 }

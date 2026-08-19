@@ -15,11 +15,11 @@
     "source_available_default_appearances": 425,
     "source_incomplete_default_appearances": 0,
     "expected_variants": 933,
-    "source_available_variants": 933,
+    "source_available_variants": 932,
     "expected_skins": 508,
-    "source_available_skins": 508,
-    "source_incomplete_skins": 0,
-    "implemented_runtime_variants": 933
+    "source_available_skins": 507,
+    "source_incomplete_skins": 1,
+    "implemented_runtime_variants": 932
   },
   "characters": [
     {
@@ -1416,8 +1416,8 @@
           "available_views": [
             "building"
           ],
-          "status": "source-available",
-          "reason": null,
+          "status": "source-unavailable",
+          "reason": "Ark-Models@3745e5c6e10b does not publish this appearance; it is omitted instead of retaining a PRTS texture fallback.",
           "defaultScale": 1,
           "mirrorRules": {
             "strategy": "safe-mirror",
@@ -1425,8 +1425,8 @@
           },
           "fallbackVariant": "default",
           "runtime": {
-            "status": "implemented",
-            "path": "standalone/assets/runtime/akkord/skin-summer-23/manifest.json",
+            "status": "source-unavailable",
+            "path": null,
             "fallback_variant_id": "default",
             "fallback_policy": "same-state-default-appearance-only-when-manifest-declares-compatible"
           }

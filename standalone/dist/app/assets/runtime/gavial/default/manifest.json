@@ -1,5 +1,28 @@
 {
   "schemaVersion": 2,
+  "source": {
+    "provider": "ark-models",
+    "page": "https://github.com/isHarryh/Ark-Models",
+    "commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+    "asset": {
+      "assetId": "build_char_187_ccheal",
+      "type": "Operator",
+      "style": "BuildingDefault",
+      "name": "嘉维尔",
+      "appellation": "Gavial",
+      "skinGroupId": "DEFAULT",
+      "skinGroupName": "默认服装",
+      "sortTags": [
+        "Operator",
+        "Rarity_4"
+      ],
+      "assetList": {
+        ".atlas": "build_char_187_ccheal.atlas",
+        ".png": "build_char_187_ccheal.png",
+        ".skel": "build_char_187_ccheal.skel"
+      }
+    }
+  },
   "character": {
     "id": "gavial",
     "name": "Gavial",
@@ -88,6 +111,7 @@
           "height": 136
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "move": {
@@ -102,7 +126,7 @@
           "x": 42,
           "y": 40,
           "width": 87,
-          "height": 140
+          "height": 139
         },
         {
           "x": 42,
@@ -147,6 +171,7 @@
           "height": 140
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "interact": {
@@ -164,9 +189,9 @@
           "height": 139
         },
         {
-          "x": 24,
+          "x": 25,
           "y": 54,
-          "width": 98,
+          "width": 97,
           "height": 125
         },
         {
@@ -184,13 +209,13 @@
         {
           "x": 49,
           "y": 48,
-          "width": 79,
+          "width": 78,
           "height": 136
         },
         {
           "x": 56,
           "y": 46,
-          "width": 76,
+          "width": 75,
           "height": 133
         },
         {
@@ -201,11 +226,12 @@
         },
         {
           "x": 41,
-          "y": 40,
+          "y": 41,
           "width": 89,
-          "height": 139
+          "height": 138
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "sit": {
@@ -265,6 +291,7 @@
           "height": 137
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "sleep": {
@@ -324,6 +351,7 @@
           "height": 59
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "derived-motion": {
@@ -338,7 +366,7 @@
           "x": 43,
           "y": 45,
           "width": 90,
-          "height": 135
+          "height": 134
         },
         {
           "x": 44,
@@ -360,9 +388,9 @@
         },
         {
           "x": 41,
-          "y": 45,
+          "y": 46,
           "width": 87,
-          "height": 135
+          "height": 134
         },
         {
           "x": 43,
@@ -557,9 +585,9 @@
           "height": 139
         },
         {
-          "x": 22,
+          "x": 23,
           "y": 52,
-          "width": 99,
+          "width": 98,
           "height": 126
         },
         {
@@ -569,21 +597,21 @@
           "height": 134
         },
         {
-          "x": 24,
+          "x": 25,
           "y": 40,
-          "width": 102,
+          "width": 101,
           "height": 140
         },
         {
           "x": 49,
           "y": 43,
-          "width": 81,
+          "width": 80,
           "height": 139
         },
         {
           "x": 56,
           "y": 41,
-          "width": 77,
+          "width": 76,
           "height": 136
         },
         {
@@ -594,33 +622,33 @@
         },
         {
           "x": 41,
-          "y": 40,
+          "y": 41,
           "width": 89,
-          "height": 139
+          "height": 138
         },
         {
           "x": 41,
-          "y": 40,
+          "y": 41,
           "width": 89,
-          "height": 139
+          "height": 138
         },
         {
           "x": 41,
-          "y": 40,
+          "y": 41,
           "width": 88,
-          "height": 139
+          "height": 138
         },
         {
           "x": 41,
-          "y": 40,
+          "y": 41,
           "width": 88,
-          "height": 139
+          "height": 138
         },
         {
           "x": 42,
-          "y": 40,
+          "y": 41,
           "width": 87,
-          "height": 139
+          "height": 138
         },
         {
           "x": 41,
@@ -864,7 +892,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:relax",
+      "provenanceId": "processed-ark-models-spine:relax",
       "generatedSequence": null
     },
     "walk-left": {
@@ -887,7 +915,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:move",
+      "provenanceId": "processed-ark-models-spine:move",
       "generatedSequence": null
     },
     "walk-right": {
@@ -910,7 +938,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:move",
+      "provenanceId": "processed-ark-models-spine:move",
       "generatedSequence": null
     },
     "run-left": {
@@ -979,7 +1007,7 @@
       "next": "idle",
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:interact",
+      "provenanceId": "processed-ark-models-spine:interact",
       "generatedSequence": null
     },
     "picked-up": {
@@ -1110,7 +1138,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:sleep",
+      "provenanceId": "processed-ark-models-spine:sleep",
       "generatedSequence": null
     },
     "wake": {
@@ -1491,6 +1519,7 @@
         "bridge_style": "single-silhouette-endpoint-transform",
         "bridge_frames": 8
       }
-    ]
+    ],
+    "intentionalBlankFrames": []
   }
 }

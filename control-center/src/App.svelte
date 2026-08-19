@@ -44,6 +44,7 @@
   let instances: PetInstance[] = [];
   let selectedInstanceId = 'default';
   let newInstanceId = '';
+  let deleteConfirmId = '';
   let newInstanceCharacter = 'amiya';
   let newInstanceVariant = 'default';
   let contextService: ServiceStatus = {
@@ -132,6 +133,7 @@
 
   async function selectInstance(id: string, announce = false) {
     if (!id) return;
+    deleteConfirmId = '';
     const version = ++instanceSelectionVersion;
     selectedInstanceId = id;
     try {
@@ -284,6 +286,24 @@
       newInstanceId = '';
       await selectInstance(id);
       notify('新桌宠实例已创建并启动', 'ok');
+    } catch (error) {
+      notify(String(error), 'error');
+    }
+  }
+
+  async function deletePetInstance() {
+    if (!selectedInstance || selectedInstance.id === 'default') return;
+    if (deleteConfirmId !== selectedInstance.id) {
+      deleteConfirmId = selectedInstance.id;
+      notify(`再次点击“确认删除”以移除 ${selectedInstance.id}`, 'info');
+      return;
+    }
+    const deletedId = selectedInstance.id;
+    try {
+      instances = await invoke<PetInstance[]>('delete_instance', { id: deletedId });
+      deleteConfirmId = '';
+      await selectInstance('default');
+      notify(`实例 ${deletedId} 已停止并删除`, 'ok');
     } catch (error) {
       notify(String(error), 'error');
     }
@@ -571,6 +591,7 @@
                 <button onclick={() => fleetAction('start')} disabled={selectedInstance.active}>启动</button>
                 <button onclick={() => fleetAction('restart')} disabled={!selectedInstance.active}>重启</button>
                 <button class="danger-soft" onclick={() => fleetAction('stop')} disabled={!selectedInstance.active}>停止</button>
+                <button class="danger-soft" onclick={deletePetInstance} disabled={selectedInstance.id === 'default'}>{deleteConfirmId === selectedInstance.id ? '确认删除' : '删除实例'}</button>
               </div>
               <label class="switch-row"><span><b>登录后自启</b></span><input type="checkbox" checked={selectedInstance.autostart} onchange={toggleInstanceAutostart} /><i></i></label>
               <div class="reaction-panel">

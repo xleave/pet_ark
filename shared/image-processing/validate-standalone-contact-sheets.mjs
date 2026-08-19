@@ -85,15 +85,16 @@ function collectRosterVariants(roster) {
   for (const character of requireArray(roster.characters, 'roster.characters')) {
     const characterId = requireString(character.character_id, 'roster character_id');
     for (const variant of requireArray(character.variants, `${characterId}: roster variants`)) {
+      if (['source-unavailable', 'source-incomplete', 'authorization-blocked', 'blocked'].includes(variant.status)) continue;
       const variantId = requireString(variant.variant_id, `${characterId}: roster variant_id`);
       const key = identity(characterId, variantId);
       if (expected.has(key)) throw new Error(`roster contains duplicate variant ${key}`);
       expected.set(key, { characterId, variantId });
     }
   }
-  const declared = roster.statistics?.expected_variants;
+  const declared = roster.statistics?.source_available_variants ?? roster.statistics?.expected_variants;
   if (declared !== undefined && declared !== expected.size) {
-    throw new Error(`roster statistics expected_variants=${declared}, found ${expected.size}`);
+    throw new Error(`roster statistics source_available_variants=${declared}, found ${expected.size}`);
   }
   if (expected.size === 0) throw new Error('roster contains no variants');
   return expected;

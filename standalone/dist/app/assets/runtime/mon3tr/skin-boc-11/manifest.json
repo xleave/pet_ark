@@ -1,5 +1,29 @@
 {
   "schemaVersion": 2,
+  "source": {
+    "provider": "ark-models",
+    "page": "https://github.com/isHarryh/Ark-Models",
+    "commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+    "asset": {
+      "assetId": "build_char_4179_monstr_boc#11",
+      "type": "Operator",
+      "style": "BuildingSkin",
+      "name": "Mon3tr",
+      "appellation": "Mon3tr",
+      "skinGroupId": "2026#boc",
+      "skinGroupName": "斗争血脉/XI",
+      "sortTags": [
+        "Operator",
+        "Rarity_6",
+        "Skinned"
+      ],
+      "assetList": {
+        ".atlas": "build_char_4179_monstr_boc#11.atlas",
+        ".png": "build_char_4179_monstr_boc#11.png",
+        ".skel": "build_char_4179_monstr_boc#11.skel"
+      }
+    }
+  },
   "character": {
     "id": "mon3tr",
     "name": "Mon3tr",
@@ -929,7 +953,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:relax",
+      "provenanceId": "processed-ark-models-spine:relax",
       "generatedSequence": null
     },
     "walk-left": {
@@ -952,7 +976,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:move",
+      "provenanceId": "processed-ark-models-spine:move",
       "generatedSequence": null
     },
     "walk-right": {
@@ -975,7 +999,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:move",
+      "provenanceId": "processed-ark-models-spine:move",
       "generatedSequence": null
     },
     "run-left": {
@@ -1044,7 +1068,7 @@
       "next": "idle",
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:interact",
+      "provenanceId": "processed-ark-models-spine:interact",
       "generatedSequence": null
     },
     "picked-up": {
@@ -1175,7 +1199,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:sleep",
+      "provenanceId": "processed-ark-models-spine:sleep",
       "generatedSequence": null
     },
     "wake": {

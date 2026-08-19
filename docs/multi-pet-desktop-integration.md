@@ -14,8 +14,9 @@ mon3tr-side   → pet-ark@mon3tr-side      → mon3tr-side.sock
 
 ```bash
 npm run standalone:instance -- list
-npm run standalone:instance -- create mon3tr-side mon3tr skin-boc-11
+npm run standalone:instance -- create mon3tr-side --character mon3tr --variant skin-boc-11
 npm run standalone:control -- --instance mon3tr-side status
+npm run standalone:instance -- delete mon3tr-side --yes
 ```
 
 ## 动作协议与调度

@@ -764,6 +764,34 @@ fn create_instance(
     list_instances()
 }
 
+fn deletable_instance_config_path(id: &str) -> Result<PathBuf, String> {
+    if !valid_id(id) || matches!(id, "default" | "control") {
+        return Err("默认实例不能删除".into());
+    }
+    let path = instance_config_path(id)?;
+    if !path.is_file() {
+        return Err("实例配置不存在".into());
+    }
+    Ok(path)
+}
+
+#[tauri::command]
+fn delete_instance(id: String) -> Result<Vec<PetInstance>, String> {
+    let path = deletable_instance_config_path(&id)?;
+    let unit = instance_unit(&id)?;
+    let output = systemctl(&["disable", "--now", &unit])?;
+    if !output.status.success() {
+        return Err(output_error("instance disable and stop", &output));
+    }
+    fs::remove_file(&path).map_err(|error| format!("cannot remove instance config: {error}"))?;
+    if let Ok(socket) = instance_socket_path(&id) {
+        if socket.is_file() {
+            fs::remove_file(socket).map_err(|error| format!("cannot remove stale instance socket: {error}"))?;
+        }
+    }
+    list_instances()
+}
+
 #[tauri::command]
 fn instance_action(id: String, action: String) -> Result<Vec<PetInstance>, String> {
     if !matches!(action.as_str(), "start" | "stop" | "restart") {
@@ -1137,6 +1165,7 @@ pub fn run() {
             read_logs,
             list_instances,
             create_instance,
+            delete_instance,
             instance_action,
             set_instance_autostart,
             instance_react,
@@ -1189,6 +1218,13 @@ mod tests {
         assert!(!valid_id("../amiya"));
         assert!(!valid_id("amiya;restart"));
         assert!(!valid_id(""));
+    }
+
+    #[test]
+    fn protected_instances_cannot_be_deleted() {
+        assert!(deletable_instance_config_path("default").is_err());
+        assert!(deletable_instance_config_path("control").is_err());
+        assert!(deletable_instance_config_path("../side").is_err());
     }
 
     #[test]

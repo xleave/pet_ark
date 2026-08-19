@@ -48,7 +48,7 @@ Rust backend 提供固定命令：
 ## Standalone 资产产线
 
 ```text
-PRTS / Ark-Models source
+Ark-Models PC-client Spine source
   → source/<character>/<variant>
   → cleaned frames
   → animation mapping / generated transitions
@@ -56,7 +56,7 @@ PRTS / Ark-Models source
   → coverage / quality index / contact sheets
 ```
 
-运行时 registry 采用 `character → variants`。当前 source-of-truth 为 425 个可玩角色、508 个皮肤、933 个外观。动作 coverage 与清晰度/构图质量是两套独立报告：
+运行时 registry 采用 `character → variants`。当前 source-of-truth 索引 425 个可玩角色、508 个皮肤、933 个外观，其中 932 个具有 Ark-Models 运行资产。动作 coverage 与清晰度/构图质量是两套独立报告：
 
 - `standalone/dist/coverage.json`
 - `standalone/dist/animation-coverage.json`

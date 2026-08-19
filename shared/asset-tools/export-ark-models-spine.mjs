@@ -11,12 +11,17 @@ const sharp = require('sharp');
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const ROSTER_PATH = path.join(REPO_ROOT, 'shared/character-data/standalone-roster.json');
 const INTENTIONAL_BLANKS_PATH = path.join(REPO_ROOT, 'shared/character-data/standalone-intentional-blanks.json');
+const SOURCE_RECORD_PATH = path.join(REPO_ROOT, 'shared/character-data/upstream-sources.json');
 const RENDER_REVISION = 4;
 const BLANK_POLICY_REVISION = 1;
 const PLACEMENT_REVISION = 3;
+const SPINE_RUNTIME_COMPAT_REVISION = 2;
 const CORE_PLACEMENT_ANIMATIONS = new Set(['default', 'idle', 'relax', 'move', 'run', 'sit', 'sleep']);
 const roster = JSON.parse(await fs.readFile(ROSTER_PATH, 'utf8'));
 const intentionalBlanks = JSON.parse(await fs.readFile(INTENTIONAL_BLANKS_PATH, 'utf8'));
+const sourceRecord = JSON.parse(await fs.readFile(SOURCE_RECORD_PATH, 'utf8'));
+const arkModels = sourceRecord.sources.ark_models;
+const spineTs = sourceRecord.sources.spine_ts;
 const args = process.argv.slice(2);
 
 function argument(name, fallback = null) {
@@ -216,7 +221,7 @@ async function supervise(jobs, config, concurrency) {
   process.removeListener('SIGINT', onInterrupt);
   process.removeListener('SIGTERM', onTerminate);
 
-  const reportPath = path.join(REPO_ROOT, '.cache/prts-spine/last-export-report.json');
+  const reportPath = path.join(REPO_ROOT, '.cache/ark-models-spine/last-export-report.json');
   await fs.mkdir(path.dirname(reportPath), { recursive: true });
   await fs.writeFile(reportPath, `${JSON.stringify({
     generated_at: new Date().toISOString(),
@@ -230,41 +235,25 @@ async function supervise(jobs, config, concurrency) {
   return failures;
 }
 
-async function discoverRuntimeMap(discoveryUrl) {
-  const pageResponse = await fetch(discoveryUrl);
-  if (!pageResponse.ok) {
-    throw new Error(`${pageResponse.status} ${pageResponse.statusText}: ${discoveryUrl}`);
-  }
-  const html = await pageResponse.text();
-  const scriptUrl = html.match(/https:\/\/static\.prts\.wiki\/widgets\/production\/SpineViewer\.[a-zA-Z0-9_-]+\.js/)?.[0];
-  if (!scriptUrl) throw new Error(`PRTS page does not advertise a SpineViewer runtime: ${discoveryUrl}`);
-  const scriptResponse = await fetch(scriptUrl);
-  if (!scriptResponse.ok) {
-    throw new Error(`${scriptResponse.status} ${scriptResponse.statusText}: ${scriptUrl}`);
-  }
-  const script = await scriptResponse.text();
-  const advertisedMap = script.match(/sourceMappingURL=(https:\/\/static\.prts\.wiki\/widgets\/production\/SpineViewer\.[a-zA-Z0-9_-]+\.js\.map)/)?.[1];
-  return advertisedMap ?? `${scriptUrl}.map`;
-}
-
-async function loadPrtsRuntime(discoveryUrl) {
-  const cacheDir = path.join(REPO_ROOT, '.cache', 'prts-spine');
-  const runtimePath = path.join(cacheDir, 'spine-webgl.mjs');
+async function loadSpineRuntime() {
+  const cacheDir = path.join(REPO_ROOT, '.cache', 'spine-runtime');
+  const runtimePath = path.join(cacheDir, `spine-webgl-${spineTs.version}-compat-${SPINE_RUNTIME_COMPAT_REVISION}.mjs`);
   try {
     await fs.access(runtimePath);
   } catch {
-    const runtimeMapUrl = await discoverRuntimeMap(discoveryUrl);
-    const response = await fetch(runtimeMapUrl);
-    if (!response.ok) throw new Error(`${response.status} ${response.statusText}: ${runtimeMapUrl}`);
-    const sourceMap = await response.json();
-    const index = sourceMap.sources.findIndex((source) => source.endsWith('/spine-webgl.js'));
-    if (index < 0 || !sourceMap.sourcesContent[index]) {
-      throw new Error('PRTS source map does not contain spine-webgl.js');
-    }
+    const runtimeUrl = `${spineTs.raw_root}/${spineTs.commit}/${spineTs.runtime_path}`;
+    const response = await fetch(runtimeUrl, { signal: AbortSignal.timeout(45_000) });
+    if (!response.ok) throw new Error(`${response.status} ${response.statusText}: ${runtimeUrl}`);
+    const source = await response.text();
+    if (!source.includes('var spine')) throw new Error('Official Spine runtime payload is invalid');
+    const signedUtf8Read = 'var b = this.readByte();\n\t\t\t\tswitch (b >> 4)';
+    const unsignedUtf8Read = 'var b = this.readByte() & 0xFF;\n\t\t\t\tswitch (b >> 4)';
+    const compatibleSource = source.replace(signedUtf8Read, unsignedUtf8Read);
+    if (compatibleSource === source) throw new Error('Official Spine runtime UTF-8 compatibility marker was not found');
     await fs.mkdir(cacheDir, { recursive: true });
-    await fs.writeFile(runtimePath, sourceMap.sourcesContent[index]);
+    await fs.writeFile(runtimePath, `${compatibleSource}\nexport default spine;\n`);
   }
-  return (await import(`${pathToFileURL(runtimePath).href}?v=2`)).default;
+  return (await import(`${pathToFileURL(runtimePath).href}?v=${spineTs.commit}`)).default;
 }
 
 const rounded = (value) => Number(value.toFixed(5));
@@ -657,7 +646,10 @@ function sameRenderConfig(manifest, config) {
     && manifest?.canvas?.width === config.width
     && manifest?.canvas?.height === config.height
     && manifest?.sampling?.fps === config.fps
-    && manifest?.sampling?.maximum_frames === config.maxFrames;
+    && manifest?.sampling?.maximum_frames === config.maxFrames
+    && manifest?.source_provider === 'ark-models'
+    && manifest?.source_commit === arkModels.commit
+    && manifest?.renderer === `Ark-Models PC-client Spine data with official spine-ts ${spineTs.version} compat ${SPINE_RUNTIME_COMPAT_REVISION} and deterministic CPU triangle composition`;
 }
 
 async function loadTexturePages(spine, atlasText, retrieval) {
@@ -680,12 +672,19 @@ async function loadTexturePages(spine, atlasText, retrieval) {
     };
     pages.set(atlasName, page);
     pages.set(path.basename(atlasName), page);
+    pages.set(atlasName.toLocaleLowerCase(), page);
+    pages.set(path.basename(atlasName).toLocaleLowerCase(), page);
   }
   const atlas = new spine.TextureAtlas(atlasText, (name) => {
-    const page = pages.get(name.trim()) ?? pages.get(path.basename(name.trim()));
+    const page = pages.get(name.trim())
+      ?? pages.get(path.basename(name.trim()))
+      ?? pages.get(name.trim().toLocaleLowerCase())
+      ?? pages.get(path.basename(name.trim()).toLocaleLowerCase());
     if (!page) throw new Error(`Atlas texture was not acquired: ${name}`);
     return new spine.FakeTexture({ width: page.width, height: page.height });
   });
+  const findRegion = atlas.findRegion.bind(atlas);
+  atlas.findRegion = (name) => findRegion(name) ?? findRegion(name.trim());
   return { atlas, pages };
 }
 
@@ -694,7 +693,10 @@ async function exportVariant(spine, { character, variant }, config) {
   const retrievalPath = path.join(sourceDir, 'retrieval.json');
   const retrieval = await readJsonIfPresent(retrievalPath);
   if (!retrieval) {
-    throw new Error(`Missing source retrieval; run acquire-prts-spine first: ${path.relative(REPO_ROOT, retrievalPath)}`);
+    throw new Error(`Missing source retrieval; run acquire-ark-models-spine first: ${path.relative(REPO_ROOT, retrievalPath)}`);
+  }
+  if (retrieval.source_provider !== 'ark-models' || retrieval.source_commit !== arkModels.commit) {
+    throw new Error(`Source must come from Ark-Models@${arkModels.commit}; refresh ${character.character_id}/${variant.variant_id}`);
   }
 
   const atlasPath = path.join(REPO_ROOT, retrieval.files.atlas);
@@ -752,6 +754,9 @@ async function exportVariant(spine, { character, variant }, config) {
 
   const outputDir = path.join(REPO_ROOT, 'standalone/assets/cleaned', character.character_id, variant.variant_id);
   const manifestPath = path.join(outputDir, 'manifest.json');
+  if (args.includes('--force') && !animationFilter) {
+    await fs.rm(outputDir, { recursive: true, force: true });
+  }
   await fs.mkdir(outputDir, { recursive: true });
   const previous = await readJsonIfPresent(manifestPath);
   const measurement = measureSkeleton(spine, skeletonData, config);
@@ -773,13 +778,15 @@ async function exportVariant(spine, { character, variant }, config) {
     skin_id: variant.skin_id,
     skin_name: variant.skin_name,
     source: path.relative(REPO_ROOT, sourceDir),
-    source_page: character.source_page,
-    source_asset_set: variant.source_asset_set,
+    source_provider: retrieval.source_provider,
+    source_page: retrieval.source_page,
+    source_commit: retrieval.source_commit,
+    source_asset_set: retrieval.source_asset,
     retrieval_date: retrieval.retrieval_date,
     spine_version: skeletonData.version,
     original_animation_states: sourceAnimations,
     processed_states: sameRenderConfig(previous, config) ? (previous.processed_states ?? {}) : {},
-    renderer: 'PRTS Spine 3.8 runtime data with deterministic CPU triangle composition',
+    renderer: `Ark-Models PC-client Spine data with official spine-ts ${spineTs.version} compat ${SPINE_RUNTIME_COMPAT_REVISION} and deterministic CPU triangle composition`,
     canvas: {
       width: config.width,
       height: config.height,
@@ -914,7 +921,7 @@ if (!args.includes('--worker') && jobs.length > 1) {
   if (jobs.length !== 1) throw new Error('An isolated export worker must select exactly one variant');
   sharp.cache({ memory: 32, files: 0, items: 16 });
   sharp.concurrency(1);
-  const spine = await loadPrtsRuntime(jobs[0].character.source_page);
+  const spine = await loadSpineRuntime();
   console.log(`exporting ${jobs.length} standalone variant(s), isolated=${args.includes('--worker')}, canvas=${config.width}x${config.height}`);
   const failures = await mapBounded(jobs, 1, (job) => exportVariant(spine, job, config));
   console.log(`Spine export complete: ${jobs.length - failures.length}/${jobs.length}`);

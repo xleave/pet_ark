@@ -295,6 +295,7 @@ async function main() {
   for (const character of roster.characters) {
     if (selectedCharacter && character.character_id !== selectedCharacter) continue;
     for (const variant of character.variants) {
+      if (variant.status !== 'source-available') continue;
       const id = variantId(variant);
       if (selectedVariant && id !== selectedVariant && variant.skin_id !== selectedVariant) continue;
       work.push({ character, variant, id });

@@ -37,9 +37,10 @@ Options:
   --skin <id>       Select one skin id/variant id/name (default: default)
   --variant <id>    Select one variant id (takes precedence over --skin)
   --concurrency <n> Bounded source acquisition/export concurrency
+  --mirror <path>   Read the pinned Ark-Models checkout from a local mirror
   --sysroot <path>  Forward a cross-compilation sysroot to make/pkg-config
   --jobs <count>    Parallel make jobs
-  --refresh-source  Download and export the selected PRTS Spine source first
+  --refresh-source  Download and export the selected Ark-Models Spine source first
   --                Pass remaining arguments to the desktop application`);
 }
 
@@ -264,6 +265,7 @@ async function prepareAssets(args) {
   if (!character) throw new Error(`Unknown standalone character: ${characterId}`);
   const variant = character.variants.find((entry) => entry.variant_id === selector || entry.skin_id === selector || entry.skin_name === selector);
   if (!variant) throw new Error(`${characterId}: unknown skin/variant ${selector}`);
+  if (variant.status !== 'source-available') throw new Error(`${characterId}/${variant.variant_id}: ${variant.reason || 'animation source is unavailable'}`);
   const defaultVariant = character.variants.find((entry) => entry.variant_id === character.default_variant_id);
   const requiredVariants = variant.variant_id === character.default_variant_id ? [variant] : [defaultVariant, variant];
   for (const requiredVariant of requiredVariants) {
@@ -278,9 +280,9 @@ async function prepareAssets(args) {
       'manifest.json',
     );
     if (args.includes('--refresh-source') || !await exists(cleanedManifest)) {
-      const sourceArgs = [...selectedArgs, ...forwarded(args, ['--concurrency'])];
-      await run(process.execPath, ['shared/asset-tools/acquire-prts-spine.mjs', ...sourceArgs]);
-      await run(process.execPath, ['shared/asset-tools/export-prts-spine.mjs', ...sourceArgs]);
+      const sourceArgs = [...selectedArgs, ...forwarded(args, ['--concurrency', '--mirror'])];
+      await run(process.execPath, ['shared/asset-tools/acquire-ark-models-spine.mjs', ...sourceArgs]);
+      await run(process.execPath, ['shared/asset-tools/export-ark-models-spine.mjs', ...sourceArgs]);
     }
     await run(process.execPath, ['shared/image-processing/prepare-standalone-assets.mjs', ...selectedArgs]);
   }
@@ -307,11 +309,15 @@ async function prepareAssets(args) {
 }
 
 async function prepareAll(args) {
-  const sourceArgs = ['--all', ...forwarded(args, ['--concurrency'])];
-  await run(process.execPath, ['shared/asset-tools/acquire-prts-spine.mjs', ...sourceArgs]);
-  await run(process.execPath, ['shared/asset-tools/export-prts-spine.mjs', ...sourceArgs]);
+  if (args.includes('--refresh-source')) {
+    const sourceArgs = ['--all', ...forwarded(args, ['--concurrency', '--mirror'])];
+    await run(process.execPath, ['shared/asset-tools/acquire-ark-models-spine.mjs', ...sourceArgs]);
+    await run(process.execPath, ['shared/asset-tools/export-ark-models-spine.mjs', ...sourceArgs]);
+  }
   const roster = await loadJson(ROSTER_PATH);
-  const variants = roster.characters.flatMap((character) => character.variants.map((variant) => ({ character, variant })));
+  const variants = roster.characters.flatMap((character) => character.variants
+    .filter((variant) => variant.status === 'source-available')
+    .map((variant) => ({ character, variant })));
   const concurrency = Number(option(args, '--concurrency', '4'));
   if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 32) throw new Error('--concurrency must be an integer from 1 to 32');
   let cursor = 0;
@@ -331,7 +337,7 @@ async function prepareAll(args) {
   await run(process.execPath, ['shared/image-processing/build-runtime-registry.mjs']);
   await run(process.execPath, ['shared/asset-tools/generate-standalone-registry.mjs']);
   await run(process.execPath, ['shared/image-processing/validate-generated-manifest.mjs']);
-  await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs', '--require-complete']);
+  await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs', '--check-accounted']);
   await run(process.execPath, [
     'shared/image-processing/validate-standalone-animation-coverage.mjs',
     '--require-roster-reconciled',
@@ -479,7 +485,7 @@ async function main() {
       await run(process.execPath, ['shared/image-processing/test-standalone-contact-sheets.mjs']);
       await run(process.execPath, ['shared/image-processing/test-dist-manifest-hygiene.mjs']);
       await run(process.execPath, ['shared/image-processing/validate-generated-manifest.mjs']);
-      await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs', '--check-accounted', '--require-complete']);
+      await run(process.execPath, ['shared/image-processing/validate-standalone-coverage.mjs', '--check-accounted']);
       await run(process.execPath, [
         'shared/image-processing/validate-standalone-animation-coverage.mjs',
         '--require-roster-reconciled',
