@@ -31,6 +31,12 @@ void pet_movement_choose_target(PetMovement *movement) {
   movement->direction = movement->target_x < movement->x ? -1 : 1;
 }
 
+void pet_movement_set_target(PetMovement *movement, float x) {
+  const float max_x = fmaxf(0.0f, movement->surface_width - movement->sprite_width);
+  movement->target_x = fminf(fmaxf(0.0f, x), max_x);
+  movement->direction = movement->target_x < movement->x ? -1 : 1;
+}
+
 bool pet_movement_tick(PetMovement *movement, float delta, float pixels_per_second) {
   const float remaining = movement->target_x - movement->x;
   const float distance = pixels_per_second * movement->speed_multiplier * delta;

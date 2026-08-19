@@ -8,6 +8,7 @@ Control Center 使用一套集中维护的现代工业视觉语言。
 |---|---|
 | `control-center/src/design-tokens.css` | 色板、语义颜色、间距、控件高度、切角、字体与动效 |
 | `control-center/src/styles.css` | 布局与可复用组件样式 |
+| `control-center/src/behavior-definitions.ts` | AI、情境行为与时间线的统一标签 |
 | `control-center/src/App.svelte` | 状态、语义化结构与交互 |
 
 新界面先复用 token 和现有组件配方。原始颜色、动效时长、控件高度与新切角只在 `design-tokens.css` 定义。`npm run check:design` 检查这一约束。

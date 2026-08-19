@@ -21,6 +21,12 @@ PRTS 的[版权说明](https://prts.wiki/w/PRTS:版权)将站点文字内容置�
 
 Pet Ark 是非官方同人项目，与鹰角网络或 PRTS 无隶属或背书关系。
 
+## Ark-Models 高清 Spine 来源
+
+[isHarryh/Ark-Models](https://github.com/isHarryh/Ark-Models) 汇集从《明日方舟》PC 客户端提取的 Spine 3.8 `.atlas`、`.skel` 与 `.png`。Pet Ark 的按需获取器固定到提交 `3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b`，记录位于 `shared/character-data/upstream-sources.json`，逐外观提交、URL、文件大小与 SHA-256 位于对应 `retrieval.json`。
+
+当前 Mon3tr“锋锐”使用该来源重建。Ark-Models 仓库声明资源仅限非商业使用；其中游戏素材的权利仍归上海鹰角网络科技有限公司。Pet Ark 不向 Ark-Models 原仓库提交分支或补丁。
+
 ## 角色数据与视觉索引
 
 - [Kengxxiao/ArknightsGameData](https://github.com/Kengxxiao/ArknightsGameData)：角色 ID、名称和 alter 分组核对；
@@ -35,7 +41,7 @@ Codex 产线的 8 × 9 atlas contract 参考 [OpenAI skills](https://github.com/
 
 ## Spine 数据处理
 
-导出工具在本地缓存中读取 PRTS Spine viewer source map 指向的运行时代码，以解释 Spine 3.8 数据。该缓存由 `.gitignore` 排除，不随仓库分发。
+导出工具使用 Spine 3.8 运行时代码解释来自已记录来源的 skeleton 与 atlas。运行时代码缓存由 `.gitignore` 排除，不随仓库分发。
 
 `standalone/assets/generated/` 记录由 FFmpeg optical-flow interpolation 产生的补间候选。manifest 会保留输入帧、工具、接受/拒绝结论和 runtime usage；生成结果不标记为 PRTS 或游戏原始帧。
 

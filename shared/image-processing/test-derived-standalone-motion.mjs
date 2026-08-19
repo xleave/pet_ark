@@ -119,6 +119,7 @@ async function assertSingleSilhouetteBridges(identity) {
     for (const frame of bridge.atlas_frames.slice(0, -1)) {
       const pixels = await framePixels(runtimeDir, source, frame);
       const shape = alphaShape(pixels, frameWidth, frameHeight);
+      assert.ok(shape.alphaPixels > 0, `${identity}:${state}:${frame}: bridge frame is transparent`);
       assert.ok(shape.alphaPixels <= maximumAlphaArea * 1.45, `${identity}:${state}:${frame}: bridge alpha area expanded`);
       assert.ok(shape.bboxArea <= maximumBboxArea * 1.2, `${identity}:${state}:${frame}: bridge bbox area expanded`);
     }
@@ -209,6 +210,7 @@ const representativeBridgeVariants = [
   'dobermann/default',
   'necrass/default',
   'rosmontis/default',
+  'meteor/skin-epoque-28',
 ];
 for (const identity of representativeBridgeVariants) await assertSingleSilhouetteBridges(identity);
 

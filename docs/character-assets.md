@@ -2,7 +2,7 @@
 
 ## 范围
 
-2026-08-12 的 source-of-truth 位于：
+角色范围的 source-of-truth 位于：
 
 - `shared/character-data/standalone-roster.json`
 - `shared/character-data/standalone-sources.json`
@@ -17,7 +17,7 @@
 
 ## 来源与分层
 
-角色/皮肤索引来自 PRTS 干员页面和公开 `char_spine/{game_key}/meta.json`；ArknightsGameData 用于 ID 与 alter 分组核对。每次获取写入：
+角色/皮肤索引来自 PRTS；ArknightsGameData 用于 ID 与 alter 分组核对。Spine 文件可来自 PRTS `char_spine` 或 Ark-Models 的 PC 客户端提取，provider、固定提交与完整性信息写入：
 
 ```text
 standalone/assets/source/<character>/<variant>/retrieval.json
@@ -51,6 +51,16 @@ node shared/asset-tools/acquire-prts-spine.mjs --character amiya --variant skin-
 node shared/asset-tools/export-prts-spine.mjs --character amiya --variant skin-winter-1 --inspect
 node shared/asset-tools/export-prts-spine.mjs --character amiya --variant skin-winter-1
 ```
+
+按需切换到 Ark-Models 高清来源：
+
+```bash
+npm run standalone:source:ark-models -- --character mon3tr --variant skin-boc-11
+node shared/asset-tools/export-prts-spine.mjs --character mon3tr --variant skin-boc-11 --force
+npm run standalone:assets -- --character mon3tr --variant skin-boc-11
+```
+
+获取器固定 `shared/character-data/upstream-sources.json` 中的提交，不克隆约 1 GiB 的完整上游仓库。若 provider 或提交变化，同名旧文件不会被错误复用。
 
 导出器动态读取页面当前的 SpineViewer source map，确定性合成 mesh、对齐地面并清理透明像素的 hidden RGB。每个 cleaned manifest 记录画布、采样率、边界、placement 和 render revision。
 
@@ -90,7 +100,7 @@ npm run standalone:contact-sheets
 
 ## Generated motion
 
-`standalone/assets/generated/manifest.json` 记录源帧 A/B、生成器、候选、接受状态和 runtime usage。当前有 14 个 accepted 帧用于 27 个 runtime 状态，2 个 rejected 候选只保留审计记录。
+`standalone/assets/generated/manifest.json` 记录源帧 A/B、生成器、候选、接受状态和 runtime usage。自动化可生成补间和动作候选，但不会直接提升为正式运行资产；只有通过轮廓、落点、透明像素、方向与逐帧抽查的候选才进入 runtime。当前有 14 个 accepted 帧用于 27 个 runtime 状态，2 个 rejected 候选只保留审计记录。
 
 ## 人工验收
 

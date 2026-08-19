@@ -92,6 +92,19 @@ static void test_state_machine_rest_and_wake(void) {
   CHECK(strcmp(pet_state_machine_animation(&machine, 1), "wake") == 0);
   pet_state_machine_tick(&machine, 0.5f, true, false);
   CHECK(machine.behavior == PET_BEHAVIOR_IDLE);
+
+  pet_state_machine_dispatch(&machine, PET_EVENT_RUN);
+  CHECK(machine.behavior == PET_BEHAVIOR_MOVEMENT);
+  CHECK(machine.running);
+  pet_state_machine_dispatch(&machine, PET_EVENT_REST);
+  CHECK(machine.behavior == PET_BEHAVIOR_RESTING);
+  pet_state_machine_dispatch(&machine, PET_EVENT_SLEEP);
+  CHECK(machine.behavior == PET_BEHAVIOR_SLEEPING);
+  pet_state_machine_dispatch(&machine, PET_EVENT_CANCEL);
+  CHECK(machine.behavior == PET_BEHAVIOR_IDLE);
+  CHECK(strcmp(pet_state_machine_animation(&machine, 1), "idle") == 0);
+  pet_state_machine_tick(&machine, 0.5f, true, false);
+  CHECK(machine.behavior == PET_BEHAVIOR_IDLE);
   CHECK_NEAR(machine.since_user_activity, 0.5f, 0.0001f);
 
   machine.behavior = PET_BEHAVIOR_SLEEPING;
@@ -114,6 +127,11 @@ static void test_movement_bounds_target_and_drag(void) {
   pet_movement_choose_target(&movement);
   CHECK(movement.target_x >= 0.0f && movement.target_x <= 900.0f);
   CHECK(movement.direction == (movement.target_x < movement.x ? -1 : 1));
+  pet_movement_set_target(&movement, 450.0f);
+  CHECK_NEAR(movement.target_x, 450.0f, 0.0001f);
+  CHECK(movement.direction == -1);
+  pet_movement_set_target(&movement, 5000.0f);
+  CHECK_NEAR(movement.target_x, 900.0f, 0.0001f);
 
   movement.x = 0.0f;
   movement.target_x = 100.0f;
@@ -274,6 +292,22 @@ static void test_control_protocol(void) {
   CHECK(command.kind == PET_CONTROL_REACT);
   CHECK(!strcmp(command.event, "celebrate"));
   CHECK(!pet_control_parse("{\"command\":\"react\",\"event\":\"inject-input\"}",
+                           &command, error, sizeof(error)));
+  CHECK(pet_control_parse("{\"command\":\"act\",\"action\":\"move_to\",\"x\":640}",
+                          &command, error, sizeof(error)));
+  CHECK(command.kind == PET_CONTROL_ACT);
+  CHECK(!strcmp(command.action, "move_to"));
+  CHECK_NEAR(command.x, 640.0f, 0.0001f);
+  CHECK(pet_control_parse("{\"command\":\"act\",\"action\":\"look_at\",\"direction\":-1}",
+                          &command, error, sizeof(error)));
+  CHECK(command.direction == -1);
+  CHECK(pet_control_parse("{\"command\":\"act\",\"action\":\"emote\",\"event\":\"attention\"}",
+                          &command, error, sizeof(error)));
+  CHECK(!pet_control_parse("{\"command\":\"act\",\"action\":\"move_to\",\"x\":-1}",
+                           &command, error, sizeof(error)));
+  CHECK(!pet_control_parse("{\"command\":\"act\",\"action\":\"look_at\",\"direction\":0}",
+                           &command, error, sizeof(error)));
+  CHECK(!pet_control_parse("{\"command\":\"act\",\"action\":\"shell\"}",
                            &command, error, sizeof(error)));
   CHECK(!pet_control_parse("{\"command\":\"launch_shell\"}",
                            &command, error, sizeof(error)));

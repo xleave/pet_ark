@@ -16,6 +16,7 @@ typedef enum {
   PET_CONTROL_SET_CLICK_THROUGH,
   PET_CONTROL_SELECT,
   PET_CONTROL_REACT,
+  PET_CONTROL_ACT,
   PET_CONTROL_QUIT,
 } PetControlCommandKind;
 
@@ -26,6 +27,9 @@ typedef struct {
   char character[PET_CONTROL_ID_MAX];
   char variant[PET_CONTROL_ID_MAX];
   char event[PET_CONTROL_ID_MAX];
+  char action[PET_CONTROL_ID_MAX];
+  float x;
+  int direction;
 } PetControlCommand;
 
 typedef struct {

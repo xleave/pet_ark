@@ -3,12 +3,12 @@
 Pet Ark 由桌面运行时、图形控制中心、两条资产产线和共享数据层组成。
 
 ```text
-Control Center ── systemd / journald / Unix socket ──┐
-Context Broker ── niri event stream ────────────────┤
-                                                     ▼
-                                         pet-ark Wayland instances
-                                                     │
-                           standalone runtime atlas ─┘
+Control Center ── systemd / journald / Unix socket ─────────┐
+Behavior Core ── niri events / spatial bus / AI intents ───┤
+                                                           ▼
+                                               Wayland pet instances
+                                                           │
+                                 standalone runtime atlas ─┘
 
 shared character data ─┬─ standalone asset pipeline
                        └─ Codex atlas pipeline
@@ -37,17 +37,18 @@ Rust backend 提供固定命令：
 - 原子读写实例配置；
 - 发送角色选择、参数更新与互动事件；
 - 读取 registry 和 runtime atlas 生成预览。
+- 管理 AI、性格、互动强度、隐私、行为开关、空间快照和事件时间线。
 
 界面视觉规范由 `control-center/src/design-tokens.css` 统一定义，组合样式位于 `styles.css`。
 
-## 桌面事件
+## 行为核心
 
-`scripts/pet-ark-context-broker.mjs` 订阅 niri JSON event stream，将焦点、工作区和定时社交事件转换为桌宠运行时事件。broker 作为独立 user service 运行，可以从控制中心启停。
+`scripts/pet-ark-context-broker.mjs` 订阅 niri JSON event stream，轮询各实例状态并维护空间总线。上下文先经过隐私裁剪，再交给 Mock、本地兼容接口或 Responses provider 生成 intent；调度器负责优先级、延迟、TTL、冷却、抢占和逐实例执行租约。运行时只接受白名单动作，不接收 shell、键盘、文件或任意网络能力。
 
 ## Standalone 资产产线
 
 ```text
-PRTS source
+PRTS / Ark-Models source
   → source/<character>/<variant>
   → cleaned frames
   → animation mapping / generated transitions
@@ -78,5 +79,6 @@ control-center/           UI 与 Tauri backend
 shared/character-data/    roster 与来源记录
 shared/asset-tools/       获取、导出、修复与 registry 工具
 shared/image-processing/  图像 QA、coverage 与 contact sheets
-scripts/                  部署、实例、控制与 context broker
+shared/behavior/          intent、调度器、AI provider 与回放夹具
+scripts/                  部署、实例、控制与行为服务
 ```

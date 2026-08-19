@@ -1,6 +1,8 @@
 {
   "schema_version": 2,
-  "render_revision": 3,
+  "render_revision": 4,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "mon3tr",
   "character_name": "Mon3tr",
   "localized_name": "Mon3tr",
@@ -18,7 +20,7 @@
     "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4179_monstr/char_4179_monstr_boc_11/build/build_char_4179_monstr_boc_11.atlas",
     "texture": "https://torappu.prts.wiki/assets/char_spine/char_4179_monstr/char_4179_monstr_boc_11/build/build_char_4179_monstr_boc_11.png"
   },
-  "retrieval_date": "2026-08-12",
+  "retrieval_date": "2026-08-19",
   "spine_version": "3.8.99",
   "original_animation_states": [
     {
@@ -114,9 +116,9 @@
     "maximum_frames": 8
   },
   "placement": {
-    "bounds_policy": "core-character-envelope",
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -256.12344,
+      "minX": -783.06006,
       "maxX": 242.06691,
       "minY": -116.34686,
       "maxY": 461.44159
@@ -128,23 +130,29 @@
       "maxY": 847.60846
     },
     "core_source_bounds": {
-      "minX": -256.12344,
+      "minX": -783.06006,
       "maxX": 242.06691,
       "minY": -116.34686,
       "maxY": 461.44159
     },
     "cluster": {
-      "retained": 3280,
+      "retained": 3285,
       "total": 3306,
-      "centerX": -8.20189,
-      "centerY": 128.58264,
-      "radiusX": 381.51888,
-      "radiusY": 619.47532
+      "centerX": -35.06921,
+      "centerY": 189.24896,
+      "radiusX": 742.46766,
+      "radiusY": 696.64667
     },
-    "scale": 0.35328,
-    "x_offset": 98.48294,
-    "y_offset": 174.89714,
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 65,
+      "visible_height": 80,
+      "density_zoom": 1.75
+    },
+    "scale": 0.30045,
+    "x_offset": 105.52085,
+    "y_offset": 216.04352,
     "padding": 8
   },
-  "exported_at": "2026-08-19T04:25:55.079Z"
+  "exported_at": "2026-08-19T12:17:20.348Z"
 }

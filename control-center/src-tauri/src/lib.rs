@@ -30,6 +30,30 @@ struct RuntimeStatus {
     shell: String,
     behavior: String,
     animation: String,
+    #[serde(default)]
+    x: f32,
+    #[serde(default)]
+    y: f32,
+    #[serde(default)]
+    width: u32,
+    #[serde(default)]
+    height: u32,
+    #[serde(default)]
+    surface_width: u32,
+    #[serde(default)]
+    surface_height: u32,
+    #[serde(default = "default_direction")]
+    direction: i32,
+    #[serde(default)]
+    pointer_inside: bool,
+    #[serde(default)]
+    pointer_x: f32,
+    #[serde(default)]
+    pointer_y: f32,
+}
+
+fn default_direction() -> i32 {
+    1
 }
 
 #[derive(Debug, Clone, Serialize)]
@@ -120,6 +144,111 @@ struct PreviewAsset {
     fps: u32,
 }
 
+#[derive(Debug, Clone, Serialize, Deserialize)]
+struct AiProviderConfig {
+    kind: String,
+    endpoint: String,
+    model: String,
+    api_key_env: String,
+    timeout_ms: u32,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+struct PersonalityConfig {
+    archetype: String,
+    sociability: f32,
+    curiosity: f32,
+    energy: f32,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+struct PrivacyConfig {
+    include_app_id: bool,
+    include_window_title: bool,
+    include_workspace_name: bool,
+    persist_timeline: bool,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+struct BehaviorConfig {
+    schema_version: u32,
+    enabled: bool,
+    provider: AiProviderConfig,
+    interaction_intensity: f32,
+    personality: PersonalityConfig,
+    privacy: PrivacyConfig,
+    behaviors: std::collections::BTreeMap<String, bool>,
+    #[serde(default)]
+    per_instance: Value,
+}
+
+impl Default for BehaviorConfig {
+    fn default() -> Self {
+        let behavior_keys = [
+            "focus_greeting",
+            "terminal_companion",
+            "browser_curiosity",
+            "media_quiet",
+            "workspace_hop",
+            "window_opened",
+            "window_closed",
+            "window_urgent",
+            "overview_quiet",
+            "pointer_greeting",
+            "social_meeting",
+            "collision_avoidance",
+        ];
+        Self {
+            schema_version: 1,
+            enabled: true,
+            provider: AiProviderConfig {
+                kind: "mock".into(),
+                endpoint: "http://127.0.0.1:11434/v1".into(),
+                model: String::new(),
+                api_key_env: "OPENAI_API_KEY".into(),
+                timeout_ms: 8000,
+            },
+            interaction_intensity: 0.65,
+            personality: PersonalityConfig {
+                archetype: "companion".into(),
+                sociability: 0.72,
+                curiosity: 0.68,
+                energy: 0.58,
+            },
+            privacy: PrivacyConfig {
+                include_app_id: true,
+                include_window_title: false,
+                include_workspace_name: false,
+                persist_timeline: true,
+            },
+            behaviors: behavior_keys
+                .into_iter()
+                .map(|key| (key.into(), true))
+                .collect(),
+            per_instance: json!({}),
+        }
+    }
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+struct BehaviorEvent {
+    timestamp: u64,
+    #[serde(rename = "type")]
+    kind: String,
+    #[serde(default)]
+    target: Option<String>,
+    #[serde(default)]
+    action: Option<String>,
+    #[serde(default)]
+    source: Option<String>,
+    #[serde(default)]
+    reason: Option<String>,
+    #[serde(default)]
+    speech: Option<String>,
+    #[serde(default)]
+    provider: Option<String>,
+}
+
 fn home_dir() -> Result<PathBuf, String> {
     env::var_os("HOME")
         .map(PathBuf::from)
@@ -128,6 +257,24 @@ fn home_dir() -> Result<PathBuf, String> {
 
 fn config_path() -> Result<PathBuf, String> {
     Ok(home_dir()?.join(".config/pet-ark/runtime.env"))
+}
+
+fn behavior_config_path() -> Result<PathBuf, String> {
+    Ok(home_dir()?.join(".config/pet-ark/behavior.json"))
+}
+
+fn behavior_timeline_path() -> Result<PathBuf, String> {
+    if let Some(root) = env::var_os("XDG_STATE_HOME") {
+        return Ok(PathBuf::from(root).join("pet-ark/events.jsonl"));
+    }
+    Ok(home_dir()?.join(".local/state/pet-ark/events.jsonl"))
+}
+
+fn behavior_world_path() -> Result<PathBuf, String> {
+    env::var_os("XDG_RUNTIME_DIR")
+        .map(PathBuf::from)
+        .map(|path| path.join("pet-ark/world.json"))
+        .ok_or_else(|| "XDG_RUNTIME_DIR is unavailable".into())
 }
 
 fn instance_config_path(instance: &str) -> Result<PathBuf, String> {
@@ -522,8 +669,14 @@ fn save_instance_config(
         &id,
         json!({ "command": "select", "character": config.character, "variant": config.variant }),
     )?;
-    send_control_to(&id, json!({ "command": "set_scale", "value": config.scale }))?;
-    send_control_to(&id, json!({ "command": "set_speed", "value": config.speed }))?;
+    send_control_to(
+        &id,
+        json!({ "command": "set_scale", "value": config.scale }),
+    )?;
+    send_control_to(
+        &id,
+        json!({ "command": "set_speed", "value": config.speed }),
+    )?;
     send_control_to(
         &id,
         json!({ "command": "set_auto_move", "value": config.auto_move }),
@@ -644,6 +797,165 @@ fn instance_react(id: String, event: String) -> Result<RuntimeStatus, String> {
 }
 
 #[tauri::command]
+fn instance_act(
+    id: String,
+    action: String,
+    x: Option<f32>,
+    direction: Option<i32>,
+    event: Option<String>,
+) -> Result<RuntimeStatus, String> {
+    if !matches!(
+        action.as_str(),
+        "emote" | "move_to" | "follow" | "flee" | "look_at" | "rest" | "sleep" | "wake" | "cancel"
+    ) {
+        return Err("unsupported action".into());
+    }
+    let mut payload = json!({ "command": "act", "action": action });
+    if matches!(action.as_str(), "move_to" | "follow" | "flee") {
+        let value = x.ok_or_else(|| "movement action requires x".to_string())?;
+        if !value.is_finite() || !(0.0..=32768.0).contains(&value) {
+            return Err("movement x is outside the display range".into());
+        }
+        payload["x"] = json!(value);
+    } else if action == "look_at" {
+        let value = direction.ok_or_else(|| "look_at requires a direction".to_string())?;
+        if !matches!(value, -1 | 1) {
+            return Err("direction must be -1 or 1".into());
+        }
+        payload["direction"] = json!(value);
+    } else if action == "emote" {
+        let value = event.ok_or_else(|| "emote requires an event".to_string())?;
+        if !matches!(value.as_str(), "attention" | "celebrate" | "wake") {
+            return Err("unsupported emote".into());
+        }
+        payload["event"] = json!(value);
+    }
+    send_control_to(&id, payload)
+}
+
+fn validate_behavior_config(config: &BehaviorConfig) -> Result<(), String> {
+    if !matches!(
+        config.provider.kind.as_str(),
+        "mock" | "openai-compatible" | "openai-responses"
+    ) {
+        return Err("unsupported AI provider".into());
+    }
+    if !(0.0..=1.0).contains(&config.interaction_intensity)
+        || !(0.0..=1.0).contains(&config.personality.sociability)
+        || !(0.0..=1.0).contains(&config.personality.curiosity)
+        || !(0.0..=1.0).contains(&config.personality.energy)
+    {
+        return Err("behavior values must be between 0 and 1".into());
+    }
+    if !(1000..=60000).contains(&config.provider.timeout_ms) {
+        return Err("AI timeout must be between 1000 and 60000 ms".into());
+    }
+    if config.provider.endpoint.len() > 512
+        || config.provider.model.len() > 160
+        || config.personality.archetype.len() > 96
+    {
+        return Err("behavior configuration contains an oversized field".into());
+    }
+    if config.provider.kind != "mock"
+        && !(config.provider.endpoint.starts_with("http://")
+            || config.provider.endpoint.starts_with("https://"))
+    {
+        return Err("AI endpoint must use http or https".into());
+    }
+    let key = config.provider.api_key_env.as_bytes();
+    if key.is_empty()
+        || key.len() > 96
+        || !(key[0].is_ascii_alphabetic() || key[0] == b'_')
+        || !key
+            .iter()
+            .all(|byte| byte.is_ascii_alphanumeric() || *byte == b'_')
+    {
+        return Err("API key environment variable name is invalid".into());
+    }
+    Ok(())
+}
+
+#[tauri::command]
+fn load_behavior_config() -> Result<BehaviorConfig, String> {
+    let path = behavior_config_path()?;
+    match fs::read_to_string(&path) {
+        Ok(contents) => serde_json::from_str(&contents)
+            .map_err(|error| format!("invalid behavior configuration: {error}")),
+        Err(error) if error.kind() == std::io::ErrorKind::NotFound => Ok(BehaviorConfig::default()),
+        Err(error) => Err(format!("cannot read behavior configuration: {error}")),
+    }
+}
+
+#[tauri::command]
+fn save_behavior_config(mut config: BehaviorConfig) -> Result<BehaviorConfig, String> {
+    config.schema_version = 1;
+    for key in BehaviorConfig::default().behaviors.keys() {
+        config.behaviors.entry(key.clone()).or_insert(true);
+    }
+    validate_behavior_config(&config)?;
+    let path = behavior_config_path()?;
+    if let Some(parent) = path.parent() {
+        fs::create_dir_all(parent)
+            .map_err(|error| format!("cannot create behavior config directory: {error}"))?;
+    }
+    let contents = serde_json::to_vec_pretty(&config).map_err(|error| error.to_string())?;
+    let temporary = path.with_extension(format!("tmp-{}", std::process::id()));
+    let mut file = fs::OpenOptions::new()
+        .create(true)
+        .truncate(true)
+        .write(true)
+        .mode(0o600)
+        .open(&temporary)
+        .map_err(|error| format!("cannot write behavior configuration: {error}"))?;
+    file.write_all(&contents)
+        .map_err(|error| format!("cannot write behavior configuration: {error}"))?;
+    file.write_all(b"\n").map_err(|error| error.to_string())?;
+    file.sync_all()
+        .map_err(|error| format!("cannot sync behavior configuration: {error}"))?;
+    fs::rename(&temporary, &path)
+        .map_err(|error| format!("cannot replace behavior configuration: {error}"))?;
+    Ok(config)
+}
+
+#[tauri::command]
+fn behavior_world_status() -> Result<Value, String> {
+    let path = behavior_world_path()?;
+    match fs::read_to_string(&path) {
+        Ok(contents) => {
+            serde_json::from_str(&contents).map_err(|error| format!("invalid world state: {error}"))
+        }
+        Err(error) if error.kind() == std::io::ErrorKind::NotFound => Ok(json!({
+            "schema_version": 1,
+            "timestamp": 0,
+            "provider": { "state": "offline", "message": "behavior service is offline", "checked_at": 0 },
+            "interaction_intensity": 0,
+            "instances": [],
+            "scheduler": { "queued": [], "active": [], "cooldowns": {} }
+        })),
+        Err(error) => Err(format!("cannot read world state: {error}")),
+    }
+}
+
+#[tauri::command]
+fn read_behavior_timeline(limit: usize) -> Result<Vec<BehaviorEvent>, String> {
+    let path = behavior_timeline_path()?;
+    let contents = match fs::read_to_string(&path) {
+        Ok(contents) => contents,
+        Err(error) if error.kind() == std::io::ErrorKind::NotFound => return Ok(Vec::new()),
+        Err(error) => return Err(format!("cannot read behavior timeline: {error}")),
+    };
+    let mut values: Vec<BehaviorEvent> = contents
+        .lines()
+        .filter_map(|line| serde_json::from_str(line).ok())
+        .collect();
+    let keep = limit.clamp(20, 500);
+    if values.len() > keep {
+        values.drain(0..values.len() - keep);
+    }
+    Ok(values)
+}
+
+#[tauri::command]
 fn context_status() -> Result<ServiceStatus, String> {
     service_status_for("pet-ark-context.service")
 }
@@ -656,6 +968,16 @@ fn context_action(action: String) -> Result<ServiceStatus, String> {
     let output = systemctl(&[&action, "pet-ark-context.service"])?;
     if !output.status.success() {
         return Err(output_error("context service action", &output));
+    }
+    context_status()
+}
+
+#[tauri::command]
+fn set_context_autostart(enabled: bool) -> Result<ServiceStatus, String> {
+    let action = if enabled { "enable" } else { "disable" };
+    let output = systemctl(&[action, "pet-ark-context.service"])?;
+    if !output.status.success() {
+        return Err(output_error("context autostart update", &output));
     }
     context_status()
 }
@@ -818,8 +1140,14 @@ pub fn run() {
             instance_action,
             set_instance_autostart,
             instance_react,
+            instance_act,
+            load_behavior_config,
+            save_behavior_config,
+            behavior_world_status,
+            read_behavior_timeline,
             context_status,
             context_action,
+            set_context_autostart,
         ])
         .run(tauri::generate_context!())
         .expect("error while running Pet Ark Control Center");
@@ -861,5 +1189,12 @@ mod tests {
         assert!(!valid_id("../amiya"));
         assert!(!valid_id("amiya;restart"));
         assert!(!valid_id(""));
+    }
+
+    #[test]
+    fn default_behavior_configuration_is_valid() {
+        let config = BehaviorConfig::default();
+        validate_behavior_config(&config).expect("default behavior config should be valid");
+        assert_eq!(config.behaviors.len(), 12);
     }
 }

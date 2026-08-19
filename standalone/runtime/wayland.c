@@ -29,6 +29,7 @@
 #include <time.h>
 #include <unistd.h>
 #include <wayland-client.h>
+#include <wayland-cursor.h>
 
 #define PET_BUFFER_COUNT 2
 #define PET_MAX_OUTPUTS 16
@@ -82,6 +83,9 @@ struct PetApp {
   struct wl_shm *shm;
   struct wl_seat *seat;
   struct wl_pointer *pointer;
+  struct wl_cursor_theme *cursor_theme;
+  struct wl_cursor *default_cursor;
+  struct wl_surface *cursor_surface;
   struct zwlr_layer_shell_v1 *layer_shell;
   struct xdg_wm_base *xdg_wm_base;
   struct zxdg_decoration_manager_v1 *decoration_manager;
@@ -147,6 +151,30 @@ static void destroy_pointer(struct wl_pointer *pointer) {
     wl_pointer_release(pointer);
   else
     wl_pointer_destroy(pointer);
+}
+
+static void show_default_cursor(PetApp *app, struct wl_pointer *pointer, uint32_t serial) {
+  if (!app->cursor_surface) app->cursor_surface = wl_compositor_create_surface(app->compositor);
+  if (!app->cursor_theme) {
+    const int scale = app->output && app->output->scale > 0 ? app->output->scale : 1;
+    const char *size_text = getenv("XCURSOR_SIZE");
+    const int configured_size = size_text ? atoi(size_text) : 24;
+    const int logical_size = configured_size > 0 && configured_size < 256 ? configured_size : 24;
+    app->cursor_theme = wl_cursor_theme_load(getenv("XCURSOR_THEME"), logical_size * scale, app->shm);
+    if (app->cursor_theme) {
+      app->default_cursor = wl_cursor_theme_get_cursor(app->cursor_theme, "default");
+      if (!app->default_cursor) app->default_cursor = wl_cursor_theme_get_cursor(app->cursor_theme, "left_ptr");
+    }
+  }
+  if (!app->cursor_surface || !app->default_cursor || app->default_cursor->image_count == 0) return;
+  struct wl_cursor_image *image = app->default_cursor->images[0];
+  const int scale = app->output && app->output->scale > 0 ? app->output->scale : 1;
+  wl_surface_set_buffer_scale(app->cursor_surface, scale);
+  wl_pointer_set_cursor(pointer, serial, app->cursor_surface,
+                        (int32_t)image->hotspot_x / scale, (int32_t)image->hotspot_y / scale);
+  wl_surface_attach(app->cursor_surface, wl_cursor_image_get_buffer(image), 0, 0);
+  wl_surface_damage(app->cursor_surface, 0, 0, (int32_t)image->width, (int32_t)image->height);
+  wl_surface_commit(app->cursor_surface);
 }
 
 static void destroy_seat(struct wl_seat *seat) {
@@ -235,7 +263,7 @@ static void pointer_enter(void *data, struct wl_pointer *pointer, uint32_t seria
   app->pointer_inside = true;
   app->pointer_x = wl_fixed_to_double(x);
   app->pointer_y = wl_fixed_to_double(y);
-  wl_pointer_set_cursor(pointer, serial, NULL, 0, 0);
+  show_default_cursor(app, pointer, serial);
 }
 
 static void pointer_leave(void *data, struct wl_pointer *pointer, uint32_t serial,
@@ -858,19 +886,24 @@ static const char *behavior_name(PetBehavior behavior) {
 }
 
 static void reply_status(PetApp *app, int client) {
-  char response[1024];
+  char response[1536];
   const char *animation = app->animation.definition ? app->animation.definition->id : "none";
   snprintf(response, sizeof(response),
     "{\"ok\":true,\"pid\":%ld,\"instance\":\"%s\",\"character\":\"%s\",\"variant\":\"%s\","
     "\"scale\":%.3f,\"speed\":%.3f,\"auto_move\":%s,\"click_through\":%s,"
     "\"monitor\":%d,\"outputs\":%d,\"shell\":\"%s\",\"behavior\":\"%s\","
-    "\"animation\":\"%s\"}",
+    "\"animation\":\"%s\",\"x\":%.1f,\"y\":%.1f,\"width\":%d,\"height\":%d,"
+    "\"surface_width\":%d,\"surface_height\":%d,\"direction\":%d,"
+    "\"pointer_inside\":%s,\"pointer_x\":%.1f,\"pointer_y\":%.1f}",
     (long)getpid(), app->config.instance_id ? app->config.instance_id : "default",
     app->character->id, app->variant->id, app->scale, app->speed,
     app->state.auto_move ? "true" : "false", app->click_through ? "true" : "false",
     app->config.monitor, app->output_count,
     app->use_layer_shell ? "layer-shell" : "xdg-fullscreen",
-    behavior_name(app->state.behavior), animation);
+    behavior_name(app->state.behavior), animation,
+    app->movement.x, app->movement.y, app->movement.sprite_width, app->movement.sprite_height,
+    app->movement.surface_width, app->movement.surface_height, app->movement.direction,
+    app->pointer_inside ? "true" : "false", app->pointer_x, app->pointer_y);
   pet_control_reply(client, response);
 }
 
@@ -926,6 +959,38 @@ static void handle_control(PetApp *app) {
       restart_animation(app);
       fprintf(stderr, "pet-ark[%s]: desktop reaction %s\n",
               app->config.instance_id ? app->config.instance_id : "default", command.event);
+      break;
+    case PET_CONTROL_ACT:
+      if (!strcmp(command.action, "emote")) {
+        app->special_animation = !strcmp(command.event, "celebrate");
+        pet_state_machine_dispatch(&app->state,
+          !strcmp(command.event, "wake") ? PET_EVENT_USER_ACTIVITY :
+          app->special_animation ? PET_EVENT_SPECIAL : PET_EVENT_CLICK);
+        restart_animation(app);
+      } else if (!strcmp(command.action, "move_to") || !strcmp(command.action, "follow") ||
+                 !strcmp(command.action, "flee")) {
+        pet_movement_set_target(&app->movement, command.x);
+        pet_state_machine_dispatch(&app->state,
+          !strcmp(command.action, "flee") ? PET_EVENT_RUN : PET_EVENT_MOVE);
+        restart_animation(app);
+      } else if (!strcmp(command.action, "look_at")) {
+        app->movement.direction = command.direction;
+        app->needs_redraw = true;
+      } else if (!strcmp(command.action, "rest")) {
+        pet_state_machine_dispatch(&app->state, PET_EVENT_REST);
+        restart_animation(app);
+      } else if (!strcmp(command.action, "sleep")) {
+        pet_state_machine_dispatch(&app->state, PET_EVENT_SLEEP);
+        restart_animation(app);
+      } else if (!strcmp(command.action, "wake")) {
+        pet_state_machine_dispatch(&app->state, PET_EVENT_USER_ACTIVITY);
+        restart_animation(app);
+      } else if (!strcmp(command.action, "cancel")) {
+        pet_state_machine_dispatch(&app->state, PET_EVENT_CANCEL);
+        restart_animation(app);
+      }
+      fprintf(stderr, "pet-ark[%s]: action %s\n",
+              app->config.instance_id ? app->config.instance_id : "default", command.action);
       break;
     case PET_CONTROL_QUIT:
       app->running = false;
@@ -1135,6 +1200,8 @@ static void destroy_app(PetApp *app) {
   if (app->frame_callback) wl_callback_destroy(app->frame_callback);
   if (app->decoration) zxdg_toplevel_decoration_v1_destroy(app->decoration);
   if (app->xdg_toplevel) xdg_toplevel_destroy(app->xdg_toplevel);
+  if (app->cursor_surface) wl_surface_destroy(app->cursor_surface);
+  if (app->cursor_theme) wl_cursor_theme_destroy(app->cursor_theme);
   if (app->xdg_surface) xdg_surface_destroy(app->xdg_surface);
   if (app->layer_surface) zwlr_layer_surface_v1_destroy(app->layer_surface);
   if (app->surface) wl_surface_destroy(app->surface);

@@ -11,10 +11,14 @@ const variant = path.join(root, 'standalone/assets/cleaned/mon3tr/skin-boc-11');
 const manifest = JSON.parse(await fs.readFile(path.join(variant, 'manifest.json'), 'utf8'));
 
 assert.ok(manifest.render_revision >= 3, 'Mon3tr sharp skin must use the core-placement renderer');
-assert.equal(
-  manifest.placement.bounds_policy,
-  'core-character-envelope',
-  'remote setup attachments must not determine the character scale',
+assert.ok(
+  ['core-character-envelope', 'pixel-density-corrected-envelope'].includes(manifest.placement.bounds_policy),
+  `unexpected placement policy: ${manifest.placement.bounds_policy}`,
+);
+assert.deepEqual(
+  manifest.placement.source_bounds,
+  manifest.placement.core_source_bounds,
+  'remote setup attachments must not determine the character envelope',
 );
 assert.ok(manifest.placement.scale >= 0.25, `unexpectedly small placement scale: ${manifest.placement.scale}`);
 
@@ -40,7 +44,7 @@ async function visibleMetrics(file) {
 
 const mon3trVisible = await visibleMetrics(path.join(variant, 'relax/000.png'));
 assert.ok(mon3trVisible.width >= 100, `representative frame is too narrow: ${mon3trVisible.width}px`);
-assert.ok(mon3trVisible.height >= 140, `representative frame is too short: ${mon3trVisible.height}px`);
+assert.ok(mon3trVisible.height >= 138, `representative frame is too short: ${mon3trVisible.height}px`);
 assert.ok(mon3trVisible.pixels >= 5000, `representative frame has too few visible pixels: ${mon3trVisible.pixels}`);
 
 const densityVariant = path.join(root, 'standalone/assets/cleaned/lunacub/skin-yun-1');

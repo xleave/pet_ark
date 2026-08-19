@@ -5,6 +5,7 @@
 #include <ctype.h>
 #include <errno.h>
 #include <fcntl.h>
+#include <limits.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -56,6 +57,15 @@ static bool json_number(const char *json, const char *key, float *output) {
   while (isspace((unsigned char)*end)) end++;
   if (*end != ',' && *end != '}') return false;
   *output = parsed;
+  return true;
+}
+
+static bool json_integer(const char *json, const char *key, int *output) {
+  float value;
+  if (!json_number(json, key, &value) || floorf(value) != value || value < INT_MIN || value > INT_MAX) {
+    return false;
+  }
+  *output = (int)value;
   return true;
 }
 
@@ -145,6 +155,39 @@ bool pet_control_parse(const char *json, PetControlCommand *command,
       return false;
     }
     command->kind = PET_CONTROL_REACT;
+    return true;
+  }
+  if (!strcmp(name, "act")) {
+    if (!json_string(json, "action", command->action, sizeof(command->action)) ||
+        (strcmp(command->action, "emote") && strcmp(command->action, "move_to") &&
+         strcmp(command->action, "follow") && strcmp(command->action, "flee") &&
+         strcmp(command->action, "look_at") && strcmp(command->action, "rest") &&
+         strcmp(command->action, "sleep") && strcmp(command->action, "wake") &&
+         strcmp(command->action, "cancel"))) {
+      set_error(error, error_size, "unsupported action");
+      return false;
+    }
+    if (!strcmp(command->action, "emote")) {
+      if (!json_string(json, "event", command->event, sizeof(command->event)) ||
+          (strcmp(command->event, "attention") && strcmp(command->event, "celebrate") &&
+           strcmp(command->event, "wake"))) {
+        set_error(error, error_size, "emote requires attention, celebrate, or wake");
+        return false;
+      }
+    } else if (!strcmp(command->action, "move_to") || !strcmp(command->action, "follow") ||
+               !strcmp(command->action, "flee")) {
+      if (!json_number(json, "x", &command->x) || command->x < 0.0f || command->x > 32768.0f) {
+        set_error(error, error_size, "movement action requires x from 0 to 32768");
+        return false;
+      }
+    } else if (!strcmp(command->action, "look_at")) {
+      if (!json_integer(json, "direction", &command->direction) ||
+          (command->direction != -1 && command->direction != 1)) {
+        set_error(error, error_size, "look_at requires direction -1 or 1");
+        return false;
+      }
+    }
+    command->kind = PET_CONTROL_ACT;
     return true;
   }
   if (!strcmp(name, "quit")) {

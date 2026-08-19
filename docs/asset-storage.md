@@ -1,6 +1,6 @@
 # 资产存储策略
 
-Standalone 的 source、cleaned frames、accepted generated motion、runtime atlas 与 contact sheets 当前作为普通 Git 对象提交。这样 checkout 后可以离线复现、审查 provenance，并避免 fork PR 只提交 LFS pointer 而上游拿不到对象。
+Standalone 的 source、cleaned frames、accepted generated motion、runtime atlas 与 contact sheets 当前作为普通 Git 对象提交，checkout 后可以离线复现并审查 provenance。
 
 仓库设置以下预算：
 

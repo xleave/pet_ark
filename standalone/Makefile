@@ -4,7 +4,7 @@ NODE ?= node
 SYSROOT ?=
 BUILD_DIR ?= build
 APP_NAME ?= pet-ark
-PKGS ?= wayland-client libpng
+PKGS ?= wayland-client wayland-cursor libpng
 MULTIARCH ?= $(shell $(CC) -dumpmachine)
 
 BASE_CPPFLAGS := -I. -Iruntime -Iruntime/protocol -Ianimations -Icharacters

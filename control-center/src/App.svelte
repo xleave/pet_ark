@@ -2,7 +2,11 @@
   import { onMount, tick } from 'svelte';
   import { invoke } from '@tauri-apps/api/core';
   import { getCurrentWindow } from '@tauri-apps/api/window';
+  import { AI_PROVIDER_OPTIONS, BEHAVIOR_OPTIONS, TIMELINE_LABELS } from './behavior-definitions';
   import type {
+    BehaviorConfig,
+    BehaviorEvent,
+    BehaviorWorld,
     CharacterSummary,
     LogEntry,
     PetInstance,
@@ -12,7 +16,7 @@
     ServiceStatus,
   } from './types';
 
-  type Section = 'overview' | 'fleet' | 'settings' | 'logs' | 'system';
+  type Section = 'overview' | 'fleet' | 'settings' | 'behavior' | 'logs' | 'system';
 
   const appWindow = getCurrentWindow();
   let section: Section = 'overview';
@@ -51,6 +55,30 @@
     restarts: 0,
     autostart: false,
   };
+  let behaviorConfig: BehaviorConfig = {
+    schema_version: 1,
+    enabled: true,
+    provider: {
+      kind: 'mock',
+      endpoint: 'http://127.0.0.1:11434/v1',
+      model: '',
+      api_key_env: 'OPENAI_API_KEY',
+      timeout_ms: 8000,
+    },
+    interaction_intensity: 0.65,
+    personality: { archetype: 'companion', sociability: 0.72, curiosity: 0.68, energy: 0.58 },
+    privacy: {
+      include_app_id: true,
+      include_window_title: false,
+      include_workspace_name: false,
+      persist_timeline: true,
+    },
+    behaviors: Object.fromEntries(BEHAVIOR_OPTIONS.map(([key]) => [key, true])),
+    per_instance: {},
+  };
+  let behaviorWorld: BehaviorWorld | null = null;
+  let behaviorTimeline: BehaviorEvent[] = [];
+  let behaviorSaving = false;
   let logs: LogEntry[] = [];
   let preview: PreviewAsset | null = null;
   let previewFrame = 0;
@@ -291,10 +319,87 @@
     }
   }
 
+  async function actInstance(action: 'rest' | 'sleep' | 'wake' | 'cancel' | 'look_at', direction?: -1 | 1) {
+    if (!selectedInstance?.active) return;
+    try {
+      runtime = await invoke<RuntimeStatus>('instance_act', {
+        id: selectedInstance.id,
+        action,
+        x: null,
+        direction: direction ?? null,
+        event: null,
+      });
+      notify(`已执行 ${action}`, 'ok');
+    } catch (error) {
+      notify(String(error), 'error');
+    }
+  }
+
+  async function refreshBehavior(silent = true) {
+    if (section !== 'behavior' && silent) return;
+    try {
+      [behaviorWorld, behaviorTimeline, contextService] = await Promise.all([
+        invoke<BehaviorWorld>('behavior_world_status'),
+        invoke<BehaviorEvent[]>('read_behavior_timeline', { limit: 160 }),
+        invoke<ServiceStatus>('context_status'),
+      ]);
+    } catch (error) {
+      if (!silent) notify(String(error), 'error');
+    }
+  }
+
+  async function saveBehavior() {
+    behaviorSaving = true;
+    try {
+      behaviorConfig = {
+        ...behaviorConfig,
+        interaction_intensity: Math.min(1, Math.max(0, Number(behaviorConfig.interaction_intensity) || 0)),
+        provider: {
+          ...behaviorConfig.provider,
+          timeout_ms: Math.min(60000, Math.max(1000, Math.trunc(Number(behaviorConfig.provider.timeout_ms) || 8000))),
+        },
+        personality: {
+          ...behaviorConfig.personality,
+          sociability: Math.min(1, Math.max(0, Number(behaviorConfig.personality.sociability) || 0)),
+          curiosity: Math.min(1, Math.max(0, Number(behaviorConfig.personality.curiosity) || 0)),
+          energy: Math.min(1, Math.max(0, Number(behaviorConfig.personality.energy) || 0)),
+        },
+      };
+      behaviorConfig = await invoke<BehaviorConfig>('save_behavior_config', { config: behaviorConfig });
+      notify('交互中枢配置已保存', 'ok');
+      window.setTimeout(() => void refreshBehavior(true), 2200);
+    } catch (error) {
+      notify(String(error), 'error');
+    } finally {
+      behaviorSaving = false;
+    }
+  }
+
+  function setBehavior(key: string, enabled: boolean) {
+    behaviorConfig = {
+      ...behaviorConfig,
+      behaviors: { ...behaviorConfig.behaviors, [key]: enabled },
+    };
+  }
+
+  function timelineTime(timestamp: number) {
+    if (!timestamp) return '—';
+    return new Date(timestamp).toLocaleTimeString('zh-CN', { hour12: false });
+  }
+
   async function toggleContextService() {
     try {
       contextService = await invoke<ServiceStatus>('context_action', { action: contextService.active ? 'stop' : 'start' });
       notify(contextService.active ? '桌面事件响应已启用' : '桌面事件响应已停止', 'ok');
+    } catch (error) {
+      notify(String(error), 'error');
+    }
+  }
+
+  async function toggleContextAutostart() {
+    try {
+      contextService = await invoke<ServiceStatus>('set_context_autostart', { enabled: !contextService.autostart });
+      notify(contextService.autostart ? '交互中枢已设为登录后启动' : '交互中枢登录自启已关闭', 'ok');
     } catch (error) {
       notify(String(error), 'error');
     }
@@ -321,11 +426,13 @@
       invoke<CharacterSummary[]>('list_characters'),
       invoke<PetInstance[]>('list_instances'),
       invoke<ServiceStatus>('context_status'),
-    ]).then(async ([registry, runningInstances, context]) => {
+      invoke<BehaviorConfig>('load_behavior_config'),
+    ]).then(async ([registry, runningInstances, context, nextBehaviorConfig]) => {
       if (cancelled) return;
       characters = registry;
       instances = runningInstances;
       contextService = context;
+      behaviorConfig = nextBehaviorConfig;
       selectedInstanceId = runningInstances[0]?.id ?? 'default';
       await selectInstance(selectedInstanceId);
       loading = false;
@@ -336,11 +443,13 @@
     const statusTimer = window.setInterval(() => refreshStatus(true), 1500);
     const fleetTimer = window.setInterval(() => refreshFleet(true), 3500);
     const logTimer = window.setInterval(refreshLogs, 1400);
+    const behaviorTimer = window.setInterval(() => refreshBehavior(true), 1600);
     return () => {
       cancelled = true;
       clearInterval(statusTimer);
       clearInterval(fleetTimer);
       clearInterval(logTimer);
+      clearInterval(behaviorTimer);
       if (previewTimer !== undefined) clearInterval(previewTimer);
     };
   });
@@ -378,8 +487,9 @@
       <button class:active={section === 'overview'} onclick={() => section = 'overview'}><span>01</span>运行总览</button>
       <button class:active={section === 'fleet'} onclick={() => { section = 'fleet'; void refreshFleet(false); }}><span>02</span>桌宠编队</button>
       <button class:active={section === 'settings'} onclick={() => section = 'settings'}><span>03</span>桌宠设置</button>
-      <button class:active={section === 'logs'} onclick={openLogs}><span>04</span>运行日志</button>
-      <button class:active={section === 'system'} onclick={() => section = 'system'}><span>05</span>服务管理</button>
+      <button class:active={section === 'behavior'} onclick={() => { section = 'behavior'; void refreshBehavior(false); }}><span>04</span>交互中枢</button>
+      <button class:active={section === 'logs'} onclick={openLogs}><span>05</span>运行日志</button>
+      <button class:active={section === 'system'} onclick={() => section = 'system'}><span>06</span>服务管理</button>
     </nav>
     <div class="sidebar-meta">
       <span>PROTOCOL</span><strong>LOCAL/JSON</strong>
@@ -464,8 +574,17 @@
               </div>
               <label class="switch-row"><span><b>登录后自启</b></span><input type="checkbox" checked={selectedInstance.autostart} onchange={toggleInstanceAutostart} /><i></i></label>
               <div class="reaction-panel">
-                <span>即时互动测试</span>
-                <div><button onclick={() => reactInstance('attention')} disabled={!selectedInstance.active}>打招呼</button><button onclick={() => reactInstance('celebrate')} disabled={!selectedInstance.active}>庆祝一下</button><button onclick={() => reactInstance('wake')} disabled={!selectedInstance.active}>轻声唤醒</button></div>
+                <span>动作控制</span>
+                <div>
+                  <button onclick={() => reactInstance('attention')} disabled={!selectedInstance.active}>问候</button>
+                  <button onclick={() => reactInstance('celebrate')} disabled={!selectedInstance.active}>庆祝</button>
+                  <button onclick={() => actInstance('rest')} disabled={!selectedInstance.active}>休息</button>
+                  <button onclick={() => actInstance('sleep')} disabled={!selectedInstance.active}>睡眠</button>
+                  <button onclick={() => actInstance('look_at', -1)} disabled={!selectedInstance.active}>向左看</button>
+                  <button onclick={() => actInstance('look_at', 1)} disabled={!selectedInstance.active}>向右看</button>
+                  <button onclick={() => actInstance('wake')} disabled={!selectedInstance.active}>唤醒</button>
+                  <button onclick={() => actInstance('cancel')} disabled={!selectedInstance.active}>复位</button>
+                </div>
               </div>
             {/if}
           </article>
@@ -481,9 +600,9 @@
           </article>
 
           <article class="context-card">
-            <div class="card-title"><span>桌面互动</span><small>NIRI EVENTS</small></div>
+            <div class="card-title"><span>交互中枢</span><small>{behaviorWorld?.provider.state ?? 'OFFLINE'}</small></div>
             <div class="capability-row">
-              <div><b>焦点响应与社交事件</b><p>随工作区和应用焦点触发动态反应。</p></div>
+              <div><b>情境与多桌宠行为</b></div>
               <button class:context-active={contextService.active} onclick={toggleContextService}>{contextService.active ? '停止响应' : '启用响应'}</button>
             </div>
           </article>
@@ -536,9 +655,92 @@
           </article>
         </div>
       </section>
+    {:else if section === 'behavior'}
+      <section class="page behavior-page enter">
+        <div class="page-heading">
+          <div><span class="eyebrow">BEHAVIOR CORE / 04</span><h1>交互中枢</h1></div>
+          <div class="heading-actions"><button class="ghost" onclick={toggleContextService}>{contextService.active ? '停止服务' : '启动服务'}</button><button class="ghost" onclick={() => refreshBehavior(false)}>刷新状态</button><button class="primary" onclick={saveBehavior} disabled={behaviorSaving}>{behaviorSaving ? '正在保存' : '保存配置'}</button></div>
+        </div>
+        <div class="behavior-metrics">
+          <article class="metric accent"><span>行为服务</span><strong>{contextService.active ? '运行中' : '已停止'}</strong><small>{contextService.sub_state}</small></article>
+          <article class="metric"><span>AI PROVIDER</span><strong>{behaviorWorld?.provider.state ?? 'OFFLINE'}</strong><small>{behaviorConfig.provider.kind}</small></article>
+          <article class="metric"><span>空间节点</span><strong>{behaviorWorld?.instances.length ?? 0}</strong><small>ACTIVE PETS</small></article>
+          <article class="metric"><span>调度队列</span><strong>{behaviorWorld?.scheduler.queued.length ?? 0}</strong><small>{behaviorWorld?.scheduler.active.length ?? 0} EXECUTING</small></article>
+        </div>
+        <div class="behavior-layout">
+          <article class="settings-card behavior-config-card">
+            <div class="card-title"><span>AI 接口</span><small>INTENT ONLY</small></div>
+            <label class="switch-row"><span><b>启用交互中枢</b></span><input type="checkbox" bind:checked={behaviorConfig.enabled} /><i></i></label>
+            <label class="switch-row"><span><b>登录后启动服务</b></span><input type="checkbox" checked={contextService.autostart} onchange={toggleContextAutostart} /><i></i></label>
+            <div class="field-grid behavior-fields">
+              <label><span>Provider</span><select bind:value={behaviorConfig.provider.kind}>{#each AI_PROVIDER_OPTIONS as option}<option value={option.value}>{option.label}</option>{/each}</select></label>
+              <label><span>模型</span><input placeholder={behaviorConfig.provider.kind === 'mock' ? '模拟模式无需模型' : '模型 ID'} bind:value={behaviorConfig.provider.model} disabled={behaviorConfig.provider.kind === 'mock'} /></label>
+              <label class="wide-field"><span>Endpoint</span><input bind:value={behaviorConfig.provider.endpoint} disabled={behaviorConfig.provider.kind === 'mock'} /></label>
+              <label><span>密钥环境变量</span><input bind:value={behaviorConfig.provider.api_key_env} disabled={behaviorConfig.provider.kind === 'mock'} /></label>
+              <label><span>超时 / ms</span><input type="number" min="1000" max="60000" step="250" bind:value={behaviorConfig.provider.timeout_ms} /></label>
+            </div>
+          </article>
+
+          <article class="settings-card personality-card">
+            <div class="card-title"><span>性格参数</span><small>PERSONALITY</small></div>
+            <label><span>性格模板</span><input bind:value={behaviorConfig.personality.archetype} /></label>
+            <div class="number-grid">
+              <label><span>互动强度</span><input type="number" min="0" max="1" step="0.05" bind:value={behaviorConfig.interaction_intensity} /></label>
+              <label><span>社交倾向</span><input type="number" min="0" max="1" step="0.05" bind:value={behaviorConfig.personality.sociability} /></label>
+              <label><span>好奇程度</span><input type="number" min="0" max="1" step="0.05" bind:value={behaviorConfig.personality.curiosity} /></label>
+              <label><span>活跃程度</span><input type="number" min="0" max="1" step="0.05" bind:value={behaviorConfig.personality.energy} /></label>
+            </div>
+          </article>
+
+          <article class="settings-card behavior-switches-card">
+            <div class="card-title"><span>情境行为</span><small>12 RULES</small></div>
+            <div class="behavior-switch-grid">
+              {#each BEHAVIOR_OPTIONS as [key, label]}
+                <label class="switch-row"><span><b>{label}</b></span><input type="checkbox" checked={behaviorConfig.behaviors[key]} onchange={(event) => setBehavior(key, event.currentTarget.checked)} /><i></i></label>
+              {/each}
+            </div>
+          </article>
+
+          <article class="settings-card privacy-card">
+            <div class="card-title"><span>隐私边界</span><small>LOCAL POLICY</small></div>
+            <label class="switch-row"><span><b>发送应用 ID</b></span><input type="checkbox" bind:checked={behaviorConfig.privacy.include_app_id} /><i></i></label>
+            <label class="switch-row"><span><b>发送窗口标题</b></span><input type="checkbox" bind:checked={behaviorConfig.privacy.include_window_title} /><i></i></label>
+            <label class="switch-row"><span><b>发送工作区名称</b></span><input type="checkbox" bind:checked={behaviorConfig.privacy.include_workspace_name} /><i></i></label>
+            <label class="switch-row"><span><b>保留事件时间线</b></span><input type="checkbox" bind:checked={behaviorConfig.privacy.persist_timeline} /><i></i></label>
+          </article>
+
+          <article class="behavior-world-card">
+            <div class="card-title"><span>空间总线</span><small>LIVE WORLD</small></div>
+            <div class="world-instance-list">
+              {#if !behaviorWorld?.instances.length}<div class="empty">当前没有在线空间节点</div>{/if}
+              {#each behaviorWorld?.instances ?? [] as pet}
+                <div class="world-instance">
+                  <span class:online={pet.pointer_inside} class="instance-signal"></span>
+                  <b>{pet.instance}</b><code>{Math.round(pet.x)}, {Math.round(pet.y)}</code><small>{pet.width}×{pet.height} · {pet.pointer_inside ? 'POINTER' : pet.behavior}</small>
+                </div>
+              {/each}
+            </div>
+          </article>
+
+          <article class="behavior-timeline-card">
+            <div class="card-title"><span>事件时间线</span><small>{behaviorTimeline.length} EVENTS</small></div>
+            <div class="behavior-timeline">
+              {#if behaviorTimeline.length === 0}<div class="empty">暂无行为事件</div>{/if}
+              {#each [...behaviorTimeline].reverse() as event}
+                <div class="timeline-event">
+                  <time>{timelineTime(event.timestamp)}</time>
+                  <span>{TIMELINE_LABELS[event.type] ?? event.type}</span>
+                  <b>{event.target ?? 'CORE'}{event.action ? ` / ${event.action}` : ''}</b>
+                  <p>{event.speech || event.reason || event.source || '—'}</p>
+                </div>
+              {/each}
+            </div>
+          </article>
+        </div>
+      </section>
     {:else if section === 'logs'}
       <section class="page logs-page enter">
-        <div class="page-heading"><div><span class="eyebrow">DIAGNOSTICS / 04 · {selectedInstanceId}</span><h1>运行日志</h1></div><button class="ghost" onclick={() => refreshLogs(true)}>定位最新</button></div>
+        <div class="page-heading"><div><span class="eyebrow">DIAGNOSTICS / 05 · {selectedInstanceId}</span><h1>运行日志</h1></div><button class="ghost" onclick={() => refreshLogs(true)}>定位最新</button></div>
         <div class="log-toolbar"><input placeholder="筛选日志内容…" bind:value={logFilter} /><span>{visibleLogs.length} RECORDS</span></div>
         <div class="log-console" bind:this={logConsole}>
           {#if visibleLogs.length === 0}<div class="empty">当前没有匹配日志</div>{/if}
@@ -549,7 +751,7 @@
       </section>
     {:else}
       <section class="page enter">
-        <div class="page-heading"><div><span class="eyebrow">SERVICE / 05 · {selectedInstanceId}</span><h1>服务管理</h1></div></div>
+        <div class="page-heading"><div><span class="eyebrow">SERVICE / 06 · {selectedInstanceId}</span><h1>服务管理</h1></div></div>
         <div class="service-layout">
           <article class="service-card hero-service">
             <span class:online={service.active} class="service-beacon"></span>
@@ -569,5 +771,5 @@
     {/if}
   </main>
 
-  <footer><span>PET ARK CONTROL CENTER</span><span>NATIVE WAYLAND RUNTIME</span><span>BUILD 0.3.0</span></footer>
+  <footer><span>PET ARK CONTROL CENTER</span><span>NATIVE WAYLAND RUNTIME</span><span>BUILD 0.4.0</span></footer>
 </div>

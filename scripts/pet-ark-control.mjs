@@ -15,6 +15,10 @@ Commands:
   click-through <on|off>
   select <character> [variant]
   react <attention|celebrate|wake>
+  act emote <attention|celebrate|wake>
+  act move-to|follow|flee <x>
+  act look-at <left|right>
+  act rest|sleep|wake|cancel
   quit
 
 Environment:
@@ -51,6 +55,22 @@ function request(args) {
         throw new Error('react needs attention, celebrate, or wake');
       }
       return { command: 'react', event: values[0] };
+    case 'act': {
+      const action = String(values[0] || '').replaceAll('-', '_');
+      if (action === 'emote') {
+        if (!['attention', 'celebrate', 'wake'].includes(values[1])) throw new Error('emote needs attention, celebrate, or wake');
+        return { command: 'act', action, event: values[1] };
+      }
+      if (['move_to', 'follow', 'flee'].includes(action)) {
+        return { command: 'act', action, x: number(values[1], 0, 32768, 'x') };
+      }
+      if (action === 'look_at') {
+        if (!['left', 'right', '-1', '1'].includes(values[1])) throw new Error('look-at needs left or right');
+        return { command: 'act', action, direction: ['left', '-1'].includes(values[1]) ? -1 : 1 };
+      }
+      if (['rest', 'sleep', 'wake', 'cancel'].includes(action)) return { command: 'act', action };
+      throw new Error('unsupported action');
+    }
     case 'quit': return { command: 'quit' };
     default: throw new Error(`unknown command: ${command || '(none)'}`);
   }

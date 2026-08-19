@@ -69,6 +69,13 @@ function cleanTransparentRgb(data) {
   return data;
 }
 
+function hasVisibleAlpha(data) {
+  for (let offset = 3; offset < data.length; offset += 4) {
+    if (data[offset] !== 0) return true;
+  }
+  return false;
+}
+
 function blit(destination, destinationWidth, destinationHeight, source, sourceWidth, sourceHeight, left, top) {
   for (let sourceY = 0; sourceY < sourceHeight; sourceY++) {
     const destinationY = top + sourceY;
@@ -85,7 +92,6 @@ function blit(destination, destinationWidth, destinationHeight, source, sourceWi
 
 async function transformedRawFrame(sourceData, frameWidth, frameHeight, transform = {}, canvasPadding = 2) {
   const bounds = alphaBounds(sourceData, frameWidth, frameHeight);
-  const sourceVisible = sourceData.some((value, offset) => offset % 4 === 3 && value !== 0);
   const scaleX = transform.scaleX ?? 1;
   const scaleY = transform.scaleY ?? 1;
   let resizedWidth = Math.max(1, Math.round(bounds.width * scaleX));
@@ -121,7 +127,11 @@ async function transformedRawFrame(sourceData, frameWidth, frameHeight, transfor
   const output = Buffer.alloc(frameWidth * frameHeight * 4);
   blit(output, frameWidth, frameHeight, layer, resizedWidth, resizedHeight, left, top);
   cleanTransparentRgb(output);
-  return { buffer: output, hitbox: alphaBounds(output, frameWidth, frameHeight), visible: sourceVisible };
+  return {
+    buffer: output,
+    hitbox: alphaBounds(output, frameWidth, frameHeight),
+    visible: hasVisibleAlpha(output),
+  };
 }
 
 async function transformedFrame(file, frameWidth, frameHeight, transform = {}) {
@@ -157,7 +167,11 @@ function opacityFrame(frame, opacity, frameWidth, frameHeight) {
     output[offset] = clamped(Math.round(output[offset] * opacity), 0, 255);
   }
   cleanTransparentRgb(output);
-  return { buffer: output, hitbox: alphaBounds(output, frameWidth, frameHeight), visible: true };
+  return {
+    buffer: output,
+    hitbox: alphaBounds(output, frameWidth, frameHeight),
+    visible: hasVisibleAlpha(output),
+  };
 }
 
 function sampledOpacity(levels, index, count) {
@@ -192,13 +206,15 @@ async function transitionBridge(from, to, frameWidth, frameHeight, count = 8) {
       frames.push(opacityFrame(from, 1, frameWidth, frameHeight));
       continue;
     }
-    frames.push(await transformedRawFrame(from.buffer, frameWidth, frameHeight, {
+    const opacity = sampledOpacity(fadeOut, index, sourceFrames);
+    const transformed = await transformedRawFrame(from.buffer, frameWidth, frameHeight, {
       scaleX: 1 + (to.hitbox.width / Math.max(1, from.hitbox.width) - 1) * progress,
       scaleY: 1 + (to.hitbox.height / Math.max(1, from.hitbox.height) - 1) * progress,
       x: (toCenter - fromCenter) * progress,
       y: (toBottom - fromBottom) * progress,
-      alpha: sampledOpacity(fadeOut, index, sourceFrames),
-    }, 0));
+      alpha: opacity,
+    }, 0);
+    frames.push(transformed.visible ? transformed : opacityFrame(from, 1, frameWidth, frameHeight));
   }
   for (let index = 0; index < targetFrames; index++) {
     const progress = (sourceFrames + index) / Math.max(1, count - 1);
@@ -211,13 +227,14 @@ async function transitionBridge(from, to, frameWidth, frameHeight, count = 8) {
     const interpolatedHeight = from.hitbox.height + (to.hitbox.height - from.hitbox.height) * progress;
     const interpolatedCenter = fromCenter + (toCenter - fromCenter) * progress;
     const interpolatedBottom = fromBottom + (toBottom - fromBottom) * progress;
-    frames.push(await transformedRawFrame(to.buffer, frameWidth, frameHeight, {
+    const transformed = await transformedRawFrame(to.buffer, frameWidth, frameHeight, {
       scaleX: interpolatedWidth / Math.max(1, to.hitbox.width),
       scaleY: interpolatedHeight / Math.max(1, to.hitbox.height),
       x: interpolatedCenter - toCenter,
       y: interpolatedBottom - toBottom,
       alpha: opacity,
-    }, 0));
+    }, 0);
+    frames.push(transformed.visible ? transformed : opacityFrame(to, 1, frameWidth, frameHeight));
   }
   return frames;
 }

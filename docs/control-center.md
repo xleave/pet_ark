@@ -11,6 +11,7 @@ Control Center 是 Standalone 桌宠的单窗口管理界面。关闭控制中�
 - 运行日志打开时直接显示所选实例最新 journald 输出；
 - 服务管理负责所选实例的启停、重启和登录自启；
 - 编队页负责实例创建、快速切换与互动测试。
+- 交互中枢集中维护 AI provider、性格、互动强度、12 个行为开关、隐私字段、服务自启、空间总线和事件时间线。
 
 默认实例配置位于 `~/.config/pet-ark/runtime.env`。其他实例位于 `~/.config/pet-ark/instances/<id>.env`。
 
@@ -22,6 +23,7 @@ Svelte UI
        ├─ systemctl --user
        ├─ journalctl --user
        ├─ runtime.env / instances/*.env
+       ├─ behavior.json / events.jsonl / world.json
        └─ $XDG_RUNTIME_DIR/pet-ark/*.sock
               └─ native Wayland runtime
 ```
@@ -51,6 +53,10 @@ systemctl --user enable pet-ark@<id>.service
 {"command":"set_click_through","value":false}
 {"command":"select","character":"amiya","variant":"default"}
 {"command":"react","event":"attention"}
+{"command":"act","action":"move_to","x":860}
+{"command":"act","action":"look_at","direction":-1}
+{"command":"act","action":"sleep"}
+{"command":"act","action":"cancel"}
 ```
 
 命令行客户端：
@@ -59,7 +65,14 @@ systemctl --user enable pet-ark@<id>.service
 npm run standalone:control -- status
 npm run standalone:control -- --instance mon3tr-side status
 npm run standalone:control -- --instance mon3tr-side scale 0.85
+npm run standalone:control -- --instance mon3tr-side act move-to 860
 ```
+
+## AI 与隐私
+
+默认 provider 是确定性的 Mock AI，可直接运行回放测试。`openai-compatible` 面向本地服务，`openai-responses` 面向 Responses API；密钥只读取配置指定的环境变量，不写入 JSON。窗口标题和工作区名称默认不进入 provider 上下文，应用 ID 可单独关闭。provider 失败时自动降级到 Mock AI。
+
+事件时间线默认写入 `~/.local/state/pet-ark/events.jsonl`，约 2 MiB 时轮换；关闭“保留事件时间线”后停止持久化。行为配置由运行中的服务自动重载。
 
 ## 开发与部署
 

@@ -41,6 +41,7 @@
 
 ## 导出清晰度策略
 
+- 优先使用 Ark-Models 的 PC 客户端纹理，固定上游提交并校验 SHA-256；大型仓库不整库复制，只按外观获取；
 - 从 PRTS 角色页动态发现 SpineViewer source map，减少静态构建哈希失效；
 - 同时记录完整动画边界与核心角色边界；
 - setup pose attachment 聚类用于识别主体，远端特效不再主导缩放；
@@ -52,3 +53,5 @@
 全量 coverage 与动作完整性由 `standalone:validate-all` 管理；本流程只负责清晰度和构图风险。
 
 予愿安洁莉娜的闭眼帧是 render revision 4 的回归样例：眼睑 tint 与 clipping 必须完整遮挡 open-eye attachment。后续触达的旧外观会按 revision 增量重建。
+
+Mon3tr“锋锐”是高清来源回归样例：当前 PC 纹理为 976 × 976，代表帧必须保持主体宽高与可见像素门禁。来源升级只重建受影响外观，不触发全量 933 外观重导出。

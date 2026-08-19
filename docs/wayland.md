@@ -7,10 +7,13 @@ Pet Ark 是原生 Wayland C 客户端，通过 `wl_shm` 提交透明像素。默
 Wayland 客户端不直接设置全局窗口坐标。运行时使用输出大小的透明 surface，并根据当前帧 alpha bounds 更新 pointer input region：
 
 - 角色可见区域接收点击和拖动；
+- 指针进入角色时使用系统 Wayland cursor theme，光标保持显示在桌宠之上；
 - 透明区域交给桌面；
 - click-through 开启时 input region 为空；
 - 动画帧、位置、缩放、选择或输入区域变化时才提交新 buffer；
 - `wl_surface_frame` callback 控制提交节奏。
+
+运行时把角色几何、朝向和 surface 内指针坐标写入状态协议，行为服务再汇总为多桌宠空间快照。标准 Wayland 不允许普通客户端在其他应用 surface 上被动读取全局绝对指针，因此 Pet Ark 不读取 `/dev/input`，也不伪造系统级全局追踪；指针行为仅在进入桌宠命中区域时触发。
 
 ## Compositor
 

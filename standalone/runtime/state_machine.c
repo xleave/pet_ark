@@ -59,6 +59,26 @@ void pet_state_machine_dispatch(PetStateMachine *machine, PetEvent event) {
     case PET_EVENT_USER_ACTIVITY:
       if (machine->behavior == PET_BEHAVIOR_SLEEPING || machine->behavior == PET_BEHAVIOR_RESTING) machine->behavior = PET_BEHAVIOR_TRANSITION;
       break;
+    case PET_EVENT_MOVE:
+    case PET_EVENT_RUN:
+      machine->special_interaction = false;
+      machine->running = event == PET_EVENT_RUN;
+      machine->behavior = PET_BEHAVIOR_MOVEMENT;
+      break;
+    case PET_EVENT_REST:
+      machine->special_interaction = false;
+      machine->behavior = PET_BEHAVIOR_RESTING;
+      break;
+    case PET_EVENT_SLEEP:
+      machine->special_interaction = false;
+      machine->behavior = PET_BEHAVIOR_SLEEPING;
+      break;
+    case PET_EVENT_CANCEL:
+      machine->special_interaction = false;
+      machine->grab_transition = false;
+      machine->wake_on_click = false;
+      enter_idle(machine);
+      break;
   }
 }
 

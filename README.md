@@ -10,7 +10,8 @@
 - 425 名干员、933 个默认外观与皮肤，支持 idle、移动、互动、拖动、休息、睡眠与特殊动作；
 - 多实例运行，每只桌宠拥有独立进程、配置、systemd unit 与控制 socket；
 - Tauri + Svelte 控制中心，在同一窗口切换实例并管理外观、大小、速度、显示器、日志与登录自启；
-- niri 工作区/焦点事件响应与桌宠社交事件；
+- 行为调度器与多桌宠空间总线，包含 12 种焦点、窗口、工作区、指针和桌宠社交行为；
+- 内置可回放 Mock AI，并支持本地 OpenAI-compatible 接口与 OpenAI Responses API；
 - 增量资产质量索引，当前 933 个外观中 703 个自动通过，230 个进入人工复核队列，critical/high 为 0。
 
 ## 快速开始
@@ -51,7 +52,7 @@ npm run control:center:deploy
 standalone/dist/app/bin/pet-ark-control-center
 ```
 
-启用桌面事件响应：
+启用交互中枢：
 
 ```bash
 systemctl --user start pet-ark-context.service
@@ -82,7 +83,15 @@ npm run standalone:control -- --instance mon3tr-side status
 | `SIGHUP` | 切换下一名干员 |
 | `SIGRTMIN` | 切换当前干员的下一套外观 |
 
-niri 事件 broker 会根据工作区切换、应用焦点和社交计时触发 `wake`、`attention`、`celebrate`。设置位于 `pet-ark-context.service` 的环境变量中。
+交互中枢订阅 niri 的窗口、焦点、工作区和总览事件，并结合桌宠位置、重叠与指针悬停状态生成受限动作。配置统一保存在 `~/.config/pet-ark/behavior.json`，空间快照与事件时间线可在控制中心查看。
+
+动作协议也可直接调用：
+
+```bash
+npm run standalone:control -- --instance mon3tr-side act move-to 860
+npm run standalone:control -- --instance mon3tr-side act look-at left
+npm run standalone:control -- --instance mon3tr-side act rest
+```
 
 ## 项目结构
 
@@ -92,7 +101,7 @@ pet_ark/
 ├── control-center/   Tauri / Svelte 图形控制中心
 ├── codex/            8 × 9 Codex Pet atlas 构建与验证
 ├── shared/           角色数据、素材获取、导出与质量工具
-├── scripts/          部署、实例、控制协议与 context broker
+├── scripts/          部署、实例、控制协议与行为服务
 └── docs/             架构、资产与桌面集成文档
 ```
 
@@ -106,7 +115,9 @@ Standalone 与 Codex atlas 共用角色身份和来源记录，但使用各自�
 | `npm run standalone:test` | 运行原生状态机与资产测试 |
 | `npm run standalone:quality` | 更新增量清晰度/构图索引 |
 | `npm run standalone:quality:plan` | 生成候选修复计划 |
+| `npm run standalone:source:ark-models -- --character mon3tr --variant skin-boc-11` | 按需获取高清 Spine 来源 |
 | `npm run standalone:build -- --character amiya --skin default` | 重建一个外观 |
+| `npm run behavior:test` | 运行调度器与 Mock AI 回放测试 |
 | `npm run control:center:check` | 检查 UI、类型与设计令牌 |
 | `npm run control:center:dev` | 开发模式运行控制中心 |
 | `npm run codex:build -- --character amiya` | 构建一个 Codex Pet |
@@ -125,6 +136,7 @@ Standalone 与 Codex atlas 共用角色身份和来源记录，但使用各自�
 ## 致谢与权利说明
 
 - [PRTS Wiki](https://prts.wiki/) 提供干员资料索引与公开 `char_spine` 资源入口；PRTS 站点文字内容采用 CC BY-NC-SA 4.0，站内游戏素材权利归上海鹰角网络科技有限公司及其关联公司；
+- [isHarryh/Ark-Models](https://github.com/isHarryh/Ark-Models) 提供从 PC 客户端提取的高清 Spine 3.8 模型来源；Pet Ark 采用固定提交按需获取，并保留逐文件来源与校验记录；
 - [ArknightsGameData](https://github.com/Kengxxiao/ArknightsGameData) 用于角色 ID 与 alter 分组核对；
 - [Aceship/Arknight-Images](https://github.com/Aceship/Arknight-Images) 用于 Codex 角色视觉索引核对；
 - [wayland-protocols](https://gitlab.freedesktop.org/wayland/wayland-protocols) 与 [wlr-protocols](https://gitlab.freedesktop.org/wlroots/wlr-protocols) 提供协议定义。

@@ -20,6 +20,7 @@ typedef struct {
 void pet_movement_init(PetMovement *movement, uint32_t seed);
 void pet_movement_set_bounds(PetMovement *movement, int surface_width, int surface_height, int sprite_width, int sprite_height);
 void pet_movement_choose_target(PetMovement *movement);
+void pet_movement_set_target(PetMovement *movement, float x);
 bool pet_movement_tick(PetMovement *movement, float delta, float pixels_per_second);
 void pet_movement_drag(PetMovement *movement, float x, float y);
 
