@@ -1,5 +1,28 @@
 {
   "schemaVersion": 2,
+  "source": {
+    "provider": "ark-models",
+    "page": "https://github.com/isHarryh/Ark-Models",
+    "commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+    "asset": {
+      "assetId": "build_char_237_gravel",
+      "type": "Operator",
+      "style": "BuildingDefault",
+      "name": "砾",
+      "appellation": "Gravel",
+      "skinGroupId": "DEFAULT",
+      "skinGroupName": "默认服装",
+      "sortTags": [
+        "Operator",
+        "Rarity_4"
+      ],
+      "assetList": {
+        ".atlas": "build_char_237_gravel.atlas",
+        ".png": "build_char_237_gravel.png",
+        ".skel": "build_char_237_gravel.skel"
+      }
+    }
+  },
   "character": {
     "id": "gravel",
     "name": "Gravel",
@@ -88,6 +111,7 @@
           "height": 151
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "move": {
@@ -125,7 +149,7 @@
         {
           "x": 47,
           "y": 19,
-          "width": 100,
+          "width": 99,
           "height": 152
         },
         {
@@ -138,7 +162,7 @@
           "x": 47,
           "y": 19,
           "width": 100,
-          "height": 152
+          "height": 151
         },
         {
           "x": 52,
@@ -147,6 +171,7 @@
           "height": 153
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "interact": {
@@ -200,12 +225,13 @@
           "height": 150
         },
         {
-          "x": 42,
+          "x": 43,
           "y": 20,
-          "width": 107,
+          "width": 106,
           "height": 151
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "sit": {
@@ -231,7 +257,7 @@
         {
           "x": 51,
           "y": 69,
-          "width": 99,
+          "width": 98,
           "height": 147
         },
         {
@@ -265,6 +291,7 @@
           "height": 147
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "sleep": {
@@ -324,6 +351,7 @@
           "height": 78
         }
       ],
+      "intentionalBlankFrames": [],
       "origin": "source"
     },
     "derived-motion": {
@@ -361,7 +389,7 @@
         {
           "x": 48,
           "y": 23,
-          "width": 102,
+          "width": 101,
           "height": 148
         },
         {
@@ -374,7 +402,7 @@
           "x": 46,
           "y": 19,
           "width": 102,
-          "height": 148
+          "height": 147
         },
         {
           "x": 52,
@@ -576,9 +604,9 @@
         },
         {
           "x": 40,
-          "y": 20,
+          "y": 21,
           "width": 112,
-          "height": 149
+          "height": 148
         },
         {
           "x": 44,
@@ -593,15 +621,9 @@
           "height": 151
         },
         {
-          "x": 42,
+          "x": 43,
           "y": 20,
-          "width": 107,
-          "height": 151
-        },
-        {
-          "x": 42,
-          "y": 20,
-          "width": 107,
+          "width": 106,
           "height": 151
         },
         {
@@ -614,6 +636,12 @@
           "x": 44,
           "y": 20,
           "width": 105,
+          "height": 151
+        },
+        {
+          "x": 45,
+          "y": 20,
+          "width": 104,
           "height": 151
         },
         {
@@ -661,7 +689,7 @@
         {
           "x": 51,
           "y": 69,
-          "width": 99,
+          "width": 98,
           "height": 147
         },
         {
@@ -864,7 +892,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:relax",
+      "provenanceId": "processed-ark-models-spine:relax",
       "generatedSequence": null
     },
     "walk-left": {
@@ -887,7 +915,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:move",
+      "provenanceId": "processed-ark-models-spine:move",
       "generatedSequence": null
     },
     "walk-right": {
@@ -910,7 +938,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:move",
+      "provenanceId": "processed-ark-models-spine:move",
       "generatedSequence": null
     },
     "run-left": {
@@ -979,7 +1007,7 @@
       "next": "idle",
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:interact",
+      "provenanceId": "processed-ark-models-spine:interact",
       "generatedSequence": null
     },
     "picked-up": {
@@ -1110,7 +1138,7 @@
       "next": null,
       "generatedFrames": [],
       "origin": "source",
-      "provenanceId": "processed-prts-spine:sleep",
+      "provenanceId": "processed-ark-models-spine:sleep",
       "generatedSequence": null
     },
     "wake": {
@@ -1491,6 +1519,7 @@
         "bridge_style": "single-silhouette-endpoint-transform",
         "bridge_frames": 8
       }
-    ]
+    ],
+    "intentionalBlankFrames": []
   }
 }
