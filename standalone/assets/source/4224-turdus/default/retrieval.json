@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "4224-turdus",
   "character_name": "Укусик",
   "localized_name": "乌啾",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E4%B9%8C%E5%95%BE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4224_turdus/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4224_turdus/meta.json",
-    "model": "defaultskin/build/build_char_4224_turdus",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4224_turdus/defaultskin/build/build_char_4224_turdus.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4224_turdus/defaultskin/build/build_char_4224_turdus.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4224_turdus/defaultskin/build/build_char_4224_turdus.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4224_turdus",
+  "source_asset": {
+    "assetId": "build_char_4224_turdus",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "乌啾",
+    "appellation": "Укусик",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4224_turdus.atlas",
+      ".png": "build_char_4224_turdus.png",
+      ".skel": "build_char_4224_turdus.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/4224-turdus/default/meta.json",
     "atlas": "standalone/assets/source/4224-turdus/default/build_char_4224_turdus.atlas",
     "skeleton": "standalone/assets/source/4224-turdus/default/build_char_4224_turdus.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4224_turdus/defaultskin/build/build_char_4224_turdus.png",
-        "path": "standalone/assets/source/4224-turdus/default/build_char_4224_turdus.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4224_turdus/build_char_4224_turdus.png",
+        "path": "standalone/assets/source/4224-turdus/default/build_char_4224_turdus.png",
+        "bytes": 298081,
+        "sha256": "80cb32386691235ae07c9e10bf06406646b4d93512ab4033bd40e9dc8b35417c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8838,
+      "sha256": "b6f183add6236a30e4d2fa0c62c01167ed1cc66e734a0d8fef363b0a1f85e302"
+    },
+    "skeleton": {
+      "bytes": 245326,
+      "sha256": "e78ffbf55d188aac83b7edd9c0857cc0d3955a0e27ae3bc1c04bc8552446c284"
+    }
   }
 }

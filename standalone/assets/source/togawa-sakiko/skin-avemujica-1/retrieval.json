@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "togawa-sakiko",
   "character_name": "Togawa Sakiko",
   "localized_name": "丰川祥子",
@@ -9,25 +9,58 @@
   "variant_name": "旋律的主人",
   "skin_id": "avemujica-1",
   "skin_name": "旋律的主人",
-  "source_page": "https://prts.wiki/w/%E4%B8%B0%E5%B7%9D%E7%A5%A5%E5%AD%90",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/meta.json",
-    "model": "char_4182_oblvns_avemujica_1/build/build_char_4182_oblvns_avemujica_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/char_4182_oblvns_avemujica_1/build/build_char_4182_oblvns_avemujica_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/char_4182_oblvns_avemujica_1/build/build_char_4182_oblvns_avemujica_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/char_4182_oblvns_avemujica_1/build/build_char_4182_oblvns_avemujica_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4182_oblvns_avemujica#1",
+  "source_asset": {
+    "assetId": "build_char_4182_oblvns_avemujica#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "丰川祥子",
+    "appellation": "Togawa Sakiko",
+    "skinGroupId": "2025#avemujica",
+    "skinGroupName": "Ave Mujica",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4182_oblvns_avemujica#1.atlas",
+      ".png": "build_char_4182_oblvns_avemujica#1.png",
+      ".skel": "build_char_4182_oblvns_avemujica#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/togawa-sakiko/skin-avemujica-1/meta.json",
-    "atlas": "standalone/assets/source/togawa-sakiko/skin-avemujica-1/build_char_4182_oblvns_avemujica_1.atlas",
-    "skeleton": "standalone/assets/source/togawa-sakiko/skin-avemujica-1/build_char_4182_oblvns_avemujica_1.skel",
+    "atlas": "standalone/assets/source/togawa-sakiko/skin-avemujica-1/build_char_4182_oblvns_avemujica#1.atlas",
+    "skeleton": "standalone/assets/source/togawa-sakiko/skin-avemujica-1/build_char_4182_oblvns_avemujica#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4182_oblvns/char_4182_oblvns_avemujica_1/build/build_char_4182_oblvns_avemujica_1.png",
-        "path": "standalone/assets/source/togawa-sakiko/skin-avemujica-1/build_char_4182_oblvns_avemujica_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4182_oblvns_avemujica%231/build_char_4182_oblvns_avemujica%231.png",
+        "path": "standalone/assets/source/togawa-sakiko/skin-avemujica-1/build_char_4182_oblvns_avemujica#1.png",
+        "bytes": 414693,
+        "sha256": "89f58fa2356b5d8f9eedab7eec98401433cfb21b3e99951ac10c9439667fcd3e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12328,
+      "sha256": "384dcfae198685f8b7f00664266a8982603dcd0b070807f2ed4f76f931a15d20"
+    },
+    "skeleton": {
+      "bytes": 626027,
+      "sha256": "16e0bf803b0848195179cef47d66852727d51641341c3c30d04583496814a56b"
+    }
   }
 }

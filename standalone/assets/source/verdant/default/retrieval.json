@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "verdant",
   "character_name": "Verdant",
   "localized_name": "维荻",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%BB%B4%E8%8D%BB",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4107_vrdant/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4107_vrdant/meta.json",
-    "model": "defaultskin/build/build_char_4107_vrdant",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4107_vrdant/defaultskin/build/build_char_4107_vrdant.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4107_vrdant/defaultskin/build/build_char_4107_vrdant.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4107_vrdant/defaultskin/build/build_char_4107_vrdant.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4107_vrdant",
+  "source_asset": {
+    "assetId": "build_char_4107_vrdant",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "维荻",
+    "appellation": "Verdant",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4107_vrdant.atlas",
+      ".png": "build_char_4107_vrdant.png",
+      ".skel": "build_char_4107_vrdant.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/verdant/default/meta.json",
     "atlas": "standalone/assets/source/verdant/default/build_char_4107_vrdant.atlas",
     "skeleton": "standalone/assets/source/verdant/default/build_char_4107_vrdant.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4107_vrdant/defaultskin/build/build_char_4107_vrdant.png",
-        "path": "standalone/assets/source/verdant/default/build_char_4107_vrdant.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4107_vrdant/build_char_4107_vrdant.png",
+        "path": "standalone/assets/source/verdant/default/build_char_4107_vrdant.png",
+        "bytes": 238773,
+        "sha256": "a98de242c47916ce30cd5b79047aa74381199190a15279cc4f425647170a9472"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9727,
+      "sha256": "d51c7636f0ef1792f8430f2e751026bf23ab5ab7e0f24b2bbcfd3c231461ca71"
+    },
+    "skeleton": {
+      "bytes": 173319,
+      "sha256": "2f5ecb3210cb2b946bd7cdecb7f5b3b2f3f1039e4dae4ed8fbd910fc3c4b0277"
+    }
   }
 }

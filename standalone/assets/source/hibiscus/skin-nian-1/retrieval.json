@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "hibiscus",
   "character_name": "Hibiscus",
   "localized_name": "芙蓉",
@@ -9,25 +9,58 @@
   "variant_name": "守岁人",
   "skin_id": "nian-1",
   "skin_name": "守岁人",
-  "source_page": "https://prts.wiki/w/%E8%8A%99%E8%93%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/meta.json",
-    "model": "char_120_hibisc_nian_1/build/build_char_120_hibisc_nian_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/char_120_hibisc_nian_1/build/build_char_120_hibisc_nian_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/char_120_hibisc_nian_1/build/build_char_120_hibisc_nian_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/char_120_hibisc_nian_1/build/build_char_120_hibisc_nian_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/120_hibisc_nian#1",
+  "source_asset": {
+    "assetId": "build_char_120_hibisc_nian#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "芙蓉",
+    "appellation": "Hibiscus",
+    "skinGroupId": "2019#nian",
+    "skinGroupName": "0011制造/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_120_hibisc_nian#1.atlas",
+      ".png": "build_char_120_hibisc_nian#1.png",
+      ".skel": "build_char_120_hibisc_nian#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/hibiscus/skin-nian-1/meta.json",
-    "atlas": "standalone/assets/source/hibiscus/skin-nian-1/build_char_120_hibisc_nian_1.atlas",
-    "skeleton": "standalone/assets/source/hibiscus/skin-nian-1/build_char_120_hibisc_nian_1.skel",
+    "atlas": "standalone/assets/source/hibiscus/skin-nian-1/build_char_120_hibisc_nian#1.atlas",
+    "skeleton": "standalone/assets/source/hibiscus/skin-nian-1/build_char_120_hibisc_nian#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/char_120_hibisc_nian_1/build/build_char_120_hibisc_nian_1.png",
-        "path": "standalone/assets/source/hibiscus/skin-nian-1/build_char_120_hibisc_nian_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/120_hibisc_nian%231/build_char_120_hibisc_nian%231.png",
+        "path": "standalone/assets/source/hibiscus/skin-nian-1/build_char_120_hibisc_nian#1.png",
+        "bytes": 217696,
+        "sha256": "c50c3b41f354d819255e55eeea2f8a9ee46b3c9728e43a63a98a37ba905038a2"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4761,
+      "sha256": "089d0d77b8dd6edfac3d116e423c55b7c94154537583c34b17a37a64d62f139f"
+    },
+    "skeleton": {
+      "bytes": 85485,
+      "sha256": "98f823dcd5f2649cc208fdb9b470a21513d8991cd48d2c081848d2a5ebbfc5da"
+    }
   }
 }

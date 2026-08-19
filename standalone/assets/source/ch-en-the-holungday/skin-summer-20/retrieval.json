@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ch-en-the-holungday",
   "character_name": "Ch'en the Holungday",
   "localized_name": "假日威龙陈",
@@ -9,25 +9,59 @@
   "variant_name": "悠然假日 HD79",
   "skin_id": "summer-20",
   "skin_name": "悠然假日 HD79",
-  "source_page": "https://prts.wiki/w/%E5%81%87%E6%97%A5%E5%A8%81%E9%BE%99%E9%99%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/meta.json",
-    "model": "char_1013_chen2_summer_20/build/build_char_1013_chen2_summer_20",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/char_1013_chen2_summer_20/build/build_char_1013_chen2_summer_20.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/char_1013_chen2_summer_20/build/build_char_1013_chen2_summer_20.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/char_1013_chen2_summer_20/build/build_char_1013_chen2_summer_20.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1013_chen2_summer#20",
+  "source_asset": {
+    "assetId": "build_char_1013_chen2_summer#20",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "假日威龙陈",
+    "appellation": "Ch'en the Holungday",
+    "skinGroupId": "2025#summer#2",
+    "skinGroupName": "珊瑚海岸/XX",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1013_chen2_summer#20.atlas",
+      ".png": "build_char_1013_chen2_summer#20.png",
+      ".skel": "build_char_1013_chen2_summer#20.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ch-en-the-holungday/skin-summer-20/meta.json",
-    "atlas": "standalone/assets/source/ch-en-the-holungday/skin-summer-20/build_char_1013_chen2_summer_20.atlas",
-    "skeleton": "standalone/assets/source/ch-en-the-holungday/skin-summer-20/build_char_1013_chen2_summer_20.skel",
+    "atlas": "standalone/assets/source/ch-en-the-holungday/skin-summer-20/build_char_1013_chen2_summer#20.atlas",
+    "skeleton": "standalone/assets/source/ch-en-the-holungday/skin-summer-20/build_char_1013_chen2_summer#20.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/char_1013_chen2_summer_20/build/build_char_1013_chen2_summer_20.png",
-        "path": "standalone/assets/source/ch-en-the-holungday/skin-summer-20/build_char_1013_chen2_summer_20.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1013_chen2_summer%2320/build_char_1013_chen2_summer%2320.png",
+        "path": "standalone/assets/source/ch-en-the-holungday/skin-summer-20/build_char_1013_chen2_summer#20.png",
+        "bytes": 807327,
+        "sha256": "ebcb6f4dcd951f4b50e3a547dc1b0dc2ca2a98dcf669c34967625932ce44021b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 19545,
+      "sha256": "6cb9256fce9e7ab1c28258ef79f9df789c08a1e7803b10a34118f7f0cdd3dba7"
+    },
+    "skeleton": {
+      "bytes": 506886,
+      "sha256": "3c954c70ec69e334568d1597536692b839a70883cf9eecc75e88f2629ea3f700"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mitm",
   "character_name": "Mitm",
   "localized_name": "渡桥",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B8%A1%E6%A1%A5",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4147_mitm/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4147_mitm/meta.json",
-    "model": "defaultskin/build/build_char_4147_mitm",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4147_mitm/defaultskin/build/build_char_4147_mitm.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4147_mitm/defaultskin/build/build_char_4147_mitm.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4147_mitm/defaultskin/build/build_char_4147_mitm.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4147_mitm",
+  "source_asset": {
+    "assetId": "build_char_4147_mitm",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "渡桥",
+    "appellation": "Mitm",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4147_mitm.atlas",
+      ".png": "build_char_4147_mitm.png",
+      ".skel": "build_char_4147_mitm.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mitm/default/meta.json",
     "atlas": "standalone/assets/source/mitm/default/build_char_4147_mitm.atlas",
     "skeleton": "standalone/assets/source/mitm/default/build_char_4147_mitm.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4147_mitm/defaultskin/build/build_char_4147_mitm.png",
-        "path": "standalone/assets/source/mitm/default/build_char_4147_mitm.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4147_mitm/build_char_4147_mitm.png",
+        "path": "standalone/assets/source/mitm/default/build_char_4147_mitm.png",
+        "bytes": 319586,
+        "sha256": "2b138f6f2214ac9b60ed7c20eecd37a046f47bb8e6b51b0e4b983191a7d497d6"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10204,
+      "sha256": "22f02a75e229d5bf45866fa97d814dde815d555e42e3f5218c5eb6e51c7e6aa5"
+    },
+    "skeleton": {
+      "bytes": 201533,
+      "sha256": "84b33b618f04537eec8449c1f26e432f0a33f6489b0acf88e8d06f762dc7e0d7"
+    }
   }
 }

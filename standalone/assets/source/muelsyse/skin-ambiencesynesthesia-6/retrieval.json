@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "muelsyse",
   "character_name": "Muelsyse",
   "localized_name": "缪尔赛思",
@@ -9,25 +9,58 @@
   "variant_name": "漫步于黄金之梦",
   "skin_id": "ambiencesynesthesia-6",
   "skin_name": "漫步于黄金之梦",
-  "source_page": "https://prts.wiki/w/%E7%BC%AA%E5%B0%94%E8%B5%9B%E6%80%9D",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/meta.json",
-    "model": "char_249_mlyss_ambiencesynesthesia_6/build/build_char_249_mlyss_ambienceSynesthesia_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/char_249_mlyss_ambiencesynesthesia_6/build/build_char_249_mlyss_ambienceSynesthesia_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/char_249_mlyss_ambiencesynesthesia_6/build/build_char_249_mlyss_ambienceSynesthesia_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/char_249_mlyss_ambiencesynesthesia_6/build/build_char_249_mlyss_ambienceSynesthesia_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/249_mlyss_ambiencesynesthesia#6",
+  "source_asset": {
+    "assetId": "build_char_249_mlyss_ambiencesynesthesia#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "缪尔赛思",
+    "appellation": "Muelsyse",
+    "skinGroupId": "2025#ambienceSynesthesia#2",
+    "skinGroupName": "音律联觉/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_249_mlyss_ambienceSynesthesia#6.atlas",
+      ".png": "build_char_249_mlyss_ambienceSynesthesia#6.png",
+      ".skel": "build_char_249_mlyss_ambienceSynesthesia#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/muelsyse/skin-ambiencesynesthesia-6/meta.json",
-    "atlas": "standalone/assets/source/muelsyse/skin-ambiencesynesthesia-6/build_char_249_mlyss_ambienceSynesthesia_6.atlas",
-    "skeleton": "standalone/assets/source/muelsyse/skin-ambiencesynesthesia-6/build_char_249_mlyss_ambienceSynesthesia_6.skel",
+    "atlas": "standalone/assets/source/muelsyse/skin-ambiencesynesthesia-6/build_char_249_mlyss_ambienceSynesthesia#6.atlas",
+    "skeleton": "standalone/assets/source/muelsyse/skin-ambiencesynesthesia-6/build_char_249_mlyss_ambienceSynesthesia#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/char_249_mlyss_ambiencesynesthesia_6/build/build_char_249_mlyss_ambienceSynesthesia_6.png",
-        "path": "standalone/assets/source/muelsyse/skin-ambiencesynesthesia-6/build_char_249_mlyss_ambienceSynesthesia_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/249_mlyss_ambiencesynesthesia%236/build_char_249_mlyss_ambienceSynesthesia%236.png",
+        "path": "standalone/assets/source/muelsyse/skin-ambiencesynesthesia-6/build_char_249_mlyss_ambienceSynesthesia#6.png",
+        "bytes": 413002,
+        "sha256": "29deb2c78468aae97eb4edb0988c844d8a88b415581de5df3c6e99984529847f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14238,
+      "sha256": "848d0612a52b2e6ec9f86c82b7140fb599dc8aa50cb2ee35f2a762c2c1e7cedb"
+    },
+    "skeleton": {
+      "bytes": 576675,
+      "sha256": "b58622f8d047c30392c7f5f2200e820a11f89a50f1f628f227b1136a2864d9b1"
+    }
   }
 }

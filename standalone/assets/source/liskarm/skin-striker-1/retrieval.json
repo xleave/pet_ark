@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "liskarm",
   "character_name": "Liskarm",
   "localized_name": "雷蛇",
@@ -9,25 +9,58 @@
   "variant_name": "超载",
   "skin_id": "striker-1",
   "skin_name": "超载",
-  "source_page": "https://prts.wiki/w/%E9%9B%B7%E8%9B%87",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/meta.json",
-    "model": "char_107_liskam_striker_1/build/build_char_107_liskam_striker_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/char_107_liskam_striker_1/build/build_char_107_liskam_striker_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/char_107_liskam_striker_1/build/build_char_107_liskam_striker_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/char_107_liskam_striker_1/build/build_char_107_liskam_striker_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/107_liskam_striker#1",
+  "source_asset": {
+    "assetId": "build_char_107_liskam_striker#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "雷蛇",
+    "appellation": "Liskarm",
+    "skinGroupId": "2021#striker",
+    "skinGroupName": "雷神推进者",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_107_liskam_striker#1.atlas",
+      ".png": "build_char_107_liskam_striker#1.png",
+      ".skel": "build_char_107_liskam_striker#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/liskarm/skin-striker-1/meta.json",
-    "atlas": "standalone/assets/source/liskarm/skin-striker-1/build_char_107_liskam_striker_1.atlas",
-    "skeleton": "standalone/assets/source/liskarm/skin-striker-1/build_char_107_liskam_striker_1.skel",
+    "atlas": "standalone/assets/source/liskarm/skin-striker-1/build_char_107_liskam_striker#1.atlas",
+    "skeleton": "standalone/assets/source/liskarm/skin-striker-1/build_char_107_liskam_striker#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/char_107_liskam_striker_1/build/build_char_107_liskam_striker_1.png",
-        "path": "standalone/assets/source/liskarm/skin-striker-1/build_char_107_liskam_striker_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/107_liskam_striker%231/build_char_107_liskam_striker%231.png",
+        "path": "standalone/assets/source/liskarm/skin-striker-1/build_char_107_liskam_striker#1.png",
+        "bytes": 300719,
+        "sha256": "92ab04bd2ae5e24075eaca101bd04daa8a7a8449e2d01285d16ca66132e979eb"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10822,
+      "sha256": "4d3b5dcbca9f8cfc96aee91f74e21b25fbb8892fad65a0cd19d7fa2ea7a3ec72"
+    },
+    "skeleton": {
+      "bytes": 255293,
+      "sha256": "5a339438675f410b8d37104cce0939e4a1c01052a407e5b5f3b11544ab578b9e"
+    }
   }
 }

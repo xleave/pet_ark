@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lava",
   "character_name": "Lava",
   "localized_name": "炎熔",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%82%8E%E7%86%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_121_lava/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_121_lava/meta.json",
-    "model": "defaultskin/build/build_char_121_lava",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_121_lava/defaultskin/build/build_char_121_lava.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_121_lava/defaultskin/build/build_char_121_lava.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_121_lava/defaultskin/build/build_char_121_lava.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/121_lava",
+  "source_asset": {
+    "assetId": "build_char_121_lava",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "炎熔",
+    "appellation": "Lava",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_3"
+    ],
+    "assetList": {
+      ".atlas": "build_char_121_lava.atlas",
+      ".png": "build_char_121_lava.png",
+      ".skel": "build_char_121_lava.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lava/default/meta.json",
     "atlas": "standalone/assets/source/lava/default/build_char_121_lava.atlas",
     "skeleton": "standalone/assets/source/lava/default/build_char_121_lava.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_121_lava/defaultskin/build/build_char_121_lava.png",
-        "path": "standalone/assets/source/lava/default/build_char_121_lava.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/121_lava/build_char_121_lava.png",
+        "path": "standalone/assets/source/lava/default/build_char_121_lava.png",
+        "bytes": 184683,
+        "sha256": "9c581f052d7621517c17c443dbf33ff6765937e5c28cea94a02d50f361d094c9"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4273,
+      "sha256": "192c4a50ba68fbaa78322a2508f38fe0aefcdf08966f41bbab3804e040b6b500"
+    },
+    "skeleton": {
+      "bytes": 77557,
+      "sha256": "1bf1bbbed20b78cb0abc8524f5ff50e8a99737b522ddbd373585d36d1a460893"
+    }
   }
 }

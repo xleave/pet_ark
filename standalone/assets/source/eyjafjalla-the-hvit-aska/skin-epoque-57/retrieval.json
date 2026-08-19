@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "eyjafjalla-the-hvit-aska",
   "character_name": "Eyjafjalla the Hvít Aska",
   "localized_name": "纯烬艾雅法拉",
@@ -9,25 +9,59 @@
   "variant_name": "后来的故事",
   "skin_id": "epoque-57",
   "skin_name": "后来的故事",
-  "source_page": "https://prts.wiki/w/%E7%BA%AF%E7%83%AC%E8%89%BE%E9%9B%85%E6%B3%95%E6%8B%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/meta.json",
-    "model": "char_1016_agoat2_epoque_57/build/build_char_1016_agoat2_epoque_57",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/char_1016_agoat2_epoque_57/build/build_char_1016_agoat2_epoque_57.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/char_1016_agoat2_epoque_57/build/build_char_1016_agoat2_epoque_57.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/char_1016_agoat2_epoque_57/build/build_char_1016_agoat2_epoque_57.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1016_agoat2_epoque#57",
+  "source_asset": {
+    "assetId": "build_char_1016_agoat2_epoque#57",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "纯烬艾雅法拉",
+    "appellation": "Eyjafjalla the Hvít Aska",
+    "skinGroupId": "2026#epoque#8",
+    "skinGroupName": "时代/LVII",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1016_agoat2_epoque#57.atlas",
+      ".png": "build_char_1016_agoat2_epoque#57.png",
+      ".skel": "build_char_1016_agoat2_epoque#57.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/eyjafjalla-the-hvit-aska/skin-epoque-57/meta.json",
-    "atlas": "standalone/assets/source/eyjafjalla-the-hvit-aska/skin-epoque-57/build_char_1016_agoat2_epoque_57.atlas",
-    "skeleton": "standalone/assets/source/eyjafjalla-the-hvit-aska/skin-epoque-57/build_char_1016_agoat2_epoque_57.skel",
+    "atlas": "standalone/assets/source/eyjafjalla-the-hvit-aska/skin-epoque-57/build_char_1016_agoat2_epoque#57.atlas",
+    "skeleton": "standalone/assets/source/eyjafjalla-the-hvit-aska/skin-epoque-57/build_char_1016_agoat2_epoque#57.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/char_1016_agoat2_epoque_57/build/build_char_1016_agoat2_epoque_57.png",
-        "path": "standalone/assets/source/eyjafjalla-the-hvit-aska/skin-epoque-57/build_char_1016_agoat2_epoque_57.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1016_agoat2_epoque%2357/build_char_1016_agoat2_epoque%2357.png",
+        "path": "standalone/assets/source/eyjafjalla-the-hvit-aska/skin-epoque-57/build_char_1016_agoat2_epoque#57.png",
+        "bytes": 640196,
+        "sha256": "aec688f76ca8e2399988de3c14ad55a142f5dfb804997e41e462efeefedd1bd5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 16925,
+      "sha256": "f743fe738ab07d95e77493ec24aebe6422877b6c5957f75c46f3719572d09344"
+    },
+    "skeleton": {
+      "bytes": 469539,
+      "sha256": "012758c1f790bac248cfc0f70f2e438a0283d151cf08744024d99550aa73bf33"
+    }
   }
 }

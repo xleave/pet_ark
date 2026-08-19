@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "surfer",
   "character_name": "Surfer",
   "localized_name": "寻澜",
@@ -9,25 +9,58 @@
   "variant_name": "共凭栏",
   "skin_id": "nian-12",
   "skin_name": "共凭栏",
-  "source_page": "https://prts.wiki/w/%E5%AF%BB%E6%BE%9C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/meta.json",
-    "model": "char_4052_surfer_nian_12/build/build_char_4052_surfer_nian_12",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/char_4052_surfer_nian_12/build/build_char_4052_surfer_nian_12.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/char_4052_surfer_nian_12/build/build_char_4052_surfer_nian_12.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/char_4052_surfer_nian_12/build/build_char_4052_surfer_nian_12.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4052_surfer_nian#12",
+  "source_asset": {
+    "assetId": "build_char_4052_surfer_nian#12",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "寻澜",
+    "appellation": "Surfer",
+    "skinGroupId": "2026#nian",
+    "skinGroupName": "0011制造/XII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4052_surfer_nian#12.atlas",
+      ".png": "build_char_4052_surfer_nian#12.png",
+      ".skel": "build_char_4052_surfer_nian#12.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/surfer/skin-nian-12/meta.json",
-    "atlas": "standalone/assets/source/surfer/skin-nian-12/build_char_4052_surfer_nian_12.atlas",
-    "skeleton": "standalone/assets/source/surfer/skin-nian-12/build_char_4052_surfer_nian_12.skel",
+    "atlas": "standalone/assets/source/surfer/skin-nian-12/build_char_4052_surfer_nian#12.atlas",
+    "skeleton": "standalone/assets/source/surfer/skin-nian-12/build_char_4052_surfer_nian#12.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/char_4052_surfer_nian_12/build/build_char_4052_surfer_nian_12.png",
-        "path": "standalone/assets/source/surfer/skin-nian-12/build_char_4052_surfer_nian_12.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4052_surfer_nian%2312/build_char_4052_surfer_nian%2312.png",
+        "path": "standalone/assets/source/surfer/skin-nian-12/build_char_4052_surfer_nian#12.png",
+        "bytes": 507571,
+        "sha256": "73b34e6784ca8a3ae50dbac02299f0f148acd79bc1d5b5e8d57e6b7fb063c681"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 17575,
+      "sha256": "9b1812b3055dfd11b0e5097af0eb6c374e52a846cb93d1013b1907d7902f044d"
+    },
+    "skeleton": {
+      "bytes": 486329,
+      "sha256": "bb3405768aa9f8ac4b0b90b7f77de6fe4ec5753e3d28e7f7d8ec14f434ca0a7d"
+    }
   }
 }

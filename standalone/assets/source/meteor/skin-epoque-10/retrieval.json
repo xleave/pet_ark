@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "meteor",
   "character_name": "Meteor",
   "localized_name": "流星",
@@ -9,25 +9,58 @@
   "variant_name": "诗人的假日",
   "skin_id": "epoque-10",
   "skin_name": "诗人的假日",
-  "source_page": "https://prts.wiki/w/%E6%B5%81%E6%98%9F",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/meta.json",
-    "model": "char_126_shotst_epoque_10/build/build_char_126_shotst_epoque_10",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/char_126_shotst_epoque_10/build/build_char_126_shotst_epoque_10.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/char_126_shotst_epoque_10/build/build_char_126_shotst_epoque_10.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/char_126_shotst_epoque_10/build/build_char_126_shotst_epoque_10.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/126_shotst_epoque#10",
+  "source_asset": {
+    "assetId": "build_char_126_shotst_epoque#10",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "流星",
+    "appellation": "Meteor",
+    "skinGroupId": "2021#epoque#2",
+    "skinGroupName": "时代/X",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_126_shotst_epoque#10.atlas",
+      ".png": "build_char_126_shotst_epoque#10.png",
+      ".skel": "build_char_126_shotst_epoque#10.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/meteor/skin-epoque-10/meta.json",
-    "atlas": "standalone/assets/source/meteor/skin-epoque-10/build_char_126_shotst_epoque_10.atlas",
-    "skeleton": "standalone/assets/source/meteor/skin-epoque-10/build_char_126_shotst_epoque_10.skel",
+    "atlas": "standalone/assets/source/meteor/skin-epoque-10/build_char_126_shotst_epoque#10.atlas",
+    "skeleton": "standalone/assets/source/meteor/skin-epoque-10/build_char_126_shotst_epoque#10.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/char_126_shotst_epoque_10/build/build_char_126_shotst_epoque_10.png",
-        "path": "standalone/assets/source/meteor/skin-epoque-10/build_char_126_shotst_epoque_10.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/126_shotst_epoque%2310/build_char_126_shotst_epoque%2310.png",
+        "path": "standalone/assets/source/meteor/skin-epoque-10/build_char_126_shotst_epoque#10.png",
+        "bytes": 301698,
+        "sha256": "cee5424e0784855e4ef7dcab2873e35110dc717a0a877f5e58b37614e4cee171"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10400,
+      "sha256": "285aa87a2b5cb5f23d0d2d2a4ea6cd1247b9f8466705e13fb4c77f9c9fd922f5"
+    },
+    "skeleton": {
+      "bytes": 260416,
+      "sha256": "d7c78bca9a440bdfe4bfb0d215dc5e704d77a81b388adf273dfc071a237d18b4"
+    }
   }
 }

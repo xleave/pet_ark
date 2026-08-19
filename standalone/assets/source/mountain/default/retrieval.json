@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mountain",
   "character_name": "Mountain",
   "localized_name": "山",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%B1%B1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/meta.json",
-    "model": "defaultskin/build/build_char_264_f12yin",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/defaultskin/build/build_char_264_f12yin.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/defaultskin/build/build_char_264_f12yin.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/defaultskin/build/build_char_264_f12yin.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/264_f12yin",
+  "source_asset": {
+    "assetId": "build_char_264_f12yin",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "山",
+    "appellation": "Mountain",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_264_f12yin.atlas",
+      ".png": "build_char_264_f12yin.png",
+      ".skel": "build_char_264_f12yin.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mountain/default/meta.json",
     "atlas": "standalone/assets/source/mountain/default/build_char_264_f12yin.atlas",
     "skeleton": "standalone/assets/source/mountain/default/build_char_264_f12yin.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/defaultskin/build/build_char_264_f12yin.png",
-        "path": "standalone/assets/source/mountain/default/build_char_264_f12yin.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/264_f12yin/build_char_264_f12yin.png",
+        "path": "standalone/assets/source/mountain/default/build_char_264_f12yin.png",
+        "bytes": 334339,
+        "sha256": "308b6b76b98a69552d55223fc186bd441bb74b4bce46526752280764d5b2a8e3"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7453,
+      "sha256": "47adb913133f6bdf75c7e2eb951948556ed9ee21493e71e9441226e1fb1300bb"
+    },
+    "skeleton": {
+      "bytes": 102935,
+      "sha256": "55704e260d1f6fb5aacab5b40e45a58bdea8a281b818dad830bf7290e20f2ece"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "angelina",
   "character_name": "Angelina",
   "localized_name": "安洁莉娜",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%AE%89%E6%B4%81%E8%8E%89%E5%A8%9C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_291_aglina/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_291_aglina/meta.json",
-    "model": "defaultskin/build/build_char_291_aglina",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_291_aglina/defaultskin/build/build_char_291_aglina.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_291_aglina/defaultskin/build/build_char_291_aglina.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_291_aglina/defaultskin/build/build_char_291_aglina.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/291_aglina",
+  "source_asset": {
+    "assetId": "build_char_291_aglina",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "安洁莉娜",
+    "appellation": "Angelina",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_291_aglina.atlas",
+      ".png": "build_char_291_aglina.png",
+      ".skel": "build_char_291_aglina.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/angelina/default/meta.json",
     "atlas": "standalone/assets/source/angelina/default/build_char_291_aglina.atlas",
     "skeleton": "standalone/assets/source/angelina/default/build_char_291_aglina.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_291_aglina/defaultskin/build/build_char_291_aglina.png",
-        "path": "standalone/assets/source/angelina/default/build_char_291_aglina.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/291_aglina/build_char_291_aglina.png",
+        "path": "standalone/assets/source/angelina/default/build_char_291_aglina.png",
+        "bytes": 343956,
+        "sha256": "17d9db6fa73002948f666ec8d4c5c0d4dadfc6a27e1c2031ffa0e1e8bdad3faf"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7730,
+      "sha256": "d27d955bfeb64be8c75e6d66ff0e67624028b4ec114abdaf1a838bdb375855ca"
+    },
+    "skeleton": {
+      "bytes": 115621,
+      "sha256": "efc45340936ec4ef3da37e351975c2902b6d5d9f8f46684ebbd7dc7b93683eee"
+    }
   }
 }

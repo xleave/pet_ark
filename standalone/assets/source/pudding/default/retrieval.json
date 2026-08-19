@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "pudding",
   "character_name": "Pudding",
   "localized_name": "布丁",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%B8%83%E4%B8%81",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4004_pudd/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4004_pudd/meta.json",
-    "model": "defaultskin/build/build_char_4004_pudd",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4004_pudd/defaultskin/build/build_char_4004_pudd.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4004_pudd/defaultskin/build/build_char_4004_pudd.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4004_pudd/defaultskin/build/build_char_4004_pudd.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4004_pudd",
+  "source_asset": {
+    "assetId": "build_char_4004_pudd",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "布丁",
+    "appellation": "Pudding",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4004_pudd.atlas",
+      ".png": "build_char_4004_pudd.png",
+      ".skel": "build_char_4004_pudd.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/pudding/default/meta.json",
     "atlas": "standalone/assets/source/pudding/default/build_char_4004_pudd.atlas",
     "skeleton": "standalone/assets/source/pudding/default/build_char_4004_pudd.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4004_pudd/defaultskin/build/build_char_4004_pudd.png",
-        "path": "standalone/assets/source/pudding/default/build_char_4004_pudd.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4004_pudd/build_char_4004_pudd.png",
+        "path": "standalone/assets/source/pudding/default/build_char_4004_pudd.png",
+        "bytes": 275108,
+        "sha256": "428b0c60c4979ca72cc5bb127a5f750dfaaadd4385c27305b7a8f0cb340bfe4f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8241,
+      "sha256": "f4557575889906c94d83f87391146319b0170fdb8a01a25589f67f94195423d8"
+    },
+    "skeleton": {
+      "bytes": 135645,
+      "sha256": "32d6944d462d40290f5a547ba3e8522524a486e474be3aa71e577a4fe07605c6"
+    }
   }
 }

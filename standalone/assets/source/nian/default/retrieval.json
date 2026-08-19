@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "nian",
   "character_name": "Nian",
   "localized_name": "年",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%B9%B4",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/meta.json",
-    "model": "defaultskin/build/build_char_2014_nian",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/defaultskin/build/build_char_2014_nian.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/defaultskin/build/build_char_2014_nian.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/defaultskin/build/build_char_2014_nian.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/2014_nian",
+  "source_asset": {
+    "assetId": "build_char_2014_nian",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "年",
+    "appellation": "Nian",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2014_nian.atlas",
+      ".png": "build_char_2014_nian.png",
+      ".skel": "build_char_2014_nian.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/nian/default/meta.json",
     "atlas": "standalone/assets/source/nian/default/build_char_2014_nian.atlas",
     "skeleton": "standalone/assets/source/nian/default/build_char_2014_nian.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/defaultskin/build/build_char_2014_nian.png",
-        "path": "standalone/assets/source/nian/default/build_char_2014_nian.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/2014_nian/build_char_2014_nian.png",
+        "path": "standalone/assets/source/nian/default/build_char_2014_nian.png",
+        "bytes": 367804,
+        "sha256": "e9c38b000a71e6762e818ac569efce93d13d1f415a7f396dfa8ba2db8c18899c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12097,
+      "sha256": "240436b1b978d23def6194fb54a16532ca60881bc839d70348c9827dbe538acd"
+    },
+    "skeleton": {
+      "bytes": 237224,
+      "sha256": "74e726f0de70086cb12cbddb144bc1429c770e6c30accac0e61d6a16b67f7607"
+    }
   }
 }

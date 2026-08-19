@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "schwarz",
   "character_name": "Schwarz",
   "localized_name": "黑",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%BB%91",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_340_shwaz/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_340_shwaz/meta.json",
-    "model": "defaultskin/build/build_char_340_shwaz",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_340_shwaz/defaultskin/build/build_char_340_shwaz.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_340_shwaz/defaultskin/build/build_char_340_shwaz.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_340_shwaz/defaultskin/build/build_char_340_shwaz.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/340_shwaz",
+  "source_asset": {
+    "assetId": "build_char_340_shwaz",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "黑",
+    "appellation": "Schwarz",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_340_shwaz.atlas",
+      ".png": "build_char_340_shwaz.png",
+      ".skel": "build_char_340_shwaz.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/schwarz/default/meta.json",
     "atlas": "standalone/assets/source/schwarz/default/build_char_340_shwaz.atlas",
     "skeleton": "standalone/assets/source/schwarz/default/build_char_340_shwaz.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_340_shwaz/defaultskin/build/build_char_340_shwaz.png",
-        "path": "standalone/assets/source/schwarz/default/build_char_340_shwaz.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/340_shwaz/build_char_340_shwaz.png",
+        "path": "standalone/assets/source/schwarz/default/build_char_340_shwaz.png",
+        "bytes": 474219,
+        "sha256": "67fe72745bf67a5e26d16c1bd68794f98feaeb32fccfaa87dc93c35eb45c167b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12802,
+      "sha256": "be417ab596e3e430ef83233733a0e0000986fea26ae0c31d381266c7dc188741"
+    },
+    "skeleton": {
+      "bytes": 121591,
+      "sha256": "0d80dc5d3ed3fafbb2bae60b8615715d7426337ca40d19476b4efa4cad359454"
+    }
   }
 }

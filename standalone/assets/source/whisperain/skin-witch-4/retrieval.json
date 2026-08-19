@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "whisperain",
   "character_name": "Whisperain",
   "localized_name": "絮雨",
@@ -9,25 +9,58 @@
   "variant_name": "幽邃隐修",
   "skin_id": "witch-4",
   "skin_name": "幽邃隐修",
-  "source_page": "https://prts.wiki/w/%E7%B5%AE%E9%9B%A8",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/meta.json",
-    "model": "char_436_whispr_witch_4/build/build_char_436_whispr_witch_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/char_436_whispr_witch_4/build/build_char_436_whispr_witch_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/char_436_whispr_witch_4/build/build_char_436_whispr_witch_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/char_436_whispr_witch_4/build/build_char_436_whispr_witch_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/436_whispr_witch#4",
+  "source_asset": {
+    "assetId": "build_char_436_whispr_witch#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "絮雨",
+    "appellation": "Whisperain",
+    "skinGroupId": "2023#witch",
+    "skinGroupName": "巫异盛宴/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_436_whispr_witch#4.atlas",
+      ".png": "build_char_436_whispr_witch#4.png",
+      ".skel": "build_char_436_whispr_witch#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/whisperain/skin-witch-4/meta.json",
-    "atlas": "standalone/assets/source/whisperain/skin-witch-4/build_char_436_whispr_witch_4.atlas",
-    "skeleton": "standalone/assets/source/whisperain/skin-witch-4/build_char_436_whispr_witch_4.skel",
+    "atlas": "standalone/assets/source/whisperain/skin-witch-4/build_char_436_whispr_witch#4.atlas",
+    "skeleton": "standalone/assets/source/whisperain/skin-witch-4/build_char_436_whispr_witch#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_436_whispr/char_436_whispr_witch_4/build/build_char_436_whispr_witch_4.png",
-        "path": "standalone/assets/source/whisperain/skin-witch-4/build_char_436_whispr_witch_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/436_whispr_witch%234/build_char_436_whispr_witch%234.png",
+        "path": "standalone/assets/source/whisperain/skin-witch-4/build_char_436_whispr_witch#4.png",
+        "bytes": 437841,
+        "sha256": "2c9eb370f2e31afa8d257bab2d490ed7cc84f3fa412c2a12b68d0b4508c1c4c6"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12292,
+      "sha256": "c13e84e22a10d09830ad4d8682ce0ea565c25407abdd62e58682f2bdff9bf103"
+    },
+    "skeleton": {
+      "bytes": 301882,
+      "sha256": "4a706ac50ed0dd88ae3a629050062bce2a16fb3719b6aa53017dfb5357546445"
+    }
   }
 }

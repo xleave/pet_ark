@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "executor",
   "character_name": "Executor",
   "localized_name": "送葬人",
@@ -9,25 +9,58 @@
   "variant_name": "无题密令",
   "skin_id": "boc-1",
   "skin_name": "无题密令",
-  "source_page": "https://prts.wiki/w/%E9%80%81%E8%91%AC%E4%BA%BA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_279_excu/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_279_excu/meta.json",
-    "model": "char_279_excu_boc_1/build/build_char_279_excu_boc_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_279_excu/char_279_excu_boc_1/build/build_char_279_excu_boc_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_279_excu/char_279_excu_boc_1/build/build_char_279_excu_boc_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_279_excu/char_279_excu_boc_1/build/build_char_279_excu_boc_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/279_excu_boc#1",
+  "source_asset": {
+    "assetId": "build_char_279_excu_boc#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "送葬人",
+    "appellation": "Executor",
+    "skinGroupId": "2020#boc",
+    "skinGroupName": "斗争血脉/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_279_excu_boc#1.atlas",
+      ".png": "build_char_279_excu_boc#1.png",
+      ".skel": "build_char_279_excu_boc#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/executor/skin-boc-1/meta.json",
-    "atlas": "standalone/assets/source/executor/skin-boc-1/build_char_279_excu_boc_1.atlas",
-    "skeleton": "standalone/assets/source/executor/skin-boc-1/build_char_279_excu_boc_1.skel",
+    "atlas": "standalone/assets/source/executor/skin-boc-1/build_char_279_excu_boc#1.atlas",
+    "skeleton": "standalone/assets/source/executor/skin-boc-1/build_char_279_excu_boc#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_279_excu/char_279_excu_boc_1/build/build_char_279_excu_boc_1.png",
-        "path": "standalone/assets/source/executor/skin-boc-1/build_char_279_excu_boc_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/279_excu_boc%231/build_char_279_excu_boc%231.png",
+        "path": "standalone/assets/source/executor/skin-boc-1/build_char_279_excu_boc#1.png",
+        "bytes": 364380,
+        "sha256": "83457bbd1ea5bc9047d32eafdcb8394ae758bc2016309f0c29aa68ecfb9aaf98"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10161,
+      "sha256": "71a00c4633f68cfa1d4126d7d700d73da883360ff1693bbc6d0869d63fc298db"
+    },
+    "skeleton": {
+      "bytes": 152433,
+      "sha256": "fe24e9b5baec9ad416107f7ff1ad3a4c5c809dca89d34aa780ce16d363e91daa"
+    }
   }
 }

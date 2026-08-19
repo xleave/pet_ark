@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "suzuran",
   "character_name": "Suzuran",
   "localized_name": "铃兰",
@@ -9,25 +9,58 @@
   "variant_name": "弃土花开",
   "skin_id": "wild-3",
   "skin_name": "弃土花开",
-  "source_page": "https://prts.wiki/w/%E9%93%83%E5%85%B0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/meta.json",
-    "model": "char_358_lisa_wild_3/build/build_char_358_lisa_wild_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/char_358_lisa_wild_3/build/build_char_358_lisa_wild_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/char_358_lisa_wild_3/build/build_char_358_lisa_wild_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/char_358_lisa_wild_3/build/build_char_358_lisa_wild_3.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/358_lisa_wild#3",
+  "source_asset": {
+    "assetId": "build_char_358_lisa_wild#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "铃兰",
+    "appellation": "Suzuran",
+    "skinGroupId": "2020#wild",
+    "skinGroupName": "生命之地/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_358_lisa_wild#3.atlas",
+      ".png": "build_char_358_lisa_wild#3.png",
+      ".skel": "build_char_358_lisa_wild#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/suzuran/skin-wild-3/meta.json",
-    "atlas": "standalone/assets/source/suzuran/skin-wild-3/build_char_358_lisa_wild_3.atlas",
-    "skeleton": "standalone/assets/source/suzuran/skin-wild-3/build_char_358_lisa_wild_3.skel",
+    "atlas": "standalone/assets/source/suzuran/skin-wild-3/build_char_358_lisa_wild#3.atlas",
+    "skeleton": "standalone/assets/source/suzuran/skin-wild-3/build_char_358_lisa_wild#3.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/char_358_lisa_wild_3/build/build_char_358_lisa_wild_3.png",
-        "path": "standalone/assets/source/suzuran/skin-wild-3/build_char_358_lisa_wild_3.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/358_lisa_wild%233/build_char_358_lisa_wild%233.png",
+        "path": "standalone/assets/source/suzuran/skin-wild-3/build_char_358_lisa_wild#3.png",
+        "bytes": 311254,
+        "sha256": "d534da48e6121e59d102a902e597e6d26229cf39c98c6e8c576c39d9d35264d7"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7446,
+      "sha256": "f88a55626c671449a1d3472f49211e6a20138724f2c0adb90e9eed0f2adcb179"
+    },
+    "skeleton": {
+      "bytes": 226383,
+      "sha256": "163fc1db78570eab10c29c61864653386393c1e3c2183a26f0f4950da320ff0d"
+    }
   }
 }

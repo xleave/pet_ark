@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "shining",
   "character_name": "Shining",
   "localized_name": "闪灵",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%97%AA%E7%81%B5",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_147_shining/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_147_shining/meta.json",
-    "model": "defaultskin/build/build_char_147_shining",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_147_shining/defaultskin/build/build_char_147_shining.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_147_shining/defaultskin/build/build_char_147_shining.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_147_shining/defaultskin/build/build_char_147_shining.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/147_shining",
+  "source_asset": {
+    "assetId": "build_char_147_shining",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "闪灵",
+    "appellation": "Shining",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_147_shining.atlas",
+      ".png": "build_char_147_shining.png",
+      ".skel": "build_char_147_shining.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/shining/default/meta.json",
     "atlas": "standalone/assets/source/shining/default/build_char_147_shining.atlas",
     "skeleton": "standalone/assets/source/shining/default/build_char_147_shining.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_147_shining/defaultskin/build/build_char_147_shining.png",
-        "path": "standalone/assets/source/shining/default/build_char_147_shining.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/147_shining/build_char_147_shining.png",
+        "path": "standalone/assets/source/shining/default/build_char_147_shining.png",
+        "bytes": 222733,
+        "sha256": "fcb70ff07425914df69436ad481d6268f8d0042fd7c3b93207c2aab6a1f01e04"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4851,
+      "sha256": "2a7c0a1b113bb47f19793fb65af7d59b5ece5846c5f9a3eae1de8f04d4a31cb0"
+    },
+    "skeleton": {
+      "bytes": 129492,
+      "sha256": "625df6855eb21e4ce65c3a2432379f0b84a71fc768edc67c2264aa238adcba84"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "tsukinogi",
   "character_name": "Tsukinogi",
   "localized_name": "月禾",
@@ -9,25 +9,58 @@
   "variant_name": "伦式巫女",
   "skin_id": "epoque-9",
   "skin_name": "伦式巫女",
-  "source_page": "https://prts.wiki/w/%E6%9C%88%E7%A6%BE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_343_tknogi/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_343_tknogi/meta.json",
-    "model": "char_343_tknogi_epoque_9/build/build_char_343_tknogi_epoque_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_343_tknogi/char_343_tknogi_epoque_9/build/build_char_343_tknogi_epoque_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_343_tknogi/char_343_tknogi_epoque_9/build/build_char_343_tknogi_epoque_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_343_tknogi/char_343_tknogi_epoque_9/build/build_char_343_tknogi_epoque_9.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/343_tknogi_epoque#9",
+  "source_asset": {
+    "assetId": "build_char_343_tknogi_epoque#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "月禾",
+    "appellation": "Tsukinogi",
+    "skinGroupId": "2021#epoque",
+    "skinGroupName": "时代/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_343_tknogi_epoque#9.atlas",
+      ".png": "build_char_343_tknogi_epoque#9.png",
+      ".skel": "build_char_343_tknogi_epoque#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/tsukinogi/skin-epoque-9/meta.json",
-    "atlas": "standalone/assets/source/tsukinogi/skin-epoque-9/build_char_343_tknogi_epoque_9.atlas",
-    "skeleton": "standalone/assets/source/tsukinogi/skin-epoque-9/build_char_343_tknogi_epoque_9.skel",
+    "atlas": "standalone/assets/source/tsukinogi/skin-epoque-9/build_char_343_tknogi_epoque#9.atlas",
+    "skeleton": "standalone/assets/source/tsukinogi/skin-epoque-9/build_char_343_tknogi_epoque#9.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_343_tknogi/char_343_tknogi_epoque_9/build/build_char_343_tknogi_epoque_9.png",
-        "path": "standalone/assets/source/tsukinogi/skin-epoque-9/build_char_343_tknogi_epoque_9.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/343_tknogi_epoque%239/build_char_343_tknogi_epoque%239.png",
+        "path": "standalone/assets/source/tsukinogi/skin-epoque-9/build_char_343_tknogi_epoque#9.png",
+        "bytes": 290784,
+        "sha256": "746a8feaa81ebdf2072d561904a4ad2123c8d1eadea7a9ed08f06e56d357f848"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10889,
+      "sha256": "39b199a99e1e104dfe34565ebfa47fa3710b7d11bea1607add8da054b9d8e309"
+    },
+    "skeleton": {
+      "bytes": 344233,
+      "sha256": "44ef8b6c7cbce1657056e4bf3dd025d7c6dc7cb0a20737def5c0d28b71209e6d"
+    }
   }
 }

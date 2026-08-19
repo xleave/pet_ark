@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "zinogre-s-catapult",
   "character_name": "Zinogre S Catapult",
   "localized_name": "雷狼龙S空爆",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%9B%B7%E7%8B%BC%E9%BE%99S%E7%A9%BA%E7%88%86",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1049_catap2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1049_catap2/meta.json",
-    "model": "defaultskin/build/build_char_1049_catap2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1049_catap2/defaultskin/build/build_char_1049_catap2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1049_catap2/defaultskin/build/build_char_1049_catap2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1049_catap2/defaultskin/build/build_char_1049_catap2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1049_catap2",
+  "source_asset": {
+    "assetId": "build_char_1049_catap2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "雷狼龙S空爆",
+    "appellation": "Zinogre S Catapult",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1049_catap2.atlas",
+      ".png": "build_char_1049_catap2.png",
+      ".skel": "build_char_1049_catap2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/zinogre-s-catapult/default/meta.json",
     "atlas": "standalone/assets/source/zinogre-s-catapult/default/build_char_1049_catap2.atlas",
     "skeleton": "standalone/assets/source/zinogre-s-catapult/default/build_char_1049_catap2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1049_catap2/defaultskin/build/build_char_1049_catap2.png",
-        "path": "standalone/assets/source/zinogre-s-catapult/default/build_char_1049_catap2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1049_catap2/build_char_1049_catap2.png",
+        "path": "standalone/assets/source/zinogre-s-catapult/default/build_char_1049_catap2.png",
+        "bytes": 451121,
+        "sha256": "b3e6a2fe9e0498725bd906caba414e1c0141e90f7c8dc82bb064687c98903657"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11782,
+      "sha256": "bf8133f973c59943caf85b95ae282f86720112b043311dc50b876a0f08c92770"
+    },
+    "skeleton": {
+      "bytes": 179554,
+      "sha256": "e9f666ebcf805865263ef9ee3fd34ebf4325a0c6cce04a36cbfb8d8a79faa1fd"
+    }
   }
 }

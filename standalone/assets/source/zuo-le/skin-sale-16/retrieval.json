@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "zuo-le",
   "character_name": "Zuo Le",
   "localized_name": "左乐",
@@ -9,25 +9,58 @@
   "variant_name": "无息破局",
   "skin_id": "sale-16",
   "skin_name": "无息破局",
-  "source_page": "https://prts.wiki/w/%E5%B7%A6%E4%B9%90",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/meta.json",
-    "model": "char_4121_zuole_sale_16/build/build_char_4121_zuole_sale_16",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/char_4121_zuole_sale_16/build/build_char_4121_zuole_sale_16.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/char_4121_zuole_sale_16/build/build_char_4121_zuole_sale_16.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/char_4121_zuole_sale_16/build/build_char_4121_zuole_sale_16.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4121_zuole_sale#16",
+  "source_asset": {
+    "assetId": "build_char_4121_zuole_sale#16",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "左乐",
+    "appellation": "Zuo Le",
+    "skinGroupId": "2025#sale#4",
+    "skinGroupName": "忒斯特收藏/XVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4121_zuole_sale#16.atlas",
+      ".png": "build_char_4121_zuole_sale#16.png",
+      ".skel": "build_char_4121_zuole_sale#16.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/zuo-le/skin-sale-16/meta.json",
-    "atlas": "standalone/assets/source/zuo-le/skin-sale-16/build_char_4121_zuole_sale_16.atlas",
-    "skeleton": "standalone/assets/source/zuo-le/skin-sale-16/build_char_4121_zuole_sale_16.skel",
+    "atlas": "standalone/assets/source/zuo-le/skin-sale-16/build_char_4121_zuole_sale#16.atlas",
+    "skeleton": "standalone/assets/source/zuo-le/skin-sale-16/build_char_4121_zuole_sale#16.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/char_4121_zuole_sale_16/build/build_char_4121_zuole_sale_16.png",
-        "path": "standalone/assets/source/zuo-le/skin-sale-16/build_char_4121_zuole_sale_16.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4121_zuole_sale%2316/build_char_4121_zuole_sale%2316.png",
+        "path": "standalone/assets/source/zuo-le/skin-sale-16/build_char_4121_zuole_sale#16.png",
+        "bytes": 853394,
+        "sha256": "42f3b52f8708e5776bc725f790911d35318d7c8a5021d9d644ef1715cee97829"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 19375,
+      "sha256": "298d77e60a29ff713c53765ac698302cfc5954dd327ce789adcfed7664bceb09"
+    },
+    "skeleton": {
+      "bytes": 618321,
+      "sha256": "e484e724a30c97d7bc0b1cb3bf92adc1ad96da0100c236da89d0745f746a0877"
+    }
   }
 }

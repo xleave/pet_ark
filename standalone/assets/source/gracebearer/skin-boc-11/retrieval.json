@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "gracebearer",
   "character_name": "Gracebearer",
   "localized_name": "聆音",
@@ -9,25 +9,58 @@
   "variant_name": "追想涤尘",
   "skin_id": "boc-11",
   "skin_name": "追想涤尘",
-  "source_page": "https://prts.wiki/w/%E8%81%86%E9%9F%B3",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4187_graceb/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4187_graceb/meta.json",
-    "model": "char_4187_graceb_boc_11/build/build_char_4187_graceb_boc_11",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4187_graceb/char_4187_graceb_boc_11/build/build_char_4187_graceb_boc_11.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4187_graceb/char_4187_graceb_boc_11/build/build_char_4187_graceb_boc_11.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4187_graceb/char_4187_graceb_boc_11/build/build_char_4187_graceb_boc_11.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4187_graceb_boc#11",
+  "source_asset": {
+    "assetId": "build_char_4187_graceb_boc#11",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "聆音",
+    "appellation": "Gracebearer",
+    "skinGroupId": "2026#boc",
+    "skinGroupName": "斗争血脉/XI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4187_graceb_boc#11.atlas",
+      ".png": "build_char_4187_graceb_boc#11.png",
+      ".skel": "build_char_4187_graceb_boc#11.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/gracebearer/skin-boc-11/meta.json",
-    "atlas": "standalone/assets/source/gracebearer/skin-boc-11/build_char_4187_graceb_boc_11.atlas",
-    "skeleton": "standalone/assets/source/gracebearer/skin-boc-11/build_char_4187_graceb_boc_11.skel",
+    "atlas": "standalone/assets/source/gracebearer/skin-boc-11/build_char_4187_graceb_boc#11.atlas",
+    "skeleton": "standalone/assets/source/gracebearer/skin-boc-11/build_char_4187_graceb_boc#11.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4187_graceb/char_4187_graceb_boc_11/build/build_char_4187_graceb_boc_11.png",
-        "path": "standalone/assets/source/gracebearer/skin-boc-11/build_char_4187_graceb_boc_11.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4187_graceb_boc%2311/build_char_4187_graceb_boc%2311.png",
+        "path": "standalone/assets/source/gracebearer/skin-boc-11/build_char_4187_graceb_boc#11.png",
+        "bytes": 481053,
+        "sha256": "651e63bba6a1b63682b0c97068142595fa59a87e91af65893f70144d864bd690"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11251,
+      "sha256": "9245fbe4bba71f8976bf3d5cf52e8517d502eb8d20ae347603cefbd4651817b6"
+    },
+    "skeleton": {
+      "bytes": 388364,
+      "sha256": "927b5a235135e4e031c37375d05f8931fcadfd406e5f45f4a7c267db99ded682"
+    }
   }
 }

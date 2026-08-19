@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "archetto",
   "character_name": "Archetto",
   "localized_name": "空弦",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%A9%BA%E5%BC%A6",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/meta.json",
-    "model": "defaultskin/build/build_char_332_archet",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/defaultskin/build/build_char_332_archet.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/defaultskin/build/build_char_332_archet.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/defaultskin/build/build_char_332_archet.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/332_archet",
+  "source_asset": {
+    "assetId": "build_char_332_archet",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "空弦",
+    "appellation": "Archetto",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_332_archet.atlas",
+      ".png": "build_char_332_archet.png",
+      ".skel": "build_char_332_archet.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/archetto/default/meta.json",
     "atlas": "standalone/assets/source/archetto/default/build_char_332_archet.atlas",
     "skeleton": "standalone/assets/source/archetto/default/build_char_332_archet.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/defaultskin/build/build_char_332_archet.png",
-        "path": "standalone/assets/source/archetto/default/build_char_332_archet.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/332_archet/build_char_332_archet.png",
+        "path": "standalone/assets/source/archetto/default/build_char_332_archet.png",
+        "bytes": 278100,
+        "sha256": "ce97dc7f880e774430d3b82496dd28cf8bca4b9abade792852b8ee0b07016ec5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6918,
+      "sha256": "24be7f4850f86e9dfcb428c4ef9adfe16bf894bec4f3a1817122b06bf9374843"
+    },
+    "skeleton": {
+      "bytes": 222601,
+      "sha256": "821cffc1113eb767ab4729925564c65e18a7ae9cc48ce8ccd5ceb018bd2de6a2"
+    }
   }
 }

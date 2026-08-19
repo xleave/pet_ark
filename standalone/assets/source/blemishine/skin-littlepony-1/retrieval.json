@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "blemishine",
   "character_name": "Blemishine",
   "localized_name": "瑕光",
@@ -9,25 +9,58 @@
   "variant_name": "善良坚强之心",
   "skin_id": "littlepony-1",
   "skin_name": "善良坚强之心",
-  "source_page": "https://prts.wiki/w/%E7%91%95%E5%85%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/meta.json",
-    "model": "char_423_blemsh_littlepony_1/build/build_char_423_blemsh_littlePony_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/char_423_blemsh_littlepony_1/build/build_char_423_blemsh_littlePony_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/char_423_blemsh_littlepony_1/build/build_char_423_blemsh_littlePony_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/char_423_blemsh_littlepony_1/build/build_char_423_blemsh_littlePony_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/423_blemsh_littlepony#1",
+  "source_asset": {
+    "assetId": "build_char_423_blemsh_littlepony#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "瑕光",
+    "appellation": "Blemishine",
+    "skinGroupId": "2026#littlePony",
+    "skinGroupName": "小马宝莉",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_423_blemsh_littlePony#1.atlas",
+      ".png": "build_char_423_blemsh_littlePony#1.png",
+      ".skel": "build_char_423_blemsh_littlePony#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/blemishine/skin-littlepony-1/meta.json",
-    "atlas": "standalone/assets/source/blemishine/skin-littlepony-1/build_char_423_blemsh_littlePony_1.atlas",
-    "skeleton": "standalone/assets/source/blemishine/skin-littlepony-1/build_char_423_blemsh_littlePony_1.skel",
+    "atlas": "standalone/assets/source/blemishine/skin-littlepony-1/build_char_423_blemsh_littlePony#1.atlas",
+    "skeleton": "standalone/assets/source/blemishine/skin-littlepony-1/build_char_423_blemsh_littlePony#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/char_423_blemsh_littlepony_1/build/build_char_423_blemsh_littlePony_1.png",
-        "path": "standalone/assets/source/blemishine/skin-littlepony-1/build_char_423_blemsh_littlePony_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/423_blemsh_littlepony%231/build_char_423_blemsh_littlePony%231.png",
+        "path": "standalone/assets/source/blemishine/skin-littlepony-1/build_char_423_blemsh_littlePony#1.png",
+        "bytes": 585489,
+        "sha256": "93940f2b6d3f3b27377b75d6d04b3403f08fcef1ca7a49cf9f5c8e6ecb225653"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 18185,
+      "sha256": "d530970d226cd909b0ecdf93674c47a430e2725c5974abbeff546a7178709449"
+    },
+    "skeleton": {
+      "bytes": 685245,
+      "sha256": "1a1608ecc25fc8ba1a210d41844067c4bb6e33f9ccb3d175ea9fa26158c67dd5"
+    }
   }
 }

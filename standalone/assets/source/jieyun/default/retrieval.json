@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "jieyun",
   "character_name": "Jieyun",
   "localized_name": "截云",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%88%AA%E4%BA%91",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4078_bdhkgt/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4078_bdhkgt/meta.json",
-    "model": "defaultskin/build/build_char_4078_bdhkgt",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4078_bdhkgt/defaultskin/build/build_char_4078_bdhkgt.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4078_bdhkgt/defaultskin/build/build_char_4078_bdhkgt.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4078_bdhkgt/defaultskin/build/build_char_4078_bdhkgt.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4078_bdhkgt",
+  "source_asset": {
+    "assetId": "build_char_4078_bdhkgt",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "截云",
+    "appellation": "Jieyun",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4078_bdhkgt.atlas",
+      ".png": "build_char_4078_bdhkgt.png",
+      ".skel": "build_char_4078_bdhkgt.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/jieyun/default/meta.json",
     "atlas": "standalone/assets/source/jieyun/default/build_char_4078_bdhkgt.atlas",
     "skeleton": "standalone/assets/source/jieyun/default/build_char_4078_bdhkgt.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4078_bdhkgt/defaultskin/build/build_char_4078_bdhkgt.png",
-        "path": "standalone/assets/source/jieyun/default/build_char_4078_bdhkgt.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4078_bdhkgt/build_char_4078_bdhkgt.png",
+        "path": "standalone/assets/source/jieyun/default/build_char_4078_bdhkgt.png",
+        "bytes": 314470,
+        "sha256": "e493ad2e218b56a0e32a0d6a4456bf75660649b8b8f52caae52d2cd8aef41428"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12120,
+      "sha256": "2e9681633e3c70137ea1e6e079a5dfdda16fdf91b01bbd04b8c6b0792b4b9871"
+    },
+    "skeleton": {
+      "bytes": 154753,
+      "sha256": "7b7d565645f4b33025104274d72f87ca24f3bab3e2afbfa5b43800ddee144bbc"
+    }
   }
 }

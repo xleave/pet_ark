@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "sora",
   "character_name": "Sora",
   "localized_name": "空",
@@ -9,25 +9,58 @@
   "variant_name": "夏卉 FA361",
   "skin_id": "summer-1",
   "skin_name": "夏卉 FA361",
-  "source_page": "https://prts.wiki/w/%E7%A9%BA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_101_sora/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_101_sora/meta.json",
-    "model": "char_101_sora_summer_1/build/build_char_101_sora_summer_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_101_sora/char_101_sora_summer_1/build/build_char_101_sora_summer_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_101_sora/char_101_sora_summer_1/build/build_char_101_sora_summer_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_101_sora/char_101_sora_summer_1/build/build_char_101_sora_summer_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/101_sora_summer#1",
+  "source_asset": {
+    "assetId": "build_char_101_sora_summer#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "空",
+    "appellation": "Sora",
+    "skinGroupId": "2019#summer",
+    "skinGroupName": "珊瑚海岸/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_101_sora_summer#1.atlas",
+      ".png": "build_char_101_sora_summer#1.png",
+      ".skel": "build_char_101_sora_summer#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/sora/skin-summer-1/meta.json",
-    "atlas": "standalone/assets/source/sora/skin-summer-1/build_char_101_sora_summer_1.atlas",
-    "skeleton": "standalone/assets/source/sora/skin-summer-1/build_char_101_sora_summer_1.skel",
+    "atlas": "standalone/assets/source/sora/skin-summer-1/build_char_101_sora_summer#1.atlas",
+    "skeleton": "standalone/assets/source/sora/skin-summer-1/build_char_101_sora_summer#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_101_sora/char_101_sora_summer_1/build/build_char_101_sora_summer_1.png",
-        "path": "standalone/assets/source/sora/skin-summer-1/build_char_101_sora_summer_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/101_sora_summer%231/build_char_101_sora_summer%231.png",
+        "path": "standalone/assets/source/sora/skin-summer-1/build_char_101_sora_summer#1.png",
+        "bytes": 320330,
+        "sha256": "6accf33a340d93c6c258089dbe73a7be97a272f8ef0e588b9852101135069059"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10071,
+      "sha256": "e802a35895b4b0fbf5e10329333bcc6257a15f62b2f84addd294ae25f10c3c44"
+    },
+    "skeleton": {
+      "bytes": 238373,
+      "sha256": "05e891bfceca048e078187e724353e59c904fa674e3f567726daafc341d54c6b"
+    }
   }
 }

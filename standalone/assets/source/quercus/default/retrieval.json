@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "quercus",
   "character_name": "Quercus",
   "localized_name": "夏栎",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%A4%8F%E6%A0%8E",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/meta.json",
-    "model": "defaultskin/build/build_char_492_quercu",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/defaultskin/build/build_char_492_quercu.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/defaultskin/build/build_char_492_quercu.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/defaultskin/build/build_char_492_quercu.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/492_quercu",
+  "source_asset": {
+    "assetId": "build_char_492_quercu",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "夏栎",
+    "appellation": "Quercus",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_492_quercu.atlas",
+      ".png": "build_char_492_quercu.png",
+      ".skel": "build_char_492_quercu.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/quercus/default/meta.json",
     "atlas": "standalone/assets/source/quercus/default/build_char_492_quercu.atlas",
     "skeleton": "standalone/assets/source/quercus/default/build_char_492_quercu.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_492_quercu/defaultskin/build/build_char_492_quercu.png",
-        "path": "standalone/assets/source/quercus/default/build_char_492_quercu.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/492_quercu/build_char_492_quercu.png",
+        "path": "standalone/assets/source/quercus/default/build_char_492_quercu.png",
+        "bytes": 274866,
+        "sha256": "241de35a83c5b2ce5f87f1816d06479a63f9f694b1638f7b83f5a39c9d33e5a4"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9305,
+      "sha256": "1b16d4634c60b13b8aa4db635d85ef536ebea5ccf94c37a4f0e89c2fabce1eb5"
+    },
+    "skeleton": {
+      "bytes": 131184,
+      "sha256": "b781e5f9d96b25dbf33599480c9bd45e426b434c2cf7fc439af99faeeb7b14e6"
+    }
   }
 }

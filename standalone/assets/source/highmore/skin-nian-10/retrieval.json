@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "highmore",
   "character_name": "Highmore",
   "localized_name": "海沫",
@@ -9,25 +9,58 @@
   "variant_name": "及山海",
   "skin_id": "nian-10",
   "skin_name": "及山海",
-  "source_page": "https://prts.wiki/w/%E6%B5%B7%E6%B2%AB",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/meta.json",
-    "model": "char_4066_highmo_nian_10/build/build_char_4066_highmo_nian_10",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/char_4066_highmo_nian_10/build/build_char_4066_highmo_nian_10.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/char_4066_highmo_nian_10/build/build_char_4066_highmo_nian_10.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/char_4066_highmo_nian_10/build/build_char_4066_highmo_nian_10.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4066_highmo_nian#10",
+  "source_asset": {
+    "assetId": "build_char_4066_highmo_nian#10",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "海沫",
+    "appellation": "Highmore",
+    "skinGroupId": "2024#nian",
+    "skinGroupName": "0011制造/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4066_highmo_nian#10.atlas",
+      ".png": "build_char_4066_highmo_nian#10.png",
+      ".skel": "build_char_4066_highmo_nian#10.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/highmore/skin-nian-10/meta.json",
-    "atlas": "standalone/assets/source/highmore/skin-nian-10/build_char_4066_highmo_nian_10.atlas",
-    "skeleton": "standalone/assets/source/highmore/skin-nian-10/build_char_4066_highmo_nian_10.skel",
+    "atlas": "standalone/assets/source/highmore/skin-nian-10/build_char_4066_highmo_nian#10.atlas",
+    "skeleton": "standalone/assets/source/highmore/skin-nian-10/build_char_4066_highmo_nian#10.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/char_4066_highmo_nian_10/build/build_char_4066_highmo_nian_10.png",
-        "path": "standalone/assets/source/highmore/skin-nian-10/build_char_4066_highmo_nian_10.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4066_highmo_nian%2310/build_char_4066_highmo_nian%2310.png",
+        "path": "standalone/assets/source/highmore/skin-nian-10/build_char_4066_highmo_nian#10.png",
+        "bytes": 528776,
+        "sha256": "3b948d38a2df3a28244e59a1a337aa80da1655131f3f1d8702b877705b0469bd"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12154,
+      "sha256": "385039a0f3d9987c786b2366e5e5b0de0c8128ce53897e9c6b309a8762f476a2"
+    },
+    "skeleton": {
+      "bytes": 500459,
+      "sha256": "2470a5ca18d02823efd4bc6847ff24bf644f943ea8b876c77358556c4e5c48a3"
+    }
   }
 }

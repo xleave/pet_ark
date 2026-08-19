@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "nightingale",
   "character_name": "Nightingale",
   "localized_name": "夜莺",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%A4%9C%E8%8E%BA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_179_cgbird/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_179_cgbird/meta.json",
-    "model": "defaultskin/build/build_char_179_cgbird",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_179_cgbird/defaultskin/build/build_char_179_cgbird.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_179_cgbird/defaultskin/build/build_char_179_cgbird.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_179_cgbird/defaultskin/build/build_char_179_cgbird.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/179_cgbird",
+  "source_asset": {
+    "assetId": "build_char_179_cgbird",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "夜莺",
+    "appellation": "Nightingale",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_179_cgbird.atlas",
+      ".png": "build_char_179_cgbird.png",
+      ".skel": "build_char_179_cgbird.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/nightingale/default/meta.json",
     "atlas": "standalone/assets/source/nightingale/default/build_char_179_cgbird.atlas",
     "skeleton": "standalone/assets/source/nightingale/default/build_char_179_cgbird.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_179_cgbird/defaultskin/build/build_char_179_cgbird.png",
-        "path": "standalone/assets/source/nightingale/default/build_char_179_cgbird.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/179_cgbird/build_char_179_cgbird.png",
+        "path": "standalone/assets/source/nightingale/default/build_char_179_cgbird.png",
+        "bytes": 244814,
+        "sha256": "f7cd497b785fc570e0611f80e61b5c30dd1e726bc1e6f41e9ac21f9c9d7b983d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5155,
+      "sha256": "feb475e22e625c0d9be10e97c9c0af3efc4cd81747890f67832fd369045d544a"
+    },
+    "skeleton": {
+      "bytes": 113749,
+      "sha256": "23afe646bd36bdd3dcc84a952f50e8e758febf9c95b5ec8cc5d1644b6b22fc44"
+    }
   }
 }

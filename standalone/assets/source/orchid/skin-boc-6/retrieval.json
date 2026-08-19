@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "orchid",
   "character_name": "Orchid",
   "localized_name": "梓兰",
@@ -9,25 +9,58 @@
   "variant_name": "衣缕往昔",
   "skin_id": "boc-6",
   "skin_name": "衣缕往昔",
-  "source_page": "https://prts.wiki/w/%E6%A2%93%E5%85%B0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_278_orchid/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_278_orchid/meta.json",
-    "model": "char_278_orchid_boc_6/build/build_char_278_orchid_boc_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_278_orchid/char_278_orchid_boc_6/build/build_char_278_orchid_boc_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_278_orchid/char_278_orchid_boc_6/build/build_char_278_orchid_boc_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_278_orchid/char_278_orchid_boc_6/build/build_char_278_orchid_boc_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/278_orchid_boc#6",
+  "source_asset": {
+    "assetId": "build_char_278_orchid_boc#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "梓兰",
+    "appellation": "Orchid",
+    "skinGroupId": "2023#boc",
+    "skinGroupName": "斗争血脉/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_278_orchid_boc#6.atlas",
+      ".png": "build_char_278_orchid_boc#6.png",
+      ".skel": "build_char_278_orchid_boc#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/orchid/skin-boc-6/meta.json",
-    "atlas": "standalone/assets/source/orchid/skin-boc-6/build_char_278_orchid_boc_6.atlas",
-    "skeleton": "standalone/assets/source/orchid/skin-boc-6/build_char_278_orchid_boc_6.skel",
+    "atlas": "standalone/assets/source/orchid/skin-boc-6/build_char_278_orchid_boc#6.atlas",
+    "skeleton": "standalone/assets/source/orchid/skin-boc-6/build_char_278_orchid_boc#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_278_orchid/char_278_orchid_boc_6/build/build_char_278_orchid_boc_6.png",
-        "path": "standalone/assets/source/orchid/skin-boc-6/build_char_278_orchid_boc_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/278_orchid_boc%236/build_char_278_orchid_boc%236.png",
+        "path": "standalone/assets/source/orchid/skin-boc-6/build_char_278_orchid_boc#6.png",
+        "bytes": 233148,
+        "sha256": "108e32567bea5f2c927a303b3ca82edc8dde0e65d51f078d7fc1229e6833ccff"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7276,
+      "sha256": "482a60e229a703a0879e6cdfa81ace45c1bbd9c954b69fc13c435a7ce73fab05"
+    },
+    "skeleton": {
+      "bytes": 152871,
+      "sha256": "534673cfe98ee424e7a05c845feb7a7d23c604972278674be261386207647663"
+    }
   }
 }

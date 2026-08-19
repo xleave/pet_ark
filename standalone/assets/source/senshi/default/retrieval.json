@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "senshi",
   "character_name": "Senshi",
   "localized_name": "森西",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%A3%AE%E8%A5%BF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4143_sensi/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4143_sensi/meta.json",
-    "model": "defaultskin/build/build_char_4143_sensi",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4143_sensi/defaultskin/build/build_char_4143_sensi.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4143_sensi/defaultskin/build/build_char_4143_sensi.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4143_sensi/defaultskin/build/build_char_4143_sensi.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4143_sensi",
+  "source_asset": {
+    "assetId": "build_char_4143_sensi",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "森西",
+    "appellation": "Senshi",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4143_sensi.atlas",
+      ".png": "build_char_4143_sensi.png",
+      ".skel": "build_char_4143_sensi.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/senshi/default/meta.json",
     "atlas": "standalone/assets/source/senshi/default/build_char_4143_sensi.atlas",
     "skeleton": "standalone/assets/source/senshi/default/build_char_4143_sensi.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4143_sensi/defaultskin/build/build_char_4143_sensi.png",
-        "path": "standalone/assets/source/senshi/default/build_char_4143_sensi.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4143_sensi/build_char_4143_sensi.png",
+        "path": "standalone/assets/source/senshi/default/build_char_4143_sensi.png",
+        "bytes": 319688,
+        "sha256": "eb3a8417bb3057b89a0eb0c1511fea73b9188c6c0d62f269d3ec3b7f75e61d8a"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6648,
+      "sha256": "3ccefdb6fe12f14752e08adf9d4c3470dd774c151e59a7e0e0310998c6209ac3"
+    },
+    "skeleton": {
+      "bytes": 106503,
+      "sha256": "931aa5782b3f20380f465bebb007ed7ace39d3ea8cd2dcd5b8d1016767ad27c6"
+    }
   }
 }

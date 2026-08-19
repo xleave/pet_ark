@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "xingzhu",
   "character_name": "Xingzhu",
   "localized_name": "行箸",
@@ -9,25 +9,58 @@
   "variant_name": "留影",
   "skin_id": "epoque-51",
   "skin_name": "留影",
-  "source_page": "https://prts.wiki/w/%E8%A1%8C%E7%AE%B8",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4172_xingzh/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4172_xingzh/meta.json",
-    "model": "char_4172_xingzh_epoque_51/build/build_char_4172_xingzh_epoque_51",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4172_xingzh/char_4172_xingzh_epoque_51/build/build_char_4172_xingzh_epoque_51.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4172_xingzh/char_4172_xingzh_epoque_51/build/build_char_4172_xingzh_epoque_51.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4172_xingzh/char_4172_xingzh_epoque_51/build/build_char_4172_xingzh_epoque_51.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4172_xingzh_epoque#51",
+  "source_asset": {
+    "assetId": "build_char_4172_xingzh_epoque#51",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "行箸",
+    "appellation": "Xingzhu",
+    "skinGroupId": "2026#epoque",
+    "skinGroupName": "时代/L",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4172_xingzh_epoque#51.atlas",
+      ".png": "build_char_4172_xingzh_epoque#51.png",
+      ".skel": "build_char_4172_xingzh_epoque#51.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/xingzhu/skin-epoque-51/meta.json",
-    "atlas": "standalone/assets/source/xingzhu/skin-epoque-51/build_char_4172_xingzh_epoque_51.atlas",
-    "skeleton": "standalone/assets/source/xingzhu/skin-epoque-51/build_char_4172_xingzh_epoque_51.skel",
+    "atlas": "standalone/assets/source/xingzhu/skin-epoque-51/build_char_4172_xingzh_epoque#51.atlas",
+    "skeleton": "standalone/assets/source/xingzhu/skin-epoque-51/build_char_4172_xingzh_epoque#51.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4172_xingzh/char_4172_xingzh_epoque_51/build/build_char_4172_xingzh_epoque_51.png",
-        "path": "standalone/assets/source/xingzhu/skin-epoque-51/build_char_4172_xingzh_epoque_51.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4172_xingzh_epoque%2351/build_char_4172_xingzh_epoque%2351.png",
+        "path": "standalone/assets/source/xingzhu/skin-epoque-51/build_char_4172_xingzh_epoque#51.png",
+        "bytes": 482990,
+        "sha256": "eec5e6c131c2ebb68fb0f67faa6f96816da2efb786bfc77a936b5455519ec8a1"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 17836,
+      "sha256": "33eb9e9fcd33bc1f91975a8357e62350881dd74c3c067601d5b926b3aea0d7b1"
+    },
+    "skeleton": {
+      "bytes": 652831,
+      "sha256": "96f9cef1017d0a67d9125c66ca0bc66857c0af755d8256c400eaebb0d3d374cf"
+    }
   }
 }

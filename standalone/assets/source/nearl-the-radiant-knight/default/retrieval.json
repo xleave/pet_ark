@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "nearl-the-radiant-knight",
   "character_name": "Nearl the Radiant Knight",
   "localized_name": "耀骑士临光",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%80%80%E9%AA%91%E5%A3%AB%E4%B8%B4%E5%85%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1014_nearl2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1014_nearl2/meta.json",
-    "model": "defaultskin/build/build_char_1014_nearl2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1014_nearl2/defaultskin/build/build_char_1014_nearl2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1014_nearl2/defaultskin/build/build_char_1014_nearl2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1014_nearl2/defaultskin/build/build_char_1014_nearl2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1014_nearl2",
+  "source_asset": {
+    "assetId": "build_char_1014_nearl2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "耀骑士临光",
+    "appellation": "Nearl the Radiant Knight",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1014_nearl2.atlas",
+      ".png": "build_char_1014_nearl2.png",
+      ".skel": "build_char_1014_nearl2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/nearl-the-radiant-knight/default/meta.json",
     "atlas": "standalone/assets/source/nearl-the-radiant-knight/default/build_char_1014_nearl2.atlas",
     "skeleton": "standalone/assets/source/nearl-the-radiant-knight/default/build_char_1014_nearl2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1014_nearl2/defaultskin/build/build_char_1014_nearl2.png",
-        "path": "standalone/assets/source/nearl-the-radiant-knight/default/build_char_1014_nearl2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1014_nearl2/build_char_1014_nearl2.png",
+        "path": "standalone/assets/source/nearl-the-radiant-knight/default/build_char_1014_nearl2.png",
+        "bytes": 365598,
+        "sha256": "0b8a87123f7316d8ab34b293ea7e967505a4853480e2ca56a6d89adbd0911cb3"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11067,
+      "sha256": "9952976f374d4421134a222c882ad71a07e60c48cbbadaa577e1593aa678f504"
+    },
+    "skeleton": {
+      "bytes": 182937,
+      "sha256": "c7d7014e845a965fb79ae59973afc4a0f7e9b7c4c7a7910bfbe7cdae50da0e39"
+    }
   }
 }

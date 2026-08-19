@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "suzuran",
   "character_name": "Suzuran",
   "localized_name": "铃兰",
@@ -9,25 +9,58 @@
   "variant_name": "春之颂",
   "skin_id": "lxh-1",
   "skin_name": "春之颂",
-  "source_page": "https://prts.wiki/w/%E9%93%83%E5%85%B0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/meta.json",
-    "model": "char_358_lisa_lxh_1/build/build_char_358_lisa_lxh_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/char_358_lisa_lxh_1/build/build_char_358_lisa_lxh_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/char_358_lisa_lxh_1/build/build_char_358_lisa_lxh_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/char_358_lisa_lxh_1/build/build_char_358_lisa_lxh_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/358_lisa_lxh#1",
+  "source_asset": {
+    "assetId": "build_char_358_lisa_lxh#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "铃兰",
+    "appellation": "Suzuran",
+    "skinGroupId": "2022#lxh",
+    "skinGroupName": "罗小黑战记",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_358_lisa_lxh#1.atlas",
+      ".png": "build_char_358_lisa_lxh#1.png",
+      ".skel": "build_char_358_lisa_lxh#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/suzuran/skin-lxh-1/meta.json",
-    "atlas": "standalone/assets/source/suzuran/skin-lxh-1/build_char_358_lisa_lxh_1.atlas",
-    "skeleton": "standalone/assets/source/suzuran/skin-lxh-1/build_char_358_lisa_lxh_1.skel",
+    "atlas": "standalone/assets/source/suzuran/skin-lxh-1/build_char_358_lisa_lxh#1.atlas",
+    "skeleton": "standalone/assets/source/suzuran/skin-lxh-1/build_char_358_lisa_lxh#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/char_358_lisa_lxh_1/build/build_char_358_lisa_lxh_1.png",
-        "path": "standalone/assets/source/suzuran/skin-lxh-1/build_char_358_lisa_lxh_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/358_lisa_lxh%231/build_char_358_lisa_lxh%231.png",
+        "path": "standalone/assets/source/suzuran/skin-lxh-1/build_char_358_lisa_lxh#1.png",
+        "bytes": 504153,
+        "sha256": "b6b5a2a4f2f264f5e10cad1706cdf1cade94da41f403a350958a2858cf8ee7a2"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15411,
+      "sha256": "6fa033b273dc191e6bfbe212609d85415d8c0defa7f40bbea413fc34337a361e"
+    },
+    "skeleton": {
+      "bytes": 505830,
+      "sha256": "3a830ba2a02a9e448251af9cf86338781bcd41e6d8f9f1158e23ea25d91e5fc9"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "enforcer",
   "character_name": "Enforcer",
   "localized_name": "见行者",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%A7%81%E8%A1%8C%E8%80%85",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/meta.json",
-    "model": "defaultskin/build/build_char_4036_forcer",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/defaultskin/build/build_char_4036_forcer.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/defaultskin/build/build_char_4036_forcer.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/defaultskin/build/build_char_4036_forcer.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4036_forcer",
+  "source_asset": {
+    "assetId": "build_char_4036_forcer",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "见行者",
+    "appellation": "Enforcer",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4036_forcer.atlas",
+      ".png": "build_char_4036_forcer.png",
+      ".skel": "build_char_4036_forcer.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/enforcer/default/meta.json",
     "atlas": "standalone/assets/source/enforcer/default/build_char_4036_forcer.atlas",
     "skeleton": "standalone/assets/source/enforcer/default/build_char_4036_forcer.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/defaultskin/build/build_char_4036_forcer.png",
-        "path": "standalone/assets/source/enforcer/default/build_char_4036_forcer.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4036_forcer/build_char_4036_forcer.png",
+        "path": "standalone/assets/source/enforcer/default/build_char_4036_forcer.png",
+        "bytes": 319931,
+        "sha256": "3cdf6507e96c5f1aed0938a8f229fe8d11ac8e612c31aea092b1561efc7df7f0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9481,
+      "sha256": "a3710bf288a486db8f54edcbc01324e1513f382fdd4451342c959199725e6c05"
+    },
+    "skeleton": {
+      "bytes": 180100,
+      "sha256": "b1564e37ce4309b5260df9d238390a2f00565a6dfdd09cab8493dd367fafac21"
+    }
   }
 }

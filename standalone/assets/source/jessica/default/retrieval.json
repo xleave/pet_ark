@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "jessica",
   "character_name": "Jessica",
   "localized_name": "杰西卡",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%9D%B0%E8%A5%BF%E5%8D%A1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_235_jesica/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_235_jesica/meta.json",
-    "model": "defaultskin/build/build_char_235_jesica",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_235_jesica/defaultskin/build/build_char_235_jesica.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_235_jesica/defaultskin/build/build_char_235_jesica.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_235_jesica/defaultskin/build/build_char_235_jesica.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/235_jesica",
+  "source_asset": {
+    "assetId": "build_char_235_jesica",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "杰西卡",
+    "appellation": "Jessica",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_235_jesica.atlas",
+      ".png": "build_char_235_jesica.png",
+      ".skel": "build_char_235_jesica.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/jessica/default/meta.json",
     "atlas": "standalone/assets/source/jessica/default/build_char_235_jesica.atlas",
     "skeleton": "standalone/assets/source/jessica/default/build_char_235_jesica.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_235_jesica/defaultskin/build/build_char_235_jesica.png",
-        "path": "standalone/assets/source/jessica/default/build_char_235_jesica.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/235_jesica/build_char_235_jesica.png",
+        "path": "standalone/assets/source/jessica/default/build_char_235_jesica.png",
+        "bytes": 188137,
+        "sha256": "97455339ed6d3cd3ea22572bff78fe544901b82d90b79486664385e22cddd848"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6892,
+      "sha256": "470be2f1b196848e198381c06acfbde965e37c2b2c2fea9b861a58aa0a71f30c"
+    },
+    "skeleton": {
+      "bytes": 141324,
+      "sha256": "1047e66e2524314d69927fb8f031b67da68a9508316c1d6465cd6219ed9d2b95"
+    }
   }
 }

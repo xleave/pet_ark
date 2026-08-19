@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "heidi",
   "character_name": "Heidi",
   "localized_name": "海蒂",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B5%B7%E8%92%82",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4045_heidi/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4045_heidi/meta.json",
-    "model": "defaultskin/build/build_char_4045_heidi",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4045_heidi/defaultskin/build/build_char_4045_heidi.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4045_heidi/defaultskin/build/build_char_4045_heidi.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4045_heidi/defaultskin/build/build_char_4045_heidi.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4045_heidi",
+  "source_asset": {
+    "assetId": "build_char_4045_heidi",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "海蒂",
+    "appellation": "Heidi",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4045_heidi.atlas",
+      ".png": "build_char_4045_heidi.png",
+      ".skel": "build_char_4045_heidi.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/heidi/default/meta.json",
     "atlas": "standalone/assets/source/heidi/default/build_char_4045_heidi.atlas",
     "skeleton": "standalone/assets/source/heidi/default/build_char_4045_heidi.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4045_heidi/defaultskin/build/build_char_4045_heidi.png",
-        "path": "standalone/assets/source/heidi/default/build_char_4045_heidi.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4045_heidi/build_char_4045_heidi.png",
+        "path": "standalone/assets/source/heidi/default/build_char_4045_heidi.png",
+        "bytes": 293564,
+        "sha256": "9159a9a2e8fa181ad48cca013736bbcfa5c5e7dfb54ad1154057d001e7848a4f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10041,
+      "sha256": "4dc93185d9fed7cb0c2d4dd5d0774ad9c91ab8ec8019aa735a4fd4675856e923"
+    },
+    "skeleton": {
+      "bytes": 345959,
+      "sha256": "e3980f19b89ca427811750cea84b868a05e60c9683e805a222aa1716c12ea7ad"
+    }
   }
 }

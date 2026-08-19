@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "rope",
   "character_name": "Rope",
   "localized_name": "暗索",
@@ -9,25 +9,58 @@
   "variant_name": "小鬼当家",
   "skin_id": "witch-1",
   "skin_name": "小鬼当家",
-  "source_page": "https://prts.wiki/w/%E6%9A%97%E7%B4%A2",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_236_rope/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_236_rope/meta.json",
-    "model": "char_236_rope_witch_1/build/build_char_236_rope_witch_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_236_rope/char_236_rope_witch_1/build/build_char_236_rope_witch_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_236_rope/char_236_rope_witch_1/build/build_char_236_rope_witch_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_236_rope/char_236_rope_witch_1/build/build_char_236_rope_witch_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/236_rope_witch#1",
+  "source_asset": {
+    "assetId": "build_char_236_rope_witch#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "暗索",
+    "appellation": "Rope",
+    "skinGroupId": "2019#witch",
+    "skinGroupName": "巫异盛宴 ",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_236_rope_witch#1.atlas",
+      ".png": "build_char_236_rope_witch#1.png",
+      ".skel": "build_char_236_rope_witch#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/rope/skin-witch-1/meta.json",
-    "atlas": "standalone/assets/source/rope/skin-witch-1/build_char_236_rope_witch_1.atlas",
-    "skeleton": "standalone/assets/source/rope/skin-witch-1/build_char_236_rope_witch_1.skel",
+    "atlas": "standalone/assets/source/rope/skin-witch-1/build_char_236_rope_witch#1.atlas",
+    "skeleton": "standalone/assets/source/rope/skin-witch-1/build_char_236_rope_witch#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_236_rope/char_236_rope_witch_1/build/build_char_236_rope_witch_1.png",
-        "path": "standalone/assets/source/rope/skin-witch-1/build_char_236_rope_witch_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/236_rope_witch%231/build_char_236_rope_witch%231.png",
+        "path": "standalone/assets/source/rope/skin-witch-1/build_char_236_rope_witch#1.png",
+        "bytes": 216743,
+        "sha256": "2a6d6df82b285b41b9a3412b70c2eb043093ee595bf392df297098d305ac0b0f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6656,
+      "sha256": "6ba5b3acd0131554d1bc63d2bff6b820bde056682ced69b6cc5ecf4ef3289802"
+    },
+    "skeleton": {
+      "bytes": 89045,
+      "sha256": "75f9b26b9456111abd033acb6bc83617477924f22afd6d282c99e5ed3f8ef3b7"
+    }
   }
 }

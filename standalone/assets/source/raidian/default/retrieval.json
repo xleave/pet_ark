@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "raidian",
   "character_name": "Raidian",
   "localized_name": "电弧",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%94%B5%E5%BC%A7",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4195_radian/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4195_radian/meta.json",
-    "model": "defaultskin/build/build_char_4195_radian",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4195_radian/defaultskin/build/build_char_4195_radian.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4195_radian/defaultskin/build/build_char_4195_radian.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4195_radian/defaultskin/build/build_char_4195_radian.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4195_radian",
+  "source_asset": {
+    "assetId": "build_char_4195_radian",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "电弧",
+    "appellation": "Raidian",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4195_radian.atlas",
+      ".png": "build_char_4195_radian.png",
+      ".skel": "build_char_4195_radian.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/raidian/default/meta.json",
     "atlas": "standalone/assets/source/raidian/default/build_char_4195_radian.atlas",
     "skeleton": "standalone/assets/source/raidian/default/build_char_4195_radian.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4195_radian/defaultskin/build/build_char_4195_radian.png",
-        "path": "standalone/assets/source/raidian/default/build_char_4195_radian.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4195_radian/build_char_4195_radian.png",
+        "path": "standalone/assets/source/raidian/default/build_char_4195_radian.png",
+        "bytes": 233457,
+        "sha256": "5af422d3d6d562adfb58da7a66b5ce6477352fe15ebd15e030b58d8a3a124853"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13241,
+      "sha256": "7f2230ac0aaf8d9d8aa727d4e2256382f30fe91dd630019381182187fdf501c7"
+    },
+    "skeleton": {
+      "bytes": 362805,
+      "sha256": "2fcd5142f06928d3b0de2b2bec78dc91978bca473fee63b6fc1dca2d1439c310"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "jackie",
   "character_name": "Jackie",
   "localized_name": "杰克",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%9D%B0%E5%85%8B",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/meta.json",
-    "model": "defaultskin/build/build_char_347_jaksel",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/defaultskin/build/build_char_347_jaksel.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/defaultskin/build/build_char_347_jaksel.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/defaultskin/build/build_char_347_jaksel.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/347_jaksel",
+  "source_asset": {
+    "assetId": "build_char_347_jaksel",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "杰克",
+    "appellation": "Jackie",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_347_jaksel.atlas",
+      ".png": "build_char_347_jaksel.png",
+      ".skel": "build_char_347_jaksel.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/jackie/default/meta.json",
     "atlas": "standalone/assets/source/jackie/default/build_char_347_jaksel.atlas",
     "skeleton": "standalone/assets/source/jackie/default/build_char_347_jaksel.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/defaultskin/build/build_char_347_jaksel.png",
-        "path": "standalone/assets/source/jackie/default/build_char_347_jaksel.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/347_jaksel/build_char_347_jaksel.png",
+        "path": "standalone/assets/source/jackie/default/build_char_347_jaksel.png",
+        "bytes": 209031,
+        "sha256": "13b639a79c8746792fce8f692a7d36d416e7be4b6669e053a489145cf2795d48"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9519,
+      "sha256": "77131622dd6e6eeaa78ef8f0ae59622da7fad95d7975a318608aec9f1e160fa3"
+    },
+    "skeleton": {
+      "bytes": 193230,
+      "sha256": "b992e6814ef29f2da7019b3d98bcf296f5853a2405419b7bdf10b9f2cfaa32a9"
+    }
   }
 }

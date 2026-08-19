@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "erato",
   "character_name": "Erato",
   "localized_name": "埃拉托",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%9F%83%E6%8B%89%E6%89%98",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4043_erato/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4043_erato/meta.json",
-    "model": "defaultskin/build/build_char_4043_erato",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4043_erato/defaultskin/build/build_char_4043_erato.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4043_erato/defaultskin/build/build_char_4043_erato.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4043_erato/defaultskin/build/build_char_4043_erato.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4043_erato",
+  "source_asset": {
+    "assetId": "build_char_4043_erato",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "埃拉托",
+    "appellation": "Erato",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4043_erato.atlas",
+      ".png": "build_char_4043_erato.png",
+      ".skel": "build_char_4043_erato.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/erato/default/meta.json",
     "atlas": "standalone/assets/source/erato/default/build_char_4043_erato.atlas",
     "skeleton": "standalone/assets/source/erato/default/build_char_4043_erato.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4043_erato/defaultskin/build/build_char_4043_erato.png",
-        "path": "standalone/assets/source/erato/default/build_char_4043_erato.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4043_erato/build_char_4043_erato.png",
+        "path": "standalone/assets/source/erato/default/build_char_4043_erato.png",
+        "bytes": 296376,
+        "sha256": "1b37af6bfbcffbf8eedbfabc6bdc730833a05d316efb58f3287a862ac7755c66"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10647,
+      "sha256": "f17aa0e84c331aa18dee81708d045ba2ae42fb00160b1f5224790149dce49848"
+    },
+    "skeleton": {
+      "bytes": 420979,
+      "sha256": "f95a60ed41975553936384dcea1ce859dbcde27daf918f873611477bbb4a361c"
+    }
   }
 }

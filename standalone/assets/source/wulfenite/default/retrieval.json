@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "wulfenite",
   "character_name": "Wulfenite",
   "localized_name": "钼铅",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%92%BC%E9%93%85",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4171_wulfen/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4171_wulfen/meta.json",
-    "model": "defaultskin/build/build_char_4171_wulfen",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4171_wulfen/defaultskin/build/build_char_4171_wulfen.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4171_wulfen/defaultskin/build/build_char_4171_wulfen.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4171_wulfen/defaultskin/build/build_char_4171_wulfen.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4171_wulfen",
+  "source_asset": {
+    "assetId": "build_char_4171_wulfen",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "钼铅",
+    "appellation": "Wulfenite",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4171_wulfen.atlas",
+      ".png": "build_char_4171_wulfen.png",
+      ".skel": "build_char_4171_wulfen.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/wulfenite/default/meta.json",
     "atlas": "standalone/assets/source/wulfenite/default/build_char_4171_wulfen.atlas",
     "skeleton": "standalone/assets/source/wulfenite/default/build_char_4171_wulfen.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4171_wulfen/defaultskin/build/build_char_4171_wulfen.png",
-        "path": "standalone/assets/source/wulfenite/default/build_char_4171_wulfen.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4171_wulfen/build_char_4171_wulfen.png",
+        "path": "standalone/assets/source/wulfenite/default/build_char_4171_wulfen.png",
+        "bytes": 289567,
+        "sha256": "132b320cb6e644f677f264a1845766193a9376e6e9c4962d7584a6951d2ea680"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9707,
+      "sha256": "dc7933871ff89a19747d0b23d8ea84bdf80c8b93156f9c0aa366ba5a0227e4b5"
+    },
+    "skeleton": {
+      "bytes": 131554,
+      "sha256": "3f72959db2f53113a24b32316d7e227d24ba1e7a3a8bb2ac99b4a198b911fd2c"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "dorothy",
   "character_name": "Dorothy",
   "localized_name": "多萝西",
@@ -9,25 +9,58 @@
   "variant_name": "命运主宰",
   "skin_id": "witch-4",
   "skin_name": "命运主宰",
-  "source_page": "https://prts.wiki/w/%E5%A4%9A%E8%90%9D%E8%A5%BF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4048_doroth/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4048_doroth/meta.json",
-    "model": "char_4048_doroth_witch_4/build/build_char_4048_doroth_witch_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4048_doroth/char_4048_doroth_witch_4/build/build_char_4048_doroth_witch_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4048_doroth/char_4048_doroth_witch_4/build/build_char_4048_doroth_witch_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4048_doroth/char_4048_doroth_witch_4/build/build_char_4048_doroth_witch_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4048_doroth_witch#4",
+  "source_asset": {
+    "assetId": "build_char_4048_doroth_witch#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "多萝西",
+    "appellation": "Dorothy",
+    "skinGroupId": "2023#witch",
+    "skinGroupName": "巫异盛宴/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4048_doroth_witch#4.atlas",
+      ".png": "build_char_4048_doroth_witch#4.png",
+      ".skel": "build_char_4048_doroth_witch#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/dorothy/skin-witch-4/meta.json",
-    "atlas": "standalone/assets/source/dorothy/skin-witch-4/build_char_4048_doroth_witch_4.atlas",
-    "skeleton": "standalone/assets/source/dorothy/skin-witch-4/build_char_4048_doroth_witch_4.skel",
+    "atlas": "standalone/assets/source/dorothy/skin-witch-4/build_char_4048_doroth_witch#4.atlas",
+    "skeleton": "standalone/assets/source/dorothy/skin-witch-4/build_char_4048_doroth_witch#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4048_doroth/char_4048_doroth_witch_4/build/build_char_4048_doroth_witch_4.png",
-        "path": "standalone/assets/source/dorothy/skin-witch-4/build_char_4048_doroth_witch_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4048_doroth_witch%234/build_char_4048_doroth_witch%234.png",
+        "path": "standalone/assets/source/dorothy/skin-witch-4/build_char_4048_doroth_witch#4.png",
+        "bytes": 508402,
+        "sha256": "8f67221123d352a9e8345506a60a6285284f5d85d094f135e08ce56bbf6327c7"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12944,
+      "sha256": "8a2814578430b386d2773d45db4c332c5af2062955783194cec72d4bdb561305"
+    },
+    "skeleton": {
+      "bytes": 348596,
+      "sha256": "61ad1c443212b20625b09a7106bfb4df3aedaa3fe102b5a7b2d15fc0cd94884c"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "angelina-the-mellow-wish",
   "character_name": "Angelina the Mellow Wish",
   "localized_name": "予愿安洁莉娜",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E4%BA%88%E6%84%BF%E5%AE%89%E6%B4%81%E8%8E%89%E5%A8%9C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1015_aglna2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1015_aglna2/meta.json",
-    "model": "defaultskin/build/build_char_1015_aglna2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1015_aglna2/defaultskin/build/build_char_1015_aglna2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1015_aglna2/defaultskin/build/build_char_1015_aglna2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1015_aglna2/defaultskin/build/build_char_1015_aglna2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1015_aglna2",
+  "source_asset": {
+    "assetId": "build_char_1015_aglna2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "予愿安洁莉娜",
+    "appellation": "Angelina the Mellow Wish",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1015_aglna2.atlas",
+      ".png": "build_char_1015_aglna2.png",
+      ".skel": "build_char_1015_aglna2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/angelina-the-mellow-wish/default/meta.json",
     "atlas": "standalone/assets/source/angelina-the-mellow-wish/default/build_char_1015_aglna2.atlas",
     "skeleton": "standalone/assets/source/angelina-the-mellow-wish/default/build_char_1015_aglna2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1015_aglna2/defaultskin/build/build_char_1015_aglna2.png",
-        "path": "standalone/assets/source/angelina-the-mellow-wish/default/build_char_1015_aglna2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1015_aglna2/build_char_1015_aglna2.png",
+        "path": "standalone/assets/source/angelina-the-mellow-wish/default/build_char_1015_aglna2.png",
+        "bytes": 407171,
+        "sha256": "1adcc810e8e7325bf29451ddc02bbb66e531e8e8411e1baea0e765bf05ffaec3"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11108,
+      "sha256": "e91e80fb9ac01ea52dfcdcdf8650085d57d04df06e4f130dacdb2ce038f8673b"
+    },
+    "skeleton": {
+      "bytes": 209475,
+      "sha256": "07434af8bd32c0a863573492067bba6ffd56b4cd8df757537651658166f0fadc"
+    }
   }
 }

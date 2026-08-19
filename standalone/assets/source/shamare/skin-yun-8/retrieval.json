@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "shamare",
   "character_name": "Shamare",
   "localized_name": "巫恋",
@@ -9,25 +9,58 @@
   "variant_name": "绣云鹤",
   "skin_id": "yun-8",
   "skin_name": "绣云鹤",
-  "source_page": "https://prts.wiki/w/%E5%B7%AB%E6%81%8B",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_254_vodfox/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_254_vodfox/meta.json",
-    "model": "char_254_vodfox_yun_8/build/build_char_254_vodfox_yun_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_254_vodfox/char_254_vodfox_yun_8/build/build_char_254_vodfox_yun_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_254_vodfox/char_254_vodfox_yun_8/build/build_char_254_vodfox_yun_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_254_vodfox/char_254_vodfox_yun_8/build/build_char_254_vodfox_yun_8.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/254_vodfox_yun#8",
+  "source_asset": {
+    "assetId": "build_char_254_vodfox_yun#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "巫恋",
+    "appellation": "Shamare",
+    "skinGroupId": "2025#yun#3",
+    "skinGroupName": "0011/韵系列/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_254_vodfox_yun#8.atlas",
+      ".png": "build_char_254_vodfox_yun#8.png",
+      ".skel": "build_char_254_vodfox_yun#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/shamare/skin-yun-8/meta.json",
-    "atlas": "standalone/assets/source/shamare/skin-yun-8/build_char_254_vodfox_yun_8.atlas",
-    "skeleton": "standalone/assets/source/shamare/skin-yun-8/build_char_254_vodfox_yun_8.skel",
+    "atlas": "standalone/assets/source/shamare/skin-yun-8/build_char_254_vodfox_yun#8.atlas",
+    "skeleton": "standalone/assets/source/shamare/skin-yun-8/build_char_254_vodfox_yun#8.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_254_vodfox/char_254_vodfox_yun_8/build/build_char_254_vodfox_yun_8.png",
-        "path": "standalone/assets/source/shamare/skin-yun-8/build_char_254_vodfox_yun_8.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/254_vodfox_yun%238/build_char_254_vodfox_yun%238.png",
+        "path": "standalone/assets/source/shamare/skin-yun-8/build_char_254_vodfox_yun#8.png",
+        "bytes": 612261,
+        "sha256": "9cb486435e6bdb3b57720daf62c9f60571beb0e2f68f707486434655026f7c4e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15747,
+      "sha256": "11fa80b0fe5ea5eba9056514e4c12934733f6bf48a68c2c23faf2448480b329a"
+    },
+    "skeleton": {
+      "bytes": 426954,
+      "sha256": "fa632cd104c83abbaa69e5c622465bcb12adee1bff4dfbc2527f614f3158f2f8"
+    }
   }
 }

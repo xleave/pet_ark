@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "shaw",
   "character_name": "Shaw",
   "localized_name": "阿消",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%98%BF%E6%B6%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_277_sqrrel/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_277_sqrrel/meta.json",
-    "model": "defaultskin/build/build_char_277_sqrrel",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_277_sqrrel/defaultskin/build/build_char_277_sqrrel.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_277_sqrrel/defaultskin/build/build_char_277_sqrrel.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_277_sqrrel/defaultskin/build/build_char_277_sqrrel.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/277_sqrrel",
+  "source_asset": {
+    "assetId": "build_char_277_sqrrel",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "阿消",
+    "appellation": "Shaw",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_277_sqrrel.atlas",
+      ".png": "build_char_277_sqrrel.png",
+      ".skel": "build_char_277_sqrrel.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/shaw/default/meta.json",
     "atlas": "standalone/assets/source/shaw/default/build_char_277_sqrrel.atlas",
     "skeleton": "standalone/assets/source/shaw/default/build_char_277_sqrrel.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_277_sqrrel/defaultskin/build/build_char_277_sqrrel.png",
-        "path": "standalone/assets/source/shaw/default/build_char_277_sqrrel.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/277_sqrrel/build_char_277_sqrrel.png",
+        "path": "standalone/assets/source/shaw/default/build_char_277_sqrrel.png",
+        "bytes": 246803,
+        "sha256": "e2155d957664f09ef594ee2696e755c8d46cfefebaab5c9303d0560e63a04d29"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6553,
+      "sha256": "57727aaa927177b26022ca1e697df2073f087319f6c0f5a8ca997280d7cb1df4"
+    },
+    "skeleton": {
+      "bytes": 75022,
+      "sha256": "e4b91f7c9f18e589228b2a55aaf61118bd247b3ff38372da4897808259a9eb78"
+    }
   }
 }

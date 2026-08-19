@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "yato",
   "character_name": "Yato",
   "localized_name": "夜刀",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%A4%9C%E5%88%80",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_502_nblade/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_502_nblade/meta.json",
-    "model": "defaultskin/build/build_char_502_nblade",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_502_nblade/defaultskin/build/build_char_502_nblade.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_502_nblade/defaultskin/build/build_char_502_nblade.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_502_nblade/defaultskin/build/build_char_502_nblade.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/502_nblade",
+  "source_asset": {
+    "assetId": "build_char_502_nblade",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "夜刀",
+    "appellation": "Yato",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_2"
+    ],
+    "assetList": {
+      ".atlas": "build_char_502_nblade.atlas",
+      ".png": "build_char_502_nblade.png",
+      ".skel": "build_char_502_nblade.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/yato/default/meta.json",
     "atlas": "standalone/assets/source/yato/default/build_char_502_nblade.atlas",
     "skeleton": "standalone/assets/source/yato/default/build_char_502_nblade.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_502_nblade/defaultskin/build/build_char_502_nblade.png",
-        "path": "standalone/assets/source/yato/default/build_char_502_nblade.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/502_nblade/build_char_502_nblade.png",
+        "path": "standalone/assets/source/yato/default/build_char_502_nblade.png",
+        "bytes": 159746,
+        "sha256": "4c97f4ad1c19397a43fa18cead69b47226de4a861aca53709937c47b8a2f8f9e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4100,
+      "sha256": "368320eb97f79173568e10f0d00fd13a05a53058c31b951fc85564182f60ff20"
+    },
+    "skeleton": {
+      "bytes": 58587,
+      "sha256": "395bbc3c21e0cf89abd26878720004f8da68159e3f762bef5780a3bb46bc2469"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "muelsyse",
   "character_name": "Muelsyse",
   "localized_name": "缪尔赛思",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%BC%AA%E5%B0%94%E8%B5%9B%E6%80%9D",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/meta.json",
-    "model": "defaultskin/build/build_char_249_mlyss",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/defaultskin/build/build_char_249_mlyss.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/defaultskin/build/build_char_249_mlyss.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/defaultskin/build/build_char_249_mlyss.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/249_mlyss",
+  "source_asset": {
+    "assetId": "build_char_249_mlyss",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "缪尔赛思",
+    "appellation": "Muelsyse",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_249_mlyss.atlas",
+      ".png": "build_char_249_mlyss.png",
+      ".skel": "build_char_249_mlyss.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/muelsyse/default/meta.json",
     "atlas": "standalone/assets/source/muelsyse/default/build_char_249_mlyss.atlas",
     "skeleton": "standalone/assets/source/muelsyse/default/build_char_249_mlyss.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/defaultskin/build/build_char_249_mlyss.png",
-        "path": "standalone/assets/source/muelsyse/default/build_char_249_mlyss.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/249_mlyss/build_char_249_mlyss.png",
+        "path": "standalone/assets/source/muelsyse/default/build_char_249_mlyss.png",
+        "bytes": 360909,
+        "sha256": "753e0c437b6dab3cbae8c75c50d64531a194fa679e38fad67cc303b0477b97ec"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8739,
+      "sha256": "5f8671547c65a1c74df9506c6b98d9f826cadf0a20f02a35de222201686bdd58"
+    },
+    "skeleton": {
+      "bytes": 300512,
+      "sha256": "f07863fc6f8a2c24ec2ea80a6b6799ecd3773b70b24e4e9dc2c5672c58b6c9ae"
+    }
   }
 }

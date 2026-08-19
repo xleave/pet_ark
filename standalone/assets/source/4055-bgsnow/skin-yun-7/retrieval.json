@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "4055-bgsnow",
   "character_name": "Позёмка",
   "localized_name": "鸿雪",
@@ -9,25 +9,58 @@
   "variant_name": "行梦侧畔",
   "skin_id": "yun-7",
   "skin_name": "行梦侧畔",
-  "source_page": "https://prts.wiki/w/%E9%B8%BF%E9%9B%AA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/meta.json",
-    "model": "char_4055_bgsnow_yun_7/build/build_char_4055_bgsnow_yun_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/char_4055_bgsnow_yun_7/build/build_char_4055_bgsnow_yun_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/char_4055_bgsnow_yun_7/build/build_char_4055_bgsnow_yun_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/char_4055_bgsnow_yun_7/build/build_char_4055_bgsnow_yun_7.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4055_bgsnow_yun#7",
+  "source_asset": {
+    "assetId": "build_char_4055_bgsnow_yun#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "鸿雪",
+    "appellation": "Позёмка",
+    "skinGroupId": "2025#yun#2",
+    "skinGroupName": "0011/韵系列/VII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4055_bgsnow_yun#7.atlas",
+      ".png": "build_char_4055_bgsnow_yun#7.png",
+      ".skel": "build_char_4055_bgsnow_yun#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/4055-bgsnow/skin-yun-7/meta.json",
-    "atlas": "standalone/assets/source/4055-bgsnow/skin-yun-7/build_char_4055_bgsnow_yun_7.atlas",
-    "skeleton": "standalone/assets/source/4055-bgsnow/skin-yun-7/build_char_4055_bgsnow_yun_7.skel",
+    "atlas": "standalone/assets/source/4055-bgsnow/skin-yun-7/build_char_4055_bgsnow_yun#7.atlas",
+    "skeleton": "standalone/assets/source/4055-bgsnow/skin-yun-7/build_char_4055_bgsnow_yun#7.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/char_4055_bgsnow_yun_7/build/build_char_4055_bgsnow_yun_7.png",
-        "path": "standalone/assets/source/4055-bgsnow/skin-yun-7/build_char_4055_bgsnow_yun_7.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4055_bgsnow_yun%237/build_char_4055_bgsnow_yun%237.png",
+        "path": "standalone/assets/source/4055-bgsnow/skin-yun-7/build_char_4055_bgsnow_yun#7.png",
+        "bytes": 879087,
+        "sha256": "825d22180199bd3faadec9fb91fe327726b356502dbf8459d68bf54c1a43272e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13568,
+      "sha256": "33c3897cb0e16539ebd97e77e69fb5846bad0926c0d271809a26cee0612da81d"
+    },
+    "skeleton": {
+      "bytes": 535026,
+      "sha256": "cdd25b3259cb706fa031bc279dec4c4e0f28864c34ee28d2450466205deb277c"
+    }
   }
 }

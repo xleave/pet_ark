@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "heidi",
   "character_name": "Heidi",
   "localized_name": "海蒂",
@@ -9,25 +9,58 @@
   "variant_name": "书信零落",
   "skin_id": "epoque-24",
   "skin_name": "书信零落",
-  "source_page": "https://prts.wiki/w/%E6%B5%B7%E8%92%82",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4045_heidi/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4045_heidi/meta.json",
-    "model": "char_4045_heidi_epoque_24/build/build_char_4045_heidi_epoque_24",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4045_heidi/char_4045_heidi_epoque_24/build/build_char_4045_heidi_epoque_24.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4045_heidi/char_4045_heidi_epoque_24/build/build_char_4045_heidi_epoque_24.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4045_heidi/char_4045_heidi_epoque_24/build/build_char_4045_heidi_epoque_24.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4045_heidi_epoque#24",
+  "source_asset": {
+    "assetId": "build_char_4045_heidi_epoque#24",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "海蒂",
+    "appellation": "Heidi",
+    "skinGroupId": "2023#epoque#6",
+    "skinGroupName": "时代/XXIV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4045_heidi_epoque#24.atlas",
+      ".png": "build_char_4045_heidi_epoque#24.png",
+      ".skel": "build_char_4045_heidi_epoque#24.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/heidi/skin-epoque-24/meta.json",
-    "atlas": "standalone/assets/source/heidi/skin-epoque-24/build_char_4045_heidi_epoque_24.atlas",
-    "skeleton": "standalone/assets/source/heidi/skin-epoque-24/build_char_4045_heidi_epoque_24.skel",
+    "atlas": "standalone/assets/source/heidi/skin-epoque-24/build_char_4045_heidi_epoque#24.atlas",
+    "skeleton": "standalone/assets/source/heidi/skin-epoque-24/build_char_4045_heidi_epoque#24.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4045_heidi/char_4045_heidi_epoque_24/build/build_char_4045_heidi_epoque_24.png",
-        "path": "standalone/assets/source/heidi/skin-epoque-24/build_char_4045_heidi_epoque_24.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4045_heidi_epoque%2324/build_char_4045_heidi_epoque%2324.png",
+        "path": "standalone/assets/source/heidi/skin-epoque-24/build_char_4045_heidi_epoque#24.png",
+        "bytes": 407082,
+        "sha256": "d2f13d5523f9dd1b9653a888bcc8e6b5fa7b41bf76c328d99dd2fc48ca12ade4"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14821,
+      "sha256": "46330af39b7a92ec175680c3447bacbcaca04af3b1beaa55c4886eb04f5ec23c"
+    },
+    "skeleton": {
+      "bytes": 1071004,
+      "sha256": "d2c42b423bf9b4de1f43af7f967ec8935a577bdc0381d00a941b33d530e8862d"
+    }
   }
 }

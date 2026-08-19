@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "197-poca",
   "character_name": "Роса",
   "localized_name": "早露",
@@ -9,25 +9,58 @@
   "variant_name": "常伴我身",
   "skin_id": "rilakkuma-1",
   "skin_name": "常伴我身",
-  "source_page": "https://prts.wiki/w/%E6%97%A9%E9%9C%B2",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/meta.json",
-    "model": "char_197_poca_rilakkuma_1/build/build_char_197_poca_rilakkuma_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/char_197_poca_rilakkuma_1/build/build_char_197_poca_rilakkuma_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/char_197_poca_rilakkuma_1/build/build_char_197_poca_rilakkuma_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/char_197_poca_rilakkuma_1/build/build_char_197_poca_rilakkuma_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/197_poca_rilakkuma#1",
+  "source_asset": {
+    "assetId": "build_char_197_poca_rilakkuma#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "早露",
+    "appellation": "Роса",
+    "skinGroupId": "2026#rilakkuma",
+    "skinGroupName": "轻松小熊",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_197_poca_rilakkuma#1.atlas",
+      ".png": "build_char_197_poca_rilakkuma#1.png",
+      ".skel": "build_char_197_poca_rilakkuma#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/197-poca/skin-rilakkuma-1/meta.json",
-    "atlas": "standalone/assets/source/197-poca/skin-rilakkuma-1/build_char_197_poca_rilakkuma_1.atlas",
-    "skeleton": "standalone/assets/source/197-poca/skin-rilakkuma-1/build_char_197_poca_rilakkuma_1.skel",
+    "atlas": "standalone/assets/source/197-poca/skin-rilakkuma-1/build_char_197_poca_rilakkuma#1.atlas",
+    "skeleton": "standalone/assets/source/197-poca/skin-rilakkuma-1/build_char_197_poca_rilakkuma#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_197_poca/char_197_poca_rilakkuma_1/build/build_char_197_poca_rilakkuma_1.png",
-        "path": "standalone/assets/source/197-poca/skin-rilakkuma-1/build_char_197_poca_rilakkuma_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/197_poca_rilakkuma%231/build_char_197_poca_rilakkuma%231.png",
+        "path": "standalone/assets/source/197-poca/skin-rilakkuma-1/build_char_197_poca_rilakkuma#1.png",
+        "bytes": 668345,
+        "sha256": "f3c42fd7e9372f548a0c9add764c53940c3672fef6e65c347e7814d7285d5f62"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 19829,
+      "sha256": "db831596928297586a7d5dbe5d61403934f057c9f84fbc9c805d7f4f0fbfef18"
+    },
+    "skeleton": {
+      "bytes": 723499,
+      "sha256": "9f2119999d5386588787215a839108539b8b86c9ca853c33952b10d6b56092ad"
+    }
   }
 }

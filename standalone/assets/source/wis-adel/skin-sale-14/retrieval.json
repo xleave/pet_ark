@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "wis-adel",
   "character_name": "Wiš'adel",
   "localized_name": "维什戴尔",
@@ -9,25 +9,59 @@
   "variant_name": "超新星",
   "skin_id": "sale-14",
   "skin_name": "超新星",
-  "source_page": "https://prts.wiki/w/%E7%BB%B4%E4%BB%80%E6%88%B4%E5%B0%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1035_wisdel/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1035_wisdel/meta.json",
-    "model": "char_1035_wisdel_sale_14/build/build_char_1035_wisdel_sale_14",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1035_wisdel/char_1035_wisdel_sale_14/build/build_char_1035_wisdel_sale_14.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1035_wisdel/char_1035_wisdel_sale_14/build/build_char_1035_wisdel_sale_14.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1035_wisdel/char_1035_wisdel_sale_14/build/build_char_1035_wisdel_sale_14.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1035_wisdel_sale#14",
+  "source_asset": {
+    "assetId": "build_char_1035_wisdel_sale#14",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "维什戴尔",
+    "appellation": "Wiš'adel",
+    "skinGroupId": "2025#sale",
+    "skinGroupName": "忒斯特收藏/XV",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1035_wisdel_sale#14.atlas",
+      ".png": "build_char_1035_wisdel_sale#14.png",
+      ".skel": "build_char_1035_wisdel_sale#14.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/wis-adel/skin-sale-14/meta.json",
-    "atlas": "standalone/assets/source/wis-adel/skin-sale-14/build_char_1035_wisdel_sale_14.atlas",
-    "skeleton": "standalone/assets/source/wis-adel/skin-sale-14/build_char_1035_wisdel_sale_14.skel",
+    "atlas": "standalone/assets/source/wis-adel/skin-sale-14/build_char_1035_wisdel_sale#14.atlas",
+    "skeleton": "standalone/assets/source/wis-adel/skin-sale-14/build_char_1035_wisdel_sale#14.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1035_wisdel/char_1035_wisdel_sale_14/build/build_char_1035_wisdel_sale_14.png",
-        "path": "standalone/assets/source/wis-adel/skin-sale-14/build_char_1035_wisdel_sale_14.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1035_wisdel_sale%2314/build_char_1035_wisdel_sale%2314.png",
+        "path": "standalone/assets/source/wis-adel/skin-sale-14/build_char_1035_wisdel_sale#14.png",
+        "bytes": 725445,
+        "sha256": "858b258fe5ddc13227a57b2b09a358047e3c1519aab7d029795c5a3b46086f08"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 18846,
+      "sha256": "e23c3316eb55d43e20551c2ff19ea3f697dead1607a2e2b990fc96a9356d93aa"
+    },
+    "skeleton": {
+      "bytes": 1182501,
+      "sha256": "2dd1528a28a74377f139718f25314ef7cba7f93f508a3eb0b9d14fbe28b6786d"
+    }
   }
 }

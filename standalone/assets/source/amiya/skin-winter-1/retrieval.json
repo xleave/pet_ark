@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "amiya",
   "character_name": "Amiya",
   "localized_name": "阿米娅",
@@ -9,25 +9,58 @@
   "variant_name": "报童",
   "skin_id": "winter-1",
   "skin_name": "报童",
-  "source_page": "https://prts.wiki/w/%E9%98%BF%E7%B1%B3%E5%A8%85",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/meta.json",
-    "model": "char_002_amiya_winter_1/build/build_char_002_amiya_winter_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_winter_1/build/build_char_002_amiya_winter_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_winter_1/build/build_char_002_amiya_winter_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_winter_1/build/build_char_002_amiya_winter_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/002_amiya_winter#1",
+  "source_asset": {
+    "assetId": "build_char_002_amiya_winter#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "阿米娅",
+    "appellation": "Amiya",
+    "skinGroupId": "2018#sale",
+    "skinGroupName": "忒斯特收藏/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_002_amiya_winter#1.atlas",
+      ".png": "build_char_002_amiya_winter#1.png",
+      ".skel": "build_char_002_amiya_winter#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/amiya/skin-winter-1/meta.json",
-    "atlas": "standalone/assets/source/amiya/skin-winter-1/build_char_002_amiya_winter_1.atlas",
-    "skeleton": "standalone/assets/source/amiya/skin-winter-1/build_char_002_amiya_winter_1.skel",
+    "atlas": "standalone/assets/source/amiya/skin-winter-1/build_char_002_amiya_winter#1.atlas",
+    "skeleton": "standalone/assets/source/amiya/skin-winter-1/build_char_002_amiya_winter#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_winter_1/build/build_char_002_amiya_winter_1.png",
-        "path": "standalone/assets/source/amiya/skin-winter-1/build_char_002_amiya_winter_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/002_amiya_winter%231/build_char_002_amiya_winter%231.png",
+        "path": "standalone/assets/source/amiya/skin-winter-1/build_char_002_amiya_winter#1.png",
+        "bytes": 274829,
+        "sha256": "823c03da45576dcd51d67894ca5b848c99dfc9bcf7311b0b58e2535a2ee51324"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5441,
+      "sha256": "569ff7eb7e1735858338e2c15f2c0705192b981a53b66ec4f0d0fc4c51a73e08"
+    },
+    "skeleton": {
+      "bytes": 86331,
+      "sha256": "1a1526c8eb082715ae35f5e5ce0f9b32ea598985c59665b6d77bfcf07ee57fee"
+    }
   }
 }

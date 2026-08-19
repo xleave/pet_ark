@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lunacub",
   "character_name": "Lunacub",
   "localized_name": "子月",
@@ -9,25 +9,58 @@
   "variant_name": "棠云巧梦",
   "skin_id": "yun-1",
   "skin_name": "棠云巧梦",
-  "source_page": "https://prts.wiki/w/%E5%AD%90%E6%9C%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4014_lunacu/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4014_lunacu/meta.json",
-    "model": "char_4014_lunacu_yun_1/build/build_char_4014_lunacu_yun_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4014_lunacu/char_4014_lunacu_yun_1/build/build_char_4014_lunacu_yun_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4014_lunacu/char_4014_lunacu_yun_1/build/build_char_4014_lunacu_yun_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4014_lunacu/char_4014_lunacu_yun_1/build/build_char_4014_lunacu_yun_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4014_lunacu_yun#1",
+  "source_asset": {
+    "assetId": "build_char_4014_lunacu_yun#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "子月",
+    "appellation": "Lunacub",
+    "skinGroupId": "2023#yun",
+    "skinGroupName": "0011/韵系列/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4014_lunacu_yun#1.atlas",
+      ".png": "build_char_4014_lunacu_yun#1.png",
+      ".skel": "build_char_4014_lunacu_yun#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lunacub/skin-yun-1/meta.json",
-    "atlas": "standalone/assets/source/lunacub/skin-yun-1/build_char_4014_lunacu_yun_1.atlas",
-    "skeleton": "standalone/assets/source/lunacub/skin-yun-1/build_char_4014_lunacu_yun_1.skel",
+    "atlas": "standalone/assets/source/lunacub/skin-yun-1/build_char_4014_lunacu_yun#1.atlas",
+    "skeleton": "standalone/assets/source/lunacub/skin-yun-1/build_char_4014_lunacu_yun#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4014_lunacu/char_4014_lunacu_yun_1/build/build_char_4014_lunacu_yun_1.png",
-        "path": "standalone/assets/source/lunacub/skin-yun-1/build_char_4014_lunacu_yun_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4014_lunacu_yun%231/build_char_4014_lunacu_yun%231.png",
+        "path": "standalone/assets/source/lunacub/skin-yun-1/build_char_4014_lunacu_yun#1.png",
+        "bytes": 411162,
+        "sha256": "540c689b4d4e1605800ac99ea2130dbc5d20211f5d94f5768aba995bcae5b4d8"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11802,
+      "sha256": "0457bd3e9fc0e07958f26065abe8fd38a5977123d4a4b8b67fb6109033d4ca55"
+    },
+    "skeleton": {
+      "bytes": 663505,
+      "sha256": "b80f140118320addfbe13665a16f51d8e4809a6b5af81d07b21eaeb3082d117c"
+    }
   }
 }

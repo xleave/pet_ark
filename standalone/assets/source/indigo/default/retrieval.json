@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "indigo",
   "character_name": "Indigo",
   "localized_name": "深靛",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B7%B1%E9%9D%9B",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_469_indigo/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_469_indigo/meta.json",
-    "model": "defaultskin/build/build_char_469_indigo",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_469_indigo/defaultskin/build/build_char_469_indigo.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_469_indigo/defaultskin/build/build_char_469_indigo.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_469_indigo/defaultskin/build/build_char_469_indigo.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/469_indigo",
+  "source_asset": {
+    "assetId": "build_char_469_indigo",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "深靛",
+    "appellation": "Indigo",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_469_indigo.atlas",
+      ".png": "build_char_469_indigo.png",
+      ".skel": "build_char_469_indigo.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/indigo/default/meta.json",
     "atlas": "standalone/assets/source/indigo/default/build_char_469_indigo.atlas",
     "skeleton": "standalone/assets/source/indigo/default/build_char_469_indigo.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_469_indigo/defaultskin/build/build_char_469_indigo.png",
-        "path": "standalone/assets/source/indigo/default/build_char_469_indigo.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/469_indigo/build_char_469_indigo.png",
+        "path": "standalone/assets/source/indigo/default/build_char_469_indigo.png",
+        "bytes": 245387,
+        "sha256": "7d6e399814828ab35d923c3d556139e79fda3ffccef569eeced6104c631bc9ce"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8603,
+      "sha256": "eea1b928aa515e20d83aefb2bbd6dfe5f7c8bcd74c4325fcd8aae5698b6f4753"
+    },
+    "skeleton": {
+      "bytes": 130917,
+      "sha256": "f0afdcd2e7ace73cee95bdeb65180829689416200724fdfcc5c5dd5532386eed"
+    }
   }
 }

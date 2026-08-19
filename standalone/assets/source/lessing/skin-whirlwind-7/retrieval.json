@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lessing",
   "character_name": "Lessing",
   "localized_name": "止颂",
@@ -9,25 +9,58 @@
   "variant_name": "幻火",
   "skin_id": "whirlwind-7",
   "skin_name": "幻火",
-  "source_page": "https://prts.wiki/w/%E6%AD%A2%E9%A2%82",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4011_lessng/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4011_lessng/meta.json",
-    "model": "char_4011_lessng_whirlwind_7/build/build_char_4011_lessng_whirlwind_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4011_lessng/char_4011_lessng_whirlwind_7/build/build_char_4011_lessng_whirlwind_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4011_lessng/char_4011_lessng_whirlwind_7/build/build_char_4011_lessng_whirlwind_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4011_lessng/char_4011_lessng_whirlwind_7/build/build_char_4011_lessng_whirlwind_7.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4011_lessng_whirlwind#7",
+  "source_asset": {
+    "assetId": "build_char_4011_lessng_whirlwind#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "止颂",
+    "appellation": "Lessing",
+    "skinGroupId": "2024#whirlwind",
+    "skinGroupName": "0011/飙系列/VII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4011_lessng_whirlwind#7.atlas",
+      ".png": "build_char_4011_lessng_whirlwind#7.png",
+      ".skel": "build_char_4011_lessng_whirlwind#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lessing/skin-whirlwind-7/meta.json",
-    "atlas": "standalone/assets/source/lessing/skin-whirlwind-7/build_char_4011_lessng_whirlwind_7.atlas",
-    "skeleton": "standalone/assets/source/lessing/skin-whirlwind-7/build_char_4011_lessng_whirlwind_7.skel",
+    "atlas": "standalone/assets/source/lessing/skin-whirlwind-7/build_char_4011_lessng_whirlwind#7.atlas",
+    "skeleton": "standalone/assets/source/lessing/skin-whirlwind-7/build_char_4011_lessng_whirlwind#7.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4011_lessng/char_4011_lessng_whirlwind_7/build/build_char_4011_lessng_whirlwind_7.png",
-        "path": "standalone/assets/source/lessing/skin-whirlwind-7/build_char_4011_lessng_whirlwind_7.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4011_lessng_whirlwind%237/build_char_4011_lessng_whirlwind%237.png",
+        "path": "standalone/assets/source/lessing/skin-whirlwind-7/build_char_4011_lessng_whirlwind#7.png",
+        "bytes": 393666,
+        "sha256": "13e2fd12a4af7f5ec2e422ee8aaada5e4d52ae2f3b11a84830d6c1e3d4540c0b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11590,
+      "sha256": "5c6eccfd67ffd54b38b0e153b6a73952c45d843f31945bbf3f3d34184219da14"
+    },
+    "skeleton": {
+      "bytes": 269956,
+      "sha256": "d8973b4997c63e8a3eae8ff26b200b177770edda40144b2efac44fe3ccc53dcb"
+    }
   }
 }

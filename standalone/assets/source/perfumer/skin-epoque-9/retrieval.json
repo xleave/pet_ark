@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "perfumer",
   "character_name": "Perfumer",
   "localized_name": "调香师",
@@ -9,25 +9,58 @@
   "variant_name": "闲适午后",
   "skin_id": "epoque-9",
   "skin_name": "闲适午后",
-  "source_page": "https://prts.wiki/w/%E8%B0%83%E9%A6%99%E5%B8%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/meta.json",
-    "model": "char_181_flower_epoque_9/build/build_char_181_flower_epoque_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/char_181_flower_epoque_9/build/build_char_181_flower_epoque_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/char_181_flower_epoque_9/build/build_char_181_flower_epoque_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/char_181_flower_epoque_9/build/build_char_181_flower_epoque_9.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/181_flower_epoque#9",
+  "source_asset": {
+    "assetId": "build_char_181_flower_epoque#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "调香师",
+    "appellation": "Perfumer",
+    "skinGroupId": "2021#epoque",
+    "skinGroupName": "时代/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_181_flower_epoque#9.atlas",
+      ".png": "build_char_181_flower_epoque#9.png",
+      ".skel": "build_char_181_flower_epoque#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/perfumer/skin-epoque-9/meta.json",
-    "atlas": "standalone/assets/source/perfumer/skin-epoque-9/build_char_181_flower_epoque_9.atlas",
-    "skeleton": "standalone/assets/source/perfumer/skin-epoque-9/build_char_181_flower_epoque_9.skel",
+    "atlas": "standalone/assets/source/perfumer/skin-epoque-9/build_char_181_flower_epoque#9.atlas",
+    "skeleton": "standalone/assets/source/perfumer/skin-epoque-9/build_char_181_flower_epoque#9.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/char_181_flower_epoque_9/build/build_char_181_flower_epoque_9.png",
-        "path": "standalone/assets/source/perfumer/skin-epoque-9/build_char_181_flower_epoque_9.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/181_flower_epoque%239/build_char_181_flower_epoque%239.png",
+        "path": "standalone/assets/source/perfumer/skin-epoque-9/build_char_181_flower_epoque#9.png",
+        "bytes": 266483,
+        "sha256": "1fc858ac137fcf8d2372017089a9b26ab7de1186053de202a5a6f49126e73922"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9249,
+      "sha256": "890689d98be675d747c1e33aff61fcc5315eb50491b64c49c761f74fd1127dcd"
+    },
+    "skeleton": {
+      "bytes": 208299,
+      "sha256": "9d17271e13e3134a3af18f2e6d48735399db0fde2e45144e375e0d2fde7de809"
+    }
   }
 }

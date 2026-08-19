@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "exusiai",
   "character_name": "Exusiai",
   "localized_name": "能天使",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%83%BD%E5%A4%A9%E4%BD%BF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_103_angel/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_103_angel/meta.json",
-    "model": "defaultskin/build/build_char_103_angel",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_103_angel/defaultskin/build/build_char_103_angel.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_103_angel/defaultskin/build/build_char_103_angel.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_103_angel/defaultskin/build/build_char_103_angel.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/103_angel",
+  "source_asset": {
+    "assetId": "build_char_103_angel",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "能天使",
+    "appellation": "Exusiai",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_103_angel.atlas",
+      ".png": "build_char_103_angel.png",
+      ".skel": "build_char_103_angel.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/exusiai/default/meta.json",
     "atlas": "standalone/assets/source/exusiai/default/build_char_103_angel.atlas",
     "skeleton": "standalone/assets/source/exusiai/default/build_char_103_angel.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_103_angel/defaultskin/build/build_char_103_angel.png",
-        "path": "standalone/assets/source/exusiai/default/build_char_103_angel.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/103_angel/build_char_103_angel.png",
+        "path": "standalone/assets/source/exusiai/default/build_char_103_angel.png",
+        "bytes": 154766,
+        "sha256": "b3844018ca19b7c56c13ebeab7ec06b701f4d477b6912f6da299d3aa6d075e13"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4058,
+      "sha256": "f86f0c5430194ce9db63b461511b100d5e5c3eba5d56d4542998ba1ba76129f7"
+    },
+    "skeleton": {
+      "bytes": 81856,
+      "sha256": "55850a5b73f312eb1fa5bc164da42e9baae6545540cd4c0191476196b57caec7"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "elysium",
   "character_name": "Elysium",
   "localized_name": "极境",
@@ -9,25 +9,58 @@
   "variant_name": "雪夜回音",
   "skin_id": "snow-2",
   "skin_name": "雪夜回音",
-  "source_page": "https://prts.wiki/w/%E6%9E%81%E5%A2%83",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/meta.json",
-    "model": "char_401_elysm_snow_2/build/build_char_401_elysm_snow_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/char_401_elysm_snow_2/build/build_char_401_elysm_snow_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/char_401_elysm_snow_2/build/build_char_401_elysm_snow_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/char_401_elysm_snow_2/build/build_char_401_elysm_snow_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/401_elysm_snow#2",
+  "source_asset": {
+    "assetId": "build_char_401_elysm_snow#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "极境",
+    "appellation": "Elysium",
+    "skinGroupId": "2020#xmas",
+    "skinGroupName": "冰原信使/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_401_elysm_snow#2.atlas",
+      ".png": "build_char_401_elysm_snow#2.png",
+      ".skel": "build_char_401_elysm_snow#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/elysium/skin-snow-2/meta.json",
-    "atlas": "standalone/assets/source/elysium/skin-snow-2/build_char_401_elysm_snow_2.atlas",
-    "skeleton": "standalone/assets/source/elysium/skin-snow-2/build_char_401_elysm_snow_2.skel",
+    "atlas": "standalone/assets/source/elysium/skin-snow-2/build_char_401_elysm_snow#2.atlas",
+    "skeleton": "standalone/assets/source/elysium/skin-snow-2/build_char_401_elysm_snow#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/char_401_elysm_snow_2/build/build_char_401_elysm_snow_2.png",
-        "path": "standalone/assets/source/elysium/skin-snow-2/build_char_401_elysm_snow_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/401_elysm_snow%232/build_char_401_elysm_snow%232.png",
+        "path": "standalone/assets/source/elysium/skin-snow-2/build_char_401_elysm_snow#2.png",
+        "bytes": 381638,
+        "sha256": "97373dc8364a04126d4bea5934929cafecc538800b54428827f14aea51cc55f0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9779,
+      "sha256": "0106ce3ce37a6b51c5bd90cd1717645ab90fa400664320eedb188558431ac46b"
+    },
+    "skeleton": {
+      "bytes": 199545,
+      "sha256": "c6f940b1e23745a0a107e5797e591dd22ace8f53726073d43bfa0019cc79df87"
+    }
   }
 }

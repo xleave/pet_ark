@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lin",
   "character_name": "Lin",
   "localized_name": "林",
@@ -9,25 +9,58 @@
   "variant_name": "求知的魔法",
   "skin_id": "littlepony-1",
   "skin_name": "求知的魔法",
-  "source_page": "https://prts.wiki/w/%E6%9E%97",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/meta.json",
-    "model": "char_4080_lin_littlepony_1/build/build_char_4080_lin_littlePony_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/char_4080_lin_littlepony_1/build/build_char_4080_lin_littlePony_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/char_4080_lin_littlepony_1/build/build_char_4080_lin_littlePony_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/char_4080_lin_littlepony_1/build/build_char_4080_lin_littlePony_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4080_lin_littlepony#1",
+  "source_asset": {
+    "assetId": "build_char_4080_lin_littlepony#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "林",
+    "appellation": "Lin",
+    "skinGroupId": "2026#littlePony",
+    "skinGroupName": "小马宝莉",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4080_lin_littlePony#1.atlas",
+      ".png": "build_char_4080_lin_littlePony#1.png",
+      ".skel": "build_char_4080_lin_littlePony#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lin/skin-littlepony-1/meta.json",
-    "atlas": "standalone/assets/source/lin/skin-littlepony-1/build_char_4080_lin_littlePony_1.atlas",
-    "skeleton": "standalone/assets/source/lin/skin-littlepony-1/build_char_4080_lin_littlePony_1.skel",
+    "atlas": "standalone/assets/source/lin/skin-littlepony-1/build_char_4080_lin_littlePony#1.atlas",
+    "skeleton": "standalone/assets/source/lin/skin-littlepony-1/build_char_4080_lin_littlePony#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/char_4080_lin_littlepony_1/build/build_char_4080_lin_littlePony_1.png",
-        "path": "standalone/assets/source/lin/skin-littlepony-1/build_char_4080_lin_littlePony_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4080_lin_littlepony%231/build_char_4080_lin_littlePony%231.png",
+        "path": "standalone/assets/source/lin/skin-littlepony-1/build_char_4080_lin_littlePony#1.png",
+        "bytes": 850229,
+        "sha256": "39e5affe7972cac7d984aba80ffc4db25bc97b127dbe760e494fd603acd38eac"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 19167,
+      "sha256": "2731a31bab0bda25adcb1e9529a91aa6bc956522a72db204b1c1b956bf84aa2b"
+    },
+    "skeleton": {
+      "bytes": 656421,
+      "sha256": "c01e1515287c91359d04489d73de3b28a68692445746e0218b9ccadb7696ae4f"
+    }
   }
 }

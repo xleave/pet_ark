@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "shalem",
   "character_name": "Shalem",
   "localized_name": "暮落",
@@ -9,25 +9,58 @@
   "variant_name": "结果",
   "skin_id": "whirlwind-5",
   "skin_name": "结果",
-  "source_page": "https://prts.wiki/w/%E6%9A%AE%E8%90%BD",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4025_aprot2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4025_aprot2/meta.json",
-    "model": "char_4025_aprot2_whirlwind_5/build/build_char_4025_aprot2_whirlwind_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4025_aprot2/char_4025_aprot2_whirlwind_5/build/build_char_4025_aprot2_whirlwind_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4025_aprot2/char_4025_aprot2_whirlwind_5/build/build_char_4025_aprot2_whirlwind_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4025_aprot2/char_4025_aprot2_whirlwind_5/build/build_char_4025_aprot2_whirlwind_5.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4025_aprot2_whirlwind#5",
+  "source_asset": {
+    "assetId": "build_char_4025_aprot2_whirlwind#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "暮落",
+    "appellation": "Shalem",
+    "skinGroupId": "2023#whirlwind",
+    "skinGroupName": "0011/飙系列/Ⅴ",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4025_aprot2_whirlwind#5.atlas",
+      ".png": "build_char_4025_aprot2_whirlwind#5.png",
+      ".skel": "build_char_4025_aprot2_whirlwind#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/shalem/skin-whirlwind-5/meta.json",
-    "atlas": "standalone/assets/source/shalem/skin-whirlwind-5/build_char_4025_aprot2_whirlwind_5.atlas",
-    "skeleton": "standalone/assets/source/shalem/skin-whirlwind-5/build_char_4025_aprot2_whirlwind_5.skel",
+    "atlas": "standalone/assets/source/shalem/skin-whirlwind-5/build_char_4025_aprot2_whirlwind#5.atlas",
+    "skeleton": "standalone/assets/source/shalem/skin-whirlwind-5/build_char_4025_aprot2_whirlwind#5.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4025_aprot2/char_4025_aprot2_whirlwind_5/build/build_char_4025_aprot2_whirlwind_5.png",
-        "path": "standalone/assets/source/shalem/skin-whirlwind-5/build_char_4025_aprot2_whirlwind_5.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4025_aprot2_whirlwind%235/build_char_4025_aprot2_whirlwind%235.png",
+        "path": "standalone/assets/source/shalem/skin-whirlwind-5/build_char_4025_aprot2_whirlwind#5.png",
+        "bytes": 279630,
+        "sha256": "2c8e7a762ad98ea45982c9ae28817a5b55f8ea72be193b734a05bc885e4dc785"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9097,
+      "sha256": "af7ad2bd5f1ad8a84c3a517d755f64817523563bba65230edb85e42911e1b1f0"
+    },
+    "skeleton": {
+      "bytes": 184971,
+      "sha256": "a9472bf3df19a9d29e25d544edca867b9781fc3dd138d7c6cda40da6c55130a5"
+    }
   }
 }

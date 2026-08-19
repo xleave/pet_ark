@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "brigid",
   "character_name": "Brigid",
   "localized_name": "水灯心",
@@ -9,25 +9,58 @@
   "variant_name": "轻语入梦",
   "skin_id": "epoque-53",
   "skin_name": "轻语入梦",
-  "source_page": "https://prts.wiki/w/%E6%B0%B4%E7%81%AF%E5%BF%83",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4177_brigid/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4177_brigid/meta.json",
-    "model": "char_4177_brigid_epoque_53/build/build_char_4177_brigid_epoque_53",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4177_brigid/char_4177_brigid_epoque_53/build/build_char_4177_brigid_epoque_53.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4177_brigid/char_4177_brigid_epoque_53/build/build_char_4177_brigid_epoque_53.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4177_brigid/char_4177_brigid_epoque_53/build/build_char_4177_brigid_epoque_53.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4177_brigid_epoque#53",
+  "source_asset": {
+    "assetId": "build_char_4177_brigid_epoque#53",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "水灯心",
+    "appellation": "Brigid",
+    "skinGroupId": "2026#epoque#4",
+    "skinGroupName": "时代/LIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4177_brigid_epoque#53.atlas",
+      ".png": "build_char_4177_brigid_epoque#53.png",
+      ".skel": "build_char_4177_brigid_epoque#53.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/brigid/skin-epoque-53/meta.json",
-    "atlas": "standalone/assets/source/brigid/skin-epoque-53/build_char_4177_brigid_epoque_53.atlas",
-    "skeleton": "standalone/assets/source/brigid/skin-epoque-53/build_char_4177_brigid_epoque_53.skel",
+    "atlas": "standalone/assets/source/brigid/skin-epoque-53/build_char_4177_brigid_epoque#53.atlas",
+    "skeleton": "standalone/assets/source/brigid/skin-epoque-53/build_char_4177_brigid_epoque#53.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4177_brigid/char_4177_brigid_epoque_53/build/build_char_4177_brigid_epoque_53.png",
-        "path": "standalone/assets/source/brigid/skin-epoque-53/build_char_4177_brigid_epoque_53.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4177_brigid_epoque%2353/build_char_4177_brigid_epoque%2353.png",
+        "path": "standalone/assets/source/brigid/skin-epoque-53/build_char_4177_brigid_epoque#53.png",
+        "bytes": 508309,
+        "sha256": "caeb014221c01998b2fb444db8dced44498536bb2ba77257f946ccb5a4699324"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15647,
+      "sha256": "eec5544c833d93d71fbcb724454fc57c80a43d1f6f9d0460e3753ca1ea958ca8"
+    },
+    "skeleton": {
+      "bytes": 375751,
+      "sha256": "60c1885a779889ea8a4ffac2a133b08be26fdd23a70b8d02fadeafcbda6455be"
+    }
   }
 }

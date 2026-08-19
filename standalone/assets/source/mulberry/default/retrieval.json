@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mulberry",
   "character_name": "Mulberry",
   "localized_name": "桑葚",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%A1%91%E8%91%9A",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/meta.json",
-    "model": "defaultskin/build/build_char_473_mberry",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/defaultskin/build/build_char_473_mberry.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/defaultskin/build/build_char_473_mberry.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/defaultskin/build/build_char_473_mberry.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/473_mberry",
+  "source_asset": {
+    "assetId": "build_char_473_mberry",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "桑葚",
+    "appellation": "Mulberry",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_473_mberry.atlas",
+      ".png": "build_char_473_mberry.png",
+      ".skel": "build_char_473_mberry.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mulberry/default/meta.json",
     "atlas": "standalone/assets/source/mulberry/default/build_char_473_mberry.atlas",
     "skeleton": "standalone/assets/source/mulberry/default/build_char_473_mberry.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/defaultskin/build/build_char_473_mberry.png",
-        "path": "standalone/assets/source/mulberry/default/build_char_473_mberry.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/473_mberry/build_char_473_mberry.png",
+        "path": "standalone/assets/source/mulberry/default/build_char_473_mberry.png",
+        "bytes": 362279,
+        "sha256": "899b9b308fd2615cd187875b6bfc298cac87d87a360d2c6eb3457a89ceca8b92"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12064,
+      "sha256": "e8ac7d395a00e31b812c9517f3f16721cfa242c5e262c0768edf4db42fcbf367"
+    },
+    "skeleton": {
+      "bytes": 368160,
+      "sha256": "ea859210e09ea31c4a02c7ce2221885d0953ff54cc240a70de693aa6656572fb"
+    }
   }
 }

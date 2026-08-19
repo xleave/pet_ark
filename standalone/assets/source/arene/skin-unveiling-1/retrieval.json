@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "arene",
   "character_name": "Arene",
   "localized_name": "芳汀",
@@ -9,25 +9,58 @@
   "variant_name": "危险邀约",
   "skin_id": "unveiling-1",
   "skin_name": "危险邀约",
-  "source_page": "https://prts.wiki/w/%E8%8A%B3%E6%B1%80",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/meta.json",
-    "model": "char_271_spikes_unveiling_1/build/build_char_271_spikes_unveiling_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/char_271_spikes_unveiling_1/build/build_char_271_spikes_unveiling_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/char_271_spikes_unveiling_1/build/build_char_271_spikes_unveiling_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/char_271_spikes_unveiling_1/build/build_char_271_spikes_unveiling_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/271_spikes_unveiling#1",
+  "source_asset": {
+    "assetId": "build_char_271_spikes_unveiling#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "芳汀",
+    "appellation": "Arene",
+    "skinGroupId": "2024#unveiling",
+    "skinGroupName": "待予花冠/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_271_spikes_unveiling#1.atlas",
+      ".png": "build_char_271_spikes_unveiling#1.png",
+      ".skel": "build_char_271_spikes_unveiling#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/arene/skin-unveiling-1/meta.json",
-    "atlas": "standalone/assets/source/arene/skin-unveiling-1/build_char_271_spikes_unveiling_1.atlas",
-    "skeleton": "standalone/assets/source/arene/skin-unveiling-1/build_char_271_spikes_unveiling_1.skel",
+    "atlas": "standalone/assets/source/arene/skin-unveiling-1/build_char_271_spikes_unveiling#1.atlas",
+    "skeleton": "standalone/assets/source/arene/skin-unveiling-1/build_char_271_spikes_unveiling#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_271_spikes/char_271_spikes_unveiling_1/build/build_char_271_spikes_unveiling_1.png",
-        "path": "standalone/assets/source/arene/skin-unveiling-1/build_char_271_spikes_unveiling_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/271_spikes_unveiling%231/build_char_271_spikes_unveiling%231.png",
+        "path": "standalone/assets/source/arene/skin-unveiling-1/build_char_271_spikes_unveiling#1.png",
+        "bytes": 364046,
+        "sha256": "6ad419b5397c1eb2c31917d20a2f5d3fe790e2b6d46abf62dbeda8f98a0b7af1"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10498,
+      "sha256": "0a90e59f91337f9734e08b610e3c4e754fc931b512d7607fe81424d509bc14a8"
+    },
+    "skeleton": {
+      "bytes": 280200,
+      "sha256": "68fa54cb4a3aa5b824d5e5f65c726a254ee369d7c91de8dcfc88ab045f9bca0a"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "windscoot",
   "character_name": "Windscoot",
   "localized_name": "骋风",
@@ -9,25 +9,58 @@
   "variant_name": "异乡的云",
   "skin_id": "epoque-49",
   "skin_name": "异乡的云",
-  "source_page": "https://prts.wiki/w/%E9%AA%8B%E9%A3%8E",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_445_wscoot/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_445_wscoot/meta.json",
-    "model": "char_445_wscoot_epoque_49/build/build_char_445_wscoot_epoque_49",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_445_wscoot/char_445_wscoot_epoque_49/build/build_char_445_wscoot_epoque_49.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_445_wscoot/char_445_wscoot_epoque_49/build/build_char_445_wscoot_epoque_49.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_445_wscoot/char_445_wscoot_epoque_49/build/build_char_445_wscoot_epoque_49.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/445_wscoot_epoque#49",
+  "source_asset": {
+    "assetId": "build_char_445_wscoot_epoque#49",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "骋风",
+    "appellation": "Windscoot",
+    "skinGroupId": "2025#epoque#11",
+    "skinGroupName": "时代/XLVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_445_wscoot_epoque#49.atlas",
+      ".png": "build_char_445_wscoot_epoque#49.png",
+      ".skel": "build_char_445_wscoot_epoque#49.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/windscoot/skin-epoque-49/meta.json",
-    "atlas": "standalone/assets/source/windscoot/skin-epoque-49/build_char_445_wscoot_epoque_49.atlas",
-    "skeleton": "standalone/assets/source/windscoot/skin-epoque-49/build_char_445_wscoot_epoque_49.skel",
+    "atlas": "standalone/assets/source/windscoot/skin-epoque-49/build_char_445_wscoot_epoque#49.atlas",
+    "skeleton": "standalone/assets/source/windscoot/skin-epoque-49/build_char_445_wscoot_epoque#49.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_445_wscoot/char_445_wscoot_epoque_49/build/build_char_445_wscoot_epoque_49.png",
-        "path": "standalone/assets/source/windscoot/skin-epoque-49/build_char_445_wscoot_epoque_49.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/445_wscoot_epoque%2349/build_char_445_wscoot_epoque%2349.png",
+        "path": "standalone/assets/source/windscoot/skin-epoque-49/build_char_445_wscoot_epoque#49.png",
+        "bytes": 265985,
+        "sha256": "634bf887e98dad15e32d57d3c2daca4949b4a413b456cef780ff74934ee9c3b8"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9369,
+      "sha256": "3ea521314b5070ac18de9d9fe5960c046cd65b3d3cfe31165c7438cbe2e8feb2"
+    },
+    "skeleton": {
+      "bytes": 256906,
+      "sha256": "b2ea83928cdf682f700bfc04965b56a5e4599e1fe989cf7d8516fc557aa7b234"
+    }
   }
 }

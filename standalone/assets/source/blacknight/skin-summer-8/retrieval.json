@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "blacknight",
   "character_name": "Blacknight",
   "localized_name": "夜半",
@@ -9,25 +9,58 @@
   "variant_name": "夏卉 FA641",
   "skin_id": "summer-8",
   "skin_name": "夏卉 FA641",
-  "source_page": "https://prts.wiki/w/%E5%A4%9C%E5%8D%8A",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_476_blkngt/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_476_blkngt/meta.json",
-    "model": "char_476_blkngt_summer_8/build/build_char_476_blkngt_summer_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_476_blkngt/char_476_blkngt_summer_8/build/build_char_476_blkngt_summer_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_476_blkngt/char_476_blkngt_summer_8/build/build_char_476_blkngt_summer_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_476_blkngt/char_476_blkngt_summer_8/build/build_char_476_blkngt_summer_8.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/476_blkngt_summer#8",
+  "source_asset": {
+    "assetId": "build_char_476_blkngt_summer#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "夜半",
+    "appellation": "Blacknight",
+    "skinGroupId": "2022#summer",
+    "skinGroupName": "珊瑚海岸/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_476_blkngt_summer#8.atlas",
+      ".png": "build_char_476_blkngt_summer#8.png",
+      ".skel": "build_char_476_blkngt_summer#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/blacknight/skin-summer-8/meta.json",
-    "atlas": "standalone/assets/source/blacknight/skin-summer-8/build_char_476_blkngt_summer_8.atlas",
-    "skeleton": "standalone/assets/source/blacknight/skin-summer-8/build_char_476_blkngt_summer_8.skel",
+    "atlas": "standalone/assets/source/blacknight/skin-summer-8/build_char_476_blkngt_summer#8.atlas",
+    "skeleton": "standalone/assets/source/blacknight/skin-summer-8/build_char_476_blkngt_summer#8.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_476_blkngt/char_476_blkngt_summer_8/build/build_char_476_blkngt_summer_8.png",
-        "path": "standalone/assets/source/blacknight/skin-summer-8/build_char_476_blkngt_summer_8.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/476_blkngt_summer%238/build_char_476_blkngt_summer%238.png",
+        "path": "standalone/assets/source/blacknight/skin-summer-8/build_char_476_blkngt_summer#8.png",
+        "bytes": 310109,
+        "sha256": "62a0808bca76e11483176b90c3dcfa7ec1e6b071e76a6ced8c847376fce6013b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11453,
+      "sha256": "6778b50c1158cf8928e45d6bb26145411880da0857820c77225fdb60bdc2f46a"
+    },
+    "skeleton": {
+      "bytes": 299052,
+      "sha256": "6ec221f8ece9a5e1b78dfa3f968faf324a9f4f23bc8a0841276fdf3f88bb42e0"
+    }
   }
 }

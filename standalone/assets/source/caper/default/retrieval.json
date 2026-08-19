@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "caper",
   "character_name": "Caper",
   "localized_name": "跃跃",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%B7%83%E8%B7%83",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4100_caper/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4100_caper/meta.json",
-    "model": "defaultskin/build/build_char_4100_caper",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4100_caper/defaultskin/build/build_char_4100_caper.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4100_caper/defaultskin/build/build_char_4100_caper.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4100_caper/defaultskin/build/build_char_4100_caper.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4100_caper",
+  "source_asset": {
+    "assetId": "build_char_4100_caper",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "跃跃",
+    "appellation": "Caper",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4100_caper.atlas",
+      ".png": "build_char_4100_caper.png",
+      ".skel": "build_char_4100_caper.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/caper/default/meta.json",
     "atlas": "standalone/assets/source/caper/default/build_char_4100_caper.atlas",
     "skeleton": "standalone/assets/source/caper/default/build_char_4100_caper.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4100_caper/defaultskin/build/build_char_4100_caper.png",
-        "path": "standalone/assets/source/caper/default/build_char_4100_caper.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4100_caper/build_char_4100_caper.png",
+        "path": "standalone/assets/source/caper/default/build_char_4100_caper.png",
+        "bytes": 227690,
+        "sha256": "81bbed3611b4c2587d61997c434eeb518fe8a36882f857a8f51caa3099ef277b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9776,
+      "sha256": "abd532dcfa437c7bb90541538c0a3d71f61b4361883f36c087e7f627406a05c6"
+    },
+    "skeleton": {
+      "bytes": 256709,
+      "sha256": "17e2cae50035e39dd8908c3d94bbbfc259e8f37998ddbf4352b25847a43dd5bd"
+    }
   }
 }

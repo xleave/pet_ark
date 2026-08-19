@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "reed-the-flame-shadow",
   "character_name": "Reed The Flame Shadow",
   "localized_name": "焰影苇草",
@@ -9,25 +9,59 @@
   "variant_name": "夏卉 FA075",
   "skin_id": "summer-17",
   "skin_name": "夏卉 FA075",
-  "source_page": "https://prts.wiki/w/%E7%84%B0%E5%BD%B1%E8%8B%87%E8%8D%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/meta.json",
-    "model": "char_1020_reed2_summer_17/build/build_char_1020_reed2_summer_17",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/char_1020_reed2_summer_17/build/build_char_1020_reed2_summer_17.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/char_1020_reed2_summer_17/build/build_char_1020_reed2_summer_17.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/char_1020_reed2_summer_17/build/build_char_1020_reed2_summer_17.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1020_reed2_summer#17",
+  "source_asset": {
+    "assetId": "build_char_1020_reed2_summer#17",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "焰影苇草",
+    "appellation": "Reed The Flame Shadow",
+    "skinGroupId": "2024#summer#2",
+    "skinGroupName": "珊瑚海岸/XVII",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1020_reed2_summer#17.atlas",
+      ".png": "build_char_1020_reed2_summer#17.png",
+      ".skel": "build_char_1020_reed2_summer#17.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/reed-the-flame-shadow/skin-summer-17/meta.json",
-    "atlas": "standalone/assets/source/reed-the-flame-shadow/skin-summer-17/build_char_1020_reed2_summer_17.atlas",
-    "skeleton": "standalone/assets/source/reed-the-flame-shadow/skin-summer-17/build_char_1020_reed2_summer_17.skel",
+    "atlas": "standalone/assets/source/reed-the-flame-shadow/skin-summer-17/build_char_1020_reed2_summer#17.atlas",
+    "skeleton": "standalone/assets/source/reed-the-flame-shadow/skin-summer-17/build_char_1020_reed2_summer#17.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/char_1020_reed2_summer_17/build/build_char_1020_reed2_summer_17.png",
-        "path": "standalone/assets/source/reed-the-flame-shadow/skin-summer-17/build_char_1020_reed2_summer_17.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1020_reed2_summer%2317/build_char_1020_reed2_summer%2317.png",
+        "path": "standalone/assets/source/reed-the-flame-shadow/skin-summer-17/build_char_1020_reed2_summer#17.png",
+        "bytes": 939189,
+        "sha256": "c10bae0205a9a525af2e984e9822ecb2adc36d7428326d538e6bc8462a35f683"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 24809,
+      "sha256": "bd85318c25929d6c1f84b2c7b92bc490622e6d8a6b699d68148bc40784bc59d9"
+    },
+    "skeleton": {
+      "bytes": 1024964,
+      "sha256": "3124b9562229d815c4abc53a0bab412d3a549c9a8ed031e8bf75643dd5c2b845"
+    }
   }
 }

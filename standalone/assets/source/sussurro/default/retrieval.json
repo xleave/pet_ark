@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "sussurro",
   "character_name": "Sussurro",
   "localized_name": "苏苏洛",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%8B%8F%E8%8B%8F%E6%B4%9B",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_298_susuro/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_298_susuro/meta.json",
-    "model": "defaultskin/build/build_char_298_susuro",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_298_susuro/defaultskin/build/build_char_298_susuro.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_298_susuro/defaultskin/build/build_char_298_susuro.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_298_susuro/defaultskin/build/build_char_298_susuro.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/298_susuro",
+  "source_asset": {
+    "assetId": "build_char_298_susuro",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "苏苏洛",
+    "appellation": "Sussurro",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_298_susuro.atlas",
+      ".png": "build_char_298_susuro.png",
+      ".skel": "build_char_298_susuro.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/sussurro/default/meta.json",
     "atlas": "standalone/assets/source/sussurro/default/build_char_298_susuro.atlas",
     "skeleton": "standalone/assets/source/sussurro/default/build_char_298_susuro.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_298_susuro/defaultskin/build/build_char_298_susuro.png",
-        "path": "standalone/assets/source/sussurro/default/build_char_298_susuro.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/298_susuro/build_char_298_susuro.png",
+        "path": "standalone/assets/source/sussurro/default/build_char_298_susuro.png",
+        "bytes": 212564,
+        "sha256": "5f54ad47c65cb4444b345d3838aecbca97dd2e9f402c6be0fae41882eb317681"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7748,
+      "sha256": "276073e6d368f82c8613be82489551c6c38c5fc51ebcabd73805ae6b565a724b"
+    },
+    "skeleton": {
+      "bytes": 100855,
+      "sha256": "7bf017d50e4ff73a4c978ab3f22fa130cff1cf8b029d211455395549a43271fa"
+    }
   }
 }

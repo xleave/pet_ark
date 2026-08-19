@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "scavenger",
   "character_name": "Scavenger",
   "localized_name": "清道夫",
@@ -9,25 +9,58 @@
   "variant_name": "生存",
   "skin_id": "striker-2",
   "skin_name": "生存",
-  "source_page": "https://prts.wiki/w/%E6%B8%85%E9%81%93%E5%A4%AB",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_149_scave/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_149_scave/meta.json",
-    "model": "char_149_scave_striker_2/build/build_char_149_scave_striker_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_149_scave/char_149_scave_striker_2/build/build_char_149_scave_striker_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_149_scave/char_149_scave_striker_2/build/build_char_149_scave_striker_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_149_scave/char_149_scave_striker_2/build/build_char_149_scave_striker_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/149_scave_striker#2",
+  "source_asset": {
+    "assetId": "build_char_149_scave_striker#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "清道夫",
+    "appellation": "Scavenger",
+    "skinGroupId": "2022#striker",
+    "skinGroupName": "雷神推进者/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_149_scave_striker#2.atlas",
+      ".png": "build_char_149_scave_striker#2.png",
+      ".skel": "build_char_149_scave_striker#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/scavenger/skin-striker-2/meta.json",
-    "atlas": "standalone/assets/source/scavenger/skin-striker-2/build_char_149_scave_striker_2.atlas",
-    "skeleton": "standalone/assets/source/scavenger/skin-striker-2/build_char_149_scave_striker_2.skel",
+    "atlas": "standalone/assets/source/scavenger/skin-striker-2/build_char_149_scave_striker#2.atlas",
+    "skeleton": "standalone/assets/source/scavenger/skin-striker-2/build_char_149_scave_striker#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_149_scave/char_149_scave_striker_2/build/build_char_149_scave_striker_2.png",
-        "path": "standalone/assets/source/scavenger/skin-striker-2/build_char_149_scave_striker_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/149_scave_striker%232/build_char_149_scave_striker%232.png",
+        "path": "standalone/assets/source/scavenger/skin-striker-2/build_char_149_scave_striker#2.png",
+        "bytes": 235785,
+        "sha256": "2379d552c12e4f4ff0b949f021d89824141d08e62a24e9083a32e26e256542e0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9260,
+      "sha256": "b215ce8ae45c0f67f30d7703685528dac4fdaa234f2255f39c8b98727803c831"
+    },
+    "skeleton": {
+      "bytes": 210429,
+      "sha256": "e9f70a3d1a15399ac462e2a0feeb22809d89ce8f3f08cc8db846ac0d3e6e7c48"
+    }
   }
 }

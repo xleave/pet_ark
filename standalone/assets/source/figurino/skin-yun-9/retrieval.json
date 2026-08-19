@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "figurino",
   "character_name": "Figurino",
   "localized_name": "裁度",
@@ -9,25 +9,58 @@
   "variant_name": "桂影窗",
   "skin_id": "yun-9",
   "skin_name": "桂影窗",
-  "source_page": "https://prts.wiki/w/%E8%A3%81%E5%BA%A6",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4155_talr/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4155_talr/meta.json",
-    "model": "char_4155_talr_yun_9/build/build_char_4155_talr_yun_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4155_talr/char_4155_talr_yun_9/build/build_char_4155_talr_yun_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4155_talr/char_4155_talr_yun_9/build/build_char_4155_talr_yun_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4155_talr/char_4155_talr_yun_9/build/build_char_4155_talr_yun_9.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4155_talr_yun#9",
+  "source_asset": {
+    "assetId": "build_char_4155_talr_yun#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "裁度",
+    "appellation": "Figurino",
+    "skinGroupId": "2025#yun#4",
+    "skinGroupName": "0011/韵系列/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4155_talr_yun#9.atlas",
+      ".png": "build_char_4155_talr_yun#9.png",
+      ".skel": "build_char_4155_talr_yun#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/figurino/skin-yun-9/meta.json",
-    "atlas": "standalone/assets/source/figurino/skin-yun-9/build_char_4155_talr_yun_9.atlas",
-    "skeleton": "standalone/assets/source/figurino/skin-yun-9/build_char_4155_talr_yun_9.skel",
+    "atlas": "standalone/assets/source/figurino/skin-yun-9/build_char_4155_talr_yun#9.atlas",
+    "skeleton": "standalone/assets/source/figurino/skin-yun-9/build_char_4155_talr_yun#9.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4155_talr/char_4155_talr_yun_9/build/build_char_4155_talr_yun_9.png",
-        "path": "standalone/assets/source/figurino/skin-yun-9/build_char_4155_talr_yun_9.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4155_talr_yun%239/build_char_4155_talr_yun%239.png",
+        "path": "standalone/assets/source/figurino/skin-yun-9/build_char_4155_talr_yun#9.png",
+        "bytes": 505738,
+        "sha256": "6c00163763d6aec41a449b5980b0ca8cf4d7e8f72d010465904f853d52ac2872"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14860,
+      "sha256": "4c08a678e79c56ba1ce09aec5a65da2d583b43b4d53d431c414843be0d368b4f"
+    },
+    "skeleton": {
+      "bytes": 494162,
+      "sha256": "351dc34fdc2685df3e024b11975a5d867cf35d4f9b50d40b24b805d82d4e2400"
+    }
   }
 }

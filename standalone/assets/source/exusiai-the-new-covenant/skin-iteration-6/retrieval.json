@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "exusiai-the-new-covenant",
   "character_name": "Exusiai the New Covenant",
   "localized_name": "新约能天使",
@@ -9,25 +9,59 @@
   "variant_name": "寻翼之歌",
   "skin_id": "iteration-6",
   "skin_name": "寻翼之歌",
-  "source_page": "https://prts.wiki/w/%E6%96%B0%E7%BA%A6%E8%83%BD%E5%A4%A9%E4%BD%BF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1041_angel2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1041_angel2/meta.json",
-    "model": "char_1041_angel2_iteration_6/build/build_char_1041_angel2_iteration_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1041_angel2/char_1041_angel2_iteration_6/build/build_char_1041_angel2_iteration_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1041_angel2/char_1041_angel2_iteration_6/build/build_char_1041_angel2_iteration_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1041_angel2/char_1041_angel2_iteration_6/build/build_char_1041_angel2_iteration_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1041_angel2_iteration#6",
+  "source_asset": {
+    "assetId": "build_char_1041_angel2_iteration#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "新约能天使",
+    "appellation": "Exusiai the New Covenant",
+    "skinGroupId": "2026#iteration",
+    "skinGroupName": "命途迭代/VI",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1041_angel2_iteration#6.atlas",
+      ".png": "build_char_1041_angel2_iteration#6.png",
+      ".skel": "build_char_1041_angel2_iteration#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/exusiai-the-new-covenant/skin-iteration-6/meta.json",
-    "atlas": "standalone/assets/source/exusiai-the-new-covenant/skin-iteration-6/build_char_1041_angel2_iteration_6.atlas",
-    "skeleton": "standalone/assets/source/exusiai-the-new-covenant/skin-iteration-6/build_char_1041_angel2_iteration_6.skel",
+    "atlas": "standalone/assets/source/exusiai-the-new-covenant/skin-iteration-6/build_char_1041_angel2_iteration#6.atlas",
+    "skeleton": "standalone/assets/source/exusiai-the-new-covenant/skin-iteration-6/build_char_1041_angel2_iteration#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1041_angel2/char_1041_angel2_iteration_6/build/build_char_1041_angel2_iteration_6.png",
-        "path": "standalone/assets/source/exusiai-the-new-covenant/skin-iteration-6/build_char_1041_angel2_iteration_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1041_angel2_iteration%236/build_char_1041_angel2_iteration%236.png",
+        "path": "standalone/assets/source/exusiai-the-new-covenant/skin-iteration-6/build_char_1041_angel2_iteration#6.png",
+        "bytes": 568628,
+        "sha256": "5a2fe1347be5937ed5aea7d541ec2b94d762d94a9ac30ccaf6bfe54a89d59e50"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14804,
+      "sha256": "0a721783e88a861499247b78b5caedbac81f6f46894b611ff46713bac61f1f6f"
+    },
+    "skeleton": {
+      "bytes": 479093,
+      "sha256": "0210c5cb3a1c5d2346c760dc20255e1de532cab374adeaaa97077936229f1963"
+    }
   }
 }

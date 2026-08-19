@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "eyjafjalla",
   "character_name": "Eyjafjalla",
   "localized_name": "艾雅法拉",
@@ -9,25 +9,58 @@
   "variant_name": "绵绒小魔女",
   "skin_id": "sanrio-2",
   "skin_name": "绵绒小魔女",
-  "source_page": "https://prts.wiki/w/%E8%89%BE%E9%9B%85%E6%B3%95%E6%8B%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_180_amgoat/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_180_amgoat/meta.json",
-    "model": "char_180_amgoat_sanrio_2/build/build_char_180_amgoat_sanrio_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_180_amgoat/char_180_amgoat_sanrio_2/build/build_char_180_amgoat_sanrio_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_180_amgoat/char_180_amgoat_sanrio_2/build/build_char_180_amgoat_sanrio_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_180_amgoat/char_180_amgoat_sanrio_2/build/build_char_180_amgoat_sanrio_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/180_amgoat_sanrio#2",
+  "source_asset": {
+    "assetId": "build_char_180_amgoat_sanrio#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "艾雅法拉",
+    "appellation": "Eyjafjalla",
+    "skinGroupId": "2025#sanrio",
+    "skinGroupName": "三丽鸥家族/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_180_amgoat_sanrio#2.atlas",
+      ".png": "build_char_180_amgoat_sanrio#2.png",
+      ".skel": "build_char_180_amgoat_sanrio#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/eyjafjalla/skin-sanrio-2/meta.json",
-    "atlas": "standalone/assets/source/eyjafjalla/skin-sanrio-2/build_char_180_amgoat_sanrio_2.atlas",
-    "skeleton": "standalone/assets/source/eyjafjalla/skin-sanrio-2/build_char_180_amgoat_sanrio_2.skel",
+    "atlas": "standalone/assets/source/eyjafjalla/skin-sanrio-2/build_char_180_amgoat_sanrio#2.atlas",
+    "skeleton": "standalone/assets/source/eyjafjalla/skin-sanrio-2/build_char_180_amgoat_sanrio#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_180_amgoat/char_180_amgoat_sanrio_2/build/build_char_180_amgoat_sanrio_2.png",
-        "path": "standalone/assets/source/eyjafjalla/skin-sanrio-2/build_char_180_amgoat_sanrio_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/180_amgoat_sanrio%232/build_char_180_amgoat_sanrio%232.png",
+        "path": "standalone/assets/source/eyjafjalla/skin-sanrio-2/build_char_180_amgoat_sanrio#2.png",
+        "bytes": 585166,
+        "sha256": "d0bbfff8db2a5a92e03e8d27cb780d684f00961a0d5b71d8367554baaee5a538"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15999,
+      "sha256": "bd8d9948a3253618d2bd9464bf857051c0c8ff0821f4cada7faa0a06c0c9d281"
+    },
+    "skeleton": {
+      "bytes": 685017,
+      "sha256": "b9163d0d17b3075ae57ad6d05ea1553e4718935ce6e9547923882563fae0ca5c"
+    }
   }
 }

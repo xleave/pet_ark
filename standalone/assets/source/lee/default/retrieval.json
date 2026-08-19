@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lee",
   "character_name": "Lee",
   "localized_name": "老鲤",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%80%81%E9%B2%A4",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/meta.json",
-    "model": "defaultskin/build/build_char_322_lmlee",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/defaultskin/build/build_char_322_lmlee.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/defaultskin/build/build_char_322_lmlee.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/defaultskin/build/build_char_322_lmlee.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/322_lmlee",
+  "source_asset": {
+    "assetId": "build_char_322_lmlee",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "老鲤",
+    "appellation": "Lee",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_322_lmlee.atlas",
+      ".png": "build_char_322_lmlee.png",
+      ".skel": "build_char_322_lmlee.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lee/default/meta.json",
     "atlas": "standalone/assets/source/lee/default/build_char_322_lmlee.atlas",
     "skeleton": "standalone/assets/source/lee/default/build_char_322_lmlee.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/defaultskin/build/build_char_322_lmlee.png",
-        "path": "standalone/assets/source/lee/default/build_char_322_lmlee.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/322_lmlee/build_char_322_lmlee.png",
+        "path": "standalone/assets/source/lee/default/build_char_322_lmlee.png",
+        "bytes": 488320,
+        "sha256": "5f77618aa46cf8ed0a7fcac3fec06f5d4838f7deed595f4cd3bd307f825c163c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12688,
+      "sha256": "2581e7d868653e2f31cd1919933a008cf59781636e9c41ffca66b977359d53e5"
+    },
+    "skeleton": {
+      "bytes": 208679,
+      "sha256": "226124cc67e14f3f13ee9135277cb8ced85d6121b8bdf7914c9700cb7c935d25"
+    }
   }
 }

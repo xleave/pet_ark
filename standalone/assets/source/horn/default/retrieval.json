@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "horn",
   "character_name": "Horn",
   "localized_name": "号角",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%8F%B7%E8%A7%92",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4039_horn/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4039_horn/meta.json",
-    "model": "defaultskin/build/build_char_4039_horn",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4039_horn/defaultskin/build/build_char_4039_horn.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4039_horn/defaultskin/build/build_char_4039_horn.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4039_horn/defaultskin/build/build_char_4039_horn.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4039_horn",
+  "source_asset": {
+    "assetId": "build_char_4039_horn",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "号角",
+    "appellation": "Horn",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4039_horn.atlas",
+      ".png": "build_char_4039_horn.png",
+      ".skel": "build_char_4039_horn.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/horn/default/meta.json",
     "atlas": "standalone/assets/source/horn/default/build_char_4039_horn.atlas",
     "skeleton": "standalone/assets/source/horn/default/build_char_4039_horn.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4039_horn/defaultskin/build/build_char_4039_horn.png",
-        "path": "standalone/assets/source/horn/default/build_char_4039_horn.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4039_horn/build_char_4039_horn.png",
+        "path": "standalone/assets/source/horn/default/build_char_4039_horn.png",
+        "bytes": 214759,
+        "sha256": "cf6db5b7f6ad3498a2d793631e2df5e7d0b3b77db9e4c0c7dfde2bd16f56231f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7461,
+      "sha256": "ca00623846c51755f76c309458b8836ab64b22cf4ac8ee44a268d6985ad9dca7"
+    },
+    "skeleton": {
+      "bytes": 311752,
+      "sha256": "8d0543eda16ca307f0c21d6aad3398f565960d95ecedb42caa3ce11800e90033"
+    }
   }
 }

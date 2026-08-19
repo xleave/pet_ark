@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ceobe",
   "character_name": "Ceobe",
   "localized_name": "刻俄柏",
@@ -9,25 +9,58 @@
   "variant_name": "夏卉 FA333",
   "skin_id": "summer-4",
   "skin_name": "夏卉 FA333",
-  "source_page": "https://prts.wiki/w/%E5%88%BB%E4%BF%84%E6%9F%8F",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_2013_cerber/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2013_cerber/meta.json",
-    "model": "char_2013_cerber_summer_4/build/build_char_2013_cerber_summer_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2013_cerber/char_2013_cerber_summer_4/build/build_char_2013_cerber_summer_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2013_cerber/char_2013_cerber_summer_4/build/build_char_2013_cerber_summer_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2013_cerber/char_2013_cerber_summer_4/build/build_char_2013_cerber_summer_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/2013_cerber_summer#4",
+  "source_asset": {
+    "assetId": "build_char_2013_cerber_summer#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "刻俄柏",
+    "appellation": "Ceobe",
+    "skinGroupId": "2020#summer#3",
+    "skinGroupName": "珊瑚海岸/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2013_cerber_summer#4.atlas",
+      ".png": "build_char_2013_cerber_summer#4.png",
+      ".skel": "build_char_2013_cerber_summer#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ceobe/skin-summer-4/meta.json",
-    "atlas": "standalone/assets/source/ceobe/skin-summer-4/build_char_2013_cerber_summer_4.atlas",
-    "skeleton": "standalone/assets/source/ceobe/skin-summer-4/build_char_2013_cerber_summer_4.skel",
+    "atlas": "standalone/assets/source/ceobe/skin-summer-4/build_char_2013_cerber_summer#4.atlas",
+    "skeleton": "standalone/assets/source/ceobe/skin-summer-4/build_char_2013_cerber_summer#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_2013_cerber/char_2013_cerber_summer_4/build/build_char_2013_cerber_summer_4.png",
-        "path": "standalone/assets/source/ceobe/skin-summer-4/build_char_2013_cerber_summer_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/2013_cerber_summer%234/build_char_2013_cerber_summer%234.png",
+        "path": "standalone/assets/source/ceobe/skin-summer-4/build_char_2013_cerber_summer#4.png",
+        "bytes": 547171,
+        "sha256": "7fbe043f9849d50592a55b2a19aec1df36d8fb96293bfdd3d388447d66308967"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10285,
+      "sha256": "f7df43c9e335d7a102632a977cc3245382319ce4be39702c56d9131862853bb3"
+    },
+    "skeleton": {
+      "bytes": 183016,
+      "sha256": "e03d4273e1a58b89030e3f7ddc05c462d34cb8dc294b76c98d22850bc9f5cd6c"
+    }
   }
 }

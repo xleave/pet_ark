@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "harold",
   "character_name": "Harold",
   "localized_name": "哈洛德",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%93%88%E6%B4%9B%E5%BE%B7",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4114_harold/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4114_harold/meta.json",
-    "model": "defaultskin/build/build_char_4114_harold",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4114_harold/defaultskin/build/build_char_4114_harold.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4114_harold/defaultskin/build/build_char_4114_harold.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4114_harold/defaultskin/build/build_char_4114_harold.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4114_harold",
+  "source_asset": {
+    "assetId": "build_char_4114_harold",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "哈洛德",
+    "appellation": "Harold",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4114_harold.atlas",
+      ".png": "build_char_4114_harold.png",
+      ".skel": "build_char_4114_harold.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/harold/default/meta.json",
     "atlas": "standalone/assets/source/harold/default/build_char_4114_harold.atlas",
     "skeleton": "standalone/assets/source/harold/default/build_char_4114_harold.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4114_harold/defaultskin/build/build_char_4114_harold.png",
-        "path": "standalone/assets/source/harold/default/build_char_4114_harold.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4114_harold/build_char_4114_harold.png",
+        "path": "standalone/assets/source/harold/default/build_char_4114_harold.png",
+        "bytes": 467091,
+        "sha256": "42630c15ca3f3dea0b0400d329f5cf4d05f8df597fd263daa7b5a31f8a5fc396"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14653,
+      "sha256": "a9fc5aa26d6a7e73362e711951e99e0bb22342152d772a162bdc133737dfa386"
+    },
+    "skeleton": {
+      "bytes": 228793,
+      "sha256": "a75671b403955347d8be2781061bb9c2de67deebd6224d815ae5e8f20871d01a"
+    }
   }
 }

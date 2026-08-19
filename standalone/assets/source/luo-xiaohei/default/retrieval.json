@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "luo-xiaohei",
   "character_name": "Luo Xiaohei",
   "localized_name": "罗小黑",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%BD%97%E5%B0%8F%E9%BB%91",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4067_lolxh/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4067_lolxh/meta.json",
-    "model": "defaultskin/build/build_char_4067_lolxh",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4067_lolxh/defaultskin/build/build_char_4067_lolxh.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4067_lolxh/defaultskin/build/build_char_4067_lolxh.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4067_lolxh/defaultskin/build/build_char_4067_lolxh.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4067_lolxh",
+  "source_asset": {
+    "assetId": "build_char_4067_lolxh",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "罗小黑",
+    "appellation": "Luo Xiaohei",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4067_lolxh.atlas",
+      ".png": "build_char_4067_lolxh.png",
+      ".skel": "build_char_4067_lolxh.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/luo-xiaohei/default/meta.json",
     "atlas": "standalone/assets/source/luo-xiaohei/default/build_char_4067_lolxh.atlas",
     "skeleton": "standalone/assets/source/luo-xiaohei/default/build_char_4067_lolxh.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4067_lolxh/defaultskin/build/build_char_4067_lolxh.png",
-        "path": "standalone/assets/source/luo-xiaohei/default/build_char_4067_lolxh.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4067_lolxh/build_char_4067_lolxh.png",
+        "path": "standalone/assets/source/luo-xiaohei/default/build_char_4067_lolxh.png",
+        "bytes": 272226,
+        "sha256": "f7c8e0a2f0de0dda2739d39fff90808b517261d13236202a54826d23b02d64e5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12221,
+      "sha256": "5ca619c9ee74e7a33ed3198bbd4ed7951a56bad3f3299593b80055b885bf0894"
+    },
+    "skeleton": {
+      "bytes": 380460,
+      "sha256": "a3f065dae6a6a123cea7a2a01d0b0a9ed71b1ed2917a74dea107306a867f3022"
+    }
   }
 }

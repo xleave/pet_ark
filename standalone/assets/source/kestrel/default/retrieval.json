@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "kestrel",
   "character_name": "Kestrel",
   "localized_name": "红隼",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%BA%A2%E9%9A%BC",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/meta.json",
-    "model": "defaultskin/build/build_char_4023_rfalcn",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/defaultskin/build/build_char_4023_rfalcn.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/defaultskin/build/build_char_4023_rfalcn.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/defaultskin/build/build_char_4023_rfalcn.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4023_rfalcn",
+  "source_asset": {
+    "assetId": "build_char_4023_rfalcn",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "红隼",
+    "appellation": "Kestrel",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4023_rfalcn.atlas",
+      ".png": "build_char_4023_rfalcn.png",
+      ".skel": "build_char_4023_rfalcn.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/kestrel/default/meta.json",
     "atlas": "standalone/assets/source/kestrel/default/build_char_4023_rfalcn.atlas",
     "skeleton": "standalone/assets/source/kestrel/default/build_char_4023_rfalcn.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/defaultskin/build/build_char_4023_rfalcn.png",
-        "path": "standalone/assets/source/kestrel/default/build_char_4023_rfalcn.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4023_rfalcn/build_char_4023_rfalcn.png",
+        "path": "standalone/assets/source/kestrel/default/build_char_4023_rfalcn.png",
+        "bytes": 377764,
+        "sha256": "c9af0f3ac7f266e01a2c70fbde41941003bf4da5d1227b335281004c0323c4fc"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12192,
+      "sha256": "322a742ba47ae998d8aa1c2ea2114a3cfa230f90e790fcbfb05fd88cbd079627"
+    },
+    "skeleton": {
+      "bytes": 190074,
+      "sha256": "c52d2479af4b69365499846b2ecbc9a42ccef4c9d9bd41c40b7018474d2697f6"
+    }
   }
 }

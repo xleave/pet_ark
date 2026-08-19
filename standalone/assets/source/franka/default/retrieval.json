@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "franka",
   "character_name": "Franka",
   "localized_name": "芙兰卡",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%8A%99%E5%85%B0%E5%8D%A1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_106_franka/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_106_franka/meta.json",
-    "model": "defaultskin/build/build_char_106_franka",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_106_franka/defaultskin/build/build_char_106_franka.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_106_franka/defaultskin/build/build_char_106_franka.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_106_franka/defaultskin/build/build_char_106_franka.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/106_franka",
+  "source_asset": {
+    "assetId": "build_char_106_franka",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "芙兰卡",
+    "appellation": "Franka",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_106_franka.atlas",
+      ".png": "build_char_106_franka.png",
+      ".skel": "build_char_106_franka.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/franka/default/meta.json",
     "atlas": "standalone/assets/source/franka/default/build_char_106_franka.atlas",
     "skeleton": "standalone/assets/source/franka/default/build_char_106_franka.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_106_franka/defaultskin/build/build_char_106_franka.png",
-        "path": "standalone/assets/source/franka/default/build_char_106_franka.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/106_franka/build_char_106_franka.png",
+        "path": "standalone/assets/source/franka/default/build_char_106_franka.png",
+        "bytes": 171485,
+        "sha256": "3d4fc9a13670eee7175f0fa03af16a9ca566be59fdb50319386898e8a4564ab0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4065,
+      "sha256": "499a886616d0af51b801a6be03781df9ad2cfd37dc639139f976a2e10a16ec75"
+    },
+    "skeleton": {
+      "bytes": 108653,
+      "sha256": "4e6b90016671c27f1262cddbef4897a5ced74b1107347abf233faf862ee76b38"
+    }
   }
 }

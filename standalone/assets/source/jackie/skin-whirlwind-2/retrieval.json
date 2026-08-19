@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "jackie",
   "character_name": "Jackie",
   "localized_name": "杰克",
@@ -9,25 +9,58 @@
   "variant_name": "纵身一跃",
   "skin_id": "whirlwind-2",
   "skin_name": "纵身一跃",
-  "source_page": "https://prts.wiki/w/%E6%9D%B0%E5%85%8B",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/meta.json",
-    "model": "char_347_jaksel_whirlwind_2/build/build_char_347_jaksel_whirlwind_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/char_347_jaksel_whirlwind_2/build/build_char_347_jaksel_whirlwind_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/char_347_jaksel_whirlwind_2/build/build_char_347_jaksel_whirlwind_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/char_347_jaksel_whirlwind_2/build/build_char_347_jaksel_whirlwind_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/347_jaksel_whirlwind#2",
+  "source_asset": {
+    "assetId": "build_char_347_jaksel_whirlwind#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "杰克",
+    "appellation": "Jackie",
+    "skinGroupId": "2022#whirlwind#2",
+    "skinGroupName": "0011/飙系列/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_347_jaksel_whirlwind#2.atlas",
+      ".png": "build_char_347_jaksel_whirlwind#2.png",
+      ".skel": "build_char_347_jaksel_whirlwind#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/jackie/skin-whirlwind-2/meta.json",
-    "atlas": "standalone/assets/source/jackie/skin-whirlwind-2/build_char_347_jaksel_whirlwind_2.atlas",
-    "skeleton": "standalone/assets/source/jackie/skin-whirlwind-2/build_char_347_jaksel_whirlwind_2.skel",
+    "atlas": "standalone/assets/source/jackie/skin-whirlwind-2/build_char_347_jaksel_whirlwind#2.atlas",
+    "skeleton": "standalone/assets/source/jackie/skin-whirlwind-2/build_char_347_jaksel_whirlwind#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_347_jaksel/char_347_jaksel_whirlwind_2/build/build_char_347_jaksel_whirlwind_2.png",
-        "path": "standalone/assets/source/jackie/skin-whirlwind-2/build_char_347_jaksel_whirlwind_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/347_jaksel_whirlwind%232/build_char_347_jaksel_whirlwind%232.png",
+        "path": "standalone/assets/source/jackie/skin-whirlwind-2/build_char_347_jaksel_whirlwind#2.png",
+        "bytes": 456936,
+        "sha256": "d217b29ea2ae939e712ffa6161366eb2586e1e4b0e8e9bc49bd1b1b9ed4d73af"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11605,
+      "sha256": "d2bf26616ce4ab19defbfb1dc7e1fe8a4e99c8953f1580574d615066c65e2154"
+    },
+    "skeleton": {
+      "bytes": 256864,
+      "sha256": "4764107adf540b23d785de98e4a2c3dce459bb82949587c6f6c455d26ad6d8a2"
+    }
   }
 }

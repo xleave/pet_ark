@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "nymph",
   "character_name": "Nymph",
   "localized_name": "妮芙",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%A6%AE%E8%8A%99",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/meta.json",
-    "model": "defaultskin/build/build_char_4146_nymph",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/defaultskin/build/build_char_4146_nymph.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/defaultskin/build/build_char_4146_nymph.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/defaultskin/build/build_char_4146_nymph.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4146_nymph",
+  "source_asset": {
+    "assetId": "build_char_4146_nymph",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "妮芙",
+    "appellation": "Nymph",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4146_nymph.atlas",
+      ".png": "build_char_4146_nymph.png",
+      ".skel": "build_char_4146_nymph.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/nymph/default/meta.json",
     "atlas": "standalone/assets/source/nymph/default/build_char_4146_nymph.atlas",
     "skeleton": "standalone/assets/source/nymph/default/build_char_4146_nymph.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/defaultskin/build/build_char_4146_nymph.png",
-        "path": "standalone/assets/source/nymph/default/build_char_4146_nymph.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4146_nymph/build_char_4146_nymph.png",
+        "path": "standalone/assets/source/nymph/default/build_char_4146_nymph.png",
+        "bytes": 328367,
+        "sha256": "698333b78f09b6a8d01dc0143d0c197d4938641cafb87ac2428a8ee563215c7b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12543,
+      "sha256": "0f3554e963da4b41709f96ae7a5d9d3bf140c72f43b69708c2c329137b82a82a"
+    },
+    "skeleton": {
+      "bytes": 274169,
+      "sha256": "1c5f0930c6cccfbb53d336b5f71d1bfa8836c8d5fc34e246a94ca55f525cbcfa"
+    }
   }
 }

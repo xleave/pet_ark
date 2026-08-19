@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "april",
   "character_name": "April",
   "localized_name": "四月",
@@ -9,25 +9,58 @@
   "variant_name": "远望",
   "skin_id": "wild-3",
   "skin_name": "远望",
-  "source_page": "https://prts.wiki/w/%E5%9B%9B%E6%9C%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/meta.json",
-    "model": "char_365_aprl_wild_3/build/build_char_365_aprl_wild_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/char_365_aprl_wild_3/build/build_char_365_aprl_wild_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/char_365_aprl_wild_3/build/build_char_365_aprl_wild_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/char_365_aprl_wild_3/build/build_char_365_aprl_wild_3.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/365_aprl_wild#3",
+  "source_asset": {
+    "assetId": "build_char_365_aprl_wild#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "四月",
+    "appellation": "April",
+    "skinGroupId": "2020#wild",
+    "skinGroupName": "生命之地/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_365_aprl_wild#3.atlas",
+      ".png": "build_char_365_aprl_wild#3.png",
+      ".skel": "build_char_365_aprl_wild#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/april/skin-wild-3/meta.json",
-    "atlas": "standalone/assets/source/april/skin-wild-3/build_char_365_aprl_wild_3.atlas",
-    "skeleton": "standalone/assets/source/april/skin-wild-3/build_char_365_aprl_wild_3.skel",
+    "atlas": "standalone/assets/source/april/skin-wild-3/build_char_365_aprl_wild#3.atlas",
+    "skeleton": "standalone/assets/source/april/skin-wild-3/build_char_365_aprl_wild#3.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/char_365_aprl_wild_3/build/build_char_365_aprl_wild_3.png",
-        "path": "standalone/assets/source/april/skin-wild-3/build_char_365_aprl_wild_3.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/365_aprl_wild%233/build_char_365_aprl_wild%233.png",
+        "path": "standalone/assets/source/april/skin-wild-3/build_char_365_aprl_wild#3.png",
+        "bytes": 351141,
+        "sha256": "4feaf2b8c730e6b5da583baed2a3e0520fc3dc6877e0ebba0a71d9b23c9dd577"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8877,
+      "sha256": "d24e1c6633225bc7bee5c3821db06e426467304b17e4ce84d4b0218580f8bb8c"
+    },
+    "skeleton": {
+      "bytes": 167870,
+      "sha256": "072859e52579fba9b24885b216bcc1625998f62c89d02d0cab918e863afd8884"
+    }
   }
 }

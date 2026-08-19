@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "cuora",
   "character_name": "Cuora",
   "localized_name": "蛇屠箱",
@@ -9,25 +9,58 @@
   "variant_name": "四边形",
   "skin_id": "wild-1",
   "skin_name": "四边形",
-  "source_page": "https://prts.wiki/w/%E8%9B%87%E5%B1%A0%E7%AE%B1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_150_snakek/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_150_snakek/meta.json",
-    "model": "char_150_snakek_wild_1/build/build_char_150_snakek_wild_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_150_snakek/char_150_snakek_wild_1/build/build_char_150_snakek_wild_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_150_snakek/char_150_snakek_wild_1/build/build_char_150_snakek_wild_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_150_snakek/char_150_snakek_wild_1/build/build_char_150_snakek_wild_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/150_snakek_wild#1",
+  "source_asset": {
+    "assetId": "build_char_150_snakek_wild#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "蛇屠箱",
+    "appellation": "Cuora",
+    "skinGroupId": "2019#wild",
+    "skinGroupName": "生命之地/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_150_snakek_wild#1.atlas",
+      ".png": "build_char_150_snakek_wild#1.png",
+      ".skel": "build_char_150_snakek_wild#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/cuora/skin-wild-1/meta.json",
-    "atlas": "standalone/assets/source/cuora/skin-wild-1/build_char_150_snakek_wild_1.atlas",
-    "skeleton": "standalone/assets/source/cuora/skin-wild-1/build_char_150_snakek_wild_1.skel",
+    "atlas": "standalone/assets/source/cuora/skin-wild-1/build_char_150_snakek_wild#1.atlas",
+    "skeleton": "standalone/assets/source/cuora/skin-wild-1/build_char_150_snakek_wild#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_150_snakek/char_150_snakek_wild_1/build/build_char_150_snakek_wild_1.png",
-        "path": "standalone/assets/source/cuora/skin-wild-1/build_char_150_snakek_wild_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/150_snakek_wild%231/build_char_150_snakek_wild%231.png",
+        "path": "standalone/assets/source/cuora/skin-wild-1/build_char_150_snakek_wild#1.png",
+        "bytes": 403869,
+        "sha256": "ec3990978ac5332cf32c1a35c71f33d89df88d295889ed9403cf90485153d5df"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8297,
+      "sha256": "b39785e46108d2f968732d0520d048988a047ac241b0702ca5026732f6866478"
+    },
+    "skeleton": {
+      "bytes": 84750,
+      "sha256": "32c5ea0f21a121f120465e39ec5ccaff34c01daf8443a364298b1b309b371828"
+    }
   }
 }

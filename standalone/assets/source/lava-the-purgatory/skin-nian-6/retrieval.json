@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lava-the-purgatory",
   "character_name": "Lava the Purgatory",
   "localized_name": "炎狱炎熔",
@@ -9,25 +9,59 @@
   "variant_name": "暮影藤萝",
   "skin_id": "nian-6",
   "skin_name": "暮影藤萝",
-  "source_page": "https://prts.wiki/w/%E7%82%8E%E7%8B%B1%E7%82%8E%E7%86%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1011_lava2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1011_lava2/meta.json",
-    "model": "char_1011_lava2_nian_6/build/build_char_1011_lava2_nian_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1011_lava2/char_1011_lava2_nian_6/build/build_char_1011_lava2_nian_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1011_lava2/char_1011_lava2_nian_6/build/build_char_1011_lava2_nian_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1011_lava2/char_1011_lava2_nian_6/build/build_char_1011_lava2_nian_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1011_lava2_nian#6",
+  "source_asset": {
+    "assetId": "build_char_1011_lava2_nian#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "炎狱炎熔",
+    "appellation": "Lava the Purgatory",
+    "skinGroupId": "2022#nian",
+    "skinGroupName": "0011制造/V",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1011_lava2_nian#6.atlas",
+      ".png": "build_char_1011_lava2_nian#6.png",
+      ".skel": "build_char_1011_lava2_nian#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lava-the-purgatory/skin-nian-6/meta.json",
-    "atlas": "standalone/assets/source/lava-the-purgatory/skin-nian-6/build_char_1011_lava2_nian_6.atlas",
-    "skeleton": "standalone/assets/source/lava-the-purgatory/skin-nian-6/build_char_1011_lava2_nian_6.skel",
+    "atlas": "standalone/assets/source/lava-the-purgatory/skin-nian-6/build_char_1011_lava2_nian#6.atlas",
+    "skeleton": "standalone/assets/source/lava-the-purgatory/skin-nian-6/build_char_1011_lava2_nian#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1011_lava2/char_1011_lava2_nian_6/build/build_char_1011_lava2_nian_6.png",
-        "path": "standalone/assets/source/lava-the-purgatory/skin-nian-6/build_char_1011_lava2_nian_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1011_lava2_nian%236/build_char_1011_lava2_nian%236.png",
+        "path": "standalone/assets/source/lava-the-purgatory/skin-nian-6/build_char_1011_lava2_nian#6.png",
+        "bytes": 260695,
+        "sha256": "90409974c9aec21e62eec0d76aa8457ef8a1176f112234a9d2b61d75da424a0c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7014,
+      "sha256": "417d6bcaab233f1c18b79bd4f993cfe150d9e2f00c5b808c3b24d213349995b1"
+    },
+    "skeleton": {
+      "bytes": 304831,
+      "sha256": "df667329e474c1e958591e07313452b734f62b6849f2a1eed1c5affd0e62c4e9"
+    }
   }
 }

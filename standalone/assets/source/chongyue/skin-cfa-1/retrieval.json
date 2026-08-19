@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "chongyue",
   "character_name": "Chongyue",
   "localized_name": "重岳",
@@ -9,25 +9,58 @@
   "variant_name": "全能演员",
   "skin_id": "cfa-1",
   "skin_name": "全能演员",
-  "source_page": "https://prts.wiki/w/%E9%87%8D%E5%B2%B3",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_2024_chyue/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2024_chyue/meta.json",
-    "model": "char_2024_chyue_cfa_1/build/build_char_2024_chyue_cfa_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2024_chyue/char_2024_chyue_cfa_1/build/build_char_2024_chyue_cfa_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2024_chyue/char_2024_chyue_cfa_1/build/build_char_2024_chyue_cfa_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2024_chyue/char_2024_chyue_cfa_1/build/build_char_2024_chyue_cfa_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/2024_chyue_cfa#1",
+  "source_asset": {
+    "assetId": "build_char_2024_chyue_cfa#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "重岳",
+    "appellation": "Chongyue",
+    "skinGroupId": "2024#cfa",
+    "skinGroupName": "中国电影资料馆",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2024_chyue_cfa#1.atlas",
+      ".png": "build_char_2024_chyue_cfa#1.png",
+      ".skel": "build_char_2024_chyue_cfa#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/chongyue/skin-cfa-1/meta.json",
-    "atlas": "standalone/assets/source/chongyue/skin-cfa-1/build_char_2024_chyue_cfa_1.atlas",
-    "skeleton": "standalone/assets/source/chongyue/skin-cfa-1/build_char_2024_chyue_cfa_1.skel",
+    "atlas": "standalone/assets/source/chongyue/skin-cfa-1/build_char_2024_chyue_cfa#1.atlas",
+    "skeleton": "standalone/assets/source/chongyue/skin-cfa-1/build_char_2024_chyue_cfa#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_2024_chyue/char_2024_chyue_cfa_1/build/build_char_2024_chyue_cfa_1.png",
-        "path": "standalone/assets/source/chongyue/skin-cfa-1/build_char_2024_chyue_cfa_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/2024_chyue_cfa%231/build_char_2024_chyue_cfa%231.png",
+        "path": "standalone/assets/source/chongyue/skin-cfa-1/build_char_2024_chyue_cfa#1.png",
+        "bytes": 916964,
+        "sha256": "2045c80e42e54afe2daab633096040f3a0c615bbf3e8f9a5cb211ef11be4283c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 20770,
+      "sha256": "2b02f1fcc711e731607d4f78a7e52ee8dfb267abe3423f9904a92bdc3296d17d"
+    },
+    "skeleton": {
+      "bytes": 517810,
+      "sha256": "c8a9501174301c25bd9b773700a3b3f385173e949bff7e76975604e40b2199df"
+    }
   }
 }

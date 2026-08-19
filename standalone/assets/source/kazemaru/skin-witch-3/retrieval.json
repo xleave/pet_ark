@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "kazemaru",
   "character_name": "Kazemaru",
   "localized_name": "风丸",
@@ -9,25 +9,58 @@
   "variant_name": "幻影轻悄",
   "skin_id": "witch-3",
   "skin_name": "幻影轻悄",
-  "source_page": "https://prts.wiki/w/%E9%A3%8E%E4%B8%B8",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4016_kazema/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4016_kazema/meta.json",
-    "model": "char_4016_kazema_witch_3/build/build_char_4016_kazema_witch_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4016_kazema/char_4016_kazema_witch_3/build/build_char_4016_kazema_witch_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4016_kazema/char_4016_kazema_witch_3/build/build_char_4016_kazema_witch_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4016_kazema/char_4016_kazema_witch_3/build/build_char_4016_kazema_witch_3.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4016_kazema_witch#3",
+  "source_asset": {
+    "assetId": "build_char_4016_kazema_witch#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "风丸",
+    "appellation": "Kazemaru",
+    "skinGroupId": "2022#witch",
+    "skinGroupName": "巫异盛宴/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4016_kazema_witch#3.atlas",
+      ".png": "build_char_4016_kazema_witch#3.png",
+      ".skel": "build_char_4016_kazema_witch#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/kazemaru/skin-witch-3/meta.json",
-    "atlas": "standalone/assets/source/kazemaru/skin-witch-3/build_char_4016_kazema_witch_3.atlas",
-    "skeleton": "standalone/assets/source/kazemaru/skin-witch-3/build_char_4016_kazema_witch_3.skel",
+    "atlas": "standalone/assets/source/kazemaru/skin-witch-3/build_char_4016_kazema_witch#3.atlas",
+    "skeleton": "standalone/assets/source/kazemaru/skin-witch-3/build_char_4016_kazema_witch#3.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4016_kazema/char_4016_kazema_witch_3/build/build_char_4016_kazema_witch_3.png",
-        "path": "standalone/assets/source/kazemaru/skin-witch-3/build_char_4016_kazema_witch_3.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4016_kazema_witch%233/build_char_4016_kazema_witch%233.png",
+        "path": "standalone/assets/source/kazemaru/skin-witch-3/build_char_4016_kazema_witch#3.png",
+        "bytes": 510235,
+        "sha256": "f9e4919b545562b37e5566389477840516cc1e342b70092879f9d96ec47df339"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13698,
+      "sha256": "95a614f4d22537fe9908e62b9265cd8e6ef2d1302ecf2384430098179defd0b6"
+    },
+    "skeleton": {
+      "bytes": 254358,
+      "sha256": "c9aa6f7bcc14957f4a3b1fbafa9e19342af623e567598000e1314823502de23a"
+    }
   }
 }

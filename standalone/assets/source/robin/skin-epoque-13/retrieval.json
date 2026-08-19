@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "robin",
   "character_name": "Robin",
   "localized_name": "罗宾",
@@ -9,25 +9,58 @@
   "variant_name": "原野的馈赠",
   "skin_id": "epoque-13",
   "skin_name": "原野的馈赠",
-  "source_page": "https://prts.wiki/w/%E7%BD%97%E5%AE%BE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/meta.json",
-    "model": "char_451_robin_epoque_13/build/build_char_451_robin_epoque_13",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/char_451_robin_epoque_13/build/build_char_451_robin_epoque_13.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/char_451_robin_epoque_13/build/build_char_451_robin_epoque_13.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/char_451_robin_epoque_13/build/build_char_451_robin_epoque_13.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/451_robin_epoque#13",
+  "source_asset": {
+    "assetId": "build_char_451_robin_epoque#13",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "罗宾",
+    "appellation": "Robin",
+    "skinGroupId": "2021#epoque#5",
+    "skinGroupName": "时代/XIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_451_robin_epoque#13.atlas",
+      ".png": "build_char_451_robin_epoque#13.png",
+      ".skel": "build_char_451_robin_epoque#13.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/robin/skin-epoque-13/meta.json",
-    "atlas": "standalone/assets/source/robin/skin-epoque-13/build_char_451_robin_epoque_13.atlas",
-    "skeleton": "standalone/assets/source/robin/skin-epoque-13/build_char_451_robin_epoque_13.skel",
+    "atlas": "standalone/assets/source/robin/skin-epoque-13/build_char_451_robin_epoque#13.atlas",
+    "skeleton": "standalone/assets/source/robin/skin-epoque-13/build_char_451_robin_epoque#13.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/char_451_robin_epoque_13/build/build_char_451_robin_epoque_13.png",
-        "path": "standalone/assets/source/robin/skin-epoque-13/build_char_451_robin_epoque_13.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/451_robin_epoque%2313/build_char_451_robin_epoque%2313.png",
+        "path": "standalone/assets/source/robin/skin-epoque-13/build_char_451_robin_epoque#13.png",
+        "bytes": 532718,
+        "sha256": "bebc6bf198fe167d10d73c7ba4dbf73ca3b06755d38b037bf5fca3bf0e5262d5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 20134,
+      "sha256": "8a3f6c38ad7206bca5fbaedb931530553f50953c517b06a975b519f628dd60d0"
+    },
+    "skeleton": {
+      "bytes": 824247,
+      "sha256": "1e7e30393c521f5da5eaa0dc5838d82708e07dfeb6a8fe7a651440f566f650af"
+    }
   }
 }

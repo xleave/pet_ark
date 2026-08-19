@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "civilight-eterna",
   "character_name": "Civilight Eterna",
   "localized_name": "魔王",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%AD%94%E7%8E%8B",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4134_cetsyr/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4134_cetsyr/meta.json",
-    "model": "defaultskin/build/build_char_4134_cetsyr",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4134_cetsyr/defaultskin/build/build_char_4134_cetsyr.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4134_cetsyr/defaultskin/build/build_char_4134_cetsyr.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4134_cetsyr/defaultskin/build/build_char_4134_cetsyr.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4134_cetsyr",
+  "source_asset": {
+    "assetId": "build_char_4134_cetsyr",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "魔王",
+    "appellation": "Civilight Eterna",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4134_cetsyr.atlas",
+      ".png": "build_char_4134_cetsyr.png",
+      ".skel": "build_char_4134_cetsyr.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/civilight-eterna/default/meta.json",
     "atlas": "standalone/assets/source/civilight-eterna/default/build_char_4134_cetsyr.atlas",
     "skeleton": "standalone/assets/source/civilight-eterna/default/build_char_4134_cetsyr.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4134_cetsyr/defaultskin/build/build_char_4134_cetsyr.png",
-        "path": "standalone/assets/source/civilight-eterna/default/build_char_4134_cetsyr.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4134_cetsyr/build_char_4134_cetsyr.png",
+        "path": "standalone/assets/source/civilight-eterna/default/build_char_4134_cetsyr.png",
+        "bytes": 893699,
+        "sha256": "b78429d45796d218e99ede6be03f3e43085c499b0e7d6936d778fc7c5d50525d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 18142,
+      "sha256": "0bc89fae5a4a97d3dc6b51378830daf028d4d7ad231c2b927fe3291ce847871d"
+    },
+    "skeleton": {
+      "bytes": 302649,
+      "sha256": "12ff7f33163b6eb28cef4601eb372350704e20f919c0c662e0e0971109de182f"
+    }
   }
 }

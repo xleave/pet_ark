@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "savage",
   "character_name": "Savage",
   "localized_name": "暴行",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%9A%B4%E8%A1%8C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/meta.json",
-    "model": "defaultskin/build/build_char_230_savage",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/defaultskin/build/build_char_230_savage.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/defaultskin/build/build_char_230_savage.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/defaultskin/build/build_char_230_savage.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/230_savage",
+  "source_asset": {
+    "assetId": "build_char_230_savage",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "暴行",
+    "appellation": "Savage",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_230_savage.atlas",
+      ".png": "build_char_230_savage.png",
+      ".skel": "build_char_230_savage.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/savage/default/meta.json",
     "atlas": "standalone/assets/source/savage/default/build_char_230_savage.atlas",
     "skeleton": "standalone/assets/source/savage/default/build_char_230_savage.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/defaultskin/build/build_char_230_savage.png",
-        "path": "standalone/assets/source/savage/default/build_char_230_savage.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/230_savage/build_char_230_savage.png",
+        "path": "standalone/assets/source/savage/default/build_char_230_savage.png",
+        "bytes": 196252,
+        "sha256": "6e74651f1582091b2081190d5bed5a82bef5b713b087a79d20fa33fb7ca6d733"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6886,
+      "sha256": "0a9700706567621ed28a748e0a37a415a00226f10d4077ecbfd1946de7e5ffa4"
+    },
+    "skeleton": {
+      "bytes": 126001,
+      "sha256": "82d34a8b5994564009df808c149386735f9992622a223d00903a9f762012d9d2"
+    }
   }
 }

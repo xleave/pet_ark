@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "minimalist",
   "character_name": "Minimalist",
   "localized_name": "至简",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%87%B3%E7%AE%80",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4054_malist/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4054_malist/meta.json",
-    "model": "defaultskin/build/char_4054_malist",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4054_malist/defaultskin/build/char_4054_malist.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4054_malist/defaultskin/build/char_4054_malist.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4054_malist/defaultskin/build/char_4054_malist.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4054_malist",
+  "source_asset": {
+    "assetId": "build_char_4054_malist",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "至简",
+    "appellation": "Minimalist",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "char_4054_malist.atlas",
+      ".png": "char_4054_malist.png",
+      ".skel": "char_4054_malist.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/minimalist/default/meta.json",
     "atlas": "standalone/assets/source/minimalist/default/char_4054_malist.atlas",
     "skeleton": "standalone/assets/source/minimalist/default/char_4054_malist.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4054_malist/defaultskin/build/char_4054_malist.png",
-        "path": "standalone/assets/source/minimalist/default/char_4054_malist.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4054_malist/char_4054_malist.png",
+        "path": "standalone/assets/source/minimalist/default/char_4054_malist.png",
+        "bytes": 207507,
+        "sha256": "cde8e46f55b2850132b2856e28c6a9662a08b4f7231abe44607aa29041cbdc7e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8285,
+      "sha256": "5572f4e06170d038bcd795cf3474b874d92b46a3105e4cf4eaaf5be7061e3931"
+    },
+    "skeleton": {
+      "bytes": 333439,
+      "sha256": "cdf8934ca350bee719106df6ce05529601b92a2aa10d4f3ad5c801b0fd16ea78"
+    }
   }
 }

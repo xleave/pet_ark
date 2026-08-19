@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "surfer",
   "character_name": "Surfer",
   "localized_name": "寻澜",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%AF%BB%E6%BE%9C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/meta.json",
-    "model": "defaultskin/build/build_char_4052_surfer",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/defaultskin/build/build_char_4052_surfer.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/defaultskin/build/build_char_4052_surfer.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/defaultskin/build/build_char_4052_surfer.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4052_surfer",
+  "source_asset": {
+    "assetId": "build_char_4052_surfer",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "寻澜",
+    "appellation": "Surfer",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4052_surfer.atlas",
+      ".png": "build_char_4052_surfer.png",
+      ".skel": "build_char_4052_surfer.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/surfer/default/meta.json",
     "atlas": "standalone/assets/source/surfer/default/build_char_4052_surfer.atlas",
     "skeleton": "standalone/assets/source/surfer/default/build_char_4052_surfer.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4052_surfer/defaultskin/build/build_char_4052_surfer.png",
-        "path": "standalone/assets/source/surfer/default/build_char_4052_surfer.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4052_surfer/build_char_4052_surfer.png",
+        "path": "standalone/assets/source/surfer/default/build_char_4052_surfer.png",
+        "bytes": 1004069,
+        "sha256": "c9517d796b6b5f4397418172be0e1e47738da77cc58ae1ffb88af18279b1c7ef"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12803,
+      "sha256": "06daaa0300c4f7a4b573a9f6b108a44004dbb8bf475e9679addb228105356322"
+    },
+    "skeleton": {
+      "bytes": 168093,
+      "sha256": "020ffb8e0933c9f1c88f1f71e88df5d381aa98be8470504ffc4c60b781474534"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "snow-hunter",
   "character_name": "Snow Hunter",
   "localized_name": "雪猎",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%9B%AA%E7%8C%8E",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4211_snhunt/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4211_snhunt/meta.json",
-    "model": "defaultskin/build/build_char_4211_snhunt",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4211_snhunt/defaultskin/build/build_char_4211_snhunt.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4211_snhunt/defaultskin/build/build_char_4211_snhunt.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4211_snhunt/defaultskin/build/build_char_4211_snhunt.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4211_snhunt",
+  "source_asset": {
+    "assetId": "build_char_4211_snhunt",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "雪猎",
+    "appellation": "Snow Hunter",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4211_snhunt.atlas",
+      ".png": "build_char_4211_snhunt.png",
+      ".skel": "build_char_4211_snhunt.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/snow-hunter/default/meta.json",
     "atlas": "standalone/assets/source/snow-hunter/default/build_char_4211_snhunt.atlas",
     "skeleton": "standalone/assets/source/snow-hunter/default/build_char_4211_snhunt.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4211_snhunt/defaultskin/build/build_char_4211_snhunt.png",
-        "path": "standalone/assets/source/snow-hunter/default/build_char_4211_snhunt.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4211_snhunt/build_char_4211_snhunt.png",
+        "path": "standalone/assets/source/snow-hunter/default/build_char_4211_snhunt.png",
+        "bytes": 322297,
+        "sha256": "3887d00df07fea786b39ee20a8f506699223059912bee684342104f937b6fc03"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11367,
+      "sha256": "59af00eabf384836f4398c1d32eea45df700eec519262532cd19eef912d477f1"
+    },
+    "skeleton": {
+      "bytes": 225225,
+      "sha256": "1df036c27157eb863d8815f3e9508134a6be339ba21f7e5ef4d902245c9ef9c7"
+    }
   }
 }

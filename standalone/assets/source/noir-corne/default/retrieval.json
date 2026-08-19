@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "noir-corne",
   "character_name": "Noir Corne",
   "localized_name": "黑角",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%BB%91%E8%A7%92",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_500_noirc/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_500_noirc/meta.json",
-    "model": "defaultskin/build/build_char_500_noirc",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_500_noirc/defaultskin/build/build_char_500_noirc.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_500_noirc/defaultskin/build/build_char_500_noirc.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_500_noirc/defaultskin/build/build_char_500_noirc.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/500_noirc",
+  "source_asset": {
+    "assetId": "build_char_500_noirc",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "黑角",
+    "appellation": "Noir Corne",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_2"
+    ],
+    "assetList": {
+      ".atlas": "build_char_500_noirc.atlas",
+      ".png": "build_char_500_noirc.png",
+      ".skel": "build_char_500_noirc.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/noir-corne/default/meta.json",
     "atlas": "standalone/assets/source/noir-corne/default/build_char_500_noirc.atlas",
     "skeleton": "standalone/assets/source/noir-corne/default/build_char_500_noirc.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_500_noirc/defaultskin/build/build_char_500_noirc.png",
-        "path": "standalone/assets/source/noir-corne/default/build_char_500_noirc.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/500_noirc/build_char_500_noirc.png",
+        "path": "standalone/assets/source/noir-corne/default/build_char_500_noirc.png",
+        "bytes": 185366,
+        "sha256": "19f79a05a45c8e7d47d32654caf532949bfc5be1bd3357478a575f678bd338aa"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 3753,
+      "sha256": "3671f21769889974d97590aee540092fbeb42ed9085052492b401e6acc6153ab"
+    },
+    "skeleton": {
+      "bytes": 68319,
+      "sha256": "88a0fdaf3495cbfe0652b747e67c95e784e93d0c1323d1d2694179dc2d4096a3"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "firewatch",
   "character_name": "Firewatch",
   "localized_name": "守林人",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%AE%88%E6%9E%97%E4%BA%BA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/meta.json",
-    "model": "defaultskin/build/build_char_158_milu",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/defaultskin/build/build_char_158_milu.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/defaultskin/build/build_char_158_milu.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/defaultskin/build/build_char_158_milu.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/158_milu",
+  "source_asset": {
+    "assetId": "build_char_158_milu",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "守林人",
+    "appellation": "Firewatch",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_158_milu.atlas",
+      ".png": "build_char_158_milu.png",
+      ".skel": "build_char_158_milu.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/firewatch/default/meta.json",
     "atlas": "standalone/assets/source/firewatch/default/build_char_158_milu.atlas",
     "skeleton": "standalone/assets/source/firewatch/default/build_char_158_milu.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/defaultskin/build/build_char_158_milu.png",
-        "path": "standalone/assets/source/firewatch/default/build_char_158_milu.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/158_milu/build_char_158_milu.png",
+        "path": "standalone/assets/source/firewatch/default/build_char_158_milu.png",
+        "bytes": 199197,
+        "sha256": "8d5d8d3ffe86eda2dcd47fbf6d3e62893cc44c317239d64228d8cd379494597f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4656,
+      "sha256": "ee38429738151213391bd3bc224401ac57c65a0e2c0bcc2d0af137484547a11b"
+    },
+    "skeleton": {
+      "bytes": 111980,
+      "sha256": "029aeb7ed9d8aebfc93d2b3135ac1fb23b87e071298bb4f60641872e7c37b90c"
+    }
   }
 }

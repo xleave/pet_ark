@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "bryophyta",
   "character_name": "Bryophyta",
   "localized_name": "苍苔",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%8B%8D%E8%8B%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4106_bryota/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4106_bryota/meta.json",
-    "model": "defaultskin/build/build_char_4106_bryota",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4106_bryota/defaultskin/build/build_char_4106_bryota.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4106_bryota/defaultskin/build/build_char_4106_bryota.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4106_bryota/defaultskin/build/build_char_4106_bryota.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4106_bryota",
+  "source_asset": {
+    "assetId": "build_char_4106_bryota",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "苍苔",
+    "appellation": "Bryophyta",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4106_bryota.atlas",
+      ".png": "build_char_4106_bryota.png",
+      ".skel": "build_char_4106_bryota.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/bryophyta/default/meta.json",
     "atlas": "standalone/assets/source/bryophyta/default/build_char_4106_bryota.atlas",
     "skeleton": "standalone/assets/source/bryophyta/default/build_char_4106_bryota.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4106_bryota/defaultskin/build/build_char_4106_bryota.png",
-        "path": "standalone/assets/source/bryophyta/default/build_char_4106_bryota.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4106_bryota/build_char_4106_bryota.png",
+        "path": "standalone/assets/source/bryophyta/default/build_char_4106_bryota.png",
+        "bytes": 218077,
+        "sha256": "6149a4eee2781fffad07fd670f87031a427f29ce012df7fe63328add1b50e62d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8503,
+      "sha256": "0352795fef57c51d91c9732b282dc2b309e347ff821df5134f544b502b63e31b"
+    },
+    "skeleton": {
+      "bytes": 236379,
+      "sha256": "5ae1a0471a6c465873f339893e09499d429198d5e57b1ee2208d8d3e53ed7faa"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "texas",
   "character_name": "Texas",
   "localized_name": "德克萨斯",
@@ -9,25 +9,58 @@
   "variant_name": "意志",
   "skin_id": "epoque-7",
   "skin_name": "意志",
-  "source_page": "https://prts.wiki/w/%E5%BE%B7%E5%85%8B%E8%90%A8%E6%96%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/meta.json",
-    "model": "char_102_texas_epoque_7/build/build_char_102_texas_epoque_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/char_102_texas_epoque_7/build/build_char_102_texas_epoque_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/char_102_texas_epoque_7/build/build_char_102_texas_epoque_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/char_102_texas_epoque_7/build/build_char_102_texas_epoque_7.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/102_texas_epoque#7",
+  "source_asset": {
+    "assetId": "build_char_102_texas_epoque#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "德克萨斯",
+    "appellation": "Texas",
+    "skinGroupId": "2020#epoque#6",
+    "skinGroupName": "时代/VII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_102_texas_epoque#7.atlas",
+      ".png": "build_char_102_texas_epoque#7.png",
+      ".skel": "build_char_102_texas_epoque#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/texas/skin-epoque-7/meta.json",
-    "atlas": "standalone/assets/source/texas/skin-epoque-7/build_char_102_texas_epoque_7.atlas",
-    "skeleton": "standalone/assets/source/texas/skin-epoque-7/build_char_102_texas_epoque_7.skel",
+    "atlas": "standalone/assets/source/texas/skin-epoque-7/build_char_102_texas_epoque#7.atlas",
+    "skeleton": "standalone/assets/source/texas/skin-epoque-7/build_char_102_texas_epoque#7.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/char_102_texas_epoque_7/build/build_char_102_texas_epoque_7.png",
-        "path": "standalone/assets/source/texas/skin-epoque-7/build_char_102_texas_epoque_7.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/102_texas_epoque%237/build_char_102_texas_epoque%237.png",
+        "path": "standalone/assets/source/texas/skin-epoque-7/build_char_102_texas_epoque#7.png",
+        "bytes": 476963,
+        "sha256": "67ab92008756a87fb09a35f1b1f906718284a3a6f9f3076f99b7241939de7eb7"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12609,
+      "sha256": "4d3caf107661967d872d4ae72489cd88a53839e2323e1effc5c44782846e8c6c"
+    },
+    "skeleton": {
+      "bytes": 600756,
+      "sha256": "2a22cb3344e51540971dedf3b4a9ce338f0da691433c623f9558609b980035ee"
+    }
   }
 }

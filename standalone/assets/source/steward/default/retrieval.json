@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "steward",
   "character_name": "Steward",
   "localized_name": "史都华德",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%8F%B2%E9%83%BD%E5%8D%8E%E5%BE%B7",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_210_stward/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_210_stward/meta.json",
-    "model": "defaultskin/build/build_char_210_stward",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_210_stward/defaultskin/build/build_char_210_stward.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_210_stward/defaultskin/build/build_char_210_stward.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_210_stward/defaultskin/build/build_char_210_stward.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/210_stward",
+  "source_asset": {
+    "assetId": "build_char_210_stward",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "史都华德",
+    "appellation": "Steward",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_3"
+    ],
+    "assetList": {
+      ".atlas": "build_char_210_stward.atlas",
+      ".png": "build_char_210_stward.png",
+      ".skel": "build_char_210_stward.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/steward/default/meta.json",
     "atlas": "standalone/assets/source/steward/default/build_char_210_stward.atlas",
     "skeleton": "standalone/assets/source/steward/default/build_char_210_stward.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_210_stward/defaultskin/build/build_char_210_stward.png",
-        "path": "standalone/assets/source/steward/default/build_char_210_stward.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/210_stward/build_char_210_stward.png",
+        "path": "standalone/assets/source/steward/default/build_char_210_stward.png",
+        "bytes": 162388,
+        "sha256": "fc7b105203524cfa801d24fef25b3b58ff3ebcb5d07aed1f2c58e89af5559d47"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4227,
+      "sha256": "3e568b99ac071047a74c0a25a52a31c02c5840c4f716f4d5dc7fe9719491ae75"
+    },
+    "skeleton": {
+      "bytes": 101415,
+      "sha256": "752d980ebaec075901a8ef9c7a0bb98d82c601e419033cd1faac5b285e6b20d3"
+    }
   }
 }

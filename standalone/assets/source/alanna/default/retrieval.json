@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "alanna",
   "character_name": "Alanna",
   "localized_name": "阿兰娜",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%98%BF%E5%85%B0%E5%A8%9C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4178_alanna/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4178_alanna/meta.json",
-    "model": "defaultskin/build/build_char_4178_alanna",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4178_alanna/defaultskin/build/build_char_4178_alanna.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4178_alanna/defaultskin/build/build_char_4178_alanna.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4178_alanna/defaultskin/build/build_char_4178_alanna.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4178_alanna",
+  "source_asset": {
+    "assetId": "build_char_4178_alanna",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "阿兰娜",
+    "appellation": "Alanna",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4178_alanna.atlas",
+      ".png": "build_char_4178_alanna.png",
+      ".skel": "build_char_4178_alanna.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/alanna/default/meta.json",
     "atlas": "standalone/assets/source/alanna/default/build_char_4178_alanna.atlas",
     "skeleton": "standalone/assets/source/alanna/default/build_char_4178_alanna.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4178_alanna/defaultskin/build/build_char_4178_alanna.png",
-        "path": "standalone/assets/source/alanna/default/build_char_4178_alanna.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4178_alanna/build_char_4178_alanna.png",
+        "path": "standalone/assets/source/alanna/default/build_char_4178_alanna.png",
+        "bytes": 229860,
+        "sha256": "1eba33e05f23afda644f223ba9bf3cfdec4cfbff3115ae4dd07f18bec872daf8"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8641,
+      "sha256": "6c737e54a36ae7c01491c11579a8bf1184d9b5c4158eeef74b8e51d3a73f27c9"
+    },
+    "skeleton": {
+      "bytes": 192277,
+      "sha256": "c79db1b4850d5afd09ca9d407afc99fe7aadb7c2513b03627db3c1b7b55b90e4"
+    }
   }
 }

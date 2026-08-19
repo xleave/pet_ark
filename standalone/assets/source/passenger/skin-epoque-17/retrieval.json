@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "passenger",
   "character_name": "Passenger",
   "localized_name": "异客",
@@ -9,25 +9,58 @@
   "variant_name": "今昔须臾之梦",
   "skin_id": "epoque-17",
   "skin_name": "今昔须臾之梦",
-  "source_page": "https://prts.wiki/w/%E5%BC%82%E5%AE%A2",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_472_pasngr/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_472_pasngr/meta.json",
-    "model": "char_472_pasngr_epoque_17/build/build_char_472_pasngr_epoque_17",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_472_pasngr/char_472_pasngr_epoque_17/build/build_char_472_pasngr_epoque_17.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_472_pasngr/char_472_pasngr_epoque_17/build/build_char_472_pasngr_epoque_17.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_472_pasngr/char_472_pasngr_epoque_17/build/build_char_472_pasngr_epoque_17.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/472_pasngr_epoque#17",
+  "source_asset": {
+    "assetId": "build_char_472_pasngr_epoque#17",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "异客",
+    "appellation": "Passenger",
+    "skinGroupId": "2022#epoque#4",
+    "skinGroupName": "时代/XVII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_472_pasngr_epoque#17.atlas",
+      ".png": "build_char_472_pasngr_epoque#17.png",
+      ".skel": "build_char_472_pasngr_epoque#17.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/passenger/skin-epoque-17/meta.json",
-    "atlas": "standalone/assets/source/passenger/skin-epoque-17/build_char_472_pasngr_epoque_17.atlas",
-    "skeleton": "standalone/assets/source/passenger/skin-epoque-17/build_char_472_pasngr_epoque_17.skel",
+    "atlas": "standalone/assets/source/passenger/skin-epoque-17/build_char_472_pasngr_epoque#17.atlas",
+    "skeleton": "standalone/assets/source/passenger/skin-epoque-17/build_char_472_pasngr_epoque#17.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_472_pasngr/char_472_pasngr_epoque_17/build/build_char_472_pasngr_epoque_17.png",
-        "path": "standalone/assets/source/passenger/skin-epoque-17/build_char_472_pasngr_epoque_17.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/472_pasngr_epoque%2317/build_char_472_pasngr_epoque%2317.png",
+        "path": "standalone/assets/source/passenger/skin-epoque-17/build_char_472_pasngr_epoque#17.png",
+        "bytes": 752374,
+        "sha256": "0b8e1b46b8ccf317b67c39ac070ded5fdcddcd75b5c4f7d05aa220b121fe0a65"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15726,
+      "sha256": "bdd4ebcbe304f2f9c7d8314c2a8a8d1287bf9f3deffa0a4405e9bbb789d9b356"
+    },
+    "skeleton": {
+      "bytes": 478034,
+      "sha256": "84e8c633d55ace7af93c6262f73d8bd86a948dea1b405e4c314cc3fc53992ede"
+    }
   }
 }

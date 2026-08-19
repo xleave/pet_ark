@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mizuki",
   "character_name": "Mizuki",
   "localized_name": "水月",
@@ -9,25 +9,58 @@
   "variant_name": "永恒玩家",
   "skin_id": "game-6",
   "skin_name": "永恒玩家",
-  "source_page": "https://prts.wiki/w/%E6%B0%B4%E6%9C%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_437_mizuki/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_437_mizuki/meta.json",
-    "model": "char_437_mizuki_game_6/build/build_char_437_mizuki_game_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_437_mizuki/char_437_mizuki_game_6/build/build_char_437_mizuki_game_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_437_mizuki/char_437_mizuki_game_6/build/build_char_437_mizuki_game_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_437_mizuki/char_437_mizuki_game_6/build/build_char_437_mizuki_game_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/437_mizuki_game#6",
+  "source_asset": {
+    "assetId": "build_char_437_mizuki_game#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "水月",
+    "appellation": "Mizuki",
+    "skinGroupId": "2025#game#2",
+    "skinGroupName": "成就之星/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_437_mizuki_game#6.atlas",
+      ".png": "build_char_437_mizuki_game#6.png",
+      ".skel": "build_char_437_mizuki_game#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mizuki/skin-game-6/meta.json",
-    "atlas": "standalone/assets/source/mizuki/skin-game-6/build_char_437_mizuki_game_6.atlas",
-    "skeleton": "standalone/assets/source/mizuki/skin-game-6/build_char_437_mizuki_game_6.skel",
+    "atlas": "standalone/assets/source/mizuki/skin-game-6/build_char_437_mizuki_game#6.atlas",
+    "skeleton": "standalone/assets/source/mizuki/skin-game-6/build_char_437_mizuki_game#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_437_mizuki/char_437_mizuki_game_6/build/build_char_437_mizuki_game_6.png",
-        "path": "standalone/assets/source/mizuki/skin-game-6/build_char_437_mizuki_game_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/437_mizuki_game%236/build_char_437_mizuki_game%236.png",
+        "path": "standalone/assets/source/mizuki/skin-game-6/build_char_437_mizuki_game#6.png",
+        "bytes": 552923,
+        "sha256": "07b3a59edab2c7605c8d7933678d6d9b67fd31fda5230dc45fdb979359729509"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12449,
+      "sha256": "0e0d7d1bd0baceb723ee42b1ba8e06339f3356eebae0bd66e2badd773960c9ba"
+    },
+    "skeleton": {
+      "bytes": 315324,
+      "sha256": "8f1f94fc6761f002acde803f341d2ca477aedafaccd1e1abc01a0460894d8a54"
+    }
   }
 }

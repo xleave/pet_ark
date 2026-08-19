@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "aurora",
   "character_name": "Aurora",
   "localized_name": "极光",
@@ -9,25 +9,58 @@
   "variant_name": "极昼捕手",
   "skin_id": "boc-4",
   "skin_name": "极昼捕手",
-  "source_page": "https://prts.wiki/w/%E6%9E%81%E5%85%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_422_aurora/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_422_aurora/meta.json",
-    "model": "char_422_aurora_boc_4/build/build_char_422_aurora_boc_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_422_aurora/char_422_aurora_boc_4/build/build_char_422_aurora_boc_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_422_aurora/char_422_aurora_boc_4/build/build_char_422_aurora_boc_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_422_aurora/char_422_aurora_boc_4/build/build_char_422_aurora_boc_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/422_aurora_boc#4",
+  "source_asset": {
+    "assetId": "build_char_422_aurora_boc#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "极光",
+    "appellation": "Aurora",
+    "skinGroupId": "2022#boc",
+    "skinGroupName": "斗争血脉/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_422_aurora_boc#4.atlas",
+      ".png": "build_char_422_aurora_boc#4.png",
+      ".skel": "build_char_422_aurora_boc#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/aurora/skin-boc-4/meta.json",
-    "atlas": "standalone/assets/source/aurora/skin-boc-4/build_char_422_aurora_boc_4.atlas",
-    "skeleton": "standalone/assets/source/aurora/skin-boc-4/build_char_422_aurora_boc_4.skel",
+    "atlas": "standalone/assets/source/aurora/skin-boc-4/build_char_422_aurora_boc#4.atlas",
+    "skeleton": "standalone/assets/source/aurora/skin-boc-4/build_char_422_aurora_boc#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_422_aurora/char_422_aurora_boc_4/build/build_char_422_aurora_boc_4.png",
-        "path": "standalone/assets/source/aurora/skin-boc-4/build_char_422_aurora_boc_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/422_aurora_boc%234/build_char_422_aurora_boc%234.png",
+        "path": "standalone/assets/source/aurora/skin-boc-4/build_char_422_aurora_boc#4.png",
+        "bytes": 301779,
+        "sha256": "22d0bdc2220e60c760915d5767150f1b69cf398aa48faee43c7608eef9d48650"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9244,
+      "sha256": "9bc7915498b6983b8589189b1d09d2833d6492278143102b92343dcea651a201"
+    },
+    "skeleton": {
+      "bytes": 536872,
+      "sha256": "f1bf7c6d109afd365c0e34d3985c5a35cfd0b43ada3e3eaf8ae1751af816471e"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "astgenne-the-lightchaser",
   "character_name": "Astgenne the Lightchaser",
   "localized_name": "溯光星源",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%BA%AF%E5%85%89%E6%98%9F%E6%BA%90",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1047_halo2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1047_halo2/meta.json",
-    "model": "defaultskin/build/build_char_1047_halo2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1047_halo2/defaultskin/build/build_char_1047_halo2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1047_halo2/defaultskin/build/build_char_1047_halo2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1047_halo2/defaultskin/build/build_char_1047_halo2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1047_halo2",
+  "source_asset": {
+    "assetId": "build_char_1047_halo2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "溯光星源",
+    "appellation": "Astgenne the Lightchaser",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1047_halo2.atlas",
+      ".png": "build_char_1047_halo2.png",
+      ".skel": "build_char_1047_halo2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/astgenne-the-lightchaser/default/meta.json",
     "atlas": "standalone/assets/source/astgenne-the-lightchaser/default/build_char_1047_halo2.atlas",
     "skeleton": "standalone/assets/source/astgenne-the-lightchaser/default/build_char_1047_halo2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1047_halo2/defaultskin/build/build_char_1047_halo2.png",
-        "path": "standalone/assets/source/astgenne-the-lightchaser/default/build_char_1047_halo2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1047_halo2/build_char_1047_halo2.png",
+        "path": "standalone/assets/source/astgenne-the-lightchaser/default/build_char_1047_halo2.png",
+        "bytes": 495258,
+        "sha256": "81081f531b001fb1b85b2727aeb668501f000a5d3881806ea7061fac0d671fc6"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11222,
+      "sha256": "41cd1af9e5b0f480f3f4e1bcfad25260c75d94cdfe7849b173bc5ffc0d250cb8"
+    },
+    "skeleton": {
+      "bytes": 307009,
+      "sha256": "ea5b8baf54e1da04d977c58118c412660dc53386c3e3b3ba2b5e59743ebed901"
+    }
   }
 }

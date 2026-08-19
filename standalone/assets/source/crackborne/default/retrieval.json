@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "crackborne",
   "character_name": "Crackborne",
   "localized_name": "裂响",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%A3%82%E5%93%8D",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4225_tanya/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4225_tanya/meta.json",
-    "model": "defaultskin/build/build_char_4225_tanya",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4225_tanya/defaultskin/build/build_char_4225_tanya.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4225_tanya/defaultskin/build/build_char_4225_tanya.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4225_tanya/defaultskin/build/build_char_4225_tanya.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4225_tanya",
+  "source_asset": {
+    "assetId": "build_char_4225_tanya",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "裂响",
+    "appellation": "Crackborne",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4225_tanya.atlas",
+      ".png": "build_char_4225_tanya.png",
+      ".skel": "build_char_4225_tanya.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/crackborne/default/meta.json",
     "atlas": "standalone/assets/source/crackborne/default/build_char_4225_tanya.atlas",
     "skeleton": "standalone/assets/source/crackborne/default/build_char_4225_tanya.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4225_tanya/defaultskin/build/build_char_4225_tanya.png",
-        "path": "standalone/assets/source/crackborne/default/build_char_4225_tanya.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4225_tanya/build_char_4225_tanya.png",
+        "path": "standalone/assets/source/crackborne/default/build_char_4225_tanya.png",
+        "bytes": 306904,
+        "sha256": "061c05956017262dcf72cd83bfe6e755432eda742b08879e6fccaa5784fa4ecc"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11361,
+      "sha256": "5212f36f2e1071633c34593cc7e5548e0b3140462bf79225919a18e34d805c88"
+    },
+    "skeleton": {
+      "bytes": 209280,
+      "sha256": "722cd9b1bb92209bd8269fbbda94d716adffe46e7aacfbaa64fcb42ceb1daca2"
+    }
   }
 }

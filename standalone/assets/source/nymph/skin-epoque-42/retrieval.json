@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "nymph",
   "character_name": "Nymph",
   "localized_name": "妮芙",
@@ -9,25 +9,58 @@
   "variant_name": "甜美配方",
   "skin_id": "epoque-42",
   "skin_name": "甜美配方",
-  "source_page": "https://prts.wiki/w/%E5%A6%AE%E8%8A%99",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/meta.json",
-    "model": "char_4146_nymph_epoque_42/build/build_char_4146_nymph_epoque_42",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/char_4146_nymph_epoque_42/build/build_char_4146_nymph_epoque_42.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/char_4146_nymph_epoque_42/build/build_char_4146_nymph_epoque_42.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/char_4146_nymph_epoque_42/build/build_char_4146_nymph_epoque_42.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4146_nymph_epoque#42",
+  "source_asset": {
+    "assetId": "build_char_4146_nymph_epoque#42",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "妮芙",
+    "appellation": "Nymph",
+    "skinGroupId": "2025#epoque#4",
+    "skinGroupName": "时代/XLI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4146_nymph_epoque#42.atlas",
+      ".png": "build_char_4146_nymph_epoque#42.png",
+      ".skel": "build_char_4146_nymph_epoque#42.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/nymph/skin-epoque-42/meta.json",
-    "atlas": "standalone/assets/source/nymph/skin-epoque-42/build_char_4146_nymph_epoque_42.atlas",
-    "skeleton": "standalone/assets/source/nymph/skin-epoque-42/build_char_4146_nymph_epoque_42.skel",
+    "atlas": "standalone/assets/source/nymph/skin-epoque-42/build_char_4146_nymph_epoque#42.atlas",
+    "skeleton": "standalone/assets/source/nymph/skin-epoque-42/build_char_4146_nymph_epoque#42.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4146_nymph/char_4146_nymph_epoque_42/build/build_char_4146_nymph_epoque_42.png",
-        "path": "standalone/assets/source/nymph/skin-epoque-42/build_char_4146_nymph_epoque_42.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4146_nymph_epoque%2342/build_char_4146_nymph_epoque%2342.png",
+        "path": "standalone/assets/source/nymph/skin-epoque-42/build_char_4146_nymph_epoque#42.png",
+        "bytes": 609087,
+        "sha256": "8dae5e069cc5b712a9cf43e5d6c2dac16b2385dbb4efb88b263a072c76a64101"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 20157,
+      "sha256": "3653ef89da9a123c316af312392dbc9eb7263cee1202e82db8717110706f4342"
+    },
+    "skeleton": {
+      "bytes": 454759,
+      "sha256": "86e50279a3322b24fb80b20dacc296bc6d4869351e96e308e6143e492c1691f4"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "fiammetta",
   "character_name": "Fiammetta",
   "localized_name": "菲亚梅塔",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%8F%B2%E4%BA%9A%E6%A2%85%E5%A1%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_300_phenxi/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_300_phenxi/meta.json",
-    "model": "defaultskin/build/build_char_300_phenxi",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_300_phenxi/defaultskin/build/build_char_300_phenxi.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_300_phenxi/defaultskin/build/build_char_300_phenxi.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_300_phenxi/defaultskin/build/build_char_300_phenxi.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/300_phenxi",
+  "source_asset": {
+    "assetId": "build_char_300_phenxi",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "菲亚梅塔",
+    "appellation": "Fiammetta",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_300_phenxi.atlas",
+      ".png": "build_char_300_phenxi.png",
+      ".skel": "build_char_300_phenxi.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/fiammetta/default/meta.json",
     "atlas": "standalone/assets/source/fiammetta/default/build_char_300_phenxi.atlas",
     "skeleton": "standalone/assets/source/fiammetta/default/build_char_300_phenxi.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_300_phenxi/defaultskin/build/build_char_300_phenxi.png",
-        "path": "standalone/assets/source/fiammetta/default/build_char_300_phenxi.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/300_phenxi/build_char_300_phenxi.png",
+        "path": "standalone/assets/source/fiammetta/default/build_char_300_phenxi.png",
+        "bytes": 203183,
+        "sha256": "9e32afdf2b508ff1342315710976ca0f595ba8a17806e010eeeba7999ccc4468"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7077,
+      "sha256": "994f39d425bd1ad310532af166ae4dd422dd30cd560d90a9279b7c230c226f9a"
+    },
+    "skeleton": {
+      "bytes": 110831,
+      "sha256": "b30f1dab58045cc65f18563e1b09bbd60ac910c9fcb7450a7c8a3bb5a41812d5"
+    }
   }
 }

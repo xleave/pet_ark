@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "matoimaru",
   "character_name": "Matoimaru",
   "localized_name": "缠丸",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%BC%A0%E4%B8%B8",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_289_gyuki/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_289_gyuki/meta.json",
-    "model": "defaultskin/build/build_char_289_gyuki",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_289_gyuki/defaultskin/build/build_char_289_gyuki.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_289_gyuki/defaultskin/build/build_char_289_gyuki.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_289_gyuki/defaultskin/build/build_char_289_gyuki.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/289_gyuki",
+  "source_asset": {
+    "assetId": "build_char_289_gyuki",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "缠丸",
+    "appellation": "Matoimaru",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_289_gyuki.atlas",
+      ".png": "build_char_289_gyuki.png",
+      ".skel": "build_char_289_gyuki.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/matoimaru/default/meta.json",
     "atlas": "standalone/assets/source/matoimaru/default/build_char_289_gyuki.atlas",
     "skeleton": "standalone/assets/source/matoimaru/default/build_char_289_gyuki.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_289_gyuki/defaultskin/build/build_char_289_gyuki.png",
-        "path": "standalone/assets/source/matoimaru/default/build_char_289_gyuki.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/289_gyuki/build_char_289_gyuki.png",
+        "path": "standalone/assets/source/matoimaru/default/build_char_289_gyuki.png",
+        "bytes": 289840,
+        "sha256": "4b276778ae25fff2ad0ae6fe0802e8ac89e24cba420aaff8983194eb7aeee41d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5572,
+      "sha256": "263c9d2e2cb1cfc66d7789205afc4557be30e08b620322a0d0450f8d16e9e1d2"
+    },
+    "skeleton": {
+      "bytes": 111052,
+      "sha256": "3186300ef43e81c5482519e6b6f76508e0c4ddd7ab6475113bc43dfe79605c29"
+    }
   }
 }

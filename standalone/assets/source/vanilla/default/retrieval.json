@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "vanilla",
   "character_name": "Vanilla",
   "localized_name": "香草",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%A6%99%E8%8D%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_240_wyvern/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_240_wyvern/meta.json",
-    "model": "defaultskin/build/build_char_240_wyvern",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_240_wyvern/defaultskin/build/build_char_240_wyvern.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_240_wyvern/defaultskin/build/build_char_240_wyvern.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_240_wyvern/defaultskin/build/build_char_240_wyvern.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/240_wyvern",
+  "source_asset": {
+    "assetId": "build_char_240_wyvern",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "香草",
+    "appellation": "Vanilla",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_3"
+    ],
+    "assetList": {
+      ".atlas": "build_char_240_wyvern.atlas",
+      ".png": "build_char_240_wyvern.png",
+      ".skel": "build_char_240_wyvern.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/vanilla/default/meta.json",
     "atlas": "standalone/assets/source/vanilla/default/build_char_240_wyvern.atlas",
     "skeleton": "standalone/assets/source/vanilla/default/build_char_240_wyvern.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_240_wyvern/defaultskin/build/build_char_240_wyvern.png",
-        "path": "standalone/assets/source/vanilla/default/build_char_240_wyvern.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/240_wyvern/build_char_240_wyvern.png",
+        "path": "standalone/assets/source/vanilla/default/build_char_240_wyvern.png",
+        "bytes": 185546,
+        "sha256": "cf10d61fade7e74d85cdea2f0becadf7e9be8d41f8813ee736283f678c37cdb2"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6323,
+      "sha256": "c0f495ceaef5d0b8a4a7877475802eef221f65925d2fd52a81b7546636f71eda"
+    },
+    "skeleton": {
+      "bytes": 52078,
+      "sha256": "76eccf94014dddef1f9bdcdf1acc3e597e27fcfd4881c45f8ec3ea3b6fcefacb"
+    }
   }
 }

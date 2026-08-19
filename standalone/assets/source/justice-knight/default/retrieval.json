@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "justice-knight",
   "character_name": "\"Justice Knight\"",
   "localized_name": "正义骑士号",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%AD%A3%E4%B9%89%E9%AA%91%E5%A3%AB%E5%8F%B7",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4000_jnight/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4000_jnight/meta.json",
-    "model": "defaultskin/build/build_char_4000_jnight",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4000_jnight/defaultskin/build/build_char_4000_jnight.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4000_jnight/defaultskin/build/build_char_4000_jnight.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4000_jnight/defaultskin/build/build_char_4000_jnight.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4000_jnight",
+  "source_asset": {
+    "assetId": "build_char_4000_jnight",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "正义骑士号",
+    "appellation": "\"Justice Knight\"",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_1"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4000_jnight.atlas",
+      ".png": "build_char_4000_jnight.png",
+      ".skel": "build_char_4000_jnight.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/justice-knight/default/meta.json",
     "atlas": "standalone/assets/source/justice-knight/default/build_char_4000_jnight.atlas",
     "skeleton": "standalone/assets/source/justice-knight/default/build_char_4000_jnight.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4000_jnight/defaultskin/build/build_char_4000_jnight.png",
-        "path": "standalone/assets/source/justice-knight/default/build_char_4000_jnight.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4000_jnight/build_char_4000_jnight.png",
+        "path": "standalone/assets/source/justice-knight/default/build_char_4000_jnight.png",
+        "bytes": 161675,
+        "sha256": "7e0b7746b76ece5d98aeb4fc7772242247b0bd808e5ceb4aabbdfc1db49ecfd0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5806,
+      "sha256": "6789ccef77b3a344e4aea8e4a4d5ef40c8911a1ad09987740f28597442d9bc76"
+    },
+    "skeleton": {
+      "bytes": 63417,
+      "sha256": "c61c21c1b41431c8eabe3a5bed9ab15c814a27ac12f2198ee5971c3a46c73103"
+    }
   }
 }

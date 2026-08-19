@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "viviana",
   "character_name": "Viviana",
   "localized_name": "薇薇安娜",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%96%87%E8%96%87%E5%AE%89%E5%A8%9C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4098_vvana/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4098_vvana/meta.json",
-    "model": "defaultskin/build/build_char_4098_vvana",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4098_vvana/defaultskin/build/build_char_4098_vvana.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4098_vvana/defaultskin/build/build_char_4098_vvana.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4098_vvana/defaultskin/build/build_char_4098_vvana.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4098_vvana",
+  "source_asset": {
+    "assetId": "build_char_4098_vvana",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "薇薇安娜",
+    "appellation": "Viviana",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4098_vvana.atlas",
+      ".png": "build_char_4098_vvana.png",
+      ".skel": "build_char_4098_vvana.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/viviana/default/meta.json",
     "atlas": "standalone/assets/source/viviana/default/build_char_4098_vvana.atlas",
     "skeleton": "standalone/assets/source/viviana/default/build_char_4098_vvana.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4098_vvana/defaultskin/build/build_char_4098_vvana.png",
-        "path": "standalone/assets/source/viviana/default/build_char_4098_vvana.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4098_vvana/build_char_4098_vvana.png",
+        "path": "standalone/assets/source/viviana/default/build_char_4098_vvana.png",
+        "bytes": 405502,
+        "sha256": "69135a2323d9c756e1904c0987c14f8eda3aa6c4b112a469bb50607b5431e846"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14081,
+      "sha256": "329eb56649b7321c3db74cca00c6725553c64b72e4ebc091e10d1f7e57aebe5e"
+    },
+    "skeleton": {
+      "bytes": 369724,
+      "sha256": "d356dd9a205547643c00e1372e87326b2577b5662b98758774cc60f36ddc4b77"
+    }
   }
 }

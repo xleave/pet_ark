@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "chiave",
   "character_name": "Chiave",
   "localized_name": "贾维",
@@ -9,25 +9,58 @@
   "variant_name": "一人车队",
   "skin_id": "race-2",
   "skin_name": "一人车队",
-  "source_page": "https://prts.wiki/w/%E8%B4%BE%E7%BB%B4",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_349_chiave/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_349_chiave/meta.json",
-    "model": "char_349_chiave_race_2/build/build_char_349_chiave_race_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_349_chiave/char_349_chiave_race_2/build/build_char_349_chiave_race_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_349_chiave/char_349_chiave_race_2/build/build_char_349_chiave_race_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_349_chiave/char_349_chiave_race_2/build/build_char_349_chiave_race_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/349_chiave_race#2",
+  "source_asset": {
+    "assetId": "build_char_349_chiave_race#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "贾维",
+    "appellation": "Chiave",
+    "skinGroupId": "2025#race",
+    "skinGroupName": "啸风/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_349_chiave_race#2.atlas",
+      ".png": "build_char_349_chiave_race#2.png",
+      ".skel": "build_char_349_chiave_race#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/chiave/skin-race-2/meta.json",
-    "atlas": "standalone/assets/source/chiave/skin-race-2/build_char_349_chiave_race_2.atlas",
-    "skeleton": "standalone/assets/source/chiave/skin-race-2/build_char_349_chiave_race_2.skel",
+    "atlas": "standalone/assets/source/chiave/skin-race-2/build_char_349_chiave_race#2.atlas",
+    "skeleton": "standalone/assets/source/chiave/skin-race-2/build_char_349_chiave_race#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_349_chiave/char_349_chiave_race_2/build/build_char_349_chiave_race_2.png",
-        "path": "standalone/assets/source/chiave/skin-race-2/build_char_349_chiave_race_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/349_chiave_race%232/build_char_349_chiave_race%232.png",
+        "path": "standalone/assets/source/chiave/skin-race-2/build_char_349_chiave_race#2.png",
+        "bytes": 342283,
+        "sha256": "9f064855c18a9633db4bbac3fc6389e5c139601f75c62a96f439a65adb2fe2b4"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9778,
+      "sha256": "84058c148027e6a66c4f8ce5710ace23957c6ef0abedf2f9b7250d209b22be36"
+    },
+    "skeleton": {
+      "bytes": 187274,
+      "sha256": "7741f486d0322827a923f76afe7e2a38c2316ff172754d7a8617750aa44bbac4"
+    }
   }
 }

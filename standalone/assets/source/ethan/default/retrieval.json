@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ethan",
   "character_name": "Ethan",
   "localized_name": "伊桑",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E4%BC%8A%E6%A1%91",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_355_ethan/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_355_ethan/meta.json",
-    "model": "defaultskin/build/build_char_355_ethan",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_355_ethan/defaultskin/build/build_char_355_ethan.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_355_ethan/defaultskin/build/build_char_355_ethan.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_355_ethan/defaultskin/build/build_char_355_ethan.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/355_ethan",
+  "source_asset": {
+    "assetId": "build_char_355_ethan",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "伊桑",
+    "appellation": "Ethan",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_355_ethan.atlas",
+      ".png": "build_char_355_ethan.png",
+      ".skel": "build_char_355_ethan.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ethan/default/meta.json",
     "atlas": "standalone/assets/source/ethan/default/build_char_355_ethan.atlas",
     "skeleton": "standalone/assets/source/ethan/default/build_char_355_ethan.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_355_ethan/defaultskin/build/build_char_355_ethan.png",
-        "path": "standalone/assets/source/ethan/default/build_char_355_ethan.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/355_ethan/build_char_355_ethan.png",
+        "path": "standalone/assets/source/ethan/default/build_char_355_ethan.png",
+        "bytes": 221024,
+        "sha256": "5b4d8bc8b70ee08407b56f86ba143919b3c8e54fc300c26e3eba0c5e05881aaf"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6154,
+      "sha256": "e62ff16dce70d9e37a008da784adaf1f635d15354f9e9f4c8534a8864661e1ff"
+    },
+    "skeleton": {
+      "bytes": 163497,
+      "sha256": "a86c3ebb847e1081faf1bdc6781704b961246e39c5ed58f8e59e248f28c0c7d1"
+    }
   }
 }

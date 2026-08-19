@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lutonada",
   "character_name": "Lutonada",
   "localized_name": "露托",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%9C%B2%E6%89%98",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4130_luton/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4130_luton/meta.json",
-    "model": "defaultskin/build/build_char_4130_luton",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4130_luton/defaultskin/build/build_char_4130_luton.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4130_luton/defaultskin/build/build_char_4130_luton.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4130_luton/defaultskin/build/build_char_4130_luton.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4130_luton",
+  "source_asset": {
+    "assetId": "build_char_4130_luton",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "露托",
+    "appellation": "Lutonada",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4130_luton.atlas",
+      ".png": "build_char_4130_luton.png",
+      ".skel": "build_char_4130_luton.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lutonada/default/meta.json",
     "atlas": "standalone/assets/source/lutonada/default/build_char_4130_luton.atlas",
     "skeleton": "standalone/assets/source/lutonada/default/build_char_4130_luton.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4130_luton/defaultskin/build/build_char_4130_luton.png",
-        "path": "standalone/assets/source/lutonada/default/build_char_4130_luton.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4130_luton/build_char_4130_luton.png",
+        "path": "standalone/assets/source/lutonada/default/build_char_4130_luton.png",
+        "bytes": 265611,
+        "sha256": "f3264d255b7e3ac001fbc071ab1574662b0104c0029d4747cf48411dfade61ac"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9936,
+      "sha256": "71cad321294b8188046b09152bcc33c9f7d596d0a9b66933a518ec0a43a521a5"
+    },
+    "skeleton": {
+      "bytes": 160112,
+      "sha256": "90c51a6d26746a4efb24cda60053c3d6e6ded686f929a0f3dba2a156aba1bf91"
+    }
   }
 }

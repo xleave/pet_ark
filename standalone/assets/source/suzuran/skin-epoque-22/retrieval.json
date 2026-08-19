@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "suzuran",
   "character_name": "Suzuran",
   "localized_name": "铃兰",
@@ -9,25 +9,58 @@
   "variant_name": "雪霁",
   "skin_id": "epoque-22",
   "skin_name": "雪霁",
-  "source_page": "https://prts.wiki/w/%E9%93%83%E5%85%B0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/meta.json",
-    "model": "char_358_lisa_epoque_22/build/build_char_358_lisa_epoque_22",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/char_358_lisa_epoque_22/build/build_char_358_lisa_epoque_22.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/char_358_lisa_epoque_22/build/build_char_358_lisa_epoque_22.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/char_358_lisa_epoque_22/build/build_char_358_lisa_epoque_22.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/358_lisa_epoque#22",
+  "source_asset": {
+    "assetId": "build_char_358_lisa_epoque#22",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "铃兰",
+    "appellation": "Suzuran",
+    "skinGroupId": "2023#epoque#4",
+    "skinGroupName": "时代/XXII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_358_lisa_epoque#22.atlas",
+      ".png": "build_char_358_lisa_epoque#22.png",
+      ".skel": "build_char_358_lisa_epoque#22.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/suzuran/skin-epoque-22/meta.json",
-    "atlas": "standalone/assets/source/suzuran/skin-epoque-22/build_char_358_lisa_epoque_22.atlas",
-    "skeleton": "standalone/assets/source/suzuran/skin-epoque-22/build_char_358_lisa_epoque_22.skel",
+    "atlas": "standalone/assets/source/suzuran/skin-epoque-22/build_char_358_lisa_epoque#22.atlas",
+    "skeleton": "standalone/assets/source/suzuran/skin-epoque-22/build_char_358_lisa_epoque#22.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_358_lisa/char_358_lisa_epoque_22/build/build_char_358_lisa_epoque_22.png",
-        "path": "standalone/assets/source/suzuran/skin-epoque-22/build_char_358_lisa_epoque_22.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/358_lisa_epoque%2322/build_char_358_lisa_epoque%2322.png",
+        "path": "standalone/assets/source/suzuran/skin-epoque-22/build_char_358_lisa_epoque#22.png",
+        "bytes": 513296,
+        "sha256": "a34e06a361c17bff26db7970f6e5eb98e4f597dea6fa7b6bcc71e5ea82cf6ae8"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13252,
+      "sha256": "056b5e71eced8a0ac030c710121982d9cd4a598a39f30a1e5f821aa6a7910f4e"
+    },
+    "skeleton": {
+      "bytes": 747352,
+      "sha256": "9167121102954d34bedee2cc7e83a316e45ed535174a5bb5d9ab68001490252d"
+    }
   }
 }

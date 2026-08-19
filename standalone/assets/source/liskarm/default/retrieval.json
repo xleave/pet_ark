@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "liskarm",
   "character_name": "Liskarm",
   "localized_name": "雷蛇",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%9B%B7%E8%9B%87",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/meta.json",
-    "model": "defaultskin/build/build_char_107_liskam",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/defaultskin/build/build_char_107_liskam.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/defaultskin/build/build_char_107_liskam.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/defaultskin/build/build_char_107_liskam.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/107_liskam",
+  "source_asset": {
+    "assetId": "build_char_107_liskam",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "雷蛇",
+    "appellation": "Liskarm",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_107_liskam.atlas",
+      ".png": "build_char_107_liskam.png",
+      ".skel": "build_char_107_liskam.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/liskarm/default/meta.json",
     "atlas": "standalone/assets/source/liskarm/default/build_char_107_liskam.atlas",
     "skeleton": "standalone/assets/source/liskarm/default/build_char_107_liskam.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/defaultskin/build/build_char_107_liskam.png",
-        "path": "standalone/assets/source/liskarm/default/build_char_107_liskam.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/107_liskam/build_char_107_liskam.png",
+        "path": "standalone/assets/source/liskarm/default/build_char_107_liskam.png",
+        "bytes": 192699,
+        "sha256": "2deddd00c76656abca4e1f7ffcd2539d4dcafdd444be9b6d52ef3e9e80cac6de"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5817,
+      "sha256": "52a962160d5be2f3ff5fb18ec1076c9825ee0e7eccee89ff54bb3c9d8c75676e"
+    },
+    "skeleton": {
+      "bytes": 84966,
+      "sha256": "5d839614f25e5e5b8ee7ea13f07de17ab3bc89d590e1a6d7839a99e0b3864ecb"
+    }
   }
 }

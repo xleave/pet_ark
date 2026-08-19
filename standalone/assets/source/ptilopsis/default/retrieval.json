@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ptilopsis",
   "character_name": "Ptilopsis",
   "localized_name": "白面鸮",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%99%BD%E9%9D%A2%E9%B8%AE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_128_plosis/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_128_plosis/meta.json",
-    "model": "defaultskin/build/build_char_128_plosis",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_128_plosis/defaultskin/build/build_char_128_plosis.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_128_plosis/defaultskin/build/build_char_128_plosis.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_128_plosis/defaultskin/build/build_char_128_plosis.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/128_plosis",
+  "source_asset": {
+    "assetId": "build_char_128_plosis",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "白面鸮",
+    "appellation": "Ptilopsis",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_128_plosis.atlas",
+      ".png": "build_char_128_plosis.png",
+      ".skel": "build_char_128_plosis.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ptilopsis/default/meta.json",
     "atlas": "standalone/assets/source/ptilopsis/default/build_char_128_plosis.atlas",
     "skeleton": "standalone/assets/source/ptilopsis/default/build_char_128_plosis.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_128_plosis/defaultskin/build/build_char_128_plosis.png",
-        "path": "standalone/assets/source/ptilopsis/default/build_char_128_plosis.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/128_plosis/build_char_128_plosis.png",
+        "path": "standalone/assets/source/ptilopsis/default/build_char_128_plosis.png",
+        "bytes": 180132,
+        "sha256": "c2464f34f199e4ddcae383dc4de719ec8bb82ebde267437672938c6b821dcdbc"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5277,
+      "sha256": "2a3bc28e29d358463646efe00d5b29979892a793d8aa4cf3e370e0242053a0a3"
+    },
+    "skeleton": {
+      "bytes": 74897,
+      "sha256": "f9bc716c93275ab17153df2ebd030d52d467226dfd36c8f8a91b06cbe9827ace"
+    }
   }
 }

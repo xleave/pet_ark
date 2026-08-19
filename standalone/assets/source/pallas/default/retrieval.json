@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "pallas",
   "character_name": "Pallas",
   "localized_name": "帕拉斯",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%B8%95%E6%8B%89%E6%96%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_485_pallas/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_485_pallas/meta.json",
-    "model": "defaultskin/build/build_char_485_pallas",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_485_pallas/defaultskin/build/build_char_485_pallas.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_485_pallas/defaultskin/build/build_char_485_pallas.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_485_pallas/defaultskin/build/build_char_485_pallas.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/485_pallas",
+  "source_asset": {
+    "assetId": "build_char_485_pallas",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "帕拉斯",
+    "appellation": "Pallas",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_485_pallas.atlas",
+      ".png": "build_char_485_pallas.png",
+      ".skel": "build_char_485_pallas.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/pallas/default/meta.json",
     "atlas": "standalone/assets/source/pallas/default/build_char_485_pallas.atlas",
     "skeleton": "standalone/assets/source/pallas/default/build_char_485_pallas.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_485_pallas/defaultskin/build/build_char_485_pallas.png",
-        "path": "standalone/assets/source/pallas/default/build_char_485_pallas.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/485_pallas/build_char_485_pallas.png",
+        "path": "standalone/assets/source/pallas/default/build_char_485_pallas.png",
+        "bytes": 311151,
+        "sha256": "f7844be9962918dd777fd408f747a6f28a2f79943abe8bdaf1948cd85cebb2e5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10540,
+      "sha256": "b57a2a030a1a078496ee9e2617773ea248c710492e05bc082a43e99c2212a87c"
+    },
+    "skeleton": {
+      "bytes": 331424,
+      "sha256": "a207d5d89bcfbdb8c999edd2f4329275008e8f527d2a4bd9b70d39986a45fc7c"
+    }
   }
 }

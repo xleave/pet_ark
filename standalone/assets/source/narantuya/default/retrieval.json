@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "narantuya",
   "character_name": "Narantuya",
   "localized_name": "娜仁图亚",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%A8%9C%E4%BB%81%E5%9B%BE%E4%BA%9A",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/meta.json",
-    "model": "defaultskin/build/build_char_4138_narant",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/defaultskin/build/build_char_4138_narant.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/defaultskin/build/build_char_4138_narant.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/defaultskin/build/build_char_4138_narant.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4138_narant",
+  "source_asset": {
+    "assetId": "build_char_4138_narant",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "娜仁图亚",
+    "appellation": "Narantuya",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4138_narant.atlas",
+      ".png": "build_char_4138_narant.png",
+      ".skel": "build_char_4138_narant.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/narantuya/default/meta.json",
     "atlas": "standalone/assets/source/narantuya/default/build_char_4138_narant.atlas",
     "skeleton": "standalone/assets/source/narantuya/default/build_char_4138_narant.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/defaultskin/build/build_char_4138_narant.png",
-        "path": "standalone/assets/source/narantuya/default/build_char_4138_narant.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4138_narant/build_char_4138_narant.png",
+        "path": "standalone/assets/source/narantuya/default/build_char_4138_narant.png",
+        "bytes": 385894,
+        "sha256": "c6d3d222fddb93af402d1d767a6553949965ebd3b4757f5c58adb2555e679931"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9476,
+      "sha256": "de2df2387bc35e88cc1631432cf64b6918ec2edcdba3d8f677b74761fdfa985b"
+    },
+    "skeleton": {
+      "bytes": 298500,
+      "sha256": "40333bacd2b359191877c3f36f406ef2c00176bb3b7fe5b82b7a16fecaf35b90"
+    }
   }
 }

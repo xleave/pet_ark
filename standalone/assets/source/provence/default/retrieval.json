@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "provence",
   "character_name": "Provence",
   "localized_name": "普罗旺斯",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%99%AE%E7%BD%97%E6%97%BA%E6%96%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_145_prove/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_145_prove/meta.json",
-    "model": "defaultskin/build/build_char_145_prove",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_145_prove/defaultskin/build/build_char_145_prove.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_145_prove/defaultskin/build/build_char_145_prove.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_145_prove/defaultskin/build/build_char_145_prove.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/145_prove",
+  "source_asset": {
+    "assetId": "build_char_145_prove",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "普罗旺斯",
+    "appellation": "Provence",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_145_prove.atlas",
+      ".png": "build_char_145_prove.png",
+      ".skel": "build_char_145_prove.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/provence/default/meta.json",
     "atlas": "standalone/assets/source/provence/default/build_char_145_prove.atlas",
     "skeleton": "standalone/assets/source/provence/default/build_char_145_prove.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_145_prove/defaultskin/build/build_char_145_prove.png",
-        "path": "standalone/assets/source/provence/default/build_char_145_prove.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/145_prove/build_char_145_prove.png",
+        "path": "standalone/assets/source/provence/default/build_char_145_prove.png",
+        "bytes": 213778,
+        "sha256": "7b9ef76638d712876115745e1e0bfbd43689a9ff33f0d3b05d36b52962ecc54a"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5386,
+      "sha256": "bacc066f847a8b7c2a6cee8dcb9a8e8b62082f38e95bef791f98268f7b197cf8"
+    },
+    "skeleton": {
+      "bytes": 65849,
+      "sha256": "deff8ba67c13b61dcaac62047529cb59d5f57294e0686446b14ef8f5386a520d"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "rhodes-island-recon",
   "character_name": "Rhodes Island Recon",
   "localized_name": "罗德岛隐秘队",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%BD%97%E5%BE%B7%E5%B2%9B%E9%9A%90%E7%A7%98%E9%98%9F",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4215_buddy/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4215_buddy/meta.json",
-    "model": "defaultskin/build/build_char_4215_buddy",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4215_buddy/defaultskin/build/build_char_4215_buddy.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4215_buddy/defaultskin/build/build_char_4215_buddy.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4215_buddy/defaultskin/build/build_char_4215_buddy.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4215_buddy",
+  "source_asset": {
+    "assetId": "build_char_4215_buddy",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "罗德岛隐秘队",
+    "appellation": "Rhodes Island Recon",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_1"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4215_buddy.atlas",
+      ".png": "build_char_4215_buddy.png",
+      ".skel": "build_char_4215_buddy.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/rhodes-island-recon/default/meta.json",
     "atlas": "standalone/assets/source/rhodes-island-recon/default/build_char_4215_buddy.atlas",
     "skeleton": "standalone/assets/source/rhodes-island-recon/default/build_char_4215_buddy.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4215_buddy/defaultskin/build/build_char_4215_buddy.png",
-        "path": "standalone/assets/source/rhodes-island-recon/default/build_char_4215_buddy.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4215_buddy/build_char_4215_buddy.png",
+        "path": "standalone/assets/source/rhodes-island-recon/default/build_char_4215_buddy.png",
+        "bytes": 1335949,
+        "sha256": "552e27ffc1ef76a9f6e9f797b28c078329bcf6c125427cca4927f8a0a9205d06"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 31548,
+      "sha256": "02b2735772f8014f5502905e3b4828adec10a2bb1fbe6fdb7c4e06783350e7db"
+    },
+    "skeleton": {
+      "bytes": 433421,
+      "sha256": "a47de178ce629feaaf309a7f6eb083af8f9d80b3058d9bf8eb3ec8e0206afb62"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "bagpipe",
   "character_name": "Bagpipe",
   "localized_name": "风笛",
@@ -9,25 +9,58 @@
   "variant_name": "风笛声声",
   "skin_id": "epoque-40",
   "skin_name": "风笛声声",
-  "source_page": "https://prts.wiki/w/%E9%A3%8E%E7%AC%9B",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/meta.json",
-    "model": "char_222_bpipe_epoque_40/build/build_char_222_bpipe_epoque_40",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/char_222_bpipe_epoque_40/build/build_char_222_bpipe_epoque_40.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/char_222_bpipe_epoque_40/build/build_char_222_bpipe_epoque_40.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/char_222_bpipe_epoque_40/build/build_char_222_bpipe_epoque_40.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/222_bpipe_epoque#40",
+  "source_asset": {
+    "assetId": "build_char_222_bpipe_epoque#40",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "风笛",
+    "appellation": "Bagpipe",
+    "skinGroupId": "2025#epoque#2",
+    "skinGroupName": "时代/XXXIX",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_222_bpipe_epoque#40.atlas",
+      ".png": "build_char_222_bpipe_epoque#40.png",
+      ".skel": "build_char_222_bpipe_epoque#40.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/bagpipe/skin-epoque-40/meta.json",
-    "atlas": "standalone/assets/source/bagpipe/skin-epoque-40/build_char_222_bpipe_epoque_40.atlas",
-    "skeleton": "standalone/assets/source/bagpipe/skin-epoque-40/build_char_222_bpipe_epoque_40.skel",
+    "atlas": "standalone/assets/source/bagpipe/skin-epoque-40/build_char_222_bpipe_epoque#40.atlas",
+    "skeleton": "standalone/assets/source/bagpipe/skin-epoque-40/build_char_222_bpipe_epoque#40.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/char_222_bpipe_epoque_40/build/build_char_222_bpipe_epoque_40.png",
-        "path": "standalone/assets/source/bagpipe/skin-epoque-40/build_char_222_bpipe_epoque_40.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/222_bpipe_epoque%2340/build_char_222_bpipe_epoque%2340.png",
+        "path": "standalone/assets/source/bagpipe/skin-epoque-40/build_char_222_bpipe_epoque#40.png",
+        "bytes": 456024,
+        "sha256": "c9385f2807ee7b1facf9336424f9e90d0d62ab4a1ad876feba12af810c4808f7"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14316,
+      "sha256": "6451f720af272e7e8b0565498a1d3cc14eaa4ea6130259113cef0b4bcae0441b"
+    },
+    "skeleton": {
+      "bytes": 726693,
+      "sha256": "251463e2bcb7ec347bbc3d94b456f334ed984319c3708ebff413926d871df96b"
+    }
   }
 }

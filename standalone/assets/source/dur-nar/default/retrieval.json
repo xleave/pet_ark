@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "dur-nar",
   "character_name": "Dur-nar",
   "localized_name": "坚雷",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%9D%9A%E9%9B%B7",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_260_durnar/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_260_durnar/meta.json",
-    "model": "defaultskin/build/build_char_260_durnar",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_260_durnar/defaultskin/build/build_char_260_durnar.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_260_durnar/defaultskin/build/build_char_260_durnar.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_260_durnar/defaultskin/build/build_char_260_durnar.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/260_durnar",
+  "source_asset": {
+    "assetId": "build_char_260_durnar",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "坚雷",
+    "appellation": "Dur-nar",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_260_durnar.atlas",
+      ".png": "build_char_260_durnar.png",
+      ".skel": "build_char_260_durnar.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/dur-nar/default/meta.json",
     "atlas": "standalone/assets/source/dur-nar/default/build_char_260_durnar.atlas",
     "skeleton": "standalone/assets/source/dur-nar/default/build_char_260_durnar.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_260_durnar/defaultskin/build/build_char_260_durnar.png",
-        "path": "standalone/assets/source/dur-nar/default/build_char_260_durnar.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/260_durnar/build_char_260_durnar.png",
+        "path": "standalone/assets/source/dur-nar/default/build_char_260_durnar.png",
+        "bytes": 206499,
+        "sha256": "97810d5a876f95da7b4402ec3d26ed21e1f72f54c6131be76fa995fefb552524"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6141,
+      "sha256": "59e80bab9af4d23878768029027a82ea9c309cb0c2475ac02230e27ecc4cdce3"
+    },
+    "skeleton": {
+      "bytes": 78047,
+      "sha256": "6e1f89ea871315bf252b730693d07c913cf5850818098fd7559a2ac574b39983"
+    }
   }
 }

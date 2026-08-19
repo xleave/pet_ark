@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lunacub",
   "character_name": "Lunacub",
   "localized_name": "子月",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%AD%90%E6%9C%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4014_lunacu/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4014_lunacu/meta.json",
-    "model": "defaultskin/build/char_4014_lunacu",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4014_lunacu/defaultskin/build/char_4014_lunacu.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4014_lunacu/defaultskin/build/char_4014_lunacu.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4014_lunacu/defaultskin/build/char_4014_lunacu.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4014_lunacu",
+  "source_asset": {
+    "assetId": "build_char_4014_lunacu",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "子月",
+    "appellation": "Lunacub",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "char_4014_lunacu.atlas",
+      ".png": "char_4014_lunacu.png",
+      ".skel": "char_4014_lunacu.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lunacub/default/meta.json",
     "atlas": "standalone/assets/source/lunacub/default/char_4014_lunacu.atlas",
     "skeleton": "standalone/assets/source/lunacub/default/char_4014_lunacu.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4014_lunacu/defaultskin/build/char_4014_lunacu.png",
-        "path": "standalone/assets/source/lunacub/default/char_4014_lunacu.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4014_lunacu/char_4014_lunacu.png",
+        "path": "standalone/assets/source/lunacub/default/char_4014_lunacu.png",
+        "bytes": 358741,
+        "sha256": "7e3b7e7213be4dc6f30e2941228990979732966d89ad3a1ef8d9ff0cc945a37c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8550,
+      "sha256": "f0d5f5d672186896a53a99135b273e02b0dadb75e45dcabb17806a156a02af34"
+    },
+    "skeleton": {
+      "bytes": 236280,
+      "sha256": "08a28e5731a81676cd0f1c27cba10dddbccbba10d53222a9b869a2f1fd9870eb"
+    }
   }
 }

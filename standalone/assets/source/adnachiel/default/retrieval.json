@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "adnachiel",
   "character_name": "Adnachiel",
   "localized_name": "安德切尔",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%AE%89%E5%BE%B7%E5%88%87%E5%B0%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_211_adnach/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_211_adnach/meta.json",
-    "model": "defaultskin/build/build_char_211_adnach",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_211_adnach/defaultskin/build/build_char_211_adnach.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_211_adnach/defaultskin/build/build_char_211_adnach.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_211_adnach/defaultskin/build/build_char_211_adnach.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/211_adnach",
+  "source_asset": {
+    "assetId": "build_char_211_adnach",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "安德切尔",
+    "appellation": "Adnachiel",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_3"
+    ],
+    "assetList": {
+      ".atlas": "build_char_211_adnach.atlas",
+      ".png": "build_char_211_adnach.png",
+      ".skel": "build_char_211_adnach.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/adnachiel/default/meta.json",
     "atlas": "standalone/assets/source/adnachiel/default/build_char_211_adnach.atlas",
     "skeleton": "standalone/assets/source/adnachiel/default/build_char_211_adnach.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_211_adnach/defaultskin/build/build_char_211_adnach.png",
-        "path": "standalone/assets/source/adnachiel/default/build_char_211_adnach.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/211_adnach/build_char_211_adnach.png",
+        "path": "standalone/assets/source/adnachiel/default/build_char_211_adnach.png",
+        "bytes": 220473,
+        "sha256": "7a905a79a0272fea724fe7225ec9b2d7689f2dcd87035dd80af346bc1539f071"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6509,
+      "sha256": "4da510ecd1fb7e4f77675e875e12e47418d10481b4930edd15055bb631be9a40"
+    },
+    "skeleton": {
+      "bytes": 111467,
+      "sha256": "daca4bd65af4713435e109c184fb25d7e36eafafea113ea1578a699c4f4611aa"
+    }
   }
 }

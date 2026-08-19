@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "shining",
   "character_name": "Shining",
   "localized_name": "闪灵",
@@ -9,25 +9,58 @@
   "variant_name": "静谧午夜 DN02",
   "skin_id": "summer-1",
   "skin_name": "静谧午夜 DN02",
-  "source_page": "https://prts.wiki/w/%E9%97%AA%E7%81%B5",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_147_shining/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_147_shining/meta.json",
-    "model": "char_147_shining_summer_1/build/build_char_147_shining_summer_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_147_shining/char_147_shining_summer_1/build/build_char_147_shining_summer_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_147_shining/char_147_shining_summer_1/build/build_char_147_shining_summer_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_147_shining/char_147_shining_summer_1/build/build_char_147_shining_summer_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/147_shining_summer#1",
+  "source_asset": {
+    "assetId": "build_char_147_shining_summer#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "闪灵",
+    "appellation": "Shining",
+    "skinGroupId": "2019#summer",
+    "skinGroupName": "珊瑚海岸/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_147_shining_summer#1.atlas",
+      ".png": "build_char_147_shining_summer#1.png",
+      ".skel": "build_char_147_shining_summer#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/shining/skin-summer-1/meta.json",
-    "atlas": "standalone/assets/source/shining/skin-summer-1/build_char_147_shining_summer_1.atlas",
-    "skeleton": "standalone/assets/source/shining/skin-summer-1/build_char_147_shining_summer_1.skel",
+    "atlas": "standalone/assets/source/shining/skin-summer-1/build_char_147_shining_summer#1.atlas",
+    "skeleton": "standalone/assets/source/shining/skin-summer-1/build_char_147_shining_summer#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_147_shining/char_147_shining_summer_1/build/build_char_147_shining_summer_1.png",
-        "path": "standalone/assets/source/shining/skin-summer-1/build_char_147_shining_summer_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/147_shining_summer%231/build_char_147_shining_summer%231.png",
+        "path": "standalone/assets/source/shining/skin-summer-1/build_char_147_shining_summer#1.png",
+        "bytes": 256445,
+        "sha256": "e542003ac0848e78a470dee4f1f5dd70c2e5f76b9bec4e7a2d617aa10a543015"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7373,
+      "sha256": "fa4d1e15b2d265dff4dcf04439ff5ac854c614b009737072ee2241b7a30103f6"
+    },
+    "skeleton": {
+      "bytes": 204295,
+      "sha256": "cdd7c043650a8261fea8a1942aaa9e054e9771b7be4738bd02988664048350e3"
+    }
   }
 }

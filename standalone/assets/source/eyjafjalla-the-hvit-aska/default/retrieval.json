@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "eyjafjalla-the-hvit-aska",
   "character_name": "Eyjafjalla the Hvít Aska",
   "localized_name": "纯烬艾雅法拉",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%BA%AF%E7%83%AC%E8%89%BE%E9%9B%85%E6%B3%95%E6%8B%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/meta.json",
-    "model": "defaultskin/build/build_char_1016_agoat2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/defaultskin/build/build_char_1016_agoat2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/defaultskin/build/build_char_1016_agoat2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/defaultskin/build/build_char_1016_agoat2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1016_agoat2",
+  "source_asset": {
+    "assetId": "build_char_1016_agoat2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "纯烬艾雅法拉",
+    "appellation": "Eyjafjalla the Hvít Aska",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1016_agoat2.atlas",
+      ".png": "build_char_1016_agoat2.png",
+      ".skel": "build_char_1016_agoat2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/eyjafjalla-the-hvit-aska/default/meta.json",
     "atlas": "standalone/assets/source/eyjafjalla-the-hvit-aska/default/build_char_1016_agoat2.atlas",
     "skeleton": "standalone/assets/source/eyjafjalla-the-hvit-aska/default/build_char_1016_agoat2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1016_agoat2/defaultskin/build/build_char_1016_agoat2.png",
-        "path": "standalone/assets/source/eyjafjalla-the-hvit-aska/default/build_char_1016_agoat2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1016_agoat2/build_char_1016_agoat2.png",
+        "path": "standalone/assets/source/eyjafjalla-the-hvit-aska/default/build_char_1016_agoat2.png",
+        "bytes": 342011,
+        "sha256": "c3aebc64b4de5d69b943d6c800131706416669a509d7af944e5ff9057be87ea0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10668,
+      "sha256": "f3f0049f17b33a728400e954c022ded61022880ea8d9a401f764258b503a88f5"
+    },
+    "skeleton": {
+      "bytes": 159510,
+      "sha256": "e2379f8f7975d59ef000ba8d419a539b3ec1cbca08dd7ecd10f9ab7c05600254"
+    }
   }
 }

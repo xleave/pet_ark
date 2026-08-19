@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "nearl-the-radiant-knight",
   "character_name": "Nearl the Radiant Knight",
   "localized_name": "耀骑士临光",
@@ -9,25 +9,59 @@
   "variant_name": "复现荣光",
   "skin_id": "epoque-17",
   "skin_name": "复现荣光",
-  "source_page": "https://prts.wiki/w/%E8%80%80%E9%AA%91%E5%A3%AB%E4%B8%B4%E5%85%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1014_nearl2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1014_nearl2/meta.json",
-    "model": "char_1014_nearl2_epoque_17/build/build_char_1014_nearl2_epoque_17",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1014_nearl2/char_1014_nearl2_epoque_17/build/build_char_1014_nearl2_epoque_17.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1014_nearl2/char_1014_nearl2_epoque_17/build/build_char_1014_nearl2_epoque_17.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1014_nearl2/char_1014_nearl2_epoque_17/build/build_char_1014_nearl2_epoque_17.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1014_nearl2_epoque#17",
+  "source_asset": {
+    "assetId": "build_char_1014_nearl2_epoque#17",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "耀骑士临光",
+    "appellation": "Nearl the Radiant Knight",
+    "skinGroupId": "2022#epoque#4",
+    "skinGroupName": "时代/XVII",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1014_nearl2_epoque#17.atlas",
+      ".png": "build_char_1014_nearl2_epoque#17.png",
+      ".skel": "build_char_1014_nearl2_epoque#17.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/nearl-the-radiant-knight/skin-epoque-17/meta.json",
-    "atlas": "standalone/assets/source/nearl-the-radiant-knight/skin-epoque-17/build_char_1014_nearl2_epoque_17.atlas",
-    "skeleton": "standalone/assets/source/nearl-the-radiant-knight/skin-epoque-17/build_char_1014_nearl2_epoque_17.skel",
+    "atlas": "standalone/assets/source/nearl-the-radiant-knight/skin-epoque-17/build_char_1014_nearl2_epoque#17.atlas",
+    "skeleton": "standalone/assets/source/nearl-the-radiant-knight/skin-epoque-17/build_char_1014_nearl2_epoque#17.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1014_nearl2/char_1014_nearl2_epoque_17/build/build_char_1014_nearl2_epoque_17.png",
-        "path": "standalone/assets/source/nearl-the-radiant-knight/skin-epoque-17/build_char_1014_nearl2_epoque_17.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1014_nearl2_epoque%2317/build_char_1014_nearl2_epoque%2317.png",
+        "path": "standalone/assets/source/nearl-the-radiant-knight/skin-epoque-17/build_char_1014_nearl2_epoque#17.png",
+        "bytes": 496521,
+        "sha256": "a59ff37b737a2125b6a2ecd97eaa6869083f78bbe1676c7bc570a67076f5f304"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11609,
+      "sha256": "abe6604abec2e38b028380b7c87203457a601794113368e262896127b527cc23"
+    },
+    "skeleton": {
+      "bytes": 399935,
+      "sha256": "aac6871ddfceb833c881ee09d1cdafe62e1fd38ff9f51b74be83e1e74f59789c"
+    }
   }
 }

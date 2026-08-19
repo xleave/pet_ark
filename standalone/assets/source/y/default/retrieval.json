@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "y",
   "character_name": "Снегyрочка",
   "localized_name": "冬时",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%86%AC%E6%97%B6",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4208_wintim/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4208_wintim/meta.json",
-    "model": "defaultskin/build/build_char_4208_wintim",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4208_wintim/defaultskin/build/build_char_4208_wintim.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4208_wintim/defaultskin/build/build_char_4208_wintim.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4208_wintim/defaultskin/build/build_char_4208_wintim.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4208_wintim",
+  "source_asset": {
+    "assetId": "build_char_4208_wintim",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "冬时",
+    "appellation": "Снегурочка",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4208_wintim.atlas",
+      ".png": "build_char_4208_wintim.png",
+      ".skel": "build_char_4208_wintim.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/y/default/meta.json",
     "atlas": "standalone/assets/source/y/default/build_char_4208_wintim.atlas",
     "skeleton": "standalone/assets/source/y/default/build_char_4208_wintim.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4208_wintim/defaultskin/build/build_char_4208_wintim.png",
-        "path": "standalone/assets/source/y/default/build_char_4208_wintim.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4208_wintim/build_char_4208_wintim.png",
+        "path": "standalone/assets/source/y/default/build_char_4208_wintim.png",
+        "bytes": 334769,
+        "sha256": "3870f24f8f79f20d1a0e050e847eac395edb3411f61baf94594f02ae6d2ff89f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11665,
+      "sha256": "5b78bb0ae1f49f94840ee61b5ebcc0ca601aa22a64ef726a359c6c1c00cf1af4"
+    },
+    "skeleton": {
+      "bytes": 238709,
+      "sha256": "676faf2b15beef2113d6ed91213c6ce222a1d71a8096143a3dfdf6bfdb5cecab"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "poncirus",
   "character_name": "Poncirus",
   "localized_name": "青枳",
@@ -9,25 +9,58 @@
   "variant_name": "晚风休憩",
   "skin_id": "epoque-34",
   "skin_name": "晚风休憩",
-  "source_page": "https://prts.wiki/w/%E9%9D%92%E6%9E%B3",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_488_buildr/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_488_buildr/meta.json",
-    "model": "char_488_buildr_epoque_34/build/build_char_488_buildr_epoque_34",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_488_buildr/char_488_buildr_epoque_34/build/build_char_488_buildr_epoque_34.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_488_buildr/char_488_buildr_epoque_34/build/build_char_488_buildr_epoque_34.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_488_buildr/char_488_buildr_epoque_34/build/build_char_488_buildr_epoque_34.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/488_buildr_epoque#34",
+  "source_asset": {
+    "assetId": "build_char_488_buildr_epoque#34",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "青枳",
+    "appellation": "Poncirus",
+    "skinGroupId": "2024#epoque#5",
+    "skinGroupName": "时代/XXXIV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_488_buildr_epoque#34.atlas",
+      ".png": "build_char_488_buildr_epoque#34.png",
+      ".skel": "build_char_488_buildr_epoque#34.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/poncirus/skin-epoque-34/meta.json",
-    "atlas": "standalone/assets/source/poncirus/skin-epoque-34/build_char_488_buildr_epoque_34.atlas",
-    "skeleton": "standalone/assets/source/poncirus/skin-epoque-34/build_char_488_buildr_epoque_34.skel",
+    "atlas": "standalone/assets/source/poncirus/skin-epoque-34/build_char_488_buildr_epoque#34.atlas",
+    "skeleton": "standalone/assets/source/poncirus/skin-epoque-34/build_char_488_buildr_epoque#34.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_488_buildr/char_488_buildr_epoque_34/build/build_char_488_buildr_epoque_34.png",
-        "path": "standalone/assets/source/poncirus/skin-epoque-34/build_char_488_buildr_epoque_34.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/488_buildr_epoque%2334/build_char_488_buildr_epoque%2334.png",
+        "path": "standalone/assets/source/poncirus/skin-epoque-34/build_char_488_buildr_epoque#34.png",
+        "bytes": 307773,
+        "sha256": "10f66f5099a71febfe92e8fbbdc0c4b76ab8209cc1a0c7af6193b16c6895f664"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10247,
+      "sha256": "b9de1aec184334762098a79c2222c587177ca17562438bbd86076dd862b8aca7"
+    },
+    "skeleton": {
+      "bytes": 178585,
+      "sha256": "f4f9959998471a332825051470a502a0d2ae83bd77d64751fa2e7a99ea41e019"
+    }
   }
 }

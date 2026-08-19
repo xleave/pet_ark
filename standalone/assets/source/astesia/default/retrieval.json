@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "astesia",
   "character_name": "Astesia",
   "localized_name": "星极",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%98%9F%E6%9E%81",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/meta.json",
-    "model": "defaultskin/build/build_char_274_astesi",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/defaultskin/build/build_char_274_astesi.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/defaultskin/build/build_char_274_astesi.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/defaultskin/build/build_char_274_astesi.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/274_astesi",
+  "source_asset": {
+    "assetId": "build_char_274_astesi",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "星极",
+    "appellation": "Astesia",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_274_astesi.atlas",
+      ".png": "build_char_274_astesi.png",
+      ".skel": "build_char_274_astesi.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/astesia/default/meta.json",
     "atlas": "standalone/assets/source/astesia/default/build_char_274_astesi.atlas",
     "skeleton": "standalone/assets/source/astesia/default/build_char_274_astesi.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/defaultskin/build/build_char_274_astesi.png",
-        "path": "standalone/assets/source/astesia/default/build_char_274_astesi.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/274_astesi/build_char_274_astesi.png",
+        "path": "standalone/assets/source/astesia/default/build_char_274_astesi.png",
+        "bytes": 217018,
+        "sha256": "4a261dc65533c2ce9f27705b035a56941a76e6509f2497f7ce7931449c1fca4d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5744,
+      "sha256": "894c2d44209ccd21ed2b68d3217e6e9098a54f791d95778b1e8ec86c059fc55e"
+    },
+    "skeleton": {
+      "bytes": 120909,
+      "sha256": "073c7080dc5aa5037c7728f3ebd56dbf7949771b499aa5f7136ce9ccff1eddc3"
+    }
   }
 }

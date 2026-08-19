@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "april",
   "character_name": "April",
   "localized_name": "四月",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%9B%9B%E6%9C%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/meta.json",
-    "model": "defaultskin/build/build_char_365_aprl",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/defaultskin/build/build_char_365_aprl.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/defaultskin/build/build_char_365_aprl.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/defaultskin/build/build_char_365_aprl.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/365_aprl",
+  "source_asset": {
+    "assetId": "build_char_365_aprl",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "四月",
+    "appellation": "April",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_365_aprl.atlas",
+      ".png": "build_char_365_aprl.png",
+      ".skel": "build_char_365_aprl.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/april/default/meta.json",
     "atlas": "standalone/assets/source/april/default/build_char_365_aprl.atlas",
     "skeleton": "standalone/assets/source/april/default/build_char_365_aprl.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_365_aprl/defaultskin/build/build_char_365_aprl.png",
-        "path": "standalone/assets/source/april/default/build_char_365_aprl.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/365_aprl/build_char_365_aprl.png",
+        "path": "standalone/assets/source/april/default/build_char_365_aprl.png",
+        "bytes": 255927,
+        "sha256": "3af5a34fc4ab8c17dab5327574beab7d36e961cce9f96b35a20c23fc096c82a5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7665,
+      "sha256": "238e7f87ba5a5915923e013b639c4b276fc21613cbd4e5da8834ec98d9ffab79"
+    },
+    "skeleton": {
+      "bytes": 94536,
+      "sha256": "e1216d1f0fce7dcbed3df6bc9fdf04afcdfccda63191573f371b477999516394"
+    }
   }
 }

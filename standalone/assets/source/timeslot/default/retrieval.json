@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "timeslot",
   "character_name": "Timeslot",
   "localized_name": "时隙",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%97%B6%E9%9A%99",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4236_tmslot/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4236_tmslot/meta.json",
-    "model": "defaultskin/build/build_char_4236_tmslot",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4236_tmslot/defaultskin/build/build_char_4236_tmslot.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4236_tmslot/defaultskin/build/build_char_4236_tmslot.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4236_tmslot/defaultskin/build/build_char_4236_tmslot.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4236_tmslot",
+  "source_asset": {
+    "assetId": "build_char_4236_tmslot",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "时隙",
+    "appellation": "Timeslot",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4236_tmslot.atlas",
+      ".png": "build_char_4236_tmslot.png",
+      ".skel": "build_char_4236_tmslot.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/timeslot/default/meta.json",
     "atlas": "standalone/assets/source/timeslot/default/build_char_4236_tmslot.atlas",
     "skeleton": "standalone/assets/source/timeslot/default/build_char_4236_tmslot.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4236_tmslot/defaultskin/build/build_char_4236_tmslot.png",
-        "path": "standalone/assets/source/timeslot/default/build_char_4236_tmslot.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4236_tmslot/build_char_4236_tmslot.png",
+        "path": "standalone/assets/source/timeslot/default/build_char_4236_tmslot.png",
+        "bytes": 378551,
+        "sha256": "681b0ebf7d8f1d85668de648bfd09b8de7507a19450d8184d143f48b130816f2"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12142,
+      "sha256": "745bce6ea4ac556effadc0354412094457ab650309d0eb194108702adfe6f313"
+    },
+    "skeleton": {
+      "bytes": 233909,
+      "sha256": "3c1b2a31fba2ad48525f0511e17290e93ee5246bfdadfb266a9b39ee3b124211"
+    }
   }
 }

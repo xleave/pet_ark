@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "nearl",
   "character_name": "Nearl",
   "localized_name": "临光",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E4%B8%B4%E5%85%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_148_nearl/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_148_nearl/meta.json",
-    "model": "defaultskin/build/build_char_148_nearl",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_148_nearl/defaultskin/build/build_char_148_nearl.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_148_nearl/defaultskin/build/build_char_148_nearl.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_148_nearl/defaultskin/build/build_char_148_nearl.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/148_nearl",
+  "source_asset": {
+    "assetId": "build_char_148_nearl",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "临光",
+    "appellation": "Nearl",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_148_nearl.atlas",
+      ".png": "build_char_148_nearl.png",
+      ".skel": "build_char_148_nearl.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/nearl/default/meta.json",
     "atlas": "standalone/assets/source/nearl/default/build_char_148_nearl.atlas",
     "skeleton": "standalone/assets/source/nearl/default/build_char_148_nearl.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_148_nearl/defaultskin/build/build_char_148_nearl.png",
-        "path": "standalone/assets/source/nearl/default/build_char_148_nearl.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/148_nearl/build_char_148_nearl.png",
+        "path": "standalone/assets/source/nearl/default/build_char_148_nearl.png",
+        "bytes": 219498,
+        "sha256": "1d2d415acf3100f32da9f281401aa02b698522bba7f03d7955b6d1438c93f6b3"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5455,
+      "sha256": "03cedace1e5ee59fffd58fe33cee69ce5b88000144996b99532efa1a64e4d23b"
+    },
+    "skeleton": {
+      "bytes": 142509,
+      "sha256": "c6aae7d6739921509dafcd13e50d475c380056b0f4e389f93cbeb58e13b90abd"
+    }
   }
 }

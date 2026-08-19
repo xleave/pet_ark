@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "akafuyu",
   "character_name": "Akafuyu",
   "localized_name": "赤冬",
@@ -9,25 +9,58 @@
   "variant_name": "心性",
   "skin_id": "epoque-15",
   "skin_name": "心性",
-  "source_page": "https://prts.wiki/w/%E8%B5%A4%E5%86%AC",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_475_akafyu/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_475_akafyu/meta.json",
-    "model": "char_475_akafyu_epoque_15/build/build_char_475_akafyu_epoque_15",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_475_akafyu/char_475_akafyu_epoque_15/build/build_char_475_akafyu_epoque_15.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_475_akafyu/char_475_akafyu_epoque_15/build/build_char_475_akafyu_epoque_15.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_475_akafyu/char_475_akafyu_epoque_15/build/build_char_475_akafyu_epoque_15.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/475_akafyu_epoque#15",
+  "source_asset": {
+    "assetId": "build_char_475_akafyu_epoque#15",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "赤冬",
+    "appellation": "Akafuyu",
+    "skinGroupId": "2022#epoque#2",
+    "skinGroupName": "时代/XV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_475_akafyu_epoque#15.atlas",
+      ".png": "build_char_475_akafyu_epoque#15.png",
+      ".skel": "build_char_475_akafyu_epoque#15.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/akafuyu/skin-epoque-15/meta.json",
-    "atlas": "standalone/assets/source/akafuyu/skin-epoque-15/build_char_475_akafyu_epoque_15.atlas",
-    "skeleton": "standalone/assets/source/akafuyu/skin-epoque-15/build_char_475_akafyu_epoque_15.skel",
+    "atlas": "standalone/assets/source/akafuyu/skin-epoque-15/build_char_475_akafyu_epoque#15.atlas",
+    "skeleton": "standalone/assets/source/akafuyu/skin-epoque-15/build_char_475_akafyu_epoque#15.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_475_akafyu/char_475_akafyu_epoque_15/build/build_char_475_akafyu_epoque_15.png",
-        "path": "standalone/assets/source/akafuyu/skin-epoque-15/build_char_475_akafyu_epoque_15.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/475_akafyu_epoque%2315/build_char_475_akafyu_epoque%2315.png",
+        "path": "standalone/assets/source/akafuyu/skin-epoque-15/build_char_475_akafyu_epoque#15.png",
+        "bytes": 944668,
+        "sha256": "c87323140f3c4409a7e0fcc8436d993cd120bdc04c76f9d75a44b7b040afcf57"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 19802,
+      "sha256": "b0cf22fe4977c5be969e2b2b859630ccd80c183c3bb092eb518c8824b5c4e6c0"
+    },
+    "skeleton": {
+      "bytes": 444605,
+      "sha256": "6b26557bf9df285e824a3e3675fde798e0947bfd77b7417327ec764b71549ba4"
+    }
   }
 }

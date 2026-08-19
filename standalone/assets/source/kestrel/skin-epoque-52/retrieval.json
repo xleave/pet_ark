@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "kestrel",
   "character_name": "Kestrel",
   "localized_name": "红隼",
@@ -9,25 +9,58 @@
   "variant_name": "三元风情",
   "skin_id": "epoque-52",
   "skin_name": "三元风情",
-  "source_page": "https://prts.wiki/w/%E7%BA%A2%E9%9A%BC",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/meta.json",
-    "model": "char_4023_rfalcn_epoque_52/build/build_char_4023_rfalcn_epoque_52",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/char_4023_rfalcn_epoque_52/build/build_char_4023_rfalcn_epoque_52.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/char_4023_rfalcn_epoque_52/build/build_char_4023_rfalcn_epoque_52.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/char_4023_rfalcn_epoque_52/build/build_char_4023_rfalcn_epoque_52.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4023_rfalcn_epoque#52",
+  "source_asset": {
+    "assetId": "build_char_4023_rfalcn_epoque#52",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "红隼",
+    "appellation": "Kestrel",
+    "skinGroupId": "2026#epoque#3",
+    "skinGroupName": "时代/LII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4023_rfalcn_epoque#52.atlas",
+      ".png": "build_char_4023_rfalcn_epoque#52.png",
+      ".skel": "build_char_4023_rfalcn_epoque#52.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/kestrel/skin-epoque-52/meta.json",
-    "atlas": "standalone/assets/source/kestrel/skin-epoque-52/build_char_4023_rfalcn_epoque_52.atlas",
-    "skeleton": "standalone/assets/source/kestrel/skin-epoque-52/build_char_4023_rfalcn_epoque_52.skel",
+    "atlas": "standalone/assets/source/kestrel/skin-epoque-52/build_char_4023_rfalcn_epoque#52.atlas",
+    "skeleton": "standalone/assets/source/kestrel/skin-epoque-52/build_char_4023_rfalcn_epoque#52.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4023_rfalcn/char_4023_rfalcn_epoque_52/build/build_char_4023_rfalcn_epoque_52.png",
-        "path": "standalone/assets/source/kestrel/skin-epoque-52/build_char_4023_rfalcn_epoque_52.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4023_rfalcn_epoque%2352/build_char_4023_rfalcn_epoque%2352.png",
+        "path": "standalone/assets/source/kestrel/skin-epoque-52/build_char_4023_rfalcn_epoque#52.png",
+        "bytes": 290695,
+        "sha256": "c83ed848f11ec79ea5deb7b55ba1245e6142c2f6045a9d17d7c954c343e23fa3"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11480,
+      "sha256": "efdea3648bbf6fca4c997f3b52a8099b509c74c4534d63f66d97d3f754c3dfb6"
+    },
+    "skeleton": {
+      "bytes": 264177,
+      "sha256": "b80cce4a03311c2ce0c2484425a9d2067f4e2a0514f4c36f30b03fa560e1c232"
+    }
   }
 }

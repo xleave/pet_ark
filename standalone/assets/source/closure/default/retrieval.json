@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "closure",
   "character_name": "Closure",
   "localized_name": "可露希尔",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%8F%AF%E9%9C%B2%E5%B8%8C%E5%B0%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4228_closur/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4228_closur/meta.json",
-    "model": "defaultskin/build/build_char_4228_closur",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4228_closur/defaultskin/build/build_char_4228_closur.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4228_closur/defaultskin/build/build_char_4228_closur.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4228_closur/defaultskin/build/build_char_4228_closur.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4228_closur",
+  "source_asset": {
+    "assetId": "build_char_4228_closur",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "可露希尔",
+    "appellation": "Closure",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4228_closur.atlas",
+      ".png": "build_char_4228_closur.png",
+      ".skel": "build_char_4228_closur.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/closure/default/meta.json",
     "atlas": "standalone/assets/source/closure/default/build_char_4228_closur.atlas",
     "skeleton": "standalone/assets/source/closure/default/build_char_4228_closur.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4228_closur/defaultskin/build/build_char_4228_closur.png",
-        "path": "standalone/assets/source/closure/default/build_char_4228_closur.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4228_closur/build_char_4228_closur.png",
+        "path": "standalone/assets/source/closure/default/build_char_4228_closur.png",
+        "bytes": 293534,
+        "sha256": "64ccddedb06756a7a124a351379b6947dcb1e1edf4d4a5d5af727a93f7f59948"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12221,
+      "sha256": "70428a5b90edcfcd4068a38a576f9ff97cc8a2b9934d68fa8a59d0fa11574077"
+    },
+    "skeleton": {
+      "bytes": 471847,
+      "sha256": "7e6ebfc77754da86683b576a94638f0a5a5a4563ade760ea3592b4302fa89ee9"
+    }
   }
 }

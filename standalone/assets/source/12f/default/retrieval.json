@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "12f",
   "character_name": "12F",
   "localized_name": "12F",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/12F",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_009_12fce/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_009_12fce/meta.json",
-    "model": "defaultskin/build/build_char_009_12fce",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_009_12fce/defaultskin/build/build_char_009_12fce.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_009_12fce/defaultskin/build/build_char_009_12fce.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_009_12fce/defaultskin/build/build_char_009_12fce.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/009_12fce",
+  "source_asset": {
+    "assetId": "build_char_009_12fce",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "12F",
+    "appellation": "12F",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_2"
+    ],
+    "assetList": {
+      ".atlas": "build_char_009_12fce.atlas",
+      ".png": "build_char_009_12fce.png",
+      ".skel": "build_char_009_12fce.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/12f/default/meta.json",
     "atlas": "standalone/assets/source/12f/default/build_char_009_12fce.atlas",
     "skeleton": "standalone/assets/source/12f/default/build_char_009_12fce.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_009_12fce/defaultskin/build/build_char_009_12fce.png",
-        "path": "standalone/assets/source/12f/default/build_char_009_12fce.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/009_12fce/build_char_009_12fce.png",
+        "path": "standalone/assets/source/12f/default/build_char_009_12fce.png",
+        "bytes": 164751,
+        "sha256": "0a0b1af9a32f7366f1ddaf83692c9bde2c1520788ca924f523c777625abc6367"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4027,
+      "sha256": "2e9621077d0612b5c91b8171ae92a98f665824abe5cb64a9da6e2f7b5365148e"
+    },
+    "skeleton": {
+      "bytes": 83728,
+      "sha256": "4d75c1d4d95cbf85f029c855cdcf6a202da5ac3fcac5ff66e788d7d8d1b775de"
+    }
   }
 }

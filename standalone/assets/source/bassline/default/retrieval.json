@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "bassline",
   "character_name": "Bassline",
   "localized_name": "深律",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B7%B1%E5%BE%8B",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4109_baslin/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4109_baslin/meta.json",
-    "model": "defaultskin/build/build_char_4109_baslin",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4109_baslin/defaultskin/build/build_char_4109_baslin.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4109_baslin/defaultskin/build/build_char_4109_baslin.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4109_baslin/defaultskin/build/build_char_4109_baslin.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4109_baslin",
+  "source_asset": {
+    "assetId": "build_char_4109_baslin",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "深律",
+    "appellation": "Bassline",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4109_baslin.atlas",
+      ".png": "build_char_4109_baslin.png",
+      ".skel": "build_char_4109_baslin.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/bassline/default/meta.json",
     "atlas": "standalone/assets/source/bassline/default/build_char_4109_baslin.atlas",
     "skeleton": "standalone/assets/source/bassline/default/build_char_4109_baslin.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4109_baslin/defaultskin/build/build_char_4109_baslin.png",
-        "path": "standalone/assets/source/bassline/default/build_char_4109_baslin.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4109_baslin/build_char_4109_baslin.png",
+        "path": "standalone/assets/source/bassline/default/build_char_4109_baslin.png",
+        "bytes": 193974,
+        "sha256": "30d5f220c55c7c4adc0e48e12028a71681fbb8d44e14573bfe3f630bf583fdb5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7814,
+      "sha256": "a2232d12b35c44ef5a9b810e952eb7f87575e9f64ae1032da1b23af814915813"
+    },
+    "skeleton": {
+      "bytes": 309784,
+      "sha256": "9c739dc6b5ff09270d4a5c688a4277ae956b3c92e6fdd479d7bfbb7d55f7845f"
+    }
   }
 }

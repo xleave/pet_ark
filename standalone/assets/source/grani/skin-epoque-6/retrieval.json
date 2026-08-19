@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "grani",
   "character_name": "Grani",
   "localized_name": "格拉尼",
@@ -9,25 +9,58 @@
   "variant_name": "美妙时光",
   "skin_id": "epoque-6",
   "skin_name": "美妙时光",
-  "source_page": "https://prts.wiki/w/%E6%A0%BC%E6%8B%89%E5%B0%BC",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_220_grani/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_220_grani/meta.json",
-    "model": "char_220_grani_epoque_6/build/build_char_220_grani_epoque_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_220_grani/char_220_grani_epoque_6/build/build_char_220_grani_epoque_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_220_grani/char_220_grani_epoque_6/build/build_char_220_grani_epoque_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_220_grani/char_220_grani_epoque_6/build/build_char_220_grani_epoque_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/220_grani_epoque#6",
+  "source_asset": {
+    "assetId": "build_char_220_grani_epoque#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "格拉尼",
+    "appellation": "Grani",
+    "skinGroupId": "2020#epoque#5",
+    "skinGroupName": "时代/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_220_grani_epoque#6.atlas",
+      ".png": "build_char_220_grani_epoque#6.png",
+      ".skel": "build_char_220_grani_epoque#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/grani/skin-epoque-6/meta.json",
-    "atlas": "standalone/assets/source/grani/skin-epoque-6/build_char_220_grani_epoque_6.atlas",
-    "skeleton": "standalone/assets/source/grani/skin-epoque-6/build_char_220_grani_epoque_6.skel",
+    "atlas": "standalone/assets/source/grani/skin-epoque-6/build_char_220_grani_epoque#6.atlas",
+    "skeleton": "standalone/assets/source/grani/skin-epoque-6/build_char_220_grani_epoque#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_220_grani/char_220_grani_epoque_6/build/build_char_220_grani_epoque_6.png",
-        "path": "standalone/assets/source/grani/skin-epoque-6/build_char_220_grani_epoque_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/220_grani_epoque%236/build_char_220_grani_epoque%236.png",
+        "path": "standalone/assets/source/grani/skin-epoque-6/build_char_220_grani_epoque#6.png",
+        "bytes": 410497,
+        "sha256": "ad93da0f747528dc367ecf72ef8809ba6e574d1e3dbb2b5531d6c8e48a28c6ca"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8812,
+      "sha256": "5916b01ee8f477902c24a4f21a7769cde5a81ebda2b8ec2c927e6874c0747323"
+    },
+    "skeleton": {
+      "bytes": 147204,
+      "sha256": "17100079c8fd8b86bdc1abb718c47b1e539b94b17e0eba197dd27c0faff217be"
+    }
   }
 }

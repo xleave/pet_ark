@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "pramanix",
   "character_name": "Pramanix",
   "localized_name": "初雪",
@@ -9,25 +9,58 @@
   "variant_name": "开斯特之霜",
   "skin_id": "snow-1",
   "skin_name": "开斯特之霜",
-  "source_page": "https://prts.wiki/w/%E5%88%9D%E9%9B%AA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_174_slbell/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_174_slbell/meta.json",
-    "model": "char_174_slbell_snow_1/build/build_char_174_slbell_snow_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_174_slbell/char_174_slbell_snow_1/build/build_char_174_slbell_snow_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_174_slbell/char_174_slbell_snow_1/build/build_char_174_slbell_snow_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_174_slbell/char_174_slbell_snow_1/build/build_char_174_slbell_snow_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/174_slbell_snow#1",
+  "source_asset": {
+    "assetId": "build_char_174_slbell_snow#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "初雪",
+    "appellation": "Pramanix",
+    "skinGroupId": "2019#xmas",
+    "skinGroupName": "冰原信使/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_174_slbell_snow#1.atlas",
+      ".png": "build_char_174_slbell_snow#1.png",
+      ".skel": "build_char_174_slbell_snow#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/pramanix/skin-snow-1/meta.json",
-    "atlas": "standalone/assets/source/pramanix/skin-snow-1/build_char_174_slbell_snow_1.atlas",
-    "skeleton": "standalone/assets/source/pramanix/skin-snow-1/build_char_174_slbell_snow_1.skel",
+    "atlas": "standalone/assets/source/pramanix/skin-snow-1/build_char_174_slbell_snow#1.atlas",
+    "skeleton": "standalone/assets/source/pramanix/skin-snow-1/build_char_174_slbell_snow#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_174_slbell/char_174_slbell_snow_1/build/build_char_174_slbell_snow_1.png",
-        "path": "standalone/assets/source/pramanix/skin-snow-1/build_char_174_slbell_snow_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/174_slbell_snow%231/build_char_174_slbell_snow%231.png",
+        "path": "standalone/assets/source/pramanix/skin-snow-1/build_char_174_slbell_snow#1.png",
+        "bytes": 317328,
+        "sha256": "24a69cf491417abe1de3a4eda5ef9140fb22b180672cb47f67e80beba8881a7c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7151,
+      "sha256": "2151c9797f81afa98c06b90e66c152492041d2354ed7ed46f0581997417a88c5"
+    },
+    "skeleton": {
+      "bytes": 200384,
+      "sha256": "05fc4af705bf112628949ac7f07ab32eb9600ebdb92cd199c3ae08bf4d1ebd9b"
+    }
   }
 }

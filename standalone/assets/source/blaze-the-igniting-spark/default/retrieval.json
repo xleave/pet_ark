@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "blaze-the-igniting-spark",
   "character_name": "Blaze the Igniting Spark",
   "localized_name": "烛煌",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%83%9B%E7%85%8C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1040_blaze2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1040_blaze2/meta.json",
-    "model": "defaultskin/build/build_char_1040_blaze2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1040_blaze2/defaultskin/build/build_char_1040_blaze2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1040_blaze2/defaultskin/build/build_char_1040_blaze2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1040_blaze2/defaultskin/build/build_char_1040_blaze2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1040_blaze2",
+  "source_asset": {
+    "assetId": "build_char_1040_blaze2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "烛煌",
+    "appellation": "Blaze the Igniting Spark",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1040_blaze2.atlas",
+      ".png": "build_char_1040_blaze2.png",
+      ".skel": "build_char_1040_blaze2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/blaze-the-igniting-spark/default/meta.json",
     "atlas": "standalone/assets/source/blaze-the-igniting-spark/default/build_char_1040_blaze2.atlas",
     "skeleton": "standalone/assets/source/blaze-the-igniting-spark/default/build_char_1040_blaze2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1040_blaze2/defaultskin/build/build_char_1040_blaze2.png",
-        "path": "standalone/assets/source/blaze-the-igniting-spark/default/build_char_1040_blaze2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1040_blaze2/build_char_1040_blaze2.png",
+        "path": "standalone/assets/source/blaze-the-igniting-spark/default/build_char_1040_blaze2.png",
+        "bytes": 362321,
+        "sha256": "5af8c87243a2d4690970f84ba25ef6b44811f14d5865a32beb4faf18f91c3415"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10491,
+      "sha256": "fe7aa09b0dfd3958d9047985f907dd8f8c2764c2bfe9a56562a98d19d6532f6b"
+    },
+    "skeleton": {
+      "bytes": 211912,
+      "sha256": "4f7e9ee2f77277251ef0ca8ae5a80388128d20237df1f00e2003a6d40462ab1c"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mudrock",
   "character_name": "Mudrock",
   "localized_name": "泥岩",
@@ -9,25 +9,58 @@
   "variant_name": "砾瓦",
   "skin_id": "wild-10",
   "skin_name": "砾瓦",
-  "source_page": "https://prts.wiki/w/%E6%B3%A5%E5%B2%A9",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/meta.json",
-    "model": "char_311_mudrok_wild_10/build/build_char_311_mudrok_wild_10",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_wild_10/build/build_char_311_mudrok_wild_10.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_wild_10/build/build_char_311_mudrok_wild_10.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_wild_10/build/build_char_311_mudrok_wild_10.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/311_mudrok_wild#10",
+  "source_asset": {
+    "assetId": "build_char_311_mudrok_wild#10",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "泥岩",
+    "appellation": "Mudrock",
+    "skinGroupId": "2024#wild",
+    "skinGroupName": "生命之地/X",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_311_mudrok_wild#10.atlas",
+      ".png": "build_char_311_mudrok_wild#10.png",
+      ".skel": "build_char_311_mudrok_wild#10.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mudrock/skin-wild-10/meta.json",
-    "atlas": "standalone/assets/source/mudrock/skin-wild-10/build_char_311_mudrok_wild_10.atlas",
-    "skeleton": "standalone/assets/source/mudrock/skin-wild-10/build_char_311_mudrok_wild_10.skel",
+    "atlas": "standalone/assets/source/mudrock/skin-wild-10/build_char_311_mudrok_wild#10.atlas",
+    "skeleton": "standalone/assets/source/mudrock/skin-wild-10/build_char_311_mudrok_wild#10.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_wild_10/build/build_char_311_mudrok_wild_10.png",
-        "path": "standalone/assets/source/mudrock/skin-wild-10/build_char_311_mudrok_wild_10.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/311_mudrok_wild%2310/build_char_311_mudrok_wild%2310.png",
+        "path": "standalone/assets/source/mudrock/skin-wild-10/build_char_311_mudrok_wild#10.png",
+        "bytes": 441806,
+        "sha256": "954d37f746bbbe882f911261982f625a0b3a6af3af53a708d79ddfe51d52f17e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12697,
+      "sha256": "7021157e172d01fd060fc0f9e4a48ff576a462da23f4cba939beff5768bbc9e8"
+    },
+    "skeleton": {
+      "bytes": 392476,
+      "sha256": "4e400288dce4e5d996536ce590dc95046d3ea21d990ccaf8ae49908a6ff10d67"
+    }
   }
 }

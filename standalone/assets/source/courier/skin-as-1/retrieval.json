@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "courier",
   "character_name": "Courier",
   "localized_name": "讯使",
@@ -9,25 +9,58 @@
   "variant_name": "无言狂响",
   "skin_id": "as-1",
   "skin_name": "无言狂响",
-  "source_page": "https://prts.wiki/w/%E8%AE%AF%E4%BD%BF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_198_blackd/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_198_blackd/meta.json",
-    "model": "char_198_blackd_as_1/build/build_char_198_blackd_as_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_198_blackd/char_198_blackd_as_1/build/build_char_198_blackd_as_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_198_blackd/char_198_blackd_as_1/build/build_char_198_blackd_as_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_198_blackd/char_198_blackd_as_1/build/build_char_198_blackd_as_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/198_blackd_as#1",
+  "source_asset": {
+    "assetId": "build_char_198_blackd_as#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "讯使",
+    "appellation": "Courier",
+    "skinGroupId": "2021#as",
+    "skinGroupName": "音律联觉",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_198_blackd_as#1.atlas",
+      ".png": "build_char_198_blackd_as#1.png",
+      ".skel": "build_char_198_blackd_as#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/courier/skin-as-1/meta.json",
-    "atlas": "standalone/assets/source/courier/skin-as-1/build_char_198_blackd_as_1.atlas",
-    "skeleton": "standalone/assets/source/courier/skin-as-1/build_char_198_blackd_as_1.skel",
+    "atlas": "standalone/assets/source/courier/skin-as-1/build_char_198_blackd_as#1.atlas",
+    "skeleton": "standalone/assets/source/courier/skin-as-1/build_char_198_blackd_as#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_198_blackd/char_198_blackd_as_1/build/build_char_198_blackd_as_1.png",
-        "path": "standalone/assets/source/courier/skin-as-1/build_char_198_blackd_as_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/198_blackd_as%231/build_char_198_blackd_as%231.png",
+        "path": "standalone/assets/source/courier/skin-as-1/build_char_198_blackd_as#1.png",
+        "bytes": 272537,
+        "sha256": "6cb0d721fedcbb08b75cf99fb92634bd3e437e3cbbc3f0cf6e6713ca64249370"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8561,
+      "sha256": "60a1db8ecc8486be988d8348155d6ac6db72cf389efe5ad5be89652987c98c6d"
+    },
+    "skeleton": {
+      "bytes": 224398,
+      "sha256": "84a29fb262f01d556d2783758c2981a1a1144910dd30fb02c2b8841fa65685dd"
+    }
   }
 }

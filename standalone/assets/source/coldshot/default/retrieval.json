@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "coldshot",
   "character_name": "Coldshot",
   "localized_name": "冰酿",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%86%B0%E9%85%BF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4104_coldst/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4104_coldst/meta.json",
-    "model": "defaultskin/build/build_char_4104_coldst",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4104_coldst/defaultskin/build/build_char_4104_coldst.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4104_coldst/defaultskin/build/build_char_4104_coldst.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4104_coldst/defaultskin/build/build_char_4104_coldst.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4104_coldst",
+  "source_asset": {
+    "assetId": "build_char_4104_coldst",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "冰酿",
+    "appellation": "Coldshot",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4104_coldst.atlas",
+      ".png": "build_char_4104_coldst.png",
+      ".skel": "build_char_4104_coldst.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/coldshot/default/meta.json",
     "atlas": "standalone/assets/source/coldshot/default/build_char_4104_coldst.atlas",
     "skeleton": "standalone/assets/source/coldshot/default/build_char_4104_coldst.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4104_coldst/defaultskin/build/build_char_4104_coldst.png",
-        "path": "standalone/assets/source/coldshot/default/build_char_4104_coldst.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4104_coldst/build_char_4104_coldst.png",
+        "path": "standalone/assets/source/coldshot/default/build_char_4104_coldst.png",
+        "bytes": 248456,
+        "sha256": "45b61ab3c8677bcdcbbe35331f47efecdbec41174115a17f46e09587bee24a1a"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8377,
+      "sha256": "9d523fc1f82793b2bc042ae6eea7cf7f80227ae05a63eaaa5b088c87d9a7fc22"
+    },
+    "skeleton": {
+      "bytes": 210999,
+      "sha256": "3ebee8904c4e02b59588f187b97b954cd9a5c1a4834666b49501f6f4dab549b9"
+    }
   }
 }

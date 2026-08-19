@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "aciddrop",
   "character_name": "Aciddrop",
   "localized_name": "酸糖",
@@ -9,25 +9,58 @@
   "variant_name": "“下午茶时光”",
   "skin_id": "whirlwind-4",
   "skin_name": "“下午茶时光”",
-  "source_page": "https://prts.wiki/w/%E9%85%B8%E7%B3%96",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/meta.json",
-    "model": "char_366_acdrop_whirlwind_4/build/build_char_366_acdrop_whirlwind_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/char_366_acdrop_whirlwind_4/build/build_char_366_acdrop_whirlwind_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/char_366_acdrop_whirlwind_4/build/build_char_366_acdrop_whirlwind_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/char_366_acdrop_whirlwind_4/build/build_char_366_acdrop_whirlwind_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/366_acdrop_whirlwind#4",
+  "source_asset": {
+    "assetId": "build_char_366_acdrop_whirlwind#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "酸糖",
+    "appellation": "Aciddrop",
+    "skinGroupId": "2022#whirlwind#4",
+    "skinGroupName": "0011/飙系列/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_366_acdrop_whirlwind#4.atlas",
+      ".png": "build_char_366_acdrop_whirlwind#4.png",
+      ".skel": "build_char_366_acdrop_whirlwind#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/aciddrop/skin-whirlwind-4/meta.json",
-    "atlas": "standalone/assets/source/aciddrop/skin-whirlwind-4/build_char_366_acdrop_whirlwind_4.atlas",
-    "skeleton": "standalone/assets/source/aciddrop/skin-whirlwind-4/build_char_366_acdrop_whirlwind_4.skel",
+    "atlas": "standalone/assets/source/aciddrop/skin-whirlwind-4/build_char_366_acdrop_whirlwind#4.atlas",
+    "skeleton": "standalone/assets/source/aciddrop/skin-whirlwind-4/build_char_366_acdrop_whirlwind#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/char_366_acdrop_whirlwind_4/build/build_char_366_acdrop_whirlwind_4.png",
-        "path": "standalone/assets/source/aciddrop/skin-whirlwind-4/build_char_366_acdrop_whirlwind_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/366_acdrop_whirlwind%234/build_char_366_acdrop_whirlwind%234.png",
+        "path": "standalone/assets/source/aciddrop/skin-whirlwind-4/build_char_366_acdrop_whirlwind#4.png",
+        "bytes": 346715,
+        "sha256": "623303472f073af7fcbc6a2b09e2b1dccb09489f11161e4cd26e928ef680207e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10054,
+      "sha256": "89ef15f020a17eef73aec1466068c2549898fddf758a3def3ff744b09ca4833e"
+    },
+    "skeleton": {
+      "bytes": 168562,
+      "sha256": "3705bf7a76aa733b6f645a61d83a9451b0cd2bae31a65ba7d197feb546cdcf68"
+    }
   }
 }

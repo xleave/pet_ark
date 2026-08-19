@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "may",
   "character_name": "May",
   "localized_name": "梅",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%A2%85",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_133_mm/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_133_mm/meta.json",
-    "model": "defaultskin/build/build_char_133_mm",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_133_mm/defaultskin/build/build_char_133_mm.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_133_mm/defaultskin/build/build_char_133_mm.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_133_mm/defaultskin/build/build_char_133_mm.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/133_mm",
+  "source_asset": {
+    "assetId": "build_char_133_mm",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "梅",
+    "appellation": "May",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_133_mm.atlas",
+      ".png": "build_char_133_mm.png",
+      ".skel": "build_char_133_mm.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/may/default/meta.json",
     "atlas": "standalone/assets/source/may/default/build_char_133_mm.atlas",
     "skeleton": "standalone/assets/source/may/default/build_char_133_mm.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_133_mm/defaultskin/build/build_char_133_mm.png",
-        "path": "standalone/assets/source/may/default/build_char_133_mm.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/133_mm/build_char_133_mm.png",
+        "path": "standalone/assets/source/may/default/build_char_133_mm.png",
+        "bytes": 207816,
+        "sha256": "3fa3fb8669757fc23a4a65d0075e28233cd0e57416ecb98973eddfca4fde9375"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5067,
+      "sha256": "8845c3aa91331f7897574d40d0556d48b0c0a5c6a97349796c746e12c5705824"
+    },
+    "skeleton": {
+      "bytes": 70844,
+      "sha256": "f8e3d68c37400a0029adbe53eb15b17787eb1aa3f1ef4aac3488f3001a5fa7f0"
+    }
   }
 }

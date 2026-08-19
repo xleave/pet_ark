@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "underflow",
   "character_name": "Underflow",
   "localized_name": "深巡",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B7%B1%E5%B7%A1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4137_udflow/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4137_udflow/meta.json",
-    "model": "defaultskin/build/build_char_4137_udflow",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4137_udflow/defaultskin/build/build_char_4137_udflow.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4137_udflow/defaultskin/build/build_char_4137_udflow.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4137_udflow/defaultskin/build/build_char_4137_udflow.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4137_udflow",
+  "source_asset": {
+    "assetId": "build_char_4137_udflow",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "深巡",
+    "appellation": "Underflow",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4137_udflow.atlas",
+      ".png": "build_char_4137_udflow.png",
+      ".skel": "build_char_4137_udflow.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/underflow/default/meta.json",
     "atlas": "standalone/assets/source/underflow/default/build_char_4137_udflow.atlas",
     "skeleton": "standalone/assets/source/underflow/default/build_char_4137_udflow.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4137_udflow/defaultskin/build/build_char_4137_udflow.png",
-        "path": "standalone/assets/source/underflow/default/build_char_4137_udflow.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4137_udflow/build_char_4137_udflow.png",
+        "path": "standalone/assets/source/underflow/default/build_char_4137_udflow.png",
+        "bytes": 316870,
+        "sha256": "dc3a132117585126bc6d9949e7f48f685fe9988df4227f1f0ef3841715f7f8e9"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12339,
+      "sha256": "d8f5952db8a06950b62b1336478965c520348c1cc920708d48eb199d2f6cdff3"
+    },
+    "skeleton": {
+      "bytes": 468956,
+      "sha256": "1a38e01159a38f0cca769791f5ea51f6f3b9f89e2679e132a41c2e338db1a03d"
+    }
   }
 }

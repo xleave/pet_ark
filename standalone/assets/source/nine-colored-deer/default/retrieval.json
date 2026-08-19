@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "nine-colored-deer",
   "character_name": "Nine-Colored Deer",
   "localized_name": "九色鹿",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E4%B9%9D%E8%89%B2%E9%B9%BF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4019_ncdeer/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4019_ncdeer/meta.json",
-    "model": "defaultskin/build/build_char_4019_ncdeer",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4019_ncdeer/defaultskin/build/build_char_4019_ncdeer.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4019_ncdeer/defaultskin/build/build_char_4019_ncdeer.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4019_ncdeer/defaultskin/build/build_char_4019_ncdeer.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4019_ncdeer",
+  "source_asset": {
+    "assetId": "build_char_4019_ncdeer",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "九色鹿",
+    "appellation": "Nine-Colored Deer",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4019_ncdeer.atlas",
+      ".png": "build_char_4019_ncdeer.png",
+      ".skel": "build_char_4019_ncdeer.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/nine-colored-deer/default/meta.json",
     "atlas": "standalone/assets/source/nine-colored-deer/default/build_char_4019_ncdeer.atlas",
     "skeleton": "standalone/assets/source/nine-colored-deer/default/build_char_4019_ncdeer.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4019_ncdeer/defaultskin/build/build_char_4019_ncdeer.png",
-        "path": "standalone/assets/source/nine-colored-deer/default/build_char_4019_ncdeer.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4019_ncdeer/build_char_4019_ncdeer.png",
+        "path": "standalone/assets/source/nine-colored-deer/default/build_char_4019_ncdeer.png",
+        "bytes": 377794,
+        "sha256": "54cdf0b0081d07175558525ba3f1397b74e123c11a19dfbd61228be66d4ad207"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12830,
+      "sha256": "58e1a214a4f49229169d593b04716343c1afdee3a9ba8bc278a9d8548410e692"
+    },
+    "skeleton": {
+      "bytes": 191826,
+      "sha256": "34e7eb25062224c20414c1fd5b771ac14447c4bb99907f8e2fb4eaa762ffa9cf"
+    }
   }
 }

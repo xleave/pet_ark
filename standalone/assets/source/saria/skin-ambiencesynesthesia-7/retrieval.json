@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "saria",
   "character_name": "Saria",
   "localized_name": "塞雷娅",
@@ -9,25 +9,58 @@
   "variant_name": "黑白冷峻",
   "skin_id": "ambiencesynesthesia-7",
   "skin_name": "黑白冷峻",
-  "source_page": "https://prts.wiki/w/%E5%A1%9E%E9%9B%B7%E5%A8%85",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/meta.json",
-    "model": "char_202_demkni_ambiencesynesthesia_7/build/build_char_202_demkni_ambienceSynesthesia_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/char_202_demkni_ambiencesynesthesia_7/build/build_char_202_demkni_ambienceSynesthesia_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/char_202_demkni_ambiencesynesthesia_7/build/build_char_202_demkni_ambienceSynesthesia_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/char_202_demkni_ambiencesynesthesia_7/build/build_char_202_demkni_ambienceSynesthesia_7.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/202_demkni_ambiencesynesthesia#7",
+  "source_asset": {
+    "assetId": "build_char_202_demkni_ambiencesynesthesia#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "塞雷娅",
+    "appellation": "Saria",
+    "skinGroupId": "2026#ambienceSynesthesia#2",
+    "skinGroupName": "音律联觉/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_202_demkni_ambienceSynesthesia#7.atlas",
+      ".png": "build_char_202_demkni_ambienceSynesthesia#7.png",
+      ".skel": "build_char_202_demkni_ambienceSynesthesia#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/saria/skin-ambiencesynesthesia-7/meta.json",
-    "atlas": "standalone/assets/source/saria/skin-ambiencesynesthesia-7/build_char_202_demkni_ambienceSynesthesia_7.atlas",
-    "skeleton": "standalone/assets/source/saria/skin-ambiencesynesthesia-7/build_char_202_demkni_ambienceSynesthesia_7.skel",
+    "atlas": "standalone/assets/source/saria/skin-ambiencesynesthesia-7/build_char_202_demkni_ambienceSynesthesia#7.atlas",
+    "skeleton": "standalone/assets/source/saria/skin-ambiencesynesthesia-7/build_char_202_demkni_ambienceSynesthesia#7.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/char_202_demkni_ambiencesynesthesia_7/build/build_char_202_demkni_ambienceSynesthesia_7.png",
-        "path": "standalone/assets/source/saria/skin-ambiencesynesthesia-7/build_char_202_demkni_ambienceSynesthesia_7.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/202_demkni_ambiencesynesthesia%237/build_char_202_demkni_ambienceSynesthesia%237.png",
+        "path": "standalone/assets/source/saria/skin-ambiencesynesthesia-7/build_char_202_demkni_ambienceSynesthesia#7.png",
+        "bytes": 650103,
+        "sha256": "1e8d8a037e85d463206027350dba52212d368240dadd2319c1b13f1aa15f37cc"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14830,
+      "sha256": "a9a0da260652243fd58d22fe46acc633e94258277c5fff0c5b54f74ec54bf989"
+    },
+    "skeleton": {
+      "bytes": 392651,
+      "sha256": "a3255c3db5116d11134518c590f10ec62a476a5b8ed51dc52e320dd537774235"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "catherine",
   "character_name": "Catherine",
   "localized_name": "凯瑟琳",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%87%AF%E7%91%9F%E7%90%B3",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4162_cathy/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4162_cathy/meta.json",
-    "model": "defaultskin/build/build_char_4162_cathy",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4162_cathy/defaultskin/build/build_char_4162_cathy.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4162_cathy/defaultskin/build/build_char_4162_cathy.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4162_cathy/defaultskin/build/build_char_4162_cathy.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4162_cathy",
+  "source_asset": {
+    "assetId": "build_char_4162_cathy",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "凯瑟琳",
+    "appellation": "Catherine",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4162_cathy.atlas",
+      ".png": "build_char_4162_cathy.png",
+      ".skel": "build_char_4162_cathy.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/catherine/default/meta.json",
     "atlas": "standalone/assets/source/catherine/default/build_char_4162_cathy.atlas",
     "skeleton": "standalone/assets/source/catherine/default/build_char_4162_cathy.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4162_cathy/defaultskin/build/build_char_4162_cathy.png",
-        "path": "standalone/assets/source/catherine/default/build_char_4162_cathy.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4162_cathy/build_char_4162_cathy.png",
+        "path": "standalone/assets/source/catherine/default/build_char_4162_cathy.png",
+        "bytes": 295842,
+        "sha256": "f0fd32c58191249a9e8885d6d592a1885c56e8bd9aa6451d9ed95675d1588eca"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11427,
+      "sha256": "b751a8bd9610fc92cc0e770e04ad6fd56025b87f94d2e3d92f57ab61889e64b1"
+    },
+    "skeleton": {
+      "bytes": 166030,
+      "sha256": "91119ae71024a4186a065d28c500d8ba9fd8efbb12cc21c22c7a11bf123aa46b"
+    }
   }
 }

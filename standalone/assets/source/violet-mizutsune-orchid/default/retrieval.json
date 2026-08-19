@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "violet-mizutsune-orchid",
   "character_name": "Violet Mizutsune Orchid",
   "localized_name": "焰狐龙梓兰",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%84%B0%E7%8B%90%E9%BE%99%E6%A2%93%E5%85%B0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1048_orchd2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1048_orchd2/meta.json",
-    "model": "defaultskin/build/build_char_1048_orchd2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1048_orchd2/defaultskin/build/build_char_1048_orchd2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1048_orchd2/defaultskin/build/build_char_1048_orchd2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1048_orchd2/defaultskin/build/build_char_1048_orchd2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1048_orchd2",
+  "source_asset": {
+    "assetId": "build_char_1048_orchd2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "焰狐龙梓兰",
+    "appellation": "Violet Mizutsune Orchid",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1048_orchd2.atlas",
+      ".png": "build_char_1048_orchd2.png",
+      ".skel": "build_char_1048_orchd2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/violet-mizutsune-orchid/default/meta.json",
     "atlas": "standalone/assets/source/violet-mizutsune-orchid/default/build_char_1048_orchd2.atlas",
     "skeleton": "standalone/assets/source/violet-mizutsune-orchid/default/build_char_1048_orchd2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1048_orchd2/defaultskin/build/build_char_1048_orchd2.png",
-        "path": "standalone/assets/source/violet-mizutsune-orchid/default/build_char_1048_orchd2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1048_orchd2/build_char_1048_orchd2.png",
+        "path": "standalone/assets/source/violet-mizutsune-orchid/default/build_char_1048_orchd2.png",
+        "bytes": 334687,
+        "sha256": "bf56d1ff9df5ed6fc442466a993950de615c841a2693c8f40af39443649b4e15"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9568,
+      "sha256": "af0d12f328dbe88d5fe17a204418547b20258ca05faf39be6a5a10bacfe4e8f6"
+    },
+    "skeleton": {
+      "bytes": 210505,
+      "sha256": "ff8696cefbfa55ec966043d782666665afe027a704b5262786abe82b936cc38c"
+    }
   }
 }

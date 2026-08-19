@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "specter-the-unchained",
   "character_name": "Specter the Unchained",
   "localized_name": "归溟幽灵鲨",
@@ -9,25 +9,59 @@
   "variant_name": "生而为一",
   "skin_id": "boc-6",
   "skin_name": "生而为一",
-  "source_page": "https://prts.wiki/w/%E5%BD%92%E6%BA%9F%E5%B9%BD%E7%81%B5%E9%B2%A8",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1023_ghost2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1023_ghost2/meta.json",
-    "model": "char_1023_ghost2_boc_6/build/build_char_1023_ghost2_boc_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1023_ghost2/char_1023_ghost2_boc_6/build/build_char_1023_ghost2_boc_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1023_ghost2/char_1023_ghost2_boc_6/build/build_char_1023_ghost2_boc_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1023_ghost2/char_1023_ghost2_boc_6/build/build_char_1023_ghost2_boc_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1023_ghost2_boc#6",
+  "source_asset": {
+    "assetId": "build_char_1023_ghost2_boc#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "归溟幽灵鲨",
+    "appellation": "Specter the Unchained",
+    "skinGroupId": "2023#boc",
+    "skinGroupName": "斗争血脉/VI",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1023_ghost2_boc#6.atlas",
+      ".png": "build_char_1023_ghost2_boc#6.png",
+      ".skel": "build_char_1023_ghost2_boc#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/specter-the-unchained/skin-boc-6/meta.json",
-    "atlas": "standalone/assets/source/specter-the-unchained/skin-boc-6/build_char_1023_ghost2_boc_6.atlas",
-    "skeleton": "standalone/assets/source/specter-the-unchained/skin-boc-6/build_char_1023_ghost2_boc_6.skel",
+    "atlas": "standalone/assets/source/specter-the-unchained/skin-boc-6/build_char_1023_ghost2_boc#6.atlas",
+    "skeleton": "standalone/assets/source/specter-the-unchained/skin-boc-6/build_char_1023_ghost2_boc#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1023_ghost2/char_1023_ghost2_boc_6/build/build_char_1023_ghost2_boc_6.png",
-        "path": "standalone/assets/source/specter-the-unchained/skin-boc-6/build_char_1023_ghost2_boc_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1023_ghost2_boc%236/build_char_1023_ghost2_boc%236.png",
+        "path": "standalone/assets/source/specter-the-unchained/skin-boc-6/build_char_1023_ghost2_boc#6.png",
+        "bytes": 732973,
+        "sha256": "23c56f9c1047345a4935e4621749fa59b8934a0a955220f5b56fcb7ecac51b96"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 16892,
+      "sha256": "b5ba6d10d80a1f621a0fc1d41a684d950d45bed3deca8b367a4a8ee233e94b6e"
+    },
+    "skeleton": {
+      "bytes": 493681,
+      "sha256": "9d8ea164fe3ad7da0f8ebdaff5f04cdefc4a2162861008c7716a9daa3887360d"
+    }
   }
 }

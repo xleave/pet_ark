@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mon3tr",
   "character_name": "Mon3tr",
   "localized_name": "Mon3tr",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/Mon3tr",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4179_monstr/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4179_monstr/meta.json",
-    "model": "defaultskin/build/build_char_4179_monstr",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4179_monstr/defaultskin/build/build_char_4179_monstr.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4179_monstr/defaultskin/build/build_char_4179_monstr.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4179_monstr/defaultskin/build/build_char_4179_monstr.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4179_monstr",
+  "source_asset": {
+    "assetId": "build_char_4179_monstr",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "Mon3tr",
+    "appellation": "Mon3tr",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4179_monstr.atlas",
+      ".png": "build_char_4179_monstr.png",
+      ".skel": "build_char_4179_monstr.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mon3tr/default/meta.json",
     "atlas": "standalone/assets/source/mon3tr/default/build_char_4179_monstr.atlas",
     "skeleton": "standalone/assets/source/mon3tr/default/build_char_4179_monstr.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4179_monstr/defaultskin/build/build_char_4179_monstr.png",
-        "path": "standalone/assets/source/mon3tr/default/build_char_4179_monstr.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4179_monstr/build_char_4179_monstr.png",
+        "path": "standalone/assets/source/mon3tr/default/build_char_4179_monstr.png",
+        "bytes": 391708,
+        "sha256": "337feb0c3324a45cca9e0c7852c3f98896f96515a4fae04262fa8a9711a9924b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10858,
+      "sha256": "e68a3c3c389a4264d0d6ddbf2daf507ff15fe7d551788de2ed0a64ab20ea0180"
+    },
+    "skeleton": {
+      "bytes": 283535,
+      "sha256": "0ccf7e8fe04ec0def99c41b584964f0aba6e92de34b5774c67d0f929d76315c2"
+    }
   }
 }

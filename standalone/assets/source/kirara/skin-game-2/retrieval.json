@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "kirara",
   "character_name": "Kirara",
   "localized_name": "绮良",
@@ -9,25 +9,58 @@
   "variant_name": "前沿玩家",
   "skin_id": "game-2",
   "skin_name": "前沿玩家",
-  "source_page": "https://prts.wiki/w/%E7%BB%AE%E8%89%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/meta.json",
-    "model": "char_478_kirara_game_2/build/build_char_478_kirara_game_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/char_478_kirara_game_2/build/build_char_478_kirara_game_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/char_478_kirara_game_2/build/build_char_478_kirara_game_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/char_478_kirara_game_2/build/build_char_478_kirara_game_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/478_kirara_game#2",
+  "source_asset": {
+    "assetId": "build_char_478_kirara_game#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "绮良",
+    "appellation": "Kirara",
+    "skinGroupId": "2022#game#2",
+    "skinGroupName": "成就之星/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_478_kirara_game#2.atlas",
+      ".png": "build_char_478_kirara_game#2.png",
+      ".skel": "build_char_478_kirara_game#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/kirara/skin-game-2/meta.json",
-    "atlas": "standalone/assets/source/kirara/skin-game-2/build_char_478_kirara_game_2.atlas",
-    "skeleton": "standalone/assets/source/kirara/skin-game-2/build_char_478_kirara_game_2.skel",
+    "atlas": "standalone/assets/source/kirara/skin-game-2/build_char_478_kirara_game#2.atlas",
+    "skeleton": "standalone/assets/source/kirara/skin-game-2/build_char_478_kirara_game#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/char_478_kirara_game_2/build/build_char_478_kirara_game_2.png",
-        "path": "standalone/assets/source/kirara/skin-game-2/build_char_478_kirara_game_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/478_kirara_game%232/build_char_478_kirara_game%232.png",
+        "path": "standalone/assets/source/kirara/skin-game-2/build_char_478_kirara_game#2.png",
+        "bytes": 398136,
+        "sha256": "1f9e419d9d89852f9e6d591639eed8231327b6cee131701f84a4ffc11944d0b4"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12126,
+      "sha256": "39248f7d6d145c342dba500e4d85c929f4ae65b21330015d0965f3dc8ccdc93f"
+    },
+    "skeleton": {
+      "bytes": 238684,
+      "sha256": "96f2415b92c1ea6ed452b86316bfc291dceeaf1ebad558007c6fafe44711b30a"
+    }
   }
 }

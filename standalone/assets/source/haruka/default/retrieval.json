@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "haruka",
   "character_name": "Haruka",
   "localized_name": "遥",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%81%A5",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4202_haruka/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4202_haruka/meta.json",
-    "model": "defaultskin/build/build_char_4202_haruka",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4202_haruka/defaultskin/build/build_char_4202_haruka.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4202_haruka/defaultskin/build/build_char_4202_haruka.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4202_haruka/defaultskin/build/build_char_4202_haruka.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4202_haruka",
+  "source_asset": {
+    "assetId": "build_char_4202_haruka",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "遥",
+    "appellation": "Haruka",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4202_haruka.atlas",
+      ".png": "build_char_4202_haruka.png",
+      ".skel": "build_char_4202_haruka.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/haruka/default/meta.json",
     "atlas": "standalone/assets/source/haruka/default/build_char_4202_haruka.atlas",
     "skeleton": "standalone/assets/source/haruka/default/build_char_4202_haruka.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4202_haruka/defaultskin/build/build_char_4202_haruka.png",
-        "path": "standalone/assets/source/haruka/default/build_char_4202_haruka.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4202_haruka/build_char_4202_haruka.png",
+        "path": "standalone/assets/source/haruka/default/build_char_4202_haruka.png",
+        "bytes": 342900,
+        "sha256": "87c23c793e07b1eaa43e89a38c6be065ff18e16264473d810e61948f37aa10ae"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13958,
+      "sha256": "b92ce6fc1ad114911b944922223902714a621d026599758c05d60aadae9a853c"
+    },
+    "skeleton": {
+      "bytes": 1167136,
+      "sha256": "5f40a0722302ae5ac730e1e1692336a0e50ea4a9fc53c9758d7c31e7bd8382ca"
+    }
   }
 }

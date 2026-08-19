@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "pinecone",
   "character_name": "Pinecone",
   "localized_name": "松果",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%9D%BE%E6%9E%9C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_440_pinecn/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_440_pinecn/meta.json",
-    "model": "defaultskin/build/Build_char_440_pinecn",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_440_pinecn/defaultskin/build/Build_char_440_pinecn.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_440_pinecn/defaultskin/build/Build_char_440_pinecn.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_440_pinecn/defaultskin/build/Build_char_440_pinecn.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/440_pinecn",
+  "source_asset": {
+    "assetId": "build_char_440_pinecn",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "松果",
+    "appellation": "Pinecone",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "Build_char_440_pinecn.atlas",
+      ".png": "Build_char_440_pinecn.png",
+      ".skel": "Build_char_440_pinecn.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/pinecone/default/meta.json",
-    "atlas": "standalone/assets/source/pinecone/default/Build_char_440_pinecn.atlas",
-    "skeleton": "standalone/assets/source/pinecone/default/Build_char_440_pinecn.skel",
+    "atlas": "standalone/assets/source/pinecone/default/build_char_440_pinecn.atlas",
+    "skeleton": "standalone/assets/source/pinecone/default/build_char_440_pinecn.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_440_pinecn/defaultskin/build/Build_char_440_pinecn.png",
-        "path": "standalone/assets/source/pinecone/default/Build_char_440_pinecn.png"
+        "atlas_name": "Build_char_440_pinecn.png",
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/440_pinecn/build_char_440_pinecn.png",
+        "path": "standalone/assets/source/pinecone/default/build_char_440_pinecn.png",
+        "bytes": 287207,
+        "sha256": "fa671e6239a0b917bc6e42a78033a079078e59d5f927e6c54b79cd684452b831"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10019,
+      "sha256": "dd8268531df973c9b3cc3d81043ae9a15c1e3dcc40e5f9eab9b66f921cdf810a"
+    },
+    "skeleton": {
+      "bytes": 152456,
+      "sha256": "a43d47846885bd9163e20d85ed47cbe109be4f7f8719163c4c4f2a9858d1ec2a"
+    }
   }
 }

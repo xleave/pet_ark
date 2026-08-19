@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "bassline",
   "character_name": "Bassline",
   "localized_name": "深律",
@@ -9,25 +9,58 @@
   "variant_name": "夜空星芒",
   "skin_id": "witch-5",
   "skin_name": "夜空星芒",
-  "source_page": "https://prts.wiki/w/%E6%B7%B1%E5%BE%8B",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4109_baslin/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4109_baslin/meta.json",
-    "model": "char_4109_baslin_witch_5/build/build_char_4109_baslin_witch_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4109_baslin/char_4109_baslin_witch_5/build/build_char_4109_baslin_witch_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4109_baslin/char_4109_baslin_witch_5/build/build_char_4109_baslin_witch_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4109_baslin/char_4109_baslin_witch_5/build/build_char_4109_baslin_witch_5.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4109_baslin_witch#5",
+  "source_asset": {
+    "assetId": "build_char_4109_baslin_witch#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "深律",
+    "appellation": "Bassline",
+    "skinGroupId": "2024#witch",
+    "skinGroupName": "巫异盛宴/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4109_baslin_witch#5.atlas",
+      ".png": "build_char_4109_baslin_witch#5.png",
+      ".skel": "build_char_4109_baslin_witch#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/bassline/skin-witch-5/meta.json",
-    "atlas": "standalone/assets/source/bassline/skin-witch-5/build_char_4109_baslin_witch_5.atlas",
-    "skeleton": "standalone/assets/source/bassline/skin-witch-5/build_char_4109_baslin_witch_5.skel",
+    "atlas": "standalone/assets/source/bassline/skin-witch-5/build_char_4109_baslin_witch#5.atlas",
+    "skeleton": "standalone/assets/source/bassline/skin-witch-5/build_char_4109_baslin_witch#5.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4109_baslin/char_4109_baslin_witch_5/build/build_char_4109_baslin_witch_5.png",
-        "path": "standalone/assets/source/bassline/skin-witch-5/build_char_4109_baslin_witch_5.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4109_baslin_witch%235/build_char_4109_baslin_witch%235.png",
+        "path": "standalone/assets/source/bassline/skin-witch-5/build_char_4109_baslin_witch#5.png",
+        "bytes": 444922,
+        "sha256": "60dfd3722942fb3f5d32878bef436881a8217ac9b3d5332f55018f358dbea049"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11302,
+      "sha256": "241c9137e2dc61fc7be1914bb3a1e3d1c579bc241796ae709a16a7a62f8fd6ab"
+    },
+    "skeleton": {
+      "bytes": 398748,
+      "sha256": "91b3224d7a387040b6ec51e1cf30d832b3ef83dfd43c9fa4b8e7ee2b8e4956c9"
+    }
   }
 }

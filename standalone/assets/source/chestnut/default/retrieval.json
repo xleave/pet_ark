@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "chestnut",
   "character_name": "Chestnut",
   "localized_name": "褐果",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%A4%90%E6%9E%9C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4041_chnut/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4041_chnut/meta.json",
-    "model": "defaultskin/build/build_char_4041_chnut",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4041_chnut/defaultskin/build/build_char_4041_chnut.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4041_chnut/defaultskin/build/build_char_4041_chnut.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4041_chnut/defaultskin/build/build_char_4041_chnut.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4041_chnut",
+  "source_asset": {
+    "assetId": "build_char_4041_chnut",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "褐果",
+    "appellation": "Chestnut",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4041_chnut.atlas",
+      ".png": "build_char_4041_chnut.png",
+      ".skel": "build_char_4041_chnut.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/chestnut/default/meta.json",
     "atlas": "standalone/assets/source/chestnut/default/build_char_4041_chnut.atlas",
     "skeleton": "standalone/assets/source/chestnut/default/build_char_4041_chnut.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4041_chnut/defaultskin/build/build_char_4041_chnut.png",
-        "path": "standalone/assets/source/chestnut/default/build_char_4041_chnut.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4041_chnut/build_char_4041_chnut.png",
+        "path": "standalone/assets/source/chestnut/default/build_char_4041_chnut.png",
+        "bytes": 146724,
+        "sha256": "e6859318fb03cb95fcbd9a0c6dcfe0e520937b3b5dfda50297d6e501f4502bc4"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6253,
+      "sha256": "1752d71872669193a74ac80bd231bf34ef905d7916e5cd55bc1d47431c1b05bf"
+    },
+    "skeleton": {
+      "bytes": 57083,
+      "sha256": "a38bb9cb62dd7f2469e9e588db14a9e63c00fd75c2ff527136b48a995635784f"
+    }
   }
 }

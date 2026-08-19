@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "kirara",
   "character_name": "Kirara",
   "localized_name": "绮良",
@@ -9,25 +9,58 @@
   "variant_name": "轻闲快照",
   "skin_id": "epoque-57",
   "skin_name": "轻闲快照",
-  "source_page": "https://prts.wiki/w/%E7%BB%AE%E8%89%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/meta.json",
-    "model": "char_478_kirara_epoque_57/build/build_char_478_kirara_epoque_57",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/char_478_kirara_epoque_57/build/build_char_478_kirara_epoque_57.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/char_478_kirara_epoque_57/build/build_char_478_kirara_epoque_57.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/char_478_kirara_epoque_57/build/build_char_478_kirara_epoque_57.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/478_kirara_epoque#57",
+  "source_asset": {
+    "assetId": "build_char_478_kirara_epoque#57",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "绮良",
+    "appellation": "Kirara",
+    "skinGroupId": "2026#epoque#8",
+    "skinGroupName": "时代/LVII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_478_kirara_epoque#57.atlas",
+      ".png": "build_char_478_kirara_epoque#57.png",
+      ".skel": "build_char_478_kirara_epoque#57.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/kirara/skin-epoque-57/meta.json",
-    "atlas": "standalone/assets/source/kirara/skin-epoque-57/build_char_478_kirara_epoque_57.atlas",
-    "skeleton": "standalone/assets/source/kirara/skin-epoque-57/build_char_478_kirara_epoque_57.skel",
+    "atlas": "standalone/assets/source/kirara/skin-epoque-57/build_char_478_kirara_epoque#57.atlas",
+    "skeleton": "standalone/assets/source/kirara/skin-epoque-57/build_char_478_kirara_epoque#57.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/char_478_kirara_epoque_57/build/build_char_478_kirara_epoque_57.png",
-        "path": "standalone/assets/source/kirara/skin-epoque-57/build_char_478_kirara_epoque_57.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/478_kirara_epoque%2357/build_char_478_kirara_epoque%2357.png",
+        "path": "standalone/assets/source/kirara/skin-epoque-57/build_char_478_kirara_epoque#57.png",
+        "bytes": 427104,
+        "sha256": "94646bd85a28bf3e237f90ea7bf0fdc3bd2a6b6944c8bfc919eefa13df10a893"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11954,
+      "sha256": "1e0216ef70fbe68689b875575ea3db951dfce7a1a312866ea5914f00d9d05090"
+    },
+    "skeleton": {
+      "bytes": 431128,
+      "sha256": "e53ad94d3d44c0f713515fbea07af1edfee2394c189034a7074b6d117695fac7"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "nowell",
   "character_name": "Nowell",
   "localized_name": "诺威尔",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%AF%BA%E5%A8%81%E5%B0%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4173_nowell/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4173_nowell/meta.json",
-    "model": "defaultskin/build/build_char_4173_nowell",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4173_nowell/defaultskin/build/build_char_4173_nowell.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4173_nowell/defaultskin/build/build_char_4173_nowell.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4173_nowell/defaultskin/build/build_char_4173_nowell.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4173_nowell",
+  "source_asset": {
+    "assetId": "build_char_4173_nowell",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "诺威尔",
+    "appellation": "Nowell",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4173_nowell.atlas",
+      ".png": "build_char_4173_nowell.png",
+      ".skel": "build_char_4173_nowell.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/nowell/default/meta.json",
     "atlas": "standalone/assets/source/nowell/default/build_char_4173_nowell.atlas",
     "skeleton": "standalone/assets/source/nowell/default/build_char_4173_nowell.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4173_nowell/defaultskin/build/build_char_4173_nowell.png",
-        "path": "standalone/assets/source/nowell/default/build_char_4173_nowell.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4173_nowell/build_char_4173_nowell.png",
+        "path": "standalone/assets/source/nowell/default/build_char_4173_nowell.png",
+        "bytes": 318250,
+        "sha256": "4ec990072ef857fe843f69d74b67402b334fcdf2f3b8526b58475c907a5e4997"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9217,
+      "sha256": "50f04e2ac19f6f1af1848201195ff87eba610f829c42dc84360733d57e3e498d"
+    },
+    "skeleton": {
+      "bytes": 209506,
+      "sha256": "9672a0d82058c4ae5c8b20c3276e50ebf21839870d4b76bc1b7e98521548ecd6"
+    }
   }
 }

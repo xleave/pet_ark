@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "goldenglow",
   "character_name": "Goldenglow",
   "localized_name": "澄闪",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%BE%84%E9%97%AA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/meta.json",
-    "model": "defaultskin/build/build_char_377_gdglow",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/defaultskin/build/build_char_377_gdglow.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/defaultskin/build/build_char_377_gdglow.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/defaultskin/build/build_char_377_gdglow.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/377_gdglow",
+  "source_asset": {
+    "assetId": "build_char_377_gdglow",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "澄闪",
+    "appellation": "Goldenglow",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_377_gdglow.atlas",
+      ".png": "build_char_377_gdglow.png",
+      ".skel": "build_char_377_gdglow.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/goldenglow/default/meta.json",
     "atlas": "standalone/assets/source/goldenglow/default/build_char_377_gdglow.atlas",
     "skeleton": "standalone/assets/source/goldenglow/default/build_char_377_gdglow.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/defaultskin/build/build_char_377_gdglow.png",
-        "path": "standalone/assets/source/goldenglow/default/build_char_377_gdglow.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/377_gdglow/build_char_377_gdglow.png",
+        "path": "standalone/assets/source/goldenglow/default/build_char_377_gdglow.png",
+        "bytes": 203998,
+        "sha256": "283ebab717df4c680d437e29fda33891942a0248029c674ffb95cebce4d1533f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6862,
+      "sha256": "441347dea5064695ffce6bcf55ffb9ee3a890e747eb8883c37833fcd19faf59f"
+    },
+    "skeleton": {
+      "bytes": 185053,
+      "sha256": "54c0facac48ba214df15b3e7103a365c54191f145949af99108c7fe7a749a6ff"
+    }
   }
 }

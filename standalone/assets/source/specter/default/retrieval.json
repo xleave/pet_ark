@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "specter",
   "character_name": "Specter",
   "localized_name": "幽灵鲨",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%B9%BD%E7%81%B5%E9%B2%A8",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_143_ghost/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_143_ghost/meta.json",
-    "model": "defaultskin/build/build_char_143_ghost",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_143_ghost/defaultskin/build/build_char_143_ghost.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_143_ghost/defaultskin/build/build_char_143_ghost.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_143_ghost/defaultskin/build/build_char_143_ghost.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/143_ghost",
+  "source_asset": {
+    "assetId": "build_char_143_ghost",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "幽灵鲨",
+    "appellation": "Specter",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_143_ghost.atlas",
+      ".png": "build_char_143_ghost.png",
+      ".skel": "build_char_143_ghost.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/specter/default/meta.json",
     "atlas": "standalone/assets/source/specter/default/build_char_143_ghost.atlas",
     "skeleton": "standalone/assets/source/specter/default/build_char_143_ghost.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_143_ghost/defaultskin/build/build_char_143_ghost.png",
-        "path": "standalone/assets/source/specter/default/build_char_143_ghost.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/143_ghost/build_char_143_ghost.png",
+        "path": "standalone/assets/source/specter/default/build_char_143_ghost.png",
+        "bytes": 341310,
+        "sha256": "91f56331e2c6c1ff0e55a9c062cf775af584a7f46b1950b50f2590d2ba7fcff1"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5888,
+      "sha256": "b4036c322fa0bff0c94aa20a3f3250987406d9f87b9c81b4acbbb852b782dbbe"
+    },
+    "skeleton": {
+      "bytes": 93199,
+      "sha256": "b94bb11575571b32a3262e51b78faaa8f37ff615569a80d3ee16e00ef62896fd"
+    }
   }
 }

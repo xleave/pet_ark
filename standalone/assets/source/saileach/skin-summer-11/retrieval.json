@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "saileach",
   "character_name": "Saileach",
   "localized_name": "琴柳",
@@ -9,25 +9,58 @@
   "variant_name": "夏卉 FA317",
   "skin_id": "summer-11",
   "skin_name": "夏卉 FA317",
-  "source_page": "https://prts.wiki/w/%E7%90%B4%E6%9F%B3",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/meta.json",
-    "model": "char_479_sleach_summer_11/build/build_char_479_sleach_summer_11",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/char_479_sleach_summer_11/build/build_char_479_sleach_summer_11.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/char_479_sleach_summer_11/build/build_char_479_sleach_summer_11.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/char_479_sleach_summer_11/build/build_char_479_sleach_summer_11.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/479_sleach_summer#11",
+  "source_asset": {
+    "assetId": "build_char_479_sleach_summer#11",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "琴柳",
+    "appellation": "Saileach",
+    "skinGroupId": "2023#summer",
+    "skinGroupName": "珊瑚海岸/XI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_479_sleach_summer#11.atlas",
+      ".png": "build_char_479_sleach_summer#11.png",
+      ".skel": "build_char_479_sleach_summer#11.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/saileach/skin-summer-11/meta.json",
-    "atlas": "standalone/assets/source/saileach/skin-summer-11/build_char_479_sleach_summer_11.atlas",
-    "skeleton": "standalone/assets/source/saileach/skin-summer-11/build_char_479_sleach_summer_11.skel",
+    "atlas": "standalone/assets/source/saileach/skin-summer-11/build_char_479_sleach_summer#11.atlas",
+    "skeleton": "standalone/assets/source/saileach/skin-summer-11/build_char_479_sleach_summer#11.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/char_479_sleach_summer_11/build/build_char_479_sleach_summer_11.png",
-        "path": "standalone/assets/source/saileach/skin-summer-11/build_char_479_sleach_summer_11.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/479_sleach_summer%2311/build_char_479_sleach_summer%2311.png",
+        "path": "standalone/assets/source/saileach/skin-summer-11/build_char_479_sleach_summer#11.png",
+        "bytes": 608349,
+        "sha256": "973a8fda9471e3bf55026e04970a6efc5610817e1aef1dfd928f7e3c840ba247"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14323,
+      "sha256": "a9c1cb12019fbd0ff075b13737e17eb1ff209dcad25461e8a5362fb317f8a754"
+    },
+    "skeleton": {
+      "bytes": 356947,
+      "sha256": "0b03432fa23b3accc7a7649861b9bb8b386e9b89c612d2300ea1e2b619d26f9d"
+    }
   }
 }

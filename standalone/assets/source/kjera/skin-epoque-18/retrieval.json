@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "kjera",
   "character_name": "Kjera",
   "localized_name": "耶拉",
@@ -9,25 +9,58 @@
   "variant_name": "灵巧侍者",
   "skin_id": "epoque-18",
   "skin_name": "灵巧侍者",
-  "source_page": "https://prts.wiki/w/%E8%80%B6%E6%8B%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4013_kjera/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4013_kjera/meta.json",
-    "model": "char_4013_kjera_epoque_18/build/build_char_4013_kjera_epoque_18",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4013_kjera/char_4013_kjera_epoque_18/build/build_char_4013_kjera_epoque_18.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4013_kjera/char_4013_kjera_epoque_18/build/build_char_4013_kjera_epoque_18.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4013_kjera/char_4013_kjera_epoque_18/build/build_char_4013_kjera_epoque_18.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4013_kjera_epoque#18",
+  "source_asset": {
+    "assetId": "build_char_4013_kjera_epoque#18",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "耶拉",
+    "appellation": "Kjera",
+    "skinGroupId": "2022#epoque#5",
+    "skinGroupName": "时代/XVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4013_kjera_epoque#18.atlas",
+      ".png": "build_char_4013_kjera_epoque#18.png",
+      ".skel": "build_char_4013_kjera_epoque#18.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/kjera/skin-epoque-18/meta.json",
-    "atlas": "standalone/assets/source/kjera/skin-epoque-18/build_char_4013_kjera_epoque_18.atlas",
-    "skeleton": "standalone/assets/source/kjera/skin-epoque-18/build_char_4013_kjera_epoque_18.skel",
+    "atlas": "standalone/assets/source/kjera/skin-epoque-18/build_char_4013_kjera_epoque#18.atlas",
+    "skeleton": "standalone/assets/source/kjera/skin-epoque-18/build_char_4013_kjera_epoque#18.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4013_kjera/char_4013_kjera_epoque_18/build/build_char_4013_kjera_epoque_18.png",
-        "path": "standalone/assets/source/kjera/skin-epoque-18/build_char_4013_kjera_epoque_18.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4013_kjera_epoque%2318/build_char_4013_kjera_epoque%2318.png",
+        "path": "standalone/assets/source/kjera/skin-epoque-18/build_char_4013_kjera_epoque#18.png",
+        "bytes": 372616,
+        "sha256": "87bf841267aafe03c98598ebe0216b9392d689ecac105407ae316fe17b448930"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9668,
+      "sha256": "182f34648ac6cc071b43d11097420850d94b5bbbc95924c66cf2b0947f5d26d9"
+    },
+    "skeleton": {
+      "bytes": 209620,
+      "sha256": "c9cd370efc34012f18de55a868f22da0df235f0bbf07617b1f766f2a9538fc01"
+    }
   }
 }

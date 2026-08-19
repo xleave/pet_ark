@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "firewatch",
   "character_name": "Firewatch",
   "localized_name": "守林人",
@@ -9,25 +9,58 @@
   "variant_name": "枯柏",
   "skin_id": "wild-2",
   "skin_name": "枯柏",
-  "source_page": "https://prts.wiki/w/%E5%AE%88%E6%9E%97%E4%BA%BA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/meta.json",
-    "model": "char_158_milu_wild_2/build/build_char_158_milu_wild_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/char_158_milu_wild_2/build/build_char_158_milu_wild_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/char_158_milu_wild_2/build/build_char_158_milu_wild_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/char_158_milu_wild_2/build/build_char_158_milu_wild_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/158_milu_wild#2",
+  "source_asset": {
+    "assetId": "build_char_158_milu_wild#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "守林人",
+    "appellation": "Firewatch",
+    "skinGroupId": "2019#wild#2",
+    "skinGroupName": "生命之地/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_158_milu_wild#2.atlas",
+      ".png": "build_char_158_milu_wild#2.png",
+      ".skel": "build_char_158_milu_wild#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/firewatch/skin-wild-2/meta.json",
-    "atlas": "standalone/assets/source/firewatch/skin-wild-2/build_char_158_milu_wild_2.atlas",
-    "skeleton": "standalone/assets/source/firewatch/skin-wild-2/build_char_158_milu_wild_2.skel",
+    "atlas": "standalone/assets/source/firewatch/skin-wild-2/build_char_158_milu_wild#2.atlas",
+    "skeleton": "standalone/assets/source/firewatch/skin-wild-2/build_char_158_milu_wild#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_158_milu/char_158_milu_wild_2/build/build_char_158_milu_wild_2.png",
-        "path": "standalone/assets/source/firewatch/skin-wild-2/build_char_158_milu_wild_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/158_milu_wild%232/build_char_158_milu_wild%232.png",
+        "path": "standalone/assets/source/firewatch/skin-wild-2/build_char_158_milu_wild#2.png",
+        "bytes": 230459,
+        "sha256": "5881ee238d6151157065ab5976b6d3e47a7d9c7bd6c15d6545a345890984ddb7"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7331,
+      "sha256": "f0f703215f5a202c312c7804064f5749fc9cf87d6086eb7b9ad68feb37a2bd7f"
+    },
+    "skeleton": {
+      "bytes": 180452,
+      "sha256": "8a6d56c6fc56557016eb87542151c76b4dac950c976f0ea0e4f1f9bb98197ce8"
+    }
   }
 }

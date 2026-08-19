@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "shu",
   "character_name": "Shu",
   "localized_name": "黍",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%BB%8D",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_2025_shu/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2025_shu/meta.json",
-    "model": "defaultskin/build/build_char_2025_shu",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2025_shu/defaultskin/build/build_char_2025_shu.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2025_shu/defaultskin/build/build_char_2025_shu.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2025_shu/defaultskin/build/build_char_2025_shu.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/2025_shu",
+  "source_asset": {
+    "assetId": "build_char_2025_shu",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "黍",
+    "appellation": "Shu",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2025_shu.atlas",
+      ".png": "build_char_2025_shu.png",
+      ".skel": "build_char_2025_shu.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/shu/default/meta.json",
     "atlas": "standalone/assets/source/shu/default/build_char_2025_shu.atlas",
     "skeleton": "standalone/assets/source/shu/default/build_char_2025_shu.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_2025_shu/defaultskin/build/build_char_2025_shu.png",
-        "path": "standalone/assets/source/shu/default/build_char_2025_shu.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/2025_shu/build_char_2025_shu.png",
+        "path": "standalone/assets/source/shu/default/build_char_2025_shu.png",
+        "bytes": 428073,
+        "sha256": "b826d766d76cd188fb8bb005c56012be2b7e75b02952d3fb2c7e047993d858b2"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12400,
+      "sha256": "202a51426ea21fd5b51cbcaec8da2f556d86ed9384087444d70a2efc4e62803b"
+    },
+    "skeleton": {
+      "bytes": 319173,
+      "sha256": "9ae6a5dcdbedef8f50d4c082d5da1fa38c6fa989adaa9b75b04cb335ce911005"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "warmy",
   "character_name": "Warmy",
   "localized_name": "温米",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B8%A9%E7%B1%B3",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4081_warmy/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4081_warmy/meta.json",
-    "model": "defaultskin/build/build_char_4081_warmy",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4081_warmy/defaultskin/build/build_char_4081_warmy.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4081_warmy/defaultskin/build/build_char_4081_warmy.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4081_warmy/defaultskin/build/build_char_4081_warmy.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4081_warmy",
+  "source_asset": {
+    "assetId": "build_char_4081_warmy",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "温米",
+    "appellation": "Warmy",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4081_warmy.atlas",
+      ".png": "build_char_4081_warmy.png",
+      ".skel": "build_char_4081_warmy.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/warmy/default/meta.json",
     "atlas": "standalone/assets/source/warmy/default/build_char_4081_warmy.atlas",
     "skeleton": "standalone/assets/source/warmy/default/build_char_4081_warmy.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4081_warmy/defaultskin/build/build_char_4081_warmy.png",
-        "path": "standalone/assets/source/warmy/default/build_char_4081_warmy.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4081_warmy/build_char_4081_warmy.png",
+        "path": "standalone/assets/source/warmy/default/build_char_4081_warmy.png",
+        "bytes": 248138,
+        "sha256": "dbc8d1900fce3703b0d190606cbb131998d51bf0d8813c00000320abc0e9417d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8035,
+      "sha256": "057053d0cfbc5b02cec15f97696ec7a124790f4fa6dfabc798a55113a8ba7c70"
+    },
+    "skeleton": {
+      "bytes": 149680,
+      "sha256": "08baa7d4011a5f33d61454188a09663b89ed9a2664aba6970124e47001c95a75"
+    }
   }
 }

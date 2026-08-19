@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "rockrock",
   "character_name": "Rockrock",
   "localized_name": "洛洛",
@@ -9,25 +9,58 @@
   "variant_name": "欢唱之前",
   "skin_id": "lxh-1",
   "skin_name": "欢唱之前",
-  "source_page": "https://prts.wiki/w/%E6%B4%9B%E6%B4%9B",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4040_rockr/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4040_rockr/meta.json",
-    "model": "char_4040_rockr_lxh_1/build/build_char_4040_rockr_lxh_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4040_rockr/char_4040_rockr_lxh_1/build/build_char_4040_rockr_lxh_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4040_rockr/char_4040_rockr_lxh_1/build/build_char_4040_rockr_lxh_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4040_rockr/char_4040_rockr_lxh_1/build/build_char_4040_rockr_lxh_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4040_rockr_lxh#1",
+  "source_asset": {
+    "assetId": "build_char_4040_rockr_lxh#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "洛洛",
+    "appellation": "Rockrock",
+    "skinGroupId": "2022#lxh",
+    "skinGroupName": "罗小黑战记",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4040_rockr_lxh#1.atlas",
+      ".png": "build_char_4040_rockr_lxh#1.png",
+      ".skel": "build_char_4040_rockr_lxh#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/rockrock/skin-lxh-1/meta.json",
-    "atlas": "standalone/assets/source/rockrock/skin-lxh-1/build_char_4040_rockr_lxh_1.atlas",
-    "skeleton": "standalone/assets/source/rockrock/skin-lxh-1/build_char_4040_rockr_lxh_1.skel",
+    "atlas": "standalone/assets/source/rockrock/skin-lxh-1/build_char_4040_rockr_lxh#1.atlas",
+    "skeleton": "standalone/assets/source/rockrock/skin-lxh-1/build_char_4040_rockr_lxh#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4040_rockr/char_4040_rockr_lxh_1/build/build_char_4040_rockr_lxh_1.png",
-        "path": "standalone/assets/source/rockrock/skin-lxh-1/build_char_4040_rockr_lxh_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4040_rockr_lxh%231/build_char_4040_rockr_lxh%231.png",
+        "path": "standalone/assets/source/rockrock/skin-lxh-1/build_char_4040_rockr_lxh#1.png",
+        "bytes": 338080,
+        "sha256": "c373dc53b5ded647786c6b6f50b026db51236542e87e3e0ae526dea6038a04ff"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 16866,
+      "sha256": "b623dab8f58ec48534405cbe13c8a36a7fc5849af0c8e7cf6e47b63cd8a26f75"
+    },
+    "skeleton": {
+      "bytes": 939775,
+      "sha256": "05727bda341609c12dd59fb01aea663ff2e4f89c858bc1f22da59b074885b6ae"
+    }
   }
 }

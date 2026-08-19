@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "fang-the-fire-sharpened",
   "character_name": "Fang the Fire-sharpened",
   "localized_name": "历阵锐枪芬",
@@ -9,25 +9,59 @@
   "variant_name": "纯净乐段",
   "skin_id": "snow-8",
   "skin_name": "纯净乐段",
-  "source_page": "https://prts.wiki/w/%E5%8E%86%E9%98%B5%E9%94%90%E6%9E%AA%E8%8A%AC",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1036_fang2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1036_fang2/meta.json",
-    "model": "char_1036_fang2_snow_8/build/build_char_1036_fang2_snow_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1036_fang2/char_1036_fang2_snow_8/build/build_char_1036_fang2_snow_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1036_fang2/char_1036_fang2_snow_8/build/build_char_1036_fang2_snow_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1036_fang2/char_1036_fang2_snow_8/build/build_char_1036_fang2_snow_8.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1036_fang2_snow#8",
+  "source_asset": {
+    "assetId": "build_char_1036_fang2_snow#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "历阵锐枪芬",
+    "appellation": "Fang the Fire-sharpened",
+    "skinGroupId": "2025#xmas",
+    "skinGroupName": "冰原信使/VIII",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1036_fang2_snow#8.atlas",
+      ".png": "build_char_1036_fang2_snow#8.png",
+      ".skel": "build_char_1036_fang2_snow#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/fang-the-fire-sharpened/skin-snow-8/meta.json",
-    "atlas": "standalone/assets/source/fang-the-fire-sharpened/skin-snow-8/build_char_1036_fang2_snow_8.atlas",
-    "skeleton": "standalone/assets/source/fang-the-fire-sharpened/skin-snow-8/build_char_1036_fang2_snow_8.skel",
+    "atlas": "standalone/assets/source/fang-the-fire-sharpened/skin-snow-8/build_char_1036_fang2_snow#8.atlas",
+    "skeleton": "standalone/assets/source/fang-the-fire-sharpened/skin-snow-8/build_char_1036_fang2_snow#8.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1036_fang2/char_1036_fang2_snow_8/build/build_char_1036_fang2_snow_8.png",
-        "path": "standalone/assets/source/fang-the-fire-sharpened/skin-snow-8/build_char_1036_fang2_snow_8.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1036_fang2_snow%238/build_char_1036_fang2_snow%238.png",
+        "path": "standalone/assets/source/fang-the-fire-sharpened/skin-snow-8/build_char_1036_fang2_snow#8.png",
+        "bytes": 360654,
+        "sha256": "6a90384a07dca94993ea170a72dab06bec8909509a2747e364c404cbd7543038"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14010,
+      "sha256": "d310d50fee75cc5b13b341e72b4d37852d50eb1962d5e915d1a77fb2a5ff3ab9"
+    },
+    "skeleton": {
+      "bytes": 555899,
+      "sha256": "a9494708a5764dca5b2d8c6e09e87c155e0cd8b540c9abd71ac90991fa39d78a"
+    }
   }
 }

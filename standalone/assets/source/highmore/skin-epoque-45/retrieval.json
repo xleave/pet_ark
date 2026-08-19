@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "highmore",
   "character_name": "Highmore",
   "localized_name": "海沫",
@@ -9,25 +9,58 @@
   "variant_name": "搁浅",
   "skin_id": "epoque-45",
   "skin_name": "搁浅",
-  "source_page": "https://prts.wiki/w/%E6%B5%B7%E6%B2%AB",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/meta.json",
-    "model": "char_4066_highmo_epoque_45/build/build_char_4066_highmo_epoque_45",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/char_4066_highmo_epoque_45/build/build_char_4066_highmo_epoque_45.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/char_4066_highmo_epoque_45/build/build_char_4066_highmo_epoque_45.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/char_4066_highmo_epoque_45/build/build_char_4066_highmo_epoque_45.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4066_highmo_epoque#45",
+  "source_asset": {
+    "assetId": "build_char_4066_highmo_epoque#45",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "海沫",
+    "appellation": "Highmore",
+    "skinGroupId": "2025#epoque#7",
+    "skinGroupName": "时代/XLIV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4066_highmo_epoque#45.atlas",
+      ".png": "build_char_4066_highmo_epoque#45.png",
+      ".skel": "build_char_4066_highmo_epoque#45.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/highmore/skin-epoque-45/meta.json",
-    "atlas": "standalone/assets/source/highmore/skin-epoque-45/build_char_4066_highmo_epoque_45.atlas",
-    "skeleton": "standalone/assets/source/highmore/skin-epoque-45/build_char_4066_highmo_epoque_45.skel",
+    "atlas": "standalone/assets/source/highmore/skin-epoque-45/build_char_4066_highmo_epoque#45.atlas",
+    "skeleton": "standalone/assets/source/highmore/skin-epoque-45/build_char_4066_highmo_epoque#45.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/char_4066_highmo_epoque_45/build/build_char_4066_highmo_epoque_45.png",
-        "path": "standalone/assets/source/highmore/skin-epoque-45/build_char_4066_highmo_epoque_45.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4066_highmo_epoque%2345/build_char_4066_highmo_epoque%2345.png",
+        "path": "standalone/assets/source/highmore/skin-epoque-45/build_char_4066_highmo_epoque#45.png",
+        "bytes": 483831,
+        "sha256": "75616684f33112e9476d54a270d7382b44d7f65d9d2790ed3cf634027c6245fe"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14758,
+      "sha256": "46a0845f568bd267f596e06061e4fbdfa241cc63a868da8812c707648d13bf00"
+    },
+    "skeleton": {
+      "bytes": 477379,
+      "sha256": "34e85ca046574756ae2bf2c7caa5ac039f5d5516dacf46a893e2041c30635fa6"
+    }
   }
 }

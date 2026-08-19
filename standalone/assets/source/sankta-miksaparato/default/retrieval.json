@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "sankta-miksaparato",
   "character_name": "Sankta Miksaparato",
   "localized_name": "信仰搅拌机",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E4%BF%A1%E4%BB%B0%E6%90%85%E6%8B%8C%E6%9C%BA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4194_rmixer/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4194_rmixer/meta.json",
-    "model": "defaultskin/build/build_char_4194_rmixer",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4194_rmixer/defaultskin/build/build_char_4194_rmixer.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4194_rmixer/defaultskin/build/build_char_4194_rmixer.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4194_rmixer/defaultskin/build/build_char_4194_rmixer.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4194_rmixer",
+  "source_asset": {
+    "assetId": "build_char_4194_rmixer",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "信仰搅拌机",
+    "appellation": "Sankta Miksaparato",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4194_rmixer.atlas",
+      ".png": "build_char_4194_rmixer.png",
+      ".skel": "build_char_4194_rmixer.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/sankta-miksaparato/default/meta.json",
     "atlas": "standalone/assets/source/sankta-miksaparato/default/build_char_4194_rmixer.atlas",
     "skeleton": "standalone/assets/source/sankta-miksaparato/default/build_char_4194_rmixer.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4194_rmixer/defaultskin/build/build_char_4194_rmixer.png",
-        "path": "standalone/assets/source/sankta-miksaparato/default/build_char_4194_rmixer.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4194_rmixer/build_char_4194_rmixer.png",
+        "path": "standalone/assets/source/sankta-miksaparato/default/build_char_4194_rmixer.png",
+        "bytes": 244058,
+        "sha256": "2f08ecc22ac180489ebe9dbc8a6d74ab63b0b5778a1d30d3f694b3fa08aad844"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6335,
+      "sha256": "96b2b926d809f897a783d5a44a226d2284257fdffe0a5b85f1bced8ccf78dfaa"
+    },
+    "skeleton": {
+      "bytes": 86056,
+      "sha256": "56d977aaea0c4d6e415318f407b4557eccc6943a1d4a56eaee3223d02af6d03f"
+    }
   }
 }

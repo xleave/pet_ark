@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "tecno",
   "character_name": "Tecno",
   "localized_name": "特克诺",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%89%B9%E5%85%8B%E8%AF%BA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4164_tecno/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4164_tecno/meta.json",
-    "model": "defaultskin/build/build_char_4164_tecno",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4164_tecno/defaultskin/build/build_char_4164_tecno.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4164_tecno/defaultskin/build/build_char_4164_tecno.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4164_tecno/defaultskin/build/build_char_4164_tecno.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4164_tecno",
+  "source_asset": {
+    "assetId": "build_char_4164_tecno",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "特克诺",
+    "appellation": "Tecno",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4164_tecno.atlas",
+      ".png": "build_char_4164_tecno.png",
+      ".skel": "build_char_4164_tecno.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/tecno/default/meta.json",
     "atlas": "standalone/assets/source/tecno/default/build_char_4164_tecno.atlas",
     "skeleton": "standalone/assets/source/tecno/default/build_char_4164_tecno.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4164_tecno/defaultskin/build/build_char_4164_tecno.png",
-        "path": "standalone/assets/source/tecno/default/build_char_4164_tecno.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4164_tecno/build_char_4164_tecno.png",
+        "path": "standalone/assets/source/tecno/default/build_char_4164_tecno.png",
+        "bytes": 206055,
+        "sha256": "0eed05b1dccca85eed69d4db785514e9f8fbd54902a663933c9ef108a3de394d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10845,
+      "sha256": "d49265e38340be2b647bfb09efa5248347033268f20d868918c034cf0efc1636"
+    },
+    "skeleton": {
+      "bytes": 263825,
+      "sha256": "e691221302f2f3a61efd2cc3620f2cabf4a2e5af365e3f79737a78f985b0c605"
+    }
   }
 }

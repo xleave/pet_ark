@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "windflit",
   "character_name": "Windflit",
   "localized_name": "掠风",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%8E%A0%E9%A3%8E",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_433_windft/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_433_windft/meta.json",
-    "model": "defaultskin/build/build_char_433_windft",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_433_windft/defaultskin/build/build_char_433_windft.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_433_windft/defaultskin/build/build_char_433_windft.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_433_windft/defaultskin/build/build_char_433_windft.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/433_windft",
+  "source_asset": {
+    "assetId": "build_char_433_windft",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "掠风",
+    "appellation": "Windflit",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_433_windft.atlas",
+      ".png": "build_char_433_windft.png",
+      ".skel": "build_char_433_windft.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/windflit/default/meta.json",
     "atlas": "standalone/assets/source/windflit/default/build_char_433_windft.atlas",
     "skeleton": "standalone/assets/source/windflit/default/build_char_433_windft.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_433_windft/defaultskin/build/build_char_433_windft.png",
-        "path": "standalone/assets/source/windflit/default/build_char_433_windft.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/433_windft/build_char_433_windft.png",
+        "path": "standalone/assets/source/windflit/default/build_char_433_windft.png",
+        "bytes": 203784,
+        "sha256": "e3ccb58a927c0a0e5e7cc4128f23aa759f89918e378503e869ae85e80e2a64a1"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7695,
+      "sha256": "514006534e8e0607c4289acf64e769916e1dc6c5de166a493cd1cc6f19d061c7"
+    },
+    "skeleton": {
+      "bytes": 280031,
+      "sha256": "ec261a02cd5c4e56113000c42baf66eda5d3a4ab60adddc26261a9f3525e86c0"
+    }
   }
 }

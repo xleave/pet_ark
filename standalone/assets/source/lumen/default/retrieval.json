@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lumen",
   "character_name": "Lumen",
   "localized_name": "流明",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B5%81%E6%98%8E",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4042_lumen/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4042_lumen/meta.json",
-    "model": "defaultskin/build/build_char_4042_lumen",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4042_lumen/defaultskin/build/build_char_4042_lumen.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4042_lumen/defaultskin/build/build_char_4042_lumen.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4042_lumen/defaultskin/build/build_char_4042_lumen.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4042_lumen",
+  "source_asset": {
+    "assetId": "build_char_4042_lumen",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "流明",
+    "appellation": "Lumen",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4042_lumen.atlas",
+      ".png": "build_char_4042_lumen.png",
+      ".skel": "build_char_4042_lumen.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lumen/default/meta.json",
     "atlas": "standalone/assets/source/lumen/default/build_char_4042_lumen.atlas",
     "skeleton": "standalone/assets/source/lumen/default/build_char_4042_lumen.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4042_lumen/defaultskin/build/build_char_4042_lumen.png",
-        "path": "standalone/assets/source/lumen/default/build_char_4042_lumen.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4042_lumen/build_char_4042_lumen.png",
+        "path": "standalone/assets/source/lumen/default/build_char_4042_lumen.png",
+        "bytes": 364999,
+        "sha256": "3db59ad2b2512297692fe86ef5290ff02514670347b3359b41c5b6d1716fa7d0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10557,
+      "sha256": "cf4b05edf5b62965ce5e1674c01f518ba6ea822c92e6d61035d63578e0a5bc9f"
+    },
+    "skeleton": {
+      "bytes": 215516,
+      "sha256": "1d4e4ad7b7739d4cda740de7d7bd564971ebd5b2a358d1114739d116d9814579"
+    }
   }
 }

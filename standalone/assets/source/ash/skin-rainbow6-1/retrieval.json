@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ash",
   "character_name": "Ash",
   "localized_name": "灰烬",
@@ -9,25 +9,58 @@
   "variant_name": "游侠",
   "skin_id": "rainbow6-1",
   "skin_name": "游侠",
-  "source_page": "https://prts.wiki/w/%E7%81%B0%E7%83%AC",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/meta.json",
-    "model": "char_456_ash_rainbow6_1/build/build_char_456_ash_rainbow6_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/char_456_ash_rainbow6_1/build/build_char_456_ash_rainbow6_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/char_456_ash_rainbow6_1/build/build_char_456_ash_rainbow6_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/char_456_ash_rainbow6_1/build/build_char_456_ash_rainbow6_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/456_ash_rainbow6#1",
+  "source_asset": {
+    "assetId": "build_char_456_ash_rainbow6#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "灰烬",
+    "appellation": "Ash",
+    "skinGroupId": "2021#rainbow6",
+    "skinGroupName": "彩虹六号：围攻",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_456_ash_rainbow6#1.atlas",
+      ".png": "build_char_456_ash_rainbow6#1.png",
+      ".skel": "build_char_456_ash_rainbow6#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ash/skin-rainbow6-1/meta.json",
-    "atlas": "standalone/assets/source/ash/skin-rainbow6-1/build_char_456_ash_rainbow6_1.atlas",
-    "skeleton": "standalone/assets/source/ash/skin-rainbow6-1/build_char_456_ash_rainbow6_1.skel",
+    "atlas": "standalone/assets/source/ash/skin-rainbow6-1/build_char_456_ash_rainbow6#1.atlas",
+    "skeleton": "standalone/assets/source/ash/skin-rainbow6-1/build_char_456_ash_rainbow6#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/char_456_ash_rainbow6_1/build/build_char_456_ash_rainbow6_1.png",
-        "path": "standalone/assets/source/ash/skin-rainbow6-1/build_char_456_ash_rainbow6_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/456_ash_rainbow6%231/build_char_456_ash_rainbow6%231.png",
+        "path": "standalone/assets/source/ash/skin-rainbow6-1/build_char_456_ash_rainbow6#1.png",
+        "bytes": 313635,
+        "sha256": "884d4fc8d90e2f0fc1d8c5877ddc04be8c9231b2064084aec08559863f8be0a4"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11734,
+      "sha256": "36e9bb27ad32302d6382e57317714405c8eed51d1bf7d599346b54de4455f2c7"
+    },
+    "skeleton": {
+      "bytes": 328638,
+      "sha256": "e6c9474fc5fa00d3a8c10f864e677e5cccaaaa2232d5ecfeeb74b419bb19ee46"
+    }
   }
 }

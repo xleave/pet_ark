@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ines",
   "character_name": "Ines",
   "localized_name": "伊内丝",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E4%BC%8A%E5%86%85%E4%B8%9D",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4087_ines/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4087_ines/meta.json",
-    "model": "defaultskin/build/build_char_4087_ines",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4087_ines/defaultskin/build/build_char_4087_ines.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4087_ines/defaultskin/build/build_char_4087_ines.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4087_ines/defaultskin/build/build_char_4087_ines.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4087_ines",
+  "source_asset": {
+    "assetId": "build_char_4087_ines",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "伊内丝",
+    "appellation": "Ines",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4087_ines.atlas",
+      ".png": "build_char_4087_ines.png",
+      ".skel": "build_char_4087_ines.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ines/default/meta.json",
     "atlas": "standalone/assets/source/ines/default/build_char_4087_ines.atlas",
     "skeleton": "standalone/assets/source/ines/default/build_char_4087_ines.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4087_ines/defaultskin/build/build_char_4087_ines.png",
-        "path": "standalone/assets/source/ines/default/build_char_4087_ines.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4087_ines/build_char_4087_ines.png",
+        "path": "standalone/assets/source/ines/default/build_char_4087_ines.png",
+        "bytes": 279239,
+        "sha256": "bff909ae15701e6b49c9d37704aa12af9724b7b6535fc52c95f1e90b40a1a970"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9210,
+      "sha256": "0a544b203ae1afb3bebc1828c2915d672cc789f3624af1c2b66f0f9260d1f522"
+    },
+    "skeleton": {
+      "bytes": 162772,
+      "sha256": "1834cd3fc3c990955afefda62c658570ea2f27212dc8a101470be8ed6aa914ba"
+    }
   }
 }

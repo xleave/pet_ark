@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mynar",
   "character_name": "Młynar",
   "localized_name": "玛恩纳",
@@ -9,25 +9,58 @@
   "variant_name": "苍茫怒号",
   "skin_id": "iteration-3",
   "skin_name": "苍茫怒号",
-  "source_page": "https://prts.wiki/w/%E7%8E%9B%E6%81%A9%E7%BA%B3",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4064_mlynar/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4064_mlynar/meta.json",
-    "model": "char_4064_mlynar_iteration_3/build/build_char_4064_mlynar_iteration_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4064_mlynar/char_4064_mlynar_iteration_3/build/build_char_4064_mlynar_iteration_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4064_mlynar/char_4064_mlynar_iteration_3/build/build_char_4064_mlynar_iteration_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4064_mlynar/char_4064_mlynar_iteration_3/build/build_char_4064_mlynar_iteration_3.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4064_mlynar_iteration#3",
+  "source_asset": {
+    "assetId": "build_char_4064_mlynar_iteration#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "玛恩纳",
+    "appellation": "Młynar",
+    "skinGroupId": "2025#iteration",
+    "skinGroupName": "命途迭代/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4064_mlynar_iteration#3.atlas",
+      ".png": "build_char_4064_mlynar_iteration#3.png",
+      ".skel": "build_char_4064_mlynar_iteration#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mynar/skin-iteration-3/meta.json",
-    "atlas": "standalone/assets/source/mynar/skin-iteration-3/build_char_4064_mlynar_iteration_3.atlas",
-    "skeleton": "standalone/assets/source/mynar/skin-iteration-3/build_char_4064_mlynar_iteration_3.skel",
+    "atlas": "standalone/assets/source/mynar/skin-iteration-3/build_char_4064_mlynar_iteration#3.atlas",
+    "skeleton": "standalone/assets/source/mynar/skin-iteration-3/build_char_4064_mlynar_iteration#3.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4064_mlynar/char_4064_mlynar_iteration_3/build/build_char_4064_mlynar_iteration_3.png",
-        "path": "standalone/assets/source/mynar/skin-iteration-3/build_char_4064_mlynar_iteration_3.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4064_mlynar_iteration%233/build_char_4064_mlynar_iteration%233.png",
+        "path": "standalone/assets/source/mynar/skin-iteration-3/build_char_4064_mlynar_iteration#3.png",
+        "bytes": 1217912,
+        "sha256": "310a96b6ddcbedb8b1a531a10cffe5142062579693927ff3f9e91397c04f5b06"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 16197,
+      "sha256": "f3c8101d8180553e033a08271f0bf64cd5fdb0f0146ded001b34278cc857bb84"
+    },
+    "skeleton": {
+      "bytes": 727493,
+      "sha256": "7c22e9df67812857cb9ff9e1a6d7a9979212d090b7870c27d77f625039f229b5"
+    }
   }
 }

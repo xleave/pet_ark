@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "beeswax",
   "character_name": "Beeswax",
   "localized_name": "蜜蜡",
@@ -9,25 +9,58 @@
   "variant_name": "悠然假日 HD61",
   "skin_id": "summer-11",
   "skin_name": "悠然假日 HD61",
-  "source_page": "https://prts.wiki/w/%E8%9C%9C%E8%9C%A1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_344_beewax/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_344_beewax/meta.json",
-    "model": "char_344_beewax_summer_11/build/build_char_344_beewax_summer_11",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_344_beewax/char_344_beewax_summer_11/build/build_char_344_beewax_summer_11.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_344_beewax/char_344_beewax_summer_11/build/build_char_344_beewax_summer_11.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_344_beewax/char_344_beewax_summer_11/build/build_char_344_beewax_summer_11.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/344_beewax_summer#11",
+  "source_asset": {
+    "assetId": "build_char_344_beewax_summer#11",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "蜜蜡",
+    "appellation": "Beeswax",
+    "skinGroupId": "2023#summer",
+    "skinGroupName": "珊瑚海岸/XI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_344_beewax_summer#11.atlas",
+      ".png": "build_char_344_beewax_summer#11.png",
+      ".skel": "build_char_344_beewax_summer#11.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/beeswax/skin-summer-11/meta.json",
-    "atlas": "standalone/assets/source/beeswax/skin-summer-11/build_char_344_beewax_summer_11.atlas",
-    "skeleton": "standalone/assets/source/beeswax/skin-summer-11/build_char_344_beewax_summer_11.skel",
+    "atlas": "standalone/assets/source/beeswax/skin-summer-11/build_char_344_beewax_summer#11.atlas",
+    "skeleton": "standalone/assets/source/beeswax/skin-summer-11/build_char_344_beewax_summer#11.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_344_beewax/char_344_beewax_summer_11/build/build_char_344_beewax_summer_11.png",
-        "path": "standalone/assets/source/beeswax/skin-summer-11/build_char_344_beewax_summer_11.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/344_beewax_summer%2311/build_char_344_beewax_summer%2311.png",
+        "path": "standalone/assets/source/beeswax/skin-summer-11/build_char_344_beewax_summer#11.png",
+        "bytes": 743024,
+        "sha256": "38101c9bc9fd5fbfe87c025fd20650f7f2adea92f8ff7857a4cec94ebc16582d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10708,
+      "sha256": "5127a30b882532774711e5868ba61075cea18b39b8c7ba158455882e8ee7f4bc"
+    },
+    "skeleton": {
+      "bytes": 437764,
+      "sha256": "b38bb4de39ba87435d870821b528e39c67ab7ac0d16f876d60db6abce47a7eeb"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "irene",
   "character_name": "Irene",
   "localized_name": "艾丽妮",
@@ -9,25 +9,59 @@
   "variant_name": "飞羽",
   "skin_id": "ambiencesynesthesia-3",
   "skin_name": "飞羽",
-  "source_page": "https://prts.wiki/w/%E8%89%BE%E4%B8%BD%E5%A6%AE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/meta.json",
-    "model": "char_4009_irene_ambiencesynesthesia_3/build/build_char_4009_irene_ambienceSynesthesia_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/char_4009_irene_ambiencesynesthesia_3/build/build_char_4009_irene_ambienceSynesthesia_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/char_4009_irene_ambiencesynesthesia_3/build/build_char_4009_irene_ambienceSynesthesia_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/char_4009_irene_ambiencesynesthesia_3/build/build_char_4009_irene_ambienceSynesthesia_3.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4009_irene_ambiencesynesthesia#3",
+  "source_asset": {
+    "assetId": "build_char_4009_irene_ambiencesynesthesia#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "艾丽妮",
+    "appellation": "Irene",
+    "skinGroupId": "2023#ambienceSynesthesia",
+    "skinGroupName": "音律联觉/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4009_irene_ambienceSynesthesia#3.atlas",
+      ".png": "build_char_4009_irene_ambienceSynesthesia#3.png",
+      ".skel": "build_char_4009_irene_ambienceSynesthesia#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/irene/skin-ambiencesynesthesia-3/meta.json",
-    "atlas": "standalone/assets/source/irene/skin-ambiencesynesthesia-3/build_char_4009_irene_ambienceSynesthesia_3.atlas",
-    "skeleton": "standalone/assets/source/irene/skin-ambiencesynesthesia-3/build_char_4009_irene_ambienceSynesthesia_3.skel",
+    "atlas": "standalone/assets/source/irene/skin-ambiencesynesthesia-3/build_char_4009_irene_ambiencesynesthesia#3.atlas",
+    "skeleton": "standalone/assets/source/irene/skin-ambiencesynesthesia-3/build_char_4009_irene_ambiencesynesthesia#3.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/char_4009_irene_ambiencesynesthesia_3/build/build_char_4009_irene_ambienceSynesthesia_3.png",
-        "path": "standalone/assets/source/irene/skin-ambiencesynesthesia-3/build_char_4009_irene_ambienceSynesthesia_3.png"
+        "atlas_name": "build_char_4009_irene_ambienceSynesthesia#3.png",
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4009_irene_ambiencesynesthesia%233/build_char_4009_irene_ambiencesynesthesia%233.png",
+        "path": "standalone/assets/source/irene/skin-ambiencesynesthesia-3/build_char_4009_irene_ambiencesynesthesia#3.png",
+        "bytes": 713205,
+        "sha256": "7b6ae10797c5b476fb5de4e6a453b82679672b2ad9e7df075e320f899838f7e0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12314,
+      "sha256": "e3cd842a9213c5b48e4cb3e2cf1f3a095c0f3b1f63501066ade6e97a6eb39cb5"
+    },
+    "skeleton": {
+      "bytes": 428157,
+      "sha256": "41afd3ada714b1e94668ab9e287641ec95f0d619756f518af3d4603286b3e763"
+    }
   }
 }

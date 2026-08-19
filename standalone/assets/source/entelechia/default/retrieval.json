@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "entelechia",
   "character_name": "Entelechia",
   "localized_name": "隐德来希",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%9A%90%E5%BE%B7%E6%9D%A5%E5%B8%8C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4010_etlchi/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4010_etlchi/meta.json",
-    "model": "defaultskin/build/build_char_4010_etlchi",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4010_etlchi/defaultskin/build/build_char_4010_etlchi.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4010_etlchi/defaultskin/build/build_char_4010_etlchi.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4010_etlchi/defaultskin/build/build_char_4010_etlchi.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4010_etlchi",
+  "source_asset": {
+    "assetId": "build_char_4010_etlchi",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "隐德来希",
+    "appellation": "Entelechia",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4010_etlchi.atlas",
+      ".png": "build_char_4010_etlchi.png",
+      ".skel": "build_char_4010_etlchi.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/entelechia/default/meta.json",
     "atlas": "standalone/assets/source/entelechia/default/build_char_4010_etlchi.atlas",
     "skeleton": "standalone/assets/source/entelechia/default/build_char_4010_etlchi.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4010_etlchi/defaultskin/build/build_char_4010_etlchi.png",
-        "path": "standalone/assets/source/entelechia/default/build_char_4010_etlchi.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4010_etlchi/build_char_4010_etlchi.png",
+        "path": "standalone/assets/source/entelechia/default/build_char_4010_etlchi.png",
+        "bytes": 229803,
+        "sha256": "f9a010c9d57f88101749a23d5420a6e62cf86739c763a99ce694b71500e5390c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8872,
+      "sha256": "82e702134c45b1a7f7b2c73693db6b7311d81ab60ed43a39fba4d958aa88d880"
+    },
+    "skeleton": {
+      "bytes": 162516,
+      "sha256": "928743fa4d72e42a39c505e8fd9f53a762b0119e625e9212f96afe0fae2f38d7"
+    }
   }
 }

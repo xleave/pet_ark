@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mantra",
   "character_name": "Mantra",
   "localized_name": "真言",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%9C%9F%E8%A8%80",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4204_mantra/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4204_mantra/meta.json",
-    "model": "defaultskin/build/build_char_4204_mantra",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4204_mantra/defaultskin/build/build_char_4204_mantra.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4204_mantra/defaultskin/build/build_char_4204_mantra.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4204_mantra/defaultskin/build/build_char_4204_mantra.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4204_mantra",
+  "source_asset": {
+    "assetId": "build_char_4204_mantra",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "真言",
+    "appellation": "Mantra",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4204_mantra.atlas",
+      ".png": "build_char_4204_mantra.png",
+      ".skel": "build_char_4204_mantra.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mantra/default/meta.json",
     "atlas": "standalone/assets/source/mantra/default/build_char_4204_mantra.atlas",
     "skeleton": "standalone/assets/source/mantra/default/build_char_4204_mantra.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4204_mantra/defaultskin/build/build_char_4204_mantra.png",
-        "path": "standalone/assets/source/mantra/default/build_char_4204_mantra.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4204_mantra/build_char_4204_mantra.png",
+        "path": "standalone/assets/source/mantra/default/build_char_4204_mantra.png",
+        "bytes": 368102,
+        "sha256": "553364d0b7a38c28884c2e872b1717d8b5d9ef1d78626483f76b4459e36b707a"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9279,
+      "sha256": "cd5deb87f44d503ffb6fe744f26e836d2f8d94e8989f43ba20d313eb7398e1e7"
+    },
+    "skeleton": {
+      "bytes": 190227,
+      "sha256": "1ed36a9f1896aecf4b69ca02a5bdaf19e4eca09b38f0d21ab27ed61b0de84509"
+    }
   }
 }

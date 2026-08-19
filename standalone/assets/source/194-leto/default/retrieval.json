@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "194-leto",
   "character_name": "Лето",
   "localized_name": "烈夏",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%83%88%E5%A4%8F",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_194_leto/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_194_leto/meta.json",
-    "model": "defaultskin/build/build_char_194_leto",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_194_leto/defaultskin/build/build_char_194_leto.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_194_leto/defaultskin/build/build_char_194_leto.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_194_leto/defaultskin/build/build_char_194_leto.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/194_leto",
+  "source_asset": {
+    "assetId": "build_char_194_leto",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "烈夏",
+    "appellation": "Лето",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_194_leto.atlas",
+      ".png": "build_char_194_leto.png",
+      ".skel": "build_char_194_leto.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/194-leto/default/meta.json",
     "atlas": "standalone/assets/source/194-leto/default/build_char_194_leto.atlas",
     "skeleton": "standalone/assets/source/194-leto/default/build_char_194_leto.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_194_leto/defaultskin/build/build_char_194_leto.png",
-        "path": "standalone/assets/source/194-leto/default/build_char_194_leto.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/194_leto/build_char_194_leto.png",
+        "path": "standalone/assets/source/194-leto/default/build_char_194_leto.png",
+        "bytes": 294208,
+        "sha256": "3843aab4a494cea31f9ffc1d240ae61d02dfe4ac8651adb9e4d64ba23447ce61"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9390,
+      "sha256": "cae0d238cea10f1b77f095574498b193e2b95658dd9f4d278e56eb7b4222bbb7"
+    },
+    "skeleton": {
+      "bytes": 166974,
+      "sha256": "bd7e754a9366768866dfe6d2027b378e814ffdf263110dee4894916baf07de5d"
+    }
   }
 }

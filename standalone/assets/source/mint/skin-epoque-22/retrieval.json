@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mint",
   "character_name": "Mint",
   "localized_name": "薄绿",
@@ -9,25 +9,58 @@
   "variant_name": "月宵",
   "skin_id": "epoque-22",
   "skin_name": "月宵",
-  "source_page": "https://prts.wiki/w/%E8%96%84%E7%BB%BF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_388_mint/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_388_mint/meta.json",
-    "model": "char_388_mint_epoque_22/build/build_char_388_mint_epoque_22",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_388_mint/char_388_mint_epoque_22/build/build_char_388_mint_epoque_22.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_388_mint/char_388_mint_epoque_22/build/build_char_388_mint_epoque_22.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_388_mint/char_388_mint_epoque_22/build/build_char_388_mint_epoque_22.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/388_mint_epoque#22",
+  "source_asset": {
+    "assetId": "build_char_388_mint_epoque#22",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "薄绿",
+    "appellation": "Mint",
+    "skinGroupId": "2023#epoque#4",
+    "skinGroupName": "时代/XXII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_388_mint_epoque#22.atlas",
+      ".png": "build_char_388_mint_epoque#22.png",
+      ".skel": "build_char_388_mint_epoque#22.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mint/skin-epoque-22/meta.json",
-    "atlas": "standalone/assets/source/mint/skin-epoque-22/build_char_388_mint_epoque_22.atlas",
-    "skeleton": "standalone/assets/source/mint/skin-epoque-22/build_char_388_mint_epoque_22.skel",
+    "atlas": "standalone/assets/source/mint/skin-epoque-22/build_char_388_mint_epoque#22.atlas",
+    "skeleton": "standalone/assets/source/mint/skin-epoque-22/build_char_388_mint_epoque#22.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_388_mint/char_388_mint_epoque_22/build/build_char_388_mint_epoque_22.png",
-        "path": "standalone/assets/source/mint/skin-epoque-22/build_char_388_mint_epoque_22.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/388_mint_epoque%2322/build_char_388_mint_epoque%2322.png",
+        "path": "standalone/assets/source/mint/skin-epoque-22/build_char_388_mint_epoque#22.png",
+        "bytes": 397997,
+        "sha256": "a0f7bc8925a58eb5bca381337b2a46daaad951506fc93c661ca60331bafe1154"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12266,
+      "sha256": "5237fa830e85e5d2a2c6f0ac6238066138e42a7781f63a9a704b6614464e1266"
+    },
+    "skeleton": {
+      "bytes": 583578,
+      "sha256": "e52cf011c21477922d9d63ca5cadfc908226a98913c43990e2cdbb4c51ff91b7"
+    }
   }
 }

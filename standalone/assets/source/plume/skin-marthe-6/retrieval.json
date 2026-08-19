@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "plume",
   "character_name": "Plume",
   "localized_name": "翎羽",
@@ -9,25 +9,58 @@
   "variant_name": "从容时刻",
   "skin_id": "marthe-6",
   "skin_name": "从容时刻",
-  "source_page": "https://prts.wiki/w/%E7%BF%8E%E7%BE%BD",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_192_falco/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_192_falco/meta.json",
-    "model": "char_192_falco_marthe_6/build/build_char_192_falco_marthe_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_192_falco/char_192_falco_marthe_6/build/build_char_192_falco_marthe_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_192_falco/char_192_falco_marthe_6/build/build_char_192_falco_marthe_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_192_falco/char_192_falco_marthe_6/build/build_char_192_falco_marthe_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/192_falco_marthe#6",
+  "source_asset": {
+    "assetId": "build_char_192_falco_marthe#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "翎羽",
+    "appellation": "Plume",
+    "skinGroupId": "2024#marthe",
+    "skinGroupName": "玛尔特/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_192_falco_marthe#6.atlas",
+      ".png": "build_char_192_falco_marthe#6.png",
+      ".skel": "build_char_192_falco_marthe#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/plume/skin-marthe-6/meta.json",
-    "atlas": "standalone/assets/source/plume/skin-marthe-6/build_char_192_falco_marthe_6.atlas",
-    "skeleton": "standalone/assets/source/plume/skin-marthe-6/build_char_192_falco_marthe_6.skel",
+    "atlas": "standalone/assets/source/plume/skin-marthe-6/build_char_192_falco_marthe#6.atlas",
+    "skeleton": "standalone/assets/source/plume/skin-marthe-6/build_char_192_falco_marthe#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_192_falco/char_192_falco_marthe_6/build/build_char_192_falco_marthe_6.png",
-        "path": "standalone/assets/source/plume/skin-marthe-6/build_char_192_falco_marthe_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/192_falco_marthe%236/build_char_192_falco_marthe%236.png",
+        "path": "standalone/assets/source/plume/skin-marthe-6/build_char_192_falco_marthe#6.png",
+        "bytes": 152459,
+        "sha256": "09017c4f83223ad5826d0de7ac7b898d9d0082d7bfd065911925fce448d15ad9"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7146,
+      "sha256": "f63cd6737e0c84a9159add899b0c983a9332388441e071db769269bae6bbce06"
+    },
+    "skeleton": {
+      "bytes": 133153,
+      "sha256": "6f5bffcf46f78a8de0dfea729b677ce4456da972ea59e1a2695f9771db61eced"
+    }
   }
 }

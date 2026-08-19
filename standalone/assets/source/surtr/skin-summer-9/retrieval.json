@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "surtr",
   "character_name": "Surtr",
   "localized_name": "史尔特尔",
@@ -9,25 +9,58 @@
   "variant_name": "缤纷奇境 CW03",
   "skin_id": "summer-9",
   "skin_name": "缤纷奇境 CW03",
-  "source_page": "https://prts.wiki/w/%E5%8F%B2%E5%B0%94%E7%89%B9%E5%B0%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_350_surtr/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_350_surtr/meta.json",
-    "model": "char_350_surtr_summer_9/build/build_char_350_surtr_summer_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_350_surtr/char_350_surtr_summer_9/build/build_char_350_surtr_summer_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_350_surtr/char_350_surtr_summer_9/build/build_char_350_surtr_summer_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_350_surtr/char_350_surtr_summer_9/build/build_char_350_surtr_summer_9.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/350_surtr_summer#9",
+  "source_asset": {
+    "assetId": "build_char_350_surtr_summer#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "史尔特尔",
+    "appellation": "Surtr",
+    "skinGroupId": "2022#summer#2",
+    "skinGroupName": "珊瑚海岸/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_350_surtr_summer#9.atlas",
+      ".png": "build_char_350_surtr_summer#9.png",
+      ".skel": "build_char_350_surtr_summer#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/surtr/skin-summer-9/meta.json",
-    "atlas": "standalone/assets/source/surtr/skin-summer-9/build_char_350_surtr_summer_9.atlas",
-    "skeleton": "standalone/assets/source/surtr/skin-summer-9/build_char_350_surtr_summer_9.skel",
+    "atlas": "standalone/assets/source/surtr/skin-summer-9/build_char_350_surtr_summer#9.atlas",
+    "skeleton": "standalone/assets/source/surtr/skin-summer-9/build_char_350_surtr_summer#9.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_350_surtr/char_350_surtr_summer_9/build/build_char_350_surtr_summer_9.png",
-        "path": "standalone/assets/source/surtr/skin-summer-9/build_char_350_surtr_summer_9.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/350_surtr_summer%239/build_char_350_surtr_summer%239.png",
+        "path": "standalone/assets/source/surtr/skin-summer-9/build_char_350_surtr_summer#9.png",
+        "bytes": 490645,
+        "sha256": "5664fb09550bc0edb0f61ec7f9568cef0c2f71585dfa733b7c2e14c91f60b684"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10145,
+      "sha256": "02c0cce1286e8419fd218a472ac1dc48bdd9d5ce5b8f575919e7801b40530a4b"
+    },
+    "skeleton": {
+      "bytes": 351261,
+      "sha256": "8cf02b6b98dde2524bf6dd49016223cfe3c2ec9f49309cf82154494391456a16"
+    }
   }
 }

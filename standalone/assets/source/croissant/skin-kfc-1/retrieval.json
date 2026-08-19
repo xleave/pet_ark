@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "croissant",
   "character_name": "Croissant",
   "localized_name": "可颂",
@@ -9,25 +9,58 @@
   "variant_name": "清晨七点",
   "skin_id": "kfc-1",
   "skin_name": "清晨七点",
-  "source_page": "https://prts.wiki/w/%E5%8F%AF%E9%A2%82",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/meta.json",
-    "model": "char_201_moeshd_kfc_1/build/build_char_201_moeshd_kfc_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_kfc_1/build/build_char_201_moeshd_kfc_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_kfc_1/build/build_char_201_moeshd_kfc_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_kfc_1/build/build_char_201_moeshd_kfc_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/201_moeshd_kfc#1",
+  "source_asset": {
+    "assetId": "build_char_201_moeshd_kfc#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "可颂",
+    "appellation": "Croissant",
+    "skinGroupId": "2019#kfc",
+    "skinGroupName": "肯德基",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_201_moeshd_kfc#1.atlas",
+      ".png": "build_char_201_moeshd_kfc#1.png",
+      ".skel": "build_char_201_moeshd_kfc#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/croissant/skin-kfc-1/meta.json",
-    "atlas": "standalone/assets/source/croissant/skin-kfc-1/build_char_201_moeshd_kfc_1.atlas",
-    "skeleton": "standalone/assets/source/croissant/skin-kfc-1/build_char_201_moeshd_kfc_1.skel",
+    "atlas": "standalone/assets/source/croissant/skin-kfc-1/build_char_201_moeshd_kfc#1.atlas",
+    "skeleton": "standalone/assets/source/croissant/skin-kfc-1/build_char_201_moeshd_kfc#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_kfc_1/build/build_char_201_moeshd_kfc_1.png",
-        "path": "standalone/assets/source/croissant/skin-kfc-1/build_char_201_moeshd_kfc_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/201_moeshd_kfc%231/build_char_201_moeshd_kfc%231.png",
+        "path": "standalone/assets/source/croissant/skin-kfc-1/build_char_201_moeshd_kfc#1.png",
+        "bytes": 223920,
+        "sha256": "53a9203bde5faa7d3ba7fe88d40ca5417b6878a4482eef2e1a8c396d03189a95"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8242,
+      "sha256": "f59be4f36c78c782ba3045739ad5623b945a459b39aac8a55364222e078475ff"
+    },
+    "skeleton": {
+      "bytes": 232626,
+      "sha256": "b0931b3f335504ba76401f3778be10f17efb5e7b07b7794ce9d161f39bde97f0"
+    }
   }
 }

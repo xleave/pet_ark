@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "philae",
   "character_name": "Philae",
   "localized_name": "菲莱",
@@ -9,25 +9,58 @@
   "variant_name": "花绸曲",
   "skin_id": "nian-12",
   "skin_name": "花绸曲",
-  "source_page": "https://prts.wiki/w/%E8%8F%B2%E8%8E%B1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4148_philae/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4148_philae/meta.json",
-    "model": "char_4148_philae_nian_12/build/build_char_4148_philae_nian_12",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4148_philae/char_4148_philae_nian_12/build/build_char_4148_philae_nian_12.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4148_philae/char_4148_philae_nian_12/build/build_char_4148_philae_nian_12.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4148_philae/char_4148_philae_nian_12/build/build_char_4148_philae_nian_12.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4148_philae_nian#12",
+  "source_asset": {
+    "assetId": "build_char_4148_philae_nian#12",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "菲莱",
+    "appellation": "Philae",
+    "skinGroupId": "2026#nian",
+    "skinGroupName": "0011制造/XII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4148_philae_nian#12.atlas",
+      ".png": "build_char_4148_philae_nian#12.png",
+      ".skel": "build_char_4148_philae_nian#12.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/philae/skin-nian-12/meta.json",
-    "atlas": "standalone/assets/source/philae/skin-nian-12/build_char_4148_philae_nian_12.atlas",
-    "skeleton": "standalone/assets/source/philae/skin-nian-12/build_char_4148_philae_nian_12.skel",
+    "atlas": "standalone/assets/source/philae/skin-nian-12/build_char_4148_philae_nian#12.atlas",
+    "skeleton": "standalone/assets/source/philae/skin-nian-12/build_char_4148_philae_nian#12.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4148_philae/char_4148_philae_nian_12/build/build_char_4148_philae_nian_12.png",
-        "path": "standalone/assets/source/philae/skin-nian-12/build_char_4148_philae_nian_12.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4148_philae_nian%2312/build_char_4148_philae_nian%2312.png",
+        "path": "standalone/assets/source/philae/skin-nian-12/build_char_4148_philae_nian#12.png",
+        "bytes": 383217,
+        "sha256": "5395e0330516e4749a246e5b5669872ba2c3ce6dd56322644e9be93fc56464f3"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11005,
+      "sha256": "7c599ac99b982d180bf9259f74d0954645124f13776e3ab875de5de36a42a46d"
+    },
+    "skeleton": {
+      "bytes": 485098,
+      "sha256": "a15fd8366702c35b77f27ad3e5eac730787ff4b91dbabc1733df591b88fab6a6"
+    }
   }
 }

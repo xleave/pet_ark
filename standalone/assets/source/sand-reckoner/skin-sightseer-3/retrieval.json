@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "sand-reckoner",
   "character_name": "Sand Reckoner",
   "localized_name": "衡沙",
@@ -9,25 +9,58 @@
   "variant_name": "憩羽",
   "skin_id": "sightseer-3",
   "skin_name": "憩羽",
-  "source_page": "https://prts.wiki/w/%E8%A1%A1%E6%B2%99",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4140_lasher/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4140_lasher/meta.json",
-    "model": "char_4140_lasher_sightseer_3/build/build_char_4140_lasher_sightseer_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4140_lasher/char_4140_lasher_sightseer_3/build/build_char_4140_lasher_sightseer_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4140_lasher/char_4140_lasher_sightseer_3/build/build_char_4140_lasher_sightseer_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4140_lasher/char_4140_lasher_sightseer_3/build/build_char_4140_lasher_sightseer_3.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4140_lasher_sightseer#3",
+  "source_asset": {
+    "assetId": "build_char_4140_lasher_sightseer#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "衡沙",
+    "appellation": "Sand Reckoner",
+    "skinGroupId": "2025#sightseer#2",
+    "skinGroupName": "错位巡礼/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4140_lasher_sightseer#3.atlas",
+      ".png": "build_char_4140_lasher_sightseer#3.png",
+      ".skel": "build_char_4140_lasher_sightseer#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/sand-reckoner/skin-sightseer-3/meta.json",
-    "atlas": "standalone/assets/source/sand-reckoner/skin-sightseer-3/build_char_4140_lasher_sightseer_3.atlas",
-    "skeleton": "standalone/assets/source/sand-reckoner/skin-sightseer-3/build_char_4140_lasher_sightseer_3.skel",
+    "atlas": "standalone/assets/source/sand-reckoner/skin-sightseer-3/build_char_4140_lasher_sightseer#3.atlas",
+    "skeleton": "standalone/assets/source/sand-reckoner/skin-sightseer-3/build_char_4140_lasher_sightseer#3.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4140_lasher/char_4140_lasher_sightseer_3/build/build_char_4140_lasher_sightseer_3.png",
-        "path": "standalone/assets/source/sand-reckoner/skin-sightseer-3/build_char_4140_lasher_sightseer_3.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4140_lasher_sightseer%233/build_char_4140_lasher_sightseer%233.png",
+        "path": "standalone/assets/source/sand-reckoner/skin-sightseer-3/build_char_4140_lasher_sightseer#3.png",
+        "bytes": 380752,
+        "sha256": "957a2909eb0d5a456b627f20bdf7e6fbeeac0a2c9d480acc0ba40ec0d163640d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10943,
+      "sha256": "f736d07b5612dd4da8ce746bdb134974ea5dbc32958f64a8e783ecb2f21df7b7"
+    },
+    "skeleton": {
+      "bytes": 678000,
+      "sha256": "2c940ab5d7286579aeb50cdcb388d5470d905ef32da048d6c7ee1980f8528b49"
+    }
   }
 }

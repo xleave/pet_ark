@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "melanite",
   "character_name": "Melanite",
   "localized_name": "玫拉",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%8E%AB%E6%8B%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4006_melnte/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4006_melnte/meta.json",
-    "model": "defaultskin/build/build_char_4006_melnte",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4006_melnte/defaultskin/build/build_char_4006_melnte.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4006_melnte/defaultskin/build/build_char_4006_melnte.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4006_melnte/defaultskin/build/build_char_4006_melnte.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4006_melnte",
+  "source_asset": {
+    "assetId": "build_char_4006_melnte",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "玫拉",
+    "appellation": "Melanite",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4006_melnte.atlas",
+      ".png": "build_char_4006_melnte.png",
+      ".skel": "build_char_4006_melnte.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/melanite/default/meta.json",
     "atlas": "standalone/assets/source/melanite/default/build_char_4006_melnte.atlas",
     "skeleton": "standalone/assets/source/melanite/default/build_char_4006_melnte.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4006_melnte/defaultskin/build/build_char_4006_melnte.png",
-        "path": "standalone/assets/source/melanite/default/build_char_4006_melnte.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4006_melnte/build_char_4006_melnte.png",
+        "path": "standalone/assets/source/melanite/default/build_char_4006_melnte.png",
+        "bytes": 240761,
+        "sha256": "259c0258898763b9ae1ecd7b37ac7427b17da17c7b0e3d01203e23ef53d36937"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8760,
+      "sha256": "cfd268b2392588073093a779f75b6e99534d343857d7dec9b97921b617c5b0f1"
+    },
+    "skeleton": {
+      "bytes": 189425,
+      "sha256": "5269a7fe491bfe2c8bfe56a9ef23b39372bd074db8a214b8c9487a0af742ff2b"
+    }
   }
 }

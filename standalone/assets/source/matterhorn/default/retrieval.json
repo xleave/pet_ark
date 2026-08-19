@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "matterhorn",
   "character_name": "Matterhorn",
   "localized_name": "角峰",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%A7%92%E5%B3%B0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_199_yak/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_199_yak/meta.json",
-    "model": "defaultskin/build/build_char_199_yak",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_199_yak/defaultskin/build/build_char_199_yak.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_199_yak/defaultskin/build/build_char_199_yak.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_199_yak/defaultskin/build/build_char_199_yak.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/199_yak",
+  "source_asset": {
+    "assetId": "build_char_199_yak",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "角峰",
+    "appellation": "Matterhorn",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_199_yak.atlas",
+      ".png": "build_char_199_yak.png",
+      ".skel": "build_char_199_yak.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/matterhorn/default/meta.json",
     "atlas": "standalone/assets/source/matterhorn/default/build_char_199_yak.atlas",
     "skeleton": "standalone/assets/source/matterhorn/default/build_char_199_yak.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_199_yak/defaultskin/build/build_char_199_yak.png",
-        "path": "standalone/assets/source/matterhorn/default/build_char_199_yak.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/199_yak/build_char_199_yak.png",
+        "path": "standalone/assets/source/matterhorn/default/build_char_199_yak.png",
+        "bytes": 164808,
+        "sha256": "191f2b8eeaa1d74aa689ddc4fc5941128604fa0bef88b6e4186f8263bfc1e282"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4342,
+      "sha256": "9b387e53eadcdb5b77f3b6db41325e447112e270d5341f1bb1fd6a62bae6400f"
+    },
+    "skeleton": {
+      "bytes": 65008,
+      "sha256": "e96ad034346c434ff5319a007ea432b12afd30501d79080ec53c9dab1010069c"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "tippi",
   "character_name": "Tippi",
   "localized_name": "蒂比",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%92%82%E6%AF%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4191_tippi/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4191_tippi/meta.json",
-    "model": "defaultskin/build/build_char_4191_tippi",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4191_tippi/defaultskin/build/build_char_4191_tippi.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4191_tippi/defaultskin/build/build_char_4191_tippi.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4191_tippi/defaultskin/build/build_char_4191_tippi.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4191_tippi",
+  "source_asset": {
+    "assetId": "build_char_4191_tippi",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "蒂比",
+    "appellation": "Tippi",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4191_tippi.atlas",
+      ".png": "build_char_4191_tippi.png",
+      ".skel": "build_char_4191_tippi.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/tippi/default/meta.json",
     "atlas": "standalone/assets/source/tippi/default/build_char_4191_tippi.atlas",
     "skeleton": "standalone/assets/source/tippi/default/build_char_4191_tippi.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4191_tippi/defaultskin/build/build_char_4191_tippi.png",
-        "path": "standalone/assets/source/tippi/default/build_char_4191_tippi.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4191_tippi/build_char_4191_tippi.png",
+        "path": "standalone/assets/source/tippi/default/build_char_4191_tippi.png",
+        "bytes": 630985,
+        "sha256": "09fe961e3a43b7031c8cab690b3bda66275eaf94bded66bc322951813f028a08"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 23394,
+      "sha256": "f1dfe663f59a1ceb98348c65c5f22bcf092b4036fc284e1a63885d17902d5426"
+    },
+    "skeleton": {
+      "bytes": 147983,
+      "sha256": "b60f415cf8f8884c9d00667faa2b2268cc2acb3f263524f4fe0c2e0a8eec9a6c"
+    }
   }
 }

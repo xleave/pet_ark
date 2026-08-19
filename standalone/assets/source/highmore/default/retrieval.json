@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "highmore",
   "character_name": "Highmore",
   "localized_name": "海沫",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B5%B7%E6%B2%AB",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/meta.json",
-    "model": "defaultskin/build/build_char_4066_highmo",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/defaultskin/build/build_char_4066_highmo.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/defaultskin/build/build_char_4066_highmo.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/defaultskin/build/build_char_4066_highmo.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4066_highmo",
+  "source_asset": {
+    "assetId": "build_char_4066_highmo",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "海沫",
+    "appellation": "Highmore",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4066_highmo.atlas",
+      ".png": "build_char_4066_highmo.png",
+      ".skel": "build_char_4066_highmo.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/highmore/default/meta.json",
     "atlas": "standalone/assets/source/highmore/default/build_char_4066_highmo.atlas",
     "skeleton": "standalone/assets/source/highmore/default/build_char_4066_highmo.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4066_highmo/defaultskin/build/build_char_4066_highmo.png",
-        "path": "standalone/assets/source/highmore/default/build_char_4066_highmo.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4066_highmo/build_char_4066_highmo.png",
+        "path": "standalone/assets/source/highmore/default/build_char_4066_highmo.png",
+        "bytes": 360673,
+        "sha256": "8a6268cbac9c119d4c14e86014b831ec0c6726161c998a417bc046186093f6bf"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9496,
+      "sha256": "2a4125ba0d0c32e6cf3c6de069d4f8087168f985f128166de8e830084857f748"
+    },
+    "skeleton": {
+      "bytes": 271565,
+      "sha256": "ea20f24df9336caf187c656317683073ab5e095803852536ed03c8e1be870b11"
+    }
   }
 }

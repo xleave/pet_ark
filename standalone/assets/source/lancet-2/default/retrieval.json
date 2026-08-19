@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lancet-2",
   "character_name": "Lancet-2",
   "localized_name": "Lancet-2",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/Lancet-2",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/meta.json",
-    "model": "defaultskin/build/build_char_285_medic2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/defaultskin/build/build_char_285_medic2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/defaultskin/build/build_char_285_medic2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/defaultskin/build/build_char_285_medic2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/285_medic2",
+  "source_asset": {
+    "assetId": "build_char_285_medic2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "Lancet-2",
+    "appellation": "Lancet-2",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_1"
+    ],
+    "assetList": {
+      ".atlas": "build_char_285_medic2.atlas",
+      ".png": "build_char_285_medic2.png",
+      ".skel": "build_char_285_medic2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lancet-2/default/meta.json",
     "atlas": "standalone/assets/source/lancet-2/default/build_char_285_medic2.atlas",
     "skeleton": "standalone/assets/source/lancet-2/default/build_char_285_medic2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/defaultskin/build/build_char_285_medic2.png",
-        "path": "standalone/assets/source/lancet-2/default/build_char_285_medic2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/285_medic2/build_char_285_medic2.png",
+        "path": "standalone/assets/source/lancet-2/default/build_char_285_medic2.png",
+        "bytes": 172643,
+        "sha256": "d75fed4bcd693962bb47b84f73dee517e4f38e37f6060c531382fdea8096f1e0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 2532,
+      "sha256": "5b4f39b29c24416f006581f3a19712d44ebb218ab8e9bee6d6f520c4f6aef9df"
+    },
+    "skeleton": {
+      "bytes": 32402,
+      "sha256": "641b5282b97be88de48c2e6ec1c6af8405811a78cb7c24df3eb1a43cea2c4b5b"
+    }
   }
 }

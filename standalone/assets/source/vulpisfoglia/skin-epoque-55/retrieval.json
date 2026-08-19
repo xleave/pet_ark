@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "vulpisfoglia",
   "character_name": "Vulpisfoglia",
   "localized_name": "忍冬",
@@ -9,25 +9,58 @@
   "variant_name": "失焦",
   "skin_id": "epoque-55",
   "skin_name": "失焦",
-  "source_page": "https://prts.wiki/w/%E5%BF%8D%E5%86%AC",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4026_vulpis/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4026_vulpis/meta.json",
-    "model": "char_4026_vulpis_epoque_55/build/build_char_4026_vulpis_epoque_55",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4026_vulpis/char_4026_vulpis_epoque_55/build/build_char_4026_vulpis_epoque_55.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4026_vulpis/char_4026_vulpis_epoque_55/build/build_char_4026_vulpis_epoque_55.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4026_vulpis/char_4026_vulpis_epoque_55/build/build_char_4026_vulpis_epoque_55.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4026_vulpis_epoque#55",
+  "source_asset": {
+    "assetId": "build_char_4026_vulpis_epoque#55",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "忍冬",
+    "appellation": "Vulpisfoglia",
+    "skinGroupId": "2026#epoque#6",
+    "skinGroupName": "时代/LV",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4026_vulpis_epoque#55.atlas",
+      ".png": "build_char_4026_vulpis_epoque#55.png",
+      ".skel": "build_char_4026_vulpis_epoque#55.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/vulpisfoglia/skin-epoque-55/meta.json",
-    "atlas": "standalone/assets/source/vulpisfoglia/skin-epoque-55/build_char_4026_vulpis_epoque_55.atlas",
-    "skeleton": "standalone/assets/source/vulpisfoglia/skin-epoque-55/build_char_4026_vulpis_epoque_55.skel",
+    "atlas": "standalone/assets/source/vulpisfoglia/skin-epoque-55/build_char_4026_vulpis_epoque#55.atlas",
+    "skeleton": "standalone/assets/source/vulpisfoglia/skin-epoque-55/build_char_4026_vulpis_epoque#55.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4026_vulpis/char_4026_vulpis_epoque_55/build/build_char_4026_vulpis_epoque_55.png",
-        "path": "standalone/assets/source/vulpisfoglia/skin-epoque-55/build_char_4026_vulpis_epoque_55.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4026_vulpis_epoque%2355/build_char_4026_vulpis_epoque%2355.png",
+        "path": "standalone/assets/source/vulpisfoglia/skin-epoque-55/build_char_4026_vulpis_epoque#55.png",
+        "bytes": 973210,
+        "sha256": "e9c03b13cfec5a675ff834dad105d0a6b1cdd0ae4aaed76e430a2511abcc046c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 17190,
+      "sha256": "9c3e32265cfeb464195c26febe4872aeeffc350bc02ee177f25ff749e940bd3a"
+    },
+    "skeleton": {
+      "bytes": 577101,
+      "sha256": "8e952832945ecae39b257fae6d51b72db88af87c92d6a8cb0bdeb362ec2e5c3d"
+    }
   }
 }

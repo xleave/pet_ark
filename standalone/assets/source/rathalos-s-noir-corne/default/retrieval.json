@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "rathalos-s-noir-corne",
   "character_name": "Rathalos S Noir Corne",
   "localized_name": "火龙S黑角",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%81%AB%E9%BE%99S%E9%BB%91%E8%A7%92",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1030_noirc2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1030_noirc2/meta.json",
-    "model": "defaultskin/build/build_char_1030_noirc2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1030_noirc2/defaultskin/build/build_char_1030_noirc2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1030_noirc2/defaultskin/build/build_char_1030_noirc2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1030_noirc2/defaultskin/build/build_char_1030_noirc2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1030_noirc2",
+  "source_asset": {
+    "assetId": "build_char_1030_noirc2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "火龙S黑角",
+    "appellation": "Rathalos S Noir Corne",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1030_noirc2.atlas",
+      ".png": "build_char_1030_noirc2.png",
+      ".skel": "build_char_1030_noirc2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/rathalos-s-noir-corne/default/meta.json",
     "atlas": "standalone/assets/source/rathalos-s-noir-corne/default/build_char_1030_noirc2.atlas",
     "skeleton": "standalone/assets/source/rathalos-s-noir-corne/default/build_char_1030_noirc2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1030_noirc2/defaultskin/build/build_char_1030_noirc2.png",
-        "path": "standalone/assets/source/rathalos-s-noir-corne/default/build_char_1030_noirc2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1030_noirc2/build_char_1030_noirc2.png",
+        "path": "standalone/assets/source/rathalos-s-noir-corne/default/build_char_1030_noirc2.png",
+        "bytes": 296955,
+        "sha256": "d7a0c8f9184687182b2655344ad9d5a4157199ef29d9fed688cf54fd9d6b5f75"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5926,
+      "sha256": "20d20e6e7bb06d1a0421c6696e06bae43540098f770be795e7f7d93c045f0ffb"
+    },
+    "skeleton": {
+      "bytes": 121402,
+      "sha256": "e1919f6ff296687f1342b736f6a51ae6cbd6a79c059f8ec36c8b7c338ad85bfa"
+    }
   }
 }

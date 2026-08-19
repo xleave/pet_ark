@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "shamare",
   "character_name": "Shamare",
   "localized_name": "巫恋",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%B7%AB%E6%81%8B",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_254_vodfox/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_254_vodfox/meta.json",
-    "model": "defaultskin/build/build_char_254_vodfox",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_254_vodfox/defaultskin/build/build_char_254_vodfox.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_254_vodfox/defaultskin/build/build_char_254_vodfox.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_254_vodfox/defaultskin/build/build_char_254_vodfox.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/254_vodfox",
+  "source_asset": {
+    "assetId": "build_char_254_vodfox",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "巫恋",
+    "appellation": "Shamare",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_254_vodfox.atlas",
+      ".png": "build_char_254_vodfox.png",
+      ".skel": "build_char_254_vodfox.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/shamare/default/meta.json",
     "atlas": "standalone/assets/source/shamare/default/build_char_254_vodfox.atlas",
     "skeleton": "standalone/assets/source/shamare/default/build_char_254_vodfox.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_254_vodfox/defaultskin/build/build_char_254_vodfox.png",
-        "path": "standalone/assets/source/shamare/default/build_char_254_vodfox.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/254_vodfox/build_char_254_vodfox.png",
+        "path": "standalone/assets/source/shamare/default/build_char_254_vodfox.png",
+        "bytes": 332542,
+        "sha256": "a1bcbaf71f77ededd23237341a37ea0dbd115978d784e0a5886a8d6803453e09"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9309,
+      "sha256": "15b1fabf482a061874779f1c394614da8e1687df9f544dc0e4c10f15ac96c1a6"
+    },
+    "skeleton": {
+      "bytes": 102066,
+      "sha256": "9d6634d04426972211b18d2b5156942168442866936d92224b99fac9c3742c33"
+    }
   }
 }

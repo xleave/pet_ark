@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "la-pluma",
   "character_name": "La Pluma",
   "localized_name": "羽毛笔",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%BE%BD%E6%AF%9B%E7%AC%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/meta.json",
-    "model": "defaultskin/build/build_char_421_crow",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/defaultskin/build/build_char_421_crow.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/defaultskin/build/build_char_421_crow.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/defaultskin/build/build_char_421_crow.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/421_crow",
+  "source_asset": {
+    "assetId": "build_char_421_crow",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "羽毛笔",
+    "appellation": "La Pluma",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_421_crow.atlas",
+      ".png": "build_char_421_crow.png",
+      ".skel": "build_char_421_crow.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/la-pluma/default/meta.json",
     "atlas": "standalone/assets/source/la-pluma/default/build_char_421_crow.atlas",
     "skeleton": "standalone/assets/source/la-pluma/default/build_char_421_crow.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/defaultskin/build/build_char_421_crow.png",
-        "path": "standalone/assets/source/la-pluma/default/build_char_421_crow.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/421_crow/build_char_421_crow.png",
+        "path": "standalone/assets/source/la-pluma/default/build_char_421_crow.png",
+        "bytes": 236106,
+        "sha256": "24c72be8f8ca8dbc75bee49fd2e7c51c793b5c526737f568599a29fcfcc0865f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6609,
+      "sha256": "de2c5bb63f288a10e5ec52f072f96c99ea3d1c3913654b0932d14251d7f31634"
+    },
+    "skeleton": {
+      "bytes": 98539,
+      "sha256": "0b85bb201c2dd147d996ee979cfd53bd692b9667cf6ddf9a6504e12517662ab9"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "beagle",
   "character_name": "Beagle",
   "localized_name": "米格鲁",
@@ -9,25 +9,58 @@
   "variant_name": "无畏",
   "skin_id": "boc-1",
   "skin_name": "无畏",
-  "source_page": "https://prts.wiki/w/%E7%B1%B3%E6%A0%BC%E9%B2%81",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_122_beagle/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_122_beagle/meta.json",
-    "model": "char_122_beagle_boc_1/build/build_char_122_beagle_boc_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_122_beagle/char_122_beagle_boc_1/build/build_char_122_beagle_boc_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_122_beagle/char_122_beagle_boc_1/build/build_char_122_beagle_boc_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_122_beagle/char_122_beagle_boc_1/build/build_char_122_beagle_boc_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/122_beagle_boc#1",
+  "source_asset": {
+    "assetId": "build_char_122_beagle_boc#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "米格鲁",
+    "appellation": "Beagle",
+    "skinGroupId": "2020#boc",
+    "skinGroupName": "斗争血脉/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_122_beagle_boc#1.atlas",
+      ".png": "build_char_122_beagle_boc#1.png",
+      ".skel": "build_char_122_beagle_boc#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/beagle/skin-boc-1/meta.json",
-    "atlas": "standalone/assets/source/beagle/skin-boc-1/build_char_122_beagle_boc_1.atlas",
-    "skeleton": "standalone/assets/source/beagle/skin-boc-1/build_char_122_beagle_boc_1.skel",
+    "atlas": "standalone/assets/source/beagle/skin-boc-1/build_char_122_beagle_boc#1.atlas",
+    "skeleton": "standalone/assets/source/beagle/skin-boc-1/build_char_122_beagle_boc#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_122_beagle/char_122_beagle_boc_1/build/build_char_122_beagle_boc_1.png",
-        "path": "standalone/assets/source/beagle/skin-boc-1/build_char_122_beagle_boc_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/122_beagle_boc%231/build_char_122_beagle_boc%231.png",
+        "path": "standalone/assets/source/beagle/skin-boc-1/build_char_122_beagle_boc#1.png",
+        "bytes": 207291,
+        "sha256": "34cc49dc250fe6a72fb414bdce11bea4add6adc8408433f35609f806a4165edf"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7953,
+      "sha256": "5841b5d87d1a8083177e2fecc276b3ed81a0d01203ba1ffe38b97e87e8d80d98"
+    },
+    "skeleton": {
+      "bytes": 133613,
+      "sha256": "d4cf278d3cb1774d59d8e58fc539bf91a5fe3846331b99d2bd2ca186f51e3d1f"
+    }
   }
 }

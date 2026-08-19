@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mostima",
   "character_name": "Mostima",
   "localized_name": "莫斯提马",
@@ -9,25 +9,58 @@
   "variant_name": "幻语乐痕",
   "skin_id": "ambiencesynesthesia-6",
   "skin_name": "幻语乐痕",
-  "source_page": "https://prts.wiki/w/%E8%8E%AB%E6%96%AF%E6%8F%90%E9%A9%AC",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/meta.json",
-    "model": "char_213_mostma_ambiencesynesthesia_6/build/build_char_213_mostma_ambienceSynesthesia_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/char_213_mostma_ambiencesynesthesia_6/build/build_char_213_mostma_ambienceSynesthesia_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/char_213_mostma_ambiencesynesthesia_6/build/build_char_213_mostma_ambienceSynesthesia_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/char_213_mostma_ambiencesynesthesia_6/build/build_char_213_mostma_ambienceSynesthesia_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/213_mostma_ambiencesynesthesia#6",
+  "source_asset": {
+    "assetId": "build_char_213_mostma_ambiencesynesthesia#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "莫斯提马",
+    "appellation": "Mostima",
+    "skinGroupId": "2025#ambienceSynesthesia#2",
+    "skinGroupName": "音律联觉/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_213_mostma_ambienceSynesthesia#6.atlas",
+      ".png": "build_char_213_mostma_ambienceSynesthesia#6.png",
+      ".skel": "build_char_213_mostma_ambienceSynesthesia#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mostima/skin-ambiencesynesthesia-6/meta.json",
-    "atlas": "standalone/assets/source/mostima/skin-ambiencesynesthesia-6/build_char_213_mostma_ambienceSynesthesia_6.atlas",
-    "skeleton": "standalone/assets/source/mostima/skin-ambiencesynesthesia-6/build_char_213_mostma_ambienceSynesthesia_6.skel",
+    "atlas": "standalone/assets/source/mostima/skin-ambiencesynesthesia-6/build_char_213_mostma_ambienceSynesthesia#6.atlas",
+    "skeleton": "standalone/assets/source/mostima/skin-ambiencesynesthesia-6/build_char_213_mostma_ambienceSynesthesia#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/char_213_mostma_ambiencesynesthesia_6/build/build_char_213_mostma_ambienceSynesthesia_6.png",
-        "path": "standalone/assets/source/mostima/skin-ambiencesynesthesia-6/build_char_213_mostma_ambienceSynesthesia_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/213_mostma_ambiencesynesthesia%236/build_char_213_mostma_ambienceSynesthesia%236.png",
+        "path": "standalone/assets/source/mostima/skin-ambiencesynesthesia-6/build_char_213_mostma_ambienceSynesthesia#6.png",
+        "bytes": 595857,
+        "sha256": "0c6a92b97d9378f4bf7d2c808d948652d9a74ab0d7082f726c2b0746deb130ec"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13447,
+      "sha256": "75a54f7a882f1b3a3fd198e1d133c08b2465dbcc6c719e41c8696bba2fadd92a"
+    },
+    "skeleton": {
+      "bytes": 676846,
+      "sha256": "2daa28dc8a070d7fc85d372a201809eb05cdd7e6f23d66052d2782f8da5fb54c"
+    }
   }
 }

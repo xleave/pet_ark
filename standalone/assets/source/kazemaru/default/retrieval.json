@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "kazemaru",
   "character_name": "Kazemaru",
   "localized_name": "风丸",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%A3%8E%E4%B8%B8",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4016_kazema/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4016_kazema/meta.json",
-    "model": "defaultskin/build/build_char_4016_kazema",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4016_kazema/defaultskin/build/build_char_4016_kazema.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4016_kazema/defaultskin/build/build_char_4016_kazema.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4016_kazema/defaultskin/build/build_char_4016_kazema.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4016_kazema",
+  "source_asset": {
+    "assetId": "build_char_4016_kazema",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "风丸",
+    "appellation": "Kazemaru",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4016_kazema.atlas",
+      ".png": "build_char_4016_kazema.png",
+      ".skel": "build_char_4016_kazema.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/kazemaru/default/meta.json",
     "atlas": "standalone/assets/source/kazemaru/default/build_char_4016_kazema.atlas",
     "skeleton": "standalone/assets/source/kazemaru/default/build_char_4016_kazema.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4016_kazema/defaultskin/build/build_char_4016_kazema.png",
-        "path": "standalone/assets/source/kazemaru/default/build_char_4016_kazema.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4016_kazema/build_char_4016_kazema.png",
+        "path": "standalone/assets/source/kazemaru/default/build_char_4016_kazema.png",
+        "bytes": 243638,
+        "sha256": "941758d630c512d7193417d594fa856148f06af71faeea34f9499914fb24515b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9419,
+      "sha256": "7bdad4448654cce1320ff43608b01166ee85f385bcf47663e2a3f1ff28c4ac87"
+    },
+    "skeleton": {
+      "bytes": 148202,
+      "sha256": "0a9d725488c3df82f354a181e2de87a2db56e2d6c316bf3182a285eec0469c5c"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "narantuya",
   "character_name": "Narantuya",
   "localized_name": "娜仁图亚",
@@ -9,25 +9,58 @@
   "variant_name": "率直诚实之人",
   "skin_id": "littlepony-1",
   "skin_name": "率直诚实之人",
-  "source_page": "https://prts.wiki/w/%E5%A8%9C%E4%BB%81%E5%9B%BE%E4%BA%9A",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/meta.json",
-    "model": "char_4138_narant_littlepony_1/build/build_char_4138_narant_littlePony_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/char_4138_narant_littlepony_1/build/build_char_4138_narant_littlePony_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/char_4138_narant_littlepony_1/build/build_char_4138_narant_littlePony_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/char_4138_narant_littlepony_1/build/build_char_4138_narant_littlePony_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4138_narant_littlepony#1",
+  "source_asset": {
+    "assetId": "build_char_4138_narant_littlepony#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "娜仁图亚",
+    "appellation": "Narantuya",
+    "skinGroupId": "2026#littlePony",
+    "skinGroupName": "小马宝莉",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4138_narant_littlePony#1.atlas",
+      ".png": "build_char_4138_narant_littlePony#1.png",
+      ".skel": "build_char_4138_narant_littlePony#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/narantuya/skin-littlepony-1/meta.json",
-    "atlas": "standalone/assets/source/narantuya/skin-littlepony-1/build_char_4138_narant_littlePony_1.atlas",
-    "skeleton": "standalone/assets/source/narantuya/skin-littlepony-1/build_char_4138_narant_littlePony_1.skel",
+    "atlas": "standalone/assets/source/narantuya/skin-littlepony-1/build_char_4138_narant_littlePony#1.atlas",
+    "skeleton": "standalone/assets/source/narantuya/skin-littlepony-1/build_char_4138_narant_littlePony#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/char_4138_narant_littlepony_1/build/build_char_4138_narant_littlePony_1.png",
-        "path": "standalone/assets/source/narantuya/skin-littlepony-1/build_char_4138_narant_littlePony_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4138_narant_littlepony%231/build_char_4138_narant_littlePony%231.png",
+        "path": "standalone/assets/source/narantuya/skin-littlepony-1/build_char_4138_narant_littlePony#1.png",
+        "bytes": 704255,
+        "sha256": "b43adce0dc246fc02f7d711ec7e3165f81be2879d281b156454371fdd1df0fec"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 20926,
+      "sha256": "4dfafb84cae71393e54038db6da212f05f6b0d45e91675cb887c8361b6d6499d"
+    },
+    "skeleton": {
+      "bytes": 610809,
+      "sha256": "7e507ca80a96909ffc8b337986e57b9123a121892807725d850d40be324e9dfc"
+    }
   }
 }

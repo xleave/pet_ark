@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ifrit",
   "character_name": "Ifrit",
   "localized_name": "伊芙利特",
@@ -9,25 +9,58 @@
   "variant_name": "儿童派对",
   "skin_id": "kfc-1-build-char-134-ifrit-kfc-1",
   "skin_name": "儿童派对",
-  "source_page": "https://prts.wiki/w/%E4%BC%8A%E8%8A%99%E5%88%A9%E7%89%B9",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_134_ifrit/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_134_ifrit/meta.json",
-    "model": "char_134_ifrit_kfc_1/build/char_134_ifrit_kfc_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_134_ifrit/char_134_ifrit_kfc_1/build/char_134_ifrit_kfc_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_134_ifrit/char_134_ifrit_kfc_1/build/char_134_ifrit_kfc_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_134_ifrit/char_134_ifrit_kfc_1/build/char_134_ifrit_kfc_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/134_ifrit_kfc#1",
+  "source_asset": {
+    "assetId": "build_char_134_ifrit_kfc#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "伊芙利特",
+    "appellation": "Ifrit",
+    "skinGroupId": "2019#kfc",
+    "skinGroupName": "肯德基",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "char_134_ifrit_kfc#1.atlas",
+      ".png": "char_134_ifrit_kfc#1.png",
+      ".skel": "char_134_ifrit_kfc#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ifrit/skin-kfc-1-build-char-134-ifrit-kfc-1/meta.json",
-    "atlas": "standalone/assets/source/ifrit/skin-kfc-1-build-char-134-ifrit-kfc-1/char_134_ifrit_kfc_1.atlas",
-    "skeleton": "standalone/assets/source/ifrit/skin-kfc-1-build-char-134-ifrit-kfc-1/char_134_ifrit_kfc_1.skel",
+    "atlas": "standalone/assets/source/ifrit/skin-kfc-1-build-char-134-ifrit-kfc-1/char_134_ifrit_kfc#1.atlas",
+    "skeleton": "standalone/assets/source/ifrit/skin-kfc-1-build-char-134-ifrit-kfc-1/char_134_ifrit_kfc#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_134_ifrit/char_134_ifrit_kfc_1/build/char_134_ifrit_kfc_1.png",
-        "path": "standalone/assets/source/ifrit/skin-kfc-1-build-char-134-ifrit-kfc-1/char_134_ifrit_kfc_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/134_ifrit_kfc%231/char_134_ifrit_kfc%231.png",
+        "path": "standalone/assets/source/ifrit/skin-kfc-1-build-char-134-ifrit-kfc-1/char_134_ifrit_kfc#1.png",
+        "bytes": 292881,
+        "sha256": "ac42f2d593f0b1d1711f461921fc17304f577c6a09cc453b5a4ace63672a8c9d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10140,
+      "sha256": "3469681392325d5b9778ce567f0c0df251d3a3b59faf649638bcdbaeec07b140"
+    },
+    "skeleton": {
+      "bytes": 104839,
+      "sha256": "0159340b40dcf66a8575a3ea8ba72715534164fb87917b3b0a2c88141c52eaa6"
+    }
   }
 }

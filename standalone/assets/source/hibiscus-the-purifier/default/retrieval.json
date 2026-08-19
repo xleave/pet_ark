@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "hibiscus-the-purifier",
   "character_name": "Hibiscus the Purifier",
   "localized_name": "濯尘芙蓉",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%BF%AF%E5%B0%98%E8%8A%99%E8%93%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1024_hbisc2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1024_hbisc2/meta.json",
-    "model": "defaultskin/build/build_char_1024_hbisc2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1024_hbisc2/defaultskin/build/build_char_1024_hbisc2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1024_hbisc2/defaultskin/build/build_char_1024_hbisc2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1024_hbisc2/defaultskin/build/build_char_1024_hbisc2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1024_hbisc2",
+  "source_asset": {
+    "assetId": "build_char_1024_hbisc2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "濯尘芙蓉",
+    "appellation": "Hibiscus the Purifier",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1024_hbisc2.atlas",
+      ".png": "build_char_1024_hbisc2.png",
+      ".skel": "build_char_1024_hbisc2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/hibiscus-the-purifier/default/meta.json",
     "atlas": "standalone/assets/source/hibiscus-the-purifier/default/build_char_1024_hbisc2.atlas",
     "skeleton": "standalone/assets/source/hibiscus-the-purifier/default/build_char_1024_hbisc2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1024_hbisc2/defaultskin/build/build_char_1024_hbisc2.png",
-        "path": "standalone/assets/source/hibiscus-the-purifier/default/build_char_1024_hbisc2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1024_hbisc2/build_char_1024_hbisc2.png",
+        "path": "standalone/assets/source/hibiscus-the-purifier/default/build_char_1024_hbisc2.png",
+        "bytes": 264755,
+        "sha256": "3d08fef66017e49540589fe3dbdd8480ee6d1f1407e2760646decc9ae894f4d2"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8262,
+      "sha256": "90b5ef74e28056eeea456684e36abf2793ad657fa05318028791d680cdec1b7a"
+    },
+    "skeleton": {
+      "bytes": 125824,
+      "sha256": "529629141463862409ceec69b559220861b2045164d968be249c88e54592ff64"
+    }
   }
 }

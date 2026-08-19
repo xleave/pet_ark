@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "saria",
   "character_name": "Saria",
   "localized_name": "塞雷娅",
@@ -9,25 +9,58 @@
   "variant_name": "铁律",
   "skin_id": "test-1",
   "skin_name": "铁律",
-  "source_page": "https://prts.wiki/w/%E5%A1%9E%E9%9B%B7%E5%A8%85",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/meta.json",
-    "model": "char_202_demkni_test_1/build/build_char_202_demkni_test_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/char_202_demkni_test_1/build/build_char_202_demkni_test_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/char_202_demkni_test_1/build/build_char_202_demkni_test_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/char_202_demkni_test_1/build/build_char_202_demkni_test_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/202_demkni_test#1",
+  "source_asset": {
+    "assetId": "build_char_202_demkni_test#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "塞雷娅",
+    "appellation": "Saria",
+    "skinGroupId": "2020#sale#2",
+    "skinGroupName": "忒斯特收藏/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_202_demkni_test#1.atlas",
+      ".png": "build_char_202_demkni_test#1.png",
+      ".skel": "build_char_202_demkni_test#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/saria/skin-test-1/meta.json",
-    "atlas": "standalone/assets/source/saria/skin-test-1/build_char_202_demkni_test_1.atlas",
-    "skeleton": "standalone/assets/source/saria/skin-test-1/build_char_202_demkni_test_1.skel",
+    "atlas": "standalone/assets/source/saria/skin-test-1/build_char_202_demkni_test#1.atlas",
+    "skeleton": "standalone/assets/source/saria/skin-test-1/build_char_202_demkni_test#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_202_demkni/char_202_demkni_test_1/build/build_char_202_demkni_test_1.png",
-        "path": "standalone/assets/source/saria/skin-test-1/build_char_202_demkni_test_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/202_demkni_test%231/build_char_202_demkni_test%231.png",
+        "path": "standalone/assets/source/saria/skin-test-1/build_char_202_demkni_test#1.png",
+        "bytes": 364834,
+        "sha256": "1c85f63984dc2666d97ec7099d9f624678d3c156b58d9fef96f56a38cf390bc1"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8116,
+      "sha256": "e3788ac1f121f284ee5ec8d92370a9acce4552966da8b542f638e3e7e96be467"
+    },
+    "skeleton": {
+      "bytes": 361972,
+      "sha256": "146bfdd2f08f183f9fb2de130bb0b4eef86a0adcec18d1d8fcf7eb24f73628c7"
+    }
   }
 }

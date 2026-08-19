@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "irene",
   "character_name": "Irene",
   "localized_name": "艾丽妮",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%89%BE%E4%B8%BD%E5%A6%AE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/meta.json",
-    "model": "defaultskin/build/build_char_4009_irene",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/defaultskin/build/build_char_4009_irene.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/defaultskin/build/build_char_4009_irene.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/defaultskin/build/build_char_4009_irene.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4009_irene",
+  "source_asset": {
+    "assetId": "build_char_4009_irene",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "艾丽妮",
+    "appellation": "Irene",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4009_irene.atlas",
+      ".png": "build_char_4009_irene.png",
+      ".skel": "build_char_4009_irene.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/irene/default/meta.json",
     "atlas": "standalone/assets/source/irene/default/build_char_4009_irene.atlas",
     "skeleton": "standalone/assets/source/irene/default/build_char_4009_irene.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4009_irene/defaultskin/build/build_char_4009_irene.png",
-        "path": "standalone/assets/source/irene/default/build_char_4009_irene.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4009_irene/build_char_4009_irene.png",
+        "path": "standalone/assets/source/irene/default/build_char_4009_irene.png",
+        "bytes": 345180,
+        "sha256": "af161d410e056d746bc8495860f6ccc02d6796274707c50e4d307ab0e3d05473"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9487,
+      "sha256": "581f30e565bc4fa5ed1d9d6bc45c99832906c397e95280a610d369c3e6c4cd83"
+    },
+    "skeleton": {
+      "bytes": 321010,
+      "sha256": "8ac5bd02a5aac8457c82b834c6390b696b67223eedeb94a29555a8cdfae7c867"
+    }
   }
 }

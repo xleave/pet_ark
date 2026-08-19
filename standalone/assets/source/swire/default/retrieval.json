@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "swire",
   "character_name": "Swire",
   "localized_name": "诗怀雅",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%AF%97%E6%80%80%E9%9B%85",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_308_swire/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_308_swire/meta.json",
-    "model": "defaultskin/build/build_char_308_swire",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_308_swire/defaultskin/build/build_char_308_swire.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_308_swire/defaultskin/build/build_char_308_swire.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_308_swire/defaultskin/build/build_char_308_swire.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/308_swire",
+  "source_asset": {
+    "assetId": "build_char_308_swire",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "诗怀雅",
+    "appellation": "Swire",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_308_swire.atlas",
+      ".png": "build_char_308_swire.png",
+      ".skel": "build_char_308_swire.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/swire/default/meta.json",
     "atlas": "standalone/assets/source/swire/default/build_char_308_swire.atlas",
     "skeleton": "standalone/assets/source/swire/default/build_char_308_swire.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_308_swire/defaultskin/build/build_char_308_swire.png",
-        "path": "standalone/assets/source/swire/default/build_char_308_swire.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/308_swire/build_char_308_swire.png",
+        "path": "standalone/assets/source/swire/default/build_char_308_swire.png",
+        "bytes": 250058,
+        "sha256": "4c23f6f20e7e0c88c1d281190265ee4be4da66040d80ffb4f2c7e4ece2428157"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6042,
+      "sha256": "1dc44817f881451b1fd4ef00e5a4d85a54e17843d22afee0b8ad1f85716e74c9"
+    },
+    "skeleton": {
+      "bytes": 134363,
+      "sha256": "8ffeaaa8d4db0bf9ae532454f2635a496a4b7b4b504527beaeccaaf145796f15"
+    }
   }
 }

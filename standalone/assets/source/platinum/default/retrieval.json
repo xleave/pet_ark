@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "platinum",
   "character_name": "Platinum",
   "localized_name": "白金",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%99%BD%E9%87%91",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_204_platnm/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_204_platnm/meta.json",
-    "model": "defaultskin/build/build_char_204_platnm",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_204_platnm/defaultskin/build/build_char_204_platnm.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_204_platnm/defaultskin/build/build_char_204_platnm.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_204_platnm/defaultskin/build/build_char_204_platnm.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/204_platnm",
+  "source_asset": {
+    "assetId": "build_char_204_platnm",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "白金",
+    "appellation": "Platinum",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_204_platnm.atlas",
+      ".png": "build_char_204_platnm.png",
+      ".skel": "build_char_204_platnm.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/platinum/default/meta.json",
     "atlas": "standalone/assets/source/platinum/default/build_char_204_platnm.atlas",
     "skeleton": "standalone/assets/source/platinum/default/build_char_204_platnm.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_204_platnm/defaultskin/build/build_char_204_platnm.png",
-        "path": "standalone/assets/source/platinum/default/build_char_204_platnm.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/204_platnm/build_char_204_platnm.png",
+        "path": "standalone/assets/source/platinum/default/build_char_204_platnm.png",
+        "bytes": 264515,
+        "sha256": "1428fbee5c22584d16052d891fa7e0e8d4e2104df1aa0a5225649fd5c668ec46"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6025,
+      "sha256": "f85c0277fed41a1e0a3949727c3c554678ca75111860ed99c72d825517b549d4"
+    },
+    "skeleton": {
+      "bytes": 99528,
+      "sha256": "3ff87a8b24d766691e5d4cb864460e12b97282272a78e6085ae119d0b8adc5b4"
+    }
   }
 }

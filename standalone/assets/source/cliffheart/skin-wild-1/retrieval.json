@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "cliffheart",
   "character_name": "Cliffheart",
   "localized_name": "崖心",
@@ -9,25 +9,58 @@
   "variant_name": "孤攀客",
   "skin_id": "wild-1",
   "skin_name": "孤攀客",
-  "source_page": "https://prts.wiki/w/%E5%B4%96%E5%BF%83",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_173_slchan/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_173_slchan/meta.json",
-    "model": "char_173_slchan_wild_1/build/build_char_173_slchan_wild_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_173_slchan/char_173_slchan_wild_1/build/build_char_173_slchan_wild_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_173_slchan/char_173_slchan_wild_1/build/build_char_173_slchan_wild_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_173_slchan/char_173_slchan_wild_1/build/build_char_173_slchan_wild_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/173_slchan_wild#1",
+  "source_asset": {
+    "assetId": "build_char_173_slchan_wild#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "崖心",
+    "appellation": "Cliffheart",
+    "skinGroupId": "2019#wild",
+    "skinGroupName": "生命之地/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_173_slchan_wild#1.atlas",
+      ".png": "build_char_173_slchan_wild#1.png",
+      ".skel": "build_char_173_slchan_wild#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/cliffheart/skin-wild-1/meta.json",
-    "atlas": "standalone/assets/source/cliffheart/skin-wild-1/build_char_173_slchan_wild_1.atlas",
-    "skeleton": "standalone/assets/source/cliffheart/skin-wild-1/build_char_173_slchan_wild_1.skel",
+    "atlas": "standalone/assets/source/cliffheart/skin-wild-1/build_char_173_slchan_wild#1.atlas",
+    "skeleton": "standalone/assets/source/cliffheart/skin-wild-1/build_char_173_slchan_wild#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_173_slchan/char_173_slchan_wild_1/build/build_char_173_slchan_wild_1.png",
-        "path": "standalone/assets/source/cliffheart/skin-wild-1/build_char_173_slchan_wild_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/173_slchan_wild%231/build_char_173_slchan_wild%231.png",
+        "path": "standalone/assets/source/cliffheart/skin-wild-1/build_char_173_slchan_wild#1.png",
+        "bytes": 272838,
+        "sha256": "bed0d58fce814d934888d4e372e86ee8a742d377b3875645acccf420f9d71864"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9645,
+      "sha256": "39898e0be9c3627c1326079bf9268df4411a142a8a2bd7b9a0e574af66cdbf89"
+    },
+    "skeleton": {
+      "bytes": 107701,
+      "sha256": "3ad92b2131e47c6ebe40178bff06e229c4cfac0b1ff352c7d872d469fc1c9f47"
+    }
   }
 }

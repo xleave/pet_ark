@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "meteorite",
   "character_name": "Meteorite",
   "localized_name": "陨星",
@@ -9,25 +9,58 @@
   "variant_name": "石墨",
   "skin_id": "sweep-1",
   "skin_name": "石墨",
-  "source_page": "https://prts.wiki/w/%E9%99%A8%E6%98%9F",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_219_meteo/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_219_meteo/meta.json",
-    "model": "char_219_meteo_sweep_1/build/build_char_219_meteo_sweep_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_219_meteo/char_219_meteo_sweep_1/build/build_char_219_meteo_sweep_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_219_meteo/char_219_meteo_sweep_1/build/build_char_219_meteo_sweep_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_219_meteo/char_219_meteo_sweep_1/build/build_char_219_meteo_sweep_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/219_meteo_sweep#1",
+  "source_asset": {
+    "assetId": "build_char_219_meteo_sweep#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "陨星",
+    "appellation": "Meteorite",
+    "skinGroupId": "2019#sweep",
+    "skinGroupName": "雷神开拓者",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_219_meteo_sweep#1.atlas",
+      ".png": "build_char_219_meteo_sweep#1.png",
+      ".skel": "build_char_219_meteo_sweep#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/meteorite/skin-sweep-1/meta.json",
-    "atlas": "standalone/assets/source/meteorite/skin-sweep-1/build_char_219_meteo_sweep_1.atlas",
-    "skeleton": "standalone/assets/source/meteorite/skin-sweep-1/build_char_219_meteo_sweep_1.skel",
+    "atlas": "standalone/assets/source/meteorite/skin-sweep-1/build_char_219_meteo_sweep#1.atlas",
+    "skeleton": "standalone/assets/source/meteorite/skin-sweep-1/build_char_219_meteo_sweep#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_219_meteo/char_219_meteo_sweep_1/build/build_char_219_meteo_sweep_1.png",
-        "path": "standalone/assets/source/meteorite/skin-sweep-1/build_char_219_meteo_sweep_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/219_meteo_sweep%231/build_char_219_meteo_sweep%231.png",
+        "path": "standalone/assets/source/meteorite/skin-sweep-1/build_char_219_meteo_sweep#1.png",
+        "bytes": 217346,
+        "sha256": "e9dc2d66aad0d909004b2fcb3983ff1c0ef26377e8258df0964e897298ebcf70"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6515,
+      "sha256": "b9b92eca325ce5f1ee0575cbe98c693527fd23560e9e924a4b5300c4f01c29fe"
+    },
+    "skeleton": {
+      "bytes": 74154,
+      "sha256": "a964062a5d073e5017668ea0c4e9e85beddb057e96bc1186e380f99c2b9f4085"
+    }
   }
 }

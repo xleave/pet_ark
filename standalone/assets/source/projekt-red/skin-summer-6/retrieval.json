@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "projekt-red",
   "character_name": "Projekt Red",
   "localized_name": "红",
@@ -9,25 +9,58 @@
   "variant_name": "轻风 LB01",
   "skin_id": "summer-6",
   "skin_name": "轻风 LB01",
-  "source_page": "https://prts.wiki/w/%E7%BA%A2",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_144_red/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_144_red/meta.json",
-    "model": "char_144_red_summer_6/build/build_char_144_red_summer_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_144_red/char_144_red_summer_6/build/build_char_144_red_summer_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_144_red/char_144_red_summer_6/build/build_char_144_red_summer_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_144_red/char_144_red_summer_6/build/build_char_144_red_summer_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/144_red_summer#6",
+  "source_asset": {
+    "assetId": "build_char_144_red_summer#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "红",
+    "appellation": "Projekt Red",
+    "skinGroupId": "2021#summer#2",
+    "skinGroupName": "珊瑚海岸/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_144_red_summer#6.atlas",
+      ".png": "build_char_144_red_summer#6.png",
+      ".skel": "build_char_144_red_summer#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/projekt-red/skin-summer-6/meta.json",
-    "atlas": "standalone/assets/source/projekt-red/skin-summer-6/build_char_144_red_summer_6.atlas",
-    "skeleton": "standalone/assets/source/projekt-red/skin-summer-6/build_char_144_red_summer_6.skel",
+    "atlas": "standalone/assets/source/projekt-red/skin-summer-6/build_char_144_red_summer#6.atlas",
+    "skeleton": "standalone/assets/source/projekt-red/skin-summer-6/build_char_144_red_summer#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_144_red/char_144_red_summer_6/build/build_char_144_red_summer_6.png",
-        "path": "standalone/assets/source/projekt-red/skin-summer-6/build_char_144_red_summer_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/144_red_summer%236/build_char_144_red_summer%236.png",
+        "path": "standalone/assets/source/projekt-red/skin-summer-6/build_char_144_red_summer#6.png",
+        "bytes": 226458,
+        "sha256": "ee699931fcff66d9c3b40b64eafd10f6312029cca25058a1698b86f54f190814"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5674,
+      "sha256": "e04defa6186e5bd1011fb71e2cdec518a54a79881cf3917b012b65aa13f0bbc6"
+    },
+    "skeleton": {
+      "bytes": 224329,
+      "sha256": "d2eeaa18149c2d6adca622fa1501414a7234bb68f017380f1285829035c5a0c8"
+    }
   }
 }

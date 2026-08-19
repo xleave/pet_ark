@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "nearl",
   "character_name": "Nearl",
   "localized_name": "临光",
@@ -9,25 +9,58 @@
   "variant_name": "灿阳朝露 SD01",
   "skin_id": "summer-2",
   "skin_name": "灿阳朝露 SD01",
-  "source_page": "https://prts.wiki/w/%E4%B8%B4%E5%85%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_148_nearl/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_148_nearl/meta.json",
-    "model": "char_148_nearl_summer_2/build/build_char_148_nearl_summer_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_148_nearl/char_148_nearl_summer_2/build/build_char_148_nearl_summer_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_148_nearl/char_148_nearl_summer_2/build/build_char_148_nearl_summer_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_148_nearl/char_148_nearl_summer_2/build/build_char_148_nearl_summer_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/148_nearl_summer#2",
+  "source_asset": {
+    "assetId": "build_char_148_nearl_summer#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "临光",
+    "appellation": "Nearl",
+    "skinGroupId": "2020#summer",
+    "skinGroupName": "珊瑚海岸/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_148_nearl_summer#2.atlas",
+      ".png": "build_char_148_nearl_summer#2.png",
+      ".skel": "build_char_148_nearl_summer#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/nearl/skin-summer-2/meta.json",
-    "atlas": "standalone/assets/source/nearl/skin-summer-2/build_char_148_nearl_summer_2.atlas",
-    "skeleton": "standalone/assets/source/nearl/skin-summer-2/build_char_148_nearl_summer_2.skel",
+    "atlas": "standalone/assets/source/nearl/skin-summer-2/build_char_148_nearl_summer#2.atlas",
+    "skeleton": "standalone/assets/source/nearl/skin-summer-2/build_char_148_nearl_summer#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_148_nearl/char_148_nearl_summer_2/build/build_char_148_nearl_summer_2.png",
-        "path": "standalone/assets/source/nearl/skin-summer-2/build_char_148_nearl_summer_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/148_nearl_summer%232/build_char_148_nearl_summer%232.png",
+        "path": "standalone/assets/source/nearl/skin-summer-2/build_char_148_nearl_summer#2.png",
+        "bytes": 312772,
+        "sha256": "15c9ce56b411731fbdb2a57a3c9d1bce591938c37fe110b32537123895e4ad5b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8101,
+      "sha256": "6843678b9615ccc8bb60d1741879fe303d714da10493f1780eae30e3e3da59ba"
+    },
+    "skeleton": {
+      "bytes": 264132,
+      "sha256": "b13e7b222d331dd3b92568874023597152dd307f24ab94bf797d1be3a16a2d43"
+    }
   }
 }

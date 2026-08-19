@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "thermal-ex",
   "character_name": "Thermal-EX",
   "localized_name": "THRM-EX",
@@ -9,25 +9,58 @@
   "variant_name": "双料四分卫",
   "skin_id": "marthe-7",
   "skin_name": "双料四分卫",
-  "source_page": "https://prts.wiki/w/THRM-EX",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/meta.json",
-    "model": "char_376_therex_marthe_7/build/build_char_376_therex_marthe_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/char_376_therex_marthe_7/build/build_char_376_therex_marthe_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/char_376_therex_marthe_7/build/build_char_376_therex_marthe_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/char_376_therex_marthe_7/build/build_char_376_therex_marthe_7.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/376_therex_marthe#7",
+  "source_asset": {
+    "assetId": "build_char_376_therex_marthe#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "THRM-EX",
+    "appellation": "Thermal-EX",
+    "skinGroupId": "2024#marthe#2",
+    "skinGroupName": "玛尔特/VII",
+    "sortTags": [
+      "Operator",
+      "Rarity_1",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_376_therex_marthe#7.atlas",
+      ".png": "build_char_376_therex_marthe#7.png",
+      ".skel": "build_char_376_therex_marthe#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/thermal-ex/skin-marthe-7/meta.json",
-    "atlas": "standalone/assets/source/thermal-ex/skin-marthe-7/build_char_376_therex_marthe_7.atlas",
-    "skeleton": "standalone/assets/source/thermal-ex/skin-marthe-7/build_char_376_therex_marthe_7.skel",
+    "atlas": "standalone/assets/source/thermal-ex/skin-marthe-7/build_char_376_therex_marthe#7.atlas",
+    "skeleton": "standalone/assets/source/thermal-ex/skin-marthe-7/build_char_376_therex_marthe#7.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/char_376_therex_marthe_7/build/build_char_376_therex_marthe_7.png",
-        "path": "standalone/assets/source/thermal-ex/skin-marthe-7/build_char_376_therex_marthe_7.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/376_therex_marthe%237/build_char_376_therex_marthe%237.png",
+        "path": "standalone/assets/source/thermal-ex/skin-marthe-7/build_char_376_therex_marthe#7.png",
+        "bytes": 303270,
+        "sha256": "b9898b74891e69a215dc3ea772b7c5ddc2d3df75f85cc89ddcb6cd759711f09d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5754,
+      "sha256": "0275b0dbb13d5c59d3d2d1286904366fa374e3b393dcbd4cf1556c49e662000d"
+    },
+    "skeleton": {
+      "bytes": 51138,
+      "sha256": "46307bcf795c761e344d83c8980e1a24b917d5f2f8e18ee58398946d922d6cde"
+    }
   }
 }

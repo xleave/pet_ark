@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "heavyrain",
   "character_name": "Heavyrain",
   "localized_name": "暴雨",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%9A%B4%E9%9B%A8",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_304_zebra/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_304_zebra/meta.json",
-    "model": "defaultskin/build/build_char_304_zebra",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_304_zebra/defaultskin/build/build_char_304_zebra.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_304_zebra/defaultskin/build/build_char_304_zebra.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_304_zebra/defaultskin/build/build_char_304_zebra.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/304_zebra",
+  "source_asset": {
+    "assetId": "build_char_304_zebra",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "暴雨",
+    "appellation": "Heavyrain",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_304_zebra.atlas",
+      ".png": "build_char_304_zebra.png",
+      ".skel": "build_char_304_zebra.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/heavyrain/default/meta.json",
     "atlas": "standalone/assets/source/heavyrain/default/build_char_304_zebra.atlas",
     "skeleton": "standalone/assets/source/heavyrain/default/build_char_304_zebra.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_304_zebra/defaultskin/build/build_char_304_zebra.png",
-        "path": "standalone/assets/source/heavyrain/default/build_char_304_zebra.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/304_zebra/build_char_304_zebra.png",
+        "path": "standalone/assets/source/heavyrain/default/build_char_304_zebra.png",
+        "bytes": 218713,
+        "sha256": "72a201f9a6bdf0342a86a88238d61c926bffdb82895b3d11ceb779d11d042b25"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6053,
+      "sha256": "882fa86a16a86ba12c3ca559bbee9b7f59b162505d0b0bd65f80cedc5bf0d5a6"
+    },
+    "skeleton": {
+      "bytes": 117204,
+      "sha256": "7fb4ecb398970f6f61949d012ec7a7ea2d93e586d1dc6652d848728559fd31fc"
+    }
   }
 }

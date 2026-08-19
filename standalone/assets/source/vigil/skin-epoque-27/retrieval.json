@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "vigil",
   "character_name": "Vigil",
   "localized_name": "伺夜",
@@ -9,25 +9,58 @@
   "variant_name": "叙拉古的彼面",
   "skin_id": "epoque-27",
   "skin_name": "叙拉古的彼面",
-  "source_page": "https://prts.wiki/w/%E4%BC%BA%E5%A4%9C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_427_vigil/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_427_vigil/meta.json",
-    "model": "char_427_vigil_epoque_27/build/build_char_427_vigil_epoque_27",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_427_vigil/char_427_vigil_epoque_27/build/build_char_427_vigil_epoque_27.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_427_vigil/char_427_vigil_epoque_27/build/build_char_427_vigil_epoque_27.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_427_vigil/char_427_vigil_epoque_27/build/build_char_427_vigil_epoque_27.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/427_vigil_epoque#27",
+  "source_asset": {
+    "assetId": "build_char_427_vigil_epoque#27",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "伺夜",
+    "appellation": "Vigil",
+    "skinGroupId": "2023#epoque#9",
+    "skinGroupName": "时代/XXVII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_427_vigil_epoque#27.atlas",
+      ".png": "build_char_427_vigil_epoque#27.png",
+      ".skel": "build_char_427_vigil_epoque#27.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/vigil/skin-epoque-27/meta.json",
-    "atlas": "standalone/assets/source/vigil/skin-epoque-27/build_char_427_vigil_epoque_27.atlas",
-    "skeleton": "standalone/assets/source/vigil/skin-epoque-27/build_char_427_vigil_epoque_27.skel",
+    "atlas": "standalone/assets/source/vigil/skin-epoque-27/build_char_427_vigil_epoque#27.atlas",
+    "skeleton": "standalone/assets/source/vigil/skin-epoque-27/build_char_427_vigil_epoque#27.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_427_vigil/char_427_vigil_epoque_27/build/build_char_427_vigil_epoque_27.png",
-        "path": "standalone/assets/source/vigil/skin-epoque-27/build_char_427_vigil_epoque_27.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/427_vigil_epoque%2327/build_char_427_vigil_epoque%2327.png",
+        "path": "standalone/assets/source/vigil/skin-epoque-27/build_char_427_vigil_epoque#27.png",
+        "bytes": 823603,
+        "sha256": "78920e5d5076430c22e5bd43de69b5b6d64e6bd42ca502d768719823b3212e53"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14467,
+      "sha256": "197c68bb3d416bc112e6bf39b64c44fd9af94e3a01e8184cd1739775605048c6"
+    },
+    "skeleton": {
+      "bytes": 461806,
+      "sha256": "266277e77eba071d13a4fba454d85b0101f4ced1a84fea1634644d9da756ed3c"
+    }
   }
 }

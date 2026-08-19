@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "brigid",
   "character_name": "Brigid",
   "localized_name": "水灯心",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B0%B4%E7%81%AF%E5%BF%83",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4177_brigid/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4177_brigid/meta.json",
-    "model": "defaultskin/build/build_char_4177_brigid",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4177_brigid/defaultskin/build/build_char_4177_brigid.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4177_brigid/defaultskin/build/build_char_4177_brigid.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4177_brigid/defaultskin/build/build_char_4177_brigid.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4177_brigid",
+  "source_asset": {
+    "assetId": "build_char_4177_brigid",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "水灯心",
+    "appellation": "Brigid",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4177_brigid.atlas",
+      ".png": "build_char_4177_brigid.png",
+      ".skel": "build_char_4177_brigid.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/brigid/default/meta.json",
     "atlas": "standalone/assets/source/brigid/default/build_char_4177_brigid.atlas",
     "skeleton": "standalone/assets/source/brigid/default/build_char_4177_brigid.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4177_brigid/defaultskin/build/build_char_4177_brigid.png",
-        "path": "standalone/assets/source/brigid/default/build_char_4177_brigid.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4177_brigid/build_char_4177_brigid.png",
+        "path": "standalone/assets/source/brigid/default/build_char_4177_brigid.png",
+        "bytes": 373957,
+        "sha256": "1320e29081a394d5d6a043bbd4ddc816e1ef0685a18171b8ccdfda0e5fc59252"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10694,
+      "sha256": "3f87aa04996b40c83a2d948c9e09cdc45c8e4bd9e8462c089d46bf91c8d83b57"
+    },
+    "skeleton": {
+      "bytes": 254721,
+      "sha256": "26e508e6b9ed216efa2c8592a03acdce24d193a91ae9a2f79d06ef310efc0c08"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "kroos-the-keen-glint",
   "character_name": "Kroos the Keen Glint",
   "localized_name": "寒芒克洛丝",
@@ -9,25 +9,59 @@
   "variant_name": "廊下游",
   "skin_id": "nian-8",
   "skin_name": "廊下游",
-  "source_page": "https://prts.wiki/w/%E5%AF%92%E8%8A%92%E5%85%8B%E6%B4%9B%E4%B8%9D",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1021_kroos2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1021_kroos2/meta.json",
-    "model": "char_1021_kroos2_nian_8/build/build_char_1021_kroos2_nian_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1021_kroos2/char_1021_kroos2_nian_8/build/build_char_1021_kroos2_nian_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1021_kroos2/char_1021_kroos2_nian_8/build/build_char_1021_kroos2_nian_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1021_kroos2/char_1021_kroos2_nian_8/build/build_char_1021_kroos2_nian_8.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1021_kroos2_nian#8",
+  "source_asset": {
+    "assetId": "build_char_1021_kroos2_nian#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "寒芒克洛丝",
+    "appellation": "Kroos the Keen Glint",
+    "skinGroupId": "2023#nian",
+    "skinGroupName": "0011制造/VII",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1021_kroos2_nian#8.atlas",
+      ".png": "build_char_1021_kroos2_nian#8.png",
+      ".skel": "build_char_1021_kroos2_nian#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/kroos-the-keen-glint/skin-nian-8/meta.json",
-    "atlas": "standalone/assets/source/kroos-the-keen-glint/skin-nian-8/build_char_1021_kroos2_nian_8.atlas",
-    "skeleton": "standalone/assets/source/kroos-the-keen-glint/skin-nian-8/build_char_1021_kroos2_nian_8.skel",
+    "atlas": "standalone/assets/source/kroos-the-keen-glint/skin-nian-8/build_char_1021_kroos2_nian#8.atlas",
+    "skeleton": "standalone/assets/source/kroos-the-keen-glint/skin-nian-8/build_char_1021_kroos2_nian#8.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1021_kroos2/char_1021_kroos2_nian_8/build/build_char_1021_kroos2_nian_8.png",
-        "path": "standalone/assets/source/kroos-the-keen-glint/skin-nian-8/build_char_1021_kroos2_nian_8.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1021_kroos2_nian%238/build_char_1021_kroos2_nian%238.png",
+        "path": "standalone/assets/source/kroos-the-keen-glint/skin-nian-8/build_char_1021_kroos2_nian#8.png",
+        "bytes": 348311,
+        "sha256": "8b44f41d9c50ececef3e3f781be95e185939e9f124f1dc7d187f88748ddb473f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10452,
+      "sha256": "d77304a71f9cc85727f22b5a108595de33d9c8110f73c95555bc1121e272ba43"
+    },
+    "skeleton": {
+      "bytes": 239414,
+      "sha256": "d2e759606c104a913387835363c5eaec7eb1d277e34382a2ccedad64b7c65b1d"
+    }
   }
 }

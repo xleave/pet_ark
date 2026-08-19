@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "texas-the-omertosa",
   "character_name": "Texas the Omertosa",
   "localized_name": "缄默德克萨斯",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%BC%84%E9%BB%98%E5%BE%B7%E5%85%8B%E8%90%A8%E6%96%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/meta.json",
-    "model": "defaultskin/build/build_char_1028_texas2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/defaultskin/build/build_char_1028_texas2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/defaultskin/build/build_char_1028_texas2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/defaultskin/build/build_char_1028_texas2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1028_texas2",
+  "source_asset": {
+    "assetId": "build_char_1028_texas2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "缄默德克萨斯",
+    "appellation": "Texas the Omertosa",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1028_texas2.atlas",
+      ".png": "build_char_1028_texas2.png",
+      ".skel": "build_char_1028_texas2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/texas-the-omertosa/default/meta.json",
     "atlas": "standalone/assets/source/texas-the-omertosa/default/build_char_1028_texas2.atlas",
     "skeleton": "standalone/assets/source/texas-the-omertosa/default/build_char_1028_texas2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/defaultskin/build/build_char_1028_texas2.png",
-        "path": "standalone/assets/source/texas-the-omertosa/default/build_char_1028_texas2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1028_texas2/build_char_1028_texas2.png",
+        "path": "standalone/assets/source/texas-the-omertosa/default/build_char_1028_texas2.png",
+        "bytes": 544719,
+        "sha256": "88be4839f67152c0e0d2576fd09ceb16e1239a527e3cccb40bed74a27749f114"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12783,
+      "sha256": "24b132892c353dbf9cd091a2b7f56761aa1b8ad6dde7c46f2e4ae1f51c47d3d8"
+    },
+    "skeleton": {
+      "bytes": 221884,
+      "sha256": "9a9b422759bac94961da7160bf5361f9e9d06a517cbd2c72107268833002a87b"
+    }
   }
 }

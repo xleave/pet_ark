@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "quartz",
   "character_name": "Quartz",
   "localized_name": "石英",
@@ -9,25 +9,58 @@
   "variant_name": "封面佣兵",
   "skin_id": "epoque-39",
   "skin_name": "封面佣兵",
-  "source_page": "https://prts.wiki/w/%E7%9F%B3%E8%8B%B1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4063_quartz/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4063_quartz/meta.json",
-    "model": "char_4063_quartz_epoque_39/build/build_char_4063_quartz_epoque_39",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4063_quartz/char_4063_quartz_epoque_39/build/build_char_4063_quartz_epoque_39.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4063_quartz/char_4063_quartz_epoque_39/build/build_char_4063_quartz_epoque_39.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4063_quartz/char_4063_quartz_epoque_39/build/build_char_4063_quartz_epoque_39.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4063_quartz_epoque#39",
+  "source_asset": {
+    "assetId": "build_char_4063_quartz_epoque#39",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "石英",
+    "appellation": "Quartz",
+    "skinGroupId": "2025#epoque",
+    "skinGroupName": "时代/XXXVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4063_quartz_epoque#39.atlas",
+      ".png": "build_char_4063_quartz_epoque#39.png",
+      ".skel": "build_char_4063_quartz_epoque#39.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/quartz/skin-epoque-39/meta.json",
-    "atlas": "standalone/assets/source/quartz/skin-epoque-39/build_char_4063_quartz_epoque_39.atlas",
-    "skeleton": "standalone/assets/source/quartz/skin-epoque-39/build_char_4063_quartz_epoque_39.skel",
+    "atlas": "standalone/assets/source/quartz/skin-epoque-39/build_char_4063_quartz_epoque#39.atlas",
+    "skeleton": "standalone/assets/source/quartz/skin-epoque-39/build_char_4063_quartz_epoque#39.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4063_quartz/char_4063_quartz_epoque_39/build/build_char_4063_quartz_epoque_39.png",
-        "path": "standalone/assets/source/quartz/skin-epoque-39/build_char_4063_quartz_epoque_39.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4063_quartz_epoque%2339/build_char_4063_quartz_epoque%2339.png",
+        "path": "standalone/assets/source/quartz/skin-epoque-39/build_char_4063_quartz_epoque#39.png",
+        "bytes": 204033,
+        "sha256": "9e16f482be728d9949212a5c8b49a269e40e704d627cf1f33f2af23df5db1343"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8098,
+      "sha256": "4ad24b2b7585dad2ac55ddd9dec49587e9d40881cbbaa493ba82dcd78d8049e9"
+    },
+    "skeleton": {
+      "bytes": 191593,
+      "sha256": "fc1db7f58c458950ef8d6e8793335d28d7c175b2202a691edfcc6432c2f830c6"
+    }
   }
 }

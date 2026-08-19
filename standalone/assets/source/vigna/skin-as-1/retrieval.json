@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "vigna",
   "character_name": "Vigna",
   "localized_name": "红豆",
@@ -9,25 +9,58 @@
   "variant_name": "漆黑热浪",
   "skin_id": "as-1",
   "skin_name": "漆黑热浪",
-  "source_page": "https://prts.wiki/w/%E7%BA%A2%E8%B1%86",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_290_vigna/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_290_vigna/meta.json",
-    "model": "char_290_vigna_as_1/build/build_char_290_vigna_as_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_290_vigna/char_290_vigna_as_1/build/build_char_290_vigna_as_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_290_vigna/char_290_vigna_as_1/build/build_char_290_vigna_as_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_290_vigna/char_290_vigna_as_1/build/build_char_290_vigna_as_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/290_vigna_as#1",
+  "source_asset": {
+    "assetId": "build_char_290_vigna_as#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "红豆",
+    "appellation": "Vigna",
+    "skinGroupId": "2021#as",
+    "skinGroupName": "音律联觉",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_290_vigna_as#1.atlas",
+      ".png": "build_char_290_vigna_as#1.png",
+      ".skel": "build_char_290_vigna_as#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/vigna/skin-as-1/meta.json",
-    "atlas": "standalone/assets/source/vigna/skin-as-1/build_char_290_vigna_as_1.atlas",
-    "skeleton": "standalone/assets/source/vigna/skin-as-1/build_char_290_vigna_as_1.skel",
+    "atlas": "standalone/assets/source/vigna/skin-as-1/build_char_290_vigna_as#1.atlas",
+    "skeleton": "standalone/assets/source/vigna/skin-as-1/build_char_290_vigna_as#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_290_vigna/char_290_vigna_as_1/build/build_char_290_vigna_as_1.png",
-        "path": "standalone/assets/source/vigna/skin-as-1/build_char_290_vigna_as_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/290_vigna_as%231/build_char_290_vigna_as%231.png",
+        "path": "standalone/assets/source/vigna/skin-as-1/build_char_290_vigna_as#1.png",
+        "bytes": 337700,
+        "sha256": "5774a1c331c6c823065b3bd6b3f92e8acbe6cc598e4e7c707ff1d63c47d59459"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11192,
+      "sha256": "fff9aadca32e1c956def510a47b6a648399c07f1348e126cd9d6712786c30546"
+    },
+    "skeleton": {
+      "bytes": 177704,
+      "sha256": "dff702e5914e75cc53b6d6b644071055e9f38bcb65577aaedc84511d13a3c492"
+    }
   }
 }

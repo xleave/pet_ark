@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "bubble",
   "character_name": "Bubble",
   "localized_name": "泡泡",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B3%A1%E6%B3%A1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_381_bubble/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_381_bubble/meta.json",
-    "model": "defaultskin/build/build_char_381_bubble",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_381_bubble/defaultskin/build/build_char_381_bubble.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_381_bubble/defaultskin/build/build_char_381_bubble.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_381_bubble/defaultskin/build/build_char_381_bubble.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/381_bubble",
+  "source_asset": {
+    "assetId": "build_char_381_bubble",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "泡泡",
+    "appellation": "Bubble",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_381_bubble.atlas",
+      ".png": "build_char_381_bubble.png",
+      ".skel": "build_char_381_bubble.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/bubble/default/meta.json",
     "atlas": "standalone/assets/source/bubble/default/build_char_381_bubble.atlas",
     "skeleton": "standalone/assets/source/bubble/default/build_char_381_bubble.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_381_bubble/defaultskin/build/build_char_381_bubble.png",
-        "path": "standalone/assets/source/bubble/default/build_char_381_bubble.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/381_bubble/build_char_381_bubble.png",
+        "path": "standalone/assets/source/bubble/default/build_char_381_bubble.png",
+        "bytes": 289781,
+        "sha256": "c6daa483d15e5752f772fa6a2d0bb1cc126bbf3ba7f43546e03cd64be5fd73aa"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6648,
+      "sha256": "5bd672869b6aadf59c979de861d4c5b9f745d61732953328dcabf8ac521b27c5"
+    },
+    "skeleton": {
+      "bytes": 172922,
+      "sha256": "1d49e5f5d9dfe90f36013f3fe7ba6bfecafaa48a70f177d191614fd5624c50a9"
+    }
   }
 }

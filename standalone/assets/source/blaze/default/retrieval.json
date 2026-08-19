@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "blaze",
   "character_name": "Blaze",
   "localized_name": "煌",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%85%8C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/meta.json",
-    "model": "defaultskin/build/build_char_017_huang",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/defaultskin/build/build_char_017_huang.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/defaultskin/build/build_char_017_huang.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/defaultskin/build/build_char_017_huang.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/017_huang",
+  "source_asset": {
+    "assetId": "build_char_017_huang",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "煌",
+    "appellation": "Blaze",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_017_huang.atlas",
+      ".png": "build_char_017_huang.png",
+      ".skel": "build_char_017_huang.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/blaze/default/meta.json",
     "atlas": "standalone/assets/source/blaze/default/build_char_017_huang.atlas",
     "skeleton": "standalone/assets/source/blaze/default/build_char_017_huang.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/defaultskin/build/build_char_017_huang.png",
-        "path": "standalone/assets/source/blaze/default/build_char_017_huang.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/017_huang/build_char_017_huang.png",
+        "path": "standalone/assets/source/blaze/default/build_char_017_huang.png",
+        "bytes": 260034,
+        "sha256": "e9ec58f42aecf5f1e79ec6b83e8c5a0c92285003c456c6a1aba3fb18038cf14a"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7663,
+      "sha256": "8f06bf65f68a31649b652519f53d2dcf7da27cd61096b60663733af9a0a2457e"
+    },
+    "skeleton": {
+      "bytes": 134970,
+      "sha256": "8747885eac494a269beb3b6ac5e5be90d5ccb43040a698f256d1c518fffb7cd8"
+    }
   }
 }

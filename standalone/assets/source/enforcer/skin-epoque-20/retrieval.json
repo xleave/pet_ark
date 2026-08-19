@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "enforcer",
   "character_name": "Enforcer",
   "localized_name": "见行者",
@@ -9,25 +9,58 @@
   "variant_name": "拾翼",
   "skin_id": "epoque-20",
   "skin_name": "拾翼",
-  "source_page": "https://prts.wiki/w/%E8%A7%81%E8%A1%8C%E8%80%85",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/meta.json",
-    "model": "char_4036_forcer_epoque_20/build/build_char_4036_forcer_epoque_20",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/char_4036_forcer_epoque_20/build/build_char_4036_forcer_epoque_20.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/char_4036_forcer_epoque_20/build/build_char_4036_forcer_epoque_20.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/char_4036_forcer_epoque_20/build/build_char_4036_forcer_epoque_20.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4036_forcer_epoque#20",
+  "source_asset": {
+    "assetId": "build_char_4036_forcer_epoque#20",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "见行者",
+    "appellation": "Enforcer",
+    "skinGroupId": "2023#epoque#3",
+    "skinGroupName": "时代/XXI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4036_forcer_epoque#20.atlas",
+      ".png": "build_char_4036_forcer_epoque#20.png",
+      ".skel": "build_char_4036_forcer_epoque#20.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/enforcer/skin-epoque-20/meta.json",
-    "atlas": "standalone/assets/source/enforcer/skin-epoque-20/build_char_4036_forcer_epoque_20.atlas",
-    "skeleton": "standalone/assets/source/enforcer/skin-epoque-20/build_char_4036_forcer_epoque_20.skel",
+    "atlas": "standalone/assets/source/enforcer/skin-epoque-20/build_char_4036_forcer_epoque#20.atlas",
+    "skeleton": "standalone/assets/source/enforcer/skin-epoque-20/build_char_4036_forcer_epoque#20.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4036_forcer/char_4036_forcer_epoque_20/build/build_char_4036_forcer_epoque_20.png",
-        "path": "standalone/assets/source/enforcer/skin-epoque-20/build_char_4036_forcer_epoque_20.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4036_forcer_epoque%2320/build_char_4036_forcer_epoque%2320.png",
+        "path": "standalone/assets/source/enforcer/skin-epoque-20/build_char_4036_forcer_epoque#20.png",
+        "bytes": 389071,
+        "sha256": "9258ef87830b8fc83f7be2400fed0034d37c793d5f1d3b433a8a59346d8159ad"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13952,
+      "sha256": "0589715d8d07d01f0a006b19bc64c8b5946d3ab23d714e11a36898e8c08f0159"
+    },
+    "skeleton": {
+      "bytes": 466272,
+      "sha256": "9cf20d4e07d0db54c1acaf6783b01dde48b0318eab266cae8d987dc3b16704d7"
+    }
   }
 }

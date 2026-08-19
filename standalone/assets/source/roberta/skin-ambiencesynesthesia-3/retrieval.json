@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "roberta",
   "character_name": "Roberta",
   "localized_name": "罗比菈塔",
@@ -9,25 +9,59 @@
   "variant_name": "待绘的作品",
   "skin_id": "ambiencesynesthesia-3",
   "skin_name": "待绘的作品",
-  "source_page": "https://prts.wiki/w/%E7%BD%97%E6%AF%94%E8%8F%88%E5%A1%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_484_robrta/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_484_robrta/meta.json",
-    "model": "char_484_robrta_ambiencesynesthesia_3/build/build_char_484_robrta_ambienceSynesthesia_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_484_robrta/char_484_robrta_ambiencesynesthesia_3/build/build_char_484_robrta_ambienceSynesthesia_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_484_robrta/char_484_robrta_ambiencesynesthesia_3/build/build_char_484_robrta_ambienceSynesthesia_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_484_robrta/char_484_robrta_ambiencesynesthesia_3/build/build_char_484_robrta_ambienceSynesthesia_3.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/484_robrta_ambiencesynesthesia#3",
+  "source_asset": {
+    "assetId": "build_char_484_robrta_ambiencesynesthesia#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "罗比菈塔",
+    "appellation": "Roberta",
+    "skinGroupId": "2023#ambienceSynesthesia",
+    "skinGroupName": "音律联觉/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_484_robrta_ambienceSynesthesia#3.atlas",
+      ".png": "build_char_484_robrta_ambienceSynesthesia#3.png",
+      ".skel": "build_char_484_robrta_ambienceSynesthesia#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/roberta/skin-ambiencesynesthesia-3/meta.json",
-    "atlas": "standalone/assets/source/roberta/skin-ambiencesynesthesia-3/build_char_484_robrta_ambienceSynesthesia_3.atlas",
-    "skeleton": "standalone/assets/source/roberta/skin-ambiencesynesthesia-3/build_char_484_robrta_ambienceSynesthesia_3.skel",
+    "atlas": "standalone/assets/source/roberta/skin-ambiencesynesthesia-3/build_char_484_robrta_ambiencesynesthesia#3.atlas",
+    "skeleton": "standalone/assets/source/roberta/skin-ambiencesynesthesia-3/build_char_484_robrta_ambiencesynesthesia#3.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_484_robrta/char_484_robrta_ambiencesynesthesia_3/build/build_char_484_robrta_ambienceSynesthesia_3.png",
-        "path": "standalone/assets/source/roberta/skin-ambiencesynesthesia-3/build_char_484_robrta_ambienceSynesthesia_3.png"
+        "atlas_name": "build_char_484_robrta_ambienceSynesthesia#3.png",
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/484_robrta_ambiencesynesthesia%233/build_char_484_robrta_ambiencesynesthesia%233.png",
+        "path": "standalone/assets/source/roberta/skin-ambiencesynesthesia-3/build_char_484_robrta_ambiencesynesthesia#3.png",
+        "bytes": 481986,
+        "sha256": "3ba50fc2882074c1b3f63283e99f9f60611133e2e37ddb4f05a0adf8ea545865"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12372,
+      "sha256": "748e55bd1cb74186c2f565ad18f758e7257c2c35f15668591293223e5c91b6a1"
+    },
+    "skeleton": {
+      "bytes": 345702,
+      "sha256": "29e26990af090ce23803402a6515f0fc2829264ebc926ed5ba77cbd73c12982b"
+    }
   }
 }

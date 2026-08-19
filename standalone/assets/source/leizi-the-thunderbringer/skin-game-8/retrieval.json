@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "leizi-the-thunderbringer",
   "character_name": "Leizi the Thunderbringer",
   "localized_name": "司霆惊蛰",
@@ -9,25 +9,59 @@
   "variant_name": "血翼蔷薇",
   "skin_id": "game-8",
   "skin_name": "血翼蔷薇",
-  "source_page": "https://prts.wiki/w/%E5%8F%B8%E9%9C%86%E6%83%8A%E8%9B%B0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1043_leizi2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1043_leizi2/meta.json",
-    "model": "char_1043_leizi2_game_8/build/build_char_1043_leizi2_game_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1043_leizi2/char_1043_leizi2_game_8/build/build_char_1043_leizi2_game_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1043_leizi2/char_1043_leizi2_game_8/build/build_char_1043_leizi2_game_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1043_leizi2/char_1043_leizi2_game_8/build/build_char_1043_leizi2_game_8.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1043_leizi2_game#8",
+  "source_asset": {
+    "assetId": "build_char_1043_leizi2_game#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "司霆惊蛰",
+    "appellation": "Leizi the Thunderbringer",
+    "skinGroupId": "2026#game",
+    "skinGroupName": "成就之星/VIII",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1043_leizi2_game#8.atlas",
+      ".png": "build_char_1043_leizi2_game#8.png",
+      ".skel": "build_char_1043_leizi2_game#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/leizi-the-thunderbringer/skin-game-8/meta.json",
-    "atlas": "standalone/assets/source/leizi-the-thunderbringer/skin-game-8/build_char_1043_leizi2_game_8.atlas",
-    "skeleton": "standalone/assets/source/leizi-the-thunderbringer/skin-game-8/build_char_1043_leizi2_game_8.skel",
+    "atlas": "standalone/assets/source/leizi-the-thunderbringer/skin-game-8/build_char_1043_leizi2_game#8.atlas",
+    "skeleton": "standalone/assets/source/leizi-the-thunderbringer/skin-game-8/build_char_1043_leizi2_game#8.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1043_leizi2/char_1043_leizi2_game_8/build/build_char_1043_leizi2_game_8.png",
-        "path": "standalone/assets/source/leizi-the-thunderbringer/skin-game-8/build_char_1043_leizi2_game_8.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1043_leizi2_game%238/build_char_1043_leizi2_game%238.png",
+        "path": "standalone/assets/source/leizi-the-thunderbringer/skin-game-8/build_char_1043_leizi2_game#8.png",
+        "bytes": 1106240,
+        "sha256": "064cdd4041c0981cb90cbeb5e8e2174908c61a9225ce7ad14c70c72e3eed7cd3"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14292,
+      "sha256": "bc9886ebdbc60fcf235b1518c5a5dd985bba80f34adf72d7ea061ab0a5129b47"
+    },
+    "skeleton": {
+      "bytes": 484274,
+      "sha256": "2ef6a8d2a69b3433ff13ecaa6aecfa99f7f1afca2043ac68a1d0f7c643f214c6"
+    }
   }
 }

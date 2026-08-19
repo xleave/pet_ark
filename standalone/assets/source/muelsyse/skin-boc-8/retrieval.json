@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "muelsyse",
   "character_name": "Muelsyse",
   "localized_name": "缪尔赛思",
@@ -9,25 +9,58 @@
   "variant_name": "新枝",
   "skin_id": "boc-8",
   "skin_name": "新枝",
-  "source_page": "https://prts.wiki/w/%E7%BC%AA%E5%B0%94%E8%B5%9B%E6%80%9D",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/meta.json",
-    "model": "char_249_mlyss_boc_8/build/build_char_249_mlyss_boc_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/char_249_mlyss_boc_8/build/build_char_249_mlyss_boc_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/char_249_mlyss_boc_8/build/build_char_249_mlyss_boc_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/char_249_mlyss_boc_8/build/build_char_249_mlyss_boc_8.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/249_mlyss_boc#8",
+  "source_asset": {
+    "assetId": "build_char_249_mlyss_boc#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "缪尔赛思",
+    "appellation": "Muelsyse",
+    "skinGroupId": "2024#boc",
+    "skinGroupName": "斗争血脉/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_249_mlyss_boc#8.atlas",
+      ".png": "build_char_249_mlyss_boc#8.png",
+      ".skel": "build_char_249_mlyss_boc#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/muelsyse/skin-boc-8/meta.json",
-    "atlas": "standalone/assets/source/muelsyse/skin-boc-8/build_char_249_mlyss_boc_8.atlas",
-    "skeleton": "standalone/assets/source/muelsyse/skin-boc-8/build_char_249_mlyss_boc_8.skel",
+    "atlas": "standalone/assets/source/muelsyse/skin-boc-8/build_char_249_mlyss_boc#8.atlas",
+    "skeleton": "standalone/assets/source/muelsyse/skin-boc-8/build_char_249_mlyss_boc#8.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_249_mlyss/char_249_mlyss_boc_8/build/build_char_249_mlyss_boc_8.png",
-        "path": "standalone/assets/source/muelsyse/skin-boc-8/build_char_249_mlyss_boc_8.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/249_mlyss_boc%238/build_char_249_mlyss_boc%238.png",
+        "path": "standalone/assets/source/muelsyse/skin-boc-8/build_char_249_mlyss_boc#8.png",
+        "bytes": 500732,
+        "sha256": "831498d02081c83511de16aa01bae475e2c49eefa0b2b16c07ac95ce4c02c550"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11079,
+      "sha256": "cbfb9a6c6726b8943c9a09908dce431ad0bc4b5229178694f0a421a670a6347b"
+    },
+    "skeleton": {
+      "bytes": 468986,
+      "sha256": "313b73e76eaf4f02b394467e7552b3fabd488f2ca53adce3d08e9b820c3ccc50"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "sideroca",
   "character_name": "Sideroca",
   "localized_name": "铸铁",
@@ -9,25 +9,58 @@
   "variant_name": "轻风 LB03",
   "skin_id": "summer-6",
   "skin_name": "轻风 LB03",
-  "source_page": "https://prts.wiki/w/%E9%93%B8%E9%93%81",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_333_sidero/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_333_sidero/meta.json",
-    "model": "char_333_sidero_summer_6/build/build_char_333_sidero_summer_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_333_sidero/char_333_sidero_summer_6/build/build_char_333_sidero_summer_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_333_sidero/char_333_sidero_summer_6/build/build_char_333_sidero_summer_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_333_sidero/char_333_sidero_summer_6/build/build_char_333_sidero_summer_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/333_sidero_summer#6",
+  "source_asset": {
+    "assetId": "build_char_333_sidero_summer#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "铸铁",
+    "appellation": "Sideroca",
+    "skinGroupId": "2021#summer#2",
+    "skinGroupName": "珊瑚海岸/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_333_sidero_summer#6.atlas",
+      ".png": "build_char_333_sidero_summer#6.png",
+      ".skel": "build_char_333_sidero_summer#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/sideroca/skin-summer-6/meta.json",
-    "atlas": "standalone/assets/source/sideroca/skin-summer-6/build_char_333_sidero_summer_6.atlas",
-    "skeleton": "standalone/assets/source/sideroca/skin-summer-6/build_char_333_sidero_summer_6.skel",
+    "atlas": "standalone/assets/source/sideroca/skin-summer-6/build_char_333_sidero_summer#6.atlas",
+    "skeleton": "standalone/assets/source/sideroca/skin-summer-6/build_char_333_sidero_summer#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_333_sidero/char_333_sidero_summer_6/build/build_char_333_sidero_summer_6.png",
-        "path": "standalone/assets/source/sideroca/skin-summer-6/build_char_333_sidero_summer_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/333_sidero_summer%236/build_char_333_sidero_summer%236.png",
+        "path": "standalone/assets/source/sideroca/skin-summer-6/build_char_333_sidero_summer#6.png",
+        "bytes": 265835,
+        "sha256": "4d27687e44c7ebd52fb79a7c4125e30557b6e511c80858bffabdc8303b877099"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8000,
+      "sha256": "574503dfbc8ec3f01bc97802cf238b1ac9ae7d9ac7394ce22af91c0ca2e85d8e"
+    },
+    "skeleton": {
+      "bytes": 160279,
+      "sha256": "35988a7d27f8524ce438526b1d8efbed6935a342a6d697ad0d068ab0a655dab5"
+    }
   }
 }

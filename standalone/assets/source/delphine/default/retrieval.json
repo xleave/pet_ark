@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "delphine",
   "character_name": "Delphine",
   "localized_name": "戴菲恩",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%88%B4%E8%8F%B2%E6%81%A9",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4110_delphn/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4110_delphn/meta.json",
-    "model": "defaultskin/build/build_char_4110_delphn",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4110_delphn/defaultskin/build/build_char_4110_delphn.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4110_delphn/defaultskin/build/build_char_4110_delphn.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4110_delphn/defaultskin/build/build_char_4110_delphn.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4110_delphn",
+  "source_asset": {
+    "assetId": "build_char_4110_delphn",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "戴菲恩",
+    "appellation": "Delphine",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4110_delphn.atlas",
+      ".png": "build_char_4110_delphn.png",
+      ".skel": "build_char_4110_delphn.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/delphine/default/meta.json",
     "atlas": "standalone/assets/source/delphine/default/build_char_4110_delphn.atlas",
     "skeleton": "standalone/assets/source/delphine/default/build_char_4110_delphn.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4110_delphn/defaultskin/build/build_char_4110_delphn.png",
-        "path": "standalone/assets/source/delphine/default/build_char_4110_delphn.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4110_delphn/build_char_4110_delphn.png",
+        "path": "standalone/assets/source/delphine/default/build_char_4110_delphn.png",
+        "bytes": 272300,
+        "sha256": "b354e43b453c22752bc1bbdc3dd4e5af16be5c5373f90a7b51acfdb1e7d5df28"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9917,
+      "sha256": "34b5fa82d8fa346e24119341c575c95e87dc28e8170efc78b58526dcbf5ec82d"
+    },
+    "skeleton": {
+      "bytes": 166749,
+      "sha256": "d9659254ace0607f9881ee475fcc85b26ca8e4ca7e41669c2252c6983313c51f"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "virtuosa",
   "character_name": "Virtuosa",
   "localized_name": "塑心",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%A1%91%E5%BF%83",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_245_cello/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_245_cello/meta.json",
-    "model": "defaultskin/build/build_char_245_cello",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_245_cello/defaultskin/build/build_char_245_cello.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_245_cello/defaultskin/build/build_char_245_cello.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_245_cello/defaultskin/build/build_char_245_cello.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/245_cello",
+  "source_asset": {
+    "assetId": "build_char_245_cello",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "塑心",
+    "appellation": "Virtuosa",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_245_cello.atlas",
+      ".png": "build_char_245_cello.png",
+      ".skel": "build_char_245_cello.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/virtuosa/default/meta.json",
     "atlas": "standalone/assets/source/virtuosa/default/build_char_245_cello.atlas",
     "skeleton": "standalone/assets/source/virtuosa/default/build_char_245_cello.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_245_cello/defaultskin/build/build_char_245_cello.png",
-        "path": "standalone/assets/source/virtuosa/default/build_char_245_cello.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/245_cello/build_char_245_cello.png",
+        "path": "standalone/assets/source/virtuosa/default/build_char_245_cello.png",
+        "bytes": 250552,
+        "sha256": "81fae2ee79438c1067f390b82064bac3863a25a5e0174a9791ee7ee3ce9b90aa"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9227,
+      "sha256": "9f613f158cd941e5ad9deb60d2ada495143ec44deccc7e3706378b4737d90406"
+    },
+    "skeleton": {
+      "bytes": 214353,
+      "sha256": "c7ae66f3ded50e119465eadec08d5d602e017145c6a79853d6e1ca62688c15e8"
+    }
   }
 }

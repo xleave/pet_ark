@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "aosta",
   "character_name": "Aosta",
   "localized_name": "奥斯塔",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%A5%A5%E6%96%AF%E5%A1%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_346_aosta/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_346_aosta/meta.json",
-    "model": "defaultskin/build/build_char_346_aosta",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_346_aosta/defaultskin/build/build_char_346_aosta.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_346_aosta/defaultskin/build/build_char_346_aosta.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_346_aosta/defaultskin/build/build_char_346_aosta.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/346_aosta",
+  "source_asset": {
+    "assetId": "build_char_346_aosta",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "奥斯塔",
+    "appellation": "Aosta",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_346_aosta.atlas",
+      ".png": "build_char_346_aosta.png",
+      ".skel": "build_char_346_aosta.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/aosta/default/meta.json",
     "atlas": "standalone/assets/source/aosta/default/build_char_346_aosta.atlas",
     "skeleton": "standalone/assets/source/aosta/default/build_char_346_aosta.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_346_aosta/defaultskin/build/build_char_346_aosta.png",
-        "path": "standalone/assets/source/aosta/default/build_char_346_aosta.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/346_aosta/build_char_346_aosta.png",
+        "path": "standalone/assets/source/aosta/default/build_char_346_aosta.png",
+        "bytes": 252832,
+        "sha256": "1196b0ef135b3dbf54fe00961255bc7c4dde5aef5ceba8698dd73f110cd9a39e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5624,
+      "sha256": "88faaa980517c97b1b07156cab4cc79c2134f05667242f746454bbf0de3740a5"
+    },
+    "skeleton": {
+      "bytes": 131461,
+      "sha256": "57f42bc1d6cb25d92eecd191511a3f5b8d2714bf66526a49b21e2629553d28b8"
+    }
   }
 }

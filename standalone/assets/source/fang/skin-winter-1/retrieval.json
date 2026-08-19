@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "fang",
   "character_name": "Fang",
   "localized_name": "芬",
@@ -9,25 +9,58 @@
   "variant_name": "十字郡",
   "skin_id": "winter-1",
   "skin_name": "十字郡",
-  "source_page": "https://prts.wiki/w/%E8%8A%AC",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_123_fang/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_123_fang/meta.json",
-    "model": "char_123_fang_winter_1/build/build_char_123_fang_winter_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_123_fang/char_123_fang_winter_1/build/build_char_123_fang_winter_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_123_fang/char_123_fang_winter_1/build/build_char_123_fang_winter_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_123_fang/char_123_fang_winter_1/build/build_char_123_fang_winter_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/123_fang_winter#1",
+  "source_asset": {
+    "assetId": "build_char_123_fang_winter#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "芬",
+    "appellation": "Fang",
+    "skinGroupId": "2018#winter",
+    "skinGroupName": "寒武纪/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_123_fang_winter#1.atlas",
+      ".png": "build_char_123_fang_winter#1.png",
+      ".skel": "build_char_123_fang_winter#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/fang/skin-winter-1/meta.json",
-    "atlas": "standalone/assets/source/fang/skin-winter-1/build_char_123_fang_winter_1.atlas",
-    "skeleton": "standalone/assets/source/fang/skin-winter-1/build_char_123_fang_winter_1.skel",
+    "atlas": "standalone/assets/source/fang/skin-winter-1/build_char_123_fang_winter#1.atlas",
+    "skeleton": "standalone/assets/source/fang/skin-winter-1/build_char_123_fang_winter#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_123_fang/char_123_fang_winter_1/build/build_char_123_fang_winter_1.png",
-        "path": "standalone/assets/source/fang/skin-winter-1/build_char_123_fang_winter_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/123_fang_winter%231/build_char_123_fang_winter%231.png",
+        "path": "standalone/assets/source/fang/skin-winter-1/build_char_123_fang_winter#1.png",
+        "bytes": 247470,
+        "sha256": "d02408c4b9887f71106edea1304129094f68d9dab82f4938a65bc78aca4dfb7e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9274,
+      "sha256": "d466dfaa0617ba56e2ea152f59c44791b51b4b2f06e4b7fb38553c68134fe35e"
+    },
+    "skeleton": {
+      "bytes": 124863,
+      "sha256": "c9f1fa8dcc502985be597ca38978be1a43dd5e79bfd86086f52c4ff0d0655351"
+    }
   }
 }

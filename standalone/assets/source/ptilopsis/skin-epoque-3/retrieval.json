@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ptilopsis",
   "character_name": "Ptilopsis",
   "localized_name": "白面鸮",
@@ -9,25 +9,58 @@
   "variant_name": "幽静",
   "skin_id": "epoque-3",
   "skin_name": "幽静",
-  "source_page": "https://prts.wiki/w/%E7%99%BD%E9%9D%A2%E9%B8%AE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_128_plosis/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_128_plosis/meta.json",
-    "model": "char_128_plosis_epoque_3/build/build_char_128_plosis_epoque_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_128_plosis/char_128_plosis_epoque_3/build/build_char_128_plosis_epoque_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_128_plosis/char_128_plosis_epoque_3/build/build_char_128_plosis_epoque_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_128_plosis/char_128_plosis_epoque_3/build/build_char_128_plosis_epoque_3.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/128_plosis_epoque#3",
+  "source_asset": {
+    "assetId": "build_char_128_plosis_epoque#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "白面鸮",
+    "appellation": "Ptilopsis",
+    "skinGroupId": "2020#epoque#2",
+    "skinGroupName": "时代/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_128_plosis_epoque#3.atlas",
+      ".png": "build_char_128_plosis_epoque#3.png",
+      ".skel": "build_char_128_plosis_epoque#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ptilopsis/skin-epoque-3/meta.json",
-    "atlas": "standalone/assets/source/ptilopsis/skin-epoque-3/build_char_128_plosis_epoque_3.atlas",
-    "skeleton": "standalone/assets/source/ptilopsis/skin-epoque-3/build_char_128_plosis_epoque_3.skel",
+    "atlas": "standalone/assets/source/ptilopsis/skin-epoque-3/build_char_128_plosis_epoque#3.atlas",
+    "skeleton": "standalone/assets/source/ptilopsis/skin-epoque-3/build_char_128_plosis_epoque#3.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_128_plosis/char_128_plosis_epoque_3/build/build_char_128_plosis_epoque_3.png",
-        "path": "standalone/assets/source/ptilopsis/skin-epoque-3/build_char_128_plosis_epoque_3.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/128_plosis_epoque%233/build_char_128_plosis_epoque%233.png",
+        "path": "standalone/assets/source/ptilopsis/skin-epoque-3/build_char_128_plosis_epoque#3.png",
+        "bytes": 226021,
+        "sha256": "835d2a6b81501996fc9b62a2447ba47ee986b7a80dd33b041bb7e0dd1b86c383"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8349,
+      "sha256": "f1c4b19c9d766356665d575d0db7d2458cbed693fd45c506c5ca542ce4091ce4"
+    },
+    "skeleton": {
+      "bytes": 113808,
+      "sha256": "c817e516884822a4e8b5ed911d1fcb1710e1902d5937069471547a7ab94cd28a"
+    }
   }
 }

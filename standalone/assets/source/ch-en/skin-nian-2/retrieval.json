@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ch-en",
   "character_name": "Ch'en",
   "localized_name": "陈",
@@ -9,25 +9,58 @@
   "variant_name": "岁红霞",
   "skin_id": "nian-2",
   "skin_name": "岁红霞",
-  "source_page": "https://prts.wiki/w/%E9%99%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_010_chen/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_010_chen/meta.json",
-    "model": "char_010_chen_nian_2/build/build_char_010_chen_nian_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_010_chen/char_010_chen_nian_2/build/build_char_010_chen_nian_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_010_chen/char_010_chen_nian_2/build/build_char_010_chen_nian_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_010_chen/char_010_chen_nian_2/build/build_char_010_chen_nian_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/010_chen_nian#2",
+  "source_asset": {
+    "assetId": "build_char_010_chen_nian#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "陈",
+    "appellation": "Ch'en",
+    "skinGroupId": "2020#nian",
+    "skinGroupName": "0011制造/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_010_chen_nian#2.atlas",
+      ".png": "build_char_010_chen_nian#2.png",
+      ".skel": "build_char_010_chen_nian#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ch-en/skin-nian-2/meta.json",
-    "atlas": "standalone/assets/source/ch-en/skin-nian-2/build_char_010_chen_nian_2.atlas",
-    "skeleton": "standalone/assets/source/ch-en/skin-nian-2/build_char_010_chen_nian_2.skel",
+    "atlas": "standalone/assets/source/ch-en/skin-nian-2/build_char_010_chen_nian#2.atlas",
+    "skeleton": "standalone/assets/source/ch-en/skin-nian-2/build_char_010_chen_nian#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_010_chen/char_010_chen_nian_2/build/build_char_010_chen_nian_2.png",
-        "path": "standalone/assets/source/ch-en/skin-nian-2/build_char_010_chen_nian_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/010_chen_nian%232/build_char_010_chen_nian%232.png",
+        "path": "standalone/assets/source/ch-en/skin-nian-2/build_char_010_chen_nian#2.png",
+        "bytes": 236464,
+        "sha256": "876336d5c4a2a994bff11f40f2593f21dd5ec7c34b0270eabf5bb3c619dcdd5f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8239,
+      "sha256": "8cf7cd2281f05ad152b3b7e6ccce4721cdf26ada0e444ba8c9f566072ae61a6c"
+    },
+    "skeleton": {
+      "bytes": 229025,
+      "sha256": "872ff6ae351231907ae4d8f99f9e8a4c62b05c675978ea0ca4cb1646e14bb14d"
+    }
   }
 }

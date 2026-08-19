@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "waai-fu",
   "character_name": "Waai Fu",
   "localized_name": "槐琥",
@@ -9,25 +9,58 @@
   "variant_name": "街道狂花",
   "skin_id": "whirlwind-2",
   "skin_name": "街道狂花",
-  "source_page": "https://prts.wiki/w/%E6%A7%90%E7%90%A5",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_243_waaifu/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_243_waaifu/meta.json",
-    "model": "char_243_waaifu_whirlwind_2/build/build_char_243_waaifu_whirlwind_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_243_waaifu/char_243_waaifu_whirlwind_2/build/build_char_243_waaifu_whirlwind_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_243_waaifu/char_243_waaifu_whirlwind_2/build/build_char_243_waaifu_whirlwind_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_243_waaifu/char_243_waaifu_whirlwind_2/build/build_char_243_waaifu_whirlwind_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/243_waaifu_whirlwind#2",
+  "source_asset": {
+    "assetId": "build_char_243_waaifu_whirlwind#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "槐琥",
+    "appellation": "Waai Fu",
+    "skinGroupId": "2022#whirlwind#2",
+    "skinGroupName": "0011/飙系列/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_243_waaifu_whirlwind#2.atlas",
+      ".png": "build_char_243_waaifu_whirlwind#2.png",
+      ".skel": "build_char_243_waaifu_whirlwind#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/waai-fu/skin-whirlwind-2/meta.json",
-    "atlas": "standalone/assets/source/waai-fu/skin-whirlwind-2/build_char_243_waaifu_whirlwind_2.atlas",
-    "skeleton": "standalone/assets/source/waai-fu/skin-whirlwind-2/build_char_243_waaifu_whirlwind_2.skel",
+    "atlas": "standalone/assets/source/waai-fu/skin-whirlwind-2/build_char_243_waaifu_whirlwind#2.atlas",
+    "skeleton": "standalone/assets/source/waai-fu/skin-whirlwind-2/build_char_243_waaifu_whirlwind#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_243_waaifu/char_243_waaifu_whirlwind_2/build/build_char_243_waaifu_whirlwind_2.png",
-        "path": "standalone/assets/source/waai-fu/skin-whirlwind-2/build_char_243_waaifu_whirlwind_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/243_waaifu_whirlwind%232/build_char_243_waaifu_whirlwind%232.png",
+        "path": "standalone/assets/source/waai-fu/skin-whirlwind-2/build_char_243_waaifu_whirlwind#2.png",
+        "bytes": 541199,
+        "sha256": "c06855c3da6985cabd688b3c62c526943df3c21fd6c19b2fdeb6aa2bf663729c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13466,
+      "sha256": "e5e5307d9bbf295df1573546b4afa8b1faef37ae1f30e553421c38460729cf80"
+    },
+    "skeleton": {
+      "bytes": 422891,
+      "sha256": "7d2f498285d967bd8e834d61299e91d78c56e1f82aa5887c60bf701e409e18b2"
+    }
   }
 }

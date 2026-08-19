@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "catapult",
   "character_name": "Catapult",
   "localized_name": "空爆",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%A9%BA%E7%88%86",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_282_catap/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_282_catap/meta.json",
-    "model": "defaultskin/build/build_char_282_catap",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_282_catap/defaultskin/build/build_char_282_catap.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_282_catap/defaultskin/build/build_char_282_catap.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_282_catap/defaultskin/build/build_char_282_catap.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/282_catap",
+  "source_asset": {
+    "assetId": "build_char_282_catap",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "空爆",
+    "appellation": "Catapult",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_3"
+    ],
+    "assetList": {
+      ".atlas": "build_char_282_catap.atlas",
+      ".png": "build_char_282_catap.png",
+      ".skel": "build_char_282_catap.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/catapult/default/meta.json",
     "atlas": "standalone/assets/source/catapult/default/build_char_282_catap.atlas",
     "skeleton": "standalone/assets/source/catapult/default/build_char_282_catap.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_282_catap/defaultskin/build/build_char_282_catap.png",
-        "path": "standalone/assets/source/catapult/default/build_char_282_catap.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/282_catap/build_char_282_catap.png",
+        "path": "standalone/assets/source/catapult/default/build_char_282_catap.png",
+        "bytes": 198824,
+        "sha256": "d1399fd527f1a1d3054e17843052b4016c3a8723f0510ffdfc5041d931452f03"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4090,
+      "sha256": "0299f062d1e99ee9096eee21730d7641f7e1677da1cbc9ff96eaf9586972b860"
+    },
+    "skeleton": {
+      "bytes": 53419,
+      "sha256": "87497f9d05c2cbe0e0a537b8fe50e9d2e9f0b847f45580b41fc00e52cd7b3d46"
+    }
   }
 }

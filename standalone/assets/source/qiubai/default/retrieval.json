@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "qiubai",
   "character_name": "Qiubai",
   "localized_name": "仇白",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E4%BB%87%E7%99%BD",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4082_qiubai/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4082_qiubai/meta.json",
-    "model": "defaultskin/build/build_char_4082_qiubai",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4082_qiubai/defaultskin/build/build_char_4082_qiubai.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4082_qiubai/defaultskin/build/build_char_4082_qiubai.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4082_qiubai/defaultskin/build/build_char_4082_qiubai.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4082_qiubai",
+  "source_asset": {
+    "assetId": "build_char_4082_qiubai",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "仇白",
+    "appellation": "Qiubai",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4082_qiubai.atlas",
+      ".png": "build_char_4082_qiubai.png",
+      ".skel": "build_char_4082_qiubai.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/qiubai/default/meta.json",
     "atlas": "standalone/assets/source/qiubai/default/build_char_4082_qiubai.atlas",
     "skeleton": "standalone/assets/source/qiubai/default/build_char_4082_qiubai.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4082_qiubai/defaultskin/build/build_char_4082_qiubai.png",
-        "path": "standalone/assets/source/qiubai/default/build_char_4082_qiubai.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4082_qiubai/build_char_4082_qiubai.png",
+        "path": "standalone/assets/source/qiubai/default/build_char_4082_qiubai.png",
+        "bytes": 337339,
+        "sha256": "acfb1455908c67c48f05d9fb6eace6c82a3018020c6c5519ec49d32c51e5c029"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8937,
+      "sha256": "c6d3ecec7e4d3ae9927574d8bc6aead064dcc1a13d12e0bb801d5a23ae188ae8"
+    },
+    "skeleton": {
+      "bytes": 206091,
+      "sha256": "d75eff1b71309af386f750aec7a71c7425a01309e8c4098354210cbc51a5ba3d"
+    }
   }
 }

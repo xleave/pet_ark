@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ansel",
   "character_name": "Ansel",
   "localized_name": "安赛尔",
@@ -9,25 +9,58 @@
   "variant_name": "悠然假日 HDm06",
   "skin_id": "summer-1",
   "skin_name": "悠然假日 HDm06",
-  "source_page": "https://prts.wiki/w/%E5%AE%89%E8%B5%9B%E5%B0%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/meta.json",
-    "model": "char_212_ansel_summer_1/build/build_char_212_ansel_summer_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/char_212_ansel_summer_1/build/build_char_212_ansel_summer_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/char_212_ansel_summer_1/build/build_char_212_ansel_summer_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/char_212_ansel_summer_1/build/build_char_212_ansel_summer_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/212_ansel_summer#1",
+  "source_asset": {
+    "assetId": "build_char_212_ansel_summer#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "安赛尔",
+    "appellation": "Ansel",
+    "skinGroupId": "2019#summer",
+    "skinGroupName": "珊瑚海岸/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_212_ansel_summer#1.atlas",
+      ".png": "build_char_212_ansel_summer#1.png",
+      ".skel": "build_char_212_ansel_summer#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ansel/skin-summer-1/meta.json",
-    "atlas": "standalone/assets/source/ansel/skin-summer-1/build_char_212_ansel_summer_1.atlas",
-    "skeleton": "standalone/assets/source/ansel/skin-summer-1/build_char_212_ansel_summer_1.skel",
+    "atlas": "standalone/assets/source/ansel/skin-summer-1/build_char_212_ansel_summer#1.atlas",
+    "skeleton": "standalone/assets/source/ansel/skin-summer-1/build_char_212_ansel_summer#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/char_212_ansel_summer_1/build/build_char_212_ansel_summer_1.png",
-        "path": "standalone/assets/source/ansel/skin-summer-1/build_char_212_ansel_summer_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/212_ansel_summer%231/build_char_212_ansel_summer%231.png",
+        "path": "standalone/assets/source/ansel/skin-summer-1/build_char_212_ansel_summer#1.png",
+        "bytes": 294983,
+        "sha256": "7031e04360f7f560bc59697ddb6bd430d3525af4e7406d07f4ff2a94ad883edd"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8143,
+      "sha256": "21b6c18d95dad9fdf9107f3e96ca68eca83443d63d13a1b34933c5dbebbc77cb"
+    },
+    "skeleton": {
+      "bytes": 179444,
+      "sha256": "b579ec903fb08285fac70e0e1391e6217091a6bd08a8cda243a131ac55dfbc82"
+    }
   }
 }

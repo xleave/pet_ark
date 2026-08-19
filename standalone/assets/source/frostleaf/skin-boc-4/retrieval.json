@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "frostleaf",
   "character_name": "Frostleaf",
   "localized_name": "霜叶",
@@ -9,25 +9,58 @@
   "variant_name": "破冰",
   "skin_id": "boc-4",
   "skin_name": "破冰",
-  "source_page": "https://prts.wiki/w/%E9%9C%9C%E5%8F%B6",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_193_frostl/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_193_frostl/meta.json",
-    "model": "char_193_frostl_boc_4/build/build_char_193_frostl_boc_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_193_frostl/char_193_frostl_boc_4/build/build_char_193_frostl_boc_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_193_frostl/char_193_frostl_boc_4/build/build_char_193_frostl_boc_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_193_frostl/char_193_frostl_boc_4/build/build_char_193_frostl_boc_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/193_frostl_boc#4",
+  "source_asset": {
+    "assetId": "build_char_193_frostl_boc#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "霜叶",
+    "appellation": "Frostleaf",
+    "skinGroupId": "2022#boc",
+    "skinGroupName": "斗争血脉/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_193_frostl_boc#4.atlas",
+      ".png": "build_char_193_frostl_boc#4.png",
+      ".skel": "build_char_193_frostl_boc#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/frostleaf/skin-boc-4/meta.json",
-    "atlas": "standalone/assets/source/frostleaf/skin-boc-4/build_char_193_frostl_boc_4.atlas",
-    "skeleton": "standalone/assets/source/frostleaf/skin-boc-4/build_char_193_frostl_boc_4.skel",
+    "atlas": "standalone/assets/source/frostleaf/skin-boc-4/build_char_193_frostl_boc#4.atlas",
+    "skeleton": "standalone/assets/source/frostleaf/skin-boc-4/build_char_193_frostl_boc#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_193_frostl/char_193_frostl_boc_4/build/build_char_193_frostl_boc_4.png",
-        "path": "standalone/assets/source/frostleaf/skin-boc-4/build_char_193_frostl_boc_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/193_frostl_boc%234/build_char_193_frostl_boc%234.png",
+        "path": "standalone/assets/source/frostleaf/skin-boc-4/build_char_193_frostl_boc#4.png",
+        "bytes": 274264,
+        "sha256": "3a7ddcb2855aed8cf5c71dec3b857105056d88b60c48ef6d2090d008d5c78d75"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7484,
+      "sha256": "b88535469dc459ec5f51415c5bd21e1ed0b3d0b6cf6744d33779a0e00a82d8cc"
+    },
+    "skeleton": {
+      "bytes": 257405,
+      "sha256": "68f58a8eaa0adedaeb3bba877a33ffe0f9c294773eb14acfb8c0eb32e970e36f"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "thorns",
   "character_name": "Thorns",
   "localized_name": "棘刺",
@@ -9,25 +9,58 @@
   "variant_name": "锋潮",
   "skin_id": "boc-8",
   "skin_name": "锋潮",
-  "source_page": "https://prts.wiki/w/%E6%A3%98%E5%88%BA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_293_thorns/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_293_thorns/meta.json",
-    "model": "char_293_thorns_boc_8/build/build_char_293_thorns_boc_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_293_thorns/char_293_thorns_boc_8/build/build_char_293_thorns_boc_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_293_thorns/char_293_thorns_boc_8/build/build_char_293_thorns_boc_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_293_thorns/char_293_thorns_boc_8/build/build_char_293_thorns_boc_8.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/293_thorns_boc#8",
+  "source_asset": {
+    "assetId": "build_char_293_thorns_boc#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "棘刺",
+    "appellation": "Thorns",
+    "skinGroupId": "2024#boc",
+    "skinGroupName": "斗争血脉/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_293_thorns_boc#8.atlas",
+      ".png": "build_char_293_thorns_boc#8.png",
+      ".skel": "build_char_293_thorns_boc#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/thorns/skin-boc-8/meta.json",
-    "atlas": "standalone/assets/source/thorns/skin-boc-8/build_char_293_thorns_boc_8.atlas",
-    "skeleton": "standalone/assets/source/thorns/skin-boc-8/build_char_293_thorns_boc_8.skel",
+    "atlas": "standalone/assets/source/thorns/skin-boc-8/build_char_293_thorns_boc#8.atlas",
+    "skeleton": "standalone/assets/source/thorns/skin-boc-8/build_char_293_thorns_boc#8.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_293_thorns/char_293_thorns_boc_8/build/build_char_293_thorns_boc_8.png",
-        "path": "standalone/assets/source/thorns/skin-boc-8/build_char_293_thorns_boc_8.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/293_thorns_boc%238/build_char_293_thorns_boc%238.png",
+        "path": "standalone/assets/source/thorns/skin-boc-8/build_char_293_thorns_boc#8.png",
+        "bytes": 654299,
+        "sha256": "eef9e2bc6daa1cebb95502a65b6e5585e025da92e25ff45aed7441e138400cff"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 21069,
+      "sha256": "a15a6eeee62d472359a9ead535a86d0b49bc073d2164fee56957621f0b9ce289"
+    },
+    "skeleton": {
+      "bytes": 541061,
+      "sha256": "e6776c85b21fb5f596d8204a417246c387bea4e21f7425eb206a264efef2f492"
+    }
   }
 }

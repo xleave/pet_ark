@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "amiya",
   "character_name": "Amiya",
   "localized_name": "阿米娅",
@@ -9,25 +9,58 @@
   "variant_name": "见习联结者",
   "skin_id": "epoque-4",
   "skin_name": "见习联结者",
-  "source_page": "https://prts.wiki/w/%E9%98%BF%E7%B1%B3%E5%A8%85",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/meta.json",
-    "model": "char_002_amiya_epoque_4/build/build_char_002_amiya_epoque_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_epoque_4/build/build_char_002_amiya_epoque_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_epoque_4/build/build_char_002_amiya_epoque_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_epoque_4/build/build_char_002_amiya_epoque_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/002_amiya_epoque#4",
+  "source_asset": {
+    "assetId": "build_char_002_amiya_epoque#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "阿米娅",
+    "appellation": "Amiya",
+    "skinGroupId": "2020#sale",
+    "skinGroupName": "忒斯特收藏/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_002_amiya_epoque#4.atlas",
+      ".png": "build_char_002_amiya_epoque#4.png",
+      ".skel": "build_char_002_amiya_epoque#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/amiya/skin-epoque-4/meta.json",
-    "atlas": "standalone/assets/source/amiya/skin-epoque-4/build_char_002_amiya_epoque_4.atlas",
-    "skeleton": "standalone/assets/source/amiya/skin-epoque-4/build_char_002_amiya_epoque_4.skel",
+    "atlas": "standalone/assets/source/amiya/skin-epoque-4/build_char_002_amiya_epoque#4.atlas",
+    "skeleton": "standalone/assets/source/amiya/skin-epoque-4/build_char_002_amiya_epoque#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_epoque_4/build/build_char_002_amiya_epoque_4.png",
-        "path": "standalone/assets/source/amiya/skin-epoque-4/build_char_002_amiya_epoque_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/002_amiya_epoque%234/build_char_002_amiya_epoque%234.png",
+        "path": "standalone/assets/source/amiya/skin-epoque-4/build_char_002_amiya_epoque#4.png",
+        "bytes": 346363,
+        "sha256": "765e12b24dcf7a2d60162fb2fa26fa328ab7a3c0786ccec3d8321c012aadd081"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7885,
+      "sha256": "14673543a08a9056fcee6265e29592357c9f6ddc7480018eabddf981d3373021"
+    },
+    "skeleton": {
+      "bytes": 124921,
+      "sha256": "076a72b684a56ed45dbbd42b01aff45327cb81959c70994a5be7625aa0b5017c"
+    }
   }
 }

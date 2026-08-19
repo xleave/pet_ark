@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "tomimi",
   "character_name": "Tomimi",
   "localized_name": "特米米",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%89%B9%E7%B1%B3%E7%B1%B3",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_411_tomimi/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_411_tomimi/meta.json",
-    "model": "defaultskin/build/build_char_411_tomimi",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_411_tomimi/defaultskin/build/build_char_411_tomimi.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_411_tomimi/defaultskin/build/build_char_411_tomimi.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_411_tomimi/defaultskin/build/build_char_411_tomimi.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/411_tomimi",
+  "source_asset": {
+    "assetId": "build_char_411_tomimi",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "特米米",
+    "appellation": "Tomimi",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_411_tomimi.atlas",
+      ".png": "build_char_411_tomimi.png",
+      ".skel": "build_char_411_tomimi.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/tomimi/default/meta.json",
     "atlas": "standalone/assets/source/tomimi/default/build_char_411_tomimi.atlas",
     "skeleton": "standalone/assets/source/tomimi/default/build_char_411_tomimi.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_411_tomimi/defaultskin/build/build_char_411_tomimi.png",
-        "path": "standalone/assets/source/tomimi/default/build_char_411_tomimi.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/411_tomimi/build_char_411_tomimi.png",
+        "path": "standalone/assets/source/tomimi/default/build_char_411_tomimi.png",
+        "bytes": 351003,
+        "sha256": "47ae2b20e33701e57e62bcf427b85967f441ab13d3cdb396569fccd23f9f02cf"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10190,
+      "sha256": "d14b44a089d6a6b80a8888a06b93fee553c85e82984ab2e9c0e7d2551bf13220"
+    },
+    "skeleton": {
+      "bytes": 142305,
+      "sha256": "cb6cb357111d689996b2c1c2856a608d924a793c5d0af742451c52049f11ea74"
+    }
   }
 }

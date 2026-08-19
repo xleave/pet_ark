@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "bobbing",
   "character_name": "Bobbing",
   "localized_name": "波卜",
@@ -9,25 +9,58 @@
   "variant_name": "温情烘焙",
   "skin_id": "kitchen-4",
   "skin_name": "温情烘焙",
-  "source_page": "https://prts.wiki/w/%E6%B3%A2%E5%8D%9C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/meta.json",
-    "model": "char_487_bobb_kitchen_4/build/build_char_487_bobb_kitchen_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/char_487_bobb_kitchen_4/build/build_char_487_bobb_kitchen_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/char_487_bobb_kitchen_4/build/build_char_487_bobb_kitchen_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/char_487_bobb_kitchen_4/build/build_char_487_bobb_kitchen_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/487_bobb_kitchen#4",
+  "source_asset": {
+    "assetId": "build_char_487_bobb_kitchen#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "波卜",
+    "appellation": "Bobbing",
+    "skinGroupId": "2025#kitchen#2",
+    "skinGroupName": "罗德厨房/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_487_bobb_kitchen#4.atlas",
+      ".png": "build_char_487_bobb_kitchen#4.png",
+      ".skel": "build_char_487_bobb_kitchen#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/bobbing/skin-kitchen-4/meta.json",
-    "atlas": "standalone/assets/source/bobbing/skin-kitchen-4/build_char_487_bobb_kitchen_4.atlas",
-    "skeleton": "standalone/assets/source/bobbing/skin-kitchen-4/build_char_487_bobb_kitchen_4.skel",
+    "atlas": "standalone/assets/source/bobbing/skin-kitchen-4/build_char_487_bobb_kitchen#4.atlas",
+    "skeleton": "standalone/assets/source/bobbing/skin-kitchen-4/build_char_487_bobb_kitchen#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/char_487_bobb_kitchen_4/build/build_char_487_bobb_kitchen_4.png",
-        "path": "standalone/assets/source/bobbing/skin-kitchen-4/build_char_487_bobb_kitchen_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/487_bobb_kitchen%234/build_char_487_bobb_kitchen%234.png",
+        "path": "standalone/assets/source/bobbing/skin-kitchen-4/build_char_487_bobb_kitchen#4.png",
+        "bytes": 246060,
+        "sha256": "7c59f7da9a91aa1840a27ba53f629564bc84d577a00fe7f300ec0f143e526dd0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11113,
+      "sha256": "e6ecaf794b73be3fc7fdc958449f7c1c5afc8fc3fbea564d0c1004eceeb53a2e"
+    },
+    "skeleton": {
+      "bytes": 330159,
+      "sha256": "ac4d182b05fa8fe947147516c6de5c48b3b9fc44717314b2c81c6f25c705792d"
+    }
   }
 }

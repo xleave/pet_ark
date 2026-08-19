@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "breeze",
   "character_name": "Breeze",
   "localized_name": "微风",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%BE%AE%E9%A3%8E",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_275_breeze/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_275_breeze/meta.json",
-    "model": "defaultskin/build/build_char_275_breeze",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_275_breeze/defaultskin/build/build_char_275_breeze.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_275_breeze/defaultskin/build/build_char_275_breeze.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_275_breeze/defaultskin/build/build_char_275_breeze.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/275_breeze",
+  "source_asset": {
+    "assetId": "build_char_275_breeze",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "微风",
+    "appellation": "Breeze",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_275_breeze.atlas",
+      ".png": "build_char_275_breeze.png",
+      ".skel": "build_char_275_breeze.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/breeze/default/meta.json",
     "atlas": "standalone/assets/source/breeze/default/build_char_275_breeze.atlas",
     "skeleton": "standalone/assets/source/breeze/default/build_char_275_breeze.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_275_breeze/defaultskin/build/build_char_275_breeze.png",
-        "path": "standalone/assets/source/breeze/default/build_char_275_breeze.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/275_breeze/build_char_275_breeze.png",
+        "path": "standalone/assets/source/breeze/default/build_char_275_breeze.png",
+        "bytes": 222632,
+        "sha256": "a149b307c793b5a97820bfdf48a6043b382e15917154f34176ad85891c3bb691"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7180,
+      "sha256": "32a10884e58de8f4606f81f8fa0ef4f36955de8cb837cb4a832661bd40377bbb"
+    },
+    "skeleton": {
+      "bytes": 108357,
+      "sha256": "aac074fc42104a3f4f335db72aa15842e65f0672c21906f5dda469e99fbf0f34"
+    }
   }
 }

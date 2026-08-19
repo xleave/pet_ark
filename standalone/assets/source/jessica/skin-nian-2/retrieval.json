@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "jessica",
   "character_name": "Jessica",
   "localized_name": "杰西卡",
@@ -9,25 +9,58 @@
   "variant_name": "君子兰",
   "skin_id": "nian-2",
   "skin_name": "君子兰",
-  "source_page": "https://prts.wiki/w/%E6%9D%B0%E8%A5%BF%E5%8D%A1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_235_jesica/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_235_jesica/meta.json",
-    "model": "char_235_jesica_nian_2/build/build_char_235_jesica_nian_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_235_jesica/char_235_jesica_nian_2/build/build_char_235_jesica_nian_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_235_jesica/char_235_jesica_nian_2/build/build_char_235_jesica_nian_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_235_jesica/char_235_jesica_nian_2/build/build_char_235_jesica_nian_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/235_jesica_nian#2",
+  "source_asset": {
+    "assetId": "build_char_235_jesica_nian#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "杰西卡",
+    "appellation": "Jessica",
+    "skinGroupId": "2020#nian",
+    "skinGroupName": "0011制造/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_235_jesica_nian#2.atlas",
+      ".png": "build_char_235_jesica_nian#2.png",
+      ".skel": "build_char_235_jesica_nian#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/jessica/skin-nian-2/meta.json",
-    "atlas": "standalone/assets/source/jessica/skin-nian-2/build_char_235_jesica_nian_2.atlas",
-    "skeleton": "standalone/assets/source/jessica/skin-nian-2/build_char_235_jesica_nian_2.skel",
+    "atlas": "standalone/assets/source/jessica/skin-nian-2/build_char_235_jesica_nian#2.atlas",
+    "skeleton": "standalone/assets/source/jessica/skin-nian-2/build_char_235_jesica_nian#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_235_jesica/char_235_jesica_nian_2/build/build_char_235_jesica_nian_2.png",
-        "path": "standalone/assets/source/jessica/skin-nian-2/build_char_235_jesica_nian_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/235_jesica_nian%232/build_char_235_jesica_nian%232.png",
+        "path": "standalone/assets/source/jessica/skin-nian-2/build_char_235_jesica_nian#2.png",
+        "bytes": 185782,
+        "sha256": "8c89f123a64604e670f6e7276295b0ca7cea72b4dd0b68d533f5cc8e138aee15"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5274,
+      "sha256": "90fd010d739a4e1315df031336391ad2ea0a6849a82799a4f512003e7161afd7"
+    },
+    "skeleton": {
+      "bytes": 148155,
+      "sha256": "ee05df395f14e5c3e07340bda83956c81b17c882905a565c4ddb01aa90d5925a"
+    }
   }
 }

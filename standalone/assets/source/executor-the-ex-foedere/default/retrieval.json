@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "executor-the-ex-foedere",
   "character_name": "Executor the Ex Foedere",
   "localized_name": "圣约送葬人",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%9C%A3%E7%BA%A6%E9%80%81%E8%91%AC%E4%BA%BA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/meta.json",
-    "model": "defaultskin/build/build_char_1032_excu2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/defaultskin/build/build_char_1032_excu2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/defaultskin/build/build_char_1032_excu2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/defaultskin/build/build_char_1032_excu2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1032_excu2",
+  "source_asset": {
+    "assetId": "build_char_1032_excu2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "圣约送葬人",
+    "appellation": "Executor the Ex Foedere",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1032_excu2.atlas",
+      ".png": "build_char_1032_excu2.png",
+      ".skel": "build_char_1032_excu2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/executor-the-ex-foedere/default/meta.json",
     "atlas": "standalone/assets/source/executor-the-ex-foedere/default/build_char_1032_excu2.atlas",
     "skeleton": "standalone/assets/source/executor-the-ex-foedere/default/build_char_1032_excu2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/defaultskin/build/build_char_1032_excu2.png",
-        "path": "standalone/assets/source/executor-the-ex-foedere/default/build_char_1032_excu2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1032_excu2/build_char_1032_excu2.png",
+        "path": "standalone/assets/source/executor-the-ex-foedere/default/build_char_1032_excu2.png",
+        "bytes": 483494,
+        "sha256": "20478c04274201cf4d0c06dcb9f1b2ea9215af2b9a4bb2c613821ae5db3137d5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15256,
+      "sha256": "4719b59e12f0488b6a30b6b35a80d3997d7eac9ed341766acfb7fe1c54cf8a14"
+    },
+    "skeleton": {
+      "bytes": 395741,
+      "sha256": "0cc5795161d14b88c07ab2f76f59ebaff5f3b8b50f1df354b33f7cfab4ed8dc5"
+    }
   }
 }

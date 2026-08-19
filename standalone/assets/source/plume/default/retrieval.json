@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "plume",
   "character_name": "Plume",
   "localized_name": "翎羽",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%BF%8E%E7%BE%BD",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_192_falco/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_192_falco/meta.json",
-    "model": "defaultskin/build/build_char_192_falco",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_192_falco/defaultskin/build/build_char_192_falco.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_192_falco/defaultskin/build/build_char_192_falco.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_192_falco/defaultskin/build/build_char_192_falco.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/192_falco",
+  "source_asset": {
+    "assetId": "build_char_192_falco",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "翎羽",
+    "appellation": "Plume",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_3"
+    ],
+    "assetList": {
+      ".atlas": "build_char_192_falco.atlas",
+      ".png": "build_char_192_falco.png",
+      ".skel": "build_char_192_falco.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/plume/default/meta.json",
     "atlas": "standalone/assets/source/plume/default/build_char_192_falco.atlas",
     "skeleton": "standalone/assets/source/plume/default/build_char_192_falco.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_192_falco/defaultskin/build/build_char_192_falco.png",
-        "path": "standalone/assets/source/plume/default/build_char_192_falco.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/192_falco/build_char_192_falco.png",
+        "path": "standalone/assets/source/plume/default/build_char_192_falco.png",
+        "bytes": 201287,
+        "sha256": "433d309e9ae2a077660f43c436b42f86cf0b1effff8aa742b6d9ef017cf8863f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5081,
+      "sha256": "65ee12056bf222454aac5f79be10b2715cb5062b0ef9bc9982c5a18baccd890d"
+    },
+    "skeleton": {
+      "bytes": 77785,
+      "sha256": "dbb6517235386e0eec58e4202b635ea90bb79f202cf93db7751eb8a5f1314046"
+    }
   }
 }

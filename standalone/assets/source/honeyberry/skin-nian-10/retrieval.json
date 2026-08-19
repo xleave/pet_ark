@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "honeyberry",
   "character_name": "Honeyberry",
   "localized_name": "蜜莓",
@@ -9,25 +9,58 @@
   "variant_name": "洇灵雨",
   "skin_id": "nian-10",
   "skin_name": "洇灵雨",
-  "source_page": "https://prts.wiki/w/%E8%9C%9C%E8%8E%93",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_449_glider/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_449_glider/meta.json",
-    "model": "char_449_glider_nian_10/build/build_char_449_glider_nian_10",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_449_glider/char_449_glider_nian_10/build/build_char_449_glider_nian_10.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_449_glider/char_449_glider_nian_10/build/build_char_449_glider_nian_10.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_449_glider/char_449_glider_nian_10/build/build_char_449_glider_nian_10.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/449_glider_nian#10",
+  "source_asset": {
+    "assetId": "build_char_449_glider_nian#10",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "蜜莓",
+    "appellation": "Honeyberry",
+    "skinGroupId": "2024#nian",
+    "skinGroupName": "0011制造/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_449_glider_nian#10.atlas",
+      ".png": "build_char_449_glider_nian#10.png",
+      ".skel": "build_char_449_glider_nian#10.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/honeyberry/skin-nian-10/meta.json",
-    "atlas": "standalone/assets/source/honeyberry/skin-nian-10/build_char_449_glider_nian_10.atlas",
-    "skeleton": "standalone/assets/source/honeyberry/skin-nian-10/build_char_449_glider_nian_10.skel",
+    "atlas": "standalone/assets/source/honeyberry/skin-nian-10/build_char_449_glider_nian#10.atlas",
+    "skeleton": "standalone/assets/source/honeyberry/skin-nian-10/build_char_449_glider_nian#10.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_449_glider/char_449_glider_nian_10/build/build_char_449_glider_nian_10.png",
-        "path": "standalone/assets/source/honeyberry/skin-nian-10/build_char_449_glider_nian_10.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/449_glider_nian%2310/build_char_449_glider_nian%2310.png",
+        "path": "standalone/assets/source/honeyberry/skin-nian-10/build_char_449_glider_nian#10.png",
+        "bytes": 352285,
+        "sha256": "436b337ee051a9b41c8317db596f389128a5799c66de66b14d0f71fdeed118c0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12802,
+      "sha256": "845746c553623a0198064697132b7c0a9dc708cfacdf79f6b7291be6b9fba600"
+    },
+    "skeleton": {
+      "bytes": 268765,
+      "sha256": "feb4345d6654ad93e6e7ad967f316518037f3644f850336e5f11d5284ba6a14a"
+    }
   }
 }

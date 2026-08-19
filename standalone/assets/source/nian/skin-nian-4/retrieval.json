@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "nian",
   "character_name": "Nian",
   "localized_name": "年",
@@ -9,25 +9,58 @@
   "variant_name": "乐逍遥",
   "skin_id": "nian-4",
   "skin_name": "乐逍遥",
-  "source_page": "https://prts.wiki/w/%E5%B9%B4",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/meta.json",
-    "model": "char_2014_nian_nian_4/build/build_char_2014_nian_nian_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/char_2014_nian_nian_4/build/build_char_2014_nian_nian_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/char_2014_nian_nian_4/build/build_char_2014_nian_nian_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/char_2014_nian_nian_4/build/build_char_2014_nian_nian_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/2014_nian_nian#4",
+  "source_asset": {
+    "assetId": "build_char_2014_nian_nian#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "年",
+    "appellation": "Nian",
+    "skinGroupId": "2021#nian",
+    "skinGroupName": "0011制造/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2014_nian_nian#4.atlas",
+      ".png": "build_char_2014_nian_nian#4.png",
+      ".skel": "build_char_2014_nian_nian#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/nian/skin-nian-4/meta.json",
-    "atlas": "standalone/assets/source/nian/skin-nian-4/build_char_2014_nian_nian_4.atlas",
-    "skeleton": "standalone/assets/source/nian/skin-nian-4/build_char_2014_nian_nian_4.skel",
+    "atlas": "standalone/assets/source/nian/skin-nian-4/build_char_2014_nian_nian#4.atlas",
+    "skeleton": "standalone/assets/source/nian/skin-nian-4/build_char_2014_nian_nian#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/char_2014_nian_nian_4/build/build_char_2014_nian_nian_4.png",
-        "path": "standalone/assets/source/nian/skin-nian-4/build_char_2014_nian_nian_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/2014_nian_nian%234/build_char_2014_nian_nian%234.png",
+        "path": "standalone/assets/source/nian/skin-nian-4/build_char_2014_nian_nian#4.png",
+        "bytes": 533126,
+        "sha256": "15a8de58f2a8d7b3f0119445dd4042daa131d29eebdadb4c8429f52d166a5751"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14205,
+      "sha256": "aad1e4eb9b0eabde2234e66a1a9ee8337ab3980a8ca7f7a9ed68d33ad0363c2d"
+    },
+    "skeleton": {
+      "bytes": 564518,
+      "sha256": "b1140cadf890dd37cba6dd7707afb6e12f8ad6fbddac1213514707a779ee44fd"
+    }
   }
 }

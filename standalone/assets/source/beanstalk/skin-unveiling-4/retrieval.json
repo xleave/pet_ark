@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "beanstalk",
   "character_name": "Beanstalk",
   "localized_name": "豆苗",
@@ -9,25 +9,58 @@
   "variant_name": "红丝带之约",
   "skin_id": "unveiling-4",
   "skin_name": "红丝带之约",
-  "source_page": "https://prts.wiki/w/%E8%B1%86%E8%8B%97",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/meta.json",
-    "model": "char_452_bstalk_unveiling_4/build/build_char_452_bstalk_unveiling_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/char_452_bstalk_unveiling_4/build/build_char_452_bstalk_unveiling_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/char_452_bstalk_unveiling_4/build/build_char_452_bstalk_unveiling_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/char_452_bstalk_unveiling_4/build/build_char_452_bstalk_unveiling_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/452_bstalk_unveiling#4",
+  "source_asset": {
+    "assetId": "build_char_452_bstalk_unveiling#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "豆苗",
+    "appellation": "Beanstalk",
+    "skinGroupId": "2026#unveiling",
+    "skinGroupName": "待予花冠/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_452_bstalk_unveiling#4.atlas",
+      ".png": "build_char_452_bstalk_unveiling#4.png",
+      ".skel": "build_char_452_bstalk_unveiling#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/beanstalk/skin-unveiling-4/meta.json",
-    "atlas": "standalone/assets/source/beanstalk/skin-unveiling-4/build_char_452_bstalk_unveiling_4.atlas",
-    "skeleton": "standalone/assets/source/beanstalk/skin-unveiling-4/build_char_452_bstalk_unveiling_4.skel",
+    "atlas": "standalone/assets/source/beanstalk/skin-unveiling-4/build_char_452_bstalk_unveiling#4.atlas",
+    "skeleton": "standalone/assets/source/beanstalk/skin-unveiling-4/build_char_452_bstalk_unveiling#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/char_452_bstalk_unveiling_4/build/build_char_452_bstalk_unveiling_4.png",
-        "path": "standalone/assets/source/beanstalk/skin-unveiling-4/build_char_452_bstalk_unveiling_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/452_bstalk_unveiling%234/build_char_452_bstalk_unveiling%234.png",
+        "path": "standalone/assets/source/beanstalk/skin-unveiling-4/build_char_452_bstalk_unveiling#4.png",
+        "bytes": 385001,
+        "sha256": "bd29a6b276b13b64995cd1b1fde4f076b1fe5069f4f85b9940e3271beeb7a7cd"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12086,
+      "sha256": "16029c0725d773ac9e7407024bf9fa430b1b820456c2652828e84ada8d1e9ecd"
+    },
+    "skeleton": {
+      "bytes": 432637,
+      "sha256": "ea717329c13596651c82847280cb33ccf2574056700d946105feb930b273afda"
+    }
   }
 }

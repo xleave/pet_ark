@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "pudding",
   "character_name": "Pudding",
   "localized_name": "布丁",
@@ -9,25 +9,58 @@
   "variant_name": "火树灵",
   "skin_id": "snow-5",
   "skin_name": "火树灵",
-  "source_page": "https://prts.wiki/w/%E5%B8%83%E4%B8%81",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4004_pudd/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4004_pudd/meta.json",
-    "model": "char_4004_pudd_snow_5/build/build_char_4004_pudd_snow_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4004_pudd/char_4004_pudd_snow_5/build/build_char_4004_pudd_snow_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4004_pudd/char_4004_pudd_snow_5/build/build_char_4004_pudd_snow_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4004_pudd/char_4004_pudd_snow_5/build/build_char_4004_pudd_snow_5.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4004_pudd_snow#5",
+  "source_asset": {
+    "assetId": "build_char_4004_pudd_snow#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "布丁",
+    "appellation": "Pudding",
+    "skinGroupId": "2022#xmas",
+    "skinGroupName": "冰原信使/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4004_pudd_snow#5.atlas",
+      ".png": "build_char_4004_pudd_snow#5.png",
+      ".skel": "build_char_4004_pudd_snow#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/pudding/skin-snow-5/meta.json",
-    "atlas": "standalone/assets/source/pudding/skin-snow-5/build_char_4004_pudd_snow_5.atlas",
-    "skeleton": "standalone/assets/source/pudding/skin-snow-5/build_char_4004_pudd_snow_5.skel",
+    "atlas": "standalone/assets/source/pudding/skin-snow-5/build_char_4004_pudd_snow#5.atlas",
+    "skeleton": "standalone/assets/source/pudding/skin-snow-5/build_char_4004_pudd_snow#5.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4004_pudd/char_4004_pudd_snow_5/build/build_char_4004_pudd_snow_5.png",
-        "path": "standalone/assets/source/pudding/skin-snow-5/build_char_4004_pudd_snow_5.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4004_pudd_snow%235/build_char_4004_pudd_snow%235.png",
+        "path": "standalone/assets/source/pudding/skin-snow-5/build_char_4004_pudd_snow#5.png",
+        "bytes": 311200,
+        "sha256": "db902dc21cef26777e4f87f7a0f5566410e97223343c12649929acb0b1d27ee2"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10620,
+      "sha256": "49aa0da4a95b85d462493caf7bda70b240c30b2892f328fddae591536e1eadb7"
+    },
+    "skeleton": {
+      "bytes": 365466,
+      "sha256": "364ef50f2fc08b882875cbb949b9e30bc3a288f64d521426ffa7f2ac51600fef"
+    }
   }
 }

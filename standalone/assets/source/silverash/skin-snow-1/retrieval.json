@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "silverash",
   "character_name": "SilverAsh",
   "localized_name": "银灰",
@@ -9,25 +9,58 @@
   "variant_name": "约克的寒风",
   "skin_id": "snow-1",
   "skin_name": "约克的寒风",
-  "source_page": "https://prts.wiki/w/%E9%93%B6%E7%81%B0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/meta.json",
-    "model": "char_172_svrash_snow_1/build/build_char_172_svrash_snow_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/char_172_svrash_snow_1/build/build_char_172_svrash_snow_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/char_172_svrash_snow_1/build/build_char_172_svrash_snow_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/char_172_svrash_snow_1/build/build_char_172_svrash_snow_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/172_svrash_snow#1",
+  "source_asset": {
+    "assetId": "build_char_172_svrash_snow#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "银灰",
+    "appellation": "SilverAsh",
+    "skinGroupId": "2019#xmas",
+    "skinGroupName": "冰原信使/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_172_svrash_snow#1.atlas",
+      ".png": "build_char_172_svrash_snow#1.png",
+      ".skel": "build_char_172_svrash_snow#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/silverash/skin-snow-1/meta.json",
-    "atlas": "standalone/assets/source/silverash/skin-snow-1/build_char_172_svrash_snow_1.atlas",
-    "skeleton": "standalone/assets/source/silverash/skin-snow-1/build_char_172_svrash_snow_1.skel",
+    "atlas": "standalone/assets/source/silverash/skin-snow-1/build_char_172_svrash_snow#1.atlas",
+    "skeleton": "standalone/assets/source/silverash/skin-snow-1/build_char_172_svrash_snow#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/char_172_svrash_snow_1/build/build_char_172_svrash_snow_1.png",
-        "path": "standalone/assets/source/silverash/skin-snow-1/build_char_172_svrash_snow_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/172_svrash_snow%231/build_char_172_svrash_snow%231.png",
+        "path": "standalone/assets/source/silverash/skin-snow-1/build_char_172_svrash_snow#1.png",
+        "bytes": 393839,
+        "sha256": "719b09d2e619ebcef8d3c753deae1adc814df5a4dd1b088b470e81b1fad81d1d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9834,
+      "sha256": "9e7f88ad65c2bf850ad8d9ce09fd40e2024ec12eca93b2e30c8884fcc32b5675"
+    },
+    "skeleton": {
+      "bytes": 220511,
+      "sha256": "d026bfcac314a062ef81dad6bd309b0a6d2e787d4ce70b1e6600103d3da86dbf"
+    }
   }
 }

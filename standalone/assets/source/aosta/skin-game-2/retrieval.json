@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "aosta",
   "character_name": "Aosta",
   "localized_name": "奥斯塔",
@@ -9,25 +9,58 @@
   "variant_name": "光铳调试员",
   "skin_id": "game-2",
   "skin_name": "光铳调试员",
-  "source_page": "https://prts.wiki/w/%E5%A5%A5%E6%96%AF%E5%A1%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_346_aosta/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_346_aosta/meta.json",
-    "model": "char_346_aosta_game_2/build/build_char_346_aosta_game_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_346_aosta/char_346_aosta_game_2/build/build_char_346_aosta_game_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_346_aosta/char_346_aosta_game_2/build/build_char_346_aosta_game_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_346_aosta/char_346_aosta_game_2/build/build_char_346_aosta_game_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/346_aosta_game#2",
+  "source_asset": {
+    "assetId": "build_char_346_aosta_game#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "奥斯塔",
+    "appellation": "Aosta",
+    "skinGroupId": "2022#game#2",
+    "skinGroupName": "成就之星/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_346_aosta_game#2.atlas",
+      ".png": "build_char_346_aosta_game#2.png",
+      ".skel": "build_char_346_aosta_game#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/aosta/skin-game-2/meta.json",
-    "atlas": "standalone/assets/source/aosta/skin-game-2/build_char_346_aosta_game_2.atlas",
-    "skeleton": "standalone/assets/source/aosta/skin-game-2/build_char_346_aosta_game_2.skel",
+    "atlas": "standalone/assets/source/aosta/skin-game-2/build_char_346_aosta_game#2.atlas",
+    "skeleton": "standalone/assets/source/aosta/skin-game-2/build_char_346_aosta_game#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_346_aosta/char_346_aosta_game_2/build/build_char_346_aosta_game_2.png",
-        "path": "standalone/assets/source/aosta/skin-game-2/build_char_346_aosta_game_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/346_aosta_game%232/build_char_346_aosta_game%232.png",
+        "path": "standalone/assets/source/aosta/skin-game-2/build_char_346_aosta_game#2.png",
+        "bytes": 589964,
+        "sha256": "dceebf15267f12e489e149b55269d45c2a5dc842df2b67abb345dfff4d232571"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13528,
+      "sha256": "8c53472d45c7315108e0d70dc76de816da29342fb863a127d9d6174dbe4539ab"
+    },
+    "skeleton": {
+      "bytes": 188216,
+      "sha256": "3779005ec9f99ef3ed9490615073226fc128b9189aff8f84acd4103640049a61"
+    }
   }
 }

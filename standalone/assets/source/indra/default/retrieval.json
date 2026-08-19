@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "indra",
   "character_name": "Indra",
   "localized_name": "因陀罗",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%9B%A0%E9%99%80%E7%BD%97",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_155_tiger/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_155_tiger/meta.json",
-    "model": "defaultskin/build/build_char_155_tiger",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_155_tiger/defaultskin/build/build_char_155_tiger.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_155_tiger/defaultskin/build/build_char_155_tiger.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_155_tiger/defaultskin/build/build_char_155_tiger.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/155_tiger",
+  "source_asset": {
+    "assetId": "build_char_155_tiger",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "因陀罗",
+    "appellation": "Indra",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_155_tiger.atlas",
+      ".png": "build_char_155_tiger.png",
+      ".skel": "build_char_155_tiger.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/indra/default/meta.json",
     "atlas": "standalone/assets/source/indra/default/build_char_155_tiger.atlas",
     "skeleton": "standalone/assets/source/indra/default/build_char_155_tiger.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_155_tiger/defaultskin/build/build_char_155_tiger.png",
-        "path": "standalone/assets/source/indra/default/build_char_155_tiger.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/155_tiger/build_char_155_tiger.png",
+        "path": "standalone/assets/source/indra/default/build_char_155_tiger.png",
+        "bytes": 185439,
+        "sha256": "951a64aaf9371394cbc18d195ecab7b62a35b19c8fc184c1abccd0677c1dca91"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4280,
+      "sha256": "b97343f2c4ae078c5122da01e50f271bb85ea07159d97abcd339f81461bca379"
+    },
+    "skeleton": {
+      "bytes": 71432,
+      "sha256": "de3d87ab26c4ecf764d62a13a311e528cd2cbed6e3b4308ddddcf5d7f514f19d"
+    }
   }
 }

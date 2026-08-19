@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "typhon",
   "character_name": "Typhon",
   "localized_name": "提丰",
@@ -9,25 +9,58 @@
   "variant_name": "温差 RT.RX07",
   "skin_id": "summer-17",
   "skin_name": "温差 RT.RX07",
-  "source_page": "https://prts.wiki/w/%E6%8F%90%E4%B8%B0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/meta.json",
-    "model": "char_2012_typhon_summer_17/build/build_char_2012_typhon_summer_17",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/char_2012_typhon_summer_17/build/build_char_2012_typhon_summer_17.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/char_2012_typhon_summer_17/build/build_char_2012_typhon_summer_17.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/char_2012_typhon_summer_17/build/build_char_2012_typhon_summer_17.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/2012_typhon_summer#17",
+  "source_asset": {
+    "assetId": "build_char_2012_typhon_summer#17",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "提丰",
+    "appellation": "Typhon",
+    "skinGroupId": "2024#summer#2",
+    "skinGroupName": "珊瑚海岸/XVII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2012_typhon_summer#17.atlas",
+      ".png": "build_char_2012_typhon_summer#17.png",
+      ".skel": "build_char_2012_typhon_summer#17.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/typhon/skin-summer-17/meta.json",
-    "atlas": "standalone/assets/source/typhon/skin-summer-17/build_char_2012_typhon_summer_17.atlas",
-    "skeleton": "standalone/assets/source/typhon/skin-summer-17/build_char_2012_typhon_summer_17.skel",
+    "atlas": "standalone/assets/source/typhon/skin-summer-17/build_char_2012_typhon_summer#17.atlas",
+    "skeleton": "standalone/assets/source/typhon/skin-summer-17/build_char_2012_typhon_summer#17.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/char_2012_typhon_summer_17/build/build_char_2012_typhon_summer_17.png",
-        "path": "standalone/assets/source/typhon/skin-summer-17/build_char_2012_typhon_summer_17.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/2012_typhon_summer%2317/build_char_2012_typhon_summer%2317.png",
+        "path": "standalone/assets/source/typhon/skin-summer-17/build_char_2012_typhon_summer#17.png",
+        "bytes": 566514,
+        "sha256": "b62d9f573a5d8dea870de43c6f9edaa7efe830989fdbac729557b6f6f8aad7b7"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14905,
+      "sha256": "634f0d3b17a4f25ed2414294f9ef32d934ab7b21c10e9dccf12adf4b810d617b"
+    },
+    "skeleton": {
+      "bytes": 701209,
+      "sha256": "5e96590eb8f58752892432c51e05b06437d0456a3b2318cfbd1648488ad0ec6d"
+    }
   }
 }

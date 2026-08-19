@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "gallus2",
   "character_name": "GALLUS²",
   "localized_name": "GALLUS²",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/GALLUS%C2%B2",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4227_gallus/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4227_gallus/meta.json",
-    "model": "defaultskin/build/build_char_4227_gallus",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4227_gallus/defaultskin/build/build_char_4227_gallus.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4227_gallus/defaultskin/build/build_char_4227_gallus.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4227_gallus/defaultskin/build/build_char_4227_gallus.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4227_gallus",
+  "source_asset": {
+    "assetId": "build_char_4227_gallus",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "GALLUS²",
+    "appellation": "GALLUS²",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_1"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4227_gallus.atlas",
+      ".png": "build_char_4227_gallus.png",
+      ".skel": "build_char_4227_gallus.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/gallus2/default/meta.json",
     "atlas": "standalone/assets/source/gallus2/default/build_char_4227_gallus.atlas",
     "skeleton": "standalone/assets/source/gallus2/default/build_char_4227_gallus.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4227_gallus/defaultskin/build/build_char_4227_gallus.png",
-        "path": "standalone/assets/source/gallus2/default/build_char_4227_gallus.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4227_gallus/build_char_4227_gallus.png",
+        "path": "standalone/assets/source/gallus2/default/build_char_4227_gallus.png",
+        "bytes": 289063,
+        "sha256": "04637ce123dce9772b50173d154e0d9f412548904b273c09944e7b1bfad2d4e4"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6426,
+      "sha256": "3080c0fc822e83a64e24124b9f57bc18b55c0b0cc15dae27894d05a4b1bc7288"
+    },
+    "skeleton": {
+      "bytes": 78848,
+      "sha256": "0b841fa9ab0210210365f0f14edad7c3b6873ed51f22d614a7ef2e4879504691"
+    }
   }
 }

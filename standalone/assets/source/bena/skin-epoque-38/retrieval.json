@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "bena",
   "character_name": "Bena",
   "localized_name": "贝娜",
@@ -9,25 +9,58 @@
   "variant_name": "草原小帮手",
   "skin_id": "epoque-38",
   "skin_name": "草原小帮手",
-  "source_page": "https://prts.wiki/w/%E8%B4%9D%E5%A8%9C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_369_bena/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_369_bena/meta.json",
-    "model": "char_369_bena_epoque_38/build/build_char_369_bena_epoque_38",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_369_bena/char_369_bena_epoque_38/build/build_char_369_bena_epoque_38.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_369_bena/char_369_bena_epoque_38/build/build_char_369_bena_epoque_38.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_369_bena/char_369_bena_epoque_38/build/build_char_369_bena_epoque_38.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/369_bena_epoque#38",
+  "source_asset": {
+    "assetId": "build_char_369_bena_epoque#38",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "贝娜",
+    "appellation": "Bena",
+    "skinGroupId": "2025#nian",
+    "skinGroupName": "0011制造/XI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_369_bena_epoque#38.atlas",
+      ".png": "build_char_369_bena_epoque#38.png",
+      ".skel": "build_char_369_bena_epoque#38.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/bena/skin-epoque-38/meta.json",
-    "atlas": "standalone/assets/source/bena/skin-epoque-38/build_char_369_bena_epoque_38.atlas",
-    "skeleton": "standalone/assets/source/bena/skin-epoque-38/build_char_369_bena_epoque_38.skel",
+    "atlas": "standalone/assets/source/bena/skin-epoque-38/build_char_369_bena_epoque#38.atlas",
+    "skeleton": "standalone/assets/source/bena/skin-epoque-38/build_char_369_bena_epoque#38.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_369_bena/char_369_bena_epoque_38/build/build_char_369_bena_epoque_38.png",
-        "path": "standalone/assets/source/bena/skin-epoque-38/build_char_369_bena_epoque_38.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/369_bena_epoque%2338/build_char_369_bena_epoque%2338.png",
+        "path": "standalone/assets/source/bena/skin-epoque-38/build_char_369_bena_epoque#38.png",
+        "bytes": 792470,
+        "sha256": "56fe70725b2389cfe85605cfc23c9f7cb1d15ccf3402c81d32c33a968481dfce"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12799,
+      "sha256": "4c23bef237c9bc86e16e49b0acf94282a4e1bfda79f2fbc4767baa041e264270"
+    },
+    "skeleton": {
+      "bytes": 504647,
+      "sha256": "7878494bb539f557aec70d771fb90f87a88144192791c13d03ff49b643d5f3b4"
+    }
   }
 }

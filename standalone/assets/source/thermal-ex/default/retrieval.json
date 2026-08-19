@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "thermal-ex",
   "character_name": "Thermal-EX",
   "localized_name": "THRM-EX",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/THRM-EX",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/meta.json",
-    "model": "defaultskin/build/build_char_376_therex",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/defaultskin/build/build_char_376_therex.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/defaultskin/build/build_char_376_therex.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/defaultskin/build/build_char_376_therex.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/376_therex",
+  "source_asset": {
+    "assetId": "build_char_376_therex",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "THRM-EX",
+    "appellation": "Thermal-EX",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_1"
+    ],
+    "assetList": {
+      ".atlas": "build_char_376_therex.atlas",
+      ".png": "build_char_376_therex.png",
+      ".skel": "build_char_376_therex.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/thermal-ex/default/meta.json",
     "atlas": "standalone/assets/source/thermal-ex/default/build_char_376_therex.atlas",
     "skeleton": "standalone/assets/source/thermal-ex/default/build_char_376_therex.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_376_therex/defaultskin/build/build_char_376_therex.png",
-        "path": "standalone/assets/source/thermal-ex/default/build_char_376_therex.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/376_therex/build_char_376_therex.png",
+        "path": "standalone/assets/source/thermal-ex/default/build_char_376_therex.png",
+        "bytes": 110380,
+        "sha256": "ed68d535e65f6b8b33a533a4cf013bf0ce811e2efe76baff9e215d25cefa1c3a"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 973,
+      "sha256": "e3f1e18fcc503c97cd633f0187e1bfda51370aa19ed970ebd1ac0cb798be9603"
+    },
+    "skeleton": {
+      "bytes": 28813,
+      "sha256": "9c5404b3d88a2b7d50357c6df4b64a82a471fe81c5055c2319db587270e377d3"
+    }
   }
 }

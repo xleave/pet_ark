@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lemuen",
   "character_name": "Lemuen",
   "localized_name": "蕾缪安",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%95%BE%E7%BC%AA%E5%AE%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4193_lemuen/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4193_lemuen/meta.json",
-    "model": "defaultskin/build/build_char_4193_lemuen",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4193_lemuen/defaultskin/build/build_char_4193_lemuen.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4193_lemuen/defaultskin/build/build_char_4193_lemuen.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4193_lemuen/defaultskin/build/build_char_4193_lemuen.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4193_lemuen",
+  "source_asset": {
+    "assetId": "build_char_4193_lemuen",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "蕾缪安",
+    "appellation": "Lemuen",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4193_lemuen.atlas",
+      ".png": "build_char_4193_lemuen.png",
+      ".skel": "build_char_4193_lemuen.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lemuen/default/meta.json",
     "atlas": "standalone/assets/source/lemuen/default/build_char_4193_lemuen.atlas",
     "skeleton": "standalone/assets/source/lemuen/default/build_char_4193_lemuen.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4193_lemuen/defaultskin/build/build_char_4193_lemuen.png",
-        "path": "standalone/assets/source/lemuen/default/build_char_4193_lemuen.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4193_lemuen/build_char_4193_lemuen.png",
+        "path": "standalone/assets/source/lemuen/default/build_char_4193_lemuen.png",
+        "bytes": 635341,
+        "sha256": "4ef10b066ba71d3adca0dd592c8e5a5ec33641b12c205d436ba08b32b4b9a30a"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15641,
+      "sha256": "d094e118c1444493f8f560acfdfa6738e524e213bc25aaf415c77e194c745f97"
+    },
+    "skeleton": {
+      "bytes": 198686,
+      "sha256": "6df0219aac4be46fe9c6a5f3b219a87c8399eb32004f718f5e30edf2e48b7812"
+    }
   }
 }

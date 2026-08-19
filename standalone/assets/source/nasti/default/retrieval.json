@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "nasti",
   "character_name": "Nasti",
   "localized_name": "娜斯提",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%A8%9C%E6%96%AF%E6%8F%90",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4212_nasti/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4212_nasti/meta.json",
-    "model": "defaultskin/build/build_char_4212_nasti",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4212_nasti/defaultskin/build/build_char_4212_nasti.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4212_nasti/defaultskin/build/build_char_4212_nasti.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4212_nasti/defaultskin/build/build_char_4212_nasti.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4212_nasti",
+  "source_asset": {
+    "assetId": "build_char_4212_nasti",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "娜斯提",
+    "appellation": "Nasti",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4212_nasti.atlas",
+      ".png": "build_char_4212_nasti.png",
+      ".skel": "build_char_4212_nasti.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/nasti/default/meta.json",
     "atlas": "standalone/assets/source/nasti/default/build_char_4212_nasti.atlas",
     "skeleton": "standalone/assets/source/nasti/default/build_char_4212_nasti.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4212_nasti/defaultskin/build/build_char_4212_nasti.png",
-        "path": "standalone/assets/source/nasti/default/build_char_4212_nasti.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4212_nasti/build_char_4212_nasti.png",
+        "path": "standalone/assets/source/nasti/default/build_char_4212_nasti.png",
+        "bytes": 342979,
+        "sha256": "6d0b23a0758f86a7588d67fafadc2c43f43dc0a151e707769438374228c0b57c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10528,
+      "sha256": "155f38e8c22fc71a9cffc792a0c7b91f69b680b041f5f144b3ade06e2a771c7a"
+    },
+    "skeleton": {
+      "bytes": 249726,
+      "sha256": "6206ad0127ce1b3f5fa7723f4cd374d3a15c31e785df090b11b79516f6334bf8"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "broca",
   "character_name": "Broca",
   "localized_name": "布洛卡",
@@ -9,25 +9,58 @@
   "variant_name": "组间休息",
   "skin_id": "marthe-4",
   "skin_name": "组间休息",
-  "source_page": "https://prts.wiki/w/%E5%B8%83%E6%B4%9B%E5%8D%A1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_356_broca/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_356_broca/meta.json",
-    "model": "char_356_broca_marthe_4/build/build_char_356_broca_marthe_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_356_broca/char_356_broca_marthe_4/build/build_char_356_broca_marthe_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_356_broca/char_356_broca_marthe_4/build/build_char_356_broca_marthe_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_356_broca/char_356_broca_marthe_4/build/build_char_356_broca_marthe_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/356_broca_marthe#4",
+  "source_asset": {
+    "assetId": "build_char_356_broca_marthe#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "布洛卡",
+    "appellation": "Broca",
+    "skinGroupId": "2022#marthe",
+    "skinGroupName": "玛尔特/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_356_broca_marthe#4.atlas",
+      ".png": "build_char_356_broca_marthe#4.png",
+      ".skel": "build_char_356_broca_marthe#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/broca/skin-marthe-4/meta.json",
-    "atlas": "standalone/assets/source/broca/skin-marthe-4/build_char_356_broca_marthe_4.atlas",
-    "skeleton": "standalone/assets/source/broca/skin-marthe-4/build_char_356_broca_marthe_4.skel",
+    "atlas": "standalone/assets/source/broca/skin-marthe-4/build_char_356_broca_marthe#4.atlas",
+    "skeleton": "standalone/assets/source/broca/skin-marthe-4/build_char_356_broca_marthe#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_356_broca/char_356_broca_marthe_4/build/build_char_356_broca_marthe_4.png",
-        "path": "standalone/assets/source/broca/skin-marthe-4/build_char_356_broca_marthe_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/356_broca_marthe%234/build_char_356_broca_marthe%234.png",
+        "path": "standalone/assets/source/broca/skin-marthe-4/build_char_356_broca_marthe#4.png",
+        "bytes": 248882,
+        "sha256": "421430f82e850491f4ab5a4d0cf402e1de82cfe1ee9e4ec3128f52b26f52f8e6"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7397,
+      "sha256": "f3d52161eed29381fee481ccb9f62cf0c6c84fbe2fb9d98e53e39e6f8f00c010"
+    },
+    "skeleton": {
+      "bytes": 158172,
+      "sha256": "ae70da57760a2e741343f4ed560ab177340570f53a6ffb2c6503f2dc0a1079a7"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "myrtle",
   "character_name": "Myrtle",
   "localized_name": "桃金娘",
@@ -9,25 +9,58 @@
   "variant_name": "夏卉 FA062",
   "skin_id": "summer-12",
   "skin_name": "夏卉 FA062",
-  "source_page": "https://prts.wiki/w/%E6%A1%83%E9%87%91%E5%A8%98",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/meta.json",
-    "model": "char_151_myrtle_summer_12/build/build_char_151_myrtle_summer_12",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/char_151_myrtle_summer_12/build/build_char_151_myrtle_summer_12.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/char_151_myrtle_summer_12/build/build_char_151_myrtle_summer_12.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/char_151_myrtle_summer_12/build/build_char_151_myrtle_summer_12.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/151_myrtle_summer#12",
+  "source_asset": {
+    "assetId": "build_char_151_myrtle_summer#12",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "桃金娘",
+    "appellation": "Myrtle",
+    "skinGroupId": "2023#summer#2",
+    "skinGroupName": "珊瑚海岸/XII",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_151_myrtle_summer#12.atlas",
+      ".png": "build_char_151_myrtle_summer#12.png",
+      ".skel": "build_char_151_myrtle_summer#12.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/myrtle/skin-summer-12/meta.json",
-    "atlas": "standalone/assets/source/myrtle/skin-summer-12/build_char_151_myrtle_summer_12.atlas",
-    "skeleton": "standalone/assets/source/myrtle/skin-summer-12/build_char_151_myrtle_summer_12.skel",
+    "atlas": "standalone/assets/source/myrtle/skin-summer-12/build_char_151_myrtle_summer#12.atlas",
+    "skeleton": "standalone/assets/source/myrtle/skin-summer-12/build_char_151_myrtle_summer#12.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/char_151_myrtle_summer_12/build/build_char_151_myrtle_summer_12.png",
-        "path": "standalone/assets/source/myrtle/skin-summer-12/build_char_151_myrtle_summer_12.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/151_myrtle_summer%2312/build_char_151_myrtle_summer%2312.png",
+        "path": "standalone/assets/source/myrtle/skin-summer-12/build_char_151_myrtle_summer#12.png",
+        "bytes": 372446,
+        "sha256": "2ab0133ba658f02f0f0c09327a05b558be7447a23e3b77c2e81fa0856109ff37"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9277,
+      "sha256": "2b3f2886d9b5ddda230a8eeb1939106284597d25ac7815936c39d60f024151b5"
+    },
+    "skeleton": {
+      "bytes": 415130,
+      "sha256": "3ba00dbf365a009bc7148cf8b9a473d14bd3d9062737564c30c9f04c681729d7"
+    }
   }
 }

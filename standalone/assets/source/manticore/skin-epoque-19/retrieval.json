@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "manticore",
   "character_name": "Manticore",
   "localized_name": "狮蝎",
@@ -9,25 +9,58 @@
   "variant_name": "面纱之下",
   "skin_id": "epoque-19",
   "skin_name": "面纱之下",
-  "source_page": "https://prts.wiki/w/%E7%8B%AE%E8%9D%8E",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_215_mantic/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_215_mantic/meta.json",
-    "model": "char_215_mantic_epoque_19/build/build_char_215_mantic_epoque_19",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_215_mantic/char_215_mantic_epoque_19/build/build_char_215_mantic_epoque_19.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_215_mantic/char_215_mantic_epoque_19/build/build_char_215_mantic_epoque_19.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_215_mantic/char_215_mantic_epoque_19/build/build_char_215_mantic_epoque_19.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/215_mantic_epoque#19",
+  "source_asset": {
+    "assetId": "build_char_215_mantic_epoque#19",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "狮蝎",
+    "appellation": "Manticore",
+    "skinGroupId": "2023#epoque#2",
+    "skinGroupName": "时代/XX",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_215_mantic_epoque#19.atlas",
+      ".png": "build_char_215_mantic_epoque#19.png",
+      ".skel": "build_char_215_mantic_epoque#19.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/manticore/skin-epoque-19/meta.json",
-    "atlas": "standalone/assets/source/manticore/skin-epoque-19/build_char_215_mantic_epoque_19.atlas",
-    "skeleton": "standalone/assets/source/manticore/skin-epoque-19/build_char_215_mantic_epoque_19.skel",
+    "atlas": "standalone/assets/source/manticore/skin-epoque-19/build_char_215_mantic_epoque#19.atlas",
+    "skeleton": "standalone/assets/source/manticore/skin-epoque-19/build_char_215_mantic_epoque#19.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_215_mantic/char_215_mantic_epoque_19/build/build_char_215_mantic_epoque_19.png",
-        "path": "standalone/assets/source/manticore/skin-epoque-19/build_char_215_mantic_epoque_19.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/215_mantic_epoque%2319/build_char_215_mantic_epoque%2319.png",
+        "path": "standalone/assets/source/manticore/skin-epoque-19/build_char_215_mantic_epoque#19.png",
+        "bytes": 714442,
+        "sha256": "cf6005ae78366e9dad4be486e03d22782baff7895817039574f545cd3095a94b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 16684,
+      "sha256": "f1837130bf4b067c4e2204631f4c7f1e4a502ecdd8572b38040952969e384041"
+    },
+    "skeleton": {
+      "bytes": 944853,
+      "sha256": "de5979570ede4389b7e6760a2aa14b95a9dd8cc9c716f06a993176ff02099545"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "silverash",
   "character_name": "SilverAsh",
   "localized_name": "银灰",
@@ -9,25 +9,58 @@
   "variant_name": "探寻者 SKm01",
   "skin_id": "summer-4",
   "skin_name": "探寻者 SKm01",
-  "source_page": "https://prts.wiki/w/%E9%93%B6%E7%81%B0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/meta.json",
-    "model": "char_172_svrash_summer_4/build/build_char_172_svrash_summer_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/char_172_svrash_summer_4/build/build_char_172_svrash_summer_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/char_172_svrash_summer_4/build/build_char_172_svrash_summer_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/char_172_svrash_summer_4/build/build_char_172_svrash_summer_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/172_svrash_summer#4",
+  "source_asset": {
+    "assetId": "build_char_172_svrash_summer#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "银灰",
+    "appellation": "SilverAsh",
+    "skinGroupId": "2020#summer#3",
+    "skinGroupName": "珊瑚海岸/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_172_svrash_summer#4.atlas",
+      ".png": "build_char_172_svrash_summer#4.png",
+      ".skel": "build_char_172_svrash_summer#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/silverash/skin-summer-4/meta.json",
-    "atlas": "standalone/assets/source/silverash/skin-summer-4/build_char_172_svrash_summer_4.atlas",
-    "skeleton": "standalone/assets/source/silverash/skin-summer-4/build_char_172_svrash_summer_4.skel",
+    "atlas": "standalone/assets/source/silverash/skin-summer-4/build_char_172_svrash_summer#4.atlas",
+    "skeleton": "standalone/assets/source/silverash/skin-summer-4/build_char_172_svrash_summer#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_172_svrash/char_172_svrash_summer_4/build/build_char_172_svrash_summer_4.png",
-        "path": "standalone/assets/source/silverash/skin-summer-4/build_char_172_svrash_summer_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/172_svrash_summer%234/build_char_172_svrash_summer%234.png",
+        "path": "standalone/assets/source/silverash/skin-summer-4/build_char_172_svrash_summer#4.png",
+        "bytes": 419117,
+        "sha256": "dc1eb8976854d7d02593292b4e8ad2e007bb0c03c1b64a706f512f287bfb75f4"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9572,
+      "sha256": "c8af16b938cb7306f4ac59edc3ec1885407e00951038988c46cb798dcbe3300c"
+    },
+    "skeleton": {
+      "bytes": 225522,
+      "sha256": "37f12b1b051cefc080f3405e3c04c2493b85ca8ad0deddfb6f468bba42a8d61a"
+    }
   }
 }

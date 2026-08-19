@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "kal-tsit",
   "character_name": "Kal'tsit",
   "localized_name": "凯尔希",
@@ -9,25 +9,58 @@
   "variant_name": "残余",
   "skin_id": "boc-6",
   "skin_name": "残余",
-  "source_page": "https://prts.wiki/w/%E5%87%AF%E5%B0%94%E5%B8%8C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/meta.json",
-    "model": "char_003_kalts_boc_6/build/build_char_003_kalts_boc_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/char_003_kalts_boc_6/build/build_char_003_kalts_boc_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/char_003_kalts_boc_6/build/build_char_003_kalts_boc_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/char_003_kalts_boc_6/build/build_char_003_kalts_boc_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/003_kalts_boc#6",
+  "source_asset": {
+    "assetId": "build_char_003_kalts_boc#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "凯尔希",
+    "appellation": "Kal'tsit",
+    "skinGroupId": "2023#boc",
+    "skinGroupName": "斗争血脉/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_003_kalts_boc#6.atlas",
+      ".png": "build_char_003_kalts_boc#6.png",
+      ".skel": "build_char_003_kalts_boc#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/kal-tsit/skin-boc-6/meta.json",
-    "atlas": "standalone/assets/source/kal-tsit/skin-boc-6/build_char_003_kalts_boc_6.atlas",
-    "skeleton": "standalone/assets/source/kal-tsit/skin-boc-6/build_char_003_kalts_boc_6.skel",
+    "atlas": "standalone/assets/source/kal-tsit/skin-boc-6/build_char_003_kalts_boc#6.atlas",
+    "skeleton": "standalone/assets/source/kal-tsit/skin-boc-6/build_char_003_kalts_boc#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/char_003_kalts_boc_6/build/build_char_003_kalts_boc_6.png",
-        "path": "standalone/assets/source/kal-tsit/skin-boc-6/build_char_003_kalts_boc_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/003_kalts_boc%236/build_char_003_kalts_boc%236.png",
+        "path": "standalone/assets/source/kal-tsit/skin-boc-6/build_char_003_kalts_boc#6.png",
+        "bytes": 1731534,
+        "sha256": "00e9b1f84114afe82a2ccd35af03850119c401a9ad6c4c22342b4e4254381096"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15128,
+      "sha256": "f09ae2e9bd858b6845f19e3e0216d3aeec1582bffdd39566aff3894a65b98369"
+    },
+    "skeleton": {
+      "bytes": 519573,
+      "sha256": "b20bc1e821ae1f59645092c18f62f439adcfb145dae6eca9eced9edf52661e3e"
+    }
   }
 }

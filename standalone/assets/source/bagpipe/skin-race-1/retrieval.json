@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "bagpipe",
   "character_name": "Bagpipe",
   "localized_name": "风笛",
@@ -9,25 +9,58 @@
   "variant_name": "皇后一号",
   "skin_id": "race-1",
   "skin_name": "皇后一号",
-  "source_page": "https://prts.wiki/w/%E9%A3%8E%E7%AC%9B",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/meta.json",
-    "model": "char_222_bpipe_race_1/build/build_char_222_bpipe_race_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/char_222_bpipe_race_1/build/build_char_222_bpipe_race_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/char_222_bpipe_race_1/build/build_char_222_bpipe_race_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/char_222_bpipe_race_1/build/build_char_222_bpipe_race_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/222_bpipe_race#1",
+  "source_asset": {
+    "assetId": "build_char_222_bpipe_race#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "风笛",
+    "appellation": "Bagpipe",
+    "skinGroupId": "2020#race",
+    "skinGroupName": "啸风",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_222_bpipe_race#1.atlas",
+      ".png": "build_char_222_bpipe_race#1.png",
+      ".skel": "build_char_222_bpipe_race#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/bagpipe/skin-race-1/meta.json",
-    "atlas": "standalone/assets/source/bagpipe/skin-race-1/build_char_222_bpipe_race_1.atlas",
-    "skeleton": "standalone/assets/source/bagpipe/skin-race-1/build_char_222_bpipe_race_1.skel",
+    "atlas": "standalone/assets/source/bagpipe/skin-race-1/build_char_222_bpipe_race#1.atlas",
+    "skeleton": "standalone/assets/source/bagpipe/skin-race-1/build_char_222_bpipe_race#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_222_bpipe/char_222_bpipe_race_1/build/build_char_222_bpipe_race_1.png",
-        "path": "standalone/assets/source/bagpipe/skin-race-1/build_char_222_bpipe_race_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/222_bpipe_race%231/build_char_222_bpipe_race%231.png",
+        "path": "standalone/assets/source/bagpipe/skin-race-1/build_char_222_bpipe_race#1.png",
+        "bytes": 554899,
+        "sha256": "1e0c858dce1071b341aae8777c6edc40d7fbde48db50d6b763c2a95b7d601c2b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12441,
+      "sha256": "71057ab30f831acef039689a36095b5ac8ffdd3ad674faf62a259e8e9d4750e4"
+    },
+    "skeleton": {
+      "bytes": 261664,
+      "sha256": "b3766bc00cfb3d007d8cfe8afb370d38a437430df4fb05f9fda4d1301a780e17"
+    }
   }
 }

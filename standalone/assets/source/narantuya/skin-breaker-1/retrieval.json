@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "narantuya",
   "character_name": "Narantuya",
   "localized_name": "娜仁图亚",
@@ -9,25 +9,58 @@
   "variant_name": "链锯陪护者",
   "skin_id": "breaker-1",
   "skin_name": "链锯陪护者",
-  "source_page": "https://prts.wiki/w/%E5%A8%9C%E4%BB%81%E5%9B%BE%E4%BA%9A",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/meta.json",
-    "model": "char_4138_narant_breaker_1/build/build_char_4138_narant_breaker_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/char_4138_narant_breaker_1/build/build_char_4138_narant_breaker_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/char_4138_narant_breaker_1/build/build_char_4138_narant_breaker_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/char_4138_narant_breaker_1/build/build_char_4138_narant_breaker_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4138_narant_breaker#1",
+  "source_asset": {
+    "assetId": "build_char_4138_narant_breaker#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "娜仁图亚",
+    "appellation": "Narantuya",
+    "skinGroupId": "2025#breaker",
+    "skinGroupName": "破格视界",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4138_narant_breaker#1.atlas",
+      ".png": "build_char_4138_narant_breaker#1.png",
+      ".skel": "build_char_4138_narant_breaker#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/narantuya/skin-breaker-1/meta.json",
-    "atlas": "standalone/assets/source/narantuya/skin-breaker-1/build_char_4138_narant_breaker_1.atlas",
-    "skeleton": "standalone/assets/source/narantuya/skin-breaker-1/build_char_4138_narant_breaker_1.skel",
+    "atlas": "standalone/assets/source/narantuya/skin-breaker-1/build_char_4138_narant_breaker#1.atlas",
+    "skeleton": "standalone/assets/source/narantuya/skin-breaker-1/build_char_4138_narant_breaker#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4138_narant/char_4138_narant_breaker_1/build/build_char_4138_narant_breaker_1.png",
-        "path": "standalone/assets/source/narantuya/skin-breaker-1/build_char_4138_narant_breaker_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4138_narant_breaker%231/build_char_4138_narant_breaker%231.png",
+        "path": "standalone/assets/source/narantuya/skin-breaker-1/build_char_4138_narant_breaker#1.png",
+        "bytes": 466052,
+        "sha256": "12ea1400d0d03bbc6869b317c71506ecd8a56b2f33522da1dabd35643f0a0dc6"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14661,
+      "sha256": "1d2847aa5252aa8a36b1a6d93d91d6c1abc8fb21f261f89b383de3061fb05f74"
+    },
+    "skeleton": {
+      "bytes": 532204,
+      "sha256": "8f8cccb0a06488260161c0bcd18c914b5d25924271338e2aeae0366b6a19c00d"
+    }
   }
 }

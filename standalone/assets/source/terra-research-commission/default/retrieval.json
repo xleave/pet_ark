@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "terra-research-commission",
   "character_name": "Terra Research Commission",
   "localized_name": "泰拉大陆调查团",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B3%B0%E6%8B%89%E5%A4%A7%E9%99%86%E8%B0%83%E6%9F%A5%E5%9B%A2",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4077_palico/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4077_palico/meta.json",
-    "model": "defaultskin/build/build_char_4077_palico",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4077_palico/defaultskin/build/build_char_4077_palico.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4077_palico/defaultskin/build/build_char_4077_palico.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4077_palico/defaultskin/build/build_char_4077_palico.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4077_palico",
+  "source_asset": {
+    "assetId": "build_char_4077_palico",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "泰拉大陆调查团",
+    "appellation": "Terra Research Commission",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_1"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4077_palico.atlas",
+      ".png": "build_char_4077_palico.png",
+      ".skel": "build_char_4077_palico.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/terra-research-commission/default/meta.json",
     "atlas": "standalone/assets/source/terra-research-commission/default/build_char_4077_palico.atlas",
     "skeleton": "standalone/assets/source/terra-research-commission/default/build_char_4077_palico.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4077_palico/defaultskin/build/build_char_4077_palico.png",
-        "path": "standalone/assets/source/terra-research-commission/default/build_char_4077_palico.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4077_palico/build_char_4077_palico.png",
+        "path": "standalone/assets/source/terra-research-commission/default/build_char_4077_palico.png",
+        "bytes": 353568,
+        "sha256": "f133ee918bffecbbd70396c97b47aca6e42ee4c96248aebfdeec4fd19577d61c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12162,
+      "sha256": "020173185e788ff08c1bf92442b6358ff9cd6f60b252acbf53788855ecd71ea4"
+    },
+    "skeleton": {
+      "bytes": 298861,
+      "sha256": "c809d3e4f9c9a984604b314188b09546ccd05898db0814dd60eb25b3d7b8365b"
+    }
   }
 }

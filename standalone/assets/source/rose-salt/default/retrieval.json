@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "rose-salt",
   "character_name": "Rose Salt",
   "localized_name": "瑰盐",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%91%B0%E7%9B%90",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4163_rosesa/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4163_rosesa/meta.json",
-    "model": "defaultskin/build/build_char_4163_rosesa",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4163_rosesa/defaultskin/build/build_char_4163_rosesa.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4163_rosesa/defaultskin/build/build_char_4163_rosesa.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4163_rosesa/defaultskin/build/build_char_4163_rosesa.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4163_rosesa",
+  "source_asset": {
+    "assetId": "build_char_4163_rosesa",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "瑰盐",
+    "appellation": "Rose Salt",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4163_rosesa.atlas",
+      ".png": "build_char_4163_rosesa.png",
+      ".skel": "build_char_4163_rosesa.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/rose-salt/default/meta.json",
     "atlas": "standalone/assets/source/rose-salt/default/build_char_4163_rosesa.atlas",
     "skeleton": "standalone/assets/source/rose-salt/default/build_char_4163_rosesa.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4163_rosesa/defaultskin/build/build_char_4163_rosesa.png",
-        "path": "standalone/assets/source/rose-salt/default/build_char_4163_rosesa.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4163_rosesa/build_char_4163_rosesa.png",
+        "path": "standalone/assets/source/rose-salt/default/build_char_4163_rosesa.png",
+        "bytes": 395479,
+        "sha256": "f4bdf05448e1acfbc38af82190331de3d62c9043abc299fb745cc07513f8d26f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11100,
+      "sha256": "228e45145cb89ff861ae3590df385ac05eba87ea4900c2b874825b6bfb5feeef"
+    },
+    "skeleton": {
+      "bytes": 215304,
+      "sha256": "eb94bddf59b16074fd4b9c6975f6382fc79e2e946baa28e830339a2c6bb746d7"
+    }
   }
 }

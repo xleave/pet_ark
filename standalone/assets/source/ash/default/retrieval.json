@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ash",
   "character_name": "Ash",
   "localized_name": "灰烬",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%81%B0%E7%83%AC",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/meta.json",
-    "model": "defaultskin/build/build_char_456_ash",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/defaultskin/build/build_char_456_ash.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/defaultskin/build/build_char_456_ash.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/defaultskin/build/build_char_456_ash.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/456_ash",
+  "source_asset": {
+    "assetId": "build_char_456_ash",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "灰烬",
+    "appellation": "Ash",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_456_ash.atlas",
+      ".png": "build_char_456_ash.png",
+      ".skel": "build_char_456_ash.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ash/default/meta.json",
     "atlas": "standalone/assets/source/ash/default/build_char_456_ash.atlas",
     "skeleton": "standalone/assets/source/ash/default/build_char_456_ash.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_456_ash/defaultskin/build/build_char_456_ash.png",
-        "path": "standalone/assets/source/ash/default/build_char_456_ash.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/456_ash/build_char_456_ash.png",
+        "path": "standalone/assets/source/ash/default/build_char_456_ash.png",
+        "bytes": 224770,
+        "sha256": "915664e1518aa70cda9a4640fae75640ca7f07bc530dbbf446b9a724ba205201"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8291,
+      "sha256": "4d1139552659a2b3d170072d882b121a05e66bb20b2b52237eb35a75002dabe2"
+    },
+    "skeleton": {
+      "bytes": 134085,
+      "sha256": "6a709acd52d40cec2f61589035a107384695d8dd96b6d63273611ca896731f32"
+    }
   }
 }

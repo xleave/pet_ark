@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "gnosis",
   "character_name": "Gnosis",
   "localized_name": "灵知",
@@ -9,25 +9,58 @@
   "variant_name": "先驱",
   "skin_id": "boc-4",
   "skin_name": "先驱",
-  "source_page": "https://prts.wiki/w/%E7%81%B5%E7%9F%A5",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_206_gnosis/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_206_gnosis/meta.json",
-    "model": "char_206_gnosis_boc_4/build/build_char_206_gnosis_boc_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_206_gnosis/char_206_gnosis_boc_4/build/build_char_206_gnosis_boc_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_206_gnosis/char_206_gnosis_boc_4/build/build_char_206_gnosis_boc_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_206_gnosis/char_206_gnosis_boc_4/build/build_char_206_gnosis_boc_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/206_gnosis_boc#4",
+  "source_asset": {
+    "assetId": "build_char_206_gnosis_boc#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "灵知",
+    "appellation": "Gnosis",
+    "skinGroupId": "2022#boc",
+    "skinGroupName": "斗争血脉/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_206_gnosis_boc#4.atlas",
+      ".png": "build_char_206_gnosis_boc#4.png",
+      ".skel": "build_char_206_gnosis_boc#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/gnosis/skin-boc-4/meta.json",
-    "atlas": "standalone/assets/source/gnosis/skin-boc-4/build_char_206_gnosis_boc_4.atlas",
-    "skeleton": "standalone/assets/source/gnosis/skin-boc-4/build_char_206_gnosis_boc_4.skel",
+    "atlas": "standalone/assets/source/gnosis/skin-boc-4/build_char_206_gnosis_boc#4.atlas",
+    "skeleton": "standalone/assets/source/gnosis/skin-boc-4/build_char_206_gnosis_boc#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_206_gnosis/char_206_gnosis_boc_4/build/build_char_206_gnosis_boc_4.png",
-        "path": "standalone/assets/source/gnosis/skin-boc-4/build_char_206_gnosis_boc_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/206_gnosis_boc%234/build_char_206_gnosis_boc%234.png",
+        "path": "standalone/assets/source/gnosis/skin-boc-4/build_char_206_gnosis_boc#4.png",
+        "bytes": 324563,
+        "sha256": "bc375d68ef70ac0464630f3350e6cfe13552b0a1eb073d5108c04525e75aa87a"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10007,
+      "sha256": "651cde5474286f07a213f2e9562497b49a277447e638e343d9a4193b493cf544"
+    },
+    "skeleton": {
+      "bytes": 216680,
+      "sha256": "f58946f8eca3808f2bbeef1dfd49a1b8c6b3af87db584707a4344642ec793ae9"
+    }
   }
 }

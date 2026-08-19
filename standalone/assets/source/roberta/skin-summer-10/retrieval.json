@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "roberta",
   "character_name": "Roberta",
   "localized_name": "罗比菈塔",
@@ -9,25 +9,58 @@
   "variant_name": "夏卉 FA374",
   "skin_id": "summer-10",
   "skin_name": "夏卉 FA374",
-  "source_page": "https://prts.wiki/w/%E7%BD%97%E6%AF%94%E8%8F%88%E5%A1%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_484_robrta/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_484_robrta/meta.json",
-    "model": "char_484_robrta_summer_10/build/build_char_484_robrta_summer_10",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_484_robrta/char_484_robrta_summer_10/build/build_char_484_robrta_summer_10.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_484_robrta/char_484_robrta_summer_10/build/build_char_484_robrta_summer_10.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_484_robrta/char_484_robrta_summer_10/build/build_char_484_robrta_summer_10.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/484_robrta_summer#10",
+  "source_asset": {
+    "assetId": "build_char_484_robrta_summer#10",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "罗比菈塔",
+    "appellation": "Roberta",
+    "skinGroupId": "2022#summer#3",
+    "skinGroupName": "珊瑚海岸/X",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_484_robrta_summer#10.atlas",
+      ".png": "build_char_484_robrta_summer#10.png",
+      ".skel": "build_char_484_robrta_summer#10.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/roberta/skin-summer-10/meta.json",
-    "atlas": "standalone/assets/source/roberta/skin-summer-10/build_char_484_robrta_summer_10.atlas",
-    "skeleton": "standalone/assets/source/roberta/skin-summer-10/build_char_484_robrta_summer_10.skel",
+    "atlas": "standalone/assets/source/roberta/skin-summer-10/build_char_484_robrta_summer#10.atlas",
+    "skeleton": "standalone/assets/source/roberta/skin-summer-10/build_char_484_robrta_summer#10.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_484_robrta/char_484_robrta_summer_10/build/build_char_484_robrta_summer_10.png",
-        "path": "standalone/assets/source/roberta/skin-summer-10/build_char_484_robrta_summer_10.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/484_robrta_summer%2310/build_char_484_robrta_summer%2310.png",
+        "path": "standalone/assets/source/roberta/skin-summer-10/build_char_484_robrta_summer#10.png",
+        "bytes": 238177,
+        "sha256": "a4da7ce2fb7db37eea6ae80da119b0599f76bda888eac252aec71c097e52fddc"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8872,
+      "sha256": "2c974b014c29b60b963d7bc4270244601d4eea990b64f482eb592435c923c8ef"
+    },
+    "skeleton": {
+      "bytes": 151214,
+      "sha256": "fdc0ed071afe6bf6f148a01ecff93d41d6016be391b07f24f65f0d86db8fd92f"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "viviana",
   "character_name": "Viviana",
   "localized_name": "薇薇安娜",
@@ -9,25 +9,58 @@
   "variant_name": "寄自奥格尼斯科",
   "skin_id": "epoque-40",
   "skin_name": "寄自奥格尼斯科",
-  "source_page": "https://prts.wiki/w/%E8%96%87%E8%96%87%E5%AE%89%E5%A8%9C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4098_vvana/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4098_vvana/meta.json",
-    "model": "char_4098_vvana_epoque_40/build/build_char_4098_vvana_epoque_40",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4098_vvana/char_4098_vvana_epoque_40/build/build_char_4098_vvana_epoque_40.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4098_vvana/char_4098_vvana_epoque_40/build/build_char_4098_vvana_epoque_40.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4098_vvana/char_4098_vvana_epoque_40/build/build_char_4098_vvana_epoque_40.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4098_vvana_epoque#40",
+  "source_asset": {
+    "assetId": "build_char_4098_vvana_epoque#40",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "薇薇安娜",
+    "appellation": "Viviana",
+    "skinGroupId": "2025#epoque#2",
+    "skinGroupName": "时代/XXXIX",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4098_vvana_epoque#40.atlas",
+      ".png": "build_char_4098_vvana_epoque#40.png",
+      ".skel": "build_char_4098_vvana_epoque#40.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/viviana/skin-epoque-40/meta.json",
-    "atlas": "standalone/assets/source/viviana/skin-epoque-40/build_char_4098_vvana_epoque_40.atlas",
-    "skeleton": "standalone/assets/source/viviana/skin-epoque-40/build_char_4098_vvana_epoque_40.skel",
+    "atlas": "standalone/assets/source/viviana/skin-epoque-40/build_char_4098_vvana_epoque#40.atlas",
+    "skeleton": "standalone/assets/source/viviana/skin-epoque-40/build_char_4098_vvana_epoque#40.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4098_vvana/char_4098_vvana_epoque_40/build/build_char_4098_vvana_epoque_40.png",
-        "path": "standalone/assets/source/viviana/skin-epoque-40/build_char_4098_vvana_epoque_40.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4098_vvana_epoque%2340/build_char_4098_vvana_epoque%2340.png",
+        "path": "standalone/assets/source/viviana/skin-epoque-40/build_char_4098_vvana_epoque#40.png",
+        "bytes": 581103,
+        "sha256": "7952484698e4fba8c50958a0c652d63515e9dc3507eaf2ada2d9b5684967950f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15117,
+      "sha256": "49d69c6c929194c99defb3ba47cb91c4239a65a9999d844be3fd86476c123a40"
+    },
+    "skeleton": {
+      "bytes": 377335,
+      "sha256": "b37c04c043f7d75e4d3314e514dc16c38bc586df310695ef80ebc335c44585f0"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "u-official",
   "character_name": "U-Official",
   "localized_name": "U-Official",
@@ -9,25 +9,58 @@
   "variant_name": "云上直播间",
   "skin_id": "sanrio-1",
   "skin_name": "云上直播间",
-  "source_page": "https://prts.wiki/w/U-Official",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4091_ulika/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4091_ulika/meta.json",
-    "model": "char_4091_ulika_sanrio_1/build/build_char_4091_ulika_sanrio_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4091_ulika/char_4091_ulika_sanrio_1/build/build_char_4091_ulika_sanrio_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4091_ulika/char_4091_ulika_sanrio_1/build/build_char_4091_ulika_sanrio_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4091_ulika/char_4091_ulika_sanrio_1/build/build_char_4091_ulika_sanrio_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4091_ulika_sanrio#1",
+  "source_asset": {
+    "assetId": "build_char_4091_ulika_sanrio#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "U-Official",
+    "appellation": "U-Official",
+    "skinGroupId": "2024#sanrio",
+    "skinGroupName": "三丽鸥家族",
+    "sortTags": [
+      "Operator",
+      "Rarity_1",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4091_ulika_sanrio#1.atlas",
+      ".png": "build_char_4091_ulika_sanrio#1.png",
+      ".skel": "build_char_4091_ulika_sanrio#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/u-official/skin-sanrio-1/meta.json",
-    "atlas": "standalone/assets/source/u-official/skin-sanrio-1/build_char_4091_ulika_sanrio_1.atlas",
-    "skeleton": "standalone/assets/source/u-official/skin-sanrio-1/build_char_4091_ulika_sanrio_1.skel",
+    "atlas": "standalone/assets/source/u-official/skin-sanrio-1/build_char_4091_ulika_sanrio#1.atlas",
+    "skeleton": "standalone/assets/source/u-official/skin-sanrio-1/build_char_4091_ulika_sanrio#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4091_ulika/char_4091_ulika_sanrio_1/build/build_char_4091_ulika_sanrio_1.png",
-        "path": "standalone/assets/source/u-official/skin-sanrio-1/build_char_4091_ulika_sanrio_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4091_ulika_sanrio%231/build_char_4091_ulika_sanrio%231.png",
+        "path": "standalone/assets/source/u-official/skin-sanrio-1/build_char_4091_ulika_sanrio#1.png",
+        "bytes": 706145,
+        "sha256": "82f2db12186ec516d81815013634b06c43821b0a6e288e1fc6d36419c771ca97"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15747,
+      "sha256": "a62f03d80e4a9eac7e32e878be07d1cb764da225da11cb2ec47427bf2d241ad2"
+    },
+    "skeleton": {
+      "bytes": 1377389,
+      "sha256": "b14f62f400feb22be7ebedf9d25b00fd94e68e618a354e7115d5c87a8bdc1bbd"
+    }
   }
 }

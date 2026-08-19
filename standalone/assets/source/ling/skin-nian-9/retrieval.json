@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ling",
   "character_name": "Ling",
   "localized_name": "令",
@@ -9,25 +9,58 @@
   "variant_name": "濯缨",
   "skin_id": "nian-9",
   "skin_name": "濯缨",
-  "source_page": "https://prts.wiki/w/%E4%BB%A4",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_2023_ling/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2023_ling/meta.json",
-    "model": "char_2023_ling_nian_9/build/build_char_2023_ling_nian_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2023_ling/char_2023_ling_nian_9/build/build_char_2023_ling_nian_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2023_ling/char_2023_ling_nian_9/build/build_char_2023_ling_nian_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2023_ling/char_2023_ling_nian_9/build/build_char_2023_ling_nian_9.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/2023_ling_nian#9",
+  "source_asset": {
+    "assetId": "build_char_2023_ling_nian#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "令",
+    "appellation": "Ling",
+    "skinGroupId": "2023#nian#2",
+    "skinGroupName": "0011制造/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2023_ling_nian#9.atlas",
+      ".png": "build_char_2023_ling_nian#9.png",
+      ".skel": "build_char_2023_ling_nian#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ling/skin-nian-9/meta.json",
-    "atlas": "standalone/assets/source/ling/skin-nian-9/build_char_2023_ling_nian_9.atlas",
-    "skeleton": "standalone/assets/source/ling/skin-nian-9/build_char_2023_ling_nian_9.skel",
+    "atlas": "standalone/assets/source/ling/skin-nian-9/build_char_2023_ling_nian#9.atlas",
+    "skeleton": "standalone/assets/source/ling/skin-nian-9/build_char_2023_ling_nian#9.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_2023_ling/char_2023_ling_nian_9/build/build_char_2023_ling_nian_9.png",
-        "path": "standalone/assets/source/ling/skin-nian-9/build_char_2023_ling_nian_9.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/2023_ling_nian%239/build_char_2023_ling_nian%239.png",
+        "path": "standalone/assets/source/ling/skin-nian-9/build_char_2023_ling_nian#9.png",
+        "bytes": 877410,
+        "sha256": "5c8a09071a3e005159a360df74e45cfac8e274486bd35c25363a20c0d429729f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15806,
+      "sha256": "f8b2672f296b4590c8d77ab893ea01861c47d5be7afc74161324c3445caa73e4"
+    },
+    "skeleton": {
+      "bytes": 1226740,
+      "sha256": "2903c3e8c857c03662713bade3c8ccec4cbcbe152d76eb76e6ec160bb3ec181f"
+    }
   }
 }

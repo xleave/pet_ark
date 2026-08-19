@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mountain",
   "character_name": "Mountain",
   "localized_name": "山",
@@ -9,25 +9,58 @@
   "variant_name": "硬派速度",
   "skin_id": "marthe-13",
   "skin_name": "硬派速度",
-  "source_page": "https://prts.wiki/w/%E5%B1%B1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/meta.json",
-    "model": "char_264_f12yin_marthe_13/build/build_char_264_f12yin_marthe_13",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/char_264_f12yin_marthe_13/build/build_char_264_f12yin_marthe_13.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/char_264_f12yin_marthe_13/build/build_char_264_f12yin_marthe_13.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/char_264_f12yin_marthe_13/build/build_char_264_f12yin_marthe_13.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/264_f12yin_marthe#13",
+  "source_asset": {
+    "assetId": "build_char_264_f12yin_marthe#13",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "山",
+    "appellation": "Mountain",
+    "skinGroupId": "2026#marthe#2",
+    "skinGroupName": "玛尔特/XIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_264_f12yin_marthe#13.atlas",
+      ".png": "build_char_264_f12yin_marthe#13.png",
+      ".skel": "build_char_264_f12yin_marthe#13.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mountain/skin-marthe-13/meta.json",
-    "atlas": "standalone/assets/source/mountain/skin-marthe-13/build_char_264_f12yin_marthe_13.atlas",
-    "skeleton": "standalone/assets/source/mountain/skin-marthe-13/build_char_264_f12yin_marthe_13.skel",
+    "atlas": "standalone/assets/source/mountain/skin-marthe-13/build_char_264_f12yin_marthe#13.atlas",
+    "skeleton": "standalone/assets/source/mountain/skin-marthe-13/build_char_264_f12yin_marthe#13.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/char_264_f12yin_marthe_13/build/build_char_264_f12yin_marthe_13.png",
-        "path": "standalone/assets/source/mountain/skin-marthe-13/build_char_264_f12yin_marthe_13.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/264_f12yin_marthe%2313/build_char_264_f12yin_marthe%2313.png",
+        "path": "standalone/assets/source/mountain/skin-marthe-13/build_char_264_f12yin_marthe#13.png",
+        "bytes": 590692,
+        "sha256": "115b5f913b3392634a347b42fc9c435907d79a0d31f978ab0e9dd3459a217453"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10052,
+      "sha256": "d07a3704122bee4bce3d1f9630097d8b7fb4e2e05d450ea088ee51b3abc6e5ed"
+    },
+    "skeleton": {
+      "bytes": 294161,
+      "sha256": "ba9002ce7e578dbeb45ec20f84853b8929d6cf7a74cbc6d60d8fd404ede408f0"
+    }
   }
 }

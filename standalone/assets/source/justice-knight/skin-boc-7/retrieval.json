@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "justice-knight",
   "character_name": "\"Justice Knight\"",
   "localized_name": "正义骑士号",
@@ -9,25 +9,58 @@
   "variant_name": "竞技之梦改装",
   "skin_id": "boc-7",
   "skin_name": "竞技之梦改装",
-  "source_page": "https://prts.wiki/w/%E6%AD%A3%E4%B9%89%E9%AA%91%E5%A3%AB%E5%8F%B7",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4000_jnight/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4000_jnight/meta.json",
-    "model": "char_4000_jnight_boc_7/build/build_char_4000_jnight_boc_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4000_jnight/char_4000_jnight_boc_7/build/build_char_4000_jnight_boc_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4000_jnight/char_4000_jnight_boc_7/build/build_char_4000_jnight_boc_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4000_jnight/char_4000_jnight_boc_7/build/build_char_4000_jnight_boc_7.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4000_jnight_boc#7",
+  "source_asset": {
+    "assetId": "build_char_4000_jnight_boc#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "正义骑士号",
+    "appellation": "\"Justice Knight\"",
+    "skinGroupId": "2023#boc#2",
+    "skinGroupName": "斗争血脉/VII",
+    "sortTags": [
+      "Operator",
+      "Rarity_1",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4000_jnight_boc#7.atlas",
+      ".png": "build_char_4000_jnight_boc#7.png",
+      ".skel": "build_char_4000_jnight_boc#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/justice-knight/skin-boc-7/meta.json",
-    "atlas": "standalone/assets/source/justice-knight/skin-boc-7/build_char_4000_jnight_boc_7.atlas",
-    "skeleton": "standalone/assets/source/justice-knight/skin-boc-7/build_char_4000_jnight_boc_7.skel",
+    "atlas": "standalone/assets/source/justice-knight/skin-boc-7/build_char_4000_jnight_boc#7.atlas",
+    "skeleton": "standalone/assets/source/justice-knight/skin-boc-7/build_char_4000_jnight_boc#7.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4000_jnight/char_4000_jnight_boc_7/build/build_char_4000_jnight_boc_7.png",
-        "path": "standalone/assets/source/justice-knight/skin-boc-7/build_char_4000_jnight_boc_7.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4000_jnight_boc%237/build_char_4000_jnight_boc%237.png",
+        "path": "standalone/assets/source/justice-knight/skin-boc-7/build_char_4000_jnight_boc#7.png",
+        "bytes": 204161,
+        "sha256": "1c44b3d0e75b9705780effbc319340d1c3f5750516835d527889005a649f1f5f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8670,
+      "sha256": "6c4cd2212aee5fc6e07a99933c78aaf0165339f9bcc5eef5ab7344e3c0a227ca"
+    },
+    "skeleton": {
+      "bytes": 77877,
+      "sha256": "176464140201ca6ea1e131e125760407a83d6fbc8c31d81055f53993b3d66e64"
+    }
   }
 }

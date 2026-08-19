@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "195-glassb",
   "character_name": "Истина",
   "localized_name": "真理",
@@ -9,25 +9,58 @@
   "variant_name": "书味",
   "skin_id": "kitchen-1",
   "skin_name": "书味",
-  "source_page": "https://prts.wiki/w/%E7%9C%9F%E7%90%86",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_195_glassb/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_195_glassb/meta.json",
-    "model": "char_195_glassb_kitchen_1/build/build_char_195_glassb_kitchen_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_195_glassb/char_195_glassb_kitchen_1/build/build_char_195_glassb_kitchen_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_195_glassb/char_195_glassb_kitchen_1/build/build_char_195_glassb_kitchen_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_195_glassb/char_195_glassb_kitchen_1/build/build_char_195_glassb_kitchen_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/195_glassb_kitchen#1",
+  "source_asset": {
+    "assetId": "build_char_195_glassb_kitchen#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "真理",
+    "appellation": "Истина",
+    "skinGroupId": "2020#kitchen",
+    "skinGroupName": "罗德厨房",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_195_glassb_kitchen#1.atlas",
+      ".png": "build_char_195_glassb_kitchen#1.png",
+      ".skel": "build_char_195_glassb_kitchen#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/195-glassb/skin-kitchen-1/meta.json",
-    "atlas": "standalone/assets/source/195-glassb/skin-kitchen-1/build_char_195_glassb_kitchen_1.atlas",
-    "skeleton": "standalone/assets/source/195-glassb/skin-kitchen-1/build_char_195_glassb_kitchen_1.skel",
+    "atlas": "standalone/assets/source/195-glassb/skin-kitchen-1/build_char_195_glassb_kitchen#1.atlas",
+    "skeleton": "standalone/assets/source/195-glassb/skin-kitchen-1/build_char_195_glassb_kitchen#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_195_glassb/char_195_glassb_kitchen_1/build/build_char_195_glassb_kitchen_1.png",
-        "path": "standalone/assets/source/195-glassb/skin-kitchen-1/build_char_195_glassb_kitchen_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/195_glassb_kitchen%231/build_char_195_glassb_kitchen%231.png",
+        "path": "standalone/assets/source/195-glassb/skin-kitchen-1/build_char_195_glassb_kitchen#1.png",
+        "bytes": 326838,
+        "sha256": "66130ba04f3cdc8fe13a207c856f068202d4536ef1841351739a099893dab599"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9959,
+      "sha256": "f991f5b00558aa7ebdebf9faf752cc33e404c569f1cbbb63a33cb8bb94797952"
+    },
+    "skeleton": {
+      "bytes": 158336,
+      "sha256": "fb861034ee9b65b6d61cf4469eac596acae93b51ba5072151a530724b8ea8edc"
+    }
   }
 }

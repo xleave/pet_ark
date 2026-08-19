@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "flametail",
   "character_name": "Flametail",
   "localized_name": "焰尾",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%84%B0%E5%B0%BE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_420_flamtl/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_420_flamtl/meta.json",
-    "model": "defaultskin/build/build_char_420_flamtl",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_420_flamtl/defaultskin/build/build_char_420_flamtl.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_420_flamtl/defaultskin/build/build_char_420_flamtl.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_420_flamtl/defaultskin/build/build_char_420_flamtl.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/420_flamtl",
+  "source_asset": {
+    "assetId": "build_char_420_flamtl",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "焰尾",
+    "appellation": "Flametail",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_420_flamtl.atlas",
+      ".png": "build_char_420_flamtl.png",
+      ".skel": "build_char_420_flamtl.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/flametail/default/meta.json",
     "atlas": "standalone/assets/source/flametail/default/build_char_420_flamtl.atlas",
     "skeleton": "standalone/assets/source/flametail/default/build_char_420_flamtl.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_420_flamtl/defaultskin/build/build_char_420_flamtl.png",
-        "path": "standalone/assets/source/flametail/default/build_char_420_flamtl.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/420_flamtl/build_char_420_flamtl.png",
+        "path": "standalone/assets/source/flametail/default/build_char_420_flamtl.png",
+        "bytes": 341880,
+        "sha256": "a9e0eb521680b1fbeed80db05fcc9d0dfab4f2715a0a323feb067baad1007b65"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11801,
+      "sha256": "2f9a9d09a48747f1555378305d3720dcd4b636de99f7a574c62861e0d2ff2108"
+    },
+    "skeleton": {
+      "bytes": 208611,
+      "sha256": "5994209e3205d12fd9aa3a0141a3f74423cdccbd43537b3ea933908c84765559"
+    }
   }
 }

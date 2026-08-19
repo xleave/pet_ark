@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "pepe",
   "character_name": "Pepe",
   "localized_name": "佩佩",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E4%BD%A9%E4%BD%A9",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4058_pepe/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4058_pepe/meta.json",
-    "model": "defaultskin/build/build_char_4058_pepe",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4058_pepe/defaultskin/build/build_char_4058_pepe.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4058_pepe/defaultskin/build/build_char_4058_pepe.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4058_pepe/defaultskin/build/build_char_4058_pepe.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4058_pepe",
+  "source_asset": {
+    "assetId": "build_char_4058_pepe",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "佩佩",
+    "appellation": "Pepe",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4058_pepe.atlas",
+      ".png": "build_char_4058_pepe.png",
+      ".skel": "build_char_4058_pepe.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/pepe/default/meta.json",
     "atlas": "standalone/assets/source/pepe/default/build_char_4058_pepe.atlas",
     "skeleton": "standalone/assets/source/pepe/default/build_char_4058_pepe.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4058_pepe/defaultskin/build/build_char_4058_pepe.png",
-        "path": "standalone/assets/source/pepe/default/build_char_4058_pepe.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4058_pepe/build_char_4058_pepe.png",
+        "path": "standalone/assets/source/pepe/default/build_char_4058_pepe.png",
+        "bytes": 275601,
+        "sha256": "9e98d1e810bdfdd30452e388b65c07d4ffe85ee5bf273c69e366973df1a24b65"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10438,
+      "sha256": "8f2a6e614044b4fcffb96cef37c0cb88ee95c7383918457e98a853c8acaf23ce"
+    },
+    "skeleton": {
+      "bytes": 176242,
+      "sha256": "a4d5992d8ac29f05e57ea47fe9cd628c4ca2580733277f6de89da8e67793d8cd"
+    }
   }
 }

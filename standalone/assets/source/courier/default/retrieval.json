@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "courier",
   "character_name": "Courier",
   "localized_name": "讯使",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%AE%AF%E4%BD%BF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_198_blackd/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_198_blackd/meta.json",
-    "model": "defaultskin/build/build_char_198_blackd",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_198_blackd/defaultskin/build/build_char_198_blackd.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_198_blackd/defaultskin/build/build_char_198_blackd.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_198_blackd/defaultskin/build/build_char_198_blackd.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/198_blackd",
+  "source_asset": {
+    "assetId": "build_char_198_blackd",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "讯使",
+    "appellation": "Courier",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_198_blackd.atlas",
+      ".png": "build_char_198_blackd.png",
+      ".skel": "build_char_198_blackd.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/courier/default/meta.json",
     "atlas": "standalone/assets/source/courier/default/build_char_198_blackd.atlas",
     "skeleton": "standalone/assets/source/courier/default/build_char_198_blackd.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_198_blackd/defaultskin/build/build_char_198_blackd.png",
-        "path": "standalone/assets/source/courier/default/build_char_198_blackd.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/198_blackd/build_char_198_blackd.png",
+        "path": "standalone/assets/source/courier/default/build_char_198_blackd.png",
+        "bytes": 201623,
+        "sha256": "90939b646ac66bd5053ecd3a6fdc9f5252ddad182583992a3d10c77f371ac11a"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4169,
+      "sha256": "650915eaa5aa95a4db4bd65d2d2443faa309a7a06e526101a0a5a1f75159c148"
+    },
+    "skeleton": {
+      "bytes": 127070,
+      "sha256": "3b4f20b4f8ad9ebc2efe353e73acb8532e407493235ec0d3abce1d8ec3570472"
+    }
   }
 }

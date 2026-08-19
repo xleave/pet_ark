@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "harmonie",
   "character_name": "Harmonie",
   "localized_name": "和弦",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%92%8C%E5%BC%A6",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/meta.json",
-    "model": "defaultskin/build/build_char_297_hamoni",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/defaultskin/build/build_char_297_hamoni.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/defaultskin/build/build_char_297_hamoni.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/defaultskin/build/build_char_297_hamoni.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/297_hamoni",
+  "source_asset": {
+    "assetId": "build_char_297_hamoni",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "和弦",
+    "appellation": "Harmonie",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_297_hamoni.atlas",
+      ".png": "build_char_297_hamoni.png",
+      ".skel": "build_char_297_hamoni.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/harmonie/default/meta.json",
     "atlas": "standalone/assets/source/harmonie/default/build_char_297_hamoni.atlas",
     "skeleton": "standalone/assets/source/harmonie/default/build_char_297_hamoni.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/defaultskin/build/build_char_297_hamoni.png",
-        "path": "standalone/assets/source/harmonie/default/build_char_297_hamoni.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/297_hamoni/build_char_297_hamoni.png",
+        "path": "standalone/assets/source/harmonie/default/build_char_297_hamoni.png",
+        "bytes": 220507,
+        "sha256": "bb69128191083186e6e2a941e869a87f6627928215f232cfedf48d92a91aed7b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6780,
+      "sha256": "e0b3c4082ad7101994c2f245941ce5f045b0552d2bb8b60c86701a8bc4ca62be"
+    },
+    "skeleton": {
+      "bytes": 259183,
+      "sha256": "081977117c704eed0423d77f8ab1155d9ba5b33afc17b10ab2eae6f169369616"
+    }
   }
 }

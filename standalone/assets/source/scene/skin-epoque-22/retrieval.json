@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "scene",
   "character_name": "Scene",
   "localized_name": "稀音",
@@ -9,25 +9,58 @@
   "variant_name": "别枝",
   "skin_id": "epoque-22",
   "skin_name": "别枝",
-  "source_page": "https://prts.wiki/w/%E7%A8%80%E9%9F%B3",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/meta.json",
-    "model": "char_336_folivo_epoque_22/build/build_char_336_folivo_epoque_22",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/char_336_folivo_epoque_22/build/build_char_336_folivo_epoque_22.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/char_336_folivo_epoque_22/build/build_char_336_folivo_epoque_22.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/char_336_folivo_epoque_22/build/build_char_336_folivo_epoque_22.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/336_folivo_epoque#22",
+  "source_asset": {
+    "assetId": "build_char_336_folivo_epoque#22",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "稀音",
+    "appellation": "Scene",
+    "skinGroupId": "2023#epoque#4",
+    "skinGroupName": "时代/XXII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_336_folivo_epoque#22.atlas",
+      ".png": "build_char_336_folivo_epoque#22.png",
+      ".skel": "build_char_336_folivo_epoque#22.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/scene/skin-epoque-22/meta.json",
-    "atlas": "standalone/assets/source/scene/skin-epoque-22/build_char_336_folivo_epoque_22.atlas",
-    "skeleton": "standalone/assets/source/scene/skin-epoque-22/build_char_336_folivo_epoque_22.skel",
+    "atlas": "standalone/assets/source/scene/skin-epoque-22/build_char_336_folivo_epoque#22.atlas",
+    "skeleton": "standalone/assets/source/scene/skin-epoque-22/build_char_336_folivo_epoque#22.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/char_336_folivo_epoque_22/build/build_char_336_folivo_epoque_22.png",
-        "path": "standalone/assets/source/scene/skin-epoque-22/build_char_336_folivo_epoque_22.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/336_folivo_epoque%2322/build_char_336_folivo_epoque%2322.png",
+        "path": "standalone/assets/source/scene/skin-epoque-22/build_char_336_folivo_epoque#22.png",
+        "bytes": 346311,
+        "sha256": "7b65b013d7d8a9f4877baefce5794fd51798be94822eea6e961cf4d9e65f9d15"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7985,
+      "sha256": "bc13ea4fe35a2a3b0c55a1b3220b2a4467437f2c0737991b77c7f5137703d652"
+    },
+    "skeleton": {
+      "bytes": 214886,
+      "sha256": "7018b3be55672f10620b3821074ade642b0f0885be4a862fa9a950b2b8c8a999"
+    }
   }
 }

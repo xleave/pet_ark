@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "bison",
   "character_name": "Bison",
   "localized_name": "拜松",
@@ -9,25 +9,58 @@
   "variant_name": "凌云意",
   "skin_id": "yun-7",
   "skin_name": "凌云意",
-  "source_page": "https://prts.wiki/w/%E6%8B%9C%E6%9D%BE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/meta.json",
-    "model": "char_325_bison_yun_7/build/build_char_325_bison_yun_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/char_325_bison_yun_7/build/build_char_325_bison_yun_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/char_325_bison_yun_7/build/build_char_325_bison_yun_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/char_325_bison_yun_7/build/build_char_325_bison_yun_7.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/325_bison_yun#7",
+  "source_asset": {
+    "assetId": "build_char_325_bison_yun#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "拜松",
+    "appellation": "Bison",
+    "skinGroupId": "2025#yun#2",
+    "skinGroupName": "0011/韵系列/VII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_325_bison_yun#7.atlas",
+      ".png": "build_char_325_bison_yun#7.png",
+      ".skel": "build_char_325_bison_yun#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/bison/skin-yun-7/meta.json",
-    "atlas": "standalone/assets/source/bison/skin-yun-7/build_char_325_bison_yun_7.atlas",
-    "skeleton": "standalone/assets/source/bison/skin-yun-7/build_char_325_bison_yun_7.skel",
+    "atlas": "standalone/assets/source/bison/skin-yun-7/build_char_325_bison_yun#7.atlas",
+    "skeleton": "standalone/assets/source/bison/skin-yun-7/build_char_325_bison_yun#7.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/char_325_bison_yun_7/build/build_char_325_bison_yun_7.png",
-        "path": "standalone/assets/source/bison/skin-yun-7/build_char_325_bison_yun_7.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/325_bison_yun%237/build_char_325_bison_yun%237.png",
+        "path": "standalone/assets/source/bison/skin-yun-7/build_char_325_bison_yun#7.png",
+        "bytes": 418042,
+        "sha256": "5d93d9d1411e7d4adfa70dff16c346195647c2ff30700b85b68978bedaaf8f6c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11182,
+      "sha256": "55cf390da3b3ab6dc814d0f29ddc4123ee80af65734ed296f794c3c55a9a7ca4"
+    },
+    "skeleton": {
+      "bytes": 514160,
+      "sha256": "7d51ce115c9142e3d73a3c86009aeabbecd917afe041d93237771ba274255d24"
+    }
   }
 }

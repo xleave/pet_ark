@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "wind-chimes",
   "character_name": "Wind Chimes",
   "localized_name": "铎铃",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%93%8E%E9%93%83",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4083_chimes/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4083_chimes/meta.json",
-    "model": "defaultskin/build/build_char_4083_chimes",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4083_chimes/defaultskin/build/build_char_4083_chimes.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4083_chimes/defaultskin/build/build_char_4083_chimes.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4083_chimes/defaultskin/build/build_char_4083_chimes.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4083_chimes",
+  "source_asset": {
+    "assetId": "build_char_4083_chimes",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "铎铃",
+    "appellation": "Wind Chimes",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4083_chimes.atlas",
+      ".png": "build_char_4083_chimes.png",
+      ".skel": "build_char_4083_chimes.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/wind-chimes/default/meta.json",
     "atlas": "standalone/assets/source/wind-chimes/default/build_char_4083_chimes.atlas",
     "skeleton": "standalone/assets/source/wind-chimes/default/build_char_4083_chimes.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4083_chimes/defaultskin/build/build_char_4083_chimes.png",
-        "path": "standalone/assets/source/wind-chimes/default/build_char_4083_chimes.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4083_chimes/build_char_4083_chimes.png",
+        "path": "standalone/assets/source/wind-chimes/default/build_char_4083_chimes.png",
+        "bytes": 244159,
+        "sha256": "280e502c8dfd3dc45ded6e02ce724ff1cfdf1ff1ef64255aff9d5fee58d2dfea"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8479,
+      "sha256": "b41be13fad62e33c8318638a22083cceaa74f843649df80ab8e27c80912a0adc"
+    },
+    "skeleton": {
+      "bytes": 248891,
+      "sha256": "e59f80b9b1f24c29e829f4e206e84930de725dcd299544d46c238f1026124254"
+    }
   }
 }

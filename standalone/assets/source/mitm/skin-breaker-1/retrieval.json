@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mitm",
   "character_name": "Mitm",
   "localized_name": "渡桥",
@@ -9,25 +9,58 @@
   "variant_name": "无影灯下",
   "skin_id": "breaker-1",
   "skin_name": "无影灯下",
-  "source_page": "https://prts.wiki/w/%E6%B8%A1%E6%A1%A5",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4147_mitm/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4147_mitm/meta.json",
-    "model": "char_4147_mitm_breaker_1/build/build_char_4147_mitm_breaker_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4147_mitm/char_4147_mitm_breaker_1/build/build_char_4147_mitm_breaker_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4147_mitm/char_4147_mitm_breaker_1/build/build_char_4147_mitm_breaker_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4147_mitm/char_4147_mitm_breaker_1/build/build_char_4147_mitm_breaker_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4147_mitm_breaker#1",
+  "source_asset": {
+    "assetId": "build_char_4147_mitm_breaker#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "渡桥",
+    "appellation": "Mitm",
+    "skinGroupId": "2025#breaker",
+    "skinGroupName": "破格视界",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4147_mitm_breaker#1.atlas",
+      ".png": "build_char_4147_mitm_breaker#1.png",
+      ".skel": "build_char_4147_mitm_breaker#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mitm/skin-breaker-1/meta.json",
-    "atlas": "standalone/assets/source/mitm/skin-breaker-1/build_char_4147_mitm_breaker_1.atlas",
-    "skeleton": "standalone/assets/source/mitm/skin-breaker-1/build_char_4147_mitm_breaker_1.skel",
+    "atlas": "standalone/assets/source/mitm/skin-breaker-1/build_char_4147_mitm_breaker#1.atlas",
+    "skeleton": "standalone/assets/source/mitm/skin-breaker-1/build_char_4147_mitm_breaker#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4147_mitm/char_4147_mitm_breaker_1/build/build_char_4147_mitm_breaker_1.png",
-        "path": "standalone/assets/source/mitm/skin-breaker-1/build_char_4147_mitm_breaker_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4147_mitm_breaker%231/build_char_4147_mitm_breaker%231.png",
+        "path": "standalone/assets/source/mitm/skin-breaker-1/build_char_4147_mitm_breaker#1.png",
+        "bytes": 732673,
+        "sha256": "a3976f3591b49e1c9a3ac527be917f8c0f33311929c0227de6e19378d5913080"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 17761,
+      "sha256": "fd19dbccd421daacf1245012ea616f7035d480e7fee13bf67486aa9d94324fa8"
+    },
+    "skeleton": {
+      "bytes": 364868,
+      "sha256": "635145b5a8d98f4ec0b68f1ec814d5ecb69ebc5cd21baa0fd959d0d86782e2a9"
+    }
   }
 }

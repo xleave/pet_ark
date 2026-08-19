@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "toddifons",
   "character_name": "Toddifons",
   "localized_name": "熔泉",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%86%94%E6%B3%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_363_toddi/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_363_toddi/meta.json",
-    "model": "defaultskin/build/build_char_363_toddi",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_363_toddi/defaultskin/build/build_char_363_toddi.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_363_toddi/defaultskin/build/build_char_363_toddi.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_363_toddi/defaultskin/build/build_char_363_toddi.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/363_toddi",
+  "source_asset": {
+    "assetId": "build_char_363_toddi",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "熔泉",
+    "appellation": "Toddifons",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_363_toddi.atlas",
+      ".png": "build_char_363_toddi.png",
+      ".skel": "build_char_363_toddi.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/toddifons/default/meta.json",
     "atlas": "standalone/assets/source/toddifons/default/build_char_363_toddi.atlas",
     "skeleton": "standalone/assets/source/toddifons/default/build_char_363_toddi.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_363_toddi/defaultskin/build/build_char_363_toddi.png",
-        "path": "standalone/assets/source/toddifons/default/build_char_363_toddi.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/363_toddi/build_char_363_toddi.png",
+        "path": "standalone/assets/source/toddifons/default/build_char_363_toddi.png",
+        "bytes": 294728,
+        "sha256": "d0fb6c1b6d2dee7b032baa45f177a3ca90495314307e6c94490931531652ee86"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9315,
+      "sha256": "aca1758b33a580899cc1ba4247141c2d7ec084cb9702364f6f93cc4fa544ffd6"
+    },
+    "skeleton": {
+      "bytes": 174079,
+      "sha256": "e0255731e4ce93ddf1f6d683c356a1947c378e79b561bd9219f2ba95e2ea1fbb"
+    }
   }
 }

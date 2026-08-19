@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "astgenne",
   "character_name": "Astgenne",
   "localized_name": "星源",
@@ -9,25 +9,58 @@
   "variant_name": "所愿",
   "skin_id": "epoque-25",
   "skin_name": "所愿",
-  "source_page": "https://prts.wiki/w/%E6%98%9F%E6%BA%90",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_135_halo/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_135_halo/meta.json",
-    "model": "char_135_halo_epoque_25/build/build_char_135_halo_epoque_25",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_135_halo/char_135_halo_epoque_25/build/build_char_135_halo_epoque_25.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_135_halo/char_135_halo_epoque_25/build/build_char_135_halo_epoque_25.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_135_halo/char_135_halo_epoque_25/build/build_char_135_halo_epoque_25.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/135_halo_epoque#25",
+  "source_asset": {
+    "assetId": "build_char_135_halo_epoque#25",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "星源",
+    "appellation": "Astgenne",
+    "skinGroupId": "2023#epoque#7",
+    "skinGroupName": "时代/XXV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_135_halo_epoque#25.atlas",
+      ".png": "build_char_135_halo_epoque#25.png",
+      ".skel": "build_char_135_halo_epoque#25.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/astgenne/skin-epoque-25/meta.json",
-    "atlas": "standalone/assets/source/astgenne/skin-epoque-25/build_char_135_halo_epoque_25.atlas",
-    "skeleton": "standalone/assets/source/astgenne/skin-epoque-25/build_char_135_halo_epoque_25.skel",
+    "atlas": "standalone/assets/source/astgenne/skin-epoque-25/build_char_135_halo_epoque#25.atlas",
+    "skeleton": "standalone/assets/source/astgenne/skin-epoque-25/build_char_135_halo_epoque#25.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_135_halo/char_135_halo_epoque_25/build/build_char_135_halo_epoque_25.png",
-        "path": "standalone/assets/source/astgenne/skin-epoque-25/build_char_135_halo_epoque_25.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/135_halo_epoque%2325/build_char_135_halo_epoque%2325.png",
+        "path": "standalone/assets/source/astgenne/skin-epoque-25/build_char_135_halo_epoque#25.png",
+        "bytes": 402024,
+        "sha256": "3f22eb34e7999e419d27c6b9a53e431733319aaa9c8fde090821dd5df0fb802b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14335,
+      "sha256": "9fc52d5c8e1a656ba488aa0d1c0223ab115db869a6727dbf2f4ee5074f57d0ac"
+    },
+    "skeleton": {
+      "bytes": 337224,
+      "sha256": "2a1a51a56d772d75b8a704fcee514a258234217e637acd5418d7922ec6e58ef4"
+    }
   }
 }

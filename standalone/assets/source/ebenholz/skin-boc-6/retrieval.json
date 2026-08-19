@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ebenholz",
   "character_name": "Ebenholz",
   "localized_name": "黑键",
@@ -9,25 +9,58 @@
   "variant_name": "变奏",
   "skin_id": "boc-6",
   "skin_name": "变奏",
-  "source_page": "https://prts.wiki/w/%E9%BB%91%E9%94%AE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4046_ebnhlz/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4046_ebnhlz/meta.json",
-    "model": "char_4046_ebnhlz_boc_6/build/build_char_4046_ebnhlz_boc_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4046_ebnhlz/char_4046_ebnhlz_boc_6/build/build_char_4046_ebnhlz_boc_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4046_ebnhlz/char_4046_ebnhlz_boc_6/build/build_char_4046_ebnhlz_boc_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4046_ebnhlz/char_4046_ebnhlz_boc_6/build/build_char_4046_ebnhlz_boc_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4046_ebnhlz_boc#6",
+  "source_asset": {
+    "assetId": "build_char_4046_ebnhlz_boc#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "黑键",
+    "appellation": "Ebenholz",
+    "skinGroupId": "2023#boc",
+    "skinGroupName": "斗争血脉/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4046_ebnhlz_boc#6.atlas",
+      ".png": "build_char_4046_ebnhlz_boc#6.png",
+      ".skel": "build_char_4046_ebnhlz_boc#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ebenholz/skin-boc-6/meta.json",
-    "atlas": "standalone/assets/source/ebenholz/skin-boc-6/build_char_4046_ebnhlz_boc_6.atlas",
-    "skeleton": "standalone/assets/source/ebenholz/skin-boc-6/build_char_4046_ebnhlz_boc_6.skel",
+    "atlas": "standalone/assets/source/ebenholz/skin-boc-6/build_char_4046_ebnhlz_boc#6.atlas",
+    "skeleton": "standalone/assets/source/ebenholz/skin-boc-6/build_char_4046_ebnhlz_boc#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4046_ebnhlz/char_4046_ebnhlz_boc_6/build/build_char_4046_ebnhlz_boc_6.png",
-        "path": "standalone/assets/source/ebenholz/skin-boc-6/build_char_4046_ebnhlz_boc_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4046_ebnhlz_boc%236/build_char_4046_ebnhlz_boc%236.png",
+        "path": "standalone/assets/source/ebenholz/skin-boc-6/build_char_4046_ebnhlz_boc#6.png",
+        "bytes": 414275,
+        "sha256": "340370978a4fcc222ea4dbe2e5d4c906a9b369ba5ffc8ea9183207fea6587121"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12428,
+      "sha256": "5a98dea0922025802f4e95cc3a13ce3d9636cda35072f26c97865dc9989bc38c"
+    },
+    "skeleton": {
+      "bytes": 673945,
+      "sha256": "79a50e219d2a38e74c7159a668df368815160404c9daaa7d353843d6acff4b44"
+    }
   }
 }

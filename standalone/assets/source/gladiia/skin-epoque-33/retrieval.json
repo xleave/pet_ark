@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "gladiia",
   "character_name": "Gladiia",
   "localized_name": "歌蕾蒂娅",
@@ -9,25 +9,58 @@
   "variant_name": "我即潮汐",
   "skin_id": "epoque-33",
   "skin_name": "我即潮汐",
-  "source_page": "https://prts.wiki/w/%E6%AD%8C%E8%95%BE%E8%92%82%E5%A8%85",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_474_glady/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_474_glady/meta.json",
-    "model": "char_474_glady_epoque_33/build/build_char_474_glady_epoque_33",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_474_glady/char_474_glady_epoque_33/build/build_char_474_glady_epoque_33.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_474_glady/char_474_glady_epoque_33/build/build_char_474_glady_epoque_33.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_474_glady/char_474_glady_epoque_33/build/build_char_474_glady_epoque_33.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/474_glady_epoque#33",
+  "source_asset": {
+    "assetId": "build_char_474_glady_epoque#33",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "歌蕾蒂娅",
+    "appellation": "Gladiia",
+    "skinGroupId": "2024#epoque#4",
+    "skinGroupName": "时代/XXXIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_474_glady_epoque#33.atlas",
+      ".png": "build_char_474_glady_epoque#33.png",
+      ".skel": "build_char_474_glady_epoque#33.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/gladiia/skin-epoque-33/meta.json",
-    "atlas": "standalone/assets/source/gladiia/skin-epoque-33/build_char_474_glady_epoque_33.atlas",
-    "skeleton": "standalone/assets/source/gladiia/skin-epoque-33/build_char_474_glady_epoque_33.skel",
+    "atlas": "standalone/assets/source/gladiia/skin-epoque-33/build_char_474_glady_epoque#33.atlas",
+    "skeleton": "standalone/assets/source/gladiia/skin-epoque-33/build_char_474_glady_epoque#33.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_474_glady/char_474_glady_epoque_33/build/build_char_474_glady_epoque_33.png",
-        "path": "standalone/assets/source/gladiia/skin-epoque-33/build_char_474_glady_epoque_33.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/474_glady_epoque%2333/build_char_474_glady_epoque%2333.png",
+        "path": "standalone/assets/source/gladiia/skin-epoque-33/build_char_474_glady_epoque#33.png",
+        "bytes": 916408,
+        "sha256": "7712944a5cdc697d4c036df8e59718bb140090035506ad4fe1880bf7e3b7f0ce"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 18622,
+      "sha256": "558f13b553606220a6f61f00f05f4a9f6523f1b7d9ce9d2497138576e8831780"
+    },
+    "skeleton": {
+      "bytes": 536359,
+      "sha256": "c9af8fa98d0959e0b1e4c654d5b08db0ba842252ae35c9b4d16369698e04d293"
+    }
   }
 }

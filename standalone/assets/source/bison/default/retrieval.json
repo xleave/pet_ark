@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "bison",
   "character_name": "Bison",
   "localized_name": "拜松",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%8B%9C%E6%9D%BE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/meta.json",
-    "model": "defaultskin/build/build_char_325_bison",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/defaultskin/build/build_char_325_bison.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/defaultskin/build/build_char_325_bison.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/defaultskin/build/build_char_325_bison.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/325_bison",
+  "source_asset": {
+    "assetId": "build_char_325_bison",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "拜松",
+    "appellation": "Bison",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_325_bison.atlas",
+      ".png": "build_char_325_bison.png",
+      ".skel": "build_char_325_bison.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/bison/default/meta.json",
     "atlas": "standalone/assets/source/bison/default/build_char_325_bison.atlas",
     "skeleton": "standalone/assets/source/bison/default/build_char_325_bison.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_325_bison/defaultskin/build/build_char_325_bison.png",
-        "path": "standalone/assets/source/bison/default/build_char_325_bison.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/325_bison/build_char_325_bison.png",
+        "path": "standalone/assets/source/bison/default/build_char_325_bison.png",
+        "bytes": 291188,
+        "sha256": "644ba18dbff2746242c71b3356d1ee791cb3ce0e637f39ffb7a32beeec7d75af"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6344,
+      "sha256": "4e3bf1625ea72b6c83ca4ef53fdbbd2b5150a0c1ff7199e4acc3ae6563674b7f"
+    },
+    "skeleton": {
+      "bytes": 89526,
+      "sha256": "4037552ce9f081f40418b0f0542e0f3b62748fde0730e6f0256c3b1de84f9183"
+    }
   }
 }

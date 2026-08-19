@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "friston-3",
   "character_name": "Friston-3",
   "localized_name": "Friston-3",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/Friston-3",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4093_frston/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4093_frston/meta.json",
-    "model": "defaultskin/build/build_char_4093_frston",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4093_frston/defaultskin/build/build_char_4093_frston.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4093_frston/defaultskin/build/build_char_4093_frston.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4093_frston/defaultskin/build/build_char_4093_frston.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4093_frston",
+  "source_asset": {
+    "assetId": "build_char_4093_frston",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "Friston-3",
+    "appellation": "Friston-3",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_1"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4093_frston.atlas",
+      ".png": "build_char_4093_frston.png",
+      ".skel": "build_char_4093_frston.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/friston-3/default/meta.json",
     "atlas": "standalone/assets/source/friston-3/default/build_char_4093_frston.atlas",
     "skeleton": "standalone/assets/source/friston-3/default/build_char_4093_frston.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4093_frston/defaultskin/build/build_char_4093_frston.png",
-        "path": "standalone/assets/source/friston-3/default/build_char_4093_frston.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4093_frston/build_char_4093_frston.png",
+        "path": "standalone/assets/source/friston-3/default/build_char_4093_frston.png",
+        "bytes": 192800,
+        "sha256": "69dc186d55cf2e5e81fc53563f6f7875deee8a84d99815b7f301809df4d5dbdb"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 3460,
+      "sha256": "d0a7ae30281bc46d221e72c3f549cdf1d08a31ca01ae6531e0f7fca9bbb9da5e"
+    },
+    "skeleton": {
+      "bytes": 95992,
+      "sha256": "2aac2e0892a7ffee27ba048cce2178b41b9593dcbb93f7be37298a192e01273e"
+    }
   }
 }

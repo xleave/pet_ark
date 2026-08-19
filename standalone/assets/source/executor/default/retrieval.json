@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "executor",
   "character_name": "Executor",
   "localized_name": "送葬人",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%80%81%E8%91%AC%E4%BA%BA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_279_excu/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_279_excu/meta.json",
-    "model": "defaultskin/build/build_char_279_excu",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_279_excu/defaultskin/build/build_char_279_excu.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_279_excu/defaultskin/build/build_char_279_excu.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_279_excu/defaultskin/build/build_char_279_excu.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/279_excu",
+  "source_asset": {
+    "assetId": "build_char_279_excu",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "送葬人",
+    "appellation": "Executor",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_279_excu.atlas",
+      ".png": "build_char_279_excu.png",
+      ".skel": "build_char_279_excu.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/executor/default/meta.json",
     "atlas": "standalone/assets/source/executor/default/build_char_279_excu.atlas",
     "skeleton": "standalone/assets/source/executor/default/build_char_279_excu.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_279_excu/defaultskin/build/build_char_279_excu.png",
-        "path": "standalone/assets/source/executor/default/build_char_279_excu.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/279_excu/build_char_279_excu.png",
+        "path": "standalone/assets/source/executor/default/build_char_279_excu.png",
+        "bytes": 241157,
+        "sha256": "ce42963108f437ab1d298bf4ef2670e8f15c3c9d1998f3a58ee091f41be4a3ae"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8566,
+      "sha256": "4b8fba352b9c0990716d9eef50bbc5e277f839a8218dd99471d4e7da83c34cef"
+    },
+    "skeleton": {
+      "bytes": 91366,
+      "sha256": "60e736ba840a785f8935d863419ae5b5bb47153b50b4e271b39648ac9496f5d5"
+    }
   }
 }

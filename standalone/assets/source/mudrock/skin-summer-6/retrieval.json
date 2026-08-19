@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mudrock",
   "character_name": "Mudrock",
   "localized_name": "泥岩",
@@ -9,25 +9,58 @@
   "variant_name": "静谧午夜 DN06",
   "skin_id": "summer-6",
   "skin_name": "静谧午夜 DN06",
-  "source_page": "https://prts.wiki/w/%E6%B3%A5%E5%B2%A9",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/meta.json",
-    "model": "char_311_mudrok_summer_6/build/build_char_311_mudrok_summer_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_summer_6/build/build_char_311_mudrok_summer_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_summer_6/build/build_char_311_mudrok_summer_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_summer_6/build/build_char_311_mudrok_summer_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/311_mudrok_summer#6",
+  "source_asset": {
+    "assetId": "build_char_311_mudrok_summer#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "泥岩",
+    "appellation": "Mudrock",
+    "skinGroupId": "2021#summer#2",
+    "skinGroupName": "珊瑚海岸/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_311_mudrok_summer#6.atlas",
+      ".png": "build_char_311_mudrok_summer#6.png",
+      ".skel": "build_char_311_mudrok_summer#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mudrock/skin-summer-6/meta.json",
-    "atlas": "standalone/assets/source/mudrock/skin-summer-6/build_char_311_mudrok_summer_6.atlas",
-    "skeleton": "standalone/assets/source/mudrock/skin-summer-6/build_char_311_mudrok_summer_6.skel",
+    "atlas": "standalone/assets/source/mudrock/skin-summer-6/build_char_311_mudrok_summer#6.atlas",
+    "skeleton": "standalone/assets/source/mudrock/skin-summer-6/build_char_311_mudrok_summer#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_summer_6/build/build_char_311_mudrok_summer_6.png",
-        "path": "standalone/assets/source/mudrock/skin-summer-6/build_char_311_mudrok_summer_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/311_mudrok_summer%236/build_char_311_mudrok_summer%236.png",
+        "path": "standalone/assets/source/mudrock/skin-summer-6/build_char_311_mudrok_summer#6.png",
+        "bytes": 280312,
+        "sha256": "db387a7fc5bf6edd5e842857ba0557c1083cd34e4e9b76025c7137228fe2b3f8"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10880,
+      "sha256": "48dc72cf1108bc6fec4450de3303e6b18fa2b1a450190db00801b99fb6fc1224"
+    },
+    "skeleton": {
+      "bytes": 529941,
+      "sha256": "074285e6a56e46490d3b425082e5cfe43c047e4e26ebe3e440f3bdf54021ad5d"
+    }
   }
 }

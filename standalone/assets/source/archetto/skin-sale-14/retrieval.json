@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "archetto",
   "character_name": "Archetto",
   "localized_name": "空弦",
@@ -9,25 +9,58 @@
   "variant_name": "至虔者荣光",
   "skin_id": "sale-14",
   "skin_name": "至虔者荣光",
-  "source_page": "https://prts.wiki/w/%E7%A9%BA%E5%BC%A6",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/meta.json",
-    "model": "char_332_archet_sale_14/build/build_char_332_archet_sale_14",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/char_332_archet_sale_14/build/build_char_332_archet_sale_14.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/char_332_archet_sale_14/build/build_char_332_archet_sale_14.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/char_332_archet_sale_14/build/build_char_332_archet_sale_14.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/332_archet_sale#14",
+  "source_asset": {
+    "assetId": "build_char_332_archet_sale#14",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "空弦",
+    "appellation": "Archetto",
+    "skinGroupId": "2025#sale",
+    "skinGroupName": "忒斯特收藏/XV",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_332_archet_sale#14.atlas",
+      ".png": "build_char_332_archet_sale#14.png",
+      ".skel": "build_char_332_archet_sale#14.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/archetto/skin-sale-14/meta.json",
-    "atlas": "standalone/assets/source/archetto/skin-sale-14/build_char_332_archet_sale_14.atlas",
-    "skeleton": "standalone/assets/source/archetto/skin-sale-14/build_char_332_archet_sale_14.skel",
+    "atlas": "standalone/assets/source/archetto/skin-sale-14/build_char_332_archet_sale#14.atlas",
+    "skeleton": "standalone/assets/source/archetto/skin-sale-14/build_char_332_archet_sale#14.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_332_archet/char_332_archet_sale_14/build/build_char_332_archet_sale_14.png",
-        "path": "standalone/assets/source/archetto/skin-sale-14/build_char_332_archet_sale_14.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/332_archet_sale%2314/build_char_332_archet_sale%2314.png",
+        "path": "standalone/assets/source/archetto/skin-sale-14/build_char_332_archet_sale#14.png",
+        "bytes": 591697,
+        "sha256": "1364ab601e8f303d6b7beafccebc9cfbe43a1452205de627ea28575decf10531"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14056,
+      "sha256": "c4b1d3fd38f688045f2d7905d28b6449df7740169385fe0a8706d5a0fbd2a552"
+    },
+    "skeleton": {
+      "bytes": 601060,
+      "sha256": "9e190aaf3888f56b2b73b2de2c1d9fde4f3816961be1e6e8019059510f1a4782"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "kjera",
   "character_name": "Kjera",
   "localized_name": "耶拉",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%80%B6%E6%8B%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4013_kjera/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4013_kjera/meta.json",
-    "model": "defaultskin/build/build_char_4013_kjera",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4013_kjera/defaultskin/build/build_char_4013_kjera.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4013_kjera/defaultskin/build/build_char_4013_kjera.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4013_kjera/defaultskin/build/build_char_4013_kjera.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4013_kjera",
+  "source_asset": {
+    "assetId": "build_char_4013_kjera",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "耶拉",
+    "appellation": "Kjera",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4013_kjera.atlas",
+      ".png": "build_char_4013_kjera.png",
+      ".skel": "build_char_4013_kjera.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/kjera/default/meta.json",
     "atlas": "standalone/assets/source/kjera/default/build_char_4013_kjera.atlas",
     "skeleton": "standalone/assets/source/kjera/default/build_char_4013_kjera.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4013_kjera/defaultskin/build/build_char_4013_kjera.png",
-        "path": "standalone/assets/source/kjera/default/build_char_4013_kjera.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4013_kjera/build_char_4013_kjera.png",
+        "path": "standalone/assets/source/kjera/default/build_char_4013_kjera.png",
+        "bytes": 239205,
+        "sha256": "83e52fab6af9f80cfc6b7996ee95719e1e1b7438bb712f0ad3397c19ac85fa45"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7244,
+      "sha256": "6579b2390cbecc6105bbfc5d638b45d381c94b1ef40d438d2f5e6d85aa34d5a8"
+    },
+    "skeleton": {
+      "bytes": 195079,
+      "sha256": "34d5241ab77256424bff8a12f34b5e60028c3c6ac422baeafa4a21db1cd0b0bd"
+    }
   }
 }

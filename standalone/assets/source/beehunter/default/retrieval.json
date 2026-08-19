@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "beehunter",
   "character_name": "Beehunter",
   "localized_name": "猎蜂",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%8C%8E%E8%9C%82",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_137_brownb/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_137_brownb/meta.json",
-    "model": "defaultskin/build/build_char_137_brownb",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_137_brownb/defaultskin/build/build_char_137_brownb.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_137_brownb/defaultskin/build/build_char_137_brownb.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_137_brownb/defaultskin/build/build_char_137_brownb.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/137_brownb",
+  "source_asset": {
+    "assetId": "build_char_137_brownb",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "猎蜂",
+    "appellation": "Beehunter",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_137_brownb.atlas",
+      ".png": "build_char_137_brownb.png",
+      ".skel": "build_char_137_brownb.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/beehunter/default/meta.json",
     "atlas": "standalone/assets/source/beehunter/default/build_char_137_brownb.atlas",
     "skeleton": "standalone/assets/source/beehunter/default/build_char_137_brownb.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_137_brownb/defaultskin/build/build_char_137_brownb.png",
-        "path": "standalone/assets/source/beehunter/default/build_char_137_brownb.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/137_brownb/build_char_137_brownb.png",
+        "path": "standalone/assets/source/beehunter/default/build_char_137_brownb.png",
+        "bytes": 171713,
+        "sha256": "ecfeab7257bf9d11614af8d1b66cb84f281760cba2286e8842d62134c2075e80"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8252,
+      "sha256": "96a3edd43353af193b3c32f6280b97368cd4a3e9de0c817cb601f21027f66e1e"
+    },
+    "skeleton": {
+      "bytes": 119959,
+      "sha256": "32cb7de81827cb5412417f51a4c76bcd1ed23bc4754234a7f11485614b141e84"
+    }
   }
 }

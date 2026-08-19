@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "cantabile",
   "character_name": "Cantabile",
   "localized_name": "晓歌",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%99%93%E6%AD%8C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_497_ctable/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_497_ctable/meta.json",
-    "model": "defaultskin/build/build_char_497_ctable",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_497_ctable/defaultskin/build/build_char_497_ctable.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_497_ctable/defaultskin/build/build_char_497_ctable.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_497_ctable/defaultskin/build/build_char_497_ctable.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/497_ctable",
+  "source_asset": {
+    "assetId": "build_char_497_ctable",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "晓歌",
+    "appellation": "Cantabile",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_497_ctable.atlas",
+      ".png": "build_char_497_ctable.png",
+      ".skel": "build_char_497_ctable.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/cantabile/default/meta.json",
     "atlas": "standalone/assets/source/cantabile/default/build_char_497_ctable.atlas",
     "skeleton": "standalone/assets/source/cantabile/default/build_char_497_ctable.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_497_ctable/defaultskin/build/build_char_497_ctable.png",
-        "path": "standalone/assets/source/cantabile/default/build_char_497_ctable.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/497_ctable/build_char_497_ctable.png",
+        "path": "standalone/assets/source/cantabile/default/build_char_497_ctable.png",
+        "bytes": 254780,
+        "sha256": "ebe388b28548970e19a5ce3e758e8ab945c8f8f3f8c44423db668f787b1fba47"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10512,
+      "sha256": "d6dbb7bbd93f11928ac5e25332526a48a913c3cf0d879ccd464da51e9319478a"
+    },
+    "skeleton": {
+      "bytes": 362976,
+      "sha256": "36bec1ff3dbbc78086373a1bfb99199a1370f9e13da756e8bebd9e2467dc00a3"
+    }
   }
 }

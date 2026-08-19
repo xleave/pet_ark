@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "kroos",
   "character_name": "Kroos",
   "localized_name": "克洛丝",
@@ -9,25 +9,58 @@
   "variant_name": "星月漂流记",
   "skin_id": "sale-14",
   "skin_name": "星月漂流记",
-  "source_page": "https://prts.wiki/w/%E5%85%8B%E6%B4%9B%E4%B8%9D",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_124_kroos/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_124_kroos/meta.json",
-    "model": "char_124_kroos_sale_14/build/build_char_124_kroos_sale_14",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_124_kroos/char_124_kroos_sale_14/build/build_char_124_kroos_sale_14.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_124_kroos/char_124_kroos_sale_14/build/build_char_124_kroos_sale_14.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_124_kroos/char_124_kroos_sale_14/build/build_char_124_kroos_sale_14.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/124_kroos_sale#14",
+  "source_asset": {
+    "assetId": "build_char_124_kroos_sale#14",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "克洛丝",
+    "appellation": "Kroos",
+    "skinGroupId": "2025#sale",
+    "skinGroupName": "忒斯特收藏/XV",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_124_kroos_sale#14.atlas",
+      ".png": "build_char_124_kroos_sale#14.png",
+      ".skel": "build_char_124_kroos_sale#14.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/kroos/skin-sale-14/meta.json",
-    "atlas": "standalone/assets/source/kroos/skin-sale-14/build_char_124_kroos_sale_14.atlas",
-    "skeleton": "standalone/assets/source/kroos/skin-sale-14/build_char_124_kroos_sale_14.skel",
+    "atlas": "standalone/assets/source/kroos/skin-sale-14/build_char_124_kroos_sale#14.atlas",
+    "skeleton": "standalone/assets/source/kroos/skin-sale-14/build_char_124_kroos_sale#14.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_124_kroos/char_124_kroos_sale_14/build/build_char_124_kroos_sale_14.png",
-        "path": "standalone/assets/source/kroos/skin-sale-14/build_char_124_kroos_sale_14.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/124_kroos_sale%2314/build_char_124_kroos_sale%2314.png",
+        "path": "standalone/assets/source/kroos/skin-sale-14/build_char_124_kroos_sale#14.png",
+        "bytes": 503452,
+        "sha256": "51e988e85cc5280bf79d8c310772186e9eeb58c7332cf8a330aaa94d29f46678"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14735,
+      "sha256": "4c1891910759d4c0f32209b693aabe9ba475c0bc0a45ffe4a84b77ca38abdcfe"
+    },
+    "skeleton": {
+      "bytes": 339429,
+      "sha256": "2f914d7b424f55dbbccfb262308ad45ba823d43540eb1755972b591d94c80326"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "astesia",
   "character_name": "Astesia",
   "localized_name": "星极",
@@ -9,25 +9,58 @@
   "variant_name": "殿堂上的游禽",
   "skin_id": "shining-1",
   "skin_name": "殿堂上的游禽",
-  "source_page": "https://prts.wiki/w/%E6%98%9F%E6%9E%81",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/meta.json",
-    "model": "char_274_astesi_shining_1/build/build_char_274_astesi_shining_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/char_274_astesi_shining_1/build/build_char_274_astesi_shining_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/char_274_astesi_shining_1/build/build_char_274_astesi_shining_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/char_274_astesi_shining_1/build/build_char_274_astesi_shining_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/274_astesi_shining#1",
+  "source_asset": {
+    "assetId": "build_char_274_astesi_shining#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "星极",
+    "appellation": "Astesia",
+    "skinGroupId": "2021#shining",
+    "skinGroupName": "闪耀阶梯",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_274_astesi_shining#1.atlas",
+      ".png": "build_char_274_astesi_shining#1.png",
+      ".skel": "build_char_274_astesi_shining#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/astesia/skin-shining-1/meta.json",
-    "atlas": "standalone/assets/source/astesia/skin-shining-1/build_char_274_astesi_shining_1.atlas",
-    "skeleton": "standalone/assets/source/astesia/skin-shining-1/build_char_274_astesi_shining_1.skel",
+    "atlas": "standalone/assets/source/astesia/skin-shining-1/build_char_274_astesi_shining#1.atlas",
+    "skeleton": "standalone/assets/source/astesia/skin-shining-1/build_char_274_astesi_shining#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/char_274_astesi_shining_1/build/build_char_274_astesi_shining_1.png",
-        "path": "standalone/assets/source/astesia/skin-shining-1/build_char_274_astesi_shining_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/274_astesi_shining%231/build_char_274_astesi_shining%231.png",
+        "path": "standalone/assets/source/astesia/skin-shining-1/build_char_274_astesi_shining#1.png",
+        "bytes": 483416,
+        "sha256": "fccd23e855888a5dcdfc7b53e0276701865d91265306335d8591ef4957c708cc"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12936,
+      "sha256": "1ea152f7531af2407d7658a38bd17f66b14bc2283b89b46f68384ce4b838b1a8"
+    },
+    "skeleton": {
+      "bytes": 876904,
+      "sha256": "4dae9836f21c4b248d0308a8728e41b92f8523a2fb865f880e2854fe5589ab1e"
+    }
   }
 }

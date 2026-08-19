@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "dagda",
   "character_name": "Dagda",
   "localized_name": "达格达",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%BE%BE%E6%A0%BC%E8%BE%BE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_157_dagda/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_157_dagda/meta.json",
-    "model": "defaultskin/build/build_char_157_dagda",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_157_dagda/defaultskin/build/build_char_157_dagda.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_157_dagda/defaultskin/build/build_char_157_dagda.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_157_dagda/defaultskin/build/build_char_157_dagda.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/157_dagda",
+  "source_asset": {
+    "assetId": "build_char_157_dagda",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "达格达",
+    "appellation": "Dagda",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_157_dagda.atlas",
+      ".png": "build_char_157_dagda.png",
+      ".skel": "build_char_157_dagda.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/dagda/default/meta.json",
     "atlas": "standalone/assets/source/dagda/default/build_char_157_dagda.atlas",
     "skeleton": "standalone/assets/source/dagda/default/build_char_157_dagda.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_157_dagda/defaultskin/build/build_char_157_dagda.png",
-        "path": "standalone/assets/source/dagda/default/build_char_157_dagda.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/157_dagda/build_char_157_dagda.png",
+        "path": "standalone/assets/source/dagda/default/build_char_157_dagda.png",
+        "bytes": 247556,
+        "sha256": "b60e38d887b6435ad9dd681492424d3f728d3579f9b7a3ee02f3c23c891d9dc0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7329,
+      "sha256": "6ab24f92a2ec4857942db2e632508d943cb4e7a81bd4cef5af55e58c5ea59fab"
+    },
+    "skeleton": {
+      "bytes": 174757,
+      "sha256": "0c0df8784bcbd2b1d4e1f54c8d32a517f2768c763232625ba6ce2b6cbeb88367"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "snowsant",
   "character_name": "Snowsant",
   "localized_name": "雪雉",
@@ -9,25 +9,58 @@
   "variant_name": "天命勇者",
   "skin_id": "witch-2",
   "skin_name": "天命勇者",
-  "source_page": "https://prts.wiki/w/%E9%9B%AA%E9%9B%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_383_snsant/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_383_snsant/meta.json",
-    "model": "char_383_snsant_witch_2/build/build_char_383_snsant_witch_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_383_snsant/char_383_snsant_witch_2/build/build_char_383_snsant_witch_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_383_snsant/char_383_snsant_witch_2/build/build_char_383_snsant_witch_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_383_snsant/char_383_snsant_witch_2/build/build_char_383_snsant_witch_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/383_snsant_witch#2",
+  "source_asset": {
+    "assetId": "build_char_383_snsant_witch#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "雪雉",
+    "appellation": "Snowsant",
+    "skinGroupId": "2021#witch",
+    "skinGroupName": "巫异盛宴/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_383_snsant_witch#2.atlas",
+      ".png": "build_char_383_snsant_witch#2.png",
+      ".skel": "build_char_383_snsant_witch#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/snowsant/skin-witch-2/meta.json",
-    "atlas": "standalone/assets/source/snowsant/skin-witch-2/build_char_383_snsant_witch_2.atlas",
-    "skeleton": "standalone/assets/source/snowsant/skin-witch-2/build_char_383_snsant_witch_2.skel",
+    "atlas": "standalone/assets/source/snowsant/skin-witch-2/build_char_383_snsant_witch#2.atlas",
+    "skeleton": "standalone/assets/source/snowsant/skin-witch-2/build_char_383_snsant_witch#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_383_snsant/char_383_snsant_witch_2/build/build_char_383_snsant_witch_2.png",
-        "path": "standalone/assets/source/snowsant/skin-witch-2/build_char_383_snsant_witch_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/383_snsant_witch%232/build_char_383_snsant_witch%232.png",
+        "path": "standalone/assets/source/snowsant/skin-witch-2/build_char_383_snsant_witch#2.png",
+        "bytes": 292207,
+        "sha256": "9ecc9ff99646dd4df1eb92f7cf80cbf65cf6cea4bffaf8c48527fca10511241d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9470,
+      "sha256": "814b106a08f91654de684730c8c511509e54f3ecef0b396ece02221b77542731"
+    },
+    "skeleton": {
+      "bytes": 164196,
+      "sha256": "6e30d195385f29b80c226e28b820bd18d5e4447c10b4cc25b40c47890a5e3be1"
+    }
   }
 }

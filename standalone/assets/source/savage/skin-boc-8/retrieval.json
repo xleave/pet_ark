@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "savage",
   "character_name": "Savage",
   "localized_name": "暴行",
@@ -9,25 +9,58 @@
   "variant_name": "地底三百米",
   "skin_id": "boc-8",
   "skin_name": "地底三百米",
-  "source_page": "https://prts.wiki/w/%E6%9A%B4%E8%A1%8C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/meta.json",
-    "model": "char_230_savage_boc_8/build/build_char_230_savage_boc_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/char_230_savage_boc_8/build/build_char_230_savage_boc_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/char_230_savage_boc_8/build/build_char_230_savage_boc_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/char_230_savage_boc_8/build/build_char_230_savage_boc_8.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/230_savage_boc#8",
+  "source_asset": {
+    "assetId": "build_char_230_savage_boc#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "暴行",
+    "appellation": "Savage",
+    "skinGroupId": "2024#boc",
+    "skinGroupName": "斗争血脉/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_230_savage_boc#8.atlas",
+      ".png": "build_char_230_savage_boc#8.png",
+      ".skel": "build_char_230_savage_boc#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/savage/skin-boc-8/meta.json",
-    "atlas": "standalone/assets/source/savage/skin-boc-8/build_char_230_savage_boc_8.atlas",
-    "skeleton": "standalone/assets/source/savage/skin-boc-8/build_char_230_savage_boc_8.skel",
+    "atlas": "standalone/assets/source/savage/skin-boc-8/build_char_230_savage_boc#8.atlas",
+    "skeleton": "standalone/assets/source/savage/skin-boc-8/build_char_230_savage_boc#8.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_230_savage/char_230_savage_boc_8/build/build_char_230_savage_boc_8.png",
-        "path": "standalone/assets/source/savage/skin-boc-8/build_char_230_savage_boc_8.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/230_savage_boc%238/build_char_230_savage_boc%238.png",
+        "path": "standalone/assets/source/savage/skin-boc-8/build_char_230_savage_boc#8.png",
+        "bytes": 321231,
+        "sha256": "5cf3c2d0e9479752ef35c3ade761f22951cf529d99525e86c30f51a2b987fda8"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7656,
+      "sha256": "0cb97378a625927ca5ef920f53c6bd2fe4318a6a7674e5e1c4e08bf5685fb7e2"
+    },
+    "skeleton": {
+      "bytes": 214935,
+      "sha256": "e65bf802c77fa07c0c66e8130eb4930a7f56c4a310d15c2f9cfc2f27555ba934"
+    }
   }
 }

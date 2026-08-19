@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "almond",
   "character_name": "Almond",
   "localized_name": "杏仁",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%9D%8F%E4%BB%81",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4105_almond/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4105_almond/meta.json",
-    "model": "defaultskin/build/build_char_4105_almond",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4105_almond/defaultskin/build/build_char_4105_almond.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4105_almond/defaultskin/build/build_char_4105_almond.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4105_almond/defaultskin/build/build_char_4105_almond.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4105_almond",
+  "source_asset": {
+    "assetId": "build_char_4105_almond",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "杏仁",
+    "appellation": "Almond",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4105_almond.atlas",
+      ".png": "build_char_4105_almond.png",
+      ".skel": "build_char_4105_almond.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/almond/default/meta.json",
     "atlas": "standalone/assets/source/almond/default/build_char_4105_almond.atlas",
     "skeleton": "standalone/assets/source/almond/default/build_char_4105_almond.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4105_almond/defaultskin/build/build_char_4105_almond.png",
-        "path": "standalone/assets/source/almond/default/build_char_4105_almond.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4105_almond/build_char_4105_almond.png",
+        "path": "standalone/assets/source/almond/default/build_char_4105_almond.png",
+        "bytes": 217081,
+        "sha256": "4ea6c38806e8327ad08cca0a1de2da3c469aa2b61d93b031dd6f4df0322a2b49"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9774,
+      "sha256": "c071507ed74c53d3fba57e85a0405ed941c5e0f1ede5bde3e647340b5b9c8fc5"
+    },
+    "skeleton": {
+      "bytes": 175917,
+      "sha256": "f7c4ca18d889063c13ae8442169efb6a8e73272e32a1bcff017fc256fa7cc58c"
+    }
   }
 }

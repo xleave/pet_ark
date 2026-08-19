@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "corroserum",
   "character_name": "Corroserum",
   "localized_name": "蚀清",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%9A%80%E6%B8%85",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_489_serum/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_489_serum/meta.json",
-    "model": "defaultskin/build/build_char_489_serum",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_489_serum/defaultskin/build/build_char_489_serum.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_489_serum/defaultskin/build/build_char_489_serum.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_489_serum/defaultskin/build/build_char_489_serum.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/489_serum",
+  "source_asset": {
+    "assetId": "build_char_489_serum",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "蚀清",
+    "appellation": "Corroserum",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_489_serum.atlas",
+      ".png": "build_char_489_serum.png",
+      ".skel": "build_char_489_serum.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/corroserum/default/meta.json",
     "atlas": "standalone/assets/source/corroserum/default/build_char_489_serum.atlas",
     "skeleton": "standalone/assets/source/corroserum/default/build_char_489_serum.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_489_serum/defaultskin/build/build_char_489_serum.png",
-        "path": "standalone/assets/source/corroserum/default/build_char_489_serum.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/489_serum/build_char_489_serum.png",
+        "path": "standalone/assets/source/corroserum/default/build_char_489_serum.png",
+        "bytes": 254892,
+        "sha256": "566c31390cc0cfcb0b943422c6dd475be9ff4e67cbd873cad5f4816f0ead7a4b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10572,
+      "sha256": "4032d9a3aeffd2e85e33a15f28cc74deef463fd83067baebfb4b0ed410a6a51e"
+    },
+    "skeleton": {
+      "bytes": 188837,
+      "sha256": "8968a90ee9e08c430eb9e59fc69a405f2bc1336cdaf22ae4556527c90a6cb5e8"
+    }
   }
 }

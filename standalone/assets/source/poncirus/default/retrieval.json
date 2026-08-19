@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "poncirus",
   "character_name": "Poncirus",
   "localized_name": "青枳",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%9D%92%E6%9E%B3",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_488_buildr/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_488_buildr/meta.json",
-    "model": "defaultskin/build/build_char_488_buildr",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_488_buildr/defaultskin/build/build_char_488_buildr.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_488_buildr/defaultskin/build/build_char_488_buildr.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_488_buildr/defaultskin/build/build_char_488_buildr.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/488_buildr",
+  "source_asset": {
+    "assetId": "build_char_488_buildr",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "青枳",
+    "appellation": "Poncirus",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_488_buildr.atlas",
+      ".png": "build_char_488_buildr.png",
+      ".skel": "build_char_488_buildr.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/poncirus/default/meta.json",
     "atlas": "standalone/assets/source/poncirus/default/build_char_488_buildr.atlas",
     "skeleton": "standalone/assets/source/poncirus/default/build_char_488_buildr.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_488_buildr/defaultskin/build/build_char_488_buildr.png",
-        "path": "standalone/assets/source/poncirus/default/build_char_488_buildr.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/488_buildr/build_char_488_buildr.png",
+        "path": "standalone/assets/source/poncirus/default/build_char_488_buildr.png",
+        "bytes": 255990,
+        "sha256": "2eecae8d391a40f643a4cb1276f58e0801ce6e677fa7a03081f5c7623760f7fd"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7919,
+      "sha256": "6a05a0bb684285342eb5db713466e8cf8f031feb4b5d8f1364d8e4c2d83dd60c"
+    },
+    "skeleton": {
+      "bytes": 327457,
+      "sha256": "69bc6cc5f984cd25b6274234472a393f68940358bc9ca60da10f5b5237e1b479"
+    }
   }
 }

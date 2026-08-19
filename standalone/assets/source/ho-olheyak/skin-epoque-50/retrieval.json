@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ho-olheyak",
   "character_name": "Ho'olheyak",
   "localized_name": "霍尔海雅",
@@ -9,25 +9,58 @@
   "variant_name": "恒久祭礼",
   "skin_id": "epoque-50",
   "skin_name": "恒久祭礼",
-  "source_page": "https://prts.wiki/w/%E9%9C%8D%E5%B0%94%E6%B5%B7%E9%9B%85",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/meta.json",
-    "model": "char_4027_heyak_epoque_50/build/build_char_4027_heyak_epoque_50",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/char_4027_heyak_epoque_50/build/build_char_4027_heyak_epoque_50.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/char_4027_heyak_epoque_50/build/build_char_4027_heyak_epoque_50.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/char_4027_heyak_epoque_50/build/build_char_4027_heyak_epoque_50.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4027_heyak_epoque#50",
+  "source_asset": {
+    "assetId": "build_char_4027_heyak_epoque#50",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "霍尔海雅",
+    "appellation": "Ho'olheyak",
+    "skinGroupId": "2025#epoque#12",
+    "skinGroupName": "时代/XLIX",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4027_heyak_epoque#50.atlas",
+      ".png": "build_char_4027_heyak_epoque#50.png",
+      ".skel": "build_char_4027_heyak_epoque#50.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ho-olheyak/skin-epoque-50/meta.json",
-    "atlas": "standalone/assets/source/ho-olheyak/skin-epoque-50/build_char_4027_heyak_epoque_50.atlas",
-    "skeleton": "standalone/assets/source/ho-olheyak/skin-epoque-50/build_char_4027_heyak_epoque_50.skel",
+    "atlas": "standalone/assets/source/ho-olheyak/skin-epoque-50/build_char_4027_heyak_epoque#50.atlas",
+    "skeleton": "standalone/assets/source/ho-olheyak/skin-epoque-50/build_char_4027_heyak_epoque#50.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/char_4027_heyak_epoque_50/build/build_char_4027_heyak_epoque_50.png",
-        "path": "standalone/assets/source/ho-olheyak/skin-epoque-50/build_char_4027_heyak_epoque_50.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4027_heyak_epoque%2350/build_char_4027_heyak_epoque%2350.png",
+        "path": "standalone/assets/source/ho-olheyak/skin-epoque-50/build_char_4027_heyak_epoque#50.png",
+        "bytes": 432130,
+        "sha256": "e1b2fc78629d63f7de9ebcfa0bedb187c978f7db1cae97387600e67d81437631"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12035,
+      "sha256": "85b4d1400ee51e2ef1fed460b47b74953a58c8bb922eb316f88aaa6ce369ad78"
+    },
+    "skeleton": {
+      "bytes": 336383,
+      "sha256": "51dc2ab283600b11358757ce297495898a3b5b6a50e124a3c1fb498f847c3581"
+    }
   }
 }

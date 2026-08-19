@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "amiya",
   "character_name": "Amiya",
   "localized_name": "阿米娅",
@@ -9,25 +9,58 @@
   "variant_name": "播种者",
   "skin_id": "test-1",
   "skin_name": "播种者",
-  "source_page": "https://prts.wiki/w/%E9%98%BF%E7%B1%B3%E5%A8%85",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/meta.json",
-    "model": "char_002_amiya_test_1/build/build_char_002_amiya_test_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_test_1/build/build_char_002_amiya_test_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_test_1/build/build_char_002_amiya_test_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_test_1/build/build_char_002_amiya_test_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/002_amiya_test#1",
+  "source_asset": {
+    "assetId": "build_char_002_amiya_test#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "阿米娅",
+    "appellation": "Amiya",
+    "skinGroupId": "2020#sale#3",
+    "skinGroupName": "忒斯特收藏/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_002_amiya_test#1.atlas",
+      ".png": "build_char_002_amiya_test#1.png",
+      ".skel": "build_char_002_amiya_test#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/amiya/skin-test-1/meta.json",
-    "atlas": "standalone/assets/source/amiya/skin-test-1/build_char_002_amiya_test_1.atlas",
-    "skeleton": "standalone/assets/source/amiya/skin-test-1/build_char_002_amiya_test_1.skel",
+    "atlas": "standalone/assets/source/amiya/skin-test-1/build_char_002_amiya_test#1.atlas",
+    "skeleton": "standalone/assets/source/amiya/skin-test-1/build_char_002_amiya_test#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_002_amiya/char_002_amiya_test_1/build/build_char_002_amiya_test_1.png",
-        "path": "standalone/assets/source/amiya/skin-test-1/build_char_002_amiya_test_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/002_amiya_test%231/build_char_002_amiya_test%231.png",
+        "path": "standalone/assets/source/amiya/skin-test-1/build_char_002_amiya_test#1.png",
+        "bytes": 552308,
+        "sha256": "7be471700259b133691056f201442bc7f6f31088182b0494f09679b31d3cc8fd"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12613,
+      "sha256": "40b820837cbfb679bc9b80f5f5ea02e684cafe458f18d2c5eb56c84dc969ec8d"
+    },
+    "skeleton": {
+      "bytes": 437926,
+      "sha256": "23a47f8ad2bcc231b7ff77fa54f71192224294bb26b31ae4fcaede921cc1a55d"
+    }
   }
 }

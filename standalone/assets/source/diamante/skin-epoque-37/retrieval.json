@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "diamante",
   "character_name": "Diamante",
   "localized_name": "折光",
@@ -9,25 +9,58 @@
   "variant_name": "斜照",
   "skin_id": "epoque-37",
   "skin_name": "斜照",
-  "source_page": "https://prts.wiki/w/%E6%8A%98%E5%85%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_499_kaitou/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_499_kaitou/meta.json",
-    "model": "char_499_kaitou_epoque_37/build/build_char_499_kaitou_epoque_37",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_499_kaitou/char_499_kaitou_epoque_37/build/build_char_499_kaitou_epoque_37.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_499_kaitou/char_499_kaitou_epoque_37/build/build_char_499_kaitou_epoque_37.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_499_kaitou/char_499_kaitou_epoque_37/build/build_char_499_kaitou_epoque_37.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/499_kaitou_epoque#37",
+  "source_asset": {
+    "assetId": "build_char_499_kaitou_epoque#37",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "折光",
+    "appellation": "Diamante",
+    "skinGroupId": "2024#epoque#8",
+    "skinGroupName": "时代/XXXVII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_499_kaitou_epoque#37.atlas",
+      ".png": "build_char_499_kaitou_epoque#37.png",
+      ".skel": "build_char_499_kaitou_epoque#37.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/diamante/skin-epoque-37/meta.json",
-    "atlas": "standalone/assets/source/diamante/skin-epoque-37/build_char_499_kaitou_epoque_37.atlas",
-    "skeleton": "standalone/assets/source/diamante/skin-epoque-37/build_char_499_kaitou_epoque_37.skel",
+    "atlas": "standalone/assets/source/diamante/skin-epoque-37/build_char_499_kaitou_epoque#37.atlas",
+    "skeleton": "standalone/assets/source/diamante/skin-epoque-37/build_char_499_kaitou_epoque#37.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_499_kaitou/char_499_kaitou_epoque_37/build/build_char_499_kaitou_epoque_37.png",
-        "path": "standalone/assets/source/diamante/skin-epoque-37/build_char_499_kaitou_epoque_37.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/499_kaitou_epoque%2337/build_char_499_kaitou_epoque%2337.png",
+        "path": "standalone/assets/source/diamante/skin-epoque-37/build_char_499_kaitou_epoque#37.png",
+        "bytes": 301231,
+        "sha256": "03975adb1c13bcdf85154cf9f9cfb9f5694576ce9b791f33d3d5ab98bdbd15a7"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9273,
+      "sha256": "5db21976a73ba237f794505be417fdfac3bfaa4d60f88de8d17255f2543fa4a5"
+    },
+    "skeleton": {
+      "bytes": 290483,
+      "sha256": "7f22f92669cfbd6980f048d0bcdd72039e66aa6fd39d961efe33ed3cc44a38eb"
+    }
   }
 }

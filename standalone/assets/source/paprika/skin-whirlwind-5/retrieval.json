@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "paprika",
   "character_name": "Paprika",
   "localized_name": "明椒",
@@ -9,25 +9,58 @@
   "variant_name": "来路",
   "skin_id": "whirlwind-5",
   "skin_name": "来路",
-  "source_page": "https://prts.wiki/w/%E6%98%8E%E6%A4%92",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/meta.json",
-    "model": "char_4071_peper_whirlwind_5/build/build_char_4071_peper_whirlwind_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/char_4071_peper_whirlwind_5/build/build_char_4071_peper_whirlwind_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/char_4071_peper_whirlwind_5/build/build_char_4071_peper_whirlwind_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/char_4071_peper_whirlwind_5/build/build_char_4071_peper_whirlwind_5.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4071_peper_whirlwind#5",
+  "source_asset": {
+    "assetId": "build_char_4071_peper_whirlwind#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "明椒",
+    "appellation": "Paprika",
+    "skinGroupId": "2023#whirlwind",
+    "skinGroupName": "0011/飙系列/Ⅴ",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4071_peper_whirlwind#5.atlas",
+      ".png": "build_char_4071_peper_whirlwind#5.png",
+      ".skel": "build_char_4071_peper_whirlwind#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/paprika/skin-whirlwind-5/meta.json",
-    "atlas": "standalone/assets/source/paprika/skin-whirlwind-5/build_char_4071_peper_whirlwind_5.atlas",
-    "skeleton": "standalone/assets/source/paprika/skin-whirlwind-5/build_char_4071_peper_whirlwind_5.skel",
+    "atlas": "standalone/assets/source/paprika/skin-whirlwind-5/build_char_4071_peper_whirlwind#5.atlas",
+    "skeleton": "standalone/assets/source/paprika/skin-whirlwind-5/build_char_4071_peper_whirlwind#5.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/char_4071_peper_whirlwind_5/build/build_char_4071_peper_whirlwind_5.png",
-        "path": "standalone/assets/source/paprika/skin-whirlwind-5/build_char_4071_peper_whirlwind_5.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4071_peper_whirlwind%235/build_char_4071_peper_whirlwind%235.png",
+        "path": "standalone/assets/source/paprika/skin-whirlwind-5/build_char_4071_peper_whirlwind#5.png",
+        "bytes": 260854,
+        "sha256": "78d9e2e3e3c4f632b28f1226165812096e86cc6f986c37b9ba3c9c4f22699a50"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10921,
+      "sha256": "c620aaeb1adb067bb2a7dd883a7aa9042b079240ce03da30b1799de7c4bceda2"
+    },
+    "skeleton": {
+      "bytes": 443648,
+      "sha256": "4cb94083010b6c20a53100d98f9a5b7fdb7328eddcdf223f6563d38b7a265f51"
+    }
   }
 }

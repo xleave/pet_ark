@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "popukar",
   "character_name": "Popukar",
   "localized_name": "泡普卡",
@@ -9,25 +9,58 @@
   "variant_name": "魔女的秋千",
   "skin_id": "witch-5",
   "skin_name": "魔女的秋千",
-  "source_page": "https://prts.wiki/w/%E6%B3%A1%E6%99%AE%E5%8D%A1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/meta.json",
-    "model": "char_281_popka_witch_5/build/build_char_281_popka_witch_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/char_281_popka_witch_5/build/build_char_281_popka_witch_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/char_281_popka_witch_5/build/build_char_281_popka_witch_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/char_281_popka_witch_5/build/build_char_281_popka_witch_5.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/281_popka_witch#5",
+  "source_asset": {
+    "assetId": "build_char_281_popka_witch#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "泡普卡",
+    "appellation": "Popukar",
+    "skinGroupId": "2024#witch",
+    "skinGroupName": "巫异盛宴/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_281_popka_witch#5.atlas",
+      ".png": "build_char_281_popka_witch#5.png",
+      ".skel": "build_char_281_popka_witch#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/popukar/skin-witch-5/meta.json",
-    "atlas": "standalone/assets/source/popukar/skin-witch-5/build_char_281_popka_witch_5.atlas",
-    "skeleton": "standalone/assets/source/popukar/skin-witch-5/build_char_281_popka_witch_5.skel",
+    "atlas": "standalone/assets/source/popukar/skin-witch-5/build_char_281_popka_witch#5.atlas",
+    "skeleton": "standalone/assets/source/popukar/skin-witch-5/build_char_281_popka_witch#5.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/char_281_popka_witch_5/build/build_char_281_popka_witch_5.png",
-        "path": "standalone/assets/source/popukar/skin-witch-5/build_char_281_popka_witch_5.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/281_popka_witch%235/build_char_281_popka_witch%235.png",
+        "path": "standalone/assets/source/popukar/skin-witch-5/build_char_281_popka_witch#5.png",
+        "bytes": 374493,
+        "sha256": "b093204ec5667e222e816e3d67eae3c419733cc2605fae066cea371a26fcf146"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13109,
+      "sha256": "2ad1567a19d0409b2efd9bad915a6cda7ff32d8a1e2228cae91fcdad3067e140"
+    },
+    "skeleton": {
+      "bytes": 406853,
+      "sha256": "7abda84359d3740fd58e07cf4b2a19ed15db3c81dd7cbdb40c34222256db4347"
+    }
   }
 }

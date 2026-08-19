@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "hibiscus-the-purifier",
   "character_name": "Hibiscus the Purifier",
   "localized_name": "濯尘芙蓉",
@@ -9,25 +9,59 @@
   "variant_name": "浪漫满厢",
   "skin_id": "unveiling-2",
   "skin_name": "浪漫满厢",
-  "source_page": "https://prts.wiki/w/%E6%BF%AF%E5%B0%98%E8%8A%99%E8%93%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1024_hbisc2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1024_hbisc2/meta.json",
-    "model": "char_1024_hbisc2_unveiling_2/build/build_char_1024_hbisc2_unveiling_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1024_hbisc2/char_1024_hbisc2_unveiling_2/build/build_char_1024_hbisc2_unveiling_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1024_hbisc2/char_1024_hbisc2_unveiling_2/build/build_char_1024_hbisc2_unveiling_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1024_hbisc2/char_1024_hbisc2_unveiling_2/build/build_char_1024_hbisc2_unveiling_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1024_hbisc2_unveiling#2",
+  "source_asset": {
+    "assetId": "build_char_1024_hbisc2_unveiling#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "濯尘芙蓉",
+    "appellation": "Hibiscus the Purifier",
+    "skinGroupId": "2025#unveiling",
+    "skinGroupName": "待予花冠/II",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1024_hbisc2_unveiling#2.atlas",
+      ".png": "build_char_1024_hbisc2_unveiling#2.png",
+      ".skel": "build_char_1024_hbisc2_unveiling#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/hibiscus-the-purifier/skin-unveiling-2/meta.json",
-    "atlas": "standalone/assets/source/hibiscus-the-purifier/skin-unveiling-2/build_char_1024_hbisc2_unveiling_2.atlas",
-    "skeleton": "standalone/assets/source/hibiscus-the-purifier/skin-unveiling-2/build_char_1024_hbisc2_unveiling_2.skel",
+    "atlas": "standalone/assets/source/hibiscus-the-purifier/skin-unveiling-2/build_char_1024_hbisc2_unveiling#2.atlas",
+    "skeleton": "standalone/assets/source/hibiscus-the-purifier/skin-unveiling-2/build_char_1024_hbisc2_unveiling#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1024_hbisc2/char_1024_hbisc2_unveiling_2/build/build_char_1024_hbisc2_unveiling_2.png",
-        "path": "standalone/assets/source/hibiscus-the-purifier/skin-unveiling-2/build_char_1024_hbisc2_unveiling_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1024_hbisc2_unveiling%232/build_char_1024_hbisc2_unveiling%232.png",
+        "path": "standalone/assets/source/hibiscus-the-purifier/skin-unveiling-2/build_char_1024_hbisc2_unveiling#2.png",
+        "bytes": 320020,
+        "sha256": "83f89c1ddcf603da08d25d2e61de30fe8229ab8abe0e7ec6ccfceb3767edd73e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12330,
+      "sha256": "511ba1bc21cee49ca8b2f38a0de103fc26198c2f7bb830eecde033fb767d9ca4"
+    },
+    "skeleton": {
+      "bytes": 185523,
+      "sha256": "52b58567ee3ae51f5fb8d61507ba997a109f7f5644d60cfcff844a0068677c00"
+    }
   }
 }

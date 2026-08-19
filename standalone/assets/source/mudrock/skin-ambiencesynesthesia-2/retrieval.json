@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mudrock",
   "character_name": "Mudrock",
   "localized_name": "泥岩",
@@ -9,25 +9,59 @@
   "variant_name": "黑曜石",
   "skin_id": "ambiencesynesthesia-2",
   "skin_name": "黑曜石",
-  "source_page": "https://prts.wiki/w/%E6%B3%A5%E5%B2%A9",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/meta.json",
-    "model": "char_311_mudrok_ambiencesynesthesia_2/build/build_char_311_mudrok_ambienceSynesthesia_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_ambiencesynesthesia_2/build/build_char_311_mudrok_ambienceSynesthesia_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_ambiencesynesthesia_2/build/build_char_311_mudrok_ambienceSynesthesia_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_ambiencesynesthesia_2/build/build_char_311_mudrok_ambienceSynesthesia_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/311_mudrok_ambiencesynesthesia#2",
+  "source_asset": {
+    "assetId": "build_char_311_mudrok_ambiencesynesthesia#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "泥岩",
+    "appellation": "Mudrock",
+    "skinGroupId": "2022#ambienceSynesthesia",
+    "skinGroupName": "音律联觉/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_311_mudrok_ambienceSynesthesia#2.atlas",
+      ".png": "build_char_311_mudrok_ambienceSynesthesia#2.png",
+      ".skel": "build_char_311_mudrok_ambienceSynesthesia#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mudrock/skin-ambiencesynesthesia-2/meta.json",
-    "atlas": "standalone/assets/source/mudrock/skin-ambiencesynesthesia-2/build_char_311_mudrok_ambienceSynesthesia_2.atlas",
-    "skeleton": "standalone/assets/source/mudrock/skin-ambiencesynesthesia-2/build_char_311_mudrok_ambienceSynesthesia_2.skel",
+    "atlas": "standalone/assets/source/mudrock/skin-ambiencesynesthesia-2/build_char_311_mudrok_ambiencesynesthesia#2.atlas",
+    "skeleton": "standalone/assets/source/mudrock/skin-ambiencesynesthesia-2/build_char_311_mudrok_ambiencesynesthesia#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/char_311_mudrok_ambiencesynesthesia_2/build/build_char_311_mudrok_ambienceSynesthesia_2.png",
-        "path": "standalone/assets/source/mudrock/skin-ambiencesynesthesia-2/build_char_311_mudrok_ambienceSynesthesia_2.png"
+        "atlas_name": "build_char_311_mudrok_ambienceSynesthesia#2.png",
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/311_mudrok_ambiencesynesthesia%232/build_char_311_mudrok_ambiencesynesthesia%232.png",
+        "path": "standalone/assets/source/mudrock/skin-ambiencesynesthesia-2/build_char_311_mudrok_ambiencesynesthesia#2.png",
+        "bytes": 353868,
+        "sha256": "f739ba134918648a411cd66b939773c0ca95b06cce17f8ddd463110403728ef4"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13603,
+      "sha256": "68f7fdd46d7cf0d66518e52f394c1ece4d8a552872b2f4c85b17b8b6c89d20a1"
+    },
+    "skeleton": {
+      "bytes": 555484,
+      "sha256": "191409d07d7d28fb26dbd148c43c74d665e567b4b9c5810dfa8e528812d74561"
+    }
   }
 }

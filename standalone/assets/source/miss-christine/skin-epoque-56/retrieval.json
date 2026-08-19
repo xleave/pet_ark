@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "miss-christine",
   "character_name": "Miss.Christine",
   "localized_name": "Miss.Christine",
@@ -9,25 +9,58 @@
   "variant_name": "底绒舞会",
   "skin_id": "epoque-56",
   "skin_name": "底绒舞会",
-  "source_page": "https://prts.wiki/w/Miss.Christine",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/meta.json",
-    "model": "char_4198_christ_epoque_56/build/build_char_4198_christ_epoque_56",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/char_4198_christ_epoque_56/build/build_char_4198_christ_epoque_56.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/char_4198_christ_epoque_56/build/build_char_4198_christ_epoque_56.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/char_4198_christ_epoque_56/build/build_char_4198_christ_epoque_56.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4198_christ_epoque#56",
+  "source_asset": {
+    "assetId": "build_char_4198_christ_epoque#56",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "Miss.Christine",
+    "appellation": "Miss.Christine",
+    "skinGroupId": "2026#epoque#7",
+    "skinGroupName": "时代/LVI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4198_christ_epoque#56.atlas",
+      ".png": "build_char_4198_christ_epoque#56.png",
+      ".skel": "build_char_4198_christ_epoque#56.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/miss-christine/skin-epoque-56/meta.json",
-    "atlas": "standalone/assets/source/miss-christine/skin-epoque-56/build_char_4198_christ_epoque_56.atlas",
-    "skeleton": "standalone/assets/source/miss-christine/skin-epoque-56/build_char_4198_christ_epoque_56.skel",
+    "atlas": "standalone/assets/source/miss-christine/skin-epoque-56/build_char_4198_christ_epoque#56.atlas",
+    "skeleton": "standalone/assets/source/miss-christine/skin-epoque-56/build_char_4198_christ_epoque#56.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/char_4198_christ_epoque_56/build/build_char_4198_christ_epoque_56.png",
-        "path": "standalone/assets/source/miss-christine/skin-epoque-56/build_char_4198_christ_epoque_56.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4198_christ_epoque%2356/build_char_4198_christ_epoque%2356.png",
+        "path": "standalone/assets/source/miss-christine/skin-epoque-56/build_char_4198_christ_epoque#56.png",
+        "bytes": 384323,
+        "sha256": "1aa9a0cc4bb260a95d10801432f590bde99d56c1033121c45909e3c338fe0fc3"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10551,
+      "sha256": "efe4eee120e35b26d8b7171f02957cb96abbbcfa39f5554bdaaa455ca8c678a8"
+    },
+    "skeleton": {
+      "bytes": 310302,
+      "sha256": "5b7e0148fcc776885b44afe65f68239d9203aaf91e3943061dca7a7516df1c0b"
+    }
   }
 }

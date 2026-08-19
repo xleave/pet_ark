@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "goldenglow",
   "character_name": "Goldenglow",
   "localized_name": "澄闪",
@@ -9,25 +9,58 @@
   "variant_name": "花房茶话会",
   "skin_id": "sanrio-1",
   "skin_name": "花房茶话会",
-  "source_page": "https://prts.wiki/w/%E6%BE%84%E9%97%AA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/meta.json",
-    "model": "char_377_gdglow_sanrio_1/build/build_char_377_gdglow_sanrio_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/char_377_gdglow_sanrio_1/build/build_char_377_gdglow_sanrio_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/char_377_gdglow_sanrio_1/build/build_char_377_gdglow_sanrio_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/char_377_gdglow_sanrio_1/build/build_char_377_gdglow_sanrio_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/377_gdglow_sanrio#1",
+  "source_asset": {
+    "assetId": "build_char_377_gdglow_sanrio#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "澄闪",
+    "appellation": "Goldenglow",
+    "skinGroupId": "2024#sanrio",
+    "skinGroupName": "三丽鸥家族",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_377_gdglow_sanrio#1.atlas",
+      ".png": "build_char_377_gdglow_sanrio#1.png",
+      ".skel": "build_char_377_gdglow_sanrio#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/goldenglow/skin-sanrio-1/meta.json",
-    "atlas": "standalone/assets/source/goldenglow/skin-sanrio-1/build_char_377_gdglow_sanrio_1.atlas",
-    "skeleton": "standalone/assets/source/goldenglow/skin-sanrio-1/build_char_377_gdglow_sanrio_1.skel",
+    "atlas": "standalone/assets/source/goldenglow/skin-sanrio-1/build_char_377_gdglow_sanrio#1.atlas",
+    "skeleton": "standalone/assets/source/goldenglow/skin-sanrio-1/build_char_377_gdglow_sanrio#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/char_377_gdglow_sanrio_1/build/build_char_377_gdglow_sanrio_1.png",
-        "path": "standalone/assets/source/goldenglow/skin-sanrio-1/build_char_377_gdglow_sanrio_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/377_gdglow_sanrio%231/build_char_377_gdglow_sanrio%231.png",
+        "path": "standalone/assets/source/goldenglow/skin-sanrio-1/build_char_377_gdglow_sanrio#1.png",
+        "bytes": 697653,
+        "sha256": "7c13ce6b81b51e3daacf96c13acce44db9f6fe1fcdfdf03dad803b22df51bece"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 21860,
+      "sha256": "29191c1569cfb4e223892b176dd28ad00f481edbed278a89ff73defb33bcbd27"
+    },
+    "skeleton": {
+      "bytes": 525728,
+      "sha256": "59d42e063e912e17c0267bde7ed8985e51324c81c4bb1ffeebd605e3822617d3"
+    }
   }
 }

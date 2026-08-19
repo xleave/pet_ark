@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "folinic",
   "character_name": "Folinic",
   "localized_name": "亚叶",
@@ -9,25 +9,58 @@
   "variant_name": "残葛",
   "skin_id": "wild-4",
   "skin_name": "残葛",
-  "source_page": "https://prts.wiki/w/%E4%BA%9A%E5%8F%B6",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_345_folnic/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_345_folnic/meta.json",
-    "model": "char_345_folnic_wild_4/build/build_char_345_folnic_wild_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_345_folnic/char_345_folnic_wild_4/build/build_char_345_folnic_wild_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_345_folnic/char_345_folnic_wild_4/build/build_char_345_folnic_wild_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_345_folnic/char_345_folnic_wild_4/build/build_char_345_folnic_wild_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/345_folnic_wild#4",
+  "source_asset": {
+    "assetId": "build_char_345_folnic_wild#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "亚叶",
+    "appellation": "Folinic",
+    "skinGroupId": "2021#wild",
+    "skinGroupName": "生命之地/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_345_folnic_wild#4.atlas",
+      ".png": "build_char_345_folnic_wild#4.png",
+      ".skel": "build_char_345_folnic_wild#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/folinic/skin-wild-4/meta.json",
-    "atlas": "standalone/assets/source/folinic/skin-wild-4/build_char_345_folnic_wild_4.atlas",
-    "skeleton": "standalone/assets/source/folinic/skin-wild-4/build_char_345_folnic_wild_4.skel",
+    "atlas": "standalone/assets/source/folinic/skin-wild-4/build_char_345_folnic_wild#4.atlas",
+    "skeleton": "standalone/assets/source/folinic/skin-wild-4/build_char_345_folnic_wild#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_345_folnic/char_345_folnic_wild_4/build/build_char_345_folnic_wild_4.png",
-        "path": "standalone/assets/source/folinic/skin-wild-4/build_char_345_folnic_wild_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/345_folnic_wild%234/build_char_345_folnic_wild%234.png",
+        "path": "standalone/assets/source/folinic/skin-wild-4/build_char_345_folnic_wild#4.png",
+        "bytes": 222522,
+        "sha256": "9f4677283080061ba2e5fa3ee9fb3b23890ebbfb056ef22c2dcc8bedc48146ca"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8028,
+      "sha256": "db18a8aed6aae4da8b8413c77669ac07bf66dbdf70ed4cb695c357254acf906d"
+    },
+    "skeleton": {
+      "bytes": 124819,
+      "sha256": "530a33ac470e08e97c251dfebf2e6720cb3dc52b790c53da4e29cf59361457f7"
+    }
   }
 }

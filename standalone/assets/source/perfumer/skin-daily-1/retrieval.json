@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "perfumer",
   "character_name": "Perfumer",
   "localized_name": "调香师",
@@ -9,25 +9,58 @@
   "variant_name": "植物种志",
   "skin_id": "daily-1",
   "skin_name": "植物种志",
-  "source_page": "https://prts.wiki/w/%E8%B0%83%E9%A6%99%E5%B8%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/meta.json",
-    "model": "char_181_flower_daily_1/build/build_char_181_flower_daily_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/char_181_flower_daily_1/build/build_char_181_flower_daily_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/char_181_flower_daily_1/build/build_char_181_flower_daily_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/char_181_flower_daily_1/build/build_char_181_flower_daily_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/181_flower_daily#1",
+  "source_asset": {
+    "assetId": "build_char_181_flower_daily#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "调香师",
+    "appellation": "Perfumer",
+    "skinGroupId": "2018#sale",
+    "skinGroupName": "忒斯特收藏/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_181_flower_daily#1.atlas",
+      ".png": "build_char_181_flower_daily#1.png",
+      ".skel": "build_char_181_flower_daily#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/perfumer/skin-daily-1/meta.json",
-    "atlas": "standalone/assets/source/perfumer/skin-daily-1/build_char_181_flower_daily_1.atlas",
-    "skeleton": "standalone/assets/source/perfumer/skin-daily-1/build_char_181_flower_daily_1.skel",
+    "atlas": "standalone/assets/source/perfumer/skin-daily-1/build_char_181_flower_daily#1.atlas",
+    "skeleton": "standalone/assets/source/perfumer/skin-daily-1/build_char_181_flower_daily#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/char_181_flower_daily_1/build/build_char_181_flower_daily_1.png",
-        "path": "standalone/assets/source/perfumer/skin-daily-1/build_char_181_flower_daily_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/181_flower_daily%231/build_char_181_flower_daily%231.png",
+        "path": "standalone/assets/source/perfumer/skin-daily-1/build_char_181_flower_daily#1.png",
+        "bytes": 234861,
+        "sha256": "a5b953c0fbbbf9b2d8882808852e0f3302873cff60844b7b8780c2a6c5362736"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5586,
+      "sha256": "9a8983fac6b62f1e2fd414c12e0cf993f06a0b8754622a8455d25246f2824692"
+    },
+    "skeleton": {
+      "bytes": 96492,
+      "sha256": "989ad5c45e7b395cc44c456938f1080d3c1ff9542ce9bbf775810631ca128847"
+    }
   }
 }

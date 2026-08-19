@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "hellagur",
   "character_name": "Hellagur",
   "localized_name": "赫拉格",
@@ -9,25 +9,58 @@
   "variant_name": "歧路幻影",
   "skin_id": "boc-2",
   "skin_name": "歧路幻影",
-  "source_page": "https://prts.wiki/w/%E8%B5%AB%E6%8B%89%E6%A0%BC",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/meta.json",
-    "model": "char_188_helage_boc_2/build/build_char_188_helage_boc_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/char_188_helage_boc_2/build/build_char_188_helage_boc_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/char_188_helage_boc_2/build/build_char_188_helage_boc_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/char_188_helage_boc_2/build/build_char_188_helage_boc_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/188_helage_boc#2",
+  "source_asset": {
+    "assetId": "build_char_188_helage_boc#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "赫拉格",
+    "appellation": "Hellagur",
+    "skinGroupId": "2021#boc",
+    "skinGroupName": "斗争血脉/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_188_helage_boc#2.atlas",
+      ".png": "build_char_188_helage_boc#2.png",
+      ".skel": "build_char_188_helage_boc#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/hellagur/skin-boc-2/meta.json",
-    "atlas": "standalone/assets/source/hellagur/skin-boc-2/build_char_188_helage_boc_2.atlas",
-    "skeleton": "standalone/assets/source/hellagur/skin-boc-2/build_char_188_helage_boc_2.skel",
+    "atlas": "standalone/assets/source/hellagur/skin-boc-2/build_char_188_helage_boc#2.atlas",
+    "skeleton": "standalone/assets/source/hellagur/skin-boc-2/build_char_188_helage_boc#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_188_helage/char_188_helage_boc_2/build/build_char_188_helage_boc_2.png",
-        "path": "standalone/assets/source/hellagur/skin-boc-2/build_char_188_helage_boc_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/188_helage_boc%232/build_char_188_helage_boc%232.png",
+        "path": "standalone/assets/source/hellagur/skin-boc-2/build_char_188_helage_boc#2.png",
+        "bytes": 325455,
+        "sha256": "638664d4cf1e3ae4b2a08e8afd223ec5e52cabfe9a006ab6f1fab8613daaa731"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9402,
+      "sha256": "3276f94b2234120bb112464d45d4b49103439c12cc334d15b3df9e78fa24c2b1"
+    },
+    "skeleton": {
+      "bytes": 393093,
+      "sha256": "9a69922bc6395c8cc32800df3aa8ee12f83d685fdd850452af7413e13a887f29"
+    }
   }
 }

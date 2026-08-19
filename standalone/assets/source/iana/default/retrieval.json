@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "iana",
   "character_name": "Iana",
   "localized_name": "双月",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%8F%8C%E6%9C%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4124_iana/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4124_iana/meta.json",
-    "model": "defaultskin/build/build_char_4124_iana",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4124_iana/defaultskin/build/build_char_4124_iana.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4124_iana/defaultskin/build/build_char_4124_iana.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4124_iana/defaultskin/build/build_char_4124_iana.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4124_iana",
+  "source_asset": {
+    "assetId": "build_char_4124_iana",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "双月",
+    "appellation": "Iana",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4124_iana.atlas",
+      ".png": "build_char_4124_iana.png",
+      ".skel": "build_char_4124_iana.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/iana/default/meta.json",
     "atlas": "standalone/assets/source/iana/default/build_char_4124_iana.atlas",
     "skeleton": "standalone/assets/source/iana/default/build_char_4124_iana.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4124_iana/defaultskin/build/build_char_4124_iana.png",
-        "path": "standalone/assets/source/iana/default/build_char_4124_iana.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4124_iana/build_char_4124_iana.png",
+        "path": "standalone/assets/source/iana/default/build_char_4124_iana.png",
+        "bytes": 406335,
+        "sha256": "ba21f8fdea8a04f508355f32518ee2e0e82d93b0c4636cea393f795d74408ae8"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8658,
+      "sha256": "09b3974f6b611f8e80d2e20c3ddee1ad405002901646e2f4f43f61aa92b1c5c2"
+    },
+    "skeleton": {
+      "bytes": 130144,
+      "sha256": "90dce738cde393dfd21ea833b1cf153a0055daea8e6ccc5c75cb43a8ff97e436"
+    }
   }
 }

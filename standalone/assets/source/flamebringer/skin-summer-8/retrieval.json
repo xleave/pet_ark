@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "flamebringer",
   "character_name": "Flamebringer",
   "localized_name": "炎客",
@@ -9,25 +9,58 @@
   "variant_name": "悠然假日 HDm04",
   "skin_id": "summer-8",
   "skin_name": "悠然假日 HDm04",
-  "source_page": "https://prts.wiki/w/%E7%82%8E%E5%AE%A2",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_131_flameb/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_131_flameb/meta.json",
-    "model": "char_131_flameb_summer_8/build/build_char_131_flameb_summer_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_131_flameb/char_131_flameb_summer_8/build/build_char_131_flameb_summer_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_131_flameb/char_131_flameb_summer_8/build/build_char_131_flameb_summer_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_131_flameb/char_131_flameb_summer_8/build/build_char_131_flameb_summer_8.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/131_flameb_summer#8",
+  "source_asset": {
+    "assetId": "build_char_131_flameb_summer#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "炎客",
+    "appellation": "Flamebringer",
+    "skinGroupId": "2022#summer",
+    "skinGroupName": "珊瑚海岸/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_131_flameb_summer#8.atlas",
+      ".png": "build_char_131_flameb_summer#8.png",
+      ".skel": "build_char_131_flameb_summer#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/flamebringer/skin-summer-8/meta.json",
-    "atlas": "standalone/assets/source/flamebringer/skin-summer-8/build_char_131_flameb_summer_8.atlas",
-    "skeleton": "standalone/assets/source/flamebringer/skin-summer-8/build_char_131_flameb_summer_8.skel",
+    "atlas": "standalone/assets/source/flamebringer/skin-summer-8/build_char_131_flameb_summer#8.atlas",
+    "skeleton": "standalone/assets/source/flamebringer/skin-summer-8/build_char_131_flameb_summer#8.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_131_flameb/char_131_flameb_summer_8/build/build_char_131_flameb_summer_8.png",
-        "path": "standalone/assets/source/flamebringer/skin-summer-8/build_char_131_flameb_summer_8.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/131_flameb_summer%238/build_char_131_flameb_summer%238.png",
+        "path": "standalone/assets/source/flamebringer/skin-summer-8/build_char_131_flameb_summer#8.png",
+        "bytes": 282129,
+        "sha256": "2a01c85c0173a894809503f42407637b3155992f57c44f2205238eb7e63da8a5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10316,
+      "sha256": "04bc5e1924b6dd30977755bd4b0a5508492657603da05ff94f694c0bd5fde274"
+    },
+    "skeleton": {
+      "bytes": 227232,
+      "sha256": "39d3d8d6852eeb4d8df10e066a4a21b03e57b3acc4ce04c47b4ee3419f108206"
+    }
   }
 }

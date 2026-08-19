@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ashlock",
   "character_name": "Ashlock",
   "localized_name": "灰毫",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%81%B0%E6%AF%AB",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_431_ashlok/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_431_ashlok/meta.json",
-    "model": "defaultskin/build/build_char_431_ashlok",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_431_ashlok/defaultskin/build/build_char_431_ashlok.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_431_ashlok/defaultskin/build/build_char_431_ashlok.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_431_ashlok/defaultskin/build/build_char_431_ashlok.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/431_ashlok",
+  "source_asset": {
+    "assetId": "build_char_431_ashlok",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "灰毫",
+    "appellation": "Ashlock",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_431_ashlok.atlas",
+      ".png": "build_char_431_ashlok.png",
+      ".skel": "build_char_431_ashlok.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ashlock/default/meta.json",
     "atlas": "standalone/assets/source/ashlock/default/build_char_431_ashlok.atlas",
     "skeleton": "standalone/assets/source/ashlock/default/build_char_431_ashlok.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_431_ashlok/defaultskin/build/build_char_431_ashlok.png",
-        "path": "standalone/assets/source/ashlock/default/build_char_431_ashlok.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/431_ashlok/build_char_431_ashlok.png",
+        "path": "standalone/assets/source/ashlock/default/build_char_431_ashlok.png",
+        "bytes": 337312,
+        "sha256": "161f66678ca0a42dbeb99dad1e985120cbb00e838f9d85c4c33faa362effc94c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10513,
+      "sha256": "5e2d414cf3ccab9f6904e368437e5cb36935c9fa14370e71c3eb24fc9173ba12"
+    },
+    "skeleton": {
+      "bytes": 156511,
+      "sha256": "0b70eafd9c63993db74395b1fd6fd6bd3008a2651967282c04f0eed4eb432ffa"
+    }
   }
 }

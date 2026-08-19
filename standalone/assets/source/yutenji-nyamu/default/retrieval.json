@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "yutenji-nyamu",
   "character_name": "Yūtenji Nyamu",
   "localized_name": "祐天寺若麦",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%A5%90%E5%A4%A9%E5%AF%BA%E8%8B%A5%E9%BA%A6",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4185_amoris/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4185_amoris/meta.json",
-    "model": "defaultskin/build/build_char_4185_amoris",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4185_amoris/defaultskin/build/build_char_4185_amoris.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4185_amoris/defaultskin/build/build_char_4185_amoris.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4185_amoris/defaultskin/build/build_char_4185_amoris.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4185_amoris",
+  "source_asset": {
+    "assetId": "build_char_4185_amoris",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "祐天寺若麦",
+    "appellation": "Yūtenji Nyamu",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4185_amoris.atlas",
+      ".png": "build_char_4185_amoris.png",
+      ".skel": "build_char_4185_amoris.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/yutenji-nyamu/default/meta.json",
     "atlas": "standalone/assets/source/yutenji-nyamu/default/build_char_4185_amoris.atlas",
     "skeleton": "standalone/assets/source/yutenji-nyamu/default/build_char_4185_amoris.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4185_amoris/defaultskin/build/build_char_4185_amoris.png",
-        "path": "standalone/assets/source/yutenji-nyamu/default/build_char_4185_amoris.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4185_amoris/build_char_4185_amoris.png",
+        "path": "standalone/assets/source/yutenji-nyamu/default/build_char_4185_amoris.png",
+        "bytes": 205453,
+        "sha256": "5dddd28d313eb31aa111db3c51bc336387cff1e1433b35a1789c54e71a7ba188"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9110,
+      "sha256": "45f6278eaccdd12f89120eeeed3d0858bdef8e8fe187034942996e11031d3bda"
+    },
+    "skeleton": {
+      "bytes": 201452,
+      "sha256": "7e929420ec502d94e2cc865613ab4f64f118ede62a66306534e7b10c0a27d1c9"
+    }
   }
 }

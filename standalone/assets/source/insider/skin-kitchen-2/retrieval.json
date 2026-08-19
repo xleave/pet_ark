@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "insider",
   "character_name": "Insider",
   "localized_name": "隐现",
@@ -9,25 +9,58 @@
   "variant_name": "甜品大奖",
   "skin_id": "kitchen-2",
   "skin_name": "甜品大奖",
-  "source_page": "https://prts.wiki/w/%E9%9A%90%E7%8E%B0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_498_inside/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_498_inside/meta.json",
-    "model": "char_498_inside_kitchen_2/build/build_char_498_inside_kitchen_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_498_inside/char_498_inside_kitchen_2/build/build_char_498_inside_kitchen_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_498_inside/char_498_inside_kitchen_2/build/build_char_498_inside_kitchen_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_498_inside/char_498_inside_kitchen_2/build/build_char_498_inside_kitchen_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/498_inside_kitchen#2",
+  "source_asset": {
+    "assetId": "build_char_498_inside_kitchen#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "隐现",
+    "appellation": "Insider",
+    "skinGroupId": "2024#kitchen",
+    "skinGroupName": "罗德厨房/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_498_inside_kitchen#2.atlas",
+      ".png": "build_char_498_inside_kitchen#2.png",
+      ".skel": "build_char_498_inside_kitchen#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/insider/skin-kitchen-2/meta.json",
-    "atlas": "standalone/assets/source/insider/skin-kitchen-2/build_char_498_inside_kitchen_2.atlas",
-    "skeleton": "standalone/assets/source/insider/skin-kitchen-2/build_char_498_inside_kitchen_2.skel",
+    "atlas": "standalone/assets/source/insider/skin-kitchen-2/build_char_498_inside_kitchen#2.atlas",
+    "skeleton": "standalone/assets/source/insider/skin-kitchen-2/build_char_498_inside_kitchen#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_498_inside/char_498_inside_kitchen_2/build/build_char_498_inside_kitchen_2.png",
-        "path": "standalone/assets/source/insider/skin-kitchen-2/build_char_498_inside_kitchen_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/498_inside_kitchen%232/build_char_498_inside_kitchen%232.png",
+        "path": "standalone/assets/source/insider/skin-kitchen-2/build_char_498_inside_kitchen#2.png",
+        "bytes": 324939,
+        "sha256": "ddf84f5270b18b22505c5e8d67208447fb8c21f4c3d67a082f8d97887f7c1735"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10017,
+      "sha256": "0bd56b6088cf5c67304ae70167e129390298e7a848d8ae816083f3bb55d5d102"
+    },
+    "skeleton": {
+      "bytes": 242905,
+      "sha256": "740815798672724fbece9952453adaabae4911429284137632fcb52e499dad6e"
+    }
   }
 }

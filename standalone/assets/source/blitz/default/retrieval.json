@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "blitz",
   "character_name": "Blitz",
   "localized_name": "闪击",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%97%AA%E5%87%BB",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_457_blitz/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_457_blitz/meta.json",
-    "model": "defaultskin/build/build_char_457_blitz",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_457_blitz/defaultskin/build/build_char_457_blitz.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_457_blitz/defaultskin/build/build_char_457_blitz.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_457_blitz/defaultskin/build/build_char_457_blitz.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/457_blitz",
+  "source_asset": {
+    "assetId": "build_char_457_blitz",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "闪击",
+    "appellation": "Blitz",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_457_blitz.atlas",
+      ".png": "build_char_457_blitz.png",
+      ".skel": "build_char_457_blitz.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/blitz/default/meta.json",
     "atlas": "standalone/assets/source/blitz/default/build_char_457_blitz.atlas",
     "skeleton": "standalone/assets/source/blitz/default/build_char_457_blitz.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_457_blitz/defaultskin/build/build_char_457_blitz.png",
-        "path": "standalone/assets/source/blitz/default/build_char_457_blitz.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/457_blitz/build_char_457_blitz.png",
+        "path": "standalone/assets/source/blitz/default/build_char_457_blitz.png",
+        "bytes": 237500,
+        "sha256": "cbb6d8324982bfe48b3cbbfe93540f1211622280d6d29f035bc91dfa9dd3d11b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6849,
+      "sha256": "9e30001abe51cc35c269d31bc5bc7b6c67fda5ca91d7e084a4d1eab792088a71"
+    },
+    "skeleton": {
+      "bytes": 161701,
+      "sha256": "d6d380bc95fb29ffcc067d4c933febed7d53f4c8cfedc1f1754d1327b73603d6"
+    }
   }
 }

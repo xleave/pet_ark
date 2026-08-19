@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ch-en",
   "character_name": "Ch'en",
   "localized_name": "陈",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%99%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_010_chen/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_010_chen/meta.json",
-    "model": "defaultskin/build/build_char_010_chen",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_010_chen/defaultskin/build/build_char_010_chen.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_010_chen/defaultskin/build/build_char_010_chen.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_010_chen/defaultskin/build/build_char_010_chen.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/010_chen",
+  "source_asset": {
+    "assetId": "build_char_010_chen",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "陈",
+    "appellation": "Ch'en",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_010_chen.atlas",
+      ".png": "build_char_010_chen.png",
+      ".skel": "build_char_010_chen.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ch-en/default/meta.json",
     "atlas": "standalone/assets/source/ch-en/default/build_char_010_chen.atlas",
     "skeleton": "standalone/assets/source/ch-en/default/build_char_010_chen.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_010_chen/defaultskin/build/build_char_010_chen.png",
-        "path": "standalone/assets/source/ch-en/default/build_char_010_chen.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/010_chen/build_char_010_chen.png",
+        "path": "standalone/assets/source/ch-en/default/build_char_010_chen.png",
+        "bytes": 288920,
+        "sha256": "4e21ff2aa56bd7a8446a38482fc8bf21613b5d745bf00449cda280426b15b139"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6342,
+      "sha256": "b5ed595a1767aed321cd6fbb74a3e7877488762058f89aef7ad9f9b438b31d4c"
+    },
+    "skeleton": {
+      "bytes": 128785,
+      "sha256": "42391667312bfdf8293a76decea458fd8d0d96884c96b8bd812a999fcdc08661"
+    }
   }
 }

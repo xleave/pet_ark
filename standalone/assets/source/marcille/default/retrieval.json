@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "marcille",
   "character_name": "Marcille",
   "localized_name": "玛露西尔",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%8E%9B%E9%9C%B2%E8%A5%BF%E5%B0%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4141_marcil/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4141_marcil/meta.json",
-    "model": "defaultskin/build/build_char_4141_marcil",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4141_marcil/defaultskin/build/build_char_4141_marcil.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4141_marcil/defaultskin/build/build_char_4141_marcil.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4141_marcil/defaultskin/build/build_char_4141_marcil.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4141_marcil",
+  "source_asset": {
+    "assetId": "build_char_4141_marcil",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "玛露西尔",
+    "appellation": "Marcille",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4141_marcil.atlas",
+      ".png": "build_char_4141_marcil.png",
+      ".skel": "build_char_4141_marcil.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/marcille/default/meta.json",
     "atlas": "standalone/assets/source/marcille/default/build_char_4141_marcil.atlas",
     "skeleton": "standalone/assets/source/marcille/default/build_char_4141_marcil.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4141_marcil/defaultskin/build/build_char_4141_marcil.png",
-        "path": "standalone/assets/source/marcille/default/build_char_4141_marcil.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4141_marcil/build_char_4141_marcil.png",
+        "path": "standalone/assets/source/marcille/default/build_char_4141_marcil.png",
+        "bytes": 212623,
+        "sha256": "29acba8d9c553887e332c4be70f1b5ee7d1663b1275ec4bc306c69106ef62c51"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9507,
+      "sha256": "6e863b245cf858462d1ce1ec4ddb35e7637159d2f7d1a537233cb61d6c28c35f"
+    },
+    "skeleton": {
+      "bytes": 157987,
+      "sha256": "99729486593fa8b8eed002c4000b8259dfaf72c3113a2ad9c55937c6d4a4d66a"
+    }
   }
 }

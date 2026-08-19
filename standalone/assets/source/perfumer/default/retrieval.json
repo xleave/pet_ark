@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "perfumer",
   "character_name": "Perfumer",
   "localized_name": "调香师",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%B0%83%E9%A6%99%E5%B8%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/meta.json",
-    "model": "defaultskin/build/build_char_181_flower",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/defaultskin/build/build_char_181_flower.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/defaultskin/build/build_char_181_flower.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/defaultskin/build/build_char_181_flower.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/181_flower",
+  "source_asset": {
+    "assetId": "build_char_181_flower",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "调香师",
+    "appellation": "Perfumer",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_181_flower.atlas",
+      ".png": "build_char_181_flower.png",
+      ".skel": "build_char_181_flower.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/perfumer/default/meta.json",
     "atlas": "standalone/assets/source/perfumer/default/build_char_181_flower.atlas",
     "skeleton": "standalone/assets/source/perfumer/default/build_char_181_flower.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_181_flower/defaultskin/build/build_char_181_flower.png",
-        "path": "standalone/assets/source/perfumer/default/build_char_181_flower.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/181_flower/build_char_181_flower.png",
+        "path": "standalone/assets/source/perfumer/default/build_char_181_flower.png",
+        "bytes": 271302,
+        "sha256": "024ceb356adc411420ea788fa9eb9cfe58990efd6c01ba6f16232da3e83798af"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4390,
+      "sha256": "5a527ed79998976f08fcc3343d3bee68d6f036f6e4aa34e6e733eecbc0dd623c"
+    },
+    "skeleton": {
+      "bytes": 104364,
+      "sha256": "c04d8500b19471adb4f681dc9e0fd47553831418e84da152053ffed86513cd8b"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "gravel",
   "character_name": "Gravel",
   "localized_name": "砾",
@@ -9,25 +9,58 @@
   "variant_name": "模特之夜",
   "skin_id": "winter-2",
   "skin_name": "模特之夜",
-  "source_page": "https://prts.wiki/w/%E7%A0%BE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_237_gravel/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_237_gravel/meta.json",
-    "model": "char_237_gravel_winter_2/build/build_char_237_gravel_winter_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_237_gravel/char_237_gravel_winter_2/build/build_char_237_gravel_winter_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_237_gravel/char_237_gravel_winter_2/build/build_char_237_gravel_winter_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_237_gravel/char_237_gravel_winter_2/build/build_char_237_gravel_winter_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/237_gravel_winter#2",
+  "source_asset": {
+    "assetId": "build_char_237_gravel_winter#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "砾",
+    "appellation": "Gravel",
+    "skinGroupId": "2021#winter",
+    "skinGroupName": "寒武纪/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_237_gravel_winter#2.atlas",
+      ".png": "build_char_237_gravel_winter#2.png",
+      ".skel": "build_char_237_gravel_winter#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/gravel/skin-winter-2/meta.json",
-    "atlas": "standalone/assets/source/gravel/skin-winter-2/build_char_237_gravel_winter_2.atlas",
-    "skeleton": "standalone/assets/source/gravel/skin-winter-2/build_char_237_gravel_winter_2.skel",
+    "atlas": "standalone/assets/source/gravel/skin-winter-2/build_char_237_gravel_winter#2.atlas",
+    "skeleton": "standalone/assets/source/gravel/skin-winter-2/build_char_237_gravel_winter#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_237_gravel/char_237_gravel_winter_2/build/build_char_237_gravel_winter_2.png",
-        "path": "standalone/assets/source/gravel/skin-winter-2/build_char_237_gravel_winter_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/237_gravel_winter%232/build_char_237_gravel_winter%232.png",
+        "path": "standalone/assets/source/gravel/skin-winter-2/build_char_237_gravel_winter#2.png",
+        "bytes": 315225,
+        "sha256": "5761a5c553911f6dc752b7b4159a0318cc9fc3feee5d2dddb392d1b37a663970"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10873,
+      "sha256": "4edab381c0603b75e87ea2cb697e67e5d696bef36f93d6be241c435779043505"
+    },
+    "skeleton": {
+      "bytes": 194165,
+      "sha256": "d7448e50fef5a5fae2ba18d9227e55a2fd8b14578a6fbe8dc0e3253065868c73"
+    }
   }
 }

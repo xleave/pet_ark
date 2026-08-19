@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "reed",
   "character_name": "Reed",
   "localized_name": "苇草",
@@ -9,25 +9,59 @@
   "variant_name": "翡翠假日",
   "skin_id": "ambiencesynesthesia-2",
   "skin_name": "翡翠假日",
-  "source_page": "https://prts.wiki/w/%E8%8B%87%E8%8D%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_261_sddrag/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_261_sddrag/meta.json",
-    "model": "char_261_sddrag_ambiencesynesthesia_2/build/build_char_261_sddrag_ambienceSynesthesia_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_261_sddrag/char_261_sddrag_ambiencesynesthesia_2/build/build_char_261_sddrag_ambienceSynesthesia_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_261_sddrag/char_261_sddrag_ambiencesynesthesia_2/build/build_char_261_sddrag_ambienceSynesthesia_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_261_sddrag/char_261_sddrag_ambiencesynesthesia_2/build/build_char_261_sddrag_ambienceSynesthesia_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/261_sddrag_ambiencesynesthesia#2",
+  "source_asset": {
+    "assetId": "build_char_261_sddrag_ambiencesynesthesia#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "苇草",
+    "appellation": "Reed",
+    "skinGroupId": "2022#ambienceSynesthesia",
+    "skinGroupName": "音律联觉/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_261_sddrag_ambienceSynesthesia#2.atlas",
+      ".png": "build_char_261_sddrag_ambienceSynesthesia#2.png",
+      ".skel": "build_char_261_sddrag_ambienceSynesthesia#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/reed/skin-ambiencesynesthesia-2/meta.json",
-    "atlas": "standalone/assets/source/reed/skin-ambiencesynesthesia-2/build_char_261_sddrag_ambienceSynesthesia_2.atlas",
-    "skeleton": "standalone/assets/source/reed/skin-ambiencesynesthesia-2/build_char_261_sddrag_ambienceSynesthesia_2.skel",
+    "atlas": "standalone/assets/source/reed/skin-ambiencesynesthesia-2/build_char_261_sddrag_ambiencesynesthesia#2.atlas",
+    "skeleton": "standalone/assets/source/reed/skin-ambiencesynesthesia-2/build_char_261_sddrag_ambiencesynesthesia#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_261_sddrag/char_261_sddrag_ambiencesynesthesia_2/build/build_char_261_sddrag_ambienceSynesthesia_2.png",
-        "path": "standalone/assets/source/reed/skin-ambiencesynesthesia-2/build_char_261_sddrag_ambienceSynesthesia_2.png"
+        "atlas_name": "build_char_261_sddrag_ambienceSynesthesia#2.png",
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/261_sddrag_ambiencesynesthesia%232/build_char_261_sddrag_ambiencesynesthesia%232.png",
+        "path": "standalone/assets/source/reed/skin-ambiencesynesthesia-2/build_char_261_sddrag_ambiencesynesthesia#2.png",
+        "bytes": 753833,
+        "sha256": "59d9b33d295d5f27e0dd818268eb868620704028d9489599440891365ef7245e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9577,
+      "sha256": "4604f1397f30df4e240ba58d0faa9e76b5d7f9cc61acd27c7b56cd9d768c3e71"
+    },
+    "skeleton": {
+      "bytes": 303779,
+      "sha256": "b49d077e24e15a5cff6a945db8db7fe60fabe80a038cb20f045b57875ab9a77e"
+    }
   }
 }

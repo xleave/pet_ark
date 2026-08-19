@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "utage",
   "character_name": "Utage",
   "localized_name": "宴",
@@ -9,25 +9,58 @@
   "variant_name": "夏卉 FA661",
   "skin_id": "summer-4",
   "skin_name": "夏卉 FA661",
-  "source_page": "https://prts.wiki/w/%E5%AE%B4",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_337_utage/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_337_utage/meta.json",
-    "model": "char_337_utage_summer_4/build/build_char_337_utage_summer_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_337_utage/char_337_utage_summer_4/build/build_char_337_utage_summer_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_337_utage/char_337_utage_summer_4/build/build_char_337_utage_summer_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_337_utage/char_337_utage_summer_4/build/build_char_337_utage_summer_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/337_utage_summer#4",
+  "source_asset": {
+    "assetId": "build_char_337_utage_summer#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "宴",
+    "appellation": "Utage",
+    "skinGroupId": "2020#summer#3",
+    "skinGroupName": "珊瑚海岸/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_337_utage_summer#4.atlas",
+      ".png": "build_char_337_utage_summer#4.png",
+      ".skel": "build_char_337_utage_summer#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/utage/skin-summer-4/meta.json",
-    "atlas": "standalone/assets/source/utage/skin-summer-4/build_char_337_utage_summer_4.atlas",
-    "skeleton": "standalone/assets/source/utage/skin-summer-4/build_char_337_utage_summer_4.skel",
+    "atlas": "standalone/assets/source/utage/skin-summer-4/build_char_337_utage_summer#4.atlas",
+    "skeleton": "standalone/assets/source/utage/skin-summer-4/build_char_337_utage_summer#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_337_utage/char_337_utage_summer_4/build/build_char_337_utage_summer_4.png",
-        "path": "standalone/assets/source/utage/skin-summer-4/build_char_337_utage_summer_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/337_utage_summer%234/build_char_337_utage_summer%234.png",
+        "path": "standalone/assets/source/utage/skin-summer-4/build_char_337_utage_summer#4.png",
+        "bytes": 291109,
+        "sha256": "3605ce76c1b16c0ede2c2630cebb1fe7fcb493aafd16ae2ae633549330bab199"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8484,
+      "sha256": "19ed2e699534f2b4fb06eff765aecf76700ee06a6aa4185a64f16c599fdf738b"
+    },
+    "skeleton": {
+      "bytes": 186712,
+      "sha256": "13d3e3e87f0fb38950adc7c4882ed77efd21919f08b5cc6e3c6ea9170130b8c3"
+    }
   }
 }

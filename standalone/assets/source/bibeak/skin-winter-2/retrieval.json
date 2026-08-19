@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "bibeak",
   "character_name": "Bibeak",
   "localized_name": "柏喙",
@@ -9,25 +9,58 @@
   "variant_name": "软绒",
   "skin_id": "winter-2",
   "skin_name": "软绒",
-  "source_page": "https://prts.wiki/w/%E6%9F%8F%E5%96%99",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_252_bibeak/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_252_bibeak/meta.json",
-    "model": "char_252_bibeak_winter_2/build/build_char_252_bibeak_winter_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_252_bibeak/char_252_bibeak_winter_2/build/build_char_252_bibeak_winter_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_252_bibeak/char_252_bibeak_winter_2/build/build_char_252_bibeak_winter_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_252_bibeak/char_252_bibeak_winter_2/build/build_char_252_bibeak_winter_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/252_bibeak_winter#2",
+  "source_asset": {
+    "assetId": "build_char_252_bibeak_winter#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "柏喙",
+    "appellation": "Bibeak",
+    "skinGroupId": "2021#winter",
+    "skinGroupName": "寒武纪/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_252_bibeak_winter#2.atlas",
+      ".png": "build_char_252_bibeak_winter#2.png",
+      ".skel": "build_char_252_bibeak_winter#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/bibeak/skin-winter-2/meta.json",
-    "atlas": "standalone/assets/source/bibeak/skin-winter-2/build_char_252_bibeak_winter_2.atlas",
-    "skeleton": "standalone/assets/source/bibeak/skin-winter-2/build_char_252_bibeak_winter_2.skel",
+    "atlas": "standalone/assets/source/bibeak/skin-winter-2/build_char_252_bibeak_winter#2.atlas",
+    "skeleton": "standalone/assets/source/bibeak/skin-winter-2/build_char_252_bibeak_winter#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_252_bibeak/char_252_bibeak_winter_2/build/build_char_252_bibeak_winter_2.png",
-        "path": "standalone/assets/source/bibeak/skin-winter-2/build_char_252_bibeak_winter_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/252_bibeak_winter%232/build_char_252_bibeak_winter%232.png",
+        "path": "standalone/assets/source/bibeak/skin-winter-2/build_char_252_bibeak_winter#2.png",
+        "bytes": 301415,
+        "sha256": "fe3437baa157e7d088e815341032c21a491c8aaed366c13587b0fff7f9678e42"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10508,
+      "sha256": "251b82287f4a152285f426b17f4873a2d49a81c9a8bdcedbb9f89ca135c5500e"
+    },
+    "skeleton": {
+      "bytes": 219881,
+      "sha256": "c652ee2e936d2530778c6f126a19aed097db972fc3500ecc5eb084b558beb7f6"
+    }
   }
 }

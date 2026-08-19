@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "myrrh",
   "character_name": "Myrrh",
   "localized_name": "末药",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%9C%AB%E8%8D%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_117_myrrh/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_117_myrrh/meta.json",
-    "model": "defaultskin/build/build_char_117_myrrh",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_117_myrrh/defaultskin/build/build_char_117_myrrh.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_117_myrrh/defaultskin/build/build_char_117_myrrh.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_117_myrrh/defaultskin/build/build_char_117_myrrh.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/117_myrrh",
+  "source_asset": {
+    "assetId": "build_char_117_myrrh",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "末药",
+    "appellation": "Myrrh",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_117_myrrh.atlas",
+      ".png": "build_char_117_myrrh.png",
+      ".skel": "build_char_117_myrrh.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/myrrh/default/meta.json",
     "atlas": "standalone/assets/source/myrrh/default/build_char_117_myrrh.atlas",
     "skeleton": "standalone/assets/source/myrrh/default/build_char_117_myrrh.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_117_myrrh/defaultskin/build/build_char_117_myrrh.png",
-        "path": "standalone/assets/source/myrrh/default/build_char_117_myrrh.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/117_myrrh/build_char_117_myrrh.png",
+        "path": "standalone/assets/source/myrrh/default/build_char_117_myrrh.png",
+        "bytes": 187552,
+        "sha256": "1638296b85eaddf7709d14981a42bd375fe01192c009b3c641e5f85e7d014514"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5060,
+      "sha256": "e93c9c8c6639275f5165b135403e635bf3a0ee180e0d39ce5defe4b7ca896bea"
+    },
+    "skeleton": {
+      "bytes": 72793,
+      "sha256": "a740eaa2333688fff3ae22d44e5b1e5a8b41ba119e9c7c95fb57043a05c5b18a"
+    }
   }
 }

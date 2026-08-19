@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "executor-the-ex-foedere",
   "character_name": "Executor the Ex Foedere",
   "localized_name": "圣约送葬人",
@@ -9,25 +9,59 @@
   "variant_name": "蒸汽寻踪者",
   "skin_id": "sanrio-2",
   "skin_name": "蒸汽寻踪者",
-  "source_page": "https://prts.wiki/w/%E5%9C%A3%E7%BA%A6%E9%80%81%E8%91%AC%E4%BA%BA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/meta.json",
-    "model": "char_1032_excu2_sanrio_2/build/build_char_1032_excu2_sanrio_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/char_1032_excu2_sanrio_2/build/build_char_1032_excu2_sanrio_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/char_1032_excu2_sanrio_2/build/build_char_1032_excu2_sanrio_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/char_1032_excu2_sanrio_2/build/build_char_1032_excu2_sanrio_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1032_excu2_sanrio#2",
+  "source_asset": {
+    "assetId": "build_char_1032_excu2_sanrio#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "圣约送葬人",
+    "appellation": "Executor the Ex Foedere",
+    "skinGroupId": "2025#sanrio",
+    "skinGroupName": "三丽鸥家族/II",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1032_excu2_sanrio#2.atlas",
+      ".png": "build_char_1032_excu2_sanrio#2.png",
+      ".skel": "build_char_1032_excu2_sanrio#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/executor-the-ex-foedere/skin-sanrio-2/meta.json",
-    "atlas": "standalone/assets/source/executor-the-ex-foedere/skin-sanrio-2/build_char_1032_excu2_sanrio_2.atlas",
-    "skeleton": "standalone/assets/source/executor-the-ex-foedere/skin-sanrio-2/build_char_1032_excu2_sanrio_2.skel",
+    "atlas": "standalone/assets/source/executor-the-ex-foedere/skin-sanrio-2/build_char_1032_excu2_sanrio#2.atlas",
+    "skeleton": "standalone/assets/source/executor-the-ex-foedere/skin-sanrio-2/build_char_1032_excu2_sanrio#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1032_excu2/char_1032_excu2_sanrio_2/build/build_char_1032_excu2_sanrio_2.png",
-        "path": "standalone/assets/source/executor-the-ex-foedere/skin-sanrio-2/build_char_1032_excu2_sanrio_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1032_excu2_sanrio%232/build_char_1032_excu2_sanrio%232.png",
+        "path": "standalone/assets/source/executor-the-ex-foedere/skin-sanrio-2/build_char_1032_excu2_sanrio#2.png",
+        "bytes": 694845,
+        "sha256": "3fe6d26d2274128171179d8f9993308d09edc92634736eb33d5b5ff91fa0964e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 23371,
+      "sha256": "33eb781e468daa1089a96530f7002a6da683d1b053fc92810207984460688e4b"
+    },
+    "skeleton": {
+      "bytes": 675379,
+      "sha256": "15c50ee8d3e7a5e1f675c43ab22b0685bb9abf73f8da361315e1216293619529"
+    }
   }
 }

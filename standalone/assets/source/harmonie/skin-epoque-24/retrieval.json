@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "harmonie",
   "character_name": "Harmonie",
   "localized_name": "和弦",
@@ -9,25 +9,58 @@
   "variant_name": "邀约",
   "skin_id": "epoque-24",
   "skin_name": "邀约",
-  "source_page": "https://prts.wiki/w/%E5%92%8C%E5%BC%A6",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/meta.json",
-    "model": "char_297_hamoni_epoque_24/build/build_char_297_hamoni_epoque_24",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/char_297_hamoni_epoque_24/build/build_char_297_hamoni_epoque_24.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/char_297_hamoni_epoque_24/build/build_char_297_hamoni_epoque_24.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/char_297_hamoni_epoque_24/build/build_char_297_hamoni_epoque_24.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/297_hamoni_epoque#24",
+  "source_asset": {
+    "assetId": "build_char_297_hamoni_epoque#24",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "和弦",
+    "appellation": "Harmonie",
+    "skinGroupId": "2023#epoque#6",
+    "skinGroupName": "时代/XXIV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_297_hamoni_epoque#24.atlas",
+      ".png": "build_char_297_hamoni_epoque#24.png",
+      ".skel": "build_char_297_hamoni_epoque#24.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/harmonie/skin-epoque-24/meta.json",
-    "atlas": "standalone/assets/source/harmonie/skin-epoque-24/build_char_297_hamoni_epoque_24.atlas",
-    "skeleton": "standalone/assets/source/harmonie/skin-epoque-24/build_char_297_hamoni_epoque_24.skel",
+    "atlas": "standalone/assets/source/harmonie/skin-epoque-24/build_char_297_hamoni_epoque#24.atlas",
+    "skeleton": "standalone/assets/source/harmonie/skin-epoque-24/build_char_297_hamoni_epoque#24.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_297_hamoni/char_297_hamoni_epoque_24/build/build_char_297_hamoni_epoque_24.png",
-        "path": "standalone/assets/source/harmonie/skin-epoque-24/build_char_297_hamoni_epoque_24.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/297_hamoni_epoque%2324/build_char_297_hamoni_epoque%2324.png",
+        "path": "standalone/assets/source/harmonie/skin-epoque-24/build_char_297_hamoni_epoque#24.png",
+        "bytes": 275811,
+        "sha256": "cd8085fb619d57d012700e56c72480f22997ef65f11d08245f366fcdd1670f21"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7780,
+      "sha256": "8b6bcbe53ae808feed870c9b56b21831d9409a783a96f869dea7746c783b69ac"
+    },
+    "skeleton": {
+      "bytes": 321659,
+      "sha256": "8af0ac3f387f3f4422d2fcac0343544492dd282703018e763a26e6d9d8bfa553"
+    }
   }
 }

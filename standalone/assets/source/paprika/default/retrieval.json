@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "paprika",
   "character_name": "Paprika",
   "localized_name": "明椒",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%98%8E%E6%A4%92",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/meta.json",
-    "model": "defaultskin/build/build_char_4071_peper",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/defaultskin/build/build_char_4071_peper.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/defaultskin/build/build_char_4071_peper.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/defaultskin/build/build_char_4071_peper.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4071_peper",
+  "source_asset": {
+    "assetId": "build_char_4071_peper",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "明椒",
+    "appellation": "Paprika",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4071_peper.atlas",
+      ".png": "build_char_4071_peper.png",
+      ".skel": "build_char_4071_peper.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/paprika/default/meta.json",
     "atlas": "standalone/assets/source/paprika/default/build_char_4071_peper.atlas",
     "skeleton": "standalone/assets/source/paprika/default/build_char_4071_peper.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4071_peper/defaultskin/build/build_char_4071_peper.png",
-        "path": "standalone/assets/source/paprika/default/build_char_4071_peper.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4071_peper/build_char_4071_peper.png",
+        "path": "standalone/assets/source/paprika/default/build_char_4071_peper.png",
+        "bytes": 498237,
+        "sha256": "672bddc6292fc1c19a9fce743d1a54084a2978062f58d5aa538a2aaf24438103"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13175,
+      "sha256": "361af01590b7d20a5dca6dc8729088426bd72a5c705e79d034badaaa9f5dfbf2"
+    },
+    "skeleton": {
+      "bytes": 329246,
+      "sha256": "6881add3b64639f6da9598e32092453a1103d69d0a413a84c948ff82be5561dd"
+    }
   }
 }

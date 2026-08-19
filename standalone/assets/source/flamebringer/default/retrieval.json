@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "flamebringer",
   "character_name": "Flamebringer",
   "localized_name": "炎客",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%82%8E%E5%AE%A2",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_131_flameb/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_131_flameb/meta.json",
-    "model": "defaultskin/build/build_char_131_flameb",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_131_flameb/defaultskin/build/build_char_131_flameb.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_131_flameb/defaultskin/build/build_char_131_flameb.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_131_flameb/defaultskin/build/build_char_131_flameb.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/131_flameb",
+  "source_asset": {
+    "assetId": "build_char_131_flameb",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "炎客",
+    "appellation": "Flamebringer",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_131_flameb.atlas",
+      ".png": "build_char_131_flameb.png",
+      ".skel": "build_char_131_flameb.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/flamebringer/default/meta.json",
     "atlas": "standalone/assets/source/flamebringer/default/build_char_131_flameb.atlas",
     "skeleton": "standalone/assets/source/flamebringer/default/build_char_131_flameb.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_131_flameb/defaultskin/build/build_char_131_flameb.png",
-        "path": "standalone/assets/source/flamebringer/default/build_char_131_flameb.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/131_flameb/build_char_131_flameb.png",
+        "path": "standalone/assets/source/flamebringer/default/build_char_131_flameb.png",
+        "bytes": 264424,
+        "sha256": "70a9a7285677c0c78914a1d559ac48ea6856e33e769ed49de37006e1099271cd"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8618,
+      "sha256": "54953a2568cec2194d4842207d0d5564f3b0f981d7cd5525b54391c05d2daa39"
+    },
+    "skeleton": {
+      "bytes": 78578,
+      "sha256": "4257aa1e626b3d1748a894f529af966fb42555c5732ca2cd6a2160f4038a22c4"
+    }
   }
 }

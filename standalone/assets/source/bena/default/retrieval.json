@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "bena",
   "character_name": "Bena",
   "localized_name": "贝娜",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%B4%9D%E5%A8%9C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_369_bena/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_369_bena/meta.json",
-    "model": "defaultskin/build/build_char_369_bena",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_369_bena/defaultskin/build/build_char_369_bena.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_369_bena/defaultskin/build/build_char_369_bena.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_369_bena/defaultskin/build/build_char_369_bena.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/369_bena",
+  "source_asset": {
+    "assetId": "build_char_369_bena",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "贝娜",
+    "appellation": "Bena",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_369_bena.atlas",
+      ".png": "build_char_369_bena.png",
+      ".skel": "build_char_369_bena.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/bena/default/meta.json",
     "atlas": "standalone/assets/source/bena/default/build_char_369_bena.atlas",
     "skeleton": "standalone/assets/source/bena/default/build_char_369_bena.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_369_bena/defaultskin/build/build_char_369_bena.png",
-        "path": "standalone/assets/source/bena/default/build_char_369_bena.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/369_bena/build_char_369_bena.png",
+        "path": "standalone/assets/source/bena/default/build_char_369_bena.png",
+        "bytes": 259766,
+        "sha256": "7ca91843fc8e9e01eb90fb60400ba984f1020487ce43a8e12b5c1faa90f7b36f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7995,
+      "sha256": "95f2b2b24626afdadd11934381201551c8a75aaec9ed2aac7fab611238ea0dc8"
+    },
+    "skeleton": {
+      "bytes": 117198,
+      "sha256": "d5c6f057070f0e777d355788818fd4b1b7e91d645a9186f6ec94a2c8a592f821"
+    }
   }
 }

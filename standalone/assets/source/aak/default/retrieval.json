@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "aak",
   "character_name": "Aak",
   "localized_name": "阿",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%98%BF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_225_haak/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_225_haak/meta.json",
-    "model": "defaultskin/build/build_char_225_haak",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_225_haak/defaultskin/build/build_char_225_haak.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_225_haak/defaultskin/build/build_char_225_haak.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_225_haak/defaultskin/build/build_char_225_haak.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/225_haak",
+  "source_asset": {
+    "assetId": "build_char_225_haak",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "阿",
+    "appellation": "Aak",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_225_haak.atlas",
+      ".png": "build_char_225_haak.png",
+      ".skel": "build_char_225_haak.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/aak/default/meta.json",
     "atlas": "standalone/assets/source/aak/default/build_char_225_haak.atlas",
     "skeleton": "standalone/assets/source/aak/default/build_char_225_haak.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_225_haak/defaultskin/build/build_char_225_haak.png",
-        "path": "standalone/assets/source/aak/default/build_char_225_haak.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/225_haak/build_char_225_haak.png",
+        "path": "standalone/assets/source/aak/default/build_char_225_haak.png",
+        "bytes": 203294,
+        "sha256": "e68fbb775ace3e412e03a053229afb04d67e1d7dfd7509618ebfd50e3cf078b5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5929,
+      "sha256": "a8740085daad9c9cef58d8f60f71b71c0f5c01988e86805bd2488cb5670c7b7d"
+    },
+    "skeleton": {
+      "bytes": 87510,
+      "sha256": "955c94aee8380cbf35baa52cd6854f5cac6294ac39605e674610596837563c68"
+    }
   }
 }

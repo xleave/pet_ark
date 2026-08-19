@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "astesia",
   "character_name": "Astesia",
   "localized_name": "星极",
@@ -9,25 +9,58 @@
   "variant_name": "奇工妙想",
   "skin_id": "epoque-23",
   "skin_name": "奇工妙想",
-  "source_page": "https://prts.wiki/w/%E6%98%9F%E6%9E%81",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/meta.json",
-    "model": "char_274_astesi_epoque_23/build/build_char_274_astesi_epoque_23",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/char_274_astesi_epoque_23/build/build_char_274_astesi_epoque_23.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/char_274_astesi_epoque_23/build/build_char_274_astesi_epoque_23.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/char_274_astesi_epoque_23/build/build_char_274_astesi_epoque_23.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/274_astesi_epoque#23",
+  "source_asset": {
+    "assetId": "build_char_274_astesi_epoque#23",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "星极",
+    "appellation": "Astesia",
+    "skinGroupId": "2023#epoque#5",
+    "skinGroupName": "时代/XXIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_274_astesi_epoque#23.atlas",
+      ".png": "build_char_274_astesi_epoque#23.png",
+      ".skel": "build_char_274_astesi_epoque#23.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/astesia/skin-epoque-23/meta.json",
-    "atlas": "standalone/assets/source/astesia/skin-epoque-23/build_char_274_astesi_epoque_23.atlas",
-    "skeleton": "standalone/assets/source/astesia/skin-epoque-23/build_char_274_astesi_epoque_23.skel",
+    "atlas": "standalone/assets/source/astesia/skin-epoque-23/build_char_274_astesi_epoque#23.atlas",
+    "skeleton": "standalone/assets/source/astesia/skin-epoque-23/build_char_274_astesi_epoque#23.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_274_astesi/char_274_astesi_epoque_23/build/build_char_274_astesi_epoque_23.png",
-        "path": "standalone/assets/source/astesia/skin-epoque-23/build_char_274_astesi_epoque_23.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/274_astesi_epoque%2323/build_char_274_astesi_epoque%2323.png",
+        "path": "standalone/assets/source/astesia/skin-epoque-23/build_char_274_astesi_epoque#23.png",
+        "bytes": 296690,
+        "sha256": "a3fc374dbc033380cd50cf84ebf30d9a56db7c667b0c59db8134bab856582e5f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9328,
+      "sha256": "d8864702a2a26e8ab31e7e27ef0a76054866a59282d032504419d9d368d2661e"
+    },
+    "skeleton": {
+      "bytes": 431286,
+      "sha256": "5925468e3fa33bb5415fe4bc0ef08eb366ef55a4205f7ceeb5d54e962342931b"
+    }
   }
 }

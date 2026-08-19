@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "croissant",
   "character_name": "Croissant",
   "localized_name": "可颂",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%8F%AF%E9%A2%82",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/meta.json",
-    "model": "defaultskin/build/char_201_moeshd",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/defaultskin/build/char_201_moeshd.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/defaultskin/build/char_201_moeshd.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/defaultskin/build/char_201_moeshd.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/201_moeshd",
+  "source_asset": {
+    "assetId": "build_char_201_moeshd",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "可颂",
+    "appellation": "Croissant",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "char_201_moeshd.atlas",
+      ".png": "char_201_moeshd.png",
+      ".skel": "char_201_moeshd.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/croissant/default/meta.json",
     "atlas": "standalone/assets/source/croissant/default/char_201_moeshd.atlas",
     "skeleton": "standalone/assets/source/croissant/default/char_201_moeshd.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/defaultskin/build/char_201_moeshd.png",
-        "path": "standalone/assets/source/croissant/default/char_201_moeshd.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/201_moeshd/char_201_moeshd.png",
+        "path": "standalone/assets/source/croissant/default/char_201_moeshd.png",
+        "bytes": 217443,
+        "sha256": "ae66bded928a30f0202a987d63f27323648ceb0f82db90be850f5aeddd8ea8db"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5431,
+      "sha256": "8ee615008c9e0d7a2fb1fc016a13914df96920dc44c35280fa10718dcb09534d"
+    },
+    "skeleton": {
+      "bytes": 110237,
+      "sha256": "ea61a0ca1f602e8a426c53654cfe2381673b3fff7c323d97abe5d58601998a76"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "4055-bgsnow",
   "character_name": "Позёмка",
   "localized_name": "鸿雪",
@@ -9,25 +9,58 @@
   "variant_name": "字句中的雪原",
   "skin_id": "wild-7",
   "skin_name": "字句中的雪原",
-  "source_page": "https://prts.wiki/w/%E9%B8%BF%E9%9B%AA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/meta.json",
-    "model": "char_4055_bgsnow_wild_7/build/build_char_4055_bgsnow_wild_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/char_4055_bgsnow_wild_7/build/build_char_4055_bgsnow_wild_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/char_4055_bgsnow_wild_7/build/build_char_4055_bgsnow_wild_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/char_4055_bgsnow_wild_7/build/build_char_4055_bgsnow_wild_7.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4055_bgsnow_wild#7",
+  "source_asset": {
+    "assetId": "build_char_4055_bgsnow_wild#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "鸿雪",
+    "appellation": "Позёмка",
+    "skinGroupId": "2023#wild",
+    "skinGroupName": "生命之地/VII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4055_bgsnow_wild#7.atlas",
+      ".png": "build_char_4055_bgsnow_wild#7.png",
+      ".skel": "build_char_4055_bgsnow_wild#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/4055-bgsnow/skin-wild-7/meta.json",
-    "atlas": "standalone/assets/source/4055-bgsnow/skin-wild-7/build_char_4055_bgsnow_wild_7.atlas",
-    "skeleton": "standalone/assets/source/4055-bgsnow/skin-wild-7/build_char_4055_bgsnow_wild_7.skel",
+    "atlas": "standalone/assets/source/4055-bgsnow/skin-wild-7/build_char_4055_bgsnow_wild#7.atlas",
+    "skeleton": "standalone/assets/source/4055-bgsnow/skin-wild-7/build_char_4055_bgsnow_wild#7.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4055_bgsnow/char_4055_bgsnow_wild_7/build/build_char_4055_bgsnow_wild_7.png",
-        "path": "standalone/assets/source/4055-bgsnow/skin-wild-7/build_char_4055_bgsnow_wild_7.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4055_bgsnow_wild%237/build_char_4055_bgsnow_wild%237.png",
+        "path": "standalone/assets/source/4055-bgsnow/skin-wild-7/build_char_4055_bgsnow_wild#7.png",
+        "bytes": 475508,
+        "sha256": "5e09d3185551ec5f10951a836e363a75d2db8282eb5b2e16367a4d9dc79d1771"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12664,
+      "sha256": "90dfc22c091794eb1183c39cdb9344409e3d98e0e95be9eafc169d791996ea98"
+    },
+    "skeleton": {
+      "bytes": 338179,
+      "sha256": "ec1f71869b9f7428cff85e0594c093152f7ec162d340e7bfe8bcf251e5edc60e"
+    }
   }
 }

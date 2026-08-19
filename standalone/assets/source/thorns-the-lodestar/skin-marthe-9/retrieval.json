@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "thorns-the-lodestar",
   "character_name": "Thorns the Lodestar",
   "localized_name": "引星棘刺",
@@ -9,25 +9,59 @@
   "variant_name": "无际之帆",
   "skin_id": "marthe-9",
   "skin_name": "无际之帆",
-  "source_page": "https://prts.wiki/w/%E5%BC%95%E6%98%9F%E6%A3%98%E5%88%BA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1039_thorn2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1039_thorn2/meta.json",
-    "model": "char_1039_thorn2_marthe_9/build/build_char_1039_thorn2_marthe_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1039_thorn2/char_1039_thorn2_marthe_9/build/build_char_1039_thorn2_marthe_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1039_thorn2/char_1039_thorn2_marthe_9/build/build_char_1039_thorn2_marthe_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1039_thorn2/char_1039_thorn2_marthe_9/build/build_char_1039_thorn2_marthe_9.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1039_thorn2_marthe#9",
+  "source_asset": {
+    "assetId": "build_char_1039_thorn2_marthe#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "引星棘刺",
+    "appellation": "Thorns the Lodestar",
+    "skinGroupId": "2025#marthe#2",
+    "skinGroupName": "玛尔特/IX",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1039_thorn2_marthe#9.atlas",
+      ".png": "build_char_1039_thorn2_marthe#9.png",
+      ".skel": "build_char_1039_thorn2_marthe#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/thorns-the-lodestar/skin-marthe-9/meta.json",
-    "atlas": "standalone/assets/source/thorns-the-lodestar/skin-marthe-9/build_char_1039_thorn2_marthe_9.atlas",
-    "skeleton": "standalone/assets/source/thorns-the-lodestar/skin-marthe-9/build_char_1039_thorn2_marthe_9.skel",
+    "atlas": "standalone/assets/source/thorns-the-lodestar/skin-marthe-9/build_char_1039_thorn2_marthe#9.atlas",
+    "skeleton": "standalone/assets/source/thorns-the-lodestar/skin-marthe-9/build_char_1039_thorn2_marthe#9.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1039_thorn2/char_1039_thorn2_marthe_9/build/build_char_1039_thorn2_marthe_9.png",
-        "path": "standalone/assets/source/thorns-the-lodestar/skin-marthe-9/build_char_1039_thorn2_marthe_9.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1039_thorn2_marthe%239/build_char_1039_thorn2_marthe%239.png",
+        "path": "standalone/assets/source/thorns-the-lodestar/skin-marthe-9/build_char_1039_thorn2_marthe#9.png",
+        "bytes": 409225,
+        "sha256": "f7bd42a251f1250f7004375e42ad834c37e427ce570b1042ffe614b497b3a090"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15941,
+      "sha256": "65507d12e297f8c214ed4cf31970af456a5881228d99ebec22cf78e161ad719d"
+    },
+    "skeleton": {
+      "bytes": 458983,
+      "sha256": "8d1d318e639effb88d7ff7e2f761763d6191a1d1c2c6e3c809d3acbb4fd342a3"
+    }
   }
 }

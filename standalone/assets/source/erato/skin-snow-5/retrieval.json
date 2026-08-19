@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "erato",
   "character_name": "Erato",
   "localized_name": "埃拉托",
@@ -9,25 +9,58 @@
   "variant_name": "未讲述的故事",
   "skin_id": "snow-5",
   "skin_name": "未讲述的故事",
-  "source_page": "https://prts.wiki/w/%E5%9F%83%E6%8B%89%E6%89%98",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4043_erato/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4043_erato/meta.json",
-    "model": "char_4043_erato_snow_5/build/build_char_4043_erato_snow_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4043_erato/char_4043_erato_snow_5/build/build_char_4043_erato_snow_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4043_erato/char_4043_erato_snow_5/build/build_char_4043_erato_snow_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4043_erato/char_4043_erato_snow_5/build/build_char_4043_erato_snow_5.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4043_erato_snow#5",
+  "source_asset": {
+    "assetId": "build_char_4043_erato_snow#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "埃拉托",
+    "appellation": "Erato",
+    "skinGroupId": "2022#xmas",
+    "skinGroupName": "冰原信使/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4043_erato_snow#5.atlas",
+      ".png": "build_char_4043_erato_snow#5.png",
+      ".skel": "build_char_4043_erato_snow#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/erato/skin-snow-5/meta.json",
-    "atlas": "standalone/assets/source/erato/skin-snow-5/build_char_4043_erato_snow_5.atlas",
-    "skeleton": "standalone/assets/source/erato/skin-snow-5/build_char_4043_erato_snow_5.skel",
+    "atlas": "standalone/assets/source/erato/skin-snow-5/build_char_4043_erato_snow#5.atlas",
+    "skeleton": "standalone/assets/source/erato/skin-snow-5/build_char_4043_erato_snow#5.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4043_erato/char_4043_erato_snow_5/build/build_char_4043_erato_snow_5.png",
-        "path": "standalone/assets/source/erato/skin-snow-5/build_char_4043_erato_snow_5.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4043_erato_snow%235/build_char_4043_erato_snow%235.png",
+        "path": "standalone/assets/source/erato/skin-snow-5/build_char_4043_erato_snow#5.png",
+        "bytes": 349105,
+        "sha256": "9881441db5ad7f8674a5747c2ef9603adf5ae63acc8a6f2e5873f350521509a5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10385,
+      "sha256": "673fc38f923905624a7e42ded7985a0432aa4fa39d23555ddde52c4fedcb42dd"
+    },
+    "skeleton": {
+      "bytes": 450972,
+      "sha256": "ab39a9d4a806fe422d5392a0d1564fa3f8dfbe19c3527cc5e2337a1a6e853327"
+    }
   }
 }

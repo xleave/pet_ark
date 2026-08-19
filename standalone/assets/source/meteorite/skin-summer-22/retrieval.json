@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "meteorite",
   "character_name": "Meteorite",
   "localized_name": "陨星",
@@ -9,25 +9,58 @@
   "variant_name": "夏卉 FA240",
   "skin_id": "summer-22",
   "skin_name": "夏卉 FA240",
-  "source_page": "https://prts.wiki/w/%E9%99%A8%E6%98%9F",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_219_meteo/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_219_meteo/meta.json",
-    "model": "char_219_meteo_summer_22/build/build_char_219_meteo_summer_22",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_219_meteo/char_219_meteo_summer_22/build/build_char_219_meteo_summer_22.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_219_meteo/char_219_meteo_summer_22/build/build_char_219_meteo_summer_22.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_219_meteo/char_219_meteo_summer_22/build/build_char_219_meteo_summer_22.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/219_meteo_summer#22",
+  "source_asset": {
+    "assetId": "build_char_219_meteo_summer#22",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "陨星",
+    "appellation": "Meteorite",
+    "skinGroupId": "2026#summer",
+    "skinGroupName": "珊瑚海岸/XXII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_219_meteo_summer#22.atlas",
+      ".png": "build_char_219_meteo_summer#22.png",
+      ".skel": "build_char_219_meteo_summer#22.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/meteorite/skin-summer-22/meta.json",
-    "atlas": "standalone/assets/source/meteorite/skin-summer-22/build_char_219_meteo_summer_22.atlas",
-    "skeleton": "standalone/assets/source/meteorite/skin-summer-22/build_char_219_meteo_summer_22.skel",
+    "atlas": "standalone/assets/source/meteorite/skin-summer-22/build_char_219_meteo_summer#22.atlas",
+    "skeleton": "standalone/assets/source/meteorite/skin-summer-22/build_char_219_meteo_summer#22.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_219_meteo/char_219_meteo_summer_22/build/build_char_219_meteo_summer_22.png",
-        "path": "standalone/assets/source/meteorite/skin-summer-22/build_char_219_meteo_summer_22.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/219_meteo_summer%2322/build_char_219_meteo_summer%2322.png",
+        "path": "standalone/assets/source/meteorite/skin-summer-22/build_char_219_meteo_summer#22.png",
+        "bytes": 516437,
+        "sha256": "c9be5c8fb9805074b87f949d028406f18917673632d02623af8973066369b090"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12061,
+      "sha256": "88d2d939e2a1978c60e5b06633801c6ab6a57b4267460557cc744ab9aacf5a29"
+    },
+    "skeleton": {
+      "bytes": 386485,
+      "sha256": "d6445d0415bfc1b31803b31cf9f0a2f548da9a41c7370ad71b4bfd4bb9dec3db"
+    }
   }
 }

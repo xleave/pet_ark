@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "swire",
   "character_name": "Swire",
   "localized_name": "诗怀雅",
@@ -9,25 +9,58 @@
   "variant_name": "富贵荣华",
   "skin_id": "nian-2",
   "skin_name": "富贵荣华",
-  "source_page": "https://prts.wiki/w/%E8%AF%97%E6%80%80%E9%9B%85",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_308_swire/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_308_swire/meta.json",
-    "model": "char_308_swire_nian_2/build/build_char_308_swire_nian_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_308_swire/char_308_swire_nian_2/build/build_char_308_swire_nian_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_308_swire/char_308_swire_nian_2/build/build_char_308_swire_nian_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_308_swire/char_308_swire_nian_2/build/build_char_308_swire_nian_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/308_swire_nian#2",
+  "source_asset": {
+    "assetId": "build_char_308_swire_nian#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "诗怀雅",
+    "appellation": "Swire",
+    "skinGroupId": "2020#nian",
+    "skinGroupName": "0011制造/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_308_swire_nian#2.atlas",
+      ".png": "build_char_308_swire_nian#2.png",
+      ".skel": "build_char_308_swire_nian#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/swire/skin-nian-2/meta.json",
-    "atlas": "standalone/assets/source/swire/skin-nian-2/build_char_308_swire_nian_2.atlas",
-    "skeleton": "standalone/assets/source/swire/skin-nian-2/build_char_308_swire_nian_2.skel",
+    "atlas": "standalone/assets/source/swire/skin-nian-2/build_char_308_swire_nian#2.atlas",
+    "skeleton": "standalone/assets/source/swire/skin-nian-2/build_char_308_swire_nian#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_308_swire/char_308_swire_nian_2/build/build_char_308_swire_nian_2.png",
-        "path": "standalone/assets/source/swire/skin-nian-2/build_char_308_swire_nian_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/308_swire_nian%232/build_char_308_swire_nian%232.png",
+        "path": "standalone/assets/source/swire/skin-nian-2/build_char_308_swire_nian#2.png",
+        "bytes": 381210,
+        "sha256": "b62ad5f54c060d122c9dc7c784eb4d79a4af747d5d09648bac14da340f7aba27"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8457,
+      "sha256": "1e0bcd1064885c6cfa24c5f5029d3ad05549f79aba32fbe180dc276e0af1fcd1"
+    },
+    "skeleton": {
+      "bytes": 185204,
+      "sha256": "fe11f47369be60918bf18f85e3080506bce9ad913595d546548998114581d0a2"
+    }
   }
 }

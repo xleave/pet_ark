@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "wakaba-mutsumi",
   "character_name": "Wakaba Mutsumi",
   "localized_name": "若叶睦",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%8B%A5%E5%8F%B6%E7%9D%A6",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/meta.json",
-    "model": "defaultskin/build/build_char_4183_mortis",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/defaultskin/build/build_char_4183_mortis.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/defaultskin/build/build_char_4183_mortis.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/defaultskin/build/build_char_4183_mortis.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4183_mortis",
+  "source_asset": {
+    "assetId": "build_char_4183_mortis",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "若叶睦",
+    "appellation": "Wakaba Mutsumi",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4183_mortis.atlas",
+      ".png": "build_char_4183_mortis.png",
+      ".skel": "build_char_4183_mortis.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/wakaba-mutsumi/default/meta.json",
     "atlas": "standalone/assets/source/wakaba-mutsumi/default/build_char_4183_mortis.atlas",
     "skeleton": "standalone/assets/source/wakaba-mutsumi/default/build_char_4183_mortis.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/defaultskin/build/build_char_4183_mortis.png",
-        "path": "standalone/assets/source/wakaba-mutsumi/default/build_char_4183_mortis.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4183_mortis/build_char_4183_mortis.png",
+        "path": "standalone/assets/source/wakaba-mutsumi/default/build_char_4183_mortis.png",
+        "bytes": 296293,
+        "sha256": "99dc7e0299b2318edcb88f8980c1de84985fb3b504adb535580089d190cfbc20"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10212,
+      "sha256": "0987944409500fb2bf6bc7db956b19595f5d31a509f73144b27c068a46a4b7b7"
+    },
+    "skeleton": {
+      "bytes": 129184,
+      "sha256": "f4b47ae2cf68abf5c22d9557e545cfdc4a090fe7943a0e5d5777384ed522b3b5"
+    }
   }
 }

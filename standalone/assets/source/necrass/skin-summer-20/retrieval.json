@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "necrass",
   "character_name": "Necrass",
   "localized_name": "死芒",
@@ -9,25 +9,58 @@
   "variant_name": "夏卉 FA161",
   "skin_id": "summer-20",
   "skin_name": "夏卉 FA161",
-  "source_page": "https://prts.wiki/w/%E6%AD%BB%E8%8A%92",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/meta.json",
-    "model": "char_450_necras_summer_20/build/build_char_450_necras_summer_20",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/char_450_necras_summer_20/build/build_char_450_necras_summer_20.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/char_450_necras_summer_20/build/build_char_450_necras_summer_20.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/char_450_necras_summer_20/build/build_char_450_necras_summer_20.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/450_necras_summer#20",
+  "source_asset": {
+    "assetId": "build_char_450_necras_summer#20",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "死芒",
+    "appellation": "Necrass",
+    "skinGroupId": "2025#summer#2",
+    "skinGroupName": "珊瑚海岸/XX",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_450_necras_summer#20.atlas",
+      ".png": "build_char_450_necras_summer#20.png",
+      ".skel": "build_char_450_necras_summer#20"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/necrass/skin-summer-20/meta.json",
-    "atlas": "standalone/assets/source/necrass/skin-summer-20/build_char_450_necras_summer_20.atlas",
-    "skeleton": "standalone/assets/source/necrass/skin-summer-20/build_char_450_necras_summer_20.skel",
+    "atlas": "standalone/assets/source/necrass/skin-summer-20/build_char_450_necras_summer#20.atlas",
+    "skeleton": "standalone/assets/source/necrass/skin-summer-20/build_char_450_necras_summer#20",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/char_450_necras_summer_20/build/build_char_450_necras_summer_20.png",
-        "path": "standalone/assets/source/necrass/skin-summer-20/build_char_450_necras_summer_20.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/450_necras_summer%2320/build_char_450_necras_summer%2320.png",
+        "path": "standalone/assets/source/necrass/skin-summer-20/build_char_450_necras_summer#20.png",
+        "bytes": 743654,
+        "sha256": "b9e833646a057b92cff93d15dc21928c68308b01878f0127f531c14e369d2b9c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14345,
+      "sha256": "45b2f30719bb38b7c16ed11252a0cf8f15d5a29916bfe016be7ee3406a649e3a"
+    },
+    "skeleton": {
+      "bytes": 1767016,
+      "sha256": "5b4c8287322cf63f7dd51c52f1025878075be79b57b9bc134f2d66460368e4d0"
+    }
   }
 }

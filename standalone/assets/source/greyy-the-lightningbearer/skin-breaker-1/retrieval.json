@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "greyy-the-lightningbearer",
   "character_name": "Greyy the Lightningbearer",
   "localized_name": "承曦格雷伊",
@@ -9,25 +9,59 @@
   "variant_name": "生化沉溺",
   "skin_id": "breaker-1",
   "skin_name": "生化沉溺",
-  "source_page": "https://prts.wiki/w/%E6%89%BF%E6%9B%A6%E6%A0%BC%E9%9B%B7%E4%BC%8A",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/meta.json",
-    "model": "char_1027_greyy2_breaker_1/build/build_char_1027_greyy2_breaker_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/char_1027_greyy2_breaker_1/build/build_char_1027_greyy2_breaker_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/char_1027_greyy2_breaker_1/build/build_char_1027_greyy2_breaker_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/char_1027_greyy2_breaker_1/build/build_char_1027_greyy2_breaker_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1027_greyy2_breaker#1",
+  "source_asset": {
+    "assetId": "build_char_1027_greyy2_breaker#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "承曦格雷伊",
+    "appellation": "Greyy the Lightningbearer",
+    "skinGroupId": "2025#breaker",
+    "skinGroupName": "破格视界",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1027_greyy2_breaker#1.atlas",
+      ".png": "build_char_1027_greyy2_breaker#1.png",
+      ".skel": "build_char_1027_greyy2_breaker#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/greyy-the-lightningbearer/skin-breaker-1/meta.json",
-    "atlas": "standalone/assets/source/greyy-the-lightningbearer/skin-breaker-1/build_char_1027_greyy2_breaker_1.atlas",
-    "skeleton": "standalone/assets/source/greyy-the-lightningbearer/skin-breaker-1/build_char_1027_greyy2_breaker_1.skel",
+    "atlas": "standalone/assets/source/greyy-the-lightningbearer/skin-breaker-1/build_char_1027_greyy2_breaker#1.atlas",
+    "skeleton": "standalone/assets/source/greyy-the-lightningbearer/skin-breaker-1/build_char_1027_greyy2_breaker#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1027_greyy2/char_1027_greyy2_breaker_1/build/build_char_1027_greyy2_breaker_1.png",
-        "path": "standalone/assets/source/greyy-the-lightningbearer/skin-breaker-1/build_char_1027_greyy2_breaker_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1027_greyy2_breaker%231/build_char_1027_greyy2_breaker%231.png",
+        "path": "standalone/assets/source/greyy-the-lightningbearer/skin-breaker-1/build_char_1027_greyy2_breaker#1.png",
+        "bytes": 367231,
+        "sha256": "4695cc2ca61cf56207d16012a32d0e5858c255ae323e73f338836f29b95cea14"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15901,
+      "sha256": "4a4d72332c0c6279dc581d2abdeea53d7fbf43ea56a8e85f755262cbf8eee82e"
+    },
+    "skeleton": {
+      "bytes": 513202,
+      "sha256": "54d7ca4a1b42903a11f4c37e3a0344d881c7571f124a712736c729ab82d94ca6"
+    }
   }
 }

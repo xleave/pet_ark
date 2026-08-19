@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "taraxacum",
   "character_name": "Taraxacum",
   "localized_name": "风絮",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%A3%8E%E7%B5%AE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4222_taraxa/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4222_taraxa/meta.json",
-    "model": "defaultskin/build/build_char_4222_taraxa",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4222_taraxa/defaultskin/build/build_char_4222_taraxa.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4222_taraxa/defaultskin/build/build_char_4222_taraxa.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4222_taraxa/defaultskin/build/build_char_4222_taraxa.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4222_taraxa",
+  "source_asset": {
+    "assetId": "build_char_4222_taraxa",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "风絮",
+    "appellation": "Taraxacum",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4222_taraxa.atlas",
+      ".png": "build_char_4222_taraxa.png",
+      ".skel": "build_char_4222_taraxa.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/taraxacum/default/meta.json",
     "atlas": "standalone/assets/source/taraxacum/default/build_char_4222_taraxa.atlas",
     "skeleton": "standalone/assets/source/taraxacum/default/build_char_4222_taraxa.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4222_taraxa/defaultskin/build/build_char_4222_taraxa.png",
-        "path": "standalone/assets/source/taraxacum/default/build_char_4222_taraxa.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4222_taraxa/build_char_4222_taraxa.png",
+        "path": "standalone/assets/source/taraxacum/default/build_char_4222_taraxa.png",
+        "bytes": 459739,
+        "sha256": "4d93a4af6679e051a827e51792b4a635ac260d9c6ebe112f3987cc35999b6aae"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13956,
+      "sha256": "696a065ded11c702f356b816d368a77ef4534cfa0b970b5a53655d761d8a01d2"
+    },
+    "skeleton": {
+      "bytes": 179948,
+      "sha256": "5836deeafb5f08f55517df910d2b4044fa6cf93729e033258aafb66791313e67"
+    }
   }
 }

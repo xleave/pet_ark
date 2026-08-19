@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "qanipalaat",
   "character_name": "Qanipalaat",
   "localized_name": "雪绒",
@@ -9,25 +9,58 @@
   "variant_name": "回礼",
   "skin_id": "snow-6",
   "skin_name": "回礼",
-  "source_page": "https://prts.wiki/w/%E9%9B%AA%E7%BB%92",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_466_qanik/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_466_qanik/meta.json",
-    "model": "char_466_qanik_snow_6/build/build_char_466_qanik_snow_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_466_qanik/char_466_qanik_snow_6/build/build_char_466_qanik_snow_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_466_qanik/char_466_qanik_snow_6/build/build_char_466_qanik_snow_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_466_qanik/char_466_qanik_snow_6/build/build_char_466_qanik_snow_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/466_qanik_snow#6",
+  "source_asset": {
+    "assetId": "build_char_466_qanik_snow#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "雪绒",
+    "appellation": "Qanipalaat",
+    "skinGroupId": "2023#xmas",
+    "skinGroupName": "冰原信使/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_466_qanik_snow#6.atlas",
+      ".png": "build_char_466_qanik_snow#6.png",
+      ".skel": "build_char_466_qanik_snow#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/qanipalaat/skin-snow-6/meta.json",
-    "atlas": "standalone/assets/source/qanipalaat/skin-snow-6/build_char_466_qanik_snow_6.atlas",
-    "skeleton": "standalone/assets/source/qanipalaat/skin-snow-6/build_char_466_qanik_snow_6.skel",
+    "atlas": "standalone/assets/source/qanipalaat/skin-snow-6/build_char_466_qanik_snow#6.atlas",
+    "skeleton": "standalone/assets/source/qanipalaat/skin-snow-6/build_char_466_qanik_snow#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_466_qanik/char_466_qanik_snow_6/build/build_char_466_qanik_snow_6.png",
-        "path": "standalone/assets/source/qanipalaat/skin-snow-6/build_char_466_qanik_snow_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/466_qanik_snow%236/build_char_466_qanik_snow%236.png",
+        "path": "standalone/assets/source/qanipalaat/skin-snow-6/build_char_466_qanik_snow#6.png",
+        "bytes": 306699,
+        "sha256": "1cb6295c9eb34bb10694fd4b3c579da9b25b1e2ae0cc8f0876f87b6a25d6a280"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11009,
+      "sha256": "a77307e58fe22376739a01102c0015cf37d83d64fb5ec58582585eb1f4138699"
+    },
+    "skeleton": {
+      "bytes": 252934,
+      "sha256": "a54de1242634013ee9776f03eb00e26a02cdf3ce7742a8ae45fe9bb9fbd2f9de"
+    }
   }
 }

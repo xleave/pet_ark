@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mostima",
   "character_name": "Mostima",
   "localized_name": "莫斯提马",
@@ -9,25 +9,58 @@
   "variant_name": "除魅",
   "skin_id": "epoque-5",
   "skin_name": "除魅",
-  "source_page": "https://prts.wiki/w/%E8%8E%AB%E6%96%AF%E6%8F%90%E9%A9%AC",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/meta.json",
-    "model": "char_213_mostma_epoque_5/build/build_char_213_mostma_epoque_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/char_213_mostma_epoque_5/build/build_char_213_mostma_epoque_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/char_213_mostma_epoque_5/build/build_char_213_mostma_epoque_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/char_213_mostma_epoque_5/build/build_char_213_mostma_epoque_5.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/213_mostma_epoque#5",
+  "source_asset": {
+    "assetId": "build_char_213_mostma_epoque#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "莫斯提马",
+    "appellation": "Mostima",
+    "skinGroupId": "2020#epoque#4",
+    "skinGroupName": "时代/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_213_mostma_epoque#5.atlas",
+      ".png": "build_char_213_mostma_epoque#5.png",
+      ".skel": "build_char_213_mostma_epoque#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mostima/skin-epoque-5/meta.json",
-    "atlas": "standalone/assets/source/mostima/skin-epoque-5/build_char_213_mostma_epoque_5.atlas",
-    "skeleton": "standalone/assets/source/mostima/skin-epoque-5/build_char_213_mostma_epoque_5.skel",
+    "atlas": "standalone/assets/source/mostima/skin-epoque-5/build_char_213_mostma_epoque#5.atlas",
+    "skeleton": "standalone/assets/source/mostima/skin-epoque-5/build_char_213_mostma_epoque#5.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/char_213_mostma_epoque_5/build/build_char_213_mostma_epoque_5.png",
-        "path": "standalone/assets/source/mostima/skin-epoque-5/build_char_213_mostma_epoque_5.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/213_mostma_epoque%235/build_char_213_mostma_epoque%235.png",
+        "path": "standalone/assets/source/mostima/skin-epoque-5/build_char_213_mostma_epoque#5.png",
+        "bytes": 338485,
+        "sha256": "82d274636667581c522d190bcc12c4b9039004992dbb769a59a993d7525a06cd"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10604,
+      "sha256": "3360f2a278502e32205b85860b507b6344faa9c35104c654d2bbdea7751309bc"
+    },
+    "skeleton": {
+      "bytes": 221176,
+      "sha256": "2599b42b9c274fddc1fc5c84cbdfb64c2e92d700fb31d5cf3757e6b73a54fd50"
+    }
   }
 }

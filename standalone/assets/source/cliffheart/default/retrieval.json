@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "cliffheart",
   "character_name": "Cliffheart",
   "localized_name": "崖心",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%B4%96%E5%BF%83",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_173_slchan/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_173_slchan/meta.json",
-    "model": "defaultskin/build/build_char_173_slchan",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_173_slchan/defaultskin/build/build_char_173_slchan.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_173_slchan/defaultskin/build/build_char_173_slchan.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_173_slchan/defaultskin/build/build_char_173_slchan.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/173_slchan",
+  "source_asset": {
+    "assetId": "build_char_173_slchan",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "崖心",
+    "appellation": "Cliffheart",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_173_slchan.atlas",
+      ".png": "build_char_173_slchan.png",
+      ".skel": "build_char_173_slchan.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/cliffheart/default/meta.json",
     "atlas": "standalone/assets/source/cliffheart/default/build_char_173_slchan.atlas",
     "skeleton": "standalone/assets/source/cliffheart/default/build_char_173_slchan.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_173_slchan/defaultskin/build/build_char_173_slchan.png",
-        "path": "standalone/assets/source/cliffheart/default/build_char_173_slchan.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/173_slchan/build_char_173_slchan.png",
+        "path": "standalone/assets/source/cliffheart/default/build_char_173_slchan.png",
+        "bytes": 187633,
+        "sha256": "7d50f111d4177de1ddc0e93d6c5610674b48b30cc68080ff44e3763a2c7be4de"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6660,
+      "sha256": "1699497f23cc643537a6de74913564e56bc3163eb4f631994577bb1d750ea26e"
+    },
+    "skeleton": {
+      "bytes": 91417,
+      "sha256": "bf499bc1b6096ea7c9369c3abd18c806664c975731b0fd230e6eb08164a1f96e"
+    }
   }
 }

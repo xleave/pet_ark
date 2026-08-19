@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "laios",
   "character_name": "Laios",
   "localized_name": "莱欧斯",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%8E%B1%E6%AC%A7%E6%96%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4142_laios/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4142_laios/meta.json",
-    "model": "defaultskin/build/build_char_4142_laios",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4142_laios/defaultskin/build/build_char_4142_laios.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4142_laios/defaultskin/build/build_char_4142_laios.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4142_laios/defaultskin/build/build_char_4142_laios.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4142_laios",
+  "source_asset": {
+    "assetId": "build_char_4142_laios",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "莱欧斯",
+    "appellation": "Laios",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4142_laios.atlas",
+      ".png": "build_char_4142_laios.png",
+      ".skel": "build_char_4142_laios.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/laios/default/meta.json",
     "atlas": "standalone/assets/source/laios/default/build_char_4142_laios.atlas",
     "skeleton": "standalone/assets/source/laios/default/build_char_4142_laios.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4142_laios/defaultskin/build/build_char_4142_laios.png",
-        "path": "standalone/assets/source/laios/default/build_char_4142_laios.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4142_laios/build_char_4142_laios.png",
+        "path": "standalone/assets/source/laios/default/build_char_4142_laios.png",
+        "bytes": 428914,
+        "sha256": "d260a48bbb98a5a9ba148e03f354c77210e9a911836c7f577866953252670fa4"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15955,
+      "sha256": "2760915b6fb0f09ea98c55435e827dc38ed00a9d04646512cc0eb39dc4b9ed94"
+    },
+    "skeleton": {
+      "bytes": 150308,
+      "sha256": "de2a23136dc535411118c6120a52bbbecfa8839421a4c89474cb816600e153d2"
+    }
   }
 }

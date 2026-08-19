@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "rhodes-island-recon",
   "character_name": "Rhodes Island Recon",
   "localized_name": "罗德岛隐秘队",
@@ -9,25 +9,58 @@
   "variant_name": "露营时间喵！",
   "skin_id": "mh-2",
   "skin_name": "露营时间喵！",
-  "source_page": "https://prts.wiki/w/%E7%BD%97%E5%BE%B7%E5%B2%9B%E9%9A%90%E7%A7%98%E9%98%9F",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4215_buddy/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4215_buddy/meta.json",
-    "model": "char_4215_buddy_mh_2/build/build_char_4215_buddy_mh_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4215_buddy/char_4215_buddy_mh_2/build/build_char_4215_buddy_mh_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4215_buddy/char_4215_buddy_mh_2/build/build_char_4215_buddy_mh_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4215_buddy/char_4215_buddy_mh_2/build/build_char_4215_buddy_mh_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4215_buddy_mh#2",
+  "source_asset": {
+    "assetId": "build_char_4215_buddy_mh#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "罗德岛隐秘队",
+    "appellation": "Rhodes Island Recon",
+    "skinGroupId": "2026#mh",
+    "skinGroupName": "怪物猎人/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_1",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4215_buddy_mh#2.atlas",
+      ".png": "build_char_4215_buddy_mh#2.png",
+      ".skel": "build_char_4215_buddy_mh#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/rhodes-island-recon/skin-mh-2/meta.json",
-    "atlas": "standalone/assets/source/rhodes-island-recon/skin-mh-2/build_char_4215_buddy_mh_2.atlas",
-    "skeleton": "standalone/assets/source/rhodes-island-recon/skin-mh-2/build_char_4215_buddy_mh_2.skel",
+    "atlas": "standalone/assets/source/rhodes-island-recon/skin-mh-2/build_char_4215_buddy_mh#2.atlas",
+    "skeleton": "standalone/assets/source/rhodes-island-recon/skin-mh-2/build_char_4215_buddy_mh#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4215_buddy/char_4215_buddy_mh_2/build/build_char_4215_buddy_mh_2.png",
-        "path": "standalone/assets/source/rhodes-island-recon/skin-mh-2/build_char_4215_buddy_mh_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4215_buddy_mh%232/build_char_4215_buddy_mh%232.png",
+        "path": "standalone/assets/source/rhodes-island-recon/skin-mh-2/build_char_4215_buddy_mh#2.png",
+        "bytes": 1000658,
+        "sha256": "60709f504f2801bfaf9645ccb5e1e33d26f949b1e1ed2efcf6321112126f1f1f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 26267,
+      "sha256": "9e3ca51742d7219f3543295b6d1809ca645f7480a18dbd0f1187cfc8027fb03f"
+    },
+    "skeleton": {
+      "bytes": 607093,
+      "sha256": "d8e4d4b0413b8a1f757e0aa87a4a45c6f285b26ce12db8b7877bab463741198c"
+    }
   }
 }

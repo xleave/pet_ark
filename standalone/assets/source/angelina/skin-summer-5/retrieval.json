@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "angelina",
   "character_name": "Angelina",
   "localized_name": "安洁莉娜",
@@ -9,25 +9,58 @@
   "variant_name": "夏卉 FA017",
   "skin_id": "summer-5",
   "skin_name": "夏卉 FA017",
-  "source_page": "https://prts.wiki/w/%E5%AE%89%E6%B4%81%E8%8E%89%E5%A8%9C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_291_aglina/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_291_aglina/meta.json",
-    "model": "char_291_aglina_summer_5/build/build_char_291_aglina_summer_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_291_aglina/char_291_aglina_summer_5/build/build_char_291_aglina_summer_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_291_aglina/char_291_aglina_summer_5/build/build_char_291_aglina_summer_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_291_aglina/char_291_aglina_summer_5/build/build_char_291_aglina_summer_5.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/291_aglina_summer#5",
+  "source_asset": {
+    "assetId": "build_char_291_aglina_summer#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "安洁莉娜",
+    "appellation": "Angelina",
+    "skinGroupId": "2021#summer",
+    "skinGroupName": "珊瑚海岸/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_291_aglina_summer#5.atlas",
+      ".png": "build_char_291_aglina_summer#5.png",
+      ".skel": "build_char_291_aglina_summer#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/angelina/skin-summer-5/meta.json",
-    "atlas": "standalone/assets/source/angelina/skin-summer-5/build_char_291_aglina_summer_5.atlas",
-    "skeleton": "standalone/assets/source/angelina/skin-summer-5/build_char_291_aglina_summer_5.skel",
+    "atlas": "standalone/assets/source/angelina/skin-summer-5/build_char_291_aglina_summer#5.atlas",
+    "skeleton": "standalone/assets/source/angelina/skin-summer-5/build_char_291_aglina_summer#5.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_291_aglina/char_291_aglina_summer_5/build/build_char_291_aglina_summer_5.png",
-        "path": "standalone/assets/source/angelina/skin-summer-5/build_char_291_aglina_summer_5.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/291_aglina_summer%235/build_char_291_aglina_summer%235.png",
+        "path": "standalone/assets/source/angelina/skin-summer-5/build_char_291_aglina_summer#5.png",
+        "bytes": 339195,
+        "sha256": "0a008c5b212d284c2551458ad627fd78c9d1ef514f4174e15b38508723406ae9"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14889,
+      "sha256": "5316c46ff79f54579c325daa264af401288adc9717df6a3ed21a783ed2fa509a"
+    },
+    "skeleton": {
+      "bytes": 292630,
+      "sha256": "55d6ad5f4e7639859204b1c3ffcbb5973c25d9cc2da7eeeb552cdb763bba0dd8"
+    }
   }
 }

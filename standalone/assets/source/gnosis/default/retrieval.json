@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "gnosis",
   "character_name": "Gnosis",
   "localized_name": "灵知",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%81%B5%E7%9F%A5",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_206_gnosis/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_206_gnosis/meta.json",
-    "model": "defaultskin/build/build_char_206_gnosis",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_206_gnosis/defaultskin/build/build_char_206_gnosis.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_206_gnosis/defaultskin/build/build_char_206_gnosis.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_206_gnosis/defaultskin/build/build_char_206_gnosis.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/206_gnosis",
+  "source_asset": {
+    "assetId": "build_char_206_gnosis",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "灵知",
+    "appellation": "Gnosis",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_206_gnosis.atlas",
+      ".png": "build_char_206_gnosis.png",
+      ".skel": "build_char_206_gnosis.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/gnosis/default/meta.json",
     "atlas": "standalone/assets/source/gnosis/default/build_char_206_gnosis.atlas",
     "skeleton": "standalone/assets/source/gnosis/default/build_char_206_gnosis.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_206_gnosis/defaultskin/build/build_char_206_gnosis.png",
-        "path": "standalone/assets/source/gnosis/default/build_char_206_gnosis.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/206_gnosis/build_char_206_gnosis.png",
+        "path": "standalone/assets/source/gnosis/default/build_char_206_gnosis.png",
+        "bytes": 270257,
+        "sha256": "e8736c327f2c42b146359348d8d15439ca7cfd504e0720bc930d7ab04637f836"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8282,
+      "sha256": "2ce15ea4248f03a0694678e34d552951db344e7fe2ae3d0895467196f69a6da5"
+    },
+    "skeleton": {
+      "bytes": 84919,
+      "sha256": "fa50bdecc0db08ad1ef2554de299b1632331ded29d783ccc1ec843b1d641d86a"
+    }
   }
 }

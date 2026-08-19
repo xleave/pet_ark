@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mynar",
   "character_name": "Młynar",
   "localized_name": "玛恩纳",
@@ -9,25 +9,58 @@
   "variant_name": "远路",
   "skin_id": "epoque-28",
   "skin_name": "远路",
-  "source_page": "https://prts.wiki/w/%E7%8E%9B%E6%81%A9%E7%BA%B3",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4064_mlynar/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4064_mlynar/meta.json",
-    "model": "char_4064_mlynar_epoque_28/build/build_char_4064_mlynar_epoque_28",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4064_mlynar/char_4064_mlynar_epoque_28/build/build_char_4064_mlynar_epoque_28.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4064_mlynar/char_4064_mlynar_epoque_28/build/build_char_4064_mlynar_epoque_28.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4064_mlynar/char_4064_mlynar_epoque_28/build/build_char_4064_mlynar_epoque_28.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4064_mlynar_epoque#28",
+  "source_asset": {
+    "assetId": "build_char_4064_mlynar_epoque#28",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "玛恩纳",
+    "appellation": "Młynar",
+    "skinGroupId": "2023#epoque#10",
+    "skinGroupName": "时代/XXVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4064_mlynar_epoque#28.atlas",
+      ".png": "build_char_4064_mlynar_epoque#28.png",
+      ".skel": "build_char_4064_mlynar_epoque#28.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mynar/skin-epoque-28/meta.json",
-    "atlas": "standalone/assets/source/mynar/skin-epoque-28/build_char_4064_mlynar_epoque_28.atlas",
-    "skeleton": "standalone/assets/source/mynar/skin-epoque-28/build_char_4064_mlynar_epoque_28.skel",
+    "atlas": "standalone/assets/source/mynar/skin-epoque-28/build_char_4064_mlynar_epoque#28.atlas",
+    "skeleton": "standalone/assets/source/mynar/skin-epoque-28/build_char_4064_mlynar_epoque#28.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4064_mlynar/char_4064_mlynar_epoque_28/build/build_char_4064_mlynar_epoque_28.png",
-        "path": "standalone/assets/source/mynar/skin-epoque-28/build_char_4064_mlynar_epoque_28.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4064_mlynar_epoque%2328/build_char_4064_mlynar_epoque%2328.png",
+        "path": "standalone/assets/source/mynar/skin-epoque-28/build_char_4064_mlynar_epoque#28.png",
+        "bytes": 559957,
+        "sha256": "e129f07b32fac52009de589b0b150c636781aa5bd872a35cc40ca6765412baba"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14805,
+      "sha256": "8b9e4b9c52b14700a803c2244551952242a5ab8b56eaa31e12668f6a8b21e2ed"
+    },
+    "skeleton": {
+      "bytes": 543273,
+      "sha256": "f93c0cc1afea5bf15b06d50b9df7ec0565adf3e046568a4c634482a653487f5b"
+    }
   }
 }

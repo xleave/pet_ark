@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "frostleaf",
   "character_name": "Frostleaf",
   "localized_name": "霜叶",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%9C%9C%E5%8F%B6",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_193_frostl/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_193_frostl/meta.json",
-    "model": "defaultskin/build/build_char_193_frostl",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_193_frostl/defaultskin/build/build_char_193_frostl.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_193_frostl/defaultskin/build/build_char_193_frostl.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_193_frostl/defaultskin/build/build_char_193_frostl.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/193_frostl",
+  "source_asset": {
+    "assetId": "build_char_193_frostl",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "霜叶",
+    "appellation": "Frostleaf",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_193_frostl.atlas",
+      ".png": "build_char_193_frostl.png",
+      ".skel": "build_char_193_frostl.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/frostleaf/default/meta.json",
     "atlas": "standalone/assets/source/frostleaf/default/build_char_193_frostl.atlas",
     "skeleton": "standalone/assets/source/frostleaf/default/build_char_193_frostl.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_193_frostl/defaultskin/build/build_char_193_frostl.png",
-        "path": "standalone/assets/source/frostleaf/default/build_char_193_frostl.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/193_frostl/build_char_193_frostl.png",
+        "path": "standalone/assets/source/frostleaf/default/build_char_193_frostl.png",
+        "bytes": 211179,
+        "sha256": "9bc22aa68f79df2d9ed055b4a16b56c7f48492794e175140fd0af2b6ea226f99"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4447,
+      "sha256": "ac0f43c276ee19a08e968842a7b48f925b99db414d233e3215b43067e47c4b42"
+    },
+    "skeleton": {
+      "bytes": 134832,
+      "sha256": "7749edeb218df675cda9c873ea27f72eea5e5a4871953ae0a05ff063296f864f"
+    }
   }
 }

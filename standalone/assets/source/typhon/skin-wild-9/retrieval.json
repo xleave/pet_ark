@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "typhon",
   "character_name": "Typhon",
   "localized_name": "提丰",
@@ -9,25 +9,58 @@
   "variant_name": "北地引路人",
   "skin_id": "wild-9",
   "skin_name": "北地引路人",
-  "source_page": "https://prts.wiki/w/%E6%8F%90%E4%B8%B0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/meta.json",
-    "model": "char_2012_typhon_wild_9/build/build_char_2012_typhon_wild_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/char_2012_typhon_wild_9/build/build_char_2012_typhon_wild_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/char_2012_typhon_wild_9/build/build_char_2012_typhon_wild_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/char_2012_typhon_wild_9/build/build_char_2012_typhon_wild_9.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/2012_typhon_wild#9",
+  "source_asset": {
+    "assetId": "build_char_2012_typhon_wild#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "提丰",
+    "appellation": "Typhon",
+    "skinGroupId": "2023#wild#3",
+    "skinGroupName": "生命之地/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2012_typhon_wild#9.atlas",
+      ".png": "build_char_2012_typhon_wild#9.png",
+      ".skel": "build_char_2012_typhon_wild#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/typhon/skin-wild-9/meta.json",
-    "atlas": "standalone/assets/source/typhon/skin-wild-9/build_char_2012_typhon_wild_9.atlas",
-    "skeleton": "standalone/assets/source/typhon/skin-wild-9/build_char_2012_typhon_wild_9.skel",
+    "atlas": "standalone/assets/source/typhon/skin-wild-9/build_char_2012_typhon_wild#9.atlas",
+    "skeleton": "standalone/assets/source/typhon/skin-wild-9/build_char_2012_typhon_wild#9.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/char_2012_typhon_wild_9/build/build_char_2012_typhon_wild_9.png",
-        "path": "standalone/assets/source/typhon/skin-wild-9/build_char_2012_typhon_wild_9.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/2012_typhon_wild%239/build_char_2012_typhon_wild%239.png",
+        "path": "standalone/assets/source/typhon/skin-wild-9/build_char_2012_typhon_wild#9.png",
+        "bytes": 740748,
+        "sha256": "6196c4e650f90a6852c671ad56d7e6df5b3731889e63b700b7a4840fd26d9522"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 17765,
+      "sha256": "e1cf17e199df73332b04703b4015f19a204de20ab30c1888e841d93854352efe"
+    },
+    "skeleton": {
+      "bytes": 1274291,
+      "sha256": "3a26eae199b9b06ceed655003a4808ba1c5ade44eeaa91f18e1a055742b27f8f"
+    }
   }
 }

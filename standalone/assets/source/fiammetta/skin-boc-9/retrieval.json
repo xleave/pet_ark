@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "fiammetta",
   "character_name": "Fiammetta",
   "localized_name": "菲亚梅塔",
@@ -9,25 +9,58 @@
   "variant_name": "审判日",
   "skin_id": "boc-9",
   "skin_name": "审判日",
-  "source_page": "https://prts.wiki/w/%E8%8F%B2%E4%BA%9A%E6%A2%85%E5%A1%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_300_phenxi/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_300_phenxi/meta.json",
-    "model": "char_300_phenxi_boc_9/build/build_char_300_phenxi_boc_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_300_phenxi/char_300_phenxi_boc_9/build/build_char_300_phenxi_boc_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_300_phenxi/char_300_phenxi_boc_9/build/build_char_300_phenxi_boc_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_300_phenxi/char_300_phenxi_boc_9/build/build_char_300_phenxi_boc_9.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/300_phenxi_boc#9",
+  "source_asset": {
+    "assetId": "build_char_300_phenxi_boc#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "菲亚梅塔",
+    "appellation": "Fiammetta",
+    "skinGroupId": "2025#boc",
+    "skinGroupName": "斗争血脉/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_300_phenxi_boc#9.atlas",
+      ".png": "build_char_300_phenxi_boc#9.png",
+      ".skel": "build_char_300_phenxi_boc#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/fiammetta/skin-boc-9/meta.json",
-    "atlas": "standalone/assets/source/fiammetta/skin-boc-9/build_char_300_phenxi_boc_9.atlas",
-    "skeleton": "standalone/assets/source/fiammetta/skin-boc-9/build_char_300_phenxi_boc_9.skel",
+    "atlas": "standalone/assets/source/fiammetta/skin-boc-9/build_char_300_phenxi_boc#9.atlas",
+    "skeleton": "standalone/assets/source/fiammetta/skin-boc-9/build_char_300_phenxi_boc#9.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_300_phenxi/char_300_phenxi_boc_9/build/build_char_300_phenxi_boc_9.png",
-        "path": "standalone/assets/source/fiammetta/skin-boc-9/build_char_300_phenxi_boc_9.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/300_phenxi_boc%239/build_char_300_phenxi_boc%239.png",
+        "path": "standalone/assets/source/fiammetta/skin-boc-9/build_char_300_phenxi_boc#9.png",
+        "bytes": 542079,
+        "sha256": "6e12b965774aa1f8ea21c4d914fa29ac95760dc17aff49848402d12328d8bee5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14692,
+      "sha256": "7245f2664ef381afe531e8f9d33573e26942633b9c660dce3706cc34379ac5d8"
+    },
+    "skeleton": {
+      "bytes": 459606,
+      "sha256": "b07d713047297a9e910c8de87d3699a4ff26ba415f6d8fd8145072b2966f2069"
+    }
   }
 }

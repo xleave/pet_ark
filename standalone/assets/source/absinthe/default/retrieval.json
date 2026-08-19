@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "absinthe",
   "character_name": "Absinthe",
   "localized_name": "苦艾",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%8B%A6%E8%89%BE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_405_absin/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_405_absin/meta.json",
-    "model": "defaultskin/build/build_char_405_absin",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_405_absin/defaultskin/build/build_char_405_absin.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_405_absin/defaultskin/build/build_char_405_absin.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_405_absin/defaultskin/build/build_char_405_absin.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/405_absin",
+  "source_asset": {
+    "assetId": "build_char_405_absin",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "苦艾",
+    "appellation": "Absinthe",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_405_absin.atlas",
+      ".png": "build_char_405_absin.png",
+      ".skel": "build_char_405_absin.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/absinthe/default/meta.json",
     "atlas": "standalone/assets/source/absinthe/default/build_char_405_absin.atlas",
     "skeleton": "standalone/assets/source/absinthe/default/build_char_405_absin.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_405_absin/defaultskin/build/build_char_405_absin.png",
-        "path": "standalone/assets/source/absinthe/default/build_char_405_absin.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/405_absin/build_char_405_absin.png",
+        "path": "standalone/assets/source/absinthe/default/build_char_405_absin.png",
+        "bytes": 196394,
+        "sha256": "867b441aac12d578e9057b99632b9464e413175cea0f225b8f73cb6df06598e2"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7485,
+      "sha256": "988e18e812801acf96f7107ffed3225d3dcd04975c65663cd205d4548398e9b1"
+    },
+    "skeleton": {
+      "bytes": 88438,
+      "sha256": "62f5310a7328519c8518187236deaf7b49ef80b7e8d048d76eace684f247b46e"
+    }
   }
 }

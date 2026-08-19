@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "schwarz",
   "character_name": "Schwarz",
   "localized_name": "黑",
@@ -9,25 +9,58 @@
   "variant_name": "天际线",
   "skin_id": "striker-1",
   "skin_name": "天际线",
-  "source_page": "https://prts.wiki/w/%E9%BB%91",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_340_shwaz/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_340_shwaz/meta.json",
-    "model": "char_340_shwaz_striker_1/build/build_char_340_shwaz_striker_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_340_shwaz/char_340_shwaz_striker_1/build/build_char_340_shwaz_striker_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_340_shwaz/char_340_shwaz_striker_1/build/build_char_340_shwaz_striker_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_340_shwaz/char_340_shwaz_striker_1/build/build_char_340_shwaz_striker_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/340_shwaz_striker#1",
+  "source_asset": {
+    "assetId": "build_char_340_shwaz_striker#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "黑",
+    "appellation": "Schwarz",
+    "skinGroupId": "2021#striker",
+    "skinGroupName": "雷神推进者",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_340_shwaz_striker#1.atlas",
+      ".png": "build_char_340_shwaz_striker#1.png",
+      ".skel": "build_char_340_shwaz_striker#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/schwarz/skin-striker-1/meta.json",
-    "atlas": "standalone/assets/source/schwarz/skin-striker-1/build_char_340_shwaz_striker_1.atlas",
-    "skeleton": "standalone/assets/source/schwarz/skin-striker-1/build_char_340_shwaz_striker_1.skel",
+    "atlas": "standalone/assets/source/schwarz/skin-striker-1/build_char_340_shwaz_striker#1.atlas",
+    "skeleton": "standalone/assets/source/schwarz/skin-striker-1/build_char_340_shwaz_striker#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_340_shwaz/char_340_shwaz_striker_1/build/build_char_340_shwaz_striker_1.png",
-        "path": "standalone/assets/source/schwarz/skin-striker-1/build_char_340_shwaz_striker_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/340_shwaz_striker%231/build_char_340_shwaz_striker%231.png",
+        "path": "standalone/assets/source/schwarz/skin-striker-1/build_char_340_shwaz_striker#1.png",
+        "bytes": 270005,
+        "sha256": "7d1654527310334ad658054acfbaf5e58c2a0719a5a1984662713306f656e2a5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8108,
+      "sha256": "6d42f85b5fd09f7bbd7f8df412437bfa3d48628cc42c0bfe9ae2ba0d7329a737"
+    },
+    "skeleton": {
+      "bytes": 169072,
+      "sha256": "4c7ff39d6322d702e11e7a769457d3e4d77b1a43037f8deedf7cd508937da451"
+    }
   }
 }

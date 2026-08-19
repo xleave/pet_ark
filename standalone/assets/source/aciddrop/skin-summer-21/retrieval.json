@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "aciddrop",
   "character_name": "Aciddrop",
   "localized_name": "酸糖",
@@ -9,25 +9,58 @@
   "variant_name": "悠然假日 HD75",
   "skin_id": "summer-21",
   "skin_name": "悠然假日 HD75",
-  "source_page": "https://prts.wiki/w/%E9%85%B8%E7%B3%96",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/meta.json",
-    "model": "char_366_acdrop_summer_21/build/build_char_366_acdrop_summer_21",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/char_366_acdrop_summer_21/build/build_char_366_acdrop_summer_21.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/char_366_acdrop_summer_21/build/build_char_366_acdrop_summer_21.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/char_366_acdrop_summer_21/build/build_char_366_acdrop_summer_21.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/366_acdrop_summer#21",
+  "source_asset": {
+    "assetId": "build_char_366_acdrop_summer#21",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "酸糖",
+    "appellation": "Aciddrop",
+    "skinGroupId": "2025#summer#3",
+    "skinGroupName": "珊瑚海岸/XXI",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_366_acdrop_summer#21.atlas",
+      ".png": "build_char_366_acdrop_summer#21.png",
+      ".skel": "build_char_366_acdrop_summer#21.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/aciddrop/skin-summer-21/meta.json",
-    "atlas": "standalone/assets/source/aciddrop/skin-summer-21/build_char_366_acdrop_summer_21.atlas",
-    "skeleton": "standalone/assets/source/aciddrop/skin-summer-21/build_char_366_acdrop_summer_21.skel",
+    "atlas": "standalone/assets/source/aciddrop/skin-summer-21/build_char_366_acdrop_summer#21.atlas",
+    "skeleton": "standalone/assets/source/aciddrop/skin-summer-21/build_char_366_acdrop_summer#21.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_366_acdrop/char_366_acdrop_summer_21/build/build_char_366_acdrop_summer_21.png",
-        "path": "standalone/assets/source/aciddrop/skin-summer-21/build_char_366_acdrop_summer_21.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/366_acdrop_summer%2321/build_char_366_acdrop_summer%2321.png",
+        "path": "standalone/assets/source/aciddrop/skin-summer-21/build_char_366_acdrop_summer#21.png",
+        "bytes": 447760,
+        "sha256": "6be698db4780ac4a48d6fb957d8c11c57a998c134d07a7ad2b1f7311ac8caa4d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11683,
+      "sha256": "1622f2fc889e8a79a431c10c68dc6403290ec54e401f4cb7fa72ed5d1c58e507"
+    },
+    "skeleton": {
+      "bytes": 316749,
+      "sha256": "6b3fe3c54360d848799a4bea6daf798e8c273ba8bfdd3de882762b3b1f650e53"
+    }
   }
 }

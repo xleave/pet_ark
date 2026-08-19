@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "meteor",
   "character_name": "Meteor",
   "localized_name": "流星",
@@ -9,25 +9,58 @@
   "variant_name": "星橼林",
   "skin_id": "epoque-28",
   "skin_name": "星橼林",
-  "source_page": "https://prts.wiki/w/%E6%B5%81%E6%98%9F",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/meta.json",
-    "model": "char_126_shotst_epoque_28/build/build_char_126_shotst_epoque_28",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/char_126_shotst_epoque_28/build/build_char_126_shotst_epoque_28.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/char_126_shotst_epoque_28/build/build_char_126_shotst_epoque_28.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/char_126_shotst_epoque_28/build/build_char_126_shotst_epoque_28.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/126_shotst_epoque#28",
+  "source_asset": {
+    "assetId": "build_char_126_shotst_epoque#28",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "流星",
+    "appellation": "Meteor",
+    "skinGroupId": "2023#epoque#10",
+    "skinGroupName": "时代/XXVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_126_shotst_epoque#28.atlas",
+      ".png": "build_char_126_shotst_epoque#28.png",
+      ".skel": "build_char_126_shotst_epoque#28.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/meteor/skin-epoque-28/meta.json",
-    "atlas": "standalone/assets/source/meteor/skin-epoque-28/build_char_126_shotst_epoque_28.atlas",
-    "skeleton": "standalone/assets/source/meteor/skin-epoque-28/build_char_126_shotst_epoque_28.skel",
+    "atlas": "standalone/assets/source/meteor/skin-epoque-28/build_char_126_shotst_epoque#28.atlas",
+    "skeleton": "standalone/assets/source/meteor/skin-epoque-28/build_char_126_shotst_epoque#28.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_126_shotst/char_126_shotst_epoque_28/build/build_char_126_shotst_epoque_28.png",
-        "path": "standalone/assets/source/meteor/skin-epoque-28/build_char_126_shotst_epoque_28.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/126_shotst_epoque%2328/build_char_126_shotst_epoque%2328.png",
+        "path": "standalone/assets/source/meteor/skin-epoque-28/build_char_126_shotst_epoque#28.png",
+        "bytes": 682761,
+        "sha256": "21dde9682f6aea70ca3927d6a74080934239a6322613ba6488cabd784e6bfad1"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 18525,
+      "sha256": "e7d7ae5b1fe4a6ed1840e5943afc6bac84defc2fc6bf70d7096bf8c41885ff0e"
+    },
+    "skeleton": {
+      "bytes": 619424,
+      "sha256": "5fbb173f28a9d7253b44b7414086137912585309318ee922253ef60ddd6aacc6"
+    }
   }
 }

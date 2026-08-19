@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "vendela",
   "character_name": "Vendela",
   "localized_name": "刺玫",
@@ -9,25 +9,58 @@
   "variant_name": "蔷薇之谜",
   "skin_id": "game-10",
   "skin_name": "蔷薇之谜",
-  "source_page": "https://prts.wiki/w/%E5%88%BA%E7%8E%AB",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_494_vendla/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_494_vendla/meta.json",
-    "model": "char_494_vendla_game_10/build/build_char_494_vendla_game_10",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_494_vendla/char_494_vendla_game_10/build/build_char_494_vendla_game_10.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_494_vendla/char_494_vendla_game_10/build/build_char_494_vendla_game_10.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_494_vendla/char_494_vendla_game_10/build/build_char_494_vendla_game_10.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/494_vendla_game#10",
+  "source_asset": {
+    "assetId": "build_char_494_vendla_game#10",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "刺玫",
+    "appellation": "Vendela",
+    "skinGroupId": "2026#game#3",
+    "skinGroupName": "成就之星/X",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_494_vendla_game#10.atlas",
+      ".png": "build_char_494_vendla_game#10.png",
+      ".skel": "build_char_494_vendla_game#10.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/vendela/skin-game-10/meta.json",
-    "atlas": "standalone/assets/source/vendela/skin-game-10/build_char_494_vendla_game_10.atlas",
-    "skeleton": "standalone/assets/source/vendela/skin-game-10/build_char_494_vendla_game_10.skel",
+    "atlas": "standalone/assets/source/vendela/skin-game-10/build_char_494_vendla_game#10.atlas",
+    "skeleton": "standalone/assets/source/vendela/skin-game-10/build_char_494_vendla_game#10.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_494_vendla/char_494_vendla_game_10/build/build_char_494_vendla_game_10.png",
-        "path": "standalone/assets/source/vendela/skin-game-10/build_char_494_vendla_game_10.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/494_vendla_game%2310/build_char_494_vendla_game%2310.png",
+        "path": "standalone/assets/source/vendela/skin-game-10/build_char_494_vendla_game#10.png",
+        "bytes": 410484,
+        "sha256": "aadad4c1cd0906635a1264c278f23f4429995de17a487e2dc1658c267ed5cdf7"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11710,
+      "sha256": "71140b330517eb87def5e286f0819bcfa4fc3fa0b2fc0c53d5f1215297c4df3e"
+    },
+    "skeleton": {
+      "bytes": 328926,
+      "sha256": "46645d3f4077a52865ad81309d6e203ca9f9e6a3706c12700a215c8159b1dd0a"
+    }
   }
 }

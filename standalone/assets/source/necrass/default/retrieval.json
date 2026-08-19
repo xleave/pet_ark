@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "necrass",
   "character_name": "Necrass",
   "localized_name": "死芒",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%AD%BB%E8%8A%92",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/meta.json",
-    "model": "defaultskin/build/build_char_450_necras",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/defaultskin/build/build_char_450_necras.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/defaultskin/build/build_char_450_necras.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/defaultskin/build/build_char_450_necras.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/450_necras",
+  "source_asset": {
+    "assetId": "build_char_450_necras",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "死芒",
+    "appellation": "Necrass",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_450_necras.atlas",
+      ".png": "build_char_450_necras.png",
+      ".skel": "build_char_450_necras"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/necrass/default/meta.json",
     "atlas": "standalone/assets/source/necrass/default/build_char_450_necras.atlas",
-    "skeleton": "standalone/assets/source/necrass/default/build_char_450_necras.skel",
+    "skeleton": "standalone/assets/source/necrass/default/build_char_450_necras",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/defaultskin/build/build_char_450_necras.png",
-        "path": "standalone/assets/source/necrass/default/build_char_450_necras.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/450_necras/build_char_450_necras.png",
+        "path": "standalone/assets/source/necrass/default/build_char_450_necras.png",
+        "bytes": 443646,
+        "sha256": "c52be7fe4252f6aec5b08f53ec1b65cb3870141bdeb28d1d9475728bfe8e767d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9433,
+      "sha256": "7037847f094bfad166fb496355351141ab384f6b8bc4239cb658aaf479284204"
+    },
+    "skeleton": {
+      "bytes": 659559,
+      "sha256": "e5e9b8a0eb104da3aa077f40716799fe8ed58bf857a0fbb2df8acccd316206e9"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "thorns",
   "character_name": "Thorns",
   "localized_name": "棘刺",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%A3%98%E5%88%BA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_293_thorns/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_293_thorns/meta.json",
-    "model": "defaultskin/build/build_char_293_thorns",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_293_thorns/defaultskin/build/build_char_293_thorns.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_293_thorns/defaultskin/build/build_char_293_thorns.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_293_thorns/defaultskin/build/build_char_293_thorns.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/293_thorns",
+  "source_asset": {
+    "assetId": "build_char_293_thorns",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "棘刺",
+    "appellation": "Thorns",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_293_thorns.atlas",
+      ".png": "build_char_293_thorns.png",
+      ".skel": "build_char_293_thorns.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/thorns/default/meta.json",
     "atlas": "standalone/assets/source/thorns/default/build_char_293_thorns.atlas",
     "skeleton": "standalone/assets/source/thorns/default/build_char_293_thorns.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_293_thorns/defaultskin/build/build_char_293_thorns.png",
-        "path": "standalone/assets/source/thorns/default/build_char_293_thorns.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/293_thorns/build_char_293_thorns.png",
+        "path": "standalone/assets/source/thorns/default/build_char_293_thorns.png",
+        "bytes": 343944,
+        "sha256": "8b180d7b31e007c5986cc38c53272f74acf34f3ed5603d8d427d6938269b2c88"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8607,
+      "sha256": "49a15c4e4ddfd6aab04f3dc5759898b45d8d24b2f9e33b98bb54ccf6932410fa"
+    },
+    "skeleton": {
+      "bytes": 312442,
+      "sha256": "5a04f9221a62a97ab80bff1cde13a307be8bacb9c184b94697e97d5a12c65c90"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "goldenglow",
   "character_name": "Goldenglow",
   "localized_name": "澄闪",
@@ -9,25 +9,58 @@
   "variant_name": "喜夜侍者",
   "skin_id": "snow-5",
   "skin_name": "喜夜侍者",
-  "source_page": "https://prts.wiki/w/%E6%BE%84%E9%97%AA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/meta.json",
-    "model": "char_377_gdglow_snow_5/build/build_char_377_gdglow_snow_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/char_377_gdglow_snow_5/build/build_char_377_gdglow_snow_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/char_377_gdglow_snow_5/build/build_char_377_gdglow_snow_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/char_377_gdglow_snow_5/build/build_char_377_gdglow_snow_5.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/377_gdglow_snow#5",
+  "source_asset": {
+    "assetId": "build_char_377_gdglow_snow#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "澄闪",
+    "appellation": "Goldenglow",
+    "skinGroupId": "2022#xmas",
+    "skinGroupName": "冰原信使/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_377_gdglow_snow#5.atlas",
+      ".png": "build_char_377_gdglow_snow#5.png",
+      ".skel": "build_char_377_gdglow_snow#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/goldenglow/skin-snow-5/meta.json",
-    "atlas": "standalone/assets/source/goldenglow/skin-snow-5/build_char_377_gdglow_snow_5.atlas",
-    "skeleton": "standalone/assets/source/goldenglow/skin-snow-5/build_char_377_gdglow_snow_5.skel",
+    "atlas": "standalone/assets/source/goldenglow/skin-snow-5/build_char_377_gdglow_snow#5.atlas",
+    "skeleton": "standalone/assets/source/goldenglow/skin-snow-5/build_char_377_gdglow_snow#5.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_377_gdglow/char_377_gdglow_snow_5/build/build_char_377_gdglow_snow_5.png",
-        "path": "standalone/assets/source/goldenglow/skin-snow-5/build_char_377_gdglow_snow_5.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/377_gdglow_snow%235/build_char_377_gdglow_snow%235.png",
+        "path": "standalone/assets/source/goldenglow/skin-snow-5/build_char_377_gdglow_snow#5.png",
+        "bytes": 278202,
+        "sha256": "f5560850db9954d29da7ee2b0506117d075dc04082e9137b6f8e4c18c41bfd7c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8055,
+      "sha256": "cb1d5092d2093f3c24c5db5fe00199d848a89c8d81976b4c4c7b61428fdac8e8"
+    },
+    "skeleton": {
+      "bytes": 238397,
+      "sha256": "a7693f96965b00a6bbf0430c81f3f290abe2507f3b45169fa47fbedda5b2d9ee"
+    }
   }
 }

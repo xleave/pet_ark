@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mayer",
   "character_name": "Mayer",
   "localized_name": "梅尔",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%A2%85%E5%B0%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_242_otter/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_242_otter/meta.json",
-    "model": "defaultskin/build/build_char_242_otter",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_242_otter/defaultskin/build/build_char_242_otter.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_242_otter/defaultskin/build/build_char_242_otter.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_242_otter/defaultskin/build/build_char_242_otter.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/242_otter",
+  "source_asset": {
+    "assetId": "build_char_242_otter",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "梅尔",
+    "appellation": "Mayer",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_242_otter.atlas",
+      ".png": "build_char_242_otter.png",
+      ".skel": "build_char_242_otter.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mayer/default/meta.json",
     "atlas": "standalone/assets/source/mayer/default/build_char_242_otter.atlas",
     "skeleton": "standalone/assets/source/mayer/default/build_char_242_otter.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_242_otter/defaultskin/build/build_char_242_otter.png",
-        "path": "standalone/assets/source/mayer/default/build_char_242_otter.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/242_otter/build_char_242_otter.png",
+        "path": "standalone/assets/source/mayer/default/build_char_242_otter.png",
+        "bytes": 202999,
+        "sha256": "d2a3ba34a1e5137e5821135f95119bff173a3587b2adaffbdc5ca02c622bbf8b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6695,
+      "sha256": "892cc94c845e521dc78c64290290c6ca338601c8fcadf28a98d5c6e9f40e5d70"
+    },
+    "skeleton": {
+      "bytes": 109010,
+      "sha256": "7babbdf6cf7274fd8fa7473e9f64795ea11884ba3c8385d7447dfb21b4d56d55"
+    }
   }
 }

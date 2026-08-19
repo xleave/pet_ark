@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "typhon",
   "character_name": "Typhon",
   "localized_name": "提丰",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%8F%90%E4%B8%B0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/meta.json",
-    "model": "defaultskin/build/build_char_2012_typhon",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/defaultskin/build/build_char_2012_typhon.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/defaultskin/build/build_char_2012_typhon.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/defaultskin/build/build_char_2012_typhon.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/2012_typhon",
+  "source_asset": {
+    "assetId": "build_char_2012_typhon",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "提丰",
+    "appellation": "Typhon",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2012_typhon.atlas",
+      ".png": "build_char_2012_typhon.png",
+      ".skel": "build_char_2012_typhon.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/typhon/default/meta.json",
     "atlas": "standalone/assets/source/typhon/default/build_char_2012_typhon.atlas",
     "skeleton": "standalone/assets/source/typhon/default/build_char_2012_typhon.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_2012_typhon/defaultskin/build/build_char_2012_typhon.png",
-        "path": "standalone/assets/source/typhon/default/build_char_2012_typhon.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/2012_typhon/build_char_2012_typhon.png",
+        "path": "standalone/assets/source/typhon/default/build_char_2012_typhon.png",
+        "bytes": 468542,
+        "sha256": "433394c7615b312fbd3465324e17c24547f2610fc62bebde83cb9907306a9eb0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11481,
+      "sha256": "dbc3fde2d611419bd672f1e7f007986f6a5e3e43252b302491d907eab2299fcc"
+    },
+    "skeleton": {
+      "bytes": 510385,
+      "sha256": "36a71eb6844c7858bff2d21456399fab58317b539258e5045b942fae20d14e8d"
+    }
   }
 }

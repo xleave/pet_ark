@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "civilight-eterna",
   "character_name": "Civilight Eterna",
   "localized_name": "魔王",
@@ -9,25 +9,58 @@
   "variant_name": "追悼",
   "skin_id": "epoque-50",
   "skin_name": "追悼",
-  "source_page": "https://prts.wiki/w/%E9%AD%94%E7%8E%8B",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4134_cetsyr/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4134_cetsyr/meta.json",
-    "model": "char_4134_cetsyr_epoque_50/build/build_char_4134_cetsyr_epoque_50",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4134_cetsyr/char_4134_cetsyr_epoque_50/build/build_char_4134_cetsyr_epoque_50.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4134_cetsyr/char_4134_cetsyr_epoque_50/build/build_char_4134_cetsyr_epoque_50.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4134_cetsyr/char_4134_cetsyr_epoque_50/build/build_char_4134_cetsyr_epoque_50.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4134_cetsyr_epoque#50",
+  "source_asset": {
+    "assetId": "build_char_4134_cetsyr_epoque#50",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "魔王",
+    "appellation": "Civilight Eterna",
+    "skinGroupId": "2025#epoque#12",
+    "skinGroupName": "时代/XLIX",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4134_cetsyr_epoque#50.atlas",
+      ".png": "build_char_4134_cetsyr_epoque#50.png",
+      ".skel": "build_char_4134_cetsyr_epoque#50.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/civilight-eterna/skin-epoque-50/meta.json",
-    "atlas": "standalone/assets/source/civilight-eterna/skin-epoque-50/build_char_4134_cetsyr_epoque_50.atlas",
-    "skeleton": "standalone/assets/source/civilight-eterna/skin-epoque-50/build_char_4134_cetsyr_epoque_50.skel",
+    "atlas": "standalone/assets/source/civilight-eterna/skin-epoque-50/build_char_4134_cetsyr_epoque#50.atlas",
+    "skeleton": "standalone/assets/source/civilight-eterna/skin-epoque-50/build_char_4134_cetsyr_epoque#50.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4134_cetsyr/char_4134_cetsyr_epoque_50/build/build_char_4134_cetsyr_epoque_50.png",
-        "path": "standalone/assets/source/civilight-eterna/skin-epoque-50/build_char_4134_cetsyr_epoque_50.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4134_cetsyr_epoque%2350/build_char_4134_cetsyr_epoque%2350.png",
+        "path": "standalone/assets/source/civilight-eterna/skin-epoque-50/build_char_4134_cetsyr_epoque#50.png",
+        "bytes": 777881,
+        "sha256": "74b4ef70c8b73d93c66762416112bdd924b1837c178428adde72dd00fce9d68a"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 22922,
+      "sha256": "408eccc9c9008cad435239c14c55bcb786ac1a8c01b4b6383d2c567c6d1b6c1e"
+    },
+    "skeleton": {
+      "bytes": 767509,
+      "sha256": "7a520f344c7895f6c241bb88e951489c1d6e0730c14761ad044169edf5ce15a8"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "miss-christine",
   "character_name": "Miss.Christine",
   "localized_name": "Miss.Christine",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/Miss.Christine",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/meta.json",
-    "model": "defaultskin/build/build_char_4198_christ",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/defaultskin/build/build_char_4198_christ.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/defaultskin/build/build_char_4198_christ.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/defaultskin/build/build_char_4198_christ.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4198_christ",
+  "source_asset": {
+    "assetId": "build_char_4198_christ",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "Miss.Christine",
+    "appellation": "Miss.Christine",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4198_christ.atlas",
+      ".png": "build_char_4198_christ.png",
+      ".skel": "build_char_4198_christ.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/miss-christine/default/meta.json",
     "atlas": "standalone/assets/source/miss-christine/default/build_char_4198_christ.atlas",
     "skeleton": "standalone/assets/source/miss-christine/default/build_char_4198_christ.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4198_christ/defaultskin/build/build_char_4198_christ.png",
-        "path": "standalone/assets/source/miss-christine/default/build_char_4198_christ.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4198_christ/build_char_4198_christ.png",
+        "path": "standalone/assets/source/miss-christine/default/build_char_4198_christ.png",
+        "bytes": 197559,
+        "sha256": "f43cd91de09477cd72a6497f0f07ff8ddd2427ed3e340fab5b9394f17a31e670"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6805,
+      "sha256": "489e29face403ac4bed8ff00522dd2763e434e43ef2c59ffb0f191c7ca445029"
+    },
+    "skeleton": {
+      "bytes": 153238,
+      "sha256": "c76a0e4a5171b75116ba2be20c077b5d264249288369630b3c7af7e0c7132c49"
+    }
   }
 }

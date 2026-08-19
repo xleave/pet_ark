@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "penance",
   "character_name": "Penance",
   "localized_name": "斥罪",
@@ -9,25 +9,58 @@
   "variant_name": "记叙",
   "skin_id": "epoque-33",
   "skin_name": "记叙",
-  "source_page": "https://prts.wiki/w/%E6%96%A5%E7%BD%AA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4065_judge/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4065_judge/meta.json",
-    "model": "char_4065_judge_epoque_33/build/build_char_4065_judge_epoque_33",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4065_judge/char_4065_judge_epoque_33/build/build_char_4065_judge_epoque_33.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4065_judge/char_4065_judge_epoque_33/build/build_char_4065_judge_epoque_33.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4065_judge/char_4065_judge_epoque_33/build/build_char_4065_judge_epoque_33.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4065_judge_epoque#33",
+  "source_asset": {
+    "assetId": "build_char_4065_judge_epoque#33",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "斥罪",
+    "appellation": "Penance",
+    "skinGroupId": "2024#epoque#4",
+    "skinGroupName": "时代/XXXIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4065_judge_epoque#33.atlas",
+      ".png": "build_char_4065_judge_epoque#33.png",
+      ".skel": "build_char_4065_judge_epoque#33.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/penance/skin-epoque-33/meta.json",
-    "atlas": "standalone/assets/source/penance/skin-epoque-33/build_char_4065_judge_epoque_33.atlas",
-    "skeleton": "standalone/assets/source/penance/skin-epoque-33/build_char_4065_judge_epoque_33.skel",
+    "atlas": "standalone/assets/source/penance/skin-epoque-33/build_char_4065_judge_epoque#33.atlas",
+    "skeleton": "standalone/assets/source/penance/skin-epoque-33/build_char_4065_judge_epoque#33.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4065_judge/char_4065_judge_epoque_33/build/build_char_4065_judge_epoque_33.png",
-        "path": "standalone/assets/source/penance/skin-epoque-33/build_char_4065_judge_epoque_33.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4065_judge_epoque%2333/build_char_4065_judge_epoque%2333.png",
+        "path": "standalone/assets/source/penance/skin-epoque-33/build_char_4065_judge_epoque#33.png",
+        "bytes": 899210,
+        "sha256": "7c441cd856694defc023037d22852afecb7d995a1604fe53985d491102d9d3b3"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 18306,
+      "sha256": "f4925e22c8f4a7253671a3107e89d8a1f0e52d7fdd367249f655c155dbeba76e"
+    },
+    "skeleton": {
+      "bytes": 600285,
+      "sha256": "91ff1704f6e6eaa5967e311295fcc72e25febc0c1096839ee93a732fdbef6c22"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lumen",
   "character_name": "Lumen",
   "localized_name": "流明",
@@ -9,25 +9,58 @@
   "variant_name": "雨霓行游客",
   "skin_id": "sanrio-2",
   "skin_name": "雨霓行游客",
-  "source_page": "https://prts.wiki/w/%E6%B5%81%E6%98%8E",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4042_lumen/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4042_lumen/meta.json",
-    "model": "char_4042_lumen_sanrio_2/build/build_char_4042_lumen_sanrio_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4042_lumen/char_4042_lumen_sanrio_2/build/build_char_4042_lumen_sanrio_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4042_lumen/char_4042_lumen_sanrio_2/build/build_char_4042_lumen_sanrio_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4042_lumen/char_4042_lumen_sanrio_2/build/build_char_4042_lumen_sanrio_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4042_lumen_sanrio#2",
+  "source_asset": {
+    "assetId": "build_char_4042_lumen_sanrio#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "流明",
+    "appellation": "Lumen",
+    "skinGroupId": "2025#sanrio",
+    "skinGroupName": "三丽鸥家族/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4042_lumen_sanrio#2.atlas",
+      ".png": "build_char_4042_lumen_sanrio#2.png",
+      ".skel": "build_char_4042_lumen_sanrio#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lumen/skin-sanrio-2/meta.json",
-    "atlas": "standalone/assets/source/lumen/skin-sanrio-2/build_char_4042_lumen_sanrio_2.atlas",
-    "skeleton": "standalone/assets/source/lumen/skin-sanrio-2/build_char_4042_lumen_sanrio_2.skel",
+    "atlas": "standalone/assets/source/lumen/skin-sanrio-2/build_char_4042_lumen_sanrio#2.atlas",
+    "skeleton": "standalone/assets/source/lumen/skin-sanrio-2/build_char_4042_lumen_sanrio#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4042_lumen/char_4042_lumen_sanrio_2/build/build_char_4042_lumen_sanrio_2.png",
-        "path": "standalone/assets/source/lumen/skin-sanrio-2/build_char_4042_lumen_sanrio_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4042_lumen_sanrio%232/build_char_4042_lumen_sanrio%232.png",
+        "path": "standalone/assets/source/lumen/skin-sanrio-2/build_char_4042_lumen_sanrio#2.png",
+        "bytes": 701222,
+        "sha256": "e75b54574460a6cadf54fcd7646f4fe3e7353720737d6669ff8b64c8f0e50fd9"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15936,
+      "sha256": "8c0e9d0dc110c6852653c2aeda0f859d848bd1efae1b8d769ecedf9afb21c175"
+    },
+    "skeleton": {
+      "bytes": 447235,
+      "sha256": "c1b6ef6850ef9f0451ff154d5562e637af3b06bfde25d6d312b80f8c6dbc9a04"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "blue-poison",
   "character_name": "Blue Poison",
   "localized_name": "蓝毒",
@@ -9,25 +9,58 @@
   "variant_name": "哀律西昂夜曲",
   "skin_id": "iteration-2",
   "skin_name": "哀律西昂夜曲",
-  "source_page": "https://prts.wiki/w/%E8%93%9D%E6%AF%92",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_129_bluep/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_129_bluep/meta.json",
-    "model": "char_129_bluep_iteration_2/build/build_char_129_bluep_iteration_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_129_bluep/char_129_bluep_iteration_2/build/build_char_129_bluep_iteration_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_129_bluep/char_129_bluep_iteration_2/build/build_char_129_bluep_iteration_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_129_bluep/char_129_bluep_iteration_2/build/build_char_129_bluep_iteration_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/129_bluep_iteration#2",
+  "source_asset": {
+    "assetId": "build_char_129_bluep_iteration#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "蓝毒",
+    "appellation": "Blue Poison",
+    "skinGroupId": "2024#iteration",
+    "skinGroupName": "命途迭代/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_129_bluep_iteration#2.atlas",
+      ".png": "build_char_129_bluep_iteration#2.png",
+      ".skel": "build_char_129_bluep_iteration#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/blue-poison/skin-iteration-2/meta.json",
-    "atlas": "standalone/assets/source/blue-poison/skin-iteration-2/build_char_129_bluep_iteration_2.atlas",
-    "skeleton": "standalone/assets/source/blue-poison/skin-iteration-2/build_char_129_bluep_iteration_2.skel",
+    "atlas": "standalone/assets/source/blue-poison/skin-iteration-2/build_char_129_bluep_iteration#2.atlas",
+    "skeleton": "standalone/assets/source/blue-poison/skin-iteration-2/build_char_129_bluep_iteration#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_129_bluep/char_129_bluep_iteration_2/build/build_char_129_bluep_iteration_2.png",
-        "path": "standalone/assets/source/blue-poison/skin-iteration-2/build_char_129_bluep_iteration_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/129_bluep_iteration%232/build_char_129_bluep_iteration%232.png",
+        "path": "standalone/assets/source/blue-poison/skin-iteration-2/build_char_129_bluep_iteration#2.png",
+        "bytes": 526700,
+        "sha256": "a4446036d7e03b3a505956b45f5d9232304b43bf9cb6300d0f2561af7b8ecae7"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 17220,
+      "sha256": "628761b440146a3ca43388b4c420daad2c82588d18a3f26cde1bbf194252654c"
+    },
+    "skeleton": {
+      "bytes": 294138,
+      "sha256": "4666ed22c98b5f174a6f6d95769b52b4be543621f8096d2e82a214d78cb6a87d"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "beanstalk",
   "character_name": "Beanstalk",
   "localized_name": "豆苗",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%B1%86%E8%8B%97",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/meta.json",
-    "model": "defaultskin/build/build_char_452_bstalk",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/defaultskin/build/build_char_452_bstalk.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/defaultskin/build/build_char_452_bstalk.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/defaultskin/build/build_char_452_bstalk.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/452_bstalk",
+  "source_asset": {
+    "assetId": "build_char_452_bstalk",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "豆苗",
+    "appellation": "Beanstalk",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_452_bstalk.atlas",
+      ".png": "build_char_452_bstalk.png",
+      ".skel": "build_char_452_bstalk.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/beanstalk/default/meta.json",
     "atlas": "standalone/assets/source/beanstalk/default/build_char_452_bstalk.atlas",
     "skeleton": "standalone/assets/source/beanstalk/default/build_char_452_bstalk.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/defaultskin/build/build_char_452_bstalk.png",
-        "path": "standalone/assets/source/beanstalk/default/build_char_452_bstalk.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/452_bstalk/build_char_452_bstalk.png",
+        "path": "standalone/assets/source/beanstalk/default/build_char_452_bstalk.png",
+        "bytes": 243016,
+        "sha256": "9d42f92f74b03ec2ac6e610b156a2e58b6b79d5302e144a4002e3b40aa3e3678"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7645,
+      "sha256": "48dc675a06d47f9d7afb20ae02f5dee5cbd0954df3f411fbe8c5f0fd66fd7c58"
+    },
+    "skeleton": {
+      "bytes": 140243,
+      "sha256": "6cc45512da619b4e18295e878eb9b5ef670c64523fadae38ef88b30b89ce1fd2"
+    }
   }
 }

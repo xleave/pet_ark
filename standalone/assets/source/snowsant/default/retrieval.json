@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "snowsant",
   "character_name": "Snowsant",
   "localized_name": "雪雉",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%9B%AA%E9%9B%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_383_snsant/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_383_snsant/meta.json",
-    "model": "defaultskin/build/build_char_383_snsant",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_383_snsant/defaultskin/build/build_char_383_snsant.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_383_snsant/defaultskin/build/build_char_383_snsant.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_383_snsant/defaultskin/build/build_char_383_snsant.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/383_snsant",
+  "source_asset": {
+    "assetId": "build_char_383_snsant",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "雪雉",
+    "appellation": "Snowsant",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_383_snsant.atlas",
+      ".png": "build_char_383_snsant.png",
+      ".skel": "build_char_383_snsant.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/snowsant/default/meta.json",
     "atlas": "standalone/assets/source/snowsant/default/build_char_383_snsant.atlas",
     "skeleton": "standalone/assets/source/snowsant/default/build_char_383_snsant.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_383_snsant/defaultskin/build/build_char_383_snsant.png",
-        "path": "standalone/assets/source/snowsant/default/build_char_383_snsant.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/383_snsant/build_char_383_snsant.png",
+        "path": "standalone/assets/source/snowsant/default/build_char_383_snsant.png",
+        "bytes": 226865,
+        "sha256": "93cca0e684568406610142719984ebd6407823628fad9fe9588ff7eb2a3358cb"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4754,
+      "sha256": "46367dd98266dd0a239b198d74382c22c26fd952b317fb9deb69c73d51a74414"
+    },
+    "skeleton": {
+      "bytes": 59191,
+      "sha256": "b7c50917d6be9302d660b5f41e394407c046e9520d6dfc95a1527f52ce3d080d"
+    }
   }
 }

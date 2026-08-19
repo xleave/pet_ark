@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "projekt-red",
   "character_name": "Projekt Red",
   "localized_name": "红",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%BA%A2",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_144_red/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_144_red/meta.json",
-    "model": "defaultskin/build/build_char_144_red",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_144_red/defaultskin/build/build_char_144_red.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_144_red/defaultskin/build/build_char_144_red.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_144_red/defaultskin/build/build_char_144_red.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/144_red",
+  "source_asset": {
+    "assetId": "build_char_144_red",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "红",
+    "appellation": "Projekt Red",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_144_red.atlas",
+      ".png": "build_char_144_red.png",
+      ".skel": "build_char_144_red.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/projekt-red/default/meta.json",
     "atlas": "standalone/assets/source/projekt-red/default/build_char_144_red.atlas",
     "skeleton": "standalone/assets/source/projekt-red/default/build_char_144_red.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_144_red/defaultskin/build/build_char_144_red.png",
-        "path": "standalone/assets/source/projekt-red/default/build_char_144_red.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/144_red/build_char_144_red.png",
+        "path": "standalone/assets/source/projekt-red/default/build_char_144_red.png",
+        "bytes": 287420,
+        "sha256": "d5fcfdba334a9ac4653695030799c0963a08316767d2f82131590662289488ac"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5584,
+      "sha256": "4b6f58317cec0855dbb23e43ab9e71b65cecd4139a8d3468b25c03452d0eb441"
+    },
+    "skeleton": {
+      "bytes": 121160,
+      "sha256": "2958319a7223dc63aff78c9e528f633893b60f9b222c012e034068ea0ec0d17f"
+    }
   }
 }

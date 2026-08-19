@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "pedro",
   "character_name": "Pedro",
   "localized_name": "佩德洛",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E4%BD%A9%E5%BE%B7%E6%B4%9B",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4234_pedro/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4234_pedro/meta.json",
-    "model": "defaultskin/build/build_char_4234_pedro",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4234_pedro/defaultskin/build/build_char_4234_pedro.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4234_pedro/defaultskin/build/build_char_4234_pedro.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4234_pedro/defaultskin/build/build_char_4234_pedro.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4234_pedro",
+  "source_asset": {
+    "assetId": "build_char_4234_pedro",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "佩德洛",
+    "appellation": "Pedro",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4234_pedro.atlas",
+      ".png": "build_char_4234_pedro.png",
+      ".skel": "build_char_4234_pedro.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/pedro/default/meta.json",
     "atlas": "standalone/assets/source/pedro/default/build_char_4234_pedro.atlas",
     "skeleton": "standalone/assets/source/pedro/default/build_char_4234_pedro.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4234_pedro/defaultskin/build/build_char_4234_pedro.png",
-        "path": "standalone/assets/source/pedro/default/build_char_4234_pedro.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4234_pedro/build_char_4234_pedro.png",
+        "path": "standalone/assets/source/pedro/default/build_char_4234_pedro.png",
+        "bytes": 279728,
+        "sha256": "6c2161011930bc4e75ab9d886cfc3f5ef2b77bb7a270efbabb59a41a600562dc"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9729,
+      "sha256": "9f2925243b0e74cb96a2a50d08e54eb5580c0c48a650c9e1a7c964a27f09352b"
+    },
+    "skeleton": {
+      "bytes": 336009,
+      "sha256": "90d8000aea1c91dd03bb37ec1bb64ed59fe32e6f5e3dad0bb01fc8402d036dab"
+    }
   }
 }

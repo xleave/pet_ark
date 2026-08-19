@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "beeswax",
   "character_name": "Beeswax",
   "localized_name": "蜜蜡",
@@ -9,25 +9,58 @@
   "variant_name": "白沙",
   "skin_id": "epoque-9",
   "skin_name": "白沙",
-  "source_page": "https://prts.wiki/w/%E8%9C%9C%E8%9C%A1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_344_beewax/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_344_beewax/meta.json",
-    "model": "char_344_beewax_epoque_9/build/build_char_344_beewax_epoque_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_344_beewax/char_344_beewax_epoque_9/build/build_char_344_beewax_epoque_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_344_beewax/char_344_beewax_epoque_9/build/build_char_344_beewax_epoque_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_344_beewax/char_344_beewax_epoque_9/build/build_char_344_beewax_epoque_9.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/344_beewax_epoque#9",
+  "source_asset": {
+    "assetId": "build_char_344_beewax_epoque#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "蜜蜡",
+    "appellation": "Beeswax",
+    "skinGroupId": "2021#epoque",
+    "skinGroupName": "时代/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_344_beewax_epoque#9.atlas",
+      ".png": "build_char_344_beewax_epoque#9.png",
+      ".skel": "build_char_344_beewax_epoque#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/beeswax/skin-epoque-9/meta.json",
-    "atlas": "standalone/assets/source/beeswax/skin-epoque-9/build_char_344_beewax_epoque_9.atlas",
-    "skeleton": "standalone/assets/source/beeswax/skin-epoque-9/build_char_344_beewax_epoque_9.skel",
+    "atlas": "standalone/assets/source/beeswax/skin-epoque-9/build_char_344_beewax_epoque#9.atlas",
+    "skeleton": "standalone/assets/source/beeswax/skin-epoque-9/build_char_344_beewax_epoque#9.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_344_beewax/char_344_beewax_epoque_9/build/build_char_344_beewax_epoque_9.png",
-        "path": "standalone/assets/source/beeswax/skin-epoque-9/build_char_344_beewax_epoque_9.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/344_beewax_epoque%239/build_char_344_beewax_epoque%239.png",
+        "path": "standalone/assets/source/beeswax/skin-epoque-9/build_char_344_beewax_epoque#9.png",
+        "bytes": 309616,
+        "sha256": "9d489bca7598cc091be02fcb597cc06217ed8045fcbdfaa0322d38ec2baddcf7"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6357,
+      "sha256": "40d2d432affc659e78a87cd08245a443ae6d2db98d0be2e8387aa5f35a564486"
+    },
+    "skeleton": {
+      "bytes": 101045,
+      "sha256": "b1660357da38b132901006fd1f4da2f3420b71a20800b5b3a962bd0a1ae5000d"
+    }
   }
 }

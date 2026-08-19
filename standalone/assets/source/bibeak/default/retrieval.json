@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "bibeak",
   "character_name": "Bibeak",
   "localized_name": "柏喙",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%9F%8F%E5%96%99",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_252_bibeak/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_252_bibeak/meta.json",
-    "model": "defaultskin/build/build_char_252_bibeak",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_252_bibeak/defaultskin/build/build_char_252_bibeak.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_252_bibeak/defaultskin/build/build_char_252_bibeak.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_252_bibeak/defaultskin/build/build_char_252_bibeak.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/252_bibeak",
+  "source_asset": {
+    "assetId": "build_char_252_bibeak",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "柏喙",
+    "appellation": "Bibeak",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_252_bibeak.atlas",
+      ".png": "build_char_252_bibeak.png",
+      ".skel": "build_char_252_bibeak.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/bibeak/default/meta.json",
     "atlas": "standalone/assets/source/bibeak/default/build_char_252_bibeak.atlas",
     "skeleton": "standalone/assets/source/bibeak/default/build_char_252_bibeak.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_252_bibeak/defaultskin/build/build_char_252_bibeak.png",
-        "path": "standalone/assets/source/bibeak/default/build_char_252_bibeak.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/252_bibeak/build_char_252_bibeak.png",
+        "path": "standalone/assets/source/bibeak/default/build_char_252_bibeak.png",
+        "bytes": 279847,
+        "sha256": "f8ab90e1c06791ceaab34cb2a0e8cc85258dc0ad7bb6eda921cb2067dbbf7506"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7788,
+      "sha256": "320e1f774096e7fad0a70193626695f4c42034885d63ddd0e5e5c222ddba4221"
+    },
+    "skeleton": {
+      "bytes": 104346,
+      "sha256": "6a3de0cfd17a98c996c47ebea21bc02db8cade27a3bd16da533c169f30f7cba2"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "valarqvin",
   "character_name": "Valarqvin",
   "localized_name": "凛视",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%87%9B%E8%A7%86",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4102_threye/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4102_threye/meta.json",
-    "model": "defaultskin/build/build_char_4102_threye",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4102_threye/defaultskin/build/build_char_4102_threye.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4102_threye/defaultskin/build/build_char_4102_threye.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4102_threye/defaultskin/build/build_char_4102_threye.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4102_threye",
+  "source_asset": {
+    "assetId": "build_char_4102_threye",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "凛视",
+    "appellation": "Valarqvin",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4102_threye.atlas",
+      ".png": "build_char_4102_threye.png",
+      ".skel": "build_char_4102_threye.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/valarqvin/default/meta.json",
     "atlas": "standalone/assets/source/valarqvin/default/build_char_4102_threye.atlas",
     "skeleton": "standalone/assets/source/valarqvin/default/build_char_4102_threye.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4102_threye/defaultskin/build/build_char_4102_threye.png",
-        "path": "standalone/assets/source/valarqvin/default/build_char_4102_threye.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4102_threye/build_char_4102_threye.png",
+        "path": "standalone/assets/source/valarqvin/default/build_char_4102_threye.png",
+        "bytes": 264881,
+        "sha256": "5c008a93f118fb9ffcf10b0da6e988ed0dc6c2ac2c36254531ba496fde04b63e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10512,
+      "sha256": "8281acf63858d42ef407d40f46688a895ecf8c2e12586eae4249efc94445ca5c"
+    },
+    "skeleton": {
+      "bytes": 192584,
+      "sha256": "7c688cf316bef7880a8081b40514c889ab7fa54a418de02521eceea3878be6e6"
+    }
   }
 }

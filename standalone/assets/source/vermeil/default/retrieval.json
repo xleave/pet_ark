@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "vermeil",
   "character_name": "Vermeil",
   "localized_name": "红云",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%BA%A2%E4%BA%91",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_190_clour/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_190_clour/meta.json",
-    "model": "defaultskin/build/build_char_190_clour",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_190_clour/defaultskin/build/build_char_190_clour.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_190_clour/defaultskin/build/build_char_190_clour.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_190_clour/defaultskin/build/build_char_190_clour.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/190_clour",
+  "source_asset": {
+    "assetId": "build_char_190_clour",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "红云",
+    "appellation": "Vermeil",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_190_clour.atlas",
+      ".png": "build_char_190_clour.png",
+      ".skel": "build_char_190_clour.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/vermeil/default/meta.json",
     "atlas": "standalone/assets/source/vermeil/default/build_char_190_clour.atlas",
     "skeleton": "standalone/assets/source/vermeil/default/build_char_190_clour.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_190_clour/defaultskin/build/build_char_190_clour.png",
-        "path": "standalone/assets/source/vermeil/default/build_char_190_clour.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/190_clour/build_char_190_clour.png",
+        "path": "standalone/assets/source/vermeil/default/build_char_190_clour.png",
+        "bytes": 200404,
+        "sha256": "b7b0381a4ea8977b0ec5825c552773e90f7186b899aa13f7502315975751bb99"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5924,
+      "sha256": "6e1b3f7bd943e557ad296171e98370f1a16c23f9927eb2170111380137746348"
+    },
+    "skeleton": {
+      "bytes": 91459,
+      "sha256": "5aea94e0b27bb753c86d285ff216be79ac39578d271b403a3d32424fac2912b5"
+    }
   }
 }

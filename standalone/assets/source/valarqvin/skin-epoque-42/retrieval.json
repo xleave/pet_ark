@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "valarqvin",
   "character_name": "Valarqvin",
   "localized_name": "凛视",
@@ -9,25 +9,58 @@
   "variant_name": "林间暖阳",
   "skin_id": "epoque-42",
   "skin_name": "林间暖阳",
-  "source_page": "https://prts.wiki/w/%E5%87%9B%E8%A7%86",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4102_threye/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4102_threye/meta.json",
-    "model": "char_4102_threye_epoque_42/build/build_char_4102_threye_epoque_42",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4102_threye/char_4102_threye_epoque_42/build/build_char_4102_threye_epoque_42.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4102_threye/char_4102_threye_epoque_42/build/build_char_4102_threye_epoque_42.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4102_threye/char_4102_threye_epoque_42/build/build_char_4102_threye_epoque_42.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4102_threye_epoque#42",
+  "source_asset": {
+    "assetId": "build_char_4102_threye_epoque#42",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "凛视",
+    "appellation": "Valarqvin",
+    "skinGroupId": "2025#epoque#4",
+    "skinGroupName": "时代/XLI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4102_threye_epoque#42.atlas",
+      ".png": "build_char_4102_threye_epoque#42.png",
+      ".skel": "build_char_4102_threye_epoque#42.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/valarqvin/skin-epoque-42/meta.json",
-    "atlas": "standalone/assets/source/valarqvin/skin-epoque-42/build_char_4102_threye_epoque_42.atlas",
-    "skeleton": "standalone/assets/source/valarqvin/skin-epoque-42/build_char_4102_threye_epoque_42.skel",
+    "atlas": "standalone/assets/source/valarqvin/skin-epoque-42/build_char_4102_threye_epoque#42.atlas",
+    "skeleton": "standalone/assets/source/valarqvin/skin-epoque-42/build_char_4102_threye_epoque#42.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4102_threye/char_4102_threye_epoque_42/build/build_char_4102_threye_epoque_42.png",
-        "path": "standalone/assets/source/valarqvin/skin-epoque-42/build_char_4102_threye_epoque_42.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4102_threye_epoque%2342/build_char_4102_threye_epoque%2342.png",
+        "path": "standalone/assets/source/valarqvin/skin-epoque-42/build_char_4102_threye_epoque#42.png",
+        "bytes": 585547,
+        "sha256": "b0bd5f5e6f74bddebd58274598c84cb248c41e2285529f77c7a7e72aa5788f6d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14189,
+      "sha256": "4d3a5c03ba9d64a115ed1bcf39e584bc630197ffd5ca0588f0b876985ff050f1"
+    },
+    "skeleton": {
+      "bytes": 358755,
+      "sha256": "944caaa6c4d0389f213e1e6ea69b4a00d4f008bd10b39d8e0d5d755e0ac3dcd5"
+    }
   }
 }

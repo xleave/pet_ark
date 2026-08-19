@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "kirara",
   "character_name": "Kirara",
   "localized_name": "绮良",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%BB%AE%E8%89%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/meta.json",
-    "model": "defaultskin/build/build_char_478_kirara",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/defaultskin/build/build_char_478_kirara.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/defaultskin/build/build_char_478_kirara.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/defaultskin/build/build_char_478_kirara.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/478_kirara",
+  "source_asset": {
+    "assetId": "build_char_478_kirara",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "绮良",
+    "appellation": "Kirara",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_478_kirara.atlas",
+      ".png": "build_char_478_kirara.png",
+      ".skel": "build_char_478_kirara.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/kirara/default/meta.json",
     "atlas": "standalone/assets/source/kirara/default/build_char_478_kirara.atlas",
     "skeleton": "standalone/assets/source/kirara/default/build_char_478_kirara.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_478_kirara/defaultskin/build/build_char_478_kirara.png",
-        "path": "standalone/assets/source/kirara/default/build_char_478_kirara.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/478_kirara/build_char_478_kirara.png",
+        "path": "standalone/assets/source/kirara/default/build_char_478_kirara.png",
+        "bytes": 336940,
+        "sha256": "6947dd019b00f3f922c0312cb89fc1e66ff3043175858275efac2311452735ea"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9227,
+      "sha256": "5093ae77afcc6843c3f8a512ee2ebd521ec19e208e7d8ed805bbe149f3e5e535"
+    },
+    "skeleton": {
+      "bytes": 184425,
+      "sha256": "e3316b0b6519723548d1c78b48275d666f23be5e30fae8ebb3039d4c80a2af91"
+    }
   }
 }

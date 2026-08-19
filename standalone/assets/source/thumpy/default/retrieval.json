@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "thumpy",
   "character_name": "Thumpy",
   "localized_name": "珊比",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%8F%8A%E6%AF%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4235_thumpy/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4235_thumpy/meta.json",
-    "model": "defaultskin/build/build_char_4235_thumpy",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4235_thumpy/defaultskin/build/build_char_4235_thumpy.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4235_thumpy/defaultskin/build/build_char_4235_thumpy.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4235_thumpy/defaultskin/build/build_char_4235_thumpy.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4235_thumpy",
+  "source_asset": {
+    "assetId": "build_char_4235_thumpy",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "珊比",
+    "appellation": "Thumpy",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4235_thumpy.atlas",
+      ".png": "build_char_4235_thumpy.png",
+      ".skel": "build_char_4235_thumpy.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/thumpy/default/meta.json",
     "atlas": "standalone/assets/source/thumpy/default/build_char_4235_thumpy.atlas",
     "skeleton": "standalone/assets/source/thumpy/default/build_char_4235_thumpy.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4235_thumpy/defaultskin/build/build_char_4235_thumpy.png",
-        "path": "standalone/assets/source/thumpy/default/build_char_4235_thumpy.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4235_thumpy/build_char_4235_thumpy.png",
+        "path": "standalone/assets/source/thumpy/default/build_char_4235_thumpy.png",
+        "bytes": 356713,
+        "sha256": "3b0bf9a026f491a639524d66c8070ee3b97583c44caf0ad7829cf155e83d16ad"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10841,
+      "sha256": "e7351a49f0f85856bf67b40febf711692ad4cb61ccc8d4115f9f9068082416d1"
+    },
+    "skeleton": {
+      "bytes": 533298,
+      "sha256": "4c62c1e30d4d2132dd97a82ef953e8ee007d99b67e63938805d51e3b5b57a5c2"
+    }
   }
 }

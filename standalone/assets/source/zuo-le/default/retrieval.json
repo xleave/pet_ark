@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "zuo-le",
   "character_name": "Zuo Le",
   "localized_name": "左乐",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%B7%A6%E4%B9%90",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/meta.json",
-    "model": "defaultskin/build/build_char_4121_zuole",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/defaultskin/build/build_char_4121_zuole.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/defaultskin/build/build_char_4121_zuole.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/defaultskin/build/build_char_4121_zuole.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4121_zuole",
+  "source_asset": {
+    "assetId": "build_char_4121_zuole",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "左乐",
+    "appellation": "Zuo Le",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4121_zuole.atlas",
+      ".png": "build_char_4121_zuole.png",
+      ".skel": "build_char_4121_zuole.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/zuo-le/default/meta.json",
     "atlas": "standalone/assets/source/zuo-le/default/build_char_4121_zuole.atlas",
     "skeleton": "standalone/assets/source/zuo-le/default/build_char_4121_zuole.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4121_zuole/defaultskin/build/build_char_4121_zuole.png",
-        "path": "standalone/assets/source/zuo-le/default/build_char_4121_zuole.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4121_zuole/build_char_4121_zuole.png",
+        "path": "standalone/assets/source/zuo-le/default/build_char_4121_zuole.png",
+        "bytes": 737900,
+        "sha256": "f7ef2979e9d7802e3927875b521c2a0b52576ca7984915f556166c21142632df"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 19725,
+      "sha256": "589fa2a063c16b280c5e9a93a3e769a7ac47fe511b1e440a27ca716956d61d24"
+    },
+    "skeleton": {
+      "bytes": 492960,
+      "sha256": "a4afbf86ba34637b5a5e0074ffcd1ae7bb20f7b7f2e5ac6bfd3d3e24a6805f52"
+    }
   }
 }

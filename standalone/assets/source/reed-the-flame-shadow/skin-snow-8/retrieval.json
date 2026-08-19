@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "reed-the-flame-shadow",
   "character_name": "Reed The Flame Shadow",
   "localized_name": "焰影苇草",
@@ -9,25 +9,59 @@
   "variant_name": "闪焰之夜",
   "skin_id": "snow-8",
   "skin_name": "闪焰之夜",
-  "source_page": "https://prts.wiki/w/%E7%84%B0%E5%BD%B1%E8%8B%87%E8%8D%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/meta.json",
-    "model": "char_1020_reed2_snow_8/build/build_char_1020_reed2_snow_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/char_1020_reed2_snow_8/build/build_char_1020_reed2_snow_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/char_1020_reed2_snow_8/build/build_char_1020_reed2_snow_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/char_1020_reed2_snow_8/build/build_char_1020_reed2_snow_8.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1020_reed2_snow#8",
+  "source_asset": {
+    "assetId": "build_char_1020_reed2_snow#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "焰影苇草",
+    "appellation": "Reed The Flame Shadow",
+    "skinGroupId": "2025#xmas",
+    "skinGroupName": "冰原信使/VIII",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1020_reed2_snow#8.atlas",
+      ".png": "build_char_1020_reed2_snow#8.png",
+      ".skel": "build_char_1020_reed2_snow#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/reed-the-flame-shadow/skin-snow-8/meta.json",
-    "atlas": "standalone/assets/source/reed-the-flame-shadow/skin-snow-8/build_char_1020_reed2_snow_8.atlas",
-    "skeleton": "standalone/assets/source/reed-the-flame-shadow/skin-snow-8/build_char_1020_reed2_snow_8.skel",
+    "atlas": "standalone/assets/source/reed-the-flame-shadow/skin-snow-8/build_char_1020_reed2_snow#8.atlas",
+    "skeleton": "standalone/assets/source/reed-the-flame-shadow/skin-snow-8/build_char_1020_reed2_snow#8.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/char_1020_reed2_snow_8/build/build_char_1020_reed2_snow_8.png",
-        "path": "standalone/assets/source/reed-the-flame-shadow/skin-snow-8/build_char_1020_reed2_snow_8.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1020_reed2_snow%238/build_char_1020_reed2_snow%238.png",
+        "path": "standalone/assets/source/reed-the-flame-shadow/skin-snow-8/build_char_1020_reed2_snow#8.png",
+        "bytes": 525538,
+        "sha256": "d11e7357b80287550411d7128c2f265f721b9f55dddb3f3af1f3e6af6bca4835"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12241,
+      "sha256": "3b1d16d7ddcb28b3c6a5a8b8e392018a28db4b1c552c6fea909e80f1b9d43f7c"
+    },
+    "skeleton": {
+      "bytes": 981449,
+      "sha256": "39e451f6f6188cf8c9d1349337ffc0a4b198bf601db62c51704dc611f4c079a6"
+    }
   }
 }

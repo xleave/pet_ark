@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ansel",
   "character_name": "Ansel",
   "localized_name": "安赛尔",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%AE%89%E8%B5%9B%E5%B0%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/meta.json",
-    "model": "defaultskin/build/build_char_212_ansel",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/defaultskin/build/build_char_212_ansel.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/defaultskin/build/build_char_212_ansel.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/defaultskin/build/build_char_212_ansel.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/212_ansel",
+  "source_asset": {
+    "assetId": "build_char_212_ansel",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "安赛尔",
+    "appellation": "Ansel",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_3"
+    ],
+    "assetList": {
+      ".atlas": "build_char_212_ansel.atlas",
+      ".png": "build_char_212_ansel.png",
+      ".skel": "build_char_212_ansel.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ansel/default/meta.json",
     "atlas": "standalone/assets/source/ansel/default/build_char_212_ansel.atlas",
     "skeleton": "standalone/assets/source/ansel/default/build_char_212_ansel.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_212_ansel/defaultskin/build/build_char_212_ansel.png",
-        "path": "standalone/assets/source/ansel/default/build_char_212_ansel.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/212_ansel/build_char_212_ansel.png",
+        "path": "standalone/assets/source/ansel/default/build_char_212_ansel.png",
+        "bytes": 232004,
+        "sha256": "7adc2f7b4f72d277e88cce99376ba7ea6900c9cfa51ed114467b61c5865548e6"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6665,
+      "sha256": "023cae85a6a372088c402fbbf4fabe84dde8910934f054ad20dd7fb3278d949b"
+    },
+    "skeleton": {
+      "bytes": 97664,
+      "sha256": "a1e5a551ac9190a86a9650a4e6915b5802054a1c7fbca3e012758046dfd67bb8"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "horn",
   "character_name": "Horn",
   "localized_name": "号角",
@@ -9,25 +9,58 @@
   "variant_name": "化花",
   "skin_id": "epoque-24",
   "skin_name": "化花",
-  "source_page": "https://prts.wiki/w/%E5%8F%B7%E8%A7%92",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4039_horn/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4039_horn/meta.json",
-    "model": "char_4039_horn_epoque_24/build/build_char_4039_horn_epoque_24",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4039_horn/char_4039_horn_epoque_24/build/build_char_4039_horn_epoque_24.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4039_horn/char_4039_horn_epoque_24/build/build_char_4039_horn_epoque_24.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4039_horn/char_4039_horn_epoque_24/build/build_char_4039_horn_epoque_24.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4039_horn_epoque#24",
+  "source_asset": {
+    "assetId": "build_char_4039_horn_epoque#24",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "号角",
+    "appellation": "Horn",
+    "skinGroupId": "2023#epoque#6",
+    "skinGroupName": "时代/XXIV",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4039_horn_epoque#24.atlas",
+      ".png": "build_char_4039_horn_epoque#24.png",
+      ".skel": "build_char_4039_horn_epoque#24.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/horn/skin-epoque-24/meta.json",
-    "atlas": "standalone/assets/source/horn/skin-epoque-24/build_char_4039_horn_epoque_24.atlas",
-    "skeleton": "standalone/assets/source/horn/skin-epoque-24/build_char_4039_horn_epoque_24.skel",
+    "atlas": "standalone/assets/source/horn/skin-epoque-24/build_char_4039_horn_epoque#24.atlas",
+    "skeleton": "standalone/assets/source/horn/skin-epoque-24/build_char_4039_horn_epoque#24.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4039_horn/char_4039_horn_epoque_24/build/build_char_4039_horn_epoque_24.png",
-        "path": "standalone/assets/source/horn/skin-epoque-24/build_char_4039_horn_epoque_24.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4039_horn_epoque%2324/build_char_4039_horn_epoque%2324.png",
+        "path": "standalone/assets/source/horn/skin-epoque-24/build_char_4039_horn_epoque#24.png",
+        "bytes": 520446,
+        "sha256": "3a03e7a5a68d9449a077dd66d1fd8bd1d85583f8ab50841e1824ffad0082a3a5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11986,
+      "sha256": "5d839b754f72796a1b342dd691ab536133a0b691a7330f683e19c696c7ba7a53"
+    },
+    "skeleton": {
+      "bytes": 626239,
+      "sha256": "fd7bc0386d687cbbfec6b7f66304e3d1dbdeec2a826ec921fb432dab794a8c2b"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "gitano",
   "character_name": "Gitano",
   "localized_name": "远山",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%BF%9C%E5%B1%B1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_109_fmout/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_109_fmout/meta.json",
-    "model": "defaultskin/build/build_char_109_fmout",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_109_fmout/defaultskin/build/build_char_109_fmout.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_109_fmout/defaultskin/build/build_char_109_fmout.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_109_fmout/defaultskin/build/build_char_109_fmout.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/109_fmout",
+  "source_asset": {
+    "assetId": "build_char_109_fmout",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "远山",
+    "appellation": "Gitano",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_109_fmout.atlas",
+      ".png": "build_char_109_fmout.png",
+      ".skel": "build_char_109_fmout.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/gitano/default/meta.json",
     "atlas": "standalone/assets/source/gitano/default/build_char_109_fmout.atlas",
     "skeleton": "standalone/assets/source/gitano/default/build_char_109_fmout.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_109_fmout/defaultskin/build/build_char_109_fmout.png",
-        "path": "standalone/assets/source/gitano/default/build_char_109_fmout.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/109_fmout/build_char_109_fmout.png",
+        "path": "standalone/assets/source/gitano/default/build_char_109_fmout.png",
+        "bytes": 288141,
+        "sha256": "3eb92899c9082236b513c833889135aa5897d7d018f4758ca019bb25b451018d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7778,
+      "sha256": "8c203f8da9feb0bc6c774e8b5ca00c57194afc10c71313baf2360e5b90df3cc1"
+    },
+    "skeleton": {
+      "bytes": 100135,
+      "sha256": "3b7f018683cf22074540cf8c11f85c82ce84e7836b79971316542b5dccaf29af"
+    }
   }
 }

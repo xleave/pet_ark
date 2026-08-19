@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "provence",
   "character_name": "Provence",
   "localized_name": "普罗旺斯",
@@ -9,25 +9,58 @@
   "variant_name": "荒原行者",
   "skin_id": "wild-5",
   "skin_name": "荒原行者",
-  "source_page": "https://prts.wiki/w/%E6%99%AE%E7%BD%97%E6%97%BA%E6%96%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_145_prove/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_145_prove/meta.json",
-    "model": "char_145_prove_wild_5/build/build_char_145_prove_wild_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_145_prove/char_145_prove_wild_5/build/build_char_145_prove_wild_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_145_prove/char_145_prove_wild_5/build/build_char_145_prove_wild_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_145_prove/char_145_prove_wild_5/build/build_char_145_prove_wild_5.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/145_prove_wild#5",
+  "source_asset": {
+    "assetId": "build_char_145_prove_wild#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "普罗旺斯",
+    "appellation": "Provence",
+    "skinGroupId": "2021#wild#2",
+    "skinGroupName": "生命之地/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_145_prove_wild#5.atlas",
+      ".png": "build_char_145_prove_wild#5.png",
+      ".skel": "build_char_145_prove_wild#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/provence/skin-wild-5/meta.json",
-    "atlas": "standalone/assets/source/provence/skin-wild-5/build_char_145_prove_wild_5.atlas",
-    "skeleton": "standalone/assets/source/provence/skin-wild-5/build_char_145_prove_wild_5.skel",
+    "atlas": "standalone/assets/source/provence/skin-wild-5/build_char_145_prove_wild#5.atlas",
+    "skeleton": "standalone/assets/source/provence/skin-wild-5/build_char_145_prove_wild#5.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_145_prove/char_145_prove_wild_5/build/build_char_145_prove_wild_5.png",
-        "path": "standalone/assets/source/provence/skin-wild-5/build_char_145_prove_wild_5.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/145_prove_wild%235/build_char_145_prove_wild%235.png",
+        "path": "standalone/assets/source/provence/skin-wild-5/build_char_145_prove_wild#5.png",
+        "bytes": 358959,
+        "sha256": "d68b8415dab6b1fc75a94a0e6ff01a13605bd9a962e423c06a4d38019dda7378"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9897,
+      "sha256": "735639ebc6fa33951bf91c0755258a27a3185d8d211722fe2f845ad7336178cc"
+    },
+    "skeleton": {
+      "bytes": 204830,
+      "sha256": "0a6c89c16803e002a9e0b1390fd3e2aaabd6b6f5b06f9a39e9d53090f2034324"
+    }
   }
 }

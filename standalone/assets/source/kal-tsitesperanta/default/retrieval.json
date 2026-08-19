@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "kal-tsitesperanta",
   "character_name": "Kal'tsit·Esperanta",
   "localized_name": "凯尔希·思衡托",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%87%AF%E5%B0%94%E5%B8%8C%C2%B7%E6%80%9D%E8%A1%A1%E6%89%98",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1052_kalts2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1052_kalts2/meta.json",
-    "model": "defaultskin/build/build_char_1052_kalts2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1052_kalts2/defaultskin/build/build_char_1052_kalts2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1052_kalts2/defaultskin/build/build_char_1052_kalts2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1052_kalts2/defaultskin/build/build_char_1052_kalts2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1052_kalts2",
+  "source_asset": {
+    "assetId": "build_char_1052_kalts2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "凯尔希·思衡托",
+    "appellation": "Kal'tsit·Esperanta",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1052_kalts2.atlas",
+      ".png": "build_char_1052_kalts2.png",
+      ".skel": "build_char_1052_kalts2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/kal-tsitesperanta/default/meta.json",
     "atlas": "standalone/assets/source/kal-tsitesperanta/default/build_char_1052_kalts2.atlas",
     "skeleton": "standalone/assets/source/kal-tsitesperanta/default/build_char_1052_kalts2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1052_kalts2/defaultskin/build/build_char_1052_kalts2.png",
-        "path": "standalone/assets/source/kal-tsitesperanta/default/build_char_1052_kalts2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1052_kalts2/build_char_1052_kalts2.png",
+        "path": "standalone/assets/source/kal-tsitesperanta/default/build_char_1052_kalts2.png",
+        "bytes": 703984,
+        "sha256": "fd21e30fc2a08c06ce684968a1acc7ddcea966ad1829f11701dd47b03eb223f5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15727,
+      "sha256": "cd2f25523be416c743ff916fe16b785a0e56713956559eea5aa699a8ef2cf129"
+    },
+    "skeleton": {
+      "bytes": 476196,
+      "sha256": "a97c48b30cb2492d8eda2445fa21e2577cc466ce2925c4af6409033681a84749"
+    }
   }
 }

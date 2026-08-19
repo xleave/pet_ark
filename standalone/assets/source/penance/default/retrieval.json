@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "penance",
   "character_name": "Penance",
   "localized_name": "斥罪",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%96%A5%E7%BD%AA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4065_judge/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4065_judge/meta.json",
-    "model": "defaultskin/build/build_char_4065_judge",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4065_judge/defaultskin/build/build_char_4065_judge.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4065_judge/defaultskin/build/build_char_4065_judge.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4065_judge/defaultskin/build/build_char_4065_judge.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4065_judge",
+  "source_asset": {
+    "assetId": "build_char_4065_judge",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "斥罪",
+    "appellation": "Penance",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4065_judge.atlas",
+      ".png": "build_char_4065_judge.png",
+      ".skel": "build_char_4065_judge.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/penance/default/meta.json",
     "atlas": "standalone/assets/source/penance/default/build_char_4065_judge.atlas",
     "skeleton": "standalone/assets/source/penance/default/build_char_4065_judge.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4065_judge/defaultskin/build/build_char_4065_judge.png",
-        "path": "standalone/assets/source/penance/default/build_char_4065_judge.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4065_judge/build_char_4065_judge.png",
+        "path": "standalone/assets/source/penance/default/build_char_4065_judge.png",
+        "bytes": 245128,
+        "sha256": "45b4317e3e2b27bbaacbbe33fb3d52465b7ff80c4aaf0443224c7cc0194370d1"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7346,
+      "sha256": "1f7eb2cc8b9a31289b1b11bbde27b7224beaf31f964d6e11603c11a3914be047"
+    },
+    "skeleton": {
+      "bytes": 208189,
+      "sha256": "c28d909a7e105d1787bbd1179fc7b740df38e8cf6de8b9bd91c9435f92bcc791"
+    }
   }
 }

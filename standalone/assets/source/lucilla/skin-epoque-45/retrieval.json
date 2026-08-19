@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lucilla",
   "character_name": "Lucilla",
   "localized_name": "海霓",
@@ -9,25 +9,58 @@
   "variant_name": "翻涌",
   "skin_id": "epoque-45",
   "skin_name": "翻涌",
-  "source_page": "https://prts.wiki/w/%E6%B5%B7%E9%9C%93",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4079_haini/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4079_haini/meta.json",
-    "model": "char_4079_haini_epoque_45/build/build_char_4079_haini_epoque_45",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4079_haini/char_4079_haini_epoque_45/build/build_char_4079_haini_epoque_45.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4079_haini/char_4079_haini_epoque_45/build/build_char_4079_haini_epoque_45.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4079_haini/char_4079_haini_epoque_45/build/build_char_4079_haini_epoque_45.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4079_haini_epoque#45",
+  "source_asset": {
+    "assetId": "build_char_4079_haini_epoque#45",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "海霓",
+    "appellation": "Lucilla",
+    "skinGroupId": "2025#epoque#7",
+    "skinGroupName": "时代/XLIV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4079_haini_epoque#45.atlas",
+      ".png": "build_char_4079_haini_epoque#45.png",
+      ".skel": "build_char_4079_haini_epoque#45.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lucilla/skin-epoque-45/meta.json",
-    "atlas": "standalone/assets/source/lucilla/skin-epoque-45/build_char_4079_haini_epoque_45.atlas",
-    "skeleton": "standalone/assets/source/lucilla/skin-epoque-45/build_char_4079_haini_epoque_45.skel",
+    "atlas": "standalone/assets/source/lucilla/skin-epoque-45/build_char_4079_haini_epoque#45.atlas",
+    "skeleton": "standalone/assets/source/lucilla/skin-epoque-45/build_char_4079_haini_epoque#45.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4079_haini/char_4079_haini_epoque_45/build/build_char_4079_haini_epoque_45.png",
-        "path": "standalone/assets/source/lucilla/skin-epoque-45/build_char_4079_haini_epoque_45.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4079_haini_epoque%2345/build_char_4079_haini_epoque%2345.png",
+        "path": "standalone/assets/source/lucilla/skin-epoque-45/build_char_4079_haini_epoque#45.png",
+        "bytes": 450210,
+        "sha256": "375608cb303561cf23b2001cba8b16fafcea6eec970a9ce53ecdd1a384a0c3cd"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12155,
+      "sha256": "8f04e0ace41bf110469e904e4f63847058fc612d21adfeb8a2ef0714097cba0c"
+    },
+    "skeleton": {
+      "bytes": 450628,
+      "sha256": "ad732b5e285bf75fd9d7ce7ccc85bfcbf105bf885b00da65e73ff665e998b336"
+    }
   }
 }

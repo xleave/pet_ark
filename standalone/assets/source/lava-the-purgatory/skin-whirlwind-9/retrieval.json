@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lava-the-purgatory",
   "character_name": "Lava the Purgatory",
   "localized_name": "炎狱炎熔",
@@ -9,25 +9,59 @@
   "variant_name": "镇邪焱",
   "skin_id": "whirlwind-9",
   "skin_name": "镇邪焱",
-  "source_page": "https://prts.wiki/w/%E7%82%8E%E7%8B%B1%E7%82%8E%E7%86%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1011_lava2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1011_lava2/meta.json",
-    "model": "char_1011_lava2_whirlwind_9/build/build_char_1011_lava2_whirlwind_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1011_lava2/char_1011_lava2_whirlwind_9/build/build_char_1011_lava2_whirlwind_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1011_lava2/char_1011_lava2_whirlwind_9/build/build_char_1011_lava2_whirlwind_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1011_lava2/char_1011_lava2_whirlwind_9/build/build_char_1011_lava2_whirlwind_9.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1011_lava2_whirlwind#9",
+  "source_asset": {
+    "assetId": "build_char_1011_lava2_whirlwind#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "炎狱炎熔",
+    "appellation": "Lava the Purgatory",
+    "skinGroupId": "2025#whirlwind#2",
+    "skinGroupName": "0011/飙系列/IX",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1011_lava2_whirlwind#9.atlas",
+      ".png": "build_char_1011_lava2_whirlwind#9.png",
+      ".skel": "build_char_1011_lava2_whirlwind#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lava-the-purgatory/skin-whirlwind-9/meta.json",
-    "atlas": "standalone/assets/source/lava-the-purgatory/skin-whirlwind-9/build_char_1011_lava2_whirlwind_9.atlas",
-    "skeleton": "standalone/assets/source/lava-the-purgatory/skin-whirlwind-9/build_char_1011_lava2_whirlwind_9.skel",
+    "atlas": "standalone/assets/source/lava-the-purgatory/skin-whirlwind-9/build_char_1011_lava2_whirlwind#9.atlas",
+    "skeleton": "standalone/assets/source/lava-the-purgatory/skin-whirlwind-9/build_char_1011_lava2_whirlwind#9.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1011_lava2/char_1011_lava2_whirlwind_9/build/build_char_1011_lava2_whirlwind_9.png",
-        "path": "standalone/assets/source/lava-the-purgatory/skin-whirlwind-9/build_char_1011_lava2_whirlwind_9.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1011_lava2_whirlwind%239/build_char_1011_lava2_whirlwind%239.png",
+        "path": "standalone/assets/source/lava-the-purgatory/skin-whirlwind-9/build_char_1011_lava2_whirlwind#9.png",
+        "bytes": 332856,
+        "sha256": "bb529d703aafead0b9165b1fea65792d9892efee3601dcfe4db2727fe971b2b6"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9596,
+      "sha256": "a46b44ddbd84da2ff8fe09750539e459704ba3dfd1e387c77a39b1af0c1e1e44"
+    },
+    "skeleton": {
+      "bytes": 487194,
+      "sha256": "a5ce481c7fec0c9599ca027f4410e6df527bbe72f6892d1a5791bb9252bc8cd8"
+    }
   }
 }

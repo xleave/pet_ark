@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "caper",
   "character_name": "Caper",
   "localized_name": "跃跃",
@@ -9,25 +9,58 @@
   "variant_name": "夏卉 FA083",
   "skin_id": "summer-18",
   "skin_name": "夏卉 FA083",
-  "source_page": "https://prts.wiki/w/%E8%B7%83%E8%B7%83",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4100_caper/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4100_caper/meta.json",
-    "model": "char_4100_caper_summer_18/build/build_char_4100_caper_summer_18",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4100_caper/char_4100_caper_summer_18/build/build_char_4100_caper_summer_18.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4100_caper/char_4100_caper_summer_18/build/build_char_4100_caper_summer_18.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4100_caper/char_4100_caper_summer_18/build/build_char_4100_caper_summer_18.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4100_caper_summer#18",
+  "source_asset": {
+    "assetId": "build_char_4100_caper_summer#18",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "跃跃",
+    "appellation": "Caper",
+    "skinGroupId": "2024#summer#3",
+    "skinGroupName": "珊瑚海岸/XVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4100_caper_summer#18.atlas",
+      ".png": "build_char_4100_caper_summer#18.png",
+      ".skel": "build_char_4100_caper_summer#18.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/caper/skin-summer-18/meta.json",
-    "atlas": "standalone/assets/source/caper/skin-summer-18/build_char_4100_caper_summer_18.atlas",
-    "skeleton": "standalone/assets/source/caper/skin-summer-18/build_char_4100_caper_summer_18.skel",
+    "atlas": "standalone/assets/source/caper/skin-summer-18/build_char_4100_caper_summer#18.atlas",
+    "skeleton": "standalone/assets/source/caper/skin-summer-18/build_char_4100_caper_summer#18.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4100_caper/char_4100_caper_summer_18/build/build_char_4100_caper_summer_18.png",
-        "path": "standalone/assets/source/caper/skin-summer-18/build_char_4100_caper_summer_18.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4100_caper_summer%2318/build_char_4100_caper_summer%2318.png",
+        "path": "standalone/assets/source/caper/skin-summer-18/build_char_4100_caper_summer#18.png",
+        "bytes": 361044,
+        "sha256": "1074641f6bce8edff08e2b7dfdbec28748cb30224e9122101edde94eeb273288"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11788,
+      "sha256": "6b3faaa882c18cf819bfc1f627c98ce56e28f357ba2983dfc7602ce9ee4b95e8"
+    },
+    "skeleton": {
+      "bytes": 882564,
+      "sha256": "4033f632534abc6669116d82f49f97c0dbd438a4f3c96bb947a2144c615ac26e"
+    }
   }
 }

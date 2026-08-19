@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "reed",
   "character_name": "Reed",
   "localized_name": "苇草",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%8B%87%E8%8D%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_261_sddrag/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_261_sddrag/meta.json",
-    "model": "defaultskin/build/build_char_261_sddrag",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_261_sddrag/defaultskin/build/build_char_261_sddrag.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_261_sddrag/defaultskin/build/build_char_261_sddrag.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_261_sddrag/defaultskin/build/build_char_261_sddrag.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/261_sddrag",
+  "source_asset": {
+    "assetId": "build_char_261_sddrag",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "苇草",
+    "appellation": "Reed",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_261_sddrag.atlas",
+      ".png": "build_char_261_sddrag.png",
+      ".skel": "build_char_261_sddrag.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/reed/default/meta.json",
     "atlas": "standalone/assets/source/reed/default/build_char_261_sddrag.atlas",
     "skeleton": "standalone/assets/source/reed/default/build_char_261_sddrag.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_261_sddrag/defaultskin/build/build_char_261_sddrag.png",
-        "path": "standalone/assets/source/reed/default/build_char_261_sddrag.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/261_sddrag/build_char_261_sddrag.png",
+        "path": "standalone/assets/source/reed/default/build_char_261_sddrag.png",
+        "bytes": 268394,
+        "sha256": "cf794c36eef17b95a0526973eba7a3fd25118526cefe8b7ca26d7269e1f617d0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7754,
+      "sha256": "d2553a0e46d7fdf198d46e5d6cb0e6ac33efa746597c7dce186f69ec4346f819"
+    },
+    "skeleton": {
+      "bytes": 170495,
+      "sha256": "63a3c8982b096f83b70cfb766ebf3b92ef9ef7c216970d22a879d042d0421a54"
+    }
   }
 }

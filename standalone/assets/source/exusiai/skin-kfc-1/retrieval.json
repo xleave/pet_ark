@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "exusiai",
   "character_name": "Exusiai",
   "localized_name": "能天使",
@@ -9,25 +9,58 @@
   "variant_name": "城市骑手",
   "skin_id": "kfc-1",
   "skin_name": "城市骑手",
-  "source_page": "https://prts.wiki/w/%E8%83%BD%E5%A4%A9%E4%BD%BF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_103_angel/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_103_angel/meta.json",
-    "model": "char_103_angel_kfc_1/build/build_char_103_angel_kfc_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_103_angel/char_103_angel_kfc_1/build/build_char_103_angel_kfc_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_103_angel/char_103_angel_kfc_1/build/build_char_103_angel_kfc_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_103_angel/char_103_angel_kfc_1/build/build_char_103_angel_kfc_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/103_angel_kfc#1",
+  "source_asset": {
+    "assetId": "build_char_103_angel_kfc#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "能天使",
+    "appellation": "Exusiai",
+    "skinGroupId": "2019#kfc",
+    "skinGroupName": "肯德基",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_103_angel_kfc#1.atlas",
+      ".png": "build_char_103_angel_kfc#1.png",
+      ".skel": "build_char_103_angel_kfc#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/exusiai/skin-kfc-1/meta.json",
-    "atlas": "standalone/assets/source/exusiai/skin-kfc-1/build_char_103_angel_kfc_1.atlas",
-    "skeleton": "standalone/assets/source/exusiai/skin-kfc-1/build_char_103_angel_kfc_1.skel",
+    "atlas": "standalone/assets/source/exusiai/skin-kfc-1/build_char_103_angel_kfc#1.atlas",
+    "skeleton": "standalone/assets/source/exusiai/skin-kfc-1/build_char_103_angel_kfc#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_103_angel/char_103_angel_kfc_1/build/build_char_103_angel_kfc_1.png",
-        "path": "standalone/assets/source/exusiai/skin-kfc-1/build_char_103_angel_kfc_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/103_angel_kfc%231/build_char_103_angel_kfc%231.png",
+        "path": "standalone/assets/source/exusiai/skin-kfc-1/build_char_103_angel_kfc#1.png",
+        "bytes": 282768,
+        "sha256": "7d0fce358737ae6ffe1e8cb2b38c5603eb2905345c67746b302ce64a0b2fabfc"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8215,
+      "sha256": "2d0e6d8652970c9649b075e2bf6eafa4efd66fe5d58212e1da3f382e0b0ba3b8"
+    },
+    "skeleton": {
+      "bytes": 99595,
+      "sha256": "985d404d754224ac394f30586d0fad507b6cb9e43bc45e65a6ba738ba105302e"
+    }
   }
 }

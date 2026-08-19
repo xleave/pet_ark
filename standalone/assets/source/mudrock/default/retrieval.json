@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mudrock",
   "character_name": "Mudrock",
   "localized_name": "泥岩",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B3%A5%E5%B2%A9",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/meta.json",
-    "model": "defaultskin/build/build_char_311_mudrok",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/defaultskin/build/build_char_311_mudrok.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/defaultskin/build/build_char_311_mudrok.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/defaultskin/build/build_char_311_mudrok.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/311_mudrok",
+  "source_asset": {
+    "assetId": "build_char_311_mudrok",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "泥岩",
+    "appellation": "Mudrock",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_311_mudrok.atlas",
+      ".png": "build_char_311_mudrok.png",
+      ".skel": "build_char_311_mudrok.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mudrock/default/meta.json",
     "atlas": "standalone/assets/source/mudrock/default/build_char_311_mudrok.atlas",
     "skeleton": "standalone/assets/source/mudrock/default/build_char_311_mudrok.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_311_mudrok/defaultskin/build/build_char_311_mudrok.png",
-        "path": "standalone/assets/source/mudrock/default/build_char_311_mudrok.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/311_mudrok/build_char_311_mudrok.png",
+        "path": "standalone/assets/source/mudrock/default/build_char_311_mudrok.png",
+        "bytes": 267671,
+        "sha256": "9eaafbe45d550a6e96b49ef09788efd30d3a1ba9bac3b43efa0376557e18ab1c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4293,
+      "sha256": "b9767f7abbbbb8e47d3335acedcfeb41e5c65d32a876a8fcd2a2458484d503e6"
+    },
+    "skeleton": {
+      "bytes": 73040,
+      "sha256": "83a71a2356b332bfee1e330f6ce5c8e3d4e512a73b2efbb5072ff8ef84265bf4"
+    }
   }
 }

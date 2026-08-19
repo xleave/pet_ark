@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ayerscarpe",
   "character_name": "Ayerscarpe",
   "localized_name": "断崖",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%96%AD%E5%B4%96",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_294_ayer/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_294_ayer/meta.json",
-    "model": "defaultskin/build/build_Char_294_ayer",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_294_ayer/defaultskin/build/build_Char_294_ayer.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_294_ayer/defaultskin/build/build_Char_294_ayer.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_294_ayer/defaultskin/build/build_Char_294_ayer.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/294_ayer",
+  "source_asset": {
+    "assetId": "build_char_294_ayer",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "断崖",
+    "appellation": "Ayerscarpe",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_Char_294_ayer.atlas",
+      ".png": "build_Char_294_ayer.png",
+      ".skel": "build_Char_294_ayer.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ayerscarpe/default/meta.json",
-    "atlas": "standalone/assets/source/ayerscarpe/default/build_Char_294_ayer.atlas",
-    "skeleton": "standalone/assets/source/ayerscarpe/default/build_Char_294_ayer.skel",
+    "atlas": "standalone/assets/source/ayerscarpe/default/build_char_294_ayer.atlas",
+    "skeleton": "standalone/assets/source/ayerscarpe/default/build_char_294_ayer.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_294_ayer/defaultskin/build/build_Char_294_ayer.png",
-        "path": "standalone/assets/source/ayerscarpe/default/build_Char_294_ayer.png"
+        "atlas_name": "build_Char_294_ayer.png",
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/294_ayer/build_char_294_ayer.png",
+        "path": "standalone/assets/source/ayerscarpe/default/build_char_294_ayer.png",
+        "bytes": 243731,
+        "sha256": "b55beff86d5b4b4cb76c1bc62317cdbf571ec4426d435ee74d2a829654fb4168"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6851,
+      "sha256": "9691d03577f33271c67952e3e1940da69ccebf921d391e88cafa63ff51cd3ff7"
+    },
+    "skeleton": {
+      "bytes": 84602,
+      "sha256": "8cc58cbcc03096f7e9de5c3ccab57652d7ece76cd245754aea597daf75f770b5"
+    }
   }
 }

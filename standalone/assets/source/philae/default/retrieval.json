@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "philae",
   "character_name": "Philae",
   "localized_name": "菲莱",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%8F%B2%E8%8E%B1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4148_philae/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4148_philae/meta.json",
-    "model": "defaultskin/build/build_char_4148_philae",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4148_philae/defaultskin/build/build_char_4148_philae.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4148_philae/defaultskin/build/build_char_4148_philae.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4148_philae/defaultskin/build/build_char_4148_philae.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4148_philae",
+  "source_asset": {
+    "assetId": "build_char_4148_philae",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "菲莱",
+    "appellation": "Philae",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4148_philae.atlas",
+      ".png": "build_char_4148_philae.png",
+      ".skel": "build_char_4148_philae.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/philae/default/meta.json",
     "atlas": "standalone/assets/source/philae/default/build_char_4148_philae.atlas",
     "skeleton": "standalone/assets/source/philae/default/build_char_4148_philae.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4148_philae/defaultskin/build/build_char_4148_philae.png",
-        "path": "standalone/assets/source/philae/default/build_char_4148_philae.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4148_philae/build_char_4148_philae.png",
+        "path": "standalone/assets/source/philae/default/build_char_4148_philae.png",
+        "bytes": 720718,
+        "sha256": "01f456ab32bcfa9e3d01bb8502979a75c8451a73b10db0586a265c3fda0aa52e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 16083,
+      "sha256": "b34c400bc2a606527022887b0d3e4e3552968fb07ca8bb0b0f4f15e7ad1c8dcf"
+    },
+    "skeleton": {
+      "bytes": 366670,
+      "sha256": "d42955b175ac2640b702fa5f8c87c5a97b6094acca2dede75756efc0f5d635ba"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "feater",
   "character_name": "FEater",
   "localized_name": "食铁兽",
@@ -9,25 +9,58 @@
   "variant_name": "且试箸",
   "skin_id": "nian-7",
   "skin_name": "且试箸",
-  "source_page": "https://prts.wiki/w/%E9%A3%9F%E9%93%81%E5%85%BD",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_241_panda/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_241_panda/meta.json",
-    "model": "char_241_panda_nian_7/build/build_char_241_panda_nian_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_241_panda/char_241_panda_nian_7/build/build_char_241_panda_nian_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_241_panda/char_241_panda_nian_7/build/build_char_241_panda_nian_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_241_panda/char_241_panda_nian_7/build/build_char_241_panda_nian_7.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/241_panda_nian#7",
+  "source_asset": {
+    "assetId": "build_char_241_panda_nian#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "食铁兽",
+    "appellation": "FEater",
+    "skinGroupId": "2022#nian#2",
+    "skinGroupName": "0011制造/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_241_panda_nian#7.atlas",
+      ".png": "build_char_241_panda_nian#7.png",
+      ".skel": "build_char_241_panda_nian#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/feater/skin-nian-7/meta.json",
-    "atlas": "standalone/assets/source/feater/skin-nian-7/build_char_241_panda_nian_7.atlas",
-    "skeleton": "standalone/assets/source/feater/skin-nian-7/build_char_241_panda_nian_7.skel",
+    "atlas": "standalone/assets/source/feater/skin-nian-7/build_char_241_panda_nian#7.atlas",
+    "skeleton": "standalone/assets/source/feater/skin-nian-7/build_char_241_panda_nian#7.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_241_panda/char_241_panda_nian_7/build/build_char_241_panda_nian_7.png",
-        "path": "standalone/assets/source/feater/skin-nian-7/build_char_241_panda_nian_7.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/241_panda_nian%237/build_char_241_panda_nian%237.png",
+        "path": "standalone/assets/source/feater/skin-nian-7/build_char_241_panda_nian#7.png",
+        "bytes": 318291,
+        "sha256": "d8587245e11709059a747b6f79bfa4f3e3d173cce9dec6f705c1e16e70a7b9c5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9634,
+      "sha256": "ac31abc649260931846ed19285fe69e161f6f0c8715b47507f416166a4a37f19"
+    },
+    "skeleton": {
+      "bytes": 180467,
+      "sha256": "c955d8eeec32c54d3c995f13bbb840a60c8aab6a3e7f8a2de0bbf8386e70d0c2"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "weedy",
   "character_name": "Weedy",
   "localized_name": "温蒂",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B8%A9%E8%92%82",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/meta.json",
-    "model": "defaultskin/build/build_char_400_weedy",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/defaultskin/build/build_char_400_weedy.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/defaultskin/build/build_char_400_weedy.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/defaultskin/build/build_char_400_weedy.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/400_weedy",
+  "source_asset": {
+    "assetId": "build_char_400_weedy",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "温蒂",
+    "appellation": "Weedy",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_400_weedy.atlas",
+      ".png": "build_char_400_weedy.png",
+      ".skel": "build_char_400_weedy.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/weedy/default/meta.json",
     "atlas": "standalone/assets/source/weedy/default/build_char_400_weedy.atlas",
     "skeleton": "standalone/assets/source/weedy/default/build_char_400_weedy.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/defaultskin/build/build_char_400_weedy.png",
-        "path": "standalone/assets/source/weedy/default/build_char_400_weedy.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/400_weedy/build_char_400_weedy.png",
+        "path": "standalone/assets/source/weedy/default/build_char_400_weedy.png",
+        "bytes": 219311,
+        "sha256": "6bfa977f62777b68889cff592095d13799a95d4ff014a8a2ab8a2149b691280f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5654,
+      "sha256": "c87389f8bb760d26891287fc109765d4c6ac99d034806dfac19feb4c2982d0ec"
+    },
+    "skeleton": {
+      "bytes": 90869,
+      "sha256": "55d1bdd7e5c78cf52b5c38f543b908db06e26b920290685a5a39736cac585dd5"
+    }
   }
 }

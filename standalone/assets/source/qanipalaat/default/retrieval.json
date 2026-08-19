@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "qanipalaat",
   "character_name": "Qanipalaat",
   "localized_name": "雪绒",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%9B%AA%E7%BB%92",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_466_qanik/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_466_qanik/meta.json",
-    "model": "defaultskin/build/build_char_466_qanik",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_466_qanik/defaultskin/build/build_char_466_qanik.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_466_qanik/defaultskin/build/build_char_466_qanik.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_466_qanik/defaultskin/build/build_char_466_qanik.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/466_qanik",
+  "source_asset": {
+    "assetId": "build_char_466_qanik",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "雪绒",
+    "appellation": "Qanipalaat",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_466_qanik.atlas",
+      ".png": "build_char_466_qanik.png",
+      ".skel": "build_char_466_qanik.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/qanipalaat/default/meta.json",
     "atlas": "standalone/assets/source/qanipalaat/default/build_char_466_qanik.atlas",
     "skeleton": "standalone/assets/source/qanipalaat/default/build_char_466_qanik.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_466_qanik/defaultskin/build/build_char_466_qanik.png",
-        "path": "standalone/assets/source/qanipalaat/default/build_char_466_qanik.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/466_qanik/build_char_466_qanik.png",
+        "path": "standalone/assets/source/qanipalaat/default/build_char_466_qanik.png",
+        "bytes": 294411,
+        "sha256": "026f7eeecc8561957990e97dbc7027568539b4caf791da20a996b49e955a3b22"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6814,
+      "sha256": "64a70c780daa41346de8a6cd7f574c385aa33f83c47d6461d1863426b696a68d"
+    },
+    "skeleton": {
+      "bytes": 124783,
+      "sha256": "3ff66f568fc2f2bdf802132969ed452e89a3434e219bf1d84cf34dc92904f49d"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "terra-research-commission",
   "character_name": "Terra Research Commission",
   "localized_name": "泰拉大陆调查团",
@@ -9,25 +9,58 @@
   "variant_name": "跃上街头",
   "skin_id": "mh-1",
   "skin_name": "跃上街头",
-  "source_page": "https://prts.wiki/w/%E6%B3%B0%E6%8B%89%E5%A4%A7%E9%99%86%E8%B0%83%E6%9F%A5%E5%9B%A2",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4077_palico/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4077_palico/meta.json",
-    "model": "char_4077_palico_mh_1/build/build_char_4077_palico_mh_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4077_palico/char_4077_palico_mh_1/build/build_char_4077_palico_mh_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4077_palico/char_4077_palico_mh_1/build/build_char_4077_palico_mh_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4077_palico/char_4077_palico_mh_1/build/build_char_4077_palico_mh_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4077_palico_mh#1",
+  "source_asset": {
+    "assetId": "build_char_4077_palico_mh#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "泰拉大陆调查团",
+    "appellation": "Terra Research Commission",
+    "skinGroupId": "2023#mh",
+    "skinGroupName": "怪物猎人",
+    "sortTags": [
+      "Operator",
+      "Rarity_1",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4077_palico_mh#1.atlas",
+      ".png": "build_char_4077_palico_mh#1.png",
+      ".skel": "build_char_4077_palico_mh#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/terra-research-commission/skin-mh-1/meta.json",
-    "atlas": "standalone/assets/source/terra-research-commission/skin-mh-1/build_char_4077_palico_mh_1.atlas",
-    "skeleton": "standalone/assets/source/terra-research-commission/skin-mh-1/build_char_4077_palico_mh_1.skel",
+    "atlas": "standalone/assets/source/terra-research-commission/skin-mh-1/build_char_4077_palico_mh#1.atlas",
+    "skeleton": "standalone/assets/source/terra-research-commission/skin-mh-1/build_char_4077_palico_mh#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4077_palico/char_4077_palico_mh_1/build/build_char_4077_palico_mh_1.png",
-        "path": "standalone/assets/source/terra-research-commission/skin-mh-1/build_char_4077_palico_mh_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4077_palico_mh%231/build_char_4077_palico_mh%231.png",
+        "path": "standalone/assets/source/terra-research-commission/skin-mh-1/build_char_4077_palico_mh#1.png",
+        "bytes": 385816,
+        "sha256": "9ea9ed65ba38b5275217fb1b5dbac2589206495c3b3399dfe887b85f46631e92"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13294,
+      "sha256": "ed4c179212bee46c286a93a1329a8e76207bc74f37b2245c62f4a544fb2fbf8d"
+    },
+    "skeleton": {
+      "bytes": 347128,
+      "sha256": "31f29a621ddcec2995c3b52c2d27387e84db645c6c4711b7ab56877920d2d4e7"
+    }
   }
 }

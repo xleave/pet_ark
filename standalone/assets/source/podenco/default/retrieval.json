@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "podenco",
   "character_name": "Podenco",
   "localized_name": "波登可",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B3%A2%E7%99%BB%E5%8F%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_258_podego/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_258_podego/meta.json",
-    "model": "defaultskin/build/build_char_258_podego",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_258_podego/defaultskin/build/build_char_258_podego.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_258_podego/defaultskin/build/build_char_258_podego.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_258_podego/defaultskin/build/build_char_258_podego.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/258_podego",
+  "source_asset": {
+    "assetId": "build_char_258_podego",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "波登可",
+    "appellation": "Podenco",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_258_podego.atlas",
+      ".png": "build_char_258_podego.png",
+      ".skel": "build_char_258_podego.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/podenco/default/meta.json",
     "atlas": "standalone/assets/source/podenco/default/build_char_258_podego.atlas",
     "skeleton": "standalone/assets/source/podenco/default/build_char_258_podego.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_258_podego/defaultskin/build/build_char_258_podego.png",
-        "path": "standalone/assets/source/podenco/default/build_char_258_podego.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/258_podego/build_char_258_podego.png",
+        "path": "standalone/assets/source/podenco/default/build_char_258_podego.png",
+        "bytes": 216937,
+        "sha256": "4957319d130ffd5f4d6dd78878a634b5d3d0c7ace6e02313a4350339ac8e3965"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7949,
+      "sha256": "3596355c7235b68388b9210816f6e24c36cefe07c71d0a83ffc145a31a1aa726"
+    },
+    "skeleton": {
+      "bytes": 92520,
+      "sha256": "e1cc8692dd3d2f5c55b8e9f39517333867e7b61ffd3d2a3320e30925a8504bed"
+    }
   }
 }

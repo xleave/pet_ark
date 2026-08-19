@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lappland-the-decadenza",
   "character_name": "Lappland the Decadenza",
   "localized_name": "荒芜拉普兰德",
@@ -9,25 +9,59 @@
   "variant_name": "无序的谦卑",
   "skin_id": "sale-15",
   "skin_name": "无序的谦卑",
-  "source_page": "https://prts.wiki/w/%E8%8D%92%E8%8A%9C%E6%8B%89%E6%99%AE%E5%85%B0%E5%BE%B7",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1038_whitw2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1038_whitw2/meta.json",
-    "model": "char_1038_whitw2_sale_15/build/build_char_1038_whitw2_sale_15",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1038_whitw2/char_1038_whitw2_sale_15/build/build_char_1038_whitw2_sale_15.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1038_whitw2/char_1038_whitw2_sale_15/build/build_char_1038_whitw2_sale_15.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1038_whitw2/char_1038_whitw2_sale_15/build/build_char_1038_whitw2_sale_15.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1038_whitw2_sale#15",
+  "source_asset": {
+    "assetId": "build_char_1038_whitw2_sale#15",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "荒芜拉普兰德",
+    "appellation": "Lappland the Decadenza",
+    "skinGroupId": "2025#sale#3",
+    "skinGroupName": "忒斯特收藏/XVII",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1038_whitw2_sale#15.atlas",
+      ".png": "build_char_1038_whitw2_sale#15.png",
+      ".skel": "build_char_1038_whitw2_sale#15.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lappland-the-decadenza/skin-sale-15/meta.json",
-    "atlas": "standalone/assets/source/lappland-the-decadenza/skin-sale-15/build_char_1038_whitw2_sale_15.atlas",
-    "skeleton": "standalone/assets/source/lappland-the-decadenza/skin-sale-15/build_char_1038_whitw2_sale_15.skel",
+    "atlas": "standalone/assets/source/lappland-the-decadenza/skin-sale-15/build_char_1038_whitw2_sale#15.atlas",
+    "skeleton": "standalone/assets/source/lappland-the-decadenza/skin-sale-15/build_char_1038_whitw2_sale#15.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1038_whitw2/char_1038_whitw2_sale_15/build/build_char_1038_whitw2_sale_15.png",
-        "path": "standalone/assets/source/lappland-the-decadenza/skin-sale-15/build_char_1038_whitw2_sale_15.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1038_whitw2_sale%2315/build_char_1038_whitw2_sale%2315.png",
+        "path": "standalone/assets/source/lappland-the-decadenza/skin-sale-15/build_char_1038_whitw2_sale#15.png",
+        "bytes": 403389,
+        "sha256": "ea0d462b14cda857dc626bd08c35b4185c6383964d8cb843d0e0b58783c42061"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11833,
+      "sha256": "669253b240946d6620638bd694d6ece37a78f9561591de2849beb15658da6aac"
+    },
+    "skeleton": {
+      "bytes": 468879,
+      "sha256": "f58a1a1ee169b7eacb5d9d8e1bcde78c84864a699edf9afd64f0269f6981dde9"
+    }
   }
 }

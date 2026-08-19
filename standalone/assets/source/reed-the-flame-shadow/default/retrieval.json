@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "reed-the-flame-shadow",
   "character_name": "Reed The Flame Shadow",
   "localized_name": "焰影苇草",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%84%B0%E5%BD%B1%E8%8B%87%E8%8D%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/meta.json",
-    "model": "defaultskin/build/build_char_1020_reed2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/defaultskin/build/build_char_1020_reed2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/defaultskin/build/build_char_1020_reed2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/defaultskin/build/build_char_1020_reed2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1020_reed2",
+  "source_asset": {
+    "assetId": "build_char_1020_reed2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "焰影苇草",
+    "appellation": "Reed The Flame Shadow",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1020_reed2.atlas",
+      ".png": "build_char_1020_reed2.png",
+      ".skel": "build_char_1020_reed2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/reed-the-flame-shadow/default/meta.json",
     "atlas": "standalone/assets/source/reed-the-flame-shadow/default/build_char_1020_reed2.atlas",
     "skeleton": "standalone/assets/source/reed-the-flame-shadow/default/build_char_1020_reed2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1020_reed2/defaultskin/build/build_char_1020_reed2.png",
-        "path": "standalone/assets/source/reed-the-flame-shadow/default/build_char_1020_reed2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1020_reed2/build_char_1020_reed2.png",
+        "path": "standalone/assets/source/reed-the-flame-shadow/default/build_char_1020_reed2.png",
+        "bytes": 310845,
+        "sha256": "64eb7df9e1d0fd79b07822bf5309bbf7615fb79320f1a089a87af702cd47184c"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7892,
+      "sha256": "eec4b400fc2f22e6df7cc168d09561cf6c4075383a25f525966865b8e4860d60"
+    },
+    "skeleton": {
+      "bytes": 239107,
+      "sha256": "97a4140e5327a92d6353edc35862c230693d6dfc62ecf6c8a7bf2045fa4660de"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lin",
   "character_name": "Lin",
   "localized_name": "林",
@@ -9,25 +9,58 @@
   "variant_name": "夏卉 FA137",
   "skin_id": "summer-19",
   "skin_name": "夏卉 FA137",
-  "source_page": "https://prts.wiki/w/%E6%9E%97",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/meta.json",
-    "model": "char_4080_lin_summer_19/build/build_char_4080_lin_summer_19",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/char_4080_lin_summer_19/build/build_char_4080_lin_summer_19.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/char_4080_lin_summer_19/build/build_char_4080_lin_summer_19.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/char_4080_lin_summer_19/build/build_char_4080_lin_summer_19.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4080_lin_summer#19",
+  "source_asset": {
+    "assetId": "build_char_4080_lin_summer#19",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "林",
+    "appellation": "Lin",
+    "skinGroupId": "2025#summer",
+    "skinGroupName": "珊瑚海岸/XIX",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4080_lin_summer#19.atlas",
+      ".png": "build_char_4080_lin_summer#19.png",
+      ".skel": "build_char_4080_lin_summer#19.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lin/skin-summer-19/meta.json",
-    "atlas": "standalone/assets/source/lin/skin-summer-19/build_char_4080_lin_summer_19.atlas",
-    "skeleton": "standalone/assets/source/lin/skin-summer-19/build_char_4080_lin_summer_19.skel",
+    "atlas": "standalone/assets/source/lin/skin-summer-19/build_char_4080_lin_summer#19.atlas",
+    "skeleton": "standalone/assets/source/lin/skin-summer-19/build_char_4080_lin_summer#19.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/char_4080_lin_summer_19/build/build_char_4080_lin_summer_19.png",
-        "path": "standalone/assets/source/lin/skin-summer-19/build_char_4080_lin_summer_19.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4080_lin_summer%2319/build_char_4080_lin_summer%2319.png",
+        "path": "standalone/assets/source/lin/skin-summer-19/build_char_4080_lin_summer#19.png",
+        "bytes": 581658,
+        "sha256": "e4e2573ba83b22720e423afa1e8dd6e23877364eb8c619c3514c5714ccae976b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15746,
+      "sha256": "e27a478221c34bb11b05e1d55e2657c9b76cc700ce9465c510389fdfe32f1d99"
+    },
+    "skeleton": {
+      "bytes": 582619,
+      "sha256": "686d2a964ab5fc00c03943e3f461bf0e4727b09adc03cb1f766e43c4e61b3430"
+    }
   }
 }

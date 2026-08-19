@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "asbestos",
   "character_name": "Asbestos",
   "localized_name": "石棉",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%9F%B3%E6%A3%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_378_asbest/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_378_asbest/meta.json",
-    "model": "defaultskin/build/build_char_378_asbest",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_378_asbest/defaultskin/build/build_char_378_asbest.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_378_asbest/defaultskin/build/build_char_378_asbest.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_378_asbest/defaultskin/build/build_char_378_asbest.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/378_asbest",
+  "source_asset": {
+    "assetId": "build_char_378_asbest",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "石棉",
+    "appellation": "Asbestos",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_378_asbest.atlas",
+      ".png": "build_char_378_asbest.png",
+      ".skel": "build_char_378_asbest.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/asbestos/default/meta.json",
     "atlas": "standalone/assets/source/asbestos/default/build_char_378_asbest.atlas",
     "skeleton": "standalone/assets/source/asbestos/default/build_char_378_asbest.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_378_asbest/defaultskin/build/build_char_378_asbest.png",
-        "path": "standalone/assets/source/asbestos/default/build_char_378_asbest.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/378_asbest/build_char_378_asbest.png",
+        "path": "standalone/assets/source/asbestos/default/build_char_378_asbest.png",
+        "bytes": 249581,
+        "sha256": "d2411ad4cf024330aa126946ca374c17357d4a5b578c01a4ba99954c97a0c3c4"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6394,
+      "sha256": "8a72b0ff537f5f54b768cec59966e4a3b2ec0a05c20b70e7e99a91aae216b487"
+    },
+    "skeleton": {
+      "bytes": 81176,
+      "sha256": "ddd4128c623c4a64bd4fbf66bc2ecb78e906bb310a859b3ce989d42d1bbf512c"
+    }
   }
 }

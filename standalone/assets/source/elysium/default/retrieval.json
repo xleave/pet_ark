@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "elysium",
   "character_name": "Elysium",
   "localized_name": "极境",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%9E%81%E5%A2%83",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/meta.json",
-    "model": "defaultskin/build/build_char_401_elysm",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/defaultskin/build/build_char_401_elysm.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/defaultskin/build/build_char_401_elysm.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/defaultskin/build/build_char_401_elysm.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/401_elysm",
+  "source_asset": {
+    "assetId": "build_char_401_elysm",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "极境",
+    "appellation": "Elysium",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_401_elysm.atlas",
+      ".png": "build_char_401_elysm.png",
+      ".skel": "build_char_401_elysm.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/elysium/default/meta.json",
     "atlas": "standalone/assets/source/elysium/default/build_char_401_elysm.atlas",
     "skeleton": "standalone/assets/source/elysium/default/build_char_401_elysm.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_401_elysm/defaultskin/build/build_char_401_elysm.png",
-        "path": "standalone/assets/source/elysium/default/build_char_401_elysm.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/401_elysm/build_char_401_elysm.png",
+        "path": "standalone/assets/source/elysium/default/build_char_401_elysm.png",
+        "bytes": 236643,
+        "sha256": "2edc6a0a46910aca08009ee3a25a0577579c51eead7a7515f881fc600d73c094"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7343,
+      "sha256": "114faabbeffb803b9b8140625eac8a4c639f3a0ae29c10cb884f8206fa2a8908"
+    },
+    "skeleton": {
+      "bytes": 79350,
+      "sha256": "2493ff8599f2ab63cd04da1f89b10ba7f66c4a0a45a1aa1faa1ad0db34282c72"
+    }
   }
 }

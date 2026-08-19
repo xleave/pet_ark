@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mizuki",
   "character_name": "Mizuki",
   "localized_name": "水月",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B0%B4%E6%9C%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_437_mizuki/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_437_mizuki/meta.json",
-    "model": "defaultskin/build/build_char_437_mizuki",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_437_mizuki/defaultskin/build/build_char_437_mizuki.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_437_mizuki/defaultskin/build/build_char_437_mizuki.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_437_mizuki/defaultskin/build/build_char_437_mizuki.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/437_mizuki",
+  "source_asset": {
+    "assetId": "build_char_437_mizuki",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "水月",
+    "appellation": "Mizuki",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_437_mizuki.atlas",
+      ".png": "build_char_437_mizuki.png",
+      ".skel": "build_char_437_mizuki.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mizuki/default/meta.json",
     "atlas": "standalone/assets/source/mizuki/default/build_char_437_mizuki.atlas",
     "skeleton": "standalone/assets/source/mizuki/default/build_char_437_mizuki.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_437_mizuki/defaultskin/build/build_char_437_mizuki.png",
-        "path": "standalone/assets/source/mizuki/default/build_char_437_mizuki.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/437_mizuki/build_char_437_mizuki.png",
+        "path": "standalone/assets/source/mizuki/default/build_char_437_mizuki.png",
+        "bytes": 390173,
+        "sha256": "72f532800b0837f50c52d45183ade431e1052b5d7328b857a05c19f64b1f73c3"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11845,
+      "sha256": "be22c37d8dd425da7e28a4abe5ccef88956260d4d37283577119dd26438e00d2"
+    },
+    "skeleton": {
+      "bytes": 377405,
+      "sha256": "b56e9a72e89d8fbdf9c89fa0b857878c49479a7cb23cbb2b62c2813bf5afcef9"
+    }
   }
 }

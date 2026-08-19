@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "necrass",
   "character_name": "Necrass",
   "localized_name": "死芒",
@@ -9,25 +9,58 @@
   "variant_name": "晶化信念",
   "skin_id": "ambiencesynesthesia-7",
   "skin_name": "晶化信念",
-  "source_page": "https://prts.wiki/w/%E6%AD%BB%E8%8A%92",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/meta.json",
-    "model": "char_450_necras_ambiencesynesthesia_7/build/build_char_450_necras_ambienceSynesthesia_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/char_450_necras_ambiencesynesthesia_7/build/build_char_450_necras_ambienceSynesthesia_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/char_450_necras_ambiencesynesthesia_7/build/build_char_450_necras_ambienceSynesthesia_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/char_450_necras_ambiencesynesthesia_7/build/build_char_450_necras_ambienceSynesthesia_7.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/450_necras_ambiencesynesthesia#7",
+  "source_asset": {
+    "assetId": "build_char_450_necras_ambiencesynesthesia#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "死芒",
+    "appellation": "Necrass",
+    "skinGroupId": "2026#ambienceSynesthesia#2",
+    "skinGroupName": "音律联觉/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_450_necras_ambienceSynesthesia#7.atlas",
+      ".png": "build_char_450_necras_ambienceSynesthesia#7.png",
+      ".skel": "build_char_450_necras_ambienceSynesthesia#7"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/necrass/skin-ambiencesynesthesia-7/meta.json",
-    "atlas": "standalone/assets/source/necrass/skin-ambiencesynesthesia-7/build_char_450_necras_ambienceSynesthesia_7.atlas",
-    "skeleton": "standalone/assets/source/necrass/skin-ambiencesynesthesia-7/build_char_450_necras_ambienceSynesthesia_7.skel",
+    "atlas": "standalone/assets/source/necrass/skin-ambiencesynesthesia-7/build_char_450_necras_ambienceSynesthesia#7.atlas",
+    "skeleton": "standalone/assets/source/necrass/skin-ambiencesynesthesia-7/build_char_450_necras_ambienceSynesthesia#7",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_450_necras/char_450_necras_ambiencesynesthesia_7/build/build_char_450_necras_ambienceSynesthesia_7.png",
-        "path": "standalone/assets/source/necrass/skin-ambiencesynesthesia-7/build_char_450_necras_ambienceSynesthesia_7.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/450_necras_ambiencesynesthesia%237/build_char_450_necras_ambienceSynesthesia%237.png",
+        "path": "standalone/assets/source/necrass/skin-ambiencesynesthesia-7/build_char_450_necras_ambienceSynesthesia#7.png",
+        "bytes": 1141486,
+        "sha256": "bba0444445b3c4d0a08470d9f2d6096b91f9fcc73c3f48bdf164d6618c9726ac"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 16157,
+      "sha256": "fa48b0b035867549fca9bacd873607f39b03bece889f54ceb579db2d3d9a3cce"
+    },
+    "skeleton": {
+      "bytes": 1515486,
+      "sha256": "6dcf61bc91dd7b010cbdbeae869f2ccc399b21ed73c237c271b6150c851ba20a"
+    }
   }
 }

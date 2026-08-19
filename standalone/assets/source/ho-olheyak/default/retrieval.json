@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ho-olheyak",
   "character_name": "Ho'olheyak",
   "localized_name": "霍尔海雅",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%9C%8D%E5%B0%94%E6%B5%B7%E9%9B%85",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/meta.json",
-    "model": "defaultskin/build/build_char_4027_heyak",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/defaultskin/build/build_char_4027_heyak.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/defaultskin/build/build_char_4027_heyak.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/defaultskin/build/build_char_4027_heyak.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4027_heyak",
+  "source_asset": {
+    "assetId": "build_char_4027_heyak",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "霍尔海雅",
+    "appellation": "Ho'olheyak",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4027_heyak.atlas",
+      ".png": "build_char_4027_heyak.png",
+      ".skel": "build_char_4027_heyak.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ho-olheyak/default/meta.json",
     "atlas": "standalone/assets/source/ho-olheyak/default/build_char_4027_heyak.atlas",
     "skeleton": "standalone/assets/source/ho-olheyak/default/build_char_4027_heyak.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4027_heyak/defaultskin/build/build_char_4027_heyak.png",
-        "path": "standalone/assets/source/ho-olheyak/default/build_char_4027_heyak.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4027_heyak/build_char_4027_heyak.png",
+        "path": "standalone/assets/source/ho-olheyak/default/build_char_4027_heyak.png",
+        "bytes": 392807,
+        "sha256": "8083fe9415cb6adad670ff6ebe70c962923d93cf3226d9e290e152e71681727a"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7738,
+      "sha256": "a1dec16be6897733aa620f8d58c09616044f98a5c4ba198f4406a0e08d84cd51"
+    },
+    "skeleton": {
+      "bytes": 134097,
+      "sha256": "f736009d490115f8e362d95844663904543bbbf5f451d26a5e2ebd84b37f63b9"
+    }
   }
 }

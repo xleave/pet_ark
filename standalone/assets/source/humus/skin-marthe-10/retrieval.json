@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "humus",
   "character_name": "Humus",
   "localized_name": "休谟斯",
@@ -9,25 +9,58 @@
   "variant_name": "烈阳街景",
   "skin_id": "marthe-10",
   "skin_name": "烈阳街景",
-  "source_page": "https://prts.wiki/w/%E4%BC%91%E8%B0%9F%E6%96%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_491_humus/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_491_humus/meta.json",
-    "model": "char_491_humus_marthe_10/build/build_char_491_humus_marthe_10",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_491_humus/char_491_humus_marthe_10/build/build_char_491_humus_marthe_10.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_491_humus/char_491_humus_marthe_10/build/build_char_491_humus_marthe_10.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_491_humus/char_491_humus_marthe_10/build/build_char_491_humus_marthe_10.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/491_humus_marthe#10",
+  "source_asset": {
+    "assetId": "build_char_491_humus_marthe#10",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "休谟斯",
+    "appellation": "Humus",
+    "skinGroupId": "2025#marthe#3",
+    "skinGroupName": "玛尔特/X",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_491_humus_marthe#10.atlas",
+      ".png": "build_char_491_humus_marthe#10.png",
+      ".skel": "build_char_491_humus_marthe#10.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/humus/skin-marthe-10/meta.json",
-    "atlas": "standalone/assets/source/humus/skin-marthe-10/build_char_491_humus_marthe_10.atlas",
-    "skeleton": "standalone/assets/source/humus/skin-marthe-10/build_char_491_humus_marthe_10.skel",
+    "atlas": "standalone/assets/source/humus/skin-marthe-10/build_char_491_humus_marthe#10.atlas",
+    "skeleton": "standalone/assets/source/humus/skin-marthe-10/build_char_491_humus_marthe#10.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_491_humus/char_491_humus_marthe_10/build/build_char_491_humus_marthe_10.png",
-        "path": "standalone/assets/source/humus/skin-marthe-10/build_char_491_humus_marthe_10.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/491_humus_marthe%2310/build_char_491_humus_marthe%2310.png",
+        "path": "standalone/assets/source/humus/skin-marthe-10/build_char_491_humus_marthe#10.png",
+        "bytes": 410273,
+        "sha256": "05e258cd25521201946edd7a4366498718fb5bd9a86fa8689207070e847c5bb2"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10237,
+      "sha256": "d8f8a1aa6bc52bfccd03bf5e769e4c4104c47ed491cfb0029155604b02c8a65a"
+    },
+    "skeleton": {
+      "bytes": 268816,
+      "sha256": "92390c44ce9de5fd1d2213971fbc19e65ab2e5a9065a00738b7ab6ea5b55d516"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "la-pluma",
   "character_name": "La Pluma",
   "localized_name": "羽毛笔",
@@ -9,25 +9,58 @@
   "variant_name": "夏卉 FA210",
   "skin_id": "summer-9",
   "skin_name": "夏卉 FA210",
-  "source_page": "https://prts.wiki/w/%E7%BE%BD%E6%AF%9B%E7%AC%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/meta.json",
-    "model": "char_421_crow_summer_9/build/build_char_421_crow_summer_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/char_421_crow_summer_9/build/build_char_421_crow_summer_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/char_421_crow_summer_9/build/build_char_421_crow_summer_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/char_421_crow_summer_9/build/build_char_421_crow_summer_9.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/421_crow_summer#9",
+  "source_asset": {
+    "assetId": "build_char_421_crow_summer#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "羽毛笔",
+    "appellation": "La Pluma",
+    "skinGroupId": "2022#summer#2",
+    "skinGroupName": "珊瑚海岸/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_421_crow_summer#9.atlas",
+      ".png": "build_char_421_crow_summer#9.png",
+      ".skel": "build_char_421_crow_summer#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/la-pluma/skin-summer-9/meta.json",
-    "atlas": "standalone/assets/source/la-pluma/skin-summer-9/build_char_421_crow_summer_9.atlas",
-    "skeleton": "standalone/assets/source/la-pluma/skin-summer-9/build_char_421_crow_summer_9.skel",
+    "atlas": "standalone/assets/source/la-pluma/skin-summer-9/build_char_421_crow_summer#9.atlas",
+    "skeleton": "standalone/assets/source/la-pluma/skin-summer-9/build_char_421_crow_summer#9.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_421_crow/char_421_crow_summer_9/build/build_char_421_crow_summer_9.png",
-        "path": "standalone/assets/source/la-pluma/skin-summer-9/build_char_421_crow_summer_9.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/421_crow_summer%239/build_char_421_crow_summer%239.png",
+        "path": "standalone/assets/source/la-pluma/skin-summer-9/build_char_421_crow_summer#9.png",
+        "bytes": 236649,
+        "sha256": "0c51fa32c7872ccdf2be352275fe18fcda8fd9c283d0792ee2c5aea4c7465608"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7582,
+      "sha256": "acc27e20c35418a148efecde5548568cfd05c51ccaafa1c1196adc5afee78a38"
+    },
+    "skeleton": {
+      "bytes": 261288,
+      "sha256": "b9cb1d596747c4a3cc8e8b6f32921d2426c3f1adaa67619353fa75aeadec0f6a"
+    }
   }
 }

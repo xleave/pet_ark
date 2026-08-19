@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "morgan",
   "character_name": "Morgan",
   "localized_name": "摩根",
@@ -9,25 +9,58 @@
   "variant_name": "字里行间",
   "skin_id": "epoque-47",
   "skin_name": "字里行间",
-  "source_page": "https://prts.wiki/w/%E6%91%A9%E6%A0%B9",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_154_morgan/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_154_morgan/meta.json",
-    "model": "char_154_morgan_epoque_47/build/build_char_154_morgan_epoque_47",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_154_morgan/char_154_morgan_epoque_47/build/build_char_154_morgan_epoque_47.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_154_morgan/char_154_morgan_epoque_47/build/build_char_154_morgan_epoque_47.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_154_morgan/char_154_morgan_epoque_47/build/build_char_154_morgan_epoque_47.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/154_morgan_epoque#47",
+  "source_asset": {
+    "assetId": "build_char_154_morgan_epoque#47",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "摩根",
+    "appellation": "Morgan",
+    "skinGroupId": "2025#epoque#9",
+    "skinGroupName": "时代/XLVI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_154_morgan_epoque#47.atlas",
+      ".png": "build_char_154_morgan_epoque#47.png",
+      ".skel": "build_char_154_morgan_epoque#47.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/morgan/skin-epoque-47/meta.json",
-    "atlas": "standalone/assets/source/morgan/skin-epoque-47/build_char_154_morgan_epoque_47.atlas",
-    "skeleton": "standalone/assets/source/morgan/skin-epoque-47/build_char_154_morgan_epoque_47.skel",
+    "atlas": "standalone/assets/source/morgan/skin-epoque-47/build_char_154_morgan_epoque#47.atlas",
+    "skeleton": "standalone/assets/source/morgan/skin-epoque-47/build_char_154_morgan_epoque#47.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_154_morgan/char_154_morgan_epoque_47/build/build_char_154_morgan_epoque_47.png",
-        "path": "standalone/assets/source/morgan/skin-epoque-47/build_char_154_morgan_epoque_47.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/154_morgan_epoque%2347/build_char_154_morgan_epoque%2347.png",
+        "path": "standalone/assets/source/morgan/skin-epoque-47/build_char_154_morgan_epoque#47.png",
+        "bytes": 515714,
+        "sha256": "87eb3d515508b47000d5c4af79e50f43054477ac7eac5298fcbb23565e38b297"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9702,
+      "sha256": "cc961d32b692fb7a9084eb5144e8f5d8d819ccb192493c8f7540b3a54105a52e"
+    },
+    "skeleton": {
+      "bytes": 234830,
+      "sha256": "42f92981f9e8efaa28f8d02a35bf23926a7ae8569871f1cfededa32d6bbf6167"
+    }
   }
 }

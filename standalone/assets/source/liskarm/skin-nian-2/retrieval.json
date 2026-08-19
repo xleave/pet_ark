@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "liskarm",
   "character_name": "Liskarm",
   "localized_name": "雷蛇",
@@ -9,25 +9,58 @@
   "variant_name": "春竜",
   "skin_id": "nian-2",
   "skin_name": "春竜",
-  "source_page": "https://prts.wiki/w/%E9%9B%B7%E8%9B%87",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/meta.json",
-    "model": "char_107_liskam_nian_2/build/build_char_107_liskam_nian_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/char_107_liskam_nian_2/build/build_char_107_liskam_nian_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/char_107_liskam_nian_2/build/build_char_107_liskam_nian_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/char_107_liskam_nian_2/build/build_char_107_liskam_nian_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/107_liskam_nian#2",
+  "source_asset": {
+    "assetId": "build_char_107_liskam_nian#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "雷蛇",
+    "appellation": "Liskarm",
+    "skinGroupId": "2020#nian",
+    "skinGroupName": "0011制造/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_107_liskam_nian#2.atlas",
+      ".png": "build_char_107_liskam_nian#2.png",
+      ".skel": "build_char_107_liskam_nian#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/liskarm/skin-nian-2/meta.json",
-    "atlas": "standalone/assets/source/liskarm/skin-nian-2/build_char_107_liskam_nian_2.atlas",
-    "skeleton": "standalone/assets/source/liskarm/skin-nian-2/build_char_107_liskam_nian_2.skel",
+    "atlas": "standalone/assets/source/liskarm/skin-nian-2/build_char_107_liskam_nian#2.atlas",
+    "skeleton": "standalone/assets/source/liskarm/skin-nian-2/build_char_107_liskam_nian#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_107_liskam/char_107_liskam_nian_2/build/build_char_107_liskam_nian_2.png",
-        "path": "standalone/assets/source/liskarm/skin-nian-2/build_char_107_liskam_nian_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/107_liskam_nian%232/build_char_107_liskam_nian%232.png",
+        "path": "standalone/assets/source/liskarm/skin-nian-2/build_char_107_liskam_nian#2.png",
+        "bytes": 283679,
+        "sha256": "0bb4173266ce551b4289164d19099ee5a1457810ced3624451fd80f7d3ce7e41"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8340,
+      "sha256": "8e8443dd4888355bcd35a442b24581c58f8f4499eb19ba9b10f30cad2adfb6b2"
+    },
+    "skeleton": {
+      "bytes": 101201,
+      "sha256": "9a277c0e580db9a50bfe56266ba479202fd5c2779a152a7b4e17edebdf4c8030"
+    }
   }
 }

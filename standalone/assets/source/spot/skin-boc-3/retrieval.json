@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "spot",
   "character_name": "Spot",
   "localized_name": "斑点",
@@ -9,25 +9,58 @@
   "variant_name": "专业人士",
   "skin_id": "boc-3",
   "skin_name": "专业人士",
-  "source_page": "https://prts.wiki/w/%E6%96%91%E7%82%B9",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_284_spot/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_284_spot/meta.json",
-    "model": "char_284_spot_boc_3/build/build_char_284_spot_boc_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_284_spot/char_284_spot_boc_3/build/build_char_284_spot_boc_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_284_spot/char_284_spot_boc_3/build/build_char_284_spot_boc_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_284_spot/char_284_spot_boc_3/build/build_char_284_spot_boc_3.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/284_spot_boc#3",
+  "source_asset": {
+    "assetId": "build_char_284_spot_boc#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "斑点",
+    "appellation": "Spot",
+    "skinGroupId": "2021#boc#2",
+    "skinGroupName": "斗争血脉/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_284_spot_boc#3.atlas",
+      ".png": "build_char_284_spot_boc#3.png",
+      ".skel": "build_char_284_spot_boc#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/spot/skin-boc-3/meta.json",
-    "atlas": "standalone/assets/source/spot/skin-boc-3/build_char_284_spot_boc_3.atlas",
-    "skeleton": "standalone/assets/source/spot/skin-boc-3/build_char_284_spot_boc_3.skel",
+    "atlas": "standalone/assets/source/spot/skin-boc-3/build_char_284_spot_boc#3.atlas",
+    "skeleton": "standalone/assets/source/spot/skin-boc-3/build_char_284_spot_boc#3.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_284_spot/char_284_spot_boc_3/build/build_char_284_spot_boc_3.png",
-        "path": "standalone/assets/source/spot/skin-boc-3/build_char_284_spot_boc_3.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/284_spot_boc%233/build_char_284_spot_boc%233.png",
+        "path": "standalone/assets/source/spot/skin-boc-3/build_char_284_spot_boc#3.png",
+        "bytes": 424993,
+        "sha256": "000ae5dc27600c953036387f753d4f98ee9b3bf4544c541e7d3ddba336ffee78"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12588,
+      "sha256": "1c77f52acf6cb41683c186ed028f847e6e1ccae9655948828a5177b46f678303"
+    },
+    "skeleton": {
+      "bytes": 200757,
+      "sha256": "ff2edbe7c6cee6e624042932fed9a95b5e09cb18e1f2c0aea7a2c033d0420a63"
+    }
   }
 }

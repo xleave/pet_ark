@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "bryophyta",
   "character_name": "Bryophyta",
   "localized_name": "苍苔",
@@ -9,25 +9,58 @@
   "variant_name": "动感",
   "skin_id": "epoque-34",
   "skin_name": "动感",
-  "source_page": "https://prts.wiki/w/%E8%8B%8D%E8%8B%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4106_bryota/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4106_bryota/meta.json",
-    "model": "char_4106_bryota_epoque_34/build/build_char_4106_bryota_epoque_34",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4106_bryota/char_4106_bryota_epoque_34/build/build_char_4106_bryota_epoque_34.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4106_bryota/char_4106_bryota_epoque_34/build/build_char_4106_bryota_epoque_34.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4106_bryota/char_4106_bryota_epoque_34/build/build_char_4106_bryota_epoque_34.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4106_bryota_epoque#34",
+  "source_asset": {
+    "assetId": "build_char_4106_bryota_epoque#34",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "苍苔",
+    "appellation": "Bryophyta",
+    "skinGroupId": "2024#epoque#6",
+    "skinGroupName": "时代/XXXV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4106_bryota_epoque#34.atlas",
+      ".png": "build_char_4106_bryota_epoque#34.png",
+      ".skel": "build_char_4106_bryota_epoque#34.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/bryophyta/skin-epoque-34/meta.json",
-    "atlas": "standalone/assets/source/bryophyta/skin-epoque-34/build_char_4106_bryota_epoque_34.atlas",
-    "skeleton": "standalone/assets/source/bryophyta/skin-epoque-34/build_char_4106_bryota_epoque_34.skel",
+    "atlas": "standalone/assets/source/bryophyta/skin-epoque-34/build_char_4106_bryota_epoque#34.atlas",
+    "skeleton": "standalone/assets/source/bryophyta/skin-epoque-34/build_char_4106_bryota_epoque#34.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4106_bryota/char_4106_bryota_epoque_34/build/build_char_4106_bryota_epoque_34.png",
-        "path": "standalone/assets/source/bryophyta/skin-epoque-34/build_char_4106_bryota_epoque_34.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4106_bryota_epoque%2334/build_char_4106_bryota_epoque%2334.png",
+        "path": "standalone/assets/source/bryophyta/skin-epoque-34/build_char_4106_bryota_epoque#34.png",
+        "bytes": 273238,
+        "sha256": "7bfd7f3341c3f22a9307e56634293f9e08731160bb1dbaafcb17cf6fcb33e325"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11176,
+      "sha256": "40e4ab542e43d6b232890c292a6ebea87216f53e2ed15f0c091a40f28ca3a16c"
+    },
+    "skeleton": {
+      "bytes": 286866,
+      "sha256": "59c1de05ec7524d55edca0348b5386a7b36c986e7c5fbb1bb9c2e41d6cbc2bf9"
+    }
   }
 }

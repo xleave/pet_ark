@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lucilla",
   "character_name": "Lucilla",
   "localized_name": "海霓",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B5%B7%E9%9C%93",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4079_haini/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4079_haini/meta.json",
-    "model": "defaultskin/build/build_char_4079_haini",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4079_haini/defaultskin/build/build_char_4079_haini.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4079_haini/defaultskin/build/build_char_4079_haini.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4079_haini/defaultskin/build/build_char_4079_haini.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4079_haini",
+  "source_asset": {
+    "assetId": "build_char_4079_haini",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "海霓",
+    "appellation": "Lucilla",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4079_haini.atlas",
+      ".png": "build_char_4079_haini.png",
+      ".skel": "build_char_4079_haini.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lucilla/default/meta.json",
     "atlas": "standalone/assets/source/lucilla/default/build_char_4079_haini.atlas",
     "skeleton": "standalone/assets/source/lucilla/default/build_char_4079_haini.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4079_haini/defaultskin/build/build_char_4079_haini.png",
-        "path": "standalone/assets/source/lucilla/default/build_char_4079_haini.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4079_haini/build_char_4079_haini.png",
+        "path": "standalone/assets/source/lucilla/default/build_char_4079_haini.png",
+        "bytes": 272943,
+        "sha256": "5e4bba5210b46d55b21bb55e199064d4fbe2c3ea32da1afb6d573cbfe28e33e3"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9997,
+      "sha256": "a1f6c9825119b68fa5fa7247d189cafd521849f8be9dafb09cdbdf971400b3bd"
+    },
+    "skeleton": {
+      "bytes": 194083,
+      "sha256": "0caa69d06a75e7155343eb85f98ae6e91ec2a5078e1b1d6c258eeb70e776a732"
+    }
   }
 }

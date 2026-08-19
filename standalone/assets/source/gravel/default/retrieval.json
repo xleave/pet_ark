@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "gravel",
   "character_name": "Gravel",
   "localized_name": "砾",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%A0%BE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_237_gravel/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_237_gravel/meta.json",
-    "model": "defaultskin/build/build_char_237_gravel",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_237_gravel/defaultskin/build/build_char_237_gravel.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_237_gravel/defaultskin/build/build_char_237_gravel.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_237_gravel/defaultskin/build/build_char_237_gravel.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/237_gravel",
+  "source_asset": {
+    "assetId": "build_char_237_gravel",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "砾",
+    "appellation": "Gravel",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_237_gravel.atlas",
+      ".png": "build_char_237_gravel.png",
+      ".skel": "build_char_237_gravel.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/gravel/default/meta.json",
     "atlas": "standalone/assets/source/gravel/default/build_char_237_gravel.atlas",
     "skeleton": "standalone/assets/source/gravel/default/build_char_237_gravel.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_237_gravel/defaultskin/build/build_char_237_gravel.png",
-        "path": "standalone/assets/source/gravel/default/build_char_237_gravel.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/237_gravel/build_char_237_gravel.png",
+        "path": "standalone/assets/source/gravel/default/build_char_237_gravel.png",
+        "bytes": 193375,
+        "sha256": "2a4e8029a63939e14f0f2d950cea1c70302d95463cf063af40b84732a50ca552"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5530,
+      "sha256": "02f259e20ca150e5be4e1fa892e3fd2cd2197bb46ccb8a3f7133be37bf1312e4"
+    },
+    "skeleton": {
+      "bytes": 86226,
+      "sha256": "a2817f11d2b85b567c02f3bfc33ff37bc71d489d723cfdfe368442005ad3ca52"
+    }
   }
 }

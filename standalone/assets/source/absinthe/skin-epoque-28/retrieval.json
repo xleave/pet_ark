@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "absinthe",
   "character_name": "Absinthe",
   "localized_name": "苦艾",
@@ -9,25 +9,58 @@
   "variant_name": "正午余光",
   "skin_id": "epoque-28",
   "skin_name": "正午余光",
-  "source_page": "https://prts.wiki/w/%E8%8B%A6%E8%89%BE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_405_absin/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_405_absin/meta.json",
-    "model": "char_405_absin_epoque_28/build/build_char_405_absin_epoque_28",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_405_absin/char_405_absin_epoque_28/build/build_char_405_absin_epoque_28.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_405_absin/char_405_absin_epoque_28/build/build_char_405_absin_epoque_28.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_405_absin/char_405_absin_epoque_28/build/build_char_405_absin_epoque_28.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/405_absin_epoque#28",
+  "source_asset": {
+    "assetId": "build_char_405_absin_epoque#28",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "苦艾",
+    "appellation": "Absinthe",
+    "skinGroupId": "2023#epoque#10",
+    "skinGroupName": "时代/XXVIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_405_absin_epoque#28.atlas",
+      ".png": "build_char_405_absin_epoque#28.png",
+      ".skel": "build_char_405_absin_epoque#28.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/absinthe/skin-epoque-28/meta.json",
-    "atlas": "standalone/assets/source/absinthe/skin-epoque-28/build_char_405_absin_epoque_28.atlas",
-    "skeleton": "standalone/assets/source/absinthe/skin-epoque-28/build_char_405_absin_epoque_28.skel",
+    "atlas": "standalone/assets/source/absinthe/skin-epoque-28/build_char_405_absin_epoque#28.atlas",
+    "skeleton": "standalone/assets/source/absinthe/skin-epoque-28/build_char_405_absin_epoque#28.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_405_absin/char_405_absin_epoque_28/build/build_char_405_absin_epoque_28.png",
-        "path": "standalone/assets/source/absinthe/skin-epoque-28/build_char_405_absin_epoque_28.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/405_absin_epoque%2328/build_char_405_absin_epoque%2328.png",
+        "path": "standalone/assets/source/absinthe/skin-epoque-28/build_char_405_absin_epoque#28.png",
+        "bytes": 341307,
+        "sha256": "ddd22500039d684cf0a569bba0a5d0e8fa4fc0d26a17f96a28dadf113bcba353"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7308,
+      "sha256": "b1a5c3976cb38c0963aa9647a4b48c72ad51bb5419d820cafc59b1877d78031f"
+    },
+    "skeleton": {
+      "bytes": 168652,
+      "sha256": "728f1679d5e2c4999c4099e93e6d5e8747fa0de61f806db8368948a7f8aaff43"
+    }
   }
 }

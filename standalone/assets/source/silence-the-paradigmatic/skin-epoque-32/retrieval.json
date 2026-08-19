@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "silence-the-paradigmatic",
   "character_name": "Silence the Paradigmatic",
   "localized_name": "淬羽赫默",
@@ -9,25 +9,59 @@
   "variant_name": "栖息",
   "skin_id": "epoque-32",
   "skin_name": "栖息",
-  "source_page": "https://prts.wiki/w/%E6%B7%AC%E7%BE%BD%E8%B5%AB%E9%BB%98",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/meta.json",
-    "model": "char_1031_slent2_epoque_32/build/build_char_1031_slent2_epoque_32",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/char_1031_slent2_epoque_32/build/build_char_1031_slent2_epoque_32.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/char_1031_slent2_epoque_32/build/build_char_1031_slent2_epoque_32.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/char_1031_slent2_epoque_32/build/build_char_1031_slent2_epoque_32.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1031_slent2_epoque#32",
+  "source_asset": {
+    "assetId": "build_char_1031_slent2_epoque#32",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "淬羽赫默",
+    "appellation": "Silence the Paradigmatic",
+    "skinGroupId": "2024#epoque#3",
+    "skinGroupName": "时代/XXXII",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1031_slent2_epoque#32.atlas",
+      ".png": "build_char_1031_slent2_epoque#32.png",
+      ".skel": "build_char_1031_slent2_epoque#32.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/silence-the-paradigmatic/skin-epoque-32/meta.json",
-    "atlas": "standalone/assets/source/silence-the-paradigmatic/skin-epoque-32/build_char_1031_slent2_epoque_32.atlas",
-    "skeleton": "standalone/assets/source/silence-the-paradigmatic/skin-epoque-32/build_char_1031_slent2_epoque_32.skel",
+    "atlas": "standalone/assets/source/silence-the-paradigmatic/skin-epoque-32/build_char_1031_slent2_epoque#32.atlas",
+    "skeleton": "standalone/assets/source/silence-the-paradigmatic/skin-epoque-32/build_char_1031_slent2_epoque#32.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1031_slent2/char_1031_slent2_epoque_32/build/build_char_1031_slent2_epoque_32.png",
-        "path": "standalone/assets/source/silence-the-paradigmatic/skin-epoque-32/build_char_1031_slent2_epoque_32.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1031_slent2_epoque%2332/build_char_1031_slent2_epoque%2332.png",
+        "path": "standalone/assets/source/silence-the-paradigmatic/skin-epoque-32/build_char_1031_slent2_epoque#32.png",
+        "bytes": 441914,
+        "sha256": "76cbe133ee64f614ac98a1836e2c3b83e93b08dbbec3da5d00bc5901003e5be6"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10468,
+      "sha256": "a59a6e2dd086157b819bbe6551870f69afc6e8df10752b1871c318e25aace671"
+    },
+    "skeleton": {
+      "bytes": 284050,
+      "sha256": "cfec12d26e5daea4db5645483a7cf46cfe1b4c78191f71de1d50b02692e968d3"
+    }
   }
 }

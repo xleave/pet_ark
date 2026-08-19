@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "magallan",
   "character_name": "Magallan",
   "localized_name": "麦哲伦",
@@ -9,25 +9,58 @@
   "variant_name": "回味冰霜雪",
   "skin_id": "kitchen-1",
   "skin_name": "回味冰霜雪",
-  "source_page": "https://prts.wiki/w/%E9%BA%A6%E5%93%B2%E4%BC%A6",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_248_mgllan/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_248_mgllan/meta.json",
-    "model": "char_248_mgllan_kitchen_1/build/build_char_248_mgllan_kitchen_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_248_mgllan/char_248_mgllan_kitchen_1/build/build_char_248_mgllan_kitchen_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_248_mgllan/char_248_mgllan_kitchen_1/build/build_char_248_mgllan_kitchen_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_248_mgllan/char_248_mgllan_kitchen_1/build/build_char_248_mgllan_kitchen_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/248_mgllan_kitchen#1",
+  "source_asset": {
+    "assetId": "build_char_248_mgllan_kitchen#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "麦哲伦",
+    "appellation": "Magallan",
+    "skinGroupId": "2020#kitchen",
+    "skinGroupName": "罗德厨房",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_248_mgllan_kitchen#1.atlas",
+      ".png": "build_char_248_mgllan_kitchen#1.png",
+      ".skel": "build_char_248_mgllan_kitchen#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/magallan/skin-kitchen-1/meta.json",
-    "atlas": "standalone/assets/source/magallan/skin-kitchen-1/build_char_248_mgllan_kitchen_1.atlas",
-    "skeleton": "standalone/assets/source/magallan/skin-kitchen-1/build_char_248_mgllan_kitchen_1.skel",
+    "atlas": "standalone/assets/source/magallan/skin-kitchen-1/build_char_248_mgllan_kitchen#1.atlas",
+    "skeleton": "standalone/assets/source/magallan/skin-kitchen-1/build_char_248_mgllan_kitchen#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_248_mgllan/char_248_mgllan_kitchen_1/build/build_char_248_mgllan_kitchen_1.png",
-        "path": "standalone/assets/source/magallan/skin-kitchen-1/build_char_248_mgllan_kitchen_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/248_mgllan_kitchen%231/build_char_248_mgllan_kitchen%231.png",
+        "path": "standalone/assets/source/magallan/skin-kitchen-1/build_char_248_mgllan_kitchen#1.png",
+        "bytes": 662173,
+        "sha256": "599ba7bb1dcb1beeb4d636ff9d5f7a409594c5d3601f430883a74020d3084a34"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13786,
+      "sha256": "f2b2e694cae1039e94fcf8bde753051e1c422d6f35034a6ed455502956975475"
+    },
+    "skeleton": {
+      "bytes": 152206,
+      "sha256": "4db3bcad9f95a92612dd63a695528da7290e5982f17eba83bfa3d6ac6948132d"
+    }
   }
 }

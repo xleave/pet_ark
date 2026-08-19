@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "dobermann",
   "character_name": "Dobermann",
   "localized_name": "杜宾",
@@ -9,25 +9,58 @@
   "variant_name": "少尉",
   "skin_id": "epoque-7",
   "skin_name": "少尉",
-  "source_page": "https://prts.wiki/w/%E6%9D%9C%E5%AE%BE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_130_doberm/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_130_doberm/meta.json",
-    "model": "char_130_doberm_epoque_7/build/build_char_130_doberm_epoque_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_130_doberm/char_130_doberm_epoque_7/build/build_char_130_doberm_epoque_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_130_doberm/char_130_doberm_epoque_7/build/build_char_130_doberm_epoque_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_130_doberm/char_130_doberm_epoque_7/build/build_char_130_doberm_epoque_7.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/130_doberm_epoque#7",
+  "source_asset": {
+    "assetId": "build_char_130_doberm_epoque#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "杜宾",
+    "appellation": "Dobermann",
+    "skinGroupId": "2020#epoque#6",
+    "skinGroupName": "时代/VII",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_130_doberm_epoque#7.atlas",
+      ".png": "build_char_130_doberm_epoque#7.png",
+      ".skel": "build_char_130_doberm_epoque#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/dobermann/skin-epoque-7/meta.json",
-    "atlas": "standalone/assets/source/dobermann/skin-epoque-7/build_char_130_doberm_epoque_7.atlas",
-    "skeleton": "standalone/assets/source/dobermann/skin-epoque-7/build_char_130_doberm_epoque_7.skel",
+    "atlas": "standalone/assets/source/dobermann/skin-epoque-7/build_char_130_doberm_epoque#7.atlas",
+    "skeleton": "standalone/assets/source/dobermann/skin-epoque-7/build_char_130_doberm_epoque#7.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_130_doberm/char_130_doberm_epoque_7/build/build_char_130_doberm_epoque_7.png",
-        "path": "standalone/assets/source/dobermann/skin-epoque-7/build_char_130_doberm_epoque_7.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/130_doberm_epoque%237/build_char_130_doberm_epoque%237.png",
+        "path": "standalone/assets/source/dobermann/skin-epoque-7/build_char_130_doberm_epoque#7.png",
+        "bytes": 182978,
+        "sha256": "43b39a78e6390a303a10040de080d2022daeb5c0127f1685e085130ef993e380"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5822,
+      "sha256": "e788432c145fbe57a98a159e4a2965dcf6893e383f471f215d5fe871f4f4a8d5"
+    },
+    "skeleton": {
+      "bytes": 145920,
+      "sha256": "1467adc6bb7745b8150bc59eb0ca6862238deedb6641a07676a27be4f13dabe7"
+    }
   }
 }

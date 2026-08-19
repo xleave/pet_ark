@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "jaye",
   "character_name": "Jaye",
   "localized_name": "孑",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%AD%91",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_272_strong/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_272_strong/meta.json",
-    "model": "defaultskin/build/build_char_272_strong",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_272_strong/defaultskin/build/build_char_272_strong.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_272_strong/defaultskin/build/build_char_272_strong.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_272_strong/defaultskin/build/build_char_272_strong.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/272_strong",
+  "source_asset": {
+    "assetId": "build_char_272_strong",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "孑",
+    "appellation": "Jaye",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_272_strong.atlas",
+      ".png": "build_char_272_strong.png",
+      ".skel": "build_char_272_strong.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/jaye/default/meta.json",
     "atlas": "standalone/assets/source/jaye/default/build_char_272_strong.atlas",
     "skeleton": "standalone/assets/source/jaye/default/build_char_272_strong.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_272_strong/defaultskin/build/build_char_272_strong.png",
-        "path": "standalone/assets/source/jaye/default/build_char_272_strong.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/272_strong/build_char_272_strong.png",
+        "path": "standalone/assets/source/jaye/default/build_char_272_strong.png",
+        "bytes": 249616,
+        "sha256": "c6b688c25fbe502ec5a100d8572c392c8dc8f901c37a34a39375ca82fe68aaa3"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7052,
+      "sha256": "2f380ded72ded9e0ba5baf18dd513d75452b3e8b971b1f743d888c11043dd0d4"
+    },
+    "skeleton": {
+      "bytes": 84869,
+      "sha256": "94cd081c5f2cb469d7ca87693d1037046f2bb9f5ec6f2db0ea69c90483671e15"
+    }
   }
 }

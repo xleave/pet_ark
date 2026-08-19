@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "matterhorn",
   "character_name": "Matterhorn",
   "localized_name": "角峰",
@@ -9,25 +9,58 @@
   "variant_name": "沙滩护卫 GT.001",
   "skin_id": "summer-1",
   "skin_name": "沙滩护卫 GT.001",
-  "source_page": "https://prts.wiki/w/%E8%A7%92%E5%B3%B0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_199_yak/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_199_yak/meta.json",
-    "model": "char_199_yak_summer_1/build/build_char_199_yak_summer_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_199_yak/char_199_yak_summer_1/build/build_char_199_yak_summer_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_199_yak/char_199_yak_summer_1/build/build_char_199_yak_summer_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_199_yak/char_199_yak_summer_1/build/build_char_199_yak_summer_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/199_yak_summer#1",
+  "source_asset": {
+    "assetId": "build_char_199_yak_summer#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "角峰",
+    "appellation": "Matterhorn",
+    "skinGroupId": "2019#summer",
+    "skinGroupName": "珊瑚海岸/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_199_yak_summer#1.atlas",
+      ".png": "build_char_199_yak_summer#1.png",
+      ".skel": "build_char_199_yak_summer#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/matterhorn/skin-summer-1/meta.json",
-    "atlas": "standalone/assets/source/matterhorn/skin-summer-1/build_char_199_yak_summer_1.atlas",
-    "skeleton": "standalone/assets/source/matterhorn/skin-summer-1/build_char_199_yak_summer_1.skel",
+    "atlas": "standalone/assets/source/matterhorn/skin-summer-1/build_char_199_yak_summer#1.atlas",
+    "skeleton": "standalone/assets/source/matterhorn/skin-summer-1/build_char_199_yak_summer#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_199_yak/char_199_yak_summer_1/build/build_char_199_yak_summer_1.png",
-        "path": "standalone/assets/source/matterhorn/skin-summer-1/build_char_199_yak_summer_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/199_yak_summer%231/build_char_199_yak_summer%231.png",
+        "path": "standalone/assets/source/matterhorn/skin-summer-1/build_char_199_yak_summer#1.png",
+        "bytes": 403111,
+        "sha256": "34e6e2d1e5204ecb07ebc1f6b21ef7a70bc3a7b3e22df64d8cc123a142007391"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9607,
+      "sha256": "51e9b24ca8e1db21e9910144b9401f8f6b9ac87be9a1931bdf887d6f24e7273d"
+    },
+    "skeleton": {
+      "bytes": 121110,
+      "sha256": "d4bd3199412456948e3374825d691c0d78325963efcbe95635fa4270e8c237d1"
+    }
   }
 }

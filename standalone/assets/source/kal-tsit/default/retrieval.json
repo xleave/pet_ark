@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "kal-tsit",
   "character_name": "Kal'tsit",
   "localized_name": "凯尔希",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%87%AF%E5%B0%94%E5%B8%8C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/meta.json",
-    "model": "defaultskin/build/build_char_003_kalts",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/defaultskin/build/build_char_003_kalts.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/defaultskin/build/build_char_003_kalts.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/defaultskin/build/build_char_003_kalts.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/003_kalts",
+  "source_asset": {
+    "assetId": "build_char_003_kalts",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "凯尔希",
+    "appellation": "Kal'tsit",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_003_kalts.atlas",
+      ".png": "build_char_003_kalts.png",
+      ".skel": "build_char_003_kalts.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/kal-tsit/default/meta.json",
     "atlas": "standalone/assets/source/kal-tsit/default/build_char_003_kalts.atlas",
     "skeleton": "standalone/assets/source/kal-tsit/default/build_char_003_kalts.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_003_kalts/defaultskin/build/build_char_003_kalts.png",
-        "path": "standalone/assets/source/kal-tsit/default/build_char_003_kalts.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/003_kalts/build_char_003_kalts.png",
+        "path": "standalone/assets/source/kal-tsit/default/build_char_003_kalts.png",
+        "bytes": 277909,
+        "sha256": "e0a3f9fc65139520536e9a7b4c2ee03eb481277bb3ef591cb658a95ad00bcd53"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8872,
+      "sha256": "cc245ca899d25df397a1aab19cf359c9851849dad8db3f8264f5aef725dc0a0d"
+    },
+    "skeleton": {
+      "bytes": 159443,
+      "sha256": "3f946202a188aadadd1adc1436f89891c545b50a210c12f3ac3e7a40f5bc4070"
+    }
   }
 }

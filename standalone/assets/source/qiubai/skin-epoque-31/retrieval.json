@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "qiubai",
   "character_name": "Qiubai",
   "localized_name": "仇白",
@@ -9,25 +9,58 @@
   "variant_name": "礼遇",
   "skin_id": "epoque-31",
   "skin_name": "礼遇",
-  "source_page": "https://prts.wiki/w/%E4%BB%87%E7%99%BD",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4082_qiubai/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4082_qiubai/meta.json",
-    "model": "char_4082_qiubai_epoque_31/build/build_char_4082_qiubai_epoque_31",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4082_qiubai/char_4082_qiubai_epoque_31/build/build_char_4082_qiubai_epoque_31.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4082_qiubai/char_4082_qiubai_epoque_31/build/build_char_4082_qiubai_epoque_31.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4082_qiubai/char_4082_qiubai_epoque_31/build/build_char_4082_qiubai_epoque_31.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4082_qiubai_epoque#31",
+  "source_asset": {
+    "assetId": "build_char_4082_qiubai_epoque#31",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "仇白",
+    "appellation": "Qiubai",
+    "skinGroupId": "2024#epoque#2",
+    "skinGroupName": "时代/XXXI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4082_qiubai_epoque#31.atlas",
+      ".png": "build_char_4082_qiubai_epoque#31.png",
+      ".skel": "build_char_4082_qiubai_epoque#31.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/qiubai/skin-epoque-31/meta.json",
-    "atlas": "standalone/assets/source/qiubai/skin-epoque-31/build_char_4082_qiubai_epoque_31.atlas",
-    "skeleton": "standalone/assets/source/qiubai/skin-epoque-31/build_char_4082_qiubai_epoque_31.skel",
+    "atlas": "standalone/assets/source/qiubai/skin-epoque-31/build_char_4082_qiubai_epoque#31.atlas",
+    "skeleton": "standalone/assets/source/qiubai/skin-epoque-31/build_char_4082_qiubai_epoque#31.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4082_qiubai/char_4082_qiubai_epoque_31/build/build_char_4082_qiubai_epoque_31.png",
-        "path": "standalone/assets/source/qiubai/skin-epoque-31/build_char_4082_qiubai_epoque_31.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4082_qiubai_epoque%2331/build_char_4082_qiubai_epoque%2331.png",
+        "path": "standalone/assets/source/qiubai/skin-epoque-31/build_char_4082_qiubai_epoque#31.png",
+        "bytes": 551618,
+        "sha256": "7394593f69578eeaf333aad367a37e829dc6cd749e10a1510b92e37f4cb55bcb"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 17854,
+      "sha256": "8c98bd1ea49aa659b4c4048290d28a258d762c8c89a0eb846958f2e38b6bbb12"
+    },
+    "skeleton": {
+      "bytes": 845021,
+      "sha256": "cbaacb06701153599c6ac346519d35b060bc8d4dca7bfb3a5568022c97211ed2"
+    }
   }
 }

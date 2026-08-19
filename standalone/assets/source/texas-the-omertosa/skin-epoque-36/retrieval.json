@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "texas-the-omertosa",
   "character_name": "Texas the Omertosa",
   "localized_name": "缄默德克萨斯",
@@ -9,25 +9,59 @@
   "variant_name": "幽兰秘辛",
   "skin_id": "epoque-36",
   "skin_name": "幽兰秘辛",
-  "source_page": "https://prts.wiki/w/%E7%BC%84%E9%BB%98%E5%BE%B7%E5%85%8B%E8%90%A8%E6%96%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/meta.json",
-    "model": "char_1028_texas2_epoque_36/build/build_char_1028_texas2_epoque_36",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/char_1028_texas2_epoque_36/build/build_char_1028_texas2_epoque_36.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/char_1028_texas2_epoque_36/build/build_char_1028_texas2_epoque_36.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/char_1028_texas2_epoque_36/build/build_char_1028_texas2_epoque_36.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1028_texas2_epoque#36",
+  "source_asset": {
+    "assetId": "build_char_1028_texas2_epoque#36",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "缄默德克萨斯",
+    "appellation": "Texas the Omertosa",
+    "skinGroupId": "2024#epoque#7",
+    "skinGroupName": "时代/XXXVI",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1028_texas2_epoque#36.atlas",
+      ".png": "build_char_1028_texas2_epoque#36.png",
+      ".skel": "build_char_1028_texas2_epoque#36"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/texas-the-omertosa/skin-epoque-36/meta.json",
-    "atlas": "standalone/assets/source/texas-the-omertosa/skin-epoque-36/build_char_1028_texas2_epoque_36.atlas",
-    "skeleton": "standalone/assets/source/texas-the-omertosa/skin-epoque-36/build_char_1028_texas2_epoque_36.skel",
+    "atlas": "standalone/assets/source/texas-the-omertosa/skin-epoque-36/build_char_1028_texas2_epoque#36.atlas",
+    "skeleton": "standalone/assets/source/texas-the-omertosa/skin-epoque-36/build_char_1028_texas2_epoque#36",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1028_texas2/char_1028_texas2_epoque_36/build/build_char_1028_texas2_epoque_36.png",
-        "path": "standalone/assets/source/texas-the-omertosa/skin-epoque-36/build_char_1028_texas2_epoque_36.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1028_texas2_epoque%2336/build_char_1028_texas2_epoque%2336.png",
+        "path": "standalone/assets/source/texas-the-omertosa/skin-epoque-36/build_char_1028_texas2_epoque#36.png",
+        "bytes": 661309,
+        "sha256": "5a50f4ef1c4be97570a0ba6923372aa0527acd58afee38137f0da2e702d96001"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13338,
+      "sha256": "59b0d36959d0f341b5a4fd3f761d8fc59d949f80cc6ee826cf11ce544a8dd03b"
+    },
+    "skeleton": {
+      "bytes": 839607,
+      "sha256": "f72ba2a96f69fac33e0069175266f1b22f8aa9b89fc16596486247b5b00d263f"
+    }
   }
 }

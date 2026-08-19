@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "wakaba-mutsumi",
   "character_name": "Wakaba Mutsumi",
   "localized_name": "若叶睦",
@@ -9,25 +9,58 @@
   "variant_name": "提线的本我",
   "skin_id": "avemujica-1",
   "skin_name": "提线的本我",
-  "source_page": "https://prts.wiki/w/%E8%8B%A5%E5%8F%B6%E7%9D%A6",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/meta.json",
-    "model": "char_4183_mortis_avemujica_1/build/build_char_4183_mortis_avemujica_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/char_4183_mortis_avemujica_1/build/build_char_4183_mortis_avemujica_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/char_4183_mortis_avemujica_1/build/build_char_4183_mortis_avemujica_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/char_4183_mortis_avemujica_1/build/build_char_4183_mortis_avemujica_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4183_mortis_avemujica#1",
+  "source_asset": {
+    "assetId": "build_char_4183_mortis_avemujica#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "若叶睦",
+    "appellation": "Wakaba Mutsumi",
+    "skinGroupId": "2025#avemujica",
+    "skinGroupName": "Ave Mujica",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4183_mortis_avemujica#1.atlas",
+      ".png": "build_char_4183_mortis_avemujica#1.png",
+      ".skel": "build_char_4183_mortis_avemujica#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/wakaba-mutsumi/skin-avemujica-1/meta.json",
-    "atlas": "standalone/assets/source/wakaba-mutsumi/skin-avemujica-1/build_char_4183_mortis_avemujica_1.atlas",
-    "skeleton": "standalone/assets/source/wakaba-mutsumi/skin-avemujica-1/build_char_4183_mortis_avemujica_1.skel",
+    "atlas": "standalone/assets/source/wakaba-mutsumi/skin-avemujica-1/build_char_4183_mortis_avemujica#1.atlas",
+    "skeleton": "standalone/assets/source/wakaba-mutsumi/skin-avemujica-1/build_char_4183_mortis_avemujica#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4183_mortis/char_4183_mortis_avemujica_1/build/build_char_4183_mortis_avemujica_1.png",
-        "path": "standalone/assets/source/wakaba-mutsumi/skin-avemujica-1/build_char_4183_mortis_avemujica_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4183_mortis_avemujica%231/build_char_4183_mortis_avemujica%231.png",
+        "path": "standalone/assets/source/wakaba-mutsumi/skin-avemujica-1/build_char_4183_mortis_avemujica#1.png",
+        "bytes": 466144,
+        "sha256": "03990a5aaf2824e83288654cbbaeaa464d2b372ed2ed17a52dd03286673f9462"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15545,
+      "sha256": "b4b3cf5b9a700d322c9b8b53c222a5f13aa81ad7ec240472279b057302f05bdf"
+    },
+    "skeleton": {
+      "bytes": 558170,
+      "sha256": "ae241c6a701e13a6cd84166b4cb788e0508dbddd6eb14ea17390872e287b5c0f"
+    }
   }
 }

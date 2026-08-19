@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lancet-2",
   "character_name": "Lancet-2",
   "localized_name": "Lancet-2",
@@ -9,25 +9,58 @@
   "variant_name": "海岸救援改装",
   "skin_id": "boc-4",
   "skin_name": "海岸救援改装",
-  "source_page": "https://prts.wiki/w/Lancet-2",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/meta.json",
-    "model": "char_285_medic2_boc_4/build/build_char_285_medic2_boc_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/char_285_medic2_boc_4/build/build_char_285_medic2_boc_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/char_285_medic2_boc_4/build/build_char_285_medic2_boc_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/char_285_medic2_boc_4/build/build_char_285_medic2_boc_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/285_medic2_boc#4",
+  "source_asset": {
+    "assetId": "build_char_285_medic2_boc#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "Lancet-2",
+    "appellation": "Lancet-2",
+    "skinGroupId": "2022#boc",
+    "skinGroupName": "斗争血脉/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_1",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_285_medic2_boc#4.atlas",
+      ".png": "build_char_285_medic2_boc#4.png",
+      ".skel": "build_char_285_medic2_boc#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lancet-2/skin-boc-4/meta.json",
-    "atlas": "standalone/assets/source/lancet-2/skin-boc-4/build_char_285_medic2_boc_4.atlas",
-    "skeleton": "standalone/assets/source/lancet-2/skin-boc-4/build_char_285_medic2_boc_4.skel",
+    "atlas": "standalone/assets/source/lancet-2/skin-boc-4/build_char_285_medic2_boc#4.atlas",
+    "skeleton": "standalone/assets/source/lancet-2/skin-boc-4/build_char_285_medic2_boc#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_285_medic2/char_285_medic2_boc_4/build/build_char_285_medic2_boc_4.png",
-        "path": "standalone/assets/source/lancet-2/skin-boc-4/build_char_285_medic2_boc_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/285_medic2_boc%234/build_char_285_medic2_boc%234.png",
+        "path": "standalone/assets/source/lancet-2/skin-boc-4/build_char_285_medic2_boc#4.png",
+        "bytes": 402636,
+        "sha256": "48e4118d71673752ff50286492f029b6b960148326b5baef44470cd137bc11e6"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5485,
+      "sha256": "3a9abcfd238fa10ecf70c9c5977ca6f65e13f1bb79bd14e5fce73d392a2a9100"
+    },
+    "skeleton": {
+      "bytes": 44549,
+      "sha256": "39ef9c0ca20fc40d848523b692bf9fdb90cfd1301a4a8873a1494acead7d509d"
+    }
   }
 }

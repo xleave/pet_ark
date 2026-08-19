@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "deepcolor",
   "character_name": "Deepcolor",
   "localized_name": "深海色",
@@ -9,25 +9,58 @@
   "variant_name": "绘声绘影",
   "skin_id": "winter-3",
   "skin_name": "绘声绘影",
-  "source_page": "https://prts.wiki/w/%E6%B7%B1%E6%B5%B7%E8%89%B2",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_110_deepcl/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_110_deepcl/meta.json",
-    "model": "char_110_deepcl_winter_3/build/build_char_110_deepcl_winter_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_110_deepcl/char_110_deepcl_winter_3/build/build_char_110_deepcl_winter_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_110_deepcl/char_110_deepcl_winter_3/build/build_char_110_deepcl_winter_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_110_deepcl/char_110_deepcl_winter_3/build/build_char_110_deepcl_winter_3.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/110_deepcl_winter#3",
+  "source_asset": {
+    "assetId": "build_char_110_deepcl_winter#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "深海色",
+    "appellation": "Deepcolor",
+    "skinGroupId": "2023#winter",
+    "skinGroupName": "寒武纪/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_110_deepcl_winter#3.atlas",
+      ".png": "build_char_110_deepcl_winter#3.png",
+      ".skel": "build_char_110_deepcl_winter#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/deepcolor/skin-winter-3/meta.json",
-    "atlas": "standalone/assets/source/deepcolor/skin-winter-3/build_char_110_deepcl_winter_3.atlas",
-    "skeleton": "standalone/assets/source/deepcolor/skin-winter-3/build_char_110_deepcl_winter_3.skel",
+    "atlas": "standalone/assets/source/deepcolor/skin-winter-3/build_char_110_deepcl_winter#3.atlas",
+    "skeleton": "standalone/assets/source/deepcolor/skin-winter-3/build_char_110_deepcl_winter#3.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_110_deepcl/char_110_deepcl_winter_3/build/build_char_110_deepcl_winter_3.png",
-        "path": "standalone/assets/source/deepcolor/skin-winter-3/build_char_110_deepcl_winter_3.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/110_deepcl_winter%233/build_char_110_deepcl_winter%233.png",
+        "path": "standalone/assets/source/deepcolor/skin-winter-3/build_char_110_deepcl_winter#3.png",
+        "bytes": 257699,
+        "sha256": "78f145a952b3052ab55341919b73a116fe7cbc7a5024f39afd8f9589f7f8efd2"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8554,
+      "sha256": "51754e91cc34ecf3cd5cb3f67f821f07e876e34c180cc6626f1f641685294f03"
+    },
+    "skeleton": {
+      "bytes": 388105,
+      "sha256": "b470e8baee9d9736ff5de58be8bb6edbb47bb15f7067e5ac913ad6c23096ea48"
+    }
   }
 }

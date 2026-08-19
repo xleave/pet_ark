@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "texas",
   "character_name": "Texas",
   "localized_name": "德克萨斯",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%BE%B7%E5%85%8B%E8%90%A8%E6%96%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/meta.json",
-    "model": "defaultskin/build/build_char_102_texas",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/defaultskin/build/build_char_102_texas.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/defaultskin/build/build_char_102_texas.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/defaultskin/build/build_char_102_texas.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/102_texas",
+  "source_asset": {
+    "assetId": "build_char_102_texas",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "德克萨斯",
+    "appellation": "Texas",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_102_texas.atlas",
+      ".png": "build_char_102_texas.png",
+      ".skel": "build_char_102_texas.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/texas/default/meta.json",
     "atlas": "standalone/assets/source/texas/default/build_char_102_texas.atlas",
     "skeleton": "standalone/assets/source/texas/default/build_char_102_texas.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/defaultskin/build/build_char_102_texas.png",
-        "path": "standalone/assets/source/texas/default/build_char_102_texas.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/102_texas/build_char_102_texas.png",
+        "path": "standalone/assets/source/texas/default/build_char_102_texas.png",
+        "bytes": 191307,
+        "sha256": "cf87bcc5322c6e15913382a3ff25c11b9acb6d8eba07969fde0cd9c8718136cd"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4929,
+      "sha256": "82c3c008f255a1e7086dcf8507e37c59940814d59816084e67db4024cbc03b3a"
+    },
+    "skeleton": {
+      "bytes": 131582,
+      "sha256": "3532960ba4d67c88698cc29c7d246b54172e8e841882272a31a1f7b1ef32005a"
+    }
   }
 }

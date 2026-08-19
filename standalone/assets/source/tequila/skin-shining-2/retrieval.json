@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "tequila",
   "character_name": "Tequila",
   "localized_name": "龙舌兰",
@@ -9,25 +9,58 @@
   "variant_name": "巅峰现场",
   "skin_id": "shining-2",
   "skin_name": "巅峰现场",
-  "source_page": "https://prts.wiki/w/%E9%BE%99%E8%88%8C%E5%85%B0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_486_takila/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_486_takila/meta.json",
-    "model": "char_486_takila_shining_2/build/build_char_486_takila_shining_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_486_takila/char_486_takila_shining_2/build/build_char_486_takila_shining_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_486_takila/char_486_takila_shining_2/build/build_char_486_takila_shining_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_486_takila/char_486_takila_shining_2/build/build_char_486_takila_shining_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/486_takila_shining#2",
+  "source_asset": {
+    "assetId": "build_char_486_takila_shining#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "龙舌兰",
+    "appellation": "Tequila",
+    "skinGroupId": "2024#shining",
+    "skinGroupName": "闪耀阶梯/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_486_takila_shining#2.atlas",
+      ".png": "build_char_486_takila_shining#2.png",
+      ".skel": "build_char_486_takila_shining#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/tequila/skin-shining-2/meta.json",
-    "atlas": "standalone/assets/source/tequila/skin-shining-2/build_char_486_takila_shining_2.atlas",
-    "skeleton": "standalone/assets/source/tequila/skin-shining-2/build_char_486_takila_shining_2.skel",
+    "atlas": "standalone/assets/source/tequila/skin-shining-2/build_char_486_takila_shining#2.atlas",
+    "skeleton": "standalone/assets/source/tequila/skin-shining-2/build_char_486_takila_shining#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_486_takila/char_486_takila_shining_2/build/build_char_486_takila_shining_2.png",
-        "path": "standalone/assets/source/tequila/skin-shining-2/build_char_486_takila_shining_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/486_takila_shining%232/build_char_486_takila_shining%232.png",
+        "path": "standalone/assets/source/tequila/skin-shining-2/build_char_486_takila_shining#2.png",
+        "bytes": 362462,
+        "sha256": "d41ee4033c81734b4d99cec52addb65236107240eae31cf5c58820c267330cf6"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14265,
+      "sha256": "20f6154d70ddfeb8b26c5efb9647892a6de5fbd8499dce553f7f91268df495ca"
+    },
+    "skeleton": {
+      "bytes": 933449,
+      "sha256": "8b5b1c5a87f8a67ddb479aadc221dd5dbc0ba6c54292da2f2b2f6d152cfa3505"
+    }
   }
 }

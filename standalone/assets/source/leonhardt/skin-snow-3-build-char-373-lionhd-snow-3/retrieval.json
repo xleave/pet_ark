@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "leonhardt",
   "character_name": "Leonhardt",
   "localized_name": "莱恩哈特",
@@ -9,25 +9,58 @@
   "variant_name": "希望巡游",
   "skin_id": "snow-3-build-char-373-lionhd-snow-3",
   "skin_name": "希望巡游",
-  "source_page": "https://prts.wiki/w/%E8%8E%B1%E6%81%A9%E5%93%88%E7%89%B9",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/meta.json",
-    "model": "char_373_lionhd_snow_3/build/char_373_lionhd_snow_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/char_373_lionhd_snow_3/build/char_373_lionhd_snow_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/char_373_lionhd_snow_3/build/char_373_lionhd_snow_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/char_373_lionhd_snow_3/build/char_373_lionhd_snow_3.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/373_lionhd_snow#3",
+  "source_asset": {
+    "assetId": "build_char_373_lionhd_snow#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "莱恩哈特",
+    "appellation": "Leonhardt",
+    "skinGroupId": "2021#xmas",
+    "skinGroupName": "冰原信使/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "char_373_lionhd_snow#3.atlas",
+      ".png": "char_373_lionhd_snow#3.png",
+      ".skel": "char_373_lionhd_snow#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/leonhardt/skin-snow-3-build-char-373-lionhd-snow-3/meta.json",
-    "atlas": "standalone/assets/source/leonhardt/skin-snow-3-build-char-373-lionhd-snow-3/char_373_lionhd_snow_3.atlas",
-    "skeleton": "standalone/assets/source/leonhardt/skin-snow-3-build-char-373-lionhd-snow-3/char_373_lionhd_snow_3.skel",
+    "atlas": "standalone/assets/source/leonhardt/skin-snow-3-build-char-373-lionhd-snow-3/char_373_lionhd_snow#3.atlas",
+    "skeleton": "standalone/assets/source/leonhardt/skin-snow-3-build-char-373-lionhd-snow-3/char_373_lionhd_snow#3.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/char_373_lionhd_snow_3/build/char_373_lionhd_snow_3.png",
-        "path": "standalone/assets/source/leonhardt/skin-snow-3-build-char-373-lionhd-snow-3/char_373_lionhd_snow_3.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/373_lionhd_snow%233/char_373_lionhd_snow%233.png",
+        "path": "standalone/assets/source/leonhardt/skin-snow-3-build-char-373-lionhd-snow-3/char_373_lionhd_snow#3.png",
+        "bytes": 434155,
+        "sha256": "ae1f96ffdc8331064088a4345d73ab302f82426bd30b8139d28c7dcd76be2749"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13722,
+      "sha256": "a7f2e833ff1d7a5a2afd76afeac2640c3540c148ba0c42f717fba0259a90e687"
+    },
+    "skeleton": {
+      "bytes": 589254,
+      "sha256": "541092ce1cc3a8ac67339ba0772b9b22ed676b662f433a87db317f520d8ade53"
+    }
   }
 }

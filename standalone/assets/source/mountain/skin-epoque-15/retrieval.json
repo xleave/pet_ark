@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mountain",
   "character_name": "Mountain",
   "localized_name": "山",
@@ -9,25 +9,58 @@
   "variant_name": "读者",
   "skin_id": "epoque-15",
   "skin_name": "读者",
-  "source_page": "https://prts.wiki/w/%E5%B1%B1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/meta.json",
-    "model": "char_264_f12yin_epoque_15/build/build_char_264_f12yin_epoque_15",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/char_264_f12yin_epoque_15/build/build_char_264_f12yin_epoque_15.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/char_264_f12yin_epoque_15/build/build_char_264_f12yin_epoque_15.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/char_264_f12yin_epoque_15/build/build_char_264_f12yin_epoque_15.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/264_f12yin_epoque#15",
+  "source_asset": {
+    "assetId": "build_char_264_f12yin_epoque#15",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "山",
+    "appellation": "Mountain",
+    "skinGroupId": "2022#epoque#2",
+    "skinGroupName": "时代/XV",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_264_f12yin_epoque#15.atlas",
+      ".png": "build_char_264_f12yin_epoque#15.png",
+      ".skel": "build_char_264_f12yin_epoque#15.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mountain/skin-epoque-15/meta.json",
-    "atlas": "standalone/assets/source/mountain/skin-epoque-15/build_char_264_f12yin_epoque_15.atlas",
-    "skeleton": "standalone/assets/source/mountain/skin-epoque-15/build_char_264_f12yin_epoque_15.skel",
+    "atlas": "standalone/assets/source/mountain/skin-epoque-15/build_char_264_f12yin_epoque#15.atlas",
+    "skeleton": "standalone/assets/source/mountain/skin-epoque-15/build_char_264_f12yin_epoque#15.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_264_f12yin/char_264_f12yin_epoque_15/build/build_char_264_f12yin_epoque_15.png",
-        "path": "standalone/assets/source/mountain/skin-epoque-15/build_char_264_f12yin_epoque_15.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/264_f12yin_epoque%2315/build_char_264_f12yin_epoque%2315.png",
+        "path": "standalone/assets/source/mountain/skin-epoque-15/build_char_264_f12yin_epoque#15.png",
+        "bytes": 462554,
+        "sha256": "cd6b9ce5c5aa8e282d8f747b6b87c08b66a1d777fa82b9cce55553859956ca2d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7195,
+      "sha256": "9dd6c979f632c62c3f6a79e7516b6c3220ef2f258b6c582c0ccf9c807f72235e"
+    },
+    "skeleton": {
+      "bytes": 206765,
+      "sha256": "845a194acad2be56a6e4722c62e5cd95a008959245aabbf4d778b28a8ef2342a"
+    }
   }
 }

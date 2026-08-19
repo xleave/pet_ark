@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ela",
   "character_name": "Ela",
   "localized_name": "艾拉",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%89%BE%E6%8B%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4123_ela/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4123_ela/meta.json",
-    "model": "defaultskin/build/build_char_4123_ela",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4123_ela/defaultskin/build/build_char_4123_ela.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4123_ela/defaultskin/build/build_char_4123_ela.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4123_ela/defaultskin/build/build_char_4123_ela.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4123_ela",
+  "source_asset": {
+    "assetId": "build_char_4123_ela",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "艾拉",
+    "appellation": "Ela",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4123_ela.atlas",
+      ".png": "build_char_4123_ela.png",
+      ".skel": "build_char_4123_ela.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ela/default/meta.json",
     "atlas": "standalone/assets/source/ela/default/build_char_4123_ela.atlas",
     "skeleton": "standalone/assets/source/ela/default/build_char_4123_ela.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4123_ela/defaultskin/build/build_char_4123_ela.png",
-        "path": "standalone/assets/source/ela/default/build_char_4123_ela.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4123_ela/build_char_4123_ela.png",
+        "path": "standalone/assets/source/ela/default/build_char_4123_ela.png",
+        "bytes": 211171,
+        "sha256": "1be1527e5f9bd859766c1f2a8bc8945f9bf8eaca15c6dde59eada698a2f9e9c0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9317,
+      "sha256": "61cdc481c27a6a7b960abf4b46c793cd522a178af3b8d825193088649171ecf9"
+    },
+    "skeleton": {
+      "bytes": 252185,
+      "sha256": "e4f2b816c281608a4f241923bd00bb6368ab3921796b8b5e0ffe717a401c652d"
+    }
   }
 }

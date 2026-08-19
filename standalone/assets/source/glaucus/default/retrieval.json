@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "glaucus",
   "character_name": "Glaucus",
   "localized_name": "格劳克斯",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%A0%BC%E5%8A%B3%E5%85%8B%E6%96%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_326_glacus/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_326_glacus/meta.json",
-    "model": "defaultskin/build/build_char_326_glacus",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_326_glacus/defaultskin/build/build_char_326_glacus.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_326_glacus/defaultskin/build/build_char_326_glacus.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_326_glacus/defaultskin/build/build_char_326_glacus.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/326_glacus",
+  "source_asset": {
+    "assetId": "build_char_326_glacus",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "格劳克斯",
+    "appellation": "Glaucus",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_326_glacus.atlas",
+      ".png": "build_char_326_glacus.png",
+      ".skel": "build_char_326_glacus.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/glaucus/default/meta.json",
     "atlas": "standalone/assets/source/glaucus/default/build_char_326_glacus.atlas",
     "skeleton": "standalone/assets/source/glaucus/default/build_char_326_glacus.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_326_glacus/defaultskin/build/build_char_326_glacus.png",
-        "path": "standalone/assets/source/glaucus/default/build_char_326_glacus.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/326_glacus/build_char_326_glacus.png",
+        "path": "standalone/assets/source/glaucus/default/build_char_326_glacus.png",
+        "bytes": 271620,
+        "sha256": "8fa087ea7f103e939116cde2bb22a84498a9f355ab3b98c62bac3d13e5ba1dcf"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8783,
+      "sha256": "01900ec8562d085b8e9ead13d09b9fd6846bf25b4bea994157415ff1a7992d4b"
+    },
+    "skeleton": {
+      "bytes": 72916,
+      "sha256": "ab8fcde66078e20a6eaa87ca8d7d19ffefeff9923d0c0dc1258397ae2af3d3cc"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "weedy",
   "character_name": "Weedy",
   "localized_name": "温蒂",
@@ -9,25 +9,58 @@
   "variant_name": "倾听",
   "skin_id": "sightseer-1",
   "skin_name": "倾听",
-  "source_page": "https://prts.wiki/w/%E6%B8%A9%E8%92%82",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/meta.json",
-    "model": "char_400_weedy_sightseer_1/build/build_char_400_weedy_sightseer_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/char_400_weedy_sightseer_1/build/build_char_400_weedy_sightseer_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/char_400_weedy_sightseer_1/build/build_char_400_weedy_sightseer_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/char_400_weedy_sightseer_1/build/build_char_400_weedy_sightseer_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/400_weedy_sightseer#1",
+  "source_asset": {
+    "assetId": "build_char_400_weedy_sightseer#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "温蒂",
+    "appellation": "Weedy",
+    "skinGroupId": "2024#sightseer",
+    "skinGroupName": "错位巡礼/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_400_weedy_sightseer#1.atlas",
+      ".png": "build_char_400_weedy_sightseer#1.png",
+      ".skel": "build_char_400_weedy_sightseer#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/weedy/skin-sightseer-1/meta.json",
-    "atlas": "standalone/assets/source/weedy/skin-sightseer-1/build_char_400_weedy_sightseer_1.atlas",
-    "skeleton": "standalone/assets/source/weedy/skin-sightseer-1/build_char_400_weedy_sightseer_1.skel",
+    "atlas": "standalone/assets/source/weedy/skin-sightseer-1/build_char_400_weedy_sightseer#1.atlas",
+    "skeleton": "standalone/assets/source/weedy/skin-sightseer-1/build_char_400_weedy_sightseer#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/char_400_weedy_sightseer_1/build/build_char_400_weedy_sightseer_1.png",
-        "path": "standalone/assets/source/weedy/skin-sightseer-1/build_char_400_weedy_sightseer_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/400_weedy_sightseer%231/build_char_400_weedy_sightseer%231.png",
+        "path": "standalone/assets/source/weedy/skin-sightseer-1/build_char_400_weedy_sightseer#1.png",
+        "bytes": 673049,
+        "sha256": "3978d71421544d9df4c123253041a645f94c53e7a448ffe9aef1ce05fae1b697"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 20098,
+      "sha256": "53445df92370fbfc1687607650b0795308100aabd2a09293035ae9bca7e1b808"
+    },
+    "skeleton": {
+      "bytes": 735424,
+      "sha256": "b12a6ef4f76d34cc05db64a30584ecb4a3e208adba6108a1c88fb48d620f8404"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "podenco",
   "character_name": "Podenco",
   "localized_name": "波登可",
@@ -9,25 +9,58 @@
   "variant_name": "小憩初醒",
   "skin_id": "epoque-9",
   "skin_name": "小憩初醒",
-  "source_page": "https://prts.wiki/w/%E6%B3%A2%E7%99%BB%E5%8F%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_258_podego/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_258_podego/meta.json",
-    "model": "char_258_podego_epoque_9/build/build_char_258_podego_epoque_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_258_podego/char_258_podego_epoque_9/build/build_char_258_podego_epoque_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_258_podego/char_258_podego_epoque_9/build/build_char_258_podego_epoque_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_258_podego/char_258_podego_epoque_9/build/build_char_258_podego_epoque_9.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/258_podego_epoque#9",
+  "source_asset": {
+    "assetId": "build_char_258_podego_epoque#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "波登可",
+    "appellation": "Podenco",
+    "skinGroupId": "2021#epoque",
+    "skinGroupName": "时代/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_258_podego_epoque#9.atlas",
+      ".png": "build_char_258_podego_epoque#9.png",
+      ".skel": "build_char_258_podego_epoque#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/podenco/skin-epoque-9/meta.json",
-    "atlas": "standalone/assets/source/podenco/skin-epoque-9/build_char_258_podego_epoque_9.atlas",
-    "skeleton": "standalone/assets/source/podenco/skin-epoque-9/build_char_258_podego_epoque_9.skel",
+    "atlas": "standalone/assets/source/podenco/skin-epoque-9/build_char_258_podego_epoque#9.atlas",
+    "skeleton": "standalone/assets/source/podenco/skin-epoque-9/build_char_258_podego_epoque#9.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_258_podego/char_258_podego_epoque_9/build/build_char_258_podego_epoque_9.png",
-        "path": "standalone/assets/source/podenco/skin-epoque-9/build_char_258_podego_epoque_9.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/258_podego_epoque%239/build_char_258_podego_epoque%239.png",
+        "path": "standalone/assets/source/podenco/skin-epoque-9/build_char_258_podego_epoque#9.png",
+        "bytes": 224285,
+        "sha256": "add028c14e0d71a1936a6865d676a1fbb84d7aff90fa3d40b0637e5bc10d5e5e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8481,
+      "sha256": "a214a0748d4200a7d2c5d4938eb3897a7121944bf792297d5b18ac3d1c89fd02"
+    },
+    "skeleton": {
+      "bytes": 191538,
+      "sha256": "50622b82712ff6a9017bae8e445f77eace99d4150351fa076e1f24be480142b0"
+    }
   }
 }

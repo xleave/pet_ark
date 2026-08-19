@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "robin",
   "character_name": "Robin",
   "localized_name": "罗宾",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%BD%97%E5%AE%BE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/meta.json",
-    "model": "defaultskin/build/build_char_451_robin",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/defaultskin/build/build_char_451_robin.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/defaultskin/build/build_char_451_robin.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/defaultskin/build/build_char_451_robin.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/451_robin",
+  "source_asset": {
+    "assetId": "build_char_451_robin",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "罗宾",
+    "appellation": "Robin",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_451_robin.atlas",
+      ".png": "build_char_451_robin.png",
+      ".skel": "build_char_451_robin.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/robin/default/meta.json",
     "atlas": "standalone/assets/source/robin/default/build_char_451_robin.atlas",
     "skeleton": "standalone/assets/source/robin/default/build_char_451_robin.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_451_robin/defaultskin/build/build_char_451_robin.png",
-        "path": "standalone/assets/source/robin/default/build_char_451_robin.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/451_robin/build_char_451_robin.png",
+        "path": "standalone/assets/source/robin/default/build_char_451_robin.png",
+        "bytes": 222780,
+        "sha256": "e73b8bf21f20b1503c92facfa83a3f6222112f6b63bccae6004f198695010faf"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7414,
+      "sha256": "7cda9fcacd9cf169f1b4db6256766339366370de52b8db778e3cf61594c81160"
+    },
+    "skeleton": {
+      "bytes": 197420,
+      "sha256": "a1b469e4ea0f7e86561571d0dc813da6379c32cf7aadf036000ac22907237763"
+    }
   }
 }

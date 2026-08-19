@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "andreana",
   "character_name": "Andreana",
   "localized_name": "安哲拉",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%AE%89%E5%93%B2%E6%8B%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/meta.json",
-    "model": "defaultskin/build/build_char_218_cuttle",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/defaultskin/build/build_char_218_cuttle.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/defaultskin/build/build_char_218_cuttle.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/defaultskin/build/build_char_218_cuttle.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/218_cuttle",
+  "source_asset": {
+    "assetId": "build_char_218_cuttle",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "安哲拉",
+    "appellation": "Andreana",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_218_cuttle.atlas",
+      ".png": "build_char_218_cuttle.png",
+      ".skel": "build_char_218_cuttle.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/andreana/default/meta.json",
     "atlas": "standalone/assets/source/andreana/default/build_char_218_cuttle.atlas",
     "skeleton": "standalone/assets/source/andreana/default/build_char_218_cuttle.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/defaultskin/build/build_char_218_cuttle.png",
-        "path": "standalone/assets/source/andreana/default/build_char_218_cuttle.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/218_cuttle/build_char_218_cuttle.png",
+        "path": "standalone/assets/source/andreana/default/build_char_218_cuttle.png",
+        "bytes": 187857,
+        "sha256": "6d3fa217743e91cf6d299b689293c0c7ca85335a946c8ce7fcb1f793fe406b03"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6672,
+      "sha256": "0b3b483b11150473ca3c49f55cc22630b66071aa48621b72905cb5a4eebc0f6a"
+    },
+    "skeleton": {
+      "bytes": 131944,
+      "sha256": "dc5f419b735f4ee64333e919b415f15e79fade37555ed3fff66c50eb7798394a"
+    }
   }
 }

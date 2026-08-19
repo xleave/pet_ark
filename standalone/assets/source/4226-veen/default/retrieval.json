@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "4226-veen",
   "character_name": "Вий",
   "localized_name": "维伊",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%BB%B4%E4%BC%8A",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4226_veen/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4226_veen/meta.json",
-    "model": "defaultskin/build/build_char_4226_veen",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4226_veen/defaultskin/build/build_char_4226_veen.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4226_veen/defaultskin/build/build_char_4226_veen.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4226_veen/defaultskin/build/build_char_4226_veen.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4226_veen",
+  "source_asset": {
+    "assetId": "build_char_4226_veen",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "维伊",
+    "appellation": "Вий",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4226_veen.atlas",
+      ".png": "build_char_4226_veen.png",
+      ".skel": "build_char_4226_veen.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/4226-veen/default/meta.json",
     "atlas": "standalone/assets/source/4226-veen/default/build_char_4226_veen.atlas",
     "skeleton": "standalone/assets/source/4226-veen/default/build_char_4226_veen.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4226_veen/defaultskin/build/build_char_4226_veen.png",
-        "path": "standalone/assets/source/4226-veen/default/build_char_4226_veen.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4226_veen/build_char_4226_veen.png",
+        "path": "standalone/assets/source/4226-veen/default/build_char_4226_veen.png",
+        "bytes": 501159,
+        "sha256": "cba806e61d8c707032160bd34d8b521f1a1e84fbc5c709cc606cfe9fb399ff99"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 13626,
+      "sha256": "0b54569c2ad377f0b64058f59d72f6d8764af7f6efcb0e1e858269e9973f79d1"
+    },
+    "skeleton": {
+      "bytes": 398163,
+      "sha256": "cdb925268192a2c99e3d048fc41bbd81b82919252b8609bcc4a71c1c85f0ba5b"
+    }
   }
 }

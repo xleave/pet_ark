@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "blaze",
   "character_name": "Blaze",
   "localized_name": "煌",
@@ -9,25 +9,58 @@
   "variant_name": "爆裂菲林",
   "skin_id": "as-1",
   "skin_name": "爆裂菲林",
-  "source_page": "https://prts.wiki/w/%E7%85%8C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/meta.json",
-    "model": "char_017_huang_as_1/build/build_char_017_huang_as_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/char_017_huang_as_1/build/build_char_017_huang_as_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/char_017_huang_as_1/build/build_char_017_huang_as_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/char_017_huang_as_1/build/build_char_017_huang_as_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/017_huang_as#1",
+  "source_asset": {
+    "assetId": "build_char_017_huang_as#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "煌",
+    "appellation": "Blaze",
+    "skinGroupId": "2021#as",
+    "skinGroupName": "音律联觉",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_017_huang_as#1.atlas",
+      ".png": "build_char_017_huang_as#1.png",
+      ".skel": "build_char_017_huang_as#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/blaze/skin-as-1/meta.json",
-    "atlas": "standalone/assets/source/blaze/skin-as-1/build_char_017_huang_as_1.atlas",
-    "skeleton": "standalone/assets/source/blaze/skin-as-1/build_char_017_huang_as_1.skel",
+    "atlas": "standalone/assets/source/blaze/skin-as-1/build_char_017_huang_as#1.atlas",
+    "skeleton": "standalone/assets/source/blaze/skin-as-1/build_char_017_huang_as#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/char_017_huang_as_1/build/build_char_017_huang_as_1.png",
-        "path": "standalone/assets/source/blaze/skin-as-1/build_char_017_huang_as_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/017_huang_as%231/build_char_017_huang_as%231.png",
+        "path": "standalone/assets/source/blaze/skin-as-1/build_char_017_huang_as#1.png",
+        "bytes": 463368,
+        "sha256": "68cf5989eba9fa2647e794592ebee95b06a102af7227398a142d00a17b6f0bfa"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10728,
+      "sha256": "8f91272ddb0eec5df8f5a1ceaf69a6d922511ea5307f3733554778893102ea81"
+    },
+    "skeleton": {
+      "bytes": 236310,
+      "sha256": "9f2ef8347de2ffd768118f2ff6c0e86d4f0fa4c950d4e09bc27356bbd3af37a7"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "jieyun",
   "character_name": "Jieyun",
   "localized_name": "截云",
@@ -9,25 +9,58 @@
   "variant_name": "伴青莲",
   "skin_id": "yun-2",
   "skin_name": "伴青莲",
-  "source_page": "https://prts.wiki/w/%E6%88%AA%E4%BA%91",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4078_bdhkgt/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4078_bdhkgt/meta.json",
-    "model": "char_4078_bdhkgt_yun_2/build/build_char_4078_bdhkgt_yun_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4078_bdhkgt/char_4078_bdhkgt_yun_2/build/build_char_4078_bdhkgt_yun_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4078_bdhkgt/char_4078_bdhkgt_yun_2/build/build_char_4078_bdhkgt_yun_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4078_bdhkgt/char_4078_bdhkgt_yun_2/build/build_char_4078_bdhkgt_yun_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4078_bdhkgt_yun#2",
+  "source_asset": {
+    "assetId": "build_char_4078_bdhkgt_yun#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "截云",
+    "appellation": "Jieyun",
+    "skinGroupId": "2024#yun",
+    "skinGroupName": "0011/韵系列/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4078_bdhkgt_yun#2.atlas",
+      ".png": "build_char_4078_bdhkgt_yun#2.png",
+      ".skel": "build_char_4078_bdhkgt_yun#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/jieyun/skin-yun-2/meta.json",
-    "atlas": "standalone/assets/source/jieyun/skin-yun-2/build_char_4078_bdhkgt_yun_2.atlas",
-    "skeleton": "standalone/assets/source/jieyun/skin-yun-2/build_char_4078_bdhkgt_yun_2.skel",
+    "atlas": "standalone/assets/source/jieyun/skin-yun-2/build_char_4078_bdhkgt_yun#2.atlas",
+    "skeleton": "standalone/assets/source/jieyun/skin-yun-2/build_char_4078_bdhkgt_yun#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4078_bdhkgt/char_4078_bdhkgt_yun_2/build/build_char_4078_bdhkgt_yun_2.png",
-        "path": "standalone/assets/source/jieyun/skin-yun-2/build_char_4078_bdhkgt_yun_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4078_bdhkgt_yun%232/build_char_4078_bdhkgt_yun%232.png",
+        "path": "standalone/assets/source/jieyun/skin-yun-2/build_char_4078_bdhkgt_yun#2.png",
+        "bytes": 906049,
+        "sha256": "2faa7a04d4056d5c9c2faa932f5c789fb0a653596f5d2706c17ba4882ad371b0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 20823,
+      "sha256": "60f1b530d37fba9ea7bd8cd1b44c5254f3722eb92afd90993a79e5707c71d340"
+    },
+    "skeleton": {
+      "bytes": 409734,
+      "sha256": "67c8e21feaaeefc5b01ebf539da4263c996bb59786a6ae3f3420634a1ddc0cf3"
+    }
   }
 }

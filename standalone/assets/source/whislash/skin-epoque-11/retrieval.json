@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "whislash",
   "character_name": "Whislash",
   "localized_name": "鞭刃",
@@ -9,25 +9,58 @@
   "variant_name": "荣耀之紫",
   "skin_id": "epoque-11",
   "skin_name": "荣耀之紫",
-  "source_page": "https://prts.wiki/w/%E9%9E%AD%E5%88%83",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_265_sophia/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_265_sophia/meta.json",
-    "model": "char_265_sophia_epoque_11/build/build_char_265_sophia_epoque_11",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_265_sophia/char_265_sophia_epoque_11/build/build_char_265_sophia_epoque_11.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_265_sophia/char_265_sophia_epoque_11/build/build_char_265_sophia_epoque_11.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_265_sophia/char_265_sophia_epoque_11/build/build_char_265_sophia_epoque_11.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/265_sophia_epoque#11",
+  "source_asset": {
+    "assetId": "build_char_265_sophia_epoque#11",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "鞭刃",
+    "appellation": "Whislash",
+    "skinGroupId": "2021#epoque#3",
+    "skinGroupName": "时代/XI",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_265_sophia_epoque#11.atlas",
+      ".png": "build_char_265_sophia_epoque#11.png",
+      ".skel": "build_char_265_sophia_epoque#11.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/whislash/skin-epoque-11/meta.json",
-    "atlas": "standalone/assets/source/whislash/skin-epoque-11/build_char_265_sophia_epoque_11.atlas",
-    "skeleton": "standalone/assets/source/whislash/skin-epoque-11/build_char_265_sophia_epoque_11.skel",
+    "atlas": "standalone/assets/source/whislash/skin-epoque-11/build_char_265_sophia_epoque#11.atlas",
+    "skeleton": "standalone/assets/source/whislash/skin-epoque-11/build_char_265_sophia_epoque#11.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_265_sophia/char_265_sophia_epoque_11/build/build_char_265_sophia_epoque_11.png",
-        "path": "standalone/assets/source/whislash/skin-epoque-11/build_char_265_sophia_epoque_11.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/265_sophia_epoque%2311/build_char_265_sophia_epoque%2311.png",
+        "path": "standalone/assets/source/whislash/skin-epoque-11/build_char_265_sophia_epoque#11.png",
+        "bytes": 354616,
+        "sha256": "6d373e6c7286c3b51645967ea874962393075eb17ece245a72f92a65a4aa41de"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8845,
+      "sha256": "07161ad65da98ba4b4a39abe21591de9c32ad184141b4cce60aeedbc33f09c5f"
+    },
+    "skeleton": {
+      "bytes": 271163,
+      "sha256": "252bfbbd8e70bf58dee7dc0c826bfdcfabf66a711e091ca97b4e8c47718b7ade"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "shaw",
   "character_name": "Shaw",
   "localized_name": "阿消",
@@ -9,25 +9,58 @@
   "variant_name": "古堡清洁专家",
   "skin_id": "ghost-1",
   "skin_name": "古堡清洁专家",
-  "source_page": "https://prts.wiki/w/%E9%98%BF%E6%B6%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_277_sqrrel/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_277_sqrrel/meta.json",
-    "model": "char_277_sqrrel_ghost_1/build/build_char_277_sqrrel_ghost_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_277_sqrrel/char_277_sqrrel_ghost_1/build/build_char_277_sqrrel_ghost_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_277_sqrrel/char_277_sqrrel_ghost_1/build/build_char_277_sqrrel_ghost_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_277_sqrrel/char_277_sqrrel_ghost_1/build/build_char_277_sqrrel_ghost_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/277_sqrrel_ghost#1",
+  "source_asset": {
+    "assetId": "build_char_277_sqrrel_ghost#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "阿消",
+    "appellation": "Shaw",
+    "skinGroupId": "2020#ghost",
+    "skinGroupName": "缠梦古堡",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_277_sqrrel_ghost#1.atlas",
+      ".png": "build_char_277_sqrrel_ghost#1.png",
+      ".skel": "build_char_277_sqrrel_ghost#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/shaw/skin-ghost-1/meta.json",
-    "atlas": "standalone/assets/source/shaw/skin-ghost-1/build_char_277_sqrrel_ghost_1.atlas",
-    "skeleton": "standalone/assets/source/shaw/skin-ghost-1/build_char_277_sqrrel_ghost_1.skel",
+    "atlas": "standalone/assets/source/shaw/skin-ghost-1/build_char_277_sqrrel_ghost#1.atlas",
+    "skeleton": "standalone/assets/source/shaw/skin-ghost-1/build_char_277_sqrrel_ghost#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_277_sqrrel/char_277_sqrrel_ghost_1/build/build_char_277_sqrrel_ghost_1.png",
-        "path": "standalone/assets/source/shaw/skin-ghost-1/build_char_277_sqrrel_ghost_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/277_sqrrel_ghost%231/build_char_277_sqrrel_ghost%231.png",
+        "path": "standalone/assets/source/shaw/skin-ghost-1/build_char_277_sqrrel_ghost#1.png",
+        "bytes": 335849,
+        "sha256": "ed57273ca8fd70d83340a5a90c4033c4d14ba6d17975534f62e4d5c72e191b4d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11047,
+      "sha256": "dc0434c303cdbe7ae7d8d7e1fdd07c8b5b43ea8bc8116fc26fe7e19898c07d56"
+    },
+    "skeleton": {
+      "bytes": 311535,
+      "sha256": "f1634212cd13c66ccf52120dd792dbf4e297c7c68cfd717a28485c3534b009c3"
+    }
   }
 }

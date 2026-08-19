@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "xingzhu",
   "character_name": "Xingzhu",
   "localized_name": "行箸",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%A1%8C%E7%AE%B8",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4172_xingzh/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4172_xingzh/meta.json",
-    "model": "defaultskin/build/build_char_4172_xingzh",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4172_xingzh/defaultskin/build/build_char_4172_xingzh.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4172_xingzh/defaultskin/build/build_char_4172_xingzh.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4172_xingzh/defaultskin/build/build_char_4172_xingzh.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4172_xingzh",
+  "source_asset": {
+    "assetId": "build_char_4172_xingzh",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "行箸",
+    "appellation": "Xingzhu",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4172_xingzh.atlas",
+      ".png": "build_char_4172_xingzh.png",
+      ".skel": "build_char_4172_xingzh.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/xingzhu/default/meta.json",
     "atlas": "standalone/assets/source/xingzhu/default/build_char_4172_xingzh.atlas",
     "skeleton": "standalone/assets/source/xingzhu/default/build_char_4172_xingzh.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4172_xingzh/defaultskin/build/build_char_4172_xingzh.png",
-        "path": "standalone/assets/source/xingzhu/default/build_char_4172_xingzh.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4172_xingzh/build_char_4172_xingzh.png",
+        "path": "standalone/assets/source/xingzhu/default/build_char_4172_xingzh.png",
+        "bytes": 347398,
+        "sha256": "338d15ff7677ef75abe56d1414558033088b50625f8c6c52c821f2607743c8c0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11209,
+      "sha256": "374d764c114f95e069b093ddf46636030951e6ab78a04b8991ffd6d4236e538d"
+    },
+    "skeleton": {
+      "bytes": 315242,
+      "sha256": "d773176befe9d0e8ec9a61e6d677e744cad4b85ac84d4dbf3025a4e0eb0010ba"
+    }
   }
 }

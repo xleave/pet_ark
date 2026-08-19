@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "virtuosa",
   "character_name": "Virtuosa",
   "localized_name": "塑心",
@@ -9,25 +9,58 @@
   "variant_name": "无我唯识",
   "skin_id": "sale-12",
   "skin_name": "无我唯识",
-  "source_page": "https://prts.wiki/w/%E5%A1%91%E5%BF%83",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_245_cello/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_245_cello/meta.json",
-    "model": "char_245_cello_sale_12/build/build_char_245_cello_sale_12",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_245_cello/char_245_cello_sale_12/build/build_char_245_cello_sale_12.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_245_cello/char_245_cello_sale_12/build/build_char_245_cello_sale_12.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_245_cello/char_245_cello_sale_12/build/build_char_245_cello_sale_12.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/245_cello_sale#12",
+  "source_asset": {
+    "assetId": "build_char_245_cello_sale#12",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "塑心",
+    "appellation": "Virtuosa",
+    "skinGroupId": "2024#sale#3",
+    "skinGroupName": "忒斯特收藏/XIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_245_cello_sale#12.atlas",
+      ".png": "build_char_245_cello_sale#12.png",
+      ".skel": "build_char_245_cello_sale#12.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/virtuosa/skin-sale-12/meta.json",
-    "atlas": "standalone/assets/source/virtuosa/skin-sale-12/build_char_245_cello_sale_12.atlas",
-    "skeleton": "standalone/assets/source/virtuosa/skin-sale-12/build_char_245_cello_sale_12.skel",
+    "atlas": "standalone/assets/source/virtuosa/skin-sale-12/build_char_245_cello_sale#12.atlas",
+    "skeleton": "standalone/assets/source/virtuosa/skin-sale-12/build_char_245_cello_sale#12.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_245_cello/char_245_cello_sale_12/build/build_char_245_cello_sale_12.png",
-        "path": "standalone/assets/source/virtuosa/skin-sale-12/build_char_245_cello_sale_12.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/245_cello_sale%2312/build_char_245_cello_sale%2312.png",
+        "path": "standalone/assets/source/virtuosa/skin-sale-12/build_char_245_cello_sale#12.png",
+        "bytes": 985211,
+        "sha256": "8893293b0f664d8aeb079ff010191a68237aeda7213270150f6d00b9eac45d52"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14425,
+      "sha256": "36c670069540b0b0e96fc0b7786857f057371ff00fe8734496b3d6981afed0c3"
+    },
+    "skeleton": {
+      "bytes": 339416,
+      "sha256": "6e79817f18dc916bf711fb1761b4bf55ff5ad2887df17f76a1f4101446ec7e2e"
+    }
   }
 }

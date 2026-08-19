@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "bobbing",
   "character_name": "Bobbing",
   "localized_name": "波卜",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B3%A2%E5%8D%9C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/meta.json",
-    "model": "defaultskin/build/build_char_487_bobb",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/defaultskin/build/build_char_487_bobb.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/defaultskin/build/build_char_487_bobb.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/defaultskin/build/build_char_487_bobb.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/487_bobb",
+  "source_asset": {
+    "assetId": "build_char_487_bobb",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "波卜",
+    "appellation": "Bobbing",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_487_bobb.atlas",
+      ".png": "build_char_487_bobb.png",
+      ".skel": "build_char_487_bobb.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/bobbing/default/meta.json",
     "atlas": "standalone/assets/source/bobbing/default/build_char_487_bobb.atlas",
     "skeleton": "standalone/assets/source/bobbing/default/build_char_487_bobb.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_487_bobb/defaultskin/build/build_char_487_bobb.png",
-        "path": "standalone/assets/source/bobbing/default/build_char_487_bobb.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/487_bobb/build_char_487_bobb.png",
+        "path": "standalone/assets/source/bobbing/default/build_char_487_bobb.png",
+        "bytes": 271386,
+        "sha256": "269389ae7254e9651b3fb8ccc70292108850c7761fb87d4fa6b9bcb99d247c6a"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10947,
+      "sha256": "3099b2adcad05e4b91655745faebbe8308ec145e65c79746832e65623c21ebb3"
+    },
+    "skeleton": {
+      "bytes": 251641,
+      "sha256": "632c5a659726ec8139e9d9f32b1b24fc5c301ef0b59f45da27b9f67d959c0668"
+    }
   }
 }

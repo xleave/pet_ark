@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "contrail",
   "character_name": "Contrail",
   "localized_name": "云迹",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E4%BA%91%E8%BF%B9",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4165_ctrail/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4165_ctrail/meta.json",
-    "model": "defaultskin/build/build_char_4165_ctrail",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4165_ctrail/defaultskin/build/build_char_4165_ctrail.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4165_ctrail/defaultskin/build/build_char_4165_ctrail.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4165_ctrail/defaultskin/build/build_char_4165_ctrail.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4165_ctrail",
+  "source_asset": {
+    "assetId": "build_char_4165_ctrail",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "云迹",
+    "appellation": "Contrail",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4165_ctrail.atlas",
+      ".png": "build_char_4165_ctrail.png",
+      ".skel": "build_char_4165_ctrail.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/contrail/default/meta.json",
     "atlas": "standalone/assets/source/contrail/default/build_char_4165_ctrail.atlas",
     "skeleton": "standalone/assets/source/contrail/default/build_char_4165_ctrail.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4165_ctrail/defaultskin/build/build_char_4165_ctrail.png",
-        "path": "standalone/assets/source/contrail/default/build_char_4165_ctrail.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4165_ctrail/build_char_4165_ctrail.png",
+        "path": "standalone/assets/source/contrail/default/build_char_4165_ctrail.png",
+        "bytes": 259388,
+        "sha256": "b6cb2424bca443ee05c3f7f8bef4e28c5658febb46b69e33dc4579c0aa537571"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9499,
+      "sha256": "40c6b439d2fd61d84c691eddbf2e1a079f9f842941887a29a89e7d92e4ec4d47"
+    },
+    "skeleton": {
+      "bytes": 113045,
+      "sha256": "005eb679e3d3a6c942b3b7172cc0d8cbb402b53df21e558eaa2bc20d542e5dad"
+    }
   }
 }

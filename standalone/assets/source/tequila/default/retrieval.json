@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "tequila",
   "character_name": "Tequila",
   "localized_name": "龙舌兰",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%BE%99%E8%88%8C%E5%85%B0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_486_takila/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_486_takila/meta.json",
-    "model": "defaultskin/build/build_char_486_takila",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_486_takila/defaultskin/build/build_char_486_takila.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_486_takila/defaultskin/build/build_char_486_takila.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_486_takila/defaultskin/build/build_char_486_takila.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/486_takila",
+  "source_asset": {
+    "assetId": "build_char_486_takila",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "龙舌兰",
+    "appellation": "Tequila",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_486_takila.atlas",
+      ".png": "build_char_486_takila.png",
+      ".skel": "build_char_486_takila.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/tequila/default/meta.json",
     "atlas": "standalone/assets/source/tequila/default/build_char_486_takila.atlas",
     "skeleton": "standalone/assets/source/tequila/default/build_char_486_takila.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_486_takila/defaultskin/build/build_char_486_takila.png",
-        "path": "standalone/assets/source/tequila/default/build_char_486_takila.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/486_takila/build_char_486_takila.png",
+        "path": "standalone/assets/source/tequila/default/build_char_486_takila.png",
+        "bytes": 274241,
+        "sha256": "3d440cce8d1d2011aa50b60eccbb2f312f622e6e1ebb74e264df898763cd1c3e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7267,
+      "sha256": "9b50fd823db6d06822e0d6e6742a00cf50fb4becfc77e39f418f0beeaebbc288"
+    },
+    "skeleton": {
+      "bytes": 137493,
+      "sha256": "00b6cc486864f8934d36d677f7c26ad34ce9b618636f6de01cfa3eded4dde301"
+    }
   }
 }

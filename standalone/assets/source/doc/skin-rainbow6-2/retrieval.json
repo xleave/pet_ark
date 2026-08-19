@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "doc",
   "character_name": "Doc",
   "localized_name": "医生",
@@ -9,25 +9,58 @@
   "variant_name": "展览",
   "skin_id": "rainbow6-2",
   "skin_name": "展览",
-  "source_page": "https://prts.wiki/w/%E5%8C%BB%E7%94%9F",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4125_rdoc/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4125_rdoc/meta.json",
-    "model": "char_4125_rdoc_rainbow6_2/build/build_char_4125_rdoc_rainbow6_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4125_rdoc/char_4125_rdoc_rainbow6_2/build/build_char_4125_rdoc_rainbow6_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4125_rdoc/char_4125_rdoc_rainbow6_2/build/build_char_4125_rdoc_rainbow6_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4125_rdoc/char_4125_rdoc_rainbow6_2/build/build_char_4125_rdoc_rainbow6_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4125_rdoc_rainbow6#2",
+  "source_asset": {
+    "assetId": "build_char_4125_rdoc_rainbow6#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "医生",
+    "appellation": "Doc",
+    "skinGroupId": "2024#rainbow6",
+    "skinGroupName": "彩虹六号：围攻/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4125_rdoc_rainbow6#2.atlas",
+      ".png": "build_char_4125_rdoc_rainbow6#2.png",
+      ".skel": "build_char_4125_rdoc_rainbow6#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/doc/skin-rainbow6-2/meta.json",
-    "atlas": "standalone/assets/source/doc/skin-rainbow6-2/build_char_4125_rdoc_rainbow6_2.atlas",
-    "skeleton": "standalone/assets/source/doc/skin-rainbow6-2/build_char_4125_rdoc_rainbow6_2.skel",
+    "atlas": "standalone/assets/source/doc/skin-rainbow6-2/build_char_4125_rdoc_rainbow6#2.atlas",
+    "skeleton": "standalone/assets/source/doc/skin-rainbow6-2/build_char_4125_rdoc_rainbow6#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4125_rdoc/char_4125_rdoc_rainbow6_2/build/build_char_4125_rdoc_rainbow6_2.png",
-        "path": "standalone/assets/source/doc/skin-rainbow6-2/build_char_4125_rdoc_rainbow6_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4125_rdoc_rainbow6%232/build_char_4125_rdoc_rainbow6%232.png",
+        "path": "standalone/assets/source/doc/skin-rainbow6-2/build_char_4125_rdoc_rainbow6#2.png",
+        "bytes": 272151,
+        "sha256": "04e35dd6c0de08d900baa9789ce3c715b145060a53df012613033a4880a309d1"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9385,
+      "sha256": "83895a3c7a3f4ad822d53594325f0a5c22db95e66380bffe3745fa10be2c2e22"
+    },
+    "skeleton": {
+      "bytes": 244072,
+      "sha256": "e986599e43ec98dc6f8876085f2cce68b9475e8e18eaefe9e82b8fab0fb6bc08"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "andreana",
   "character_name": "Andreana",
   "localized_name": "安哲拉",
@@ -9,25 +9,58 @@
   "variant_name": "暗矢",
   "skin_id": "epoque-12",
   "skin_name": "暗矢",
-  "source_page": "https://prts.wiki/w/%E5%AE%89%E5%93%B2%E6%8B%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/meta.json",
-    "model": "char_218_cuttle_epoque_12/build/build_char_218_cuttle_epoque_12",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/char_218_cuttle_epoque_12/build/build_char_218_cuttle_epoque_12.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/char_218_cuttle_epoque_12/build/build_char_218_cuttle_epoque_12.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/char_218_cuttle_epoque_12/build/build_char_218_cuttle_epoque_12.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/218_cuttle_epoque#12",
+  "source_asset": {
+    "assetId": "build_char_218_cuttle_epoque#12",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "安哲拉",
+    "appellation": "Andreana",
+    "skinGroupId": "2021#epoque#4",
+    "skinGroupName": "时代/XII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_218_cuttle_epoque#12.atlas",
+      ".png": "build_char_218_cuttle_epoque#12.png",
+      ".skel": "build_char_218_cuttle_epoque#12.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/andreana/skin-epoque-12/meta.json",
-    "atlas": "standalone/assets/source/andreana/skin-epoque-12/build_char_218_cuttle_epoque_12.atlas",
-    "skeleton": "standalone/assets/source/andreana/skin-epoque-12/build_char_218_cuttle_epoque_12.skel",
+    "atlas": "standalone/assets/source/andreana/skin-epoque-12/build_char_218_cuttle_epoque#12.atlas",
+    "skeleton": "standalone/assets/source/andreana/skin-epoque-12/build_char_218_cuttle_epoque#12.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_218_cuttle/char_218_cuttle_epoque_12/build/build_char_218_cuttle_epoque_12.png",
-        "path": "standalone/assets/source/andreana/skin-epoque-12/build_char_218_cuttle_epoque_12.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/218_cuttle_epoque%2312/build_char_218_cuttle_epoque%2312.png",
+        "path": "standalone/assets/source/andreana/skin-epoque-12/build_char_218_cuttle_epoque#12.png",
+        "bytes": 302500,
+        "sha256": "0ad968648a5cfdf146cc3ec02c78d0d5a585f15fb7885318ef75bf8c011ae53f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10525,
+      "sha256": "5926e8c2baa3fa7dbcebd71234a7dc6a02feb465500923545209c1621e7996f7"
+    },
+    "skeleton": {
+      "bytes": 217609,
+      "sha256": "8f69659693ee8b55ec04cbcced49d35ba37283f33054fbff860ce8dcaffe1bda"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "utage",
   "character_name": "Utage",
   "localized_name": "宴",
@@ -9,25 +9,58 @@
   "variant_name": "伪装",
   "skin_id": "epoque-15",
   "skin_name": "伪装",
-  "source_page": "https://prts.wiki/w/%E5%AE%B4",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_337_utage/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_337_utage/meta.json",
-    "model": "char_337_utage_epoque_15/build/build_char_337_utage_epoque_15",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_337_utage/char_337_utage_epoque_15/build/build_char_337_utage_epoque_15.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_337_utage/char_337_utage_epoque_15/build/build_char_337_utage_epoque_15.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_337_utage/char_337_utage_epoque_15/build/build_char_337_utage_epoque_15.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/337_utage_epoque#15",
+  "source_asset": {
+    "assetId": "build_char_337_utage_epoque#15",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "宴",
+    "appellation": "Utage",
+    "skinGroupId": "2022#epoque#2",
+    "skinGroupName": "时代/XV",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_337_utage_epoque#15.atlas",
+      ".png": "build_char_337_utage_epoque#15.png",
+      ".skel": "build_char_337_utage_epoque#15.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/utage/skin-epoque-15/meta.json",
-    "atlas": "standalone/assets/source/utage/skin-epoque-15/build_char_337_utage_epoque_15.atlas",
-    "skeleton": "standalone/assets/source/utage/skin-epoque-15/build_char_337_utage_epoque_15.skel",
+    "atlas": "standalone/assets/source/utage/skin-epoque-15/build_char_337_utage_epoque#15.atlas",
+    "skeleton": "standalone/assets/source/utage/skin-epoque-15/build_char_337_utage_epoque#15.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_337_utage/char_337_utage_epoque_15/build/build_char_337_utage_epoque_15.png",
-        "path": "standalone/assets/source/utage/skin-epoque-15/build_char_337_utage_epoque_15.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/337_utage_epoque%2315/build_char_337_utage_epoque%2315.png",
+        "path": "standalone/assets/source/utage/skin-epoque-15/build_char_337_utage_epoque#15.png",
+        "bytes": 279478,
+        "sha256": "bd9e32f333e7fa7721697490c3943ed5ddb8a560561e90eea4505d2e344a5dce"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10865,
+      "sha256": "3996598162fdd709e2a0b07e3fa40d0046583dc95ea6ddceea43b26bf9a9a161"
+    },
+    "skeleton": {
+      "bytes": 248100,
+      "sha256": "5b38e5fc334e40ce3b310d62593781b77100e4d74b6080789797e84593c0c0b7"
+    }
   }
 }

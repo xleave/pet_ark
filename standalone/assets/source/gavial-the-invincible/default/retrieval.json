@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "gavial-the-invincible",
   "character_name": "Gavial the Invincible",
   "localized_name": "百炼嘉维尔",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%99%BE%E7%82%BC%E5%98%89%E7%BB%B4%E5%B0%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1026_gvial2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1026_gvial2/meta.json",
-    "model": "defaultskin/build/char_1026_gvial2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1026_gvial2/defaultskin/build/char_1026_gvial2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1026_gvial2/defaultskin/build/char_1026_gvial2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1026_gvial2/defaultskin/build/char_1026_gvial2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1026_gvial2",
+  "source_asset": {
+    "assetId": "build_char_1026_gvial2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "百炼嘉维尔",
+    "appellation": "Gavial the Invincible",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "char_1026_gvial2.atlas",
+      ".png": "char_1026_gvial2.png",
+      ".skel": "char_1026_gvial2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/gavial-the-invincible/default/meta.json",
     "atlas": "standalone/assets/source/gavial-the-invincible/default/char_1026_gvial2.atlas",
     "skeleton": "standalone/assets/source/gavial-the-invincible/default/char_1026_gvial2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1026_gvial2/defaultskin/build/char_1026_gvial2.png",
-        "path": "standalone/assets/source/gavial-the-invincible/default/char_1026_gvial2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1026_gvial2/char_1026_gvial2.png",
+        "path": "standalone/assets/source/gavial-the-invincible/default/char_1026_gvial2.png",
+        "bytes": 363208,
+        "sha256": "695451177a4616c754d7c3383bd3544b90bd9e629a4aba3131ee36d8c1787031"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8152,
+      "sha256": "03ca7b04a8838c940f9afef30ee040f95136432860cd5f13ffeeb7ab6e8285a9"
+    },
+    "skeleton": {
+      "bytes": 144073,
+      "sha256": "dc6d07b73e2794d8b9ae432ebec58b74724a51440576aa21de496a59b1055502"
+    }
   }
 }

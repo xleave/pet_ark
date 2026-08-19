@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "carnelian",
   "character_name": "Carnelian",
   "localized_name": "卡涅利安",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%8D%A1%E6%B6%85%E5%88%A9%E5%AE%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_426_billro/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_426_billro/meta.json",
-    "model": "defaultskin/build/build_char_426_billro",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_426_billro/defaultskin/build/build_char_426_billro.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_426_billro/defaultskin/build/build_char_426_billro.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_426_billro/defaultskin/build/build_char_426_billro.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/426_billro",
+  "source_asset": {
+    "assetId": "build_char_426_billro",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "卡涅利安",
+    "appellation": "Carnelian",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_426_billro.atlas",
+      ".png": "build_char_426_billro.png",
+      ".skel": "build_char_426_billro.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/carnelian/default/meta.json",
     "atlas": "standalone/assets/source/carnelian/default/build_char_426_billro.atlas",
     "skeleton": "standalone/assets/source/carnelian/default/build_char_426_billro.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_426_billro/defaultskin/build/build_char_426_billro.png",
-        "path": "standalone/assets/source/carnelian/default/build_char_426_billro.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/426_billro/build_char_426_billro.png",
+        "path": "standalone/assets/source/carnelian/default/build_char_426_billro.png",
+        "bytes": 267459,
+        "sha256": "4a1003318a99b909456a96bda5f875a0b04d6178595ef99d0ac909d705a412bc"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7678,
+      "sha256": "d9ce76c55e2ff781dea9bdd635ffb5c1e704b5d456cb27e0e3fbe38de2faf28b"
+    },
+    "skeleton": {
+      "bytes": 103710,
+      "sha256": "620f0f8e053de3876c4d88ae42f8be85275b8336eae4b20e26a0dbd06262bbe9"
+    }
   }
 }

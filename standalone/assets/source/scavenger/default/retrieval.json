@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "scavenger",
   "character_name": "Scavenger",
   "localized_name": "清道夫",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B8%85%E9%81%93%E5%A4%AB",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_149_scave/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_149_scave/meta.json",
-    "model": "defaultskin/build/build_char_149_scave",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_149_scave/defaultskin/build/build_char_149_scave.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_149_scave/defaultskin/build/build_char_149_scave.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_149_scave/defaultskin/build/build_char_149_scave.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/149_scave",
+  "source_asset": {
+    "assetId": "build_char_149_scave",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "清道夫",
+    "appellation": "Scavenger",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_149_scave.atlas",
+      ".png": "build_char_149_scave.png",
+      ".skel": "build_char_149_scave.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/scavenger/default/meta.json",
     "atlas": "standalone/assets/source/scavenger/default/build_char_149_scave.atlas",
     "skeleton": "standalone/assets/source/scavenger/default/build_char_149_scave.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_149_scave/defaultskin/build/build_char_149_scave.png",
-        "path": "standalone/assets/source/scavenger/default/build_char_149_scave.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/149_scave/build_char_149_scave.png",
+        "path": "standalone/assets/source/scavenger/default/build_char_149_scave.png",
+        "bytes": 175109,
+        "sha256": "5f3d8ae563ffcde1908feb3a164e6a6ec9d1fcd216294a2a708344d1d16deee4"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 3455,
+      "sha256": "0acbc5a3f5be4e9263afc1cce8584c3fffa15d6b066be13effe5a98299295b3e"
+    },
+    "skeleton": {
+      "bytes": 115257,
+      "sha256": "ad5ee9f5b69c1ef66f109b9e6ce995c7a73952436de0562352c5dfb991a28ae7"
+    }
   }
 }

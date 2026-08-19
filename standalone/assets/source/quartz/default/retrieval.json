@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "quartz",
   "character_name": "Quartz",
   "localized_name": "石英",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%9F%B3%E8%8B%B1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4063_quartz/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4063_quartz/meta.json",
-    "model": "defaultskin/build/build_char_4063_quartz",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4063_quartz/defaultskin/build/build_char_4063_quartz.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4063_quartz/defaultskin/build/build_char_4063_quartz.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4063_quartz/defaultskin/build/build_char_4063_quartz.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4063_quartz",
+  "source_asset": {
+    "assetId": "build_char_4063_quartz",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "石英",
+    "appellation": "Quartz",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4063_quartz.atlas",
+      ".png": "build_char_4063_quartz.png",
+      ".skel": "build_char_4063_quartz.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/quartz/default/meta.json",
     "atlas": "standalone/assets/source/quartz/default/build_char_4063_quartz.atlas",
     "skeleton": "standalone/assets/source/quartz/default/build_char_4063_quartz.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4063_quartz/defaultskin/build/build_char_4063_quartz.png",
-        "path": "standalone/assets/source/quartz/default/build_char_4063_quartz.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4063_quartz/build_char_4063_quartz.png",
+        "path": "standalone/assets/source/quartz/default/build_char_4063_quartz.png",
+        "bytes": 269613,
+        "sha256": "a99081a99e41d76c7ef52593b2ba2aa204f994110da6965e4eb3f313dd338fe4"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6633,
+      "sha256": "be3b8895c600282de3fc1a95281dae7bf44d0189ac6a4eaaf5d916e11ac2a3b5"
+    },
+    "skeleton": {
+      "bytes": 107791,
+      "sha256": "2e24fba2c24e57d419ff8086e11548fda4592d9fc4d88ace0804a7245c012115"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "platinum",
   "character_name": "Platinum",
   "localized_name": "白金",
@@ -9,25 +9,58 @@
   "variant_name": "灿阳朝露 SD05",
   "skin_id": "summer-3",
   "skin_name": "灿阳朝露 SD05",
-  "source_page": "https://prts.wiki/w/%E7%99%BD%E9%87%91",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_204_platnm/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_204_platnm/meta.json",
-    "model": "char_204_platnm_summer_3/build/build_char_204_platnm_summer_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_204_platnm/char_204_platnm_summer_3/build/build_char_204_platnm_summer_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_204_platnm/char_204_platnm_summer_3/build/build_char_204_platnm_summer_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_204_platnm/char_204_platnm_summer_3/build/build_char_204_platnm_summer_3.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/204_platnm_summer#3",
+  "source_asset": {
+    "assetId": "build_char_204_platnm_summer#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "白金",
+    "appellation": "Platinum",
+    "skinGroupId": "2020#summer#2",
+    "skinGroupName": "珊瑚海岸/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_204_platnm_summer#3.atlas",
+      ".png": "build_char_204_platnm_summer#3.png",
+      ".skel": "build_char_204_platnm_summer#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/platinum/skin-summer-3/meta.json",
-    "atlas": "standalone/assets/source/platinum/skin-summer-3/build_char_204_platnm_summer_3.atlas",
-    "skeleton": "standalone/assets/source/platinum/skin-summer-3/build_char_204_platnm_summer_3.skel",
+    "atlas": "standalone/assets/source/platinum/skin-summer-3/build_char_204_platnm_summer#3.atlas",
+    "skeleton": "standalone/assets/source/platinum/skin-summer-3/build_char_204_platnm_summer#3.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_204_platnm/char_204_platnm_summer_3/build/build_char_204_platnm_summer_3.png",
-        "path": "standalone/assets/source/platinum/skin-summer-3/build_char_204_platnm_summer_3.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/204_platnm_summer%233/build_char_204_platnm_summer%233.png",
+        "path": "standalone/assets/source/platinum/skin-summer-3/build_char_204_platnm_summer#3.png",
+        "bytes": 384117,
+        "sha256": "4b822b9ab17d0bf2217c8e4a312b6bbc7df52a9a57d3cad4e6d6fd73a13339d7"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9578,
+      "sha256": "25d6dd7cf55ee0c829341ab9fa491beea0e5c560db71fab8da907a53a8b16747"
+    },
+    "skeleton": {
+      "bytes": 249337,
+      "sha256": "844750029625627f6cfaae1bfb140493cf6a1f05c6faf36db4b7dc0971bd1f7f"
+    }
   }
 }

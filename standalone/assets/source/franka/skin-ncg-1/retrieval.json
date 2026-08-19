@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "franka",
   "character_name": "Franka",
   "localized_name": "芙兰卡",
@@ -9,25 +9,58 @@
   "variant_name": "林虹之间",
   "skin_id": "ncg-1",
   "skin_name": "林虹之间",
-  "source_page": "https://prts.wiki/w/%E8%8A%99%E5%85%B0%E5%8D%A1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_106_franka/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_106_franka/meta.json",
-    "model": "char_106_franka_ncg_1/build/build_char_106_franka_ncg_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_106_franka/char_106_franka_ncg_1/build/build_char_106_franka_ncg_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_106_franka/char_106_franka_ncg_1/build/build_char_106_franka_ncg_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_106_franka/char_106_franka_ncg_1/build/build_char_106_franka_ncg_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/106_franka_ncg#1",
+  "source_asset": {
+    "assetId": "build_char_106_franka_ncg#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "芙兰卡",
+    "appellation": "Franka",
+    "skinGroupId": "2023#ncg",
+    "skinGroupName": "国家地理",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_106_franka_ncg#1.atlas",
+      ".png": "build_char_106_franka_ncg#1.png",
+      ".skel": "build_char_106_franka_ncg#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/franka/skin-ncg-1/meta.json",
-    "atlas": "standalone/assets/source/franka/skin-ncg-1/build_char_106_franka_ncg_1.atlas",
-    "skeleton": "standalone/assets/source/franka/skin-ncg-1/build_char_106_franka_ncg_1.skel",
+    "atlas": "standalone/assets/source/franka/skin-ncg-1/build_char_106_franka_ncg#1.atlas",
+    "skeleton": "standalone/assets/source/franka/skin-ncg-1/build_char_106_franka_ncg#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_106_franka/char_106_franka_ncg_1/build/build_char_106_franka_ncg_1.png",
-        "path": "standalone/assets/source/franka/skin-ncg-1/build_char_106_franka_ncg_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/106_franka_ncg%231/build_char_106_franka_ncg%231.png",
+        "path": "standalone/assets/source/franka/skin-ncg-1/build_char_106_franka_ncg#1.png",
+        "bytes": 430577,
+        "sha256": "1319849cba8da6f443de486aa2c9ce4b8af4d43378cc224f56c446b7695230df"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11858,
+      "sha256": "3fb8eb73047fdd86e44a4b0c1e1e243c9e84b7b38197d1ba3dfa1b0197c84dc4"
+    },
+    "skeleton": {
+      "bytes": 415495,
+      "sha256": "d813f1beb2a6c52d158fb0d7712833e0fc1ce0552e46d3e4d31587701b8d74b4"
+    }
   }
 }

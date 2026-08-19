@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "phonor-0",
   "character_name": "PhonoR-0",
   "localized_name": "PhonoR-0",
@@ -9,25 +9,58 @@
   "variant_name": "最初的颂歌",
   "skin_id": "boc-9",
   "skin_name": "最初的颂歌",
-  "source_page": "https://prts.wiki/w/PhonoR-0",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4136_phonor/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4136_phonor/meta.json",
-    "model": "char_4136_phonor_boc_9/build/build_char_4136_phonor_boc_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4136_phonor/char_4136_phonor_boc_9/build/build_char_4136_phonor_boc_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4136_phonor/char_4136_phonor_boc_9/build/build_char_4136_phonor_boc_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4136_phonor/char_4136_phonor_boc_9/build/build_char_4136_phonor_boc_9.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4136_phonor_boc#9",
+  "source_asset": {
+    "assetId": "build_char_4136_phonor_boc#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "PhonoR-0",
+    "appellation": "PhonoR-0",
+    "skinGroupId": "2025#boc",
+    "skinGroupName": "斗争血脉/IX",
+    "sortTags": [
+      "Operator",
+      "Rarity_1",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4136_phonor_boc#9.atlas",
+      ".png": "build_char_4136_phonor_boc#9.png",
+      ".skel": "build_char_4136_phonor_boc#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/phonor-0/skin-boc-9/meta.json",
-    "atlas": "standalone/assets/source/phonor-0/skin-boc-9/build_char_4136_phonor_boc_9.atlas",
-    "skeleton": "standalone/assets/source/phonor-0/skin-boc-9/build_char_4136_phonor_boc_9.skel",
+    "atlas": "standalone/assets/source/phonor-0/skin-boc-9/build_char_4136_phonor_boc#9.atlas",
+    "skeleton": "standalone/assets/source/phonor-0/skin-boc-9/build_char_4136_phonor_boc#9.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4136_phonor/char_4136_phonor_boc_9/build/build_char_4136_phonor_boc_9.png",
-        "path": "standalone/assets/source/phonor-0/skin-boc-9/build_char_4136_phonor_boc_9.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4136_phonor_boc%239/build_char_4136_phonor_boc%239.png",
+        "path": "standalone/assets/source/phonor-0/skin-boc-9/build_char_4136_phonor_boc#9.png",
+        "bytes": 552264,
+        "sha256": "d42a207a31311fb49d9fe864096b2d6ca68803eb9ddeb69c64fd65bac93d8fdf"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6935,
+      "sha256": "67247fa1be89e0f3cf43991fd6dcdf975906ceb279efa48a8af0b7a5499889a4"
+    },
+    "skeleton": {
+      "bytes": 139727,
+      "sha256": "9cbfb2371ca356b5437073ba51b4a67087af53b8194edd069d54c7223e5ae1a6"
+    }
   }
 }

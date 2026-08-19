@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "saga",
   "character_name": "Saga",
   "localized_name": "嵯峨",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%B5%AF%E5%B3%A8",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_362_saga/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_362_saga/meta.json",
-    "model": "defaultskin/build/build_char_362_saga",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_362_saga/defaultskin/build/build_char_362_saga.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_362_saga/defaultskin/build/build_char_362_saga.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_362_saga/defaultskin/build/build_char_362_saga.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/362_saga",
+  "source_asset": {
+    "assetId": "build_char_362_saga",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "嵯峨",
+    "appellation": "Saga",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_362_saga.atlas",
+      ".png": "build_char_362_saga.png",
+      ".skel": "build_char_362_saga.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/saga/default/meta.json",
     "atlas": "standalone/assets/source/saga/default/build_char_362_saga.atlas",
     "skeleton": "standalone/assets/source/saga/default/build_char_362_saga.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_362_saga/defaultskin/build/build_char_362_saga.png",
-        "path": "standalone/assets/source/saga/default/build_char_362_saga.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/362_saga/build_char_362_saga.png",
+        "path": "standalone/assets/source/saga/default/build_char_362_saga.png",
+        "bytes": 315907,
+        "sha256": "acf34266bb830434d124974462e252012b280a7433cd43741783dbb5aad269fb"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9257,
+      "sha256": "46606966b64d7cd978eb8f81b06af6716fb75f8d73fc3cb646e1ff880e1b6d1c"
+    },
+    "skeleton": {
+      "bytes": 180085,
+      "sha256": "f50a06d8df37cf03d6ab6c0a43b0673a294300ae1edf571fa59c288a78412310"
+    }
   }
 }

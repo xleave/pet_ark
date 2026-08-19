@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ch-en-the-holungday",
   "character_name": "Ch'en the Holungday",
   "localized_name": "假日威龙陈",
@@ -9,25 +9,59 @@
   "variant_name": "万重山",
   "skin_id": "boc-6",
   "skin_name": "万重山",
-  "source_page": "https://prts.wiki/w/%E5%81%87%E6%97%A5%E5%A8%81%E9%BE%99%E9%99%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/meta.json",
-    "model": "char_1013_chen2_boc_6/build/build_char_1013_chen2_boc_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/char_1013_chen2_boc_6/build/build_char_1013_chen2_boc_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/char_1013_chen2_boc_6/build/build_char_1013_chen2_boc_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/char_1013_chen2_boc_6/build/build_char_1013_chen2_boc_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1013_chen2_boc#6",
+  "source_asset": {
+    "assetId": "build_char_1013_chen2_boc#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "假日威龙陈",
+    "appellation": "Ch'en the Holungday",
+    "skinGroupId": "2023#boc",
+    "skinGroupName": "斗争血脉/VI",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1013_chen2_boc#6.atlas",
+      ".png": "build_char_1013_chen2_boc#6.png",
+      ".skel": "build_char_1013_chen2_boc#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ch-en-the-holungday/skin-boc-6/meta.json",
-    "atlas": "standalone/assets/source/ch-en-the-holungday/skin-boc-6/build_char_1013_chen2_boc_6.atlas",
-    "skeleton": "standalone/assets/source/ch-en-the-holungday/skin-boc-6/build_char_1013_chen2_boc_6.skel",
+    "atlas": "standalone/assets/source/ch-en-the-holungday/skin-boc-6/build_char_1013_chen2_boc#6.atlas",
+    "skeleton": "standalone/assets/source/ch-en-the-holungday/skin-boc-6/build_char_1013_chen2_boc#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/char_1013_chen2_boc_6/build/build_char_1013_chen2_boc_6.png",
-        "path": "standalone/assets/source/ch-en-the-holungday/skin-boc-6/build_char_1013_chen2_boc_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1013_chen2_boc%236/build_char_1013_chen2_boc%236.png",
+        "path": "standalone/assets/source/ch-en-the-holungday/skin-boc-6/build_char_1013_chen2_boc#6.png",
+        "bytes": 661374,
+        "sha256": "224ca2dfee1c0b77b0a1dcfb14abe87bc24d7a34ccee67563e7f7ad76e9d2c87"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14619,
+      "sha256": "f411b716396a26aa80ad39afb42491caeb8ae623c481ab3cd6e3270462252456"
+    },
+    "skeleton": {
+      "bytes": 816104,
+      "sha256": "cabc543e421e6f0f282a6a72d775e6d848009377cb02f69ac91e61016fc1aab0"
+    }
   }
 }

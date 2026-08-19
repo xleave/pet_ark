@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mulberry",
   "character_name": "Mulberry",
   "localized_name": "桑葚",
@@ -9,25 +9,58 @@
   "variant_name": "照冰轮",
   "skin_id": "nian-9",
   "skin_name": "照冰轮",
-  "source_page": "https://prts.wiki/w/%E6%A1%91%E8%91%9A",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/meta.json",
-    "model": "char_473_mberry_nian_9/build/build_char_473_mberry_nian_9",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/char_473_mberry_nian_9/build/build_char_473_mberry_nian_9.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/char_473_mberry_nian_9/build/build_char_473_mberry_nian_9.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/char_473_mberry_nian_9/build/build_char_473_mberry_nian_9.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/473_mberry_nian#9",
+  "source_asset": {
+    "assetId": "build_char_473_mberry_nian#9",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "桑葚",
+    "appellation": "Mulberry",
+    "skinGroupId": "2023#nian#2",
+    "skinGroupName": "0011制造/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_473_mberry_nian#9.atlas",
+      ".png": "build_char_473_mberry_nian#9.png",
+      ".skel": "build_char_473_mberry_nian#9.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mulberry/skin-nian-9/meta.json",
-    "atlas": "standalone/assets/source/mulberry/skin-nian-9/build_char_473_mberry_nian_9.atlas",
-    "skeleton": "standalone/assets/source/mulberry/skin-nian-9/build_char_473_mberry_nian_9.skel",
+    "atlas": "standalone/assets/source/mulberry/skin-nian-9/build_char_473_mberry_nian#9.atlas",
+    "skeleton": "standalone/assets/source/mulberry/skin-nian-9/build_char_473_mberry_nian#9.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_473_mberry/char_473_mberry_nian_9/build/build_char_473_mberry_nian_9.png",
-        "path": "standalone/assets/source/mulberry/skin-nian-9/build_char_473_mberry_nian_9.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/473_mberry_nian%239/build_char_473_mberry_nian%239.png",
+        "path": "standalone/assets/source/mulberry/skin-nian-9/build_char_473_mberry_nian#9.png",
+        "bytes": 392638,
+        "sha256": "c8df08efef7d3e0946aff18aa2c3f5e0ebea06fe966bab8ff53a8e7ffcaca7a6"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11340,
+      "sha256": "6cd15fd15f6f1c37e4afca45856f764e9f2de3681d6eb59dffe2e8a9d486cdee"
+    },
+    "skeleton": {
+      "bytes": 1385008,
+      "sha256": "1a7d43e3e7db6e2f807c4b87eaba5ddeddbc3d714a95ee9a4ddebd70a01b191f"
+    }
   }
 }

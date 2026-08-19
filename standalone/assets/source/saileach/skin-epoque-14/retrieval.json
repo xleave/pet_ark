@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "saileach",
   "character_name": "Saileach",
   "localized_name": "琴柳",
@@ -9,25 +9,58 @@
   "variant_name": "识芳",
   "skin_id": "epoque-14",
   "skin_name": "识芳",
-  "source_page": "https://prts.wiki/w/%E7%90%B4%E6%9F%B3",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/meta.json",
-    "model": "char_479_sleach_epoque_14/build/build_char_479_sleach_epoque_14",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/char_479_sleach_epoque_14/build/build_char_479_sleach_epoque_14.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/char_479_sleach_epoque_14/build/build_char_479_sleach_epoque_14.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/char_479_sleach_epoque_14/build/build_char_479_sleach_epoque_14.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/479_sleach_epoque#14",
+  "source_asset": {
+    "assetId": "build_char_479_sleach_epoque#14",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "琴柳",
+    "appellation": "Saileach",
+    "skinGroupId": "2022#epoque",
+    "skinGroupName": "时代/XIV",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_479_sleach_epoque#14.atlas",
+      ".png": "build_char_479_sleach_epoque#14.png",
+      ".skel": "build_char_479_sleach_epoque#14.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/saileach/skin-epoque-14/meta.json",
-    "atlas": "standalone/assets/source/saileach/skin-epoque-14/build_char_479_sleach_epoque_14.atlas",
-    "skeleton": "standalone/assets/source/saileach/skin-epoque-14/build_char_479_sleach_epoque_14.skel",
+    "atlas": "standalone/assets/source/saileach/skin-epoque-14/build_char_479_sleach_epoque#14.atlas",
+    "skeleton": "standalone/assets/source/saileach/skin-epoque-14/build_char_479_sleach_epoque#14.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/char_479_sleach_epoque_14/build/build_char_479_sleach_epoque_14.png",
-        "path": "standalone/assets/source/saileach/skin-epoque-14/build_char_479_sleach_epoque_14.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/479_sleach_epoque%2314/build_char_479_sleach_epoque%2314.png",
+        "path": "standalone/assets/source/saileach/skin-epoque-14/build_char_479_sleach_epoque#14.png",
+        "bytes": 606227,
+        "sha256": "3aead7b9069abb044b34bab628c6dab8b3ea6e99c12bd428c1728ed7747e432a"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12811,
+      "sha256": "63b54b40a4a409023b0784e3781a634a593ae20eb7b2fbcf4c646688df05a95e"
+    },
+    "skeleton": {
+      "bytes": 638918,
+      "sha256": "33ff3eb0401b86c1303288a28308e94283cd88ba105d8739cff1e42e1c604ea8"
+    }
   }
 }

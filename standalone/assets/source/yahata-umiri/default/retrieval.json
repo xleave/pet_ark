@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "yahata-umiri",
   "character_name": "Yahata Umiri",
   "localized_name": "八幡海铃",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%85%AB%E5%B9%A1%E6%B5%B7%E9%93%83",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4186_tmoris/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4186_tmoris/meta.json",
-    "model": "defaultskin/build/build_char_4186_tmoris",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4186_tmoris/defaultskin/build/build_char_4186_tmoris.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4186_tmoris/defaultskin/build/build_char_4186_tmoris.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4186_tmoris/defaultskin/build/build_char_4186_tmoris.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4186_tmoris",
+  "source_asset": {
+    "assetId": "build_char_4186_tmoris",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "八幡海铃",
+    "appellation": "Yahata Umiri",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4186_tmoris.atlas",
+      ".png": "build_char_4186_tmoris.png",
+      ".skel": "build_char_4186_tmoris.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/yahata-umiri/default/meta.json",
     "atlas": "standalone/assets/source/yahata-umiri/default/build_char_4186_tmoris.atlas",
     "skeleton": "standalone/assets/source/yahata-umiri/default/build_char_4186_tmoris.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4186_tmoris/defaultskin/build/build_char_4186_tmoris.png",
-        "path": "standalone/assets/source/yahata-umiri/default/build_char_4186_tmoris.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4186_tmoris/build_char_4186_tmoris.png",
+        "path": "standalone/assets/source/yahata-umiri/default/build_char_4186_tmoris.png",
+        "bytes": 150286,
+        "sha256": "f4c35478a1d9dc2e3f15facf1ad8701bbe7e875e5ce24977d695254d12d712bc"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7004,
+      "sha256": "594921af76a518b08793ffe8dbd04d58d281c67bd9206276ce4eac2ee3263913"
+    },
+    "skeleton": {
+      "bytes": 140915,
+      "sha256": "07d690d8731e943a06616fa963325a73661fd28a4d163d6e0896c70d4d8c9ef1"
+    }
   }
 }

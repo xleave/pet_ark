@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "silence",
   "character_name": "Silence",
   "localized_name": "赫默",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%B5%AB%E9%BB%98",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_108_silent/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_108_silent/meta.json",
-    "model": "defaultskin/build/build_char_108_silent",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_108_silent/defaultskin/build/build_char_108_silent.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_108_silent/defaultskin/build/build_char_108_silent.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_108_silent/defaultskin/build/build_char_108_silent.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/108_silent",
+  "source_asset": {
+    "assetId": "build_char_108_silent",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "赫默",
+    "appellation": "Silence",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_108_silent.atlas",
+      ".png": "build_char_108_silent.png",
+      ".skel": "build_char_108_silent.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/silence/default/meta.json",
     "atlas": "standalone/assets/source/silence/default/build_char_108_silent.atlas",
     "skeleton": "standalone/assets/source/silence/default/build_char_108_silent.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_108_silent/defaultskin/build/build_char_108_silent.png",
-        "path": "standalone/assets/source/silence/default/build_char_108_silent.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/108_silent/build_char_108_silent.png",
+        "path": "standalone/assets/source/silence/default/build_char_108_silent.png",
+        "bytes": 231228,
+        "sha256": "bd0ad7e0a85fe9534296f0198cb563ce08982427263fc71d70a24a1c114b37c8"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6204,
+      "sha256": "aae7813153a2894640a40110f3a50a4b109d7ee3bdbc7841516a79e40b7527e5"
+    },
+    "skeleton": {
+      "bytes": 240430,
+      "sha256": "4b9780d011644c3ed4d05179145c44ea533cad9d63d6c1c1d1a34405db36c572"
+    }
   }
 }

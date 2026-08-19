@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ling",
   "character_name": "Ling",
   "localized_name": "令",
@@ -9,25 +9,58 @@
   "variant_name": "崖高梦远",
   "skin_id": "ncg-1",
   "skin_name": "崖高梦远",
-  "source_page": "https://prts.wiki/w/%E4%BB%A4",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_2023_ling/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2023_ling/meta.json",
-    "model": "char_2023_ling_ncg_1/build/build_char_2023_ling_ncg_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2023_ling/char_2023_ling_ncg_1/build/build_char_2023_ling_ncg_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2023_ling/char_2023_ling_ncg_1/build/build_char_2023_ling_ncg_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2023_ling/char_2023_ling_ncg_1/build/build_char_2023_ling_ncg_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/2023_ling_ncg#1",
+  "source_asset": {
+    "assetId": "build_char_2023_ling_ncg#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "令",
+    "appellation": "Ling",
+    "skinGroupId": "2023#ncg",
+    "skinGroupName": "国家地理",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2023_ling_ncg#1.atlas",
+      ".png": "build_char_2023_ling_ncg#1.png",
+      ".skel": "build_char_2023_ling_ncg#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ling/skin-ncg-1/meta.json",
-    "atlas": "standalone/assets/source/ling/skin-ncg-1/build_char_2023_ling_ncg_1.atlas",
-    "skeleton": "standalone/assets/source/ling/skin-ncg-1/build_char_2023_ling_ncg_1.skel",
+    "atlas": "standalone/assets/source/ling/skin-ncg-1/build_char_2023_ling_ncg#1.atlas",
+    "skeleton": "standalone/assets/source/ling/skin-ncg-1/build_char_2023_ling_ncg#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_2023_ling/char_2023_ling_ncg_1/build/build_char_2023_ling_ncg_1.png",
-        "path": "standalone/assets/source/ling/skin-ncg-1/build_char_2023_ling_ncg_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/2023_ling_ncg%231/build_char_2023_ling_ncg%231.png",
+        "path": "standalone/assets/source/ling/skin-ncg-1/build_char_2023_ling_ncg#1.png",
+        "bytes": 469757,
+        "sha256": "d2a17e3d0781b3282ffec6edfbbd2be5d4ecd4b10be47b4b79de10d51a1fa6c6"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10673,
+      "sha256": "2795d802f528463872188e60f2b32d7b6e9dcb8e828696e221f209c015634314"
+    },
+    "skeleton": {
+      "bytes": 338229,
+      "sha256": "215681905601d544b99e88e66adfad71b388079c1c99a4371295dbe25c53a055"
+    }
   }
 }

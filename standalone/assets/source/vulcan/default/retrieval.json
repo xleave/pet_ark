@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "vulcan",
   "character_name": "Vulcan",
   "localized_name": "火神",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%81%AB%E7%A5%9E",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_163_hpsts/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_163_hpsts/meta.json",
-    "model": "defaultskin/build/build_char_163_hpsts",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_163_hpsts/defaultskin/build/build_char_163_hpsts.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_163_hpsts/defaultskin/build/build_char_163_hpsts.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_163_hpsts/defaultskin/build/build_char_163_hpsts.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/163_hpsts",
+  "source_asset": {
+    "assetId": "build_char_163_hpsts",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "火神",
+    "appellation": "Vulcan",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_163_hpsts.atlas",
+      ".png": "build_char_163_hpsts.png",
+      ".skel": "build_char_163_hpsts.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/vulcan/default/meta.json",
     "atlas": "standalone/assets/source/vulcan/default/build_char_163_hpsts.atlas",
     "skeleton": "standalone/assets/source/vulcan/default/build_char_163_hpsts.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_163_hpsts/defaultskin/build/build_char_163_hpsts.png",
-        "path": "standalone/assets/source/vulcan/default/build_char_163_hpsts.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/163_hpsts/build_char_163_hpsts.png",
+        "path": "standalone/assets/source/vulcan/default/build_char_163_hpsts.png",
+        "bytes": 198199,
+        "sha256": "db505496e74653821f62716f7bb2a86ad42b04e2ab798ba844ee344c6c6bdc8f"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4852,
+      "sha256": "811eff84bf51da5088a93c0f7c44cb3f08d495e44f1ede350df566a421218e93"
+    },
+    "skeleton": {
+      "bytes": 100527,
+      "sha256": "eb8ba0c689c3c2f01122456e1ca0b29a600c7e05e1b799ed83c632692aa94e2d"
+    }
   }
 }

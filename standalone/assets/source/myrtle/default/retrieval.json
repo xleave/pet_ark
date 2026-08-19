@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "myrtle",
   "character_name": "Myrtle",
   "localized_name": "桃金娘",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%A1%83%E9%87%91%E5%A8%98",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/meta.json",
-    "model": "defaultskin/build/build_char_151_myrtle",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/defaultskin/build/build_char_151_myrtle.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/defaultskin/build/build_char_151_myrtle.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/defaultskin/build/build_char_151_myrtle.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/151_myrtle",
+  "source_asset": {
+    "assetId": "build_char_151_myrtle",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "桃金娘",
+    "appellation": "Myrtle",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_151_myrtle.atlas",
+      ".png": "build_char_151_myrtle.png",
+      ".skel": "build_char_151_myrtle.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/myrtle/default/meta.json",
     "atlas": "standalone/assets/source/myrtle/default/build_char_151_myrtle.atlas",
     "skeleton": "standalone/assets/source/myrtle/default/build_char_151_myrtle.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_151_myrtle/defaultskin/build/build_char_151_myrtle.png",
-        "path": "standalone/assets/source/myrtle/default/build_char_151_myrtle.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/151_myrtle/build_char_151_myrtle.png",
+        "path": "standalone/assets/source/myrtle/default/build_char_151_myrtle.png",
+        "bytes": 335301,
+        "sha256": "267be23345fa23d9c79b1d97fe43e2067a6ea2e0fddf7ccfd541753992c629af"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7455,
+      "sha256": "96d7b59d99ee3776d30774d90ced2151058c46990908ee0d3c67ed2bf40cd073"
+    },
+    "skeleton": {
+      "bytes": 79233,
+      "sha256": "7d0dec955d0314fac61d9350cd4fba3d55f14300b1d9ba5934edb0c45f85bd11"
+    }
   }
 }

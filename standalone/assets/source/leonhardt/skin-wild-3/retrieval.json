@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "leonhardt",
   "character_name": "Leonhardt",
   "localized_name": "莱恩哈特",
@@ -9,25 +9,58 @@
   "variant_name": "宝藏行家",
   "skin_id": "wild-3",
   "skin_name": "宝藏行家",
-  "source_page": "https://prts.wiki/w/%E8%8E%B1%E6%81%A9%E5%93%88%E7%89%B9",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/meta.json",
-    "model": "char_373_lionhd_wild_3/build/build_char_373_lionhd_wild_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/char_373_lionhd_wild_3/build/build_char_373_lionhd_wild_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/char_373_lionhd_wild_3/build/build_char_373_lionhd_wild_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/char_373_lionhd_wild_3/build/build_char_373_lionhd_wild_3.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/373_lionhd_wild#3",
+  "source_asset": {
+    "assetId": "build_char_373_lionhd_wild#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "莱恩哈特",
+    "appellation": "Leonhardt",
+    "skinGroupId": "2020#wild",
+    "skinGroupName": "生命之地/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_373_lionhd_wild#3.atlas",
+      ".png": "build_char_373_lionhd_wild#3.png",
+      ".skel": "build_char_373_lionhd_wild#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/leonhardt/skin-wild-3/meta.json",
-    "atlas": "standalone/assets/source/leonhardt/skin-wild-3/build_char_373_lionhd_wild_3.atlas",
-    "skeleton": "standalone/assets/source/leonhardt/skin-wild-3/build_char_373_lionhd_wild_3.skel",
+    "atlas": "standalone/assets/source/leonhardt/skin-wild-3/build_char_373_lionhd_wild#3.atlas",
+    "skeleton": "standalone/assets/source/leonhardt/skin-wild-3/build_char_373_lionhd_wild#3.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_373_lionhd/char_373_lionhd_wild_3/build/build_char_373_lionhd_wild_3.png",
-        "path": "standalone/assets/source/leonhardt/skin-wild-3/build_char_373_lionhd_wild_3.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/373_lionhd_wild%233/build_char_373_lionhd_wild%233.png",
+        "path": "standalone/assets/source/leonhardt/skin-wild-3/build_char_373_lionhd_wild#3.png",
+        "bytes": 426284,
+        "sha256": "0b2f70599ee5f56ea40c49e710c0ac7bc3194f0aedb97d683718e9215877cbd9"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 16414,
+      "sha256": "3281f6ddb641ecaec73e9cc934b872745371c6cf2c52299a647e8b177f65a0b9"
+    },
+    "skeleton": {
+      "bytes": 461866,
+      "sha256": "a1ddb48abc7fcaf7a38e78b3f0b121ef2767202b96a2ed6615b07049ac9c8de5"
+    }
   }
 }

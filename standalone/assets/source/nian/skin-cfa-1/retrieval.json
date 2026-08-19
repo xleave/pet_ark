@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "nian",
   "character_name": "Nian",
   "localized_name": "年",
@@ -9,25 +9,58 @@
   "variant_name": "霹雳导演",
   "skin_id": "cfa-1",
   "skin_name": "霹雳导演",
-  "source_page": "https://prts.wiki/w/%E5%B9%B4",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/meta.json",
-    "model": "char_2014_nian_cfa_1/build/build_char_2014_nian_cfa_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/char_2014_nian_cfa_1/build/build_char_2014_nian_cfa_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/char_2014_nian_cfa_1/build/build_char_2014_nian_cfa_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/char_2014_nian_cfa_1/build/build_char_2014_nian_cfa_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/2014_nian_cfa#1",
+  "source_asset": {
+    "assetId": "build_char_2014_nian_cfa#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "年",
+    "appellation": "Nian",
+    "skinGroupId": "2024#cfa",
+    "skinGroupName": "中国电影资料馆",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2014_nian_cfa#1.atlas",
+      ".png": "build_char_2014_nian_cfa#1.png",
+      ".skel": "build_char_2014_nian_cfa#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/nian/skin-cfa-1/meta.json",
-    "atlas": "standalone/assets/source/nian/skin-cfa-1/build_char_2014_nian_cfa_1.atlas",
-    "skeleton": "standalone/assets/source/nian/skin-cfa-1/build_char_2014_nian_cfa_1.skel",
+    "atlas": "standalone/assets/source/nian/skin-cfa-1/build_char_2014_nian_cfa#1.atlas",
+    "skeleton": "standalone/assets/source/nian/skin-cfa-1/build_char_2014_nian_cfa#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_2014_nian/char_2014_nian_cfa_1/build/build_char_2014_nian_cfa_1.png",
-        "path": "standalone/assets/source/nian/skin-cfa-1/build_char_2014_nian_cfa_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/2014_nian_cfa%231/build_char_2014_nian_cfa%231.png",
+        "path": "standalone/assets/source/nian/skin-cfa-1/build_char_2014_nian_cfa#1.png",
+        "bytes": 430991,
+        "sha256": "7d62d7be8b8b260303f6419f28675ad27def967f28313e7318a91c1f6a29c866"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15477,
+      "sha256": "9068300f14665a6b79e6fb451be87c15a102bd2f93e7341a0cb370e4d93ee26c"
+    },
+    "skeleton": {
+      "bytes": 462179,
+      "sha256": "2899778dd90d0d1cb9b94a3fc03aa143436bff86d84c224260ccbe6507593ce5"
+    }
   }
 }

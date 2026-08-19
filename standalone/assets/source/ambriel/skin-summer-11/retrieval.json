@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ambriel",
   "character_name": "Ambriel",
   "localized_name": "安比尔",
@@ -9,25 +9,58 @@
   "variant_name": "悠然假日 HD29",
   "skin_id": "summer-11",
   "skin_name": "悠然假日 HD29",
-  "source_page": "https://prts.wiki/w/%E5%AE%89%E6%AF%94%E5%B0%94",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_302_glaze/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_302_glaze/meta.json",
-    "model": "char_302_glaze_summer_11/build/build_char_302_glaze_summer_11",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_302_glaze/char_302_glaze_summer_11/build/build_char_302_glaze_summer_11.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_302_glaze/char_302_glaze_summer_11/build/build_char_302_glaze_summer_11.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_302_glaze/char_302_glaze_summer_11/build/build_char_302_glaze_summer_11.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/302_glaze_summer#11",
+  "source_asset": {
+    "assetId": "build_char_302_glaze_summer#11",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "安比尔",
+    "appellation": "Ambriel",
+    "skinGroupId": "2023#summer",
+    "skinGroupName": "珊瑚海岸/XI",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_302_glaze_summer#11.atlas",
+      ".png": "build_char_302_glaze_summer#11.png",
+      ".skel": "build_char_302_glaze_summer#11.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ambriel/skin-summer-11/meta.json",
-    "atlas": "standalone/assets/source/ambriel/skin-summer-11/build_char_302_glaze_summer_11.atlas",
-    "skeleton": "standalone/assets/source/ambriel/skin-summer-11/build_char_302_glaze_summer_11.skel",
+    "atlas": "standalone/assets/source/ambriel/skin-summer-11/build_char_302_glaze_summer#11.atlas",
+    "skeleton": "standalone/assets/source/ambriel/skin-summer-11/build_char_302_glaze_summer#11.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_302_glaze/char_302_glaze_summer_11/build/build_char_302_glaze_summer_11.png",
-        "path": "standalone/assets/source/ambriel/skin-summer-11/build_char_302_glaze_summer_11.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/302_glaze_summer%2311/build_char_302_glaze_summer%2311.png",
+        "path": "standalone/assets/source/ambriel/skin-summer-11/build_char_302_glaze_summer#11.png",
+        "bytes": 476751,
+        "sha256": "d12790ab1efaefa930499911111a7cc6780fbcfaf5687ba290fe25587a2b0fe3"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 12823,
+      "sha256": "4501be1f0901331c849bcce7c5e823e2c45a72439c836ab44de4dd769375f2cd"
+    },
+    "skeleton": {
+      "bytes": 337682,
+      "sha256": "d110294e7638431e6f169fc5669f56518c6980580ab44370936e14ca90c42bf9"
+    }
   }
 }

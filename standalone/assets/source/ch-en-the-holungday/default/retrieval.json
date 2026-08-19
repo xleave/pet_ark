@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ch-en-the-holungday",
   "character_name": "Ch'en the Holungday",
   "localized_name": "假日威龙陈",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%81%87%E6%97%A5%E5%A8%81%E9%BE%99%E9%99%88",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/meta.json",
-    "model": "defaultskin/build/build_char_1013_chen2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/defaultskin/build/build_char_1013_chen2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/defaultskin/build/build_char_1013_chen2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/defaultskin/build/build_char_1013_chen2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1013_chen2",
+  "source_asset": {
+    "assetId": "build_char_1013_chen2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "假日威龙陈",
+    "appellation": "Ch'en the Holungday",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1013_chen2.atlas",
+      ".png": "build_char_1013_chen2.png",
+      ".skel": "build_char_1013_chen2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ch-en-the-holungday/default/meta.json",
     "atlas": "standalone/assets/source/ch-en-the-holungday/default/build_char_1013_chen2.atlas",
     "skeleton": "standalone/assets/source/ch-en-the-holungday/default/build_char_1013_chen2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1013_chen2/defaultskin/build/build_char_1013_chen2.png",
-        "path": "standalone/assets/source/ch-en-the-holungday/default/build_char_1013_chen2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1013_chen2/build_char_1013_chen2.png",
+        "path": "standalone/assets/source/ch-en-the-holungday/default/build_char_1013_chen2.png",
+        "bytes": 254890,
+        "sha256": "2756c506a49305e59a3427297172c83fa70c9b316cbba1407d039e6a3a9831fa"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10486,
+      "sha256": "5ca225a9b51f30ee7a8d03be365b22507634d95c625533fa6d3b86bf7872452f"
+    },
+    "skeleton": {
+      "bytes": 211756,
+      "sha256": "c8b09b1af399b0355db9a9a820a9043b846eb4ffbd970d807ea58bc89b81066d"
+    }
   }
 }

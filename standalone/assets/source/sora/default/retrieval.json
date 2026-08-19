@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "sora",
   "character_name": "Sora",
   "localized_name": "空",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%A9%BA",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_101_sora/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_101_sora/meta.json",
-    "model": "defaultskin/build/build_char_101_sora",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_101_sora/defaultskin/build/build_char_101_sora.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_101_sora/defaultskin/build/build_char_101_sora.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_101_sora/defaultskin/build/build_char_101_sora.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/101_sora",
+  "source_asset": {
+    "assetId": "build_char_101_sora",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "空",
+    "appellation": "Sora",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_101_sora.atlas",
+      ".png": "build_char_101_sora.png",
+      ".skel": "build_char_101_sora.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/sora/default/meta.json",
     "atlas": "standalone/assets/source/sora/default/build_char_101_sora.atlas",
     "skeleton": "standalone/assets/source/sora/default/build_char_101_sora.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_101_sora/defaultskin/build/build_char_101_sora.png",
-        "path": "standalone/assets/source/sora/default/build_char_101_sora.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/101_sora/build_char_101_sora.png",
+        "path": "standalone/assets/source/sora/default/build_char_101_sora.png",
+        "bytes": 246134,
+        "sha256": "67b80ad90f0c53bbf51335992518ecf66e15331d1d946e3d94ad587404ff04fc"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8531,
+      "sha256": "6aff61d237c9a592fcae57ed62b5a6d5fc6f659a02526d925b8d16fe48a71e84"
+    },
+    "skeleton": {
+      "bytes": 153966,
+      "sha256": "259dd7650421ecbe23b6e41607d8b44e022e137faf4d805d75b9a888851580b1"
+    }
   }
 }

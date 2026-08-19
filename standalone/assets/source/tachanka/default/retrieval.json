@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "tachanka",
   "character_name": "Tachanka",
   "localized_name": "战车",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%88%98%E8%BD%A6",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_459_tachak/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_459_tachak/meta.json",
-    "model": "defaultskin/build/build_char_459_tachak",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_459_tachak/defaultskin/build/build_char_459_tachak.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_459_tachak/defaultskin/build/build_char_459_tachak.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_459_tachak/defaultskin/build/build_char_459_tachak.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/459_tachak",
+  "source_asset": {
+    "assetId": "build_char_459_tachak",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "战车",
+    "appellation": "Tachanka",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_459_tachak.atlas",
+      ".png": "build_char_459_tachak.png",
+      ".skel": "build_char_459_tachak.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/tachanka/default/meta.json",
     "atlas": "standalone/assets/source/tachanka/default/build_char_459_tachak.atlas",
     "skeleton": "standalone/assets/source/tachanka/default/build_char_459_tachak.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_459_tachak/defaultskin/build/build_char_459_tachak.png",
-        "path": "standalone/assets/source/tachanka/default/build_char_459_tachak.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/459_tachak/build_char_459_tachak.png",
+        "path": "standalone/assets/source/tachanka/default/build_char_459_tachak.png",
+        "bytes": 159041,
+        "sha256": "b5e3b91337f4d5b19ad3bac26e56378ba7e07014e6b071c833ff9be3b4125f57"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 3203,
+      "sha256": "431112a960168a793832d5cd3c113dd5b68dfe9309d70f729dba0edd1da851e4"
+    },
+    "skeleton": {
+      "bytes": 32000,
+      "sha256": "e64f72109b5d3d3656ebed21b6b43c85959b85805d11a790902027616121cdf6"
+    }
   }
 }

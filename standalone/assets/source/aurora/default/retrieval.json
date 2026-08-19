@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "aurora",
   "character_name": "Aurora",
   "localized_name": "极光",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%9E%81%E5%85%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_422_aurora/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_422_aurora/meta.json",
-    "model": "defaultskin/build/build_char_422_aurora",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_422_aurora/defaultskin/build/build_char_422_aurora.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_422_aurora/defaultskin/build/build_char_422_aurora.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_422_aurora/defaultskin/build/build_char_422_aurora.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/422_aurora",
+  "source_asset": {
+    "assetId": "build_char_422_aurora",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "极光",
+    "appellation": "Aurora",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_422_aurora.atlas",
+      ".png": "build_char_422_aurora.png",
+      ".skel": "build_char_422_aurora.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/aurora/default/meta.json",
     "atlas": "standalone/assets/source/aurora/default/build_char_422_aurora.atlas",
     "skeleton": "standalone/assets/source/aurora/default/build_char_422_aurora.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_422_aurora/defaultskin/build/build_char_422_aurora.png",
-        "path": "standalone/assets/source/aurora/default/build_char_422_aurora.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/422_aurora/build_char_422_aurora.png",
+        "path": "standalone/assets/source/aurora/default/build_char_422_aurora.png",
+        "bytes": 250920,
+        "sha256": "6e29500367b02884df157d65f9c5c2981cdbb0a14c877cc5063ea8366d913983"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8251,
+      "sha256": "a8296bca31947f4c57f78cbfa699e29c053657b8c3a1e837ad24166025b490cd"
+    },
+    "skeleton": {
+      "bytes": 117105,
+      "sha256": "204547408387d1c20922dcaff628491a167f6cb9373829bc40310b7f2363e360"
+    }
   }
 }

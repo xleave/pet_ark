@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "feater",
   "character_name": "FEater",
   "localized_name": "食铁兽",
@@ -9,25 +9,58 @@
   "variant_name": "片场一角",
   "skin_id": "marthe-1",
   "skin_name": "片场一角",
-  "source_page": "https://prts.wiki/w/%E9%A3%9F%E9%93%81%E5%85%BD",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_241_panda/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_241_panda/meta.json",
-    "model": "char_241_panda_marthe_1/build/build_char_241_panda_marthe_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_241_panda/char_241_panda_marthe_1/build/build_char_241_panda_marthe_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_241_panda/char_241_panda_marthe_1/build/build_char_241_panda_marthe_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_241_panda/char_241_panda_marthe_1/build/build_char_241_panda_marthe_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/241_panda_marthe#1",
+  "source_asset": {
+    "assetId": "build_char_241_panda_marthe#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "食铁兽",
+    "appellation": "FEater",
+    "skinGroupId": "2020#marthe",
+    "skinGroupName": "玛尔特/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_241_panda_marthe#1.atlas",
+      ".png": "build_char_241_panda_marthe#1.png",
+      ".skel": "build_char_241_panda_marthe#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/feater/skin-marthe-1/meta.json",
-    "atlas": "standalone/assets/source/feater/skin-marthe-1/build_char_241_panda_marthe_1.atlas",
-    "skeleton": "standalone/assets/source/feater/skin-marthe-1/build_char_241_panda_marthe_1.skel",
+    "atlas": "standalone/assets/source/feater/skin-marthe-1/build_char_241_panda_marthe#1.atlas",
+    "skeleton": "standalone/assets/source/feater/skin-marthe-1/build_char_241_panda_marthe#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_241_panda/char_241_panda_marthe_1/build/build_char_241_panda_marthe_1.png",
-        "path": "standalone/assets/source/feater/skin-marthe-1/build_char_241_panda_marthe_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/241_panda_marthe%231/build_char_241_panda_marthe%231.png",
+        "path": "standalone/assets/source/feater/skin-marthe-1/build_char_241_panda_marthe#1.png",
+        "bytes": 182166,
+        "sha256": "ca45e0bf038d032f56540306642f76a2948964e7cd22075722c424399220907b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4188,
+      "sha256": "f3b938703ca66f2a09ac3aee05c02a94476cd3630d7403ff10ae396552c902da"
+    },
+    "skeleton": {
+      "bytes": 70998,
+      "sha256": "8b69dc35cc5382ca5d127ed023cd25370930dd8a6e0eb428686a871949f7a62d"
+    }
   }
 }

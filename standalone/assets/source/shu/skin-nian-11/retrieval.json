@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "shu",
   "character_name": "Shu",
   "localized_name": "黍",
@@ -9,25 +9,58 @@
   "variant_name": "春日宴",
   "skin_id": "nian-11",
   "skin_name": "春日宴",
-  "source_page": "https://prts.wiki/w/%E9%BB%8D",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_2025_shu/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2025_shu/meta.json",
-    "model": "char_2025_shu_nian_11/build/build_char_2025_shu_nian_11",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2025_shu/char_2025_shu_nian_11/build/build_char_2025_shu_nian_11.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2025_shu/char_2025_shu_nian_11/build/build_char_2025_shu_nian_11.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2025_shu/char_2025_shu_nian_11/build/build_char_2025_shu_nian_11.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/2025_shu_nian#11",
+  "source_asset": {
+    "assetId": "build_char_2025_shu_nian#11",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "黍",
+    "appellation": "Shu",
+    "skinGroupId": "2025#nian",
+    "skinGroupName": "0011制造/XI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2025_shu_nian#11.atlas",
+      ".png": "build_char_2025_shu_nian#11.png",
+      ".skel": "build_char_2025_shu_nian#11.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/shu/skin-nian-11/meta.json",
-    "atlas": "standalone/assets/source/shu/skin-nian-11/build_char_2025_shu_nian_11.atlas",
-    "skeleton": "standalone/assets/source/shu/skin-nian-11/build_char_2025_shu_nian_11.skel",
+    "atlas": "standalone/assets/source/shu/skin-nian-11/build_char_2025_shu_nian#11.atlas",
+    "skeleton": "standalone/assets/source/shu/skin-nian-11/build_char_2025_shu_nian#11.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_2025_shu/char_2025_shu_nian_11/build/build_char_2025_shu_nian_11.png",
-        "path": "standalone/assets/source/shu/skin-nian-11/build_char_2025_shu_nian_11.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/2025_shu_nian%2311/build_char_2025_shu_nian%2311.png",
+        "path": "standalone/assets/source/shu/skin-nian-11/build_char_2025_shu_nian#11.png",
+        "bytes": 560479,
+        "sha256": "ee678f4c19237614094629c3ffad8afa365a75fd5d11cb015c08f693fa47c9ce"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 18012,
+      "sha256": "74a75ba648056178e37ec64c4ceae552f3622144d3e3ae3867efbea31ef06509"
+    },
+    "skeleton": {
+      "bytes": 484495,
+      "sha256": "3a09e26b7713da250872423b463ee7dce70fa904d10f0ad7ac0d4f8edc4ec693"
+    }
   }
 }

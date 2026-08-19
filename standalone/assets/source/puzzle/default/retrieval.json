@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "puzzle",
   "character_name": "Puzzle",
   "localized_name": "谜图",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%B0%9C%E5%9B%BE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4017_puzzle/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4017_puzzle/meta.json",
-    "model": "defaultskin/build/build_char_4017_puzzle",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4017_puzzle/defaultskin/build/build_char_4017_puzzle.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4017_puzzle/defaultskin/build/build_char_4017_puzzle.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4017_puzzle/defaultskin/build/build_char_4017_puzzle.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4017_puzzle",
+  "source_asset": {
+    "assetId": "build_char_4017_puzzle",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "谜图",
+    "appellation": "Puzzle",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4017_puzzle.atlas",
+      ".png": "build_char_4017_puzzle.png",
+      ".skel": "build_char_4017_puzzle.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/puzzle/default/meta.json",
     "atlas": "standalone/assets/source/puzzle/default/build_char_4017_puzzle.atlas",
     "skeleton": "standalone/assets/source/puzzle/default/build_char_4017_puzzle.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4017_puzzle/defaultskin/build/build_char_4017_puzzle.png",
-        "path": "standalone/assets/source/puzzle/default/build_char_4017_puzzle.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4017_puzzle/build_char_4017_puzzle.png",
+        "path": "standalone/assets/source/puzzle/default/build_char_4017_puzzle.png",
+        "bytes": 205452,
+        "sha256": "04e909ce3eb9c3c71c47d42e9b69e96ed7efb449579cd3e31fcaad1ecf1f3a30"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8276,
+      "sha256": "1ac9a8334a6c96bd95db73a63c92014d3e49d9cb05d4761cdc0737ba0d197b08"
+    },
+    "skeleton": {
+      "bytes": 218456,
+      "sha256": "722d3001e5cb7007faa39ea8c6bfd37d90edca940f2397e6387e55c40d24d3ee"
+    }
   }
 }

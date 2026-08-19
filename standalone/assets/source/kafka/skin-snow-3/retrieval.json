@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "kafka",
   "character_name": "Kafka",
   "localized_name": "卡夫卡",
@@ -9,25 +9,58 @@
   "variant_name": "纸板仙子",
   "skin_id": "snow-3",
   "skin_name": "纸板仙子",
-  "source_page": "https://prts.wiki/w/%E5%8D%A1%E5%A4%AB%E5%8D%A1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_214_kafka/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_214_kafka/meta.json",
-    "model": "char_214_kafka_snow_3/build/build_char_214_kafka_snow_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_214_kafka/char_214_kafka_snow_3/build/build_char_214_kafka_snow_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_214_kafka/char_214_kafka_snow_3/build/build_char_214_kafka_snow_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_214_kafka/char_214_kafka_snow_3/build/build_char_214_kafka_snow_3.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/214_kafka_snow#3",
+  "source_asset": {
+    "assetId": "build_char_214_kafka_snow#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "卡夫卡",
+    "appellation": "Kafka",
+    "skinGroupId": "2021#xmas",
+    "skinGroupName": "冰原信使/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_214_kafka_snow#3.atlas",
+      ".png": "build_char_214_kafka_snow#3.png",
+      ".skel": "build_char_214_kafka_snow#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/kafka/skin-snow-3/meta.json",
-    "atlas": "standalone/assets/source/kafka/skin-snow-3/build_char_214_kafka_snow_3.atlas",
-    "skeleton": "standalone/assets/source/kafka/skin-snow-3/build_char_214_kafka_snow_3.skel",
+    "atlas": "standalone/assets/source/kafka/skin-snow-3/build_char_214_kafka_snow#3.atlas",
+    "skeleton": "standalone/assets/source/kafka/skin-snow-3/build_char_214_kafka_snow#3.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_214_kafka/char_214_kafka_snow_3/build/build_char_214_kafka_snow_3.png",
-        "path": "standalone/assets/source/kafka/skin-snow-3/build_char_214_kafka_snow_3.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/214_kafka_snow%233/build_char_214_kafka_snow%233.png",
+        "path": "standalone/assets/source/kafka/skin-snow-3/build_char_214_kafka_snow#3.png",
+        "bytes": 314649,
+        "sha256": "3d80d44ebe0bf0395db822f20031f1345cc07db73432150aa2201ffd892852d2"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11763,
+      "sha256": "20e369a5461af4f4f86ba75c113ddb0a2b024386191060ace55b1f45b3e1a1e9"
+    },
+    "skeleton": {
+      "bytes": 257175,
+      "sha256": "71a757411532a5c13a4bfed222eb5ab2ed50c443d54ff5ea238ec28d670ee20b"
+    }
   }
 }

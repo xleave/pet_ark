@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "hibiscus",
   "character_name": "Hibiscus",
   "localized_name": "芙蓉",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%8A%99%E8%93%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/meta.json",
-    "model": "defaultskin/build/build_char_120_hibisc",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/defaultskin/build/build_char_120_hibisc.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/defaultskin/build/build_char_120_hibisc.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/defaultskin/build/build_char_120_hibisc.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/120_hibisc",
+  "source_asset": {
+    "assetId": "build_char_120_hibisc",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "芙蓉",
+    "appellation": "Hibiscus",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_3"
+    ],
+    "assetList": {
+      ".atlas": "build_char_120_hibisc.atlas",
+      ".png": "build_char_120_hibisc.png",
+      ".skel": "build_char_120_hibisc.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/hibiscus/default/meta.json",
     "atlas": "standalone/assets/source/hibiscus/default/build_char_120_hibisc.atlas",
     "skeleton": "standalone/assets/source/hibiscus/default/build_char_120_hibisc.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_120_hibisc/defaultskin/build/build_char_120_hibisc.png",
-        "path": "standalone/assets/source/hibiscus/default/build_char_120_hibisc.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/120_hibisc/build_char_120_hibisc.png",
+        "path": "standalone/assets/source/hibiscus/default/build_char_120_hibisc.png",
+        "bytes": 179477,
+        "sha256": "0c6f1723e21888d46e8574b38b6c6ce1bbae564e5f4fce0c22d5bbb46a0ac826"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4062,
+      "sha256": "fcc8a3d3fba83911226a264bc8c47ce242e479d94a9f7e82474ef484d68e1a15"
+    },
+    "skeleton": {
+      "bytes": 73651,
+      "sha256": "00cffc88613a9b89f4e29d46dfe6a73e3be8ca774d764d8885ca948ba958248b"
+    }
   }
 }

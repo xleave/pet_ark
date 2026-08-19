@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "yu",
   "character_name": "Yu",
   "localized_name": "余",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E4%BD%99",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_2026_yu/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_2026_yu/meta.json",
-    "model": "defaultskin/build/build_char_2026_yu",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_2026_yu/defaultskin/build/build_char_2026_yu.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_2026_yu/defaultskin/build/build_char_2026_yu.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_2026_yu/defaultskin/build/build_char_2026_yu.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/2026_yu",
+  "source_asset": {
+    "assetId": "build_char_2026_yu",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "余",
+    "appellation": "Yu",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_2026_yu.atlas",
+      ".png": "build_char_2026_yu.png",
+      ".skel": "build_char_2026_yu.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/yu/default/meta.json",
     "atlas": "standalone/assets/source/yu/default/build_char_2026_yu.atlas",
     "skeleton": "standalone/assets/source/yu/default/build_char_2026_yu.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_2026_yu/defaultskin/build/build_char_2026_yu.png",
-        "path": "standalone/assets/source/yu/default/build_char_2026_yu.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/2026_yu/build_char_2026_yu.png",
+        "path": "standalone/assets/source/yu/default/build_char_2026_yu.png",
+        "bytes": 444891,
+        "sha256": "54262599745507bf3fea7c84f316d1889791fca434086b28b4360eb016d42077"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11687,
+      "sha256": "f24478c74c8becc01ba686a6ab109b3cd2143f13e8e1f3f4ca2d070c0f635089"
+    },
+    "skeleton": {
+      "bytes": 307655,
+      "sha256": "fdfd8f5219249726ab072f00cf442baf4bf859f9b5d0b0f4c0a7b0ae1ae573bd"
+    }
   }
 }

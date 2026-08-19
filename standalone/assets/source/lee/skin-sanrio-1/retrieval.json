@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lee",
   "character_name": "Lee",
   "localized_name": "老鲤",
@@ -9,25 +9,58 @@
   "variant_name": "坊间凉茶铺",
   "skin_id": "sanrio-1",
   "skin_name": "坊间凉茶铺",
-  "source_page": "https://prts.wiki/w/%E8%80%81%E9%B2%A4",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/meta.json",
-    "model": "char_322_lmlee_sanrio_1/build/build_char_322_lmlee_sanrio_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/char_322_lmlee_sanrio_1/build/build_char_322_lmlee_sanrio_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/char_322_lmlee_sanrio_1/build/build_char_322_lmlee_sanrio_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/char_322_lmlee_sanrio_1/build/build_char_322_lmlee_sanrio_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/322_lmlee_sanrio#1",
+  "source_asset": {
+    "assetId": "build_char_322_lmlee_sanrio#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "老鲤",
+    "appellation": "Lee",
+    "skinGroupId": "2024#sanrio",
+    "skinGroupName": "三丽鸥家族",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_322_lmlee_sanrio#1.atlas",
+      ".png": "build_char_322_lmlee_sanrio#1.png",
+      ".skel": "build_char_322_lmlee_sanrio#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lee/skin-sanrio-1/meta.json",
-    "atlas": "standalone/assets/source/lee/skin-sanrio-1/build_char_322_lmlee_sanrio_1.atlas",
-    "skeleton": "standalone/assets/source/lee/skin-sanrio-1/build_char_322_lmlee_sanrio_1.skel",
+    "atlas": "standalone/assets/source/lee/skin-sanrio-1/build_char_322_lmlee_sanrio#1.atlas",
+    "skeleton": "standalone/assets/source/lee/skin-sanrio-1/build_char_322_lmlee_sanrio#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_322_lmlee/char_322_lmlee_sanrio_1/build/build_char_322_lmlee_sanrio_1.png",
-        "path": "standalone/assets/source/lee/skin-sanrio-1/build_char_322_lmlee_sanrio_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/322_lmlee_sanrio%231/build_char_322_lmlee_sanrio%231.png",
+        "path": "standalone/assets/source/lee/skin-sanrio-1/build_char_322_lmlee_sanrio#1.png",
+        "bytes": 482967,
+        "sha256": "a067a6370b1ce8531dff6f74d7364c4ff773f2206b35e4b62d2d45a4c37cb0d9"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 21563,
+      "sha256": "d76fcadd4d6d3eb65799a3652c53796efc12fe20f209be6bf86882ddebaa8a3f"
+    },
+    "skeleton": {
+      "bytes": 635777,
+      "sha256": "c06df4c4b721af90610a99f8d526f9323b55674feab1dff3a30213df3b158e9f"
+    }
   }
 }

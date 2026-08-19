@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "firewhistle",
   "character_name": "Firewhistle",
   "localized_name": "火哨",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%81%AB%E5%93%A8",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_493_firwhl/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_493_firwhl/meta.json",
-    "model": "defaultskin/build/build_char_493_firwhl",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_493_firwhl/defaultskin/build/build_char_493_firwhl.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_493_firwhl/defaultskin/build/build_char_493_firwhl.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_493_firwhl/defaultskin/build/build_char_493_firwhl.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/493_firwhl",
+  "source_asset": {
+    "assetId": "build_char_493_firwhl",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "火哨",
+    "appellation": "Firewhistle",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_493_firwhl.atlas",
+      ".png": "build_char_493_firwhl.png",
+      ".skel": "build_char_493_firwhl.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/firewhistle/default/meta.json",
     "atlas": "standalone/assets/source/firewhistle/default/build_char_493_firwhl.atlas",
     "skeleton": "standalone/assets/source/firewhistle/default/build_char_493_firwhl.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_493_firwhl/defaultskin/build/build_char_493_firwhl.png",
-        "path": "standalone/assets/source/firewhistle/default/build_char_493_firwhl.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/493_firwhl/build_char_493_firwhl.png",
+        "path": "standalone/assets/source/firewhistle/default/build_char_493_firwhl.png",
+        "bytes": 260169,
+        "sha256": "8bac5c7de7c07c082cd36e71303302156576fdaf30e4ce4b47ab228c6ff4b560"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10278,
+      "sha256": "4c83fbf0d1516ffbf2ff322c5163d6a9ddca0c6ff447e6bf896f412766e3d97b"
+    },
+    "skeleton": {
+      "bytes": 183368,
+      "sha256": "1beae468e616f0823803c783927951a2be95f774ece14d2e313d8c9e77631675"
+    }
   }
 }

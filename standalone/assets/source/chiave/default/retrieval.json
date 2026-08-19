@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "chiave",
   "character_name": "Chiave",
   "localized_name": "贾维",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%B4%BE%E7%BB%B4",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_349_chiave/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_349_chiave/meta.json",
-    "model": "defaultskin/build/build_char_349_chiave",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_349_chiave/defaultskin/build/build_char_349_chiave.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_349_chiave/defaultskin/build/build_char_349_chiave.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_349_chiave/defaultskin/build/build_char_349_chiave.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/349_chiave",
+  "source_asset": {
+    "assetId": "build_char_349_chiave",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "贾维",
+    "appellation": "Chiave",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_349_chiave.atlas",
+      ".png": "build_char_349_chiave.png",
+      ".skel": "build_char_349_chiave.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/chiave/default/meta.json",
     "atlas": "standalone/assets/source/chiave/default/build_char_349_chiave.atlas",
     "skeleton": "standalone/assets/source/chiave/default/build_char_349_chiave.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_349_chiave/defaultskin/build/build_char_349_chiave.png",
-        "path": "standalone/assets/source/chiave/default/build_char_349_chiave.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/349_chiave/build_char_349_chiave.png",
+        "path": "standalone/assets/source/chiave/default/build_char_349_chiave.png",
+        "bytes": 191607,
+        "sha256": "d00171b95319e71caf373b3312fe43ea8aa512663385281c7906bbd57b56c584"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4851,
+      "sha256": "d8fdb46e2d0b7b0aa55aacfecde8de4a9c1821fc9c37cda13268b2c65107acd2"
+    },
+    "skeleton": {
+      "bytes": 130711,
+      "sha256": "7c10ecb86829a5a24998cbd77cb286949a5ec7939949be74ca88f640adb8c626"
+    }
   }
 }

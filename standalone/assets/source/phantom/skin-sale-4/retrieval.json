@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "phantom",
   "character_name": "Phantom",
   "localized_name": "傀影",
@@ -9,25 +9,58 @@
   "variant_name": "焦点",
   "skin_id": "sale-4",
   "skin_name": "焦点",
-  "source_page": "https://prts.wiki/w/%E5%82%80%E5%BD%B1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_250_phatom/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_250_phatom/meta.json",
-    "model": "char_250_phatom_sale_4/build/build_char_250_phatom_sale_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_250_phatom/char_250_phatom_sale_4/build/build_char_250_phatom_sale_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_250_phatom/char_250_phatom_sale_4/build/build_char_250_phatom_sale_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_250_phatom/char_250_phatom_sale_4/build/build_char_250_phatom_sale_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/250_phatom_sale#4",
+  "source_asset": {
+    "assetId": "build_char_250_phatom_sale#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "傀影",
+    "appellation": "Phantom",
+    "skinGroupId": "2022#sale",
+    "skinGroupName": "忒斯特收藏/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_250_phatom_sale#4.atlas",
+      ".png": "build_char_250_phatom_sale#4.png",
+      ".skel": "build_char_250_phatom_sale#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/phantom/skin-sale-4/meta.json",
-    "atlas": "standalone/assets/source/phantom/skin-sale-4/build_char_250_phatom_sale_4.atlas",
-    "skeleton": "standalone/assets/source/phantom/skin-sale-4/build_char_250_phatom_sale_4.skel",
+    "atlas": "standalone/assets/source/phantom/skin-sale-4/build_char_250_phatom_sale#4.atlas",
+    "skeleton": "standalone/assets/source/phantom/skin-sale-4/build_char_250_phatom_sale#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_250_phatom/char_250_phatom_sale_4/build/build_char_250_phatom_sale_4.png",
-        "path": "standalone/assets/source/phantom/skin-sale-4/build_char_250_phatom_sale_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/250_phatom_sale%234/build_char_250_phatom_sale%234.png",
+        "path": "standalone/assets/source/phantom/skin-sale-4/build_char_250_phatom_sale#4.png",
+        "bytes": 318875,
+        "sha256": "706face21ae68f94f3096c2b9a25400d68686b097b4882248e51b9c31d1105e1"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9993,
+      "sha256": "d1d7081da47546b7d64b5af2b3e9cfa01de34dc738d534101651acd92a03cc75"
+    },
+    "skeleton": {
+      "bytes": 721786,
+      "sha256": "4f76cf56b02bb84d52ee86230e42170670610f5f2f6967baaa912f74fad6bfc7"
+    }
   }
 }

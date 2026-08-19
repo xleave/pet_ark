@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "logos",
   "character_name": "Logos",
   "localized_name": "逻各斯",
@@ -9,25 +9,58 @@
   "variant_name": "辉煌的静谧",
   "skin_id": "ambiencesynesthesia-6",
   "skin_name": "辉煌的静谧",
-  "source_page": "https://prts.wiki/w/%E9%80%BB%E5%90%84%E6%96%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4133_logos/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4133_logos/meta.json",
-    "model": "char_4133_logos_ambiencesynesthesia_6/build/build_char_4133_logos_ambienceSynesthesia_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4133_logos/char_4133_logos_ambiencesynesthesia_6/build/build_char_4133_logos_ambienceSynesthesia_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4133_logos/char_4133_logos_ambiencesynesthesia_6/build/build_char_4133_logos_ambienceSynesthesia_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4133_logos/char_4133_logos_ambiencesynesthesia_6/build/build_char_4133_logos_ambienceSynesthesia_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4133_logos_ambiencesynesthesia#6",
+  "source_asset": {
+    "assetId": "build_char_4133_logos_ambiencesynesthesia#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "逻各斯",
+    "appellation": "Logos",
+    "skinGroupId": "2025#ambienceSynesthesia#2",
+    "skinGroupName": "音律联觉/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4133_logos_ambienceSynesthesia#6.atlas",
+      ".png": "build_char_4133_logos_ambienceSynesthesia#6.png",
+      ".skel": "build_char_4133_logos_ambienceSynesthesia#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/logos/skin-ambiencesynesthesia-6/meta.json",
-    "atlas": "standalone/assets/source/logos/skin-ambiencesynesthesia-6/build_char_4133_logos_ambienceSynesthesia_6.atlas",
-    "skeleton": "standalone/assets/source/logos/skin-ambiencesynesthesia-6/build_char_4133_logos_ambienceSynesthesia_6.skel",
+    "atlas": "standalone/assets/source/logos/skin-ambiencesynesthesia-6/build_char_4133_logos_ambienceSynesthesia#6.atlas",
+    "skeleton": "standalone/assets/source/logos/skin-ambiencesynesthesia-6/build_char_4133_logos_ambienceSynesthesia#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4133_logos/char_4133_logos_ambiencesynesthesia_6/build/build_char_4133_logos_ambienceSynesthesia_6.png",
-        "path": "standalone/assets/source/logos/skin-ambiencesynesthesia-6/build_char_4133_logos_ambienceSynesthesia_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4133_logos_ambiencesynesthesia%236/build_char_4133_logos_ambienceSynesthesia%236.png",
+        "path": "standalone/assets/source/logos/skin-ambiencesynesthesia-6/build_char_4133_logos_ambienceSynesthesia#6.png",
+        "bytes": 914523,
+        "sha256": "7796cadb693407d52079e51ef2b8227805a853f322951c6a385a051103c68aae"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 17374,
+      "sha256": "6f2ac695e4492a32877b2d94705809657d6f90e41a8aa6b7ef064d10be6e911f"
+    },
+    "skeleton": {
+      "bytes": 487884,
+      "sha256": "01de9d308580723bd147b2985a95d7c58c9f57275e46f8ce02f30dfb862b5b6c"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "skadi-the-corrupting-heart",
   "character_name": "Skadi the Corrupting Heart",
   "localized_name": "浊心斯卡蒂",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B5%8A%E5%BF%83%E6%96%AF%E5%8D%A1%E8%92%82",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1012_skadi2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1012_skadi2/meta.json",
-    "model": "defaultskin/build/build_char_1012_skadi2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1012_skadi2/defaultskin/build/build_char_1012_skadi2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1012_skadi2/defaultskin/build/build_char_1012_skadi2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1012_skadi2/defaultskin/build/build_char_1012_skadi2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1012_skadi2",
+  "source_asset": {
+    "assetId": "build_char_1012_skadi2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "浊心斯卡蒂",
+    "appellation": "Skadi the Corrupting Heart",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1012_skadi2.atlas",
+      ".png": "build_char_1012_skadi2.png",
+      ".skel": "build_char_1012_skadi2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/skadi-the-corrupting-heart/default/meta.json",
     "atlas": "standalone/assets/source/skadi-the-corrupting-heart/default/build_char_1012_skadi2.atlas",
     "skeleton": "standalone/assets/source/skadi-the-corrupting-heart/default/build_char_1012_skadi2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1012_skadi2/defaultskin/build/build_char_1012_skadi2.png",
-        "path": "standalone/assets/source/skadi-the-corrupting-heart/default/build_char_1012_skadi2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1012_skadi2/build_char_1012_skadi2.png",
+        "path": "standalone/assets/source/skadi-the-corrupting-heart/default/build_char_1012_skadi2.png",
+        "bytes": 637849,
+        "sha256": "21374cf2aca44c50b9a5a267683962a3ac4fb588e5bc43cadd55ecc261949528"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 17428,
+      "sha256": "d5dfe633a625b9a2355c2ef5c699912616b75859f283df203e6acfad7901fa16"
+    },
+    "skeleton": {
+      "bytes": 422779,
+      "sha256": "9a3bc5f39304c5e55d14aac1cb96e36fa40c05fbdc3ec6de4278ee48066e852a"
+    }
   }
 }

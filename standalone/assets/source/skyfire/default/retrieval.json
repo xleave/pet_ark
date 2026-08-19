@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "skyfire",
   "character_name": "Skyfire",
   "localized_name": "天火",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%A4%A9%E7%81%AB",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/meta.json",
-    "model": "defaultskin/build/build_char_166_skfire",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/defaultskin/build/build_char_166_skfire.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/defaultskin/build/build_char_166_skfire.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/defaultskin/build/build_char_166_skfire.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/166_skfire",
+  "source_asset": {
+    "assetId": "build_char_166_skfire",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "天火",
+    "appellation": "Skyfire",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_166_skfire.atlas",
+      ".png": "build_char_166_skfire.png",
+      ".skel": "build_char_166_skfire.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/skyfire/default/meta.json",
     "atlas": "standalone/assets/source/skyfire/default/build_char_166_skfire.atlas",
     "skeleton": "standalone/assets/source/skyfire/default/build_char_166_skfire.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/defaultskin/build/build_char_166_skfire.png",
-        "path": "standalone/assets/source/skyfire/default/build_char_166_skfire.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/166_skfire/build_char_166_skfire.png",
+        "path": "standalone/assets/source/skyfire/default/build_char_166_skfire.png",
+        "bytes": 159621,
+        "sha256": "a032ae0d8b3c2dd25a34dfa9f6eaaeb397919d6df5fef59b15c12e786bc097be"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 4347,
+      "sha256": "682bdcb83649ded4f05f15585af51cb41ca2fc867ca72d48973fd53945d29e53"
+    },
+    "skeleton": {
+      "bytes": 72148,
+      "sha256": "a647be92c272ce5bc148f1ef56147948e3b43ee01180c147305674ca49b24c20"
+    }
   }
 }

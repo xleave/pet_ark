@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "click",
   "character_name": "Click",
   "localized_name": "卡达",
@@ -9,25 +9,58 @@
   "variant_name": "安息处的怪盗",
   "skin_id": "witch-2",
   "skin_name": "安息处的怪盗",
-  "source_page": "https://prts.wiki/w/%E5%8D%A1%E8%BE%BE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_328_cammou/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_328_cammou/meta.json",
-    "model": "char_328_cammou_witch_2/build/build_char_328_cammou_witch_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_328_cammou/char_328_cammou_witch_2/build/build_char_328_cammou_witch_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_328_cammou/char_328_cammou_witch_2/build/build_char_328_cammou_witch_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_328_cammou/char_328_cammou_witch_2/build/build_char_328_cammou_witch_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/328_cammou_witch#2",
+  "source_asset": {
+    "assetId": "build_char_328_cammou_witch#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "卡达",
+    "appellation": "Click",
+    "skinGroupId": "2021#witch",
+    "skinGroupName": "巫异盛宴/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_328_cammou_witch#2.atlas",
+      ".png": "build_char_328_cammou_witch#2.png",
+      ".skel": "build_char_328_cammou_witch#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/click/skin-witch-2/meta.json",
-    "atlas": "standalone/assets/source/click/skin-witch-2/build_char_328_cammou_witch_2.atlas",
-    "skeleton": "standalone/assets/source/click/skin-witch-2/build_char_328_cammou_witch_2.skel",
+    "atlas": "standalone/assets/source/click/skin-witch-2/build_char_328_cammou_witch#2.atlas",
+    "skeleton": "standalone/assets/source/click/skin-witch-2/build_char_328_cammou_witch#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_328_cammou/char_328_cammou_witch_2/build/build_char_328_cammou_witch_2.png",
-        "path": "standalone/assets/source/click/skin-witch-2/build_char_328_cammou_witch_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/328_cammou_witch%232/build_char_328_cammou_witch%232.png",
+        "path": "standalone/assets/source/click/skin-witch-2/build_char_328_cammou_witch#2.png",
+        "bytes": 239839,
+        "sha256": "4cb55f53f74d17b27f1a108d1d46456e12dfadbe63f645dea4ac67ce82872f9e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9143,
+      "sha256": "11f9adfb9e0a14f3e26d0b7b0d3f461030447aee8934c85dbdc2d3e8544919be"
+    },
+    "skeleton": {
+      "bytes": 175684,
+      "sha256": "1aa9d7285ec2100d7d9a218f8c0b5087ea60d447125a3aa5c88a68a33ec40d06"
+    }
   }
 }

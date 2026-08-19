@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "texas",
   "character_name": "Texas",
   "localized_name": "德克萨斯",
@@ -9,25 +9,58 @@
   "variant_name": "寒冬信使",
   "skin_id": "winter-1",
   "skin_name": "寒冬信使",
-  "source_page": "https://prts.wiki/w/%E5%BE%B7%E5%85%8B%E8%90%A8%E6%96%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/meta.json",
-    "model": "char_102_texas_winter_1/build/build_char_102_texas_winter_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/char_102_texas_winter_1/build/build_char_102_texas_winter_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/char_102_texas_winter_1/build/build_char_102_texas_winter_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/char_102_texas_winter_1/build/build_char_102_texas_winter_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/102_texas_winter#1",
+  "source_asset": {
+    "assetId": "build_char_102_texas_winter#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "德克萨斯",
+    "appellation": "Texas",
+    "skinGroupId": "2018#winter",
+    "skinGroupName": "寒武纪/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_102_texas_winter#1.atlas",
+      ".png": "build_char_102_texas_winter#1.png",
+      ".skel": "build_char_102_texas_winter#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/texas/skin-winter-1/meta.json",
-    "atlas": "standalone/assets/source/texas/skin-winter-1/build_char_102_texas_winter_1.atlas",
-    "skeleton": "standalone/assets/source/texas/skin-winter-1/build_char_102_texas_winter_1.skel",
+    "atlas": "standalone/assets/source/texas/skin-winter-1/build_char_102_texas_winter#1.atlas",
+    "skeleton": "standalone/assets/source/texas/skin-winter-1/build_char_102_texas_winter#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_102_texas/char_102_texas_winter_1/build/build_char_102_texas_winter_1.png",
-        "path": "standalone/assets/source/texas/skin-winter-1/build_char_102_texas_winter_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/102_texas_winter%231/build_char_102_texas_winter%231.png",
+        "path": "standalone/assets/source/texas/skin-winter-1/build_char_102_texas_winter#1.png",
+        "bytes": 243652,
+        "sha256": "4b1a96e460d4f87e2893cc7dde7b984f2dec44c0a311e31ee73a3f765877e978"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5467,
+      "sha256": "a8fa60657ee1bdba2c17621b855b6d6365cbc073164abc1262ef6f03c69a21e4"
+    },
+    "skeleton": {
+      "bytes": 107983,
+      "sha256": "875b65734cf0fc2242b9b1deae3ade08f17d9ca9bc288fa8d0605e4351d12379"
+    }
   }
 }

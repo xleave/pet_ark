@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "chilchuck",
   "character_name": "Chilchuck",
   "localized_name": "齐尔查克",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%BD%90%E5%B0%94%E6%9F%A5%E5%85%8B",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4144_chilc/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4144_chilc/meta.json",
-    "model": "defaultskin/build/build_char_4144_chilc",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4144_chilc/defaultskin/build/build_char_4144_chilc.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4144_chilc/defaultskin/build/build_char_4144_chilc.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4144_chilc/defaultskin/build/build_char_4144_chilc.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4144_chilc",
+  "source_asset": {
+    "assetId": "build_char_4144_chilc",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "齐尔查克",
+    "appellation": "Chilchuck",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4144_chilc.atlas",
+      ".png": "build_char_4144_chilc.png",
+      ".skel": "build_char_4144_chilc.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/chilchuck/default/meta.json",
     "atlas": "standalone/assets/source/chilchuck/default/build_char_4144_chilc.atlas",
     "skeleton": "standalone/assets/source/chilchuck/default/build_char_4144_chilc.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4144_chilc/defaultskin/build/build_char_4144_chilc.png",
-        "path": "standalone/assets/source/chilchuck/default/build_char_4144_chilc.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4144_chilc/build_char_4144_chilc.png",
+        "path": "standalone/assets/source/chilchuck/default/build_char_4144_chilc.png",
+        "bytes": 144062,
+        "sha256": "1ea1c1fdce089e75f9a3c3c3f82ddfa6deee3a4c4dd9c908d3946be7b3092531"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6733,
+      "sha256": "e53de4b5fdbf1f98f93b6f1a46f45d060e3c272aa6e92ed64b1b9306d1240165"
+    },
+    "skeleton": {
+      "bytes": 119756,
+      "sha256": "f76200f0e7982fc6e4fa974411b4b59beefb02986c21871b21ccc9e2bba3cbf7"
+    }
   }
 }

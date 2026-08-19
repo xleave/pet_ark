@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "odda",
   "character_name": "Odda",
   "localized_name": "奥达",
@@ -9,25 +9,58 @@
   "variant_name": "糖果暴击",
   "skin_id": "whirlwind-8",
   "skin_name": "糖果暴击",
-  "source_page": "https://prts.wiki/w/%E5%A5%A5%E8%BE%BE",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4131_odda/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4131_odda/meta.json",
-    "model": "char_4131_odda_whirlwind_8/build/build_char_4131_odda_whirlwind_8",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4131_odda/char_4131_odda_whirlwind_8/build/build_char_4131_odda_whirlwind_8.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4131_odda/char_4131_odda_whirlwind_8/build/build_char_4131_odda_whirlwind_8.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4131_odda/char_4131_odda_whirlwind_8/build/build_char_4131_odda_whirlwind_8.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4131_odda_whirlwind#8",
+  "source_asset": {
+    "assetId": "build_char_4131_odda_whirlwind#8",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "奥达",
+    "appellation": "Odda",
+    "skinGroupId": "2025#whirlwind",
+    "skinGroupName": "0011/飙系列/VIII",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4131_odda_whirlwind#8.atlas",
+      ".png": "build_char_4131_odda_whirlwind#8.png",
+      ".skel": "build_char_4131_odda_whirlwind#8.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/odda/skin-whirlwind-8/meta.json",
-    "atlas": "standalone/assets/source/odda/skin-whirlwind-8/build_char_4131_odda_whirlwind_8.atlas",
-    "skeleton": "standalone/assets/source/odda/skin-whirlwind-8/build_char_4131_odda_whirlwind_8.skel",
+    "atlas": "standalone/assets/source/odda/skin-whirlwind-8/build_char_4131_odda_whirlwind#8.atlas",
+    "skeleton": "standalone/assets/source/odda/skin-whirlwind-8/build_char_4131_odda_whirlwind#8.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4131_odda/char_4131_odda_whirlwind_8/build/build_char_4131_odda_whirlwind_8.png",
-        "path": "standalone/assets/source/odda/skin-whirlwind-8/build_char_4131_odda_whirlwind_8.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4131_odda_whirlwind%238/build_char_4131_odda_whirlwind%238.png",
+        "path": "standalone/assets/source/odda/skin-whirlwind-8/build_char_4131_odda_whirlwind#8.png",
+        "bytes": 311731,
+        "sha256": "67bdc8e100956c619d7c09df7fcb3ec4b5e8eddddd765bc138bcc7f5ebe85fef"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10837,
+      "sha256": "566a8cb2f1573c70083e7f4466764b7c2ce0fe773ccf7b3c9a721a345c6ff99f"
+    },
+    "skeleton": {
+      "bytes": 232227,
+      "sha256": "31f2e71d0c5d18764047a88e9f9a96c9c279729cef0bb5632321a25776f5c652"
+    }
   }
 }

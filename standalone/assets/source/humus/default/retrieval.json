@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "humus",
   "character_name": "Humus",
   "localized_name": "休谟斯",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E4%BC%91%E8%B0%9F%E6%96%AF",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_491_humus/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_491_humus/meta.json",
-    "model": "defaultskin/build/build_char_491_humus",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_491_humus/defaultskin/build/build_char_491_humus.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_491_humus/defaultskin/build/build_char_491_humus.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_491_humus/defaultskin/build/build_char_491_humus.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/491_humus",
+  "source_asset": {
+    "assetId": "build_char_491_humus",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "休谟斯",
+    "appellation": "Humus",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_4"
+    ],
+    "assetList": {
+      ".atlas": "build_char_491_humus.atlas",
+      ".png": "build_char_491_humus.png",
+      ".skel": "build_char_491_humus.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/humus/default/meta.json",
     "atlas": "standalone/assets/source/humus/default/build_char_491_humus.atlas",
     "skeleton": "standalone/assets/source/humus/default/build_char_491_humus.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_491_humus/defaultskin/build/build_char_491_humus.png",
-        "path": "standalone/assets/source/humus/default/build_char_491_humus.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/491_humus/build_char_491_humus.png",
+        "path": "standalone/assets/source/humus/default/build_char_491_humus.png",
+        "bytes": 226596,
+        "sha256": "ea2e5264a9d2637a9e6e1d6c38b485b773e61c58ca19c066f5d3d3dc6b3f6767"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7404,
+      "sha256": "fc51bc7f64f75286224ff96675b6d20ee5d5eb7304fd8fbd81d3a564a3de4e25"
+    },
+    "skeleton": {
+      "bytes": 243557,
+      "sha256": "4480d5e7b1cdbc0edeb944a2c23f98bd95de794d4c87fd7d2db7426767a88d50"
+    }
   }
 }

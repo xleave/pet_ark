@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ayerscarpe",
   "character_name": "Ayerscarpe",
   "localized_name": "断崖",
@@ -9,25 +9,58 @@
   "variant_name": "受验者",
   "skin_id": "boc-3",
   "skin_name": "受验者",
-  "source_page": "https://prts.wiki/w/%E6%96%AD%E5%B4%96",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_294_ayer/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_294_ayer/meta.json",
-    "model": "char_294_ayer_boc_3/build/build_char_294_ayer_boc_3",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_294_ayer/char_294_ayer_boc_3/build/build_char_294_ayer_boc_3.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_294_ayer/char_294_ayer_boc_3/build/build_char_294_ayer_boc_3.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_294_ayer/char_294_ayer_boc_3/build/build_char_294_ayer_boc_3.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/294_ayer_boc#3",
+  "source_asset": {
+    "assetId": "build_char_294_ayer_boc#3",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "断崖",
+    "appellation": "Ayerscarpe",
+    "skinGroupId": "2021#boc#2",
+    "skinGroupName": "斗争血脉/III",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_294_ayer_boc#3.atlas",
+      ".png": "build_char_294_ayer_boc#3.png",
+      ".skel": "build_char_294_ayer_boc#3.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ayerscarpe/skin-boc-3/meta.json",
-    "atlas": "standalone/assets/source/ayerscarpe/skin-boc-3/build_char_294_ayer_boc_3.atlas",
-    "skeleton": "standalone/assets/source/ayerscarpe/skin-boc-3/build_char_294_ayer_boc_3.skel",
+    "atlas": "standalone/assets/source/ayerscarpe/skin-boc-3/build_char_294_ayer_boc#3.atlas",
+    "skeleton": "standalone/assets/source/ayerscarpe/skin-boc-3/build_char_294_ayer_boc#3.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_294_ayer/char_294_ayer_boc_3/build/build_char_294_ayer_boc_3.png",
-        "path": "standalone/assets/source/ayerscarpe/skin-boc-3/build_char_294_ayer_boc_3.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/294_ayer_boc%233/build_char_294_ayer_boc%233.png",
+        "path": "standalone/assets/source/ayerscarpe/skin-boc-3/build_char_294_ayer_boc#3.png",
+        "bytes": 439325,
+        "sha256": "fdd28008f1d84d1f506ddd466524f8d6ffab7f4078b2e8b369a1058022822bea"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10900,
+      "sha256": "b0d9690563f995f2688f73759c5600708474e6087919b26972d881a2d68322c4"
+    },
+    "skeleton": {
+      "bytes": 180078,
+      "sha256": "b9fa9627cc8781078125c793b9aec23f51c50faf0b9f5bf54f593e6f5b719aae"
+    }
   }
 }

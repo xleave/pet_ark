@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "proviso",
   "character_name": "Proviso",
   "localized_name": "但书",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E4%BD%86%E4%B9%A6",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4032_provs/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4032_provs/meta.json",
-    "model": "defaultskin/build/build_char_4032_provs",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4032_provs/defaultskin/build/build_char_4032_provs.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4032_provs/defaultskin/build/build_char_4032_provs.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4032_provs/defaultskin/build/build_char_4032_provs.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4032_provs",
+  "source_asset": {
+    "assetId": "build_char_4032_provs",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "但书",
+    "appellation": "Proviso",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4032_provs.atlas",
+      ".png": "build_char_4032_provs.png",
+      ".skel": "build_char_4032_provs.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/proviso/default/meta.json",
     "atlas": "standalone/assets/source/proviso/default/build_char_4032_provs.atlas",
     "skeleton": "standalone/assets/source/proviso/default/build_char_4032_provs.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4032_provs/defaultskin/build/build_char_4032_provs.png",
-        "path": "standalone/assets/source/proviso/default/build_char_4032_provs.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4032_provs/build_char_4032_provs.png",
+        "path": "standalone/assets/source/proviso/default/build_char_4032_provs.png",
+        "bytes": 242314,
+        "sha256": "d31d2164c18b3f979107e4666a8be67b0a198bd5c1a0a514f8864e46392b7078"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7599,
+      "sha256": "991e4a462c4c1615f385ce6cb15e90be6680d7d3f1778dfc6a5a0f3d487d8a12"
+    },
+    "skeleton": {
+      "bytes": 198172,
+      "sha256": "394534f8bd802550605e7f74752cb5eeff63083295c2072a32e1596e70d76b4e"
+    }
   }
 }

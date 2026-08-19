@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "popukar",
   "character_name": "Popukar",
   "localized_name": "泡普卡",
@@ -9,25 +9,58 @@
   "variant_name": "幽然灵竹",
   "skin_id": "sale-18",
   "skin_name": "幽然灵竹",
-  "source_page": "https://prts.wiki/w/%E6%B3%A1%E6%99%AE%E5%8D%A1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/meta.json",
-    "model": "char_281_popka_sale_18/build/build_char_281_popka_sale_18",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/char_281_popka_sale_18/build/build_char_281_popka_sale_18.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/char_281_popka_sale_18/build/build_char_281_popka_sale_18.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/char_281_popka_sale_18/build/build_char_281_popka_sale_18.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/281_popka_sale#18",
+  "source_asset": {
+    "assetId": "build_char_281_popka_sale#18",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "泡普卡",
+    "appellation": "Popukar",
+    "skinGroupId": "2026#sale#2",
+    "skinGroupName": "忒斯特收藏/XX",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_281_popka_sale#18.atlas",
+      ".png": "build_char_281_popka_sale#18.png",
+      ".skel": "build_char_281_popka_sale#18.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/popukar/skin-sale-18/meta.json",
-    "atlas": "standalone/assets/source/popukar/skin-sale-18/build_char_281_popka_sale_18.atlas",
-    "skeleton": "standalone/assets/source/popukar/skin-sale-18/build_char_281_popka_sale_18.skel",
+    "atlas": "standalone/assets/source/popukar/skin-sale-18/build_char_281_popka_sale#18.atlas",
+    "skeleton": "standalone/assets/source/popukar/skin-sale-18/build_char_281_popka_sale#18.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/char_281_popka_sale_18/build/build_char_281_popka_sale_18.png",
-        "path": "standalone/assets/source/popukar/skin-sale-18/build_char_281_popka_sale_18.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/281_popka_sale%2318/build_char_281_popka_sale%2318.png",
+        "path": "standalone/assets/source/popukar/skin-sale-18/build_char_281_popka_sale#18.png",
+        "bytes": 823824,
+        "sha256": "d7ea2e7fd0c59bab04f4134d8eb0cc8a08586834cd7eae015811330298daea14"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 18476,
+      "sha256": "4fc2cdb71b62ae0a15c981f4dabefeb4ca044f045f7709d06654cba44773da07"
+    },
+    "skeleton": {
+      "bytes": 623842,
+      "sha256": "271e557fae78c0314bb385199e1b72f0d4093ff9c26fad61c212c62991b8f147"
+    }
   }
 }

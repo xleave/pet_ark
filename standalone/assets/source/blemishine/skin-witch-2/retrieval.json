@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "blemishine",
   "character_name": "Blemishine",
   "localized_name": "瑕光",
@@ -9,25 +9,58 @@
   "variant_name": "异月灾裔",
   "skin_id": "witch-2",
   "skin_name": "异月灾裔",
-  "source_page": "https://prts.wiki/w/%E7%91%95%E5%85%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/meta.json",
-    "model": "char_423_blemsh_witch_2/build/build_char_423_blemsh_witch_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/char_423_blemsh_witch_2/build/build_char_423_blemsh_witch_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/char_423_blemsh_witch_2/build/build_char_423_blemsh_witch_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/char_423_blemsh_witch_2/build/build_char_423_blemsh_witch_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/423_blemsh_witch#2",
+  "source_asset": {
+    "assetId": "build_char_423_blemsh_witch#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "瑕光",
+    "appellation": "Blemishine",
+    "skinGroupId": "2021#witch",
+    "skinGroupName": "巫异盛宴/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_423_blemsh_witch#2.atlas",
+      ".png": "build_char_423_blemsh_witch#2.png",
+      ".skel": "build_char_423_blemsh_witch#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/blemishine/skin-witch-2/meta.json",
-    "atlas": "standalone/assets/source/blemishine/skin-witch-2/build_char_423_blemsh_witch_2.atlas",
-    "skeleton": "standalone/assets/source/blemishine/skin-witch-2/build_char_423_blemsh_witch_2.skel",
+    "atlas": "standalone/assets/source/blemishine/skin-witch-2/build_char_423_blemsh_witch#2.atlas",
+    "skeleton": "standalone/assets/source/blemishine/skin-witch-2/build_char_423_blemsh_witch#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_423_blemsh/char_423_blemsh_witch_2/build/build_char_423_blemsh_witch_2.png",
-        "path": "standalone/assets/source/blemishine/skin-witch-2/build_char_423_blemsh_witch_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/423_blemsh_witch%232/build_char_423_blemsh_witch%232.png",
+        "path": "standalone/assets/source/blemishine/skin-witch-2/build_char_423_blemsh_witch#2.png",
+        "bytes": 440943,
+        "sha256": "0e7d8f0fcfa63884a62c69e0c44a88c04d02f4da991358ff42a099d88c5d95f0"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10801,
+      "sha256": "1dab909ddc782dc50edf9d9fc3890b21403b211d3a74a7ebfdb6af2f7a22fac6"
+    },
+    "skeleton": {
+      "bytes": 354524,
+      "sha256": "3bdfa4a26ac533efaa960ab5bd680560cff61729a9d8839a658de807db69d0ba"
+    }
   }
 }

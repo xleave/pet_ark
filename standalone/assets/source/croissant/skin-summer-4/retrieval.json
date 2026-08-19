@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "croissant",
   "character_name": "Croissant",
   "localized_name": "可颂",
@@ -9,25 +9,58 @@
   "variant_name": "探寻者 SK03",
   "skin_id": "summer-4",
   "skin_name": "探寻者 SK03",
-  "source_page": "https://prts.wiki/w/%E5%8F%AF%E9%A2%82",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/meta.json",
-    "model": "char_201_moeshd_summer_4/build/build_char_201_moeshd_summer_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_summer_4/build/build_char_201_moeshd_summer_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_summer_4/build/build_char_201_moeshd_summer_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_summer_4/build/build_char_201_moeshd_summer_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/201_moeshd_summer#4",
+  "source_asset": {
+    "assetId": "build_char_201_moeshd_summer#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "可颂",
+    "appellation": "Croissant",
+    "skinGroupId": "2020#summer#3",
+    "skinGroupName": "珊瑚海岸/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_201_moeshd_summer#4.atlas",
+      ".png": "build_char_201_moeshd_summer#4.png",
+      ".skel": "build_char_201_moeshd_summer#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/croissant/skin-summer-4/meta.json",
-    "atlas": "standalone/assets/source/croissant/skin-summer-4/build_char_201_moeshd_summer_4.atlas",
-    "skeleton": "standalone/assets/source/croissant/skin-summer-4/build_char_201_moeshd_summer_4.skel",
+    "atlas": "standalone/assets/source/croissant/skin-summer-4/build_char_201_moeshd_summer#4.atlas",
+    "skeleton": "standalone/assets/source/croissant/skin-summer-4/build_char_201_moeshd_summer#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_201_moeshd/char_201_moeshd_summer_4/build/build_char_201_moeshd_summer_4.png",
-        "path": "standalone/assets/source/croissant/skin-summer-4/build_char_201_moeshd_summer_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/201_moeshd_summer%234/build_char_201_moeshd_summer%234.png",
+        "path": "standalone/assets/source/croissant/skin-summer-4/build_char_201_moeshd_summer#4.png",
+        "bytes": 314661,
+        "sha256": "a232729ae9d768b3a581f19ddd04165c1b98a98620151f70f98a801e3223edf1"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8239,
+      "sha256": "1ae40fd078d769a69147e18231d79cfbc07008cdacada5db01b5dd4e0d7c49b2"
+    },
+    "skeleton": {
+      "bytes": 409884,
+      "sha256": "c6addf02962bad1503e48cb55aaf33bd8668a937c13b0c75381e7982df21a11d"
+    }
   }
 }

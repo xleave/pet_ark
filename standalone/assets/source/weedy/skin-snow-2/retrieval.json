@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "weedy",
   "character_name": "Weedy",
   "localized_name": "温蒂",
@@ -9,25 +9,58 @@
   "variant_name": "糖果仙子",
   "skin_id": "snow-2",
   "skin_name": "糖果仙子",
-  "source_page": "https://prts.wiki/w/%E6%B8%A9%E8%92%82",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/meta.json",
-    "model": "char_400_weedy_snow_2/build/build_char_400_weedy_snow_2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/char_400_weedy_snow_2/build/build_char_400_weedy_snow_2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/char_400_weedy_snow_2/build/build_char_400_weedy_snow_2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/char_400_weedy_snow_2/build/build_char_400_weedy_snow_2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/400_weedy_snow#2",
+  "source_asset": {
+    "assetId": "build_char_400_weedy_snow#2",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "温蒂",
+    "appellation": "Weedy",
+    "skinGroupId": "2020#xmas",
+    "skinGroupName": "冰原信使/II",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_400_weedy_snow#2.atlas",
+      ".png": "build_char_400_weedy_snow#2.png",
+      ".skel": "build_char_400_weedy_snow#2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/weedy/skin-snow-2/meta.json",
-    "atlas": "standalone/assets/source/weedy/skin-snow-2/build_char_400_weedy_snow_2.atlas",
-    "skeleton": "standalone/assets/source/weedy/skin-snow-2/build_char_400_weedy_snow_2.skel",
+    "atlas": "standalone/assets/source/weedy/skin-snow-2/build_char_400_weedy_snow#2.atlas",
+    "skeleton": "standalone/assets/source/weedy/skin-snow-2/build_char_400_weedy_snow#2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_400_weedy/char_400_weedy_snow_2/build/build_char_400_weedy_snow_2.png",
-        "path": "standalone/assets/source/weedy/skin-snow-2/build_char_400_weedy_snow_2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/400_weedy_snow%232/build_char_400_weedy_snow%232.png",
+        "path": "standalone/assets/source/weedy/skin-snow-2/build_char_400_weedy_snow#2.png",
+        "bytes": 519416,
+        "sha256": "3e962f43b4d828a21ba9db66b17dc75018ea895c9074026d00098a7480ed240e"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 14635,
+      "sha256": "920315a38de2d4e43da190015bc4540db6bb26a3acfa395c7f5390fe9842c7ef"
+    },
+    "skeleton": {
+      "bytes": 931774,
+      "sha256": "b08b50e79ce6358236cd3505605002de13a32bb55dfea868d6a5ac42eaa22f71"
+    }
   }
 }

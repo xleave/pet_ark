@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "tragodia",
   "character_name": "Tragodia",
   "localized_name": "酒神",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%85%92%E7%A5%9E",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1042_phatm2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1042_phatm2/meta.json",
-    "model": "defaultskin/build/build_char_1042_phatm2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1042_phatm2/defaultskin/build/build_char_1042_phatm2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1042_phatm2/defaultskin/build/build_char_1042_phatm2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1042_phatm2/defaultskin/build/build_char_1042_phatm2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1042_phatm2",
+  "source_asset": {
+    "assetId": "build_char_1042_phatm2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "酒神",
+    "appellation": "Tragodia",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1042_phatm2.atlas",
+      ".png": "build_char_1042_phatm2.png",
+      ".skel": "build_char_1042_phatm2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/tragodia/default/meta.json",
     "atlas": "standalone/assets/source/tragodia/default/build_char_1042_phatm2.atlas",
     "skeleton": "standalone/assets/source/tragodia/default/build_char_1042_phatm2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1042_phatm2/defaultskin/build/build_char_1042_phatm2.png",
-        "path": "standalone/assets/source/tragodia/default/build_char_1042_phatm2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1042_phatm2/build_char_1042_phatm2.png",
+        "path": "standalone/assets/source/tragodia/default/build_char_1042_phatm2.png",
+        "bytes": 371539,
+        "sha256": "d92d1a62ca778cf959a8e8ac88a045af9328df684de210346aabd29faa964669"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9726,
+      "sha256": "3a06fd25e8438efebe3eaa2d7faa26c355ad8038d2736655d7bdf9e0605c8de1"
+    },
+    "skeleton": {
+      "bytes": 194544,
+      "sha256": "0e96fe8cddbd8d1bc60d68bdb8d660c271bfc4385828c562ec14985414f170f1"
+    }
   }
 }

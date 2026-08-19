@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "mostima",
   "character_name": "Mostima",
   "localized_name": "莫斯提马",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E8%8E%AB%E6%96%AF%E6%8F%90%E9%A9%AC",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/meta.json",
-    "model": "defaultskin/build/build_char_213_mostma",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/defaultskin/build/build_char_213_mostma.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/defaultskin/build/build_char_213_mostma.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/defaultskin/build/build_char_213_mostma.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/213_mostma",
+  "source_asset": {
+    "assetId": "build_char_213_mostma",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "莫斯提马",
+    "appellation": "Mostima",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_213_mostma.atlas",
+      ".png": "build_char_213_mostma.png",
+      ".skel": "build_char_213_mostma.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/mostima/default/meta.json",
     "atlas": "standalone/assets/source/mostima/default/build_char_213_mostma.atlas",
     "skeleton": "standalone/assets/source/mostima/default/build_char_213_mostma.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_213_mostma/defaultskin/build/build_char_213_mostma.png",
-        "path": "standalone/assets/source/mostima/default/build_char_213_mostma.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/213_mostma/build_char_213_mostma.png",
+        "path": "standalone/assets/source/mostima/default/build_char_213_mostma.png",
+        "bytes": 274137,
+        "sha256": "5c0cde071914776ee640c7c8bbd1623cd935e0104ffc109be7df5e88fcbc545d"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9051,
+      "sha256": "600b7eec922da9e7e3517cc6c3eec57e5b53bb2c26bd80c51c9c0eec449538b0"
+    },
+    "skeleton": {
+      "bytes": 127952,
+      "sha256": "1ca75826e875040e526ac49bcffebeb57044926629d393f24254ad0b384e4f59"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "scene",
   "character_name": "Scene",
   "localized_name": "稀音",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%A8%80%E9%9F%B3",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/meta.json",
-    "model": "defaultskin/build/build_char_336_folivo",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/defaultskin/build/build_char_336_folivo.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/defaultskin/build/build_char_336_folivo.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/defaultskin/build/build_char_336_folivo.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/336_folivo",
+  "source_asset": {
+    "assetId": "build_char_336_folivo",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "稀音",
+    "appellation": "Scene",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_336_folivo.atlas",
+      ".png": "build_char_336_folivo.png",
+      ".skel": "build_char_336_folivo.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/scene/default/meta.json",
     "atlas": "standalone/assets/source/scene/default/build_char_336_folivo.atlas",
     "skeleton": "standalone/assets/source/scene/default/build_char_336_folivo.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_336_folivo/defaultskin/build/build_char_336_folivo.png",
-        "path": "standalone/assets/source/scene/default/build_char_336_folivo.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/336_folivo/build_char_336_folivo.png",
+        "path": "standalone/assets/source/scene/default/build_char_336_folivo.png",
+        "bytes": 213195,
+        "sha256": "e552aa6e4b712634c015ff0d4bbd18eebcd29c25430575e369e55fe705d618b5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6628,
+      "sha256": "14a67437b2720175f9ec4d51a20c26956288639dac98874f3bce3d3d964b7eff"
+    },
+    "skeleton": {
+      "bytes": 181261,
+      "sha256": "2236bc9683d3aa50e65e381cd3f3eea2998068a5719a7030cba1220d75ffef4c"
+    }
   }
 }

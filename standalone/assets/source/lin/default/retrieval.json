@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "lin",
   "character_name": "Lin",
   "localized_name": "林",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%9E%97",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/meta.json",
-    "model": "defaultskin/build/build_char_4080_lin",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/defaultskin/build/build_char_4080_lin.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/defaultskin/build/build_char_4080_lin.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/defaultskin/build/build_char_4080_lin.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4080_lin",
+  "source_asset": {
+    "assetId": "build_char_4080_lin",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "林",
+    "appellation": "Lin",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4080_lin.atlas",
+      ".png": "build_char_4080_lin.png",
+      ".skel": "build_char_4080_lin.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/lin/default/meta.json",
     "atlas": "standalone/assets/source/lin/default/build_char_4080_lin.atlas",
     "skeleton": "standalone/assets/source/lin/default/build_char_4080_lin.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4080_lin/defaultskin/build/build_char_4080_lin.png",
-        "path": "standalone/assets/source/lin/default/build_char_4080_lin.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4080_lin/build_char_4080_lin.png",
+        "path": "standalone/assets/source/lin/default/build_char_4080_lin.png",
+        "bytes": 307799,
+        "sha256": "3d784869713ed59648a877b97989d8c4e69275e3bdab5f9da2d20b4513ee35c1"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9275,
+      "sha256": "abb8fec7f787c3e44cccc18cc2784861eb2ef9a09b2a3437c8bf38c0d0142d61"
+    },
+    "skeleton": {
+      "bytes": 160530,
+      "sha256": "dc05370b1954e95fe1a084e3944aa96eff443af5f9102a6666bc389f2f45421b"
+    }
   }
 }

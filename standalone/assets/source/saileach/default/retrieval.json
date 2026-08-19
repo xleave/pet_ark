@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "saileach",
   "character_name": "Saileach",
   "localized_name": "琴柳",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%90%B4%E6%9F%B3",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/meta.json",
-    "model": "defaultskin/build/build_char_479_sleach",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/defaultskin/build/build_char_479_sleach.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/defaultskin/build/build_char_479_sleach.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/defaultskin/build/build_char_479_sleach.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/479_sleach",
+  "source_asset": {
+    "assetId": "build_char_479_sleach",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "琴柳",
+    "appellation": "Saileach",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_479_sleach.atlas",
+      ".png": "build_char_479_sleach.png",
+      ".skel": "build_char_479_sleach.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/saileach/default/meta.json",
     "atlas": "standalone/assets/source/saileach/default/build_char_479_sleach.atlas",
     "skeleton": "standalone/assets/source/saileach/default/build_char_479_sleach.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_479_sleach/defaultskin/build/build_char_479_sleach.png",
-        "path": "standalone/assets/source/saileach/default/build_char_479_sleach.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/479_sleach/build_char_479_sleach.png",
+        "path": "standalone/assets/source/saileach/default/build_char_479_sleach.png",
+        "bytes": 318661,
+        "sha256": "fda3b27b28e4cda16616d1b1cf8e085128c366aa827c623033fafa2b24e40ad3"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8674,
+      "sha256": "36ad19cbdcd539e617f214a6f278c92285ff10612fedc1ef552ecd459b7a52f0"
+    },
+    "skeleton": {
+      "bytes": 228925,
+      "sha256": "c3e20d49fb4e88e63ba8b8bcef5a5704311a27e422574b53d5f50dba2c35f868"
+    }
   }
 }

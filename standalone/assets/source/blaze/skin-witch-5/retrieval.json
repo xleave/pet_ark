@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "blaze",
   "character_name": "Blaze",
   "localized_name": "煌",
@@ -9,25 +9,58 @@
   "variant_name": "易爆蓝焰",
   "skin_id": "witch-5",
   "skin_name": "易爆蓝焰",
-  "source_page": "https://prts.wiki/w/%E7%85%8C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/meta.json",
-    "model": "char_017_huang_witch_5/build/build_char_017_huang_witch_5",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/char_017_huang_witch_5/build/build_char_017_huang_witch_5.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/char_017_huang_witch_5/build/build_char_017_huang_witch_5.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/char_017_huang_witch_5/build/build_char_017_huang_witch_5.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/017_huang_witch#5",
+  "source_asset": {
+    "assetId": "build_char_017_huang_witch#5",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "煌",
+    "appellation": "Blaze",
+    "skinGroupId": "2024#witch",
+    "skinGroupName": "巫异盛宴/V",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_017_huang_witch#5.atlas",
+      ".png": "build_char_017_huang_witch#5.png",
+      ".skel": "build_char_017_huang_witch#5.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/blaze/skin-witch-5/meta.json",
-    "atlas": "standalone/assets/source/blaze/skin-witch-5/build_char_017_huang_witch_5.atlas",
-    "skeleton": "standalone/assets/source/blaze/skin-witch-5/build_char_017_huang_witch_5.skel",
+    "atlas": "standalone/assets/source/blaze/skin-witch-5/build_char_017_huang_witch#5.atlas",
+    "skeleton": "standalone/assets/source/blaze/skin-witch-5/build_char_017_huang_witch#5.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_017_huang/char_017_huang_witch_5/build/build_char_017_huang_witch_5.png",
-        "path": "standalone/assets/source/blaze/skin-witch-5/build_char_017_huang_witch_5.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/017_huang_witch%235/build_char_017_huang_witch%235.png",
+        "path": "standalone/assets/source/blaze/skin-witch-5/build_char_017_huang_witch#5.png",
+        "bytes": 792473,
+        "sha256": "f2f7d8171e352a20dc1570a9117bf19a5496c0ba1d8fbe1a282cc62be0ebc678"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 21760,
+      "sha256": "6148be7d524844ed6fb60bf525e05ea9fa99530efb6e5f0996d2dd250c194b72"
+    },
+    "skeleton": {
+      "bytes": 652847,
+      "sha256": "caf2ee6c986dd1e7636fb2f5037be5af5426db9a7a8abb3f35c5d93875017936"
+    }
   }
 }

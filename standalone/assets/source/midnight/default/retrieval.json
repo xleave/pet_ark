@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "midnight",
   "character_name": "Midnight",
   "localized_name": "月见夜",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%9C%88%E8%A7%81%E5%A4%9C",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_283_midn/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_283_midn/meta.json",
-    "model": "defaultskin/build/char_283_midn",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_283_midn/defaultskin/build/char_283_midn.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_283_midn/defaultskin/build/char_283_midn.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_283_midn/defaultskin/build/char_283_midn.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/283_midn",
+  "source_asset": {
+    "assetId": "build_char_283_midn",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "月见夜",
+    "appellation": "Midnight",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_3"
+    ],
+    "assetList": {
+      ".atlas": "char_283_midn.atlas",
+      ".png": "char_283_midn.png",
+      ".skel": "char_283_midn.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/midnight/default/meta.json",
     "atlas": "standalone/assets/source/midnight/default/char_283_midn.atlas",
     "skeleton": "standalone/assets/source/midnight/default/char_283_midn.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_283_midn/defaultskin/build/char_283_midn.png",
-        "path": "standalone/assets/source/midnight/default/char_283_midn.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/283_midn/char_283_midn.png",
+        "path": "standalone/assets/source/midnight/default/char_283_midn.png",
+        "bytes": 197980,
+        "sha256": "3523b0637102c0f4f34cec3617d3426ab87a2950052030fceb0856a7cd8d87f8"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 6153,
+      "sha256": "8e85ccb399e7ae4beb6a7860605adf67514e89b9f596a6a4a535e0fe4bf487e7"
+    },
+    "skeleton": {
+      "bytes": 110906,
+      "sha256": "78d48f74812db8e895a1021aa9e3dc5c5b5fb344681463ea2dad89112ccbb8ed"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "w",
   "character_name": "W",
   "localized_name": "W",
@@ -9,25 +9,58 @@
   "variant_name": "恍惚",
   "skin_id": "epoque-7",
   "skin_name": "恍惚",
-  "source_page": "https://prts.wiki/w/W",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_113_cqbw/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_113_cqbw/meta.json",
-    "model": "char_113_cqbw_epoque_7/build/build_char_113_cqbw_epoque_7",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_113_cqbw/char_113_cqbw_epoque_7/build/build_char_113_cqbw_epoque_7.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_113_cqbw/char_113_cqbw_epoque_7/build/build_char_113_cqbw_epoque_7.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_113_cqbw/char_113_cqbw_epoque_7/build/build_char_113_cqbw_epoque_7.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/113_cqbw_epoque#7",
+  "source_asset": {
+    "assetId": "build_char_113_cqbw_epoque#7",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "W",
+    "appellation": "W",
+    "skinGroupId": "2020#epoque#6",
+    "skinGroupName": "时代/VII",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_113_cqbw_epoque#7.atlas",
+      ".png": "build_char_113_cqbw_epoque#7.png",
+      ".skel": "build_char_113_cqbw_epoque#7.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/w/skin-epoque-7/meta.json",
-    "atlas": "standalone/assets/source/w/skin-epoque-7/build_char_113_cqbw_epoque_7.atlas",
-    "skeleton": "standalone/assets/source/w/skin-epoque-7/build_char_113_cqbw_epoque_7.skel",
+    "atlas": "standalone/assets/source/w/skin-epoque-7/build_char_113_cqbw_epoque#7.atlas",
+    "skeleton": "standalone/assets/source/w/skin-epoque-7/build_char_113_cqbw_epoque#7.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_113_cqbw/char_113_cqbw_epoque_7/build/build_char_113_cqbw_epoque_7.png",
-        "path": "standalone/assets/source/w/skin-epoque-7/build_char_113_cqbw_epoque_7.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/113_cqbw_epoque%237/build_char_113_cqbw_epoque%237.png",
+        "path": "standalone/assets/source/w/skin-epoque-7/build_char_113_cqbw_epoque#7.png",
+        "bytes": 309297,
+        "sha256": "1555f5a10ef94a64afce5a544587c854e540e31a876790fb8e072eeaf650eae5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10040,
+      "sha256": "53c160a628b5d29907bf9fedbf446691800e63bcaad75512821f1d1452970a8a"
+    },
+    "skeleton": {
+      "bytes": 755784,
+      "sha256": "3d6532a792b522e5a8ac420b3db6cf5967f5c8e17217c2061050d362ed55775d"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "diamante",
   "character_name": "Diamante",
   "localized_name": "折光",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%8A%98%E5%85%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_499_kaitou/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_499_kaitou/meta.json",
-    "model": "defaultskin/build/build_char_499_kaitou",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_499_kaitou/defaultskin/build/build_char_499_kaitou.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_499_kaitou/defaultskin/build/build_char_499_kaitou.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_499_kaitou/defaultskin/build/build_char_499_kaitou.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/499_kaitou",
+  "source_asset": {
+    "assetId": "build_char_499_kaitou",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "折光",
+    "appellation": "Diamante",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_499_kaitou.atlas",
+      ".png": "build_char_499_kaitou.png",
+      ".skel": "build_char_499_kaitou.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/diamante/default/meta.json",
     "atlas": "standalone/assets/source/diamante/default/build_char_499_kaitou.atlas",
     "skeleton": "standalone/assets/source/diamante/default/build_char_499_kaitou.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_499_kaitou/defaultskin/build/build_char_499_kaitou.png",
-        "path": "standalone/assets/source/diamante/default/build_char_499_kaitou.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/499_kaitou/build_char_499_kaitou.png",
+        "path": "standalone/assets/source/diamante/default/build_char_499_kaitou.png",
+        "bytes": 258864,
+        "sha256": "3a6a1e4acb4804ccbb0b4832e06950769e4c1c764fb002cf18e68b38faa8cefd"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10259,
+      "sha256": "36500cc90ce5af6638f04d11af053689b27266646ce559664c14edf412ad8a34"
+    },
+    "skeleton": {
+      "bytes": 220039,
+      "sha256": "15f09fc060e146e5060e29a95c77d844906641c4b69ffbcbcb30f86e00f1e91e"
+    }
   }
 }

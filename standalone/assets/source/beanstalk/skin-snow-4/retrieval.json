@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "beanstalk",
   "character_name": "Beanstalk",
   "localized_name": "豆苗",
@@ -9,25 +9,58 @@
   "variant_name": "未完成的礼物",
   "skin_id": "snow-4",
   "skin_name": "未完成的礼物",
-  "source_page": "https://prts.wiki/w/%E8%B1%86%E8%8B%97",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/meta.json",
-    "model": "char_452_bstalk_snow_4/build/build_char_452_bstalk_snow_4",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/char_452_bstalk_snow_4/build/build_char_452_bstalk_snow_4.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/char_452_bstalk_snow_4/build/build_char_452_bstalk_snow_4.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/char_452_bstalk_snow_4/build/build_char_452_bstalk_snow_4.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/452_bstalk_snow#4",
+  "source_asset": {
+    "assetId": "build_char_452_bstalk_snow#4",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "豆苗",
+    "appellation": "Beanstalk",
+    "skinGroupId": "2021#xmas#2",
+    "skinGroupName": "冰原信使/IV",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_452_bstalk_snow#4.atlas",
+      ".png": "build_char_452_bstalk_snow#4.png",
+      ".skel": "build_char_452_bstalk_snow#4.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/beanstalk/skin-snow-4/meta.json",
-    "atlas": "standalone/assets/source/beanstalk/skin-snow-4/build_char_452_bstalk_snow_4.atlas",
-    "skeleton": "standalone/assets/source/beanstalk/skin-snow-4/build_char_452_bstalk_snow_4.skel",
+    "atlas": "standalone/assets/source/beanstalk/skin-snow-4/build_char_452_bstalk_snow#4.atlas",
+    "skeleton": "standalone/assets/source/beanstalk/skin-snow-4/build_char_452_bstalk_snow#4.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_452_bstalk/char_452_bstalk_snow_4/build/build_char_452_bstalk_snow_4.png",
-        "path": "standalone/assets/source/beanstalk/skin-snow-4/build_char_452_bstalk_snow_4.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/452_bstalk_snow%234/build_char_452_bstalk_snow%234.png",
+        "path": "standalone/assets/source/beanstalk/skin-snow-4/build_char_452_bstalk_snow#4.png",
+        "bytes": 304852,
+        "sha256": "2c9d7de307a7a21577896e7c7b5987fdb118ecda0e66004bfe90c41d7338499b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 11006,
+      "sha256": "362fc5725c394336d831d70786d7acdc24c182ff8aa950aaa61c20b533ac6cda"
+    },
+    "skeleton": {
+      "bytes": 299352,
+      "sha256": "1ba61db4184eba84ca90f1258e58a7ade1ff0a1284826d81632a91b259bac197"
+    }
   }
 }

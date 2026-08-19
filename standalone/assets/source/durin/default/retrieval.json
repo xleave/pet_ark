@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "durin",
   "character_name": "Durin",
   "localized_name": "杜林",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%9D%9C%E6%9E%97",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_501_durin/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_501_durin/meta.json",
-    "model": "defaultskin/build/build_char_501_durin",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_501_durin/defaultskin/build/build_char_501_durin.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_501_durin/defaultskin/build/build_char_501_durin.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_501_durin/defaultskin/build/build_char_501_durin.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/501_durin",
+  "source_asset": {
+    "assetId": "build_char_501_durin",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "杜林",
+    "appellation": "Durin",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_2"
+    ],
+    "assetList": {
+      ".atlas": "build_char_501_durin.atlas",
+      ".png": "build_char_501_durin.png",
+      ".skel": "build_char_501_durin.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/durin/default/meta.json",
     "atlas": "standalone/assets/source/durin/default/build_char_501_durin.atlas",
     "skeleton": "standalone/assets/source/durin/default/build_char_501_durin.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_501_durin/defaultskin/build/build_char_501_durin.png",
-        "path": "standalone/assets/source/durin/default/build_char_501_durin.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/501_durin/build_char_501_durin.png",
+        "path": "standalone/assets/source/durin/default/build_char_501_durin.png",
+        "bytes": 132273,
+        "sha256": "25d709a67aa15395535a16fcb79af3f334e4193648d4c088b8d1391c28e2a11a"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5980,
+      "sha256": "a3168b781c602a13d25e7aa47c5b8d905d29a679daee90c3467c1e7f25598ca9"
+    },
+    "skeleton": {
+      "bytes": 59750,
+      "sha256": "552c13e9dde03ef9c54f07582e054847de68a27f66b12690b6d0d351d1373710"
+    }
   }
 }

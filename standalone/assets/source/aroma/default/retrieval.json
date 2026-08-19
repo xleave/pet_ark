@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "aroma",
   "character_name": "Aroma",
   "localized_name": "阿罗玛",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E9%98%BF%E7%BD%97%E7%8E%9B",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_446_aroma/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_446_aroma/meta.json",
-    "model": "defaultskin/build/build_char_446_aroma",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_446_aroma/defaultskin/build/build_char_446_aroma.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_446_aroma/defaultskin/build/build_char_446_aroma.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_446_aroma/defaultskin/build/build_char_446_aroma.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/446_aroma",
+  "source_asset": {
+    "assetId": "build_char_446_aroma",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "阿罗玛",
+    "appellation": "Aroma",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_446_aroma.atlas",
+      ".png": "build_char_446_aroma.png",
+      ".skel": "build_char_446_aroma.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/aroma/default/meta.json",
     "atlas": "standalone/assets/source/aroma/default/build_char_446_aroma.atlas",
     "skeleton": "standalone/assets/source/aroma/default/build_char_446_aroma.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_446_aroma/defaultskin/build/build_char_446_aroma.png",
-        "path": "standalone/assets/source/aroma/default/build_char_446_aroma.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/446_aroma/build_char_446_aroma.png",
+        "path": "standalone/assets/source/aroma/default/build_char_446_aroma.png",
+        "bytes": 259364,
+        "sha256": "2725187e499e1ddeb21be25163ec394e8412d00a72a70f5bb22cfbc8ae7695b4"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9693,
+      "sha256": "e700f9f8b6586729f48bd4fdbc0e8078c5ed8f188760566f01dc05b9f0f80e79"
+    },
+    "skeleton": {
+      "bytes": 145851,
+      "sha256": "ba5d767395f6354f106fbdef5c6da87782055cbf3e411e92df19f32ce9257dcb"
+    }
   }
 }

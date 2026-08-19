@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ju",
   "character_name": "Ju",
   "localized_name": "矩",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E7%9F%A9",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4221_ju/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4221_ju/meta.json",
-    "model": "defaultskin/build/build_char_4221_ju",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4221_ju/defaultskin/build/build_char_4221_ju.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4221_ju/defaultskin/build/build_char_4221_ju.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4221_ju/defaultskin/build/build_char_4221_ju.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4221_ju",
+  "source_asset": {
+    "assetId": "build_char_4221_ju",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "矩",
+    "appellation": "Ju",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4221_ju.atlas",
+      ".png": "build_char_4221_ju.png",
+      ".skel": "build_char_4221_ju.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ju/default/meta.json",
     "atlas": "standalone/assets/source/ju/default/build_char_4221_ju.atlas",
     "skeleton": "standalone/assets/source/ju/default/build_char_4221_ju.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4221_ju/defaultskin/build/build_char_4221_ju.png",
-        "path": "standalone/assets/source/ju/default/build_char_4221_ju.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4221_ju/build_char_4221_ju.png",
+        "path": "standalone/assets/source/ju/default/build_char_4221_ju.png",
+        "bytes": 379607,
+        "sha256": "f6d2c77514d483205d1748a584c740cd8d1c28a78bb691f483e4d477db73e761"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8426,
+      "sha256": "4be28934e5eda614b4ed2cb46cf0fb637cb71b06cc4e9278021c56df96957624"
+    },
+    "skeleton": {
+      "bytes": 151307,
+      "sha256": "d84c3b6bed1f4ea492a6e82e88ac57367dab5a534683865238934d88ff8d498d"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "cardigan",
   "character_name": "Cardigan",
   "localized_name": "卡缇",
@@ -9,25 +9,58 @@
   "variant_name": "晴日",
   "skin_id": "epoque-26",
   "skin_name": "晴日",
-  "source_page": "https://prts.wiki/w/%E5%8D%A1%E7%BC%87",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_209_ardign/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_209_ardign/meta.json",
-    "model": "char_209_ardign_epoque_26/build/build_char_209_ardign_epoque_26",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_209_ardign/char_209_ardign_epoque_26/build/build_char_209_ardign_epoque_26.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_209_ardign/char_209_ardign_epoque_26/build/build_char_209_ardign_epoque_26.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_209_ardign/char_209_ardign_epoque_26/build/build_char_209_ardign_epoque_26.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/209_ardign_epoque#26",
+  "source_asset": {
+    "assetId": "build_char_209_ardign_epoque#26",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "卡缇",
+    "appellation": "Cardigan",
+    "skinGroupId": "2023#epoque#8",
+    "skinGroupName": "时代/XXVI",
+    "sortTags": [
+      "Operator",
+      "Rarity_3",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_209_ardign_epoque#26.atlas",
+      ".png": "build_char_209_ardign_epoque#26.png",
+      ".skel": "build_char_209_ardign_epoque#26.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/cardigan/skin-epoque-26/meta.json",
-    "atlas": "standalone/assets/source/cardigan/skin-epoque-26/build_char_209_ardign_epoque_26.atlas",
-    "skeleton": "standalone/assets/source/cardigan/skin-epoque-26/build_char_209_ardign_epoque_26.skel",
+    "atlas": "standalone/assets/source/cardigan/skin-epoque-26/build_char_209_ardign_epoque#26.atlas",
+    "skeleton": "standalone/assets/source/cardigan/skin-epoque-26/build_char_209_ardign_epoque#26.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_209_ardign/char_209_ardign_epoque_26/build/build_char_209_ardign_epoque_26.png",
-        "path": "standalone/assets/source/cardigan/skin-epoque-26/build_char_209_ardign_epoque_26.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/209_ardign_epoque%2326/build_char_209_ardign_epoque%2326.png",
+        "path": "standalone/assets/source/cardigan/skin-epoque-26/build_char_209_ardign_epoque#26.png",
+        "bytes": 306501,
+        "sha256": "a9bfadec6747817f58770a3f4e0ab6e3be839d7513fca09bbee8dea679e7ff2a"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 10791,
+      "sha256": "bb2718ba28e6e39eed0b4d526129b0a589bcd0fd64db7275b8641aa48be7df1c"
+    },
+    "skeleton": {
+      "bytes": 270229,
+      "sha256": "1c5c45d35ca906cc62fc88b88d5464d3393e6a593b44d38be0a6cfb1140c7dc6"
+    }
   }
 }

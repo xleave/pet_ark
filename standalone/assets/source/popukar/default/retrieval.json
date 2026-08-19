@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "popukar",
   "character_name": "Popukar",
   "localized_name": "泡普卡",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%B3%A1%E6%99%AE%E5%8D%A1",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/meta.json",
-    "model": "defaultskin/build/build_char_281_popka",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/defaultskin/build/build_char_281_popka.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/defaultskin/build/build_char_281_popka.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/defaultskin/build/build_char_281_popka.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/281_popka",
+  "source_asset": {
+    "assetId": "build_char_281_popka",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "泡普卡",
+    "appellation": "Popukar",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_3"
+    ],
+    "assetList": {
+      ".atlas": "build_char_281_popka.atlas",
+      ".png": "build_char_281_popka.png",
+      ".skel": "build_char_281_popka.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/popukar/default/meta.json",
     "atlas": "standalone/assets/source/popukar/default/build_char_281_popka.atlas",
     "skeleton": "standalone/assets/source/popukar/default/build_char_281_popka.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_281_popka/defaultskin/build/build_char_281_popka.png",
-        "path": "standalone/assets/source/popukar/default/build_char_281_popka.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/281_popka/build_char_281_popka.png",
+        "path": "standalone/assets/source/popukar/default/build_char_281_popka.png",
+        "bytes": 245443,
+        "sha256": "47722e118ff00938b7c2b94f0de02b0e441c5e164a3f13d0deb2a94bd08e7195"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5650,
+      "sha256": "805a9bc80cd970a8c3fab2c4da795841a3c3b9957efc6adcc25a6c1af8d85e8a"
+    },
+    "skeleton": {
+      "bytes": 81076,
+      "sha256": "1c1e123fdd855d8b8a887743a0d221c59c0906a7f04bbdc0dd0b0e4ea8504668"
+    }
   }
 }

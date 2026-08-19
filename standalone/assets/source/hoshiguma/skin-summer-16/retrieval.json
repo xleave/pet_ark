@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "hoshiguma",
   "character_name": "Hoshiguma",
   "localized_name": "星熊",
@@ -9,25 +9,58 @@
   "variant_name": "探寻者 SK97",
   "skin_id": "summer-16",
   "skin_name": "探寻者 SK97",
-  "source_page": "https://prts.wiki/w/%E6%98%9F%E7%86%8A",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_136_hsguma/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_136_hsguma/meta.json",
-    "model": "char_136_hsguma_summer_16/build/build_char_136_hsguma_summer_16",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_136_hsguma/char_136_hsguma_summer_16/build/build_char_136_hsguma_summer_16.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_136_hsguma/char_136_hsguma_summer_16/build/build_char_136_hsguma_summer_16.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_136_hsguma/char_136_hsguma_summer_16/build/build_char_136_hsguma_summer_16.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/136_hsguma_summer#16",
+  "source_asset": {
+    "assetId": "build_char_136_hsguma_summer#16",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "星熊",
+    "appellation": "Hoshiguma",
+    "skinGroupId": "2024#summer",
+    "skinGroupName": "珊瑚海岸/XVI",
+    "sortTags": [
+      "Operator",
+      "Rarity_6",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_136_hsguma_summer#16.atlas",
+      ".png": "build_char_136_hsguma_summer#16.png",
+      ".skel": "build_char_136_hsguma_summer#16.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/hoshiguma/skin-summer-16/meta.json",
-    "atlas": "standalone/assets/source/hoshiguma/skin-summer-16/build_char_136_hsguma_summer_16.atlas",
-    "skeleton": "standalone/assets/source/hoshiguma/skin-summer-16/build_char_136_hsguma_summer_16.skel",
+    "atlas": "standalone/assets/source/hoshiguma/skin-summer-16/build_char_136_hsguma_summer#16.atlas",
+    "skeleton": "standalone/assets/source/hoshiguma/skin-summer-16/build_char_136_hsguma_summer#16.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_136_hsguma/char_136_hsguma_summer_16/build/build_char_136_hsguma_summer_16.png",
-        "path": "standalone/assets/source/hoshiguma/skin-summer-16/build_char_136_hsguma_summer_16.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/136_hsguma_summer%2316/build_char_136_hsguma_summer%2316.png",
+        "path": "standalone/assets/source/hoshiguma/skin-summer-16/build_char_136_hsguma_summer#16.png",
+        "bytes": 822837,
+        "sha256": "32ffc1d8b385a5b8366495e8ec86d3ce3917777d1742ade7664934f448c587c5"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8700,
+      "sha256": "4322fb20f9e8f71b4b98b0f3967a4af6c0691b0310a0f4b344492c726950c500"
+    },
+    "skeleton": {
+      "bytes": 304991,
+      "sha256": "aaf4c8b3bf32c4f44f6e59566775cce48476a6c62b77cde52840647a16cd8391"
+    }
   }
 }

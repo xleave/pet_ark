@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "ulpianus",
   "character_name": "Ulpianus",
   "localized_name": "乌尔比安",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E4%B9%8C%E5%B0%94%E6%AF%94%E5%AE%89",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4145_ulpia/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4145_ulpia/meta.json",
-    "model": "defaultskin/build/build_char_4145_ulpia",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4145_ulpia/defaultskin/build/build_char_4145_ulpia.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4145_ulpia/defaultskin/build/build_char_4145_ulpia.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4145_ulpia/defaultskin/build/build_char_4145_ulpia.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4145_ulpia",
+  "source_asset": {
+    "assetId": "build_char_4145_ulpia",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "乌尔比安",
+    "appellation": "Ulpianus",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4145_ulpia.atlas",
+      ".png": "build_char_4145_ulpia.png",
+      ".skel": "build_char_4145_ulpia.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/ulpianus/default/meta.json",
     "atlas": "standalone/assets/source/ulpianus/default/build_char_4145_ulpia.atlas",
     "skeleton": "standalone/assets/source/ulpianus/default/build_char_4145_ulpia.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4145_ulpia/defaultskin/build/build_char_4145_ulpia.png",
-        "path": "standalone/assets/source/ulpianus/default/build_char_4145_ulpia.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4145_ulpia/build_char_4145_ulpia.png",
+        "path": "standalone/assets/source/ulpianus/default/build_char_4145_ulpia.png",
+        "bytes": 297593,
+        "sha256": "9a8978ddba3adda62fd47fcde3fd62dfe4e5973600951ebe7da3629dca0d99f2"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 9920,
+      "sha256": "fc261840865f550673b3507d22f09ffc24bc5c6196d54cbd1fe902e3a92e6bb7"
+    },
+    "skeleton": {
+      "bytes": 273240,
+      "sha256": "ede6c7bb73b2e85e54028295abb712c29edd193b4cadaa92a024d98e724d5c05"
+    }
   }
 }

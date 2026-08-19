@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "jaye",
   "character_name": "Jaye",
   "localized_name": "孑",
@@ -9,25 +9,58 @@
   "variant_name": "沙滩护卫 GT002",
   "skin_id": "summer-6",
   "skin_name": "沙滩护卫 GT002",
-  "source_page": "https://prts.wiki/w/%E5%AD%91",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_272_strong/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_272_strong/meta.json",
-    "model": "char_272_strong_summer_6/build/build_char_272_strong_summer_6",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_272_strong/char_272_strong_summer_6/build/build_char_272_strong_summer_6.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_272_strong/char_272_strong_summer_6/build/build_char_272_strong_summer_6.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_272_strong/char_272_strong_summer_6/build/build_char_272_strong_summer_6.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/272_strong_summer#6",
+  "source_asset": {
+    "assetId": "build_char_272_strong_summer#6",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "孑",
+    "appellation": "Jaye",
+    "skinGroupId": "2021#summer#2",
+    "skinGroupName": "珊瑚海岸/VI",
+    "sortTags": [
+      "Operator",
+      "Rarity_4",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_272_strong_summer#6.atlas",
+      ".png": "build_char_272_strong_summer#6.png",
+      ".skel": "build_char_272_strong_summer#6.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/jaye/skin-summer-6/meta.json",
-    "atlas": "standalone/assets/source/jaye/skin-summer-6/build_char_272_strong_summer_6.atlas",
-    "skeleton": "standalone/assets/source/jaye/skin-summer-6/build_char_272_strong_summer_6.skel",
+    "atlas": "standalone/assets/source/jaye/skin-summer-6/build_char_272_strong_summer#6.atlas",
+    "skeleton": "standalone/assets/source/jaye/skin-summer-6/build_char_272_strong_summer#6.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_272_strong/char_272_strong_summer_6/build/build_char_272_strong_summer_6.png",
-        "path": "standalone/assets/source/jaye/skin-summer-6/build_char_272_strong_summer_6.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/272_strong_summer%236/build_char_272_strong_summer%236.png",
+        "path": "standalone/assets/source/jaye/skin-summer-6/build_char_272_strong_summer#6.png",
+        "bytes": 304421,
+        "sha256": "d00cd6345c880eee4ea1bae15a29f8bbfb6cc5d42a36a2e9a3a2697cc2db506b"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7844,
+      "sha256": "b51962874a906cb69556b97da9924e01aabf16d60f2ee180654136fde15948c1"
+    },
+    "skeleton": {
+      "bytes": 185351,
+      "sha256": "c03dc6dfb185bb2240ccb368f762cb98c46fc88f018c1bc0f55611aabdbb336b"
+    }
   }
 }

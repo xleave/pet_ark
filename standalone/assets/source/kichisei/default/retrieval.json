@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "kichisei",
   "character_name": "Kichisei",
   "localized_name": "吉星",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%90%89%E6%98%9F",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4203_kichi/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4203_kichi/meta.json",
-    "model": "defaultskin/build/build_char_4203_kichi",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4203_kichi/defaultskin/build/build_char_4203_kichi.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4203_kichi/defaultskin/build/build_char_4203_kichi.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4203_kichi/defaultskin/build/build_char_4203_kichi.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4203_kichi",
+  "source_asset": {
+    "assetId": "build_char_4203_kichi",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "吉星",
+    "appellation": "Kichisei",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4203_kichi.atlas",
+      ".png": "build_char_4203_kichi.png",
+      ".skel": "build_char_4203_kichi.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/kichisei/default/meta.json",
     "atlas": "standalone/assets/source/kichisei/default/build_char_4203_kichi.atlas",
     "skeleton": "standalone/assets/source/kichisei/default/build_char_4203_kichi.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4203_kichi/defaultskin/build/build_char_4203_kichi.png",
-        "path": "standalone/assets/source/kichisei/default/build_char_4203_kichi.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4203_kichi/build_char_4203_kichi.png",
+        "path": "standalone/assets/source/kichisei/default/build_char_4203_kichi.png",
+        "bytes": 529965,
+        "sha256": "12405b54091ba5b8304f06d1370b33dd12224e36dff1d8e93a45e7741e750322"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 15682,
+      "sha256": "6a150d5215f2eb67bb5e89f2f9e4a192aca582ea4915ab7c585995def9fa2627"
+    },
+    "skeleton": {
+      "bytes": 259836,
+      "sha256": "bda290c91f6dc0ee34a9e7826107ffa176caf37e75d0a10d71fcd8599bcc03be"
+    }
   }
 }

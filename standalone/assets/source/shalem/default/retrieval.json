@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "shalem",
   "character_name": "Shalem",
   "localized_name": "暮落",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%9A%AE%E8%90%BD",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_4025_aprot2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_4025_aprot2/meta.json",
-    "model": "defaultskin/build/build_char_4025_aprot2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_4025_aprot2/defaultskin/build/build_char_4025_aprot2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_4025_aprot2/defaultskin/build/build_char_4025_aprot2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_4025_aprot2/defaultskin/build/build_char_4025_aprot2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/4025_aprot2",
+  "source_asset": {
+    "assetId": "build_char_4025_aprot2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "暮落",
+    "appellation": "Shalem",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_4025_aprot2.atlas",
+      ".png": "build_char_4025_aprot2.png",
+      ".skel": "build_char_4025_aprot2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/shalem/default/meta.json",
     "atlas": "standalone/assets/source/shalem/default/build_char_4025_aprot2.atlas",
     "skeleton": "standalone/assets/source/shalem/default/build_char_4025_aprot2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_4025_aprot2/defaultskin/build/build_char_4025_aprot2.png",
-        "path": "standalone/assets/source/shalem/default/build_char_4025_aprot2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/4025_aprot2/build_char_4025_aprot2.png",
+        "path": "standalone/assets/source/shalem/default/build_char_4025_aprot2.png",
+        "bytes": 250626,
+        "sha256": "eb9c6c030cadcce0affbb4e7191ff1bd693261aa14703cb24bf81b2c32f508bf"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8094,
+      "sha256": "c08c6108fd9177c707df11487e7cb2ac06b09d571a6453b1b97f46bf60a1e0fc"
+    },
+    "skeleton": {
+      "bytes": 131081,
+      "sha256": "ad0681776074a9a3c5dd2432caa4546ff55c04cffa2079d27f8376ddb1af0bb7"
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "tuye",
   "character_name": "Tuye",
   "localized_name": "图耶",
@@ -9,25 +9,57 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E5%9B%BE%E8%80%B6",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_402_tuye/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_402_tuye/meta.json",
-    "model": "defaultskin/build/build_char_402_tuye",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_402_tuye/defaultskin/build/build_char_402_tuye.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_402_tuye/defaultskin/build/build_char_402_tuye.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_402_tuye/defaultskin/build/build_char_402_tuye.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/402_tuye",
+  "source_asset": {
+    "assetId": "build_char_402_tuye",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "图耶",
+    "appellation": "Tuye",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Rarity_5"
+    ],
+    "assetList": {
+      ".atlas": "build_char_402_tuye.atlas",
+      ".png": "build_char_402_tuye.png",
+      ".skel": "build_char_402_tuye.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/tuye/default/meta.json",
     "atlas": "standalone/assets/source/tuye/default/build_char_402_tuye.atlas",
     "skeleton": "standalone/assets/source/tuye/default/build_char_402_tuye.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_402_tuye/defaultskin/build/build_char_402_tuye.png",
-        "path": "standalone/assets/source/tuye/default/build_char_402_tuye.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/402_tuye/build_char_402_tuye.png",
+        "path": "standalone/assets/source/tuye/default/build_char_402_tuye.png",
+        "bytes": 267388,
+        "sha256": "3e416a0bd1f23202438c9e17dd6d02bc0b2a36fc09d48c6d1b5b9c6f2d8fdd21"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 7786,
+      "sha256": "3e9ed57c19843c70b531b4b7d456350ca0e7173195781ee1c2f0938c4d220bc2"
+    },
+    "skeleton": {
+      "bytes": 210258,
+      "sha256": "a7217f6b8a29e5a1c39ccb01aea47ef2546b9db3f6b4f3ba5b679b749c7ce6ec"
+    }
   }
 }

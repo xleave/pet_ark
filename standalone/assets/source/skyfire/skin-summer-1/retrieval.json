@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "skyfire",
   "character_name": "Skyfire",
   "localized_name": "天火",
@@ -9,25 +9,58 @@
   "variant_name": "温差 RT.RX01",
   "skin_id": "summer-1",
   "skin_name": "温差 RT.RX01",
-  "source_page": "https://prts.wiki/w/%E5%A4%A9%E7%81%AB",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/meta.json",
-    "model": "char_166_skfire_summer_1/build/build_char_166_skfire_summer_1",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/char_166_skfire_summer_1/build/build_char_166_skfire_summer_1.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/char_166_skfire_summer_1/build/build_char_166_skfire_summer_1.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/char_166_skfire_summer_1/build/build_char_166_skfire_summer_1.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/166_skfire_summer#1",
+  "source_asset": {
+    "assetId": "build_char_166_skfire_summer#1",
+    "type": "Operator",
+    "style": "BuildingSkin",
+    "name": "天火",
+    "appellation": "Skyfire",
+    "skinGroupId": "2019#summer",
+    "skinGroupName": "珊瑚海岸/I",
+    "sortTags": [
+      "Operator",
+      "Rarity_5",
+      "Skinned"
+    ],
+    "assetList": {
+      ".atlas": "build_char_166_skfire_summer#1.atlas",
+      ".png": "build_char_166_skfire_summer#1.png",
+      ".skel": "build_char_166_skfire_summer#1.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/skyfire/skin-summer-1/meta.json",
-    "atlas": "standalone/assets/source/skyfire/skin-summer-1/build_char_166_skfire_summer_1.atlas",
-    "skeleton": "standalone/assets/source/skyfire/skin-summer-1/build_char_166_skfire_summer_1.skel",
+    "atlas": "standalone/assets/source/skyfire/skin-summer-1/build_char_166_skfire_summer#1.atlas",
+    "skeleton": "standalone/assets/source/skyfire/skin-summer-1/build_char_166_skfire_summer#1.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_166_skfire/char_166_skfire_summer_1/build/build_char_166_skfire_summer_1.png",
-        "path": "standalone/assets/source/skyfire/skin-summer-1/build_char_166_skfire_summer_1.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/166_skfire_summer%231/build_char_166_skfire_summer%231.png",
+        "path": "standalone/assets/source/skyfire/skin-summer-1/build_char_166_skfire_summer#1.png",
+        "bytes": 199126,
+        "sha256": "28c4608f3534a041b7c83e9340b1183762171a3bc46e5a5df6b7de3113285444"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 5179,
+      "sha256": "0b5a714cfdbba95667adddad76c1ba9d8477a43fff8557014832fa7c87fdd4e7"
+    },
+    "skeleton": {
+      "bytes": 82126,
+      "sha256": "bfe92cd802f400e9406d3615586e7d3948f535c44952464a89803d59ddc9626c"
+    }
   }
 }

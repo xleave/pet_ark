@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "character_id": "hoshiguma-the-breacher",
   "character_name": "Hoshiguma the Breacher",
   "localized_name": "斩业星熊",
@@ -9,25 +9,58 @@
   "variant_name": "默认",
   "skin_id": null,
   "skin_name": null,
-  "source_page": "https://prts.wiki/w/%E6%96%A9%E4%B8%9A%E6%98%9F%E7%86%8A",
-  "source_meta": "https://torappu.prts.wiki/assets/char_spine/char_1044_hsgma2/meta.json",
-  "source_asset_set": {
-    "meta": "https://torappu.prts.wiki/assets/char_spine/char_1044_hsgma2/meta.json",
-    "model": "defaultskin/build/build_char_1044_hsgma2",
-    "skel": "https://torappu.prts.wiki/assets/char_spine/char_1044_hsgma2/defaultskin/build/build_char_1044_hsgma2.skel",
-    "atlas": "https://torappu.prts.wiki/assets/char_spine/char_1044_hsgma2/defaultskin/build/build_char_1044_hsgma2.atlas",
-    "texture": "https://torappu.prts.wiki/assets/char_spine/char_1044_hsgma2/defaultskin/build/build_char_1044_hsgma2.png"
+  "source_provider": "ark-models",
+  "source_page": "https://github.com/isHarryh/Ark-Models",
+  "source_commit": "3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b",
+  "source_metadata": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models_data.json",
+  "source_directory": "models/1044_hsgma2",
+  "source_asset": {
+    "assetId": "build_char_1044_hsgma2",
+    "type": "Operator",
+    "style": "BuildingDefault",
+    "name": "斩业星熊",
+    "appellation": "Hoshiguma the Breacher",
+    "skinGroupId": "DEFAULT",
+    "skinGroupName": "默认服装",
+    "sortTags": [
+      "Operator",
+      "Special",
+      "Rarity_6"
+    ],
+    "assetList": {
+      ".atlas": "build_char_1044_hsgma2.atlas",
+      ".png": "build_char_1044_hsgma2.png",
+      ".skel": "build_char_1044_hsgma2.skel"
+    }
   },
-  "retrieval_date": "2026-08-12",
+  "source_properties": {
+    "spine_runtime": "3.8",
+    "premultiplied_alpha": true,
+    "texture_origin": "Arknights PC client extraction",
+    "usage": "Non-commercial use only; game assets remain copyright Shanghai Hypergryph Network Technology Co., Ltd."
+  },
+  "retrieval_date": "2026-08-19",
   "files": {
     "meta": "standalone/assets/source/hoshiguma-the-breacher/default/meta.json",
     "atlas": "standalone/assets/source/hoshiguma-the-breacher/default/build_char_1044_hsgma2.atlas",
     "skeleton": "standalone/assets/source/hoshiguma-the-breacher/default/build_char_1044_hsgma2.skel",
     "textures": [
       {
-        "source": "https://torappu.prts.wiki/assets/char_spine/char_1044_hsgma2/defaultskin/build/build_char_1044_hsgma2.png",
-        "path": "standalone/assets/source/hoshiguma-the-breacher/default/build_char_1044_hsgma2.png"
+        "source": "https://raw.githubusercontent.com/isHarryh/Ark-Models/3745e5c6e10b5252b2a5e1f1841ebef62b7ef15b/models/1044_hsgma2/build_char_1044_hsgma2.png",
+        "path": "standalone/assets/source/hoshiguma-the-breacher/default/build_char_1044_hsgma2.png",
+        "bytes": 318954,
+        "sha256": "6ea9132db9694e2ec03b1374cec7aa7db758e37c39546e39b68f35ad36636469"
       }
     ]
+  },
+  "integrity": {
+    "atlas": {
+      "bytes": 8332,
+      "sha256": "d1b1a97470028ac9627a2d938d1939c9ddbbce1977241dde9d86be0a7f58dc12"
+    },
+    "skeleton": {
+      "bytes": 175798,
+      "sha256": "de87916fa9f1b5a581a5033be54d5dfd6d493b600c9f484708e0cae6e695d36e"
+    }
   }
 }
