@@ -8,7 +8,7 @@
   },
   "atlas": "standalone/assets/generated/mizuki/default/motion-atlas.png",
   "atlas_columns": 8,
-  "atlas_rows": 12,
+  "atlas_rows": 11,
   "profile": "character-local-desktop-motion",
   "sequences": [
     {
@@ -210,70 +210,6 @@
       "bridge_frames": 8
     },
     {
-      "id": "sleep-continuous-sleep",
-      "state": "sleep-continuous",
-      "intent": "sleep",
-      "origin": "derived",
-      "operation": "sparse-source-sleep-breath-loop",
-      "source_animation": "sleep",
-      "source_unique_frames": 2,
-      "source_frames": [
-        "standalone/assets/cleaned/mizuki/default/sleep/000.png",
-        "standalone/assets/cleaned/mizuki/default/sleep/000.png",
-        "standalone/assets/cleaned/mizuki/default/sleep/000.png",
-        "standalone/assets/cleaned/mizuki/default/sleep/000.png",
-        "standalone/assets/cleaned/mizuki/default/sleep/000.png",
-        "standalone/assets/cleaned/mizuki/default/sleep/000.png",
-        "standalone/assets/cleaned/mizuki/default/sleep/000.png",
-        "standalone/assets/cleaned/mizuki/default/sleep/000.png"
-      ],
-      "atlas_frames": [
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59
-      ],
-      "generated_frame": null,
-      "bridge_style": null,
-      "bridge_frames": null
-    },
-    {
-      "id": "wake-transition-wake",
-      "state": "wake-transition",
-      "intent": "wake",
-      "origin": "derived",
-      "operation": "sparse-source-eight-phase-wake-rise",
-      "source_animation": "sleep",
-      "source_unique_frames": 2,
-      "source_frames": [
-        "standalone/assets/cleaned/mizuki/default/sleep/007.png",
-        "standalone/assets/cleaned/mizuki/default/sleep/006.png",
-        "standalone/assets/cleaned/mizuki/default/sleep/005.png",
-        "standalone/assets/cleaned/mizuki/default/sleep/004.png",
-        "standalone/assets/cleaned/mizuki/default/sleep/003.png",
-        "standalone/assets/cleaned/mizuki/default/sleep/002.png",
-        "standalone/assets/cleaned/mizuki/default/sleep/001.png",
-        "standalone/assets/cleaned/mizuki/default/sleep/000.png"
-      ],
-      "atlas_frames": [
-        60,
-        61,
-        62,
-        63,
-        64,
-        65,
-        66,
-        67
-      ],
-      "generated_frame": null,
-      "bridge_style": null,
-      "bridge_frames": null
-    },
-    {
       "id": "rest-source-rest",
       "state": "rest-source",
       "intent": "rest",
@@ -292,14 +228,14 @@
         "standalone/assets/cleaned/mizuki/default/sit/007.png"
       ],
       "atlas_frames": [
-        68,
-        69,
-        70,
-        71,
-        72,
-        73,
-        74,
-        75
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
       ],
       "generated_frame": null,
       "bridge_style": null,
@@ -315,18 +251,50 @@
       "source_unique_frames": null,
       "source_frames": [],
       "atlas_frames": [
-        76,
-        77,
-        78,
-        79,
-        80,
-        81,
-        82,
-        83
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
       ],
       "generated_frame": null,
       "bridge_style": "single-silhouette-endpoint-transform",
       "bridge_frames": 8
+    },
+    {
+      "id": "wake-source-wake",
+      "state": "wake-source",
+      "intent": "wake",
+      "origin": "derived",
+      "operation": "physical-wake-runtime-copy",
+      "source_animation": "sleep",
+      "source_unique_frames": null,
+      "source_frames": [
+        "standalone/assets/cleaned/mizuki/default/sleep/007.png",
+        "standalone/assets/cleaned/mizuki/default/sleep/006.png",
+        "standalone/assets/cleaned/mizuki/default/sleep/005.png",
+        "standalone/assets/cleaned/mizuki/default/sleep/004.png",
+        "standalone/assets/cleaned/mizuki/default/sleep/003.png",
+        "standalone/assets/cleaned/mizuki/default/sleep/002.png",
+        "standalone/assets/cleaned/mizuki/default/sleep/001.png",
+        "standalone/assets/cleaned/mizuki/default/sleep/000.png"
+      ],
+      "atlas_frames": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "generated_frame": null,
+      "bridge_style": null,
+      "bridge_frames": null
     },
     {
       "id": "wake-settle-wake",
@@ -338,14 +306,14 @@
       "source_unique_frames": null,
       "source_frames": [],
       "atlas_frames": [
-        84,
-        85,
-        86,
-        87,
-        88,
-        89,
-        90,
-        91
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
       ],
       "generated_frame": null,
       "bridge_style": "single-silhouette-endpoint-transform",
