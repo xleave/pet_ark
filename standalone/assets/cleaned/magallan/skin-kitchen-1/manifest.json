@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "magallan",
   "character_name": "Magallan",
   "localized_name": "麦哲伦",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -310.68845,
-      "maxX": 450.88885,
-      "minY": -115.5541,
-      "maxY": 706.80237
+      "maxX": 277.85736,
+      "minY": -116.0705,
+      "maxY": 603.39349
     },
-    "scale": 0.2311,
-    "x_offset": 79.79989,
-    "y_offset": 189.29553,
+    "full_source_bounds": {
+      "minX": -310.68845,
+      "maxX": 277.85736,
+      "minY": -116.0705,
+      "maxY": 603.39349
+    },
+    "core_source_bounds": {
+      "minX": -310.68845,
+      "maxX": 189.67657,
+      "minY": -116.0705,
+      "maxY": 603.39349
+    },
+    "cluster": {
+      "retained": 2627,
+      "total": 2627,
+      "centerX": -19.1884,
+      "centerY": 199.04762,
+      "radiusX": 575.00377,
+      "radiusY": 724.99916
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 76,
+      "visible_height": 108,
+      "density_zoom": 1.2963
+    },
+    "scale": 0.37476,
+    "x_offset": 110.57789,
+    "y_offset": 216.57496,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:17.080Z"
+  "exported_at": "2026-08-19T05:11:38.063Z"
 }

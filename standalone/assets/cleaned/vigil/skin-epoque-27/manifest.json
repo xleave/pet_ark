@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "vigil",
   "character_name": "Vigil",
   "localized_name": "伺夜",
@@ -97,7 +100,14 @@
       "duration": 7.333333492279053,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/vigil/skin-epoque-27/special"
+      "path": "standalone/assets/cleaned/vigil/skin-epoque-27/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 7,
+          "reason": "The deterministic Spine Special sample contains no visible pixels in the canonical character envelope; retained explicitly as a source-authored transition beat.",
+          "observed_by": "blank-policy-revision-1"
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
@@ -113,16 +123,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -1214.54187,
       "maxX": 2540.19116,
       "minY": -3407.56006,
       "maxY": 914.42017
     },
-    "scale": 0.04687,
-    "x_offset": 64.93064,
-    "y_offset": 56.27345,
+    "full_source_bounds": {
+      "minX": -1214.54187,
+      "maxX": 2540.19116,
+      "minY": -3407.56006,
+      "maxY": 914.42017
+    },
+    "core_source_bounds": {
+      "minX": -1214.54187,
+      "maxX": 2097.16699,
+      "minY": -1662.62036,
+      "maxY": 914.42017
+    },
+    "cluster": {
+      "retained": 2439,
+      "total": 2457,
+      "centerX": 66.80273,
+      "centerY": 66.7416,
+      "radiusX": 3416.78917,
+      "radiusY": 1533.65894
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 10,
+      "visible_height": 20,
+      "density_zoom": 7.2
+    },
+    "scale": 0.33749,
+    "x_offset": 106.30064,
+    "y_offset": 217.96881,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:36.806Z"
+  "exported_at": "2026-08-19T05:10:40.810Z"
 }

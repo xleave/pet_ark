@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "angelina",
   "character_name": "Angelina",
   "localized_name": "安洁莉娜",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -259.37918,
+      "maxX": 249.60802,
+      "minY": -93.19546,
+      "maxY": 478.14786
+    },
+    "full_source_bounds": {
       "minX": -259.37918,
       "maxX": 701.48999,
       "minY": -93.19546,
       "maxY": 478.14786
     },
-    "scale": 0.18317,
-    "x_offset": 55.50984,
-    "y_offset": 198.92962,
+    "core_source_bounds": {
+      "minX": -259.37918,
+      "maxX": 249.60802,
+      "minY": -93.19546,
+      "maxY": 478.14786
+    },
+    "cluster": {
+      "retained": 2746,
+      "total": 2768,
+      "centerX": 6.71622,
+      "centerY": 141.2712,
+      "radiusX": 263.16803,
+      "radiusY": 507.79097
+    },
+    "scale": 0.34578,
+    "x_offset": 97.68936,
+    "y_offset": 183.77443,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:55.836Z"
+  "exported_at": "2026-08-19T05:04:32.599Z"
 }

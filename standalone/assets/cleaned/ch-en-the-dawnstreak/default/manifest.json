@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "ch-en-the-dawnstreak",
   "character_name": "Ch'en the Dawnstreak",
   "localized_name": "赤刃明霄陈",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -272.85742,
+      "maxX": 235.842,
+      "minY": -127.30634,
+      "maxY": 435.64133
+    },
+    "full_source_bounds": {
       "minX": -272.85742,
       "maxX": 1006.25073,
       "minY": -127.30634,
-      "maxY": 429.97174
+      "maxY": 435.64133
     },
-    "scale": 0.1376,
-    "x_offset": 45.54405,
-    "y_offset": 198.48317,
+    "core_source_bounds": {
+      "minX": -272.85742,
+      "maxX": 235.842,
+      "minY": -127.30634,
+      "maxY": 435.64133
+    },
+    "cluster": {
+      "retained": 2881,
+      "total": 2966,
+      "centerX": 6.32745,
+      "centerY": 121.36855,
+      "radiusX": 318.09718,
+      "radiusY": 581.94006
+    },
+    "scale": 0.34598,
+    "x_offset": 102.40331,
+    "y_offset": 171.95451,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:01.261Z"
+  "exported_at": "2026-08-19T05:04:36.069Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ebenholz",
   "character_name": "Ebenholz",
   "localized_name": "黑键",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -300.73468,
-      "maxX": 694.59644,
-      "minY": -131.21695,
+      "maxX": 692.97766,
+      "minY": -135.7326,
       "maxY": 546.27649
     },
-    "scale": 0.17683,
-    "x_offset": 61.17758,
-    "y_offset": 192.79749,
+    "full_source_bounds": {
+      "minX": -300.73468,
+      "maxX": 692.97766,
+      "minY": -135.7326,
+      "maxY": 546.27649
+    },
+    "core_source_bounds": {
+      "minX": -300.73468,
+      "maxX": 620.64307,
+      "minY": -135.7326,
+      "maxY": 546.27649
+    },
+    "cluster": {
+      "retained": 2501,
+      "total": 2501,
+      "centerX": 117.3615,
+      "centerY": 170.97871,
+      "radiusX": 1340.02903,
+      "radiusY": 631.04706
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 61,
+      "visible_height": 81,
+      "density_zoom": 1.7284
+    },
+    "scale": 0.30612,
+    "x_offset": 110.28382,
+    "y_offset": 215.9307,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:04.429Z"
+  "exported_at": "2026-08-19T05:10:49.303Z"
 }

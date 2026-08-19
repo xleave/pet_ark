@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "totter",
   "character_name": "Totter",
   "localized_name": "铅踝",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -235.4124,
       "maxX": 403.4313,
-      "minY": -91.54302,
+      "minY": -91.60242,
       "maxY": 439.18869
     },
-    "scale": 0.2755,
-    "x_offset": 72.85559,
-    "y_offset": 190.7801,
+    "full_source_bounds": {
+      "minX": -235.4124,
+      "maxX": 403.4313,
+      "minY": -91.60242,
+      "maxY": 439.18869
+    },
+    "core_source_bounds": {
+      "minX": -235.4124,
+      "maxX": 403.4313,
+      "minY": -91.60242,
+      "maxY": 439.18869
+    },
+    "cluster": {
+      "retained": 2695,
+      "total": 2695,
+      "centerX": 0.43129,
+      "centerY": 182.69215,
+      "radiusX": 407.47946,
+      "radiusY": 542.4964
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 64,
+      "visible_height": 104,
+      "density_zoom": 1.34615
+    },
+    "scale": 0.37086,
+    "x_offset": 104.5556,
+    "y_offset": 217.02811,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:35.028Z"
+  "exported_at": "2026-08-19T05:11:53.903Z"
 }

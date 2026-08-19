@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "virtuosa",
   "character_name": "Virtuosa",
   "localized_name": "塑心",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -436.07004,
+      "minX": -436.57004,
       "maxX": 861.09802,
       "minY": -210.56538,
       "maxY": 834.591
     },
-    "scale": 0.13568,
-    "x_offset": 67.16606,
-    "y_offset": 187.43045,
+    "full_source_bounds": {
+      "minX": -436.57004,
+      "maxX": 861.09802,
+      "minY": -210.56538,
+      "maxY": 834.591
+    },
+    "core_source_bounds": {
+      "minX": -382.33005,
+      "maxX": 861.09802,
+      "minY": -210.56538,
+      "maxY": 834.591
+    },
+    "cluster": {
+      "retained": 2384,
+      "total": 2384,
+      "centerX": 51.30144,
+      "centerY": 167.81964,
+      "radiusX": 1122.60418,
+      "radiusY": 646.29541
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 50,
+      "visible_height": 58,
+      "density_zoom": 2.41379
+    },
+    "scale": 0.32738,
+    "x_offset": 112.19916,
+    "y_offset": 217.06559,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:37.170Z"
+  "exported_at": "2026-08-19T05:10:22.612Z"
 }

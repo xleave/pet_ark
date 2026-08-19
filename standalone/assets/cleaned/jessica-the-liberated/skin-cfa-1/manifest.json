@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "jessica-the-liberated",
   "character_name": "Jessica the Liberated",
   "localized_name": "涤火杰西卡",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -246.78081,
-      "maxX": 384.70883,
+      "minX": -246.95226,
+      "maxX": 198.08136,
       "minY": -96.56956,
-      "maxY": 481.94949
+      "maxY": 405.07928
     },
-    "scale": 0.27871,
-    "x_offset": 76.77931,
-    "y_offset": 189.08548,
+    "full_source_bounds": {
+      "minX": -246.95226,
+      "maxX": 394.22253,
+      "minY": -96.56956,
+      "maxY": 486.64404
+    },
+    "core_source_bounds": {
+      "minX": -246.95226,
+      "maxX": 198.08136,
+      "minY": -96.56956,
+      "maxY": 405.07928
+    },
+    "cluster": {
+      "retained": 2537,
+      "total": 2537,
+      "centerX": 18.63155,
+      "centerY": 167.51651,
+      "radiusX": 320,
+      "radiusY": 585.04156
+    },
+    "scale": 0.39548,
+    "x_offset": 105.66363,
+    "y_offset": 177.80908,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:12.929Z"
+  "exported_at": "2026-08-19T05:07:57.148Z"
 }

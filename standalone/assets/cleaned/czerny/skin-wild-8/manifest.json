@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "czerny",
   "character_name": "Czerny",
   "localized_name": "车尔尼",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -288.8537,
+      "maxX": 308.70377,
+      "minY": -103.31664,
+      "maxY": 477.13983
+    },
+    "full_source_bounds": {
       "minX": -507.96616,
       "maxX": 539.30945,
       "minY": -103.31664,
-      "maxY": 505.19836
+      "maxY": 505.05603
     },
-    "scale": 0.16806,
-    "x_offset": 93.3663,
-    "y_offset": 198.63711,
+    "core_source_bounds": {
+      "minX": -288.8537,
+      "maxX": 308.70377,
+      "minY": -103.31664,
+      "maxY": 477.13983
+    },
+    "cluster": {
+      "retained": 1929,
+      "total": 1946,
+      "centerX": -2.87889,
+      "centerY": 161.2333,
+      "radiusX": 294.7693,
+      "radiusY": 729.27435
+    },
+    "scale": 0.29453,
+    "x_offset": 93.07676,
+    "y_offset": 185.56991,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:03.425Z"
+  "exported_at": "2026-08-19T05:04:37.706Z"
 }

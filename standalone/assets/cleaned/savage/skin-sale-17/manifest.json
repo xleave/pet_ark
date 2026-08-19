@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "savage",
   "character_name": "Savage",
   "localized_name": "暴行",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -413.00446,
+      "minX": -285.90686,
+      "maxX": 195.81001,
+      "minY": -117.64329,
+      "maxY": 460.66748
+    },
+    "full_source_bounds": {
+      "minX": -432.01834,
       "maxX": 1204.90002,
       "minY": -117.64329,
-      "maxY": 756.46155
+      "maxY": 719.50183
     },
-    "scale": 0.10878,
-    "x_offset": 52.92774,
-    "y_offset": 203.20245,
+    "core_source_bounds": {
+      "minX": -285.90686,
+      "maxX": 195.81001,
+      "minY": -117.64329,
+      "maxY": 460.66748
+    },
+    "cluster": {
+      "retained": 2161,
+      "total": 2185,
+      "centerX": -4.50276,
+      "centerY": 124.57747,
+      "radiusX": 318.06374,
+      "radiusY": 715.33875
+    },
+    "scale": 0.35967,
+    "x_offset": 112.20249,
+    "y_offset": 173.68745,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:29.460Z"
+  "exported_at": "2026-08-19T05:04:01.887Z"
 }

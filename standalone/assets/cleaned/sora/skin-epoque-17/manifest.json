@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "sora",
   "character_name": "Sora",
   "localized_name": "空",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -232.79114,
+      "minX": -232.75133,
+      "maxX": 192.92639,
+      "minY": -120.62491,
+      "maxY": 410.21902
+    },
+    "full_source_bounds": {
+      "minX": -232.75133,
       "maxX": 1096.5907,
-      "minY": -120.50909,
+      "minY": -120.62491,
       "maxY": 518.82935
     },
-    "scale": 0.13239,
-    "x_offset": 38.81977,
-    "y_offset": 200.04552,
+    "core_source_bounds": {
+      "minX": -232.75133,
+      "maxX": 192.92639,
+      "minY": -120.62491,
+      "maxY": 410.21902
+    },
+    "cluster": {
+      "retained": 2383,
+      "total": 2387,
+      "centerX": -0.21396,
+      "centerY": 134.52584,
+      "radiusX": 277.11416,
+      "radiusY": 714.6218
+    },
+    "scale": 0.39183,
+    "x_offset": 103.80228,
+    "y_offset": 168.73567,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:31.912Z"
+  "exported_at": "2026-08-19T05:03:50.869Z"
 }

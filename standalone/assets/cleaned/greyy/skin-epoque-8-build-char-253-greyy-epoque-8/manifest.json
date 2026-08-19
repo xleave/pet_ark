@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "greyy",
   "character_name": "Greyy",
   "localized_name": "格雷伊",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -401.14355,
-      "maxX": 224.81657,
+      "maxX": 223.41782,
       "minY": -94.96428,
-      "maxY": 424.34607
+      "maxY": 432.22552
     },
-    "scale": 0.28117,
-    "x_offset": 120.78876,
-    "y_offset": 189.29908,
+    "full_source_bounds": {
+      "minX": -401.14355,
+      "maxX": 223.41782,
+      "minY": -94.96428,
+      "maxY": 432.22552
+    },
+    "core_source_bounds": {
+      "minX": -401.14355,
+      "maxX": 187.54549,
+      "minY": -94.96428,
+      "maxY": 419.73404
+    },
+    "cluster": {
+      "retained": 2077,
+      "total": 2077,
+      "centerX": -9.35175,
+      "centerY": 156.11793,
+      "radiusX": 501.29012,
+      "radiusY": 614.99969
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 60,
+      "visible_height": 118,
+      "density_zoom": 1.2
+    },
+    "scale": 0.33816,
+    "x_offset": 100.24963,
+    "y_offset": 216.28713,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:09.210Z"
+  "exported_at": "2026-08-19T05:11:31.100Z"
 }

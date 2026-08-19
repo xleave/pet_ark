@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "lava",
   "character_name": "Lava",
   "localized_name": "炎熔",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -460.22281,
       "maxX": 276.60184,
-      "minY": -113.10926,
+      "minY": -112.54788,
       "maxY": 508.01416
     },
-    "scale": 0.23886,
-    "x_offset": 117.93011,
-    "y_offset": 188.98241,
+    "full_source_bounds": {
+      "minX": -460.22281,
+      "maxX": 276.60184,
+      "minY": -112.54788,
+      "maxY": 508.01416
+    },
+    "core_source_bounds": {
+      "minX": -460.22281,
+      "maxX": 276.60184,
+      "minY": -112.54788,
+      "maxY": 508.01416
+    },
+    "cluster": {
+      "retained": 2013,
+      "total": 2013,
+      "centerX": -0.2668,
+      "centerY": 260.15587,
+      "radiusX": 455.02081,
+      "radiusY": 764.9968
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 39,
+      "visible_height": 94,
+      "density_zoom": 1.71647
+    },
+    "scale": 0.41,
+    "x_offset": 97.5965,
+    "y_offset": 216.19996,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:14.727Z"
+  "exported_at": "2026-08-19T05:10:31.931Z"
 }

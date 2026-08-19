@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "meteor",
   "character_name": "Meteor",
   "localized_name": "流星",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -277.89417,
+      "maxX": 380.32733,
+      "minY": -127.03493,
+      "maxY": 410.72409
+    },
+    "full_source_bounds": {
       "minX": -1347.70117,
-      "maxX": 996.85602,
-      "minY": -124.78798,
+      "maxX": 1093.12744,
+      "minY": -144.54871,
       "maxY": 1073.44006
     },
-    "scale": 0.07507,
-    "x_offset": 109.16853,
-    "y_offset": 206.63248,
+    "core_source_bounds": {
+      "minX": -277.89417,
+      "maxX": 380.32733,
+      "minY": -127.03493,
+      "maxY": 410.72409
+    },
+    "cluster": {
+      "retained": 3139,
+      "total": 3212,
+      "centerX": -4.12945,
+      "centerY": 127.26563,
+      "radiusX": 290.25824,
+      "radiusY": 701.73467
+    },
+    "scale": 0.26739,
+    "x_offset": 82.30534,
+    "y_offset": 182.03249,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:18.216Z"
+  "exported_at": "2026-08-19T05:03:16.516Z"
 }

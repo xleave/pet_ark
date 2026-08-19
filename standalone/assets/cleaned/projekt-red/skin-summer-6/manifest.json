@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "projekt-red",
   "character_name": "Projekt Red",
   "localized_name": "红",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -234.46133,
+      "minX": -234.59834,
       "maxX": 461.92395,
-      "minY": -126.50246,
+      "minY": -126.80527,
       "maxY": 490.46909
     },
-    "scale": 0.25273,
-    "x_offset": 67.25627,
-    "y_offset": 184.02857,
+    "full_source_bounds": {
+      "minX": -234.59834,
+      "maxX": 461.92395,
+      "minY": -126.80527,
+      "maxY": 490.46909
+    },
+    "core_source_bounds": {
+      "minX": -234.59834,
+      "maxX": 416.27667,
+      "minY": -126.80527,
+      "maxY": 404.35342
+    },
+    "cluster": {
+      "retained": 1484,
+      "total": 1485,
+      "centerX": -1.25907,
+      "centerY": 229.43521,
+      "radiusX": 368.68546,
+      "radiusY": 612.48165
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 58,
+      "visible_height": 102,
+      "density_zoom": 1.37255
+    },
+    "scale": 0.34682,
+    "x_offset": 98.44209,
+    "y_offset": 217.31538,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:24.629Z"
+  "exported_at": "2026-08-19T05:11:46.312Z"
 }

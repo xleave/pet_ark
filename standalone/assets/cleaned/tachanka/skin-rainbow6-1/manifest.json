@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "tachanka",
   "character_name": "Tachanka",
   "localized_name": "战车",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -254.65298,
+      "maxX": 134.98218,
+      "minY": -112.05579,
+      "maxY": 385.26785
+    },
+    "full_source_bounds": {
       "minX": -319.27219,
       "maxX": 424.93875,
       "minY": -112.05579,
       "maxY": 386.12384
     },
-    "scale": 0.23649,
-    "x_offset": 83.50535,
-    "y_offset": 189.49969,
+    "core_source_bounds": {
+      "minX": -254.65298,
+      "maxX": 134.98218,
+      "minY": -112.05579,
+      "maxY": 385.26785
+    },
+    "cluster": {
+      "retained": 1070,
+      "total": 1070,
+      "centerX": -14.78439,
+      "centerY": 108.69013,
+      "radiusX": 301.32768,
+      "radiusY": 566.19293
+    },
+    "scale": 0.41,
+    "x_offset": 120.53252,
+    "y_offset": 170.05712,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:20.143Z"
+  "exported_at": "2026-08-19T05:04:50.850Z"
 }

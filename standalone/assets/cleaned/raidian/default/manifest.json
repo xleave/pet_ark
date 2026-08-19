@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "raidian",
   "character_name": "Raidian",
   "localized_name": "电弧",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -219.16605,
+      "minX": -219.00505,
       "maxX": 457.43268,
       "minY": -97.56435,
       "maxY": 518.81836
     },
-    "scale": 0.26012,
-    "x_offset": 65.01049,
-    "y_offset": 190.62111,
+    "full_source_bounds": {
+      "minX": -219.00505,
+      "maxX": 457.43268,
+      "minY": -97.56435,
+      "maxY": 518.81836
+    },
+    "core_source_bounds": {
+      "minX": -219.00505,
+      "maxX": 457.43268,
+      "minY": -97.56435,
+      "maxY": 518.81836
+    },
+    "cluster": {
+      "retained": 2703,
+      "total": 2703,
+      "centerX": -3.76116,
+      "centerY": 236.7168,
+      "radiusX": 650.2969,
+      "radiusY": 665.59433
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 67,
+      "visible_height": 107,
+      "density_zoom": 1.30841
+    },
+    "scale": 0.34043,
+    "x_offset": 111.6776,
+    "y_offset": 215.49635,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:26.853Z"
+  "exported_at": "2026-08-19T05:11:48.037Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "vulpisfoglia",
   "character_name": "Vulpisfoglia",
   "localized_name": "忍冬",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -1545.54773,
-      "maxX": 699.88043,
-      "minY": -103.91454,
-      "maxY": 418.64468
+      "minX": -225.5575,
+      "maxX": 214.91626,
+      "minY": -105.57211,
+      "maxY": 412.39767
     },
-    "scale": 0.07838,
-    "x_offset": 129.14233,
-    "y_offset": 207.85502,
+    "full_source_bounds": {
+      "minX": -1545.54773,
+      "maxX": 790.90643,
+      "minY": -105.57211,
+      "maxY": 417.00531
+    },
+    "core_source_bounds": {
+      "minX": -225.5575,
+      "maxX": 214.91626,
+      "minY": -105.57211,
+      "maxY": 412.39767
+    },
+    "cluster": {
+      "retained": 2914,
+      "total": 2973,
+      "centerX": 6.68532,
+      "centerY": 119.29038,
+      "radiusX": 292.70845,
+      "radiusY": 546.68568
+    },
+    "scale": 0.39957,
+    "x_offset": 98.12596,
+    "y_offset": 173.81657,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:37.443Z"
+  "exported_at": "2026-08-19T05:03:42.509Z"
 }

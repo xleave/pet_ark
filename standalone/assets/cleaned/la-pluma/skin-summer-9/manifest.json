@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "la-pluma",
   "character_name": "La Pluma",
   "localized_name": "羽毛笔",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -231.24857,
-      "maxX": 1054.29004,
-      "minY": -111.45169,
-      "maxY": 661.21436
+      "minX": -231.49521,
+      "maxX": 255.67221,
+      "minY": -112.53582,
+      "maxY": 570.17242
     },
-    "scale": 0.13691,
-    "x_offset": 39.65969,
-    "y_offset": 200.74142,
+    "full_source_bounds": {
+      "minX": -231.49521,
+      "maxX": 589.09747,
+      "minY": -112.53582,
+      "maxY": 723.08905
+    },
+    "core_source_bounds": {
+      "minX": -231.49521,
+      "maxX": 255.67221,
+      "minY": -112.53582,
+      "maxY": 570.17242
+    },
+    "cluster": {
+      "retained": 1925,
+      "total": 1925,
+      "centerX": 12.53121,
+      "centerY": 180.29633,
+      "radiusX": 399.6255,
+      "radiusY": 559.53274
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 57,
+      "visible_height": 119,
+      "density_zoom": 1.26316
+    },
+    "scale": 0.38484,
+    "x_offset": 98.92675,
+    "y_offset": 215.63852,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:14.230Z"
+  "exported_at": "2026-08-19T05:10:56.678Z"
 }

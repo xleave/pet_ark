@@ -9,6 +9,8 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const TEMPLATE = path.join(ROOT, 'standalone', 'systemd', 'pet-ark.service.in');
+const INSTANCE_TEMPLATE = path.join(ROOT, 'standalone', 'systemd', 'pet-ark@.service.in');
+const CONTEXT_TEMPLATE = path.join(ROOT, 'standalone', 'systemd', 'pet-ark-context.service.in');
 const DEFAULT_LAUNCHER = path.join(ROOT, 'standalone', 'dist', 'app', 'pet-ark');
 
 function usage() {
@@ -60,13 +62,23 @@ async function main() {
   const launcher = path.resolve(option(args, '--launcher', DEFAULT_LAUNCHER));
   const home = os.homedir();
   const unitPath = path.join(home, '.config', 'systemd', 'user', 'pet-ark.service');
+  const instanceUnitPath = path.join(home, '.config', 'systemd', 'user', 'pet-ark@.service');
+  const contextUnitPath = path.join(home, '.config', 'systemd', 'user', 'pet-ark-context.service');
   const environmentPath = path.join(home, '.config', 'pet-ark', 'runtime.env');
   const launcherStat = await fs.stat(launcher);
   if (!launcherStat.isFile()) throw new Error(`launcher is not a file: ${launcher}`);
 
-  const template = await fs.readFile(TEMPLATE, 'utf8');
+  const [template, instanceTemplate, contextTemplate] = await Promise.all([
+    fs.readFile(TEMPLATE, 'utf8'),
+    fs.readFile(INSTANCE_TEMPLATE, 'utf8'),
+    fs.readFile(CONTEXT_TEMPLATE, 'utf8'),
+  ]);
   const unit = template
     .replace('@PET_ARK_LAUNCHER@', unitQuote(launcher));
+  const instanceUnit = instanceTemplate.replace('@PET_ARK_LAUNCHER@', unitQuote(launcher));
+  const contextUnit = contextTemplate
+    .replace('@NODE@', unitQuote(process.execPath))
+    .replace('@CONTEXT_BROKER@', unitQuote(path.join(ROOT, 'scripts', 'pet-ark-context-broker.mjs')));
   const defaultEnvironment = `PET_ARK_CHARACTER=amiya
 PET_ARK_VARIANT=default
 PET_ARK_SCALE=1
@@ -79,6 +91,8 @@ PET_ARK_VERBOSE=true
 
   await run('systemctl', ['--user', 'stop', 'pet-ark.service'], { allowFailure: true });
   await writeAtomic(unitPath, unit);
+  await writeAtomic(instanceUnitPath, instanceUnit);
+  await writeAtomic(contextUnitPath, contextUnit);
   try {
     await fs.access(environmentPath);
   } catch {
@@ -89,6 +103,8 @@ PET_ARK_VERBOSE=true
   else await run('systemctl', ['--user', 'disable', 'pet-ark.service'], { allowFailure: true });
   if (!args.includes('--no-start')) await run('systemctl', ['--user', 'start', 'pet-ark.service']);
   console.log(`installed ${unitPath}`);
+  console.log(`installed ${instanceUnitPath}`);
+  console.log(`installed ${contextUnitPath}`);
   console.log(`configuration ${environmentPath}`);
   console.log(`login startup ${args.includes('--enable') ? 'enabled' : 'disabled'}`);
 }

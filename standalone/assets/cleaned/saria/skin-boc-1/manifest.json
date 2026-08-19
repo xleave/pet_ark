@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "saria",
   "character_name": "Saria",
   "localized_name": "塞雷娅",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -215.33369,
+      "maxX": 223.1357,
+      "minY": -148.87419,
+      "maxY": 401.42737
+    },
+    "full_source_bounds": {
       "minX": -215.33369,
       "maxX": 464.38501,
       "minY": -148.87419,
       "maxY": 415.26752
     },
-    "scale": 0.25893,
-    "x_offset": 63.75649,
-    "y_offset": 177.45191,
+    "core_source_bounds": {
+      "minX": -215.33369,
+      "maxX": 223.1357,
+      "minY": -148.87419,
+      "maxY": 401.42737
+    },
+    "cluster": {
+      "retained": 2030,
+      "total": 2030,
+      "centerX": 3.17278,
+      "centerY": 190.92832,
+      "radiusX": 389.96207,
+      "radiusY": 577.8458
+    },
+    "scale": 0.37797,
+    "x_offset": 94.52552,
+    "y_offset": 159.72934,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:18.883Z"
+  "exported_at": "2026-08-19T05:08:04.295Z"
 }

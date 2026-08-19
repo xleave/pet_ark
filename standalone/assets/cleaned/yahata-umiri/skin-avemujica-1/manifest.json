@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "yahata-umiri",
   "character_name": "Yahata Umiri",
   "localized_name": "八幡海铃",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -863.7851,
+      "minX": -265.54126,
       "maxX": 207.27588,
-      "minY": -100.12765,
+      "minY": -99.44733,
+      "maxY": 935.63879
+    },
+    "full_source_bounds": {
+      "minX": -863.7851,
+      "maxX": 281.86386,
+      "minY": -99.44733,
       "maxY": 1291.61011
     },
-    "scale": 0.14945,
-    "x_offset": 145.05878,
-    "y_offset": 201.03558,
+    "core_source_bounds": {
+      "minX": -265.54126,
+      "maxX": 207.27588,
+      "minY": -99.44733,
+      "maxY": 935.63879
+    },
+    "cluster": {
+      "retained": 2164,
+      "total": 2183,
+      "centerX": -26.77103,
+      "centerY": 143.18244,
+      "radiusX": 497.54705,
+      "radiusY": 770.0449
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 52,
+      "visible_height": 87,
+      "density_zoom": 1.6092
+    },
+    "scale": 0.32337,
+    "x_offset": 101.39756,
+    "y_offset": 216.02593,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:39.268Z"
+  "exported_at": "2026-08-19T05:10:40.983Z"
 }

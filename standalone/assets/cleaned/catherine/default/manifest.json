@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "catherine",
   "character_name": "Catherine",
   "localized_name": "凯瑟琳",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -128.00148,
+      "maxX": 168.53419,
+      "minY": -101.02703,
+      "maxY": 409.99338
+    },
+    "full_source_bounds": {
       "minX": -950.52167,
       "maxX": 168.53419,
-      "minY": -101.11093,
-      "maxY": 411.06082
+      "minY": -101.02703,
+      "maxY": 409.99338
     },
-    "scale": 0.15728,
-    "x_offset": 157.49371,
-    "y_offset": 200.09773,
+    "core_source_bounds": {
+      "minX": -128.00148,
+      "maxX": 168.53419,
+      "minY": -101.02703,
+      "maxY": 409.99338
+    },
+    "cluster": {
+      "retained": 2448,
+      "total": 2465,
+      "centerX": 3.17382,
+      "centerY": 158.21694,
+      "radiusX": 256,
+      "radiusY": 575.77788
+    },
+    "scale": 0.40703,
+    "x_offset": 87.75101,
+    "y_offset": 174.87909,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:00.654Z"
+  "exported_at": "2026-08-19T05:04:12.288Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "kestrel",
   "character_name": "Kestrel",
   "localized_name": "红隼",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -232.02994,
+      "maxX": 260.67996,
+      "minY": -123.67739,
+      "maxY": 394.80716
+    },
+    "full_source_bounds": {
       "minX": -232.02994,
       "maxX": 816.71631,
       "minY": -123.67739,
-      "maxY": 393.89832
+      "maxY": 394.80716
     },
-    "scale": 0.16782,
-    "x_offset": 46.93913,
-    "y_offset": 195.24453,
+    "core_source_bounds": {
+      "minX": -232.02994,
+      "maxX": 260.67996,
+      "minY": -123.67739,
+      "maxY": 394.80716
+    },
+    "cluster": {
+      "retained": 2024,
+      "total": 2068,
+      "centerX": -4.60889,
+      "centerY": 137.87118,
+      "radiusX": 283.80091,
+      "radiusY": 627.47791
+    },
+    "scale": 0.35721,
+    "x_offset": 90.88299,
+    "y_offset": 171.82143,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:13.602Z"
+  "exported_at": "2026-08-19T05:04:18.467Z"
 }

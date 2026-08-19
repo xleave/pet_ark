@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "nightingale",
   "character_name": "Nightingale",
   "localized_name": "夜莺",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -251.07877,
       "maxX": 588.48969,
-      "minY": -136.58047,
+      "minY": -136.26773,
       "maxY": 426.13586
     },
-    "scale": 0.20963,
-    "x_offset": 60.63402,
-    "y_offset": 187.36843,
+    "full_source_bounds": {
+      "minX": -251.07877,
+      "maxX": 588.48969,
+      "minY": -136.26773,
+      "maxY": 426.13586
+    },
+    "core_source_bounds": {
+      "minX": -251.07877,
+      "maxX": 588.48969,
+      "minY": -136.26773,
+      "maxY": 426.13586
+    },
+    "cluster": {
+      "retained": 1309,
+      "total": 1309,
+      "centerX": 46.04784,
+      "centerY": 135.56227,
+      "radiusX": 889.11708,
+      "radiusY": 726.95703
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 81,
+      "visible_height": 89,
+      "density_zoom": 1.57303
+    },
+    "scale": 0.32976,
+    "x_offset": 104.8625,
+    "y_offset": 216.68268,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:21.697Z"
+  "exported_at": "2026-08-19T05:11:04.650Z"
 }

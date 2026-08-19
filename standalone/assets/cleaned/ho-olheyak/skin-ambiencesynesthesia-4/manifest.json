@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ho-olheyak",
   "character_name": "Ho'olheyak",
   "localized_name": "霍尔海雅",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -428.47998,
       "maxX": 611.29559,
-      "minY": -137.75333,
+      "minY": -138.82149,
       "maxY": 494.81616
     },
-    "scale": 0.16927,
-    "x_offset": 80.52765,
-    "y_offset": 192.68287,
+    "full_source_bounds": {
+      "minX": -428.47998,
+      "maxX": 611.29559,
+      "minY": -138.82149,
+      "maxY": 494.81616
+    },
+    "core_source_bounds": {
+      "minX": -428.47998,
+      "maxX": 611.29559,
+      "minY": -138.82149,
+      "maxY": 494.81616
+    },
+    "cluster": {
+      "retained": 2208,
+      "total": 2208,
+      "centerX": -7.81049,
+      "centerY": 194.67998,
+      "radiusX": 570.57589,
+      "radiusY": 630.38631
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 52,
+      "visible_height": 71,
+      "density_zoom": 1.97183
+    },
+    "scale": 0.33377,
+    "x_offset": 107.8855,
+    "y_offset": 216.98998,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:10.641Z"
+  "exported_at": "2026-08-19T05:10:53.728Z"
 }

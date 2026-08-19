@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "pepe",
   "character_name": "Pepe",
   "localized_name": "佩佩",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -660.98828,
-      "maxX": 308.13449,
-      "minY": -139.96265,
+      "maxX": 212.8524,
+      "minY": -140.83205,
       "maxY": 627.05707
     },
-    "scale": 0.18161,
-    "x_offset": 128.04045,
-    "y_offset": 190.58173,
+    "full_source_bounds": {
+      "minX": -660.98828,
+      "maxX": 212.8524,
+      "minY": -140.83205,
+      "maxY": 627.05707
+    },
+    "core_source_bounds": {
+      "minX": -660.98828,
+      "maxX": 203.44003,
+      "minY": -140.83205,
+      "maxY": 627.05707
+    },
+    "cluster": {
+      "retained": 3104,
+      "total": 3104,
+      "centerX": -81.79194,
+      "centerY": 234.14045,
+      "radiusX": 2034.91558,
+      "radiusY": 1037.14668
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 66,
+      "visible_height": 87,
+      "density_zoom": 1.6092
+    },
+    "scale": 0.32411,
+    "x_offset": 98.62212,
+    "y_offset": 215.41274,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:23.244Z"
+  "exported_at": "2026-08-19T05:11:06.133Z"
 }

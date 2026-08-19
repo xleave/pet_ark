@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "dobermann",
   "character_name": "Dobermann",
   "localized_name": "杜宾",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -354.63837,
       "maxX": 389.28964,
-      "minY": -118.90764,
+      "minY": -118.49238,
       "maxY": 673.33722
     },
-    "scale": 0.23658,
-    "x_offset": 91.90107,
-    "y_offset": 187.86859,
+    "full_source_bounds": {
+      "minX": -354.63837,
+      "maxX": 389.28964,
+      "minY": -118.49238,
+      "maxY": 673.33722
+    },
+    "core_source_bounds": {
+      "minX": -354.63837,
+      "maxX": 389.28964,
+      "minY": -118.49238,
+      "maxY": 673.33722
+    },
+    "cluster": {
+      "retained": 1875,
+      "total": 1876,
+      "centerX": 7.16976,
+      "centerY": 202.64003,
+      "radiusX": 320,
+      "radiusY": 595.00046
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 54,
+      "visible_height": 102,
+      "density_zoom": 1.37255
+    },
+    "scale": 0.32472,
+    "x_offset": 100.66813,
+    "y_offset": 215.95448,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:03.798Z"
+  "exported_at": "2026-08-19T05:10:47.932Z"
 }

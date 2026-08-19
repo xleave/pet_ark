@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "gracebearer",
   "character_name": "Gracebearer",
   "localized_name": "聆音",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -264.96185,
+      "maxX": 247.48677,
+      "minY": -118.56467,
+      "maxY": 400.78021
+    },
+    "full_source_bounds": {
       "minX": -1103.80701,
       "maxX": 541.95044,
       "minY": -118.56467,
       "maxY": 541.16382
     },
-    "scale": 0.10694,
-    "x_offset": 126.04293,
-    "y_offset": 203.3205,
+    "core_source_bounds": {
+      "minX": -264.96185,
+      "maxX": 247.48677,
+      "minY": -118.56467,
+      "maxY": 400.78021
+    },
+    "cluster": {
+      "retained": 2621,
+      "total": 2627,
+      "centerX": -3.60582,
+      "centerY": 133.4381,
+      "radiusX": 313.00769,
+      "radiusY": 627.51683
+    },
+    "scale": 0.34345,
+    "x_offset": 99.0009,
+    "y_offset": 175.27907,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:08.818Z"
+  "exported_at": "2026-08-19T05:03:56.892Z"
 }

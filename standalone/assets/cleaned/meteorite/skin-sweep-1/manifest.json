@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "meteorite",
   "character_name": "Meteorite",
   "localized_name": "陨星",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -237.18456,
       "maxX": 368.6571,
       "minY": -107.89017,
       "maxY": 495.09204
     },
-    "scale": 0.2905,
-    "x_offset": 76.90329,
-    "y_offset": 184.65737,
+    "full_source_bounds": {
+      "minX": -237.18456,
+      "maxX": 368.6571,
+      "minY": -107.89017,
+      "maxY": 495.09204
+    },
+    "core_source_bounds": {
+      "minX": -237.18456,
+      "maxX": 368.6571,
+      "minY": -107.89017,
+      "maxY": 495.09204
+    },
+    "cluster": {
+      "retained": 1356,
+      "total": 1356,
+      "centerX": 13.9071,
+      "centerY": 203.09081,
+      "radiusX": 353.74477,
+      "radiusY": 573.62595
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 75,
+      "visible_height": 110,
+      "density_zoom": 1.27273
+    },
+    "scale": 0.36973,
+    "x_offset": 104.786,
+    "y_offset": 216.83665,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:18.106Z"
+  "exported_at": "2026-08-19T05:11:39.101Z"
 }

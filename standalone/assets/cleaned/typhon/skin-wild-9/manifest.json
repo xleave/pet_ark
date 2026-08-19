@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "typhon",
   "character_name": "Typhon",
   "localized_name": "提丰",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -274.6687,
+      "maxX": 211.26096,
+      "minY": -157.06639,
+      "maxY": 445.06421
+    },
+    "full_source_bounds": {
       "minX": -274.6687,
       "maxX": 3642.68945,
       "minY": -1401.50012,
       "maxY": 515.36224
     },
-    "scale": 0.04493,
-    "x_offset": 20.34038,
-    "y_offset": 153.03307,
+    "core_source_bounds": {
+      "minX": -274.6687,
+      "maxX": 211.26096,
+      "minY": -157.06639,
+      "maxY": 445.06421
+    },
+    "cluster": {
+      "retained": 3061,
+      "total": 3068,
+      "centerX": 0.42116,
+      "centerY": 134.12664,
+      "radiusX": 343.00747,
+      "radiusY": 692.40305
+    },
+    "scale": 0.34544,
+    "x_offset": 106.95179,
+    "y_offset": 161.74298,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:35.583Z"
+  "exported_at": "2026-08-19T05:03:10.427Z"
 }

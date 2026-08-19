@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "shaw",
   "character_name": "Shaw",
   "localized_name": "阿消",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -237.99971,
+      "minX": -238.56442,
       "maxX": 500.75647,
-      "minY": -96.47111,
-      "maxY": 418.5415
+      "minY": -97.06757,
+      "maxY": 538.66333
     },
-    "scale": 0.23824,
-    "x_offset": 64.70064,
-    "y_offset": 193.01689,
+    "full_source_bounds": {
+      "minX": -238.56442,
+      "maxX": 500.75647,
+      "minY": -97.06757,
+      "maxY": 538.66333
+    },
+    "core_source_bounds": {
+      "minX": -238.56442,
+      "maxX": 500.75647,
+      "minY": -97.06757,
+      "maxY": 410.7991
+    },
+    "cluster": {
+      "retained": 2414,
+      "total": 2414,
+      "centerX": -28.23684,
+      "centerY": 176.82777,
+      "radiusX": 525.02041,
+      "radiusY": 521.35979
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 65,
+      "visible_height": 97,
+      "density_zoom": 1.4433
+    },
+    "scale": 0.34359,
+    "x_offset": 111.57574,
+    "y_offset": 217.28808,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:30.256Z"
+  "exported_at": "2026-08-19T05:11:10.736Z"
 }

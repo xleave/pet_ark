@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "nearl-the-radiant-knight",
   "character_name": "Nearl the Radiant Knight",
   "localized_name": "耀骑士临光",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -421.36127,
+      "minX": -275.47604,
+      "maxX": 207.03255,
+      "minY": -113.42432,
+      "maxY": 425.76102
+    },
+    "full_source_bounds": {
+      "minX": -415.04108,
       "maxX": 576.52509,
       "minY": -113.42432,
       "maxY": 615.98041
     },
-    "scale": 0.17637,
-    "x_offset": 82.31666,
-    "y_offset": 195.99504,
+    "core_source_bounds": {
+      "minX": -275.47604,
+      "maxX": 207.03255,
+      "minY": -113.42432,
+      "maxY": 425.76102
+    },
+    "cluster": {
+      "retained": 2829,
+      "total": 2834,
+      "centerX": -0.81563,
+      "centerY": 143.29842,
+      "radiusX": 285.48388,
+      "radiusY": 617.13423
+    },
+    "scale": 0.36476,
+    "x_offset": 108.48274,
+    "y_offset": 174.62731,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:21.236Z"
+  "exported_at": "2026-08-19T05:05:01.618Z"
 }

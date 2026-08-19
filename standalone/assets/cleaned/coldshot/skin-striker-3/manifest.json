@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "coldshot",
   "character_name": "Coldshot",
   "localized_name": "冰酿",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -307.73904,
-      "maxX": 457.62006,
+      "maxX": 219.28358,
       "minY": -107.24545,
-      "maxY": 449.85229
+      "maxY": 446.42017
     },
-    "scale": 0.22996,
-    "x_offset": 78.76687,
-    "y_offset": 191.33811,
+    "full_source_bounds": {
+      "minX": -307.73904,
+      "maxX": 457.66641,
+      "minY": -107.24545,
+      "maxY": 451.52798
+    },
+    "core_source_bounds": {
+      "minX": -307.73904,
+      "maxX": 219.28358,
+      "minY": -107.24545,
+      "maxY": 446.42017
+    },
+    "cluster": {
+      "retained": 2848,
+      "total": 2848,
+      "centerX": -11.90992,
+      "centerY": 241.41214,
+      "radiusX": 511.2698,
+      "radiusY": 675.08186
+    },
+    "scale": 0.33395,
+    "x_offset": 110.76992,
+    "y_offset": 180.18522,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:02.373Z"
+  "exported_at": "2026-08-19T05:07:54.756Z"
 }

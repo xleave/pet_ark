@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "beeswax",
   "character_name": "Beeswax",
   "localized_name": "蜜蜡",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -228.48239,
+      "maxX": 179.487,
+      "minY": -123.74768,
+      "maxY": 485.37894
+    },
+    "full_source_bounds": {
       "minX": -394.8288,
       "maxX": 297.05396,
       "minY": -123.74768,
       "maxY": 488.24118
     },
-    "scale": 0.25438,
-    "x_offset": 108.4359,
-    "y_offset": 184.52127,
+    "core_source_bounds": {
+      "minX": -228.48239,
+      "maxX": 179.487,
+      "minY": -123.74768,
+      "maxY": 485.37894
+    },
+    "cluster": {
+      "retained": 2166,
+      "total": 2166,
+      "centerX": 0.67754,
+      "centerY": 206.29099,
+      "radiusX": 337.96432,
+      "radiusY": 596.34205
+    },
+    "scale": 0.34147,
+    "x_offset": 104.36529,
+    "y_offset": 173.74357,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:58.423Z"
+  "exported_at": "2026-08-19T05:07:53.363Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "ray",
   "character_name": "Ray",
   "localized_name": "莱伊",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -501.28915,
-      "maxX": 531.81195,
-      "minY": -102.76912,
-      "maxY": 901.46686
+      "minX": -238.06465,
+      "maxX": 214.60001,
+      "minY": -102.85454,
+      "maxY": 441.45819
     },
-    "scale": 0.17036,
-    "x_offset": 93.40005,
-    "y_offset": 198.49216,
+    "full_source_bounds": {
+      "minX": -524.42139,
+      "maxX": 537.10449,
+      "minY": -104.34148,
+      "maxY": 886.896
+    },
+    "core_source_bounds": {
+      "minX": -238.06465,
+      "maxX": 214.60001,
+      "minY": -102.85454,
+      "maxY": 441.45819
+    },
+    "cluster": {
+      "retained": 3394,
+      "total": 3397,
+      "centerX": -2.52684,
+      "centerY": 172.20484,
+      "radiusX": 275.94526,
+      "radiusY": 717.46252
+    },
+    "scale": 0.38213,
+    "x_offset": 100.48331,
+    "y_offset": 176.69586,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:26.997Z"
+  "exported_at": "2026-08-19T05:04:47.946Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "jaye",
   "character_name": "Jaye",
   "localized_name": "孑",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -234.69894,
+      "minX": -234.73654,
       "maxX": 570.94043,
       "minY": -97.39633,
-      "maxY": 384.84436
+      "maxY": 384.87845
     },
-    "scale": 0.21846,
-    "x_offset": 59.27234,
-    "y_offset": 194.72279,
+    "full_source_bounds": {
+      "minX": -234.73654,
+      "maxX": 570.94043,
+      "minY": -97.39633,
+      "maxY": 384.87845
+    },
+    "core_source_bounds": {
+      "minX": -234.73654,
+      "maxX": 570.94043,
+      "minY": -97.39633,
+      "maxY": 384.87845
+    },
+    "cluster": {
+      "retained": 1578,
+      "total": 1578,
+      "centerX": 28.10536,
+      "centerY": 156.32582,
+      "radiusX": 432.60839,
+      "radiusY": 814.95148
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 43,
+      "visible_height": 83,
+      "density_zoom": 1.68675
+    },
+    "scale": 0.36847,
+    "x_offset": 98.15593,
+    "y_offset": 217.22085,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:12.573Z"
+  "exported_at": "2026-08-19T05:10:29.273Z"
 }

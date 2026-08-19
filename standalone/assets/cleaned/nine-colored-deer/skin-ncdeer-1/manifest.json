@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "nine-colored-deer",
   "character_name": "Nine-Colored Deer",
   "localized_name": "九色鹿",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -440.68262,
       "maxX": 1333.43286,
       "minY": -331.07739,
       "maxY": 605.48944
     },
-    "scale": 0.0992,
-    "x_offset": 51.71764,
-    "y_offset": 183.15568,
+    "full_source_bounds": {
+      "minX": -440.68262,
+      "maxX": 1333.43286,
+      "minY": -331.07739,
+      "maxY": 605.48944
+    },
+    "core_source_bounds": {
+      "minX": -440.68262,
+      "maxX": 959.07465,
+      "minY": -327.90442,
+      "maxY": 605.48944
+    },
+    "cluster": {
+      "retained": 2214,
+      "total": 2224,
+      "centerX": -10.29922,
+      "centerY": 158.86101,
+      "radiusX": 932.2667,
+      "radiusY": 1197.26475
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 25,
+      "visible_height": 47,
+      "density_zoom": 2.97872
+    },
+    "scale": 0.2955,
+    "x_offset": 104.0951,
+    "y_offset": 216.46372,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:22.009Z"
+  "exported_at": "2026-08-19T05:11:43.768Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "aphrissa",
   "character_name": "Aphrissa",
   "localized_name": "谬因",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -264.66501,
+      "minX": -257.89813,
+      "maxX": 264.38596,
+      "minY": -122.4502,
+      "maxY": 580.04559
+    },
+    "full_source_bounds": {
+      "minX": -266.64618,
       "maxX": 1134.2738,
       "minY": -122.4502,
       "maxY": 580.04559
     },
-    "scale": 0.12581,
-    "x_offset": 41.29741,
-    "y_offset": 200.59458,
+    "core_source_bounds": {
+      "minX": -257.89813,
+      "maxX": 264.38596,
+      "minY": -122.4502,
+      "maxY": 580.04559
+    },
+    "cluster": {
+      "retained": 3141,
+      "total": 3148,
+      "centerX": 9.50958,
+      "centerY": 138.07134,
+      "radiusX": 349.35278,
+      "radiusY": 625.8435
+    },
+    "scale": 0.29609,
+    "x_offset": 95.03952,
+    "y_offset": 179.74406,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:56.271Z"
+  "exported_at": "2026-08-19T05:04:08.404Z"
 }

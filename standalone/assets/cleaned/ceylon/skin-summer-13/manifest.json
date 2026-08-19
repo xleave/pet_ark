@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "ceylon",
   "character_name": "Ceylon",
   "localized_name": "锡兰",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -320.88751,
+      "maxX": 206.25517,
+      "minY": -89.69978,
+      "maxY": 680.49268
+    },
+    "full_source_bounds": {
       "minX": -1037.61047,
       "maxX": 219.73615,
       "minY": -89.69978,
       "maxY": 680.49268
     },
-    "scale": 0.13998,
-    "x_offset": 153.24193,
-    "y_offset": 203.44407,
+    "core_source_bounds": {
+      "minX": -320.88751,
+      "maxX": 206.25517,
+      "minY": -89.69978,
+      "maxY": 680.49268
+    },
+    "cluster": {
+      "retained": 2176,
+      "total": 2189,
+      "centerX": -4.43874,
+      "centerY": 140.61877,
+      "radiusX": 295.61089,
+      "radiusY": 637.89163
+    },
+    "scale": 0.27006,
+    "x_offset": 111.47894,
+    "y_offset": 191.77547,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:01.084Z"
+  "exported_at": "2026-08-19T05:04:12.839Z"
 }

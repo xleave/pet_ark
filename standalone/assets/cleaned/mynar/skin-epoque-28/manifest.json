@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "mynar",
   "character_name": "Młynar",
   "localized_name": "玛恩纳",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -476.56546,
-      "maxX": 561.67206,
-      "minY": -129.33296,
-      "maxY": 586.66418
+      "minX": -354.49579,
+      "maxX": 418.44003,
+      "minY": -116.08002,
+      "maxY": 787.10797
     },
-    "scale": 0.16952,
-    "x_offset": 88.78645,
-    "y_offset": 194.07573,
+    "full_source_bounds": {
+      "minX": -354.49579,
+      "maxX": 418.44003,
+      "minY": -116.08002,
+      "maxY": 787.10797
+    },
+    "core_source_bounds": {
+      "minX": -302.12039,
+      "maxX": 418.44003,
+      "minY": -116.08002,
+      "maxY": 554.91998
+    },
+    "cluster": {
+      "retained": 3257,
+      "total": 3257,
+      "centerX": 22.34869,
+      "centerY": 176.62872,
+      "radiusX": 624.89014,
+      "radiusY": 605.0087
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 137,
+      "visible_height": 96,
+      "density_zoom": 1.28467
+    },
+    "scale": 0.29252,
+    "x_offset": 62.23863,
+    "y_offset": 216.72995,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:20.545Z"
+  "exported_at": "2026-08-19T05:11:43.359Z"
 }

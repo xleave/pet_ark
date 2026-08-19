@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "mostima",
   "character_name": "Mostima",
   "localized_name": "莫斯提马",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -229.81711,
+      "maxX": 292.47195,
+      "minY": -381.87903,
+      "maxY": 399.76578
+    },
+    "full_source_bounds": {
       "minX": -452.20789,
       "maxX": 891.03003,
       "minY": -695.36066,
       "maxY": 1162.83154
     },
-    "scale": 0.11194,
-    "x_offset": 71.43984,
-    "y_offset": 138.16359,
+    "core_source_bounds": {
+      "minX": -229.81711,
+      "maxX": 292.47195,
+      "minY": -381.87903,
+      "maxY": 399.76578
+    },
+    "cluster": {
+      "retained": 3226,
+      "total": 3245,
+      "centerX": -6.39029,
+      "centerY": 134.60662,
+      "radiusX": 298.0328,
+      "radiusY": 627.97905
+    },
+    "scale": 0.26611,
+    "x_offset": 87.6636,
+    "y_offset": 114.37988,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:19.502Z"
+  "exported_at": "2026-08-19T05:04:00.103Z"
 }

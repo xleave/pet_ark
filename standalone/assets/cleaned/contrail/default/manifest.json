@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "contrail",
   "character_name": "Contrail",
   "localized_name": "云迹",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -257.02451,
-      "maxX": 481.00381,
-      "minY": -115.03117,
-      "maxY": 390.25214
+      "maxX": 153.50117,
+      "minY": -115.77538,
+      "maxY": 382.97815
     },
-    "scale": 0.23847,
-    "x_offset": 69.29346,
-    "y_offset": 188.56814,
+    "full_source_bounds": {
+      "minX": -257.02451,
+      "maxX": 481.00381,
+      "minY": -115.77538,
+      "maxY": 390.11536
+    },
+    "core_source_bounds": {
+      "minX": -257.02451,
+      "maxX": 153.50117,
+      "minY": -115.77538,
+      "maxY": 382.97815
+    },
+    "cluster": {
+      "retained": 2696,
+      "total": 2699,
+      "centerX": -18.4873,
+      "centerY": 134.53502,
+      "radiusX": 267.98448,
+      "radiusY": 547.27109
+    },
+    "scale": 0.41,
+    "x_offset": 117.22228,
+    "y_offset": 168.5321,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:02.348Z"
+  "exported_at": "2026-08-19T05:04:55.985Z"
 }

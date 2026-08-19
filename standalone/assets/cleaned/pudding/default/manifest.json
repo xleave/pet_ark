@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "pudding",
   "character_name": "Pudding",
   "localized_name": "布丁",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -234.78413,
-      "maxX": 608.65393,
-      "minY": -104.03011,
+      "maxX": 144.76782,
+      "minY": -104.00596,
       "maxY": 462.92728
     },
-    "scale": 0.20867,
-    "x_offset": 56.99234,
-    "y_offset": 194.29207,
+    "full_source_bounds": {
+      "minX": -234.78413,
+      "maxX": 608.65393,
+      "minY": -104.00596,
+      "maxY": 462.92728
+    },
+    "core_source_bounds": {
+      "minX": -234.78413,
+      "maxX": 144.76782,
+      "minY": -104.00596,
+      "maxY": 462.92728
+    },
+    "cluster": {
+      "retained": 2290,
+      "total": 2292,
+      "centerX": -8.31928,
+      "centerY": 135.40104,
+      "radiusX": 265.49553,
+      "radiusY": 613.54898
+    },
+    "scale": 0.36689,
+    "x_offset": 112.51287,
+    "y_offset": 177.84165,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:25.475Z"
+  "exported_at": "2026-08-19T05:04:46.920Z"
 }

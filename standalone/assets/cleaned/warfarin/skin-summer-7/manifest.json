@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "warfarin",
   "character_name": "Warfarin",
   "localized_name": "华法琳",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -212.41095,
+      "minX": -210.78142,
       "maxX": 448.99683,
-      "minY": -136.13005,
+      "minY": -136.01489,
+      "maxY": 387.80139
+    },
+    "full_source_bounds": {
+      "minX": -210.78142,
+      "maxX": 448.99683,
+      "minY": -136.01489,
       "maxY": 1186.24988
     },
-    "scale": 0.15729,
-    "x_offset": 77.39345,
-    "y_offset": 194.58781,
+    "core_source_bounds": {
+      "minX": -210.78142,
+      "maxX": 448.99683,
+      "minY": -136.01489,
+      "maxY": 387.80139
+    },
+    "cluster": {
+      "retained": 1842,
+      "total": 1842,
+      "centerX": 21.44774,
+      "centerY": 200.83539,
+      "radiusX": 320,
+      "radiusY": 565.14175
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 53,
+      "visible_height": 101,
+      "density_zoom": 1.38614
+    },
+    "scale": 0.36976,
+    "x_offset": 104.63186,
+    "y_offset": 216.9941,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:37.939Z"
+  "exported_at": "2026-08-19T05:11:18.286Z"
 }

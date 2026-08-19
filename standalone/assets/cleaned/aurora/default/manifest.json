@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "aurora",
   "character_name": "Aurora",
   "localized_name": "极光",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -323.78174,
       "maxX": 171.65234,
       "minY": -134.349,
       "maxY": 755.67651
     },
-    "scale": 0.2337,
-    "x_offset": 113.77641,
-    "y_offset": 184.60248,
+    "full_source_bounds": {
+      "minX": -323.78174,
+      "maxX": 171.65234,
+      "minY": -134.349,
+      "maxY": 755.67651
+    },
+    "core_source_bounds": {
+      "minX": -323.78174,
+      "maxX": 171.65234,
+      "minY": -134.349,
+      "maxY": 755.67651
+    },
+    "cluster": {
+      "retained": 2366,
+      "total": 2366,
+      "centerX": -2.13,
+      "centerY": 200.89848,
+      "radiusX": 402.80177,
+      "radiusY": 685.01564
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 48,
+      "visible_height": 90,
+      "density_zoom": 1.55556
+    },
+    "scale": 0.36354,
+    "x_offset": 107.31886,
+    "y_offset": 215.38164,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:57.341Z"
+  "exported_at": "2026-08-19T05:10:22.336Z"
 }

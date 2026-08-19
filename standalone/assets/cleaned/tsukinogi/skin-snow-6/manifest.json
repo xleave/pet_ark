@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "tsukinogi",
   "character_name": "Tsukinogi",
   "localized_name": "月禾",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
+      "minX": -412.69998,
+      "maxX": 292.67099,
+      "minY": -222.25002,
+      "maxY": 473.41519
+    },
+    "full_source_bounds": {
       "minX": -412.69998,
       "maxX": 1518.21814,
       "minY": -222.25002,
       "maxY": 473.41519
     },
-    "scale": 0.09115,
-    "x_offset": 45.61692,
-    "y_offset": 195.74228,
+    "core_source_bounds": {
+      "minX": -412.69998,
+      "maxX": 292.67099,
+      "minY": -222.25002,
+      "maxY": 473.41519
+    },
+    "cluster": {
+      "retained": 2345,
+      "total": 2359,
+      "centerX": 18.5045,
+      "centerY": 187.38763,
+      "radiusX": 509.97701,
+      "radiusY": 770.38338
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 54,
+      "visible_height": 117,
+      "density_zoom": 1.33333
+    },
+    "scale": 0.33269,
+    "x_offset": 101.96595,
+    "y_offset": 216.72732,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:35.221Z"
+  "exported_at": "2026-08-19T05:11:54.852Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "nightmare",
   "character_name": "Nightmare",
   "localized_name": "夜魔",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -250.59311,
+      "maxX": 281.99277,
+      "minY": -104.10937,
+      "maxY": 435.89841
+    },
+    "full_source_bounds": {
       "minX": -348.68002,
       "maxX": 564.41998,
       "minY": -104.10937,
       "maxY": 487.40833
     },
-    "scale": 0.19275,
-    "x_offset": 75.20806,
-    "y_offset": 195.93292,
+    "core_source_bounds": {
+      "minX": -250.59311,
+      "maxX": 281.99277,
+      "minY": -104.10937,
+      "maxY": 435.89841
+    },
+    "cluster": {
+      "retained": 2440,
+      "total": 2494,
+      "centerX": 4.17563,
+      "centerY": 133.73323,
+      "radiusX": 258.21588,
+      "radiusY": 578.50086
+    },
+    "scale": 0.33046,
+    "x_offset": 90.81179,
+    "y_offset": 181.59569,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:21.855Z"
+  "exported_at": "2026-08-19T05:04:44.920Z"
 }

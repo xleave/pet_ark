@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "amiya",
   "character_name": "Amiya",
   "localized_name": "阿米娅",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -289.44016,
+      "maxX": 190.61363,
+      "minY": -108.12182,
+      "maxY": 468.50562
+    },
+    "full_source_bounds": {
       "minX": -289.44016,
       "maxX": 811.78448,
       "minY": -108.12182,
-      "maxY": 472.45593
+      "maxY": 475.19717
     },
-    "scale": 0.15982,
-    "x_offset": 54.25892,
-    "y_offset": 198.71975,
+    "core_source_bounds": {
+      "minX": -289.44016,
+      "maxX": 190.61363,
+      "minY": -108.12182,
+      "maxY": 468.50562
+    },
+    "cluster": {
+      "retained": 1603,
+      "total": 1609,
+      "centerX": 1.7388,
+      "centerY": 146.36484,
+      "radiusX": 273.09579,
+      "radiusY": 692.73154
+    },
+    "scale": 0.36072,
+    "x_offset": 113.82426,
+    "y_offset": 176.99849,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:55.601Z"
+  "exported_at": "2026-08-19T05:04:32.417Z"
 }

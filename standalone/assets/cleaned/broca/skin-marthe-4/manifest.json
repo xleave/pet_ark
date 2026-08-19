@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "broca",
   "character_name": "Broca",
   "localized_name": "布洛卡",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -521.69745,
       "maxX": 797.28094,
-      "minY": -133.62558,
+      "minY": -132.46928,
       "maxY": 422.00656
     },
-    "scale": 0.13344,
-    "x_offset": 77.61354,
-    "y_offset": 198.16946,
+    "full_source_bounds": {
+      "minX": -521.69745,
+      "maxX": 797.28094,
+      "minY": -132.46928,
+      "maxY": 422.00656
+    },
+    "core_source_bounds": {
+      "minX": -521.69745,
+      "maxX": 546.76337,
+      "minY": -132.46928,
+      "maxY": 422.00656
+    },
+    "cluster": {
+      "retained": 1785,
+      "total": 1788,
+      "centerX": 7.79876,
+      "centerY": 163.20901,
+      "radiusX": 517.57708,
+      "radiusY": 704.57642
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 38,
+      "visible_height": 53,
+      "density_zoom": 2.64151
+    },
+    "scale": 0.35247,
+    "x_offset": 109.50746,
+    "y_offset": 216.85518,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:59.728Z"
+  "exported_at": "2026-08-19T05:11:27.271Z"
 }

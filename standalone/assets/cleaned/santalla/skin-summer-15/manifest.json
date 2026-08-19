@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "santalla",
   "character_name": "Santalla",
   "localized_name": "寒檀",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -830.43311,
-      "maxX": 284.77905,
-      "minY": -114.66985,
-      "maxY": 417.56592
+      "minX": -300.01041,
+      "maxX": 164.8793,
+      "minY": -114.70654,
+      "maxY": 400.01001
     },
-    "scale": 0.15782,
-    "x_offset": 139.05688,
-    "y_offset": 197.90309,
+    "full_source_bounds": {
+      "minX": -830.43311,
+      "maxX": 329.31735,
+      "minY": -114.70654,
+      "maxY": 419.33704
+    },
+    "core_source_bounds": {
+      "minX": -300.01041,
+      "maxX": 164.8793,
+      "minY": -114.70654,
+      "maxY": 400.01001
+    },
+    "cluster": {
+      "retained": 2478,
+      "total": 2498,
+      "centerX": -10.95134,
+      "centerY": 127.81877,
+      "radiusX": 359.11533,
+      "radiusY": 647.16306
+    },
+    "scale": 0.37858,
+    "x_offset": 121.57927,
+    "y_offset": 172.57389,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:29.012Z"
+  "exported_at": "2026-08-19T05:04:49.709Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "fiammetta",
   "character_name": "Fiammetta",
   "localized_name": "菲亚梅塔",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -681.07092,
-      "maxX": 517.26563,
-      "minY": -107.24091,
-      "maxY": 699.46393
+      "minX": -454.24948,
+      "maxX": 514.76001,
+      "minY": -107.13206,
+      "maxY": 513.78998
     },
-    "scale": 0.14687,
-    "x_offset": 108.02906,
-    "y_offset": 200.2495,
+    "full_source_bounds": {
+      "minX": -681.07092,
+      "maxX": 838.93604,
+      "minY": -107.13206,
+      "maxY": 752.2959
+    },
+    "core_source_bounds": {
+      "minX": -454.24948,
+      "maxX": 514.76001,
+      "minY": -107.13206,
+      "maxY": 513.78998
+    },
+    "cluster": {
+      "retained": 3689,
+      "total": 3695,
+      "centerX": -13.10565,
+      "centerY": 171.8938,
+      "radiusX": 397.51232,
+      "radiusY": 622.98385
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 55,
+      "visible_height": 76,
+      "density_zoom": 1.84211
+    },
+    "scale": 0.33458,
+    "x_offset": 119.03511,
+    "y_offset": 216.99794,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:06.762Z"
+  "exported_at": "2026-08-19T05:10:49.498Z"
 }

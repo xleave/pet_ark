@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "vanilla",
   "character_name": "Vanilla",
   "localized_name": "香草",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -250.09206,
+      "minX": -257.3858,
       "maxX": 512.14154,
-      "minY": -88.45972,
+      "minY": -89.06602,
       "maxY": 479.6853
     },
-    "scale": 0.2309,
-    "x_offset": 65.74634,
-    "y_offset": 195.57462,
+    "full_source_bounds": {
+      "minX": -257.3858,
+      "maxX": 512.14154,
+      "minY": -89.06602,
+      "maxY": 479.6853
+    },
+    "core_source_bounds": {
+      "minX": -240.26236,
+      "maxX": 512.14154,
+      "minY": -89.06602,
+      "maxY": 479.6853
+    },
+    "cluster": {
+      "retained": 2278,
+      "total": 2278,
+      "centerX": 13.23202,
+      "centerY": 220.93181,
+      "radiusX": 504.97154,
+      "radiusY": 777.57574
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 52,
+      "visible_height": 93,
+      "density_zoom": 1.50538
+    },
+    "scale": 0.3443,
+    "x_offset": 107.09037,
+    "y_offset": 213.93696,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:36.104Z"
+  "exported_at": "2026-08-19T05:10:39.455Z"
 }

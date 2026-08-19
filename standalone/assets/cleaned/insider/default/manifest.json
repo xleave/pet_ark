@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "insider",
   "character_name": "Insider",
   "localized_name": "隐现",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -242.93918,
-      "maxX": 569.0083,
-      "minY": -95.23813,
-      "maxY": 436.0997
+      "minX": -243.07535,
+      "maxX": 199.47209,
+      "minY": -94.89899,
+      "maxY": 434.50592
     },
-    "scale": 0.21676,
-    "x_offset": 60.66017,
-    "y_offset": 195.35592,
+    "full_source_bounds": {
+      "minX": -243.07535,
+      "maxX": 569.0083,
+      "minY": -94.89899,
+      "maxY": 435.11365
+    },
+    "core_source_bounds": {
+      "minX": -243.07535,
+      "maxX": 199.47209,
+      "minY": -94.89899,
+      "maxY": 434.50592
+    },
+    "cluster": {
+      "retained": 2288,
+      "total": 2289,
+      "centerX": 6.64423,
+      "centerY": 153.95227,
+      "radiusX": 292.43053,
+      "radiusY": 579.15698
+    },
+    "scale": 0.39289,
+    "x_offset": 104.56573,
+    "y_offset": 178.71476,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:12.075Z"
+  "exported_at": "2026-08-19T05:04:58.599Z"
 }

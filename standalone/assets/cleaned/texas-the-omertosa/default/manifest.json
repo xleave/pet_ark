@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "texas-the-omertosa",
   "character_name": "Texas the Omertosa",
   "localized_name": "缄默德克萨斯",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -239.37292,
+      "maxX": 177.9931,
+      "minY": -113.20885,
+      "maxY": 407.2981
+    },
+    "full_source_bounds": {
       "minX": -239.37292,
       "maxX": 738.19348,
       "minY": -113.20885,
-      "maxY": 406.85944
+      "maxY": 407.2981
     },
-    "scale": 0.18004,
-    "x_offset": 51.09644,
-    "y_offset": 195.618,
+    "core_source_bounds": {
+      "minX": -239.37292,
+      "maxX": 177.9931,
+      "minY": -113.20885,
+      "maxY": 407.2981
+    },
+    "cluster": {
+      "retained": 2354,
+      "total": 2406,
+      "centerX": 6.18474,
+      "centerY": 130.35327,
+      "radiusX": 272.46846,
+      "radiusY": 624.43713
+    },
+    "scale": 0.39961,
+    "x_offset": 108.26401,
+    "y_offset": 170.76056,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:33.951Z"
+  "exported_at": "2026-08-19T05:05:05.581Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "proviso",
   "character_name": "Proviso",
   "localized_name": "但书",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -267.06555,
+      "maxX": 342.70532,
+      "minY": -116.62063,
+      "maxY": 524.86743
+    },
+    "full_source_bounds": {
       "minX": -660.80878,
       "maxX": 653.22711,
       "minY": -116.62063,
       "maxY": 619.28351
     },
-    "scale": 0.13394,
-    "x_offset": 96.50774,
-    "y_offset": 200.38001,
+    "core_source_bounds": {
+      "minX": -267.06555,
+      "maxX": 342.70532,
+      "minY": -116.62063,
+      "maxY": 524.86743
+    },
+    "cluster": {
+      "retained": 2523,
+      "total": 2541,
+      "centerX": 1.35452,
+      "centerY": 142.95451,
+      "radiusX": 290.65046,
+      "radiusY": 667.33728
+    },
+    "scale": 0.28863,
+    "x_offset": 85.08393,
+    "y_offset": 182.33944,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:25.496Z"
+  "exported_at": "2026-08-19T05:03:50.331Z"
 }

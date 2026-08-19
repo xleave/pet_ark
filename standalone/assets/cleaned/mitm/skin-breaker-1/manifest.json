@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "mitm",
   "character_name": "Mitm",
   "localized_name": "渡桥",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -485.56735,
       "maxX": 444.32117,
       "minY": -119.03645,
       "maxY": 412.25491
     },
-    "scale": 0.18927,
-    "x_offset": 99.90333,
-    "y_offset": 193.46997,
+    "full_source_bounds": {
+      "minX": -485.56735,
+      "maxX": 444.32117,
+      "minY": -119.03645,
+      "maxY": 412.25491
+    },
+    "core_source_bounds": {
+      "minX": -485.56735,
+      "maxX": 278.22476,
+      "minY": -119.03645,
+      "maxY": 412.25491
+    },
+    "cluster": {
+      "retained": 3405,
+      "total": 3405,
+      "centerX": -19.11215,
+      "centerY": 196.65432,
+      "radiusX": 577.51578,
+      "radiusY": 616.0812
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 64,
+      "visible_height": 78,
+      "density_zoom": 1.79487
+    },
+    "scale": 0.33972,
+    "x_offset": 116.46752,
+    "y_offset": 215.04866,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:16.690Z"
+  "exported_at": "2026-08-19T05:11:01.693Z"
 }

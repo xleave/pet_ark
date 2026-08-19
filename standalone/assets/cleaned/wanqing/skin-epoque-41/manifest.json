@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "wanqing",
   "character_name": "Wanqing",
   "localized_name": "万顷",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -173.99002,
+      "maxX": 135.73024,
+      "minY": -97.90411,
+      "maxY": 399.29123
+    },
+    "full_source_bounds": {
       "minX": -907.50781,
       "maxX": 891.33002,
       "minY": -97.90411,
-      "maxY": 406.6955
+      "maxY": 409.65247
     },
-    "scale": 0.09784,
-    "x_offset": 96.79143,
-    "y_offset": 206.42097,
+    "core_source_bounds": {
+      "minX": -173.99002,
+      "maxX": 135.73024,
+      "minY": -97.90411,
+      "maxY": 399.29123
+    },
+    "cluster": {
+      "retained": 2904,
+      "total": 2965,
+      "centerX": -2.16291,
+      "centerY": 153.04316,
+      "radiusX": 281.70739,
+      "radiusY": 698.40022
+    },
+    "scale": 0.41,
+    "x_offset": 103.84326,
+    "y_offset": 175.85932,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:37.846Z"
+  "exported_at": "2026-08-19T05:04:05.732Z"
 }

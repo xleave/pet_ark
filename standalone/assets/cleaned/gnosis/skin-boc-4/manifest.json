@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "gnosis",
   "character_name": "Gnosis",
   "localized_name": "灵知",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -544.64783,
       "maxX": 226.06012,
       "minY": -114.77048,
       "maxY": 495.08774
     },
-    "scale": 0.22836,
-    "x_offset": 132.37658,
-    "y_offset": 189.79085,
+    "full_source_bounds": {
+      "minX": -544.64783,
+      "maxX": 226.06012,
+      "minY": -114.77048,
+      "maxY": 495.08774
+    },
+    "core_source_bounds": {
+      "minX": -544.64783,
+      "maxX": 226.06012,
+      "minY": -114.77048,
+      "maxY": 495.08774
+    },
+    "cluster": {
+      "retained": 2585,
+      "total": 2585,
+      "centerX": -11.78454,
+      "centerY": 177.82712,
+      "radiusX": 537.71271,
+      "radiusY": 496.56069
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 76,
+      "visible_height": 92,
+      "density_zoom": 1.52174
+    },
+    "scale": 0.34751,
+    "x_offset": 101.89914,
+    "y_offset": 217.20346,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:08.501Z"
+  "exported_at": "2026-08-19T05:10:52.320Z"
 }

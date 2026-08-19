@@ -5,13 +5,14 @@
   import type {
     CharacterSummary,
     LogEntry,
+    PetInstance,
     PreviewAsset,
     RuntimeConfig,
     RuntimeStatus,
     ServiceStatus,
   } from './types';
 
-  type Section = 'overview' | 'settings' | 'logs' | 'system';
+  type Section = 'overview' | 'fleet' | 'settings' | 'logs' | 'system';
 
   const appWindow = getCurrentWindow();
   let section: Section = 'overview';
@@ -36,6 +37,20 @@
     verbose: true,
   };
   let characters: CharacterSummary[] = [];
+  let instances: PetInstance[] = [];
+  let selectedInstanceId = 'default';
+  let newInstanceId = '';
+  let newInstanceCharacter = 'amiya';
+  let newInstanceVariant = 'default';
+  let contextService: ServiceStatus = {
+    installed: false,
+    active: false,
+    state: 'unknown',
+    sub_state: 'unknown',
+    pid: 0,
+    restarts: 0,
+    autostart: false,
+  };
   let logs: LogEntry[] = [];
   let preview: PreviewAsset | null = null;
   let previewFrame = 0;
@@ -48,6 +63,9 @@
   let logConsole: HTMLDivElement;
 
   $: selectedCharacter = characters.find((entry) => entry.id === config.character);
+  $: selectedInstance = instances.find((entry) => entry.id === selectedInstanceId) ?? instances[0];
+  $: newInstanceCharacterEntry = characters.find((entry) => entry.id === newInstanceCharacter);
+  $: newInstanceVariants = newInstanceCharacterEntry?.variants ?? [];
   $: variants = selectedCharacter?.variants ?? [];
   $: visibleLogs = logFilter.trim()
     ? logs.filter((entry) => entry.message.toLowerCase().includes(logFilter.trim().toLowerCase()))
@@ -76,13 +94,25 @@
     }
   }
 
+  async function refreshFleet(silent = true) {
+    try {
+      [instances, contextService] = await Promise.all([
+        invoke<PetInstance[]>('list_instances'),
+        invoke<ServiceStatus>('context_status'),
+      ]);
+      if (!instances.some((entry) => entry.id === selectedInstanceId)) selectedInstanceId = instances[0]?.id ?? 'default';
+    } catch (error) {
+      if (!silent) notify(String(error), 'error');
+    }
+  }
+
   async function refreshLogs(followLatest = false) {
     if (section !== 'logs') return;
     const wasFollowing = logConsole
       ? logConsole.scrollHeight - logConsole.scrollTop - logConsole.clientHeight < 48
       : true;
     try {
-      logs = await invoke<LogEntry[]>('read_logs', { limit: 180 });
+      logs = await invoke<LogEntry[]>('read_logs', { limit: 180, instance: selectedInstanceId });
       await tick();
       if (logConsole && (followLatest || wasFollowing)) logConsole.scrollTop = logConsole.scrollHeight;
     } catch (error) {
@@ -151,10 +181,81 @@
     }
   }
 
+  async function fleetAction(action: 'start' | 'stop' | 'restart') {
+    if (!selectedInstance) return;
+    try {
+      instances = await invoke<PetInstance[]>('instance_action', { id: selectedInstance.id, action });
+      notify(`实例 ${selectedInstance.id} 已${action === 'start' ? '启动' : action === 'stop' ? '停止' : '重启'}`, 'ok');
+    } catch (error) {
+      notify(String(error), 'error');
+    }
+  }
+
+  async function createPetInstance() {
+    try {
+      instances = await invoke<PetInstance[]>('create_instance', {
+        id: newInstanceId.trim(),
+        character: newInstanceCharacter,
+        variant: newInstanceVariant,
+      });
+      selectedInstanceId = newInstanceId.trim();
+      newInstanceId = '';
+      notify('新桌宠实例已创建并启动', 'ok');
+    } catch (error) {
+      notify(String(error), 'error');
+    }
+  }
+
+  function newInstanceCharacterChanged() {
+    const character = characters.find((entry) => entry.id === newInstanceCharacter);
+    if (character) newInstanceVariant = character.default_variant_id;
+  }
+
+  async function toggleInstanceAutostart() {
+    if (!selectedInstance) return;
+    try {
+      instances = await invoke<PetInstance[]>('set_instance_autostart', {
+        id: selectedInstance.id,
+        enabled: !selectedInstance.autostart,
+      });
+      notify('实例自启策略已更新', 'ok');
+    } catch (error) {
+      notify(String(error), 'error');
+    }
+  }
+
+  async function reactInstance(event: 'attention' | 'celebrate' | 'wake') {
+    if (!selectedInstance?.active) return;
+    try {
+      await invoke('instance_react', { id: selectedInstance.id, event });
+      notify(`已向 ${selectedInstance.id} 发送互动事件`, 'ok');
+    } catch (error) {
+      notify(String(error), 'error');
+    }
+  }
+
+  async function toggleContextService() {
+    try {
+      contextService = await invoke<ServiceStatus>('context_action', { action: contextService.active ? 'stop' : 'start' });
+      notify(contextService.active ? '桌面只读感知已启用' : '桌面只读感知已停止', 'ok');
+    } catch (error) {
+      notify(String(error), 'error');
+    }
+  }
+
   function characterChanged() {
     const character = characters.find((entry) => entry.id === config.character);
     if (character) config.variant = character.default_variant_id;
     void loadPreview();
+  }
+
+  function adjustParameter(parameter: 'scale' | 'speed', delta: number) {
+    const limits = parameter === 'scale' ? [0.25, 3] : [0.1, 5];
+    const current = Number(config[parameter]) || 1;
+    config = {
+      ...config,
+      [parameter]: Math.min(limits[1], Math.max(limits[0], Math.round((current + delta) * 100) / 100)),
+    };
   }
 
   onMount(() => {
@@ -162,10 +263,14 @@
     Promise.all([
       invoke<CharacterSummary[]>('list_characters'),
       invoke<RuntimeConfig>('load_config'),
-    ]).then(async ([registry, saved]) => {
+      invoke<PetInstance[]>('list_instances'),
+      invoke<ServiceStatus>('context_status'),
+    ]).then(async ([registry, saved, runningInstances, context]) => {
       if (cancelled) return;
       config = saved;
       characters = registry;
+      instances = runningInstances;
+      contextService = context;
       await loadPreview();
       await refreshStatus();
       loading = false;
@@ -174,10 +279,12 @@
       notify(String(error), 'error');
     });
     const statusTimer = window.setInterval(() => refreshStatus(true), 1500);
+    const fleetTimer = window.setInterval(() => refreshFleet(true), 3500);
     const logTimer = window.setInterval(refreshLogs, 1400);
     return () => {
       cancelled = true;
       clearInterval(statusTimer);
+      clearInterval(fleetTimer);
       clearInterval(logTimer);
       if (previewTimer !== undefined) clearInterval(previewTimer);
     };
@@ -208,9 +315,10 @@
     <div class="section-label">CONTROL INDEX</div>
     <nav>
       <button class:active={section === 'overview'} onclick={() => section = 'overview'}><span>01</span>运行总览</button>
-      <button class:active={section === 'settings'} onclick={() => section = 'settings'}><span>02</span>桌宠设置</button>
-      <button class:active={section === 'logs'} onclick={openLogs}><span>03</span>运行日志</button>
-      <button class:active={section === 'system'} onclick={() => section = 'system'}><span>04</span>服务管理</button>
+      <button class:active={section === 'fleet'} onclick={() => { section = 'fleet'; void refreshFleet(false); }}><span>02</span>多桌宠编队</button>
+      <button class:active={section === 'settings'} onclick={() => section = 'settings'}><span>03</span>桌宠设置</button>
+      <button class:active={section === 'logs'} onclick={openLogs}><span>04</span>运行日志</button>
+      <button class:active={section === 'system'} onclick={() => section = 'system'}><span>05</span>服务管理</button>
     </nav>
     <div class="sidebar-meta">
       <span>PROTOCOL</span><strong>LOCAL/JSON</strong>
@@ -264,6 +372,64 @@
           </article>
         </div>
       </section>
+    {:else if section === 'fleet'}
+      <section class="page enter">
+        <div class="page-heading">
+          <div><span class="eyebrow">FLEET / 02</span><h1>多桌宠编队</h1></div>
+          <span class="save-state">{instances.filter((entry) => entry.active).length} / {instances.length} ACTIVE</span>
+        </div>
+        <div class="fleet-layout">
+          <article class="fleet-roster">
+            <div class="card-title"><span>实例阵列</span><small>SELECT ONE</small></div>
+            <div class="instance-grid">
+              {#each instances as instance}
+                <button class:active={selectedInstance?.id === instance.id} class="instance-card" onclick={() => selectedInstanceId = instance.id}>
+                  <span class:online={instance.active} class="instance-signal"></span>
+                  <small>{instance.id === 'default' ? 'PRIMARY' : 'AUXILIARY'}</small>
+                  <strong>{characters.find((entry) => entry.id === instance.character)?.localized_name ?? instance.character}</strong>
+                  <code>{instance.id} / {instance.variant}</code>
+                  <i>{instance.active ? `PID ${instance.pid}` : 'OFFLINE'}</i>
+                </button>
+              {/each}
+            </div>
+          </article>
+
+          <article class="fleet-console">
+            <div class="card-title"><span>选中实例控制</span><small>{selectedInstance?.id ?? 'NO TARGET'}</small></div>
+            {#if selectedInstance}
+              <div class="fleet-status-line"><span>运行状态</span><strong class:online-text={selectedInstance.active}>{selectedInstance.active ? 'LINK ACTIVE' : 'LINK OFFLINE'}</strong></div>
+              <div class="service-buttons fleet-buttons">
+                <button onclick={() => fleetAction('start')} disabled={selectedInstance.active}>启动</button>
+                <button onclick={() => fleetAction('restart')} disabled={!selectedInstance.active}>重启</button>
+                <button class="danger-soft" onclick={() => fleetAction('stop')} disabled={!selectedInstance.active}>停止</button>
+              </div>
+              <label class="switch-row"><span><b>随桌面会话自启</b><small>仅控制当前选中实例</small></span><input type="checkbox" checked={selectedInstance.autostart} onchange={toggleInstanceAutostart} /><i></i></label>
+              <div class="reaction-panel">
+                <span>即时互动测试</span>
+                <div><button onclick={() => reactInstance('attention')} disabled={!selectedInstance.active}>打招呼</button><button onclick={() => reactInstance('celebrate')} disabled={!selectedInstance.active}>庆祝一下</button><button onclick={() => reactInstance('wake')} disabled={!selectedInstance.active}>轻声唤醒</button></div>
+              </div>
+            {/if}
+          </article>
+
+          <article class="fleet-create">
+            <div class="card-title"><span>部署新实例</span><small>MAX 8</small></div>
+            <div class="fleet-create-fields">
+              <label><span>实例 ID</span><input placeholder="例如 mon3tr-side" bind:value={newInstanceId} /></label>
+              <label><span>干员</span><select bind:value={newInstanceCharacter} onchange={newInstanceCharacterChanged}>{#each characters as character}<option value={character.id}>{character.localized_name}</option>{/each}</select></label>
+              <label><span>外观</span><select bind:value={newInstanceVariant}>{#each newInstanceVariants as variant}<option value={variant.id}>{variant.localized_name}</option>{/each}</select></label>
+              <button class="primary" onclick={createPetInstance} disabled={!newInstanceId.trim() || instances.length >= 8}>创建并启动</button>
+            </div>
+          </article>
+
+          <article class="context-card">
+            <div class="card-title"><span>桌面事件感知</span><small>READ ONLY / NIRI</small></div>
+            <div class="capability-row">
+              <div><b>焦点响应与社交时刻</b><p>读取 niri 结构化事件，让桌宠响应工作区、应用焦点并偶发相互问候；不截屏、不读窗口内容、不注入键鼠。</p></div>
+              <button class:context-active={contextService.active} onclick={toggleContextService}>{contextService.active ? '停止感知' : '启用感知'}</button>
+            </div>
+          </article>
+        </div>
+      </section>
     {:else if section === 'settings'}
       <section class="page enter">
         <div class="page-heading"><div><span class="eyebrow">CONFIGURATION / 02</span><h1>桌宠设置</h1></div><span class="save-state">{saving ? '正在同步…' : '实时控制可用'}</span></div>
@@ -277,8 +443,28 @@
           </article>
           <article class="settings-card">
             <div class="card-title"><span>运动参数</span><small>LIVE</small></div>
-            <label class="range-field"><span>显示大小 <b>{Number(config.scale || 0).toFixed(2)}×</b></span><div class="range-control"><input type="range" min="0.25" max="3" step="0.05" bind:value={config.scale} /><input class="precision-input" aria-label="精确输入显示大小" type="number" min="0.25" max="3" step="0.01" bind:value={config.scale} /></div></label>
-            <label class="range-field"><span>移动速度 <b>{Number(config.speed || 0).toFixed(2)}×</b></span><div class="range-control"><input type="range" min="0.1" max="5" step="0.05" bind:value={config.speed} /><input class="precision-input" aria-label="精确输入移动速度" type="number" min="0.1" max="5" step="0.01" bind:value={config.speed} /></div></label>
+            <label class="range-field">
+              <span>显示大小 <b>{Number(config.scale || 0).toFixed(2)}×</b></span>
+              <div class="range-control">
+                <input class="industrial-range" aria-label="显示大小滑块" type="range" min="0.25" max="3" step="0.05" bind:value={config.scale} style={`--range-progress:${((Number(config.scale) - 0.25) / 2.75) * 100}%`} />
+                <div class="precision-stepper">
+                  <button type="button" aria-label="减小显示大小" onclick={() => adjustParameter('scale', -0.01)}>−</button>
+                  <input class="precision-input" aria-label="精确输入显示大小" type="number" min="0.25" max="3" step="0.01" bind:value={config.scale} />
+                  <button type="button" aria-label="增大显示大小" onclick={() => adjustParameter('scale', 0.01)}>+</button>
+                </div>
+              </div>
+            </label>
+            <label class="range-field">
+              <span>移动速度 <b>{Number(config.speed || 0).toFixed(2)}×</b></span>
+              <div class="range-control">
+                <input class="industrial-range" aria-label="移动速度滑块" type="range" min="0.1" max="5" step="0.05" bind:value={config.speed} style={`--range-progress:${((Number(config.speed) - 0.1) / 4.9) * 100}%`} />
+                <div class="precision-stepper">
+                  <button type="button" aria-label="减小移动速度" onclick={() => adjustParameter('speed', -0.01)}>−</button>
+                  <input class="precision-input" aria-label="精确输入移动速度" type="number" min="0.1" max="5" step="0.01" bind:value={config.speed} />
+                  <button type="button" aria-label="增大移动速度" onclick={() => adjustParameter('speed', 0.01)}>+</button>
+                </div>
+              </div>
+            </label>
           </article>
           <article class="settings-card">
             <div class="card-title"><span>行为策略</span><small>RUNTIME</small></div>
@@ -294,7 +480,7 @@
     {:else if section === 'logs'}
       <section class="page logs-page enter">
         <div class="page-heading"><div><span class="eyebrow">DIAGNOSTICS / 03</span><h1>运行日志</h1></div><button class="ghost" onclick={() => refreshLogs(true)}>刷新并定位最新</button></div>
-        <div class="log-toolbar"><input placeholder="筛选日志内容…" bind:value={logFilter} /><span>{visibleLogs.length} RECORDS</span></div>
+        <div class="log-toolbar"><select aria-label="日志实例" bind:value={selectedInstanceId} onchange={() => refreshLogs(true)}>{#each instances as instance}<option value={instance.id}>{instance.id} / {instance.character}</option>{/each}</select><input placeholder="筛选日志内容…" bind:value={logFilter} /><span>{visibleLogs.length} RECORDS</span></div>
         <div class="log-console" bind:this={logConsole}>
           {#if visibleLogs.length === 0}<div class="empty">当前没有匹配日志</div>{/if}
           {#each visibleLogs as entry}
@@ -324,5 +510,5 @@
     {/if}
   </main>
 
-  <footer><span>PET ARK CONTROL CENTER</span><span>LOCAL AUTHORITY // NO NETWORK</span><span>BUILD 0.2.0</span></footer>
+  <footer><span>PET ARK CONTROL CENTER</span><span>LOCAL AUTHORITY // NO NETWORK</span><span>BUILD 0.2.1</span></footer>
 </div>

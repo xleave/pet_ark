@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "luo-xiaohei",
   "character_name": "Luo Xiaohei",
   "localized_name": "罗小黑",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -455.82895,
       "maxX": 189.04175,
-      "minY": -105.35883,
-      "maxY": 486.86261
+      "minY": -105.58043,
+      "maxY": 522.89734
     },
-    "scale": 0.27292,
-    "x_offset": 132.40617,
-    "y_offset": 187.24516,
+    "full_source_bounds": {
+      "minX": -455.82895,
+      "maxX": 189.04175,
+      "minY": -105.58043,
+      "maxY": 522.89734
+    },
+    "core_source_bounds": {
+      "minX": -455.82895,
+      "maxX": 189.04175,
+      "minY": -105.58043,
+      "maxY": 484.78705
+    },
+    "cluster": {
+      "retained": 2340,
+      "total": 2340,
+      "centerX": -71.86327,
+      "centerY": 166.54895,
+      "radiusX": 1209.97751,
+      "radiusY": 864.97486
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 56,
+      "visible_height": 107,
+      "density_zoom": 1.30841
+    },
+    "scale": 0.3571,
+    "x_offset": 101.11088,
+    "y_offset": 216.24164,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:16.835Z"
+  "exported_at": "2026-08-19T05:11:00.917Z"
 }

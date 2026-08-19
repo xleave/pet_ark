@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "viviana",
   "character_name": "Viviana",
   "localized_name": "薇薇安娜",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -315.4686,
+      "maxX": 232.74261,
+      "minY": -114.63281,
+      "maxY": 494.16577
+    },
+    "full_source_bounds": {
       "minX": -350.52432,
       "maxX": 752.87,
-      "minY": -113.59956,
+      "minY": -114.63281,
       "maxY": 797.04773
     },
-    "scale": 0.15951,
-    "x_offset": 63.91136,
-    "y_offset": 197.87998,
+    "core_source_bounds": {
+      "minX": -315.4686,
+      "maxX": 232.74261,
+      "minY": -114.63281,
+      "maxY": 494.16577
+    },
+    "cluster": {
+      "retained": 3210,
+      "total": 3212,
+      "centerX": -9.7496,
+      "centerY": 141.58342,
+      "radiusX": 315.71482,
+      "radiusY": 665.83521
+    },
+    "scale": 0.32104,
+    "x_offset": 109.27935,
+    "y_offset": 179.19781,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:37.196Z"
+  "exported_at": "2026-08-19T05:04:52.522Z"
 }

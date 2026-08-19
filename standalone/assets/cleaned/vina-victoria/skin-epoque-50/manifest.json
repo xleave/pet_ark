@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "vina-victoria",
   "character_name": "Vina Victoria",
   "localized_name": "维娜·维多利亚",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -1329.53406,
-      "maxX": 576.23303,
-      "minY": -241.45769,
-      "maxY": 847.78119
+      "minX": -313.14478,
+      "maxX": 239.95392,
+      "minY": -119.7641,
+      "maxY": 498.89026
     },
-    "scale": 0.09235,
-    "x_offset": 130.78415,
-    "y_offset": 193.70108,
+    "full_source_bounds": {
+      "minX": -1329.53406,
+      "maxX": 651.43921,
+      "minY": -241.45769,
+      "maxY": 844.24121
+    },
+    "core_source_bounds": {
+      "minX": -313.14478,
+      "maxX": 239.95392,
+      "minY": -119.7641,
+      "maxY": 498.89026
+    },
+    "cluster": {
+      "retained": 3905,
+      "total": 4001,
+      "centerX": 18.54582,
+      "centerY": 151.59995,
+      "radiusX": 280.80796,
+      "radiusY": 784.31531
+    },
+    "scale": 0.31821,
+    "x_offset": 107.64493,
+    "y_offset": 177.8902,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:37.032Z"
+  "exported_at": "2026-08-19T05:03:39.995Z"
 }

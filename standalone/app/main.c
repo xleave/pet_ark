@@ -18,6 +18,7 @@ static void usage(FILE *stream, const char *program) {
     "  --assets DIR         Runtime sprite atlas directory\n"
     "  --control-socket PATH\n"
     "                       Local JSON control socket\n"
+    "  --instance ID        Runtime instance id (default: default)\n"
     "  --scale NUMBER       Display scale, 0.25..3.0 (default: character value)\n"
     "  --speed NUMBER       Movement speed multiplier, 0.1..5.0\n"
     "  --auto-move          Enable automatic movement\n"
@@ -74,12 +75,26 @@ static bool parse_boolean(const char *text, bool *value) {
   return false;
 }
 
+static bool parse_id(const char *text) {
+  if (!text || !*text || strlen(text) >= 96) return false;
+  for (const unsigned char *cursor = (const unsigned char *)text; *cursor; cursor++) {
+    if (!((*cursor >= 'a' && *cursor <= 'z') || (*cursor >= 'A' && *cursor <= 'Z') ||
+          (*cursor >= '0' && *cursor <= '9') || *cursor == '-' || *cursor == '_' || *cursor == '.')) return false;
+  }
+  return true;
+}
+
 static bool load_environment(PetWaylandConfig *config) {
   const char *value = NULL;
   config->character_id = getenv("PET_ARK_CHARACTER");
   config->skin_id = getenv("PET_ARK_VARIANT");
   config->assets_root = getenv("PET_ARK_ASSETS");
   config->control_socket = getenv("PET_ARK_CONTROL_SOCKET");
+  config->instance_id = getenv("PET_ARK_INSTANCE");
+  if (config->instance_id && !parse_id(config->instance_id)) {
+    fprintf(stderr, "pet-ark: PET_ARK_INSTANCE contains unsupported characters\n");
+    return false;
+  }
   if ((value = getenv("PET_ARK_SCALE")) && !parse_float(value, 0.25f, 3.0f, &config->scale)) {
     fprintf(stderr, "pet-ark: PET_ARK_SCALE must be between 0.25 and 3.0\n");
     return false;
@@ -123,6 +138,7 @@ int main(int argc, char **argv) {
     .skin_id = NULL,
     .assets_root = NULL,
     .control_socket = NULL,
+    .instance_id = "default",
     .scale = 0.0f,
     .speed = 1.0f,
     .auto_move = true,
@@ -170,6 +186,7 @@ int main(int argc, char **argv) {
     }
     if (!strcmp(argument, "--character") || !strcmp(argument, "--skin") ||
         !strcmp(argument, "--assets") || !strcmp(argument, "--control-socket") ||
+        !strcmp(argument, "--instance") ||
         !strcmp(argument, "--scale") || !strcmp(argument, "--speed") ||
         !strcmp(argument, "--monitor")) {
       const char *value = option_value(argc, argv, &index);
@@ -181,6 +198,13 @@ int main(int argc, char **argv) {
       else if (!strcmp(argument, "--skin")) config.skin_id = value;
       else if (!strcmp(argument, "--assets")) config.assets_root = value;
       else if (!strcmp(argument, "--control-socket")) config.control_socket = value;
+      else if (!strcmp(argument, "--instance")) {
+        if (!parse_id(value)) {
+          fprintf(stderr, "pet-ark: instance id contains unsupported characters\n");
+          return 2;
+        }
+        config.instance_id = value;
+      }
       else if (!strcmp(argument, "--scale")) {
         if (!parse_float(value, 0.25f, 3.0f, &config.scale)) {
           fprintf(stderr, "pet-ark: scale must be between 0.25 and 3.0\n");

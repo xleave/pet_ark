@@ -42,3 +42,10 @@ niri 适配器使用其 JSON event stream；KDE/GNOME 后续使用各自受支�
 5. portal 动作和其他 compositor adapter。
 
 这样多实例基础不依赖某个桌面环境，桌面交互也不会破坏原生桌宠的最小权限边界。
+
+## 已落地的第一阶段
+
+- 原生 runtime 接受 `PET_ARK_INSTANCE` / `--instance`。默认实例继续使用 `control.sock`，其他实例使用 `<id>.sock`；状态响应包含实例 ID，初始位置与随机行为种子也按实例打散。
+- `pet-ark@.service` 从 `~/.config/pet-ark/instances/<id>.env` 启动独立实例；`npm run standalone:instance -- create <id>` 会校验 registry 后创建并启动实例。
+- `pet-ark-context.service` 运行只读 niri event-stream broker。它对焦点、工作区和多桌宠社交时刻发送受限的 `wake`、`attention`、`celebrate` 事件，不注入键鼠、不读取窗口内容，也不依赖轮询。
+- 多桌宠“社交时刻”带抖动间隔和轮换目标，避免所有角色机械地同步播放同一动作；可用 `PET_ARK_CONTEXT_FOCUS=false` 或 `PET_ARK_CONTEXT_SOCIAL=false` 分别关闭。

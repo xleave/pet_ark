@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "highmore",
   "character_name": "Highmore",
   "localized_name": "海沫",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -361.06845,
       "maxX": 1087.63306,
       "minY": -708.00867,
       "maxY": 670.95752
     },
-    "scale": 0.12149,
-    "x_offset": 51.86552,
-    "y_offset": 129.98537,
+    "full_source_bounds": {
+      "minX": -361.06845,
+      "maxX": 1087.63306,
+      "minY": -708.00867,
+      "maxY": 670.95752
+    },
+    "core_source_bounds": {
+      "minX": -361.06845,
+      "maxX": 797.04712,
+      "minY": -708.00867,
+      "maxY": 670.95752
+    },
+    "cluster": {
+      "retained": 2967,
+      "total": 2979,
+      "centerX": 28.50659,
+      "centerY": 221.78908,
+      "radiusX": 657.52106,
+      "radiusY": 790.10431
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 42,
+      "visible_height": 58,
+      "density_zoom": 2.41379
+    },
+    "scale": 0.29325,
+    "x_offset": 104.12367,
+    "y_offset": 215.96468,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:10.576Z"
+  "exported_at": "2026-08-19T05:11:31.764Z"
 }

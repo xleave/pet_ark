@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "exusiai-the-new-covenant",
   "character_name": "Exusiai the New Covenant",
   "localized_name": "新约能天使",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -619.99237,
       "maxX": 614.5202,
       "minY": -134.28084,
       "maxY": 1006.50946
     },
-    "scale": 0.14257,
-    "x_offset": 96.39007,
-    "y_offset": 196.85607,
+    "full_source_bounds": {
+      "minX": -619.99237,
+      "maxX": 614.5202,
+      "minY": -134.28084,
+      "maxY": 1006.50946
+    },
+    "core_source_bounds": {
+      "minX": -440.49127,
+      "maxX": 603.5224,
+      "minY": -134.28084,
+      "maxY": 1006.50946
+    },
+    "cluster": {
+      "retained": 3267,
+      "total": 3283,
+      "centerX": 24.06118,
+      "centerY": 238.35339,
+      "radiusX": 527.00136,
+      "radiusY": 1009.97288
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 48,
+      "visible_height": 62,
+      "density_zoom": 2.25806
+    },
+    "scale": 0.32192,
+    "x_offset": 98.00984,
+    "y_offset": 217.93305,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:05.930Z"
+  "exported_at": "2026-08-19T05:10:19.718Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "wind-chimes",
   "character_name": "Wind Chimes",
   "localized_name": "铎铃",
@@ -124,16 +127,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -587.05573,
-      "maxX": 656.13666,
+      "maxX": 614.22339,
       "minY": -158.61484,
       "maxY": 912.29004
     },
-    "scale": 0.14157,
-    "x_offset": 91.11007,
-    "y_offset": 193.54474,
+    "full_source_bounds": {
+      "minX": -587.05573,
+      "maxX": 614.22339,
+      "minY": -158.61484,
+      "maxY": 912.29004
+    },
+    "core_source_bounds": {
+      "minX": -587.05573,
+      "maxX": 433.90024,
+      "minY": -158.61484,
+      "maxY": 912.29004
+    },
+    "cluster": {
+      "retained": 2900,
+      "total": 2900,
+      "centerX": -144.60039,
+      "centerY": 172.4995,
+      "radiusX": 552.50525,
+      "radiusY": 716.32637
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 40,
+      "visible_height": 59,
+      "density_zoom": 2.37288
+    },
+    "scale": 0.34765,
+    "x_offset": 106.70128,
+    "y_offset": 217.80638,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:38.711Z"
+  "exported_at": "2026-08-19T05:10:22.757Z"
 }

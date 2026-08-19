@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "platinum",
   "character_name": "Platinum",
   "localized_name": "白金",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
       "minX": -465.95334,
-      "maxX": 454.19302,
+      "maxX": 219.46066,
       "minY": -112.0928,
-      "maxY": 463.27875
+      "maxY": 464.13617
     },
-    "scale": 0.19127,
-    "x_offset": 97.12472,
-    "y_offset": 194.55957,
+    "full_source_bounds": {
+      "minX": -465.95334,
+      "maxX": 219.46066,
+      "minY": -112.0928,
+      "maxY": 464.13617
+    },
+    "core_source_bounds": {
+      "minX": -254.53111,
+      "maxX": 206.59416,
+      "minY": -112.0928,
+      "maxY": 464.13617
+    },
+    "cluster": {
+      "retained": 2170,
+      "total": 2174,
+      "centerX": 4.35067,
+      "centerY": 127.18898,
+      "radiusX": 278.64694,
+      "radiusY": 624.83664
+    },
+    "scale": 0.25678,
+    "x_offset": 127.64709,
+    "y_offset": 187.21691,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:23.929Z"
+  "exported_at": "2026-08-19T05:06:39.337Z"
 }

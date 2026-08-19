@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "kazemaru",
   "character_name": "Kazemaru",
   "localized_name": "风丸",
@@ -119,16 +122,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -499.4679,
       "maxX": 1330.64258,
-      "minY": -118.86749,
-      "maxY": 401.27353
+      "minY": -116.7829,
+      "maxY": 404.33197
     },
-    "scale": 0.09617,
-    "x_offset": 56.03336,
-    "y_offset": 204.56863,
+    "full_source_bounds": {
+      "minX": -499.4679,
+      "maxX": 1330.64258,
+      "minY": -116.7829,
+      "maxY": 404.33197
+    },
+    "core_source_bounds": {
+      "minX": -499.4679,
+      "maxX": 1330.64258,
+      "minY": -116.7829,
+      "maxY": 396.19232
+    },
+    "cluster": {
+      "retained": 2000,
+      "total": 2000,
+      "centerX": -244.96625,
+      "centerY": 164.19073,
+      "radiusX": 1665.00229,
+      "radiusY": 575
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 20,
+      "visible_height": 38,
+      "density_zoom": 3.68421
+    },
+    "scale": 0.35431,
+    "x_offset": 105.33342,
+    "y_offset": 218.83352,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:13.525Z"
+  "exported_at": "2026-08-19T05:11:32.753Z"
 }

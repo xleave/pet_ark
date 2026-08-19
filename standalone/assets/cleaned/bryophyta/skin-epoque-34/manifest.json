@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "bryophyta",
   "character_name": "Bryophyta",
   "localized_name": "苍苔",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -231.60855,
+      "maxX": 175.74554,
+      "minY": -121.28218,
+      "maxY": 385.96643
+    },
+    "full_source_bounds": {
       "minX": -519.18915,
       "maxX": 203.68596,
       "minY": -121.28218,
-      "maxY": 398.27789
+      "maxY": 399.58264
     },
-    "scale": 0.24347,
-    "x_offset": 134.40813,
-    "y_offset": 186.47116,
+    "core_source_bounds": {
+      "minX": -231.60855,
+      "maxX": 175.74554,
+      "minY": -121.28218,
+      "maxY": 385.96643
+    },
+    "cluster": {
+      "retained": 2230,
+      "total": 2246,
+      "centerX": -3.84152,
+      "centerY": 145.86053,
+      "radiusX": 281.54741,
+      "radiusY": 620.96583
+    },
+    "scale": 0.41,
+    "x_offset": 107.45192,
+    "y_offset": 166.27431,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:59.885Z"
+  "exported_at": "2026-08-19T05:04:34.876Z"
 }

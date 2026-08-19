@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "puzzle",
   "character_name": "Puzzle",
   "localized_name": "谜图",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -272.69092,
+      "minX": -274.84882,
+      "maxX": 182.16458,
+      "minY": -124.80479,
+      "maxY": 414.45883
+    },
+    "full_source_bounds": {
+      "minX": -280.66223,
       "maxX": 783.1037,
-      "minY": -122.25515,
+      "minY": -124.80479,
       "maxY": 918.40125
     },
-    "scale": 0.1667,
-    "x_offset": 53.45733,
-    "y_offset": 195.62018,
+    "core_source_bounds": {
+      "minX": -274.84882,
+      "maxX": 182.16458,
+      "minY": -124.80479,
+      "maxY": 414.45883
+    },
+    "cluster": {
+      "retained": 2712,
+      "total": 2750,
+      "centerX": 6.08638,
+      "centerY": 132.72598,
+      "radiusX": 292.17138,
+      "radiusY": 674.78818
+    },
+    "scale": 0.38511,
+    "x_offset": 113.84677,
+    "y_offset": 167.93654,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:25.751Z"
+  "exported_at": "2026-08-19T05:05:03.000Z"
 }

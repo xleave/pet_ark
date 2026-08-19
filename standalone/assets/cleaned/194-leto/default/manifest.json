@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "194-leto",
   "character_name": "Лето",
   "localized_name": "烈夏",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -203.74007,
+      "minX": -203.83189,
       "maxX": 525.19,
-      "minY": -108.58576,
+      "minY": -107.8023,
       "maxY": 467.02002
     },
-    "scale": 0.24145,
-    "x_offset": 57.19299,
-    "y_offset": 189.78199,
+    "full_source_bounds": {
+      "minX": -203.83189,
+      "maxX": 525.19,
+      "minY": -107.8023,
+      "maxY": 467.02002
+    },
+    "core_source_bounds": {
+      "minX": -203.83189,
+      "maxX": 525.19,
+      "minY": -107.8023,
+      "maxY": 467.02002
+    },
+    "cluster": {
+      "retained": 2601,
+      "total": 2602,
+      "centerX": 23.28022,
+      "centerY": 180.05,
+      "radiusX": 405.00017,
+      "radiusY": 503.94676
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 70,
+      "visible_height": 95,
+      "density_zoom": 1.47368
+    },
+    "scale": 0.35578,
+    "x_offset": 94.09742,
+    "y_offset": 215.96233,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:53.892Z"
+  "exported_at": "2026-08-19T05:10:42.188Z"
 }

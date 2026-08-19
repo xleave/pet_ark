@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "wild-mane",
   "character_name": "Wild Mane",
   "localized_name": "野鬃",
@@ -131,16 +134,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -270.31326,
+      "minX": -270.34406,
+      "maxX": 226.15752,
+      "minY": -102.43574,
+      "maxY": 584.74176
+    },
+    "full_source_bounds": {
+      "minX": -270.34406,
       "maxX": 508.43628,
       "minY": -102.43574,
       "maxY": 584.74176
     },
-    "scale": 0.226,
-    "x_offset": 69.0917,
-    "y_offset": 192.84918,
+    "core_source_bounds": {
+      "minX": -270.34406,
+      "maxX": 226.15752,
+      "minY": -102.43574,
+      "maxY": 584.74176
+    },
+    "cluster": {
+      "retained": 2416,
+      "total": 2416,
+      "centerX": -7.86293,
+      "centerY": 201.96379,
+      "radiusX": 472.57894,
+      "radiusY": 645.3186
+    },
+    "scale": 0.30269,
+    "x_offset": 102.68736,
+    "y_offset": 184.99399,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:38.559Z"
+  "exported_at": "2026-08-19T05:08:05.205Z"
 }

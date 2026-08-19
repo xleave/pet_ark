@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "leizi-the-thunderbringer",
   "character_name": "Leizi the Thunderbringer",
   "localized_name": "司霆惊蛰",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -288.91821,
+      "maxX": 179.28622,
+      "minY": -128.5164,
+      "maxY": 415.51263
+    },
+    "full_source_bounds": {
       "minX": -624.23999,
       "maxX": 675.34998,
-      "minY": -128.34019,
+      "minY": -128.5164,
       "maxY": 528.69
     },
-    "scale": 0.13543,
-    "x_offset": 92.53916,
-    "y_offset": 198.61923,
+    "core_source_bounds": {
+      "minX": -288.91821,
+      "maxX": 179.28622,
+      "minY": -128.5164,
+      "maxY": 415.51263
+    },
+    "cluster": {
+      "retained": 3078,
+      "total": 3181,
+      "centerX": -9.44069,
+      "centerY": 141.29229,
+      "radiusX": 316.21457,
+      "radiusY": 638.88327
+    },
+    "scale": 0.3759,
+    "x_offset": 116.60556,
+    "y_offset": 167.69015,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:15.224Z"
+  "exported_at": "2026-08-19T05:04:20.905Z"
 }

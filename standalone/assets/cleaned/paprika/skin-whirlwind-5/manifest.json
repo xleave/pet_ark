@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "paprika",
   "character_name": "Paprika",
   "localized_name": "明椒",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -244.23552,
+      "minX": -244.36545,
+      "maxX": 183.0202,
+      "minY": -124.1322,
+      "maxY": 403.71384
+    },
+    "full_source_bounds": {
+      "minX": -244.36545,
       "maxX": 1041.73865,
       "minY": -124.1322,
-      "maxY": 960.87665
+      "maxY": 940.41351
     },
-    "scale": 0.13686,
-    "x_offset": 41.42637,
-    "y_offset": 199.01111,
+    "core_source_bounds": {
+      "minX": -244.36545,
+      "maxX": 183.0202,
+      "minY": -124.1322,
+      "maxY": 403.71384
+    },
+    "cluster": {
+      "retained": 2701,
+      "total": 2734,
+      "centerX": -4.8103,
+      "centerY": 133.50982,
+      "radiusX": 358.3836,
+      "radiusY": 636.96078
+    },
+    "scale": 0.39405,
+    "x_offset": 108.08668,
+    "y_offset": 167.08517,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:22.645Z"
+  "exported_at": "2026-08-19T05:03:48.937Z"
 }

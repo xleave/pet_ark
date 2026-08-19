@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "gavial-the-invincible",
   "character_name": "Gavial the Invincible",
   "localized_name": "百炼嘉维尔",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -234.12389,
+      "maxX": 191.80959,
+      "minY": -96.96085,
+      "maxY": 399.2272
+    },
+    "full_source_bounds": {
       "minX": -311.18124,
       "maxX": 366.72675,
-      "minY": -96.3381,
+      "minY": -96.96085,
       "maxY": 1146.51831
     },
-    "scale": 0.16736,
-    "x_offset": 91.35205,
-    "y_offset": 199.8772,
+    "core_source_bounds": {
+      "minX": -234.12389,
+      "maxX": 191.80959,
+      "minY": -96.96085,
+      "maxY": 399.2272
+    },
+    "cluster": {
+      "retained": 2277,
+      "total": 2295,
+      "centerX": -0.95982,
+      "centerY": 149.69644,
+      "radiusX": 266.21764,
+      "radiusY": 656.64674
+    },
+    "scale": 0.41,
+    "x_offset": 104.67443,
+    "y_offset": 176.24605,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:07.978Z"
+  "exported_at": "2026-08-19T05:04:15.007Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "lin",
   "character_name": "Lin",
   "localized_name": "林",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -332.49487,
+      "maxX": 166.70053,
+      "minY": -115.97829,
+      "maxY": 385.93073
+    },
+    "full_source_bounds": {
       "minX": -919.48004,
       "maxX": 447.50308,
       "minY": -115.97829,
       "maxY": 509.11508
     },
-    "scale": 0.12875,
-    "x_offset": 126.38368,
-    "y_offset": 201.06772,
+    "core_source_bounds": {
+      "minX": -332.49487,
+      "maxX": 166.70053,
+      "minY": -115.97829,
+      "maxY": 385.93073
+    },
+    "cluster": {
+      "retained": 3373,
+      "total": 3376,
+      "centerX": -6.79583,
+      "centerY": 133.33608,
+      "radiusX": 316.2549,
+      "radiusY": 621.20514
+    },
+    "scale": 0.35257,
+    "x_offset": 125.22684,
+    "y_offset": 175.10984,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:15.195Z"
+  "exported_at": "2026-08-19T05:04:21.176Z"
 }

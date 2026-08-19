@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "flint",
   "character_name": "Flint",
   "localized_name": "燧石",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -229.0377,
       "maxX": 166.38103,
-      "minY": -106.76299,
+      "minY": -104.67046,
       "maxY": 835.96484
     },
-    "scale": 0.22064,
-    "x_offset": 102.91217,
-    "y_offset": 192.44421,
+    "full_source_bounds": {
+      "minX": -229.0377,
+      "maxX": 166.38103,
+      "minY": -104.67046,
+      "maxY": 835.96484
+    },
+    "core_source_bounds": {
+      "minX": -229.0377,
+      "maxX": 166.38103,
+      "minY": -104.67046,
+      "maxY": 832.46478
+    },
+    "cluster": {
+      "retained": 2012,
+      "total": 2013,
+      "centerX": 0.9043,
+      "centerY": 208.40479,
+      "radiusX": 347.48533,
+      "radiusY": 620.00275
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 49,
+      "visible_height": 86,
+      "density_zoom": 1.62791
+    },
+    "scale": 0.35997,
+    "x_offset": 104.02159,
+    "y_offset": 217.39108,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:07.298Z"
+  "exported_at": "2026-08-19T05:10:28.098Z"
 }

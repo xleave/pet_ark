@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "carnelian",
   "character_name": "Carnelian",
   "localized_name": "卡涅利安",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -526.25983,
-      "maxX": 232.56184,
+      "maxX": 227.07695,
       "minY": -439.97626,
-      "maxY": 833.53802
+      "maxY": 652.02844
     },
-    "scale": 0.16333,
-    "x_offset": 119.98449,
-    "y_offset": 144.13974,
+    "full_source_bounds": {
+      "minX": -526.25983,
+      "maxX": 227.07695,
+      "minY": -439.97626,
+      "maxY": 652.02844
+    },
+    "core_source_bounds": {
+      "minX": -526.25983,
+      "maxX": 227.07695,
+      "minY": -439.97626,
+      "maxY": 652.02844
+    },
+    "cluster": {
+      "retained": 1974,
+      "total": 1974,
+      "centerX": -7.51509,
+      "centerY": 165.20471,
+      "radiusX": 612.4525,
+      "radiusY": 629.68123
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 49,
+      "visible_height": 81,
+      "density_zoom": 1.7284
+    },
+    "scale": 0.32922,
+    "x_offset": 103.76652,
+    "y_offset": 216.33766,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:00.484Z"
+  "exported_at": "2026-08-19T05:10:25.242Z"
 }

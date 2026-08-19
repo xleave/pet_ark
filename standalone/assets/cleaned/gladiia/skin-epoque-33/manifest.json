@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "gladiia",
   "character_name": "Gladiia",
   "localized_name": "歌蕾蒂娅",
@@ -97,7 +99,19 @@
       "duration": 13,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/gladiia/skin-epoque-33/special"
+      "path": "standalone/assets/cleaned/gladiia/skin-epoque-33/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 5,
+          "reason": "The deterministic Spine Special sample contains no visible pixels in the canonical character envelope; retained explicitly as a source-authored transition beat.",
+          "observed_by": "blank-policy-revision-1"
+        },
+        {
+          "frame": 6,
+          "reason": "The deterministic Spine Special sample contains no visible pixels in the canonical character envelope; retained explicitly as a source-authored transition beat.",
+          "observed_by": "blank-policy-revision-1"
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
@@ -113,16 +127,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -231.85089,
+      "maxX": 181.06973,
+      "minY": -154.394,
+      "maxY": 444.49219
+    },
+    "full_source_bounds": {
       "minX": -457.63556,
       "maxX": 851.65424,
       "minY": -154.394,
       "maxY": 1166.78564
     },
-    "scale": 0.13442,
-    "x_offset": 69.51721,
-    "y_offset": 195.24574,
+    "core_source_bounds": {
+      "minX": -231.85089,
+      "maxX": 181.06973,
+      "minY": -154.394,
+      "maxY": 444.49219
+    },
+    "cluster": {
+      "retained": 3381,
+      "total": 3398,
+      "centerX": 1.01328,
+      "centerY": 137.94012,
+      "radiusX": 256,
+      "radiusY": 519.64021
+    },
+    "scale": 0.34731,
+    "x_offset": 104.81844,
+    "y_offset": 162.3772,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:13.255Z"
+  "exported_at": "2026-08-19T05:04:15.311Z"
 }

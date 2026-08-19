@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "flametail",
   "character_name": "Flametail",
   "localized_name": "焰尾",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -301.44412,
+      "maxX": 332.31216,
+      "minY": -101.37225,
+      "maxY": 500.15387
+    },
+    "full_source_bounds": {
       "minX": -700.78625,
       "maxX": 1437.04407,
-      "minY": -101.34415,
-      "maxY": 1009.41113
+      "minY": -101.37225,
+      "maxY": 922.64288
     },
-    "scale": 0.08233,
-    "x_offset": 65.69325,
-    "y_offset": 207.65669,
+    "core_source_bounds": {
+      "minX": -301.44412,
+      "maxX": 332.31216,
+      "minY": -101.37225,
+      "maxY": 500.15387
+    },
+    "cluster": {
+      "retained": 2372,
+      "total": 2401,
+      "centerX": 1.22913,
+      "centerY": 147.62312,
+      "radiusX": 256,
+      "radiusY": 690.30653
+    },
+    "scale": 0.27771,
+    "x_offset": 91.71383,
+    "y_offset": 187.84798,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:07.375Z"
+  "exported_at": "2026-08-19T05:03:26.663Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "grain-buds",
   "character_name": "Grain Buds",
   "localized_name": "小满",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -287.10403,
+      "maxX": 263.53186,
+      "minY": -108.3389,
+      "maxY": 671.74048
+    },
+    "full_source_bounds": {
       "minX": -656.52789,
       "maxX": 696.39252,
       "minY": -108.3389,
       "maxY": 714.60071
     },
-    "scale": 0.13009,
-    "x_offset": 93.40703,
-    "y_offset": 201.90631,
+    "core_source_bounds": {
+      "minX": -287.10403,
+      "maxX": 263.53186,
+      "minY": -108.3389,
+      "maxY": 671.74048
+    },
+    "cluster": {
+      "retained": 3408,
+      "total": 3424,
+      "centerX": -4.78227,
+      "centerY": 147.79454,
+      "radiusX": 301.11244,
+      "radiusY": 677.90101
+    },
+    "scale": 0.26664,
+    "x_offset": 99.14264,
+    "y_offset": 187.11257,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:13.407Z"
+  "exported_at": "2026-08-19T05:04:16.059Z"
 }

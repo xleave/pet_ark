@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "115-headbr",
   "character_name": "Зима",
   "localized_name": "凛冬",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -229.41101,
       "maxX": 252.08696,
       "minY": -372.56015,
-      "maxY": 699.68744
+      "maxY": 699.82928
     },
-    "scale": 0.19399,
-    "x_offset": 93.8006,
-    "y_offset": 143.7289,
+    "full_source_bounds": {
+      "minX": -229.41101,
+      "maxX": 252.08696,
+      "minY": -372.56015,
+      "maxY": 699.82928
+    },
+    "core_source_bounds": {
+      "minX": -229.41101,
+      "maxX": 252.08696,
+      "minY": -372.56015,
+      "maxY": 510.35635
+    },
+    "cluster": {
+      "retained": 3031,
+      "total": 3031,
+      "centerX": 3.10621,
+      "centerY": 193.63044,
+      "radiusX": 430.14304,
+      "radiusY": 690.12589
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 41,
+      "visible_height": 76,
+      "density_zoom": 1.84211
+    },
+    "scale": 0.35729,
+    "x_offset": 101.15954,
+    "y_offset": 215.51822,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:53.820Z"
+  "exported_at": "2026-08-19T05:10:22.482Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "mostima",
   "character_name": "Mostima",
   "localized_name": "莫斯提马",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -399.71182,
       "maxX": 223.26834,
-      "minY": -108.05502,
-      "maxY": 396.81967
+      "minY": -108.18074,
+      "maxY": 396.41882
     },
-    "scale": 0.28251,
-    "x_offset": 120.92379,
-    "y_offset": 185.47305,
+    "full_source_bounds": {
+      "minX": -399.71182,
+      "maxX": 223.26834,
+      "minY": -108.18074,
+      "maxY": 396.41882
+    },
+    "core_source_bounds": {
+      "minX": -399.71182,
+      "maxX": 223.26834,
+      "minY": -108.18074,
+      "maxY": 396.41882
+    },
+    "cluster": {
+      "retained": 1625,
+      "total": 1625,
+      "centerX": -0.74123,
+      "centerY": 171.99633,
+      "radiusX": 439.38357,
+      "radiusY": 484.97189
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 66,
+      "visible_height": 112,
+      "density_zoom": 1.25
+    },
+    "scale": 0.35314,
+    "x_offset": 102.77974,
+    "y_offset": 216.54692,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:19.281Z"
+  "exported_at": "2026-08-19T05:11:40.586Z"
 }

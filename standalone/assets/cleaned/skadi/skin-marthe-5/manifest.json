@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "skadi",
   "character_name": "Skadi",
   "localized_name": "斯卡蒂",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -204.66425,
-      "maxX": 1371.85901,
-      "minY": -106.8843,
-      "maxY": 400.78625
+      "minX": -204.66521,
+      "maxX": 177.78725,
+      "minY": -107.23022,
+      "maxY": 399.73935
     },
-    "scale": 0.11164,
-    "x_offset": 30.84832,
-    "y_offset": 204.06764,
+    "full_source_bounds": {
+      "minX": -204.66521,
+      "maxX": 1371.85901,
+      "minY": -107.23022,
+      "maxY": 399.73935
+    },
+    "core_source_bounds": {
+      "minX": -204.66521,
+      "maxX": 177.78725,
+      "minY": -107.23022,
+      "maxY": 399.73935
+    },
+    "cluster": {
+      "retained": 1970,
+      "total": 1978,
+      "centerX": 4.88211,
+      "centerY": 142.52925,
+      "radiusX": 256,
+      "radiusY": 714.57388
+    },
+    "scale": 0.41,
+    "x_offset": 101.50998,
+    "y_offset": 172.03561,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:31.364Z"
+  "exported_at": "2026-08-19T05:03:36.691Z"
 }

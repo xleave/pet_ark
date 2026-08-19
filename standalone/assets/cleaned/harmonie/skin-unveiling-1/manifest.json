@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "harmonie",
   "character_name": "Harmonie",
   "localized_name": "和弦",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -254.45438,
+      "maxX": 206.31467,
+      "minY": -100.05968,
+      "maxY": 420.09384
+    },
+    "full_source_bounds": {
       "minX": -254.45438,
       "maxX": 375.54535,
       "minY": -100.05968,
       "maxY": 420.09384
     },
-    "scale": 0.27937,
-    "x_offset": 79.0857,
-    "y_offset": 188.04681,
+    "core_source_bounds": {
+      "minX": -254.45438,
+      "maxX": 206.31467,
+      "minY": -100.05968,
+      "maxY": 420.09384
+    },
+    "cluster": {
+      "retained": 2134,
+      "total": 2134,
+      "centerX": 15.59965,
+      "centerY": 199.36309,
+      "radiusX": 320.059,
+      "radiusY": 563.43155
+    },
+    "scale": 0.38197,
+    "x_offset": 105.19396,
+    "y_offset": 177.78019,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:13.431Z"
+  "exported_at": "2026-08-19T05:07:47.731Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "hoshiguma-the-breacher",
   "character_name": "Hoshiguma the Breacher",
   "localized_name": "斩业星熊",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -410.48999,
-      "maxX": 428.9769,
-      "minY": -134.89671,
-      "maxY": 499.83554
+      "maxX": 425.7164,
+      "minY": -134.85172,
+      "maxY": 471.95001
     },
-    "scale": 0.20966,
-    "x_offset": 94.06205,
-    "y_offset": 187.71798,
+    "full_source_bounds": {
+      "minX": -410.48999,
+      "maxX": 425.7164,
+      "minY": -134.85172,
+      "maxY": 471.95001
+    },
+    "core_source_bounds": {
+      "minX": -410.48999,
+      "maxX": 377.87506,
+      "minY": -134.85172,
+      "maxY": 457.68585
+    },
+    "cluster": {
+      "retained": 1897,
+      "total": 1897,
+      "centerX": -5.32216,
+      "centerY": 156.20603,
+      "radiusX": 630.81633,
+      "radiusY": 889.55433
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 73,
+      "visible_height": 93,
+      "density_zoom": 1.50538
+    },
+    "scale": 0.31684,
+    "x_offset": 116.16845,
+    "y_offset": 215.4237,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:11.182Z"
+  "exported_at": "2026-08-19T05:10:55.118Z"
 }

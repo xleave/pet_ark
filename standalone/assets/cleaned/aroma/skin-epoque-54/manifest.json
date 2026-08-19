@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "aroma",
   "character_name": "Aroma",
   "localized_name": "阿罗玛",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -1084.72693,
-      "maxX": 750.19,
-      "minY": -120.92229,
+      "minX": -247.35876,
+      "maxX": 596.53467,
+      "minY": -123.69583,
       "maxY": 637.11957
     },
-    "scale": 0.09592,
-    "x_offset": 112.04391,
-    "y_offset": 204.40148,
+    "full_source_bounds": {
+      "minX": -898.79547,
+      "maxX": 750.19,
+      "minY": -123.69583,
+      "maxY": 638.08783
+    },
+    "core_source_bounds": {
+      "minX": -247.35876,
+      "maxX": 596.53467,
+      "minY": -123.69583,
+      "maxY": 637.11957
+    },
+    "cluster": {
+      "retained": 3283,
+      "total": 3289,
+      "centerX": 21.48201,
+      "centerY": 211.85661,
+      "radiusX": 534.91133,
+      "radiusY": 692.50151
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 90,
+      "visible_height": 87,
+      "density_zoom": 1.6092
+    },
+    "scale": 0.33561,
+    "x_offset": 70.39518,
+    "y_offset": 216.32562,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:56.624Z"
+  "exported_at": "2026-08-19T05:11:23.377Z"
 }

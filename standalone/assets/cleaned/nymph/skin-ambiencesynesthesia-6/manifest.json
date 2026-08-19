@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "nymph",
   "character_name": "Nymph",
   "localized_name": "妮芙",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -1182.04004,
-      "maxX": 442.55154,
-      "minY": -113.88385,
-      "maxY": 558.60944
+      "minX": -282.81061,
+      "maxX": 261.47223,
+      "minY": -113.89745,
+      "maxY": 440.0275
     },
-    "scale": 0.10833,
-    "x_offset": 136.05621,
-    "y_offset": 203.6624,
+    "full_source_bounds": {
+      "minX": -1182.04004,
+      "maxX": 412.81879,
+      "minY": -113.89745,
+      "maxY": 558.60992
+    },
+    "core_source_bounds": {
+      "minX": -282.81061,
+      "maxX": 261.47223,
+      "minY": -113.89745,
+      "maxY": 440.0275
+    },
+    "cluster": {
+      "retained": 2937,
+      "total": 2954,
+      "centerX": -6.08668,
+      "centerY": 127.05711,
+      "radiusX": 318.37409,
+      "radiusY": 572.1096
+    },
+    "scale": 0.32336,
+    "x_offset": 99.45,
+    "y_offset": 179.16997,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:22.060Z"
+  "exported_at": "2026-08-19T05:03:33.732Z"
 }

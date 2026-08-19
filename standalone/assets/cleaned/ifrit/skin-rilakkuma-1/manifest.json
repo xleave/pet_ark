@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ifrit",
   "character_name": "Ifrit",
   "localized_name": "伊芙利特",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
+      "minX": -996.2157,
+      "maxX": 1202.43005,
+      "minY": -804.6261,
+      "maxY": 883.41046
+    },
+    "full_source_bounds": {
       "minX": -996.2157,
       "maxX": 1890.44995,
       "minY": -917.93219,
       "maxY": 883.41046
     },
-    "scale": 0.06097,
-    "x_offset": 68.73927,
-    "y_offset": 160.03368,
+    "core_source_bounds": {
+      "minX": -996.2157,
+      "maxX": 1202.43005,
+      "minY": -804.6261,
+      "maxY": 883.41046
+    },
+    "cluster": {
+      "retained": 2924,
+      "total": 2951,
+      "centerX": 43.30894,
+      "centerY": 154.75792,
+      "radiusX": 1204.99416,
+      "radiusY": 1267.393
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 20,
+      "visible_height": 33,
+      "density_zoom": 4.24242
+    },
+    "scale": 0.3396,
+    "x_offset": 101.28752,
+    "y_offset": 218.50415,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:11.754Z"
+  "exported_at": "2026-08-19T05:10:29.567Z"
 }

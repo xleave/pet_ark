@@ -1,12 +1,13 @@
 {
   "name": "pet-ark-control-center",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 1420",
     "build": "vite build",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check": "npm run check:design && svelte-check --tsconfig ./tsconfig.json",
+    "check:design": "node scripts/check-design-tokens.mjs",
     "tauri": "tauri"
   },
   "dependencies": {

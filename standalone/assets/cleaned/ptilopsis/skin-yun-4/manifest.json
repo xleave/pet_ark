@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ptilopsis",
   "character_name": "Ptilopsis",
   "localized_name": "白面鸮",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -487.30002,
       "maxX": 215.38528,
       "minY": -113.17887,
       "maxY": 538.97998
     },
-    "scale": 0.25047,
-    "x_offset": 130.05293,
-    "y_offset": 187.65234,
+    "full_source_bounds": {
+      "minX": -487.30002,
+      "maxX": 215.38528,
+      "minY": -113.17887,
+      "maxY": 538.97998
+    },
+    "core_source_bounds": {
+      "minX": -487.30002,
+      "maxX": 186.11063,
+      "minY": -113.17887,
+      "maxY": 538.97998
+    },
+    "cluster": {
+      "retained": 2895,
+      "total": 2895,
+      "centerX": -53.2911,
+      "centerY": 200.73471,
+      "radiusX": 914.84645,
+      "radiusY": 627.56723
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 64,
+      "visible_height": 100,
+      "density_zoom": 1.4
+    },
+    "scale": 0.35065,
+    "x_offset": 102.37411,
+    "y_offset": 215.51328,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:18.884Z"
+  "exported_at": "2026-08-19T05:11:46.737Z"
 }

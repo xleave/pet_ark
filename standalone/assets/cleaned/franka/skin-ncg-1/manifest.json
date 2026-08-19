@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "franka",
   "character_name": "Franka",
   "localized_name": "芙兰卡",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -267.67584,
+      "minX": -267.95718,
+      "maxX": 166.52045,
+      "minY": -90.25314,
+      "maxY": 427.38934
+    },
+    "full_source_bounds": {
+      "minX": -267.95718,
       "maxX": 707.37988,
       "minY": -1571.54089,
-      "maxY": 480.05444
+      "maxY": 477.93857
     },
-    "scale": 0.10138,
-    "x_offset": 73.71041,
-    "y_offset": 56.67009,
+    "core_source_bounds": {
+      "minX": -267.95718,
+      "maxX": 166.52045,
+      "minY": -90.25314,
+      "maxY": 427.38934
+    },
+    "cluster": {
+      "retained": 1832,
+      "total": 1867,
+      "centerX": 4.51753,
+      "centerY": 137.60326,
+      "radiusX": 256,
+      "radiusY": 677.63397
+    },
+    "scale": 0.40182,
+    "x_offset": 116.37974,
+    "y_offset": 179.73433,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:07.651Z"
+  "exported_at": "2026-08-19T05:03:27.732Z"
 }

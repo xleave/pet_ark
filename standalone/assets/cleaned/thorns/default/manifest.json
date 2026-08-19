@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "thorns",
   "character_name": "Thorns",
   "localized_name": "棘刺",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -222.41331,
       "maxX": 380.27444,
-      "minY": -127.40407,
-      "maxY": 386.54663
+      "minY": -127.88049,
+      "maxY": 387.57715
     },
-    "scale": 0.29203,
-    "x_offset": 72.95029,
-    "y_offset": 178.7948,
+    "full_source_bounds": {
+      "minX": -222.41331,
+      "maxX": 380.27444,
+      "minY": -127.88049,
+      "maxY": 387.57715
+    },
+    "core_source_bounds": {
+      "minX": -222.41331,
+      "maxX": 380.27444,
+      "minY": -127.88049,
+      "maxY": 387.57715
+    },
+    "cluster": {
+      "retained": 2263,
+      "total": 2263,
+      "centerX": -9.74479,
+      "centerY": 171.82364,
+      "radiusX": 412.49976,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 57,
+      "visible_height": 113,
+      "density_zoom": 1.26316
+    },
+    "scale": 0.36887,
+    "x_offset": 99.72668,
+    "y_offset": 215.56507,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:34.213Z"
+  "exported_at": "2026-08-19T05:11:52.619Z"
 }

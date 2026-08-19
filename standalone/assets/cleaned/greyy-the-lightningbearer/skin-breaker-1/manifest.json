@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "greyy-the-lightningbearer",
   "character_name": "Greyy the Lightningbearer",
   "localized_name": "承曦格雷伊",
@@ -119,16 +122,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -860.13062,
-      "maxX": 529.86688,
-      "minY": -104.61525,
+      "minX": -484.24469,
+      "maxX": 475.06442,
+      "minY": -112.47083,
       "maxY": 911.79651
     },
-    "scale": 0.12662,
-    "x_offset": 116.90882,
-    "y_offset": 202.75373,
+    "full_source_bounds": {
+      "minX": -856.60571,
+      "maxX": 529.86688,
+      "minY": -112.47083,
+      "maxY": 911.79651
+    },
+    "core_source_bounds": {
+      "minX": -484.24469,
+      "maxX": 475.06442,
+      "minY": -112.47083,
+      "maxY": 911.79651
+    },
+    "cluster": {
+      "retained": 3630,
+      "total": 3630,
+      "centerX": -36.04355,
+      "centerY": 259.58832,
+      "radiusX": 558.10565,
+      "radiusY": 645.95154
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 43,
+      "visible_height": 75,
+      "density_zoom": 1.86667
+    },
+    "scale": 0.34247,
+    "x_offset": 103.17198,
+    "y_offset": 216.68226,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:09.429Z"
+  "exported_at": "2026-08-19T05:10:28.637Z"
 }

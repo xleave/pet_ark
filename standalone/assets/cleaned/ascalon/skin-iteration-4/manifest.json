@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "ascalon",
   "character_name": "Ascalon",
   "localized_name": "阿斯卡纶",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -394.7905,
-      "maxX": 681.67816,
-      "minY": -131.52892,
+      "minX": -253.99008,
+      "maxX": 318.21365,
+      "minY": -133.50029,
+      "maxY": 430.5094
+    },
+    "full_source_bounds": {
+      "minX": -394.82568,
+      "maxX": 681.83234,
+      "minY": -133.50029,
       "maxY": 988.26892
     },
-    "scale": 0.1635,
-    "x_offset": 72.54728,
-    "y_offset": 194.49534,
+    "core_source_bounds": {
+      "minX": -253.99008,
+      "maxX": 318.21365,
+      "minY": -133.50029,
+      "maxY": 430.5094
+    },
+    "cluster": {
+      "retained": 2025,
+      "total": 2025,
+      "centerX": -1.31933,
+      "centerY": 160.03539,
+      "radiusX": 312.28532,
+      "radiusY": 693.15479
+    },
+    "scale": 0.30758,
+    "x_offset": 86.12297,
+    "y_offset": 174.93761,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:56.912Z"
+  "exported_at": "2026-08-19T05:04:55.265Z"
 }

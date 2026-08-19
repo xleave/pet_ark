@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "feater",
   "character_name": "FEater",
   "localized_name": "食铁兽",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -316.42001,
+      "maxX": 181.64807,
+      "minY": -86.86796,
+      "maxY": 395.28619
+    },
+    "full_source_bounds": {
       "minX": -335.42004,
       "maxX": 1114.95007,
       "minY": -86.86796,
-      "maxY": 389.80624
+      "maxY": 400.45508
     },
-    "scale": 0.12135,
-    "x_offset": 48.70266,
-    "y_offset": 205.45872,
+    "core_source_bounds": {
+      "minX": -316.42001,
+      "maxX": 181.64807,
+      "minY": -86.86796,
+      "maxY": 395.28619
+    },
+    "cluster": {
+      "retained": 1470,
+      "total": 1500,
+      "centerX": 26.7057,
+      "centerY": 138.59721,
+      "radiusX": 322.72492,
+      "radiusY": 541.38105
+    },
+    "scale": 0.35337,
+    "x_offset": 119.81187,
+    "y_offset": 185.30387,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:06.688Z"
+  "exported_at": "2026-08-19T05:03:47.566Z"
 }

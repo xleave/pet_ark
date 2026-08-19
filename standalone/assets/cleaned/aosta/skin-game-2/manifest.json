@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "aosta",
   "character_name": "Aosta",
   "localized_name": "奥斯塔",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -221.64093,
+      "maxX": 334.76135,
+      "minY": -120.5266,
+      "maxY": 401.68677
+    },
+    "full_source_bounds": {
       "minX": -771.44006,
       "maxX": 762.00977,
       "minY": -120.5266,
       "maxY": 740.44
     },
-    "scale": 0.11477,
-    "x_offset": 96.54118,
-    "y_offset": 202.16669,
+    "core_source_bounds": {
+      "minX": -221.64093,
+      "maxX": 334.76135,
+      "minY": -120.5266,
+      "maxY": 401.68677
+    },
+    "cluster": {
+      "retained": 1520,
+      "total": 1586,
+      "centerX": 5.395,
+      "centerY": 137.18704,
+      "radiusX": 319.67465,
+      "radiusY": 647.08535
+    },
+    "scale": 0.31632,
+    "x_offset": 78.10899,
+    "y_offset": 177.87528,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:56.113Z"
+  "exported_at": "2026-08-19T05:03:20.136Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "aurora",
   "character_name": "Aurora",
   "localized_name": "极光",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -242.71915,
+      "maxX": 150.76843,
+      "minY": -90.60716,
+      "maxY": 385.76123
+    },
+    "full_source_bounds": {
       "minX": -1015.55139,
       "maxX": 628.97766,
-      "minY": -90.85673,
+      "minY": -90.60716,
       "maxY": 479.55838
     },
-    "scale": 0.10702,
-    "x_offset": 116.68585,
-    "y_offset": 206.27637,
+    "core_source_bounds": {
+      "minX": -242.71915,
+      "maxX": 150.76843,
+      "minY": -90.60716,
+      "maxY": 385.76123
+    },
+    "cluster": {
+      "retained": 2388,
+      "total": 2414,
+      "centerX": -6.20793,
+      "centerY": 145.26499,
+      "radiusX": 256,
+      "radiusY": 703.36762
+    },
+    "scale": 0.41,
+    "x_offset": 114.8499,
+    "y_offset": 178.85106,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:57.384Z"
+  "exported_at": "2026-08-19T05:03:54.050Z"
 }

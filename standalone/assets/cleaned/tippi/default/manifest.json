@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "tippi",
   "character_name": "Tippi",
   "localized_name": "蒂比",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -255.798,
       "maxX": 471.69,
       "minY": -139.56682,
       "maxY": 595.78003
     },
-    "scale": 0.24193,
-    "x_offset": 69.8848,
-    "y_offset": 182.23482,
+    "full_source_bounds": {
+      "minX": -255.798,
+      "maxX": 471.69,
+      "minY": -139.56682,
+      "maxY": 595.78003
+    },
+    "core_source_bounds": {
+      "minX": -255.798,
+      "maxX": 471.69,
+      "minY": -139.56682,
+      "maxY": 595.78003
+    },
+    "cluster": {
+      "retained": 4038,
+      "total": 4038,
+      "centerX": 43.98108,
+      "centerY": 176.78,
+      "radiusX": 1074.65194,
+      "radiusY": 665.77538
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 81,
+      "visible_height": 96,
+      "density_zoom": 1.45833
+    },
+    "scale": 0.35281,
+    "x_offset": 94.37366,
+    "y_offset": 216.34245,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:34.671Z"
+  "exported_at": "2026-08-19T05:11:15.467Z"
 }

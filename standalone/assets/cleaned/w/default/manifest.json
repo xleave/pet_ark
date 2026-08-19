@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "w",
   "character_name": "W",
   "localized_name": "W",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -223.91937,
       "maxX": 408.05161,
       "minY": -103.04435,
       "maxY": 607.32764
     },
-    "scale": 0.27849,
-    "x_offset": 70.36016,
-    "y_offset": 187.30279,
+    "full_source_bounds": {
+      "minX": -223.91937,
+      "maxX": 408.05161,
+      "minY": -103.04435,
+      "maxY": 607.32764
+    },
+    "core_source_bounds": {
+      "minX": -223.91937,
+      "maxX": 408.05161,
+      "minY": -103.04435,
+      "maxY": 399.88617
+    },
+    "cluster": {
+      "retained": 1634,
+      "total": 1634,
+      "centerX": -0.08969,
+      "centerY": 175.15923,
+      "radiusX": 520.01072,
+      "radiusY": 520.06489
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 65,
+      "visible_height": 111,
+      "density_zoom": 1.26126
+    },
+    "scale": 0.35125,
+    "x_offset": 106.54434,
+    "y_offset": 216.38189,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:37.333Z"
+  "exported_at": "2026-08-19T05:11:54.962Z"
 }

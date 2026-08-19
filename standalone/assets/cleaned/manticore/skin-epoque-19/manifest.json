@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "manticore",
   "character_name": "Manticore",
   "localized_name": "狮蝎",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -310.31509,
+      "maxX": 232.31017,
+      "minY": -122.49143,
+      "maxY": 453.88412
+    },
+    "full_source_bounds": {
       "minX": -314.22342,
       "maxX": 764.40039,
-      "minY": -121.6628,
-      "maxY": 453.23724
+      "minY": -122.49143,
+      "maxY": 453.88412
     },
-    "scale": 0.16317,
-    "x_offset": 59.27211,
-    "y_offset": 196.14817,
+    "core_source_bounds": {
+      "minX": -310.31509,
+      "maxX": 232.31017,
+      "minY": -122.49143,
+      "maxY": 453.88412
+    },
+    "cluster": {
+      "retained": 2748,
+      "total": 2813,
+      "centerX": -2.20993,
+      "centerY": 139.77515,
+      "radiusX": 296.36005,
+      "radiusY": 640.94953
+    },
+    "scale": 0.32435,
+    "x_offset": 108.65041,
+    "y_offset": 176.27002,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:17.326Z"
+  "exported_at": "2026-08-19T05:05:01.214Z"
 }

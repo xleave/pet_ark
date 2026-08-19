@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "goldenglow",
   "character_name": "Goldenglow",
   "localized_name": "澄闪",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -309.71729,
+      "minX": -213.75253,
+      "maxX": 169.49527,
+      "minY": -166.51396,
+      "maxY": 431.76486
+    },
+    "full_source_bounds": {
+      "minX": -228.59338,
       "maxX": 769.86737,
       "minY": -166.51396,
-      "maxY": 736.85022
+      "maxY": 431.76486
     },
-    "scale": 0.16303,
-    "x_offset": 58.49186,
-    "y_offset": 188.85395,
+    "core_source_bounds": {
+      "minX": -213.75253,
+      "maxX": 169.49527,
+      "minY": -166.51396,
+      "maxY": 431.76486
+    },
+    "cluster": {
+      "retained": 2388,
+      "total": 2392,
+      "centerX": 0.64424,
+      "centerY": 141.02304,
+      "radiusX": 292.90361,
+      "radiusY": 639.68045
+    },
+    "scale": 0.34766,
+    "x_offset": 103.69333,
+    "y_offset": 158.10909,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:08.512Z"
+  "exported_at": "2026-08-19T05:04:15.376Z"
 }

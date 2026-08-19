@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "surtr",
   "character_name": "Surtr",
   "localized_name": "史尔特尔",
@@ -97,7 +100,14 @@
       "duration": 11.600000381469727,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/surtr/skin-it-1/special"
+      "path": "standalone/assets/cleaned/surtr/skin-it-1/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 4,
+          "reason": "The deterministic Spine Special sample contains no visible pixels in the canonical character envelope; retained explicitly as a source-authored transition beat.",
+          "observed_by": "blank-policy-revision-1"
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
@@ -113,16 +123,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -1136.90649,
-      "maxX": 853.14294,
+      "minX": -281.09464,
+      "maxX": 406.88483,
       "minY": -119.94315,
       "maxY": 629.89044
     },
-    "scale": 0.08844,
-    "x_offset": 108.54803,
-    "y_offset": 205.39223,
+    "full_source_bounds": {
+      "minX": -1136.90649,
+      "maxX": 851.8916,
+      "minY": -119.94315,
+      "maxY": 649.01569
+    },
+    "core_source_bounds": {
+      "minX": -281.09464,
+      "maxX": 406.88483,
+      "minY": -119.94315,
+      "maxY": 629.89044
+    },
+    "cluster": {
+      "retained": 2269,
+      "total": 2286,
+      "centerX": -16.21742,
+      "centerY": 200.41863,
+      "radiusX": 550.18344,
+      "radiusY": 655.0502
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 74,
+      "visible_height": 106,
+      "density_zoom": 1.32075
+    },
+    "scale": 0.33788,
+    "x_offset": 108.4284,
+    "y_offset": 216.4173,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:32.637Z"
+  "exported_at": "2026-08-19T05:11:52.392Z"
 }

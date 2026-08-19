@@ -1,0 +1,15 @@
+[Unit]
+Description=Pet Ark read-only desktop context reactions
+Documentation=https://github.com/xleave/pet_ark
+After=graphical-session.target pet-ark.service
+
+[Service]
+Type=simple
+Environment=XDG_RUNTIME_DIR=%t
+ExecStart=@NODE@ @CONTEXT_BROKER@
+Restart=on-failure
+RestartSec=3s
+SyslogIdentifier=pet-ark-context
+
+[Install]
+WantedBy=default.target

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "swire-the-elegant-wit",
   "character_name": "Swire the Elegant Wit",
   "localized_name": "琳琅诗怀雅",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -589.54486,
+      "minX": -593.44,
       "maxX": 812.31396,
-      "minY": -120.62324,
+      "minY": -121.45329,
       "maxY": 892.52832
     },
-    "scale": 0.12555,
-    "x_offset": 82.01594,
-    "y_offset": 200.85604,
+    "full_source_bounds": {
+      "minX": -593.44,
+      "maxX": 812.31396,
+      "minY": -121.45329,
+      "maxY": 892.52832
+    },
+    "core_source_bounds": {
+      "minX": -589.54486,
+      "maxX": 701.15747,
+      "minY": -121.45329,
+      "maxY": 892.52832
+    },
+    "cluster": {
+      "retained": 2358,
+      "total": 2363,
+      "centerX": 23.49653,
+      "centerY": 298.48283,
+      "radiusX": 687.59993,
+      "radiusY": 1627.1871
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 44,
+      "visible_height": 50,
+      "density_zoom": 2.8
+    },
+    "scale": 0.35056,
+    "x_offset": 103.83586,
+    "y_offset": 218.22343,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:33.353Z"
+  "exported_at": "2026-08-19T05:11:13.525Z"
 }

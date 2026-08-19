@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "matterhorn",
   "character_name": "Matterhorn",
   "localized_name": "角峰",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -282.65317,
+      "minX": -282.65182,
       "maxX": 446.4277,
       "minY": -98.31374,
-      "maxY": 442.37
+      "maxY": 472.44141
     },
-    "scale": 0.2414,
-    "x_offset": 76.23243,
-    "y_offset": 192.26708,
+    "full_source_bounds": {
+      "minX": -282.65182,
+      "maxX": 446.4277,
+      "minY": -98.31374,
+      "maxY": 472.44141
+    },
+    "core_source_bounds": {
+      "minX": -282.65182,
+      "maxX": 446.4277,
+      "minY": -98.31374,
+      "maxY": 440.50195
+    },
+    "cluster": {
+      "retained": 1784,
+      "total": 1784,
+      "centerX": 25.27,
+      "centerY": 178.99886,
+      "radiusX": 430.05903,
+      "radiusY": 609.03561
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 58,
+      "visible_height": 105,
+      "density_zoom": 1.33333
+    },
+    "scale": 0.32187,
+    "x_offset": 102.30964,
+    "y_offset": 216.35605,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:17.507Z"
+  "exported_at": "2026-08-19T05:11:38.010Z"
 }

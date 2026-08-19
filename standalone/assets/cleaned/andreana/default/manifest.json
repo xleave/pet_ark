@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "andreana",
   "character_name": "Andreana",
   "localized_name": "安哲拉",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -206.76907,
+      "minX": -206.79335,
       "maxX": 174.02814,
-      "minY": -115.14017,
+      "minY": -115.48421,
       "maxY": 668.44501
     },
-    "scale": 0.26545,
-    "x_offset": 100.34548,
-    "y_offset": 185.43644,
+    "full_source_bounds": {
+      "minX": -206.79335,
+      "maxX": 174.02814,
+      "minY": -115.48421,
+      "maxY": 668.44501
+    },
+    "core_source_bounds": {
+      "minX": -206.79335,
+      "maxX": 174.02814,
+      "minY": -115.48421,
+      "maxY": 668.44501
+    },
+    "cluster": {
+      "retained": 2032,
+      "total": 2032,
+      "centerX": -0.25224,
+      "centerY": 208.89991,
+      "radiusX": 379.98676,
+      "radiusY": 765.01122
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 54,
+      "visible_height": 101,
+      "density_zoom": 1.38614
+    },
+    "scale": 0.36778,
+    "x_offset": 99.94606,
+    "y_offset": 216.49702,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:55.647Z"
+  "exported_at": "2026-08-19T05:10:43.457Z"
 }

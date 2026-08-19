@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "shamare",
   "character_name": "Shamare",
   "localized_name": "巫恋",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -609.06146,
-      "maxX": 510.63223,
-      "minY": -100.90785,
-      "maxY": 648.67297
+      "minX": -312.50919,
+      "maxX": 282.89761,
+      "minY": -100.9119,
+      "maxY": 440.52603
     },
-    "scale": 0.15719,
-    "x_offset": 103.73584,
-    "y_offset": 200.13871,
+    "full_source_bounds": {
+      "minX": -609.06146,
+      "maxX": 431.80359,
+      "minY": -100.9119,
+      "maxY": 498.82703
+    },
+    "core_source_bounds": {
+      "minX": -312.50919,
+      "maxX": 282.89761,
+      "minY": -100.9119,
+      "maxY": 440.52603
+    },
+    "cluster": {
+      "retained": 3555,
+      "total": 3567,
+      "centerX": -4.5642,
+      "centerY": 138.00893,
+      "radiusX": 362.4506,
+      "radiusY": 607.45926
+    },
+    "scale": 0.2956,
+    "x_offset": 100.37653,
+    "y_offset": 186.17082,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:30.336Z"
+  "exported_at": "2026-08-19T05:05:04.591Z"
 }

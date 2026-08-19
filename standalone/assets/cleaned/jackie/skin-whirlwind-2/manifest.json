@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "jackie",
   "character_name": "Jackie",
   "localized_name": "杰克",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -243.56554,
+      "maxX": 176.7088,
+      "minY": -113.28265,
+      "maxY": 420.0918
+    },
+    "full_source_bounds": {
       "minX": -919.84277,
-      "maxX": 463.85825,
-      "minY": -113.01662,
+      "maxX": 436.59457,
+      "minY": -113.28265,
       "maxY": 917.07001
     },
-    "scale": 0.1272,
-    "x_offset": 124.9995,
-    "y_offset": 201.62484,
+    "core_source_bounds": {
+      "minX": -243.56554,
+      "maxX": 176.7088,
+      "minY": -113.28265,
+      "maxY": 420.0918
+    },
+    "cluster": {
+      "retained": 1949,
+      "total": 1965,
+      "centerX": -4.1942,
+      "centerY": 145.23215,
+      "radiusX": 267.04135,
+      "radiusY": 672.34959
+    },
+    "scale": 0.38997,
+    "x_offset": 109.03606,
+    "y_offset": 171.82317,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:12.579Z"
+  "exported_at": "2026-08-19T05:04:18.214Z"
 }

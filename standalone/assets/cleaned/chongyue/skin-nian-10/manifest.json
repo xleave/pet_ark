@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "chongyue",
   "character_name": "Chongyue",
   "localized_name": "重岳",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -446.39203,
-      "maxX": 404.77899,
-      "minY": -101.17171,
-      "maxY": 522.23523
+      "maxX": 377.3111,
+      "minY": -101.34295,
+      "maxY": 477.57532
     },
-    "scale": 0.20677,
-    "x_offset": 100.30225,
-    "y_offset": 195.08033,
+    "full_source_bounds": {
+      "minX": -446.39203,
+      "maxX": 377.3111,
+      "minY": -101.34295,
+      "maxY": 477.57532
+    },
+    "core_source_bounds": {
+      "minX": -446.39203,
+      "maxX": 377.3111,
+      "minY": -101.34295,
+      "maxY": 454.50015
+    },
+    "cluster": {
+      "retained": 3140,
+      "total": 3140,
+      "centerX": -15.98173,
+      "centerY": 185.7892,
+      "radiusX": 515.21105,
+      "radiusY": 877.10358
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 69,
+      "visible_height": 96,
+      "density_zoom": 1.45833
+    },
+    "scale": 0.3116,
+    "x_offset": 122.80451,
+    "y_offset": 216.50478,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:01.923Z"
+  "exported_at": "2026-08-19T05:10:46.481Z"
 }

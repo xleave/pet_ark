@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "lappland",
   "character_name": "Lappland",
   "localized_name": "拉普兰德",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -243.05022,
+      "minX": -243.0966,
       "maxX": 374.35333,
-      "minY": -125.84007,
+      "minY": -126.44833,
       "maxY": 389.13361
     },
-    "scale": 0.28506,
-    "x_offset": 77.28505,
-    "y_offset": 180.12743,
+    "full_source_bounds": {
+      "minX": -243.0966,
+      "maxX": 374.35333,
+      "minY": -126.44833,
+      "maxY": 389.13361
+    },
+    "core_source_bounds": {
+      "minX": -243.0966,
+      "maxX": 374.35333,
+      "minY": -126.44833,
+      "maxY": 389.13361
+    },
+    "cluster": {
+      "retained": 1163,
+      "total": 1163,
+      "centerX": 16.5938,
+      "centerY": 171.86442,
+      "radiusX": 355.00518,
+      "radiusY": 575.89302
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 71,
+      "visible_height": 112,
+      "density_zoom": 1.25
+    },
+    "scale": 0.3563,
+    "x_offset": 105.11634,
+    "y_offset": 215.94593,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:14.485Z"
+  "exported_at": "2026-08-19T05:11:34.357Z"
 }

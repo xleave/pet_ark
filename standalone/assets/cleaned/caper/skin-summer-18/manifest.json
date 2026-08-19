@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "caper",
   "character_name": "Caper",
   "localized_name": "跃跃",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
+      "minX": -423.54288,
+      "maxX": 135.21146,
+      "minY": -361.62027,
+      "maxY": 452.63574
+    },
+    "full_source_bounds": {
       "minX": -423.54288,
       "maxX": 862.60522,
       "minY": -361.62027,
-      "maxY": 551.06757
+      "maxY": 813.31787
     },
-    "scale": 0.13684,
-    "x_offset": 65.95876,
-    "y_offset": 166.5149,
+    "core_source_bounds": {
+      "minX": -423.54288,
+      "maxX": 135.21146,
+      "minY": -361.62027,
+      "maxY": 452.63574
+    },
+    "cluster": {
+      "retained": 3067,
+      "total": 3070,
+      "centerX": -10.90244,
+      "centerY": 172.09743,
+      "radiusX": 484.82437,
+      "radiusY": 960.61455
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 53,
+      "visible_height": 114,
+      "density_zoom": 1.35849
+    },
+    "scale": 0.34702,
+    "x_offset": 102.5572,
+    "y_offset": 216.84886,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:00.283Z"
+  "exported_at": "2026-08-19T05:10:46.551Z"
 }

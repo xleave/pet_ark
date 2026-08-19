@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "record-keeper",
   "character_name": "Record Keeper",
   "localized_name": "录武官",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -458.79922,
-      "maxX": 186.22072,
-      "minY": -91.7552,
+      "maxX": 187.71284,
+      "minY": -91.77549,
       "maxY": 521.33215
     },
-    "scale": 0.27286,
-    "x_offset": 133.18786,
-    "y_offset": 190.9637,
+    "full_source_bounds": {
+      "minX": -458.79922,
+      "maxX": 187.71284,
+      "minY": -91.77549,
+      "maxY": 521.33215
+    },
+    "core_source_bounds": {
+      "minX": -458.79922,
+      "maxX": 187.71284,
+      "minY": -91.77549,
+      "maxY": 521.33215
+    },
+    "cluster": {
+      "retained": 2581,
+      "total": 2581,
+      "centerX": -4.90022,
+      "centerY": 183.96388,
+      "radiusX": 434.97041,
+      "radiusY": 600.00546
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 58,
+      "visible_height": 107,
+      "density_zoom": 1.30841
+    },
+    "scale": 0.35619,
+    "x_offset": 105.68084,
+    "y_offset": 213.40405,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:27.089Z"
+  "exported_at": "2026-08-19T05:11:48.187Z"
 }

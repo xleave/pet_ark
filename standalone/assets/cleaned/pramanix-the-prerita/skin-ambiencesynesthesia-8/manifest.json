@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "pramanix-the-prerita",
   "character_name": "Pramanix the Prerita",
   "localized_name": "圣聆初雪",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -268.70517,
+      "maxX": 405.68997,
+      "minY": -172.12653,
+      "maxY": 463.49243
+    },
+    "full_source_bounds": {
       "minX": -268.70517,
       "maxX": 414.61804,
       "minY": -662.08331,
       "maxY": 693.98834
     },
-    "scale": 0.15338,
-    "x_offset": 84.80963,
-    "y_offset": 114.44686,
+    "core_source_bounds": {
+      "minX": -268.70517,
+      "maxX": 405.68997,
+      "minY": -172.12653,
+      "maxY": 463.49243
+    },
+    "cluster": {
+      "retained": 3342,
+      "total": 3356,
+      "centerX": 38.8213,
+      "centerY": 262.73001,
+      "radiusX": 655.02185,
+      "radiusY": 486.07811
+    },
+    "scale": 0.26097,
+    "x_offset": 78.12522,
+    "y_offset": 171.07935,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:18.540Z"
+  "exported_at": "2026-08-19T05:07:50.862Z"
 }

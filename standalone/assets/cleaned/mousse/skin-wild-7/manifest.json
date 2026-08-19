@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "mousse",
   "character_name": "Mousse",
   "localized_name": "慕斯",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -230.6021,
+      "maxX": 269.98392,
+      "minY": -111.3224,
+      "maxY": 381.77359
+    },
+    "full_source_bounds": {
       "minX": -360.82538,
       "maxX": 1003.94299,
       "minY": -111.3224,
-      "maxY": 396.6283
+      "maxY": 396.81412
     },
-    "scale": 0.12896,
-    "x_offset": 54.5319,
-    "y_offset": 201.64391,
+    "core_source_bounds": {
+      "minX": -230.6021,
+      "maxX": 269.98392,
+      "minY": -111.3224,
+      "maxY": 381.77359
+    },
+    "cluster": {
+      "retained": 1964,
+      "total": 1982,
+      "centerX": -0.32965,
+      "centerY": 132.3869,
+      "radiusX": 266.77327,
+      "radiusY": 638.92323
+    },
+    "scale": 0.35159,
+    "x_offset": 89.07691,
+    "y_offset": 176.86039,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:19.738Z"
+  "exported_at": "2026-08-19T05:03:48.030Z"
 }

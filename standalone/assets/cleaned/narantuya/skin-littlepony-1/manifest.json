@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "narantuya",
   "character_name": "Narantuya",
   "localized_name": "娜仁图亚",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -288.53281,
+      "minX": -288.53381,
+      "maxX": 189.39685,
+      "minY": -125.28671,
+      "maxY": 419.34149
+    },
+    "full_source_bounds": {
+      "minX": -288.53381,
       "maxX": 1524.7478,
-      "minY": -125.17815,
+      "minY": -125.28671,
       "maxY": 633.42999
     },
-    "scale": 0.09706,
-    "x_offset": 36.00547,
-    "y_offset": 203.85,
+    "core_source_bounds": {
+      "minX": -288.53381,
+      "maxX": 189.39685,
+      "minY": -125.28671,
+      "maxY": 419.34149
+    },
+    "cluster": {
+      "retained": 3357,
+      "total": 3469,
+      "centerX": 0.21158,
+      "centerY": 114.90066,
+      "radiusX": 389.78675,
+      "radiusY": 512.9711
+    },
+    "scale": 0.36825,
+    "x_offset": 114.2538,
+    "y_offset": 169.86264,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:20.978Z"
+  "exported_at": "2026-08-19T05:03:33.200Z"
 }

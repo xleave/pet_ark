@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "xingzhu",
   "character_name": "Xingzhu",
   "localized_name": "行箸",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -437.86597,
-      "maxX": 337.52954,
-      "minY": -123.60391,
+      "maxX": 330.83099,
+      "minY": -123.79929,
       "maxY": 412.13382
     },
-    "scale": 0.22698,
-    "x_offset": 107.38723,
-    "y_offset": 187.94427,
+    "full_source_bounds": {
+      "minX": -437.86597,
+      "maxX": 330.83099,
+      "minY": -123.79929,
+      "maxY": 412.13382
+    },
+    "core_source_bounds": {
+      "minX": -437.86597,
+      "maxX": 280.50043,
+      "minY": -123.79929,
+      "maxY": 412.13382
+    },
+    "cluster": {
+      "retained": 3942,
+      "total": 3942,
+      "centerX": -46.89108,
+      "centerY": 176.18609,
+      "radiusX": 857.53461,
+      "radiusY": 731.02497
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 62,
+      "visible_height": 93,
+      "density_zoom": 1.50538
+    },
+    "scale": 0.34467,
+    "x_offset": 116.7039,
+    "y_offset": 216.9861,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:39.166Z"
+  "exported_at": "2026-08-19T05:11:20.375Z"
 }

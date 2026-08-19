@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "bibeak",
   "character_name": "Bibeak",
   "localized_name": "柏喙",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -364.2175,
-      "maxX": 394.91898,
-      "minY": -117.20883,
-      "maxY": 390.13739
+      "maxX": 390.87189,
+      "minY": -118.77673,
+      "maxY": 398.83704
     },
-    "scale": 0.23184,
-    "x_offset": 92.44105,
-    "y_offset": 188.82603,
+    "full_source_bounds": {
+      "minX": -364.2175,
+      "maxX": 390.87189,
+      "minY": -118.77673,
+      "maxY": 398.83704
+    },
+    "core_source_bounds": {
+      "minX": -364.2175,
+      "maxX": 390.87189,
+      "minY": -118.77673,
+      "maxY": 387.55179
+    },
+    "cluster": {
+      "retained": 2360,
+      "total": 2360,
+      "centerX": -3.227,
+      "centerY": 144.66469,
+      "radiusX": 632.32185,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 68,
+      "visible_height": 91,
+      "density_zoom": 1.53846
+    },
+    "scale": 0.35859,
+    "x_offset": 118.14405,
+    "y_offset": 214.94604,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:58.445Z"
+  "exported_at": "2026-08-19T05:10:45.069Z"
 }

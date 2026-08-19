@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "blemishine",
   "character_name": "Blemishine",
   "localized_name": "瑕光",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -1047.31738,
-      "maxX": 350.61893,
-      "minY": -180.30386,
-      "maxY": 513.27521
+      "minX": -351.48862,
+      "maxX": 217.35066,
+      "minY": -108.45421,
+      "maxY": 472.95346
     },
-    "scale": 0.1259,
-    "x_offset": 139.85712,
-    "y_offset": 193.29977,
+    "full_source_bounds": {
+      "minX": -1047.31738,
+      "maxX": 328.76019,
+      "minY": -180.30386,
+      "maxY": 499.01755
+    },
+    "core_source_bounds": {
+      "minX": -351.48862,
+      "maxX": 217.35066,
+      "minY": -108.45421,
+      "maxY": 472.95346
+    },
+    "cluster": {
+      "retained": 4070,
+      "total": 4138,
+      "centerX": 2.1013,
+      "centerY": 123.49324,
+      "radiusX": 343.49331,
+      "radiusY": 543.85429
+    },
+    "scale": 0.3094,
+    "x_offset": 116.75127,
+    "y_offset": 182.44405,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:59.349Z"
+  "exported_at": "2026-08-19T05:03:45.366Z"
 }

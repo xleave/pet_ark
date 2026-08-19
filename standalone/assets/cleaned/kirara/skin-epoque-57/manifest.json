@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "kirara",
   "character_name": "Kirara",
   "localized_name": "绮良",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -235.73892,
       "maxX": 636.46008,
-      "minY": -240.89911,
+      "minY": -139.66269,
       "maxY": 712.32513
     },
-    "scale": 0.20179,
-    "x_offset": 55.56948,
-    "y_offset": 167.38926,
+    "full_source_bounds": {
+      "minX": -235.73892,
+      "maxX": 636.46008,
+      "minY": -139.66269,
+      "maxY": 712.32513
+    },
+    "core_source_bounds": {
+      "minX": -235.73892,
+      "maxX": 636.46008,
+      "minY": -139.66269,
+      "maxY": 712.32513
+    },
+    "cluster": {
+      "retained": 2769,
+      "total": 2769,
+      "centerX": 44.99773,
+      "centerY": 303.41875,
+      "radiusX": 1127.03656,
+      "radiusY": 1571.86657
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 51,
+      "visible_height": 78,
+      "density_zoom": 1.79487
+    },
+    "scale": 0.36219,
+    "x_offset": 102.40675,
+    "y_offset": 215.67267,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:13.838Z"
+  "exported_at": "2026-08-19T05:10:31.966Z"
 }

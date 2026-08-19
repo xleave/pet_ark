@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "plume",
   "character_name": "Plume",
   "localized_name": "翎羽",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -377.69897,
-      "maxX": 212.99768,
+      "maxX": 216.119,
       "minY": -138.65094,
-      "maxY": 396.3093
+      "maxY": 396.53262
     },
-    "scale": 0.29795,
-    "x_offset": 120.53664,
-    "y_offset": 174.6885,
+    "full_source_bounds": {
+      "minX": -377.69897,
+      "maxX": 216.119,
+      "minY": -138.65094,
+      "maxY": 396.53262
+    },
+    "core_source_bounds": {
+      "minX": -377.69897,
+      "maxX": 198.43988,
+      "minY": -138.65094,
+      "maxY": 371.03439
+    },
+    "cluster": {
+      "retained": 1563,
+      "total": 1563,
+      "centerX": -171.20132,
+      "centerY": 210.48963,
+      "radiusX": 500.00732,
+      "radiusY": 632.41562
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 55,
+      "visible_height": 111,
+      "density_zoom": 1.30909
+    },
+    "scale": 0.388,
+    "x_offset": 92.00087,
+    "y_offset": 215.87648,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:23.987Z"
+  "exported_at": "2026-08-19T05:11:06.449Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "fang-the-fire-sharpened",
   "character_name": "Fang the Fire-sharpened",
   "localized_name": "历阵锐枪芬",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -230.45691,
-      "maxX": 644.80652,
-      "minY": -132.43147,
-      "maxY": 415.85873
+      "minX": -230.35986,
+      "maxX": 275.30072,
+      "minY": -133.45869,
+      "maxY": 413.73639
     },
-    "scale": 0.20108,
-    "x_offset": 54.34081,
-    "y_offset": 189.37037,
+    "full_source_bounds": {
+      "minX": -230.35986,
+      "maxX": 644.80652,
+      "minY": -133.45869,
+      "maxY": 415.73352
+    },
+    "core_source_bounds": {
+      "minX": -230.35986,
+      "maxX": 275.30072,
+      "minY": -133.45869,
+      "maxY": 413.73639
+    },
+    "cluster": {
+      "retained": 2431,
+      "total": 2479,
+      "centerX": -2.63691,
+      "centerY": 141.57271,
+      "radiusX": 284.55035,
+      "radiusY": 675.77208
+    },
+    "scale": 0.34806,
+    "x_offset": 88.17895,
+    "y_offset": 169.54843,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:06.514Z"
+  "exported_at": "2026-08-19T05:04:39.289Z"
 }

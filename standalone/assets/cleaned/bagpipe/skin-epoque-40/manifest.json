@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "bagpipe",
   "character_name": "Bagpipe",
   "localized_name": "风笛",
@@ -119,16 +122,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -1450.10303,
       "maxX": 613.97968,
-      "minY": -101.81019,
+      "minY": -103.03739,
       "maxY": 559.73444
     },
-    "scale": 0.08527,
-    "x_offset": 131.64724,
-    "y_offset": 207.31886,
+    "full_source_bounds": {
+      "minX": -1450.10303,
+      "maxX": 613.97968,
+      "minY": -103.03739,
+      "maxY": 559.73444
+    },
+    "core_source_bounds": {
+      "minX": -1450.10303,
+      "maxX": 613.97968,
+      "minY": -103.03739,
+      "maxY": 559.73444
+    },
+    "cluster": {
+      "retained": 2298,
+      "total": 2298,
+      "centerX": 24.07255,
+      "centerY": 119.66494,
+      "radiusX": 3319.97442,
+      "radiusY": 693.90341
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 21,
+      "visible_height": 33,
+      "density_zoom": 4.24242
+    },
+    "scale": 0.36174,
+    "x_offset": 102.9883,
+    "y_offset": 216.9088,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:57.715Z"
+  "exported_at": "2026-08-19T05:11:24.409Z"
 }

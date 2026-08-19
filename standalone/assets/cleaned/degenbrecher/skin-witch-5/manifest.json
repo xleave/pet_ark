@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "degenbrecher",
   "character_name": "Degenbrecher",
   "localized_name": "锏",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -331.49628,
+      "minX": -436.27573,
       "maxX": 364.67999,
       "minY": -121.98077,
       "maxY": 947.76001
     },
-    "scale": 0.19444,
-    "x_offset": 92.77389,
-    "y_offset": 192.2821,
+    "full_source_bounds": {
+      "minX": -436.27573,
+      "maxX": 364.67999,
+      "minY": -121.98077,
+      "maxY": 947.76001
+    },
+    "core_source_bounds": {
+      "minX": -316.77002,
+      "maxX": 351.39001,
+      "minY": -121.98077,
+      "maxY": 947.76001
+    },
+    "cluster": {
+      "retained": 2749,
+      "total": 2749,
+      "centerX": -0.71581,
+      "centerY": 197.9273,
+      "radiusX": 465.02934,
+      "radiusY": 661.72933
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 64,
+      "visible_height": 90,
+      "density_zoom": 1.55556
+    },
+    "scale": 0.30246,
+    "x_offset": 107.60526,
+    "y_offset": 216.43883,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:03.581Z"
+  "exported_at": "2026-08-19T05:10:47.609Z"
 }

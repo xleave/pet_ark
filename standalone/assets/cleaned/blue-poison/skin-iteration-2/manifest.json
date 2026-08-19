@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "blue-poison",
   "character_name": "Blue Poison",
   "localized_name": "蓝毒",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -318.88846,
+      "maxX": 267.87402,
+      "minY": -126.34892,
+      "maxY": 444.38449
+    },
+    "full_source_bounds": {
       "minX": -681.30499,
       "maxX": 1589.16858,
-      "minY": -124.13177,
+      "minY": -126.34892,
       "maxY": 528.37988
     },
-    "scale": 0.07752,
-    "x_offset": 60.81263,
-    "y_offset": 206.37769,
+    "core_source_bounds": {
+      "minX": -318.88846,
+      "maxX": 267.87402,
+      "minY": -126.34892,
+      "maxY": 444.38449
+    },
+    "cluster": {
+      "retained": 2475,
+      "total": 2565,
+      "centerX": -4.41833,
+      "centerY": 134.80084,
+      "radiusX": 314.79287,
+      "radiusY": 474.7941
+    },
+    "scale": 0.29995,
+    "x_offset": 103.65092,
+    "y_offset": 178.10152,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:59.369Z"
+  "exported_at": "2026-08-19T05:03:10.913Z"
 }

@@ -1,5 +1,6 @@
 export interface RuntimeStatus {
   ok: boolean;
+  instance?: string;
   pid: number;
   character: string;
   variant: string;
@@ -12,6 +13,15 @@ export interface RuntimeStatus {
   shell: string;
   behavior: string;
   animation: string;
+}
+
+export interface PetInstance {
+  id: string;
+  character: string;
+  variant: string;
+  active: boolean;
+  pid: number;
+  autostart: boolean;
 }
 
 export interface ServiceStatus {

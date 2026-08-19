@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "pinecone",
   "character_name": "Pinecone",
   "localized_name": "松果",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -351.97189,
       "maxX": 244.44603,
       "minY": -132.27946,
       "maxY": 457.64029
     },
-    "scale": 0.2951,
-    "x_offset": 111.86518,
-    "y_offset": 176.96498,
+    "full_source_bounds": {
+      "minX": -351.97189,
+      "maxX": 244.44603,
+      "minY": -132.27946,
+      "maxY": 457.64029
+    },
+    "core_source_bounds": {
+      "minX": -351.97189,
+      "maxX": 175.88493,
+      "minY": -132.27946,
+      "maxY": 385.39349
+    },
+    "cluster": {
+      "retained": 3089,
+      "total": 3089,
+      "centerX": -159.59395,
+      "centerY": 174.09548,
+      "radiusX": 469.97925,
+      "radiusY": 535.05379
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 73,
+      "visible_height": 114,
+      "density_zoom": 1.22807
+    },
+    "scale": 0.3624,
+    "x_offset": 98.29057,
+    "y_offset": 215.95699,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:18.613Z"
+  "exported_at": "2026-08-19T05:11:45.379Z"
 }

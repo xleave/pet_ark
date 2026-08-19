@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "reed-the-flame-shadow",
   "character_name": "Reed The Flame Shadow",
   "localized_name": "焰影苇草",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -519.67535,
+      "maxX": 426.28409,
+      "minY": -106.98534,
+      "maxY": 605.90491
+    },
+    "full_source_bounds": {
+      "minX": -519.67535,
+      "maxX": 426.28409,
+      "minY": -106.98534,
+      "maxY": 605.90491
+    },
+    "core_source_bounds": {
+      "minX": -513.99982,
       "maxX": 415.66202,
       "minY": -106.98534,
-      "maxY": 639.69067
+      "maxY": 605.90491
     },
-    "scale": 0.18817,
-    "x_offset": 105.78596,
-    "y_offset": 195.86885,
+    "cluster": {
+      "retained": 3976,
+      "total": 3976,
+      "centerX": -37.26436,
+      "centerY": 211.84862,
+      "radiusX": 1120.61012,
+      "radiusY": 752.92305
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 84,
+      "visible_height": 84,
+      "density_zoom": 1.66667
+    },
+    "scale": 0.31009,
+    "x_offset": 142.97989,
+    "y_offset": 216.15816,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:27.755Z"
+  "exported_at": "2026-08-19T05:11:07.823Z"
 }

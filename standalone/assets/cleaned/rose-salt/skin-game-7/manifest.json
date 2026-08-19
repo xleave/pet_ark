@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "rose-salt",
   "character_name": "Rose Salt",
   "localized_name": "瑰盐",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -308.04752,
       "maxX": 582.73669,
-      "minY": -108.52106,
-      "maxY": 447.99942
+      "minY": -115.66833,
+      "maxY": 559.86035
     },
-    "scale": 0.19758,
-    "x_offset": 68.86363,
-    "y_offset": 194.55855,
+    "full_source_bounds": {
+      "minX": -308.04752,
+      "maxX": 582.73669,
+      "minY": -115.66833,
+      "maxY": 559.86035
+    },
+    "core_source_bounds": {
+      "minX": -308.04752,
+      "maxX": 582.73669,
+      "minY": -115.66833,
+      "maxY": 432.16061
+    },
+    "cluster": {
+      "retained": 3668,
+      "total": 3668,
+      "centerX": 40.95011,
+      "centerY": 168.39062,
+      "radiusX": 1085.0626,
+      "radiusY": 480.05787
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 70,
+      "visible_height": 84,
+      "density_zoom": 1.66667
+    },
+    "scale": 0.3293,
+    "x_offset": 123.27272,
+    "y_offset": 216.244,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:28.417Z"
+  "exported_at": "2026-08-19T05:11:08.297Z"
 }

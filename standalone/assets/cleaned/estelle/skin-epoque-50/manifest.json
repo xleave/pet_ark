@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "estelle",
   "character_name": "Estelle",
   "localized_name": "艾丝黛尔",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -236.10794,
-      "maxX": 416.83441,
+      "maxX": 416.34692,
       "minY": -117.99459,
       "maxY": 986.14001
     },
-    "scale": 0.18838,
-    "x_offset": 78.97712,
-    "y_offset": 193.77185,
+    "full_source_bounds": {
+      "minX": -236.10794,
+      "maxX": 416.34692,
+      "minY": -117.99459,
+      "maxY": 986.14001
+    },
+    "core_source_bounds": {
+      "minX": -236.10794,
+      "maxX": 378.47018,
+      "minY": -117.99459,
+      "maxY": 986.14001
+    },
+    "cluster": {
+      "retained": 3806,
+      "total": 3806,
+      "centerX": 24.07712,
+      "centerY": 261.44955,
+      "radiusX": 558.06047,
+      "radiusY": 735.01507
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 54,
+      "visible_height": 77,
+      "density_zoom": 1.81818
+    },
+    "scale": 0.34251,
+    "x_offset": 102.40552,
+    "y_offset": 217.40335,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:05.161Z"
+  "exported_at": "2026-08-19T05:10:49.559Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "astesia",
   "character_name": "Astesia",
   "localized_name": "星极",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -214.50525,
-      "maxX": 1078.15808,
-      "minY": -123.16405,
-      "maxY": 446.65759
+      "minX": -214.49915,
+      "maxX": 313.67786,
+      "minY": -123.65127,
+      "maxY": 386.25671
     },
-    "scale": 0.13615,
-    "x_offset": 37.20553,
-    "y_offset": 199.23084,
+    "full_source_bounds": {
+      "minX": -214.49915,
+      "maxX": 1078.15808,
+      "minY": -123.65127,
+      "maxY": 557.60443
+    },
+    "core_source_bounds": {
+      "minX": -214.49915,
+      "maxX": 313.67786,
+      "minY": -123.65127,
+      "maxY": 386.25671
+    },
+    "cluster": {
+      "retained": 2261,
+      "total": 2268,
+      "centerX": -5.65511,
+      "centerY": 129.6547,
+      "radiusX": 256,
+      "radiusY": 656.95222
+    },
+    "scale": 0.33322,
+    "x_offset": 79.47575,
+    "y_offset": 174.79672,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:57.165Z"
+  "exported_at": "2026-08-19T05:03:44.135Z"
 }

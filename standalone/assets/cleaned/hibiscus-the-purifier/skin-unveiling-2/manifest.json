@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "hibiscus-the-purifier",
   "character_name": "Hibiscus the Purifier",
   "localized_name": "濯尘芙蓉",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -230.23061,
+      "maxX": 275.7005,
+      "minY": -106.61209,
+      "maxY": 390.25
+    },
+    "full_source_bounds": {
       "minX": -288.13843,
       "maxX": 707.46637,
-      "minY": -106.35722,
+      "minY": -106.61209,
       "maxY": 495.85516
     },
-    "scale": 0.17678,
-    "x_offset": 58.93624,
-    "y_offset": 197.19849,
+    "core_source_bounds": {
+      "minX": -230.23061,
+      "maxX": 275.7005,
+      "minY": -106.61209,
+      "maxY": 390.25
+    },
+    "cluster": {
+      "retained": 2903,
+      "total": 2908,
+      "centerX": -0.93003,
+      "centerY": 138.4465,
+      "radiusX": 287.59476,
+      "radiusY": 634.94543
+    },
+    "scale": 0.34787,
+    "x_offset": 88.09112,
+    "y_offset": 178.91248,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:10.360Z"
+  "exported_at": "2026-08-19T05:04:41.876Z"
 }

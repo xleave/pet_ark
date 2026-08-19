@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "marcille",
   "character_name": "Marcille",
   "localized_name": "玛露西尔",
@@ -102,16 +105,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -215.45064,
-      "maxX": 490.32544,
-      "minY": -100.99051,
-      "maxY": 445.55765
+      "minX": -200.58992,
+      "maxX": 228.35371,
+      "minY": -101.10418,
+      "maxY": 372.88272
     },
-    "scale": 0.24937,
-    "x_offset": 61.72711,
-    "y_offset": 190.81591,
+    "full_source_bounds": {
+      "minX": -215.04651,
+      "maxX": 490.32544,
+      "minY": -101.10418,
+      "maxY": 442.60654
+    },
+    "core_source_bounds": {
+      "minX": -200.58992,
+      "maxX": 228.35371,
+      "minY": -101.10418,
+      "maxY": 372.88272
+    },
+    "cluster": {
+      "retained": 1921,
+      "total": 1925,
+      "centerX": -5.17002,
+      "centerY": 201.70194,
+      "radiusX": 414.97579,
+      "radiusY": 570.09533
+    },
+    "scale": 0.41,
+    "x_offset": 90.30842,
+    "y_offset": 174.54729,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:17.209Z"
+  "exported_at": "2026-08-19T05:07:49.947Z"
 }

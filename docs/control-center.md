@@ -2,15 +2,17 @@
 
 Control Center 是 Standalone Desktop Pet 的独立管理界面。它使用 Tauri 2、Svelte 和一个只暴露白名单命令的 Rust backend；关闭窗口不会结束或替换原生 C / Wayland 桌宠。
 
+所有视觉建议和组件约束集中在 `docs/control-center-design-system.md` 与 `control-center/src/design-tokens.css`；`npm run check:design` 禁止页面样式重新引入散落的原始颜色和动效时长。
+
 ## 边界
 
 ```text
 Svelte UI
   └─ Tauri invoke（白名单）
        ├─ systemctl --user：start / stop / restart / enable / disable
-       ├─ journalctl --user：只读 pet-ark.service 日志
-       ├─ runtime.env：原子保存持久配置
-       └─ control.sock：受限 JSON runtime commands
+       ├─ journalctl --user：按实例只读 service 日志
+       ├─ runtime.env / instances/*.env：原子保存持久配置
+       └─ control.sock / <instance>.sock：受限 JSON runtime commands
              └─ 原生 C / Wayland 桌宠
 ```
 
@@ -19,8 +21,9 @@ WebView 没有通用 shell、文件系统或网络权限。角色和皮肤选择
 ## 功能
 
 - 总览：服务、PID、角色/皮肤、行为、动画、scale、speed 和开关状态；
+- 编队：创建并选择最多 8 个独立实例，集中管理启停、重启、自启和即时互动；桌面事件感知是单独可关闭的只读 capability；
 - 设置：角色、皮肤、大小、速度、自动移动、点击穿透和显示器；大小与速度同时提供滑块和精确数值输入；
-- 日志：读取 `pet-ark.service` 的 journald 记录并按内容筛选，进入页面或手动刷新后定位到最新输出；
+- 日志：按选中实例读取 journald 记录并按内容筛选，进入页面或手动刷新后定位到最新输出；
 - 服务：集中提供启动、停止、重启和“开机 / 登录后自启”开关，总览页不重复放置这些操作；
 - 预览：直接读取所选外观的 runtime manifest 与 idle atlas，不读取 Codex spritesheet。
 
@@ -39,6 +42,7 @@ WebView 没有通用 shell、文件系统或网络权限。角色和皮肤选择
 {"command":"set_auto_move","value":true}
 {"command":"set_click_through","value":false}
 {"command":"select","character":"amiya","variant":"default"}
+{"command":"react","event":"attention"}
 {"command":"quit"}
 ```
 
@@ -46,6 +50,7 @@ WebView 没有通用 shell、文件系统或网络权限。角色和皮肤选择
 
 ```bash
 npm run standalone:control -- status
+npm run standalone:control -- --instance mon3tr-side status
 npm run standalone:control -- scale 0.85
 npm run standalone:control -- select amiya skin-winter-1
 ```

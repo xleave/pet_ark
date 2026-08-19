@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "pallas",
   "character_name": "Pallas",
   "localized_name": "帕拉斯",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -275.43204,
       "maxX": 715.8371,
       "minY": -573.85162,
       "maxY": 488.18134
     },
-    "scale": 0.17755,
-    "x_offset": 56.903,
-    "y_offset": 114.11255,
+    "full_source_bounds": {
+      "minX": -275.43204,
+      "maxX": 715.8371,
+      "minY": -573.85162,
+      "maxY": 488.18134
+    },
+    "core_source_bounds": {
+      "minX": -275.43204,
+      "maxX": 692.33856,
+      "minY": -573.85162,
+      "maxY": 488.18134
+    },
+    "cluster": {
+      "retained": 2859,
+      "total": 2861,
+      "centerX": 50.1763,
+      "centerY": 192.9306,
+      "radiusX": 582.52631,
+      "radiusY": 1057.5236
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 55,
+      "visible_height": 71,
+      "density_zoom": 1.97183
+    },
+    "scale": 0.3501,
+    "x_offset": 95.80874,
+    "y_offset": 216.22193,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:22.511Z"
+  "exported_at": "2026-08-19T05:10:34.442Z"
 }

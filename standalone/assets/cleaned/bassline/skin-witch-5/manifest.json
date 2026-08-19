@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "bassline",
   "character_name": "Bassline",
   "localized_name": "深律",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -531.38452,
+      "minX": -244.83562,
+      "maxX": 410.87003,
+      "minY": -107.44741,
+      "maxY": 409.13156
+    },
+    "full_source_bounds": {
+      "minX": -511.38324,
       "maxX": 605.40863,
-      "minY": -107.37093,
+      "minY": -107.44741,
       "maxY": 538.76453
     },
-    "scale": 0.15482,
-    "x_offset": 90.26974,
-    "y_offset": 199.37667,
+    "core_source_bounds": {
+      "minX": -244.83562,
+      "maxX": 410.87003,
+      "minY": -107.44741,
+      "maxY": 409.13156
+    },
+    "cluster": {
+      "retained": 2982,
+      "total": 2992,
+      "centerX": 16.61628,
+      "centerY": 196.36333,
+      "radiusX": 403.06396,
+      "radiusY": 622.60635
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 54,
+      "visible_height": 109,
+      "density_zoom": 1.33333
+    },
+    "scale": 0.35788,
+    "x_offset": 98.95612,
+    "y_offset": 216.21294,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:57.723Z"
+  "exported_at": "2026-08-19T05:11:24.651Z"
 }

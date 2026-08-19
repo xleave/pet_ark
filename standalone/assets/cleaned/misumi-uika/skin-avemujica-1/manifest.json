@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "misumi-uika",
   "character_name": "Misumi Uika",
   "localized_name": "三角初华",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -434.96188,
       "maxX": 269.87613,
-      "minY": -113.77901,
+      "minY": -114.213,
       "maxY": 645.30768
     },
-    "scale": 0.2497,
-    "x_offset": 116.61118,
-    "y_offset": 187.58907,
+    "full_source_bounds": {
+      "minX": -434.96188,
+      "maxX": 269.87613,
+      "minY": -114.213,
+      "maxY": 645.30768
+    },
+    "core_source_bounds": {
+      "minX": -434.96188,
+      "maxX": 269.87613,
+      "minY": -114.213,
+      "maxY": 645.30768
+    },
+    "cluster": {
+      "retained": 3398,
+      "total": 3398,
+      "centerX": -19.70195,
+      "centerY": 148.07835,
+      "radiusX": 589.89457,
+      "radiusY": 890.66158
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 63,
+      "visible_height": 103,
+      "density_zoom": 1.35922
+    },
+    "scale": 0.3394,
+    "x_offset": 103.62685,
+    "y_offset": 216.65338,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:18.629Z"
+  "exported_at": "2026-08-19T05:11:40.687Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "ines",
   "character_name": "Ines",
   "localized_name": "伊内丝",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -428.77002,
+      "maxX": 185.33569,
+      "minY": -151.50688,
+      "maxY": 534.41095
+    },
+    "full_source_bounds": {
       "minX": -525.02466,
       "maxX": 327.73853,
       "minY": -151.50688,
       "maxY": 534.41095
     },
-    "scale": 0.20639,
-    "x_offset": 116.35874,
-    "y_offset": 184.73081,
+    "core_source_bounds": {
+      "minX": -428.77002,
+      "maxX": 185.33569,
+      "minY": -151.50688,
+      "maxY": 534.41095
+    },
+    "cluster": {
+      "retained": 2791,
+      "total": 2791,
+      "centerX": -6.53765,
+      "centerY": 259.59701,
+      "radiusX": 535.16644,
+      "radiusY": 700.90721
+    },
+    "scale": 0.2866,
+    "x_offset": 130.8836,
+    "y_offset": 172.57879,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:15.035Z"
+  "exported_at": "2026-08-19T05:07:48.545Z"
 }

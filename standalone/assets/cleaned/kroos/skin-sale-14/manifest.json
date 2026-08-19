@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "kroos",
   "character_name": "Kroos",
   "localized_name": "克洛丝",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -595.3418,
-      "maxX": 464.29819,
+      "maxX": 468.17471,
       "minY": -129.25296,
       "maxY": 696.69031
     },
-    "scale": 0.16609,
-    "x_offset": 106.88279,
-    "y_offset": 194.53184,
+    "full_source_bounds": {
+      "minX": -595.3418,
+      "maxX": 468.17471,
+      "minY": -129.25296,
+      "maxY": 696.69031
+    },
+    "core_source_bounds": {
+      "minX": -595.3418,
+      "maxX": 304.64679,
+      "minY": -129.25296,
+      "maxY": 696.69031
+    },
+    "cluster": {
+      "retained": 4471,
+      "total": 4471,
+      "centerX": -196.6793,
+      "centerY": 217.0839,
+      "radiusX": 534.83833,
+      "radiusY": 1170.09923
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 62,
+      "visible_height": 72,
+      "density_zoom": 1.94444
+    },
+    "scale": 0.32178,
+    "x_offset": 113.54348,
+    "y_offset": 217.18629,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:14.233Z"
+  "exported_at": "2026-08-19T05:10:56.705Z"
 }

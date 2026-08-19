@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "lutonada",
   "character_name": "Lutonada",
   "localized_name": "露托",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -429.86551,
       "maxX": 227.46967,
       "minY": -107.26315,
       "maxY": 507.17554
     },
-    "scale": 0.26775,
-    "x_offset": 123.09551,
-    "y_offset": 187.28054,
+    "full_source_bounds": {
+      "minX": -429.86551,
+      "maxX": 227.46967,
+      "minY": -107.26315,
+      "maxY": 507.17554
+    },
+    "core_source_bounds": {
+      "minX": -384.3999,
+      "maxX": 185.40398,
+      "minY": -107.26315,
+      "maxY": 427.12448
+    },
+    "cluster": {
+      "retained": 3748,
+      "total": 3748,
+      "centerX": -19.56382,
+      "centerY": 160.19469,
+      "radiusX": 664.96938,
+      "radiusY": 520.81301
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 64,
+      "visible_height": 116,
+      "density_zoom": 1.2069
+    },
+    "scale": 0.32314,
+    "x_offset": 100.33941,
+    "y_offset": 215.13168,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:16.655Z"
+  "exported_at": "2026-08-19T05:11:37.743Z"
 }

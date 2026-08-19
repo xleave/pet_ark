@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "iris",
   "character_name": "Iris",
   "localized_name": "爱丽丝",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -224.9828,
+      "minX": -224.93694,
+      "maxX": 210.88849,
+      "minY": -128.82243,
+      "maxY": 497.19077
+    },
+    "full_source_bounds": {
+      "minX": -224.93694,
       "maxX": 210.88849,
       "minY": -128.82243,
       "maxY": 804.37762
     },
-    "scale": 0.22289,
-    "x_offset": 97.57073,
-    "y_offset": 187.2869,
+    "core_source_bounds": {
+      "minX": -224.93694,
+      "maxX": 210.88849,
+      "minY": -128.82243,
+      "maxY": 497.19077
+    },
+    "cluster": {
+      "retained": 2545,
+      "total": 2545,
+      "centerX": 1.61656,
+      "centerY": 241.1107,
+      "radiusX": 479.9999,
+      "radiusY": 730.30823
+    },
+    "scale": 0.33226,
+    "x_offset": 98.33388,
+    "y_offset": 173.19728,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:12.517Z"
+  "exported_at": "2026-08-19T05:07:48.915Z"
 }

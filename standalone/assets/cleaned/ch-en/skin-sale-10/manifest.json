@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ch-en",
   "character_name": "Ch'en",
   "localized_name": "陈",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
+      "minX": -808.09045,
+      "maxX": 427.2948,
+      "minY": -101.01219,
+      "maxY": 472.92023
+    },
+    "full_source_bounds": {
       "minX": -1096.49731,
       "maxX": 1193.87,
-      "minY": -101.86084,
-      "maxY": 490.6373
+      "minY": -101.01219,
+      "maxY": 472.92023
     },
-    "scale": 0.07684,
-    "x_offset": 92.25877,
-    "y_offset": 208.17265,
+    "core_source_bounds": {
+      "minX": -808.09045,
+      "maxX": 427.2948,
+      "minY": -101.01219,
+      "maxY": 472.92023
+    },
+    "cluster": {
+      "retained": 2388,
+      "total": 2410,
+      "centerX": -38.11429,
+      "centerY": 198.2391,
+      "radiusX": 701.61167,
+      "radiusY": 703.83287
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 36,
+      "visible_height": 58,
+      "density_zoom": 2.41379
+    },
+    "scale": 0.34388,
+    "x_offset": 107.16417,
+    "y_offset": 217.47055,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:01.204Z"
+  "exported_at": "2026-08-19T05:11:27.639Z"
 }

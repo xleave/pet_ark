@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "irene",
   "character_name": "Irene",
   "localized_name": "艾丽妮",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
+      "minX": -359.27798,
+      "maxX": 612.40613,
+      "minY": -117.41958,
+      "maxY": 443.36551
+    },
+    "full_source_bounds": {
       "minX": -1938.01294,
       "maxX": 1979.23706,
-      "minY": -254.64815,
-      "maxY": 462.16541
+      "minY": -305.07489,
+      "maxY": 471.30164
     },
-    "scale": 0.04493,
-    "x_offset": 95.07391,
-    "y_offset": 204.55879,
+    "core_source_bounds": {
+      "minX": -359.27798,
+      "maxX": 612.40613,
+      "minY": -117.41958,
+      "maxY": 443.36551
+    },
+    "cluster": {
+      "retained": 2672,
+      "total": 2689,
+      "centerX": 35.34089,
+      "centerY": 141.30251,
+      "radiusX": 585.32866,
+      "radiusY": 780.0949
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 48,
+      "visible_height": 79,
+      "density_zoom": 1.77215
+    },
+    "scale": 0.32099,
+    "x_offset": 114.74157,
+    "y_offset": 217.29709,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:12.254Z"
+  "exported_at": "2026-08-19T05:10:55.418Z"
 }

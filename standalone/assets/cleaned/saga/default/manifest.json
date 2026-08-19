@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "saga",
   "character_name": "Saga",
   "localized_name": "嵯峨",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -531.8186,
-      "maxX": 189.68431,
+      "maxX": 190.61603,
       "minY": -122.70952,
       "maxY": 408.06458
     },
-    "scale": 0.24394,
-    "x_offset": 137.72931,
-    "y_offset": 186.06682,
+    "full_source_bounds": {
+      "minX": -531.8186,
+      "maxX": 190.61603,
+      "minY": -122.70952,
+      "maxY": 408.06458
+    },
+    "core_source_bounds": {
+      "minX": -531.8186,
+      "maxX": 184.75443,
+      "minY": -122.70952,
+      "maxY": 408.06458
+    },
+    "cluster": {
+      "retained": 2066,
+      "total": 2066,
+      "centerX": -8.65956,
+      "centerY": 186.82043,
+      "radiusX": 530.3785,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 48,
+      "visible_height": 99,
+      "density_zoom": 1.5
+    },
+    "scale": 0.36543,
+    "x_offset": 97.593,
+    "y_offset": 216.15814,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:28.445Z"
+  "exported_at": "2026-08-19T05:10:35.748Z"
 }

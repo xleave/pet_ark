@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "blacknight",
   "character_name": "Blacknight",
   "localized_name": "夜半",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -211.97647,
+      "maxX": 238.44785,
+      "minY": -125.20536,
+      "maxY": 416.78137
+    },
+    "full_source_bounds": {
+      "minX": -211.97647,
       "maxX": 641.59052,
-      "minY": -124.952,
+      "minY": -125.20536,
       "maxY": 594.11951
     },
-    "scale": 0.20619,
-    "x_offset": 51.70818,
-    "y_offset": 190.2357,
+    "core_source_bounds": {
+      "minX": -211.97647,
+      "maxX": 238.44785,
+      "minY": -125.20536,
+      "maxY": 416.78137
+    },
+    "cluster": {
+      "retained": 2935,
+      "total": 2952,
+      "centerX": -7.98024,
+      "centerY": 152.23109,
+      "radiusX": 293.96156,
+      "radiusY": 626.29639
+    },
+    "scale": 0.38377,
+    "x_offset": 90.9205,
+    "y_offset": 167.94953,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:58.638Z"
+  "exported_at": "2026-08-19T05:04:55.381Z"
 }

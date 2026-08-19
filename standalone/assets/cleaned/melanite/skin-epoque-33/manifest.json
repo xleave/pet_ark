@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "melanite",
   "character_name": "Melanite",
   "localized_name": "玫拉",
@@ -119,16 +122,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -617.37,
       "maxX": 453.47342,
-      "minY": -141.47549,
-      "maxY": 1004.0354
+      "minY": -141.5872,
+      "maxY": 1024.37695
     },
-    "scale": 0.16436,
-    "x_offset": 109.46873,
-    "y_offset": 192.74759,
+    "full_source_bounds": {
+      "minX": -617.37,
+      "maxX": 453.47342,
+      "minY": -141.5872,
+      "maxY": 1024.37695
+    },
+    "core_source_bounds": {
+      "minX": -562.34692,
+      "maxX": 321.44958,
+      "minY": -141.5872,
+      "maxY": 588.52942
+    },
+    "cluster": {
+      "retained": 2268,
+      "total": 2279,
+      "centerX": -150.69743,
+      "centerY": 228.05084,
+      "radiusX": 454.94816,
+      "radiusY": 804.83307
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 54,
+      "visible_height": 62,
+      "density_zoom": 2.25806
+    },
+    "scale": 0.37113,
+    "x_offset": 111.73584,
+    "y_offset": 215.38859,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:17.890Z"
+  "exported_at": "2026-08-19T05:10:19.471Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "kal-tsit",
   "character_name": "Kal'tsit",
   "localized_name": "凯尔希",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -213.73592,
+      "maxX": 139.79207,
+      "minY": -129.57736,
+      "maxY": 434.66974
+    },
+    "full_source_bounds": {
       "minX": -1514.91052,
       "maxX": 1476.48987,
-      "minY": -123.76418,
+      "minY": -129.57736,
       "maxY": 898.48383
     },
-    "scale": 0.05884,
-    "x_offset": 97.13025,
-    "y_offset": 208.71829,
+    "core_source_bounds": {
+      "minX": -213.73592,
+      "maxX": 139.79207,
+      "minY": -129.57736,
+      "maxY": 434.66974
+    },
+    "cluster": {
+      "retained": 2584,
+      "total": 2700,
+      "centerX": -4.34441,
+      "centerY": 164.27143,
+      "radiusX": 309.38313,
+      "radiusY": 573.43445
+    },
+    "scale": 0.36863,
+    "x_offset": 109.62906,
+    "y_offset": 168.23353,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:13.628Z"
+  "exported_at": "2026-08-19T05:03:07.977Z"
 }

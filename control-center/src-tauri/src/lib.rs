@@ -16,6 +16,8 @@ const SERVICE: &str = "pet-ark.service";
 #[derive(Debug, Clone, Serialize, Deserialize)]
 struct RuntimeStatus {
     ok: bool,
+    #[serde(default)]
+    instance: String,
     pid: u32,
     character: String,
     variant: String,
@@ -28,6 +30,16 @@ struct RuntimeStatus {
     shell: String,
     behavior: String,
     animation: String,
+}
+
+#[derive(Debug, Clone, Serialize)]
+struct PetInstance {
+    id: String,
+    character: String,
+    variant: String,
+    active: bool,
+    pid: u32,
+    autostart: bool,
 }
 
 #[derive(Debug, Clone, Serialize)]
@@ -118,6 +130,18 @@ fn config_path() -> Result<PathBuf, String> {
     Ok(home_dir()?.join(".config/pet-ark/runtime.env"))
 }
 
+fn instance_config_path(instance: &str) -> Result<PathBuf, String> {
+    if instance == "default" {
+        return config_path();
+    }
+    if !valid_id(instance) || instance == "control" {
+        return Err("invalid instance id".into());
+    }
+    Ok(home_dir()?
+        .join(".config/pet-ark/instances")
+        .join(format!("{instance}.env")))
+}
+
 fn socket_path() -> Result<PathBuf, String> {
     if let Some(path) = env::var_os("PET_ARK_CONTROL_SOCKET") {
         return Ok(path.into());
@@ -126,6 +150,30 @@ fn socket_path() -> Result<PathBuf, String> {
         .map(PathBuf::from)
         .map(|path| path.join("pet-ark/control.sock"))
         .ok_or_else(|| "XDG_RUNTIME_DIR is unavailable".into())
+}
+
+fn instance_socket_path(instance: &str) -> Result<PathBuf, String> {
+    if !valid_id(instance) {
+        return Err("invalid instance id".into());
+    }
+    if instance == "default" {
+        return socket_path();
+    }
+    env::var_os("XDG_RUNTIME_DIR")
+        .map(PathBuf::from)
+        .map(|path| path.join("pet-ark").join(format!("{instance}.sock")))
+        .ok_or_else(|| "XDG_RUNTIME_DIR is unavailable".into())
+}
+
+fn instance_unit(instance: &str) -> Result<String, String> {
+    if !valid_id(instance) {
+        return Err("invalid instance id".into());
+    }
+    Ok(if instance == "default" {
+        SERVICE.into()
+    } else {
+        format!("pet-ark@{instance}.service")
+    })
 }
 
 fn registry_path() -> Result<PathBuf, String> {
@@ -214,11 +262,10 @@ fn parse_properties(text: &str) -> std::collections::HashMap<&str, &str> {
         .collect()
 }
 
-#[tauri::command]
-fn service_status() -> Result<ServiceStatus, String> {
+fn service_status_for(unit: &str) -> Result<ServiceStatus, String> {
     let output = systemctl(&[
         "show",
-        SERVICE,
+        unit,
         "--property=LoadState,ActiveState,SubState,MainPID,NRestarts,UnitFileState",
     ])?;
     let text = String::from_utf8_lossy(&output.stdout);
@@ -250,6 +297,11 @@ fn service_status() -> Result<ServiceStatus, String> {
 }
 
 #[tauri::command]
+fn service_status() -> Result<ServiceStatus, String> {
+    service_status_for(SERVICE)
+}
+
+#[tauri::command]
 fn service_action(action: String) -> Result<ServiceStatus, String> {
     if !matches!(action.as_str(), "start" | "stop" | "restart") {
         return Err("unsupported service action".into());
@@ -271,8 +323,8 @@ fn set_autostart(enabled: bool) -> Result<ServiceStatus, String> {
     service_status()
 }
 
-fn send_control(value: Value) -> Result<RuntimeStatus, String> {
-    let path = socket_path()?;
+fn send_control_to(instance: &str, value: Value) -> Result<RuntimeStatus, String> {
+    let path = instance_socket_path(instance)?;
     let mut stream = UnixStream::connect(&path)
         .map_err(|error| format!("cannot connect to {}: {error}", path.display()))?;
     stream
@@ -301,6 +353,10 @@ fn send_control(value: Value) -> Result<RuntimeStatus, String> {
     serde_json::from_value(json).map_err(|error| format!("invalid runtime status: {error}"))
 }
 
+fn send_control(value: Value) -> Result<RuntimeStatus, String> {
+    send_control_to("default", value)
+}
+
 #[tauri::command]
 fn runtime_status() -> Result<RuntimeStatus, String> {
     send_control(json!({ "command": "get_status" }))
@@ -314,12 +370,7 @@ fn parse_bool(value: &str) -> Option<bool> {
     }
 }
 
-#[tauri::command]
-fn load_config() -> Result<RuntimeConfig, String> {
-    let path = config_path()?;
-    let Ok(contents) = fs::read_to_string(path) else {
-        return Ok(RuntimeConfig::default());
-    };
+fn parse_config(contents: &str) -> RuntimeConfig {
     let mut config = RuntimeConfig::default();
     for line in contents.lines() {
         let Some((key, value)) = line.split_once('=') else {
@@ -343,7 +394,19 @@ fn load_config() -> Result<RuntimeConfig, String> {
             _ => {}
         }
     }
-    Ok(config)
+    config
+}
+
+fn load_config_from(path: &PathBuf) -> RuntimeConfig {
+    fs::read_to_string(path)
+        .map(|contents| parse_config(&contents))
+        .unwrap_or_default()
+}
+
+#[tauri::command]
+fn load_config() -> Result<RuntimeConfig, String> {
+    let path = config_path()?;
+    Ok(load_config_from(&path))
 }
 
 fn valid_id(value: &str) -> bool {
@@ -383,8 +446,7 @@ fn validate_config(config: &RuntimeConfig) -> Result<(), String> {
     Ok(())
 }
 
-fn write_config(config: &RuntimeConfig) -> Result<(), String> {
-    let path = config_path()?;
+fn write_config_to(path: PathBuf, config: &RuntimeConfig) -> Result<(), String> {
     validate_config(config)?;
     if let Some(parent) = path.parent() {
         fs::create_dir_all(parent)
@@ -417,6 +479,10 @@ PET_ARK_AUTO_MOVE={}\nPET_ARK_CLICK_THROUGH={}\nPET_ARK_MONITOR={}\nPET_ARK_VERB
     fs::rename(&temporary, &path).map_err(|error| format!("cannot replace config: {error}"))
 }
 
+fn write_config(config: &RuntimeConfig) -> Result<(), String> {
+    write_config_to(config_path()?, config)
+}
+
 #[tauri::command]
 fn save_config(config: RuntimeConfig, restart: bool) -> Result<Option<RuntimeStatus>, String> {
     write_config(&config)?;
@@ -437,6 +503,131 @@ fn save_config(config: RuntimeConfig, restart: bool) -> Result<Option<RuntimeSta
     let status =
         send_control(json!({ "command": "set_click_through", "value": config.click_through }))?;
     Ok(Some(status))
+}
+
+#[tauri::command]
+fn list_instances() -> Result<Vec<PetInstance>, String> {
+    let mut instances = Vec::new();
+    let default_config = load_config_from(&config_path()?);
+    let default_status = service_status_for(SERVICE)?;
+    instances.push(PetInstance {
+        id: "default".into(),
+        character: default_config.character,
+        variant: default_config.variant,
+        active: default_status.active,
+        pid: default_status.pid,
+        autostart: default_status.autostart,
+    });
+    let directory = home_dir()?.join(".config/pet-ark/instances");
+    let entries = match fs::read_dir(&directory) {
+        Ok(entries) => entries,
+        Err(error) if error.kind() == std::io::ErrorKind::NotFound => return Ok(instances),
+        Err(error) => return Err(format!("cannot read instance directory: {error}")),
+    };
+    let mut ids: Vec<String> = entries
+        .filter_map(Result::ok)
+        .filter_map(|entry| {
+            let path = entry.path();
+            if path.extension().and_then(|value| value.to_str()) != Some("env") {
+                return None;
+            }
+            let id = path.file_stem()?.to_str()?.to_owned();
+            valid_id(&id).then_some(id)
+        })
+        .collect();
+    ids.sort();
+    for id in ids {
+        let config = load_config_from(&instance_config_path(&id)?);
+        let status = service_status_for(&instance_unit(&id)?)?;
+        instances.push(PetInstance {
+            id,
+            character: config.character,
+            variant: config.variant,
+            active: status.active,
+            pid: status.pid,
+            autostart: status.autostart,
+        });
+    }
+    Ok(instances)
+}
+
+#[tauri::command]
+fn create_instance(
+    id: String,
+    character: String,
+    variant: String,
+) -> Result<Vec<PetInstance>, String> {
+    if !valid_id(&id) || matches!(id.as_str(), "default" | "control") {
+        return Err("实例 ID 只能使用字母、数字、点、下划线和连字符".into());
+    }
+    if list_instances()?.len() >= 8 {
+        return Err("当前版本最多同时管理 8 个桌宠实例".into());
+    }
+    let path = instance_config_path(&id)?;
+    if path.exists() {
+        return Err("该实例 ID 已存在".into());
+    }
+    let config = RuntimeConfig {
+        character,
+        variant,
+        ..RuntimeConfig::default()
+    };
+    write_config_to(path, &config)?;
+    let unit = instance_unit(&id)?;
+    let output = systemctl(&["start", &unit])?;
+    if !output.status.success() {
+        return Err(output_error("instance start", &output));
+    }
+    list_instances()
+}
+
+#[tauri::command]
+fn instance_action(id: String, action: String) -> Result<Vec<PetInstance>, String> {
+    if !matches!(action.as_str(), "start" | "stop" | "restart") {
+        return Err("unsupported instance action".into());
+    }
+    let unit = instance_unit(&id)?;
+    let output = systemctl(&[&action, &unit])?;
+    if !output.status.success() {
+        return Err(output_error("instance action", &output));
+    }
+    list_instances()
+}
+
+#[tauri::command]
+fn set_instance_autostart(id: String, enabled: bool) -> Result<Vec<PetInstance>, String> {
+    let unit = instance_unit(&id)?;
+    let action = if enabled { "enable" } else { "disable" };
+    let output = systemctl(&[action, &unit])?;
+    if !output.status.success() {
+        return Err(output_error("instance autostart update", &output));
+    }
+    list_instances()
+}
+
+#[tauri::command]
+fn instance_react(id: String, event: String) -> Result<RuntimeStatus, String> {
+    if !matches!(event.as_str(), "attention" | "celebrate" | "wake") {
+        return Err("unsupported reaction".into());
+    }
+    send_control_to(&id, json!({ "command": "react", "event": event }))
+}
+
+#[tauri::command]
+fn context_status() -> Result<ServiceStatus, String> {
+    service_status_for("pet-ark-context.service")
+}
+
+#[tauri::command]
+fn context_action(action: String) -> Result<ServiceStatus, String> {
+    if !matches!(action.as_str(), "start" | "stop" | "restart") {
+        return Err("unsupported context action".into());
+    }
+    let output = systemctl(&[&action, "pet-ark-context.service"])?;
+    if !output.status.success() {
+        return Err(output_error("context service action", &output));
+    }
+    context_status()
 }
 
 #[tauri::command]
@@ -533,13 +724,14 @@ fn journal_timestamp(value: &Value) -> String {
 }
 
 #[tauri::command]
-fn read_logs(limit: usize) -> Result<Vec<LogEntry>, String> {
+fn read_logs(limit: usize, instance: Option<String>) -> Result<Vec<LogEntry>, String> {
     let count = limit.clamp(20, 300).to_string();
+    let unit = instance_unit(instance.as_deref().unwrap_or("default"))?;
     let output = Command::new("journalctl")
         .args([
             "--user",
             "-u",
-            SERVICE,
+            &unit,
             "--no-pager",
             "-n",
             &count,
@@ -587,6 +779,13 @@ pub fn run() {
             list_characters,
             preview_asset,
             read_logs,
+            list_instances,
+            create_instance,
+            instance_action,
+            set_instance_autostart,
+            instance_react,
+            context_status,
+            context_action,
         ])
         .run(tauri::generate_context!())
         .expect("error while running Pet Ark Control Center");

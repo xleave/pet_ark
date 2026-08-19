@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "lumen",
   "character_name": "Lumen",
   "localized_name": "流明",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -438.48331,
       "maxX": 263.59882,
       "minY": -533.883,
       "maxY": 541.33618
     },
-    "scale": 0.19345,
-    "x_offset": 112.91561,
-    "y_offset": 112.72091,
+    "full_source_bounds": {
+      "minX": -438.48331,
+      "maxX": 263.59882,
+      "minY": -533.883,
+      "maxY": 541.33618
+    },
+    "core_source_bounds": {
+      "minX": -438.48331,
+      "maxX": 263.59882,
+      "minY": -523.41534,
+      "maxY": 541.33618
+    },
+    "cluster": {
+      "retained": 2556,
+      "total": 2557,
+      "centerX": 6.07793,
+      "centerY": 225.53611,
+      "radiusX": 802.00994,
+      "radiusY": 680.00904
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 60,
+      "visible_height": 82,
+      "density_zoom": 1.70732
+    },
+    "scale": 0.33028,
+    "x_offset": 89.88031,
+    "y_offset": 217.23081,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:16.592Z"
+  "exported_at": "2026-08-19T05:11:00.171Z"
 }

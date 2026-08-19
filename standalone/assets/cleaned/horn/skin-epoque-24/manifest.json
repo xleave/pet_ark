@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "horn",
   "character_name": "Horn",
   "localized_name": "号角",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -203.26958,
+      "maxX": 203.11768,
+      "minY": -117.73738,
+      "maxY": 392.07321
+    },
+    "full_source_bounds": {
       "minX": -487.48712,
       "maxX": 1020.64063,
       "minY": -580.94348,
       "maxY": 659.86182
     },
-    "scale": 0.1167,
-    "x_offset": 64.89023,
-    "y_offset": 148.20332,
+    "core_source_bounds": {
+      "minX": -203.26958,
+      "maxX": 203.11768,
+      "minY": -117.73738,
+      "maxY": 392.07321
+    },
+    "cluster": {
+      "retained": 2284,
+      "total": 2304,
+      "centerX": 0.63413,
+      "centerY": 136.94902,
+      "radiusX": 280.09954,
+      "radiusY": 742.0994
+    },
+    "scale": 0.40799,
+    "x_offset": 96.03099,
+    "y_offset": 167.96378,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:14.830Z"
+  "exported_at": "2026-08-19T05:03:29.048Z"
 }

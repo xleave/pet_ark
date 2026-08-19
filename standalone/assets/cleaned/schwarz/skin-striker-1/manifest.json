@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "schwarz",
   "character_name": "Schwarz",
   "localized_name": "黑",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -275.7709,
+      "maxX": 216.22273,
+      "minY": -78.73164,
+      "maxY": 402.34988
+    },
+    "full_source_bounds": {
       "minX": -631.37006,
       "maxX": 1368.57751,
       "minY": -78.73164,
       "maxY": 891.68854
     },
-    "scale": 0.088,
-    "x_offset": 63.56202,
-    "y_offset": 209.07143,
+    "core_source_bounds": {
+      "minX": -275.7709,
+      "maxX": 216.22273,
+      "minY": -78.73164,
+      "maxY": 402.34988
+    },
+    "cluster": {
+      "retained": 2053,
+      "total": 2089,
+      "centerX": -17.59391,
+      "centerY": 132.8815,
+      "radiusX": 256,
+      "radiusY": 578.45395
+    },
+    "scale": 0.35773,
+    "x_offset": 106.65103,
+    "y_offset": 187.83547,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:29.818Z"
+  "exported_at": "2026-08-19T05:04:01.957Z"
 }

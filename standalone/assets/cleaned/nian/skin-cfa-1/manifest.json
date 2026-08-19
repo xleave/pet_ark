@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "nian",
   "character_name": "Nian",
   "localized_name": "年",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -550.86188,
-      "maxX": 273.32379,
-      "minY": -116.17303,
-      "maxY": 461.01074
+      "maxX": 269.23566,
+      "minY": -118.10363,
+      "maxY": 471.80386
     },
-    "scale": 0.21354,
-    "x_offset": 125.63331,
-    "y_offset": 191.19193,
+    "full_source_bounds": {
+      "minX": -550.86188,
+      "maxX": 269.23566,
+      "minY": -118.10363,
+      "maxY": 471.80386
+    },
+    "core_source_bounds": {
+      "minX": -528.86639,
+      "maxX": 216.86812,
+      "minY": -118.10363,
+      "maxY": 399.25659
+    },
+    "cluster": {
+      "retained": 3136,
+      "total": 3140,
+      "centerX": -3.14251,
+      "centerY": 186.99124,
+      "radiusX": 465.0686,
+      "radiusY": 745.09102
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 93,
+      "visible_height": 85,
+      "density_zoom": 1.64706
+    },
+    "scale": 0.35347,
+    "x_offset": 98.00893,
+    "y_offset": 217.07708,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:21.394Z"
+  "exported_at": "2026-08-19T05:11:43.592Z"
 }

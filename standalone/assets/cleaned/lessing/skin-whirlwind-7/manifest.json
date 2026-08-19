@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "lessing",
   "character_name": "Lessing",
   "localized_name": "止颂",
@@ -119,16 +122,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -290.19421,
       "maxX": 630.91907,
-      "minY": -99.01971,
+      "minY": -97.86009,
       "maxY": 640.97998
     },
-    "scale": 0.19107,
-    "x_offset": 63.44832,
-    "y_offset": 197.07999,
+    "full_source_bounds": {
+      "minX": -290.19421,
+      "maxX": 630.91907,
+      "minY": -97.86009,
+      "maxY": 640.97998
+    },
+    "core_source_bounds": {
+      "minX": -286.65332,
+      "maxX": 630.91907,
+      "minY": -97.86009,
+      "maxY": 640.97998
+    },
+    "cluster": {
+      "retained": 1683,
+      "total": 1683,
+      "centerX": 44.35744,
+      "centerY": 200.08127,
+      "radiusX": 654.45415,
+      "radiusY": 632.51282
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 50,
+      "visible_height": 78,
+      "density_zoom": 1.79487
+    },
+    "scale": 0.34295,
+    "x_offset": 101.29185,
+    "y_offset": 216.54127,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:15.692Z"
+  "exported_at": "2026-08-19T05:10:32.061Z"
 }

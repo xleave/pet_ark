@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "vulcan",
   "character_name": "Vulcan",
   "localized_name": "火神",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -294.66858,
-      "maxX": 697.21002,
-      "minY": -111.53341,
+      "maxX": 363.29419,
+      "minY": -113.60339,
       "maxY": 533.90002
     },
-    "scale": 0.17744,
-    "x_offset": 60.28631,
-    "y_offset": 196.20939,
+    "full_source_bounds": {
+      "minX": -294.66858,
+      "maxX": 697.21002,
+      "minY": -113.60339,
+      "maxY": 612.37
+    },
+    "core_source_bounds": {
+      "minX": -294.66858,
+      "maxX": 363.29419,
+      "minY": -113.60339,
+      "maxY": 533.90002
+    },
+    "cluster": {
+      "retained": 1772,
+      "total": 1774,
+      "centerX": -26.33326,
+      "centerY": 262.39533,
+      "radiusX": 520,
+      "radiusY": 1289.95338
+    },
+    "scale": 0.26749,
+    "x_offset": 86.82159,
+    "y_offset": 185.61196,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:37.142Z"
+  "exported_at": "2026-08-19T05:07:52.892Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "whislash",
   "character_name": "Whislash",
   "localized_name": "鞭刃",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -224.03447,
-      "maxX": 864.63599,
-      "minY": -106.69685,
-      "maxY": 916.53174
+      "maxX": 283.81778,
+      "minY": -106.81751,
+      "maxY": 549.80249
     },
-    "scale": 0.16167,
-    "x_offset": 44.21855,
-    "y_offset": 198.75084,
+    "full_source_bounds": {
+      "minX": -224.03447,
+      "maxX": 864.63599,
+      "minY": -106.81751,
+      "maxY": 779.88348
+    },
+    "core_source_bounds": {
+      "minX": -224.03447,
+      "maxX": 283.81778,
+      "minY": -106.81751,
+      "maxY": 549.80249
+    },
+    "cluster": {
+      "retained": 2332,
+      "total": 2360,
+      "centerX": -3.13433,
+      "centerY": 130.11491,
+      "radiusX": 280.26979,
+      "radiusY": 686.16578
+    },
+    "scale": 0.31677,
+    "x_offset": 86.53111,
+    "y_offset": 182.16301,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:38.284Z"
+  "exported_at": "2026-08-19T05:04:53.262Z"
 }

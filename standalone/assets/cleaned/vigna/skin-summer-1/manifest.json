@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "vigna",
   "character_name": "Vigna",
   "localized_name": "红豆",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -298.3569,
+      "maxX": 175.90547,
+      "minY": -113.00096,
+      "maxY": 496.11609
+    },
+    "full_source_bounds": {
       "minX": -536.90784,
       "maxX": 1015.94025,
-      "minY": -112.81412,
-      "maxY": 512.79047
+      "minY": -113.00096,
+      "maxY": 517.54889
     },
-    "scale": 0.11334,
-    "x_offset": 68.8532,
-    "y_offset": 203.21363,
+    "core_source_bounds": {
+      "minX": -298.3569,
+      "maxX": 175.90547,
+      "minY": -113.00096,
+      "maxY": 496.11609
+    },
+    "cluster": {
+      "retained": 1939,
+      "total": 1950,
+      "centerX": -7.68165,
+      "centerY": 126.7823,
+      "radiusX": 293.47652,
+      "radiusY": 599.1462
+    },
+    "scale": 0.34148,
+    "x_offset": 116.90723,
+    "y_offset": 177.41267,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:36.784Z"
+  "exported_at": "2026-08-19T05:04:04.953Z"
 }

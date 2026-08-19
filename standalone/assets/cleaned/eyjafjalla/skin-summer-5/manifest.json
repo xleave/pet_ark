@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "eyjafjalla",
   "character_name": "Eyjafjalla",
   "localized_name": "艾雅法拉",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -609.86536,
-      "maxX": 311.47888,
+      "minX": -195.22295,
+      "maxX": 281.33862,
       "minY": -204.57307,
-      "maxY": 407.31702
+      "maxY": 409.37628
     },
-    "scale": 0.19103,
-    "x_offset": 124.49967,
-    "y_offset": 176.92138,
+    "full_source_bounds": {
+      "minX": -609.86536,
+      "maxX": 312.58011,
+      "minY": -204.57307,
+      "maxY": 409.37628
+    },
+    "core_source_bounds": {
+      "minX": -195.22295,
+      "maxX": 281.33862,
+      "minY": -204.57307,
+      "maxY": 409.37628
+    },
+    "cluster": {
+      "retained": 2676,
+      "total": 2697,
+      "centerX": -3.44001,
+      "centerY": 141.26472,
+      "radiusX": 281.00986,
+      "radiusY": 561.65369
+    },
+    "scale": 0.33879,
+    "x_offset": 81.41243,
+    "y_offset": 146.69266,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:06.226Z"
+  "exported_at": "2026-08-19T05:04:58.174Z"
 }

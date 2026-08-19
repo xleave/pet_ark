@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "hung",
   "character_name": "Hung",
   "localized_name": "吽",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -249.79944,
+      "maxX": 327.49997,
+      "minY": -222.81349,
+      "maxY": 474.13281
+    },
+    "full_source_bounds": {
       "minX": -249.79944,
       "maxX": 693.10278,
       "minY": -222.81349,
       "maxY": 502.97028
     },
-    "scale": 0.18666,
-    "x_offset": 54.627,
-    "y_offset": 174.41014,
+    "core_source_bounds": {
+      "minX": -249.79944,
+      "maxX": 327.49997,
+      "minY": -222.81349,
+      "maxY": 474.13281
+    },
+    "cluster": {
+      "retained": 1970,
+      "total": 1973,
+      "centerX": 4.31399,
+      "centerY": 183.81319,
+      "radiusX": 410,
+      "radiusY": 1140.04616
+    },
+    "scale": 0.29844,
+    "x_offset": 84.40534,
+    "y_offset": 149.50247,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:11.480Z"
+  "exported_at": "2026-08-19T05:07:42.293Z"
 }

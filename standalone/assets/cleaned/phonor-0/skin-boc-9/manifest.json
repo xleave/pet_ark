@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "phonor-0",
   "character_name": "PhonoR-0",
   "localized_name": "PhonoR-0",
@@ -91,16 +93,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -212.85002,
+      "minX": -195.953,
+      "maxX": 164.49699,
+      "minY": -0.532,
+      "maxY": 465.24622
+    },
+    "full_source_bounds": {
+      "minX": -200.59737,
       "maxX": 1117.95996,
-      "minY": -3.19799,
+      "minY": -3.21684,
       "maxY": 476.5658
     },
-    "scale": 0.13225,
-    "x_offset": 36.14948,
-    "y_offset": 215.57707,
+    "core_source_bounds": {
+      "minX": -195.953,
+      "maxX": 164.49699,
+      "minY": -0.532,
+      "maxY": 465.24622
+    },
+    "cluster": {
+      "retained": 612,
+      "total": 649,
+      "centerX": -16.74582,
+      "centerY": 165.077,
+      "radiusX": 504.62037,
+      "radiusY": 519.86401
+    },
+    "scale": 0.41,
+    "x_offset": 102.44848,
+    "y_offset": 215.78188,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:23.669Z"
+  "exported_at": "2026-08-19T05:03:49.756Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "zuo-le",
   "character_name": "Zuo Le",
   "localized_name": "左乐",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -1803.31995,
-      "maxX": 681.22821,
-      "minY": -105.86882,
+      "minX": -330.10916,
+      "maxX": 291.35498,
+      "minY": -105.86713,
       "maxY": 657.76117
     },
-    "scale": 0.07084,
-    "x_offset": 135.74327,
-    "y_offset": 208.50048,
+    "full_source_bounds": {
+      "minX": -1803.31995,
+      "maxX": 581.29993,
+      "minY": -105.86713,
+      "maxY": 657.76117
+    },
+    "core_source_bounds": {
+      "minX": -330.10916,
+      "maxX": 291.35498,
+      "minY": -105.86713,
+      "maxY": 657.76117
+    },
+    "cluster": {
+      "retained": 3104,
+      "total": 3165,
+      "centerX": -3.36667,
+      "centerY": 128.71546,
+      "radiusX": 294.96069,
+      "radiusY": 559.92801
+    },
+    "scale": 0.27238,
+    "x_offset": 101.27801,
+    "y_offset": 187.1635,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:39.690Z"
+  "exported_at": "2026-08-19T05:03:42.643Z"
 }

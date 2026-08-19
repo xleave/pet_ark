@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "4055-bgsnow",
   "character_name": "Позёмка",
   "localized_name": "鸿雪",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -283.64441,
+      "maxX": 245.54413,
+      "minY": -128.02206,
+      "maxY": 444.3707
+    },
+    "full_source_bounds": {
       "minX": -283.64441,
       "maxX": 1256.65222,
       "minY": -128.02206,
-      "maxY": 443.12997
+      "maxY": 444.3707
     },
-    "scale": 0.11426,
-    "x_offset": 40.41026,
-    "y_offset": 201.37172,
+    "core_source_bounds": {
+      "minX": -283.64441,
+      "maxX": 245.54413,
+      "minY": -128.02206,
+      "maxY": 444.3707
+    },
+    "cluster": {
+      "retained": 3060,
+      "total": 3074,
+      "centerX": -0.30178,
+      "centerY": 144.2024,
+      "radiusX": 293.70585,
+      "radiusY": 674.05659
+    },
+    "scale": 0.33258,
+    "x_offset": 102.33578,
+    "y_offset": 173.42182,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:54.236Z"
+  "exported_at": "2026-08-19T05:03:19.750Z"
 }

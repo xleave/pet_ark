@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "passenger",
   "character_name": "Passenger",
   "localized_name": "异客",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -254.42192,
+      "maxX": 262.17029,
+      "minY": -101.6814,
+      "maxY": 467.35519
+    },
+    "full_source_bounds": {
       "minX": -1773.66052,
       "maxX": 544.24359,
-      "minY": -101.73582,
-      "maxY": 690.8703
+      "minY": -101.6814,
+      "maxY": 911.43707
     },
-    "scale": 0.07593,
-    "x_offset": 142.67522,
-    "y_offset": 208.27513,
+    "core_source_bounds": {
+      "minX": -254.42192,
+      "maxX": 262.17029,
+      "minY": -101.6814,
+      "maxY": 467.35519
+    },
+    "cluster": {
+      "retained": 2272,
+      "total": 2355,
+      "centerX": 1.2283,
+      "centerY": 148.15377,
+      "radiusX": 308.54583,
+      "radiusY": 644.87029
+    },
+    "scale": 0.34069,
+    "x_offset": 94.68009,
+    "y_offset": 181.35773,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:22.995Z"
+  "exported_at": "2026-08-19T05:03:17.088Z"
 }

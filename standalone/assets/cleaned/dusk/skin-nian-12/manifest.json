@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "dusk",
   "character_name": "Dusk",
   "localized_name": "夕",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -598.55389,
-      "maxX": 586.3255,
+      "minX": -446.05539,
+      "maxX": 393.22443,
       "minY": -156.08919,
-      "maxY": 870.32397
+      "maxY": 380.58008
     },
-    "scale": 0.14854,
-    "x_offset": 96.90819,
-    "y_offset": 192.81477,
+    "full_source_bounds": {
+      "minX": -598.55389,
+      "maxX": 565.6723,
+      "minY": -156.08919,
+      "maxY": 881.67584
+    },
+    "core_source_bounds": {
+      "minX": -446.05539,
+      "maxX": 393.22443,
+      "minY": -156.08919,
+      "maxY": 380.58008
+    },
+    "cluster": {
+      "retained": 3294,
+      "total": 3294,
+      "centerX": -5.08491,
+      "centerY": 186.94545,
+      "radiusX": 454.91258,
+      "radiusY": 635.04757
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 89,
+      "visible_height": 92,
+      "density_zoom": 1.52174
+    },
+    "scale": 0.31911,
+    "x_offset": 122.69042,
+    "y_offset": 199.66799,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:04.338Z"
+  "exported_at": "2026-08-19T05:11:28.913Z"
 }

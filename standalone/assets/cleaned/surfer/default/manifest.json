@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "surfer",
   "character_name": "Surfer",
   "localized_name": "寻澜",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -295.39157,
+      "maxX": 264.60632,
+      "minY": -112.0413,
+      "maxY": 618.84998
+    },
+    "full_source_bounds": {
       "minX": -1040.20996,
       "maxX": 407.59909,
       "minY": -210.64001,
       "maxY": 896.35999
     },
-    "scale": 0.12156,
-    "x_offset": 134.45104,
-    "y_offset": 190.39397,
+    "core_source_bounds": {
+      "minX": -295.39157,
+      "maxX": 264.60632,
+      "minY": -112.0413,
+      "maxY": 618.84998
+    },
+    "cluster": {
+      "retained": 2535,
+      "total": 2539,
+      "centerX": 1.54636,
+      "centerY": 134.26114,
+      "radiusX": 288.56806,
+      "radiusY": 512.57712
+    },
+    "scale": 0.28458,
+    "x_offset": 100.3805,
+    "y_offset": 184.11483,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:32.509Z"
+  "exported_at": "2026-08-19T05:04:26.593Z"
 }

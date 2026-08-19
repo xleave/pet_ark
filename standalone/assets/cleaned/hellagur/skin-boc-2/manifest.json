@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "hellagur",
   "character_name": "Hellagur",
   "localized_name": "赫拉格",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -274.96506,
-      "maxX": 495.77591,
-      "minY": -129.42734,
-      "maxY": 562.0354
+      "minX": -275.12341,
+      "maxX": 255.89302,
+      "minY": -129.5114,
+      "maxY": 453.87012
     },
-    "scale": 0.22835,
-    "x_offset": 70.78873,
-    "y_offset": 186.44505,
+    "full_source_bounds": {
+      "minX": -275.12341,
+      "maxX": 468.66568,
+      "minY": -129.5114,
+      "maxY": 575.60376
+    },
+    "core_source_bounds": {
+      "minX": -275.12341,
+      "maxX": 255.89302,
+      "minY": -129.5114,
+      "maxY": 453.87012
+    },
+    "cluster": {
+      "retained": 2429,
+      "total": 2429,
+      "centerX": 0.98896,
+      "centerY": 222.45963,
+      "radiusX": 380.10001,
+      "radiusY": 800.12573
+    },
+    "scale": 0.33144,
+    "x_offset": 99.18686,
+    "y_offset": 173.07476,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:10.264Z"
+  "exported_at": "2026-08-19T05:07:56.963Z"
 }

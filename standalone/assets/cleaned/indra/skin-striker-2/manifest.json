@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "indra",
   "character_name": "Indra",
   "localized_name": "因陀罗",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -205.14165,
+      "minX": -204.60373,
+      "maxX": 301.62988,
+      "minY": -108.29386,
+      "maxY": 409.54926
+    },
+    "full_source_bounds": {
+      "minX": -204.60373,
       "maxX": 919.70282,
       "minY": -108.29386,
-      "maxY": 409.11072
+      "maxY": 409.54926
     },
-    "scale": 0.15647,
-    "x_offset": 40.09771,
-    "y_offset": 199.05568,
+    "core_source_bounds": {
+      "minX": -204.60373,
+      "maxX": 301.62988,
+      "minY": -108.29386,
+      "maxY": 409.54926
+    },
+    "cluster": {
+      "retained": 2544,
+      "total": 2573,
+      "centerX": 1.20276,
+      "centerY": 133.59734,
+      "radiusX": 286.32312,
+      "radiusY": 571.45056
+    },
+    "scale": 0.34767,
+    "x_offset": 79.13367,
+    "y_offset": 178.34995,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:11.917Z"
+  "exported_at": "2026-08-19T05:04:18.070Z"
 }

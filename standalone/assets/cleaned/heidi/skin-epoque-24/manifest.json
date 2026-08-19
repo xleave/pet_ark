@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "heidi",
   "character_name": "Heidi",
   "localized_name": "海蒂",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -177.91893,
       "maxX": 451.92215,
       "minY": -482.97592,
-      "maxY": 418.10553
+      "maxY": 419.52304
     },
-    "scale": 0.23083,
-    "x_offset": 64.37541,
-    "y_offset": 104.51286,
+    "full_source_bounds": {
+      "minX": -177.91893,
+      "maxX": 451.92215,
+      "minY": -482.97592,
+      "maxY": 419.52304
+    },
+    "core_source_bounds": {
+      "minX": -177.91893,
+      "maxX": 451.92215,
+      "minY": -482.97592,
+      "maxY": 411.68915
+    },
+    "cluster": {
+      "retained": 3253,
+      "total": 3253,
+      "centerX": 23.79465,
+      "centerY": 166.98106,
+      "radiusX": 404.46122,
+      "radiusY": 905.15144
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 61,
+      "visible_height": 95,
+      "density_zoom": 1.47368
+    },
+    "scale": 0.33964,
+    "x_offset": 103.99485,
+    "y_offset": 215.54017,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:10.262Z"
+  "exported_at": "2026-08-19T05:10:53.820Z"
 }

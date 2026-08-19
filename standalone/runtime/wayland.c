@@ -37,6 +37,14 @@
 
 typedef struct PetApp PetApp;
 
+static uint32_t instance_hash(const char *value) {
+  uint32_t hash = 2166136261u;
+  for (const unsigned char *cursor = (const unsigned char *)(value ? value : "default"); *cursor; cursor++) {
+    hash = (hash ^ *cursor) * 16777619u;
+  }
+  return hash;
+}
+
 typedef struct {
   struct wl_output *object;
   uint32_t registry_name;
@@ -706,7 +714,8 @@ static bool render(PetApp *app) {
     pet_movement_set_bounds(&app->movement, app->width, app->height, draw_width, draw_height);
   }
   if (!app->movement_positioned) {
-    app->movement.x = fmaxf(0.0f, (app->width - draw_width) * 0.65f);
+    const float instance_offset = 0.12f + (instance_hash(app->config.instance_id) % 73u) / 100.0f;
+    app->movement.x = fmaxf(0.0f, (app->width - draw_width) * instance_offset);
     app->movement_positioned = true;
   }
   const int draw_x = (int)lroundf(app->movement.x);
@@ -775,11 +784,12 @@ static bool apply_selection(PetApp *app, size_t character_index, size_t variant_
   clear_sheets(app);
   if (!app->explicit_scale) app->scale = app->variant->default_scale;
   app->scale = fminf(3.0f, fmaxf(0.25f, app->scale));
-  pet_state_machine_init(&app->state, (uint32_t)(time(NULL) ^ getpid()),
+  const uint32_t identity_seed = instance_hash(app->config.instance_id);
+  pet_state_machine_init(&app->state, (uint32_t)(time(NULL) ^ getpid()) ^ identity_seed,
                          app->character->idle_min_seconds, app->character->idle_max_seconds,
                          app->character->rest_after_seconds);
   pet_runtime_set_auto_move(&app->state, &app->config.auto_move, app->config.auto_move);
-  pet_movement_init(&app->movement, (uint32_t)(time(NULL) + app->character_index * 7919));
+  pet_movement_init(&app->movement, (uint32_t)(time(NULL) + app->character_index * 7919) ^ identity_seed);
   app->movement.speed_multiplier = app->speed;
   if (!first) {
     app->movement.x = previous_x;
@@ -851,11 +861,12 @@ static void reply_status(PetApp *app, int client) {
   char response[1024];
   const char *animation = app->animation.definition ? app->animation.definition->id : "none";
   snprintf(response, sizeof(response),
-    "{\"ok\":true,\"pid\":%ld,\"character\":\"%s\",\"variant\":\"%s\","
+    "{\"ok\":true,\"pid\":%ld,\"instance\":\"%s\",\"character\":\"%s\",\"variant\":\"%s\","
     "\"scale\":%.3f,\"speed\":%.3f,\"auto_move\":%s,\"click_through\":%s,"
     "\"monitor\":%d,\"outputs\":%d,\"shell\":\"%s\",\"behavior\":\"%s\","
     "\"animation\":\"%s\"}",
-    (long)getpid(), app->character->id, app->variant->id, app->scale, app->speed,
+    (long)getpid(), app->config.instance_id ? app->config.instance_id : "default",
+    app->character->id, app->variant->id, app->scale, app->speed,
     app->state.auto_move ? "true" : "false", app->click_through ? "true" : "false",
     app->config.monitor, app->output_count,
     app->use_layer_shell ? "layer-shell" : "xdg-fullscreen",
@@ -907,6 +918,15 @@ static void handle_control(PetApp *app) {
       }
       break;
     }
+    case PET_CONTROL_REACT:
+      app->special_animation = !strcmp(command.event, "celebrate");
+      pet_state_machine_dispatch(&app->state,
+        !strcmp(command.event, "wake") ? PET_EVENT_USER_ACTIVITY :
+        app->special_animation ? PET_EVENT_SPECIAL : PET_EVENT_CLICK);
+      restart_animation(app);
+      fprintf(stderr, "pet-ark[%s]: desktop reaction %s\n",
+              app->config.instance_id ? app->config.instance_id : "default", command.event);
+      break;
     case PET_CONTROL_QUIT:
       app->running = false;
       break;
@@ -1158,6 +1178,7 @@ int pet_wayland_run(const PetWaylandConfig *config) {
   for (int index = 0; index < PET_BUFFER_COUNT; index++) app.buffers[index].fd = -1;
   app.control.fd = -1;
   app.config = *config;
+  if (!app.config.instance_id || !*app.config.instance_id) app.config.instance_id = "default";
   app.click_through = config->click_through;
   app.explicit_scale = config->scale > 0.0f;
   app.scale = app.explicit_scale ? config->scale : 1.0f;
@@ -1201,7 +1222,7 @@ int pet_wayland_run(const PetWaylandConfig *config) {
   }
   install_signal_handlers();
   char control_error[160];
-  if (!pet_control_server_open(&app.control, config->control_socket,
+  if (!pet_control_server_open(&app.control, config->control_socket, app.config.instance_id,
                                control_error, sizeof(control_error))) {
     fprintf(stderr, "pet-ark: control socket unavailable: %s\n", control_error);
     if (config->control_socket && *config->control_socket) {

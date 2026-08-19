@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "ashlock",
   "character_name": "Ashlock",
   "localized_name": "灰毫",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -259.2886,
+      "maxX": 203.34801,
+      "minY": -107.6732,
+      "maxY": 447.09549
+    },
+    "full_source_bounds": {
       "minX": -449.83932,
       "maxX": 927.69995,
       "minY": -107.6732,
       "maxY": 448.03531
     },
-    "scale": 0.12776,
-    "x_offset": 65.4733,
-    "y_offset": 202.24324,
+    "core_source_bounds": {
+      "minX": -259.2886,
+      "maxX": 203.34801,
+      "minY": -107.6732,
+      "maxY": 447.09549
+    },
+    "cluster": {
+      "retained": 2066,
+      "total": 2072,
+      "centerX": -5.06254,
+      "centerY": 131.69554,
+      "radiusX": 285.3178,
+      "radiusY": 689.3425
+    },
+    "scale": 0.37493,
+    "x_offset": 106.48693,
+    "y_offset": 175.62997,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:11.326Z"
+  "exported_at": "2026-08-19T05:04:09.445Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "archetto",
   "character_name": "Archetto",
   "localized_name": "空弦",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -242.43425,
+      "maxX": 265.61557,
+      "minY": -107.75701,
+      "maxY": 413.93924
+    },
+    "full_source_bounds": {
       "minX": -688.14526,
       "maxX": 1717.94861,
-      "minY": -107.72227,
-      "maxY": 789.07953
+      "minY": -107.75701,
+      "maxY": 794.07074
     },
-    "scale": 0.07315,
-    "x_offset": 58.33618,
-    "y_offset": 208.12037,
+    "core_source_bounds": {
+      "minX": -242.43425,
+      "maxX": 265.61557,
+      "minY": -107.75701,
+      "maxY": 413.93924
+    },
+    "cluster": {
+      "retained": 2317,
+      "total": 2350,
+      "centerX": 1.23712,
+      "centerY": 138.2527,
+      "radiusX": 256,
+      "radiusY": 711.77419
+    },
+    "scale": 0.34642,
+    "x_offset": 91.98473,
+    "y_offset": 178.67052,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:56.494Z"
+  "exported_at": "2026-08-19T05:03:11.097Z"
 }

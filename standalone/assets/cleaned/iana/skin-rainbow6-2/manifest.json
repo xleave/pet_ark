@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "iana",
   "character_name": "Iana",
   "localized_name": "双月",
@@ -119,16 +122,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -392.09003,
-      "maxX": 345.4501,
-      "minY": -136.37373,
-      "maxY": 459.05563
+      "maxX": 234.2601,
+      "minY": -136.38722,
+      "maxY": 472.61572
     },
-    "scale": 0.23863,
-    "x_offset": 101.56487,
-    "y_offset": 183.45699,
+    "full_source_bounds": {
+      "minX": -392.09003,
+      "maxX": 234.2601,
+      "minY": -136.38722,
+      "maxY": 472.61572
+    },
+    "core_source_bounds": {
+      "minX": -391.27005,
+      "maxX": 170.33549,
+      "minY": -136.38722,
+      "maxY": 420.53
+    },
+    "cluster": {
+      "retained": 1907,
+      "total": 1908,
+      "centerX": -8.96304,
+      "centerY": 184.37533,
+      "radiusX": 340.36405,
+      "radiusY": 555.54527
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 55,
+      "visible_height": 106,
+      "density_zoom": 1.32075
+    },
+    "scale": 0.37112,
+    "x_offset": 106.79658,
+    "y_offset": 215.57227,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:11.496Z"
+  "exported_at": "2026-08-19T05:10:28.957Z"
 }

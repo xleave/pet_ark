@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "gladiia",
   "character_name": "Gladiia",
   "localized_name": "歌蕾蒂娅",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -315.41,
-      "maxX": 388.32162,
+      "maxX": 383.76672,
       "minY": -124.63757,
       "maxY": 532.45282
     },
-    "scale": 0.2501,
-    "x_offset": 86.88257,
-    "y_offset": 184.82872,
+    "full_source_bounds": {
+      "minX": -315.41,
+      "maxX": 383.76672,
+      "minY": -124.63757,
+      "maxY": 532.45282
+    },
+    "core_source_bounds": {
+      "minX": -291.46982,
+      "maxX": 346.77258,
+      "minY": -124.63757,
+      "maxY": 524.7196
+    },
+    "cluster": {
+      "retained": 3094,
+      "total": 3094,
+      "centerX": -12.07098,
+      "centerY": 193.21773,
+      "radiusX": 481.34748,
+      "radiusY": 640.00336
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 111,
+      "visible_height": 97,
+      "density_zoom": 1.4433
+    },
+    "scale": 0.36331,
+    "x_offset": 111.00521,
+    "y_offset": 216.90301,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:08.180Z"
+  "exported_at": "2026-08-19T05:11:30.887Z"
 }

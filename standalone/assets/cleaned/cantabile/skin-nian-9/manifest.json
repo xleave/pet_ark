@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "cantabile",
   "character_name": "Cantabile",
   "localized_name": "晓歌",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -312.09442,
+      "maxX": 201.04138,
+      "minY": -122.80828,
+      "maxY": 388.80347
+    },
+    "full_source_bounds": {
       "minX": -539.5965,
       "maxX": 934.8833,
       "minY": -122.80828,
-      "maxY": 408.12006
+      "maxY": 404.61835
     },
-    "scale": 0.11936,
-    "x_offset": 72.40847,
-    "y_offset": 201.3411,
+    "core_source_bounds": {
+      "minX": -312.09442,
+      "maxX": 201.04138,
+      "minY": -122.80828,
+      "maxY": 388.80347
+    },
+    "cluster": {
+      "retained": 3092,
+      "total": 3147,
+      "centerX": -10.83272,
+      "centerY": 120.69708,
+      "radiusX": 293.11343,
+      "radiusY": 578.13884
+    },
+    "scale": 0.34299,
+    "x_offset": 115.04499,
+    "y_offset": 173.8781,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:00.211Z"
+  "exported_at": "2026-08-19T05:03:23.455Z"
 }

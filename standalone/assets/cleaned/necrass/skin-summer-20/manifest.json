@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "necrass",
   "character_name": "Necrass",
   "localized_name": "死芒",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -406.77789,
+      "maxX": 429.87854,
+      "minY": -105.03521,
+      "maxY": 698.57373
+    },
+    "full_source_bounds": {
       "minX": -733.39722,
       "maxX": 2654.98853,
       "minY": -1041.71472,
-      "maxY": 966.71869
+      "maxY": 824.34741
     },
-    "scale": 0.05194,
-    "x_offset": 46.09422,
-    "y_offset": 161.89111,
+    "core_source_bounds": {
+      "minX": -406.77789,
+      "maxX": 429.87854,
+      "minY": -105.03521,
+      "maxY": 698.57373
+    },
+    "cluster": {
+      "retained": 3163,
+      "total": 3511,
+      "centerX": -25.47295,
+      "centerY": 157.09563,
+      "radiusX": 444.3301,
+      "radiusY": 851.67725
+    },
+    "scale": 0.21036,
+    "x_offset": 93.57026,
+    "y_offset": 193.90467,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:21.554Z"
+  "exported_at": "2026-08-19T05:03:48.327Z"
 }

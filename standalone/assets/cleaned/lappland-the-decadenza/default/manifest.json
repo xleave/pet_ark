@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "lappland-the-decadenza",
   "character_name": "Lappland the Decadenza",
   "localized_name": "荒芜拉普兰德",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -220.53345,
+      "minX": -220.05583,
       "maxX": 194.90073,
       "minY": -97.59253,
       "maxY": 706.45123
     },
-    "scale": 0.25869,
-    "x_offset": 99.31549,
-    "y_offset": 190.75356,
+    "full_source_bounds": {
+      "minX": -220.05583,
+      "maxX": 194.90073,
+      "minY": -97.59253,
+      "maxY": 706.45123
+    },
+    "core_source_bounds": {
+      "minX": -220.05583,
+      "maxX": 194.90073,
+      "minY": -97.59253,
+      "maxY": 706.45123
+    },
+    "cluster": {
+      "retained": 2846,
+      "total": 2846,
+      "centerX": 10.5737,
+      "centerY": 228.79284,
+      "radiusX": 467.65164,
+      "radiusY": 813.73926
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 67,
+      "visible_height": 105,
+      "density_zoom": 1.33333
+    },
+    "scale": 0.34492,
+    "x_offset": 96.33829,
+    "y_offset": 217.00474,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:14.652Z"
+  "exported_at": "2026-08-19T05:11:34.864Z"
 }

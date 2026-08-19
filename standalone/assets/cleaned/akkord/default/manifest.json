@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "akkord",
   "character_name": "Akkord",
   "localized_name": "协律",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -262.26099,
+      "maxX": 184.35501,
+      "minY": -113.34821,
+      "maxY": 440.53473
+    },
+    "full_source_bounds": {
       "minX": -540.10004,
       "maxX": 862.40997,
-      "minY": -113.49064,
+      "minY": -113.34821,
       "maxY": 530.77002
     },
-    "scale": 0.12549,
-    "x_offset": 75.77678,
-    "y_offset": 201.75814,
+    "core_source_bounds": {
+      "minX": -262.26099,
+      "maxX": 184.35501,
+      "minY": -113.34821,
+      "maxY": 440.53473
+    },
+    "cluster": {
+      "retained": 1976,
+      "total": 2026,
+      "centerX": -3.45457,
+      "centerY": 135.96847,
+      "radiusX": 314.00304,
+      "radiusY": 673.32948
+    },
+    "scale": 0.37553,
+    "x_offset": 110.62804,
+    "y_offset": 173.43428,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:55.088Z"
+  "exported_at": "2026-08-19T05:04:06.956Z"
 }

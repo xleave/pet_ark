@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "blaze-the-igniting-spark",
   "character_name": "Blaze the Igniting Spark",
   "localized_name": "烛煌",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -250.18466,
-      "maxX": 529.12823,
+      "minX": -251.30823,
+      "maxX": 461.29999,
       "minY": -112.31587,
       "maxY": 592.20233
     },
-    "scale": 0.22584,
-    "x_offset": 64.5017,
-    "y_offset": 190.63459,
+    "full_source_bounds": {
+      "minX": -251.30823,
+      "maxX": 461.29999,
+      "minY": -112.31587,
+      "maxY": 592.20233
+    },
+    "core_source_bounds": {
+      "minX": -251.30823,
+      "maxX": 461.29999,
+      "minY": -112.31587,
+      "maxY": 592.20233
+    },
+    "cluster": {
+      "retained": 2715,
+      "total": 2715,
+      "centerX": 1.73998,
+      "centerY": 192.4765,
+      "radiusX": 530.01097,
+      "radiusY": 570.44476
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 90,
+      "visible_height": 108,
+      "density_zoom": 1.2963
+    },
+    "scale": 0.32016,
+    "x_offset": 99.32904,
+    "y_offset": 216.33733,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:58.983Z"
+  "exported_at": "2026-08-19T05:10:46.272Z"
 }

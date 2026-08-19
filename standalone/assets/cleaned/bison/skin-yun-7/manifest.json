@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "bison",
   "character_name": "Bison",
   "localized_name": "拜松",
@@ -97,7 +99,14 @@
       "duration": 8.866666793823242,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/bison/skin-yun-7/special"
+      "path": "standalone/assets/cleaned/bison/skin-yun-7/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 4,
+          "reason": "The deterministic Spine Special sample contains no visible pixels in the canonical character envelope; retained explicitly as a source-authored transition beat.",
+          "observed_by": "blank-policy-revision-1"
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
@@ -113,16 +122,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -244.29678,
+      "minX": -244.99988,
+      "maxX": 175.21982,
+      "minY": -106.69156,
+      "maxY": 431.49521
+    },
+    "full_source_bounds": {
+      "minX": -244.99988,
       "maxX": 1148.7915,
-      "minY": -103.29615,
+      "minY": -106.69156,
       "maxY": 540.13135
     },
-    "scale": 0.12634,
-    "x_offset": 38.86397,
-    "y_offset": 202.94977,
+    "core_source_bounds": {
+      "minX": -244.99988,
+      "maxX": 175.21982,
+      "minY": -106.69156,
+      "maxY": 431.49521
+    },
+    "cluster": {
+      "retained": 2647,
+      "total": 2666,
+      "centerX": -10.77922,
+      "centerY": 140.03973,
+      "radiusX": 306.63831,
+      "radiusY": 630.82411
+    },
+    "scale": 0.38648,
+    "x_offset": 109.4844,
+    "y_offset": 174.76553,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:58.518Z"
+  "exported_at": "2026-08-19T05:03:44.948Z"
 }

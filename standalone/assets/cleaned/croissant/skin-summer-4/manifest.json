@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "croissant",
   "character_name": "Croissant",
   "localized_name": "可颂",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -870.93195,
-      "maxX": 217.55249,
-      "minY": -126.16188,
-      "maxY": 451.97583
+      "minX": -241.00464,
+      "maxX": 217.94604,
+      "minY": -126.16206,
+      "maxY": 436.84625
     },
-    "scale": 0.16169,
-    "x_offset": 148.82335,
-    "y_offset": 195.60054,
+    "full_source_bounds": {
+      "minX": -241.00464,
+      "maxX": 217.94604,
+      "minY": -126.16206,
+      "maxY": 436.84625
+    },
+    "core_source_bounds": {
+      "minX": -241.00464,
+      "maxX": 213.94167,
+      "minY": -126.16206,
+      "maxY": 436.84625
+    },
+    "cluster": {
+      "retained": 2138,
+      "total": 2138,
+      "centerX": 0.32678,
+      "centerY": 143.00009,
+      "radiusX": 303.23895,
+      "radiusY": 639.0646
+    },
+    "scale": 0.36944,
+    "x_offset": 100.25943,
+    "y_offset": 169.39019,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:02.930Z"
+  "exported_at": "2026-08-19T05:06:39.297Z"
 }

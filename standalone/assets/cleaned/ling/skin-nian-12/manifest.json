@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ling",
   "character_name": "Ling",
   "localized_name": "令",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
+      "minX": -466.21271,
+      "maxX": 830.64813,
+      "minY": -133.50417,
+      "maxY": 594.03485
+    },
+    "full_source_bounds": {
       "minX": -1388.83899,
       "maxX": 1120.23718,
       "minY": -133.50417,
       "maxY": 594.03485
     },
-    "scale": 0.07015,
-    "x_offset": 105.42058,
-    "y_offset": 206.6353,
+    "core_source_bounds": {
+      "minX": -466.21271,
+      "maxX": 830.64813,
+      "minY": -133.50417,
+      "maxY": 594.03485
+    },
+    "cluster": {
+      "retained": 2853,
+      "total": 2901,
+      "centerX": 6.32317,
+      "centerY": 150.92954,
+      "radiusX": 778.85185,
+      "radiusY": 871.4855
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 52,
+      "visible_height": 58,
+      "density_zoom": 2.41379
+    },
+    "scale": 0.32758,
+    "x_offset": 117.17092,
+    "y_offset": 215.71478,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:16.214Z"
+  "exported_at": "2026-08-19T05:11:37.385Z"
 }

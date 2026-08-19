@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "spuria",
   "character_name": "Spuria",
   "localized_name": "空构",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -306.38998,
-      "maxX": 699.43689,
-      "minY": -94.43492,
+      "maxX": 143.774,
+      "minY": -96.34018,
       "maxY": 531.89404
     },
-    "scale": 0.17498,
-    "x_offset": 61.61225,
-    "y_offset": 199.47574,
+    "full_source_bounds": {
+      "minX": -306.38998,
+      "maxX": 699.43689,
+      "minY": -96.34018,
+      "maxY": 531.89404
+    },
+    "core_source_bounds": {
+      "minX": -306.38998,
+      "maxX": 143.774,
+      "minY": -96.34018,
+      "maxY": 531.89404
+    },
+    "cluster": {
+      "retained": 2882,
+      "total": 2885,
+      "centerX": -7.49107,
+      "centerY": 147.82628,
+      "radiusX": 288.81242,
+      "radiusY": 638.79945
+    },
+    "scale": 0.33109,
+    "x_offset": 122.92,
+    "y_offset": 184.10305,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:32.262Z"
+  "exported_at": "2026-08-19T05:04:49.858Z"
 }

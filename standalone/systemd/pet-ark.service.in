@@ -6,6 +6,7 @@ After=graphical-session.target
 [Service]
 Type=simple
 Environment=XDG_RUNTIME_DIR=%t
+Environment=PET_ARK_INSTANCE=default
 EnvironmentFile=-%h/.config/pet-ark/runtime.env
 ExecStart=@PET_ARK_LAUNCHER@
 Restart=on-failure

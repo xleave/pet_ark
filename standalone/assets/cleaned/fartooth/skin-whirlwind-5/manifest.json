@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "fartooth",
   "character_name": "Fartooth",
   "localized_name": "远牙",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -558.28802,
       "maxX": 537.20746,
       "minY": -112.40449,
-      "maxY": 405.37903
+      "maxY": 405.96811
     },
-    "scale": 0.16066,
-    "x_offset": 97.69338,
-    "y_offset": 197.94133,
+    "full_source_bounds": {
+      "minX": -558.28802,
+      "maxX": 537.20746,
+      "minY": -112.40449,
+      "maxY": 405.96811
+    },
+    "core_source_bounds": {
+      "minX": -558.28802,
+      "maxX": 537.20746,
+      "minY": -112.40449,
+      "maxY": 403.30414
+    },
+    "cluster": {
+      "retained": 2184,
+      "total": 2184,
+      "centerX": -1.5703,
+      "centerY": 163.0341,
+      "radiusX": 550.00333,
+      "radiusY": 905.97778
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 39,
+      "visible_height": 64,
+      "density_zoom": 2.1875
+    },
+    "scale": 0.35144,
+    "x_offset": 97.51677,
+    "y_offset": 218.05916,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:06.562Z"
+  "exported_at": "2026-08-19T05:10:19.554Z"
 }

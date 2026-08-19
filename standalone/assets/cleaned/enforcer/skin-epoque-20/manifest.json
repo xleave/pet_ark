@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "enforcer",
   "character_name": "Enforcer",
   "localized_name": "见行者",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -279.00262,
+      "minX": -266.04745,
+      "maxX": 221.00587,
+      "minY": -86.77385,
+      "maxY": 453.02731
+    },
+    "full_source_bounds": {
+      "minX": -279.1315,
       "maxX": 567.53662,
       "minY": -314.05374,
-      "maxY": 463.35828
+      "maxY": 466.53833
     },
-    "scale": 0.20791,
-    "x_offset": 66.00613,
-    "y_offset": 150.70656,
+    "core_source_bounds": {
+      "minX": -266.04745,
+      "maxX": 221.00587,
+      "minY": -86.77385,
+      "maxY": 453.02731
+    },
+    "cluster": {
+      "retained": 3683,
+      "total": 3712,
+      "centerX": 4.93915,
+      "centerY": 147.83975,
+      "radiusX": 257.39705,
+      "radiusY": 563.29305
+    },
+    "scale": 0.36136,
+    "x_offset": 104.13804,
+    "y_offset": 184.64369,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:04.883Z"
+  "exported_at": "2026-08-19T05:04:57.202Z"
 }

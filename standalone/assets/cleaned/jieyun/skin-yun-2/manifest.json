@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "jieyun",
   "character_name": "Jieyun",
   "localized_name": "截云",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -1066.89648,
+      "minX": -310.72379,
+      "maxX": 176.95636,
+      "minY": -108.57329,
+      "maxY": 498.38312
+    },
+    "full_source_bounds": {
+      "minX": -1261.00476,
       "maxX": 1384.06348,
-      "minY": -135.72778,
+      "minY": -153.2019,
       "maxY": 863.04999
     },
-    "scale": 0.07181,
-    "x_offset": 84.61234,
-    "y_offset": 206.25358,
+    "core_source_bounds": {
+      "minX": -310.72379,
+      "maxX": 176.95636,
+      "minY": -108.57329,
+      "maxY": 498.38312
+    },
+    "cluster": {
+      "retained": 3033,
+      "total": 3128,
+      "centerX": -0.70367,
+      "centerY": 134.14619,
+      "radiusX": 315.84926,
+      "radiusY": 573.66924
+    },
+    "scale": 0.34269,
+    "x_offset": 118.92061,
+    "y_offset": 178.79264,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:13.093Z"
+  "exported_at": "2026-08-19T05:03:14.428Z"
 }

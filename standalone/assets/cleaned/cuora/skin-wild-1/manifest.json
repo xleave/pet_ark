@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "cuora",
   "character_name": "Cuora",
   "localized_name": "蛇屠箱",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -273.57291,
       "maxX": 497.9718,
       "minY": -105.13124,
       "maxY": 696.77509
     },
-    "scale": 0.22811,
-    "x_offset": 70.40576,
-    "y_offset": 192.01811,
+    "full_source_bounds": {
+      "minX": -273.57291,
+      "maxX": 497.9718,
+      "minY": -105.13124,
+      "maxY": 696.77509
+    },
+    "core_source_bounds": {
+      "minX": -273.57291,
+      "maxX": 467.2771,
+      "minY": -105.13124,
+      "maxY": 696.77509
+    },
+    "cluster": {
+      "retained": 1925,
+      "total": 1926,
+      "centerX": -6.97295,
+      "centerY": 209.52501,
+      "radiusX": 474.97723,
+      "radiusY": 546.99516
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 61,
+      "visible_height": 93,
+      "density_zoom": 1.50538
+    },
+    "scale": 0.3434,
+    "x_offset": 104.1377,
+    "y_offset": 216.02727,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:03.030Z"
+  "exported_at": "2026-08-19T05:10:46.419Z"
 }

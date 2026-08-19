@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "jessica",
   "character_name": "Jessica",
   "localized_name": "杰西卡",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -273.26337,
+      "minX": -288.51221,
       "maxX": 366.01028,
-      "minY": -124.10701,
-      "maxY": 433.74295
+      "minY": -123.80765,
+      "maxY": 416.91382
     },
-    "scale": 0.27531,
-    "x_offset": 83.23281,
-    "y_offset": 181.83179,
+    "full_source_bounds": {
+      "minX": -288.51221,
+      "maxX": 366.01028,
+      "minY": -123.80765,
+      "maxY": 416.91382
+    },
+    "core_source_bounds": {
+      "minX": -249.67348,
+      "maxX": 333.16171,
+      "minY": -123.80765,
+      "maxY": 416.91382
+    },
+    "cluster": {
+      "retained": 1709,
+      "total": 1709,
+      "centerX": -9.45661,
+      "centerY": 171.83032,
+      "radiusX": 512.74519,
+      "radiusY": 587.16454
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 76,
+      "visible_height": 110,
+      "density_zoom": 1.27273
+    },
+    "scale": 0.34223,
+    "x_offset": 108.82966,
+    "y_offset": 216.90151,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:12.939Z"
+  "exported_at": "2026-08-19T05:11:32.249Z"
 }

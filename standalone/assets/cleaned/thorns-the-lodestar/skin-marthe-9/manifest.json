@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "thorns-the-lodestar",
   "character_name": "Thorns the Lodestar",
   "localized_name": "引星棘刺",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -886.5799,
-      "maxX": 346.11646,
-      "minY": -107.12978,
+      "minX": -578.52692,
+      "maxX": 269.57693,
+      "minY": -107.15244,
       "maxY": 833.38605
     },
-    "scale": 0.14278,
-    "x_offset": 134.58272,
-    "y_offset": 200.70439,
+    "full_source_bounds": {
+      "minX": -886.5799,
+      "maxX": 344.53818,
+      "minY": -107.15244,
+      "maxY": 833.38605
+    },
+    "core_source_bounds": {
+      "minX": -578.52692,
+      "maxX": 269.57693,
+      "minY": -107.15244,
+      "maxY": 833.38605
+    },
+    "cluster": {
+      "retained": 3085,
+      "total": 3095,
+      "centerX": -9.99422,
+      "centerY": 208.95382,
+      "radiusX": 544.97994,
+      "radiusY": 710.03731
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 50,
+      "visible_height": 79,
+      "density_zoom": 1.77215
+    },
+    "scale": 0.36776,
+    "x_offset": 107.61986,
+    "y_offset": 217.3531,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:34.430Z"
+  "exported_at": "2026-08-19T05:11:15.330Z"
 }

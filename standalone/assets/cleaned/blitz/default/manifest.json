@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "blitz",
   "character_name": "Blitz",
   "localized_name": "闪击",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -329.80154,
       "maxX": 274.42505,
       "minY": -99.25217,
       "maxY": 399.75336
     },
-    "scale": 0.29128,
-    "x_offset": 104.06507,
-    "y_offset": 187.08968,
+    "full_source_bounds": {
+      "minX": -329.80154,
+      "maxX": 274.42505,
+      "minY": -99.25217,
+      "maxY": 399.75336
+    },
+    "core_source_bounds": {
+      "minX": -256.42801,
+      "maxX": 274.42505,
+      "minY": -99.25217,
+      "maxY": 399.75336
+    },
+    "cluster": {
+      "retained": 1980,
+      "total": 1980,
+      "centerX": 2.50042,
+      "centerY": 219.86111,
+      "radiusX": 353.93517,
+      "radiusY": 660.05341
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 59,
+      "visible_height": 116,
+      "density_zoom": 1.22034
+    },
+    "scale": 0.35546,
+    "x_offset": 96.07941,
+    "y_offset": 216.10945,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:31:27.075Z"
+  "exported_at": "2026-08-19T05:11:25.737Z"
 }

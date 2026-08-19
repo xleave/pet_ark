@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "aak",
   "character_name": "Aak",
   "localized_name": "阿",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -514.8374,
       "maxX": 780.36395,
-      "minY": -111.0284,
+      "minY": -111.57399,
       "maxY": 683.06097
     },
-    "scale": 0.13589,
-    "x_offset": 77.9593,
-    "y_offset": 200.91277,
+    "full_source_bounds": {
+      "minX": -514.8374,
+      "maxX": 780.36395,
+      "minY": -111.57399,
+      "maxY": 683.06097
+    },
+    "core_source_bounds": {
+      "minX": -514.8374,
+      "maxX": 552.12402,
+      "minY": -111.57399,
+      "maxY": 683.06097
+    },
+    "cluster": {
+      "retained": 1808,
+      "total": 1809,
+      "centerX": 31.16211,
+      "centerY": 144.02789,
+      "radiusX": 542.35265,
+      "radiusY": 687.37265
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 31,
+      "visible_height": 58,
+      "density_zoom": 2.41379
+    },
+    "scale": 0.328,
+    "x_offset": 105.55694,
+    "y_offset": 218.02429,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:54.676Z"
+  "exported_at": "2026-08-19T05:11:22.227Z"
 }

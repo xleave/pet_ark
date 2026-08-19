@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "leizi",
   "character_name": "Leizi",
   "localized_name": "惊蛰",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -395.50726,
+      "minX": -253.64116,
+      "maxX": 263.30237,
+      "minY": -121.59179,
+      "maxY": 436.66077
+    },
+    "full_source_bounds": {
+      "minX": -396.40289,
       "maxX": 1691.58069,
-      "minY": -121.44097,
+      "minY": -121.59179,
       "maxY": 746.78033
     },
-    "scale": 0.08433,
-    "x_offset": 41.35235,
-    "y_offset": 205.75912,
+    "core_source_bounds": {
+      "minX": -253.64116,
+      "maxX": 263.30237,
+      "minY": -121.59179,
+      "maxY": 436.66077
+    },
+    "cluster": {
+      "retained": 2715,
+      "total": 2733,
+      "centerX": -5.99133,
+      "centerY": 132.62611,
+      "radiusX": 256.06482,
+      "radiusY": 694.18652
+    },
+    "scale": 0.34046,
+    "x_offset": 94.35536,
+    "y_offset": 174.60253,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:15.284Z"
+  "exported_at": "2026-08-19T05:03:31.009Z"
 }

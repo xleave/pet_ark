@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "ceobe",
   "character_name": "Ceobe",
   "localized_name": "刻俄柏",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -326.14661,
-      "maxX": 418.84409,
-      "minY": -121.44382,
-      "maxY": 429.31076
+      "minX": -318.73007,
+      "maxX": 256.38007,
+      "minY": -124.27979,
+      "maxY": 421.47934
     },
-    "scale": 0.23624,
-    "x_offset": 85.05036,
-    "y_offset": 187.30956,
+    "full_source_bounds": {
+      "minX": -327.70886,
+      "maxX": 422.44055,
+      "minY": -124.27979,
+      "maxY": 588.46893
+    },
+    "core_source_bounds": {
+      "minX": -318.73007,
+      "maxX": 256.38007,
+      "minY": -124.27979,
+      "maxY": 421.47934
+    },
+    "cluster": {
+      "retained": 2360,
+      "total": 2360,
+      "centerX": -6.19824,
+      "centerY": 184.42319,
+      "radiusX": 374.79575,
+      "radiusY": 480
+    },
+    "scale": 0.30603,
+    "x_offset": 105.54043,
+    "y_offset": 177.96686,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:00.927Z"
+  "exported_at": "2026-08-19T05:07:54.048Z"
 }

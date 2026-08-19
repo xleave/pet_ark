@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "harold",
   "character_name": "Harold",
   "localized_name": "哈洛德",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -310.33618,
-      "maxX": 518.67084,
+      "maxX": 518.67194,
       "minY": -103.01675,
       "maxY": 508.82272
     },
-    "scale": 0.2123,
-    "x_offset": 73.88505,
-    "y_offset": 194.12932,
+    "full_source_bounds": {
+      "minX": -310.33618,
+      "maxX": 518.67194,
+      "minY": -103.01675,
+      "maxY": 508.82272
+    },
+    "core_source_bounds": {
+      "minX": -310.33618,
+      "maxX": 503.70239,
+      "minY": -103.01675,
+      "maxY": 508.82272
+    },
+    "cluster": {
+      "retained": 2796,
+      "total": 2796,
+      "centerX": -3.22805,
+      "centerY": 170.44044,
+      "radiusX": 784.89,
+      "radiusY": 968.95093
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 85,
+      "visible_height": 86,
+      "density_zoom": 1.62791
+    },
+    "scale": 0.34561,
+    "x_offset": 113.7197,
+    "y_offset": 216.21057,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:09.778Z"
+  "exported_at": "2026-08-19T05:10:52.512Z"
 }

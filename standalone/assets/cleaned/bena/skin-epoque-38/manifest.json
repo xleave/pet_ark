@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "bena",
   "character_name": "Bena",
   "localized_name": "贝娜",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -245.5377,
+      "maxX": 293.68301,
+      "minY": -101.4984,
+      "maxY": 407.68051
+    },
+    "full_source_bounds": {
       "minX": -964.16003,
       "maxX": 1223.3075,
       "minY": -101.4984,
-      "maxY": 490.56329
+      "maxY": 541.23047
     },
-    "scale": 0.08046,
-    "x_offset": 85.57471,
-    "y_offset": 207.83361,
+    "core_source_bounds": {
+      "minX": -245.5377,
+      "maxX": 293.68301,
+      "minY": -101.4984,
+      "maxY": 407.68051
+    },
+    "cluster": {
+      "retained": 2536,
+      "total": 2637,
+      "centerX": -9.4697,
+      "centerY": 165.11164,
+      "radiusX": 440.79276,
+      "radiusY": 718.20905
+    },
+    "scale": 0.3264,
+    "x_offset": 88.14276,
+    "y_offset": 182.87123,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:58.554Z"
+  "exported_at": "2026-08-19T05:03:22.877Z"
 }

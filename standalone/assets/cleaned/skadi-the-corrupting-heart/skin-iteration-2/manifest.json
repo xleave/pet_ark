@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "skadi-the-corrupting-heart",
   "character_name": "Skadi the Corrupting Heart",
   "localized_name": "浊心斯卡蒂",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -240.72569,
-      "maxX": 556.66437,
+      "maxX": 199.63231,
       "minY": -139.98756,
-      "maxY": 418.7641
+      "maxY": 419.8833
     },
-    "scale": 0.22072,
-    "x_offset": 61.13299,
-    "y_offset": 185.10193,
+    "full_source_bounds": {
+      "minX": -240.72569,
+      "maxX": 545.58246,
+      "minY": -139.98756,
+      "maxY": 419.8833
+    },
+    "core_source_bounds": {
+      "minX": -240.72569,
+      "maxX": 199.63231,
+      "minY": -139.98756,
+      "maxY": 419.8833
+    },
+    "cluster": {
+      "retained": 2324,
+      "total": 2324,
+      "centerX": 4.80388,
+      "centerY": 224.26041,
+      "radiusX": 384.14195,
+      "radiusY": 642.54837
+    },
+    "scale": 0.37151,
+    "x_offset": 103.63339,
+    "y_offset": 163.99263,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:31.663Z"
+  "exported_at": "2026-08-19T05:07:51.862Z"
 }

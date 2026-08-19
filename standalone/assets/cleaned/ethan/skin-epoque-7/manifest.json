@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ethan",
   "character_name": "Ethan",
   "localized_name": "伊桑",
@@ -119,16 +122,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -583.72534,
       "maxX": 422.94656,
-      "minY": -117.38816,
-      "maxY": 440.57455
+      "minY": -119.80795,
+      "maxY": 440.52936
     },
-    "scale": 0.17483,
-    "x_offset": 110.05476,
-    "y_offset": 195.47661,
+    "full_source_bounds": {
+      "minX": -583.72534,
+      "maxX": 422.94656,
+      "minY": -119.80795,
+      "maxY": 440.52936
+    },
+    "core_source_bounds": {
+      "minX": -583.72534,
+      "maxX": 422.94656,
+      "minY": -119.80795,
+      "maxY": 423.95523
+    },
+    "cluster": {
+      "retained": 1891,
+      "total": 1891,
+      "centerX": -5.41831,
+      "centerY": 218.07491,
+      "radiusX": 785.92348,
+      "radiusY": 530.55138
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 44,
+      "visible_height": 67,
+      "density_zoom": 2.08955
+    },
+    "scale": 0.36532,
+    "x_offset": 109.69651,
+    "y_offset": 216.1119,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:05.164Z"
+  "exported_at": "2026-08-19T05:10:19.369Z"
 }

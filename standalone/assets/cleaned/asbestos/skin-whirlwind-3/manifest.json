@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "asbestos",
   "character_name": "Asbestos",
   "localized_name": "石棉",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -215.17055,
+      "maxX": 182.15309,
+      "minY": -105.84637,
+      "maxY": 379.03119
+    },
+    "full_source_bounds": {
       "minX": -320.49292,
       "maxX": 313.73862,
       "minY": -105.84637,
       "maxY": 709.62396
     },
-    "scale": 0.25507,
-    "x_offset": 96.8614,
-    "y_offset": 189.00203,
+    "core_source_bounds": {
+      "minX": -215.17055,
+      "maxX": 182.15309,
+      "minY": -105.84637,
+      "maxY": 379.03119
+    },
+    "cluster": {
+      "retained": 2591,
+      "total": 2591,
+      "centerX": 2.77249,
+      "centerY": 190.28819,
+      "radiusX": 384.97468,
+      "radiusY": 502.35611
+    },
+    "scale": 0.41,
+    "x_offset": 102.76858,
+    "y_offset": 172.60299,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:11.666Z"
+  "exported_at": "2026-08-19T05:07:45.908Z"
 }

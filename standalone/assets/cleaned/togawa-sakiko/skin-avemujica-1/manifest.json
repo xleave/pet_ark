@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "togawa-sakiko",
   "character_name": "Togawa Sakiko",
   "localized_name": "丰川祥子",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -249.925,
-      "maxX": 1555.12,
-      "minY": -121.02934,
-      "maxY": 731.15839
+      "minX": -249.81154,
+      "maxX": 204.92435,
+      "minY": -121.16632,
+      "maxY": 416.10995
     },
-    "scale": 0.0975,
-    "x_offset": 32.36881,
-    "y_offset": 204.1991,
+    "full_source_bounds": {
+      "minX": -249.81154,
+      "maxX": 1555.12,
+      "minY": -121.16632,
+      "maxY": 723.63556
+    },
+    "core_source_bounds": {
+      "minX": -249.81154,
+      "maxX": 204.92435,
+      "minY": -121.16632,
+      "maxY": 416.10995
+    },
+    "cluster": {
+      "retained": 2895,
+      "total": 2917,
+      "centerX": -1.99349,
+      "centerY": 121.0624,
+      "radiusX": 298.12971,
+      "radiusY": 640.43597
+    },
+    "scale": 0.38704,
+    "x_offset": 104.68652,
+    "y_offset": 169.10405,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:34.861Z"
+  "exported_at": "2026-08-19T05:04:04.033Z"
 }

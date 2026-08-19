@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "lemuen",
   "character_name": "Lemuen",
   "localized_name": "蕾缪安",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -440.36923,
-      "maxX": 477.16223,
-      "minY": -136.30971,
+      "maxX": 447.24463,
+      "minY": -137.10954,
       "maxY": 972.90002
     },
-    "scale": 0.18752,
-    "x_offset": 92.55027,
-    "y_offset": 190.43908,
+    "full_source_bounds": {
+      "minX": -440.36923,
+      "maxX": 447.24463,
+      "minY": -137.10954,
+      "maxY": 972.90002
+    },
+    "core_source_bounds": {
+      "minX": -440.36923,
+      "maxX": 365.20996,
+      "minY": -137.10954,
+      "maxY": 972.90002
+    },
+    "cluster": {
+      "retained": 3350,
+      "total": 3350,
+      "centerX": -173.56242,
+      "centerY": 287.76044,
+      "radiusX": 1569.73633,
+      "radiusY": 627.87399
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 66,
+      "visible_height": 81,
+      "density_zoom": 1.7284
+    },
+    "scale": 0.32388,
+    "x_offset": 99.2076,
+    "y_offset": 216.53169,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:15.652Z"
+  "exported_at": "2026-08-19T05:10:58.487Z"
 }

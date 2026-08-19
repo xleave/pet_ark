@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "popukar",
   "character_name": "Popukar",
   "localized_name": "泡普卡",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -425.08002,
       "maxX": 553.29663,
       "minY": -114.79305,
-      "maxY": 548.8902
+      "maxY": 546.70294
     },
-    "scale": 0.17989,
-    "x_offset": 84.46757,
-    "y_offset": 195.3499,
+    "full_source_bounds": {
+      "minX": -425.08002,
+      "maxX": 553.29663,
+      "minY": -114.79305,
+      "maxY": 546.70294
+    },
+    "core_source_bounds": {
+      "minX": -425.08002,
+      "maxX": 553.29663,
+      "minY": -114.79305,
+      "maxY": 546.70294
+    },
+    "cluster": {
+      "retained": 2601,
+      "total": 2601,
+      "centerX": -9.35037,
+      "centerY": 201.13999,
+      "radiusX": 549.95458,
+      "radiusY": 700.07145
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 45,
+      "visible_height": 73,
+      "density_zoom": 1.91781
+    },
+    "scale": 0.34499,
+    "x_offset": 100.73232,
+    "y_offset": 216.67104,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:24.354Z"
+  "exported_at": "2026-08-19T05:10:34.927Z"
 }

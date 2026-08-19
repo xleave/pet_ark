@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "firewhistle",
   "character_name": "Firewhistle",
   "localized_name": "火哨",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
+      "minX": -293.07513,
+      "maxX": 384.14243,
+      "minY": -63.57008,
+      "maxY": 395.60507
+    },
+    "full_source_bounds": {
+      "minX": -293.07513,
+      "maxX": 384.14243,
+      "minY": -63.57008,
+      "maxY": 395.60507
+    },
+    "core_source_bounds": {
       "minX": -214.27005,
       "maxX": 384.14243,
-      "minY": -64.12328,
-      "maxY": 476.38434
+      "minY": -63.57008,
+      "maxY": 374.29507
     },
-    "scale": 0.29411,
-    "x_offset": 71.01929,
-    "y_offset": 197.14061,
+    "cluster": {
+      "retained": 2444,
+      "total": 2444,
+      "centerX": -4.20268,
+      "centerY": 196.99841,
+      "radiusX": 435.07981,
+      "radiusY": 592.19162
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 66,
+      "visible_height": 98,
+      "density_zoom": 1.42857
+    },
+    "scale": 0.37127,
+    "x_offset": 92.66629,
+    "y_offset": 216.68424,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:07.161Z"
+  "exported_at": "2026-08-19T05:11:29.925Z"
 }

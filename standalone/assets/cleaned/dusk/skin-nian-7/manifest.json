@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "dusk",
   "character_name": "Dusk",
   "localized_name": "夕",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -369.94489,
+      "maxX": 253.83142,
+      "minY": -226.84123,
+      "maxY": 458.26645
+    },
+    "full_source_bounds": {
       "minX": -709.64001,
       "maxX": 1199.12,
       "minY": -226.84123,
       "maxY": 458.26645
     },
-    "scale": 0.09221,
-    "x_offset": 73.43339,
-    "y_offset": 195.08377,
+    "core_source_bounds": {
+      "minX": -369.94489,
+      "maxX": 253.83142,
+      "minY": -226.84123,
+      "maxY": 458.26645
+    },
+    "cluster": {
+      "retained": 2368,
+      "total": 2381,
+      "centerX": -3.40277,
+      "centerY": 158.58079,
+      "radiusX": 273.60252,
+      "radiusY": 567.15507
+    },
+    "scale": 0.28215,
+    "x_offset": 112.38085,
+    "y_offset": 151.9962,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:04.168Z"
+  "exported_at": "2026-08-19T05:03:55.589Z"
 }

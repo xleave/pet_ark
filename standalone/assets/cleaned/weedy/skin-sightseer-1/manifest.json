@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "weedy",
   "character_name": "Weedy",
   "localized_name": "温蒂",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -891.87787,
-      "maxX": 498.40695,
-      "minY": -124.96542,
+      "minX": -285.88708,
+      "maxX": 252.34377,
+      "minY": -125.81797,
       "maxY": 542.46521
     },
-    "scale": 0.12659,
-    "x_offset": 120.90529,
-    "y_offset": 200.18028,
+    "full_source_bounds": {
+      "minX": -891.87787,
+      "maxX": 758.20801,
+      "minY": -125.81797,
+      "maxY": 542.46521
+    },
+    "core_source_bounds": {
+      "minX": -285.88708,
+      "maxX": 252.34377,
+      "minY": -125.81797,
+      "maxY": 542.46521
+    },
+    "cluster": {
+      "retained": 2753,
+      "total": 2764,
+      "centerX": -12.68359,
+      "centerY": 167.47049,
+      "radiusX": 363.11501,
+      "radiusY": 799.49219
+    },
+    "scale": 0.31125,
+    "x_offset": 101.2201,
+    "y_offset": 176.83975,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:38.252Z"
+  "exported_at": "2026-08-19T05:04:29.509Z"
 }

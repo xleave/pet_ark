@@ -269,6 +269,12 @@ static void test_control_protocol(void) {
 
   CHECK(!pet_control_parse("{\"command\":\"select\",\"character\":\"../amiya\"}",
                            &command, error, sizeof(error)));
+  CHECK(pet_control_parse("{\"command\":\"react\",\"event\":\"celebrate\"}",
+                          &command, error, sizeof(error)));
+  CHECK(command.kind == PET_CONTROL_REACT);
+  CHECK(!strcmp(command.event, "celebrate"));
+  CHECK(!pet_control_parse("{\"command\":\"react\",\"event\":\"inject-input\"}",
+                           &command, error, sizeof(error)));
   CHECK(!pet_control_parse("{\"command\":\"launch_shell\"}",
                            &command, error, sizeof(error)));
 }

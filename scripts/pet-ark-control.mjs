@@ -5,7 +5,7 @@ import path from 'node:path';
 import process from 'node:process';
 
 function usage() {
-  console.log(`Usage: node scripts/pet-ark-control.mjs <command> [value]
+  console.log(`Usage: node scripts/pet-ark-control.mjs [--instance ID] <command> [value]
 
 Commands:
   status
@@ -14,6 +14,7 @@ Commands:
   auto-move <on|off>
   click-through <on|off>
   select <character> [variant]
+  react <attention|celebrate|wake>
   quit
 
 Environment:
@@ -45,6 +46,11 @@ function request(args) {
     case 'select':
       if (!values[0]) throw new Error('select needs a character id');
       return { command: 'select', character: values[0], ...(values[1] ? { variant: values[1] } : {}) };
+    case 'react':
+      if (!['attention', 'celebrate', 'wake'].includes(values[0])) {
+        throw new Error('react needs attention, celebrate, or wake');
+      }
+      return { command: 'react', event: values[0] };
     case 'quit': return { command: 'quit' };
     default: throw new Error(`unknown command: ${command || '(none)'}`);
   }
@@ -56,9 +62,17 @@ async function main() {
     usage();
     return;
   }
+  const instanceIndex = args.indexOf('--instance');
+  let instance = process.env.PET_ARK_INSTANCE || 'default';
+  if (instanceIndex >= 0) {
+    if (!args[instanceIndex + 1]) throw new Error('--instance needs an id');
+    instance = args[instanceIndex + 1];
+    args.splice(instanceIndex, 2);
+  }
+  if (!/^[a-z0-9._-]+$/i.test(instance)) throw new Error('instance id contains unsupported characters');
   const runtime = process.env.XDG_RUNTIME_DIR;
   const socketPath = process.env.PET_ARK_CONTROL_SOCKET ||
-    (runtime ? path.join(runtime, 'pet-ark', 'control.sock') : null);
+    (runtime ? path.join(runtime, 'pet-ark', `${instance === 'default' ? 'control' : instance}.sock`) : null);
   if (!socketPath) throw new Error('XDG_RUNTIME_DIR and PET_ARK_CONTROL_SOCKET are unavailable');
   const payload = request(args);
   await new Promise((resolve, reject) => {

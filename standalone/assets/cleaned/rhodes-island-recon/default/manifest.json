@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "rhodes-island-recon",
   "character_name": "Rhodes Island Recon",
   "localized_name": "罗德岛隐秘队",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -442.36002,
       "maxX": 935.1734,
       "minY": -30.27509,
       "maxY": 963.01001
     },
-    "scale": 0.12776,
-    "x_offset": 64.51795,
-    "y_offset": 212.13191,
+    "full_source_bounds": {
+      "minX": -442.36002,
+      "maxX": 935.1734,
+      "minY": -30.27509,
+      "maxY": 963.01001
+    },
+    "core_source_bounds": {
+      "minX": -442.36002,
+      "maxX": 935.1734,
+      "minY": -30.27509,
+      "maxY": 963.01001
+    },
+    "cluster": {
+      "retained": 3944,
+      "total": 3944,
+      "centerX": 82.96639,
+      "centerY": 207.97193,
+      "radiusX": 1730.03075,
+      "radiusY": 1874.53848
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 67,
+      "visible_height": 54,
+      "density_zoom": 2.59259
+    },
+    "scale": 0.33124,
+    "x_offset": 105.12061,
+    "y_offset": 216.342,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:27.647Z"
+  "exported_at": "2026-08-19T05:11:49.398Z"
 }

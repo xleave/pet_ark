@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "robin",
   "character_name": "Robin",
   "localized_name": "罗宾",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -277.43362,
+      "maxX": 387.93484,
+      "minY": -189.64055,
+      "maxY": 592.9964
+    },
+    "full_source_bounds": {
       "minX": -771.67999,
       "maxX": 615.92999,
       "minY": -189.64055,
       "maxY": 629.81982
     },
-    "scale": 0.12684,
-    "x_offset": 105.87742,
-    "y_offset": 191.9466,
+    "core_source_bounds": {
+      "minX": -277.43362,
+      "maxX": 387.93484,
+      "minY": -189.64055,
+      "maxY": 592.9964
+    },
+    "cluster": {
+      "retained": 4484,
+      "total": 4524,
+      "centerX": -7.0593,
+      "centerY": 128.58193,
+      "radiusX": 368.41807,
+      "radiusY": 561.66965
+    },
+    "scale": 0.26452,
+    "x_offset": 81.38538,
+    "y_offset": 165.83721,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:28.197Z"
+  "exported_at": "2026-08-19T05:04:24.320Z"
 }

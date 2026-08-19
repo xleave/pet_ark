@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "doc",
   "character_name": "Doc",
   "localized_name": "医生",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -234.84459,
       "maxX": 628.81653,
       "minY": -108.22197,
       "maxY": 667.51056
     },
-    "scale": 0.20378,
-    "x_offset": 55.85748,
-    "y_offset": 193.94613,
+    "full_source_bounds": {
+      "minX": -234.84459,
+      "maxX": 628.81653,
+      "minY": -108.22197,
+      "maxY": 667.51056
+    },
+    "core_source_bounds": {
+      "minX": -234.84459,
+      "maxX": 474.05237,
+      "minY": -108.22197,
+      "maxY": 667.51056
+    },
+    "cluster": {
+      "retained": 2522,
+      "total": 2522,
+      "centerX": 1.45057,
+      "centerY": 158.22184,
+      "radiusX": 477.52755,
+      "radiusY": 987.93941
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 50,
+      "visible_height": 80,
+      "density_zoom": 1.75
+    },
+    "scale": 0.35662,
+    "x_offset": 96.6256,
+    "y_offset": 217.65573,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:11.302Z"
+  "exported_at": "2026-08-19T05:10:25.843Z"
 }

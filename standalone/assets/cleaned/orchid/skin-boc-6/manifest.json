@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "orchid",
   "character_name": "Orchid",
   "localized_name": "梓兰",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -260.43314,
+      "maxX": 161.65839,
+      "minY": -110.10534,
+      "maxY": 400.6134
+    },
+    "full_source_bounds": {
       "minX": -260.43314,
       "maxX": 386.09161,
       "minY": -110.10534,
-      "maxY": 401.44638
+      "maxY": 401.32236
     },
-    "scale": 0.27222,
-    "x_offset": 78.89633,
-    "y_offset": 186.02661,
+    "core_source_bounds": {
+      "minX": -260.43314,
+      "maxX": 161.65839,
+      "minY": -110.10534,
+      "maxY": 400.6134
+    },
+    "cluster": {
+      "retained": 2113,
+      "total": 2121,
+      "centerX": -127.90886,
+      "centerY": 192.52396,
+      "radiusX": 409.9939,
+      "radiusY": 595.00786
+    },
+    "scale": 0.40727,
+    "x_offset": 116.11396,
+    "y_offset": 171.15749,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:22.376Z"
+  "exported_at": "2026-08-19T05:08:01.991Z"
 }

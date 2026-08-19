@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "conviction",
   "character_name": "Conviction",
   "localized_name": "断罪者",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "full-animation-envelope",
     "source_bounds": {
-      "minX": -224.60556,
-      "maxX": 706.16486,
-      "minY": -101.66636,
+      "minX": -224.61038,
+      "maxX": 390.41998,
+      "minY": -102.42567,
       "maxY": 608.60004
     },
-    "scale": 0.18909,
-    "x_offset": 50.47082,
-    "y_offset": 196.77584,
+    "full_source_bounds": {
+      "minX": -224.61038,
+      "maxX": 390.41998,
+      "minY": -102.42567,
+      "maxY": 608.60004
+    },
+    "core_source_bounds": {
+      "minX": -224.61038,
+      "maxX": 187.1261,
+      "minY": -102.42567,
+      "maxY": 388.87714
+    },
+    "cluster": {
+      "retained": 1613,
+      "total": 1616,
+      "centerX": 1.35678,
+      "centerY": 156.64436,
+      "radiusX": 260.37596,
+      "radiusY": 700.23145
+    },
+    "scale": 0.28616,
+    "x_offset": 72.27557,
+    "y_offset": 186.68938,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:02.466Z"
+  "exported_at": "2026-08-19T05:06:37.031Z"
 }

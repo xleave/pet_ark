@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "civilight-eterna",
   "character_name": "Civilight Eterna",
   "localized_name": "魔王",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -989.44,
-      "maxX": 355.06342,
-      "minY": -114.64458,
+      "minX": -328.70575,
+      "maxX": 346.55969,
+      "minY": -113.14951,
       "maxY": 601.42725
     },
-    "scale": 0.1309,
-    "x_offset": 137.52101,
-    "y_offset": 200.99264,
+    "full_source_bounds": {
+      "minX": -989.44,
+      "maxX": 346.55969,
+      "minY": -113.14951,
+      "maxY": 601.42725
+    },
+    "core_source_bounds": {
+      "minX": -328.70575,
+      "maxX": 346.55969,
+      "minY": -113.14951,
+      "maxY": 601.42725
+    },
+    "cluster": {
+      "retained": 4164,
+      "total": 4206,
+      "centerX": -0.24611,
+      "centerY": 124.43687,
+      "radiusX": 328.96182,
+      "radiusY": 483.9928
+    },
+    "scale": 0.26064,
+    "x_offset": 93.67329,
+    "y_offset": 186.50891,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:01.988Z"
+  "exported_at": "2026-08-19T05:03:46.023Z"
 }

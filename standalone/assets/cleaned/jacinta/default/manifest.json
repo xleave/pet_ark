@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "jacinta",
   "character_name": "Jacinta",
   "localized_name": "嘉辛塔",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -276.49823,
+      "maxX": 177.74812,
+      "minY": -118.58503,
+      "maxY": 451.38593
+    },
+    "full_source_bounds": {
       "minX": -657.19531,
       "maxX": 177.74812,
-      "minY": -118.14207,
-      "maxY": 450.78207
+      "minY": -118.58503,
+      "maxY": 451.38593
     },
-    "scale": 0.21079,
-    "x_offset": 146.53199,
-    "y_offset": 191.09651,
+    "core_source_bounds": {
+      "minX": -276.49823,
+      "maxX": 177.74812,
+      "minY": -118.58503,
+      "maxY": 451.38593
+    },
+    "cluster": {
+      "retained": 3137,
+      "total": 3168,
+      "centerX": -4.80629,
+      "centerY": 127.09179,
+      "radiusX": 277.11065,
+      "radiusY": 649.18537
+    },
+    "scale": 0.36493,
+    "x_offset": 114.01848,
+    "y_offset": 172.72466,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:12.574Z"
+  "exported_at": "2026-08-19T05:04:58.969Z"
 }

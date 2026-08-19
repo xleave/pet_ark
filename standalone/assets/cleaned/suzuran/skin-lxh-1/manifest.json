@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "suzuran",
   "character_name": "Suzuran",
   "localized_name": "铃兰",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -308.1333,
-      "maxX": 368.30206,
+      "maxX": 193.51448,
       "minY": -108.90884,
-      "maxY": 408.92645
+      "maxY": 404.10281
     },
-    "scale": 0.26019,
-    "x_offset": 88.17242,
-    "y_offset": 187.66328,
+    "full_source_bounds": {
+      "minX": -308.1333,
+      "maxX": 370.82028,
+      "minY": -108.90884,
+      "maxY": 442.06781
+    },
+    "core_source_bounds": {
+      "minX": -308.1333,
+      "maxX": 193.51448,
+      "minY": -108.90884,
+      "maxY": 404.10281
+    },
+    "cluster": {
+      "retained": 2704,
+      "total": 2704,
+      "centerX": -24.60433,
+      "centerY": 148.00117,
+      "radiusX": 605.0203,
+      "radiusY": 686.99274
+    },
+    "scale": 0.35084,
+    "x_offset": 116.10665,
+    "y_offset": 177.79001,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:33.158Z"
+  "exported_at": "2026-08-19T05:08:05.174Z"
 }

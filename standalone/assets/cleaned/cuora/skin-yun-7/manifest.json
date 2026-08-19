@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "cuora",
   "character_name": "Cuora",
   "localized_name": "蛇屠箱",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -353.83051,
+      "maxX": 214.65846,
+      "minY": -135.94281,
+      "maxY": 402.45496
+    },
+    "full_source_bounds": {
       "minX": -728.83527,
       "maxX": 626.73999,
-      "minY": -135.46315,
+      "minY": -135.94281,
       "maxY": 766.45001
     },
-    "scale": 0.12983,
-    "x_offset": 102.62773,
-    "y_offset": 198.41225,
+    "core_source_bounds": {
+      "minX": -353.83051,
+      "maxX": 214.65846,
+      "minY": -135.94281,
+      "maxY": 402.45496
+    },
+    "cluster": {
+      "retained": 3260,
+      "total": 3277,
+      "centerX": 4.8938,
+      "centerY": 139.4867,
+      "radiusX": 288.37322,
+      "radiusY": 670.53151
+    },
+    "scale": 0.30959,
+    "x_offset": 117.54332,
+    "y_offset": 173.91311,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:03.130Z"
+  "exported_at": "2026-08-19T05:03:47.002Z"
 }

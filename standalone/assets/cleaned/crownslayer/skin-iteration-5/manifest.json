@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "crownslayer",
   "character_name": "Crownslayer",
   "localized_name": "弑君者",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -290.91013,
+      "maxX": 269.84219,
+      "minY": -126.80972,
+      "maxY": 409.41971
+    },
+    "full_source_bounds": {
       "minX": -357.65698,
       "maxX": 289.54102,
       "minY": -126.80972,
       "maxY": 724.26135
     },
-    "scale": 0.2444,
-    "x_offset": 104.3237,
-    "y_offset": 185.00797,
+    "core_source_bounds": {
+      "minX": -290.91013,
+      "maxX": 269.84219,
+      "minY": -126.80972,
+      "maxY": 409.41971
+    },
+    "cluster": {
+      "retained": 3208,
+      "total": 3208,
+      "centerX": -12.85586,
+      "centerY": 168.51828,
+      "radiusX": 490.08512,
+      "radiusY": 649.95422
+    },
+    "scale": 0.31386,
+    "x_offset": 99.30623,
+    "y_offset": 176.19899,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:11.696Z"
+  "exported_at": "2026-08-19T05:07:55.215Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "yu",
   "character_name": "Yu",
   "localized_name": "余",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -313.05133,
+      "maxX": 189.46147,
+      "minY": -111.42966,
+      "maxY": 415.11081
+    },
+    "full_source_bounds": {
       "minX": -425.33609,
       "maxX": 1034.52051,
-      "minY": -111.34489,
-      "maxY": 415.44571
+      "minY": -111.42966,
+      "maxY": 417.63989
     },
-    "scale": 0.12056,
-    "x_offset": 59.27843,
-    "y_offset": 202.57628,
+    "core_source_bounds": {
+      "minX": -313.05133,
+      "maxX": 189.46147,
+      "minY": -111.42966,
+      "maxY": 415.11081
+    },
+    "cluster": {
+      "retained": 3468,
+      "total": 3483,
+      "centerX": -5.13532,
+      "centerY": 154.78735,
+      "radiusX": 303.68696,
+      "radiusY": 577.55766
+    },
+    "scale": 0.35024,
+    "x_offset": 117.64305,
+    "y_offset": 176.9729,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:39.381Z"
+  "exported_at": "2026-08-19T05:04:29.731Z"
 }

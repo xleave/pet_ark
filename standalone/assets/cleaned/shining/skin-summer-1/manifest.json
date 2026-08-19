@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "shining",
   "character_name": "Shining",
   "localized_name": "闪灵",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -284.595,
       "maxX": 308.30063,
       "minY": -75.04742,
       "maxY": 571.03949
     },
-    "scale": 0.29685,
-    "x_offset": 92.48151,
-    "y_offset": 193.72231,
+    "full_source_bounds": {
+      "minX": -284.595,
+      "maxX": 308.30063,
+      "minY": -75.04742,
+      "maxY": 571.03949
+    },
+    "core_source_bounds": {
+      "minX": -284.595,
+      "maxX": 201.83864,
+      "minY": -75.04742,
+      "maxY": 571.03949
+    },
+    "cluster": {
+      "retained": 1985,
+      "total": 1985,
+      "centerX": 5.87813,
+      "centerY": 192.2846,
+      "radiusX": 389.97487,
+      "radiusY": 646.28683
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 78,
+      "visible_height": 107,
+      "density_zoom": 1.30841
+    },
+    "scale": 0.3884,
+    "x_offset": 111.67675,
+    "y_offset": 199.93573,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:20.346Z"
+  "exported_at": "2026-08-19T05:11:50.988Z"
 }

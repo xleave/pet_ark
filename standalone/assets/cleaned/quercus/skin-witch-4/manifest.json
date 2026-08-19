@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "quercus",
   "character_name": "Quercus",
   "localized_name": "夏栎",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -309.99158,
+      "maxX": 248.15349,
+      "minY": -133.37418,
+      "maxY": 453.92905
+    },
+    "full_source_bounds": {
       "minX": -652.18909,
-      "maxX": 391.32849,
+      "maxX": 397.74094,
       "minY": -133.37418,
       "maxY": 460.19
     },
-    "scale": 0.16866,
-    "x_offset": 117.99841,
-    "y_offset": 193.50507,
+    "core_source_bounds": {
+      "minX": -309.99158,
+      "maxX": 248.15349,
+      "minY": -133.37418,
+      "maxY": 453.92905
+    },
+    "cluster": {
+      "retained": 2605,
+      "total": 2620,
+      "centerX": -9.09784,
+      "centerY": 138.62008,
+      "radiusX": 256,
+      "radiusY": 631.02827
+    },
+    "scale": 0.31533,
+    "x_offset": 105.74971,
+    "y_offset": 173.94309,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:26.781Z"
+  "exported_at": "2026-08-19T05:05:04.106Z"
 }

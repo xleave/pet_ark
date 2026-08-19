@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "waai-fu",
   "character_name": "Waai Fu",
   "localized_name": "槐琥",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -305.30548,
+      "maxX": 233.19994,
+      "minY": -132.63826,
+      "maxY": 419.75558
+    },
+    "full_source_bounds": {
       "minX": -323.11063,
       "maxX": 677.07062,
       "minY": -132.63826,
       "maxY": 526.33331
     },
-    "scale": 0.17597,
-    "x_offset": 64.85717,
-    "y_offset": 192.6599,
+    "core_source_bounds": {
+      "minX": -305.30548,
+      "maxX": 233.19994,
+      "minY": -132.63826,
+      "maxY": 419.75558
+    },
+    "cluster": {
+      "retained": 1669,
+      "total": 1670,
+      "centerX": -5.4702,
+      "centerY": 137.82206,
+      "radiusX": 276.57243,
+      "radiusY": 665.89432
+    },
+    "scale": 0.32683,
+    "x_offset": 107.78315,
+    "y_offset": 172.64977,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:20.854Z"
+  "exported_at": "2026-08-19T05:04:52.398Z"
 }

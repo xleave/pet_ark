@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "schwarz",
   "character_name": "Schwarz",
   "localized_name": "黑",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -687.06,
       "maxX": 208.65436,
       "minY": -84.08418,
       "maxY": 544.54535
     },
-    "scale": 0.19649,
-    "x_offset": 143.00125,
-    "y_offset": 199.4782,
+    "full_source_bounds": {
+      "minX": -687.06,
+      "maxX": 208.65436,
+      "minY": -84.08418,
+      "maxY": 544.54535
+    },
+    "core_source_bounds": {
+      "minX": -687.06,
+      "maxX": 208.65436,
+      "minY": -84.08418,
+      "maxY": 544.54535
+    },
+    "cluster": {
+      "retained": 1963,
+      "total": 1963,
+      "centerX": -98.21405,
+      "centerY": 202.49998,
+      "radiusX": 1667.677,
+      "radiusY": 789.00467
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 51,
+      "visible_height": 83,
+      "density_zoom": 1.68675
+    },
+    "scale": 0.33143,
+    "x_offset": 109.49609,
+    "y_offset": 216.8066,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:29.783Z"
+  "exported_at": "2026-08-19T05:11:10.369Z"
 }

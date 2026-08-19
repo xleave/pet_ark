@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "wang",
   "character_name": "Wang",
   "localized_name": "望",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -629.19019,
       "maxX": 270.18427,
-      "minY": -147.23146,
+      "minY": -147.44398,
       "maxY": 506.67148
     },
-    "scale": 0.19569,
-    "x_offset": 131.12722,
-    "y_offset": 187.18804,
+    "full_source_bounds": {
+      "minX": -629.19019,
+      "maxX": 270.18427,
+      "minY": -147.44398,
+      "maxY": 506.67148
+    },
+    "core_source_bounds": {
+      "minX": -538.69727,
+      "maxX": 270.18427,
+      "minY": -147.44398,
+      "maxY": 506.67148
+    },
+    "cluster": {
+      "retained": 2941,
+      "total": 2942,
+      "centerX": -10.65721,
+      "centerY": 226.28257,
+      "radiusX": 476.26061,
+      "radiusY": 800.13607
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 79,
+      "visible_height": 90,
+      "density_zoom": 1.55556
+    },
+    "scale": 0.30441,
+    "x_offset": 125.75345,
+    "y_offset": 216.22782,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:37.732Z"
+  "exported_at": "2026-08-19T05:11:17.165Z"
 }

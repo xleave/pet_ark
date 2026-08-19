@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "mudrock",
   "character_name": "Mudrock",
   "localized_name": "泥岩",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -914.82501,
-      "maxX": 406.36929,
+      "minX": -432.38242,
+      "maxX": 198.2256,
       "minY": -76.47726,
-      "maxY": 565.06525
+      "maxY": 497.33151
     },
-    "scale": 0.13321,
-    "x_offset": 129.86641,
-    "y_offset": 205.81225,
+    "full_source_bounds": {
+      "minX": -914.82501,
+      "maxX": 410.01364,
+      "minY": -76.47726,
+      "maxY": 567.69257
+    },
+    "core_source_bounds": {
+      "minX": -432.38242,
+      "maxX": 198.2256,
+      "minY": -76.47726,
+      "maxY": 497.33151
+    },
+    "cluster": {
+      "retained": 2417,
+      "total": 2446,
+      "centerX": 10.41542,
+      "centerY": 134.05589,
+      "radiusX": 337.18215,
+      "radiusY": 648.987
+    },
+    "scale": 0.2791,
+    "x_offset": 128.67608,
+    "y_offset": 194.65552,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:20.023Z"
+  "exported_at": "2026-08-19T05:04:21.356Z"
 }

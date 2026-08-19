@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "bobbing",
   "character_name": "Bobbing",
   "localized_name": "波卜",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -196.5984,
+      "minX": -199.24916,
+      "maxX": 259.51859,
+      "minY": -109.63313,
+      "maxY": 516.84003
+    },
+    "full_source_bounds": {
+      "minX": -199.24916,
       "maxX": 1312.5,
       "minY": -620.5,
       "maxY": 619.0307
     },
-    "scale": 0.11663,
-    "x_offset": 30.92847,
-    "y_offset": 143.63361,
+    "core_source_bounds": {
+      "minX": -199.24916,
+      "maxX": 259.51859,
+      "minY": -109.63313,
+      "maxY": 516.84003
+    },
+    "cluster": {
+      "retained": 2113,
+      "total": 2181,
+      "centerX": 22.39943,
+      "centerY": 260.86096,
+      "radiusX": 441.15489,
+      "radiusY": 884.94598
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 59,
+      "visible_height": 128,
+      "density_zoom": 1.22034
+    },
+    "scale": 0.40517,
+    "x_offset": 98.43427,
+    "y_offset": 216.73207,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:59.358Z"
+  "exported_at": "2026-08-19T05:11:26.227Z"
 }

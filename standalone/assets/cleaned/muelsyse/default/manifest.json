@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "muelsyse",
   "character_name": "Muelsyse",
   "localized_name": "缪尔赛思",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -297.49561,
       "maxX": 388.92676,
       "minY": -113.27615,
-      "maxY": 400.23163
+      "maxY": 400.66119
     },
-    "scale": 0.2564,
-    "x_offset": 84.27844,
-    "y_offset": 186.95578,
+    "full_source_bounds": {
+      "minX": -297.49561,
+      "maxX": 388.92676,
+      "minY": -113.27615,
+      "maxY": 400.66119
+    },
+    "core_source_bounds": {
+      "minX": -297.49561,
+      "maxX": 388.92676,
+      "minY": -113.27615,
+      "maxY": 400.66119
+    },
+    "cluster": {
+      "retained": 2062,
+      "total": 2062,
+      "centerX": 13.86181,
+      "centerY": 165.96168,
+      "radiusX": 384.9805,
+      "radiusY": 894.98783
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 65,
+      "visible_height": 103,
+      "density_zoom": 1.35922
+    },
+    "scale": 0.34851,
+    "x_offset": 90.94157,
+    "y_offset": 215.9399,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:20.088Z"
+  "exported_at": "2026-08-19T05:11:42.559Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "philae",
   "character_name": "Philae",
   "localized_name": "菲莱",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -245.71393,
+      "maxX": 256.82831,
+      "minY": -128.1102,
+      "maxY": 420.76471
+    },
+    "full_source_bounds": {
       "minX": -471.44409,
       "maxX": 375.21255,
       "minY": -128.1102,
       "maxY": 436.60526
     },
-    "scale": 0.20788,
-    "x_offset": 106.00214,
-    "y_offset": 189.3689,
+    "core_source_bounds": {
+      "minX": -245.71393,
+      "maxX": 256.82831,
+      "minY": -128.1102,
+      "maxY": 420.76471
+    },
+    "cluster": {
+      "retained": 3068,
+      "total": 3068,
+      "centerX": -7.23804,
+      "centerY": 135.3789,
+      "radiusX": 327.99107,
+      "radiusY": 659.78339
+    },
+    "scale": 0.35022,
+    "x_offset": 94.05376,
+    "y_offset": 171.13333,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:18.457Z"
+  "exported_at": "2026-08-19T05:05:02.548Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "executor-the-ex-foedere",
   "character_name": "Executor the Ex Foedere",
   "localized_name": "圣约送葬人",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -416.50894,
+      "maxX": 232.8307,
+      "minY": -108.97593,
+      "maxY": 634.55237
+    },
+    "full_source_bounds": {
       "minX": -520.57025,
-      "maxX": 565.3548,
+      "maxX": 572.32208,
       "minY": -114.71154,
       "maxY": 832.10504
     },
-    "scale": 0.16207,
-    "x_offset": 92.3708,
-    "y_offset": 197.40826,
+    "core_source_bounds": {
+      "minX": -416.50894,
+      "maxX": 232.8307,
+      "minY": -108.97593,
+      "maxY": 634.55237
+    },
+    "cluster": {
+      "retained": 3648,
+      "total": 3648,
+      "centerX": -15.498,
+      "centerY": 144.06265,
+      "radiusX": 355.49615,
+      "radiusY": 524.89931
+    },
+    "scale": 0.27104,
+    "x_offset": 120.8925,
+    "y_offset": 186.46266,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:05.833Z"
+  "exported_at": "2026-08-19T05:04:58.252Z"
 }

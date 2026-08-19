@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "sideroca",
   "character_name": "Sideroca",
   "localized_name": "铸铁",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -254.90092,
       "maxX": 423.27969,
-      "minY": -111.65366,
-      "maxY": 427.06952
+      "minY": -112.55106,
+      "maxY": 427.88614
     },
-    "scale": 0.25952,
-    "x_offset": 74.15135,
-    "y_offset": 187.02388,
+    "full_source_bounds": {
+      "minX": -254.90092,
+      "maxX": 423.27969,
+      "minY": -112.55106,
+      "maxY": 427.88614
+    },
+    "core_source_bounds": {
+      "minX": -254.90092,
+      "maxX": 423.27969,
+      "minY": -112.55106,
+      "maxY": 427.88614
+    },
+    "cluster": {
+      "retained": 1844,
+      "total": 1844,
+      "centerX": 3.42068,
+      "centerY": 203.37673,
+      "radiusX": 367.47868,
+      "radiusY": 618.39279
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 57,
+      "visible_height": 109,
+      "density_zoom": 1.2844
+    },
+    "scale": 0.33333,
+    "x_offset": 98.7632,
+    "y_offset": 217.01595,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:30.535Z"
+  "exported_at": "2026-08-19T05:11:52.109Z"
 }

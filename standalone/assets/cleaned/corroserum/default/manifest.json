@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "corroserum",
   "character_name": "Corroserum",
   "localized_name": "蚀清",
@@ -102,16 +105,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -714.75,
-      "maxX": 229.63979,
-      "minY": -123.79486,
+      "minX": -338.92184,
+      "maxX": 229.76735,
+      "minY": -123.1527,
       "maxY": 534.87079
     },
-    "scale": 0.18636,
-    "x_offset": 141.20347,
-    "y_offset": 192.92913,
+    "full_source_bounds": {
+      "minX": -714.75,
+      "maxX": 229.76735,
+      "minY": -123.1527,
+      "maxY": 534.87079
+    },
+    "core_source_bounds": {
+      "minX": -338.92184,
+      "maxX": 229.76735,
+      "minY": -123.1527,
+      "maxY": 534.87079
+    },
+    "cluster": {
+      "retained": 3321,
+      "total": 3322,
+      "centerX": -153.42712,
+      "centerY": 182.70241,
+      "radiusX": 425.03059,
+      "radiusY": 549.99969
+    },
+    "scale": 0.30948,
+    "x_offset": 112.89077,
+    "y_offset": 177.88625,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:02.531Z"
+  "exported_at": "2026-08-19T05:07:47.350Z"
 }

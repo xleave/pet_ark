@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "wulfenite",
   "character_name": "Wulfenite",
   "localized_name": "钼铅",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -752.97559,
-      "maxX": 321.6088,
-      "minY": -110.24977,
-      "maxY": 490.93726
+      "minX": -315.57547,
+      "maxX": 199.68962,
+      "minY": -109.26398,
+      "maxY": 451.21307
     },
-    "scale": 0.16378,
-    "x_offset": 131.32554,
-    "y_offset": 197.94282,
+    "full_source_bounds": {
+      "minX": -752.97559,
+      "maxX": 347.72241,
+      "minY": -109.26398,
+      "maxY": 657.89996
+    },
+    "core_source_bounds": {
+      "minX": -315.57547,
+      "maxX": 199.68962,
+      "minY": -109.26398,
+      "maxY": 451.21307
+    },
+    "cluster": {
+      "retained": 2493,
+      "total": 2498,
+      "centerX": 3.494,
+      "centerY": 145.7929,
+      "radiusX": 300.73734,
+      "radiusY": 806.37296
+    },
+    "scale": 0.34157,
+    "x_offset": 115.79167,
+    "y_offset": 178.67851,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:39.008Z"
+  "exported_at": "2026-08-19T05:04:29.291Z"
 }

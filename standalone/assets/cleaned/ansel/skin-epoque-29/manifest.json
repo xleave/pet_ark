@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ansel",
   "character_name": "Ansel",
   "localized_name": "安赛尔",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -366.34952,
       "maxX": 342.91992,
       "minY": -101.31419,
-      "maxY": 418.85202
+      "maxY": 418.86057
     },
-    "scale": 0.24814,
-    "x_offset": 98.90694,
-    "y_offset": 190.85963,
+    "full_source_bounds": {
+      "minX": -366.34952,
+      "maxX": 342.91992,
+      "minY": -101.31419,
+      "maxY": 418.86057
+    },
+    "core_source_bounds": {
+      "minX": -366.34952,
+      "maxX": 342.91992,
+      "minY": -101.31419,
+      "maxY": 414.95996
+    },
+    "cluster": {
+      "retained": 1682,
+      "total": 1682,
+      "centerX": -4.08175,
+      "centerY": 151.30416,
+      "radiusX": 674.31913,
+      "radiusY": 567.77168
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 55,
+      "visible_height": 104,
+      "density_zoom": 1.34615
+    },
+    "scale": 0.33404,
+    "x_offset": 103.95165,
+    "y_offset": 215.81104,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:55.916Z"
+  "exported_at": "2026-08-19T05:10:43.694Z"
 }

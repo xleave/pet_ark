@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "catapult",
   "character_name": "Catapult",
   "localized_name": "空爆",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -310.04675,
-      "maxX": 325.1467,
+      "minX": -181.64746,
+      "maxX": 174.32428,
+      "minY": -116.45863,
+      "maxY": 412.45535
+    },
+    "full_source_bounds": {
+      "minX": -308.12454,
+      "maxX": 234.90514,
       "minY": -116.45863,
       "maxY": 615.63782
     },
-    "scale": 0.27708,
-    "x_offset": 93.90805,
-    "y_offset": 183.73153,
+    "core_source_bounds": {
+      "minX": -181.64746,
+      "maxX": 174.32428,
+      "minY": -116.45863,
+      "maxY": 412.45535
+    },
+    "cluster": {
+      "retained": 3080,
+      "total": 3080,
+      "centerX": 12.26162,
+      "centerY": 178.20518,
+      "radiusX": 324.89996,
+      "radiusY": 480
+    },
+    "scale": 0.39326,
+    "x_offset": 97.43995,
+    "y_offset": 170.20164,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:00.680Z"
+  "exported_at": "2026-08-19T05:07:53.730Z"
 }

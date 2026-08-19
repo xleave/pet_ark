@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ulpianus",
   "character_name": "Ulpianus",
   "localized_name": "乌尔比安",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -711.21002,
       "maxX": 1151.29175,
       "minY": -410.59131,
-      "maxY": 584.97864
+      "maxY": 584.97845
     },
-    "scale": 0.0945,
-    "x_offset": 75.2069,
-    "y_offset": 177.20054,
+    "full_source_bounds": {
+      "minX": -711.21002,
+      "maxX": 1151.29175,
+      "minY": -410.59131,
+      "maxY": 584.97845
+    },
+    "core_source_bounds": {
+      "minX": -711.21002,
+      "maxX": 1042.39221,
+      "minY": -410.59131,
+      "maxY": 584.97516
+    },
+    "cluster": {
+      "retained": 3366,
+      "total": 3400,
+      "centerX": 41.62965,
+      "centerY": 203.59259,
+      "radiusX": 867.51884,
+      "radiusY": 762.82734
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 28,
+      "visible_height": 37,
+      "density_zoom": 3.78378
+    },
+    "scale": 0.35755,
+    "x_offset": 110.0261,
+    "y_offset": 216.75878,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:35.747Z"
+  "exported_at": "2026-08-19T05:11:55.463Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "vermeil",
   "character_name": "Vermeil",
   "localized_name": "红云",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -584.78442,
       "maxX": 429.93994,
       "minY": -99.99105,
-      "maxY": 578.84497
+      "maxY": 971.29755
     },
-    "scale": 0.17345,
-    "x_offset": 109.42859,
-    "y_offset": 198.65694,
+    "full_source_bounds": {
+      "minX": -584.78442,
+      "maxX": 429.93994,
+      "minY": -99.99105,
+      "maxY": 971.29755
+    },
+    "core_source_bounds": {
+      "minX": -584.78442,
+      "maxX": 429.93994,
+      "minY": -99.99105,
+      "maxY": 544.08997
+    },
+    "cluster": {
+      "retained": 2136,
+      "total": 2136,
+      "centerX": -3.44688,
+      "centerY": 258.74979,
+      "radiusX": 623.80489,
+      "radiusY": 1140.14778
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 35,
+      "visible_height": 77,
+      "density_zoom": 2.05714
+    },
+    "scale": 0.3568,
+    "x_offset": 100.99595,
+    "y_offset": 217.35142,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:36.485Z"
+  "exported_at": "2026-08-19T05:10:40.574Z"
 }

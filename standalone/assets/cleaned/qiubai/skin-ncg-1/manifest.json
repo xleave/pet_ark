@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "qiubai",
   "character_name": "Qiubai",
   "localized_name": "仇白",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -249.63295,
+      "maxX": 265.98697,
+      "minY": -107.6907,
+      "maxY": 420.59702
+    },
+    "full_source_bounds": {
       "minX": -719.96991,
       "maxX": 991.48761,
       "minY": -332.00943,
       "maxY": 595.77277
     },
-    "scale": 0.10284,
-    "x_offset": 82.03906,
-    "y_offset": 181.85737,
+    "core_source_bounds": {
+      "minX": -249.63295,
+      "maxX": 265.98697,
+      "minY": -107.6907,
+      "maxY": 420.59702
+    },
+    "cluster": {
+      "retained": 2499,
+      "total": 2499,
+      "centerX": -2.23054,
+      "centerY": 146.24964,
+      "radiusX": 256,
+      "radiusY": 672.06838
+    },
+    "scale": 0.34134,
+    "x_offset": 93.20889,
+    "y_offset": 179.24121,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:18.802Z"
+  "exported_at": "2026-08-19T05:04:01.237Z"
 }

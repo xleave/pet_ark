@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "myrtle",
   "character_name": "Myrtle",
   "localized_name": "桃金娘",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -388.0141,
-      "maxX": 314.26788,
-      "minY": -106.06413,
-      "maxY": 601.43652
+      "minX": -387.54764,
+      "maxX": 160.03946,
+      "minY": -105.21345,
+      "maxY": 535.07001
     },
-    "scale": 0.25061,
-    "x_offset": 105.24083,
-    "y_offset": 189.4191,
+    "full_source_bounds": {
+      "minX": -387.54764,
+      "maxX": 329.28064,
+      "minY": -105.21345,
+      "maxY": 667.74036
+    },
+    "core_source_bounds": {
+      "minX": -387.54764,
+      "maxX": 160.03946,
+      "minY": -105.21345,
+      "maxY": 535.07001
+    },
+    "cluster": {
+      "retained": 3084,
+      "total": 3084,
+      "centerX": 0.21007,
+      "centerY": 184.91942,
+      "radiusX": 390.00007,
+      "radiusY": 649.69555
+    },
+    "scale": 0.32141,
+    "x_offset": 132.56171,
+    "y_offset": 182.18334,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:20.785Z"
+  "exported_at": "2026-08-19T05:07:59.849Z"
 }

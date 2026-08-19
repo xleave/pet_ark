@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "haze",
   "character_name": "Haze",
   "localized_name": "夜烟",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -296.51907,
       "maxX": 488.42856,
       "minY": -163.17242,
       "maxY": 706.72998
     },
-    "scale": 0.22422,
-    "x_offset": 74.48514,
-    "y_offset": 179.41368,
+    "full_source_bounds": {
+      "minX": -296.51907,
+      "maxX": 488.42856,
+      "minY": -163.17242,
+      "maxY": 706.72998
+    },
+    "core_source_bounds": {
+      "minX": -296.51907,
+      "maxX": 428.9653,
+      "minY": -163.17242,
+      "maxY": 706.72998
+    },
+    "cluster": {
+      "retained": 2955,
+      "total": 2955,
+      "centerX": 7.00849,
+      "centerY": 255.0583,
+      "radiusX": 621.33202,
+      "radiusY": 879.56997
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 62,
+      "visible_height": 92,
+      "density_zoom": 1.52174
+    },
+    "scale": 0.3412,
+    "x_offset": 112.71652,
+    "y_offset": 215.10777,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:09.914Z"
+  "exported_at": "2026-08-19T05:10:52.613Z"
 }

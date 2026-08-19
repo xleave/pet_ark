@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "blaze",
   "character_name": "Blaze",
   "localized_name": "煌",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -325.88913,
+      "maxX": 194.1333,
+      "minY": -149.73184,
+      "maxY": 669.63239
+    },
+    "full_source_bounds": {
       "minX": -447.27158,
       "maxX": 1468.6947,
       "minY": -149.73184,
       "maxY": 669.63239
     },
-    "scale": 0.09186,
-    "x_offset": 49.08621,
-    "y_offset": 202.24568,
+    "core_source_bounds": {
+      "minX": -325.88913,
+      "maxX": 194.1333,
+      "minY": -149.73184,
+      "maxY": 669.63239
+    },
+    "cluster": {
+      "retained": 2270,
+      "total": 2305,
+      "centerX": -1.14671,
+      "centerY": 142.08192,
+      "radiusX": 333.81382,
+      "radiusY": 801.23609
+    },
+    "scale": 0.25386,
+    "x_offset": 112.72346,
+    "y_offset": 177.98977,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:58.797Z"
+  "exported_at": "2026-08-19T05:03:54.068Z"
 }

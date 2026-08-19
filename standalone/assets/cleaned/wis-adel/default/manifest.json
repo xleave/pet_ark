@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "wis-adel",
   "character_name": "Wiš'adel",
   "localized_name": "维什戴尔",
@@ -102,16 +105,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -271.79175,
-      "maxX": 530.11298,
-      "minY": -105.91746,
-      "maxY": 419.39752
+      "maxX": 322.82532,
+      "minY": -107.04179,
+      "maxY": 423.65646
     },
-    "scale": 0.21948,
-    "x_offset": 67.65216,
-    "y_offset": 192.75351,
+    "full_source_bounds": {
+      "minX": -271.79175,
+      "maxX": 530.11298,
+      "minY": -107.04179,
+      "maxY": 423.65646
+    },
+    "core_source_bounds": {
+      "minX": -271.79175,
+      "maxX": 322.82532,
+      "minY": -107.04179,
+      "maxY": 423.65646
+    },
+    "cluster": {
+      "retained": 2895,
+      "total": 2896,
+      "centerX": 2.91063,
+      "centerY": 210.29986,
+      "radiusX": 394.97626,
+      "radiusY": 625.98549
+    },
+    "scale": 0.29599,
+    "x_offset": 88.44732,
+    "y_offset": 184.31683,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:38.861Z"
+  "exported_at": "2026-08-19T05:08:05.491Z"
 }

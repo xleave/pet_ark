@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "morgan",
   "character_name": "Morgan",
   "localized_name": "摩根",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -339.75668,
       "maxX": 532.49365,
-      "minY": -131.70164,
-      "maxY": 519.40753
+      "minY": -132.11507,
+      "maxY": 736.56952
     },
-    "scale": 0.20178,
-    "x_offset": 76.55506,
-    "y_offset": 189.42565,
+    "full_source_bounds": {
+      "minX": -339.75668,
+      "maxX": 532.49365,
+      "minY": -132.11507,
+      "maxY": 736.56952
+    },
+    "core_source_bounds": {
+      "minX": -227.98798,
+      "maxX": 532.49365,
+      "minY": -132.11507,
+      "maxY": 518.72998
+    },
+    "cluster": {
+      "retained": 2469,
+      "total": 2469,
+      "centerX": 21.71555,
+      "centerY": 192.9937,
+      "radiusX": 460.00835,
+      "radiusY": 615.81596
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 63,
+      "visible_height": 80,
+      "density_zoom": 1.75
+    },
+    "scale": 0.35311,
+    "x_offset": 105.72136,
+    "y_offset": 216.5989,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:19.331Z"
+  "exported_at": "2026-08-19T05:11:02.343Z"
 }

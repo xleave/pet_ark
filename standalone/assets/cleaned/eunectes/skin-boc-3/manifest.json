@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "eunectes",
   "character_name": "Eunectes",
   "localized_name": "森蚺",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -463.90524,
-      "maxX": 662.23706,
+      "maxX": 913.21417,
       "minY": -181.8739,
       "maxY": 1136.3634
     },
-    "scale": 0.15629,
-    "x_offset": 80.50178,
-    "y_offset": 187.5757,
+    "full_source_bounds": {
+      "minX": -463.90524,
+      "maxX": 913.21417,
+      "minY": -181.8739,
+      "maxY": 1136.3634
+    },
+    "core_source_bounds": {
+      "minX": -463.90524,
+      "maxX": 301.53018,
+      "minY": -181.8739,
+      "maxY": 1136.3634
+    },
+    "cluster": {
+      "retained": 2578,
+      "total": 2578,
+      "centerX": -17.0098,
+      "centerY": 156.7308,
+      "radiusX": 475.28575,
+      "radiusY": 967.69129
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 44,
+      "visible_height": 52,
+      "density_zoom": 2.69231
+    },
+    "scale": 0.34409,
+    "x_offset": 98.12284,
+    "y_offset": 215.34299,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:05.370Z"
+  "exported_at": "2026-08-19T05:10:19.479Z"
 }

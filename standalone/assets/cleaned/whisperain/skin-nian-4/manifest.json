@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "whisperain",
   "character_name": "Whisperain",
   "localized_name": "絮雨",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -276.46634,
+      "maxX": 222.06001,
+      "minY": -147.59767,
+      "maxY": 405.46646
+    },
+    "full_source_bounds": {
       "minX": -529.62079,
       "maxX": 506.12,
       "minY": -147.62325,
-      "maxY": 684.6521
+      "maxY": 666.14142
     },
-    "scale": 0.16993,
-    "x_offset": 97.99671,
-    "y_offset": 190.91487,
+    "core_source_bounds": {
+      "minX": -276.46634,
+      "maxX": 222.06001,
+      "minY": -147.59767,
+      "maxY": 405.46646
+    },
+    "cluster": {
+      "retained": 2627,
+      "total": 2668,
+      "centerX": 3.52259,
+      "centerY": 135.57493,
+      "radiusX": 276.78659,
+      "radiusY": 559.75653
+    },
+    "scale": 0.35304,
+    "x_offset": 105.60382,
+    "y_offset": 163.89204,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:38.329Z"
+  "exported_at": "2026-08-19T05:05:07.512Z"
 }

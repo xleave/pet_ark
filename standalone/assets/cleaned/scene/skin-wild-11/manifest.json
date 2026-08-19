@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "scene",
   "character_name": "Scene",
   "localized_name": "稀音",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -351.83078,
       "maxX": 449.22,
       "minY": -250.8,
-      "maxY": 384.77829
+      "maxY": 390.29129
     },
-    "scale": 0.21971,
-    "x_offset": 85.30124,
-    "y_offset": 160.89638,
+    "full_source_bounds": {
+      "minX": -351.83078,
+      "maxX": 449.22,
+      "minY": -250.8,
+      "maxY": 390.29129
+    },
+    "core_source_bounds": {
+      "minX": -351.83078,
+      "maxX": 449.22,
+      "minY": -250.8,
+      "maxY": 386.18594
+    },
+    "cluster": {
+      "retained": 2513,
+      "total": 2513,
+      "centerX": 23.43661,
+      "centerY": 135.94228,
+      "radiusX": 999.5443,
+      "radiusY": 1010.01003
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 39,
+      "visible_height": 85,
+      "density_zoom": 1.84615
+    },
+    "scale": 0.40562,
+    "x_offset": 96.55613,
+    "y_offset": 215.8087,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:29.654Z"
+  "exported_at": "2026-08-19T05:10:38.020Z"
 }

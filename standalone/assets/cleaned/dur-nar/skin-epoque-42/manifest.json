@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "dur-nar",
   "character_name": "Dur-nar",
   "localized_name": "坚雷",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -505.20831,
       "maxX": 532.76007,
-      "minY": -107.11908,
+      "minY": -107.52782,
       "maxY": 529.95782
     },
-    "scale": 0.16956,
-    "x_offset": 93.66413,
-    "y_offset": 197.83667,
+    "full_source_bounds": {
+      "minX": -505.20831,
+      "maxX": 532.76007,
+      "minY": -107.52782,
+      "maxY": 529.95782
+    },
+    "core_source_bounds": {
+      "minX": -505.20831,
+      "maxX": 532.76007,
+      "minY": -107.52782,
+      "maxY": 529.95782
+    },
+    "cluster": {
+      "retained": 2332,
+      "total": 2332,
+      "centerX": -19.63569,
+      "centerY": 179.87482,
+      "radiusX": 730.06377,
+      "radiusY": 811.1541
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 38,
+      "visible_height": 69,
+      "density_zoom": 2.02899
+    },
+    "scale": 0.34404,
+    "x_offset": 104.44897,
+    "y_offset": 217.55698,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:04.124Z"
+  "exported_at": "2026-08-19T05:10:25.882Z"
 }

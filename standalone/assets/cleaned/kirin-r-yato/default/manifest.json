@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "kirin-r-yato",
   "character_name": "Kirin R Yato",
   "localized_name": "麒麟R夜刀",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -245.96822,
-      "maxX": 937.74542,
-      "minY": -51.23739,
-      "maxY": 427.63177
+      "minX": -247.55981,
+      "maxX": 264.45642,
+      "minY": -51.22721,
+      "maxY": 429.68051
     },
-    "scale": 0.14868,
-    "x_offset": 44.57169,
-    "y_offset": 208.38179,
+    "full_source_bounds": {
+      "minX": -247.55981,
+      "maxX": 937.74542,
+      "minY": -51.22721,
+      "maxY": 429.68051
+    },
+    "core_source_bounds": {
+      "minX": -247.55981,
+      "maxX": 264.45642,
+      "minY": -51.22721,
+      "maxY": 429.68051
+    },
+    "cluster": {
+      "retained": 3440,
+      "total": 3450,
+      "centerX": -5.26553,
+      "centerY": 151.00166,
+      "radiusX": 319.81137,
+      "radiusY": 633.8531
+    },
+    "scale": 0.34374,
+    "x_offset": 93.09599,
+    "y_offset": 198.3912,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:14.014Z"
+  "exported_at": "2026-08-19T05:04:19.142Z"
 }

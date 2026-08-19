@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "lucilla",
   "character_name": "Lucilla",
   "localized_name": "海霓",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -324.86481,
-      "maxX": 657.21271,
-      "minY": -102.85444,
-      "maxY": 417.01752
+      "maxX": 627.02655,
+      "minY": -102.96844,
+      "maxY": 418.83167
     },
-    "scale": 0.17921,
-    "x_offset": 66.21965,
-    "y_offset": 197.56726,
+    "full_source_bounds": {
+      "minX": -324.86481,
+      "maxX": 627.02655,
+      "minY": -102.96844,
+      "maxY": 418.83167
+    },
+    "core_source_bounds": {
+      "minX": -324.86481,
+      "maxX": 592.96167,
+      "minY": -102.96844,
+      "maxY": 405.3483
+    },
+    "cluster": {
+      "retained": 2693,
+      "total": 2693,
+      "centerX": 8.91474,
+      "centerY": 182.47975,
+      "radiusX": 549.92301,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 57,
+      "visible_height": 74,
+      "density_zoom": 1.89189
+    },
+    "scale": 0.3498,
+    "x_offset": 115.04358,
+    "y_offset": 217.81933,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:16.644Z"
+  "exported_at": "2026-08-19T05:10:59.659Z"
 }

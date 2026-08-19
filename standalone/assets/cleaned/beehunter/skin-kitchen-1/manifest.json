@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "beehunter",
   "character_name": "Beehunter",
   "localized_name": "猎蜂",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -232.8026,
-      "maxX": 811.09985,
-      "minY": -123.2784,
-      "maxY": 526.46149
+      "maxX": 314.16013,
+      "minY": -118.19476,
+      "maxY": 393.85837
     },
-    "scale": 0.1686,
-    "x_offset": 47.25008,
-    "y_offset": 195.21549,
+    "full_source_bounds": {
+      "minX": -276.02557,
+      "maxX": 811.09985,
+      "minY": -118.19476,
+      "maxY": 566.98718
+    },
+    "core_source_bounds": {
+      "minX": -232.8026,
+      "maxX": 314.16013,
+      "minY": -118.19476,
+      "maxY": 393.85837
+    },
+    "cluster": {
+      "retained": 1272,
+      "total": 1322,
+      "centerX": -13.17251,
+      "centerY": 140.3167,
+      "radiusX": 309.36285,
+      "radiusY": 645.1621
+    },
+    "scale": 0.32178,
+    "x_offset": 82.91051,
+    "y_offset": 177.96765,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:58.070Z"
+  "exported_at": "2026-08-19T05:04:10.255Z"
 }

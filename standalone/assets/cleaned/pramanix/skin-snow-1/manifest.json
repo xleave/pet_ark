@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "pramanix",
   "character_name": "Pramanix",
   "localized_name": "初雪",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -267.23642,
+      "maxX": 185.15598,
+      "minY": -112.02661,
+      "maxY": 410.54483
+    },
+    "full_source_bounds": {
       "minX": -267.23642,
       "maxX": 224.22296,
       "minY": -112.02661,
       "maxY": 888.29779
     },
-    "scale": 0.20793,
-    "x_offset": 100.47195,
-    "y_offset": 192.70602,
+    "core_source_bounds": {
+      "minX": -267.23642,
+      "maxX": 185.15598,
+      "minY": -112.02661,
+      "maxY": 410.54483
+    },
+    "cluster": {
+      "retained": 1847,
+      "total": 1849,
+      "centerX": 8.20062,
+      "centerY": 126.26373,
+      "radiusX": 271.93154,
+      "radiusY": 525.30266
+    },
+    "scale": 0.38904,
+    "x_offset": 111.9664,
+    "y_offset": 172.41685,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:18.229Z"
+  "exported_at": "2026-08-19T05:04:46.595Z"
 }

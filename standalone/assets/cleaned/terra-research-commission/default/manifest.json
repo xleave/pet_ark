@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "terra-research-commission",
   "character_name": "Terra Research Commission",
   "localized_name": "泰拉大陆调查团",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -457.1843,
       "maxX": 745.20172,
       "minY": -21.73796,
-      "maxY": 410.94827
+      "maxY": 411.84482
     },
-    "scale": 0.14638,
-    "x_offset": 74.92064,
-    "y_offset": 212.81809,
+    "full_source_bounds": {
+      "minX": -457.1843,
+      "maxX": 745.20172,
+      "minY": -21.73796,
+      "maxY": 411.84482
+    },
+    "core_source_bounds": {
+      "minX": -457.1843,
+      "maxX": 745.20172,
+      "minY": -21.73796,
+      "maxY": 411.84482
+    },
+    "cluster": {
+      "retained": 3317,
+      "total": 3317,
+      "centerX": -2.16512,
+      "centerY": 118.04913,
+      "radiusX": 3023.49457,
+      "radiusY": 480
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 57,
+      "visible_height": 39,
+      "density_zoom": 2.80101
+    },
+    "scale": 0.41,
+    "x_offset": 98.57871,
+    "y_offset": 218.29149,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:33.693Z"
+  "exported_at": "2026-08-19T05:10:38.117Z"
 }

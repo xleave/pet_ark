@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "beeswax",
   "character_name": "Beeswax",
   "localized_name": "蜜蜡",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -248.04008,
+      "minX": -247.34143,
+      "maxX": 370.87009,
+      "minY": -123.02274,
+      "maxY": 424.99994
+    },
+    "full_source_bounds": {
+      "minX": -247.34143,
+      "maxX": 370.87009,
+      "minY": -123.02274,
+      "maxY": 424.99994
+    },
+    "core_source_bounds": {
+      "minX": -247.34143,
       "maxX": 367.97424,
       "minY": -123.02274,
-      "maxY": 414.86984
+      "maxY": 408.19131
     },
-    "scale": 0.28571,
-    "x_offset": 78.86695,
-    "y_offset": 180.85146,
+    "cluster": {
+      "retained": 1526,
+      "total": 1526,
+      "centerX": -8.60788,
+      "centerY": 211.34063,
+      "radiusX": 320,
+      "radiusY": 637.50008
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 79,
+      "visible_height": 115,
+      "density_zoom": 1.21739
+    },
+    "scale": 0.34658,
+    "x_offset": 107.46317,
+    "y_offset": 217.18864,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:58.160Z"
+  "exported_at": "2026-08-19T05:11:24.968Z"
 }

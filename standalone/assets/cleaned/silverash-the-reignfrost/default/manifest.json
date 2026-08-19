@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "silverash-the-reignfrost",
   "character_name": "SilverAsh the Reignfrost",
   "localized_name": "凛御银灰",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -274.01593,
       "maxX": 837.57367,
       "minY": -127.94801,
       "maxY": 680.77307
     },
-    "scale": 0.15833,
-    "x_offset": 51.38544,
-    "y_offset": 195.74176,
+    "full_source_bounds": {
+      "minX": -274.01593,
+      "maxX": 837.57367,
+      "minY": -127.94801,
+      "maxY": 680.77307
+    },
+    "core_source_bounds": {
+      "minX": -274.01593,
+      "maxX": 837.57367,
+      "minY": -127.94801,
+      "maxY": 680.77307
+    },
+    "cluster": {
+      "retained": 3071,
+      "total": 3071,
+      "centerX": 44.45793,
+      "centerY": 260.74037,
+      "radiusX": 1514.67937,
+      "radiusY": 1215.11353
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 78,
+      "visible_height": 78,
+      "density_zoom": 1.79487
+    },
+    "scale": 0.28419,
+    "x_offset": 92.20464,
+    "y_offset": 217.33136,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:31.393Z"
+  "exported_at": "2026-08-19T05:11:11.409Z"
 }

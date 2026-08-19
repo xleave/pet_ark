@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "sankta-miksaparato",
   "character_name": "Sankta Miksaparato",
   "localized_name": "信仰搅拌机",
@@ -119,16 +122,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -526.32147,
-      "maxX": 432.88531,
-      "minY": -126.73085,
+      "minX": -552.43805,
+      "maxX": 469.71899,
+      "minY": -126.95242,
       "maxY": 624.39093
     },
-    "scale": 0.18348,
-    "x_offset": 104.57206,
-    "y_offset": 192.7468,
+    "full_source_bounds": {
+      "minX": -552.43805,
+      "maxX": 469.71899,
+      "minY": -126.95242,
+      "maxY": 624.39093
+    },
+    "core_source_bounds": {
+      "minX": -526.32147,
+      "maxX": 432.88531,
+      "minY": -126.95242,
+      "maxY": 624.39093
+    },
+    "cluster": {
+      "retained": 1966,
+      "total": 1966,
+      "centerX": -1.98766,
+      "centerY": 176.3613,
+      "radiusX": 795.51035,
+      "radiusY": 775.11948
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 71,
+      "visible_height": 83,
+      "density_zoom": 1.68675
+    },
+    "scale": 0.29043,
+    "x_offset": 99.57841,
+    "y_offset": 216.23734,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:29.017Z"
+  "exported_at": "2026-08-19T05:11:09.189Z"
 }

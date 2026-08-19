@@ -12,6 +12,8 @@ const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..
 const ROSTER_PATH = path.join(REPO_ROOT, 'shared/character-data/standalone-roster.json');
 const INTENTIONAL_BLANKS_PATH = path.join(REPO_ROOT, 'shared/character-data/standalone-intentional-blanks.json');
 const RENDER_REVISION = 3;
+const BLANK_POLICY_REVISION = 1;
+const PLACEMENT_REVISION = 3;
 const CORE_PLACEMENT_ANIMATIONS = new Set(['default', 'idle', 'relax', 'move', 'run', 'sit', 'sleep']);
 const roster = JSON.parse(await fs.readFile(ROSTER_PATH, 'utf8'));
 const intentionalBlanks = JSON.parse(await fs.readFile(INTENTIONAL_BLANKS_PATH, 'utf8'));
@@ -133,6 +135,13 @@ function characterId(job) {
 function intentionalBlankFrames(character, variant, state) {
   return intentionalBlanks.declarations.find((entry) =>
     entry.character === character && entry.variant === variant && entry.state === state)?.frames || [];
+}
+
+function hasVisibleAlpha(data) {
+  for (let offset = 3; offset < data.length; offset += 4) {
+    if (data[offset] !== 0) return true;
+  }
+  return false;
 }
 
 function spawnWorker(job, config, attempt, children) {
@@ -350,6 +359,30 @@ function clusteredGeometryBounds(geometries) {
   return { bounds, retained: retained.length, total: records.length, centerX, centerY, radiusX, radiusY };
 }
 
+function anchoredGeometryBounds(geometries, anchor) {
+  const radiusX = Math.max(256, anchor.radiusX * 1.25);
+  const radiusY = Math.max(384, anchor.radiusY * 1.25);
+  const retained = geometries.filter((geometry) => {
+    const bounds = geometryBounds(geometry);
+    const centerX = (bounds.minX + bounds.maxX) / 2;
+    const centerY = (bounds.minY + bounds.maxY) / 2;
+    return Number.isFinite(centerX) && Number.isFinite(centerY)
+      && Math.abs(centerX - anchor.centerX) <= radiusX
+      && Math.abs(centerY - anchor.centerY) <= radiusY;
+  });
+  const bounds = emptyBounds();
+  extendBounds(bounds, retained);
+  return {
+    bounds,
+    retained: retained.length,
+    total: geometries.length,
+    centerX: anchor.centerX,
+    centerY: anchor.centerY,
+    radiusX,
+    radiusY,
+  };
+}
+
 function applyAnimation(skeleton, state, animationName, time) {
   skeleton.setToSetupPose();
   state.clearTracks();
@@ -368,6 +401,7 @@ function measureSkeleton(spine, skeletonData, config) {
   const coreGeometry = [];
   applyAnimation(skeleton, state, null, 0);
   const setupGeometry = visibleGeometry(spine, skeleton);
+  const setupCluster = clusteredGeometryBounds(setupGeometry);
   extendBounds(fullBounds, setupGeometry);
   coreGeometry.push(...setupGeometry);
   for (const animation of skeletonData.animations) {
@@ -387,14 +421,16 @@ function measureSkeleton(spine, skeletonData, config) {
     const fallback = { minX: -160, maxX: 160, minY: 0, maxY: 480 };
     return { bounds: fallback, fullBounds: fallback, policy: 'fallback' };
   }
-  const cluster = clusteredGeometryBounds(coreGeometry);
+  const cluster = validBounds(setupCluster.bounds)
+    ? anchoredGeometryBounds(coreGeometry, setupCluster)
+    : clusteredGeometryBounds(coreGeometry);
   const coreBounds = cluster.bounds;
   if (!validBounds(coreBounds)) {
     return { bounds: fullBounds, fullBounds, policy: 'full-animation-envelope' };
   }
   const fullScale = renderTransform(fullBounds, config.width, config.height).scale;
   const coreScale = renderTransform(coreBounds, config.width, config.height).scale;
-  const useCoreBounds = fullScale < coreScale * 0.6;
+  const useCoreBounds = fullScale < coreScale * 0.78;
   return {
     bounds: useCoreBounds ? coreBounds : fullBounds,
     fullBounds,
@@ -426,6 +462,73 @@ function renderTransform(bounds, width, height) {
     xOffset: width / 2 - (bounds.minX + bounds.maxX) / 2 * scale,
     yOffset: height - padding + bounds.minY * scale,
     padding,
+  };
+}
+
+function visiblePixelBounds(data, width, height) {
+  const bounds = { minX: width, maxX: -1, minY: height, maxY: -1 };
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      if (data[(y * width + x) * 4 + 3] === 0) continue;
+      bounds.minX = Math.min(bounds.minX, x);
+      bounds.maxX = Math.max(bounds.maxX, x);
+      bounds.minY = Math.min(bounds.minY, y);
+      bounds.maxY = Math.max(bounds.maxY, y);
+    }
+  }
+  if (bounds.maxX < bounds.minX || bounds.maxY < bounds.minY) return null;
+  return {
+    ...bounds,
+    width: bounds.maxX - bounds.minX + 1,
+    height: bounds.maxY - bounds.minY + 1,
+  };
+}
+
+function densityCorrectedTransform(spine, skeletonData, texturePages, transform, config) {
+  const probeAnimation = skeletonData.animations.find((animation) => safeAnimationName(animation.name) === 'relax')
+    ?? skeletonData.animations.find((animation) => safeAnimationName(animation.name) === 'default')
+    ?? skeletonData.animations.find((animation) => safeAnimationName(animation.name) === 'sit')
+    ?? skeletonData.animations[0];
+  if (!probeAnimation) return { transform, probe: null };
+  const skeleton = new spine.Skeleton(skeletonData);
+  const state = new spine.AnimationState(new spine.AnimationStateData(skeletonData));
+  applyAnimation(skeleton, state, probeAnimation.name, 0);
+  const layers = renderFrameLayers(spine, skeleton, texturePages, transform);
+  const { data } = rasterizeTexturedTriangles({
+    width: config.width,
+    height: config.height,
+    layers,
+    sampleGrid: 2,
+  });
+  const visible = visiblePixelBounds(data, config.width, config.height);
+  if (!visible) return { transform, probe: { animation: probeAnimation.name, transparent: true } };
+  const desiredWidth = config.width * 0.375;
+  const desiredHeight = config.height * 0.625;
+  const naturalScale = Math.min(config.width / 384, config.height / 448) * 0.82;
+  const requestedZoom = Math.max(1, desiredWidth / visible.width, desiredHeight / visible.height);
+  const maximumZoom = Math.min(
+    (config.width - 16) / visible.width,
+    (config.height - 16) / visible.height,
+    naturalScale / transform.scale,
+  );
+  const zoom = Math.min(requestedZoom, maximumZoom);
+  const probe = {
+    animation: probeAnimation.name,
+    visible_width: visible.width,
+    visible_height: visible.height,
+    density_zoom: rounded(zoom),
+  };
+  if (!(zoom >= 1.2)) return { transform, probe };
+  const centerX = (visible.minX + visible.maxX) / 2;
+  const bottom = visible.maxY;
+  return {
+    transform: {
+      ...transform,
+      scale: transform.scale * zoom,
+      xOffset: config.width / 2 - (centerX - transform.xOffset) * zoom,
+      yOffset: config.height - transform.padding + (transform.yOffset - bottom) * zoom,
+    },
+    probe,
   };
 }
 
@@ -494,6 +597,8 @@ async function animationIsComplete(directory, frames) {
 
 function sameRenderConfig(manifest, config) {
   return manifest?.render_revision === RENDER_REVISION
+    && manifest?.blank_policy_revision === BLANK_POLICY_REVISION
+    && manifest?.placement_revision === PLACEMENT_REVISION
     && manifest?.canvas?.width === config.width
     && manifest?.canvas?.height === config.height
     && manifest?.sampling?.fps === config.fps
@@ -553,18 +658,21 @@ async function exportVariant(spine, { character, variant }, config) {
 
   if (args.includes('--inspect')) {
     const measurement = measureSkeleton(spine, skeletonData, config);
-    const transform = renderTransform(measurement.bounds, config.width, config.height);
+    const initialTransform = renderTransform(measurement.bounds, config.width, config.height);
+    const { transform, probe } = densityCorrectedTransform(spine, skeletonData, pages, initialTransform, config);
+    const densityCorrected = probe?.density_zoom >= 1.2;
     console.log(JSON.stringify({
       character: character.character_id,
       variant: variant.variant_id,
       spine_version: skeletonData.version,
       animations: sourceAnimations,
       placement: {
-        bounds_policy: measurement.policy,
+        bounds_policy: densityCorrected ? 'pixel-density-corrected-envelope' : measurement.policy,
         source_bounds: measurement.bounds,
         full_source_bounds: measurement.fullBounds,
         core_source_bounds: measurement.coreBounds,
         cluster: measurement.cluster,
+        pixel_probe: probe,
         scale: rounded(transform.scale),
       },
     }, null, 2));
@@ -593,10 +701,14 @@ async function exportVariant(spine, { character, variant }, config) {
   const previous = await readJsonIfPresent(manifestPath);
   const measurement = measureSkeleton(spine, skeletonData, config);
   const bounds = measurement.bounds;
-  const transform = renderTransform(bounds, config.width, config.height);
+  const initialTransform = renderTransform(bounds, config.width, config.height);
+  const { transform, probe } = densityCorrectedTransform(spine, skeletonData, pages, initialTransform, config);
+  const densityCorrected = probe?.density_zoom >= 1.2;
   const manifest = {
     schema_version: 2,
     render_revision: RENDER_REVISION,
+    blank_policy_revision: BLANK_POLICY_REVISION,
+    placement_revision: PLACEMENT_REVISION,
     character: character.character_id,
     character_name: character.character_name,
     localized_name: character.localized_name,
@@ -625,13 +737,14 @@ async function exportVariant(spine, { character, variant }, config) {
       maximum_frames: config.maxFrames,
     },
     placement: {
-      bounds_policy: measurement.policy,
+      bounds_policy: densityCorrected ? 'pixel-density-corrected-envelope' : measurement.policy,
       source_bounds: Object.fromEntries(Object.entries(bounds).map(([key, value]) => [key, rounded(value)])),
       full_source_bounds: Object.fromEntries(Object.entries(measurement.fullBounds).map(([key, value]) => [key, rounded(value)])),
       ...(measurement.coreBounds ? {
         core_source_bounds: Object.fromEntries(Object.entries(measurement.coreBounds).map(([key, value]) => [key, rounded(value)])),
         cluster: measurement.cluster,
       } : {}),
+      pixel_probe: probe,
       scale: rounded(transform.scale),
       x_offset: rounded(transform.xOffset),
       y_offset: rounded(transform.yOffset),
@@ -648,6 +761,11 @@ async function exportVariant(spine, { character, variant }, config) {
       ? 1
       : Math.max(2, Math.min(config.maxFrames, Math.ceil(animation.duration * config.fps)));
     const animationDir = path.join(outputDir, safeName);
+    const declaredBlankFrames = [
+      ...intentionalBlankFrames(character.character_id, variant.variant_id, safeName),
+      ...(manifest.processed_states[safeName]?.intentional_blank_frames ?? []),
+    ].filter((entry, index, entries) => entries.findIndex((candidate) => candidate.frame === entry.frame) === index);
+    const observedBlankFrames = [];
     const oldEntry = manifest.processed_states[safeName];
     const canResume = !args.includes('--force')
       && oldEntry?.source_animation === animation.name
@@ -677,6 +795,16 @@ async function exportVariant(spine, { character, variant }, config) {
           } catch (error) {
             throw new Error(`${animation.name} frame ${frame}: ${error.message}`);
           }
+          if (!hasVisibleAlpha(data) && !declaredBlankFrames.some((entry) => entry.frame === frame)) {
+            if (safeName !== 'special' && safeName !== 'interact') {
+              throw new Error(`${animation.name} frame ${frame}: canonical core animation rendered fully transparent`);
+            }
+            observedBlankFrames.push({
+              frame,
+              reason: `The deterministic Spine ${animation.name} sample contains no visible pixels in the canonical character envelope; retained explicitly as a source-authored transition beat.`,
+              observed_by: `blank-policy-revision-${BLANK_POLICY_REVISION}`,
+            });
+          }
           const destination = path.join(temporaryDir, `${String(frame).padStart(3, '0')}.png`);
           await fs.writeFile(destination, await encodeCleanFrame(
             data,
@@ -696,14 +824,16 @@ async function exportVariant(spine, { character, variant }, config) {
       console.log(`resumed ${character.character_id}/${variant.variant_id}:${animation.name} (${frameCount} frames)`);
     }
 
+    const blankFrames = [...declaredBlankFrames, ...observedBlankFrames]
+      .sort((left, right) => left.frame - right.frame);
     manifest.processed_states[safeName] = {
       source_animation: animation.name,
       duration: animation.duration,
       fps: config.fps,
       frames: frameCount,
       path: path.relative(REPO_ROOT, animationDir),
-      ...(intentionalBlankFrames(character.character_id, variant.variant_id, safeName).length ? {
-        intentional_blank_frames: intentionalBlankFrames(character.character_id, variant.variant_id, safeName),
+      ...(blankFrames.length ? {
+        intentional_blank_frames: blankFrames,
       } : {}),
     };
     manifest.exported_at = new Date().toISOString();

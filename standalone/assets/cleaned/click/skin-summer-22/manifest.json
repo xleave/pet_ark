@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "click",
   "character_name": "Click",
   "localized_name": "卡达",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -239.77158,
+      "maxX": 181.69952,
+      "minY": -110.01192,
+      "maxY": 389.15939
+    },
+    "full_source_bounds": {
       "minX": -493.37,
       "maxX": 1129.93005,
-      "minY": -240.19653,
-      "maxY": 579.50928
+      "minY": -280.97314,
+      "maxY": 631.97266
     },
-    "scale": 0.10842,
-    "x_offset": 61.49172,
-    "y_offset": 189.95762,
+    "core_source_bounds": {
+      "minX": -239.77158,
+      "maxX": 181.69952,
+      "minY": -110.01192,
+      "maxY": 389.15939
+    },
+    "cluster": {
+      "retained": 2558,
+      "total": 2581,
+      "centerX": -0.37576,
+      "centerY": 135.37688,
+      "radiusX": 265.04739,
+      "radiusY": 712.60007
+    },
+    "scale": 0.41,
+    "x_offset": 107.90477,
+    "y_offset": 170.89511,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:01.995Z"
+  "exported_at": "2026-08-19T05:03:25.709Z"
 }

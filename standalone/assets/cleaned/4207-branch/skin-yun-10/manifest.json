@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "4207-branch",
   "character_name": "Веточки",
   "localized_name": "折桠",
@@ -119,16 +122,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -298.88406,
-      "maxX": 479.20901,
-      "minY": -121.86312,
-      "maxY": 400.32315
+      "maxX": 263.92191,
+      "minY": -122.12063,
+      "maxY": 396.49893
     },
-    "scale": 0.22619,
-    "x_offset": 75.60579,
-    "y_offset": 188.43529,
+    "full_source_bounds": {
+      "minX": -298.88406,
+      "maxX": 479.20901,
+      "minY": -122.12063,
+      "maxY": 398.36807
+    },
+    "core_source_bounds": {
+      "minX": -298.88406,
+      "maxX": 263.92191,
+      "minY": -122.12063,
+      "maxY": 396.49893
+    },
+    "cluster": {
+      "retained": 3330,
+      "total": 3330,
+      "centerX": 6.45548,
+      "centerY": 188.1111,
+      "radiusX": 441.78956,
+      "radiusY": 611.93733
+    },
+    "scale": 0.31272,
+    "x_offset": 101.46666,
+    "y_offset": 177.81059,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:54.439Z"
+  "exported_at": "2026-08-19T05:07:45.207Z"
 }

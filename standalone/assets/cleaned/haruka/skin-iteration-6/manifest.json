@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "haruka",
   "character_name": "Haruka",
   "localized_name": "遥",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -633.96417,
-      "maxX": 634.97968,
-      "minY": -163.5334,
-      "maxY": 485.89749
+      "minX": -273.77545,
+      "maxX": 216.47365,
+      "minY": -164.32468,
+      "maxY": 501.20624
     },
-    "scale": 0.1387,
-    "x_offset": 95.92958,
-    "y_offset": 193.31824,
+    "full_source_bounds": {
+      "minX": -633.96417,
+      "maxX": 739.0564,
+      "minY": -164.32468,
+      "maxY": 501.20624
+    },
+    "core_source_bounds": {
+      "minX": -273.77545,
+      "maxX": 216.47365,
+      "minY": -164.32468,
+      "maxY": 501.20624
+    },
+    "cluster": {
+      "retained": 4786,
+      "total": 4786,
+      "centerX": 4.20494,
+      "centerY": 152.71158,
+      "radiusX": 256,
+      "radiusY": 676.6757
+    },
+    "scale": 0.31253,
+    "x_offset": 104.95434,
+    "y_offset": 164.64321,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:09.965Z"
+  "exported_at": "2026-08-19T05:04:42.002Z"
 }

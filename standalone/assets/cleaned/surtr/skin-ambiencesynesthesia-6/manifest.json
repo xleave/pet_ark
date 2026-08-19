@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "surtr",
   "character_name": "Surtr",
   "localized_name": "史尔特尔",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -334.52338,
+      "minX": -443.12964,
       "maxX": 712.46997,
-      "minY": -121.70786,
+      "minY": -122.44912,
       "maxY": 951.94611
     },
-    "scale": 0.1681,
-    "x_offset": 64.23351,
-    "y_offset": 195.54086,
+    "full_source_bounds": {
+      "minX": -443.12964,
+      "maxX": 712.46997,
+      "minY": -122.44912,
+      "maxY": 951.94611
+    },
+    "core_source_bounds": {
+      "minX": -297.09732,
+      "maxX": 278.6629,
+      "minY": -122.44912,
+      "maxY": 951.94611
+    },
+    "cluster": {
+      "retained": 2475,
+      "total": 2477,
+      "centerX": -3.09892,
+      "centerY": 255.84924,
+      "radiusX": 452.40177,
+      "radiusY": 1029.99237
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 40,
+      "visible_height": 63,
+      "density_zoom": 2.22222
+    },
+    "scale": 0.33845,
+    "x_offset": 102.64329,
+    "y_offset": 216.77948,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:32.707Z"
+  "exported_at": "2026-08-19T05:10:38.068Z"
 }

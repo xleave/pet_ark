@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "kjera",
   "character_name": "Kjera",
   "localized_name": "耶拉",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -307.13937,
+      "maxX": 249.42444,
+      "minY": -108.45538,
+      "maxY": 405.39905
+    },
+    "full_source_bounds": {
       "minX": -686.31244,
       "maxX": 361.66034,
       "minY": -108.45538,
       "maxY": 523.72565
     },
-    "scale": 0.16794,
-    "x_offset": 123.26157,
-    "y_offset": 197.78565,
+    "core_source_bounds": {
+      "minX": -307.13937,
+      "maxX": 249.42444,
+      "minY": -108.45538,
+      "maxY": 405.39905
+    },
+    "cluster": {
+      "retained": 2548,
+      "total": 2618,
+      "centerX": 2.83485,
+      "centerY": 135.02282,
+      "radiusX": 278.51157,
+      "radiusY": 598.50334
+    },
+    "scale": 0.31623,
+    "x_offset": 105.12548,
+    "y_offset": 181.70358,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:14.005Z"
+  "exported_at": "2026-08-19T05:04:59.640Z"
 }

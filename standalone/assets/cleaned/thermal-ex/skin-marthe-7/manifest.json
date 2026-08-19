@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "thermal-ex",
   "character_name": "Thermal-EX",
   "localized_name": "THRM-EX",
@@ -91,16 +93,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -633.37787,
-      "maxX": 385.9079,
-      "minY": -36.76955,
-      "maxY": 301.45129
+      "minX": -148.90524,
+      "maxX": 155.95917,
+      "minY": -2.69967,
+      "maxY": 291.01999
     },
-    "scale": 0.17267,
-    "x_offset": 117.36531,
-    "y_offset": 209.651,
+    "full_source_bounds": {
+      "minX": -633.37787,
+      "maxX": 403.20261,
+      "minY": -36.76955,
+      "maxY": 323.47986
+    },
+    "core_source_bounds": {
+      "minX": -148.90524,
+      "maxX": 155.95917,
+      "minY": -2.69967,
+      "maxY": 291.01999
+    },
+    "cluster": {
+      "retained": 660,
+      "total": 660,
+      "centerX": 11.85,
+      "centerY": 135.33641,
+      "radiusX": 529.76133,
+      "radiusY": 645.30292
+    },
+    "scale": 0.41,
+    "x_offset": 94.55395,
+    "y_offset": 214.89314,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:34.120Z"
+  "exported_at": "2026-08-19T05:04:26.678Z"
 }

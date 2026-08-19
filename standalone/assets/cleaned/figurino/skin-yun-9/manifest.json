@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "figurino",
   "character_name": "Figurino",
   "localized_name": "裁度",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -824.39417,
       "maxX": 797.22003,
       "minY": -108.70258,
       "maxY": 584.44098
     },
-    "scale": 0.10853,
-    "x_offset": 97.47466,
-    "y_offset": 204.20209,
+    "full_source_bounds": {
+      "minX": -824.39417,
+      "maxX": 797.22003,
+      "minY": -108.70258,
+      "maxY": 584.44098
+    },
+    "core_source_bounds": {
+      "minX": -824.39417,
+      "maxX": 797.22003,
+      "minY": -108.70258,
+      "maxY": 422.94101
+    },
+    "cluster": {
+      "retained": 2852,
+      "total": 2852,
+      "centerX": -26.28904,
+      "centerY": 150.80222,
+      "radiusX": 964.96321,
+      "radiusY": 763.8353
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 26,
+      "visible_height": 45,
+      "density_zoom": 3.11111
+    },
+    "scale": 0.33766,
+    "x_offset": 99.03226,
+    "y_offset": 216.62873,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:07.042Z"
+  "exported_at": "2026-08-19T05:11:29.331Z"
 }

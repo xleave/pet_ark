@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "breeze",
   "character_name": "Breeze",
   "localized_name": "微风",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -309.98004,
+      "maxX": 274.32996,
+      "minY": -120.78522,
+      "maxY": 509.314
+    },
+    "full_source_bounds": {
       "minX": -398.99002,
       "maxX": 789.58405,
-      "minY": -121.06709,
+      "minY": -120.78522,
       "maxY": 548.28754
     },
-    "scale": 0.14808,
-    "x_offset": 67.08108,
-    "y_offset": 198.0728,
+    "core_source_bounds": {
+      "minX": -309.98004,
+      "maxX": 274.32996,
+      "minY": -120.78522,
+      "maxY": 509.314
+    },
+    "cluster": {
+      "retained": 2893,
+      "total": 2971,
+      "centerX": -1.63796,
+      "centerY": 154.00441,
+      "radiusX": 296.25352,
+      "radiusY": 744.63253
+    },
+    "scale": 0.30121,
+    "x_offset": 101.36908,
+    "y_offset": 179.61829,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:59.675Z"
+  "exported_at": "2026-08-19T05:04:11.390Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "shirayuki",
   "character_name": "ShiraYuki",
   "localized_name": "白雪",
@@ -119,16 +122,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -355.42459,
-      "maxX": 377.80957,
-      "minY": -122.34933,
-      "maxY": 389.22031
+      "minX": -251.73116,
+      "maxX": 202.90651,
+      "minY": -123.51185,
+      "maxY": 385.30414
     },
-    "scale": 0.24003,
-    "x_offset": 93.31344,
-    "y_offset": 186.63219,
+    "full_source_bounds": {
+      "minX": -355.42459,
+      "maxX": 389.97147,
+      "minY": -123.51185,
+      "maxY": 653.74915
+    },
+    "core_source_bounds": {
+      "minX": -251.73116,
+      "maxX": 202.90651,
+      "minY": -123.51185,
+      "maxY": 385.30414
+    },
+    "cluster": {
+      "retained": 1561,
+      "total": 1561,
+      "centerX": -4.77086,
+      "centerY": 153.356,
+      "radiusX": 473.90291,
+      "radiusY": 503.11302
+    },
+    "scale": 0.38712,
+    "x_offset": 105.45053,
+    "y_offset": 168.18591,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:30.541Z"
+  "exported_at": "2026-08-19T05:07:44.949Z"
 }

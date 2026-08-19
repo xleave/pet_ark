@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "lava-the-purgatory",
   "character_name": "Lava the Purgatory",
   "localized_name": "炎狱炎熔",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -374.42361,
+      "maxX": 217.25546,
+      "minY": -151.33809,
+      "maxY": 395.40283
+    },
+    "full_source_bounds": {
       "minX": -374.42361,
       "maxX": 626.47522,
       "minY": -151.33809,
       "maxY": 525.76068
     },
-    "scale": 0.17584,
-    "x_offset": 73.83938,
-    "y_offset": 189.38842,
+    "core_source_bounds": {
+      "minX": -374.42361,
+      "maxX": 217.25546,
+      "minY": -151.33809,
+      "maxY": 395.40283
+    },
+    "cluster": {
+      "retained": 1855,
+      "total": 1861,
+      "centerX": -187.92245,
+      "centerY": 213.73071,
+      "radiusX": 447.2979,
+      "radiusY": 589.99969
+    },
+    "scale": 0.29746,
+    "x_offset": 119.37551,
+    "y_offset": 170.98319,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:14.851Z"
+  "exported_at": "2026-08-19T05:07:42.370Z"
 }

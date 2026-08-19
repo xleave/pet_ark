@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "mr-nothing",
   "character_name": "Mr.Nothing",
   "localized_name": "乌有",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -338.01273,
-      "maxX": 173.28481,
-      "minY": -100.8773,
+      "maxX": 179.88663,
+      "minY": -100.97632,
       "maxY": 662.39148
     },
-    "scale": 0.27251,
-    "x_offset": 118.44518,
-    "y_offset": 188.50971,
+    "full_source_bounds": {
+      "minX": -338.01273,
+      "maxX": 179.88663,
+      "minY": -100.97632,
+      "maxY": 662.39148
+    },
+    "core_source_bounds": {
+      "minX": -338.01273,
+      "maxX": 170.57684,
+      "minY": -100.97632,
+      "maxY": 662.39148
+    },
+    "cluster": {
+      "retained": 2351,
+      "total": 2351,
+      "centerX": -195.51238,
+      "centerY": 189.8764,
+      "radiusX": 380.78846,
+      "radiusY": 740.34437
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 81,
+      "visible_height": 110,
+      "density_zoom": 1.27273
+    },
+    "scale": 0.34679,
+    "x_offset": 94.14544,
+    "y_offset": 216.61892,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:19.735Z"
+  "exported_at": "2026-08-19T05:11:40.856Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "arene",
   "character_name": "Arene",
   "localized_name": "芳汀",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -274.01169,
+      "maxX": 265.32126,
+      "minY": -121.33562,
+      "maxY": 421.0217
+    },
+    "full_source_bounds": {
       "minX": -1027.25513,
       "maxX": 265.32126,
-      "minY": -116.82896,
-      "maxY": 463.22815
+      "minY": -121.33562,
+      "maxY": 467.97266
     },
-    "scale": 0.13616,
-    "x_offset": 147.87328,
-    "y_offset": 200.09232,
+    "core_source_bounds": {
+      "minX": -274.01169,
+      "maxX": 265.32126,
+      "minY": -121.33562,
+      "maxY": 421.0217
+    },
+    "cluster": {
+      "retained": 2203,
+      "total": 2211,
+      "centerX": 3.50989,
+      "centerY": 149.39868,
+      "radiusX": 256,
+      "radiusY": 753.14769
+    },
+    "scale": 0.32633,
+    "x_offset": 97.41797,
+    "y_offset": 176.40466,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:56.481Z"
+  "exported_at": "2026-08-19T05:04:08.600Z"
 }

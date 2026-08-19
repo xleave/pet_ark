@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "u-official",
   "character_name": "U-Official",
   "localized_name": "U-Official",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -657.13922,
+      "minX": -310.91049,
+      "maxX": 265.99493,
+      "minY": -157.08147,
+      "maxY": 571.65442
+    },
+    "full_source_bounds": {
+      "minX": -384.67538,
       "maxX": 998.64355,
       "minY": -157.08147,
       "maxY": 887.30505
     },
-    "scale": 0.10629,
-    "x_offset": 77.85005,
-    "y_offset": 199.30316,
+    "core_source_bounds": {
+      "minX": -310.91049,
+      "maxX": 265.99493,
+      "minY": -157.08147,
+      "maxY": 571.65442
+    },
+    "cluster": {
+      "retained": 4344,
+      "total": 4377,
+      "centerX": -7.18091,
+      "centerY": 196.08794,
+      "radiusX": 312.5606,
+      "radiusY": 480.01563
+    },
+    "scale": 0.28543,
+    "x_offset": 102.41003,
+    "y_offset": 171.1649,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:35.705Z"
+  "exported_at": "2026-08-19T05:04:05.171Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "roberta",
   "character_name": "Roberta",
   "localized_name": "罗比菈塔",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -265.86893,
-      "maxX": 864.18512,
-      "minY": -64.55943,
-      "maxY": 433.47824
+      "maxX": 207.55049,
+      "minY": -64.75184,
+      "maxY": 400.39459
     },
-    "scale": 0.15574,
-    "x_offset": 49.40769,
-    "y_offset": 205.94521,
+    "full_source_bounds": {
+      "minX": -265.86893,
+      "maxX": 864.18512,
+      "minY": -64.75184,
+      "maxY": 416.34824
+    },
+    "core_source_bounds": {
+      "minX": -265.86893,
+      "maxX": 207.55049,
+      "minY": -64.75184,
+      "maxY": 400.39459
+    },
+    "cluster": {
+      "retained": 2130,
+      "total": 2151,
+      "centerX": 3.33279,
+      "centerY": 188.82783,
+      "radiusX": 256.93028,
+      "radiusY": 584.76581
+    },
+    "scale": 0.37176,
+    "x_offset": 106.84033,
+    "y_offset": 191.92764,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:27.750Z"
+  "exported_at": "2026-08-19T05:04:24.151Z"
 }

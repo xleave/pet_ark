@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "texas",
   "character_name": "Texas",
   "localized_name": "德克萨斯",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -365.81406,
-      "maxX": 847.93164,
-      "minY": -109.28835,
+      "minX": -249.85269,
+      "maxX": 165.82773,
+      "minY": -109.51173,
       "maxY": 419.83139
     },
-    "scale": 0.14501,
-    "x_offset": 61.04511,
-    "y_offset": 200.15257,
+    "full_source_bounds": {
+      "minX": -365.81406,
+      "maxX": 510.91675,
+      "minY": -109.51173,
+      "maxY": 733.68524
+    },
+    "core_source_bounds": {
+      "minX": -249.85269,
+      "maxX": 165.82773,
+      "minY": -109.51173,
+      "maxY": 419.83139
+    },
+    "cluster": {
+      "retained": 1802,
+      "total": 1802,
+      "centerX": -5.39617,
+      "centerY": 136.67413,
+      "radiusX": 256,
+      "radiusY": 605.87556
+    },
+    "scale": 0.39294,
+    "x_offset": 112.50838,
+    "y_offset": 172.96848,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:33.905Z"
+  "exported_at": "2026-08-19T05:04:27.168Z"
 }

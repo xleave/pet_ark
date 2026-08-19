@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "minimalist",
   "character_name": "Minimalist",
   "localized_name": "至简",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
+      "minX": -289.34,
+      "maxX": 358.00162,
+      "minY": -119.23533,
+      "maxY": 633.19861
+    },
+    "full_source_bounds": {
       "minX": -604.20782,
       "maxX": 993.59344,
-      "minY": -120.37825,
+      "minY": -119.23533,
       "maxY": 770.69043
     },
-    "scale": 0.11015,
-    "x_offset": 74.55432,
-    "y_offset": 202.74017,
+    "core_source_bounds": {
+      "minX": -289.34,
+      "maxX": 358.00162,
+      "minY": -119.23533,
+      "maxY": 633.19861
+    },
+    "cluster": {
+      "retained": 2221,
+      "total": 2239,
+      "centerX": 18.96764,
+      "centerY": 230.40917,
+      "radiusX": 535.03946,
+      "radiusY": 860.21488
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 62,
+      "visible_height": 101,
+      "density_zoom": 1.38614
+    },
+    "scale": 0.37686,
+    "x_offset": 104.54707,
+    "y_offset": 216.80695,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:18.497Z"
+  "exported_at": "2026-08-19T05:11:39.905Z"
 }

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "papyrus",
   "character_name": "Papyrus",
   "localized_name": "莎草",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -260.38824,
+      "maxX": 233.73666,
+      "minY": -118.38803,
+      "maxY": 499.5712
+    },
+    "full_source_bounds": {
       "minX": -669.86328,
       "maxX": 682.80164,
       "minY": -118.38803,
       "maxY": 731.42731
     },
-    "scale": 0.13011,
-    "x_offset": 95.15827,
-    "y_offset": 200.59612,
+    "core_source_bounds": {
+      "minX": -260.38824,
+      "maxX": 233.73666,
+      "minY": -118.38803,
+      "maxY": 499.5712
+    },
+    "cluster": {
+      "retained": 2672,
+      "total": 2703,
+      "centerX": 2.11501,
+      "centerY": 144.42973,
+      "radiusX": 256,
+      "radiusY": 685.4137
+    },
+    "scale": 0.33659,
+    "x_offset": 100.48535,
+    "y_offset": 176.15156,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:17.253Z"
+  "exported_at": "2026-08-19T05:04:24.081Z"
 }

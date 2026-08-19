@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "rockrock",
   "character_name": "Rockrock",
   "localized_name": "洛洛",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -204.05769,
+      "minX": -203.99438,
+      "maxX": 298.07736,
+      "minY": -152.92996,
+      "maxY": 515.07275
+    },
+    "full_source_bounds": {
+      "minX": -203.99438,
       "maxX": 930.81757,
       "minY": -152.92996,
       "maxY": 515.07275
     },
-    "scale": 0.15508,
-    "x_offset": 39.6459,
-    "y_offset": 192.28314,
+    "core_source_bounds": {
+      "minX": -203.99438,
+      "maxX": 298.07736,
+      "minY": -152.92996,
+      "maxY": 515.07275
+    },
+    "cluster": {
+      "retained": 4284,
+      "total": 4331,
+      "centerX": -9.5134,
+      "centerY": 132.78333,
+      "radiusX": 297.44898,
+      "radiusY": 635.13935
+    },
+    "scale": 0.31138,
+    "x_offset": 81.35241,
+    "y_offset": 168.38128,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:28.073Z"
+  "exported_at": "2026-08-19T05:04:25.359Z"
 }

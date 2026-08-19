@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "rosmontis",
   "character_name": "Rosmontis",
   "localized_name": "迷迭香",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -271.30743,
+      "maxX": 288.17001,
+      "minY": -129.89067,
+      "maxY": 450.36792
+    },
+    "full_source_bounds": {
       "minX": -964.77271,
       "maxX": 1283.15002,
       "minY": -921.59271,
-      "maxY": 567.35724
+      "maxY": 644.90149
     },
-    "scale": 0.07829,
-    "x_offset": 83.5364,
-    "y_offset": 143.84435,
+    "core_source_bounds": {
+      "minX": -271.30743,
+      "maxX": 288.17001,
+      "minY": -129.89067,
+      "maxY": 450.36792
+    },
+    "cluster": {
+      "retained": 3556,
+      "total": 3621,
+      "centerX": 0.75307,
+      "centerY": 125.72161,
+      "radiusX": 289.21579,
+      "radiusY": 663.23184
+    },
+    "scale": 0.31458,
+    "x_offset": 93.34769,
+    "y_offset": 175.13909,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:28.730Z"
+  "exported_at": "2026-08-19T05:03:42.102Z"
 }

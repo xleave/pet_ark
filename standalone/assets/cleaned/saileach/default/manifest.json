@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "saileach",
   "character_name": "Saileach",
   "localized_name": "琴柳",
@@ -102,16 +105,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -260.0119,
+      "maxX": 255.87724,
+      "minY": -114.26811,
+      "maxY": 381.87018
+    },
+    "full_source_bounds": {
       "minX": -439.28183,
       "maxX": 255.87724,
       "minY": -114.26811,
-      "maxY": 382.11157
+      "maxY": 381.87018
     },
-    "scale": 0.25318,
-    "x_offset": 119.21714,
-    "y_offset": 187.06966,
+    "core_source_bounds": {
+      "minX": -260.0119,
+      "maxX": 255.87724,
+      "minY": -114.26811,
+      "maxY": 381.87018
+    },
+    "cluster": {
+      "retained": 2767,
+      "total": 2770,
+      "centerX": -7.70652,
+      "centerY": 203.40714,
+      "radiusX": 384.91857,
+      "radiusY": 568.1144
+    },
+    "scale": 0.34116,
+    "x_offset": 96.70529,
+    "y_offset": 177.01645,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:28.556Z"
+  "exported_at": "2026-08-19T05:08:03.125Z"
 }

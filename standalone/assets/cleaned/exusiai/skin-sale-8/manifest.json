@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "exusiai",
   "character_name": "Exusiai",
   "localized_name": "能天使",
@@ -97,7 +99,29 @@
       "duration": 4.633333206176758,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/exusiai/skin-sale-8/special"
+      "path": "standalone/assets/cleaned/exusiai/skin-sale-8/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 1,
+          "reason": "The deterministic Spine Special sample contains no visible pixels in the canonical character envelope; retained explicitly as a source-authored transition beat.",
+          "observed_by": "blank-policy-revision-1"
+        },
+        {
+          "frame": 2,
+          "reason": "The deterministic Spine Special sample contains no visible pixels in the canonical character envelope; retained explicitly as a source-authored transition beat.",
+          "observed_by": "blank-policy-revision-1"
+        },
+        {
+          "frame": 4,
+          "reason": "The deterministic Spine Special sample contains no visible pixels in the canonical character envelope; retained explicitly as a source-authored transition beat.",
+          "observed_by": "blank-policy-revision-1"
+        },
+        {
+          "frame": 5,
+          "reason": "The deterministic Spine Special sample contains no visible pixels in the canonical character envelope; retained explicitly as a source-authored transition beat.",
+          "observed_by": "blank-policy-revision-1"
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
@@ -113,16 +137,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -250.0405,
+      "maxX": 235.15381,
+      "minY": -109.84487,
+      "maxY": 474.11163
+    },
+    "full_source_bounds": {
       "minX": -1373.8783,
       "maxX": 4606.21338,
       "minY": -1694.19824,
-      "maxY": 577.58325
+      "maxY": 837.78149
     },
-    "scale": 0.02943,
-    "x_offset": 48.43459,
-    "y_offset": 166.13807,
+    "core_source_bounds": {
+      "minX": -250.0405,
+      "maxX": 235.15381,
+      "minY": -109.84487,
+      "maxY": 474.11163
+    },
+    "cluster": {
+      "retained": 2582,
+      "total": 2608,
+      "centerX": -8.94497,
+      "centerY": 139.15483,
+      "radiusX": 304.06366,
+      "radiusY": 632.08305
+    },
+    "scale": 0.35619,
+    "x_offset": 98.65125,
+    "y_offset": 176.87426,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:05.833Z"
+  "exported_at": "2026-08-19T05:03:07.656Z"
 }

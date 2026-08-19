@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "mountain",
   "character_name": "Mountain",
   "localized_name": "山",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -288.87686,
+      "maxX": 184.56746,
+      "minY": -135.16048,
+      "maxY": 466.05173
+    },
+    "full_source_bounds": {
       "minX": -548.45856,
-      "maxX": 330.68851,
+      "maxX": 365.40964,
       "minY": -135.16048,
       "maxY": 591.74365
     },
-    "scale": 0.20019,
-    "x_offset": 117.79813,
-    "y_offset": 188.94168,
+    "core_source_bounds": {
+      "minX": -288.87686,
+      "maxX": 184.56746,
+      "minY": -135.16048,
+      "maxY": 466.05173
+    },
+    "cluster": {
+      "retained": 2006,
+      "total": 2014,
+      "centerX": -12.65914,
+      "centerY": 145.2997,
+      "radiusX": 302.20736,
+      "radiusY": 671.15117
+    },
+    "scale": 0.34597,
+    "x_offset": 114.04384,
+    "y_offset": 169.23884,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:19.437Z"
+  "exported_at": "2026-08-19T05:05:01.136Z"
 }

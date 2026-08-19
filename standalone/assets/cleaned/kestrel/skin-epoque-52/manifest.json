@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "kestrel",
   "character_name": "Kestrel",
   "localized_name": "红隼",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -597.0777,
-      "maxX": 226.80383,
-      "minY": -114.14336,
-      "maxY": 405.53046
+      "maxX": 201.7588,
+      "minY": -114.48777,
+      "maxY": 427.89648
     },
-    "scale": 0.21362,
-    "x_offset": 135.5495,
-    "y_offset": 191.61636,
+    "full_source_bounds": {
+      "minX": -597.0777,
+      "maxX": 201.7588,
+      "minY": -114.48777,
+      "maxY": 427.89648
+    },
+    "core_source_bounds": {
+      "minX": -597.0777,
+      "maxX": 201.7588,
+      "minY": -114.48777,
+      "maxY": 387.0751
+    },
+    "cluster": {
+      "retained": 2105,
+      "total": 2105,
+      "centerX": -3.38259,
+      "centerY": 163.35913,
+      "radiusX": 699.87221,
+      "radiusY": 760.25253
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 50,
+      "visible_height": 86,
+      "density_zoom": 1.62791
+    },
+    "scale": 0.35866,
+    "x_offset": 105.84626,
+    "y_offset": 215.63536,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:13.652Z"
+  "exported_at": "2026-08-19T05:10:31.445Z"
 }

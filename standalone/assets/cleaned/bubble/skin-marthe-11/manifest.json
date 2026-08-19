@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "bubble",
   "character_name": "Bubble",
   "localized_name": "泡泡",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -443.06717,
-      "maxX": 483.47134,
-      "minY": -124.11428,
-      "maxY": 404.49307
+      "minX": -219.11873,
+      "maxX": 189.57329,
+      "minY": -123.94227,
+      "maxY": 395.64731
     },
-    "scale": 0.18995,
-    "x_offset": 92.16253,
-    "y_offset": 192.42396,
+    "full_source_bounds": {
+      "minX": -443.06717,
+      "maxX": 444.43579,
+      "minY": -123.94227,
+      "maxY": 418.04739
+    },
+    "core_source_bounds": {
+      "minX": -219.11873,
+      "maxX": 189.57329,
+      "minY": -123.94227,
+      "maxY": 395.64731
+    },
+    "cluster": {
+      "retained": 3376,
+      "total": 3376,
+      "centerX": -4.23012,
+      "centerY": 123.64766,
+      "radiusX": 302.77124,
+      "radiusY": 705.17933
+    },
+    "scale": 0.40032,
+    "x_offset": 101.91376,
+    "y_offset": 166.38393,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:59.936Z"
+  "exported_at": "2026-08-19T05:04:35.691Z"
 }

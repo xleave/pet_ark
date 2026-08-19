@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "ch-en-the-holungday",
   "character_name": "Ch'en the Holungday",
   "localized_name": "假日威龙陈",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -461.04193,
+      "minX": -206.63896,
+      "maxX": 379.4881,
+      "minY": -523.77557,
+      "maxY": 421.16898
+    },
+    "full_source_bounds": {
+      "minX": -464.27591,
       "maxX": 917.33002,
       "minY": -523.77557,
-      "maxY": 469.38983
+      "maxY": 520.82764
     },
-    "scale": 0.12769,
-    "x_offset": 66.869,
-    "y_offset": 149.12074,
+    "core_source_bounds": {
+      "minX": -206.63896,
+      "maxX": 379.4881,
+      "minY": -523.77557,
+      "maxY": 421.16898
+    },
+    "cluster": {
+      "retained": 2658,
+      "total": 2678,
+      "centerX": 17.35201,
+      "centerY": 146.10856,
+      "radiusX": 461.96628,
+      "radiusY": 1160.01385
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 90,
+      "visible_height": 92,
+      "density_zoom": 1.52174
+    },
+    "scale": 0.33496,
+    "x_offset": 78.46399,
+    "y_offset": 217.07615,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:01.361Z"
+  "exported_at": "2026-08-19T05:11:28.145Z"
 }

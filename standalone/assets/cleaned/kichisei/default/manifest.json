@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "kichisei",
   "character_name": "Kichisei",
   "localized_name": "吉星",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -274.10281,
       "maxX": 401.88995,
-      "minY": -134.84998,
+      "minY": -134.6805,
       "maxY": 575.66003
     },
-    "scale": 0.26036,
-    "x_offset": 79.36481,
-    "y_offset": 180.89075,
+    "full_source_bounds": {
+      "minX": -274.10281,
+      "maxX": 401.88995,
+      "minY": -134.6805,
+      "maxY": 575.66003
+    },
+    "core_source_bounds": {
+      "minX": -274.10281,
+      "maxX": 401.88995,
+      "minY": -134.6805,
+      "maxY": 575.66003
+    },
+    "cluster": {
+      "retained": 2594,
+      "total": 2594,
+      "centerX": -2.89682,
+      "centerY": 255.40827,
+      "radiusX": 511.30486,
+      "radiusY": 1210.11272
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 64,
+      "visible_height": 108,
+      "density_zoom": 1.2963
+    },
+    "scale": 0.3375,
+    "x_offset": 111.38031,
+    "y_offset": 215.91559,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:13.774Z"
+  "exported_at": "2026-08-19T05:11:33.858Z"
 }

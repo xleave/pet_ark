@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "mulberry",
   "character_name": "Mulberry",
   "localized_name": "桑葚",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -283.99753,
-      "maxX": 319.17059,
+      "maxX": 315.36099,
       "minY": -254.67291,
-      "maxY": 721.87653
+      "maxY": 377.01868
     },
-    "scale": 0.21299,
-    "x_offset": 92.25416,
-    "y_offset": 161.75598,
+    "full_source_bounds": {
+      "minX": -283.99753,
+      "maxX": 495.86115,
+      "minY": -254.67291,
+      "maxY": 884.39001
+    },
+    "core_source_bounds": {
+      "minX": -283.99753,
+      "maxX": 315.36099,
+      "minY": -254.67291,
+      "maxY": 377.01868
+    },
+    "cluster": {
+      "retained": 3097,
+      "total": 3097,
+      "centerX": 22.18038,
+      "centerY": 120.70657,
+      "radiusX": 540.0035,
+      "radiusY": 1452.49369
+    },
+    "scale": 0.29365,
+    "x_offset": 91.3951,
+    "y_offset": 141.21599,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:20.470Z"
+  "exported_at": "2026-08-19T05:07:50.565Z"
 }

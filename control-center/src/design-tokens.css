@@ -1,0 +1,195 @@
+/*
+ * PET ARK control-center design contract.
+ *
+ * New screens and reusable controls consume semantic tokens from this file.
+ * Raw colors, control metrics, motion timings and industrial cuts must not be
+ * introduced in component/page styles. See docs/control-center-design-system.md.
+ */
+:root {
+  color-scheme: dark;
+  font-family: 'Noto Sans SC', system-ui, sans-serif;
+  font-synthesis: none;
+
+  /* Typography */
+  --font-ui: 'Noto Sans SC', system-ui, sans-serif;
+  --font-display: 'Barlow Condensed', 'Noto Sans SC', sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+
+  /* Spacing and control geometry */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 14px;
+  --space-5: 18px;
+  --space-6: 20px;
+  --space-7: 22px;
+  --space-8: 24px;
+  --space-9: 28px;
+  --space-10: 32px;
+  --control-height: 42px;
+  --control-height-compact: 38px;
+  --control-border-width: 1px;
+  --control-corner: 0;
+  --focus-offset: 5px;
+  --clip-industrial: polygon(0 0, calc(100% - 9px) 0, 100% 9px, 100% 100%, 0 100%);
+  --clip-industrial-small: polygon(3px 0, 100% 0, 100% calc(100% - 3px), calc(100% - 3px) 100%, 0 100%, 0 3px);
+
+  /* Motion */
+  --motion-fast: 120ms;
+  --motion-standard: 160ms;
+  --motion-page: 220ms;
+  --motion-loop: .8s;
+  --motion-reduced: .01ms;
+  --ease-standard: ease;
+  --ease-enter: ease-out;
+
+  /* Core palette: raw values live here only. */
+  --ark-ink-1000: #090d10;
+  --ark-ink-975: #0a0f12;
+  --ark-ink-950: #0c1114;
+  --ark-ink-925: #0d1115;
+  --ark-ink-900: #0d1317;
+  --ark-ink-875: #11171b;
+  --ark-ink-850: #12181d;
+  --ark-ink-825: #151b20;
+  --ark-ink-800: #171a1c;
+  --ark-ink-775: #1b232a;
+  --ark-steel-900: #1d252b;
+  --ark-steel-875: #20282e;
+  --ark-steel-850: #252e35;
+  --ark-steel-825: #273038;
+  --ark-steel-800: #283139;
+  --ark-steel-775: #28333a;
+  --ark-steel-750: #2b353c;
+  --ark-steel-725: #303940;
+  --ark-steel-700: #303941;
+  --ark-steel-675: #313c45;
+  --ark-steel-650: #344048;
+  --ark-steel-625: #39434b;
+  --ark-steel-600: #3b464e;
+  --ark-steel-575: #3d4951;
+  --ark-steel-550: #46515a;
+  --ark-steel-525: #4a5861;
+  --ark-steel-500: #4b565e;
+  --ark-steel-475: #4f5b64;
+  --ark-steel-450: #525f68;
+  --ark-steel-425: #53606a;
+  --ark-steel-400: #56636b;
+  --ark-steel-375: #59636b;
+  --ark-steel-350: #59656e;
+  --ark-steel-325: #596872;
+  --ark-steel-300: #5f6c75;
+  --ark-steel-275: #63707a;
+  --ark-steel-250: #63717a;
+  --ark-steel-225: #64717a;
+  --ark-steel-200: #65727b;
+  --ark-steel-175: #67747d;
+  --ark-steel-150: #68757e;
+  --ark-steel-125: #69757e;
+  --ark-silver-500: #74818b;
+  --ark-silver-475: #77848d;
+  --ark-silver-450: #77858f;
+  --ark-silver-425: #7c8a93;
+  --ark-silver-400: #7e8b94;
+  --ark-silver-375: #84919b;
+  --ark-silver-350: #8f9ba4;
+  --ark-silver-325: #8f9ca5;
+  --ark-silver-300: #97a3ac;
+  --ark-silver-275: #98a4ad;
+  --ark-silver-250: #9ca8b1;
+  --ark-silver-225: #aab5bd;
+  --ark-silver-200: #aeb8bf;
+  --ark-silver-175: #b6c0c7;
+  --ark-silver-150: #b9c3ca;
+  --ark-white-100: #dce3e7;
+  --ark-white-75: #e8edef;
+  --ark-white-50: #e9eef1;
+  --ark-white-25: #eaf0f3;
+  --ark-white: #fff;
+  --ark-black: #111;
+  --ark-yellow-dark: #b67a18;
+  --ark-yellow: #f3bd3d;
+  --ark-yellow-soft: #ffd66a;
+  --ark-yellow-light: #ffd975;
+  --ark-yellow-glint: #ffe080;
+  --ark-orange: #e86e31;
+  --ark-cyan: #62d5de;
+  --ark-red-dark: #a83e3e;
+  --ark-red: #ed5f5f;
+  --ark-red-soft: #ee8585;
+  --ark-red-text: #f19a9a;
+  --ark-red-control: #f29494;
+  --ark-warning: #e7bd62;
+
+  /* Semantic surfaces and content */
+  --surface-canvas: var(--ark-ink-925);
+  --surface-deep: var(--ark-ink-1000);
+  --surface-control: var(--ark-ink-875);
+  --surface-control-deep: var(--ark-ink-900);
+  --surface-titlebar: var(--ark-ink-850);
+  --surface-panel: var(--ark-ink-825);
+  --surface-panel-raised: var(--ark-ink-775);
+  --surface-button: var(--ark-steel-850);
+  --surface-button-hover: var(--ark-steel-675);
+  --surface-button-subtle: var(--ark-steel-875);
+  --surface-track: var(--ark-ink-975);
+  --surface-shell-start: rgba(20, 27, 32, .98);
+  --surface-shell-end: rgba(10, 14, 17, .985);
+  --surface-sidebar: rgba(16, 21, 25, .8);
+  --surface-panel-glass: rgba(22, 29, 34, .92);
+  --surface-metric-start: rgba(31, 39, 45, .9);
+  --surface-metric-end: rgba(18, 24, 28, .9);
+  --surface-hero-end: rgba(20, 27, 32, .9);
+  --border-frame: var(--ark-steel-625);
+  --border-default: var(--ark-steel-700);
+  --border-control: var(--ark-steel-600);
+  --border-control-inner: var(--ark-steel-650);
+  --border-button: var(--ark-steel-550);
+  --border-button-hover: var(--ark-silver-450);
+  --text-primary: var(--ark-white-50);
+  --text-strong: var(--ark-white-25);
+  --text-control: var(--ark-white-75);
+  --text-muted: var(--ark-silver-375);
+  --text-subtle: var(--ark-steel-150);
+  --text-disabled: var(--ark-steel-425);
+  --text-on-accent: var(--ark-ink-800);
+  --accent-primary: var(--ark-yellow);
+  --accent-primary-hover: var(--ark-yellow-soft);
+  --accent-secondary: var(--ark-cyan);
+  --status-danger: var(--ark-red);
+  --status-warning: var(--ark-warning);
+
+  /* Reusable translucent states */
+  --overlay-grid-faint: rgba(255, 255, 255, .015);
+  --overlay-faint: rgba(255, 255, 255, .018);
+  --overlay-soft: rgba(255, 255, 255, .025);
+  --overlay-hover: rgba(255, 255, 255, .035);
+  --overlay-line: rgba(255, 255, 255, .04);
+  --overlay-divider: rgba(255, 255, 255, .05);
+  --accent-primary-faint: rgba(243, 189, 61, .025);
+  --accent-primary-soft: rgba(243, 189, 61, .07);
+  --accent-primary-hover-bg: rgba(243, 189, 61, .13);
+  --accent-primary-glow: rgba(243, 189, 61, .28);
+  --accent-secondary-faint: rgba(98, 213, 222, .08);
+  --accent-secondary-soft: rgba(98, 213, 222, .12);
+  --accent-secondary-focus: rgba(98, 213, 222, .14);
+  --accent-secondary-glow: rgba(98, 213, 222, .45);
+  --danger-faint: rgba(237, 95, 95, .08);
+  --danger-border: rgba(237, 95, 95, .45);
+  --danger-border-soft: rgba(237, 95, 95, .35);
+  --neutral-beacon-soft: rgba(89, 99, 107, .08);
+  --neutral-beacon-ring: rgba(89, 99, 107, .12);
+  --shadow-inset: rgba(0, 0, 0, .8);
+  --shadow-elevated: rgba(0, 0, 0, .45);
+
+  /* Compatibility aliases for existing components. */
+  --bg: var(--surface-canvas);
+  --panel: var(--surface-panel);
+  --panel-2: var(--surface-panel-raised);
+  --line: var(--border-default);
+  --muted: var(--text-muted);
+  --yellow: var(--accent-primary);
+  --orange: var(--ark-orange);
+  --cyan: var(--accent-secondary);
+  --danger: var(--status-danger);
+}

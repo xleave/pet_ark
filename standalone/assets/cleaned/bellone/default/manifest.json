@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "bellone",
   "character_name": "Bellone",
   "localized_name": "贝洛内",
@@ -102,16 +104,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -314.32565,
+      "maxX": 313.70688,
+      "minY": -150.65125,
+      "maxY": 465.62
+    },
+    "full_source_bounds": {
       "minX": -461.24902,
       "maxX": 833.58319,
       "minY": -150.65125,
       "maxY": 520.84637
     },
-    "scale": 0.13592,
-    "x_offset": 70.69525,
-    "y_offset": 195.52274,
+    "core_source_bounds": {
+      "minX": -314.32565,
+      "maxX": 313.70688,
+      "minY": -150.65125,
+      "maxY": 465.62
+    },
+    "cluster": {
+      "retained": 3012,
+      "total": 3104,
+      "centerX": 6.676,
+      "centerY": 140.02147,
+      "radiusX": 292.7015,
+      "radiusY": 620.42966
+    },
+    "scale": 0.28024,
+    "x_offset": 96.0867,
+    "y_offset": 173.78146,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:58.430Z"
+  "exported_at": "2026-08-19T05:04:11.041Z"
 }

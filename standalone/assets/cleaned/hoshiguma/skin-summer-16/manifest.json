@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "hoshiguma",
   "character_name": "Hoshiguma",
   "localized_name": "星熊",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
       "minX": -240.61667,
-      "maxX": 1133.62305,
-      "minY": -103.72334,
-      "maxY": 465.34903
+      "maxX": 269.29163,
+      "minY": -98.0513,
+      "maxY": 437.88214
     },
-    "scale": 0.12807,
-    "x_offset": 38.81597,
-    "y_offset": 202.71607,
+    "full_source_bounds": {
+      "minX": -249.97705,
+      "maxX": 683.64526,
+      "minY": -124.77779,
+      "maxY": 620.42371
+    },
+    "core_source_bounds": {
+      "minX": -240.61667,
+      "maxX": 269.29163,
+      "minY": -98.0513,
+      "maxY": 437.88214
+    },
+    "cluster": {
+      "retained": 1785,
+      "total": 1785,
+      "centerX": -7.01866,
+      "centerY": 139.46684,
+      "radiusX": 277.43922,
+      "radiusY": 695.74032
+    },
+    "scale": 0.34516,
+    "x_offset": 91.05127,
+    "y_offset": 182.1566,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:11.247Z"
+  "exported_at": "2026-08-19T05:03:47.892Z"
 }

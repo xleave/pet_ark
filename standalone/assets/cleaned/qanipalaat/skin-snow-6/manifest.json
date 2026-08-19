@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "qanipalaat",
   "character_name": "Qanipalaat",
   "localized_name": "雪绒",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -518.97498,
       "maxX": 331.41998,
       "minY": -142.82063,
       "maxY": 728.61554
     },
-    "scale": 0.20696,
-    "x_offset": 115.40844,
-    "y_offset": 186.44146,
+    "full_source_bounds": {
+      "minX": -518.97498,
+      "maxX": 331.41998,
+      "minY": -142.82063,
+      "maxY": 728.61554
+    },
+    "core_source_bounds": {
+      "minX": -518.97498,
+      "maxX": 331.41998,
+      "minY": -142.82063,
+      "maxY": 728.61554
+    },
+    "cluster": {
+      "retained": 3131,
+      "total": 3131,
+      "centerX": -351.47543,
+      "centerY": 152.08585,
+      "radiusX": 844.92279,
+      "radiusY": 996.89865
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 57,
+      "visible_height": 85,
+      "density_zoom": 1.64706
+    },
+    "scale": 0.34088,
+    "x_offset": 99.96684,
+    "y_offset": 216.72711,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:26.106Z"
+  "exported_at": "2026-08-19T05:11:07.466Z"
 }

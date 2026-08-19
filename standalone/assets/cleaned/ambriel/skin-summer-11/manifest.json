@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "ambriel",
   "character_name": "Ambriel",
   "localized_name": "安比尔",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -291.29626,
+      "maxX": 202.49352,
+      "minY": -127.81602,
+      "maxY": 443.80508
+    },
+    "full_source_bounds": {
       "minX": -451.14981,
       "maxX": 315.19992,
-      "minY": -126.97624,
-      "maxY": 595.55841
+      "minY": -127.81602,
+      "maxY": 593.66217
     },
-    "scale": 0.22966,
-    "x_offset": 111.61114,
-    "y_offset": 186.83862,
+    "core_source_bounds": {
+      "minX": -291.29626,
+      "maxX": 202.49352,
+      "minY": -127.81602,
+      "maxY": 443.80508
+    },
+    "cluster": {
+      "retained": 2613,
+      "total": 2613,
+      "centerX": -6.29131,
+      "centerY": 201.426,
+      "radiusX": 320,
+      "radiusY": 536.96035
+    },
+    "scale": 0.35643,
+    "x_offset": 111.82585,
+    "y_offset": 170.44292,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:55.434Z"
+  "exported_at": "2026-08-19T05:07:45.730Z"
 }

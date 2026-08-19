@@ -1,0 +1,19 @@
+[Unit]
+Description=Pet Ark Wayland desktop pet instance %i
+Documentation=https://github.com/xleave/pet_ark
+After=graphical-session.target
+
+[Service]
+Type=simple
+Environment=XDG_RUNTIME_DIR=%t
+Environment=PET_ARK_INSTANCE=%i
+EnvironmentFile=-%h/.config/pet-ark/instances/%i.env
+ExecStart=@PET_ARK_LAUNCHER@
+Restart=on-failure
+RestartSec=2s
+KillSignal=SIGTERM
+TimeoutStopSec=5s
+SyslogIdentifier=pet-ark-%i
+
+[Install]
+WantedBy=default.target

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "lunacub",
   "character_name": "Lunacub",
   "localized_name": "子月",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -613.17157,
       "maxX": 525.05481,
-      "minY": -106.26923,
+      "minY": -108.03467,
       "maxY": 750.85699
     },
-    "scale": 0.15463,
-    "x_offset": 102.81259,
-    "y_offset": 199.56796,
+    "full_source_bounds": {
+      "minX": -613.17157,
+      "maxX": 525.05481,
+      "minY": -108.03467,
+      "maxY": 750.85699
+    },
+    "core_source_bounds": {
+      "minX": -613.17157,
+      "maxX": 525.05481,
+      "minY": -108.03467,
+      "maxY": 750.85699
+    },
+    "cluster": {
+      "retained": 2253,
+      "total": 2253,
+      "centerX": -26.72379,
+      "centerY": 248.28822,
+      "radiusX": 650.01297,
+      "radiusY": 1161.97605
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 34,
+      "visible_height": 62,
+      "density_zoom": 2.25806
+    },
+    "scale": 0.34916,
+    "x_offset": 101.22199,
+    "y_offset": 216.66607,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:16.850Z"
+  "exported_at": "2026-08-19T05:10:19.499Z"
 }

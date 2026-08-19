@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "eyjafjalla-the-hvit-aska",
   "character_name": "Eyjafjalla the Hvít Aska",
   "localized_name": "纯烬艾雅法拉",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -458.27002,
-      "maxX": 678.12378,
+      "maxX": 722.99414,
       "minY": -459.0686,
-      "maxY": 551.63409
+      "maxY": 658.17694
     },
-    "scale": 0.15488,
-    "x_offset": 78.97498,
-    "y_offset": 144.90134,
+    "full_source_bounds": {
+      "minX": -458.27002,
+      "maxX": 722.99414,
+      "minY": -459.0686,
+      "maxY": 658.17694
+    },
+    "core_source_bounds": {
+      "minX": -458.27002,
+      "maxX": 490.82001,
+      "minY": -459.0686,
+      "maxY": 401.85059
+    },
+    "cluster": {
+      "retained": 3297,
+      "total": 3297,
+      "centerX": -30.08591,
+      "centerY": 120.94685,
+      "radiusX": 972.69099,
+      "radiusY": 1125.89273
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 67,
+      "visible_height": 60,
+      "density_zoom": 2.33333
+    },
+    "scale": 0.34765,
+    "x_offset": 110.65098,
+    "y_offset": 217.40473,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:06.310Z"
+  "exported_at": "2026-08-19T05:10:26.267Z"
 }

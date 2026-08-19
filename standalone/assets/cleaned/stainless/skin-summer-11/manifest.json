@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "stainless",
   "character_name": "Stainless",
   "localized_name": "白铁",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -246.24355,
-      "maxX": 1604.88647,
-      "minY": -106.4353,
+      "minX": -246.24026,
+      "maxX": 334.35446,
+      "minY": -106.78085,
       "maxY": 479.94891
     },
-    "scale": 0.09508,
-    "x_offset": 31.41211,
-    "y_offset": 205.88045,
+    "full_source_bounds": {
+      "minX": -246.24026,
+      "maxX": 1604.88647,
+      "minY": -106.78085,
+      "maxY": 479.94891
+    },
+    "core_source_bounds": {
+      "minX": -246.24026,
+      "maxX": 334.35446,
+      "minY": -106.78085,
+      "maxY": 479.94891
+    },
+    "cluster": {
+      "retained": 2965,
+      "total": 2996,
+      "centerX": 4.84474,
+      "centerY": 122.49479,
+      "radiusX": 298.1444,
+      "radiusY": 702.3518
+    },
+    "scale": 0.30314,
+    "x_offset": 82.64464,
+    "y_offset": 183.63073,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:32.427Z"
+  "exported_at": "2026-08-19T05:03:36.834Z"
 }

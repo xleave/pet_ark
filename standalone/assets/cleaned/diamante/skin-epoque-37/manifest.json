@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "diamante",
   "character_name": "Diamante",
   "localized_name": "折光",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -219.65692,
+      "maxX": 180.65314,
+      "minY": -113.40078,
+      "maxY": 386.88318
+    },
+    "full_source_bounds": {
       "minX": -604.15997,
       "maxX": 180.65314,
       "minY": -308.20999,
       "maxY": 387.57272
     },
-    "scale": 0.22426,
-    "x_offset": 143.48723,
-    "y_offset": 146.88169,
+    "core_source_bounds": {
+      "minX": -219.65692,
+      "maxX": 180.65314,
+      "minY": -113.40078,
+      "maxY": 386.88318
+    },
+    "cluster": {
+      "retained": 2598,
+      "total": 2605,
+      "centerX": -4.25437,
+      "centerY": 132.86703,
+      "radiusX": 264.06483,
+      "radiusY": 635.07895
+    },
+    "scale": 0.41,
+    "x_offset": 103.99578,
+    "y_offset": 169.50568,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:03.746Z"
+  "exported_at": "2026-08-19T05:04:38.652Z"
 }

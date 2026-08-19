@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "specter-the-unchained",
   "character_name": "Specter the Unchained",
   "localized_name": "归溟幽灵鲨",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -398.53741,
+      "maxX": 219.50699,
+      "minY": -165.42084,
+      "maxY": 436.58017
+    },
+    "full_source_bounds": {
       "minX": -450.26114,
       "maxX": 942.57758,
-      "minY": -165.40906,
-      "maxY": 440.72336
+      "minY": -165.42084,
+      "maxY": 443.33963
     },
-    "scale": 0.12636,
-    "x_offset": 64.89529,
-    "y_offset": 195.0988,
+    "core_source_bounds": {
+      "minX": -398.53741,
+      "maxX": 219.50699,
+      "minY": -165.42084,
+      "maxY": 436.58017
+    },
+    "cluster": {
+      "retained": 2538,
+      "total": 2612,
+      "centerX": -3.46771,
+      "centerY": 118.62621,
+      "radiusX": 326.18777,
+      "radiusY": 615.68951
+    },
+    "scale": 0.28477,
+    "x_offset": 121.49117,
+    "y_offset": 168.89324,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:32.156Z"
+  "exported_at": "2026-08-19T05:03:51.220Z"
 }

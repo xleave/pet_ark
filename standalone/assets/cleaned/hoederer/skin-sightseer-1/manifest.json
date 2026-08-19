@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "hoederer",
   "character_name": "Hoederer",
   "localized_name": "赫德雷",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
+      "minX": -261.99884,
+      "maxX": 298.84998,
+      "minY": -114.162,
+      "maxY": 694.20996
+    },
+    "full_source_bounds": {
       "minX": -894.54401,
       "maxX": 758.37177,
       "minY": -114.162,
       "maxY": 948.08282
     },
-    "scale": 0.10648,
-    "x_offset": 103.24971,
-    "y_offset": 203.8442,
+    "core_source_bounds": {
+      "minX": -261.99884,
+      "maxX": 298.84998,
+      "minY": -114.162,
+      "maxY": 694.20996
+    },
+    "cluster": {
+      "retained": 2593,
+      "total": 2595,
+      "centerX": -2.35261,
+      "centerY": 188.54613,
+      "radiusX": 502.55179,
+      "radiusY": 534.52383
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 75,
+      "visible_height": 103,
+      "density_zoom": 1.35922
+    },
+    "scale": 0.34974,
+    "x_offset": 103.14811,
+    "y_offset": 216.8499,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:13.365Z"
+  "exported_at": "2026-08-19T05:11:32.064Z"
 }

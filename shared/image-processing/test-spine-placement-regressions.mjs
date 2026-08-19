@@ -18,32 +18,41 @@ assert.equal(
 );
 assert.ok(manifest.placement.scale >= 0.25, `unexpectedly small placement scale: ${manifest.placement.scale}`);
 
-const { data, info } = await sharp(path.join(variant, 'relax/000.png'))
-  .ensureAlpha()
-  .raw()
-  .toBuffer({ resolveWithObject: true });
-let minX = info.width;
-let minY = info.height;
-let maxX = -1;
-let maxY = -1;
-let visiblePixels = 0;
-for (let y = 0; y < info.height; y++) {
-  for (let x = 0; x < info.width; x++) {
-    if (data[(y * info.width + x) * info.channels + 3] === 0) continue;
-    visiblePixels++;
-    minX = Math.min(minX, x);
-    minY = Math.min(minY, y);
-    maxX = Math.max(maxX, x);
-    maxY = Math.max(maxY, y);
+async function visibleMetrics(file) {
+  const { data, info } = await sharp(file).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  let minX = info.width;
+  let minY = info.height;
+  let maxX = -1;
+  let maxY = -1;
+  let pixels = 0;
+  for (let y = 0; y < info.height; y++) {
+    for (let x = 0; x < info.width; x++) {
+      if (data[(y * info.width + x) * info.channels + 3] === 0) continue;
+      pixels++;
+      minX = Math.min(minX, x);
+      minY = Math.min(minY, y);
+      maxX = Math.max(maxX, x);
+      maxY = Math.max(maxY, y);
+    }
   }
+  return { width: maxX - minX + 1, height: maxY - minY + 1, pixels };
 }
-const visibleWidth = maxX - minX + 1;
-const visibleHeight = maxY - minY + 1;
-assert.ok(visibleWidth >= 100, `representative frame is too narrow: ${visibleWidth}px`);
-assert.ok(visibleHeight >= 140, `representative frame is too short: ${visibleHeight}px`);
-assert.ok(visiblePixels >= 5000, `representative frame has too few visible pixels: ${visiblePixels}`);
+
+const mon3trVisible = await visibleMetrics(path.join(variant, 'relax/000.png'));
+assert.ok(mon3trVisible.width >= 100, `representative frame is too narrow: ${mon3trVisible.width}px`);
+assert.ok(mon3trVisible.height >= 140, `representative frame is too short: ${mon3trVisible.height}px`);
+assert.ok(mon3trVisible.pixels >= 5000, `representative frame has too few visible pixels: ${mon3trVisible.pixels}`);
+
+const densityVariant = path.join(root, 'standalone/assets/cleaned/lunacub/skin-yun-1');
+const densityManifest = JSON.parse(await fs.readFile(path.join(densityVariant, 'manifest.json'), 'utf8'));
+assert.equal(densityManifest.placement_revision, 3, 'small-body skins must use pixel-density placement');
+assert.equal(densityManifest.placement.bounds_policy, 'pixel-density-corrected-envelope');
+const densityVisible = await visibleMetrics(path.join(densityVariant, 'relax/000.png'));
+assert.ok(densityVisible.width >= 70, `density-corrected frame is too narrow: ${densityVisible.width}px`);
+assert.ok(densityVisible.height >= 130, `density-corrected frame is too short: ${densityVisible.height}px`);
 
 console.log(
   `OK: Spine placement regression (Mon3tr sharp scale=${manifest.placement.scale}, `
-  + `visible=${visibleWidth}x${visibleHeight}, pixels=${visiblePixels})`,
+  + `visible=${mon3trVisible.width}x${mon3trVisible.height}, pixels=${mon3trVisible.pixels}; `
+  + `Lunacub=${densityVisible.width}x${densityVisible.height})`,
 );

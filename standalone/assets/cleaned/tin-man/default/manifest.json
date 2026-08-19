@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "tin-man",
   "character_name": "Tin Man",
   "localized_name": "锡人",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -336.01013,
       "maxX": 195.01834,
       "minY": -208.02266,
       "maxY": 596.22607
     },
-    "scale": 0.25863,
-    "x_offset": 114.2321,
-    "y_offset": 162.19984,
+    "full_source_bounds": {
+      "minX": -336.01013,
+      "maxX": 195.01834,
+      "minY": -208.02266,
+      "maxY": 596.22607
+    },
+    "core_source_bounds": {
+      "minX": -336.01013,
+      "maxX": 195.01834,
+      "minY": -208.02266,
+      "maxY": 596.22607
+    },
+    "cluster": {
+      "retained": 2272,
+      "total": 2272,
+      "centerX": -10.47632,
+      "centerY": 158.59886,
+      "radiusX": 680.02218,
+      "radiusY": 1265.83332
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 68,
+      "visible_height": 104,
+      "density_zoom": 1.34615
+    },
+    "scale": 0.34815,
+    "x_offset": 107.75475,
+    "y_offset": 217.61516,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:34.497Z"
+  "exported_at": "2026-08-19T05:11:53.879Z"
 }

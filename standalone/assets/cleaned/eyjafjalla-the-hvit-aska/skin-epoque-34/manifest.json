@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "eyjafjalla-the-hvit-aska",
   "character_name": "Eyjafjalla the Hvít Aska",
   "localized_name": "纯烬艾雅法拉",
@@ -97,7 +99,14 @@
       "duration": 12.033333778381348,
       "fps": 8,
       "frames": 8,
-      "path": "standalone/assets/cleaned/eyjafjalla-the-hvit-aska/skin-epoque-34/special"
+      "path": "standalone/assets/cleaned/eyjafjalla-the-hvit-aska/skin-epoque-34/special",
+      "intentional_blank_frames": [
+        {
+          "frame": 5,
+          "reason": "The deterministic Spine Special sample contains no visible pixels in the canonical character envelope; retained explicitly as a source-authored transition beat.",
+          "observed_by": "blank-policy-revision-1"
+        }
+      ]
     }
   },
   "renderer": "PRTS Spine 3.8 runtime data with deterministic CPU triangle composition",
@@ -113,16 +122,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -655.39484,
+      "minX": -235.65237,
+      "maxX": 254.33998,
+      "minY": -114.44541,
+      "maxY": 476.99884
+    },
+    "full_source_bounds": {
+      "minX": -714.49109,
       "maxX": 2150.18945,
       "minY": -450.74936,
-      "maxY": 526.58545
+      "maxY": 479.79327
     },
-    "scale": 0.06273,
-    "x_offset": 49.11425,
-    "y_offset": 187.72358,
+    "core_source_bounds": {
+      "minX": -235.65237,
+      "maxX": 254.33998,
+      "minY": -114.44541,
+      "maxY": 476.99884
+    },
+    "cluster": {
+      "retained": 4490,
+      "total": 4588,
+      "centerX": -0.63282,
+      "centerY": 149.70049,
+      "radiusX": 348.9384,
+      "radiusY": 777.56213
+    },
+    "scale": 0.35168,
+    "x_offset": 92.71396,
+    "y_offset": 175.75167,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:06.337Z"
+  "exported_at": "2026-08-19T05:03:13.916Z"
 }

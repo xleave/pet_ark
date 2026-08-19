@@ -15,6 +15,7 @@ typedef enum {
   PET_CONTROL_SET_AUTO_MOVE,
   PET_CONTROL_SET_CLICK_THROUGH,
   PET_CONTROL_SELECT,
+  PET_CONTROL_REACT,
   PET_CONTROL_QUIT,
 } PetControlCommandKind;
 
@@ -24,6 +25,7 @@ typedef struct {
   bool boolean;
   char character[PET_CONTROL_ID_MAX];
   char variant[PET_CONTROL_ID_MAX];
+  char event[PET_CONTROL_ID_MAX];
 } PetControlCommand;
 
 typedef struct {
@@ -35,6 +37,7 @@ bool pet_control_parse(const char *json, PetControlCommand *command,
                        char *error, size_t error_size);
 
 bool pet_control_server_open(PetControlServer *server, const char *requested_path,
+                             const char *instance_id,
                              char *error, size_t error_size);
 void pet_control_server_close(PetControlServer *server);
 

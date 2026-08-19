@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "astgenne",
   "character_name": "Astgenne",
   "localized_name": "星源",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -247.94034,
-      "maxX": 746.49158,
-      "minY": -143.40334,
-      "maxY": 515.03333
+      "minX": -234.73557,
+      "maxX": 186.34933,
+      "minY": -140.54362,
+      "maxY": 407.57147
     },
-    "scale": 0.17699,
-    "x_offset": 51.88184,
-    "y_offset": 190.61969,
+    "full_source_bounds": {
+      "minX": -252.96667,
+      "maxX": 518.64825,
+      "minY": -140.54362,
+      "maxY": 562.79376
+    },
+    "core_source_bounds": {
+      "minX": -234.73557,
+      "maxX": 186.34933,
+      "minY": -140.54362,
+      "maxY": 407.57147
+    },
+    "cluster": {
+      "retained": 3292,
+      "total": 3292,
+      "centerX": -5.56305,
+      "centerY": 198.77625,
+      "radiusX": 457.84614,
+      "radiusY": 679.17503
+    },
+    "scale": 0.37948,
+    "x_offset": 105.18086,
+    "y_offset": 162.66618,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:57.285Z"
+  "exported_at": "2026-08-19T05:07:47.411Z"
 }

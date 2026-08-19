@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "penance",
   "character_name": "Penance",
   "localized_name": "斥罪",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -220.76483,
+      "maxX": 353.76624,
+      "minY": -124.86657,
+      "maxY": 418.95709
+    },
+    "full_source_bounds": {
       "minX": -1030.24585,
-      "maxX": 469.26483,
+      "maxX": 470.29712,
       "minY": -124.86657,
       "maxY": 1173.84082
     },
-    "scale": 0.11737,
-    "x_offset": 128.92163,
-    "y_offset": 201.34421,
+    "core_source_bounds": {
+      "minX": -220.76483,
+      "maxX": 353.76624,
+      "minY": -124.86657,
+      "maxY": 418.95709
+    },
+    "cluster": {
+      "retained": 2822,
+      "total": 2898,
+      "centerX": -2.78106,
+      "centerY": 133.32279,
+      "radiusX": 291.20853,
+      "radiusY": 705.7741
+    },
+    "scale": 0.30634,
+    "x_offset": 75.62839,
+    "y_offset": 177.74878,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:23.108Z"
+  "exported_at": "2026-08-19T05:03:33.999Z"
 }

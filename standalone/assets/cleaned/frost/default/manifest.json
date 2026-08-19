@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "frost",
   "character_name": "Frost",
   "localized_name": "霜华",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -247.18643,
-      "maxX": 167.53905,
-      "minY": -112.61926,
+      "maxX": 168.85027,
+      "minY": -113.29679,
       "maxY": 526.60321
     },
-    "scale": 0.3254,
-    "x_offset": 108.95844,
-    "y_offset": 179.35422,
+    "full_source_bounds": {
+      "minX": -247.18643,
+      "maxX": 168.85027,
+      "minY": -113.29679,
+      "maxY": 526.60321
+    },
+    "core_source_bounds": {
+      "minX": -247.18643,
+      "maxX": 168.85027,
+      "minY": -113.29679,
+      "maxY": 526.60321
+    },
+    "cluster": {
+      "retained": 1572,
+      "total": 1572,
+      "centerX": -1.17862,
+      "centerY": 192.03992,
+      "radiusX": 389.99429,
+      "radiusY": 682.82351
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 55,
+      "visible_height": 131,
+      "density_zoom": 1.26134
+    },
+    "scale": 0.41,
+    "x_offset": 98.18416,
+    "y_offset": 216.21795,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:07.583Z"
+  "exported_at": "2026-08-19T05:10:51.988Z"
 }

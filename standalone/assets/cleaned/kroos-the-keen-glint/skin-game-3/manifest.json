@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "kroos-the-keen-glint",
   "character_name": "Kroos the Keen Glint",
   "localized_name": "寒芒克洛丝",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -295.39636,
+      "maxX": 190.27248,
+      "minY": -113.38496,
+      "maxY": 522.71582
+    },
+    "full_source_bounds": {
       "minX": -439.74005,
-      "maxX": 474.77118,
-      "minY": -111.25913,
+      "maxX": 489.69135,
+      "minY": -113.38496,
       "maxY": 667.33997
     },
-    "scale": 0.19245,
-    "x_offset": 92.62909,
-    "y_offset": 194.5879,
+    "core_source_bounds": {
+      "minX": -295.39636,
+      "maxX": 190.27248,
+      "minY": -113.38496,
+      "maxY": 522.71582
+    },
+    "cluster": {
+      "retained": 2871,
+      "total": 2892,
+      "centerX": -8.4056,
+      "centerY": 131.24065,
+      "radiusX": 270.13189,
+      "radiusY": 590.57459
+    },
+    "scale": 0.32699,
+    "x_offset": 113.18735,
+    "y_offset": 178.924,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:14.388Z"
+  "exported_at": "2026-08-19T05:04:43.683Z"
 }

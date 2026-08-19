@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "mayer",
   "character_name": "Mayer",
   "localized_name": "梅尔",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -292.80386,
+      "maxX": 174.46719,
+      "minY": -117.03244,
+      "maxY": 458.9874
+    },
+    "full_source_bounds": {
       "minX": -352.55383,
       "maxX": 504.0936,
-      "minY": -117.85429,
-      "maxY": 600.97498
+      "minY": -117.03244,
+      "maxY": 458.9874
     },
-    "scale": 0.20545,
-    "x_offset": 80.43292,
-    "y_offset": 191.78659,
+    "core_source_bounds": {
+      "minX": -292.80386,
+      "maxX": 174.46719,
+      "minY": -117.03244,
+      "maxY": 458.9874
+    },
+    "cluster": {
+      "retained": 2047,
+      "total": 2084,
+      "centerX": -11.65066,
+      "centerY": 137.48005,
+      "radiusX": 259.23126,
+      "radiusY": 626.69313
+    },
+    "scale": 0.3611,
+    "x_offset": 117.36561,
+    "y_offset": 173.73974,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:17.660Z"
+  "exported_at": "2026-08-19T05:05:08.347Z"
 }

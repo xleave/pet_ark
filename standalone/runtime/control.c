@@ -137,6 +137,16 @@ bool pet_control_parse(const char *json, PetControlCommand *command,
     command->kind = PET_CONTROL_SELECT;
     return true;
   }
+  if (!strcmp(name, "react")) {
+    if (!json_string(json, "event", command->event, sizeof(command->event)) ||
+        (strcmp(command->event, "attention") && strcmp(command->event, "celebrate") &&
+         strcmp(command->event, "wake"))) {
+      set_error(error, error_size, "reaction must be attention, celebrate, or wake");
+      return false;
+    }
+    command->kind = PET_CONTROL_REACT;
+    return true;
+  }
   if (!strcmp(name, "quit")) {
     command->kind = PET_CONTROL_QUIT;
     return true;
@@ -163,6 +173,7 @@ static bool bind_socket(int fd, const struct sockaddr_un *address, socklen_t siz
 }
 
 bool pet_control_server_open(PetControlServer *server, const char *requested_path,
+                             const char *instance_id,
                              char *error, size_t error_size) {
   if (!server) return false;
   server->fd = -1;
@@ -183,7 +194,9 @@ bool pet_control_server_open(PetControlServer *server, const char *requested_pat
       return false;
     }
     static char default_path[108];
-    if (snprintf(default_path, sizeof(default_path), "%s/control.sock", default_directory) >=
+    const char *socket_name = instance_id && *instance_id && strcmp(instance_id, "default")
+      ? instance_id : "control";
+    if (snprintf(default_path, sizeof(default_path), "%s/%s.sock", default_directory, socket_name) >=
         (int)sizeof(default_path)) {
       set_error(error, error_size, "control socket path is too long");
       return false;

@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "erato",
   "character_name": "Erato",
   "localized_name": "埃拉托",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -239.00847,
+      "maxX": 183.77664,
+      "minY": -128.69861,
+      "maxY": 395.01205
+    },
+    "full_source_bounds": {
       "minX": -615.6684,
       "maxX": 276.32532,
-      "minY": -128.35567,
+      "minY": -128.69861,
       "maxY": 771.12488
     },
-    "scale": 0.19731,
-    "x_offset": 129.47803,
-    "y_offset": 190.67404,
+    "core_source_bounds": {
+      "minX": -239.00847,
+      "maxX": 183.77664,
+      "minY": -128.69861,
+      "maxY": 395.01205
+    },
+    "cluster": {
+      "retained": 2303,
+      "total": 2321,
+      "centerX": 5.38559,
+      "centerY": 142.89877,
+      "radiusX": 315.95316,
+      "radiusY": 714.73914
+    },
+    "scale": 0.39717,
+    "x_offset": 106.9681,
+    "y_offset": 164.88531,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:05.008Z"
+  "exported_at": "2026-08-19T05:04:38.971Z"
 }

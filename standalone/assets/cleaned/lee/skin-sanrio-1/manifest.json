@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "lee",
   "character_name": "Lee",
   "localized_name": "老鲤",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -277.77271,
+      "maxX": 302.71802,
+      "minY": -94.34509,
+      "maxY": 589.65167
+    },
+    "full_source_bounds": {
       "minX": -414.83435,
       "maxX": 823.83997,
-      "minY": -94.63593,
+      "minY": -94.34509,
       "maxY": 604.65668
     },
-    "scale": 0.14209,
-    "x_offset": 66.94273,
-    "y_offset": 202.55343,
+    "core_source_bounds": {
+      "minX": -277.77271,
+      "maxX": 302.71802,
+      "minY": -94.34509,
+      "maxY": 589.65167
+    },
+    "cluster": {
+      "retained": 3432,
+      "total": 3495,
+      "centerX": 5.64447,
+      "centerY": 179.25029,
+      "radiusX": 301.92262,
+      "radiusY": 855.02844
+    },
+    "scale": 0.30319,
+    "x_offset": 92.21839,
+    "y_offset": 187.39535,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:15.146Z"
+  "exported_at": "2026-08-19T05:04:19.125Z"
 }

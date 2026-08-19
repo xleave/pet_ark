@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "dorothy",
   "character_name": "Dorothy",
   "localized_name": "多萝西",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
+      "minX": -330.33664,
+      "maxX": 879.44025,
+      "minY": -317.5571,
+      "maxY": 567.99109
+    },
+    "full_source_bounds": {
       "minX": -330.33664,
       "maxX": 1303.86597,
       "minY": -418.33087,
       "maxY": 567.99109
     },
-    "scale": 0.1077,
-    "x_offset": 43.57652,
-    "y_offset": 170.94669,
+    "core_source_bounds": {
+      "minX": -330.33664,
+      "maxX": 879.44025,
+      "minY": -317.5571,
+      "maxY": 567.99109
+    },
+    "cluster": {
+      "retained": 3257,
+      "total": 3278,
+      "centerX": 39.451,
+      "centerY": 177.62854,
+      "radiusX": 933.97519,
+      "radiusY": 819.56284
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 49,
+      "visible_height": 68,
+      "density_zoom": 2.05882
+    },
+    "scale": 0.29952,
+    "x_offset": 96.11906,
+    "y_offset": 215.59103,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:04.030Z"
+  "exported_at": "2026-08-19T05:11:28.646Z"
 }

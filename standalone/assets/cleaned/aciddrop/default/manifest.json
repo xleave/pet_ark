@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "aciddrop",
   "character_name": "Aciddrop",
   "localized_name": "酸糖",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -436.5571,
       "maxX": 202.87801,
       "minY": -120.95208,
-      "maxY": 427.80777
+      "maxY": 437.72089
     },
-    "scale": 0.27524,
-    "x_offset": 128.15926,
-    "y_offset": 182.70879,
+    "full_source_bounds": {
+      "minX": -436.5571,
+      "maxX": 202.87801,
+      "minY": -120.95208,
+      "maxY": 437.72089
+    },
+    "core_source_bounds": {
+      "minX": -436.5571,
+      "maxX": 202.87801,
+      "minY": -120.95208,
+      "maxY": 437.72089
+    },
+    "cluster": {
+      "retained": 1895,
+      "total": 1896,
+      "centerX": -3.55713,
+      "centerY": 209.9757,
+      "radiusX": 364.99571,
+      "radiusY": 674.99798
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 75,
+      "visible_height": 109,
+      "density_zoom": 1.2844
+    },
+    "scale": 0.35352,
+    "x_offset": 93.63575,
+    "y_offset": 216.91038,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:54.759Z"
+  "exported_at": "2026-08-19T05:11:22.515Z"
 }

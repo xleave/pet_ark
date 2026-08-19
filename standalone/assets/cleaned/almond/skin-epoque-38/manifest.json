@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "almond",
   "character_name": "Almond",
   "localized_name": "杏仁",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -774.25,
-      "maxX": 326.53006,
-      "minY": -129.17795,
+      "minX": -323.68011,
+      "maxX": 200.71893,
+      "minY": -129.76686,
       "maxY": 530.65143
     },
-    "scale": 0.15989,
-    "x_offset": 131.79221,
-    "y_offset": 195.34617,
+    "full_source_bounds": {
+      "minX": -774.25,
+      "maxX": 344.06329,
+      "minY": -129.76686,
+      "maxY": 530.65143
+    },
+    "core_source_bounds": {
+      "minX": -323.68011,
+      "maxX": 200.71893,
+      "minY": -129.76686,
+      "maxY": 530.65143
+    },
+    "cluster": {
+      "retained": 2592,
+      "total": 2624,
+      "centerX": -1.31759,
+      "centerY": 124.34464,
+      "radiusX": 367.68693,
+      "radiusY": 645.60706
+    },
+    "scale": 0.31495,
+    "x_offset": 115.36343,
+    "y_offset": 175.12968,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:55.430Z"
+  "exported_at": "2026-08-19T05:04:07.843Z"
 }

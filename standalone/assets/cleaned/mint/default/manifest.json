@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "mint",
   "character_name": "Mint",
   "localized_name": "薄绿",
@@ -102,16 +105,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -237.92653,
       "maxX": 339.14645,
-      "minY": -109.98159,
-      "maxY": 665.98785
+      "minY": -117.74423,
+      "maxY": 651.69525
     },
-    "scale": 0.26805,
-    "x_offset": 82.43391,
-    "y_offset": 186.51924,
+    "full_source_bounds": {
+      "minX": -237.92653,
+      "maxX": 339.14645,
+      "minY": -117.74423,
+      "maxY": 651.69525
+    },
+    "core_source_bounds": {
+      "minX": -237.92653,
+      "maxX": 339.14645,
+      "minY": -117.74423,
+      "maxY": 404.81375
+    },
+    "cluster": {
+      "retained": 3075,
+      "total": 3075,
+      "centerX": 26.08284,
+      "centerY": 191.87688,
+      "radiusX": 489.99211,
+      "radiusY": 685.00099
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 82,
+      "visible_height": 109,
+      "density_zoom": 1.2844
+    },
+    "scale": 0.34721,
+    "x_offset": 97.05164,
+    "y_offset": 216.21911,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:18.590Z"
+  "exported_at": "2026-08-19T05:11:40.346Z"
 }

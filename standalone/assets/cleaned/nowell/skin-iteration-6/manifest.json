@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "nowell",
   "character_name": "Nowell",
   "localized_name": "诺威尔",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -216.02042,
+      "maxX": 209.7197,
+      "minY": -104.56574,
+      "maxY": 425.38986
+    },
+    "full_source_bounds": {
       "minX": -982.18097,
       "maxX": 526.84296,
       "minY": -104.56574,
       "maxY": 527.10608
     },
-    "scale": 0.11663,
-    "x_offset": 122.55342,
-    "y_offset": 203.80432,
+    "core_source_bounds": {
+      "minX": -216.02042,
+      "maxX": 209.7197,
+      "minY": -104.56574,
+      "maxY": 425.38986
+    },
+    "cluster": {
+      "retained": 2728,
+      "total": 2766,
+      "centerX": 5.35585,
+      "centerY": 126.76884,
+      "radiusX": 298.46982,
+      "radiusY": 622.52174
+    },
+    "scale": 0.39249,
+    "x_offset": 97.23647,
+    "y_offset": 174.95944,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:44:17.071Z"
+  "exported_at": "2026-08-19T05:04:00.507Z"
 }

@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 2,
   "character": "humus",
   "character_name": "Humus",
   "localized_name": "休谟斯",
@@ -113,16 +116,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
-      "minX": -400.509,
-      "maxX": 504.75339,
-      "minY": -126.03127,
-      "maxY": 561.33307
+      "minX": -295.4324,
+      "maxX": 168.27908,
+      "minY": -125.60929,
+      "maxY": 435.64084
     },
-    "scale": 0.19442,
-    "x_offset": 85.86647,
-    "y_offset": 191.49716,
+    "full_source_bounds": {
+      "minX": -310.79166,
+      "maxX": 465.08011,
+      "minY": -125.60929,
+      "maxY": 561.31433
+    },
+    "core_source_bounds": {
+      "minX": -295.4324,
+      "maxX": 168.27908,
+      "minY": -125.60929,
+      "maxY": 435.64084
+    },
+    "cluster": {
+      "retained": 2170,
+      "total": 2170,
+      "centerX": 4.23891,
+      "centerY": 221.64503,
+      "radiusX": 355.05817,
+      "radiusY": 674.86969
+    },
+    "scale": 0.3706,
+    "x_offset": 119.56159,
+    "y_offset": 169.44904,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:11.319Z"
+  "exported_at": "2026-08-19T05:07:40.179Z"
 }

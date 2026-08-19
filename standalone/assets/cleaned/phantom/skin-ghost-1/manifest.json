@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "phantom",
   "character_name": "Phantom",
   "localized_name": "傀影",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -275.50079,
+      "maxX": 230.47899,
+      "minY": -103.65722,
+      "maxY": 412.47205
+    },
+    "full_source_bounds": {
       "minX": -1088.53003,
       "maxX": 660.50146,
       "minY": -103.65722,
-      "maxY": 513.7569
+      "maxY": 547.78485
     },
-    "scale": 0.10063,
-    "x_offset": 117.53564,
-    "y_offset": 205.56927,
+    "core_source_bounds": {
+      "minX": -275.50079,
+      "maxX": 230.47899,
+      "minY": -103.65722,
+      "maxY": 412.47205
+    },
+    "cluster": {
+      "retained": 2847,
+      "total": 2874,
+      "centerX": 4.2515,
+      "centerY": 92.04934,
+      "radiusX": 256,
+      "radiusY": 521.66853
+    },
+    "scale": 0.34784,
+    "x_offset": 103.83019,
+    "y_offset": 179.94387,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:23.460Z"
+  "exported_at": "2026-08-19T05:03:34.056Z"
 }

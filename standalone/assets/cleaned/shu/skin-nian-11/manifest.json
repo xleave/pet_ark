@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "shu",
   "character_name": "Shu",
   "localized_name": "黍",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
-      "minX": -263.21042,
+      "minX": -263.24573,
       "maxX": 522.01453,
-      "minY": -97.83841,
+      "minY": -98.68409,
       "maxY": 687.67572
     },
-    "scale": 0.22414,
-    "x_offset": 66.99588,
-    "y_offset": 194.07054,
+    "full_source_bounds": {
+      "minX": -263.24573,
+      "maxX": 522.01453,
+      "minY": -98.68409,
+      "maxY": 687.67572
+    },
+    "core_source_bounds": {
+      "minX": -263.24573,
+      "maxX": 335.64999,
+      "minY": -98.68409,
+      "maxY": 687.67572
+    },
+    "cluster": {
+      "retained": 3315,
+      "total": 3315,
+      "centerX": 8.41143,
+      "centerY": 196.83571,
+      "radiusX": 431.85504,
+      "radiusY": 707.73617
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 64,
+      "visible_height": 101,
+      "density_zoom": 1.38614
+    },
+    "scale": 0.31067,
+    "x_offset": 113.32831,
+    "y_offset": 217.22255,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:30.725Z"
+  "exported_at": "2026-08-19T05:11:51.102Z"
 }

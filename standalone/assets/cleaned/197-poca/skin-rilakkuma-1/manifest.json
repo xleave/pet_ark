@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "197-poca",
   "character_name": "Роса",
   "localized_name": "早露",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -291.7905,
+      "maxX": 349.20999,
+      "minY": -102.67661,
+      "maxY": 418.48148
+    },
+    "full_source_bounds": {
       "minX": -542.5896,
       "maxX": 932.30994,
       "minY": -102.67661,
       "maxY": 510.48849
     },
-    "scale": 0.11933,
-    "x_offset": 72.7473,
-    "y_offset": 203.74758,
+    "core_source_bounds": {
+      "minX": -291.7905,
+      "maxX": 349.20999,
+      "minY": -102.67661,
+      "maxY": 418.48148
+    },
+    "cluster": {
+      "retained": 3182,
+      "total": 3258,
+      "centerX": 6.62283,
+      "centerY": 130.56228,
+      "radiusX": 314.61767,
+      "radiusY": 699.88315
+    },
+    "scale": 0.27457,
+    "x_offset": 88.11714,
+    "y_offset": 187.80801,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:54.298Z"
+  "exported_at": "2026-08-19T05:03:19.544Z"
 }

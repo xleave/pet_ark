@@ -1,5 +1,8 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
+  "placement_revision": 3,
   "character": "odda",
   "character_name": "Odda",
   "localized_name": "奥达",
@@ -113,16 +116,43 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "pixel-density-corrected-envelope",
     "source_bounds": {
       "minX": -289.39801,
       "maxX": 677.01385,
-      "minY": -91.74046,
+      "minY": -92.47999,
       "maxY": 848.89001
     },
-    "scale": 0.18212,
-    "x_offset": 60.70429,
-    "y_offset": 199.29251,
+    "full_source_bounds": {
+      "minX": -289.39801,
+      "maxX": 677.01385,
+      "minY": -92.47999,
+      "maxY": 848.89001
+    },
+    "core_source_bounds": {
+      "minX": -227.51039,
+      "maxX": 241.3278,
+      "minY": -92.47999,
+      "maxY": 848.89001
+    },
+    "cluster": {
+      "retained": 2154,
+      "total": 2154,
+      "centerX": -0.45975,
+      "centerY": 211.54575,
+      "radiusX": 389.99093,
+      "radiusY": 576.98021
+    },
+    "pixel_probe": {
+      "animation": "Relax",
+      "visible_width": 41,
+      "visible_height": 69,
+      "density_zoom": 2.02899
+    },
+    "scale": 0.36951,
+    "x_offset": 101.48696,
+    "y_offset": 218.34921,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:20:22.205Z"
+  "exported_at": "2026-08-19T05:10:33.646Z"
 }

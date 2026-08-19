@@ -1,5 +1,7 @@
 {
   "schema_version": 2,
+  "render_revision": 3,
+  "blank_policy_revision": 1,
   "character": "akafuyu",
   "character_name": "Akafuyu",
   "localized_name": "赤冬",
@@ -113,16 +115,37 @@
     "maximum_frames": 8
   },
   "placement": {
+    "bounds_policy": "core-character-envelope",
     "source_bounds": {
+      "minX": -255.37808,
+      "maxX": 322.51965,
+      "minY": -129.92026,
+      "maxY": 494.85666
+    },
+    "full_source_bounds": {
       "minX": -1117.82581,
       "maxX": 5978.26465,
       "minY": -3575.91846,
       "maxY": 1470.96765
     },
-    "scale": 0.0248,
-    "x_offset": 35.72475,
-    "y_offset": 127.30868,
+    "core_source_bounds": {
+      "minX": -255.37808,
+      "maxX": 322.51965,
+      "minY": -129.92026,
+      "maxY": 494.85666
+    },
+    "cluster": {
+      "retained": 2946,
+      "total": 3078,
+      "centerX": 6.57869,
+      "centerY": 154.88424,
+      "radiusX": 256,
+      "radiusY": 654.49542
+    },
+    "scale": 0.30455,
+    "x_offset": 85.77594,
+    "y_offset": 176.43251,
     "padding": 8
   },
-  "exported_at": "2026-08-13T03:19:55.168Z"
+  "exported_at": "2026-08-19T05:03:07.692Z"
 }
