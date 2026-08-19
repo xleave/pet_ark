@@ -16,10 +16,14 @@ static void usage(FILE *stream, const char *program) {
     "  --character ID       Character registry id\n"
     "  --skin ID            Skin/variant id (default: character default)\n"
     "  --assets DIR         Runtime sprite atlas directory\n"
+    "  --control-socket PATH\n"
+    "                       Local JSON control socket\n"
     "  --scale NUMBER       Display scale, 0.25..3.0 (default: character value)\n"
     "  --speed NUMBER       Movement speed multiplier, 0.1..5.0\n"
+    "  --auto-move          Enable automatic movement\n"
     "  --no-auto-move       Stay in place unless dragged\n"
     "  --click-through      Start with an empty pointer input region\n"
+    "  --no-click-through   Start with pointer interaction enabled\n"
     "  --xdg-fullscreen-fallback\n"
     "                       Explicitly allow xdg-shell fullscreen fallback\n"
     "  --monitor NUMBER     Zero-based Wayland output index\n"
@@ -57,6 +61,56 @@ static bool parse_monitor(const char *text, int *value) {
   return true;
 }
 
+static bool parse_boolean(const char *text, bool *value) {
+  if (!text) return false;
+  if (!strcmp(text, "1") || !strcmp(text, "true") || !strcmp(text, "yes") || !strcmp(text, "on")) {
+    *value = true;
+    return true;
+  }
+  if (!strcmp(text, "0") || !strcmp(text, "false") || !strcmp(text, "no") || !strcmp(text, "off")) {
+    *value = false;
+    return true;
+  }
+  return false;
+}
+
+static bool load_environment(PetWaylandConfig *config) {
+  const char *value = NULL;
+  config->character_id = getenv("PET_ARK_CHARACTER");
+  config->skin_id = getenv("PET_ARK_VARIANT");
+  config->assets_root = getenv("PET_ARK_ASSETS");
+  config->control_socket = getenv("PET_ARK_CONTROL_SOCKET");
+  if ((value = getenv("PET_ARK_SCALE")) && !parse_float(value, 0.25f, 3.0f, &config->scale)) {
+    fprintf(stderr, "pet-ark: PET_ARK_SCALE must be between 0.25 and 3.0\n");
+    return false;
+  }
+  if ((value = getenv("PET_ARK_SPEED")) && !parse_float(value, 0.1f, 5.0f, &config->speed)) {
+    fprintf(stderr, "pet-ark: PET_ARK_SPEED must be between 0.1 and 5.0\n");
+    return false;
+  }
+  if ((value = getenv("PET_ARK_MONITOR")) && !parse_monitor(value, &config->monitor)) {
+    fprintf(stderr, "pet-ark: PET_ARK_MONITOR must be a non-negative integer\n");
+    return false;
+  }
+  struct {
+    const char *name;
+    bool *target;
+  } booleans[] = {
+    { "PET_ARK_AUTO_MOVE", &config->auto_move },
+    { "PET_ARK_CLICK_THROUGH", &config->click_through },
+    { "PET_ARK_XDG_FULLSCREEN_FALLBACK", &config->xdg_fullscreen_fallback },
+    { "PET_ARK_VERBOSE", &config->verbose },
+  };
+  for (size_t index = 0; index < sizeof(booleans) / sizeof(booleans[0]); index++) {
+    value = getenv(booleans[index].name);
+    if (value && !parse_boolean(value, booleans[index].target)) {
+      fprintf(stderr, "pet-ark: %s must be true/false or 1/0\n", booleans[index].name);
+      return false;
+    }
+  }
+  return true;
+}
+
 static const char *option_value(int argc, char **argv, int *index) {
   if (*index + 1 >= argc) return NULL;
   *index += 1;
@@ -68,6 +122,7 @@ int main(int argc, char **argv) {
     .character_id = NULL,
     .skin_id = NULL,
     .assets_root = NULL,
+    .control_socket = NULL,
     .scale = 0.0f,
     .speed = 1.0f,
     .auto_move = true,
@@ -77,6 +132,7 @@ int main(int argc, char **argv) {
     .verbose = false,
   };
   bool probe = false;
+  if (!load_environment(&config)) return 2;
 
   for (int index = 1; index < argc; index++) {
     const char *argument = argv[index];
@@ -92,8 +148,16 @@ int main(int argc, char **argv) {
       config.auto_move = false;
       continue;
     }
+    if (!strcmp(argument, "--auto-move")) {
+      config.auto_move = true;
+      continue;
+    }
     if (!strcmp(argument, "--click-through")) {
       config.click_through = true;
+      continue;
+    }
+    if (!strcmp(argument, "--no-click-through")) {
+      config.click_through = false;
       continue;
     }
     if (!strcmp(argument, "--xdg-fullscreen-fallback")) {
@@ -105,7 +169,7 @@ int main(int argc, char **argv) {
       continue;
     }
     if (!strcmp(argument, "--character") || !strcmp(argument, "--skin") ||
-        !strcmp(argument, "--assets") ||
+        !strcmp(argument, "--assets") || !strcmp(argument, "--control-socket") ||
         !strcmp(argument, "--scale") || !strcmp(argument, "--speed") ||
         !strcmp(argument, "--monitor")) {
       const char *value = option_value(argc, argv, &index);
@@ -116,6 +180,7 @@ int main(int argc, char **argv) {
       if (!strcmp(argument, "--character")) config.character_id = value;
       else if (!strcmp(argument, "--skin")) config.skin_id = value;
       else if (!strcmp(argument, "--assets")) config.assets_root = value;
+      else if (!strcmp(argument, "--control-socket")) config.control_socket = value;
       else if (!strcmp(argument, "--scale")) {
         if (!parse_float(value, 0.25f, 3.0f, &config.scale)) {
           fprintf(stderr, "pet-ark: scale must be between 0.25 and 3.0\n");

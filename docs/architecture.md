@@ -17,6 +17,7 @@ pet_ark/
 │   ├── animations/            # 独立逐动作播放器
 │   ├── assets/                # source → cleaned/generated/animations → runtime
 │   └── dist/                  # app、characters、registry、coverage、动作审计/contact sheets
+├── control-center/            # Tauri/Svelte 管理界面与受限 Rust backend
 ├── shared/
 │   ├── character-data/        # 角色 ID、名称、Codex/standalone roster 与来源
 │   ├── asset-tools/           # roster、PRTS 获取/导出、C registry 生成
@@ -62,6 +63,14 @@ Wayland backend 只在动画帧、整数像素位置、scale、selection 或 inp
 运行时仍支持 manifest 显式声明的兼容解析顺序：当前 variant 精确状态 → 当前 variant 兼容状态 → 同角色默认 variant 精确状态 → 默认 variant 兼容状态。动作完成门禁不会把这种运行时容错当成完成依据；当前完整产物的 semantic fallback 计数为 0。运行时不会跨角色回退，也不会在缺少声明时静默混用错误皮肤。
 
 Codex roster 的 426 来自 425 个正式可玩角色加 1 个 Priestess story regression baseline；Standalone roster 只包含 425 个正式可玩角色，因此两者差 1 是有意边界，不是 Standalone 漏角色。本阶段不改变 Codex renderer、atlas contract 或其构建产线。
+
+## Control Center 边界
+
+`control-center/` 是可选管理界面，不进入桌宠的动画循环，也不改变 Codex/Standalone 素材边界。它通过当前用户的 systemd manager 管理 `pet-ark.service`，通过 journald 读取该 unit 的日志，并通过 `$XDG_RUNTIME_DIR/pet-ark/control.sock` 查询或实时设置原生运行时。
+
+前端没有通用 shell 或任意文件访问权限。Rust backend 只暴露服务启停、自启、配置、registry、预览、日志和固定 JSON 控制命令。持久配置位于 `~/.config/pet-ark/runtime.env`；角色、皮肤、大小、速度与行为开关可实时应用，显示器变更通过服务重启应用。
+
+Control Center 的动画预览读取 Standalone runtime manifest 与 atlas，不读取 Codex `pet.json` 或 8 × 9 spritesheet。关闭控制中心不会退出桌宠；关闭桌宠也不会要求控制中心常驻。
 
 ## 真正共享的部分
 

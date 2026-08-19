@@ -26,6 +26,7 @@ APP_BINARY := $(BUILD_DIR)/$(APP_NAME)
 
 TEST_SOURCES := \
   tests/test_runtime.c \
+  runtime/control.c \
   runtime/state_machine.c \
   runtime/runtime_policy.c \
   runtime/movement.c \

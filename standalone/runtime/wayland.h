@@ -7,6 +7,7 @@ typedef struct {
   const char *character_id;
   const char *skin_id;
   const char *assets_root;
+  const char *control_socket;
   float scale;
   float speed;
   bool auto_move;

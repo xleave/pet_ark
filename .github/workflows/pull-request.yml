@@ -32,7 +32,8 @@ jobs:
       - name: Install native build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install --yes build-essential pkg-config libwayland-dev libpng-dev
+          sudo apt-get install --yes build-essential pkg-config libwayland-dev libpng-dev \
+            libwebkit2gtk-4.1-dev libssl-dev librsvg2-dev
       - name: Install project dependencies
         run: |
           python3 -m pip install -r requirements.txt
@@ -48,6 +49,13 @@ jobs:
           standalone/build/pet-ark --help
       - name: Run standalone native and manifest tests
         run: npm run standalone:test
+      - name: Build and test the control center
+        run: |
+          npm --prefix control-center ci
+          npm --prefix control-center run check
+          npm --prefix control-center run build
+          cargo check --locked --manifest-path control-center/src-tauri/Cargo.toml
+          cargo test --locked --manifest-path control-center/src-tauri/Cargo.toml
       - name: Validate all standalone assets without a compositor
         run: npm run standalone:validate-all -- --jobs 2
       - name: Validate all Codex pets

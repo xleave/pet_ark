@@ -2,6 +2,7 @@
 
 #include "wayland.h"
 
+#include "control.h"
 #include "image.h"
 #include "movement.h"
 #include "runtime_policy.h"
@@ -119,6 +120,7 @@ struct PetApp {
   PetAnimationPlayer animation;
   PetSheet sheets[PET_MAX_SHEETS];
   int sheet_count;
+  PetControlServer control;
 };
 
 static volatile sig_atomic_t signal_quit;
@@ -831,6 +833,90 @@ static bool select_next_variant(PetApp *app) {
   return false;
 }
 
+static const char *behavior_name(PetBehavior behavior) {
+  switch (behavior) {
+    case PET_BEHAVIOR_IDLE: return "idle";
+    case PET_BEHAVIOR_MOVEMENT: return "movement";
+    case PET_BEHAVIOR_INTERACTION: return "interaction";
+    case PET_BEHAVIOR_GRABBED: return "grabbed";
+    case PET_BEHAVIOR_DROPPED: return "dropped";
+    case PET_BEHAVIOR_RESTING: return "resting";
+    case PET_BEHAVIOR_SLEEPING: return "sleeping";
+    case PET_BEHAVIOR_TRANSITION: return "transition";
+  }
+  return "unknown";
+}
+
+static void reply_status(PetApp *app, int client) {
+  char response[1024];
+  const char *animation = app->animation.definition ? app->animation.definition->id : "none";
+  snprintf(response, sizeof(response),
+    "{\"ok\":true,\"pid\":%ld,\"character\":\"%s\",\"variant\":\"%s\","
+    "\"scale\":%.3f,\"speed\":%.3f,\"auto_move\":%s,\"click_through\":%s,"
+    "\"monitor\":%d,\"outputs\":%d,\"shell\":\"%s\",\"behavior\":\"%s\","
+    "\"animation\":\"%s\"}",
+    (long)getpid(), app->character->id, app->variant->id, app->scale, app->speed,
+    app->state.auto_move ? "true" : "false", app->click_through ? "true" : "false",
+    app->config.monitor, app->output_count,
+    app->use_layer_shell ? "layer-shell" : "xdg-fullscreen",
+    behavior_name(app->state.behavior), animation);
+  pet_control_reply(client, response);
+}
+
+static void handle_control(PetApp *app) {
+  PetControlCommand command;
+  const int client = pet_control_server_receive(&app->control, &command);
+  if (client < 0) return;
+  switch (command.kind) {
+    case PET_CONTROL_GET_STATUS:
+      reply_status(app, client);
+      return;
+    case PET_CONTROL_SET_SCALE:
+      app->scale = command.number;
+      app->explicit_scale = true;
+      app->needs_redraw = true;
+      fprintf(stderr, "pet-ark: control scale %.2f\n", app->scale);
+      break;
+    case PET_CONTROL_SET_SPEED:
+      app->speed = command.number;
+      app->movement.speed_multiplier = command.number;
+      fprintf(stderr, "pet-ark: control speed %.2f\n", app->speed);
+      break;
+    case PET_CONTROL_SET_AUTO_MOVE:
+      pet_runtime_set_auto_move(&app->state, &app->config.auto_move, command.boolean);
+      fprintf(stderr, "pet-ark: control automatic movement %s\n",
+              app->state.auto_move ? "enabled" : "disabled");
+      break;
+    case PET_CONTROL_SET_CLICK_THROUGH:
+      app->click_through = command.boolean;
+      app->needs_redraw = true;
+      fprintf(stderr, "pet-ark: control click-through %s\n",
+              app->click_through ? "enabled" : "disabled");
+      break;
+    case PET_CONTROL_SELECT: {
+      const PetCharacter *character = pet_character_find(command.character);
+      const PetVariant *variant = character ? (command.variant[0]
+        ? pet_character_variant(character, command.variant)
+        : pet_character_default_variant(character)) : NULL;
+      if (!character || !variant || !variant_assets_available(app, variant) ||
+          !apply_selection(app, (size_t)(character - PET_CHARACTERS),
+                           (size_t)(variant - character->variants), false)) {
+        pet_control_reply(client,
+          "{\"ok\":false,\"error\":\"character or variant is unavailable\"}");
+        return;
+      }
+      break;
+    }
+    case PET_CONTROL_QUIT:
+      app->running = false;
+      break;
+    case PET_CONTROL_INVALID:
+      pet_control_reply(client, "{\"ok\":false,\"error\":\"invalid command\"}");
+      return;
+  }
+  reply_status(app, client);
+}
+
 static void update_runtime_controls(PetApp *app) {
   if (signal_quit) app->running = false;
   if (signal_click_through) {
@@ -1023,6 +1109,7 @@ static bool resolve_assets_root(PetApp *app, char resolved[PATH_MAX]) {
 }
 
 static void destroy_app(PetApp *app) {
+  pet_control_server_close(&app->control);
   clear_sheets(app);
   for (int index = 0; index < PET_BUFFER_COUNT; index++) destroy_buffer(&app->buffers[index]);
   if (app->frame_callback) wl_callback_destroy(app->frame_callback);
@@ -1047,6 +1134,7 @@ static void destroy_app(PetApp *app) {
 
 int pet_wayland_probe(void) {
   PetApp app = { 0 };
+  app.control.fd = -1;
   for (int index = 0; index < PET_BUFFER_COUNT; index++) app.buffers[index].fd = -1;
   app.config.monitor = 0;
   if (!initialize_wayland(&app)) {
@@ -1068,6 +1156,7 @@ int pet_wayland_run(const PetWaylandConfig *config) {
     return 2;
   }
   for (int index = 0; index < PET_BUFFER_COUNT; index++) app.buffers[index].fd = -1;
+  app.control.fd = -1;
   app.config = *config;
   app.click_through = config->click_through;
   app.explicit_scale = config->scale > 0.0f;
@@ -1111,6 +1200,17 @@ int pet_wayland_run(const PetWaylandConfig *config) {
     return 1;
   }
   install_signal_handlers();
+  char control_error[160];
+  if (!pet_control_server_open(&app.control, config->control_socket,
+                               control_error, sizeof(control_error))) {
+    fprintf(stderr, "pet-ark: control socket unavailable: %s\n", control_error);
+    if (config->control_socket && *config->control_socket) {
+      destroy_app(&app);
+      return 1;
+    }
+  } else if (app.config.verbose) {
+    fprintf(stderr, "pet-ark: control socket %s\n", app.control.path);
+  }
   if (wl_display_roundtrip(app.display) < 0) {
     destroy_app(&app);
     return 1;
@@ -1135,20 +1235,31 @@ int pet_wayland_run(const PetWaylandConfig *config) {
       display_error = true;
       break;
     }
-    struct pollfd descriptor = {
-      .fd = wl_display_get_fd(app.display),
-      .events = POLLIN | (flush_result < 0 ? POLLOUT : 0),
+    struct pollfd descriptors[2] = {
+      {
+        .fd = wl_display_get_fd(app.display),
+        .events = POLLIN | (flush_result < 0 ? POLLOUT : 0),
+      },
+      {
+        .fd = app.control.fd,
+        .events = POLLIN,
+      },
     };
-    const int result = poll(&descriptor, 1, (int)(PET_FRAME_INTERVAL_NS / 1000000LL));
+    const nfds_t descriptor_count = app.control.fd >= 0 ? 2 : 1;
+    const int result = poll(descriptors, descriptor_count,
+                            (int)(PET_FRAME_INTERVAL_NS / 1000000LL));
     if (result < 0 && errno != EINTR) {
       display_error = true;
       break;
     }
-    if (result > 0 && (descriptor.revents & POLLIN) && wl_display_dispatch(app.display) < 0) {
+    if (result > 0 && descriptor_count > 1 && (descriptors[1].revents & POLLIN)) {
+      handle_control(&app);
+    }
+    if (result > 0 && (descriptors[0].revents & POLLIN) && wl_display_dispatch(app.display) < 0) {
       display_error = true;
       break;
     }
-    if (result > 0 && (descriptor.revents & (POLLERR | POLLHUP))) {
+    if (result > 0 && (descriptors[0].revents & (POLLERR | POLLHUP))) {
       display_error = true;
       break;
     }

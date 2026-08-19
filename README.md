@@ -22,6 +22,7 @@ pet_ark/
 │   ├── animations/     独立动画播放器
 │   ├── assets/         source/cleaned/generated/animations/runtime
 │   └── dist/           独立应用包
+├── control-center/     Tauri/Svelte 图形控制中心
 ├── shared/
 │   ├── character-data/ roster 与统一来源记录
 │   ├── asset-tools/    roster、PRTS 素材及 registry 工具
@@ -145,7 +146,24 @@ npm run standalone:dev -- --character amiya -- --xdg-fullscreen-fallback
 
 例如 `pkill -USR1 -x pet-ark` 可以在完全 click-through 后恢复输入。
 
-当前设置入口是启动参数、鼠标控制和进程信号，尚未提供托盘或可视设置面板。切换时只选择已经存在 runtime assets 的角色或皮肤。退出可使用前台 `Ctrl-C`、`SIGTERM`，也会响应 compositor close。
+### 图形控制中心
+
+可选的 Tauri Control Center 提供运行总览、角色/皮肤选择、大小与速度、自动移动、点击穿透、服务启停、登录自启和 journald 日志。它是独立设置窗口；关闭后原生 C / Wayland 桌宠继续运行。
+
+```bash
+npm run standalone:service:install
+npm run control:center:install
+npm run control:center:dev
+```
+
+release 构建并安装到当前用户的桌面应用列表：
+
+```bash
+npm run control:center:build
+npm run control:center:deploy
+```
+
+用户服务默认不会启用登录自启。运行时 JSON 控制协议、配置路径、安全边界和开发说明见 [`docs/control-center.md`](docs/control-center.md)。命令行参数、鼠标控制和进程信号仍然保留；切换时只选择已经存在 runtime assets 的角色或皮肤。
 
 Wayland/niri/KDE/GNOME 的具体实现路径与必须实机检查的项目见 [`docs/wayland.md`](docs/wayland.md)。原生应用已完成严格编译和真实链接且无编译警告；当前自动化环境没有图形 Wayland/niri session，因此不把 build、单元测试或无会话失败路径冒充 niri 实机验证。
 

@@ -1,4 +1,5 @@
 #include "animation.h"
+#include "control.h"
 #include "movement.h"
 #include "runtime_policy.h"
 #include "state_machine.h"
@@ -233,6 +234,45 @@ static void test_visual_snapshot_dirty_detection(void) {
   CHECK(pet_visual_snapshot_changed(&baseline, &candidate));
 }
 
+static void test_control_protocol(void) {
+  PetControlCommand command;
+  char error[160];
+
+  CHECK(pet_control_parse("{\"command\":\"get_status\"}", &command, error, sizeof(error)));
+  CHECK(command.kind == PET_CONTROL_GET_STATUS);
+
+  CHECK(pet_control_parse("{\"command\":\"set_scale\",\"value\":0.85}",
+                          &command, error, sizeof(error)));
+  CHECK(command.kind == PET_CONTROL_SET_SCALE);
+  CHECK_NEAR(command.number, 0.85f, 0.0001f);
+  CHECK(!pet_control_parse("{\"command\":\"set_scale\",\"value\":4}",
+                           &command, error, sizeof(error)));
+  CHECK(!pet_control_parse("{\"command\":\"set_scale\",\"value\":nan}",
+                           &command, error, sizeof(error)));
+
+  CHECK(pet_control_parse("{\"command\":\"set_speed\",\"value\":1.25}",
+                          &command, error, sizeof(error)));
+  CHECK(command.kind == PET_CONTROL_SET_SPEED);
+  CHECK_NEAR(command.number, 1.25f, 0.0001f);
+
+  CHECK(pet_control_parse("{\"command\":\"set_auto_move\",\"value\":false}",
+                          &command, error, sizeof(error)));
+  CHECK(command.kind == PET_CONTROL_SET_AUTO_MOVE);
+  CHECK(!command.boolean);
+
+  CHECK(pet_control_parse(
+    "{\"command\":\"select\",\"character\":\"amiya\",\"variant\":\"skin-winter-1\"}",
+    &command, error, sizeof(error)));
+  CHECK(command.kind == PET_CONTROL_SELECT);
+  CHECK(!strcmp(command.character, "amiya"));
+  CHECK(!strcmp(command.variant, "skin-winter-1"));
+
+  CHECK(!pet_control_parse("{\"command\":\"select\",\"character\":\"../amiya\"}",
+                           &command, error, sizeof(error)));
+  CHECK(!pet_control_parse("{\"command\":\"launch_shell\"}",
+                           &command, error, sizeof(error)));
+}
+
 int main(void) {
   test_state_machine_movement_cycle();
   test_state_machine_interactions();
@@ -242,6 +282,7 @@ int main(void) {
   test_auto_move_survives_selection_reinitialization();
   test_shell_fallback_policy();
   test_visual_snapshot_dirty_detection();
+  test_control_protocol();
   printf("OK: %d runtime assertions (state machine, movement, animation, runtime policy)\n", assertions);
   return EXIT_SUCCESS;
 }
